@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="24.1.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_ST_DeliveryCost" PageWidth="1003" PageHeight="1100" Version="24.1" DataMember="SR_ST_DeliveryCost" DataSource="#Ref-0">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
+    <Item2 Ref="5" Visible="false" Name="DateFrom" />
+    <Item3 Ref="6" Visible="false" Name="DateTo" />
+  </Parameters>
+  <CalculatedFields>
+    <Item1 Ref="7" Name="TotalCost" Expression="[CostPerTon] * [ActualQty]" DataMember="SR_FC_SalesSheet" />
+    <Item2 Ref="8" Name="TotalProfit" Expression="[TotalPrice] - [TotalCost]" DataMember="SR_FC_SalesSheet" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="9" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="10" ControlType="BottomMarginBand" Name="BottomMargin">
+      <Controls>
+        <Item1 Ref="11" ControlType="XRPageInfo" Name="pageInfoPageNoOfTotal" AnchorVertical="Both" AnchorHorizontal="Both" TextAlignment="MiddleRight" />
+        <Item2 Ref="12" ControlType="XRPageInfo" Name="xrPageInfo1" PageInfo="DateTime" Padding="2,2,0,0,96" />
+        <Item3 Ref="13" ControlType="XRPageInfo" Name="pageInfoCurrentDate" PageInfo="DateTime" AnchorVertical="Both" AnchorHorizontal="Both" TextAlignment="MiddleLeft" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="14" ControlType="DetailBand" Name="Detail">
+      <Controls>
+        <Item1 Ref="15" ControlType="XRTable" Name="xrTable2" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="16" ControlType="XRTableRow" Name="xrTableRow2">
+              <Cells>
+                <Item1 Ref="17" ControlType="XRTableCell" Name="xrTableCell12" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="18" EventName="BeforePrint" PropertyName="Text" Expression="[ItemType_ProdGroup]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="19" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="20" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="21" EventName="BeforePrint" PropertyName="Text" Expression="[ItemCode_Prod]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="22" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="23" ControlType="XRTableCell" Name="xrTableCell14" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[ItemCode_To]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="25" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="26" ControlType="XRTableCell" Name="xrTableCell15" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="27" EventName="BeforePrint" PropertyName="Text" Expression="[DeliveryQtn]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="28" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="29" ControlType="XRTableCell" Name="xrTableCell16" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="30" EventName="BeforePrint" PropertyName="Text" Expression="[Units_User]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="31" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="32" ControlType="XRTableCell" Name="xrTableCell17" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="33" EventName="BeforePrint" PropertyName="Text" Expression="[TotalCost]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="34" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="35" ControlType="XRTableCell" Name="xrTableCell18" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="36" EventName="BeforePrint" PropertyName="Text" Expression="[UnitCost]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="37" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="38" ControlType="XRTableCell" Name="xrTableCell19" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="39" EventName="BeforePrint" PropertyName="Text" Expression="[TotalPrice]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="40" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="41" ControlType="XRTableCell" Name="xrTableCell20" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="42" EventName="BeforePrint" PropertyName="Text" Expression="[UnitPrice]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="43" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item9>
+                <Item10 Ref="44" ControlType="XRTableCell" Name="xrTableCell21" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="45" EventName="BeforePrint" PropertyName="Text" Expression="[ProfitLoss]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="46" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="47" ControlType="XRTableCell" Name="xrTableCell22" Multiline="true" TextAlignment="MiddleCenter" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="[ProfitLossPercent]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="49" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item11>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="50" ControlType="PageHeaderBand" Name="PageHeader">
+      <SubBands>
+        <Item1 Ref="51" ControlType="SubBand" Name="SubBand2">
+          <Controls>
+            <Item1 Ref="52" ControlType="XRSubreport" Name="srReportHeader">
+              <ReportSource Ref="53" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+                <Parameters>
+                  <Item1 Ref="54" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
+                  <Item2 Ref="55" Visible="false" Description="Logo path" Name="LogoPath" />
+                  <Item3 Ref="56" Visible="false" Description="Font size" Name="FontSize" />
+                  <Item4 Ref="57" Visible="false" Description="Hide report header" ValueInfo="False" Name="HideReportHeader" Type="#Ref-2" />
+                </Parameters>
+                <Bands>
+                  <Item1 Ref="58" ControlType="DetailBand" Name="Detail" HeightF="0" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100" Visible="false" />
+                  <Item2 Ref="59" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="0" KeepTogether="true" TextAlignment="MiddleJustify" Padding="0,0,0,0,100">
+                    <SubBands>
+                      <Item1 Ref="60" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
+                        <Controls>
+                          <Item1 Ref="61" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="62" UseFont="false" UseTextAlignment="false" />
+                          </Item1>
+                          <Item2 Ref="63" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="64" UseFont="false" UseTextAlignment="false" />
+                          </Item2>
+                          <Item3 Ref="65" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="66" UseFont="false" UseTextAlignment="false" />
+                          </Item3>
+                          <Item4 Ref="67" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="68" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+                          </Item4>
+                          <Item5 Ref="69" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="70" UseFont="false" UseTextAlignment="false" />
+                          </Item5>
+                          <Item6 Ref="71" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                            <ExpressionBindings>
+                              <Item1 Ref="72" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
+                            </ExpressionBindings>
+                          </Item6>
+                          <Item7 Ref="73" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="74" UseFont="false" UseTextAlignment="false" />
+                          </Item7>
+                        </Controls>
+                        <ExpressionBindings>
+                          <Item1 Ref="75" EventName="BeforePrint" PropertyName="Visible" Expression="?HideReportHeader == False" />
+                        </ExpressionBindings>
+                      </Item1>
+                      <Item2 Ref="76" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
+                        <Controls>
+                          <Item1 Ref="77" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                            <StylePriority Ref="78" UseFont="false" UseTextAlignment="false" />
+                          </Item1>
+                        </Controls>
+                      </Item2>
+                    </SubBands>
+                  </Item2>
+                  <Item3 Ref="79" ControlType="TopMarginBand" Name="TopMargin" HeightF="0" />
+                  <Item4 Ref="80" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="0" />
+                </Bands>
+                <ParameterPanelLayoutItems>
+                  <Item1 Ref="81" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-54" />
+                  <Item2 Ref="82" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-55" />
+                  <Item3 Ref="83" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-56" />
+                  <Item4 Ref="84" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-57" />
+                </ParameterPanelLayoutItems>
+                <ObjectStorage>
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+                </ObjectStorage>
+              </ReportSource>
+            </Item1>
+          </Controls>
+        </Item1>
+        <Item2 Ref="85" ControlType="SubBand" Name="SubBand3">
+          <Controls>
+            <Item1 Ref="86" ControlType="XRLabel" Name="xrLabel2" CanGrow="false" TextAlignment="MiddleLeft">
+              <StylePriority Ref="87" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="88" ControlType="XRLabel" Name="xrLabel1" CanGrow="false" TextAlignment="MiddleLeft">
+              <StylePriority Ref="89" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+        </Item2>
+        <Item3 Ref="90" ControlType="SubBand" Name="SubBand4">
+          <Controls>
+            <Item1 Ref="91" ControlType="XRTable" Name="xrTable1" Padding="2,2,0,0,96">
+              <Rows>
+                <Item1 Ref="92" ControlType="XRTableRow" Name="xrTableRow1">
+                  <Cells>
+                    <Item1 Ref="93" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="94" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="95" ControlType="XRTableCell" Name="xrTableCell2" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="96" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item2>
+                    <Item3 Ref="97" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="98" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item3>
+                    <Item4 Ref="99" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="100" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item4>
+                    <Item5 Ref="101" ControlType="XRTableCell" Name="xrTableCell5" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="102" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item5>
+                    <Item6 Ref="103" ControlType="XRTableCell" Name="xrTableCell6" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="104" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item6>
+                    <Item7 Ref="105" ControlType="XRTableCell" Name="xrTableCell7" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="106" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item7>
+                    <Item8 Ref="107" ControlType="XRTableCell" Name="xrTableCell8" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="108" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item8>
+                    <Item9 Ref="109" ControlType="XRTableCell" Name="xrTableCell9" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="110" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item9>
+                    <Item10 Ref="111" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="112" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item10>
+                    <Item11 Ref="113" ControlType="XRTableCell" Name="xrTableCell11" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="114" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item11>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item3>
+      </SubBands>
+    </Item4>
+    <Item5 Ref="115" ControlType="GroupFooterBand" Name="GroupFooter1">
+      <Controls>
+        <Item1 Ref="116" ControlType="XRLabel" Name="xrLabel51" Multiline="true" Padding="2,2,0,0,100">
+          <Summary Ref="117" Running="Report" />
+          <ExpressionBindings>
+            <Item1 Ref="118" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ProfitLoss])" />
+          </ExpressionBindings>
+        </Item1>
+        <Item2 Ref="119" ControlType="XRLabel" Name="xrLabel49" Multiline="true" Padding="2,2,0,0,100">
+          <Summary Ref="120" Running="Report" />
+          <ExpressionBindings>
+            <Item1 Ref="121" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalPrice])" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="122" ControlType="XRLabel" Name="xrLabel47" Multiline="true" Padding="2,2,0,0,100">
+          <Summary Ref="123" Running="Report" />
+          <ExpressionBindings>
+            <Item1 Ref="124" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
+            <Item2 Ref="125" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalCost])" />
+          </ExpressionBindings>
+        </Item3>
+        <Item4 Ref="126" ControlType="XRLabel" Name="xrLabel46" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+          <StylePriority Ref="127" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+      </Controls>
+    </Item5>
+    <Item6 Ref="128" ControlType="ReportFooterBand" Name="ReportFooter">
+      <SubBands>
+        <Item1 Ref="129" ControlType="SubBand" Name="SubBand5">
+          <Controls>
+            <Item1 Ref="130" ControlType="XRSubreport" Name="srReportNotes">
+              <ReportSource Ref="131" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.1" TextAlignment="MiddleLeft">
+                <Parameters>
+                  <Item1 Ref="132" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
+                  <Item2 Ref="133" Visible="false" Name="Notes" />
+                  <Item3 Ref="134" Visible="false" Name="FilterDataHeader" />
+                  <Item4 Ref="135" Visible="false" Name="FilterData" />
+                  <Item5 Ref="136" Visible="false" Name="FontSize" />
+                </Parameters>
+                <Bands>
+                  <Item1 Ref="137" ControlType="TopMarginBand" Name="TopMargin" />
+                  <Item2 Ref="138" ControlType="DetailBand" Name="Detail" />
+                  <Item3 Ref="139" ControlType="BottomMarginBand" Name="BottomMargin" />
+                  <Item4 Ref="140" ControlType="ReportHeaderBand" Name="ReportHeader">
+                    <SubBands>
+                      <Item1 Ref="141" ControlType="SubBand" Name="SubBand1">
+                        <Controls>
+                          <Item1 Ref="142" ControlType="XRLabel" Name="xrLabel1" Multiline="true" AnchorHorizontal="Both" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                            <ExpressionBindings>
+                              <Item1 Ref="143" EventName="BeforePrint" PropertyName="Text" Expression="?Notes" />
+                            </ExpressionBindings>
+                            <StylePriority Ref="144" UseFont="false" />
+                          </Item1>
+                        </Controls>
+                        <ExpressionBindings>
+                          <Item1 Ref="145" EventName="BeforePrint" PropertyName="Visible" Expression="Not IsNullOrEmpty(?Notes) And ?IsRTL == True" />
+                        </ExpressionBindings>
+                      </Item1>
+                      <Item2 Ref="146" ControlType="SubBand" Name="SubBand2">
+                        <Controls>
+                          <Item1 Ref="147" ControlType="XRRichText" Name="xrRichText1" SerializableRtfString="ewBcAHIAdABmADEAXABkAGUAZgBmADAAewBcAGYAbwBuAHQAdABiAGwAewBcAGYAMAAgAEMAYQBsAGkAYgByAGkAOwB9AHsAXABmADEAIABUAGkAbQBlAHMAIABOAGUAdwAgAFIAbwBtAGEAbgA7AH0AewBcAGYAMgAgAFQAYQBoAG8AbQBhADsAfQB9AHsAXABjAG8AbABvAHIAdABiAGwAIAA7AFwAcgBlAGQAMABcAGcAcgBlAGUAbgAwAFwAYgBsAHUAZQAyADUANQAgADsAXAByAGUAZAAwAFwAZwByAGUAZQBuADAAXABiAGwAdQBlADAAIAA7AH0AewBcACoAXABkAGUAZgBjAGgAcAAgAFwAZgAxAFwAZgBzADIANAB9AHsAXAAqAFwAZABlAGYAcABhAHAAIABcAHcAaQBkAGMAdABsAHAAYQByAH0AewBcAHMAdAB5AGwAZQBzAGgAZQBlAHQAIAB7AFwAcQBsAFwAZgAxAFwAZgBzADIANAAgAE4AbwByAG0AYQBsADsAfQB7AFwAKgBcAGMAcwAxAFwAZgAxAFwAZgBzADIANAAgAEQAZQBmAGEAdQBsAHQAIABQAGEAcgBhAGcAcgBhAHAAaAAgAEYAbwBuAHQAOwB9AHsAXAAqAFwAYwBzADIAXABzAGIAYQBzAGUAZABvAG4AMQBcAGYAMQBcAGYAcwAyADQAIABMAGkAbgBlACAATgB1AG0AYgBlAHIAOwB9AHsAXAAqAFwAYwBzADMAXABmADEAXABmAHMAMgA0AFwAdQBsAFwAYwBmADEAIABIAHkAcABlAHIAbABpAG4AawA7AH0AewBcACoAXAB0AHMANABcAHQAcwByAG8AdwBkAFwAZgAxAFwAZgBzADIANABcAHEAbABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgBsADMAXAB0AHMAYwBlAGwAbABwAGEAZABkAGwAMQAwADgAXAB0AHMAYwBlAGwAbABwAGEAZABkAGYAYgAzAFwAdABzAGMAZQBsAGwAcABhAGQAZABmAHIAMwBcAHQAcwBjAGUAbABsAHAAYQBkAGQAcgAxADAAOABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgB0ADMAXAB0AHMAdgBlAHIAdABhAGwAdABcAGMAbAB0AHgAbAByAHQAYgAgAE4AbwByAG0AYQBsACAAVABhAGIAbABlADsAfQB7AFwAKgBcAHQAcwA1AFwAdABzAHIAbwB3AGQAXABzAGIAYQBzAGUAZABvAG4ANABcAGYAMQBcAGYAcwAyADQAXABxAGwAXAB0AHIAYgByAGQAcgB0AFwAYgByAGQAcgBzAFwAYgByAGQAcgB3ADEAMABcAHQAcgBiAHIAZAByAGwAXABiAHIAZAByAHMAXABiAHIAZAByAHcAMQAwAFwAdAByAGIAcgBkAHIAYgBcAGIAcgBkAHIAcwBcAGIAcgBkAHIAdwAxADAAXAB0AHIAYgByAGQAcgByAFwAYgByAGQAcgBzAFwAYgByAGQAcgB3ADEAMABcAHQAcgBiAHIAZAByAGgAXABiAHIAZAByAHMAXABiAHIAZAByAHcAMQAwAFwAdAByAGIAcgBkAHIAdgBcAGIAcgBkAHIAcwBcAGIAcgBkAHIAdwAxADAAXAB0AHMAYwBlAGwAbABwAGEAZABkAGYAbAAzAFwAdABzAGMAZQBsAGwAcABhAGQAZABsADEAMAA4AFwAdABzAGMAZQBsAGwAcABhAGQAZABmAHIAMwBcAHQAcwBjAGUAbABsAHAAYQBkAGQAcgAxADAAOABcAHQAcwB2AGUAcgB0AGEAbAB0AFwAYwBsAHQAeABsAHIAdABiACAAVABhAGIAbABlACAAUwBpAG0AcABsAGUAIAAxADsAfQB9AHsAXAAqAFwAbABpAHMAdABvAHYAZQByAHIAaQBkAGUAdABhAGIAbABlAH0AXABuAG8AdQBpAGMAbwBtAHAAYQB0AFwAaAB0AG0AYQB1AHQAcwBwAFwAcwBwAGwAeQB0AHcAbgBpAG4AZQBcAGEAbABuAHQAYgBsAGkAbgBkAFwAZQB4AHAAcwBoAHIAdABuAFwAcwBwAGwAdABwAGcAcABhAHIAXABuAG8AZwByAG8AdwBhAHUAdABvAGYAaQB0AFwAdQB0AGkAbgBsAFwAbgBvAGIAcgBrAHcAcgBwAHQAYgBsAFwAZgB0AG4AbAB5AHQAdwBuAGkAbgBlAFwAbgBvAHQAYwB2AGEAcwBwAFwAZABuAHQAYgBsAG4AcwBiAGQAYgBcAG4AZQB3AHQAYgBsAHMAdAB5AHIAdQBsAHMAXABmAG8AcgBtAHMAaABhAGQAZQBcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAXAB3AGkAZABjAHQAbABwAGEAcgB7AFwAZgAyAFwAZgBzADEANgBcAGMAZgAyACAAeAByAFIAaQBjAGgAVABlAHgAdAAxAH0AXABmADIAXABmAHMAMQA2AFwAYwBmADIAXABwAGEAcgB9AA==" AnchorHorizontal="Both" Padding="2,2,0,0,100">
+                            <ExpressionBindings>
+                              <Item1 Ref="148" EventName="BeforePrint" PropertyName="Html" Expression="?Notes" />
+                            </ExpressionBindings>
+                            <StylePriority Ref="149" UseFont="false" />
+                          </Item1>
+                        </Controls>
+                        <ExpressionBindings>
+                          <Item1 Ref="150" EventName="BeforePrint" PropertyName="Visible" Expression=" Not IsNullOrEmpty(?Notes) And ?IsRTL == False" />
+                        </ExpressionBindings>
+                      </Item2>
+                      <Item3 Ref="151" ControlType="SubBand" Name="SubBand3">
+                        <Controls>
+                          <Item1 Ref="152" ControlType="XRLabel" Name="xrLabel3" Multiline="true" CanGrow="false" Padding="2,2,0,0,100">
+                            <StylePriority Ref="153" UseFont="false" />
+                          </Item1>
+                        </Controls>
+                        <ExpressionBindings>
+                          <Item1 Ref="154" EventName="BeforePrint" PropertyName="Visible" Expression=" Not IsNullOrEmpty(?FilterData)" />
+                        </ExpressionBindings>
+                      </Item3>
+                    </SubBands>
+                  </Item4>
+                </Bands>
+                <LocalizationItems>
+                  <Item1 Ref="155" Component="#Ref-139" Culture="Default" Path="HeightF" Data="0" />
+                  <Item2 Ref="156" Component="#Ref-138" Culture="Default" Path="HeightF" Data="0" />
+                  <Item3 Ref="157" Component="#Ref-138" Culture="Default" Path="Visible" Data="false" />
+                  <Item4 Ref="158" Component="#Ref-135" Culture="Default" Path="Description" Data="Parameter1" />
+                  <Item5 Ref="159" Component="#Ref-134" Culture="Default" Path="Description" Data="Parameter1" />
+                  <Item6 Ref="160" Component="#Ref-136" Culture="Default" Path="Description" Data="Parameter1" />
+                  <Item7 Ref="161" Component="#Ref-132" Culture="Default" Path="Description" Data="Parameter1" />
+                  <Item8 Ref="162" Component="#Ref-133" Culture="Default" Path="Description" Data="Parameter1" />
+                  <Item9 Ref="163" Component="#Ref-140" Culture="Default" Path="HeightF" Data="0" />
+                  <Item10 Ref="164" Component="#Ref-141" Culture="Default" Path="HeightF" Data="20" />
+                  <Item11 Ref="165" Component="#Ref-146" Culture="Default" Path="HeightF" Data="20" />
+                  <Item12 Ref="166" Component="#Ref-151" Culture="Default" Path="HeightF" Data="20" />
+                  <Item13 Ref="167" Component="#Ref-131" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item14 Ref="168" Component="#Ref-131" Culture="Default" Path="Margins" Data="10, 10, 0, 0" />
+                  <Item15 Ref="169" Component="#Ref-131" Culture="Default" Path="PaperKind" Data="A4" />
+                  <Item16 Ref="170" Component="#Ref-137" Culture="Default" Path="HeightF" Data="0" />
+                  <Item17 Ref="171" Component="#Ref-142" Culture="Default" Path="LocationFloat" Data="0,0" />
+                  <Item18 Ref="172" Component="#Ref-142" Culture="Default" Path="SizeF" Data="807,20" />
+                  <Item19 Ref="173" Component="#Ref-142" Culture="Default" Path="Text" Data="xrLabel1" />
+                  <Item20 Ref="174" Component="#Ref-152" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
+                  <Item21 Ref="175" Component="#Ref-152" Culture="Default" Path="SizeF" Data="806,20" />
+                  <Item22 Ref="176" Component="#Ref-152" Culture="Default" Path="Text" Data="Filter Data:  [?FilterData]" />
+                  <Item23 Ref="177" Component="#Ref-152" Culture="ar" Path="Text" Data="بيانات التصفية: [?FilterData]" />
+                  <Item24 Ref="178" Component="#Ref-147" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
+                  <Item25 Ref="179" Component="#Ref-147" Culture="Default" Path="SizeF" Data="806,20" />
+                </LocalizationItems>
+                <ParameterPanelLayoutItems>
+                  <Item1 Ref="180" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-132" />
+                  <Item2 Ref="181" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-133" />
+                  <Item3 Ref="182" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-134" />
+                  <Item4 Ref="183" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-135" />
+                  <Item5 Ref="184" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-136" />
+                </ParameterPanelLayoutItems>
+                <ObjectStorage>
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+                </ObjectStorage>
+              </ReportSource>
+            </Item1>
+          </Controls>
+        </Item1>
+      </SubBands>
+    </Item6>
+    <Item7 Ref="185" ControlType="PageFooterBand" Name="PageFooter" />
+  </Bands>
+  <LocalizationItems>
+    <Item1 Ref="186" Component="#Ref-10" Culture="Default" Path="HeightF" Data="48.7915039" />
+    <Item2 Ref="187" Component="#Ref-5" Culture="Default" Path="Description" Data="From" />
+    <Item3 Ref="188" Component="#Ref-6" Culture="Default" Path="Description" Data="To" />
+    <Item4 Ref="189" Component="#Ref-14" Culture="Default" Path="HeightF" Data="25" />
+    <Item5 Ref="190" Component="#Ref-115" Culture="Default" Path="HeightF" Data="23" />
+    <Item6 Ref="191" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
+    <Item7 Ref="192" Component="#Ref-185" Culture="Default" Path="HeightF" Data="0" />
+    <Item8 Ref="193" Component="#Ref-50" Culture="Default" Path="HeightF" Data="1.041667" />
+    <Item9 Ref="194" Component="#Ref-13" Culture="Default" Path="LocationFloat" Data="0,13.8332682" />
+    <Item10 Ref="195" Component="#Ref-13" Culture="Default" Path="SizeF" Data="211.458328,24.95823" />
+    <Item11 Ref="196" Component="#Ref-11" Culture="Default" Path="LocationFloat" Data="841.961548,15.7915115" />
+    <Item12 Ref="197" Component="#Ref-11" Culture="Default" Path="SizeF" Data="151.038513,20" />
+    <Item13 Ref="198" Component="#Ref-11" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
+    <Item14 Ref="199" Component="#Ref-128" Culture="Default" Path="HeightF" Data="0.2500534" />
+    <Item15 Ref="200" Component="#Ref-52" Culture="Default" Path="LocationFloat" Data="0,0.6250064" />
+    <Item16 Ref="201" Component="#Ref-52" Culture="Default" Path="SizeF" Data="993.0002,33.5416641" />
+    <Item17 Ref="202" Component="#Ref-130" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item18 Ref="203" Component="#Ref-130" Culture="Default" Path="SizeF" Data="993.000061,20" />
+    <Item19 Ref="204" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item20 Ref="205" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 0, 20, 48.7915039" />
+    <Item21 Ref="206" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="Custom" />
+    <Item22 Ref="207" Component="#Ref-51" Culture="Default" Path="HeightF" Data="34.16667" />
+    <Item23 Ref="208" Component="#Ref-85" Culture="Default" Path="HeightF" Data="22.50001" />
+    <Item24 Ref="209" Component="#Ref-90" Culture="Default" Path="HeightF" Data="25" />
+    <Item25 Ref="210" Component="#Ref-129" Culture="Default" Path="HeightF" Data="20" />
+    <Item26 Ref="211" Component="#Ref-9" Culture="Default" Path="HeightF" Data="20" />
+    <Item27 Ref="212" Component="#Ref-88" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item28 Ref="213" Component="#Ref-88" Culture="Default" Path="SizeF" Data="133.9413,21.45834" />
+    <Item29 Ref="214" Component="#Ref-88" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />
+    <Item30 Ref="215" Component="#Ref-88" Culture="ar" Path="Text" Data="من: [?DateFrom!dd-MM-yyyy]" />
+    <Item31 Ref="216" Component="#Ref-86" Culture="Default" Path="LocationFloat" Data="133.9413,0" />
+    <Item32 Ref="217" Component="#Ref-86" Culture="Default" Path="SizeF" Data="134.983,21.45834" />
+    <Item33 Ref="218" Component="#Ref-86" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
+    <Item34 Ref="219" Component="#Ref-86" Culture="ar" Path="Text" Data="الي: [?DateTo!dd-MM-yyyy]" />
+    <Item35 Ref="220" Component="#Ref-126" Culture="Default" Path="Font" Data="Tahoma, 9pt, style=Bold" />
+    <Item36 Ref="221" Component="#Ref-126" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item37 Ref="222" Component="#Ref-126" Culture="Default" Path="SizeF" Data="133.9413,23" />
+    <Item38 Ref="223" Component="#Ref-126" Culture="Default" Path="Text" Data="Grand Total:" />
+    <Item39 Ref="224" Component="#Ref-122" Culture="Default" Path="LocationFloat" Data="432.824463,0" />
+    <Item40 Ref="225" Component="#Ref-122" Culture="Default" Path="SizeF" Data="64.58328,23" />
+    <Item41 Ref="226" Component="#Ref-122" Culture="Default" Path="Text" Data="xrLabel47" />
+    <Item42 Ref="227" Component="#Ref-122" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item43 Ref="228" Component="#Ref-119" Culture="Default" Path="LocationFloat" Data="628.9829,0" />
+    <Item44 Ref="229" Component="#Ref-119" Culture="Default" Path="SizeF" Data="76.36682,23" />
+    <Item45 Ref="230" Component="#Ref-119" Culture="Default" Path="Text" Data="xrLabel49" />
+    <Item46 Ref="231" Component="#Ref-119" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item47 Ref="232" Component="#Ref-116" Culture="Default" Path="LocationFloat" Data="825.466553,0" />
+    <Item48 Ref="233" Component="#Ref-116" Culture="Default" Path="SizeF" Data="74.28345,23" />
+    <Item49 Ref="234" Component="#Ref-116" Culture="Default" Path="Text" Data="xrLabel51" />
+    <Item50 Ref="235" Component="#Ref-116" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item51 Ref="236" Component="#Ref-12" Culture="Default" Path="LocationFloat" Data="450.5328,15.7915115" />
+    <Item52 Ref="237" Component="#Ref-12" Culture="Default" Path="SizeF" Data="100,23" />
+    <Item53 Ref="238" Component="#Ref-12" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
+    <Item54 Ref="239" Component="#Ref-91" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item55 Ref="240" Component="#Ref-91" Culture="Default" Path="SizeF" Data="993.000061,25" />
+    <Item56 Ref="241" Component="#Ref-15" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item57 Ref="242" Component="#Ref-15" Culture="Default" Path="SizeF" Data="993,25" />
+    <Item58 Ref="243" Component="#Ref-93" Culture="Default" Path="Text" Data="Product Group" />
+    <Item59 Ref="244" Component="#Ref-93" Culture="Default" Path="Weight" Data="1.0329403750612591" />
+    <Item60 Ref="245" Component="#Ref-111" Culture="Default" Path="Text" Data="Profit / Losses" />
+    <Item61 Ref="246" Component="#Ref-111" Culture="Default" Path="Weight" Data="1.0765609521405239" />
+    <Item62 Ref="247" Component="#Ref-113" Culture="Default" Path="Text" Data="%" />
+    <Item63 Ref="248" Component="#Ref-113" Culture="Default" Path="Weight" Data="0.94195869684387368" />
+    <Item64 Ref="249" Component="#Ref-17" Culture="Default" Path="Text" Data="xrTableCell12" />
+    <Item65 Ref="250" Component="#Ref-17" Culture="Default" Path="Weight" Data="1.0549340793261073" />
+    <Item66 Ref="251" Component="#Ref-20" Culture="Default" Path="Text" Data="xrTableCell13" />
+    <Item67 Ref="252" Component="#Ref-20" Culture="Default" Path="Weight" Data="0.7855200670501864" />
+    <Item68 Ref="253" Component="#Ref-23" Culture="Default" Path="Text" Data="xrTableCell14" />
+    <Item69 Ref="254" Component="#Ref-23" Culture="Default" Path="Weight" Data="0.90604843597327234" />
+    <Item70 Ref="255" Component="#Ref-26" Culture="Default" Path="Text" Data="xrTableCell15" />
+    <Item71 Ref="256" Component="#Ref-26" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item72 Ref="257" Component="#Ref-26" Culture="Default" Path="Weight" Data="0.712614200554294" />
+    <Item73 Ref="258" Component="#Ref-29" Culture="Default" Path="Text" Data="xrTableCell16" />
+    <Item74 Ref="259" Component="#Ref-29" Culture="Default" Path="Weight" Data="0.85231719579227816" />
+    <Item75 Ref="260" Component="#Ref-32" Culture="Default" Path="Text" Data="xrTableCell17" />
+    <Item76 Ref="261" Component="#Ref-32" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item77 Ref="262" Component="#Ref-32" Culture="Default" Path="Weight" Data="1.1532147190754825" />
+    <Item78 Ref="263" Component="#Ref-35" Culture="Default" Path="Text" Data="xrTableCell18" />
+    <Item79 Ref="264" Component="#Ref-35" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item80 Ref="265" Component="#Ref-35" Culture="Default" Path="Weight" Data="0.90604999792035668" />
+    <Item81 Ref="266" Component="#Ref-38" Culture="Default" Path="Text" Data="xrTableCell19" />
+    <Item82 Ref="267" Component="#Ref-38" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item83 Ref="268" Component="#Ref-38" Culture="Default" Path="Weight" Data="0.906048123926769" />
+    <Item84 Ref="269" Component="#Ref-95" Culture="Default" Path="Text" Data="Product" />
+    <Item85 Ref="270" Component="#Ref-95" Culture="Default" Path="Weight" Data="0.76914328887917061" />
+    <Item86 Ref="271" Component="#Ref-41" Culture="Default" Path="Text" Data="xrTableCell20" />
+    <Item87 Ref="272" Component="#Ref-41" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item88 Ref="273" Component="#Ref-41" Culture="Default" Path="Weight" Data="0.90604812209936214" />
+    <Item89 Ref="274" Component="#Ref-44" Culture="Default" Path="Text" Data="xrTableCell21" />
+    <Item90 Ref="275" Component="#Ref-44" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item91 Ref="276" Component="#Ref-44" Culture="Default" Path="Weight" Data="1.0994839065484652" />
+    <Item92 Ref="277" Component="#Ref-47" Culture="Default" Path="Text" Data="xrTableCell22" />
+    <Item93 Ref="278" Component="#Ref-47" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item94 Ref="279" Component="#Ref-47" Culture="Default" Path="Weight" Data="0.9620143338913445" />
+    <Item95 Ref="280" Component="#Ref-97" Culture="Default" Path="Text" Data="Place" />
+    <Item96 Ref="281" Component="#Ref-97" Culture="Default" Path="Weight" Data="0.88715919494628914" />
+    <Item97 Ref="282" Component="#Ref-99" Culture="Default" Path="Text" Data="Qty" />
+    <Item98 Ref="283" Component="#Ref-99" Culture="Default" Path="Weight" Data="0.69775743775205445" />
+    <Item99 Ref="284" Component="#Ref-101" Culture="Default" Path="Text" Data="Unit" />
+    <Item100 Ref="285" Component="#Ref-101" Culture="Default" Path="Weight" Data="0.83454749296863873" />
+    <Item101 Ref="286" Component="#Ref-103" Culture="Default" Path="Text" Data="Total Cost" />
+    <Item102 Ref="287" Component="#Ref-103" Culture="Default" Path="Weight" Data="1.1291726541181744" />
+    <Item103 Ref="288" Component="#Ref-105" Culture="Default" Path="Text" Data="Unit Cost" />
+    <Item104 Ref="289" Component="#Ref-105" Culture="Default" Path="Weight" Data="0.88715919494628914" />
+    <Item105 Ref="290" Component="#Ref-107" Culture="Default" Path="Text" Data="Total Price" />
+    <Item106 Ref="291" Component="#Ref-107" Culture="Default" Path="Weight" Data="0.88715919494628914" />
+    <Item107 Ref="292" Component="#Ref-109" Culture="Default" Path="Text" Data="Unit Price" />
+    <Item108 Ref="293" Component="#Ref-109" Culture="Default" Path="Weight" Data="0.88715919494628914" />
+    <Item109 Ref="294" Component="#Ref-92" Culture="Default" Path="Weight" Data="1" />
+    <Item110 Ref="295" Component="#Ref-16" Culture="Default" Path="Weight" Data="1" />
+  </LocalizationItems>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="296" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />
+    <Item2 Ref="297" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item3 Ref="298" LayoutItemType="Parameter" Parameter="#Ref-6" />
+  </ParameterPanelLayoutItems>
+  <ComponentStorage>
+    <Item1 Ref="0" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

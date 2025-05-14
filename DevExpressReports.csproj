@@ -1,0 +1,439 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Reports\CashAndBank\**" />
+    <Compile Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
+    <Compile Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
+    <Compile Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
+    <Compile Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <Content Remove="Reports\CashAndBank\**" />
+    <Content Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
+    <Content Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
+    <Content Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
+    <Content Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <EmbeddedResource Remove="Reports\CashAndBank\**" />
+    <EmbeddedResource Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
+    <EmbeddedResource Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
+    <EmbeddedResource Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
+    <EmbeddedResource Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <None Remove="Reports\CashAndBank\**" />
+    <None Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
+    <None Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
+    <None Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
+    <None Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Reports\Farms\Layer\DataSets\dsLayerEggs.cs" />
+    <Compile Remove="Reports\Farms\Layer\DataSets\dsLayerEggs.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Reports\Farms\Layer\DataSets\dsLayerEggs.xsc" />
+    <None Remove="Reports\Farms\Layer\DataSets\dsLayerEggs.xsd" />
+    <None Remove="Reports\Farms\Layer\DataSets\dsLayerEggs.xss" />
+    <None Remove="Reports\Finance\DataSets\dsFinance.xpo" />
+    <None Remove="Reports\Finance\DataSets\dsFinance.xpo.diagram" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.AspNetCore.Common" Version="24.1.6" />
+    <PackageReference Include="DevExpress.AspNetCore.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Charts" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.CodeParser" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Data" Version="24.1.6" />
+    <PackageReference Include="DevExpress.DataAccess" Version="24.1.6" />
+    <PackageReference Include="DevExpress.DataVisualization.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Drawing" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Gauges.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Office.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Pdf.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.1.6" />
+    <PackageReference Include="DevExpress.Sparkline.Core" Version="24.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.8" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.11.0" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.8" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\Assets\FixedAssetsDeprSheet\" />
+    <Folder Include="Reports\Farms\Breeder\ProductionPeriod\DeplationAndBodyWeight\" />
+    <Folder Include="Reports\Farms\Breeder\ProductionPeriod\EggProduction\" />
+    <Folder Include="Reports\Farms\Breeder\ProductionPeriod\Performance\WeeklyAnalysisLayFlks\" />
+    <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\FlockSummary\" />
+    <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\WeeklyAnalysisRearFlks\" />
+    <Folder Include="Reports\Farms\Broiler\DeplationAndBodyWeight\WeeklyDeplAllFarmWise\" />
+    <Folder Include="Reports\Farms\Broiler\Miscellaneous\" />
+    <Folder Include="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_ProdAndIssueReport\" />
+    <Folder Include="Reports\Farms\Layer\Shared\" />
+    <Folder Include="Reports\FeedFormulation\Ingrdient\RationOrBatchResult\" />
+    <Folder Include="Reports\FeedMill\Feed\MaterialConumption\" />
+    <Folder Include="Reports\FeedMill\Ingredient\GoodReceivedNote\NewFolder\" />
+    <Folder Include="Reports\FeedMill\Ingredient\Summary\" />
+    <Folder Include="Reports\Finance\DetailedCosting\" />
+    <Folder Include="Reports\Finance\Farms\Breeder\Summary\" />
+    <Folder Include="Reports\Finance\Farms\SR_FC_FlkDirectCostBroilerSubPlace\" />
+    <Folder Include="Reports\Finance\FeedMill\" />
+    <Folder Include="Reports\Finance\Hatchery\" />
+    <Folder Include="Reports\Finance\SR_FC_Orders\" />
+    <Folder Include="Reports\FurtherProcessing\Summary\" />
+    <Folder Include="Reports\GeneralLedger\PaymentsAndReceiptsDate\" />
+    <Folder Include="Reports\GeneralLedger\PaymentsAndReceiptsDet\" />
+    <Folder Include="Reports\GPHatchery\Summary\" />
+    <Folder Include="Reports\GrandParent\Summary\WeeklyAnalysisLayFlks\" />
+    <Folder Include="Reports\GrandParent\Summary\WeeklyAnalysisRearFlks\" />
+    <Folder Include="Reports\Hatchery\IYA\" />
+    <Folder Include="Reports\Hatchery\Summary\SR_HT_DailyEggStockSum\" />
+    <Folder Include="Reports\Hatchery\Summary\SR_HT_WeeklyEggStockSum\" />
+    <Folder Include="Reports\Hatchery\Summary\SR_HT_HatchSummary\" />
+    <Folder Include="Reports\Hatchery\Summary\SR_HT_SoldChicks%28UnSexing%29\" />
+    <Folder Include="Reports\Inventories\Inventory\DriversMove\" />
+    <Folder Include="Reports\Inventories\Inventory\InternalTransfer\" />
+    <Folder Include="Reports\Inventories\Inventory\ItemCard\" />
+    <Folder Include="Reports\Inventories\Inventory\ItemLimit\" />
+    <Folder Include="Reports\Inventories\ItemLimit\" />
+    <Folder Include="Reports\Monitoring\SR_MO_UserActionsDet\" />
+    <Folder Include="Reports\Planning\ChicksInTake\" />
+    <Folder Include="Reports\Planning\FeedMill\Feed\Summary\" />
+    <Folder Include="Reports\Planning\FeedMill\Ingredient\Summary\" />
+    <Folder Include="Reports\Planning\FeedMill\OrdersNew\" />
+    <Folder Include="Reports\Planning\FeedMill\Products\" />
+    <Folder Include="Reports\Planning\Housing\" />
+    <Folder Include="Reports\Planning\ProcessingPlant\Catching\" />
+    <Folder Include="Reports\Planning\Production\" />
+    <Folder Include="Reports\Planning\Target\ChicksTarget\" />
+    <Folder Include="Reports\PoultryHealth\Breeder\" />
+    <Folder Include="Reports\PoultryHealth\Broiler\" />
+    <Folder Include="Reports\ProcessingPlant\Packing\" />
+    <Folder Include="Reports\ProcessingPlant\RecivingChickens\" />
+    <Folder Include="Reports\ProcessingPlant\Sales\" />
+    <Folder Include="Reports\ProcessingPlant\Shared\" />
+    <Folder Include="Reports\ProcessingPlant\Stock\" />
+    <Folder Include="Reports\ProcessingPlant\Summary\" />
+    <Folder Include="Reports\Purchase\SR_FC_FreightBill\" />
+    <Folder Include="Reports\Sales\SR_FC_SalesStatement\" />
+    <Folder Include="Reports\Shared\Notes\" />
+    <Folder Include="Reports\VetLab\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Reports\Assets\DataSets\dsAssets.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsAssets.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\CashAndBankManagement\SR_FC_ChequesIssuedIncoming\SR_FC_ChequesIssuedIncoming.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Breeder\DataSets\dsBreeder.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsBreeder.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Farms\Breeder\DataSets\dsLayer.Designer.cs">
+      <DependentUpon>dsLayer.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Farms\Breeder\ProductionPeriod\Performance\SR_BRD_DailyDataFlkWise\SR_BRD_DailyDataFlkWise.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Breeder\ProductionPeriod\Performance\SR_BRD_MainProdUnitData\SR_BRD_MainProdUnitData.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Breeder\RearingPeriod\DeplationAndBodyWeight\SR_FC_MonthlyDirectCostSubPlace\SR_FC_MonthlyDirectCostSubPlace.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Broiler\DataSets\dsBroiler.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsBroiler.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Farms\Broiler\DataSets\dsLayer.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsLayer.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Farms\Broiler\Performance\SR_BRO_BroilerProdReport\SR_BRO_BroilerProdReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Broiler\Performance\SR_BRO_DailyPostMortem\SR_BRO_DailyPostMortem.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\DataSets\dsLayer.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsLayer.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\Miscellaneous\ClosingProd_CL_13\SR_FC_RecDeliveryOrder.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\DeplationAndBodyWeight\FR_LAY_DailyDepl\FR_LAY_DailyDepl.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\DeplationAndBodyWeight\SR_LAY_FlockSummary\SR_LAY_FlockSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\FR_LAY_GradingAndPacking\FR_LAY_GradingAndPacking.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_DailyIssueReport\SR_LAY_DailyIssueReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\FR_LAY_ProdWeeklyDepl\FR_LAY_ProdWeeklyDepl.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_ProdAndIssueReport\SR_LAY_DailyDataHsWise.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\WeeklyProdEgWeightClassWise\WeeklyProdEgWeightClassWise.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\WeeklyProdEgWeight\WeeklyProdEgWeight.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_DailyDataHsWise\SR_LAY_DailyDataHsWise.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_LayingSummaryWeekWise\SR_LAY_LayingSummaryWeekWise.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_WeeklyLayFlocks\SR_LAY_WeeklyLayFlocks.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_WeeklyRearFlksRecord\SR_LAY_WeeklyRearFlksRecord.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_WeeklyRearing.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\RearingPeriod\DeplationAndBodyWeight\SR_LAY_RearingSummary\SR_LAY_RearingSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Farms\Layer\RearingPeriod\DeplationAndBodyWeight\SR_LAY_WeeklyRearing\SR_LAY_WeeklyRearing.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_FM_StockBalance\SR_FC_FM_StockBalance.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_CashReceipt\SR_FC_CashReceipt.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_SalesSheet_Place\SR_FC_SalesSheet_Place.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_ST_RecDeliveryOrder\SR_ST_RecDeliveryOrder.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_FM_StockMovementDet\SR_FC_FM_StockMovementDet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_FM_StockMovementDate\SR_FC_FM_StockMovementDate.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_FM_StockMovement\SR_FC_FM_StockMovement.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_ItemBalance\SR_FC_ItemBalance.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_CustSuppSheetDet - Copy\SR_FC_CustSuppSheetDet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_CustSuppSheetDet\SR_FC_CustSuppSheetDet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_CustSuppSheet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Accounts\SR_FC_CustSuppSheet\SR_FC_CustSuppSheet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\DataSets\dsFinance.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsFinance.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Finance\DataSets\dsGeneralLedger.Designer.cs">
+      <DependentUpon>dsGeneralLedger.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Breeder\Laying\FC_BRD_LayingFarmsSummary\FC_BRD_LayingFarmsSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Breeder\Rearing\FC_BRD_RearingFarmsSummary\FC_BRD_RearingFarmsSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Broiler\FC_BRO_FarmsSummary\FC_BRO_FarmsSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Broiler\SR_FC_FR_FeedRecCons\SR_FC_FR_FeedRecCons.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Broiler\SR_FC_PurchasesSheetDet\SR_FC_PurchasesSheetDet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Broiler\SR_FC_PurchasesSheet\SR_FC_PurchasesSheet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Broiler\SR_FC_FR_CloseBalance\SR_FC_FR_CloseBalance.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Layer\Laying\FC_LAY_LayingFarmsSummary\FC_LAY_LayingFarmsSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Layer\Laying\SR_LAY_EndFlockExpenses\SR_LAY_EndFlockExpenses.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Layer\Laying\SR_LAY_EndFlockExpenses_Rev\SR_LAY_EndFlockExpenses_Rev.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Layer\Rearing\FC_LAY_RearingFarmsSummary\FC_LAY_RearingFarmsSummary.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\Layer\SR_FC_FR_LAY_CloseBalance\SR_FC_FR_LAY_CloseBalance.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler\SR_FC_FlkDirectCostBroiler.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\SR_FC_FlkDirectCostLayer\SR_FC_FlkDirectCostLayer.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\SR_FC_MonthlyDirectCostSubPlaceOLD\SR_FC_MonthlyDirectCostSubPlace.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\Farms\SR_FC_MonthlyDirectCost\SR_FC_MonthlyDirectCost.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\FinalReports\SR_GL_BalanceSheet\SR_GL_BalanceSheet.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Finance\SR_FM_Stocktaking\SR_FM_Stocktaking.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\GeneralLedger\DataSets\dsGeneralLedger.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsGeneralLedger.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\GeneralLedger\SR_FC_LedgerMoveAndBal_JC\SR_FC_LedgerMoveAndBal_JC.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\GeneralLedger\SR_FC_LedgerMoveAndBal\SR_FC_LedgerMoveAndBal.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\GeneralLedger\SR_FC_GeneralTrialBalByCC\SR_FC_GeneralTrialBalByCC.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\GeneralLedger\SR_FC_GeneralTrialBal\SR_FC_GeneralTrialBal.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\GeneralLedger\SR_FC_JournalEntryAll\SR_FC_JournalEntryAll.cs" />
+    <Compile Update="Reports\GrandParent\DataSets\dsGrandParent.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsGrandParent.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Inventories\DataSets\dsFinance.Designer.cs">
+      <DependentUpon>dsFinance.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Reports\Inventories\DataSets\dsInventories.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsInventories.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\Purchase\SR_FC_PriceQuotation\SR_FC_PriceQuotation.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Purchase\SR_FC_DealingsAndAccountsOLD1\SR_FC_DealingsAndAccounts.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Purchase\SR_FC_DealingsAndAccounts_OLD\SR_FC_DealingsAndAccounts.cs" />
+    <Compile Update="Reports\Purchase\SR_FC_DealingsAndAccounts\SR_FC_DealingsAndAccounts.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Sales\SR_FC_SalesBills\SR_FC_SalesBills.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Shared\ReportFooter\SubReportFooterCustom.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Shared\ReportHeader\SubReportHeaderCustom.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Shared\ReportHeader\SubReportHeaderCustom1.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Reports\Shared\ReportHeader\SubReportHeaderCustomOLD1.cs" />
+    <Compile Update="Reports\Shared\ReportNotes\SubReportNotes.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Reports\Assets\DataSets\dsAssets.xsd">
+      <LastGenOutput>dsAssets.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Reports\Farms\Breeder\DataSets\dsBreeder.xsd">
+      <LastGenOutput>dsBreeder.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Reports\Farms\Broiler\DataSets\dsBroiler.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBroiler.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reports\Farms\Broiler\DataSets\dsLayer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLayer.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reports\Farms\Layer\DataSets\dsLayer.xsd">
+      <LastGenOutput>dsLayer.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Reports\Finance\DataSets\dsFinance.xsd">
+      <LastGenOutput>dsFinance.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Reports\GeneralLedger\DataSets\dsGeneralLedger.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGeneralLedger.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reports\GrandParent\DataSets\dsGrandParent.xsd">
+      <LastGenOutput>dsGrandParent.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="Reports\Inventories\DataSets\dsInventories.xsd">
+      <LastGenOutput>dsInventories.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

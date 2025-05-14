@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="24.1.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_EndFlockExpenses_Rev" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.1" DataMember="SR_BRD_EndFlockExpenses_Rev" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
+    <Item2 Ref="5" Visible="false" Name="FlockCode" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="6" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="7" ControlType="BottomMarginBand" Name="BottomMargin" SnapLinePadding="0,0,0,0,100" Padding="0,0,0,0,100" BorderWidth="0">
+      <StylePriority Ref="8" UsePadding="false" UseBorderWidth="false" />
+    </Item2>
+    <Item3 Ref="9" ControlType="DetailBand" Name="Detail" KeepTogether="true">
+      <Controls>
+        <Item1 Ref="10" ControlType="XRTable" Name="tDetail" AnchorHorizontal="Both" Borders="All">
+          <Rows>
+            <Item1 Ref="11" ControlType="XRTableRow" Name="trDetail">
+              <Cells>
+                <Item1 Ref="12" ControlType="XRTableCell" Name="tdDate" Multiline="true" TextAlignment="MiddleLeft" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="13" EventName="BeforePrint" PropertyName="Text" Expression="[Item]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="14" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="15" ControlType="XRTableCell" Name="tdDebit" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="16" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
+                    <Item2 Ref="17" EventName="BeforePrint" PropertyName="Text" Expression="[DataValue]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="18" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+              <ExpressionBindings>
+                <Item1 Ref="19" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([RegDate])" />
+              </ExpressionBindings>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="20" UseBorders="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+  </Bands>
+  <ExportOptions Ref="21">
+    <Pdf Ref="22">
+      <DocumentOptions Ref="23" Author="VetSoft" />
+    </Pdf>
+  </ExportOptions>
+  <StyleSheet>
+    <Item1 Ref="24" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />
+    <Item2 Ref="25" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="26" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="27" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="28" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;GenericDefault" />
+  </StyleSheet>
+  <LocalizationItems>
+    <Item1 Ref="29" Component="#Ref-7" Culture="Default" Path="HeightF" Data="0" />
+    <Item2 Ref="30" Component="#Ref-7" Culture="Default" Path="Visible" Data="false" />
+    <Item3 Ref="31" Component="#Ref-9" Culture="Default" Path="HeightF" Data="20" />
+    <Item4 Ref="32" Component="#Ref-5" Culture="Default" Path="Description" Data="FlockCode" />
+    <Item5 Ref="33" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
+    <Item6 Ref="34" Component="#Ref-3" Culture="ar" Path="Description" Data="عرض من اليمبن لليسار" />
+    <Item7 Ref="35" Component="#Ref-1" Culture="Default" Path="DisplayName" Data="SR_BRD_EndFlockExpenses_Rev" />
+    <Item8 Ref="36" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
+    <Item9 Ref="37" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item10 Ref="38" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 5, 0" />
+    <Item11 Ref="39" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
+    <Item12 Ref="40" Component="#Ref-12" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
+    <Item13 Ref="41" Component="#Ref-12" Culture="Default" Path="Weight" Data="0.639316787877685" />
+    <Item14 Ref="42" Component="#Ref-15" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
+    <Item15 Ref="43" Component="#Ref-15" Culture="Default" Path="TextFormatString" Data="{0:#,#.00}" />
+    <Item16 Ref="44" Component="#Ref-15" Culture="Default" Path="Weight" Data="1.0294200826135484" />
+    <Item17 Ref="45" Component="#Ref-10" Culture="Default" Path="LocationFloat" Data="1,0" />
+    <Item18 Ref="46" Component="#Ref-10" Culture="Default" Path="SizeF" Data="805.9999,20" />
+    <Item19 Ref="47" Component="#Ref-6" Culture="Default" Path="HeightF" Data="5" />
+    <Item20 Ref="48" Component="#Ref-11" Culture="Default" Path="Weight" Data="1" />
+  </LocalizationItems>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="49" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />
+    <Item2 Ref="50" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item3 Ref="51" LayoutItemType="Group" TitleVisible="false" BorderVisible="false" ShowExpandButton="true" />
+    <Item4 Ref="52" LayoutItemType="Group" TitleVisible="false" />
+  </ParameterPanelLayoutItems>
+  <ComponentStorage>
+    <Item1 Ref="53" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.1" Name="dsFinance" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNGaW5hbmNlIj48Q29ubmVjdGlvbiBOYW1lPSJkc0ZpbmFuY2UiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9CUkRfRW5kRmxvY2tFeHBlbnNlc19SZXYiPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlNSX0JSRF9FbmRGbG9ja0V4cGVuc2VzX1JldiIgWD0iMzAiIFk9IjMwIiBXaWR0aD0iMTI1IiBIZWlnaHQ9IjEwNCIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfRW5kRmxvY2tFeHBlbnNlc19SZXYiIE5hbWU9Ikl0ZW0iIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0VuZEZsb2NrRXhwZW5zZXNfUmV2IiBOYW1lPSJEYXRhVmFsdWUiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJkc0ZpbmFuY2UiPjxWaWV3IE5hbWU9IlNSX0JSRF9FbmRGbG9ja0V4cGVuc2VzX1JldiI+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+    <Item2 Ref="0" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>
