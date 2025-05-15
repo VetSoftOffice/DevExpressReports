@@ -172,7 +172,7 @@
           <Controls>
             <Item1 Ref="101" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="SR_FM_RationResult">
               <RowFields>
-                <Item1 Ref="102" FieldName="IngredientName" />
+                <Item1 Ref="102" SortOrder="None" FieldName="IngredientName" />
               </RowFields>
               <ColumnFields>
                 <Item1 Ref="103" FieldName="RationName" />
