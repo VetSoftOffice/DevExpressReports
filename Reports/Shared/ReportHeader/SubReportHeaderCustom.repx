@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="24.1.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.1, Version=24.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SubReportHeaderCustom" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5" Visible="false">
+  <Parameters>
+    <Item1 Ref="2" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-1" />
+    <Item2 Ref="3" Visible="false" Description="Hide report header" ValueInfo="False" Name="HideReportHeader" Type="#Ref-1" />
+    <Item3 Ref="4" Visible="false" Enabled="false" Description="IsCustomReportHeader" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-1" />
+    <Item4 Ref="6" Visible="false" Description="Logo path" Name="LogoPath" />
+    <Item5 Ref="7" Visible="false" Description="Font size" Name="FontSize" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="8" ControlType="DetailBand" Name="Detail" HeightF="0" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100" Visible="false" />
+    <Item2 Ref="9" ControlType="ReportHeaderBand" Name="ReportHeader" Expanded="false" HeightF="0" KeepTogether="true" TextAlignment="MiddleJustify" Padding="0,0,0,0,100">
+      <SubBands>
+        <Item1 Ref="10" ControlType="SubBand" Name="SubBand1" HeightF="71.80556">
+          <Controls>
+            <Item1 Ref="11" ControlType="XRPictureBox" Name="imgLogo1" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="353.1181,0">
+              <ExpressionBindings>
+                <Item1 Ref="12" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
+              </ExpressionBindings>
+            </Item1>
+          </Controls>
+        </Item1>
+        <Item2 Ref="13" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
+          <Controls>
+            <Item1 Ref="14" ControlType="XRLabel" Name="ReportPQP_ar1" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="15" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="16" ControlType="XRLabel" Name="ModuleName_ar1" RightToLeft="No" CanGrow="false" Text="ModuleName_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="17" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+            <Item3 Ref="18" ControlType="XRLabel" Name="ReportPQP_en1" RightToLeft="No" CanGrow="false" Text="ReportPQP_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="19" UseFont="false" UseTextAlignment="false" />
+            </Item3>
+            <Item4 Ref="20" ControlType="XRLabel" Name="CompanyName_en1" RightToLeft="No" CanGrow="false" Text="CompanyName_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="21" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+            </Item4>
+            <Item5 Ref="22" ControlType="XRLabel" Name="CompanyName_ar1" RightToLeft="No" CanGrow="false" Text="CompanyName_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="23" UseFont="false" UseTextAlignment="false" />
+            </Item5>
+            <Item6 Ref="24" ControlType="XRLabel" Name="ModuleName_en1" RightToLeft="No" CanGrow="false" Text="ModuleName_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="25" UseFont="false" UseTextAlignment="false" />
+            </Item6>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="26" EventName="BeforePrint" PropertyName="Visible" Expression="?HideReportHeader == False" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="27" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
+          <Controls>
+            <Item1 Ref="28" ControlType="XRLabel" Name="Header1_en1" RightToLeft="No" CanGrow="false" Text="Header1_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="29" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="30" ControlType="XRLabel" Name="Header1_ar1" RightToLeft="No" CanGrow="false" Text="Header1_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="31" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="32" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header1_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header1_ar].[Text])" />
+          </ExpressionBindings>
+        </Item3>
+        <Item4 Ref="33" ControlType="SubBand" Name="ReportHeaderSub" HeightF="20">
+          <Controls>
+            <Item1 Ref="34" ControlType="XRLabel" Name="Header2_en1" RightToLeft="No" CanGrow="false" Text="Header2_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="35" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="36" ControlType="XRLabel" Name="Header2_ar1" RightToLeft="No" Multiline="true" CanGrow="false" Text="Header2_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="37" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="38" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header2_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header2_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item4>
+        <Item5 Ref="39" ControlType="SubBand" Name="ReportHeaderSu4" HeightF="20">
+          <Controls>
+            <Item1 Ref="40" ControlType="XRLabel" Name="Header3_en1" RightToLeft="No" CanGrow="false" Text="Header3_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="41" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="42" ControlType="XRLabel" Name="Header3_ar1" RightToLeft="No" CanGrow="false" Text="Header3_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="43" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="44" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header3_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header3_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item5>
+        <Item6 Ref="45" ControlType="SubBand" Name="ReportHeaderSu5" HeightF="20">
+          <Controls>
+            <Item1 Ref="46" ControlType="XRLabel" Name="Header4_en1" RightToLeft="No" CanGrow="false" Text="Header4_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="47" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="48" ControlType="XRLabel" Name="Header4_ar1" RightToLeft="No" CanGrow="false" Text="Header4_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="49" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="50" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header4_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header4_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item6>
+        <Item7 Ref="51" ControlType="SubBand" Name="ReportHeaderSu6" HeightF="20">
+          <Controls>
+            <Item1 Ref="52" ControlType="XRLabel" Name="Header5_en1" RightToLeft="No" CanGrow="false" Text="Header5_en1" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="53" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="54" ControlType="XRLabel" Name="Header5_ar1" RightToLeft="No" CanGrow="false" Text="Header5_ar1" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="55" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="56" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header5_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header5_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item7>
+        <Item8 Ref="57" ControlType="SubBand" Name="ReportHeaderSub7" HeightF="20">
+          <Controls>
+            <Item1 Ref="58" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="59" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+          </Controls>
+        </Item8>
+      </SubBands>
+    </Item2>
+    <Item3 Ref="60" ControlType="TopMarginBand" Name="TopMargin" HeightF="0" />
+    <Item4 Ref="61" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="0" />
+    <Item5 Ref="62" ControlType="PageHeaderBand" Name="PageHeader" HeightF="0">
+      <SubBands>
+        <Item1 Ref="63" ControlType="SubBand" Name="SubBand2" PrintAcrossBands="true" HeightF="71.80556">
+          <Controls>
+            <Item1 Ref="64" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="353.1181,0">
+              <ExpressionBindings>
+                <Item1 Ref="65" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
+                <Item2 Ref="66" EventName="BeforePrint" PropertyName="ImageSource" Expression="?LogoPath" />
+              </ExpressionBindings>
+            </Item1>
+          </Controls>
+        </Item1>
+        <Item2 Ref="67" ControlType="SubBand" Name="SubBand3" HeightF="75">
+          <Controls>
+            <Item1 Ref="68" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="69" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="70" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="71" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+            <Item3 Ref="72" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="73" UseFont="false" UseTextAlignment="false" />
+            </Item3>
+            <Item4 Ref="74" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="75" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+            </Item4>
+            <Item5 Ref="76" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="77" UseFont="false" UseTextAlignment="false" />
+            </Item5>
+            <Item6 Ref="78" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+              <StylePriority Ref="79" UseFont="false" UseTextAlignment="false" />
+            </Item6>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="80" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header1_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header1_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="81" ControlType="SubBand" Name="SubBand4" HeightF="20">
+          <Controls>
+            <Item1 Ref="82" ControlType="XRLabel" Name="Header1_ar" RightToLeft="No" CanGrow="false" Text="Header1_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="83" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="84" ControlType="XRLabel" Name="Header1_en" RightToLeft="No" CanGrow="false" Text="Header1_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="85" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+        </Item3>
+        <Item4 Ref="86" ControlType="SubBand" Name="SubBand5" HeightF="20">
+          <Controls>
+            <Item1 Ref="87" ControlType="XRLabel" Name="Header2_ar" RightToLeft="No" Multiline="true" CanGrow="false" Text="Header2_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="88" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="89" ControlType="XRLabel" Name="Header2_en" RightToLeft="No" CanGrow="false" Text="Header2_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="90" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="91" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header2_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header2_ar1].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item4>
+        <Item5 Ref="92" ControlType="SubBand" Name="SubBand6" HeightF="20">
+          <Controls>
+            <Item1 Ref="93" ControlType="XRLabel" Name="Header3_ar" RightToLeft="No" CanGrow="false" Text="Header3_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="94" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="95" ControlType="XRLabel" Name="Header3_en" RightToLeft="No" CanGrow="false" Text="Header3_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="96" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="97" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header3_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header3_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item5>
+        <Item6 Ref="98" ControlType="SubBand" Name="SubBand7" HeightF="20">
+          <Controls>
+            <Item1 Ref="99" ControlType="XRLabel" Name="Header4_en" RightToLeft="No" CanGrow="false" Text="Header4_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="100" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="101" ControlType="XRLabel" Name="Header4_ar" RightToLeft="No" CanGrow="false" Text="Header4_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="102" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="103" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header4_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header_4ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item6>
+        <Item7 Ref="104" ControlType="SubBand" Name="SubBand8" HeightF="20">
+          <Controls>
+            <Item1 Ref="105" ControlType="XRLabel" Name="Header5_en" RightToLeft="No" CanGrow="false" Text="Header5_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="106" UseFont="false" UseTextAlignment="false" />
+            </Item1>
+            <Item2 Ref="107" ControlType="XRLabel" Name="Header5_ar" RightToLeft="No" CanGrow="false" Text="Header5_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0" Font="Tahoma, 11pt" Padding="2,2,0,0,100">
+              <StylePriority Ref="108" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+          <ExpressionBindings>
+            <Item1 Ref="109" EventName="BeforePrint" PropertyName="Visible" Expression="! IsNullOrEmpty([ReportItems.Header5_en].[Text]) Or !IsNullOrEmpty([ReportItems.Header5_ar].[Text])&#xA;" />
+          </ExpressionBindings>
+        </Item7>
+      </SubBands>
+    </Item5>
+  </Bands>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="110" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-2" />
+    <Item2 Ref="111" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />
+    <Item3 Ref="112" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item4 Ref="113" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-6" />
+    <Item5 Ref="114" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-7" />
+  </ParameterPanelLayoutItems>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="1" Content="System.Boolean" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>
