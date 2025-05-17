@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="RationResNut_Sub" ScriptsSource="&#xD;&#xA;private void xrTableCell3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    if (cell != null)&#xD;&#xA;    {&#xD;&#xA;        // Retrieve the IsShowDM parameter value&#xD;&#xA;        bool isShowDM = Convert.ToBoolean(Parameters[&quot;IsShowDM&quot;].Value);&#xD;&#xA;&#xD;&#xA;        // Hide the cell if IsShowDM is false&#xD;&#xA;        cell.Visible = isShowDM;&#xD;&#xA;&#xD;&#xA;        // Ensure table layout remains intact&#xD;&#xA;        XRTableRow row = cell.Parent as XRTableRow;&#xD;&#xA;        if (row != null)&#xD;&#xA;        {&#xD;&#xA;            XRTable table = row.Parent as XRTable;&#xD;&#xA;            if (table != null)&#xD;&#xA;            {&#xD;&#xA;                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    if (cell != null)&#xD;&#xA;    {&#xD;&#xA;        // Retrieve the IsShowDM parameter value&#xD;&#xA;        bool isShowDM = Convert.ToBoolean(Parameters[&quot;IsShowDM&quot;].Value);&#xD;&#xA;&#xD;&#xA;        // Hide the cell if IsShowDM is false&#xD;&#xA;        cell.Visible = isShowDM;&#xD;&#xA;&#xD;&#xA;        // Ensure table layout remains intact&#xD;&#xA;        XRTableRow row = cell.Parent as XRTableRow;&#xD;&#xA;        if (row != null)&#xD;&#xA;        {&#xD;&#xA;            XRTable table = row.Parent as XRTable;&#xD;&#xA;            if (table != null)&#xD;&#xA;            {&#xD;&#xA;                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;if (cell != null)&#xD;&#xA;{&#xD;&#xA;    // Retrieve the IsShowDifference parameter value&#xD;&#xA;    bool isShowDifference = Convert.ToBoolean(Parameters[&quot;IsShowDifference&quot;].Value);&#xD;&#xA;&#xD;&#xA;    // Hide the cell if IsShowDifference is false&#xD;&#xA;    cell.Visible = isShowDifference;&#xD;&#xA;&#xD;&#xA;    // Ensure table layout remains intact&#xD;&#xA;    XRTableRow row = cell.Parent as XRTableRow;&#xD;&#xA;    if (row != null)&#xD;&#xA;    {&#xD;&#xA;        XRTable table = row.Parent as XRTable;&#xD;&#xA;        if (table != null)&#xD;&#xA;        {&#xD;&#xA;            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;if (cell != null)&#xD;&#xA;{&#xD;&#xA;    // Retrieve the IsShowDifference parameter value&#xD;&#xA;    bool isShowDifference = Convert.ToBoolean(Parameters[&quot;IsShowDifference&quot;].Value);&#xD;&#xA;&#xD;&#xA;    // Hide the cell if IsShowDifference is false&#xD;&#xA;    cell.Visible = isShowDifference;&#xD;&#xA;&#xD;&#xA;    // Ensure table layout remains intact&#xD;&#xA;    XRTableRow row = cell.Parent as XRTableRow;&#xD;&#xA;    if (row != null)&#xD;&#xA;    {&#xD;&#xA;        XRTable table = row.Parent as XRTable;&#xD;&#xA;        if (table != null)&#xD;&#xA;        {&#xD;&#xA;            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;if (cell != null)&#xD;&#xA;{&#xD;&#xA;    // Retrieve the IsShowDifference parameter value&#xD;&#xA;    bool isShowDifference = Convert.ToBoolean(Parameters[&quot;IsShowDifference&quot;].Value);&#xD;&#xA;&#xD;&#xA;    // Hide the cell if IsShowDifference is false&#xD;&#xA;    cell.Visible = isShowDifference;&#xD;&#xA;&#xD;&#xA;    // Ensure table layout remains intact&#xD;&#xA;    XRTableRow row = cell.Parent as XRTableRow;&#xD;&#xA;    if (row != null)&#xD;&#xA;    {&#xD;&#xA;        XRTable table = row.Parent as XRTable;&#xD;&#xA;        if (table != null)&#xD;&#xA;        {&#xD;&#xA;            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;if (cell != null)&#xD;&#xA;{&#xD;&#xA;    // Retrieve the IsShowDifference parameter value&#xD;&#xA;    bool isShowDifference = Convert.ToBoolean(Parameters[&quot;IsShowDifference&quot;].Value);&#xD;&#xA;&#xD;&#xA;    // Hide the cell if IsShowDifference is false&#xD;&#xA;    cell.Visible = isShowDifference;&#xD;&#xA;&#xD;&#xA;    // Ensure table layout remains intact&#xD;&#xA;    XRTableRow row = cell.Parent as XRTableRow;&#xD;&#xA;    if (row != null)&#xD;&#xA;    {&#xD;&#xA;        XRTable table = row.Parent as XRTable;&#xD;&#xA;        if (table != null)&#xD;&#xA;        {&#xD;&#xA;            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Margins="0, 0, 20, 24.04173" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" DataMember="SR_FM_RationResult_Nut" DataSource="#Ref-0" Font="Tahoma, 8pt, style=Bold">
+  <Parameters>
+    <Item1 Ref="3" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
+    <Item2 Ref="4" Visible="false" Description="IsBais" ValueInfo="False" Name="IsBais" Type="#Ref-2" />
+    <Item3 Ref="5" Visible="false" Description="IsShowDifference" ValueInfo="False" Name="IsShowDifference" Type="#Ref-2" />
+    <Item4 Ref="6" Visible="false" Description="IsShowDM" ValueInfo="False" Name="IsShowDM" Type="#Ref-2" />
+    <Item5 Ref="7" Visible="false" Description="IsShowCost" ValueInfo="False" Name="IsShowCost" Type="#Ref-2" />
+    <Item6 Ref="8" Visible="false" Description="ShowSignature" ValueInfo="False" Name="ShowSignature" Type="#Ref-2" />
+    <Item7 Ref="9" Visible="false" Description="ShowSignatureAllPages" ValueInfo="False" Name="ShowSignatureAllPages" Type="#Ref-2" />
+    <Item8 Ref="11" Visible="false" Description="From" Name="DateFrom" />
+    <Item9 Ref="12" Visible="false" Description="To" Name="DateTo" />
+    <Item10 Ref="13" Visible="false" Description="FeedMillcode" Name="FeedMillCode" />
+  </Parameters>
+  <CalculatedFields>
+    <Item1 Ref="14" Name="TotalCost" Expression="[CostPerTon] * [ActualQty]" DataMember="SR_FC_SalesSheet" />
+    <Item2 Ref="15" Name="TotalProfit" Expression="[TotalPrice] - [TotalCost]" DataMember="SR_FC_SalesSheet" />
+    <Item3 Ref="16" Name="Message" Expression="Iif([R_FM_IngredientRec_Remarks.Qty] &lt;&gt; 0, &#xA;   '(' + [SR_FM_IngredientRec_Remarks.IngredientName_en] + ' - ' + &#xA;    FormatString([SR_FM_IngredientRec_Remarks.Qty] / 1000, 'F3') + ' Tons) ', ''&#xA;   &#xA;)&#xA;" DataMember="SR_FM_IngReceiving" />
+    <Item4 Ref="17" Name="UnitCost_CF" Expression="ToDecimal([TotalCost] / [TotalQtn])" DataMember="SR_FM_RationResult_Nut" />
+    <Item5 Ref="18" Name="QtyValue1" Expression="Iif(?IsBais, [Quantity], [Quantity_DM])" DataMember="SR_FM_RationResult_Nut" />
+    <Item6 Ref="19" Name="QtyValue2" Expression="Iif([IsBais] = 'true', [Quantity], [Quantity_DM])" DataMember="SR_FM_RationResult_Nut" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="20" ControlType="TopMarginBand" Name="TopMargin" HeightF="20" />
+    <Item2 Ref="21" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="24.04173">
+      <Controls>
+        <Item1 Ref="22" ControlType="XRPageInfo" Name="pageInfoPageNoOfTotal" TextFormatString="Page {0} of {1}" TextAlignment="MiddleRight" SizeF="240.8297,20" LocationFloat="915.1703,0" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="23" ControlType="DetailBand" Name="Detail" HeightF="25">
+      <Controls>
+        <Item1 Ref="24" ControlType="XRTable" Name="xrTable3" SizeF="827,25" LocationFloat="0,0" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="25" ControlType="XRTableRow" Name="xrTableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="26" ControlType="XRTableCell" Name="xrTableCell7" Weight="2.8145829689771582" Multiline="true" Text="xrTableCell7" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="27" EventName="BeforePrint" PropertyName="Text" Expression="[NutrientName]" />
+                    <Item2 Ref="28" EventName="BeforePrint" PropertyName="AccessibleDescription" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="29" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="30" ControlType="XRTableCell" Name="xrTableCell8" Weight="2.6687476253598996" TextFormatString="{0:N2}" Multiline="true" Text="xrTableCell8" TextAlignment="MiddleRight" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
+                    <Item2 Ref="32" EventName="BeforePrint" PropertyName="Text" Expression="[Quantity]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="33" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="34" ControlType="XRTableCell" Name="xrTableCell4" Weight="2.7866675842652131" Multiline="true" Text="xrTableCell4" TextAlignment="MiddleRight" BorderColor="255,75,75,75" Borders="All">
+                  <ExpressionBindings>
+                    <Item1 Ref="35" EventName="BeforePrint" PropertyName="Text" Expression="[Unit]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="36" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="37" ControlType="PageHeaderBand" Name="PageHeader" HeightF="1.041667">
+      <SubBands>
+        <Item1 Ref="38" ControlType="SubBand" Name="SubBand3" HeightF="0" />
+        <Item2 Ref="39" ControlType="SubBand" Name="SubBand4" HeightF="25">
+          <Controls>
+            <Item1 Ref="40" ControlType="XRTable" Name="xrTable1" SizeF="827,25" LocationFloat="0,0" Padding="2,2,0,0,96">
+              <Rows>
+                <Item1 Ref="41" ControlType="XRTableRow" Name="xrTableRow1" Weight="1">
+                  <Cells>
+                    <Item1 Ref="42" ControlType="XRTableCell" Name="xrTableCell1" Weight="2.7237909320268106" Multiline="true" Text="Nutrient" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="43" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="44" ControlType="XRTableCell" Name="xrTableCell2" Weight="2.5826598212527863" Multiline="true" Text="Value" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="45" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item2>
+                    <Item3 Ref="46" ControlType="XRTableCell" Name="xrTableCell3" Weight="2.6967755869599364" Multiline="true" Text="Unit" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" Borders="All">
+                      <StylePriority Ref="47" UseBackColor="false" UseBorderColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item3>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item2>
+      </SubBands>
+    </Item4>
+    <Item5 Ref="48" ControlType="PageFooterBand" Name="PageFooter" HeightF="0" />
+  </Bands>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="49" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />
+    <Item2 Ref="50" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item3 Ref="51" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item4 Ref="52" LayoutItemType="Parameter" Parameter="#Ref-6" />
+    <Item5 Ref="53" LayoutItemType="Parameter" Parameter="#Ref-7" />
+    <Item6 Ref="54" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-8" />
+    <Item7 Ref="55" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-9" />
+    <Item8 Ref="56" LayoutItemType="Parameter" Parameter="#Ref-11" />
+    <Item9 Ref="57" LayoutItemType="Parameter" Parameter="#Ref-12" />
+    <Item10 Ref="58" LayoutItemType="Parameter" Parameter="#Ref-13" />
+  </ParameterPanelLayoutItems>
+  <ComponentStorage>
+    <Item1 Ref="0" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

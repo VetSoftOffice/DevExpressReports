@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="IngredientRec_Remarks" Margins="100, 0, 10.41667, 9.375" PageWidth="850" PageHeight="1100" Version="24.2" DataMember="SR_FM_IngredientRec_Remarks" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <CalculatedFields>
+    <Item1 Ref="2" Name="Message" Expression="Iif([R_FM_IngredientRec_Remarks.Qty] &lt;&gt; 0, &#xA;   '(' + [SR_FM_IngredientRec_Remarks.IngredientName_en] + ' - ' + &#xA;    FormatString([SR_FM_IngredientRec_Remarks.Qty] / 1000, 'F3') + ' Tons) ' + [SR_FM_IngredientRec_Remarks.Note], ''&#xA;   &#xA;)" DataMember="SR_FM_IngredientRec_Remarks" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="3" ControlType="TopMarginBand" Name="TopMargin" HeightF="10.41667" />
+    <Item2 Ref="4" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="9.375" />
+    <Item3 Ref="5" ControlType="DetailBand" Name="Detail" HeightF="23" TextAlignment="MiddleCenter">
+      <Controls>
+        <Item1 Ref="6" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Text="xrLabel1" SizeF="100,23" LocationFloat="250,0" Padding="2,2,0,0,96" />
+      </Controls>
+      <StylePriority Ref="7" UseTextAlignment="false" />
+    </Item3>
+    <Item4 Ref="8" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="0">
+      <SubBands>
+        <Item1 Ref="9" ControlType="SubBand" Name="SubBand1" HeightF="1.04166663" />
+      </SubBands>
+    </Item4>
+    <Item5 Ref="10" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="0">
+      <SubBands>
+        <Item1 Ref="11" ControlType="SubBand" Name="SubBand2" HeightF="0" />
+      </SubBands>
+    </Item5>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
