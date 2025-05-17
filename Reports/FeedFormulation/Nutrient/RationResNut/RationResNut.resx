@@ -263,6 +263,150 @@ if (cell != null)
 }
 
 }
+
+private void xrTableCell1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    if (cell != null)
+    {
+        // Retrieve the IsShowDM parameter value
+        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+
+        // Hide the cell if IsShowDM is false
+        cell.Visible = !isShowDM;
+
+        // Ensure table layout remains intact
+        XRTableRow row = cell.Parent as XRTableRow;
+        if (row != null)
+        {
+            XRTable table = row.Parent as XRTable;
+            if (table != null)
+            {
+                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
+            }
+        }
+    }
+
+}
+
+private void xrTableCell7_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    if (cell != null)
+    {
+        // Retrieve the IsShowDM parameter value
+        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+
+        // Hide the cell if IsShowDM is false
+        cell.Visible = !isShowDM;
+
+        // Ensure table layout remains intact
+        XRTableRow row = cell.Parent as XRTableRow;
+        if (row != null)
+        {
+            XRTable table = row.Parent as XRTable;
+            if (table != null)
+            {
+                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
+            }
+        }
+    }
+
+}
+
+private void xrTableCell2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    if (cell != null)
+    {
+        // Retrieve the IsShowDM parameter value
+        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+
+        // Hide the cell if IsShowDM is false
+        cell.Visible = !isShowDM;
+
+        // Ensure table layout remains intact
+        XRTableRow row = cell.Parent as XRTableRow;
+        if (row != null)
+        {
+            XRTable table = row.Parent as XRTable;
+            if (table != null)
+            {
+                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
+            }
+        }
+    }
+
+}
+
+private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    if (cell != null)
+    {
+        // Retrieve the IsShowDM parameter value
+        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+
+        // Hide the cell if IsShowDM is false
+        cell.Visible = !isShowDM;
+
+        // Ensure table layout remains intact
+        XRTableRow row = cell.Parent as XRTableRow;
+        if (row != null)
+        {
+            XRTable table = row.Parent as XRTable;
+            if (table != null)
+            {
+                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
+            }
+        }
+    }
+
+}
+
+private void xrTableCell3_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    if (cell != null)
+    {
+        // Retrieve the IsShowDM parameter value
+        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+
+        // Hide the cell if IsShowDM is false
+        cell.Visible = !isShowDM;
+
+        // Ensure table layout remains intact
+        XRTableRow row = cell.Parent as XRTableRow;
+        if (row != null)
+        {
+            XRTable table = row.Parent as XRTable;
+            if (table != null)
+            {
+                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
+            }
+        }
+    }
+
+}
+
+private void xrTableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    if (cell != null)
+    {
+        // Retrieve the IsShowDM parameter value
+        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+
+        // Hide the cell if IsShowDM is false
+        cell.Visible = !isShowDM;
+
+        // Ensure table layout remains intact
+        XRTableRow row = cell.Parent as XRTableRow;
+        if (row != null)
+        {
+            XRTable table = row.Parent as XRTable;
+            if (table != null)
+            {
+                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
+            }
+        }
+    }
+
+}
 </value>
   </data>
 </root>
