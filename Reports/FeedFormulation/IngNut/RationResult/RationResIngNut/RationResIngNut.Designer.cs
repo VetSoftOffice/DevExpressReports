@@ -40,7 +40,7 @@
             this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
             this.pageHeaderBand1 = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.subBand5 = new DevExpress.XtraReports.UI.SubBand();
-            this.xrSubreprt1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.subBand10 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel26 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
@@ -60,9 +60,9 @@
             this.subBand15 = new DevExpress.XtraReports.UI.SubBand();
             this.xrChart2 = new DevExpress.XtraReports.UI.XRChart();
             this.subBand16 = new DevExpress.XtraReports.UI.SubBand();
-            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.subBand17 = new DevExpress.XtraReports.UI.SubBand();
-            this.xrSubreport3 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.pageFooterBand1 = new DevExpress.XtraReports.UI.PageFooterBand();
             this.calculatedField1 = new DevExpress.XtraReports.UI.CalculatedField();
             this.calculatedField2 = new DevExpress.XtraReports.UI.CalculatedField();
@@ -142,13 +142,13 @@
             // subBand5
             // 
             this.subBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrSubreprt1});
+            this.srReportHeader});
             this.subBand5.Name = "subBand5";
             // 
-            // xrSubreprt1
+            // srReportHeader
             // 
-            this.xrSubreprt1.Name = "xrSubreprt1";
-            this.xrSubreprt1.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
+            this.srReportHeader.Name = "srReportHeader";
+            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
             // subBand10
             // 
@@ -282,6 +282,7 @@
             this.xrChart2});
             this.subBand15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsShowChart_1")});
+            this.subBand15.KeepTogether = true;
             this.subBand15.Name = "subBand15";
             // 
             // xrChart2
@@ -304,27 +305,28 @@
             // subBand16
             // 
             this.subBand16.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrSubreport1});
+            this.srReportNotes});
             this.subBand16.Name = "subBand16";
             // 
-            // xrSubreport1
+            // srReportNotes
             // 
-            this.xrSubreport1.Name = "xrSubreport1";
+            this.srReportNotes.Name = "srReportNotes";
+            this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
             // 
             // subBand17
             // 
             this.subBand17.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrSubreport3});
+            this.srReportSignature});
             this.subBand17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == False\n")});
             this.subBand17.Name = "subBand17";
             this.subBand17.StylePriority.UseTextAlignment = false;
             this.subBand17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrSubreport3
+            // srReportSignature
             // 
-            this.xrSubreport3.Name = "xrSubreport3";
-            this.xrSubreport3.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            this.srReportSignature.Name = "srReportSignature";
+            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
             // pageFooterBand1
             // 
@@ -469,7 +471,6 @@
             this.dsFinance2});
             this.DataMember = "SR_FM_RationResult";
             this.DataSource = this.dsFinance2;
-            this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.bottomMarginBand1, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.detailBand1, "Default", "HeightF", 0F),
@@ -490,22 +491,28 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResIng, "Default", "SizeF", new System.Drawing.SizeF(712.9166F, 34.46F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResNut, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(533.3117F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResNut, "Default", "SizeF", new System.Drawing.SizeF(529.3783F, 34.45834F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.reportFooterBand1, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(7.947286E-06F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(1149F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(1149F, 24.58324F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1149F, 22.16655F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand10, "Default", "HeightF", 64.37668F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand11, "Default", "HeightF", 34.46F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand12, "Default", "HeightF", 21.66665F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand13, "Default", "HeightF", 21.45669F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand15, "Default", "HeightF", 213.3251F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand16, "Default", "HeightF", 34.58328F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand17, "Default", "HeightF", 32.16659F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand5, "Default", "HeightF", 59.57688F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand13, "Default", "HeightF", 22.62169F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand15, "Default", "HeightF", 322.3251F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand16, "Default", "HeightF", 24.58324F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand17, "Default", "HeightF", 22.16655F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand5, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.topMarginBand1, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(122.9167F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.0001271566F, 68.04167F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "Series.0.Label.TextPattern", "{A}      {V:C2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "SizeF", new System.Drawing.SizeF(939.7733F, 213.3251F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "SizeF", new System.Drawing.SizeF(1139F, 254.2834F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(262.5001F, 42.91833F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "SizeF", new System.Drawing.SizeF(204.77F, 21.45834F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "Text", "K.G As-Fed "),
@@ -546,14 +553,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo3, "Default", "SizeF", new System.Drawing.SizeF(437.9382F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo3, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.589457E-05F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo5, "Default", "SizeF", new System.Drawing.SizeF(194F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreport1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(106.2917F, 0.333341F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreport1, "Default", "SizeF", new System.Drawing.SizeF(806.9998F, 34.24993F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreport3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreport3, "Default", "SizeF", new System.Drawing.SizeF(1149F, 32.16659F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreprt1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(424.5663F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreprt1, "Default", "SizeF", new System.Drawing.SizeF(100F, 23F))});
-            this.PageHeight = 827;
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo5, "Default", "SizeF", new System.Drawing.SizeF(194F, 23F))});
+            this.PageHeight = 1654;
             this.PageWidth = 1169;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter1, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -599,15 +600,12 @@
         private DevExpress.XtraReports.UI.XRPageInfo pageInfoCurrentDate;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
-        private DevExpress.XtraReports.UI.XRSubreport srReportHeader;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
         private DevExpress.XtraReports.UI.SubBand SubBand7;
         private DevExpress.XtraReports.UI.XRChart xrChart1;
         private DevExpress.XtraReports.UI.SubBand SubBand8;
-        private DevExpress.XtraReports.UI.XRSubreport srReportNotes;
         private DevExpress.XtraReports.UI.SubBand SubBand9;
-        private DevExpress.XtraReports.UI.XRSubreport srReportSignature;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.CalculatedField TotalCost;
         private DevExpress.XtraReports.UI.CalculatedField TotalProfit;
@@ -661,7 +659,7 @@
         private DevExpress.XtraReports.UI.SubBand subBand15;
         private DevExpress.XtraReports.UI.SubBand subBand16;
         private DevExpress.XtraReports.UI.SubBand subBand17;
-        private DevExpress.XtraReports.UI.XRSubreport xrSubreport3;
+        private DevExpress.XtraReports.UI.XRSubreport srReportSignature;
         private DevExpress.XtraReports.UI.PageFooterBand pageFooterBand1;
         private DevExpress.XtraReports.UI.CalculatedField calculatedField1;
         private DevExpress.XtraReports.UI.CalculatedField calculatedField2;
@@ -689,7 +687,7 @@
         private DevExpress.XtraReports.UI.SubBand subBand13;
         private DevExpress.XtraReports.UI.XRChart xrChart2;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
-        private DevExpress.XtraReports.UI.XRSubreport xrSubreprt1;
-        private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
+        private DevExpress.XtraReports.UI.XRSubreport srReportHeader;
+        private DevExpress.XtraReports.UI.XRSubreport srReportNotes;
     }
 }
