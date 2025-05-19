@@ -29,7 +29,7 @@
         <Item1 Ref="24" ControlType="XRPageInfo" Name="xrPageInfo4" TextAlignment="MiddleRight" Padding="2,2,0,0,100">
           <StylePriority Ref="25" UseTextAlignment="false" />
         </Item1>
-        <Item2 Ref="26" ControlType="XRPageInfo" Name="xrPageInfo2" TextAlignment="MiddleRight" Padding="2,2,0,0,100">
+        <Item2 Ref="26" ControlType="XRPageInfo" Name="xrPageInfo2" AnchorVertical="Both" AnchorHorizontal="Both" TextAlignment="MiddleRight" Padding="2,2,0,0,100" Borders="None">
           <StylePriority Ref="27" UseTextAlignment="false" />
         </Item2>
         <Item3 Ref="28" ControlType="XRPageInfo" Name="xrPageInfo3" PageInfo="DateTime" TextAlignment="MiddleCenter" Padding="2,2,0,0,100">
@@ -763,7 +763,7 @@
     <Item32 Ref="475" Component="#Ref-94" Culture="Default" Path="HeightF" Data="34.46" />
     <Item33 Ref="476" Component="#Ref-83" Culture="Default" Path="HeightF" Data="21.66665" />
     <Item34 Ref="477" Component="#Ref-91" Culture="Default" Path="HeightF" Data="21.45669" />
-    <Item35 Ref="478" Component="#Ref-430" Culture="Default" Path="HeightF" Data="23.7567272" />
+    <Item35 Ref="478" Component="#Ref-430" Culture="Default" Path="HeightF" Data="23.75673" />
     <Item36 Ref="479" Component="#Ref-340" Culture="Default" Path="HeightF" Data="0.6666501" />
     <Item37 Ref="480" Component="#Ref-342" Culture="Default" Path="HeightF" Data="24.58324" />
     <Item38 Ref="481" Component="#Ref-398" Culture="Default" Path="HeightF" Data="22.16655" />
@@ -792,7 +792,7 @@
     <Item61 Ref="504" Component="#Ref-81" Culture="Default" Path="Text" Data="RationName: [RationName]" />
     <Item62 Ref="505" Component="#Ref-81" Culture="ar" Path="Text" Data="التركيبة: [RationName]" />
     <Item63 Ref="506" Component="#Ref-431" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
-    <Item64 Ref="507" Component="#Ref-431" Culture="Default" Path="SizeF" Data="807.000244,23" />
+    <Item64 Ref="507" Component="#Ref-431" Culture="Default" Path="SizeF" Data="807.0002,23" />
     <Item65 Ref="508" Component="#Ref-431" Culture="Default" Path="Text" Data="xrLabel16" />
     <Item66 Ref="509" Component="#Ref-68" Culture="Default" Path="LocationFloat" Data="580.625,42.9183" />
     <Item67 Ref="510" Component="#Ref-68" Culture="Default" Path="SizeF" Data="226.3751,21.45834" />
@@ -809,7 +809,7 @@
     <Item78 Ref="521" Component="#Ref-84" Culture="Default" Path="Text" Data="Kgs (DM): " />
     <Item79 Ref="522" Component="#Ref-84" Culture="ar" Path="Text" Data="المادة الجافة (كجم): " />
     <Item80 Ref="523" Component="#Ref-26" Culture="Default" Path="LocationFloat" Data="940.6666,0" />
-    <Item81 Ref="524" Component="#Ref-26" Culture="Default" Path="SizeF" Data="208.3333,23" />
+    <Item81 Ref="524" Component="#Ref-26" Culture="Default" Path="SizeF" Data="2,23" />
     <Item82 Ref="525" Component="#Ref-26" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item83 Ref="526" Component="#Ref-28" Culture="Default" Path="LocationFloat" Data="250.6033,0" />
     <Item84 Ref="527" Component="#Ref-28" Culture="Default" Path="SizeF" Data="343.7546,23" />
@@ -817,8 +817,8 @@
     <Item86 Ref="529" Component="#Ref-24" Culture="Default" Path="LocationFloat" Data="664.7083,0" />
     <Item87 Ref="530" Component="#Ref-24" Culture="Default" Path="SizeF" Data="142.2919,23" />
     <Item88 Ref="531" Component="#Ref-24" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
-    <Item89 Ref="532" Component="#Ref-30" Culture="Default" Path="LocationFloat" Data="1.589457E-05,0" />
-    <Item90 Ref="533" Component="#Ref-30" Culture="Default" Path="SizeF" Data="151.2329,23" />
+    <Item89 Ref="532" Component="#Ref-30" Culture="Default" Path="LocationFloat" Data="1.58945713E-05,0" />
+    <Item90 Ref="533" Component="#Ref-30" Culture="Default" Path="SizeF" Data="170.75,23" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
     <Item1 Ref="534" LayoutItemType="Parameter" Parameter="#Ref-3" />
