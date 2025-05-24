@@ -375,6 +375,22 @@ private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 }
+
+private void xrPageInfo2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRPageInfo pageInfo = sender as XRPageInfo;
+    if ((bool)Parameters["IsRTL"].Value)
+    {
+        pageInfo.TextFormatString = "الصفحة {0} من {1}";
+        pageInfo.RightToLeft = RightToLeft.Yes;
+        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+    else
+    {
+        pageInfo.TextFormatString = "Page {0} of {1}";
+        pageInfo.RightToLeft = RightToLeft.No;
+        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+}
 </value>
   </data>
 </root>
