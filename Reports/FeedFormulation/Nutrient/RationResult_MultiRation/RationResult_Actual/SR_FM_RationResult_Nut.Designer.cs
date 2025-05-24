@@ -381,7 +381,7 @@
             // crossTabDataCell1
             // 
             this.crossTabDataCell1.BorderColor = System.Drawing.Color.DarkGray;
-            this.crossTabDataCell1.BorderWidth = 1F;
+            this.crossTabDataCell1.BorderWidth = 1.3F;
             this.crossTabDataCell1.ColumnIndex = 1;
             this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
@@ -402,7 +402,7 @@
             // 
             this.crossTabHeaderCell3.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell3.BorderColor = System.Drawing.Color.DarkGray;
-            this.crossTabHeaderCell3.BorderWidth = 1F;
+            this.crossTabHeaderCell3.BorderWidth = 1.3F;
             this.crossTabHeaderCell3.ColumnIndex = 0;
             this.crossTabHeaderCell3.Name = "crossTabHeaderCell3";
             this.crossTabHeaderCell3.RowIndex = 1;
@@ -856,7 +856,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Breed, "Default", "Description", "Breed"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", null),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "Default", "Text", "Grand Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "Default", "TextFormatString", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),

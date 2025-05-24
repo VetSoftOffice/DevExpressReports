@@ -12,5 +12,10 @@ namespace DevExpressReports.Reports.FeedFormulation.Nutrient.RationResult_Nut_Di
         {
             InitializeComponent();
         }
+
+        private void RationResult_Nut_Diff_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

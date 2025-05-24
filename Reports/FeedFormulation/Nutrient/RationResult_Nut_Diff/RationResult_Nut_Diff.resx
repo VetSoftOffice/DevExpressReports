@@ -117,243 +117,158 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="xrTableCell11.ExpressionBindings" xml:space="preserve">
-    <value>Iif(IsNullOrEmpty([Diff]), '', 
-    Iif([Diff] &lt; 0,
+  <data name="xrTableCell5.ExpressionBindings" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([Diff1]), '', 
+    Iif([Diff1] &lt; 0,
         Iif(?IsRTL == True,
-            FormatString('{0:N2}', Abs([Diff])) + '-', 
-            '-' + FormatString('{0:N2}', Abs([Diff]))   
+            FormatString('{0:N2}', Abs([Diff1])) + '-', 
+            '-' + FormatString('{0:N2}', Abs([Diff1]))   
         ),
-        FormatString('{0:N2}', [Diff])  
+        FormatString('{0:N2}', [Diff1])  
     )
 )
 </value>
   </data>
-  <data name="xrTableCell12.ExpressionBindings" xml:space="preserve">
-    <value>Iif(IsNullOrEmpty([Percentage]), '', 
-    Iif([Percentage] &lt; 0,
+  <data name="xrTableCell9.ExpressionBindings" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([Percentage1]), '', 
+    Iif([Percentage1] &lt; 0,
         Iif(?IsRTL == True,
-            FormatString('{0:N2}', Abs([Percentage])) + '-', 
-            '-' + FormatString('{0:N2}', Abs([Percentage]))   
+            FormatString('{0:N2}', Abs([Percentage1])) + '-', 
+            '-' + FormatString('{0:N2}', Abs([Percentage1]))   
         ),
-        FormatString('{0:N2}', [Percentage])  
+        FormatString('{0:N2}', [Percentage1])  
     )
-)</value>
+)
+</value>
+  </data>
+  <data name="xrTableCell19.ExpressionBindings" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([Diff2]), '', 
+    Iif([Diff2] &lt; 0,
+        Iif(?IsRTL == True,
+            FormatString('{0:N2}', Abs([Diff2])) + '-', 
+            '-' + FormatString('{0:N2}', Abs([Diff2]))   
+        ),
+        FormatString('{0:N2}', [Diff2])  
+    )
+)
+</value>
+  </data>
+  <data name="xrTableCell21.ExpressionBindings" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty(
+        Iif([Quantity2] &gt; 0, 
+            [Diff2] * 100 / [Quantity2], 
+            '')
+    ), 
+    '', 
+    Iif(
+        Iif([Quantity2] &gt; 0, 
+            [Diff2] * 100 / [Quantity2], 
+            '') &lt; 0,
+        Iif(?IsRTL == True,
+            FormatString('{0:N2}', 
+                Abs(
+                    Iif([Quantity2] &gt; 0, 
+                        [Diff2] * 100 / [Quantity2], 
+                        '')
+                )
+            ) + '-', 
+            '-' + FormatString('{0:N2}', 
+                Abs(
+                    Iif([Quantity2] &gt; 0, 
+                        [Diff2] * 100 / [Quantity2], 
+                        '')
+                )
+            )   
+        ),
+        FormatString('{0:N2}', 
+            Iif([Quantity2] &gt; 0, 
+                [Diff2] * 100 / [Quantity2], 
+                '')
+        )
+    )
+)
+</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
-private void xrTableCell3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-    if (cell != null)
+private void xrPageInfo2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRPageInfo pageInfo = sender as XRPageInfo;
+    if ((bool)Parameters["IsRTL"].Value)
     {
-        // Retrieve the IsShowDM parameter value
-        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
-
-        // Hide the cell if IsShowDM is false
-        cell.Visible = isShowDM;
-
-        // Ensure table layout remains intact
-        XRTableRow row = cell.Parent as XRTableRow;
-        if (row != null)
-        {
-            XRTable table = row.Parent as XRTable;
-            if (table != null)
-            {
-                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-            }
-        }
+        pageInfo.TextFormatString = "الصفحة {0} من {1}";
+        pageInfo.RightToLeft = RightToLeft.Yes;
+        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+    else
+    {
+        pageInfo.TextFormatString = "Page {0} of {1}";
+        pageInfo.RightToLeft = RightToLeft.No;
+        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
     }
 
 }
-
-private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-    if (cell != null)
-    {
-        // Retrieve the IsShowDM parameter value
-        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
-
-        // Hide the cell if IsShowDM is false
-        cell.Visible = isShowDM;
-
-        // Ensure table layout remains intact
-        XRTableRow row = cell.Parent as XRTableRow;
-        if (row != null)
-        {
-            XRTable table = row.Parent as XRTable;
-            if (table != null)
-            {
-                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-            }
-        }
-    }
-
-}
-
-private void xrTableCell5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-if (cell != null)
-{
-    // Retrieve the IsShowDifference parameter value
-    bool isShowDifference = Convert.ToBoolean(Parameters["IsShowDifference"].Value);
-
-    // Hide the cell if IsShowDifference is false
-    cell.Visible = isShowDifference;
-
-    // Ensure table layout remains intact
-    XRTableRow row = cell.Parent as XRTableRow;
-    if (row != null)
-    {
-        XRTable table = row.Parent as XRTable;
-        if (table != null)
-        {
-            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-        }
-    }
-}
-
-}
-
-private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-if (cell != null)
-{
-    // Retrieve the IsShowDifference parameter value
-    bool isShowDifference = Convert.ToBoolean(Parameters["IsShowDifference"].Value);
-
-    // Hide the cell if IsShowDifference is false
-    cell.Visible = isShowDifference;
-
-    // Ensure table layout remains intact
-    XRTableRow row = cell.Parent as XRTableRow;
-    if (row != null)
-    {
-        XRTable table = row.Parent as XRTable;
-        if (table != null)
-        {
-            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-        }
-    }
-}
-
-}
-
-private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-if (cell != null)
-{
-    // Retrieve the IsShowDifference parameter value
-    bool isShowDifference = Convert.ToBoolean(Parameters["IsShowDifference"].Value);
-
-    // Hide the cell if IsShowDifference is false
-    cell.Visible = isShowDifference;
-
-    // Ensure table layout remains intact
-    XRTableRow row = cell.Parent as XRTableRow;
-    if (row != null)
-    {
-        XRTable table = row.Parent as XRTable;
-        if (table != null)
-        {
-            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-        }
-    }
-}
-
-}
-
 
 private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell != null)
-{
-    // Retrieve the IsShowDifference parameter value
-    bool isShowDifference = Convert.ToBoolean(Parameters["IsShowDifference"].Value);
+    object value = GetCurrentColumnValue("Percentage1");
 
-    // Hide the cell if IsShowDifference is false
-    cell.Visible = isShowDifference;
-
-    // Ensure table layout remains intact
-    XRTableRow row = cell.Parent as XRTableRow;
-    if (row != null)
+    if (value != null &amp;&amp; value != DBNull.Value)
     {
-        XRTable table = row.Parent as XRTable;
-        if (table != null)
-        {
-            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-        }
-    }
-}
+        double percentage = Convert.ToDouble(value);
 
+        if (percentage &lt; 0)
+            cell.ForeColor = Color.Red;
+        else
+            cell.ForeColor = Color.Black;
+    }
+    else
+    {
+        // Optional: Default color when value is null
+        cell.ForeColor = Color.Black;
+    }
 }
 
 private void xrTableCell2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+  }
+private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      XRTableCell cell = sender as XRTableCell;
-    if (cell != null)
+    object value = GetCurrentColumnValue("Percentage1");
+
+    if (value != null &amp;&amp; value != DBNull.Value)
     {
-        // Retrieve the IsShowDM parameter value
-        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+        double percentage = Convert.ToDouble(value);
 
-        // Hide the cell if IsShowDM is true
-        cell.Visible = !isShowDM;
-
-        // Ensure table layout remains intact
-        XRTableRow row = cell.Parent as XRTableRow;
-        if (row != null)
-        {
-            XRTable table = row.Parent as XRTable;
-            if (table != null)
-            {
-                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-            }
-        }
+        if (percentage &lt; 0)
+            cell.ForeColor = Color.Red;
+        else
+            cell.ForeColor = Color.Black;
     }
+    else
+    {
+        // Optional: Default color when value is null
+        cell.ForeColor = Color.Black;
+    }
+
 }
 
-private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-    if (cell != null)
+private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    object value = GetCurrentColumnValue("Percentage2");
+
+    if (value != null &amp;&amp; value != DBNull.Value)
     {
-        // Retrieve the IsShowDM parameter value
-        bool isShowDM = Convert.ToBoolean(Parameters["IsShowDM"].Value);
+        double percentage = Convert.ToDouble(value);
 
-        // Hide the cell if IsShowDM is true
-        cell.Visible = !isShowDM;
-
-        // Ensure table layout remains intact
-        XRTableRow row = cell.Parent as XRTableRow;
-        if (row != null)
-        {
-            XRTable table = row.Parent as XRTable;
-            if (table != null)
-            {
-                table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-            }
-        }
+        if (percentage &lt; 0)
+            cell.ForeColor = Color.Red;
+        else
+            cell.ForeColor = Color.Black;
     }
-}
-
-private void xrTableCell12_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
-       XRTableCell cell = sender as XRTableCell;
-if (cell != null)
-{
-    // Retrieve the IsShowDifference parameter value
-    bool isShowDifference = Convert.ToBoolean(Parameters["IsShowDifference"].Value);
-
-    // Hide the cell if IsShowDifference is false
-    cell.Visible = isShowDifference;
-
-    // Ensure table layout remains intact
-    XRTableRow row = cell.Parent as XRTableRow;
-    if (row != null)
+    else
     {
-        XRTable table = row.Parent as XRTable;
-        if (table != null)
-        {
-            table.ProcessHiddenCellMode = DevExpress.XtraReports.UI.ProcessHiddenCellMode.ResizeCellsEqually;
-        }
+        // Optional: Default color when value is null
+        cell.ForeColor = Color.Black;
     }
-}
 
 }
 </value>

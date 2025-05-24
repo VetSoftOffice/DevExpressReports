@@ -117,4 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>using System.Text.RegularExpressions;
+
+private void xrTableCell5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    string raw = GetCurrentColumnValue("NutrientName").ToString();
+    // Check report parameter value (assumes it's a boolean parameter named "IsRTL")
+        bool isRTL = Convert.ToBoolean(Parameters["IsRTL"].Value);
+
+        if (isRTL)
+        {
+            // Keep Arabic + English + numbers + spaces
+            xrTableCell5.Text = Regex.Replace(raw, @"[^\u0600-\u06FFa-zA-Z0-9\s]", "");
+        }
+        else
+        {
+            // Keep only English + numbers + spaces
+            xrTableCell5.Text = Regex.Replace(raw, @"[^a-zA-Z0-9\s]", "");
+        }
+    }
+</value>
+  </data>
 </root>

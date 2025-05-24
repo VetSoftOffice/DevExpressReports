@@ -178,6 +178,24 @@ private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.C
     {
         HideSubbandIfFeedMillLessThanTwo(subBand);
     }
-}</value>
+}
+private void pageInfoPageNoOfTotal_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRPageInfo pageInfo = sender as XRPageInfo;
+    if ((bool)Parameters["IsRTL"].Value)
+    {
+        pageInfo.TextFormatString = "الصفحة {0} من {1}";
+        pageInfo.RightToLeft = RightToLeft.Yes;
+        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+    else
+    {
+        pageInfo.TextFormatString = "Page {0} of {1}";
+        pageInfo.RightToLeft = RightToLeft.No;
+        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+
+
+}
+</value>
   </data>
 </root>
