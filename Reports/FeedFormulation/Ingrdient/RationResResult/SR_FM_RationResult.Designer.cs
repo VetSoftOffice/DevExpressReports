@@ -989,7 +989,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand9, "Default", "HeightF", 33.33333F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "Series.0.Label.TextPattern", "{A}  {V:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "Series.0.Label.TextPattern", "{A}       {V:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "SizeF", new System.Drawing.SizeF(806.9999F, 471.8751F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 22.50166F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(490.1913F, 21.45834F)),

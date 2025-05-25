@@ -572,7 +572,7 @@
     <Item39 Ref="328" Component="#Ref-254" Culture="Default" Path="HeightF" Data="33.33333" />
     <Item40 Ref="329" Component="#Ref-20" Culture="Default" Path="HeightF" Data="20" />
     <Item41 Ref="330" Component="#Ref-189" Culture="Default" Path="LocationFloat" Data="0.0001351039,0" />
-    <Item42 Ref="331" Component="#Ref-189" Culture="Default" Path="Series.0.Label.TextPattern" Data="{A}  {V}" />
+    <Item42 Ref="331" Component="#Ref-189" Culture="Default" Path="Series.0.Label.TextPattern" Data="{A}         {V:N2}" />
     <Item43 Ref="332" Component="#Ref-189" Culture="Default" Path="SizeF" Data="806.9999,471.8751" />
     <Item44 Ref="333" Component="#Ref-106" Culture="Default" Path="LocationFloat" Data="0,11.45833" />
     <Item45 Ref="334" Component="#Ref-106" Culture="Default" Path="SizeF" Data="490.1913,21.45834" />
