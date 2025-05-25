@@ -119,14 +119,44 @@
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
-private void xrTableCell2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     if (!Convert.ToBoolean(IsShowCost.Value))
-        e.Cancel = true;
-}
 
 private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    if (!Convert.ToBoolean(IsShowCost.Value))
-        e.Cancel = true;
+     XRTableCell cell = (XRTableCell)sender;
+
+    bool isShowCost = Convert.ToBoolean(Parameters["IsShowCost"].Value);
+    bool isRTL = Convert.ToBoolean(Parameters["IsRTL"].Value);
+
+    if (isShowCost)
+    {
+        cell.TextAlignment = isRTL
+            ? DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+            : DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+    else
+    {
+        // Cost column is shown – center align
+        cell.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+    }
+
+}
+
+private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = (XRTableCell)sender;
+
+    bool isShowCost = Convert.ToBoolean(Parameters["IsShowCost"].Value);
+    bool isRTL = Convert.ToBoolean(Parameters["IsRTL"].Value);
+
+    if (isShowCost)
+    {
+        cell.TextAlignment = isRTL
+            ? DevExpress.XtraPrinting.TextAlignment.MiddleLeft
+            : DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+    }
+    else
+    {
+        // Cost column is shown – center align
+        cell.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+    }
 
 }
 </value>
