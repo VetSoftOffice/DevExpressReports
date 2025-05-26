@@ -603,7 +603,7 @@
     <Item70 Ref="359" Component="#Ref-114" Culture="Default" Path="Text" Data="K.G As-Fed " />
     <Item71 Ref="360" Component="#Ref-114" Culture="ar" Path="Text" Data="كجم" />
     <Item72 Ref="361" Component="#Ref-287" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item73 Ref="362" Component="#Ref-287" Culture="Default" Path="SizeF" Data="812,23" />
+    <Item73 Ref="362" Component="#Ref-287" Culture="Default" Path="SizeF" Data="806.9998,23" />
     <Item74 Ref="363" Component="#Ref-287" Culture="Default" Path="Text" Data="xrLabel5" />
     <Item75 Ref="364" Component="#Ref-125" Culture="Default" Path="LocationFloat" Data="1.589457E-05,0" />
     <Item76 Ref="365" Component="#Ref-125" Culture="Default" Path="SizeF" Data="313.108,21.45834" />
