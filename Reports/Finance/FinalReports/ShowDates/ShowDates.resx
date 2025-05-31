@@ -117,34 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSI+PEZpZWxkIE5hbWU9IlJvd1NlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSb3dTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUm93RGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
-  </data>
-  <data name="IngQuantityValue.Expression" xml:space="preserve">
-    <value>Iif(?IsShowDM &amp;&amp; ?IsPer, 
-    [TotalQtn_DMPer], 
-    Iif(?IsShowDM &amp;&amp; !?IsPer, 
-        [Quantity_DM], 
-        Iif(!?IsShowDM &amp;&amp; ?IsPer, 
-            [QuantityPercent], 
-            [Quantity]
-        )
-    )
-)
-</value>
-  </data>
-  <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using DevExpress.XtraReports.UI.CrossTab;
-
-private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
-    XRCrossTabCell cell = sender as XRCrossTabCell;
-
-    if (string.IsNullOrWhiteSpace(cell.Text))
-    {
-        cell.Text = "0.00";
-    }
-   
-        }
-</value>
+  <data name="dsLayer.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNMYXllciI+PFZpZXcgTmFtZT0iU1JfTEFZX1NvcnRIb3VzZURlbWFuZElzc3VlIj48RmllbGQgTmFtZT0iUm93U2VxMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJvd0RhdGExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvd1NlcTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXExIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGFWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
 </root>

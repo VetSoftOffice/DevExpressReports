@@ -99,6 +99,7 @@
     <Folder Include="Reports\Finance\Farms\Breeder\Summary\" />
     <Folder Include="Reports\Finance\Farms\SR_FC_FlkDirectCostBroilerSubPlace\" />
     <Folder Include="Reports\Finance\FeedMill\" />
+    <Folder Include="Reports\Finance\FinalReports\NewFolder\" />
     <Folder Include="Reports\Finance\Hatchery\" />
     <Folder Include="Reports\Finance\SR_FC_Orders\" />
     <Folder Include="Reports\FurtherProcessing\Summary\" />

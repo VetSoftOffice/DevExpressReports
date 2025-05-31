@@ -210,6 +210,7 @@
             this.thLayingPeriodWks = new DevExpress.XtraReports.UI.XRTableCell();
             this.tdLayingPeriodWks = new DevExpress.XtraReports.UI.XRTableCell();
             this.SR_BRD_EndFlockExpenses_Exp_Section = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_EndFlockExpenses_Exp = new DevExpress.XtraReports.UI.XRSubreport();
             this.FlockCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
@@ -283,6 +284,7 @@
             this.xrTableCell35 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell36 = new DevExpress.XtraReports.UI.XRTableCell();
             this.SR_BRD_EndFlockExpenses_Rev_Section = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_EndFlockExpenses_Rev = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow37 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -316,8 +318,6 @@
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.CropNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsFinance = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.SR_BRD_EndFlockExpenses_Rev = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SR_BRD_EndFlockExpenses_Exp = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -909,6 +909,13 @@
             this.SR_BRD_EndFlockExpenses_Exp_Section.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.SR_BRD_EndFlockExpenses_Exp});
             this.SR_BRD_EndFlockExpenses_Exp_Section.Name = "SR_BRD_EndFlockExpenses_Exp_Section";
+            // 
+            // SR_BRD_EndFlockExpenses_Exp
+            // 
+            this.SR_BRD_EndFlockExpenses_Exp.Name = "SR_BRD_EndFlockExpenses_Exp";
+            this.SR_BRD_EndFlockExpenses_Exp.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
+            this.SR_BRD_EndFlockExpenses_Exp.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FlockCode", this.FlockCode));
+            this.SR_BRD_EndFlockExpenses_Exp.ReportSource = new DevExpressReports.Reports.Finance.Farms.Layer.Laying.SR_LAY_EndFlockExpenses_Exp.SR_LAY_EndFlockExpenses_Exp();
             // 
             // FlockCode
             // 
@@ -1648,6 +1655,13 @@
             this.SR_BRD_EndFlockExpenses_Rev});
             this.SR_BRD_EndFlockExpenses_Rev_Section.Name = "SR_BRD_EndFlockExpenses_Rev_Section";
             // 
+            // SR_BRD_EndFlockExpenses_Rev
+            // 
+            this.SR_BRD_EndFlockExpenses_Rev.Name = "SR_BRD_EndFlockExpenses_Rev";
+            this.SR_BRD_EndFlockExpenses_Rev.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
+            this.SR_BRD_EndFlockExpenses_Rev.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FlockCode", this.FlockCode));
+            this.SR_BRD_EndFlockExpenses_Rev.ReportSource = new DevExpressReports.Reports.Finance.Farms.Layer.Laying.SR_LAY_EndFlockExpenses_Rev.SR_LAY_EndFlockExpenses_Rev();
+            // 
             // SubBand2
             // 
             this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -2152,20 +2166,6 @@
             selectQuery1});
             this.dsFinance.ResultSchemaSerializable = resources.GetString("dsFinance.ResultSchemaSerializable");
             // 
-            // SR_BRD_EndFlockExpenses_Rev
-            // 
-            this.SR_BRD_EndFlockExpenses_Rev.Name = "SR_BRD_EndFlockExpenses_Rev";
-            this.SR_BRD_EndFlockExpenses_Rev.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
-            this.SR_BRD_EndFlockExpenses_Rev.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FlockCode", this.FlockCode));
-            this.SR_BRD_EndFlockExpenses_Rev.ReportSource = new DevExpressReports.Reports.Finance.Farms.Layer.Laying.SR_LAY_EndFlockExpenses_Rev.SR_LAY_EndFlockExpenses_Rev();
-            // 
-            // SR_BRD_EndFlockExpenses_Exp
-            // 
-            this.SR_BRD_EndFlockExpenses_Exp.Name = "SR_BRD_EndFlockExpenses_Exp";
-            this.SR_BRD_EndFlockExpenses_Exp.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
-            this.SR_BRD_EndFlockExpenses_Exp.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FlockCode", this.FlockCode));
-            this.SR_BRD_EndFlockExpenses_Exp.ReportSource = new DevExpressReports.Reports.Finance.Farms.Layer.Laying.SR_LAY_EndFlockExpenses_Exp.SR_LAY_EndFlockExpenses_Exp();
-            // 
             // SR_LAY_EndFlockExpenses
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2247,7 +2247,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(806.9969F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95833F, 0.4165141F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp, "Default", "SizeF", new System.Drawing.SizeF(650.8079F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp_Section, "Default", "HeightF", 23F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp_Section, "Default", "HeightF", 20.41651F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95833F, 0.4165141F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev, "Default", "SizeF", new System.Drawing.SizeF(650.8079F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev_Section, "Default", "HeightF", 20.41651F),
@@ -2637,7 +2637,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.1";
+            this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
