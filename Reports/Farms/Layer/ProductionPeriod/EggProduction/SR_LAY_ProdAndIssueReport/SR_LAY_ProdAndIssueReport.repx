@@ -747,7 +747,6 @@
     <Item97 Ref="433" Component="#Ref-200" Culture="Default" Path="LocationFloat" Data="456.5,0" />
     <Item98 Ref="434" Component="#Ref-200" Culture="Default" Path="SizeF" Data="305.8164,20" />
     <Item99 Ref="435" Component="#Ref-200" Culture="Default" Path="Text" Data="Std: [?BookPerf]" />
-    <Item100 Ref="436" Component="#Ref-200" Culture="Default" Path="Visible" Data="true" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
     <Item1 Ref="436" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-2" />

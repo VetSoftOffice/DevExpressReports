@@ -434,7 +434,6 @@
             this.crossTabTotalCell14});
             crossTabColumnDefinition1.Visible = false;
             crossTabColumnDefinition2.AutoWidthMode = DevExpress.XtraReports.UI.AutoSizeMode.ShrinkAndGrow;
-            crossTabColumnDefinition2.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(89.99999F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(89.99997F),
