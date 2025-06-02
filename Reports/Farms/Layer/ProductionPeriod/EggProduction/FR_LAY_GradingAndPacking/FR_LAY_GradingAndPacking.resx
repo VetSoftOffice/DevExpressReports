@@ -121,15 +121,10 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNMYXllciI+PFZpZXcgTmFtZT0iU1JfTEFZX0dyYWRpbmdBbmRQYWNraW5nIj48RmllbGQgTmFtZT0iRWdnU2l6ZUdyb3VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkVnZ3NHcmFkc19lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFZ2dzUHJvZHVjdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NQZXJDYXJ0b24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZW50ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2FydG9uc051bWJlciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNwZWNpYWxQYWNraW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlblN0b2NrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VkU3RvY2siIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJdGVtc1BlclRyYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUcmF5Tm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="WeekNo.Expression" xml:space="preserve">
-    <value>Iif(DateTimeFromParts('ww', ?DateeTo, [FirstDayOfWeek].[Saturday],[FirstWeekOfYear].[FirstFourDays]) &gt; 54, DateTimeFromParts('ww',?DateeTo - 4, [FirstDayOfWeek].[Saturday],[FirstWeekOfYear].[FirstFourDays]),DateTimeFromParts('ww', ?DateeTo,[FirstDayOfWeek].[Saturday], [FirstWeekOfYear].[FirstFourDays]))</value>
-  </data>
-  <data name="SheetNo.Expression" xml:space="preserve">
-    <value>Iif(?ReportNo == 4828,
-    102851 + DateDiffDay(#2005-01-07#, ?DateeTo) + (?SerialNo * 100000) + DateDiffDay(#1997-03-19#, ?DateeTo),
-    Iif(?ReportNo == 4829,
-        (?SerialNo * 100000) + (DateDiffDay(#1995-08-18#, ?DateeTo) / 7),
-        0
-    )
+    <value>Iif(
+DateTimeFromParts('ww', ?DateeTo, [FirstDayOfWeek].[Saturday], [FirstWeekOfYear].[FirstFourDays]) &gt; 54, 
+DateTimeFromParts('ww', ?DateeTo - 4, [FirstDayOfWeek].[Saturday], [FirstWeekOfYear].[FirstFourDays]),
+DateTimeFromParts('ww', ?DateeTo, [FirstDayOfWeek].[Saturday], [FirstWeekOfYear].[FirstFourDays]) 
 )</value>
   </data>
 </root>

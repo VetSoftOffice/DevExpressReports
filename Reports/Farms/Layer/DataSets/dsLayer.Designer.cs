@@ -6233,6 +6233,13 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_LAY_WeeklyProdPerfRow FindBytFrHouseID(int tFrHouseID) {
+                return ((SR_LAY_WeeklyProdPerfRow)(this.Rows.Find(new object[] {
+                            tFrHouseID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 SR_LAY_WeeklyProdPerfDataTable cln = ((SR_LAY_WeeklyProdPerfDataTable)(base.Clone()));
                 cln.InitVars();
@@ -6334,6 +6341,8 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
                 base.Columns.Add(this.columnHenDayEggsCumPerf);
                 this.columnBirdFeed = new global::System.Data.DataColumn("BirdFeed", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBirdFeed);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columntFrHouseID}, true));
                 this.columnFlockCode.MaxLength = 255;
                 this.columnHouseCode.AllowDBNull = false;
                 this.columntFrHouseID.AutoIncrement = true;
@@ -6341,6 +6350,7 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
                 this.columntFrHouseID.AutoIncrementStep = -1;
                 this.columntFrHouseID.AllowDBNull = false;
                 this.columntFrHouseID.ReadOnly = true;
+                this.columntFrHouseID.Unique = true;
                 this.columnBreedName_en.ReadOnly = true;
                 this.columnBreedName_en.MaxLength = 255;
                 this.columnrf_WeekNo.ReadOnly = true;
