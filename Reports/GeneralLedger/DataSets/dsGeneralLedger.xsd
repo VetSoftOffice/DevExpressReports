@@ -52,6 +52,7 @@
               <Mapping SourceColumn="Debit" DataSetColumn="Debit" />
               <Mapping SourceColumn="Credit" DataSetColumn="Credit" />
               <Mapping SourceColumn="DocStatus" DataSetColumn="DocStatus" />
+              <Mapping SourceColumn="ResetField" DataSetColumn="ResetField" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -1328,6 +1329,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="ResetField" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="ResetField" msprop:Generator_ColumnPropNameInTable="ResetFieldColumn" msprop:Generator_ColumnVarNameInTable="columnResetField" msprop:Generator_UserColumnName="ResetField" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -3096,61 +3098,61 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SR_GL_IncomeStatment" msprop:Generator_RowEvHandlerName="SR_GL_IncomeStatmentRowChangeEventHandler" msprop:Generator_RowDeletedName="SR_GL_IncomeStatmentRowDeleted" msprop:Generator_RowDeletingName="SR_GL_IncomeStatmentRowDeleting" msprop:Generator_RowEvArgName="SR_GL_IncomeStatmentRowChangeEvent" msprop:Generator_TablePropName="SR_GL_IncomeStatment" msprop:Generator_RowChangedName="SR_GL_IncomeStatmentRowChanged" msprop:Generator_RowChangingName="SR_GL_IncomeStatmentRowChanging" msprop:Generator_TableClassName="SR_GL_IncomeStatmentDataTable" msprop:Generator_RowClassName="SR_GL_IncomeStatmentRow" msprop:Generator_TableVarName="tableSR_GL_IncomeStatment" msprop:Generator_UserTableName="SR_GL_IncomeStatment">
+        <xs:element name="SR_GL_IncomeStatment" msprop:Generator_RowClassName="SR_GL_IncomeStatmentRow" msprop:Generator_RowEvHandlerName="SR_GL_IncomeStatmentRowChangeEventHandler" msprop:Generator_RowDeletedName="SR_GL_IncomeStatmentRowDeleted" msprop:Generator_RowDeletingName="SR_GL_IncomeStatmentRowDeleting" msprop:Generator_RowEvArgName="SR_GL_IncomeStatmentRowChangeEvent" msprop:Generator_TablePropName="SR_GL_IncomeStatment" msprop:Generator_RowChangedName="SR_GL_IncomeStatmentRowChanged" msprop:Generator_UserTableName="SR_GL_IncomeStatment" msprop:Generator_RowChangingName="SR_GL_IncomeStatmentRowChanging" msprop:Generator_TableClassName="SR_GL_IncomeStatmentDataTable" msprop:Generator_TableVarName="tableSR_GL_IncomeStatment">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="tFcMainAccountsID_Parent" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="tFcMainAccountsID_Parent" msprop:Generator_ColumnPropNameInTable="tFcMainAccountsID_ParentColumn" msprop:Generator_ColumnVarNameInTable="columntFcMainAccountsID_Parent" msprop:Generator_UserColumnName="tFcMainAccountsID_Parent" type="xs:int" minOccurs="0" />
-              <xs:element name="tFcMainAccountsID" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="tFcMainAccountsID" msprop:Generator_ColumnPropNameInTable="tFcMainAccountsIDColumn" msprop:Generator_ColumnVarNameInTable="columntFcMainAccountsID" msprop:Generator_UserColumnName="tFcMainAccountsID" type="xs:int" minOccurs="0" />
-              <xs:element name="MainAccountName" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="MainAccountName" msprop:Generator_ColumnPropNameInTable="MainAccountNameColumn" msprop:Generator_ColumnVarNameInTable="columnMainAccountName" msprop:Generator_UserColumnName="MainAccountName" minOccurs="0">
+              <xs:element name="tFcMainAccountsID_Parent" msdata:ReadOnly="true" msprop:Generator_UserColumnName="tFcMainAccountsID_Parent" msprop:Generator_ColumnPropNameInTable="tFcMainAccountsID_ParentColumn" msprop:Generator_ColumnPropNameInRow="tFcMainAccountsID_Parent" msprop:Generator_ColumnVarNameInTable="columntFcMainAccountsID_Parent" type="xs:int" minOccurs="0" />
+              <xs:element name="tFcMainAccountsID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="tFcMainAccountsID" msprop:Generator_ColumnPropNameInTable="tFcMainAccountsIDColumn" msprop:Generator_ColumnPropNameInRow="tFcMainAccountsID" msprop:Generator_ColumnVarNameInTable="columntFcMainAccountsID" type="xs:int" minOccurs="0" />
+              <xs:element name="MainAccountName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="MainAccountName" msprop:Generator_ColumnPropNameInTable="MainAccountNameColumn" msprop:Generator_ColumnPropNameInRow="MainAccountName" msprop:Generator_ColumnVarNameInTable="columnMainAccountName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="AccountName" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="AccountName" msprop:Generator_ColumnPropNameInTable="AccountNameColumn" msprop:Generator_ColumnVarNameInTable="columnAccountName" msprop:Generator_UserColumnName="AccountName" minOccurs="0">
+              <xs:element name="AccountName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="AccountName" msprop:Generator_ColumnPropNameInTable="AccountNameColumn" msprop:Generator_ColumnPropNameInRow="AccountName" msprop:Generator_ColumnVarNameInTable="columnAccountName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Explaination" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Explaination" msprop:Generator_ColumnPropNameInTable="ExplainationColumn" msprop:Generator_ColumnVarNameInTable="columnExplaination" msprop:Generator_UserColumnName="Explaination" minOccurs="0">
+              <xs:element name="Explaination" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Explaination" msprop:Generator_ColumnPropNameInTable="ExplainationColumn" msprop:Generator_ColumnPropNameInRow="Explaination" msprop:Generator_ColumnVarNameInTable="columnExplaination" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DataValue" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="DataValue" msprop:Generator_ColumnPropNameInTable="DataValueColumn" msprop:Generator_ColumnVarNameInTable="columnDataValue" msprop:Generator_UserColumnName="DataValue" type="xs:int" minOccurs="0" />
-              <xs:element name="PrvDataValue" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="PrvDataValue" msprop:Generator_ColumnPropNameInTable="PrvDataValueColumn" msprop:Generator_ColumnVarNameInTable="columnPrvDataValue" msprop:Generator_UserColumnName="PrvDataValue" type="xs:int" minOccurs="0" />
-              <xs:element name="SN_MainAccount" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="SN_MainAccount" msprop:Generator_ColumnPropNameInTable="SN_MainAccountColumn" msprop:Generator_ColumnVarNameInTable="columnSN_MainAccount" msprop:Generator_UserColumnName="SN_MainAccount" type="xs:int" minOccurs="0" />
-              <xs:element name="SN_Account" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="SN_Account" msprop:Generator_ColumnPropNameInTable="SN_AccountColumn" msprop:Generator_ColumnVarNameInTable="columnSN_Account" msprop:Generator_UserColumnName="SN_Account" type="xs:int" minOccurs="0" />
-              <xs:element name="Currency" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Currency" msprop:Generator_ColumnPropNameInTable="CurrencyColumn" msprop:Generator_ColumnVarNameInTable="columnCurrency" msprop:Generator_UserColumnName="Currency" minOccurs="0">
+              <xs:element name="DataValue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DataValue" msprop:Generator_ColumnPropNameInTable="DataValueColumn" msprop:Generator_ColumnPropNameInRow="DataValue" msprop:Generator_ColumnVarNameInTable="columnDataValue" type="xs:int" minOccurs="0" />
+              <xs:element name="PrvDataValue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PrvDataValue" msprop:Generator_ColumnPropNameInTable="PrvDataValueColumn" msprop:Generator_ColumnPropNameInRow="PrvDataValue" msprop:Generator_ColumnVarNameInTable="columnPrvDataValue" type="xs:int" minOccurs="0" />
+              <xs:element name="SN_MainAccount" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SN_MainAccount" msprop:Generator_ColumnPropNameInTable="SN_MainAccountColumn" msprop:Generator_ColumnPropNameInRow="SN_MainAccount" msprop:Generator_ColumnVarNameInTable="columnSN_MainAccount" type="xs:int" minOccurs="0" />
+              <xs:element name="SN_Account" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SN_Account" msprop:Generator_ColumnPropNameInTable="SN_AccountColumn" msprop:Generator_ColumnPropNameInRow="SN_Account" msprop:Generator_ColumnVarNameInTable="columnSN_Account" type="xs:int" minOccurs="0" />
+              <xs:element name="Currency" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Currency" msprop:Generator_ColumnPropNameInTable="CurrencyColumn" msprop:Generator_ColumnPropNameInRow="Currency" msprop:Generator_ColumnVarNameInTable="columnCurrency" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PrvCurrency" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="PrvCurrency" msprop:Generator_ColumnPropNameInTable="PrvCurrencyColumn" msprop:Generator_ColumnVarNameInTable="columnPrvCurrency" msprop:Generator_UserColumnName="PrvCurrency" minOccurs="0">
+              <xs:element name="PrvCurrency" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PrvCurrency" msprop:Generator_ColumnPropNameInTable="PrvCurrencyColumn" msprop:Generator_ColumnPropNameInRow="PrvCurrency" msprop:Generator_ColumnVarNameInTable="columnPrvCurrency" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Change" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Change" msprop:Generator_ColumnPropNameInTable="ChangeColumn" msprop:Generator_ColumnVarNameInTable="columnChange" msprop:Generator_UserColumnName="Change" type="xs:int" minOccurs="0" />
-              <xs:element name="MainAccountName_Parent" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="MainAccountName_Parent" msprop:Generator_ColumnPropNameInTable="MainAccountName_ParentColumn" msprop:Generator_ColumnVarNameInTable="columnMainAccountName_Parent" msprop:Generator_UserColumnName="MainAccountName_Parent" minOccurs="0">
+              <xs:element name="Change" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Change" msprop:Generator_ColumnPropNameInTable="ChangeColumn" msprop:Generator_ColumnPropNameInRow="Change" msprop:Generator_ColumnVarNameInTable="columnChange" type="xs:int" minOccurs="0" />
+              <xs:element name="MainAccountName_Parent" msdata:ReadOnly="true" msprop:Generator_UserColumnName="MainAccountName_Parent" msprop:Generator_ColumnPropNameInTable="MainAccountName_ParentColumn" msprop:Generator_ColumnPropNameInRow="MainAccountName_Parent" msprop:Generator_ColumnVarNameInTable="columnMainAccountName_Parent" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="GroupNo" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="GroupNo" msprop:Generator_ColumnPropNameInTable="GroupNoColumn" msprop:Generator_ColumnVarNameInTable="columnGroupNo" msprop:Generator_UserColumnName="GroupNo" type="xs:int" minOccurs="0" />
-              <xs:element name="PeriodDataValue" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="PeriodDataValue" msprop:Generator_ColumnPropNameInTable="PeriodDataValueColumn" msprop:Generator_ColumnVarNameInTable="columnPeriodDataValue" msprop:Generator_UserColumnName="PeriodDataValue" type="xs:int" minOccurs="0" />
-              <xs:element name="PrvPeriodDataValue" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="PrvPeriodDataValue" msprop:Generator_ColumnPropNameInTable="PrvPeriodDataValueColumn" msprop:Generator_ColumnVarNameInTable="columnPrvPeriodDataValue" msprop:Generator_UserColumnName="PrvPeriodDataValue" type="xs:int" minOccurs="0" />
+              <xs:element name="GroupNo" msdata:ReadOnly="true" msprop:Generator_UserColumnName="GroupNo" msprop:Generator_ColumnPropNameInTable="GroupNoColumn" msprop:Generator_ColumnPropNameInRow="GroupNo" msprop:Generator_ColumnVarNameInTable="columnGroupNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PeriodDataValue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PeriodDataValue" msprop:Generator_ColumnPropNameInTable="PeriodDataValueColumn" msprop:Generator_ColumnPropNameInRow="PeriodDataValue" msprop:Generator_ColumnVarNameInTable="columnPeriodDataValue" type="xs:int" minOccurs="0" />
+              <xs:element name="PrvPeriodDataValue" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PrvPeriodDataValue" msprop:Generator_ColumnPropNameInTable="PrvPeriodDataValueColumn" msprop:Generator_ColumnPropNameInRow="PrvPeriodDataValue" msprop:Generator_ColumnVarNameInTable="columnPrvPeriodDataValue" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

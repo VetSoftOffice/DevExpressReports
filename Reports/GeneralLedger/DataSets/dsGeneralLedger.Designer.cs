@@ -1256,6 +1256,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             private global::System.Data.DataColumn columnDocStatus;
             
+            private global::System.Data.DataColumn columnResetField;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_FC_AccountSheetDataTable() {
@@ -1413,6 +1415,14 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ResetFieldColumn {
+                get {
+                    return this.columnResetField;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1448,7 +1458,23 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRow AddSR_FC_AccountSheetRow(int tStActionID, int DocNumber, System.DateTime RegDate, int OpenBalance, string AccountName, string AccountCode, string ActionType, string Branch, string BillStatement, string Note, int VoucherNo, string Currency, double Debit, double Credit, string DocStatus) {
+            public SR_FC_AccountSheetRow AddSR_FC_AccountSheetRow(
+                        int tStActionID, 
+                        int DocNumber, 
+                        System.DateTime RegDate, 
+                        int OpenBalance, 
+                        string AccountName, 
+                        string AccountCode, 
+                        string ActionType, 
+                        string Branch, 
+                        string BillStatement, 
+                        string Note, 
+                        int VoucherNo, 
+                        string Currency, 
+                        double Debit, 
+                        double Credit, 
+                        string DocStatus, 
+                        string ResetField) {
                 SR_FC_AccountSheetRow rowSR_FC_AccountSheetRow = ((SR_FC_AccountSheetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         tStActionID,
@@ -1465,7 +1491,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                         Currency,
                         Debit,
                         Credit,
-                        DocStatus};
+                        DocStatus,
+                        ResetField};
                 rowSR_FC_AccountSheetRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSR_FC_AccountSheetRow);
                 return rowSR_FC_AccountSheetRow;
@@ -1503,6 +1530,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 this.columnDebit = base.Columns["Debit"];
                 this.columnCredit = base.Columns["Credit"];
                 this.columnDocStatus = base.Columns["DocStatus"];
+                this.columnResetField = base.Columns["ResetField"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1538,6 +1566,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 base.Columns.Add(this.columnCredit);
                 this.columnDocStatus = new global::System.Data.DataColumn("DocStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDocStatus);
+                this.columnResetField = new global::System.Data.DataColumn("ResetField", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnResetField);
                 this.columntStActionID.ReadOnly = true;
                 this.columnDocNumber.ReadOnly = true;
                 this.columnRegDate.ReadOnly = true;
@@ -1561,6 +1591,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 this.columnCredit.ReadOnly = true;
                 this.columnDocStatus.ReadOnly = true;
                 this.columnDocStatus.MaxLength = 1;
+                this.columnResetField.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15510,6 +15541,22 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ResetField {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.ResetFieldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ResetField\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IstStActionIDNull() {
                 return this.IsNull(this.tableSR_FC_AccountSheet.tStActionIDColumn);
             }
@@ -15686,6 +15733,18 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDocStatusNull() {
                 this[this.tableSR_FC_AccountSheet.DocStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsResetFieldNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.ResetFieldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetResetFieldNull() {
+                this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -29847,6 +29906,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
             tableMapping.ColumnMappings.Add("Debit", "Debit");
             tableMapping.ColumnMappings.Add("Credit", "Credit");
             tableMapping.ColumnMappings.Add("DocStatus", "DocStatus");
+            tableMapping.ColumnMappings.Add("ResetField", "ResetField");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
