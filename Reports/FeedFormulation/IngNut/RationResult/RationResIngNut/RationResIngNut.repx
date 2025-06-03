@@ -763,7 +763,7 @@
     <Item30 Ref="476" Component="#Ref-402" Culture="Default" Path="SizeF" Data="807.0002,22.16655" />
     <Item31 Ref="477" Component="#Ref-67" Culture="Default" Path="HeightF" Data="31.8750229" />
     <Item32 Ref="478" Component="#Ref-89" Culture="Default" Path="HeightF" Data="34.46" />
-    <Item33 Ref="479" Component="#Ref-73" Culture="Default" Path="HeightF" Data="21.6683064" />
+    <Item33 Ref="479" Component="#Ref-73" Culture="Default" Path="HeightF" Data="21.45834" />
     <Item34 Ref="480" Component="#Ref-79" Culture="Default" Path="HeightF" Data="21.45834" />
     <Item35 Ref="481" Component="#Ref-433" Culture="Default" Path="HeightF" Data="23.75673" />
     <Item36 Ref="482" Component="#Ref-343" Culture="Default" Path="HeightF" Data="0.6666501" />
@@ -779,11 +779,11 @@
     <Item46 Ref="492" Component="#Ref-68" Culture="Default" Path="SizeF" Data="226.3751,21.45834" />
     <Item47 Ref="493" Component="#Ref-68" Culture="Default" Path="Text" Data="Total Cost: [TotalCost!N2]  [RationCurrency]" />
     <Item48 Ref="494" Component="#Ref-68" Culture="ar" Path="Text" Data="التكلفة الكلية: [TotalCost!N2] [RationCurrency]" />
-    <Item49 Ref="495" Component="#Ref-77" Culture="Default" Path="LocationFloat" Data="34.3749542,0.2099673" />
+    <Item49 Ref="495" Component="#Ref-77" Culture="Default" Path="LocationFloat" Data="34.3749542,0" />
     <Item50 Ref="496" Component="#Ref-77" Culture="Default" Path="SizeF" Data="313.107971,21.4566917" />
     <Item51 Ref="497" Component="#Ref-77" Culture="Default" Path="Text" Data="Total Quantity (KG): [TotalQtn!N2]   K.G As-Fed " />
     <Item52 Ref="498" Component="#Ref-77" Culture="ar" Path="Text" Data="الكمية الكلية (كجم): [TotalQtn!N2]  كجم" />
-    <Item53 Ref="499" Component="#Ref-74" Culture="Default" Path="LocationFloat" Data="580.6251,0.2099673" />
+    <Item53 Ref="499" Component="#Ref-74" Culture="Default" Path="LocationFloat" Data="580.6249,0" />
     <Item54 Ref="500" Component="#Ref-74" Culture="Default" Path="SizeF" Data="226.3751,21.45834" />
     <Item55 Ref="501" Component="#Ref-74" Culture="Default" Path="Text" Data="Unit Cost: [UnitCost_CF_1!N2]  [RationCurrency]" />
     <Item56 Ref="502" Component="#Ref-74" Culture="ar" Path="Text" Data="تكلفة الوحدة: [UnitCost_CF_1!N2] [RationCurrency]" />
