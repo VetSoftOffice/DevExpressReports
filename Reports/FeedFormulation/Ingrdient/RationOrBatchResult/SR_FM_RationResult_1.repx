@@ -36,7 +36,7 @@
     </Item2>
     <Item3 Ref="28" ControlType="DetailBand" Name="Detail">
       <Controls>
-        <Item1 Ref="29" ControlType="XRTable" Name="xrTable2" ProcessHiddenCellMode="ResizeCellsEqually" Padding="2,2,0,0,96">
+        <Item1 Ref="29" ControlType="XRTable" Name="xrTable2" ProcessHiddenCellMode="ResizeCellsProportionally" Padding="2,2,0,0,96">
           <Rows>
             <Item1 Ref="30" ControlType="XRTableRow" Name="xrTableRow2">
               <Cells>
@@ -226,7 +226,7 @@
         </Item5>
         <Item6 Ref="125" ControlType="SubBand" Name="SubBand6">
           <Controls>
-            <Item1 Ref="126" ControlType="XRTable" Name="xrTable1" ProcessHiddenCellMode="ResizeCellsEqually" Padding="2,2,0,0,96">
+            <Item1 Ref="126" ControlType="XRTable" Name="xrTable1" ProcessHiddenCellMode="ResizeCellsProportionally" Padding="2,2,0,0,96">
               <Rows>
                 <Item1 Ref="127" ControlType="XRTableRow" Name="xrTableRow1">
                   <Cells>
@@ -275,7 +275,7 @@
       <SubBands>
         <Item1 Ref="151" ControlType="SubBand" Name="SubBand11">
           <Controls>
-            <Item1 Ref="152" ControlType="XRTable" Name="xrTable3" ProcessHiddenCellMode="ResizeCellsEqually" Padding="2,2,0,0,96">
+            <Item1 Ref="152" ControlType="XRTable" Name="xrTable3" ProcessHiddenCellMode="ResizeCellsProportionally" Padding="2,2,0,0,96">
               <Rows>
                 <Item1 Ref="153" ControlType="XRTableRow" Name="xrTableRow3">
                   <Cells>

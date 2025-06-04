@@ -198,6 +198,7 @@
             this.GroupHeader_Currency = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.GroupHeaderSub1_Currency = new DevExpress.XtraReports.UI.SubBand();
             this.xrPanel2 = new DevExpress.XtraReports.UI.XRPanel();
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
@@ -253,7 +254,6 @@
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.sR_FC_CustSuppSheetTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FC_CustSuppSheetTableAdapter();
-            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
@@ -1234,6 +1234,15 @@
             this.xrPanel2.Name = "xrPanel2";
             this.xrPanel2.StylePriority.UseBorders = false;
             // 
+            // xrLabel16
+            // 
+            this.xrLabel16.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel16.Multiline = true;
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel16.StylePriority.UseBorders = false;
+            this.xrLabel16.StylePriority.UseFont = false;
+            // 
             // xrLabel14
             // 
             this.xrLabel14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
@@ -1876,14 +1885,6 @@
             // 
             this.sR_FC_CustSuppSheetTableAdapter.ClearBeforeFill = true;
             // 
-            // xrLabel16
-            // 
-            this.xrLabel16.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel16.Multiline = true;
-            this.xrLabel16.Name = "xrLabel16";
-            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel16.StylePriority.UseBorders = false;
-            // 
             // SR_FC_CustSuppSheet
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2048,8 +2049,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel14, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(695F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel14, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel14, "Default", "Text", "xrLabel19"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel16, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel16, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(467.6932F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel16, "Default", "SizeF", new System.Drawing.SizeF(112.5F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel16, "Default", "SizeF", new System.Drawing.SizeF(129.1666F, 20.00003F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel16, "Default", "Text", "Type: [ItemType_To]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel16, "ar", "Text", "النوع: [ItemType_To]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(144.358F, 0F)),
@@ -2336,7 +2338,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.1";
+            this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();

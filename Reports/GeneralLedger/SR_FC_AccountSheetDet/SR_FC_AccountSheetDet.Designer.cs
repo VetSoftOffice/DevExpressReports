@@ -32,8 +32,6 @@
             DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem1 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", false);
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem2 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_FC_AccountSheetDet));
@@ -69,10 +67,16 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.FontSize = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportHeaderCustom = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
@@ -126,14 +130,8 @@
             this.OpenDebit = new DevExpress.XtraReports.UI.CalculatedField();
             this.OpenCredit = new DevExpress.XtraReports.UI.CalculatedField();
             this.DebitMinusCredit = new DevExpress.XtraReports.UI.CalculatedField();
-            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
-            this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportHeaderCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
-            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.dsGeneralLedger1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
@@ -314,27 +312,21 @@
             // xrTableCell10
             // 
             this.xrTableCell10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "iif\n(\n\tIsNull([OpenBalance], 0) + sumRunningSum([DebitMinusCredit]) > 0,\n\tIsNull(" +
-                    "[OpenBalance], 0) + sumRunningSum([DebitMinusCredit]),\n\tnull\n)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')")});
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
+            this.xrTableCell10.Scripts.OnBeforePrint = "xrTableCell10_BeforePrint";
             this.xrTableCell10.StylePriority.UseFont = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell10.Summary = xrSummary1;
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell11
             // 
             this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "iif\n(\n\tIsNull([OpenBalance], 0) + sumRunningSum([DebitMinusCredit]) < 0,\n\tAbs(IsN" +
-                    "ull([OpenBalance], 0) + sumRunningSum([DebitMinusCredit])),\n\tnull\n)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')")});
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.Scripts.OnBeforePrint = "xrTableCell11_BeforePrint";
             this.xrTableCell11.StylePriority.UseFont = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell11.Summary = xrSummary2;
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell12
@@ -400,6 +392,14 @@
             this.SubBand3,
             this.SubBand4});
             // 
+            // SubBand3
+            // 
+            this.SubBand3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportSignature_PageFooter});
+            this.SubBand3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
+            this.SubBand3.Name = "SubBand3";
+            // 
             // srReportSignature_PageFooter
             // 
             this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
@@ -419,6 +419,19 @@
             this.FontSize.Name = "FontSize";
             this.FontSize.Visible = false;
             // 
+            // SubBand4
+            // 
+            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportFooterCustom});
+            this.SubBand4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportFooter")});
+            this.SubBand4.Name = "SubBand4";
+            // 
+            // srReportFooterCustom
+            // 
+            this.srReportFooterCustom.Name = "srReportFooterCustom";
+            this.srReportFooterCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportFooterCustom();
+            // 
             // PageHeader
             // 
             this.PageHeader.Name = "PageHeader";
@@ -426,6 +439,28 @@
             this.SubBand1,
             this.SubBand2,
             this.PageHeaderSub1});
+            // 
+            // SubBand1
+            // 
+            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportHeaderCustom});
+            this.SubBand1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportHeader\nand ?HideReportHeader==false\n\n\n")});
+            this.SubBand1.Name = "SubBand1";
+            // 
+            // srReportHeaderCustom
+            // 
+            this.srReportHeaderCustom.Name = "srReportHeaderCustom";
+            this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            this.srReportHeaderCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeaderCustom();
+            // 
+            // SubBand2
+            // 
+            this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportHeader});
+            this.SubBand2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not ?IsCustomReportHeader\nand ?HideReportHeader==false\n\n\n\n")});
+            this.SubBand2.Name = "SubBand2";
             // 
             // srReportHeader
             // 
@@ -499,6 +534,7 @@
             new DevExpress.XtraReports.UI.GroupField("AccountName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WholePage;
             this.GroupHeader1.Name = "GroupHeader1";
+            this.GroupHeader1.Scripts.OnBeforePrint = "GroupHeader1_BeforePrint";
             this.GroupHeader1.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.GroupHeaderSub1});
             // 
@@ -757,8 +793,8 @@
             this.tfDebit_GPT.Multiline = true;
             this.tfDebit_GPT.Name = "tfDebit_GPT";
             this.tfDebit_GPT.StylePriority.UseTextAlignment = false;
-            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.tfDebit_GPT.Summary = xrSummary3;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.tfDebit_GPT.Summary = xrSummary1;
             this.tfDebit_GPT.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // tfCredit_GPT
@@ -770,8 +806,8 @@
             this.tfCredit_GPT.Multiline = true;
             this.tfCredit_GPT.Name = "tfCredit_GPT";
             this.tfCredit_GPT.StylePriority.UseTextAlignment = false;
-            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.tfCredit_GPT.Summary = xrSummary4;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.tfCredit_GPT.Summary = xrSummary2;
             this.tfCredit_GPT.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell8
@@ -784,8 +820,8 @@
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
-            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell8.Summary = xrSummary5;
+            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell8.Summary = xrSummary3;
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell18
@@ -797,8 +833,8 @@
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
-            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell18.Summary = xrSummary6;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell18.Summary = xrSummary4;
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell20
@@ -837,28 +873,6 @@
             this.DebitMinusCredit.FieldType = DevExpress.XtraReports.UI.FieldType.Decimal;
             this.DebitMinusCredit.Name = "DebitMinusCredit";
             // 
-            // SubBand1
-            // 
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportHeaderCustom});
-            this.SubBand1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportHeader\nand ?HideReportHeader==false\n\n\n")});
-            this.SubBand1.Name = "SubBand1";
-            // 
-            // SubBand2
-            // 
-            this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportHeader});
-            this.SubBand2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not ?IsCustomReportHeader\nand ?HideReportHeader==false\n\n\n\n")});
-            this.SubBand2.Name = "SubBand2";
-            // 
-            // srReportHeaderCustom
-            // 
-            this.srReportHeaderCustom.Name = "srReportHeaderCustom";
-            this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
-            this.srReportHeaderCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeaderCustom();
-            // 
             // IsCustomReportHeader
             // 
             this.IsCustomReportHeader.Name = "IsCustomReportHeader";
@@ -872,27 +886,6 @@
             this.IsCustomReportFooter.Type = typeof(bool);
             this.IsCustomReportFooter.ValueInfo = "False";
             this.IsCustomReportFooter.Visible = false;
-            // 
-            // SubBand3
-            // 
-            this.SubBand3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportSignature_PageFooter});
-            this.SubBand3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
-            this.SubBand3.Name = "SubBand3";
-            // 
-            // SubBand4
-            // 
-            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportFooterCustom});
-            this.SubBand4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportFooter")});
-            this.SubBand4.Name = "SubBand4";
-            // 
-            // srReportFooterCustom
-            // 
-            this.srReportFooterCustom.Name = "srReportFooterCustom";
-            this.srReportFooterCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportFooterCustom();
             // 
             // SR_FC_AccountSheetDet
             // 
@@ -1177,7 +1170,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.1";
+            this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.dsGeneralLedger1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).EndInit();

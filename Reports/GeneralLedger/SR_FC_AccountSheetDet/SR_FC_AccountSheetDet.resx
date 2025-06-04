@@ -118,54 +118,81 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using System.ComponentModel;
-using DevExpress.XtraReports.Parameters;
+    <value>using System.Collections.Generic;
 
-int groupCounter = 1;
-int currentPageIndex = 0;
+Dictionary&lt;string, decimal&gt; debitRunningTotals = new Dictionary&lt;string, decimal&gt;();
+Dictionary&lt;string, decimal&gt; creditRunningTotals = new Dictionary&lt;string, decimal&gt;();
+Dictionary&lt;string, int&gt; lastProcessedYear = new Dictionary&lt;string, int&gt;();
 
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
+
+private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
+    decimal debitMinusCredit = Convert.ToDecimal(GetCurrentColumnValue("DebitMinusCredit") ?? 0);
+    string accountName = Convert.ToString(GetCurrentColumnValue("AccountName") ?? "");
+    int currentYear = Convert.ToInt32(GetCurrentColumnValue("ResetField") ?? 0);
+
+    string key = $"{accountName}_DEBIT";
+    string yearKey = $"{accountName}_YEAR_DEBIT";
+
+    decimal runningTotal = 0m;
+
+    if (!debitRunningTotals.ContainsKey(key) || !lastProcessedYear.ContainsKey(yearKey)) {
+        // First record for this account
+        runningTotal = openBalance + debitMinusCredit;
+    }
+    else if (lastProcessedYear[yearKey] != currentYear) {
+        // First record of a new year
+        runningTotal = debitMinusCredit;
+    }
+    else {
+        // Continuing in same year
+        runningTotal = debitRunningTotals[key] + debitMinusCredit;
+    }
+
+    // Save updated state
+    debitRunningTotals[key] = runningTotal;
+    lastProcessedYear[yearKey] = currentYear;
+
+    // Show only positive values
+    ((XRTableCell)sender).Text = runningTotal &gt; 0 ? runningTotal.ToString("N2") : "";
+                
+                      }
+ 
+
+private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
-    
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-    else
-    {
-        groupCounter = 1;
-        currentPageIndex = 0;
-        groupFooter.PageBreak = PageBreak.None;
-    }
-    //DevExpressScripts vsScripts = new DevExpressScripts();
-    //vsScripts.CreateNewPage(sender, e, ref groupCounter, ref currentPageIndex);
-}
+        decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
+    decimal debitMinusCredit = Convert.ToDecimal(GetCurrentColumnValue("DebitMinusCredit") ?? 0);
+    string accountName = Convert.ToString(GetCurrentColumnValue("AccountName") ?? "");
+    int currentYear = Convert.ToInt32(GetCurrentColumnValue("ResetField") ?? 0);
 
-/*private void trDetail_PrintOnPage(object sender, PrintOnPageEventArgs e) {
-    if(e.PageIndex &gt; currentPageIndex)
-    {
-        groupCounter = 1;
-        currentPageIndex = e.PageIndex;
+    string key = $"{accountName}_CREDIT";
+    string yearKey = $"{accountName}_YEAR_CREDIT";
+
+    decimal runningTotal = 0m;
+
+    if (!creditRunningTotals.ContainsKey(key) || !lastProcessedYear.ContainsKey(yearKey)) {
+        // First record for this account
+        runningTotal = openBalance + debitMinusCredit;
     }
-    //DevExpressScripts vsScripts = new DevExpressScripts();
-    //vsScripts.ResetGroupCounter(e, ref groupCounter, ref currentPageIndex);
-}*/
+    else if (lastProcessedYear[yearKey] != currentYear) {
+        // First record of a new year
+        runningTotal = debitMinusCredit;
+    }
+    else {
+        // Continuing in same year
+        runningTotal = creditRunningTotals[key] + debitMinusCredit;
+    }
+
+    // Save updated state
+    creditRunningTotals[key] = runningTotal;
+    lastProcessedYear[yearKey] = currentYear;
+
+    // Show only negative values (as positive)
+    ((XRTableCell)sender).Text = runningTotal &lt; 0 ? Math.Abs(runningTotal).ToString("N2") : "";
+    }
+
+
 </value>
   </data>
 </root>
