@@ -4,12 +4,26 @@ on:
   workflow_dispatch:
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Set timestamp
+      id: timestamp
+      run: echo "value=$(date +%s)" >> $GITHUB_OUTPUT
+
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+        docker build . --file Dockerfile --tag devexpressreports:${{ steps.timestamp.outputs.value }}
+
+    - name: Save Docker image to tar
+      run: |
+        docker save devexpressreports:${{ steps.timestamp.outputs.value }} -o devexpressreports.tar
+
+    - name: Upload image as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: devexpressreports-image
+        path: devexpressreports.tar
