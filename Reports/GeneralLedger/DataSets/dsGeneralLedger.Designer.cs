@@ -14821,6 +14821,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             private global::System.Data.DataColumn columnResetField;
             
+            private global::System.Data.DataColumn columnIsContinuous;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_FC_AccountSheetDataTable() {
@@ -14970,6 +14972,14 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn IsContinuousColumn {
+                get {
+                    return this.columnIsContinuous;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -15005,7 +15015,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRow AddSR_FC_AccountSheetRow(int tStActionID, int DocNumber, int VoucherNo, System.DateTime RegDate, int OpenBalance, string AccountName, string ActionType, string BillStatement, string Note, decimal Debit, decimal Credit, string DocStatus, int IsResetBalance, string ResetField) {
+            public SR_FC_AccountSheetRow AddSR_FC_AccountSheetRow(int tStActionID, int DocNumber, int VoucherNo, System.DateTime RegDate, int OpenBalance, string AccountName, string ActionType, string BillStatement, string Note, decimal Debit, decimal Credit, string DocStatus, int IsResetBalance, string ResetField, int IsContinuous) {
                 SR_FC_AccountSheetRow rowSR_FC_AccountSheetRow = ((SR_FC_AccountSheetRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         tStActionID,
@@ -15021,7 +15031,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                         Credit,
                         DocStatus,
                         IsResetBalance,
-                        ResetField};
+                        ResetField,
+                        IsContinuous};
                 rowSR_FC_AccountSheetRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSR_FC_AccountSheetRow);
                 return rowSR_FC_AccountSheetRow;
@@ -15058,6 +15069,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 this.columnDocStatus = base.Columns["DocStatus"];
                 this.columnIsResetBalance = base.Columns["IsResetBalance"];
                 this.columnResetField = base.Columns["ResetField"];
+                this.columnIsContinuous = base.Columns["IsContinuous"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15091,6 +15103,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 base.Columns.Add(this.columnIsResetBalance);
                 this.columnResetField = new global::System.Data.DataColumn("ResetField", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnResetField);
+                this.columnIsContinuous = new global::System.Data.DataColumn("IsContinuous", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsContinuous);
                 this.columntStActionID.ReadOnly = true;
                 this.columnDocNumber.ReadOnly = true;
                 this.columnVoucherNo.ReadOnly = true;
@@ -15111,6 +15125,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 this.columnIsResetBalance.ReadOnly = true;
                 this.columnResetField.ReadOnly = true;
                 this.columnResetField.MaxLength = 1;
+                this.columnIsContinuous.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28571,6 +28586,22 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int IsContinuous {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.IsContinuousColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IsContinuous\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.IsContinuousColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IstStActionIDNull() {
                 return this.IsNull(this.tableSR_FC_AccountSheet.tStActionIDColumn);
             }
@@ -28735,6 +28766,18 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetResetFieldNull() {
                 this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsIsContinuousNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.IsContinuousColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetIsContinuousNull() {
+                this[this.tableSR_FC_AccountSheet.IsContinuousColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -36417,6 +36460,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
             tableMapping.ColumnMappings.Add("DocStatus", "DocStatus");
             tableMapping.ColumnMappings.Add("IsResetBalance", "IsResetBalance");
             tableMapping.ColumnMappings.Add("ResetField", "ResetField");
+            tableMapping.ColumnMappings.Add("IsContinuous", "IsContinuous");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

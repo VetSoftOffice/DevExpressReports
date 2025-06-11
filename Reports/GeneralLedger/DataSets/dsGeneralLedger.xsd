@@ -1252,6 +1252,7 @@
               <Mapping SourceColumn="DocStatus" DataSetColumn="DocStatus" />
               <Mapping SourceColumn="IsResetBalance" DataSetColumn="IsResetBalance" />
               <Mapping SourceColumn="ResetField" DataSetColumn="ResetField" />
+              <Mapping SourceColumn="IsContinuous" DataSetColumn="IsContinuous" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -3139,6 +3140,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="IsContinuous" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="IsContinuous" msprop:Generator_ColumnPropNameInTable="IsContinuousColumn" msprop:Generator_ColumnVarNameInTable="columnIsContinuous" msprop:Generator_UserColumnName="IsContinuous" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

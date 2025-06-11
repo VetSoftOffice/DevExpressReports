@@ -126,10 +126,11 @@ Dictionary&lt;string, int&gt; lastProcessedYear = new Dictionary&lt;string, int&
 
 
 private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
+    decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
     decimal debitMinusCredit = Convert.ToDecimal(GetCurrentColumnValue("DebitMinusCredit") ?? 0);
     string accountName = Convert.ToString(GetCurrentColumnValue("AccountName") ?? "");
     int currentYear = Convert.ToInt32(GetCurrentColumnValue("ResetField") ?? 0);
+    bool isContinuous = Convert.ToBoolean(GetCurrentColumnValue("IsContinuous") ?? false);
 
     string key = $"{accountName}_DEBIT";
     string yearKey = $"{accountName}_YEAR_DEBIT";
@@ -140,20 +141,19 @@ private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.Canc
         // First record for this account
         runningTotal = openBalance + debitMinusCredit;
     }
-    else if (lastProcessedYear[yearKey] != currentYear) {
-        // First record of a new year
+    else if (lastProcessedYear[yearKey] != currentYear &amp;&amp; !isContinuous) {
+        // New year and not continuous — reset
         runningTotal = debitMinusCredit;
     }
     else {
-        // Continuing in same year
+        // Continue summing total in same year or new year if isContinuos true
         runningTotal = debitRunningTotals[key] + debitMinusCredit;
     }
 
-    // Save updated state
+    // Update state
     debitRunningTotals[key] = runningTotal;
     lastProcessedYear[yearKey] = currentYear;
 
-    // Show only positive values
     ((XRTableCell)sender).Text = runningTotal &gt; 0 ? runningTotal.ToString("N2") : "";
                 
                       }
@@ -161,10 +161,11 @@ private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.Canc
 
 private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-        decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
+     decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
     decimal debitMinusCredit = Convert.ToDecimal(GetCurrentColumnValue("DebitMinusCredit") ?? 0);
     string accountName = Convert.ToString(GetCurrentColumnValue("AccountName") ?? "");
     int currentYear = Convert.ToInt32(GetCurrentColumnValue("ResetField") ?? 0);
+    bool isContinuous = Convert.ToBoolean(GetCurrentColumnValue("IsContinuous") ?? false);
 
     string key = $"{accountName}_CREDIT";
     string yearKey = $"{accountName}_YEAR_CREDIT";
@@ -175,22 +176,20 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
         // First record for this account
         runningTotal = openBalance + debitMinusCredit;
     }
-    else if (lastProcessedYear[yearKey] != currentYear) {
-        // First record of a new year
+    else if (lastProcessedYear[yearKey] != currentYear &amp;&amp; !isContinuous) {
+        // New year and not continuous — reset
         runningTotal = debitMinusCredit;
     }
     else {
-        // Continuing in same year
+        // Continue from previous total
         runningTotal = creditRunningTotals[key] + debitMinusCredit;
     }
 
-    // Save updated state
+    // Update state
     creditRunningTotals[key] = runningTotal;
     lastProcessedYear[yearKey] = currentYear;
 
-    // Show only negative values (as positive)
-    ((XRTableCell)sender).Text = runningTotal &lt; 0 ? Math.Abs(runningTotal).ToString("N2") : "";
-    }
+    ((XRTableCell)sender).Text = runningTotal &lt; 0 ? Math.Abs(runningTotal).ToString("N2") : "";    }
 
 
 </value>
