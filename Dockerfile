@@ -1,5 +1,5 @@
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0-bookworm-slim AS base
 # USER $APP_UID # Disabled for sudo privilege
 WORKDIR /app
 EXPOSE 8080
@@ -17,7 +17,7 @@ RUN apt install -y ttf-mscorefonts-installer
 
 
 # This stage is used to build the service project
-FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim AS publish
+FROM mcr.microsoft.com/dotnet/sdk:9.0-bookworm-slim AS publish
 ARG BUILD_CONFIGURATION=Release
 ARG DEVEXPRESS_NUGET_API_KEY="d741vNWM8MRmply6ZweCO2ihJb99GU3ootPmt5s5vn66jbMcYK"
 

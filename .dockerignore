@@ -485,4 +485,5 @@ $RECYCLE.BIN/
 
 bin/
 .vs/
-git
+.git/
+obj/
