@@ -224,6 +224,9 @@
     <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_WeeklyLayFlocks\SR_LAY_WeeklyLayFlocks.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_WeeklyProdPerf\SR_LAY_WeeklyProdPerf.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="Reports\Farms\Layer\ProductionPeriod\Performance\SR_LAY_WeeklyRearFlksRecord\SR_LAY_WeeklyRearFlksRecord.cs">
       <SubType>XtraReport</SubType>
     </Compile>
