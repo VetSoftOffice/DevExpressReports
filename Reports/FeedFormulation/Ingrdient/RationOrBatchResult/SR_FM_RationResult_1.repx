@@ -341,7 +341,7 @@
                   <SeriesSerializable>
                     <Item1 Ref="190" Name="Series 1" SeriesID="0" ArgumentDataMember="SR_FM_RationResult.IngredientName" ValueDataMembersSerializable="SR_FM_RationResult.QuantityPercent">
                       <View Ref="191" TypeNameSerializable="PieSeriesView" />
-                      <Label Ref="192" Position="TwoColumns" TypeNameSerializable="PieSeriesLabel" DXFont="Tahoma, 7pt" ResolveOverlappingMode="Default" />
+                      <Label Ref="192" Position="TwoColumns" TypeNameSerializable="PieSeriesLabel" DXFont="Tahoma, 5pt, style=Bold" LineLength="8" ResolveOverlappingMode="Default" />
                     </Item1>
                   </SeriesSerializable>
                 </DataContainer>
@@ -556,7 +556,7 @@
     <Item26 Ref="313" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item27 Ref="314" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 23" />
     <Item28 Ref="315" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item29 Ref="316" Component="#Ref-186" Culture="Default" Path="HeightF" Data="471.8751" />
+    <Item29 Ref="316" Component="#Ref-186" Culture="Default" Path="HeightF" Data="244.79" />
     <Item30 Ref="317" Component="#Ref-114" Culture="Default" Path="HeightF" Data="21.45834" />
     <Item31 Ref="318" Component="#Ref-151" Culture="Default" Path="HeightF" Data="25" />
     <Item32 Ref="319" Component="#Ref-284" Culture="Default" Path="HeightF" Data="23" />
@@ -570,7 +570,7 @@
     <Item40 Ref="327" Component="#Ref-20" Culture="Default" Path="HeightF" Data="20" />
     <Item41 Ref="328" Component="#Ref-187" Culture="Default" Path="LocationFloat" Data="0.0001351039,0" />
     <Item42 Ref="329" Component="#Ref-187" Culture="Default" Path="Series.0.Label.TextPattern" Data="{A}         {V:N2}" />
-    <Item43 Ref="330" Component="#Ref-187" Culture="Default" Path="SizeF" Data="806.9999,471.8751" />
+    <Item43 Ref="330" Component="#Ref-187" Culture="Default" Path="SizeF" Data="806.9999,244.79" />
     <Item44 Ref="331" Component="#Ref-106" Culture="Default" Path="LocationFloat" Data="0,11.45833" />
     <Item45 Ref="332" Component="#Ref-106" Culture="Default" Path="SizeF" Data="490.1913,21.45834" />
     <Item46 Ref="333" Component="#Ref-106" Culture="Default" Path="Text" Data="RationName: [RationName]" />
