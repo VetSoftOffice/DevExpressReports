@@ -741,13 +741,15 @@
             this.xrChart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart1.Name = "xrChart1";
             series1.ArgumentDataMember = "SR_FM_RationResult.IngredientName";
-            pieSeriesLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 5F, DevExpress.Drawing.DXFontStyle.Bold);
+            pieSeriesLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 7F);
             pieSeriesLabel1.LineLength = 8;
             pieSeriesLabel1.Position = DevExpress.XtraCharts.PieSeriesLabelPosition.TwoColumns;
             pieSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
             series1.Label = pieSeriesLabel1;
             series1.Name = "Series 1";
             series1.SeriesID = 0;
+            series1.TopNOptions.Count = 9;
+            series1.TopNOptions.Enabled = true;
             series1.ValueDataMembersSerializable = "SR_FM_RationResult.QuantityPercent";
             series1.View = pieSeriesView1;
             this.xrChart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
@@ -976,7 +978,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.0001351039F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "Series.0.Label.TextPattern", "{A}         {V:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "SizeF", new System.Drawing.SizeF(806.9999F, 244.79F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "SizeF", new System.Drawing.SizeF(806.9999F, 237.91F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 11.45833F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(490.1913F, 21.45834F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "RationName: [RationName]"),

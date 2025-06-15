@@ -56,13 +56,13 @@
             this.subBand11 = new DevExpress.XtraReports.UI.SubBand();
             this.RationResNut = new DevExpress.XtraReports.UI.XRSubreport();
             this.RationResIng = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrChart2 = new DevExpress.XtraReports.UI.XRChart();
             this.reportFooterBand1 = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.subBand15 = new DevExpress.XtraReports.UI.SubBand();
             this.subBand16 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.subBand17 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
-            this.xrChart2 = new DevExpress.XtraReports.UI.XRChart();
             this.pageFooterBand1 = new DevExpress.XtraReports.UI.PageFooterBand();
             this.subBand14 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
@@ -84,11 +84,8 @@
             this.sR_FM_RationResultTableAdapter1 = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FM_RationResultTableAdapter();
             this.IsBasis_1 = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsShowDifference_1 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.CopyRight = new DevExpress.XtraReports.UI.CalculatedField();
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
-            this.groupHeaderBand1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.subBand19 = new DevExpress.XtraReports.UI.SubBand();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
@@ -155,8 +152,7 @@
             this.subBand12,
             this.subBand13,
             this.subBand18,
-            this.subBand11,
-            this.subBand19});
+            this.subBand11});
             // 
             // subBand5
             // 
@@ -273,6 +269,29 @@
             this.RationResIng.Name = "RationResIng";
             this.RationResIng.ReportSource = new DevExpressReports.Reports.FeedFormulation.Ingrdient.RationResIng.RationResIng();
             // 
+            // xrChart2
+            // 
+            this.xrChart2.BorderColor = System.Drawing.Color.Black;
+            this.xrChart2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrChart2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
+            this.xrChart2.Name = "xrChart2";
+            series1.ArgumentDataMember = "SR_FM_RationResult.IngredientName";
+            pieSeriesLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 7F);
+            pieSeriesLabel1.LineLength = 8;
+            pieSeriesLabel1.Position = DevExpress.XtraCharts.PieSeriesLabelPosition.TwoColumns;
+            pieSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
+            series1.Label = pieSeriesLabel1;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series1.Name = "Series 1";
+            series1.SeriesID = 0;
+            series1.TopNOptions.Count = 9;
+            series1.TopNOptions.Enabled = true;
+            series1.ValueDataMembersSerializable = "SR_FM_RationResult.QuantityPercent";
+            series1.View = pieSeriesView1;
+            this.xrChart2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1};
+            this.xrChart2.SmallChartText.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 9F);
+            // 
             // reportFooterBand1
             // 
             this.reportFooterBand1.Name = "reportFooterBand1";
@@ -283,6 +302,8 @@
             // 
             // subBand15
             // 
+            this.subBand15.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrChart2});
             this.subBand15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsShowChart_1")});
             this.subBand15.KeepTogether = true;
@@ -313,27 +334,6 @@
             // 
             this.srReportSignature.Name = "srReportSignature";
             this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
-            // 
-            // xrChart2
-            // 
-            this.xrChart2.BorderColor = System.Drawing.Color.Black;
-            this.xrChart2.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrChart2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
-            this.xrChart2.Name = "xrChart2";
-            series1.ArgumentDataMember = "SR_FM_RationResult.IngredientName";
-            pieSeriesLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 5F, DevExpress.Drawing.DXFontStyle.Bold);
-            pieSeriesLabel1.LineLength = 8;
-            pieSeriesLabel1.Position = DevExpress.XtraCharts.PieSeriesLabelPosition.TwoColumns;
-            pieSeriesLabel1.ResolveOverlappingMode = DevExpress.XtraCharts.ResolveOverlappingMode.Default;
-            series1.Label = pieSeriesLabel1;
-            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series1.Name = "Series 1";
-            series1.SeriesID = 0;
-            series1.ValueDataMembersSerializable = "SR_FM_RationResult.QuantityPercent";
-            series1.View = pieSeriesView1;
-            this.xrChart2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.xrChart2.SmallChartText.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 9F);
             // 
             // pageFooterBand1
             // 
@@ -468,13 +468,6 @@
             this.IsShowDifference_1.ValueInfo = "False";
             this.IsShowDifference_1.Visible = false;
             // 
-            // GroupFooter1
-            // 
-            this.GroupFooter1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsShowChart_1")});
-            this.GroupFooter1.KeepTogether = true;
-            this.GroupFooter1.Name = "GroupFooter1";
-            // 
             // CopyRight
             // 
             this.CopyRight.DataMember = "SR_FM_RationResult";
@@ -489,19 +482,6 @@
             this.IsRTL.ValueInfo = "False";
             this.IsRTL.Visible = false;
             // 
-            // groupHeaderBand1
-            // 
-            this.groupHeaderBand1.KeepTogether = true;
-            this.groupHeaderBand1.Name = "groupHeaderBand1";
-            // 
-            // subBand19
-            // 
-            this.subBand19.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrChart2});
-            this.subBand19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsShowChart_1\n")});
-            this.subBand19.Name = "subBand19";
-            // 
             // RationResIngNut
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -510,9 +490,7 @@
             this.detailBand1,
             this.pageHeaderBand1,
             this.reportFooterBand1,
-            this.pageFooterBand1,
-            this.GroupFooter1,
-            this.groupHeaderBand1});
+            this.pageFooterBand1});
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
             this.calculatedField1,
             this.calculatedField2,
@@ -528,8 +506,6 @@
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.bottomMarginBand1, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.detailBand1, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter1, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.groupHeaderBand1, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsBasis_1, "Default", "Description", "IsBasis_1"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "Default", "Description", "IsRTL"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsShowChart_1, "Default", "Description", "IsShowChart_1"),
@@ -562,16 +538,15 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand12, "Default", "HeightF", 21.45834F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand13, "Default", "HeightF", 21.45834F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand14, "Default", "HeightF", 23.75673F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand15, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand15, "Default", "HeightF", 204.9933F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand16, "Default", "HeightF", 24.58324F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand17, "Default", "HeightF", 22.16655F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand18, "Default", "HeightF", 21.45669F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand19, "Default", "HeightF", 225.3667F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand5, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.topMarginBand1, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.589457E-05F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "Series.0.Label.TextPattern", "{A}      {V:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "SizeF", new System.Drawing.SizeF(807.0002F, 225.3667F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "SizeF", new System.Drawing.SizeF(807.0002F, 204.9933F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel11, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(580.6251F, 10.41668F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel11, "Default", "SizeF", new System.Drawing.SizeF(226.3751F, 21.45834F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel11, "Default", "Text", "Total Cost: [TotalCost!N2]  [RationCurrency]"),
@@ -748,14 +723,11 @@
         private DevExpress.XtraReports.UI.SubBand subBand11;
         private DevExpress.XtraReports.UI.SubBand subBand12;
         private DevExpress.XtraReports.UI.SubBand subBand13;
-        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo4;
         private DevExpress.XtraReports.UI.SubBand subBand14;
         private DevExpress.XtraReports.UI.XRLabel xrLabel16;
         private DevExpress.XtraReports.UI.CalculatedField CopyRight;
         private DevExpress.XtraReports.Parameters.Parameter IsRTL;
         private DevExpress.XtraReports.UI.SubBand subBand18;
-        private DevExpress.XtraReports.UI.GroupHeaderBand groupHeaderBand1;
-        private DevExpress.XtraReports.UI.SubBand subBand19;
     }
 }
