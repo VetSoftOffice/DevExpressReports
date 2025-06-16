@@ -537,7 +537,7 @@
               <Chart Ref="345">
                 <DataContainer Ref="346" ValidateDataMembers="true">
                   <SeriesSerializable>
-                    <Item1 Ref="347" Name="Series 1" SeriesID="0" ArgumentDataMember="SR_FM_RationResult.IngredientName" ValueDataMembersSerializable="SR_FM_RationResult.QuantityPercent" LabelsVisibility="True">
+                    <Item1 Ref="347" Name="Series 1" SeriesID="0" ArgumentDataMember="SR_FM_RationResult.IngredientName" ValueDataMembersSerializable="SR_FM_RationResult.QuantityPercent" LabelsVisibility="True" SeriesPointsSorting="Ascending" SeriesPointsSortingKey="Value_1">
                       <View Ref="348" TypeNameSerializable="PieSeriesView" />
                       <Label Ref="349" Position="TwoColumns" TypeNameSerializable="PieSeriesLabel" DXFont="Tahoma, 7pt" LineLength="8" ResolveOverlappingMode="Default" />
                       <TopNOptions Ref="350" Enabled="true" Count="9" />

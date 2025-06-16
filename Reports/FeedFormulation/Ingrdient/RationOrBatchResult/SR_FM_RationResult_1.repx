@@ -339,7 +339,7 @@
               <Chart Ref="188">
                 <DataContainer Ref="189" ValidateDataMembers="true">
                   <SeriesSerializable>
-                    <Item1 Ref="190" Name="Series 1" SeriesID="0" ArgumentDataMember="SR_FM_RationResult.IngredientName" ValueDataMembersSerializable="SR_FM_RationResult.QuantityPercent">
+                    <Item1 Ref="190" Name="Series 1" SeriesID="0" ArgumentDataMember="SR_FM_RationResult.IngredientName" ValueDataMembersSerializable="SR_FM_RationResult.QuantityPercent" SeriesPointsSorting="Ascending" SeriesPointsSortingKey="Value_1">
                       <View Ref="191" TypeNameSerializable="PieSeriesView" />
                       <Label Ref="192" Position="TwoColumns" TypeNameSerializable="PieSeriesLabel" DXFont="Tahoma, 7pt" LineLength="8" ResolveOverlappingMode="Default" />
                       <TopNOptions Ref="193" Enabled="true" Count="9" />
@@ -557,7 +557,7 @@
     <Item26 Ref="314" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item27 Ref="315" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 23" />
     <Item28 Ref="316" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item29 Ref="317" Component="#Ref-186" Culture="Default" Path="HeightF" Data="244.79" />
+    <Item29 Ref="317" Component="#Ref-186" Culture="Default" Path="HeightF" Data="237.91" />
     <Item30 Ref="318" Component="#Ref-114" Culture="Default" Path="HeightF" Data="21.45834" />
     <Item31 Ref="319" Component="#Ref-151" Culture="Default" Path="HeightF" Data="25" />
     <Item32 Ref="320" Component="#Ref-285" Culture="Default" Path="HeightF" Data="23" />

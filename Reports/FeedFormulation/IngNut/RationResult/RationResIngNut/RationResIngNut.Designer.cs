@@ -284,6 +284,8 @@
             series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.Name = "Series 1";
             series1.SeriesID = 0;
+            series1.SeriesPointsSorting = DevExpress.XtraCharts.SortingMode.Ascending;
+            series1.SeriesPointsSortingKey = DevExpress.XtraCharts.SeriesPointKey.Value_1;
             series1.TopNOptions.Count = 9;
             series1.TopNOptions.Enabled = true;
             series1.ValueDataMembersSerializable = "SR_FM_RationResult.QuantityPercent";
