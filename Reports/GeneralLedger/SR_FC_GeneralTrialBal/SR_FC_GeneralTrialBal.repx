@@ -71,14 +71,14 @@
                 <Item6 Ref="46" ControlType="XRTableCell" Name="xrTableCell17" Multiline="true" TextAlignment="MiddleRight" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="47" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;&#xA;" />
-                    <Item2 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="Iif(IsNull([CloseDebit]), '', FormatString('{0:n2}', [CloseDebit]))&#xA;" />
+                    <Item2 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="Iif(IsNull([CloseBalance]) Or [CloseBalance] &lt;= 0.005 Or [CloseBalance] &lt;= 0, '', FormatString('{0:n2}', [CloseBalance]))&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="49" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item6>
                 <Item7 Ref="50" ControlType="XRTableCell" Name="xrTableCell18" Multiline="true" TextAlignment="MiddleRight" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="51" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
-                    <Item2 Ref="52" EventName="BeforePrint" PropertyName="Text" Expression="Iif(IsNull([CloseCredit]), '', FormatString('{0:n2}', [CloseCredit]))&#xA;" />
+                    <Item2 Ref="52" EventName="BeforePrint" PropertyName="Text" Expression="Iif(IsNull([CloseBalance]) Or [CloseBalance] &gt;= -0.0049 Or [CloseBalance] &gt;= 0, '', FormatString('{0:n2}', Abs([CloseBalance])))&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="53" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item7>
@@ -692,16 +692,16 @@
                 <Item6 Ref="351" ControlType="XRTableCell" Name="xrTableCell21" Multiline="true" TextAlignment="MiddleRight">
                   <Summary Ref="352" Running="Report" />
                   <ExpressionBindings>
-                    <Item1 Ref="353" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseDebit])" />
-                    <Item2 Ref="354" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item1 Ref="353" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item2 Ref="354" EventName="BeforePrint" PropertyName="Text" Expression="sumSum(Iif([CloseBalance] &gt; 0, [CloseBalance], 0))&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="355" UseTextAlignment="false" />
                 </Item6>
                 <Item7 Ref="356" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" TextAlignment="MiddleRight">
                   <Summary Ref="357" Running="Report" />
                   <ExpressionBindings>
-                    <Item1 Ref="358" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseCredit])" />
-                    <Item2 Ref="359" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item1 Ref="358" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item2 Ref="359" EventName="BeforePrint" PropertyName="Text" Expression="sumSum(Iif([CloseBalance] &lt; 0, Abs([CloseBalance]), 0))&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="360" UseTextAlignment="false" />
                 </Item7>
@@ -799,16 +799,16 @@
                 <Item6 Ref="408" ControlType="XRTableCell" Name="xrTableCell38" Multiline="true" TextAlignment="MiddleRight">
                   <Summary Ref="409" Running="Group" />
                   <ExpressionBindings>
-                    <Item1 Ref="410" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseDebit])" />
-                    <Item2 Ref="411" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item1 Ref="410" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item2 Ref="411" EventName="BeforePrint" PropertyName="Text" Expression="sumSum(Iif([CloseBalance] &gt; 0, [CloseBalance], 0))&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="412" UseTextAlignment="false" />
                 </Item6>
                 <Item7 Ref="413" ControlType="XRTableCell" Name="xrTableCell39" Multiline="true" TextAlignment="MiddleRight">
                   <Summary Ref="414" Running="Group" />
                   <ExpressionBindings>
-                    <Item1 Ref="415" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseCredit])" />
-                    <Item2 Ref="416" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item1 Ref="415" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                    <Item2 Ref="416" EventName="BeforePrint" PropertyName="Text" Expression="sumSum(Iif([CloseBalance] &lt; 0, Abs([CloseBalance]), 0))&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="417" UseTextAlignment="false" />
                 </Item7>

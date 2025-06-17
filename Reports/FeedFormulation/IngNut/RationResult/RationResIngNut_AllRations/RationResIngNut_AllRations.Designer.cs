@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RationResIngNut_AllRations));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
@@ -62,7 +63,10 @@
             this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsShowDM = new DevExpress.XtraReports.Parameters.Parameter();
             this.CopyRight = new DevExpress.XtraReports.UI.CalculatedField();
-            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
+            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -80,6 +84,19 @@
             this.pageInfoPageNoOfTotal});
             this.BottomMargin.HeightF = 23F;
             this.BottomMargin.Name = "BottomMargin";
+            // 
+            // xrPageInfo2
+            // 
+            this.xrPageInfo2.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
+            this.xrPageInfo2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.xrPageInfo2.ForeColor = System.Drawing.Color.Black;
+            this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(683.5447F, 0F);
+            this.xrPageInfo2.Name = "xrPageInfo2";
+            this.xrPageInfo2.Scripts.OnBeforePrint = "xrPageInfo2_BeforePrint";
+            this.xrPageInfo2.SizeF = new System.Drawing.SizeF(123.4554F, 22.99994F);
+            this.xrPageInfo2.StylePriority.UseForeColor = false;
+            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrPageInfo2.TextFormatString = "Page {0} of {1}";
             // 
             // pageInfoCurrentDate
             // 
@@ -169,6 +186,8 @@
             this.PageFooter.HeightF = 0F;
             this.PageFooter.Name = "PageFooter";
             this.PageFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.SubBand6,
+            this.SubBand7,
             this.SubBand4});
             // 
             // SubBand4
@@ -315,18 +334,35 @@
     "03-2025 VetSoft Office, All rights reserved\')\n";
             this.CopyRight.Name = "CopyRight";
             // 
-            // xrPageInfo2
+            // SubBand6
             // 
-            this.xrPageInfo2.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.xrPageInfo2.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.xrPageInfo2.ForeColor = System.Drawing.Color.Black;
-            this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(683.5447F, 0F);
-            this.xrPageInfo2.Name = "xrPageInfo2";
-            this.xrPageInfo2.Scripts.OnBeforePrint = "xrPageInfo2_BeforePrint";
-            this.xrPageInfo2.SizeF = new System.Drawing.SizeF(123.4554F, 22.99994F);
-            this.xrPageInfo2.StylePriority.UseForeColor = false;
-            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrPageInfo2.TextFormatString = "Page {0} of {1}";
+            this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportSignature_PageFooter});
+            this.SubBand6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
+            this.SubBand6.HeightF = 20.8333F;
+            this.SubBand6.Name = "SubBand6";
+            // 
+            // SubBand7
+            // 
+            this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportFooterCustom});
+            this.SubBand7.HeightF = 20F;
+            this.SubBand7.Name = "SubBand7";
+            // 
+            // srReportSignature_PageFooter
+            // 
+            this.srReportSignature_PageFooter.LocationFloat = new DevExpress.Utils.PointFloat(0.003218651F, 0F);
+            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
+            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            this.srReportSignature_PageFooter.SizeF = new System.Drawing.SizeF(806.9969F, 20F);
+            // 
+            // srReportFooterCustom
+            // 
+            this.srReportFooterCustom.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.srReportFooterCustom.Name = "srReportFooterCustom";
+            this.srReportFooterCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportFooterCustom();
+            this.srReportFooterCustom.SizeF = new System.Drawing.SizeF(807F, 20F);
             // 
             // RationResIngNut_AllRations
             // 
@@ -411,5 +447,9 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.CalculatedField CopyRight;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
+        private DevExpress.XtraReports.UI.SubBand SubBand6;
+        private DevExpress.XtraReports.UI.SubBand SubBand7;
+        private DevExpress.XtraReports.UI.XRSubreport srReportSignature_PageFooter;
+        private DevExpress.XtraReports.UI.XRSubreport srReportFooterCustom;
     }
 }

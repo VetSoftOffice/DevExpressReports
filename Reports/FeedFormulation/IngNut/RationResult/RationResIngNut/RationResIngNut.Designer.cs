@@ -63,7 +63,11 @@
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.subBand17 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
-            this.pageFooterBand1 = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.subBand19 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
+            this.subBand20 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.subBand14 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             this.calculatedField1 = new DevExpress.XtraReports.UI.CalculatedField();
@@ -75,17 +79,14 @@
             this.IsShowDM_1 = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsShowCost_1 = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsShowChart_1 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.parameter5 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.parameter6 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.parameter7 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.parameter8 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.parameter9 = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsFinance2 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.sR_FM_RationResultTableAdapter1 = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FM_RationResultTableAdapter();
             this.IsBasis_1 = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsShowDifference_1 = new DevExpress.XtraReports.Parameters.Parameter();
             this.CopyRight = new DevExpress.XtraReports.UI.CalculatedField();
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
@@ -337,11 +338,36 @@
             this.srReportSignature.Name = "srReportSignature";
             this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
-            // pageFooterBand1
+            // PageFooter
             // 
-            this.pageFooterBand1.Name = "pageFooterBand1";
-            this.pageFooterBand1.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.PageFooter.Name = "PageFooter";
+            this.PageFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.subBand19,
+            this.subBand20,
             this.subBand14});
+            // 
+            // subBand19
+            // 
+            this.subBand19.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportSignature_PageFooter});
+            this.subBand19.Name = "subBand19";
+            this.subBand19.Scripts.OnBeforePrint = "subBand19_BeforePrint";
+            // 
+            // srReportSignature_PageFooter
+            // 
+            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
+            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            // 
+            // subBand20
+            // 
+            this.subBand20.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportFooterCustom});
+            this.subBand20.Name = "subBand20";
+            // 
+            // srReportFooterCustom
+            // 
+            this.srReportFooterCustom.Name = "srReportFooterCustom";
+            this.srReportFooterCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportFooterCustom();
             // 
             // subBand14
             // 
@@ -418,35 +444,6 @@
             this.IsShowChart_1.ValueInfo = "False";
             this.IsShowChart_1.Visible = false;
             // 
-            // parameter5
-            // 
-            this.parameter5.Name = "parameter5";
-            this.parameter5.Type = typeof(bool);
-            this.parameter5.ValueInfo = "False";
-            this.parameter5.Visible = false;
-            // 
-            // parameter6
-            // 
-            this.parameter6.Name = "parameter6";
-            this.parameter6.Type = typeof(bool);
-            this.parameter6.ValueInfo = "False";
-            this.parameter6.Visible = false;
-            // 
-            // parameter7
-            // 
-            this.parameter7.Name = "parameter7";
-            this.parameter7.Visible = false;
-            // 
-            // parameter8
-            // 
-            this.parameter8.Name = "parameter8";
-            this.parameter8.Visible = false;
-            // 
-            // parameter9
-            // 
-            this.parameter9.Name = "parameter9";
-            this.parameter9.Visible = false;
-            // 
             // dsFinance2
             // 
             this.dsFinance2.DataSetName = "dsFinance";
@@ -484,6 +481,20 @@
             this.IsRTL.ValueInfo = "False";
             this.IsRTL.Visible = false;
             // 
+            // ShowSignature
+            // 
+            this.ShowSignature.Name = "ShowSignature";
+            this.ShowSignature.Type = typeof(bool);
+            this.ShowSignature.ValueInfo = "False";
+            this.ShowSignature.Visible = false;
+            // 
+            // ShowSignatureAllPages
+            // 
+            this.ShowSignatureAllPages.Name = "ShowSignatureAllPages";
+            this.ShowSignatureAllPages.Type = typeof(bool);
+            this.ShowSignatureAllPages.ValueInfo = "False";
+            this.ShowSignatureAllPages.Visible = false;
+            // 
             // RationResIngNut
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -492,7 +503,7 @@
             this.detailBand1,
             this.pageHeaderBand1,
             this.reportFooterBand1,
-            this.pageFooterBand1});
+            this.PageFooter});
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
             this.calculatedField1,
             this.calculatedField2,
@@ -514,13 +525,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsShowCost_1, "Default", "Description", "IsShowCost_1"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsShowDifference_1, "Default", "Description", "IsShowDifference_1"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsShowDM_1, "Default", "Description", "IsShowDM_1"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageFooterBand1, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageHeaderBand1, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.parameter5, "Default", "Description", "ShowSignature"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.parameter6, "Default", "Description", "ShowSignatureAllPages"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.parameter7, "Default", "Description", "From"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.parameter8, "Default", "Description", "To"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.parameter9, "Default", "Description", "FeedMillcode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResIng, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(34.37498F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResIng, "Default", "SizeF", new System.Drawing.SizeF(279.1451F, 34.46F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -529,12 +535,18 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResNut, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(313.5201F, 0.001653036F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RationResNut, "Default", "SizeF", new System.Drawing.SizeF(251.8134F, 34.45834F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.reportFooterBand1, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "Default", "Description", "ShowSignature"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "ShowSignatureAllPages"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(7.947286E-06F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(807F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(807.0002F, 24.58324F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(807.0002F, 22.16655F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(806.9969F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand10, "Default", "HeightF", 31.87502F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand11, "Default", "HeightF", 34.46F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand12, "Default", "HeightF", 21.45834F),
@@ -544,6 +556,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand16, "Default", "HeightF", 24.58324F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand17, "Default", "HeightF", 22.16655F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand18, "Default", "HeightF", 21.45669F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand19, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand20, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.subBand5, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.topMarginBand1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
@@ -600,11 +614,8 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsBasis_1, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsShowDifference_1, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsRTL, DevExpress.XtraReports.Parameters.Orientation.Vertical),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter5, DevExpress.XtraReports.Parameters.Orientation.Vertical),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter6, DevExpress.XtraReports.Parameters.Orientation.Vertical),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter7, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter8, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter9, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignature, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignatureAllPages, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsShowDM_1,
             this.IsShowCost_1,
@@ -612,11 +623,8 @@
             this.IsBasis_1,
             this.IsShowDifference_1,
             this.IsRTL,
-            this.parameter5,
-            this.parameter6,
-            this.parameter7,
-            this.parameter8,
-            this.parameter9});
+            this.ShowSignature,
+            this.ShowSignatureAllPages});
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
@@ -646,7 +654,6 @@
         private DevExpress.XtraReports.UI.XRSubreport srReportNotes;
         private DevExpress.XtraReports.UI.SubBand SubBand9;
         private DevExpress.XtraReports.UI.XRSubreport srReportSignature;
-        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.CalculatedField TotalCost;
         private DevExpress.XtraReports.UI.CalculatedField TotalProfit;
         private DevExpress.XtraReports.UI.CalculatedField Message;
@@ -657,8 +664,7 @@
         private DevExpress.XtraReports.Parameters.Parameter IsShowDM;
         private DevExpress.XtraReports.Parameters.Parameter IsShowCost;
         private DevExpress.XtraReports.Parameters.Parameter IsShowChart;
-        private DevExpress.XtraReports.Parameters.Parameter ShowSignature;
-        private DevExpress.XtraReports.Parameters.Parameter ShowSignatureAllPages;
+
         private DevExpress.XtraReports.Parameters.Parameter DateFrom;
         private DevExpress.XtraReports.Parameters.Parameter DateTo;
         private DevExpress.XtraReports.Parameters.Parameter FeedMillCode;
@@ -701,7 +707,7 @@
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport2;
         private DevExpress.XtraReports.UI.SubBand subBand17;
         
-        private DevExpress.XtraReports.UI.PageFooterBand pageFooterBand1;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.CalculatedField calculatedField1;
         private DevExpress.XtraReports.UI.CalculatedField calculatedField2;
         private DevExpress.XtraReports.UI.CalculatedField calculatedField3;
@@ -711,11 +717,6 @@
         private DevExpress.XtraReports.Parameters.Parameter IsShowDM_1;
         private DevExpress.XtraReports.Parameters.Parameter IsShowCost_1;
         private DevExpress.XtraReports.Parameters.Parameter IsShowChart_1;
-        private DevExpress.XtraReports.Parameters.Parameter parameter5;
-        private DevExpress.XtraReports.Parameters.Parameter parameter6;
-        private DevExpress.XtraReports.Parameters.Parameter parameter7;
-        private DevExpress.XtraReports.Parameters.Parameter parameter8;
-        private DevExpress.XtraReports.Parameters.Parameter parameter9;
         private DevExpress.XtraReports.UI.XRSubreport RationResIng;
         private Finance.DataSets.dsFinance dsFinance2;
         private Finance.DataSets.dsFinanceTableAdapters.SR_FM_RationResultTableAdapter sR_FM_RationResultTableAdapter1;
@@ -731,5 +732,11 @@
         private DevExpress.XtraReports.UI.CalculatedField CopyRight;
         private DevExpress.XtraReports.Parameters.Parameter IsRTL;
         private DevExpress.XtraReports.UI.SubBand subBand18;
+        private DevExpress.XtraReports.UI.SubBand subBand19;
+        private DevExpress.XtraReports.UI.SubBand subBand20;
+        private DevExpress.XtraReports.UI.XRSubreport srReportSignature_PageFooter;
+        private DevExpress.XtraReports.UI.XRSubreport srReportFooterCustom;
+        private DevExpress.XtraReports.Parameters.Parameter ShowSignature;
+        private DevExpress.XtraReports.Parameters.Parameter ShowSignatureAllPages;
     }
 }
