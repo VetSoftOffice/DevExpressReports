@@ -131,11 +131,11 @@ private void xrLabel3_BeforePrint(object sender, System.ComponentModel.CancelEve
     if (!string.IsNullOrEmpty(rawValue) &amp;&amp;
         rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
     {
-        xrLabelCustomerName.Text = rawValue.Substring(1, rawValue.Length - 2); // Remove first and last character
+        xrLabel3.Text = rawValue.Substring(1, rawValue.Length - 2); // Remove first and last character
     }
     else
     {
-        xrLabelCustomerName.Text = rawValue;
+        xrLabel3.Text = rawValue;
     }
 }
 </value>
