@@ -193,6 +193,11 @@ private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.Cance
         cell.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0);
     }
 }
+
+private void xrChart1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    xrChart1.Series[0].TopNOptions.OthersArgument =
+        Convert.ToBoolean(Parameters["IsRTL"].Value) ? "أخرى" : "Others";
+}
 </value>
   </data>
 </root>

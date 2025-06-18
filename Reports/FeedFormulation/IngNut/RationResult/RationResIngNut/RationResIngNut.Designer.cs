@@ -276,6 +276,7 @@
             this.xrChart2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrChart2.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart2.Name = "xrChart2";
+            this.xrChart2.Scripts.OnBeforePrint = "xrChart2_BeforePrint";
             series1.ArgumentDataMember = "SR_FM_RationResult.IngredientName";
             pieSeriesLabel1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 7F);
             pieSeriesLabel1.LineLength = 8;
@@ -350,6 +351,8 @@
             // 
             this.subBand19.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.srReportSignature_PageFooter});
+            this.subBand19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
             this.subBand19.Name = "subBand19";
             this.subBand19.Scripts.OnBeforePrint = "subBand19_BeforePrint";
             // 

@@ -376,6 +376,11 @@ private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.Canc
 
 }
 
+
+private void xrChart2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    xrChart2.Series[0].TopNOptions.OthersArgument =
+        Convert.ToBoolean(Parameters["IsRTL"].Value) ? "أخرى" : "Others";
+}
 </value>
   </data>
 </root>
