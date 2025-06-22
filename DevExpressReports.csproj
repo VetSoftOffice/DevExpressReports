@@ -210,6 +210,9 @@
     <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\FR_LAY_ProdWeeklyDepl\FR_LAY_ProdWeeklyDepl.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_DailyStockReport\SR_LAY_DailyStockReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
     <Compile Update="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_ProdAndIssueReport\SR_LAY_DailyDataHsWise.cs">
       <SubType>XtraReport</SubType>
     </Compile>
