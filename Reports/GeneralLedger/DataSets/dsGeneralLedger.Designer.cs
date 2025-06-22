@@ -76,13 +76,13 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         
         private SR_GL_IncomeStatmentDataTable tableSR_GL_IncomeStatment;
         
-        private SR_FC_AccountSheetDataTable tableSR_FC_AccountSheet;
-        
         private SR_FC_SpecialJournalDataTable tableSR_FC_SpecialJournal;
         
         private SR_GL_CashFlowDataTable tableSR_GL_CashFlow;
         
         private SR_GL_CashFlow_ParamsDataTable tableSR_GL_CashFlow_Params;
+        
+        private SR_FC_AccountSheetDataTable tableSR_FC_AccountSheet;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -192,9 +192,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 if ((ds.Tables["SR_GL_IncomeStatment"] != null)) {
                     base.Tables.Add(new SR_GL_IncomeStatmentDataTable(ds.Tables["SR_GL_IncomeStatment"]));
                 }
-                if ((ds.Tables["SR_FC_AccountSheet"] != null)) {
-                    base.Tables.Add(new SR_FC_AccountSheetDataTable(ds.Tables["SR_FC_AccountSheet"]));
-                }
                 if ((ds.Tables["SR_FC_SpecialJournal"] != null)) {
                     base.Tables.Add(new SR_FC_SpecialJournalDataTable(ds.Tables["SR_FC_SpecialJournal"]));
                 }
@@ -203,6 +200,9 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 }
                 if ((ds.Tables["SR_GL_CashFlow_Params"] != null)) {
                     base.Tables.Add(new SR_GL_CashFlow_ParamsDataTable(ds.Tables["SR_GL_CashFlow_Params"]));
+                }
+                if ((ds.Tables["SR_FC_AccountSheet"] != null)) {
+                    base.Tables.Add(new SR_FC_AccountSheetDataTable(ds.Tables["SR_FC_AccountSheet"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -486,16 +486,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SR_FC_AccountSheetDataTable SR_FC_AccountSheet {
-            get {
-                return this.tableSR_FC_AccountSheet;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public SR_FC_SpecialJournalDataTable SR_FC_SpecialJournal {
             get {
                 return this.tableSR_FC_SpecialJournal;
@@ -519,6 +509,16 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         public SR_GL_CashFlow_ParamsDataTable SR_GL_CashFlow_Params {
             get {
                 return this.tableSR_GL_CashFlow_Params;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SR_FC_AccountSheetDataTable SR_FC_AccountSheet {
+            get {
+                return this.tableSR_FC_AccountSheet;
             }
         }
         
@@ -667,9 +667,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 if ((ds.Tables["SR_GL_IncomeStatment"] != null)) {
                     base.Tables.Add(new SR_GL_IncomeStatmentDataTable(ds.Tables["SR_GL_IncomeStatment"]));
                 }
-                if ((ds.Tables["SR_FC_AccountSheet"] != null)) {
-                    base.Tables.Add(new SR_FC_AccountSheetDataTable(ds.Tables["SR_FC_AccountSheet"]));
-                }
                 if ((ds.Tables["SR_FC_SpecialJournal"] != null)) {
                     base.Tables.Add(new SR_FC_SpecialJournalDataTable(ds.Tables["SR_FC_SpecialJournal"]));
                 }
@@ -678,6 +675,9 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 }
                 if ((ds.Tables["SR_GL_CashFlow_Params"] != null)) {
                     base.Tables.Add(new SR_GL_CashFlow_ParamsDataTable(ds.Tables["SR_GL_CashFlow_Params"]));
+                }
+                if ((ds.Tables["SR_FC_AccountSheet"] != null)) {
+                    base.Tables.Add(new SR_FC_AccountSheetDataTable(ds.Tables["SR_FC_AccountSheet"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -868,12 +868,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                     this.tableSR_GL_IncomeStatment.InitVars();
                 }
             }
-            this.tableSR_FC_AccountSheet = ((SR_FC_AccountSheetDataTable)(base.Tables["SR_FC_AccountSheet"]));
-            if ((initTable == true)) {
-                if ((this.tableSR_FC_AccountSheet != null)) {
-                    this.tableSR_FC_AccountSheet.InitVars();
-                }
-            }
             this.tableSR_FC_SpecialJournal = ((SR_FC_SpecialJournalDataTable)(base.Tables["SR_FC_SpecialJournal"]));
             if ((initTable == true)) {
                 if ((this.tableSR_FC_SpecialJournal != null)) {
@@ -890,6 +884,12 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             if ((initTable == true)) {
                 if ((this.tableSR_GL_CashFlow_Params != null)) {
                     this.tableSR_GL_CashFlow_Params.InitVars();
+                }
+            }
+            this.tableSR_FC_AccountSheet = ((SR_FC_AccountSheetDataTable)(base.Tables["SR_FC_AccountSheet"]));
+            if ((initTable == true)) {
+                if ((this.tableSR_FC_AccountSheet != null)) {
+                    this.tableSR_FC_AccountSheet.InitVars();
                 }
             }
         }
@@ -954,14 +954,14 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             base.Tables.Add(this.tableSR_GL_IncomeStatment_Dates);
             this.tableSR_GL_IncomeStatment = new SR_GL_IncomeStatmentDataTable();
             base.Tables.Add(this.tableSR_GL_IncomeStatment);
-            this.tableSR_FC_AccountSheet = new SR_FC_AccountSheetDataTable();
-            base.Tables.Add(this.tableSR_FC_AccountSheet);
             this.tableSR_FC_SpecialJournal = new SR_FC_SpecialJournalDataTable();
             base.Tables.Add(this.tableSR_FC_SpecialJournal);
             this.tableSR_GL_CashFlow = new SR_GL_CashFlowDataTable();
             base.Tables.Add(this.tableSR_GL_CashFlow);
             this.tableSR_GL_CashFlow_Params = new SR_GL_CashFlow_ParamsDataTable();
             base.Tables.Add(this.tableSR_GL_CashFlow_Params);
+            this.tableSR_FC_AccountSheet = new SR_FC_AccountSheetDataTable();
+            base.Tables.Add(this.tableSR_FC_AccountSheet);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1122,12 +1122,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeSR_FC_AccountSheet() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeSR_FC_SpecialJournal() {
             return false;
         }
@@ -1141,6 +1135,12 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeSR_GL_CashFlow_Params() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeSR_FC_AccountSheet() {
             return false;
         }
         
@@ -1278,9 +1278,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         public delegate void SR_GL_IncomeStatmentRowChangeEventHandler(object sender, SR_GL_IncomeStatmentRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void SR_FC_AccountSheetRowChangeEventHandler(object sender, SR_FC_AccountSheetRowChangeEvent e);
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SR_FC_SpecialJournalRowChangeEventHandler(object sender, SR_FC_SpecialJournalRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1288,6 +1285,9 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SR_GL_CashFlow_ParamsRowChangeEventHandler(object sender, SR_GL_CashFlow_ParamsRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void SR_FC_AccountSheetRowChangeEventHandler(object sender, SR_FC_AccountSheetRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -14517,472 +14517,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SR_FC_AccountSheetDataTable : global::System.Data.TypedTableBase<SR_FC_AccountSheetRow> {
-            
-            private global::System.Data.DataColumn columntStActionID;
-            
-            private global::System.Data.DataColumn columnDocNumber;
-            
-            private global::System.Data.DataColumn columnVoucherNo;
-            
-            private global::System.Data.DataColumn columnRegDate;
-            
-            private global::System.Data.DataColumn columnOpenBalance;
-            
-            private global::System.Data.DataColumn columnAccountName;
-            
-            private global::System.Data.DataColumn columnActionType;
-            
-            private global::System.Data.DataColumn columnBillStatement;
-            
-            private global::System.Data.DataColumn columnNote;
-            
-            private global::System.Data.DataColumn columnDebit;
-            
-            private global::System.Data.DataColumn columnCredit;
-            
-            private global::System.Data.DataColumn columnDocStatus;
-            
-            private global::System.Data.DataColumn columnIsResetBalance;
-            
-            private global::System.Data.DataColumn columnResetField;
-            
-            private global::System.Data.DataColumn columnIsContinuous;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetDataTable() {
-                this.TableName = "SR_FC_AccountSheet";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal SR_FC_AccountSheetDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
-                " or extended by application code.", DiagnosticId="SYSLIB0051")]
-            protected SR_FC_AccountSheetDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn tStActionIDColumn {
-                get {
-                    return this.columntStActionID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DocNumberColumn {
-                get {
-                    return this.columnDocNumber;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VoucherNoColumn {
-                get {
-                    return this.columnVoucherNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn RegDateColumn {
-                get {
-                    return this.columnRegDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OpenBalanceColumn {
-                get {
-                    return this.columnOpenBalance;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AccountNameColumn {
-                get {
-                    return this.columnAccountName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ActionTypeColumn {
-                get {
-                    return this.columnActionType;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BillStatementColumn {
-                get {
-                    return this.columnBillStatement;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NoteColumn {
-                get {
-                    return this.columnNote;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DebitColumn {
-                get {
-                    return this.columnDebit;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CreditColumn {
-                get {
-                    return this.columnCredit;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DocStatusColumn {
-                get {
-                    return this.columnDocStatus;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IsResetBalanceColumn {
-                get {
-                    return this.columnIsResetBalance;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ResetFieldColumn {
-                get {
-                    return this.columnResetField;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IsContinuousColumn {
-                get {
-                    return this.columnIsContinuous;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRow this[int index] {
-                get {
-                    return ((SR_FC_AccountSheetRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddSR_FC_AccountSheetRow(SR_FC_AccountSheetRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRow AddSR_FC_AccountSheetRow(int tStActionID, int DocNumber, int VoucherNo, System.DateTime RegDate, int OpenBalance, string AccountName, string ActionType, string BillStatement, string Note, decimal Debit, decimal Credit, string DocStatus, int IsResetBalance, string ResetField, int IsContinuous) {
-                SR_FC_AccountSheetRow rowSR_FC_AccountSheetRow = ((SR_FC_AccountSheetRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        tStActionID,
-                        DocNumber,
-                        VoucherNo,
-                        RegDate,
-                        OpenBalance,
-                        AccountName,
-                        ActionType,
-                        BillStatement,
-                        Note,
-                        Debit,
-                        Credit,
-                        DocStatus,
-                        IsResetBalance,
-                        ResetField,
-                        IsContinuous};
-                rowSR_FC_AccountSheetRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSR_FC_AccountSheetRow);
-                return rowSR_FC_AccountSheetRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                SR_FC_AccountSheetDataTable cln = ((SR_FC_AccountSheetDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new SR_FC_AccountSheetDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columntStActionID = base.Columns["tStActionID"];
-                this.columnDocNumber = base.Columns["DocNumber"];
-                this.columnVoucherNo = base.Columns["VoucherNo"];
-                this.columnRegDate = base.Columns["RegDate"];
-                this.columnOpenBalance = base.Columns["OpenBalance"];
-                this.columnAccountName = base.Columns["AccountName"];
-                this.columnActionType = base.Columns["ActionType"];
-                this.columnBillStatement = base.Columns["BillStatement"];
-                this.columnNote = base.Columns["Note"];
-                this.columnDebit = base.Columns["Debit"];
-                this.columnCredit = base.Columns["Credit"];
-                this.columnDocStatus = base.Columns["DocStatus"];
-                this.columnIsResetBalance = base.Columns["IsResetBalance"];
-                this.columnResetField = base.Columns["ResetField"];
-                this.columnIsContinuous = base.Columns["IsContinuous"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columntStActionID = new global::System.Data.DataColumn("tStActionID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntStActionID);
-                this.columnDocNumber = new global::System.Data.DataColumn("DocNumber", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDocNumber);
-                this.columnVoucherNo = new global::System.Data.DataColumn("VoucherNo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVoucherNo);
-                this.columnRegDate = new global::System.Data.DataColumn("RegDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRegDate);
-                this.columnOpenBalance = new global::System.Data.DataColumn("OpenBalance", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOpenBalance);
-                this.columnAccountName = new global::System.Data.DataColumn("AccountName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAccountName);
-                this.columnActionType = new global::System.Data.DataColumn("ActionType", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnActionType);
-                this.columnBillStatement = new global::System.Data.DataColumn("BillStatement", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBillStatement);
-                this.columnNote = new global::System.Data.DataColumn("Note", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNote);
-                this.columnDebit = new global::System.Data.DataColumn("Debit", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDebit);
-                this.columnCredit = new global::System.Data.DataColumn("Credit", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCredit);
-                this.columnDocStatus = new global::System.Data.DataColumn("DocStatus", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDocStatus);
-                this.columnIsResetBalance = new global::System.Data.DataColumn("IsResetBalance", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIsResetBalance);
-                this.columnResetField = new global::System.Data.DataColumn("ResetField", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnResetField);
-                this.columnIsContinuous = new global::System.Data.DataColumn("IsContinuous", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIsContinuous);
-                this.columntStActionID.ReadOnly = true;
-                this.columnDocNumber.ReadOnly = true;
-                this.columnVoucherNo.ReadOnly = true;
-                this.columnRegDate.ReadOnly = true;
-                this.columnOpenBalance.ReadOnly = true;
-                this.columnAccountName.ReadOnly = true;
-                this.columnAccountName.MaxLength = 1;
-                this.columnActionType.ReadOnly = true;
-                this.columnActionType.MaxLength = 1;
-                this.columnBillStatement.ReadOnly = true;
-                this.columnBillStatement.MaxLength = 1;
-                this.columnNote.ReadOnly = true;
-                this.columnNote.MaxLength = 1;
-                this.columnDebit.ReadOnly = true;
-                this.columnCredit.ReadOnly = true;
-                this.columnDocStatus.ReadOnly = true;
-                this.columnDocStatus.MaxLength = 1;
-                this.columnIsResetBalance.ReadOnly = true;
-                this.columnResetField.ReadOnly = true;
-                this.columnResetField.MaxLength = 1;
-                this.columnIsContinuous.ReadOnly = true;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRow NewSR_FC_AccountSheetRow() {
-                return ((SR_FC_AccountSheetRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SR_FC_AccountSheetRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(SR_FC_AccountSheetRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.SR_FC_AccountSheetRowChanged != null)) {
-                    this.SR_FC_AccountSheetRowChanged(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.SR_FC_AccountSheetRowChanging != null)) {
-                    this.SR_FC_AccountSheetRowChanging(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.SR_FC_AccountSheetRowDeleted != null)) {
-                    this.SR_FC_AccountSheetRowDeleted(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.SR_FC_AccountSheetRowDeleting != null)) {
-                    this.SR_FC_AccountSheetRowDeleting(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveSR_FC_AccountSheetRow(SR_FC_AccountSheetRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsGeneralLedger ds = new dsGeneralLedger();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SR_FC_AccountSheetDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class SR_FC_SpecialJournalDataTable : global::System.Data.TypedTableBase<SR_FC_SpecialJournalRow> {
             
             private global::System.Data.DataColumn columnDebit;
@@ -16041,6 +15575,504 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "SR_GL_CashFlow_ParamsDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SR_FC_AccountSheetDataTable : global::System.Data.TypedTableBase<SR_FC_AccountSheetRow> {
+            
+            private global::System.Data.DataColumn columntStActionID;
+            
+            private global::System.Data.DataColumn columnDocNumber;
+            
+            private global::System.Data.DataColumn columnVoucherNo;
+            
+            private global::System.Data.DataColumn columnRegDate;
+            
+            private global::System.Data.DataColumn columnOpenBalance;
+            
+            private global::System.Data.DataColumn columnAccountName;
+            
+            private global::System.Data.DataColumn columnActionType;
+            
+            private global::System.Data.DataColumn columnBillStatement;
+            
+            private global::System.Data.DataColumn columnNote;
+            
+            private global::System.Data.DataColumn columnDebit;
+            
+            private global::System.Data.DataColumn columnCredit;
+            
+            private global::System.Data.DataColumn columnDocStatus;
+            
+            private global::System.Data.DataColumn columnIsResetBalance;
+            
+            private global::System.Data.DataColumn columnResetField;
+            
+            private global::System.Data.DataColumn columnIsContinuous;
+            
+            private global::System.Data.DataColumn columnAccountDim;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_FC_AccountSheetDataTable() {
+                this.TableName = "SR_FC_AccountSheet";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_FC_AccountSheetDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
+            protected SR_FC_AccountSheetDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn tStActionIDColumn {
+                get {
+                    return this.columntStActionID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DocNumberColumn {
+                get {
+                    return this.columnDocNumber;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VoucherNoColumn {
+                get {
+                    return this.columnVoucherNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RegDateColumn {
+                get {
+                    return this.columnRegDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OpenBalanceColumn {
+                get {
+                    return this.columnOpenBalance;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AccountNameColumn {
+                get {
+                    return this.columnAccountName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ActionTypeColumn {
+                get {
+                    return this.columnActionType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BillStatementColumn {
+                get {
+                    return this.columnBillStatement;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NoteColumn {
+                get {
+                    return this.columnNote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DebitColumn {
+                get {
+                    return this.columnDebit;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CreditColumn {
+                get {
+                    return this.columnCredit;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DocStatusColumn {
+                get {
+                    return this.columnDocStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn IsResetBalanceColumn {
+                get {
+                    return this.columnIsResetBalance;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ResetFieldColumn {
+                get {
+                    return this.columnResetField;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn IsContinuousColumn {
+                get {
+                    return this.columnIsContinuous;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AccountDimColumn {
+                get {
+                    return this.columnAccountDim;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_FC_AccountSheetRow this[int index] {
+                get {
+                    return ((SR_FC_AccountSheetRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_FC_AccountSheetRowChangeEventHandler SR_FC_AccountSheetRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddSR_FC_AccountSheetRow(SR_FC_AccountSheetRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_FC_AccountSheetRow AddSR_FC_AccountSheetRow(
+                        int tStActionID, 
+                        int DocNumber, 
+                        int VoucherNo, 
+                        System.DateTime RegDate, 
+                        int OpenBalance, 
+                        string AccountName, 
+                        string ActionType, 
+                        string BillStatement, 
+                        string Note, 
+                        decimal Debit, 
+                        decimal Credit, 
+                        string DocStatus, 
+                        int IsResetBalance, 
+                        string ResetField, 
+                        int IsContinuous, 
+                        string AccountDim) {
+                SR_FC_AccountSheetRow rowSR_FC_AccountSheetRow = ((SR_FC_AccountSheetRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        tStActionID,
+                        DocNumber,
+                        VoucherNo,
+                        RegDate,
+                        OpenBalance,
+                        AccountName,
+                        ActionType,
+                        BillStatement,
+                        Note,
+                        Debit,
+                        Credit,
+                        DocStatus,
+                        IsResetBalance,
+                        ResetField,
+                        IsContinuous,
+                        AccountDim};
+                rowSR_FC_AccountSheetRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSR_FC_AccountSheetRow);
+                return rowSR_FC_AccountSheetRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SR_FC_AccountSheetDataTable cln = ((SR_FC_AccountSheetDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SR_FC_AccountSheetDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columntStActionID = base.Columns["tStActionID"];
+                this.columnDocNumber = base.Columns["DocNumber"];
+                this.columnVoucherNo = base.Columns["VoucherNo"];
+                this.columnRegDate = base.Columns["RegDate"];
+                this.columnOpenBalance = base.Columns["OpenBalance"];
+                this.columnAccountName = base.Columns["AccountName"];
+                this.columnActionType = base.Columns["ActionType"];
+                this.columnBillStatement = base.Columns["BillStatement"];
+                this.columnNote = base.Columns["Note"];
+                this.columnDebit = base.Columns["Debit"];
+                this.columnCredit = base.Columns["Credit"];
+                this.columnDocStatus = base.Columns["DocStatus"];
+                this.columnIsResetBalance = base.Columns["IsResetBalance"];
+                this.columnResetField = base.Columns["ResetField"];
+                this.columnIsContinuous = base.Columns["IsContinuous"];
+                this.columnAccountDim = base.Columns["AccountDim"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columntStActionID = new global::System.Data.DataColumn("tStActionID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntStActionID);
+                this.columnDocNumber = new global::System.Data.DataColumn("DocNumber", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDocNumber);
+                this.columnVoucherNo = new global::System.Data.DataColumn("VoucherNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVoucherNo);
+                this.columnRegDate = new global::System.Data.DataColumn("RegDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRegDate);
+                this.columnOpenBalance = new global::System.Data.DataColumn("OpenBalance", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOpenBalance);
+                this.columnAccountName = new global::System.Data.DataColumn("AccountName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAccountName);
+                this.columnActionType = new global::System.Data.DataColumn("ActionType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnActionType);
+                this.columnBillStatement = new global::System.Data.DataColumn("BillStatement", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBillStatement);
+                this.columnNote = new global::System.Data.DataColumn("Note", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNote);
+                this.columnDebit = new global::System.Data.DataColumn("Debit", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDebit);
+                this.columnCredit = new global::System.Data.DataColumn("Credit", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCredit);
+                this.columnDocStatus = new global::System.Data.DataColumn("DocStatus", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDocStatus);
+                this.columnIsResetBalance = new global::System.Data.DataColumn("IsResetBalance", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsResetBalance);
+                this.columnResetField = new global::System.Data.DataColumn("ResetField", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnResetField);
+                this.columnIsContinuous = new global::System.Data.DataColumn("IsContinuous", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIsContinuous);
+                this.columnAccountDim = new global::System.Data.DataColumn("AccountDim", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAccountDim);
+                this.columntStActionID.ReadOnly = true;
+                this.columnDocNumber.ReadOnly = true;
+                this.columnVoucherNo.ReadOnly = true;
+                this.columnRegDate.ReadOnly = true;
+                this.columnOpenBalance.ReadOnly = true;
+                this.columnAccountName.ReadOnly = true;
+                this.columnAccountName.MaxLength = 1;
+                this.columnActionType.ReadOnly = true;
+                this.columnActionType.MaxLength = 1;
+                this.columnBillStatement.ReadOnly = true;
+                this.columnBillStatement.MaxLength = 1;
+                this.columnNote.ReadOnly = true;
+                this.columnNote.MaxLength = 1;
+                this.columnDebit.ReadOnly = true;
+                this.columnCredit.ReadOnly = true;
+                this.columnDocStatus.ReadOnly = true;
+                this.columnDocStatus.MaxLength = 1;
+                this.columnIsResetBalance.ReadOnly = true;
+                this.columnResetField.ReadOnly = true;
+                this.columnResetField.MaxLength = 1;
+                this.columnIsContinuous.ReadOnly = true;
+                this.columnAccountDim.ReadOnly = true;
+                this.columnAccountDim.MaxLength = 1;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_FC_AccountSheetRow NewSR_FC_AccountSheetRow() {
+                return ((SR_FC_AccountSheetRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SR_FC_AccountSheetRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SR_FC_AccountSheetRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SR_FC_AccountSheetRowChanged != null)) {
+                    this.SR_FC_AccountSheetRowChanged(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SR_FC_AccountSheetRowChanging != null)) {
+                    this.SR_FC_AccountSheetRowChanging(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SR_FC_AccountSheetRowDeleted != null)) {
+                    this.SR_FC_AccountSheetRowDeleted(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SR_FC_AccountSheetRowDeleting != null)) {
+                    this.SR_FC_AccountSheetRowDeleting(this, new SR_FC_AccountSheetRowChangeEvent(((SR_FC_AccountSheetRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveSR_FC_AccountSheetRow(SR_FC_AccountSheetRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsGeneralLedger ds = new dsGeneralLedger();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SR_FC_AccountSheetDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -28963,441 +28995,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SR_FC_AccountSheetRow : global::System.Data.DataRow {
-            
-            private SR_FC_AccountSheetDataTable tableSR_FC_AccountSheet;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal SR_FC_AccountSheetRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableSR_FC_AccountSheet = ((SR_FC_AccountSheetDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int tStActionID {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_FC_AccountSheet.tStActionIDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'tStActionID\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.tStActionIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int DocNumber {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_FC_AccountSheet.DocNumberColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DocNumber\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.DocNumberColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int VoucherNo {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_FC_AccountSheet.VoucherNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'VoucherNo\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.VoucherNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime RegDate {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableSR_FC_AccountSheet.RegDateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RegDate\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.RegDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int OpenBalance {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_FC_AccountSheet.OpenBalanceColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OpenBalance\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.OpenBalanceColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string AccountName {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_FC_AccountSheet.AccountNameColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'AccountName\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.AccountNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ActionType {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_FC_AccountSheet.ActionTypeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ActionType\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.ActionTypeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string BillStatement {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_FC_AccountSheet.BillStatementColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BillStatement\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.BillStatementColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Note {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_FC_AccountSheet.NoteColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Note\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.NoteColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal Debit {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableSR_FC_AccountSheet.DebitColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Debit\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.DebitColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal Credit {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableSR_FC_AccountSheet.CreditColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Credit\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.CreditColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string DocStatus {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_FC_AccountSheet.DocStatusColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DocStatus\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.DocStatusColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int IsResetBalance {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_FC_AccountSheet.IsResetBalanceColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'IsResetBalance\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.IsResetBalanceColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ResetField {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_FC_AccountSheet.ResetFieldColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ResetField\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int IsContinuous {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_FC_AccountSheet.IsContinuousColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'IsContinuous\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_FC_AccountSheet.IsContinuousColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IstStActionIDNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.tStActionIDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SettStActionIDNull() {
-                this[this.tableSR_FC_AccountSheet.tStActionIDColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDocNumberNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.DocNumberColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDocNumberNull() {
-                this[this.tableSR_FC_AccountSheet.DocNumberColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVoucherNoNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.VoucherNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVoucherNoNull() {
-                this[this.tableSR_FC_AccountSheet.VoucherNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsRegDateNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.RegDateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetRegDateNull() {
-                this[this.tableSR_FC_AccountSheet.RegDateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOpenBalanceNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.OpenBalanceColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOpenBalanceNull() {
-                this[this.tableSR_FC_AccountSheet.OpenBalanceColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAccountNameNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.AccountNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAccountNameNull() {
-                this[this.tableSR_FC_AccountSheet.AccountNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsActionTypeNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.ActionTypeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetActionTypeNull() {
-                this[this.tableSR_FC_AccountSheet.ActionTypeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBillStatementNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.BillStatementColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBillStatementNull() {
-                this[this.tableSR_FC_AccountSheet.BillStatementColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsNoteNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.NoteColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetNoteNull() {
-                this[this.tableSR_FC_AccountSheet.NoteColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDebitNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.DebitColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDebitNull() {
-                this[this.tableSR_FC_AccountSheet.DebitColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCreditNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.CreditColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCreditNull() {
-                this[this.tableSR_FC_AccountSheet.CreditColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDocStatusNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.DocStatusColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDocStatusNull() {
-                this[this.tableSR_FC_AccountSheet.DocStatusColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsIsResetBalanceNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.IsResetBalanceColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetIsResetBalanceNull() {
-                this[this.tableSR_FC_AccountSheet.IsResetBalanceColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsResetFieldNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.ResetFieldColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetResetFieldNull() {
-                this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsIsContinuousNull() {
-                return this.IsNull(this.tableSR_FC_AccountSheet.IsContinuousColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetIsContinuousNull() {
-                this[this.tableSR_FC_AccountSheet.IsContinuousColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
         public partial class SR_FC_SpecialJournalRow : global::System.Data.DataRow {
             
             private SR_FC_SpecialJournalDataTable tableSR_FC_SpecialJournal;
@@ -30171,6 +29768,469 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetIsCloseCashValueWrongNull() {
                 this[this.tableSR_GL_CashFlow_Params.IsCloseCashValueWrongColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SR_FC_AccountSheetRow : global::System.Data.DataRow {
+            
+            private SR_FC_AccountSheetDataTable tableSR_FC_AccountSheet;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_FC_AccountSheetRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSR_FC_AccountSheet = ((SR_FC_AccountSheetDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int tStActionID {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.tStActionIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'tStActionID\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.tStActionIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DocNumber {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.DocNumberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DocNumber\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.DocNumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int VoucherNo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.VoucherNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VoucherNo\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.VoucherNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime RegDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableSR_FC_AccountSheet.RegDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RegDate\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.RegDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int OpenBalance {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.OpenBalanceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OpenBalance\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.OpenBalanceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string AccountName {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.AccountNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AccountName\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.AccountNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ActionType {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.ActionTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ActionType\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.ActionTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BillStatement {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.BillStatementColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BillStatement\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.BillStatementColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Note {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.NoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Note\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.NoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal Debit {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableSR_FC_AccountSheet.DebitColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Debit\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.DebitColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal Credit {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableSR_FC_AccountSheet.CreditColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Credit\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.CreditColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string DocStatus {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.DocStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DocStatus\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.DocStatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int IsResetBalance {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.IsResetBalanceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IsResetBalance\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.IsResetBalanceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ResetField {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.ResetFieldColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ResetField\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int IsContinuous {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_FC_AccountSheet.IsContinuousColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'IsContinuous\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.IsContinuousColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string AccountDim {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_AccountSheet.AccountDimColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AccountDim\' in table \'SR_FC_AccountSheet\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_AccountSheet.AccountDimColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IstStActionIDNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.tStActionIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SettStActionIDNull() {
+                this[this.tableSR_FC_AccountSheet.tStActionIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDocNumberNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.DocNumberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDocNumberNull() {
+                this[this.tableSR_FC_AccountSheet.DocNumberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVoucherNoNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.VoucherNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVoucherNoNull() {
+                this[this.tableSR_FC_AccountSheet.VoucherNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRegDateNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.RegDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRegDateNull() {
+                this[this.tableSR_FC_AccountSheet.RegDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOpenBalanceNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.OpenBalanceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOpenBalanceNull() {
+                this[this.tableSR_FC_AccountSheet.OpenBalanceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAccountNameNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.AccountNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAccountNameNull() {
+                this[this.tableSR_FC_AccountSheet.AccountNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsActionTypeNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.ActionTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetActionTypeNull() {
+                this[this.tableSR_FC_AccountSheet.ActionTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBillStatementNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.BillStatementColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBillStatementNull() {
+                this[this.tableSR_FC_AccountSheet.BillStatementColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNoteNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.NoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNoteNull() {
+                this[this.tableSR_FC_AccountSheet.NoteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDebitNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.DebitColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDebitNull() {
+                this[this.tableSR_FC_AccountSheet.DebitColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCreditNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.CreditColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCreditNull() {
+                this[this.tableSR_FC_AccountSheet.CreditColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDocStatusNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.DocStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDocStatusNull() {
+                this[this.tableSR_FC_AccountSheet.DocStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsIsResetBalanceNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.IsResetBalanceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetIsResetBalanceNull() {
+                this[this.tableSR_FC_AccountSheet.IsResetBalanceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsResetFieldNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.ResetFieldColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetResetFieldNull() {
+                this[this.tableSR_FC_AccountSheet.ResetFieldColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsIsContinuousNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.IsContinuousColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetIsContinuousNull() {
+                this[this.tableSR_FC_AccountSheet.IsContinuousColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAccountDimNull() {
+                return this.IsNull(this.tableSR_FC_AccountSheet.AccountDimColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAccountDimNull() {
+                this[this.tableSR_FC_AccountSheet.AccountDimColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -31062,40 +31122,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class SR_FC_AccountSheetRowChangeEvent : global::System.EventArgs {
-            
-            private SR_FC_AccountSheetRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRowChangeEvent(SR_FC_AccountSheetRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_FC_AccountSheetRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public class SR_FC_SpecialJournalRowChangeEvent : global::System.EventArgs {
             
             private SR_FC_SpecialJournalRow eventRow;
@@ -31180,6 +31206,40 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_GL_CashFlow_ParamsRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class SR_FC_AccountSheetRowChangeEvent : global::System.EventArgs {
+            
+            private SR_FC_AccountSheetRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_FC_AccountSheetRowChangeEvent(SR_FC_AccountSheetRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_FC_AccountSheetRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -37605,232 +37665,6 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SR_FC_AccountSheetTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public SR_FC_AccountSheetTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SR_FC_AccountSheet";
-            tableMapping.ColumnMappings.Add("tStActionID", "tStActionID");
-            tableMapping.ColumnMappings.Add("DocNumber", "DocNumber");
-            tableMapping.ColumnMappings.Add("VoucherNo", "VoucherNo");
-            tableMapping.ColumnMappings.Add("RegDate", "RegDate");
-            tableMapping.ColumnMappings.Add("OpenBalance", "OpenBalance");
-            tableMapping.ColumnMappings.Add("AccountName", "AccountName");
-            tableMapping.ColumnMappings.Add("ActionType", "ActionType");
-            tableMapping.ColumnMappings.Add("BillStatement", "BillStatement");
-            tableMapping.ColumnMappings.Add("Note", "Note");
-            tableMapping.ColumnMappings.Add("Debit", "Debit");
-            tableMapping.ColumnMappings.Add("Credit", "Credit");
-            tableMapping.ColumnMappings.Add("DocStatus", "DocStatus");
-            tableMapping.ColumnMappings.Add("IsResetBalance", "IsResetBalance");
-            tableMapping.ColumnMappings.Add("ResetField", "ResetField");
-            tableMapping.ColumnMappings.Add("IsContinuous", "IsContinuous");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
-                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.SR_FC_AccountSheet";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptHrEmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateFrom", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateTo", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnItemCodeID_Branch", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 19, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnItemCodeID_Account_Str", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pWhichReport", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnDocStatusID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pIsDebug", global::System.Data.SqlDbType.Bit, 1, global::System.Data.ParameterDirection.Input, 1, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptStActionTypeSettingID_Str", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsGeneralLedger.SR_FC_AccountSheetDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptHrEmployeeID, global::System.Nullable<byte> ptGnModuleTypeID, global::System.Nullable<global::System.DateTime> pDateFrom, global::System.Nullable<global::System.DateTime> pDateTo, global::System.Nullable<long> ptGnItemCodeID_Branch, string ptGnItemCodeID_Account_Str, global::System.Nullable<byte> pWhichReport, global::System.Nullable<byte> ptGnDocStatusID, global::System.Nullable<bool> pIsDebug, string ptStActionTypeSettingID_Str) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((ptGnBookID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptGnBookID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((pLang.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((byte)(pLang.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((ptHrEmployeeID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((int)(ptHrEmployeeID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((ptGnModuleTypeID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((byte)(ptGnModuleTypeID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((pDateFrom.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[5].Value = ((System.DateTime)(pDateFrom.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((pDateTo.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[6].Value = ((System.DateTime)(pDateTo.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            if ((ptGnItemCodeID_Branch.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[7].Value = ((long)(ptGnItemCodeID_Branch.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            if ((ptGnItemCodeID_Account_Str == null)) {
-                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(ptGnItemCodeID_Account_Str));
-            }
-            if ((pWhichReport.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[9].Value = ((byte)(pWhichReport.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            if ((ptGnDocStatusID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[10].Value = ((byte)(ptGnDocStatusID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((pIsDebug.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[11].Value = ((bool)(pIsDebug.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            if ((ptStActionTypeSettingID_Str == null)) {
-                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[12].Value = ((string)(ptStActionTypeSettingID_Str));
-            }
-            dsGeneralLedger.SR_FC_AccountSheetDataTable dataTable = new dsGeneralLedger.SR_FC_AccountSheetDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class SR_FC_SpecialJournalTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -38392,6 +38226,240 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             dsGeneralLedger.SR_GL_CashFlow_ParamsDataTable dataTable = new dsGeneralLedger.SR_GL_CashFlow_ParamsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SR_FC_AccountSheetTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public SR_FC_AccountSheetTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SR_FC_AccountSheet";
+            tableMapping.ColumnMappings.Add("tStActionID", "tStActionID");
+            tableMapping.ColumnMappings.Add("DocNumber", "DocNumber");
+            tableMapping.ColumnMappings.Add("VoucherNo", "VoucherNo");
+            tableMapping.ColumnMappings.Add("RegDate", "RegDate");
+            tableMapping.ColumnMappings.Add("OpenBalance", "OpenBalance");
+            tableMapping.ColumnMappings.Add("AccountName", "AccountName");
+            tableMapping.ColumnMappings.Add("ActionType", "ActionType");
+            tableMapping.ColumnMappings.Add("BillStatement", "BillStatement");
+            tableMapping.ColumnMappings.Add("Note", "Note");
+            tableMapping.ColumnMappings.Add("Debit", "Debit");
+            tableMapping.ColumnMappings.Add("Credit", "Credit");
+            tableMapping.ColumnMappings.Add("DocStatus", "DocStatus");
+            tableMapping.ColumnMappings.Add("IsResetBalance", "IsResetBalance");
+            tableMapping.ColumnMappings.Add("ResetField", "ResetField");
+            tableMapping.ColumnMappings.Add("IsContinuous", "IsContinuous");
+            tableMapping.ColumnMappings.Add("AccountDim", "AccountDim");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
+                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.SR_FC_AccountSheet";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptHrEmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateFrom", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateTo", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnItemCodeID_Branch", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 19, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnItemCodeID_Account_Str", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pWhichReport", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnDocStatusID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pIsDebug", global::System.Data.SqlDbType.Bit, 1, global::System.Data.ParameterDirection.Input, 1, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptStActionTypeSettingID_Str", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnItemCodeID_AccountDim_Str", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsGeneralLedger.SR_FC_AccountSheetDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptHrEmployeeID, global::System.Nullable<byte> ptGnModuleTypeID, global::System.Nullable<global::System.DateTime> pDateFrom, global::System.Nullable<global::System.DateTime> pDateTo, global::System.Nullable<long> ptGnItemCodeID_Branch, string ptGnItemCodeID_Account_Str, global::System.Nullable<byte> pWhichReport, global::System.Nullable<byte> ptGnDocStatusID, global::System.Nullable<bool> pIsDebug, string ptStActionTypeSettingID_Str, string ptGnItemCodeID_AccountDim_Str) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ptGnBookID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptGnBookID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((pLang.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((byte)(pLang.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((ptHrEmployeeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((int)(ptHrEmployeeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnModuleTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((byte)(ptGnModuleTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((pDateFrom.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((System.DateTime)(pDateFrom.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((pDateTo.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((System.DateTime)(pDateTo.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnItemCodeID_Branch.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((long)(ptGnItemCodeID_Branch.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnItemCodeID_Account_Str == null)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(ptGnItemCodeID_Account_Str));
+            }
+            if ((pWhichReport.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((byte)(pWhichReport.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnDocStatusID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[10].Value = ((byte)(ptGnDocStatusID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((pIsDebug.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[11].Value = ((bool)(pIsDebug.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((ptStActionTypeSettingID_Str == null)) {
+                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[12].Value = ((string)(ptStActionTypeSettingID_Str));
+            }
+            if ((ptGnItemCodeID_AccountDim_Str == null)) {
+                this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((string)(ptGnItemCodeID_AccountDim_Str));
+            }
+            dsGeneralLedger.SR_FC_AccountSheetDataTable dataTable = new dsGeneralLedger.SR_FC_AccountSheetDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
