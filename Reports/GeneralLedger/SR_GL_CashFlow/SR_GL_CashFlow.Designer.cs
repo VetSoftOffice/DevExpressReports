@@ -76,6 +76,7 @@
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.PageHeaderSection = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
+            this.CashFlow_Params = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
             this.CashFlow_Dates = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
@@ -126,7 +127,6 @@
             this.sR_GL_IncomeStatmentTableAdapter = new DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableAdapters.SR_GL_IncomeStatmentTableAdapter();
             this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.CashFlow_Params = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsGeneralLedger1)).BeginInit();
@@ -314,6 +314,11 @@
             this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.CashFlow_Params});
             this.SubBand2.Name = "SubBand2";
+            // 
+            // CashFlow_Params
+            // 
+            this.CashFlow_Params.Name = "CashFlow_Params";
+            this.CashFlow_Params.ReportSource = new DevExpressReports.Reports.GeneralLedger.CashFlowParams.CashFlowParams();
             // 
             // SubBand4
             // 
@@ -729,10 +734,6 @@
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.StylePriority.UseBorders = false;
             // 
-            // CashFlow_Params
-            // 
-            this.CashFlow_Params.Name = "CashFlow_Params";
-            // 
             // SR_GL_CashFlow
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -759,7 +760,7 @@
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.dsFinance,
             this.dsGeneralLedger1});
-            this.DataMember = "SR_GL_IncomeStatment";
+            this.DataMember = "SR_GL_CashFlow";
             this.DataSource = this.dsGeneralLedger1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
