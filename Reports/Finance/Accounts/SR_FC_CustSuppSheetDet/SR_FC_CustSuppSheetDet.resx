@@ -120,4 +120,33 @@
   <data name="dsFinance.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9GQ19DdXN0U3VwcFNoZWV0Ij48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcmljZVVuaXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBY3R1YWxRdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBY3Rpb25UeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1cnJlbmN5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1c3RTdXBwTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWFsVHlwZV9UbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTm90ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNb3ZlVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3ZlVmFsdWVGb3JlaWduIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2VGb3JlaWduIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmlsbFN0YXRlbWVudCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48VmlldyBOYW1lPSJTUl9GQ19DdXN0U3VwcFNoZWV0X09MRCI+PEZpZWxkIE5hbWU9InRTdEFjdGlvbklEIiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iRG9jTnVtYmVyIiBUeXBlPSJJbnQ2NCIgLz48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFN1cHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN1cnJlbmN5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJpbGxTdGF0ZW1lbnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkRlYml0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJDcmVkaXQiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0Zsa0RpcmVjdENvc3QiPjxGaWVsZCBOYW1lPSJQbGFjZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTdWJQbGFjZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ29zdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUNoaWNrcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrZW5Db3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VkTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENoZWNrZW5zV2VpZ2h0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSXNDb3N0IiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfTW9udGhseURpcmVjdENvc3QiPjxGaWVsZCBOYW1lPSJQbGFjZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJdGVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ29zdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>using System.Text.RegularExpressions;
+
+private void xrLabel15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    string rawValue = Parameters["AccountDim"].Value as string;
+
+    if (!string.IsNullOrWhiteSpace(rawValue))
+    {
+        rawValue = rawValue.Trim();
+
+        // Remove single quotes only if they're wrapping the value
+        if (rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
+        {
+            rawValue = rawValue.Substring(1, rawValue.Length - 2);
+        }
+
+        // Optional: remove other special characters
+        rawValue = Regex.Replace(rawValue, @"[^\w\s\-]", ""); // keeps letters, digits, space, dash
+
+        xrLabel15.Text = rawValue;
+    }
+    else
+    {
+        xrLabel15.Text = string.Empty;
+    }
+
+}
+</value>
+  </data>
 </root>

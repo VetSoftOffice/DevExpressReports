@@ -119,6 +119,7 @@
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 Dictionary&lt;string, decimal&gt; debitRunningTotals = new Dictionary&lt;string, decimal&gt;();
 Dictionary&lt;string, decimal&gt; creditRunningTotals = new Dictionary&lt;string, decimal&gt;();
@@ -192,6 +193,31 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = runningTotal &lt; 0 ? Math.Abs(runningTotal).ToString("N2") : "";    }
 
 
+
+private void xrLabel3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     string rawValue = Parameters["AccountDim"].Value as string;
+
+    if (!string.IsNullOrWhiteSpace(rawValue))
+    {
+        rawValue = rawValue.Trim();
+
+        // Remove single quotes only if they're wrapping the value
+        if (rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
+        {
+            rawValue = rawValue.Substring(1, rawValue.Length - 2);
+        }
+
+        // Optional: remove other special characters
+        rawValue = Regex.Replace(rawValue, @"[^\w\s\-]", ""); // keeps letters, digits, space, dash
+
+        xrLabel3.Text = rawValue;
+    }
+    else
+    {
+        xrLabel3.Text = string.Empty;
+    }
+
+}
 </value>
   </data>
 </root>
