@@ -79,7 +79,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Reports\Assets\FixedAssetsDeprSheet\" />
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\DeplationAndBodyWeight\" />
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\EggProduction\" />
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\Performance\WeeklyAnalysisLayFlks\" />

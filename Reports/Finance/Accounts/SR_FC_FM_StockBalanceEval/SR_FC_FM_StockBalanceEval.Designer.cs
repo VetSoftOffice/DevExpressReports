@@ -420,6 +420,7 @@
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -481,7 +482,7 @@
             this.TotalPrice = new DevExpress.XtraReports.UI.CalculatedField();
             this.WhichReport = new DevExpress.XtraReports.Parameters.Parameter();
             this.AccountName = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.AccountDim = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -820,6 +821,14 @@
             this.PageHeaderSub1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not (IsNullOrEmpty(?DateFrom) And IsNullOrEmpty(?DateTo))")});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?AccountDim)\n")});
+            this.xrLabel6.Multiline = true;
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             // 
             // xrLabel5
             // 
@@ -1971,13 +1980,10 @@
             this.AccountName.Name = "AccountName";
             this.AccountName.Visible = false;
             // 
-            // xrLabel6
+            // AccountDim
             // 
-            this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?AccountDim)\n")});
-            this.xrLabel6.Multiline = true;
-            this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.AccountDim.Name = "AccountDim";
+            this.AccountDim.Visible = false;
             // 
             // SR_FC_FM_StockBalanceEval
             // 
@@ -2015,6 +2021,7 @@
             this.DataSource = this.sqlDataSource1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.AccountDim, "Default", "Description", "AccountDim"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.AccountName, "Default", "Description", "AccountName"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),
@@ -2216,7 +2223,8 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CustSupp, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsCustomReportFooter, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.WhichReport, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AccountName, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AccountName, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AccountDim, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsRTL,
             this.IsCustomReportHeader,
@@ -2233,7 +2241,8 @@
             this.CustSupp,
             this.IsCustomReportFooter,
             this.WhichReport,
-            this.AccountName});
+            this.AccountName,
+            this.AccountDim});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
@@ -2354,5 +2363,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.Parameters.Parameter AccountName;
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.Parameters.Parameter AccountDim;
     }
 }
