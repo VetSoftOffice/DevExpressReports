@@ -194,7 +194,7 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 
-private void xrLabel3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      string rawValue = Parameters["AccountDim"].Value as string;
 
     if (!string.IsNullOrWhiteSpace(rawValue))
@@ -210,11 +210,11 @@ private void xrLabel3_BeforePrint(object sender, System.ComponentModel.CancelEve
         // Optional: remove other special characters
         rawValue = Regex.Replace(rawValue, @"[^\w\s\-]", ""); // keeps letters, digits, space, dash
 
-        xrLabel3.Text = rawValue;
+        xrLabel4.Text = rawValue;
     }
     else
     {
-        xrLabel3.Text = string.Empty;
+        xrLabel4.Text = string.Empty;
     }
 
 }
