@@ -135,6 +135,7 @@
             this.DebitMinusCredit = new DevExpress.XtraReports.UI.CalculatedField();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
+<<<<<<< HEAD
             this.AccountDim = new DevExpress.XtraReports.Parameters.Parameter();
             this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
@@ -153,6 +154,9 @@
             this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrPanel2 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrTableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
+=======
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+>>>>>>> parent of ae03566 (Modifications For Account Dim)
             ((System.ComponentModel.ISupportInitialize)(this.dsGeneralLedger1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
@@ -568,6 +572,10 @@
             this.xrPanel1.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right)));
             this.xrPanel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+<<<<<<< HEAD
+=======
+            this.xrLabel3,
+>>>>>>> parent of ae03566 (Modifications For Account Dim)
             this.xrLabel17,
             this.xrLabel15,
             this.xrLabel11});
@@ -913,6 +921,7 @@
             // 
             // AccountDim
             // 
+<<<<<<< HEAD
             this.AccountDim.Name = "AccountDim";
             this.AccountDim.Visible = false;
             // 
@@ -1087,6 +1096,16 @@
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
+=======
+            this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([AccountDim])")});
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel3.StylePriority.UseBorders = false;
+            // 
+>>>>>>> parent of ae03566 (Modifications For Account Dim)
             // SR_FC_AccountSheetDet
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1223,12 +1242,19 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "إلى: [?DateTo!dd-MM-yyyy]"),
+<<<<<<< HEAD
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(172F, 7.197542E-05F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(199.9818F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "[AccountDim]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(28.64213F, 3.598771E-05F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(143.3578F, 20.00003F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "Account Dimension:"),
+=======
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(696.6666F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(263.75F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Account Dimension: [AccountDim]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "أبعاد الحساب: [AccountDim]"),
+>>>>>>> parent of ae03566 (Modifications For Account Dim)
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPanel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPanel1, "Default", "SizeF", new System.Drawing.SizeF(1147F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPanel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.000063F, 0F)),
@@ -1513,6 +1539,7 @@
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportHeader;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportFooter;
         private DevExpress.XtraReports.UI.XRSubreport srReportFooterCustom;
+<<<<<<< HEAD
         private DevExpress.XtraReports.Parameters.Parameter AccountDim;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
         private DevExpress.XtraReports.UI.SubBand SubBand5;
@@ -1531,5 +1558,8 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell41;
         private DevExpress.XtraReports.UI.XRPanel xrPanel2;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;
+=======
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+>>>>>>> parent of ae03566 (Modifications For Account Dim)
     }
 }

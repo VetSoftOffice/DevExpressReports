@@ -119,7 +119,6 @@
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.Collections.Generic;
-using System.Text.RegularExpressions;
 
 Dictionary&lt;string, decimal&gt; debitRunningTotals = new Dictionary&lt;string, decimal&gt;();
 Dictionary&lt;string, decimal&gt; creditRunningTotals = new Dictionary&lt;string, decimal&gt;();
@@ -193,6 +192,7 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = runningTotal &lt; 0 ? Math.Abs(runningTotal).ToString("N2") : "";    }
 
 
+<<<<<<< HEAD
 
 private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      string rawValue = Parameters["AccountDim"].Value as string;
@@ -218,6 +218,8 @@ private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEve
     }
 
 }
+=======
+>>>>>>> parent of ae03566 (Modifications For Account Dim)
 </value>
   </data>
 </root>
