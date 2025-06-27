@@ -191,9 +191,6 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
 
     ((XRTableCell)sender).Text = runningTotal &lt; 0 ? Math.Abs(runningTotal).ToString("N2") : "";    }
 
-
-<<<<<<< HEAD
-
 private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      string rawValue = Parameters["AccountDim"].Value as string;
 
