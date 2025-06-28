@@ -420,11 +420,8 @@
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
-<<<<<<< HEAD
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
-=======
->>>>>>> parent of ae03566 (Modifications For Account Dim)
             this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
@@ -484,12 +481,8 @@
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TotalPrice = new DevExpress.XtraReports.UI.CalculatedField();
             this.WhichReport = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.AccountName = new DevExpress.XtraReports.Parameters.Parameter();
-<<<<<<< HEAD
             this.AccountDim = new DevExpress.XtraReports.Parameters.Parameter();
-=======
->>>>>>> parent of ae03566 (Modifications For Account Dim)
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -828,7 +821,6 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not (IsNullOrEmpty(?DateFrom) And IsNullOrEmpty(?DateTo))")});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
             // 
-<<<<<<< HEAD
             // xrLabel6
             // 
             this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
@@ -846,8 +838,6 @@
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel5.Scripts.OnBeforePrint = "xrLabel5_BeforePrint";
             // 
-=======
->>>>>>> parent of ae03566 (Modifications For Account Dim)
             // xrLabel27
             // 
             this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
@@ -1997,14 +1987,11 @@
             this.AccountName.Name = "AccountName";
             this.AccountName.Visible = false;
             // 
-<<<<<<< HEAD
             // AccountDim
             // 
             this.AccountDim.Name = "AccountDim";
             this.AccountDim.Visible = false;
             // 
-=======
->>>>>>> parent of ae03566 (Modifications For Account Dim)
             // SR_FC_FM_StockBalanceEval
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2377,10 +2364,7 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.Parameters.Parameter AccountName;
-<<<<<<< HEAD
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
         private DevExpress.XtraReports.Parameters.Parameter AccountDim;
-=======
->>>>>>> parent of ae03566 (Modifications For Account Dim)
     }
 }
