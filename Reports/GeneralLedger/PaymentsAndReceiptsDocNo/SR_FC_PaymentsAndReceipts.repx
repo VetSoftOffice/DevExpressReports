@@ -543,7 +543,7 @@
     <Item78 Ref="324" Component="#Ref-52" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item79 Ref="325" Component="#Ref-52" Culture="Default" Path="Weight" Data="3.3697072685288338" />
     <Item80 Ref="326" Component="#Ref-40" Culture="Default" Path="LocationFloat" Data="8.106232E-06,0" />
-    <Item81 Ref="327" Component="#Ref-40" Culture="Default" Path="SizeF" Data="806.9969,18" />
+    <Item81 Ref="327" Component="#Ref-40" Culture="Default" Path="SizeF" Data="806.996948,18" />
     <Item82 Ref="328" Component="#Ref-42" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item83 Ref="329" Component="#Ref-42" Culture="Default" Path="Text" Data="ItemType" />
     <Item84 Ref="330" Component="#Ref-42" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
@@ -558,8 +558,8 @@
     <Item93 Ref="339" Component="#Ref-128" Culture="ar" Path="Text" Data="رقم القيد" />
     <Item94 Ref="340" Component="#Ref-128" Culture="Default" Path="Weight" Data="2.9823262771860772" />
     <Item95 Ref="341" Component="#Ref-123" Culture="Default" Path="LocationFloat" Data="4.768371E-05,0" />
-    <Item96 Ref="342" Component="#Ref-123" Culture="Default" Path="SizeF" Data="806.9968,20" />
-    <Item97 Ref="343" Component="#Ref-125" Culture="Default" Path="Text" Data="Dat" />
+    <Item96 Ref="342" Component="#Ref-123" Culture="Default" Path="SizeF" Data="806.996765,20" />
+    <Item97 Ref="343" Component="#Ref-125" Culture="Default" Path="Text" Data="Date" />
     <Item98 Ref="344" Component="#Ref-125" Culture="ar" Path="Text" Data="تاريخ" />
     <Item99 Ref="345" Component="#Ref-125" Culture="Default" Path="Weight" Data="2.6311282383018773" />
     <Item100 Ref="346" Component="#Ref-30" Culture="Default" Path="HeightF" Data="20" />
@@ -572,7 +572,7 @@
     <Item107 Ref="353" Component="#Ref-118" Culture="Default" Path="SizeF" Data="144.358,20" />
     <Item108 Ref="354" Component="#Ref-118" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
     <Item109 Ref="355" Component="#Ref-224" Culture="Default" Path="LocationFloat" Data="1.525879E-05,0" />
-    <Item110 Ref="356" Component="#Ref-224" Culture="Default" Path="SizeF" Data="806.9968,18" />
+    <Item110 Ref="356" Component="#Ref-224" Culture="Default" Path="SizeF" Data="806.996765,18" />
     <Item111 Ref="357" Component="#Ref-226" Culture="Default" Path="Text" Data="Total" />
     <Item112 Ref="358" Component="#Ref-226" Culture="Default" Path="Weight" Data="4.8323049926757813" />
     <Item113 Ref="359" Component="#Ref-130" Culture="Default" Path="Text" Data="Payments" />
