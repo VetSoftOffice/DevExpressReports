@@ -77,6 +77,8 @@
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
@@ -119,7 +121,6 @@
             this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.AccountDim = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.dsGeneralLedger1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
@@ -256,11 +257,13 @@
             this.tdDebit.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdDebit.BorderWidth = 1.4F;
             this.tdDebit.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.tdDebit.Multiline = true;
             this.tdDebit.Name = "tdDebit";
             this.tdDebit.StylePriority.UseBorders = false;
+            this.tdDebit.StylePriority.UseBorderWidth = false;
             this.tdDebit.StylePriority.UseFont = false;
             this.tdDebit.StylePriority.UseTextAlignment = false;
             this.tdDebit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -270,11 +273,13 @@
             this.tdCredit.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdCredit.BorderWidth = 1.4F;
             this.tdCredit.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.tdCredit.Multiline = true;
             this.tdCredit.Name = "tdCredit";
             this.tdCredit.StylePriority.UseBorders = false;
+            this.tdCredit.StylePriority.UseBorderWidth = false;
             this.tdCredit.StylePriority.UseFont = false;
             this.tdCredit.StylePriority.UseTextAlignment = false;
             this.tdCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -284,6 +289,7 @@
             this.tdDebitBal.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdDebitBal.BorderWidth = 1.4F;
             this.tdDebitBal.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "iif\n(\n\tIsNull([OpenBalance], 0) + sumRunningSum([DebitMinusCredit]) > 0,\n\tIsNull(" +
@@ -291,6 +297,7 @@
             this.tdDebitBal.Multiline = true;
             this.tdDebitBal.Name = "tdDebitBal";
             this.tdDebitBal.StylePriority.UseBorders = false;
+            this.tdDebitBal.StylePriority.UseBorderWidth = false;
             this.tdDebitBal.StylePriority.UseFont = false;
             this.tdDebitBal.StylePriority.UseTextAlignment = false;
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
@@ -302,6 +309,7 @@
             this.tdCreditBal.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdCreditBal.BorderWidth = 1.4F;
             this.tdCreditBal.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "iif\n(\n\tIsNull([OpenBalance], 0) + sumRunningSum([DebitMinusCredit]) < 0,\n\tAbs(IsN" +
@@ -309,6 +317,7 @@
             this.tdCreditBal.Multiline = true;
             this.tdCreditBal.Name = "tdCreditBal";
             this.tdCreditBal.StylePriority.UseBorders = false;
+            this.tdCreditBal.StylePriority.UseBorderWidth = false;
             this.tdCreditBal.StylePriority.UseFont = false;
             this.tdCreditBal.StylePriority.UseTextAlignment = false;
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
@@ -449,12 +458,36 @@
             // PageHeaderSub1
             // 
             this.PageHeaderSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel3,
+            this.xrLabel5,
+            this.xrLabel4,
             this.xrLabel2,
             this.xrLabel1});
             this.PageHeaderSub1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not (IsNullOrEmpty(?DateFrom) And IsNullOrEmpty(?DateTo))")});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?AccountDim)\n")});
+            this.xrLabel5.Multiline = true;
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel5.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.xrLabel5.StylePriority.UseBorders = false;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?AccountDim)\n")});
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.xrLabel4.Scripts.OnBeforePrint = "xrLabel4_BeforePrint";
+            this.xrLabel4.StylePriority.UseBorders = false;
             // 
             // xrLabel2
             // 
@@ -524,12 +557,14 @@
             // 
             // tfCreditBal_GPT
             // 
+            this.tfCreditBal_GPT.BorderWidth = 1.4F;
             this.tfCreditBal_GPT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\r\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "iif\n(\n\tIsNull([OpenBalance], 0) + sumSum([DebitMinusCredit]) < 0,\n\tAbs(IsNull([Op" +
                     "enBalance], 0) + sumSum([DebitMinusCredit])),\n\tnull\n)")});
             this.tfCreditBal_GPT.Multiline = true;
             this.tfCreditBal_GPT.Name = "tfCreditBal_GPT";
+            this.tfCreditBal_GPT.StylePriority.UseBorderWidth = false;
             this.tfCreditBal_GPT.StylePriority.UseTextAlignment = false;
             xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.tfCreditBal_GPT.Summary = xrSummary3;
@@ -537,12 +572,14 @@
             // 
             // tfDebitBal_GPT
             // 
+            this.tfDebitBal_GPT.BorderWidth = 1.4F;
             this.tfDebitBal_GPT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "iif\n(\n\tIsNull([OpenBalance], 0) + sumSum([DebitMinusCredit]) > 0,\n\tIsNull([OpenBa" +
                     "lance], 0) + sumSum([DebitMinusCredit]),\n\tnull\n)")});
             this.tfDebitBal_GPT.Multiline = true;
             this.tfDebitBal_GPT.Name = "tfDebitBal_GPT";
+            this.tfDebitBal_GPT.StylePriority.UseBorderWidth = false;
             this.tfDebitBal_GPT.StylePriority.UseTextAlignment = false;
             xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.tfDebitBal_GPT.Summary = xrSummary4;
@@ -550,11 +587,13 @@
             // 
             // tfCredit_GPT
             // 
+            this.tfCredit_GPT.BorderWidth = 1.4F;
             this.tfCredit_GPT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Credit])")});
             this.tfCredit_GPT.Multiline = true;
             this.tfCredit_GPT.Name = "tfCredit_GPT";
+            this.tfCredit_GPT.StylePriority.UseBorderWidth = false;
             this.tfCredit_GPT.StylePriority.UseTextAlignment = false;
             xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.tfCredit_GPT.Summary = xrSummary5;
@@ -562,11 +601,13 @@
             // 
             // tfDebit_GPT
             // 
+            this.tfDebit_GPT.BorderWidth = 1.4F;
             this.tfDebit_GPT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Debit])\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\r\n")});
             this.tfDebit_GPT.Multiline = true;
             this.tfDebit_GPT.Name = "tfDebit_GPT";
+            this.tfDebit_GPT.StylePriority.UseBorderWidth = false;
             this.tfDebit_GPT.StylePriority.UseTextAlignment = false;
             xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.tfDebit_GPT.Summary = xrSummary6;
@@ -574,8 +615,10 @@
             // 
             // tfTotal
             // 
+            this.tfTotal.BorderWidth = 1.4F;
             this.tfTotal.Multiline = true;
             this.tfTotal.Name = "tfTotal";
+            this.tfTotal.StylePriority.UseBorderWidth = false;
             // 
             // trFooter
             // 
@@ -607,11 +650,13 @@
             // 
             // thOpenCredit_GPT
             // 
+            this.thOpenCredit_GPT.BorderWidth = 1.4F;
             this.thOpenCredit_GPT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([OpenBalance] < 0, Abs([OpenBalance]), null)"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.thOpenCredit_GPT.Multiline = true;
             this.thOpenCredit_GPT.Name = "thOpenCredit_GPT";
+            this.thOpenCredit_GPT.StylePriority.UseBorderWidth = false;
             this.thOpenCredit_GPT.StylePriority.UseFont = false;
             this.thOpenCredit_GPT.StylePriority.UseTextAlignment = false;
             xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
@@ -620,11 +665,13 @@
             // 
             // thOpenDebit_GPT
             // 
+            this.thOpenDebit_GPT.BorderWidth = 1.4F;
             this.thOpenDebit_GPT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([OpenBalance] > 0, [OpenBalance], null)"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.thOpenDebit_GPT.Multiline = true;
             this.thOpenDebit_GPT.Name = "thOpenDebit_GPT";
+            this.thOpenDebit_GPT.StylePriority.UseBorderWidth = false;
             this.thOpenDebit_GPT.StylePriority.UseFont = false;
             this.thOpenDebit_GPT.StylePriority.UseTextAlignment = false;
             xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
@@ -633,18 +680,22 @@
             // 
             // thOpenBalance
             // 
+            this.thOpenBalance.BorderWidth = 1.4F;
             this.thOpenBalance.Multiline = true;
             this.thOpenBalance.Name = "thOpenBalance";
+            this.thOpenBalance.StylePriority.UseBorderWidth = false;
             this.thOpenBalance.StylePriority.UseFont = false;
             this.thOpenBalance.StylePriority.UseTextAlignment = false;
             this.thOpenBalance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thAccountName
             // 
+            this.thAccountName.BorderWidth = 1.4F;
             this.thAccountName.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AccountName]")});
             this.thAccountName.Multiline = true;
             this.thAccountName.Name = "thAccountName";
+            this.thAccountName.StylePriority.UseBorderWidth = false;
             this.thAccountName.StylePriority.UseFont = false;
             this.thAccountName.StylePriority.UseTextAlignment = false;
             this.thAccountName.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -679,26 +730,34 @@
             // 
             // thCreditBal
             // 
+            this.thCreditBal.BorderWidth = 1.4F;
             this.thCreditBal.Multiline = true;
             this.thCreditBal.Name = "thCreditBal";
+            this.thCreditBal.StylePriority.UseBorderWidth = false;
             this.thCreditBal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thDebitBal
             // 
+            this.thDebitBal.BorderWidth = 1.4F;
             this.thDebitBal.Multiline = true;
             this.thDebitBal.Name = "thDebitBal";
+            this.thDebitBal.StylePriority.UseBorderWidth = false;
             this.thDebitBal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thCredit
             // 
+            this.thCredit.BorderWidth = 1.4F;
             this.thCredit.Multiline = true;
             this.thCredit.Name = "thCredit";
+            this.thCredit.StylePriority.UseBorderWidth = false;
             this.thCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thDebit
             // 
+            this.thDebit.BorderWidth = 1.4F;
             this.thDebit.Multiline = true;
             this.thDebit.Name = "thDebit";
+            this.thDebit.StylePriority.UseBorderWidth = false;
             this.thDebit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thDate2
@@ -719,21 +778,27 @@
             // 
             // thBalance
             // 
+            this.thBalance.BorderWidth = 1.4F;
             this.thBalance.Multiline = true;
             this.thBalance.Name = "thBalance";
+            this.thBalance.StylePriority.UseBorderWidth = false;
             this.thBalance.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thMovement
             // 
+            this.thMovement.BorderWidth = 1.4F;
             this.thMovement.Multiline = true;
             this.thMovement.Name = "thMovement";
+            this.thMovement.StylePriority.UseBorderWidth = false;
             this.thMovement.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thDate1
             // 
+            this.thDate1.BorderWidth = 1.4F;
             this.thDate1.Multiline = true;
             this.thDate1.Name = "thDate1";
             this.thDate1.RowSpan = 2;
+            this.thDate1.StylePriority.UseBorderWidth = false;
             this.thDate1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // trHeader1
@@ -787,14 +852,6 @@
             this.IsCustomReportHeader.Type = typeof(bool);
             this.IsCustomReportHeader.ValueInfo = "False";
             this.IsCustomReportHeader.Visible = false;
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?AccountDim")});
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             // 
             // AccountDim
             // 
@@ -851,7 +908,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "ar", "Description", "عدد المجموعات / صفحة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 20.41669F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 20.00003F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(204.12F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(355.0001F, 0F)),
@@ -975,10 +1032,13 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "إلى: [?DateTo!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(355.0001F, 0.4166921F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(232.625F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Account Dimension:[?AccountDim]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "أبعاد الحساب:[?AccountDim]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(533.3577F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(199.1932F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "[?AccountDim]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "أبعاد الحساب:"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(390F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(143.3578F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "Account Dimension:"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.999999F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(805F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow1, "Default", "Weight", 1D)});
@@ -1120,7 +1180,8 @@
         private DevExpress.XtraReports.UI.XRSubreport srReportFooterCustom;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportFooter;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportHeader;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.Parameters.Parameter AccountDim;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
     }
 }

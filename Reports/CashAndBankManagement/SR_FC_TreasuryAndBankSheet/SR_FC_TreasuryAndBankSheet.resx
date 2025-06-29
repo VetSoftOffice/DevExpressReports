@@ -120,6 +120,7 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.ComponentModel;
 using DevExpress.XtraReports.Parameters;
+using System.Text.RegularExpressions;
 
 int groupCounter = 1;
 int currentPageIndex = 0;
@@ -166,6 +167,31 @@ private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
     //DevExpressScripts vsScripts = new DevExpressScripts();
     //vsScripts.ResetGroupCounter(e, ref groupCounter, ref currentPageIndex);
 }*/
+
+private void xrLabel10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       string rawValue = Parameters["AccountDim"].Value as string;
+
+    if (!string.IsNullOrWhiteSpace(rawValue))
+    {
+        rawValue = rawValue.Trim();
+
+        // Remove single quotes only if they're wrapping the value
+        if (rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
+        {
+            rawValue = rawValue.Substring(1, rawValue.Length - 2);
+        }
+
+        // Optional: remove other special characters
+        rawValue = Regex.Replace(rawValue, @"[^\w\s\-]", ""); // keeps letters, digits, space, dash
+
+        xrLabel10.Text = rawValue;
+    }
+    else
+    {
+        xrLabel10.Text = string.Empty;
+    }
+
+}
 </value>
   </data>
 </root>

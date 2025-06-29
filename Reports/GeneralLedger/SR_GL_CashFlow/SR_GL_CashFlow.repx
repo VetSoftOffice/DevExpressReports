@@ -55,33 +55,33 @@
           <Rows>
             <Item1 Ref="42" ControlType="XRTableRow" Name="xrTableRow2">
               <Cells>
-                <Item1 Ref="43" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" Borders="All">
+                <Item1 Ref="43" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" Borders="All" BorderWidth="1.4">
                   <Scripts Ref="44" OnBeforePrint="xrTableCell4_BeforePrint" />
                   <ExpressionBindings>
                     <Item1 Ref="45" EventName="BeforePrint" PropertyName="Text" Expression="[AccountName]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="46" UseFont="false" UseBorders="false" />
+                  <StylePriority Ref="46" UseFont="false" UseBorders="false" UseBorderWidth="false" />
                 </Item1>
-                <Item2 Ref="47" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" Borders="All">
+                <Item2 Ref="47" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="[Explaination]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="49" UseFont="false" UseBorders="false" />
+                  <StylePriority Ref="49" UseFont="false" UseBorders="false" UseBorderWidth="false" />
                 </Item2>
-                <Item3 Ref="50" ControlType="XRTableCell" Name="xrTableCell5" Multiline="true" ForeColor="Red" Borders="All">
+                <Item3 Ref="50" ControlType="XRTableCell" Name="xrTableCell5" Multiline="true" ForeColor="Red" Borders="All" BorderWidth="1.4">
                   <Scripts Ref="51" OnBeforePrint="xrTableCell5_BeforePrint" />
                   <ExpressionBindings>
                     <Item1 Ref="52" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item2 Ref="53" EventName="BeforePrint" PropertyName="Text" Expression="Iif([DataValue] == 0, &#xA;    '', &#xA;    Iif([DataValue] &lt; 0, &#xA;        '(' + FormatString('{0:n2}', -[DataValue]) + ')', &#xA;        FormatString('{0:n2}', [DataValue])&#xA;    )&#xA;)&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="54" UseFont="false" UseForeColor="false" UseBorders="false" />
+                  <StylePriority Ref="54" UseFont="false" UseForeColor="false" UseBorders="false" UseBorderWidth="false" />
                 </Item3>
-                <Item4 Ref="55" ControlType="XRTableCell" Name="xrTableCell6" Multiline="true" Borders="All">
+                <Item4 Ref="55" ControlType="XRTableCell" Name="xrTableCell6" Multiline="true" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="56" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item2 Ref="57" EventName="BeforePrint" PropertyName="Text" Expression="Iif([PrvDataValue] == 0, &#xA;    '', &#xA;    Iif([PrvDataValue] &lt; 0, &#xA;        '(' + FormatString('{0:n2}', -[PrvDataValue]) + ')', &#xA;        FormatString('{0:n2}', [PrvDataValue])&#xA;    )&#xA;)&#xA;&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="58" UseFont="false" UseBorders="false" />
+                  <StylePriority Ref="58" UseFont="false" UseBorders="false" UseBorderWidth="false" />
                 </Item4>
               </Cells>
             </Item1>
@@ -252,7 +252,7 @@
                   <Item44 Ref="179" Component="#Ref-120" Culture="ar" Path="Text" Data="الشركة:[?Companies]" />
                   <Item45 Ref="180" Component="#Ref-113" Culture="Default" Path="LocationFloat" Data="610.8068,0" />
                   <Item46 Ref="181" Component="#Ref-113" Culture="Default" Path="SizeF" Data="199.1932,20" />
-                  <Item47 Ref="182" Component="#Ref-113" Culture="Default" Path="Text" Data="[AccountDim]" />
+                  <Item47 Ref="182" Component="#Ref-113" Culture="Default" Path="Text" Data="[?AccountDim]" />
                   <Item48 Ref="183" Component="#Ref-117" Culture="Default" Path="LocationFloat" Data="467.449,0" />
                   <Item49 Ref="184" Component="#Ref-117" Culture="Default" Path="SizeF" Data="143.3578,20.00003" />
                   <Item50 Ref="185" Component="#Ref-117" Culture="Default" Path="Text" Data="Account Dimension:" />
@@ -683,11 +683,11 @@
         <Item1 Ref="446" FieldName="SN_MainAccount" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="447" ControlType="XRLabel" Name="xrLabel2" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" Borders="All">
+        <Item1 Ref="447" ControlType="XRLabel" Name="xrLabel2" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
           <ExpressionBindings>
             <Item1 Ref="448" EventName="BeforePrint" PropertyName="Text" Expression="[MainAccountName]" />
           </ExpressionBindings>
-          <StylePriority Ref="449" UseFont="false" UseBorders="false" />
+          <StylePriority Ref="449" UseFont="false" UseBorders="false" UseBorderWidth="false" />
         </Item1>
       </Controls>
     </Item7>
@@ -701,11 +701,11 @@
         <Item1 Ref="453" FieldName="GroupNo" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="454" ControlType="XRLabel" Name="xrLabel1" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" Borders="All">
+        <Item1 Ref="454" ControlType="XRLabel" Name="xrLabel1" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
           <ExpressionBindings>
             <Item1 Ref="455" EventName="BeforePrint" PropertyName="Text" Expression="[GroupName]" />
           </ExpressionBindings>
-          <StylePriority Ref="456" UseFont="false" UseBorders="false" />
+          <StylePriority Ref="456" UseFont="false" UseBorders="false" UseBorderWidth="false" />
         </Item1>
       </Controls>
       <StylePriority Ref="457" UseFont="false" />
@@ -716,32 +716,32 @@
           <Rows>
             <Item1 Ref="460" ControlType="XRTableRow" Name="xrTableRow1">
               <Cells>
-                <Item1 Ref="461" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" Borders="All">
+                <Item1 Ref="461" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="462" EventName="BeforePrint" PropertyName="Text" Expression="[GroupName]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="463" UseBorders="false" />
+                  <StylePriority Ref="463" UseBorders="false" UseBorderWidth="false" />
                 </Item1>
-                <Item2 Ref="464" ControlType="XRTableCell" Name="xrTableCell2" Multiline="true" Borders="All">
-                  <StylePriority Ref="465" UseBorders="false" />
+                <Item2 Ref="464" ControlType="XRTableCell" Name="xrTableCell2" Multiline="true" Borders="All" BorderWidth="1.4">
+                  <StylePriority Ref="465" UseBorders="false" UseBorderWidth="false" />
                 </Item2>
-                <Item3 Ref="466" ControlType="XRTableCell" Name="RTotalOfProfOrLoss_DataValue" Multiline="true" ForeColor="Red" Borders="All">
+                <Item3 Ref="466" ControlType="XRTableCell" Name="RTotalOfProfOrLoss_DataValue" Multiline="true" ForeColor="Red" Borders="All" BorderWidth="1.4">
                   <Scripts Ref="467" OnSummaryGetResult="RTotalOfProfOrLoss_DataValue_SummaryGetResult" />
                   <Summary Ref="468" Running="Group" />
                   <ExpressionBindings>
                     <Item1 Ref="469" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item2 Ref="470" EventName="BeforePrint" PropertyName="Text" Expression="Iif([DataValue] &lt; 0, &#xA;    '(' + FormatString('{0:n2}', -[DataValue]) + ')', &#xA;    FormatString('{0:n2}', [DataValue])&#xA;)&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="471" UseForeColor="false" UseBorders="false" />
+                  <StylePriority Ref="471" UseForeColor="false" UseBorders="false" UseBorderWidth="false" />
                 </Item3>
-                <Item4 Ref="472" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item4 Ref="472" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <Scripts Ref="473" OnSummaryGetResult="xrTableCell3_SummaryGetResult" />
                   <Summary Ref="474" Running="Group" />
                   <ExpressionBindings>
                     <Item1 Ref="475" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item2 Ref="476" EventName="BeforePrint" PropertyName="Text" Expression="Iif([PrvDataValue] &lt; 0, &#xA;    '(' + FormatString('{0:n2}', -[PrvDataValue]) + ')', &#xA;    FormatString('{0:n2}', [PrvDataValue])&#xA;)&#xA;&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="477" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="477" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item4>
               </Cells>
             </Item1>
