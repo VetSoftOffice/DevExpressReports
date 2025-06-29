@@ -149,7 +149,6 @@ private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
             }
         }
     }
-}
-</value>
+}</value>
   </data>
 </root>
