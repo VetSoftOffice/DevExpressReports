@@ -123,8 +123,9 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.ComponentModel;
 using DevExpress.XtraReports.Parameters;
-using DevExpress.XtraReports.Parameters;
+
 int groupCounter = 1;
+
 private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
 {
     GroupFooterBand groupFooter = (GroupFooterBand)sender;
@@ -148,7 +149,6 @@ private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
             }
         }
     }
-}
-</value>
+}</value>
   </data>
 </root>
