@@ -585,7 +585,7 @@
     <Item101 Ref="359" Component="#Ref-136" Culture="Default" Path="Weight" Data="2.4841066787643222" />
     <Item102 Ref="360" Component="#Ref-131" Culture="Default" Path="LocationFloat" Data="4.768371E-05,0" />
     <Item103 Ref="361" Component="#Ref-131" Culture="Default" Path="SizeF" Data="815.9999,20" />
-    <Item104 Ref="362" Component="#Ref-133" Culture="Default" Path="Text" Data="" />
+    <Item104 Ref="362" Component="#Ref-133" Culture="Default" Path="Text" Data="Date" />
     <Item105 Ref="363" Component="#Ref-133" Culture="ar" Path="Text" Data="تاريخ" />
     <Item106 Ref="364" Component="#Ref-133" Culture="Default" Path="Weight" Data="1.9095972719710157" />
     <Item107 Ref="365" Component="#Ref-30" Culture="Default" Path="HeightF" Data="20" />
