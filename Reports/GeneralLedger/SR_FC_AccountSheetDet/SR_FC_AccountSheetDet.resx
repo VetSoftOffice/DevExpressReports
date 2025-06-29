@@ -119,6 +119,7 @@
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 Dictionary&lt;string, decimal&gt; debitRunningTotals = new Dictionary&lt;string, decimal&gt;();
 Dictionary&lt;string, decimal&gt; creditRunningTotals = new Dictionary&lt;string, decimal&gt;();
@@ -215,8 +216,6 @@ private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEve
     }
 
 }
-=======
->>>>>>> parent of ae03566 (Modifications For Account Dim)
 </value>
   </data>
 </root>
