@@ -1154,89 +1154,113 @@
             // 
             // thSr
             // 
+            this.thSr.BorderWidth = 1.4F;
             this.thSr.Multiline = true;
             this.thSr.Name = "thSr";
+            this.thSr.StylePriority.UseBorderWidth = false;
             this.thSr.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell15
             // 
+            this.xrTableCell15.BorderWidth = 1.4F;
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
+            this.xrTableCell15.StylePriority.UseBorderWidth = false;
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thProduct
             // 
+            this.thProduct.BorderWidth = 1.4F;
             this.thProduct.Multiline = true;
             this.thProduct.Name = "thProduct";
+            this.thProduct.StylePriority.UseBorderWidth = false;
             this.thProduct.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell6
             // 
+            this.xrTableCell6.BorderWidth = 1.4F;
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif([RecDlvCount]>1,true ,false )\n\n")});
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
+            this.xrTableCell6.StylePriority.UseBorderWidth = false;
             this.xrTableCell6.StylePriority.UseFont = false;
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell5
             // 
+            this.xrTableCell5.BorderWidth = 1.4F;
             this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif([RecDlvCount]>1,true ,false )\n\n\n")});
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
+            this.xrTableCell5.StylePriority.UseBorderWidth = false;
             this.xrTableCell5.StylePriority.UseFont = false;
             this.xrTableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thQty
             // 
+            this.thQty.BorderWidth = 1.4F;
             this.thQty.Multiline = true;
             this.thQty.Name = "thQty";
+            this.thQty.StylePriority.UseBorderWidth = false;
             this.thQty.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thUnit
             // 
+            this.thUnit.BorderWidth = 1.4F;
             this.thUnit.Multiline = true;
             this.thUnit.Name = "thUnit";
+            this.thUnit.StylePriority.UseBorderWidth = false;
             this.thUnit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thUnitPrice
             // 
+            this.thUnitPrice.BorderWidth = 1.4F;
             this.thUnitPrice.Multiline = true;
             this.thUnitPrice.Name = "thUnitPrice";
+            this.thUnitPrice.StylePriority.UseBorderWidth = false;
             this.thUnitPrice.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thSellingPrice
             // 
+            this.thSellingPrice.BorderWidth = 1.4F;
             this.thSellingPrice.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n")});
             this.thSellingPrice.Multiline = true;
             this.thSellingPrice.Name = "thSellingPrice";
+            this.thSellingPrice.StylePriority.UseBorderWidth = false;
             this.thSellingPrice.StylePriority.UseFont = false;
             this.thSellingPrice.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thDiscount
             // 
+            this.thDiscount.BorderWidth = 1.4F;
             this.thDiscount.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n")});
             this.thDiscount.Multiline = true;
             this.thDiscount.Name = "thDiscount";
+            this.thDiscount.StylePriority.UseBorderWidth = false;
             this.thDiscount.StylePriority.UseFont = false;
             this.thDiscount.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thExtras
             // 
+            this.thExtras.BorderWidth = 1.4F;
             this.thExtras.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n")});
             this.thExtras.Multiline = true;
             this.thExtras.Name = "thExtras";
+            this.thExtras.StylePriority.UseBorderWidth = false;
             this.thExtras.StylePriority.UseFont = false;
             this.thExtras.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thTotalPrice
             // 
+            this.thTotalPrice.BorderWidth = 1.4F;
             this.thTotalPrice.Multiline = true;
             this.thTotalPrice.Name = "thTotalPrice";
+            this.thTotalPrice.StylePriority.UseBorderWidth = false;
             this.thTotalPrice.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // ReportFooter
@@ -1288,30 +1312,38 @@
             // 
             // tfTotal
             // 
+            this.tfTotal.BorderWidth = 1.4F;
             this.tfTotal.Multiline = true;
             this.tfTotal.Name = "tfTotal";
+            this.tfTotal.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell20
             // 
+            this.xrTableCell20.BorderWidth = 1.4F;
             this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif([RecDlvCount]>1,true ,false )\n\n\n\n")});
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
+            this.xrTableCell20.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell19
             // 
+            this.xrTableCell19.BorderWidth = 1.4F;
             this.xrTableCell19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif([RecDlvCount]>1,true ,false )\n\n\n\n")});
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
+            this.xrTableCell19.StylePriority.UseBorderWidth = false;
             // 
             // tfSellingPrice_GT
             // 
+            this.tfSellingPrice_GT.BorderWidth = 1.4F;
             this.tfSellingPrice_GT.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([ActualQty])")});
             this.tfSellingPrice_GT.Multiline = true;
             this.tfSellingPrice_GT.Name = "tfSellingPrice_GT";
+            this.tfSellingPrice_GT.StylePriority.UseBorderWidth = false;
             this.tfSellingPrice_GT.StylePriority.UseFont = false;
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.tfSellingPrice_GT.Summary = xrSummary1;
@@ -1319,18 +1351,22 @@
             // 
             // xrTableCell10
             // 
+            this.xrTableCell10.BorderWidth = 1.4F;
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
+            this.xrTableCell10.StylePriority.UseBorderWidth = false;
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell11
             // 
+            this.xrTableCell11.BorderWidth = 1.4F;
             this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SellingPrice])"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n")});
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.StylePriority.UseBorderWidth = false;
             this.xrTableCell11.StylePriority.UseFont = false;
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell11.Summary = xrSummary2;
@@ -1338,30 +1374,36 @@
             // 
             // xrTableCell8
             // 
+            this.xrTableCell8.BorderWidth = 1.4F;
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n")});
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
+            this.xrTableCell8.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell12
             // 
+            this.xrTableCell12.BorderWidth = 1.4F;
             this.xrTableCell12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([VatValue])")});
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
+            this.xrTableCell12.StylePriority.UseBorderWidth = false;
             this.xrTableCell12.StylePriority.UseFont = false;
             xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell12.Summary = xrSummary3;
             // 
             // xrTableCell4
             // 
+            this.xrTableCell4.BorderWidth = 1.4F;
             this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalPrice_CF])")});
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.StylePriority.UseBorderWidth = false;
             this.xrTableCell4.StylePriority.UseFont = false;
             xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
             this.xrTableCell4.Summary = xrSummary4;
@@ -1709,12 +1751,14 @@
             this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell3.BorderWidth = 1.4F;
             this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalPrice_CF]")});
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseBorders = false;
+            this.xrTableCell3.StylePriority.UseBorderWidth = false;
             this.xrTableCell3.StylePriority.UseFont = false;
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -1723,6 +1767,7 @@
             this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.BorderWidth = 1.4F;
             this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n"),
@@ -1730,6 +1775,7 @@
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseBorders = false;
+            this.xrTableCell2.StylePriority.UseBorderWidth = false;
             this.xrTableCell2.StylePriority.UseFont = false;
             this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -1738,6 +1784,7 @@
             this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.BorderWidth = 1.4F;
             this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[VatPerc]"),
@@ -1745,6 +1792,7 @@
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.StylePriority.UseBorders = false;
+            this.xrTableCell1.StylePriority.UseBorderWidth = false;
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -1754,6 +1802,7 @@
             this.tdJournalNote.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdJournalNote.BorderWidth = 1.4F;
             this.tdJournalNote.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SellingPrice]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')"),
@@ -1761,6 +1810,7 @@
             this.tdJournalNote.Multiline = true;
             this.tdJournalNote.Name = "tdJournalNote";
             this.tdJournalNote.StylePriority.UseBorders = false;
+            this.tdJournalNote.StylePriority.UseBorderWidth = false;
             this.tdJournalNote.StylePriority.UseFont = false;
             this.tdJournalNote.StylePriority.UseTextAlignment = false;
             this.tdJournalNote.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -1770,11 +1820,13 @@
             this.tdCredit.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdCredit.BorderWidth = 1.4F;
             this.tdCredit.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PriceUnit]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')")});
             this.tdCredit.Name = "tdCredit";
             this.tdCredit.StylePriority.UseBorders = false;
+            this.tdCredit.StylePriority.UseBorderWidth = false;
             this.tdCredit.StylePriority.UseFont = false;
             this.tdCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -1783,12 +1835,14 @@
             this.tdDebit.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdDebit.BorderWidth = 1.4F;
             this.tdDebit.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Unit]")});
             this.tdDebit.Multiline = true;
             this.tdDebit.Name = "tdDebit";
             this.tdDebit.StylePriority.UseBorders = false;
+            this.tdDebit.StylePriority.UseBorderWidth = false;
             this.tdDebit.StylePriority.UseFont = false;
             this.tdDebit.StylePriority.UseTextAlignment = false;
             this.tdDebit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -1798,12 +1852,14 @@
             this.tdCostCenter.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdCostCenter.BorderWidth = 1.4F;
             this.tdCostCenter.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ActualQty]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')")});
             this.tdCostCenter.Multiline = true;
             this.tdCostCenter.Name = "tdCostCenter";
             this.tdCostCenter.StylePriority.UseBorders = false;
+            this.tdCostCenter.StylePriority.UseBorderWidth = false;
             this.tdCostCenter.StylePriority.UseFont = false;
             this.tdCostCenter.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -1812,6 +1868,7 @@
             this.xrTableCell7.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell7.BorderWidth = 1.4F;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RecDlvDate]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
@@ -1819,6 +1876,7 @@
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseBorders = false;
+            this.xrTableCell7.StylePriority.UseBorderWidth = false;
             this.xrTableCell7.StylePriority.UseFont = false;
             // 
             // xrTableCell9
@@ -1826,6 +1884,7 @@
             this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell9.BorderWidth = 1.4F;
             this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RecDlvDocNo]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
@@ -1833,6 +1892,7 @@
             this.xrTableCell9.Multiline = true;
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.StylePriority.UseBorders = false;
+            this.xrTableCell9.StylePriority.UseBorderWidth = false;
             this.xrTableCell9.StylePriority.UseFont = false;
             // 
             // tdProduct
@@ -1840,11 +1900,13 @@
             this.tdProduct.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdProduct.BorderWidth = 1.4F;
             this.tdProduct.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Product]")});
             this.tdProduct.Multiline = true;
             this.tdProduct.Name = "tdProduct";
             this.tdProduct.StylePriority.UseBorders = false;
+            this.tdProduct.StylePriority.UseBorderWidth = false;
             this.tdProduct.StylePriority.UseFont = false;
             // 
             // tdSerialNo
@@ -1852,11 +1914,13 @@
             this.tdSerialNo.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tdSerialNo.BorderWidth = 1.4F;
             this.tdSerialNo.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SerialNo]")});
             this.tdSerialNo.Multiline = true;
             this.tdSerialNo.Name = "tdSerialNo";
             this.tdSerialNo.StylePriority.UseBorders = false;
+            this.tdSerialNo.StylePriority.UseBorderWidth = false;
             this.tdSerialNo.StylePriority.UseFont = false;
             this.tdSerialNo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -1884,11 +1948,13 @@
             this.xrTableCell16.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell16.BorderWidth = 1.4F;
             this.xrTableCell16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ProductCode]")});
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.StylePriority.UseBorders = false;
+            this.xrTableCell16.StylePriority.UseBorderWidth = false;
             this.xrTableCell16.StylePriority.UseFont = false;
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
