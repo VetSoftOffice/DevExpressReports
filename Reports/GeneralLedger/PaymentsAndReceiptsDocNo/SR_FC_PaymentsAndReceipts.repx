@@ -551,7 +551,7 @@
     <Item86 Ref="332" Component="#Ref-126" Culture="Default" Path="Text" Data="Due Date&#xA;" />
     <Item87 Ref="333" Component="#Ref-126" Culture="ar" Path="Text" Data="تاريخ الاستحقاق" />
     <Item88 Ref="334" Component="#Ref-126" Culture="Default" Path="Weight" Data="3.0597632726140924" />
-    <Item89 Ref="335" Component="#Ref-127" Culture="Default" Path="Text" Data="Doc " />
+    <Item89 Ref="335" Component="#Ref-127" Culture="Default" Path="Text" Data="Doc No" />
     <Item90 Ref="336" Component="#Ref-127" Culture="ar" Path="Text" Data="رقم المستند" />
     <Item91 Ref="337" Component="#Ref-127" Culture="Default" Path="Weight" Data="2.4840863072548873" />
     <Item92 Ref="338" Component="#Ref-128" Culture="Default" Path="Text" Data="Voucher Number&#xA;" />
