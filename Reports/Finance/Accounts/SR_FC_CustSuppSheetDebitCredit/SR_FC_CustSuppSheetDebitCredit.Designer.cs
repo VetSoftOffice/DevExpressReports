@@ -312,7 +312,7 @@
             this.DateFrom = new DevExpress.XtraReports.Parameters.Parameter();
             this.DateTo = new DevExpress.XtraReports.Parameters.Parameter();
             this.ActionType = new DevExpress.XtraReports.Parameters.Parameter();
-            this.WhichType = new DevExpress.XtraReports.Parameters.Parameter();
+            this.WhichReport = new DevExpress.XtraReports.Parameters.Parameter();
             this.CustSupp = new DevExpress.XtraReports.Parameters.Parameter();
             this.CodeSuppOrCust_Str = new DevExpress.XtraReports.Parameters.Parameter();
             this.Code_Str = new DevExpress.XtraReports.Parameters.Parameter();
@@ -321,6 +321,7 @@
             this.sR_FC_CustSuppSheetTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FC_CustSuppSheetTableAdapter();
             this.OpenBalanceForeign_CF = new DevExpress.XtraReports.UI.CalculatedField();
             this.AccountDim = new DevExpress.XtraReports.Parameters.Parameter();
+            this.HeaderName_CF = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -489,7 +490,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.tdCostCenter.BorderWidth = 1.4F;
             this.tdCostCenter.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BillStatement]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(?WhichReport == 2  || ?WhichReport == 5, [Note], [BillStatement])\n")});
             this.tdCostCenter.Multiline = true;
             this.tdCostCenter.Name = "tdCostCenter";
             this.tdCostCenter.StylePriority.UseBorders = false;
@@ -1118,6 +1119,8 @@
             // xrTableCell14
             // 
             this.xrTableCell14.BorderWidth = 1.4F;
+            this.xrTableCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HeaderName_CF]")});
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.RowSpan = 2;
@@ -1903,13 +1906,13 @@
             this.ActionType.Name = "ActionType";
             this.ActionType.Visible = false;
             // 
-            // WhichType
+            // WhichReport
             // 
-            this.WhichType.AllowNull = true;
-            this.WhichType.Name = "WhichType";
-            this.WhichType.Type = typeof(int);
-            this.WhichType.ValueInfo = "0";
-            this.WhichType.Visible = false;
+            this.WhichReport.AllowNull = true;
+            this.WhichReport.Name = "WhichReport";
+            this.WhichReport.Type = typeof(int);
+            this.WhichReport.ValueInfo = "0";
+            this.WhichReport.Visible = false;
             // 
             // CustSupp
             // 
@@ -1957,6 +1960,13 @@
             this.AccountDim.Name = "AccountDim";
             this.AccountDim.Visible = false;
             // 
+            // HeaderName_CF
+            // 
+            this.HeaderName_CF.DataMember = "SR_FC_CustSuppSheet";
+            this.HeaderName_CF.Expression = "Iif(?WhichReport == 2  || ?WhichReport == 5,\n    Iif(?IsRTL, \'ملاحظات\', \'Notes\')," +
+    "\n    Iif(?IsRTL, \'البيان\', \'Bill Statement\')\n)\n";
+            this.HeaderName_CF.Name = "HeaderName_CF";
+            // 
             // SR_FC_CustSuppSheetDebitCredit
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1986,7 +1996,8 @@
             this.OpenResult,
             this.RunningSumOpenBalance,
             this.CurrentSumOpenBalance,
-            this.OpenBalanceForeign_CF});
+            this.OpenBalanceForeign_CF,
+            this.HeaderName_CF});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
@@ -2107,7 +2118,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trDetail, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trHeader, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trHeader2, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.WhichType, "Default", "Description", "WhichType"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.WhichReport, "Default", "Description", "WhichReport"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(7.947286E-06F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "From: [?DateFrom!dd-MM-yyyy]"),
@@ -2321,7 +2332,7 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DateFrom, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DateTo, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ActionType, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.WhichType, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.WhichReport, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CustSupp, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CodeSuppOrCust_Str, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Code_Str, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -2341,7 +2352,7 @@
             this.DateFrom,
             this.DateTo,
             this.ActionType,
-            this.WhichType,
+            this.WhichReport,
             this.CustSupp,
             this.CodeSuppOrCust_Str,
             this.Code_Str,
@@ -2496,7 +2507,7 @@
         private DevExpress.XtraReports.Parameters.Parameter DateFrom;
         private DevExpress.XtraReports.Parameters.Parameter DateTo;
         private DevExpress.XtraReports.Parameters.Parameter ActionType;
-        private DevExpress.XtraReports.Parameters.Parameter WhichType;
+        private DevExpress.XtraReports.Parameters.Parameter WhichReport;
         private DevExpress.XtraReports.Parameters.Parameter CustSupp;
         private DevExpress.XtraReports.Parameters.Parameter CodeSuppOrCust_Str;
         private DevExpress.XtraReports.Parameters.Parameter Code_Str;
@@ -2515,5 +2526,6 @@
         private DevExpress.XtraReports.UI.XRLabel lblVetSoftData;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel9;
+        private DevExpress.XtraReports.UI.CalculatedField HeaderName_CF;
     }
 }
