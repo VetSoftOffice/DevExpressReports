@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.1.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_MO_WorkTime" ScriptsSource="using DevExpress.XtraReports.UI;&#xD;&#xA;using System.Collections;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;&#xD;&#xA;public void HideSubbandIfFeedMillLessThanTwo(SubBand band)&#xD;&#xA;{&#xD;&#xA;    XtraReport report = band.Report as XtraReport;&#xD;&#xA;    if (report != null)&#xD;&#xA;    {&#xD;&#xA;        IEnumerable dataSource = report.DataSource as IEnumerable;&#xD;&#xA;        if (dataSource != null)&#xD;&#xA;        {&#xD;&#xA;            int feedMillCount = CountDistinctFeedMills(dataSource);&#xD;&#xA;            band.Visible = (feedMillCount &gt;= 2);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            band.Visible = false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        band.Visible = false;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private int CountDistinctFeedMills(IEnumerable dataSource)&#xD;&#xA;{&#xD;&#xA;    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();&#xD;&#xA;    foreach (object item in dataSource)&#xD;&#xA;    {&#xD;&#xA;        object feedMillValue = GetFieldValue(item, &quot;FeedMill&quot;);&#xD;&#xA;        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))&#xD;&#xA;        {&#xD;&#xA;            distinctFeedMills.Add(feedMillValue);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return distinctFeedMills.Count;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private object GetFieldValue(object item, string fieldName)&#xD;&#xA;{&#xD;&#xA;    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);&#xD;&#xA;    if (property != null)&#xD;&#xA;    {&#xD;&#xA;        return property.GetValue(item, null);&#xD;&#xA;    }&#xD;&#xA;    return null;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    SubBand subBand = ReportFooterSub3 as SubBand;&#xD;&#xA;    if (subBand != null)&#xD;&#xA;    {&#xD;&#xA;        HideSubbandIfFeedMillLessThanTwo(subBand);&#xD;&#xA;    }&#xD;&#xA;}" PageWidth="1034" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.1" DataMember="SR_MO_WorkTime" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_MO_WorkTime" ScriptsSource="using DevExpress.XtraReports.UI;&#xD;&#xA;using System.Collections;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;&#xD;&#xA;public void HideSubbandIfFeedMillLessThanTwo(SubBand band)&#xD;&#xA;{&#xD;&#xA;    XtraReport report = band.Report as XtraReport;&#xD;&#xA;    if (report != null)&#xD;&#xA;    {&#xD;&#xA;        IEnumerable dataSource = report.DataSource as IEnumerable;&#xD;&#xA;        if (dataSource != null)&#xD;&#xA;        {&#xD;&#xA;            int feedMillCount = CountDistinctFeedMills(dataSource);&#xD;&#xA;            band.Visible = (feedMillCount &gt;= 2);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            band.Visible = false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        band.Visible = false;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private int CountDistinctFeedMills(IEnumerable dataSource)&#xD;&#xA;{&#xD;&#xA;    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();&#xD;&#xA;    foreach (object item in dataSource)&#xD;&#xA;    {&#xD;&#xA;        object feedMillValue = GetFieldValue(item, &quot;FeedMill&quot;);&#xD;&#xA;        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))&#xD;&#xA;        {&#xD;&#xA;            distinctFeedMills.Add(feedMillValue);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return distinctFeedMills.Count;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private object GetFieldValue(object item, string fieldName)&#xD;&#xA;{&#xD;&#xA;    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);&#xD;&#xA;    if (property != null)&#xD;&#xA;    {&#xD;&#xA;        return property.GetValue(item, null);&#xD;&#xA;    }&#xD;&#xA;    return null;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    SubBand subBand = ReportFooterSub3 as SubBand;&#xD;&#xA;    if (subBand != null)&#xD;&#xA;    {&#xD;&#xA;        HideSubbandIfFeedMillLessThanTwo(subBand);&#xD;&#xA;    }&#xD;&#xA;}" PageWidth="1034" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_MO_WorkTime" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="ShowSignature" Type="#Ref-2" />
@@ -49,55 +49,55 @@
           <Rows>
             <Item1 Ref="39" ControlType="XRTableRow" Name="xrTableRow4">
               <Cells>
-                <Item1 Ref="40" ControlType="XRTableCell" Name="dtSerialNo" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item1 Ref="40" ControlType="XRTableCell" Name="dtSerialNo" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="41" EventName="BeforePrint" PropertyName="Text" Expression="[DataSource.CurrentRowIndex] + 1" />
                   </ExpressionBindings>
-                  <StylePriority Ref="42" UseFont="false" UseBorders="false" />
+                  <StylePriority Ref="42" UseFont="false" UseBorders="false" UseBorderWidth="false" />
                 </Item1>
-                <Item2 Ref="43" ControlType="XRTableCell" Name="dtProdCode" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item2 Ref="43" ControlType="XRTableCell" Name="dtProdCode" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="44" EventName="BeforePrint" PropertyName="Text" Expression="[Grade]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="45" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="45" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item2>
-                <Item3 Ref="46" ControlType="XRTableCell" Name="xrTableCell12" Multiline="true" TextAlignment="MiddleLeft" Borders="All">
+                <Item3 Ref="46" ControlType="XRTableCell" Name="xrTableCell12" Multiline="true" TextAlignment="MiddleLeft" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="47" EventName="BeforePrint" PropertyName="Text" Expression="[EmployeeName]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="48" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="48" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item3>
-                <Item4 Ref="49" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" TextAlignment="MiddleLeft" Borders="All">
+                <Item4 Ref="49" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" TextAlignment="MiddleLeft" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="50" EventName="BeforePrint" PropertyName="Text" Expression="[UserName]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="51" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="51" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item4>
-                <Item5 Ref="52" ControlType="XRTableCell" Name="xrTableCell14" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item5 Ref="52" ControlType="XRTableCell" Name="xrTableCell14" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="53" EventName="BeforePrint" PropertyName="Text" Expression="[StartDateTime]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="54" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="54" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item5>
-                <Item6 Ref="55" ControlType="XRTableCell" Name="dtProduct" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item6 Ref="55" ControlType="XRTableCell" Name="dtProduct" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="56" EventName="BeforePrint" PropertyName="Text" Expression="[EndDateTime]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="57" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="57" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item6>
-                <Item7 Ref="58" ControlType="XRTableCell" Name="dtQuantity" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                <Item7 Ref="58" ControlType="XRTableCell" Name="dtQuantity" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="59" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')" />
                     <Item2 Ref="60" EventName="BeforePrint" PropertyName="Text" Expression="[UserHour]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="61" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="61" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item7>
-                <Item8 Ref="62" ControlType="XRTableCell" Name="dtUnit" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                <Item8 Ref="62" ControlType="XRTableCell" Name="dtUnit" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="63" EventName="BeforePrint" PropertyName="Text" Expression="[UserMinute]" />
                     <Item2 Ref="64" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="65" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="65" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item8>
               </Cells>
             </Item1>
@@ -149,7 +149,7 @@
               <ParameterBindings>
                 <Item1 Ref="83" ParameterName="HideReportHeader" Parameter="#Ref-6" />
               </ParameterBindings>
-              <ReportSource Ref="84" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="84" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="85" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="86" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -209,7 +209,7 @@
                   <Item4 Ref="115" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-88" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -225,7 +225,7 @@
         <Item1 Ref="118" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="119" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="120" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.1" TextAlignment="MiddleLeft">
+              <ReportSource Ref="120" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="121" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="122" Visible="false" Name="Notes" />
@@ -313,7 +313,7 @@
                   <Item5 Ref="173" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-125" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -322,7 +322,7 @@
         <Item2 Ref="174" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="175" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="176" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.1" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="176" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="177" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="178" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -368,7 +368,7 @@
                   <Item2 Ref="202" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-178" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -389,29 +389,29 @@
               <Rows>
                 <Item1 Ref="209" ControlType="XRTableRow" Name="xrTableRow1">
                   <Cells>
-                    <Item1 Ref="210" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="211" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item1 Ref="210" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="211" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="212" ControlType="XRTableCell" Name="xrTableCell2" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="213" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item2 Ref="212" ControlType="XRTableCell" Name="xrTableCell2" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="213" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item2>
-                    <Item3 Ref="214" ControlType="XRTableCell" Name="xrTableCell9" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="215" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item3 Ref="214" ControlType="XRTableCell" Name="xrTableCell9" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="215" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item3>
-                    <Item4 Ref="216" ControlType="XRTableCell" Name="xrTableCell11" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="217" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item4 Ref="216" ControlType="XRTableCell" Name="xrTableCell11" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="217" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item4>
-                    <Item5 Ref="218" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="219" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item5 Ref="218" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="219" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item5>
-                    <Item6 Ref="220" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="221" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item6 Ref="220" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="221" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item6>
-                    <Item7 Ref="222" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="223" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item7 Ref="222" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="223" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item7>
-                    <Item8 Ref="224" ControlType="XRTableCell" Name="xrTableCell5" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="225" UseFont="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item8 Ref="224" ControlType="XRTableCell" Name="xrTableCell5" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="225" UseFont="false" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item8>
                   </Cells>
                 </Item1>
@@ -672,11 +672,11 @@
     <Item15 Ref="445" LayoutItemType="Parameter" Parameter="#Ref-21" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="446" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.1" Name="dsInvtories" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNJbnZ0b3JpZXMiPjxDb25uZWN0aW9uIE5hbWU9ImRzSW52ZW50b3JpZXMiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIj48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9InRTdEFjdGlvbklEIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IkRvY051bWJlciIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJDb2RlRnJvbSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJTdXBwbGllclNsaXBOdW1iZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iSW5MYW5kV2F5QmlsbE51bWJlciIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJUcmFpbGVyTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iVG90YWxQcmljZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJBY3Rpb25UaW1lIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9Ik5vdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iVHJhbnNmZXJSYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlByaWNlVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJDdXN0b21lck5hbWUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iRXhlY3V0ZURhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQWNjZXB0ZWREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlBheW1lbnREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlJlZ0RhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iU2VyaWFsTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlNlbGxpbmdQcmljZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJQcm9kQ29kZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJCaWxsU3RhdGVtZW50IiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IkV4aXRUaW1lIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlRydWNrTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iRHJpdmVyTmFtZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJGcm9tIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IkNvZGVUbyIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJUbyIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJEb2NOdW1iZXJfT3JkZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQ3VycmVuY3kiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQ3VycmVuY3lQYXJ0IiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlByb2R1Y3QiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzSW52dG9yaWVzIj48VmlldyBOYW1lPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29kZUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdXBwbGllclNsaXBOdW1iZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbkxhbmRXYXlCaWxsTnVtYmVyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhaWxlck5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsUHJpY2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblRpbWUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRyYW5zZmVyUmF0ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUHJpY2VVbml0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhlY3V0ZURhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBY2NlcHRlZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJQYXltZW50RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJTZXJpYWxObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1ByaWNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQcm9kQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJpbGxTdGF0ZW1lbnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhpdFRpbWUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJUcnVja05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRHJpdmVyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGcm9tIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvZGVUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlcl9PcmRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXJyZW5jeSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXJyZW5jeVBhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item1 Ref="446" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="dsInvtories" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNJbnZ0b3JpZXMiPjxDb25uZWN0aW9uIE5hbWU9ImRzSW52ZW50b3JpZXMiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIj48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9InRTdEFjdGlvbklEIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IkRvY051bWJlciIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJDb2RlRnJvbSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJTdXBwbGllclNsaXBOdW1iZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iSW5MYW5kV2F5QmlsbE51bWJlciIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJUcmFpbGVyTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iVG90YWxQcmljZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJBY3Rpb25UaW1lIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9Ik5vdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iVHJhbnNmZXJSYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlByaWNlVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJDdXN0b21lck5hbWUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iRXhlY3V0ZURhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQWNjZXB0ZWREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlBheW1lbnREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlJlZ0RhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iU2VyaWFsTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlNlbGxpbmdQcmljZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJQcm9kQ29kZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJCaWxsU3RhdGVtZW50IiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IkV4aXRUaW1lIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlRydWNrTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iRHJpdmVyTmFtZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJGcm9tIiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IkNvZGVUbyIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJUbyIgLz48Q29sdW1uIFRhYmxlPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIiBOYW1lPSJEb2NOdW1iZXJfT3JkZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQ3VycmVuY3kiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iQ3VycmVuY3lQYXJ0IiAvPjxDb2x1bW4gVGFibGU9IlNSX1NUX1JlY0RlbGl2ZXJ5T3JkZXIiIE5hbWU9IlByb2R1Y3QiIC8+PENvbHVtbiBUYWJsZT0iU1JfU1RfUmVjRGVsaXZlcnlPcmRlciIgTmFtZT0iVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzSW52dG9yaWVzIj48VmlldyBOYW1lPSJTUl9TVF9SZWNEZWxpdmVyeU9yZGVyIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29kZUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdXBwbGllclNsaXBOdW1iZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbkxhbmRXYXlCaWxsTnVtYmVyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhaWxlck5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsUHJpY2UiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblRpbWUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRyYW5zZmVyUmF0ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUHJpY2VVbml0IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhlY3V0ZURhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBY2NlcHRlZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJQYXltZW50RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJTZXJpYWxObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1ByaWNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQcm9kQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJpbGxTdGF0ZW1lbnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhpdFRpbWUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJUcnVja05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRHJpdmVyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGcm9tIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvZGVUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlcl9PcmRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXJyZW5jeSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXJyZW5jeVBhcnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
     <Item2 Ref="0" />
   </ComponentStorage>
   <ObjectStorage>
-    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="2" Content="System.Boolean" Type="System.Type" />
-    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.1" Ref="11" Content="System.Int32" Type="System.Type" />
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="11" Content="System.Int32" Type="System.Type" />
   </ObjectStorage>
 </XtraReportsLayoutSerializer>
