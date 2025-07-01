@@ -334,17 +334,17 @@
                 <Item3 Ref="175" Visible="false" />
               </RowDefinitions>
               <Cells>
-                <Item1 Ref="176" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.3" />
-                <Item2 Ref="177" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="1" TextAlignment="MiddleRight" Padding="4,4,0,0,100" BorderColor="DarkGray" BorderWidth="1.3">
+                <Item1 Ref="176" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
+                <Item2 Ref="177" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="1" TextAlignment="MiddleRight" Padding="4,4,0,0,100" BorderColor="DarkGray" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="178" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
                   <Scripts Ref="179" OnBeforePrint="crossTabDataCell1_BeforePrint" />
                 </Item2>
-                <Item3 Ref="180" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.3" />
-                <Item4 Ref="181" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" BackColor="White" Padding="5,5,0,0,100" BorderColor="DarkGray" BorderWidth="1.3" />
-                <Item5 Ref="182" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.3" />
-                <Item6 Ref="183" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="2" RowIndex="1" TextAlignment="MiddleRight" Padding="4,4,0,0,100" BorderColor="DarkGray" BorderWidth="1.3">
+                <Item3 Ref="180" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
+                <Item4 Ref="181" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" BackColor="White" Padding="5,5,0,0,100" BorderColor="DarkGray" BorderWidth="1.4" />
+                <Item5 Ref="182" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
+                <Item6 Ref="183" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="2" RowIndex="1" TextAlignment="MiddleRight" Padding="4,4,0,0,100" BorderColor="DarkGray" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="184" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>

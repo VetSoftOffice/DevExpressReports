@@ -42,7 +42,7 @@
     <Item17 Ref="41" Name="ProdType_Prod" Expression="[ProdType]+'_'+[Product]" DataMember="SR_FC_FM_StockMovement" />
     <Item18 Ref="42" Name="Produced" Expression="IsNull([TotalSelleable],0 )+IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item19 Ref="43" Name="Rejected" Expression="IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
-    <Item20 Ref="44" Name="MonthName" Expression="IIf(&#xA;    ?IsRTL, &#xA;    IIf([RegMONTH] == 1, 'يناير',&#xA;        IIf([RegMONTH] == 2, 'فبراير',&#xA;            IIf([RegMONTH] == 3, 'مارس',&#xA;                IIf([RegMONTH] == 4, 'أبريل',&#xA;                    IIf([RegMONTH] == 5, 'مايو',&#xA;                        IIf([RegMONTH] == 6, 'يونيو',&#xA;                            IIf([RegMONTH] == 7, 'يوليو',&#xA;                                IIf([RegMONTH] == 8, 'أغسطس',&#xA;                                    IIf([RegMONTH] == 9, 'سبتمبر',&#xA;                                        IIf([RegMONTH] == 10, 'أكتوبر',&#xA;                                            IIf([RegMONTH] == 11, 'نوفمبر',&#xA;                                                'ديسمبر'&#xA;                                            )&#xA;                                        )&#xA;                                    )&#xA;                                )&#xA;                            )&#xA;                        )&#xA;                    )&#xA;                )&#xA;            )&#xA;        )&#xA;    ),&#xA;    IIf([RegMONTH] == 1, 'Jan',&#xA;        IIf([RegMONTH] == 2, 'Feb',&#xA;            IIf([RegMONTH] == 3, 'Mar',&#xA;                IIf([RegMONTH] == 4, 'Apr',&#xA;                    IIf([RegMONTH] == 5, 'May',&#xA;                        IIf([RegMONTH] == 6, 'Jun',&#xA;                            IIf([RegMONTH] == 7, 'Jul',&#xA;                                IIf([RegMONTH] == 8, 'Aug',&#xA;                                    IIf([RegMONTH] == 9, 'Sep',&#xA;                                        IIf([RegMONTH] == 10, 'Oct',&#xA;                                            IIf([RegMONTH] == 11, 'Nov',&#xA;                                                'Dec'&#xA;                                            )&#xA;                                        )&#xA;                                    )&#xA;                                )&#xA;                            )&#xA;                        )&#xA;                    )&#xA;                )&#xA;            )&#xA;        )&#xA;    )&#xA;)&#xA;" DataMember="SR_FM_Fed_SUM_Delivery" />
+    <Item20 Ref="44" Name="MonthName" Expression="IIf(&#xD;&#xA;    ?IsRTL, &#xD;&#xA;    IIf([RegMONTH] == 1, 'يناير',&#xD;&#xA;        IIf([RegMONTH] == 2, 'فبراير',&#xD;&#xA;            IIf([RegMONTH] == 3, 'مارس',&#xD;&#xA;                IIf([RegMONTH] == 4, 'أبريل',&#xD;&#xA;                    IIf([RegMONTH] == 5, 'مايو',&#xD;&#xA;                        IIf([RegMONTH] == 6, 'يونيو',&#xD;&#xA;                            IIf([RegMONTH] == 7, 'يوليو',&#xD;&#xA;                                IIf([RegMONTH] == 8, 'أغسطس',&#xD;&#xA;                                    IIf([RegMONTH] == 9, 'سبتمبر',&#xD;&#xA;                                        IIf([RegMONTH] == 10, 'أكتوبر',&#xD;&#xA;                                            IIf([RegMONTH] == 11, 'نوفمبر',&#xD;&#xA;                                                'ديسمبر'&#xD;&#xA;                                            )&#xD;&#xA;                                        )&#xD;&#xA;                                    )&#xD;&#xA;                                )&#xD;&#xA;                            )&#xD;&#xA;                        )&#xD;&#xA;                    )&#xD;&#xA;                )&#xD;&#xA;            )&#xD;&#xA;        )&#xD;&#xA;    ),&#xD;&#xA;    IIf([RegMONTH] == 1, 'Jan',&#xD;&#xA;        IIf([RegMONTH] == 2, 'Feb',&#xD;&#xA;            IIf([RegMONTH] == 3, 'Mar',&#xD;&#xA;                IIf([RegMONTH] == 4, 'Apr',&#xD;&#xA;                    IIf([RegMONTH] == 5, 'May',&#xD;&#xA;                        IIf([RegMONTH] == 6, 'Jun',&#xD;&#xA;                            IIf([RegMONTH] == 7, 'Jul',&#xD;&#xA;                                IIf([RegMONTH] == 8, 'Aug',&#xD;&#xA;                                    IIf([RegMONTH] == 9, 'Sep',&#xD;&#xA;                                        IIf([RegMONTH] == 10, 'Oct',&#xD;&#xA;                                            IIf([RegMONTH] == 11, 'Nov',&#xD;&#xA;                                                'Dec'&#xD;&#xA;                                            )&#xD;&#xA;                                        )&#xD;&#xA;                                    )&#xD;&#xA;                                )&#xD;&#xA;                            )&#xD;&#xA;                        )&#xD;&#xA;                    )&#xD;&#xA;                )&#xD;&#xA;            )&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;)&#xD;&#xA;" DataMember="SR_FM_Fed_SUM_Delivery" />
   </CalculatedFields>
   <Bands>
     <Item1 Ref="45" ControlType="TopMarginBand" Name="TopMargin" />
@@ -196,58 +196,58 @@
                 <Item1 Ref="114" FieldName="DeliveryQtn" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="115" Width="152.219452" />
-                <Item2 Ref="116" Width="83.41461" />
-                <Item3 Ref="117" Width="84.2919" />
-                <Item4 Ref="118" Width="52.08027" />
-                <Item5 Ref="119" Width="41.8585663" Visible="false" />
+                <Item1 Ref="115" Width="152.219482" />
+                <Item2 Ref="116" Width="83.4146042" />
+                <Item3 Ref="117" Width="84.29189" />
+                <Item4 Ref="118" Width="52.080265" />
+                <Item5 Ref="119" Width="41.8585625" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
-                <Item1 Ref="120" Height="25.0000019" />
-                <Item2 Ref="121" Height="25.0000019" />
-                <Item3 Ref="122" Height="25.0000019" />
-                <Item4 Ref="123" Height="25.0000019" />
-                <Item5 Ref="124" Height="25.0000019" />
+                <Item1 Ref="120" />
+                <Item2 Ref="121" />
+                <Item3 Ref="122" />
+                <Item4 Ref="123" />
+                <Item5 Ref="124" />
               </RowDefinitions>
               <Cells>
-                <Item1 Ref="125" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="3" TextAlignment="MiddleCenter" BackColor="White" />
+                <Item1 Ref="125" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="3" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
                 <Item2 Ref="126" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="3" TextAlignment="MiddleRight">
                   <ExpressionBindings>
                     <Item1 Ref="127" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleRight', 'MiddleLeft')&#xA;" />
                   </ExpressionBindings>
                 </Item2>
-                <Item3 Ref="128" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" ColumnSpan="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item4 Ref="129" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" ColumnIndex="1" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item5 Ref="130" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="3" RowIndex="0" RowSpan="3" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item6 Ref="131" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="3" RowIndex="3" TextAlignment="MiddleRight">
+                <Item3 Ref="128" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" ColumnSpan="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item4 Ref="129" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" ColumnIndex="1" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item5 Ref="130" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="3" RowIndex="0" RowSpan="3" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item6 Ref="131" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="3" RowIndex="3" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="132" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleRight', 'MiddleLeft')&#xA;" />
                   </ExpressionBindings>
                 </Item6>
-                <Item7 Ref="133" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" ColumnIndex="0" RowIndex="3" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item8 Ref="134" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="0" RowIndex="4" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item9 Ref="135" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="1" RowIndex="4" TextAlignment="MiddleRight">
+                <Item7 Ref="133" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" ColumnIndex="0" RowIndex="3" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item8 Ref="134" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="0" RowIndex="4" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item9 Ref="135" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="1" RowIndex="4" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="136" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleRight', 'MiddleLeft')&#xA;&#xA;" />
                   </ExpressionBindings>
                 </Item9>
-                <Item10 Ref="137" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="3" RowIndex="4" TextAlignment="MiddleRight">
+                <Item10 Ref="137" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="3" RowIndex="4" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="138" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleRight', 'MiddleLeft')&#xA;" />
                   </ExpressionBindings>
                 </Item10>
-                <Item11 Ref="139" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" ColumnIndex="2" RowIndex="1" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item12 Ref="140" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="2" RowIndex="3" TextAlignment="MiddleRight">
+                <Item11 Ref="139" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" ColumnIndex="2" RowIndex="1" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item12 Ref="140" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="2" RowIndex="3" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="141" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleRight', 'MiddleLeft')&#xA;" />
                   </ExpressionBindings>
                 </Item12>
-                <Item13 Ref="142" ControlType="XRCrossTabCell" Name="crossTabTotalCell10" ColumnIndex="2" RowIndex="4" TextAlignment="MiddleRight">
+                <Item13 Ref="142" ControlType="XRCrossTabCell" Name="crossTabTotalCell10" ColumnIndex="2" RowIndex="4" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="143" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleRight', 'MiddleLeft')&#xA;" />
                   </ExpressionBindings>
                 </Item13>
-                <Item14 Ref="144" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="1" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" />
+                <Item14 Ref="144" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="1" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
                 <Item15 Ref="145" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="4" RowIndex="0" RowSpan="3" />
                 <Item16 Ref="146" ControlType="XRCrossTabCell" Name="crossTabTotalCell12" ColumnIndex="4" RowIndex="3" />
                 <Item17 Ref="147" ControlType="XRCrossTabCell" Name="crossTabTotalCell13" ColumnIndex="4" RowIndex="4" />
@@ -489,14 +489,14 @@
     <Item57 Ref="302" Component="#Ref-12" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
     <Item58 Ref="303" Component="#Ref-51" Culture="Default" Path="HeightF" Data="0" />
     <Item59 Ref="304" Component="#Ref-59" Culture="Default" Path="HeightF" Data="0" />
-    <Item60 Ref="305" Component="#Ref-101" Culture="Default" Path="HeightF" Data="35.6578827" />
+    <Item60 Ref="305" Component="#Ref-101" Culture="Default" Path="HeightF" Data="35.65788" />
     <Item61 Ref="306" Component="#Ref-48" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item62 Ref="307" Component="#Ref-48" Culture="Default" Path="SizeF" Data="201.211975,20" />
+    <Item62 Ref="307" Component="#Ref-48" Culture="Default" Path="SizeF" Data="201.212,20" />
     <Item63 Ref="308" Component="#Ref-47" Culture="Default" Path="LocationFloat" Data="353.5,0" />
     <Item64 Ref="309" Component="#Ref-47" Culture="Default" Path="SizeF" Data="140.4029,20" />
     <Item65 Ref="310" Component="#Ref-47" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item66 Ref="311" Component="#Ref-49" Culture="Default" Path="LocationFloat" Data="646.5413,0" />
-    <Item67 Ref="312" Component="#Ref-49" Culture="Default" Path="SizeF" Data="163.458679,20" />
+    <Item67 Ref="312" Component="#Ref-49" Culture="Default" Path="SizeF" Data="163.4587,20" />
     <Item68 Ref="313" Component="#Ref-49" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item69 Ref="314" Component="#Ref-107" Culture="Default" Path="HeightF" Data="0" />
     <Item70 Ref="315" Component="#Ref-148" Culture="Default" Path="HeightF" Data="20" />
@@ -508,8 +508,8 @@
     <Item76 Ref="321" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item77 Ref="322" Component="#Ref-56" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item78 Ref="323" Component="#Ref-56" Culture="Default" Path="SizeF" Data="810,20" />
-    <Item79 Ref="324" Component="#Ref-66" Culture="Default" Path="LocationFloat" Data="3.00335479,0" />
-    <Item80 Ref="325" Component="#Ref-66" Culture="Default" Path="SizeF" Data="806.993835,20" />
+    <Item79 Ref="324" Component="#Ref-66" Culture="Default" Path="LocationFloat" Data="3.003355,0" />
+    <Item80 Ref="325" Component="#Ref-66" Culture="Default" Path="SizeF" Data="806.9938,20" />
     <Item81 Ref="326" Component="#Ref-61" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item82 Ref="327" Component="#Ref-61" Culture="Default" Path="SizeF" Data="810,20" />
     <Item83 Ref="328" Component="#Ref-149" Culture="Default" Path="LocationFloat" Data="0,0" />
@@ -523,7 +523,7 @@
     <Item91 Ref="336" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item92 Ref="337" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
     <Item93 Ref="338" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item94 Ref="339" Component="#Ref-108" Culture="Default" Path="HeightF" Data="142.083237" />
+    <Item94 Ref="339" Component="#Ref-108" Culture="Default" Path="HeightF" Data="142.0832" />
     <Item95 Ref="340" Component="#Ref-60" Culture="Default" Path="HeightF" Data="20" />
     <Item96 Ref="341" Component="#Ref-65" Culture="Default" Path="HeightF" Data="20" />
     <Item97 Ref="342" Component="#Ref-52" Culture="Default" Path="HeightF" Data="20" />
@@ -531,13 +531,13 @@
     <Item99 Ref="344" Component="#Ref-45" Culture="Default" Path="HeightF" Data="20" />
     <Item100 Ref="345" Component="#Ref-23" Culture="Default" Path="Description" Data="Total_Res" />
     <Item101 Ref="346" Component="#Ref-21" Culture="Default" Path="Description" Data="WeekNo" />
-    <Item102 Ref="347" Component="#Ref-109" Culture="Default" Path="LocationFloat" Data="2.00004578,0" />
-    <Item103 Ref="348" Component="#Ref-109" Culture="Default" Path="SizeF" Data="413.864777,125.000008" />
-    <Item104 Ref="349" Component="#Ref-106" Culture="Default" Path="LocationFloat" Data="1.09645784,9.999995" />
+    <Item102 Ref="347" Component="#Ref-109" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
+    <Item103 Ref="348" Component="#Ref-109" Culture="Default" Path="SizeF" Data="413.8648,125" />
+    <Item104 Ref="349" Component="#Ref-106" Culture="Default" Path="LocationFloat" Data="1.096458,9.999995" />
     <Item105 Ref="350" Component="#Ref-106" Culture="Default" Path="SizeF" Data="226.6497,20" />
     <Item106 Ref="351" Component="#Ref-106" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />
     <Item107 Ref="352" Component="#Ref-106" Culture="ar" Path="Text" Data="من: [?DateFrom!dd-MM-yyyy]" />
-    <Item108 Ref="353" Component="#Ref-104" Culture="Default" Path="LocationFloat" Data="274.933075,9.999995" />
+    <Item108 Ref="353" Component="#Ref-104" Culture="Default" Path="LocationFloat" Data="274.9331,9.999995" />
     <Item109 Ref="354" Component="#Ref-104" Culture="Default" Path="SizeF" Data="237.0663,20" />
     <Item110 Ref="355" Component="#Ref-104" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
     <Item111 Ref="356" Component="#Ref-104" Culture="ar" Path="Text" Data="الي: [?DateTo!dd-MM-yyyy]" />

@@ -51,74 +51,74 @@
           <Rows>
             <Item1 Ref="43" ControlType="XRTableRow" Name="xrTableRow4">
               <Cells>
-                <Item1 Ref="44" ControlType="XRTableCell" Name="xrTableCell8" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item1 Ref="44" ControlType="XRTableCell" Name="xrTableCell8" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <Summary Ref="45" Running="Group" />
                   <ExpressionBindings>
                     <Item1 Ref="46" EventName="BeforePrint" PropertyName="Text" Expression="[DataSource.CurrentRowIndex] + 1" />
                   </ExpressionBindings>
-                  <StylePriority Ref="47" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="47" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item1>
-                <Item2 Ref="48" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item2 Ref="48" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="49" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
                     <Item2 Ref="50" EventName="BeforePrint" PropertyName="Text" Expression="[RegDate]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="51" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="51" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item2>
-                <Item3 Ref="52" ControlType="XRTableCell" Name="xrTableCell15" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item3 Ref="52" ControlType="XRTableCell" Name="xrTableCell15" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="53" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item2 Ref="54" EventName="BeforePrint" PropertyName="Text" Expression="[DocNumber]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="55" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="55" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item3>
-                <Item4 Ref="56" ControlType="XRTableCell" Name="xrTableCell16" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item4 Ref="56" ControlType="XRTableCell" Name="xrTableCell16" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="57" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item2 Ref="58" EventName="BeforePrint" PropertyName="Text" Expression="[Customer]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="59" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="59" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item4>
-                <Item5 Ref="60" ControlType="XRTableCell" Name="xrTableCell17" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item5 Ref="60" ControlType="XRTableCell" Name="xrTableCell17" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="61" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;&#xA;" />
                     <Item2 Ref="62" EventName="BeforePrint" PropertyName="AccessibleDescription" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item3 Ref="63" EventName="BeforePrint" PropertyName="Text" Expression="[PlaceTo]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="64" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="64" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item5>
-                <Item6 Ref="65" ControlType="XRTableCell" Name="xrTableCell30" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
+                <Item6 Ref="65" ControlType="XRTableCell" Name="xrTableCell30" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="66" EventName="BeforePrint" PropertyName="Text" Expression="[Product]" />
                     <Item2 Ref="67" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="68" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="68" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item6>
-                <Item7 Ref="69" ControlType="XRTableCell" Name="xrTableCell31" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                <Item7 Ref="69" ControlType="XRTableCell" Name="xrTableCell31" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="70" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
                     <Item2 Ref="71" EventName="BeforePrint" PropertyName="AccessibleDescription" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                     <Item3 Ref="72" EventName="BeforePrint" PropertyName="Text" Expression="[ActualQty]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="73" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="73" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item7>
-                <Item8 Ref="74" ControlType="XRTableCell" Name="xrTableCell33" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                <Item8 Ref="74" ControlType="XRTableCell" Name="xrTableCell33" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="75" EventName="BeforePrint" PropertyName="Text" Expression="[TotalPrice]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="76" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="76" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item8>
-                <Item9 Ref="77" ControlType="XRTableCell" Name="xrTableCell34" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                <Item9 Ref="77" ControlType="XRTableCell" Name="xrTableCell34" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="78" EventName="BeforePrint" PropertyName="Text" Expression="[FreightPerTon]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="79" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="79" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item9>
-                <Item10 Ref="80" ControlType="XRTableCell" Name="xrTableCell35" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                <Item10 Ref="80" ControlType="XRTableCell" Name="xrTableCell35" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="81" EventName="BeforePrint" PropertyName="Text" Expression="[Note]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="82" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                  <StylePriority Ref="82" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item10>
               </Cells>
             </Item1>
@@ -254,35 +254,35 @@
               <Rows>
                 <Item1 Ref="140" ControlType="XRTableRow" Name="xrTableRow3">
                   <Cells>
-                    <Item1 Ref="141" ControlType="XRTableCell" Name="xrTableCell20" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="142" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item1 Ref="141" ControlType="XRTableCell" Name="xrTableCell20" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="142" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="143" ControlType="XRTableCell" Name="xrTableCell21" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="144" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item2 Ref="143" ControlType="XRTableCell" Name="xrTableCell21" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="144" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item2>
-                    <Item3 Ref="145" ControlType="XRTableCell" Name="xrTableCell22" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="146" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item3 Ref="145" ControlType="XRTableCell" Name="xrTableCell22" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="146" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item3>
-                    <Item4 Ref="147" ControlType="XRTableCell" Name="xrTableCell23" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="148" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item4 Ref="147" ControlType="XRTableCell" Name="xrTableCell23" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="148" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item4>
-                    <Item5 Ref="149" ControlType="XRTableCell" Name="xrTableCell24" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="150" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item5 Ref="149" ControlType="XRTableCell" Name="xrTableCell24" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="150" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item5>
-                    <Item6 Ref="151" ControlType="XRTableCell" Name="xrTableCell25" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="152" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item6 Ref="151" ControlType="XRTableCell" Name="xrTableCell25" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="152" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item6>
-                    <Item7 Ref="153" ControlType="XRTableCell" Name="xrTableCell26" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="154" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item7 Ref="153" ControlType="XRTableCell" Name="xrTableCell26" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="154" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item7>
-                    <Item8 Ref="155" ControlType="XRTableCell" Name="xrTableCell27" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="156" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item8 Ref="155" ControlType="XRTableCell" Name="xrTableCell27" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="156" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item8>
-                    <Item9 Ref="157" ControlType="XRTableCell" Name="xrTableCell28" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="158" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item9 Ref="157" ControlType="XRTableCell" Name="xrTableCell28" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="158" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item9>
-                    <Item10 Ref="159" ControlType="XRTableCell" Name="xrTableCell29" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All">
-                      <StylePriority Ref="160" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item10 Ref="159" ControlType="XRTableCell" Name="xrTableCell29" Multiline="true" TextAlignment="MiddleCenter" BackColor="255,235,235,235" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="160" UseBackColor="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item10>
                   </Cells>
                 </Item1>
@@ -301,35 +301,35 @@
               <Rows>
                 <Item1 Ref="165" ControlType="XRTableRow" Name="xrTableRow1">
                   <Cells>
-                    <Item1 Ref="166" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" TextAlignment="MiddleLeft" Borders="All">
-                      <StylePriority Ref="167" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item1 Ref="166" ControlType="XRTableCell" Name="xrTableCell4" Multiline="true" TextAlignment="MiddleLeft" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="167" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="168" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                    <Item2 Ref="168" ControlType="XRTableCell" Name="xrTableCell13" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                       <Summary Ref="169" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="170" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                         <Item2 Ref="171" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ActualQty])" />
                       </ExpressionBindings>
-                      <StylePriority Ref="172" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                      <StylePriority Ref="172" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item2>
-                    <Item3 Ref="173" ControlType="XRTableCell" Name="xrTableCell14" Multiline="true" TextAlignment="BottomLeft" Borders="All">
+                    <Item3 Ref="173" ControlType="XRTableCell" Name="xrTableCell14" Multiline="true" TextAlignment="BottomLeft" Borders="All" BorderWidth="1.4">
                       <Summary Ref="174" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="175" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                         <Item2 Ref="176" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalPrice])" />
                       </ExpressionBindings>
-                      <StylePriority Ref="177" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                      <StylePriority Ref="177" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item3>
-                    <Item4 Ref="178" ControlType="XRTableCell" Name="xrTableCell18" Multiline="true" TextAlignment="MiddleRight" Borders="All">
+                    <Item4 Ref="178" ControlType="XRTableCell" Name="xrTableCell18" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
                       <Summary Ref="179" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="180" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                         <Item2 Ref="181" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([FreightPerTon])" />
                       </ExpressionBindings>
-                      <StylePriority Ref="182" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                      <StylePriority Ref="182" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item4>
-                    <Item5 Ref="183" ControlType="XRTableCell" Name="xrTableCell19" Multiline="true" TextAlignment="MiddleRight" Borders="All">
-                      <StylePriority Ref="184" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                    <Item5 Ref="183" ControlType="XRTableCell" Name="xrTableCell19" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
+                      <StylePriority Ref="184" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                     </Item5>
                   </Cells>
                 </Item1>
@@ -569,11 +569,11 @@
     <Item26 Ref="315" Component="#Ref-134" Culture="Default" Path="HeightF" Data="20" />
     <Item27 Ref="316" Component="#Ref-39" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item28 Ref="317" Component="#Ref-39" Culture="Default" Path="SizeF" Data="340.5833,20" />
-    <Item29 Ref="318" Component="#Ref-38" Culture="Default" Path="LocationFloat" Data="370.710052,0" />
+    <Item29 Ref="318" Component="#Ref-38" Culture="Default" Path="LocationFloat" Data="370.7101,0" />
     <Item30 Ref="319" Component="#Ref-38" Culture="Default" Path="SizeF" Data="402.4983,20" />
     <Item31 Ref="320" Component="#Ref-38" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item32 Ref="321" Component="#Ref-40" Culture="Default" Path="LocationFloat" Data="832.9999,0" />
-    <Item33 Ref="322" Component="#Ref-40" Culture="Default" Path="SizeF" Data="325.996948,20" />
+    <Item33 Ref="322" Component="#Ref-40" Culture="Default" Path="SizeF" Data="325.9969,20" />
     <Item34 Ref="323" Component="#Ref-40" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item35 Ref="324" Component="#Ref-18" Culture="Default" Path="Description" Data="PageType" />
     <Item36 Ref="325" Component="#Ref-161" Culture="Default" Path="HeightF" Data="0" />
@@ -586,14 +586,14 @@
     <Item43 Ref="332" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item44 Ref="333" Component="#Ref-89" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item45 Ref="334" Component="#Ref-89" Culture="Default" Path="SizeF" Data="1159,20" />
-    <Item46 Ref="335" Component="#Ref-99" Culture="Default" Path="LocationFloat" Data="0.999999046,0" />
-    <Item47 Ref="336" Component="#Ref-99" Culture="Default" Path="SizeF" Data="1157.99988,20" />
+    <Item46 Ref="335" Component="#Ref-99" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
+    <Item47 Ref="336" Component="#Ref-99" Culture="Default" Path="SizeF" Data="1158,20" />
     <Item48 Ref="337" Component="#Ref-94" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item49 Ref="338" Component="#Ref-94" Culture="Default" Path="SizeF" Data="1159,20" />
     <Item50 Ref="339" Component="#Ref-187" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item51 Ref="340" Component="#Ref-187" Culture="Default" Path="SizeF" Data="1158.99707,20" />
+    <Item51 Ref="340" Component="#Ref-187" Culture="Default" Path="SizeF" Data="1158.997,20" />
     <Item52 Ref="341" Component="#Ref-243" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item53 Ref="342" Component="#Ref-243" Culture="Default" Path="SizeF" Data="1158.99707,20" />
+    <Item53 Ref="342" Component="#Ref-243" Culture="Default" Path="SizeF" Data="1158.997,20" />
     <Item54 Ref="343" Component="#Ref-86" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item55 Ref="344" Component="#Ref-86" Culture="Default" Path="SizeF" Data="1159,20" />
     <Item56 Ref="345" Component="#Ref-1" Culture="Default" Path="DisplayName" Data="SR_FC_FM_StockMovement" />
@@ -621,7 +621,7 @@
     <Item78 Ref="367" Component="#Ref-164" Culture="Default" Path="LocationFloat" Data="0.9997606,0" />
     <Item79 Ref="368" Component="#Ref-164" Culture="Default" Path="SizeF" Data="1148,20" />
     <Item80 Ref="369" Component="#Ref-139" Culture="Default" Path="LocationFloat" Data="1.002828,0" />
-    <Item81 Ref="370" Component="#Ref-139" Culture="Default" Path="SizeF" Data="1147.99707,25" />
+    <Item81 Ref="370" Component="#Ref-139" Culture="Default" Path="SizeF" Data="1147.997,25" />
     <Item82 Ref="371" Component="#Ref-42" Culture="Default" Path="LocationFloat" Data="0.9997559,0" />
     <Item83 Ref="372" Component="#Ref-42" Culture="Default" Path="SizeF" Data="1148.003,20" />
     <Item84 Ref="373" Component="#Ref-274" Culture="Default" Path="LocationFloat" Data="1.502546,0" />

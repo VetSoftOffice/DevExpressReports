@@ -36,7 +36,7 @@
     <Item18 Ref="35" Name="Produced" Expression="IsNull([TotalSelleable],0 )+IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item19 Ref="36" Name="Rejected" Expression="IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item20 Ref="37" Name="Validate" Expression="?IsRTL" DataMember="SR_FM_SUM_IngRec" />
-    <Item21 Ref="38" Name="MonthName" Expression="IIf(&#xA;    ?IsRTL, &#xA;    IIf([RegMONTH] == 1, 'يناير',&#xA;        IIf([RegMONTH] == 2, 'فبراير',&#xA;            IIf([RegMONTH] == 3, 'مارس',&#xA;                IIf([RegMONTH] == 4, 'أبريل',&#xA;                    IIf([RegMONTH] == 5, 'مايو',&#xA;                        IIf([RegMONTH] == 6, 'يونيو',&#xA;                            IIf([RegMONTH] == 7, 'يوليو',&#xA;                                IIf([RegMONTH] == 8, 'أغسطس',&#xA;                                    IIf([RegMONTH] == 9, 'سبتمبر',&#xA;                                        IIf([RegMONTH] == 10, 'أكتوبر',&#xA;                                            IIf([RegMONTH] == 11, 'نوفمبر',&#xA;                                                'ديسمبر'&#xA;                                            )&#xA;                                        )&#xA;                                    )&#xA;                                )&#xA;                            )&#xA;                        )&#xA;                    )&#xA;                )&#xA;            )&#xA;        )&#xA;    ),&#xA;    IIf([RegMONTH] == 1, 'Jan',&#xA;        IIf([RegMONTH] == 2, 'Feb',&#xA;            IIf([RegMONTH] == 3, 'Mar',&#xA;                IIf([RegMONTH] == 4, 'Apr',&#xA;                    IIf([RegMONTH] == 5, 'May',&#xA;                        IIf([RegMONTH] == 6, 'Jun',&#xA;                            IIf([RegMONTH] == 7, 'Jul',&#xA;                                IIf([RegMONTH] == 8, 'Aug',&#xA;                                    IIf([RegMONTH] == 9, 'Sep',&#xA;                                        IIf([RegMONTH] == 10, 'Oct',&#xA;                                            IIf([RegMONTH] == 11, 'Nov',&#xA;                                                'Dec'&#xA;                                            )&#xA;                                        )&#xA;                                    )&#xA;                                )&#xA;                            )&#xA;                        )&#xA;                    )&#xA;                )&#xA;            )&#xA;        )&#xA;    )&#xA;)&#xA;" DataMember="SR_FM_SUM_IngRec" />
+    <Item21 Ref="38" Name="MonthName" Expression="IIf(&#xD;&#xA;    ?IsRTL, &#xD;&#xA;    IIf([RegMONTH] == 1, 'يناير',&#xD;&#xA;        IIf([RegMONTH] == 2, 'فبراير',&#xD;&#xA;            IIf([RegMONTH] == 3, 'مارس',&#xD;&#xA;                IIf([RegMONTH] == 4, 'أبريل',&#xD;&#xA;                    IIf([RegMONTH] == 5, 'مايو',&#xD;&#xA;                        IIf([RegMONTH] == 6, 'يونيو',&#xD;&#xA;                            IIf([RegMONTH] == 7, 'يوليو',&#xD;&#xA;                                IIf([RegMONTH] == 8, 'أغسطس',&#xD;&#xA;                                    IIf([RegMONTH] == 9, 'سبتمبر',&#xD;&#xA;                                        IIf([RegMONTH] == 10, 'أكتوبر',&#xD;&#xA;                                            IIf([RegMONTH] == 11, 'نوفمبر',&#xD;&#xA;                                                'ديسمبر'&#xD;&#xA;                                            )&#xD;&#xA;                                        )&#xD;&#xA;                                    )&#xD;&#xA;                                )&#xD;&#xA;                            )&#xD;&#xA;                        )&#xD;&#xA;                    )&#xD;&#xA;                )&#xD;&#xA;            )&#xD;&#xA;        )&#xD;&#xA;    ),&#xD;&#xA;    IIf([RegMONTH] == 1, 'Jan',&#xD;&#xA;        IIf([RegMONTH] == 2, 'Feb',&#xD;&#xA;            IIf([RegMONTH] == 3, 'Mar',&#xD;&#xA;                IIf([RegMONTH] == 4, 'Apr',&#xD;&#xA;                    IIf([RegMONTH] == 5, 'May',&#xD;&#xA;                        IIf([RegMONTH] == 6, 'Jun',&#xD;&#xA;                            IIf([RegMONTH] == 7, 'Jul',&#xD;&#xA;                                IIf([RegMONTH] == 8, 'Aug',&#xD;&#xA;                                    IIf([RegMONTH] == 9, 'Sep',&#xD;&#xA;                                        IIf([RegMONTH] == 10, 'Oct',&#xD;&#xA;                                            IIf([RegMONTH] == 11, 'Nov',&#xD;&#xA;                                                'Dec'&#xD;&#xA;                                            )&#xD;&#xA;                                        )&#xD;&#xA;                                    )&#xD;&#xA;                                )&#xD;&#xA;                            )&#xD;&#xA;                        )&#xD;&#xA;                    )&#xD;&#xA;                )&#xD;&#xA;            )&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;)&#xD;&#xA;" DataMember="SR_FM_SUM_IngRec" />
     <Item22 Ref="39" Name="Alignment" Expression="?IsRTL" DataMember="SR_FM_SUM_IngRec" />
   </CalculatedFields>
   <Bands>
@@ -202,9 +202,9 @@
               </DataFields>
               <ColumnDefinitions>
                 <Item1 Ref="115" Width="128.125" />
-                <Item2 Ref="116" Width="66.6667" />
+                <Item2 Ref="116" Width="66.6666946" />
                 <Item3 Ref="117" Width="71.87497" />
-                <Item4 Ref="118" Width="73.95834" />
+                <Item4 Ref="118" Width="73.9583359" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="119" />
@@ -213,27 +213,27 @@
                 <Item4 Ref="122" />
               </RowDefinitions>
               <Cells>
-                <Item1 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item2 Ref="124" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="2" TextAlignment="MiddleRight" />
-                <Item3 Ref="125" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item4 Ref="126" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item5 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="3" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item6 Ref="128" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="3" TextAlignment="MiddleRight">
+                <Item1 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item2 Ref="124" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="2" TextAlignment="MiddleRight" BorderWidth="1.4" />
+                <Item3 Ref="125" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item4 Ref="126" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item5 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="3" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item6 Ref="128" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="3" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <Scripts Ref="129" OnBeforePrint="crossTabTotalCell1_BeforePrint" />
                 </Item6>
-                <Item7 Ref="130" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="3" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item8 Ref="131" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="3" RowIndex="2" TextAlignment="MiddleRight">
+                <Item7 Ref="130" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="3" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item8 Ref="131" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="3" RowIndex="2" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <Scripts Ref="132" OnBeforePrint="crossTabTotalCell2_BeforePrint" />
                 </Item8>
-                <Item9 Ref="133" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="3" RowIndex="3" TextAlignment="MiddleRight">
+                <Item9 Ref="133" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="3" RowIndex="3" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <Scripts Ref="134" OnBeforePrint="crossTabTotalCell3_BeforePrint" />
                 </Item9>
-                <Item10 Ref="135" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" ColumnIndex="1" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item11 Ref="136" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="2" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item12 Ref="137" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="2" RowIndex="2" TextAlignment="MiddleRight">
+                <Item10 Ref="135" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" ColumnIndex="1" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item11 Ref="136" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="2" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item12 Ref="137" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="2" RowIndex="2" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <Scripts Ref="138" OnBeforePrint="crossTabTotalCell4_BeforePrint" />
                 </Item12>
-                <Item13 Ref="139" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="2" RowIndex="3" TextAlignment="MiddleRight">
+                <Item13 Ref="139" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="2" RowIndex="3" TextAlignment="MiddleRight" BorderWidth="1.4">
                   <Scripts Ref="140" OnBeforePrint="crossTabTotalCell5_BeforePrint" />
                 </Item13>
               </Cells>

@@ -234,7 +234,7 @@
               </DataFields>
               <ColumnDefinitions>
                 <Item1 Ref="131" />
-                <Item2 Ref="132" Width="189.583344" />
+                <Item2 Ref="132" Width="189.5833" />
                 <Item3 Ref="133" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
@@ -243,12 +243,12 @@
                 <Item3 Ref="136" />
               </RowDefinitions>
               <Cells>
-                <Item1 Ref="137" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item2 Ref="138" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="1" />
-                <Item3 Ref="139" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item4 Ref="140" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item5 Ref="141" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" />
-                <Item6 Ref="142" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="2" />
+                <Item1 Ref="137" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item2 Ref="138" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="1" BorderWidth="1.4" />
+                <Item3 Ref="139" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item4 Ref="140" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item5 Ref="141" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" BorderWidth="1.4" />
+                <Item6 Ref="142" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="2" BorderWidth="1.4" />
                 <Item7 Ref="143" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="2" RowIndex="0" />
                 <Item8 Ref="144" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="2" RowIndex="1" />
                 <Item9 Ref="145" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="2" RowIndex="2" />
@@ -318,7 +318,7 @@
     <Item18 Ref="184" Component="#Ref-17" Culture="Default" Path="Description" Data="FeedMillCode" />
     <Item19 Ref="185" Component="#Ref-12" Culture="Default" Path="Description" Data="Font Size" />
     <Item20 Ref="186" Component="#Ref-12" Culture="ar" Path="Description" Data="حجم الخط" />
-    <Item21 Ref="187" Component="#Ref-151" Culture="Default" Path="HeightF" Data="33.7500267" />
+    <Item21 Ref="187" Component="#Ref-151" Culture="Default" Path="HeightF" Data="33.75003" />
     <Item22 Ref="188" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
     <Item23 Ref="189" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />
     <Item24 Ref="190" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
@@ -371,16 +371,16 @@
     <Item71 Ref="237" Component="#Ref-75" Culture="Default" Path="HeightF" Data="20" />
     <Item72 Ref="238" Component="#Ref-38" Culture="Default" Path="HeightF" Data="20" />
     <Item73 Ref="239" Component="#Ref-127" Culture="Default" Path="LocationFloat" Data="31.25,0" />
-    <Item74 Ref="240" Component="#Ref-127" Culture="Default" Path="SizeF" Data="389.583344,75" />
-    <Item75 Ref="241" Component="#Ref-123" Culture="Default" Path="LocationFloat" Data="506.858154,8.750026" />
+    <Item74 Ref="240" Component="#Ref-127" Culture="Default" Path="SizeF" Data="389.5833,75" />
+    <Item75 Ref="241" Component="#Ref-123" Culture="Default" Path="LocationFloat" Data="506.8582,8.750026" />
     <Item76 Ref="242" Component="#Ref-123" Culture="Default" Path="SizeF" Data="144.358,20" />
     <Item77 Ref="243" Component="#Ref-123" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
     <Item78 Ref="244" Component="#Ref-123" Culture="ar" Path="Text" Data="إلى: [?DateTo!dd-MM-yyyy]" />
-    <Item79 Ref="245" Component="#Ref-154" Culture="Default" Path="LocationFloat" Data="0,10.0000067" />
-    <Item80 Ref="246" Component="#Ref-154" Culture="Default" Path="SizeF" Data="279.653046,20" />
+    <Item79 Ref="245" Component="#Ref-154" Culture="Default" Path="LocationFloat" Data="0,10.00001" />
+    <Item80 Ref="246" Component="#Ref-154" Culture="Default" Path="SizeF" Data="279.653,20" />
     <Item81 Ref="247" Component="#Ref-154" Culture="Default" Path="Text" Data="Farm Type: [FarmType]" />
     <Item82 Ref="248" Component="#Ref-154" Culture="ar" Path="Text" Data="نوع المزرعة: [FarmType]" />
-    <Item83 Ref="249" Component="#Ref-122" Culture="Default" Path="LocationFloat" Data="1.99998224,8.750026" />
+    <Item83 Ref="249" Component="#Ref-122" Culture="Default" Path="LocationFloat" Data="1.999982,8.750026" />
     <Item84 Ref="250" Component="#Ref-122" Culture="Default" Path="SizeF" Data="200.608,20" />
     <Item85 Ref="251" Component="#Ref-122" Culture="Default" Path="Text" Data="FeedMill: [?FeedMillCode]" />
     <Item86 Ref="252" Component="#Ref-122" Culture="ar" Path="Text" Data="مصنع العلف: [?FeedMillCode]" />
@@ -388,7 +388,7 @@
     <Item88 Ref="254" Component="#Ref-124" Culture="Default" Path="SizeF" Data="144.358,20" />
     <Item89 Ref="255" Component="#Ref-124" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />
     <Item90 Ref="256" Component="#Ref-124" Culture="ar" Path="Text" Data="من:[?DateFrom!dd-MM-yyyy]" />
-    <Item91 Ref="257" Component="#Ref-153" Culture="Default" Path="LocationFloat" Data="293.6284,10.0000067" />
+    <Item91 Ref="257" Component="#Ref-153" Culture="Default" Path="LocationFloat" Data="293.6284,10.00001" />
     <Item92 Ref="258" Component="#Ref-153" Culture="Default" Path="SizeF" Data="357.5878,20" />
     <Item93 Ref="259" Component="#Ref-153" Culture="Default" Path="Text" Data="Place To: [Destination]" />
     <Item94 Ref="260" Component="#Ref-153" Culture="ar" Path="Text" Data="المكان: [Destination]" />

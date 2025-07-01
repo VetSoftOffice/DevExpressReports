@@ -261,20 +261,20 @@
                 <Item3 Ref="146" Height="1.99999988" Visible="false" />
               </RowDefinitions>
               <Cells>
-                <Item1 Ref="147" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="1" BorderColor="DarkGray" BorderWidth="1.3">
+                <Item1 Ref="147" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="1" RowIndex="1" BorderColor="DarkGray" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="148" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
                 </Item1>
-                <Item2 Ref="149" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.3" />
-                <Item3 Ref="150" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" TextAlignment="MiddleLeft" BackColor="White" BorderColor="DarkGray" BorderWidth="1.3" />
+                <Item2 Ref="149" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
+                <Item3 Ref="150" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" TextAlignment="MiddleLeft" BackColor="White" BorderColor="DarkGray" BorderWidth="1.4" />
                 <Item4 Ref="151" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="2" />
                 <Item5 Ref="152" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="2">
                   <ExpressionBindings>
                     <Item1 Ref="153" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
                   </ExpressionBindings>
                 </Item5>
-                <Item6 Ref="154" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.3" />
+                <Item6 Ref="154" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
                 <Item7 Ref="155" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="2" RowIndex="0" />
                 <Item8 Ref="156" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="2" RowIndex="1" />
                 <Item9 Ref="157" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="2" RowIndex="2" />
@@ -496,12 +496,12 @@
     <Item37 Ref="292" Component="#Ref-90" Culture="Default" Path="HeightF" Data="0" />
     <Item38 Ref="293" Component="#Ref-132" Culture="Default" Path="HeightF" Data="0" />
     <Item39 Ref="294" Component="#Ref-46" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item40 Ref="295" Component="#Ref-46" Culture="Default" Path="SizeF" Data="191.001709,20" />
+    <Item40 Ref="295" Component="#Ref-46" Culture="Default" Path="SizeF" Data="191.0017,20" />
     <Item41 Ref="296" Component="#Ref-44" Culture="Default" Path="LocationFloat" Data="353.5,0" />
     <Item42 Ref="297" Component="#Ref-44" Culture="Default" Path="SizeF" Data="153,20" />
     <Item43 Ref="298" Component="#Ref-44" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item44 Ref="299" Component="#Ref-48" Culture="Default" Path="LocationFloat" Data="696.5414,0" />
-    <Item45 Ref="300" Component="#Ref-48" Culture="Default" Path="SizeF" Data="113.455383,20" />
+    <Item45 Ref="300" Component="#Ref-48" Culture="Default" Path="SizeF" Data="113.4554,20" />
     <Item46 Ref="301" Component="#Ref-48" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item47 Ref="302" Component="#Ref-134" Culture="Default" Path="HeightF" Data="0" />
     <Item48 Ref="303" Component="#Ref-158" Culture="Default" Path="HeightF" Data="20" />
@@ -529,7 +529,7 @@
     <Item70 Ref="325" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
     <Item71 Ref="326" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
     <Item72 Ref="327" Component="#Ref-133" Culture="Default" Path="HeightF" Data="0" />
-    <Item73 Ref="328" Component="#Ref-135" Culture="Default" Path="HeightF" Data="52" />
+    <Item73 Ref="328" Component="#Ref-135" Culture="Default" Path="HeightF" Data="117" />
     <Item74 Ref="329" Component="#Ref-91" Culture="Default" Path="HeightF" Data="20" />
     <Item75 Ref="330" Component="#Ref-85" Culture="Default" Path="HeightF" Data="24.33332" />
     <Item76 Ref="331" Component="#Ref-96" Culture="Default" Path="HeightF" Data="20" />
