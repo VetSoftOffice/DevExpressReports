@@ -138,7 +138,6 @@
     <Folder Include="Reports\ProcessingPlant\Stock\" />
     <Folder Include="Reports\ProcessingPlant\Summary\" />
     <Folder Include="Reports\Purchase\SR_FC_FreightBill\" />
-    <Folder Include="Reports\Sales\SR_FC_SalesStatement\" />
     <Folder Include="Reports\Shared\Notes\" />
   </ItemGroup>
 
