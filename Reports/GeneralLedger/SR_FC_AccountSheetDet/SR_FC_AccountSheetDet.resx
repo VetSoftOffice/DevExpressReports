@@ -128,7 +128,7 @@ Dictionary&lt;string, int&gt; lastProcessedYear = new Dictionary&lt;string, int&
 
 
 private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
+    decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalanceAccountDim") ?? 0);
     decimal debitMinusCredit = Convert.ToDecimal(GetCurrentColumnValue("DebitMinusCredit") ?? 0);
     string accountName = Convert.ToString(GetCurrentColumnValue("AccountName") ?? "");
     int currentYear = Convert.ToInt32(GetCurrentColumnValue("ResetField") ?? 0);
@@ -163,7 +163,7 @@ private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.Canc
 
 private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-     decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance") ?? 0);
+     decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalanceAccountDim") ?? 0);
     decimal debitMinusCredit = Convert.ToDecimal(GetCurrentColumnValue("DebitMinusCredit") ?? 0);
     string accountName = Convert.ToString(GetCurrentColumnValue("AccountName") ?? "");
     int currentYear = Convert.ToInt32(GetCurrentColumnValue("ResetField") ?? 0);
