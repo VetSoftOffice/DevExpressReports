@@ -98,7 +98,7 @@
             this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
-            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_PT_FrozenCknsAndPortions_SubReport = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
@@ -472,13 +472,13 @@
             // SubBand8
             // 
             this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrSubreport1});
+            this.SR_PT_FrozenCknsAndPortions_SubReport});
             this.SubBand8.Name = "SubBand8";
             // 
-            // xrSubreport1
+            // SR_PT_FrozenCknsAndPortions_SubReport
             // 
-            this.xrSubreport1.Name = "xrSubreport1";
-            this.xrSubreport1.ReportSource = new DevExpressReports.Reports.Finance.SR_PT_FrozenCknsAndPortions_SubReport.SR_PT_FrozenCknsAndPortions_SubReport();
+            this.SR_PT_FrozenCknsAndPortions_SubReport.Name = "SR_PT_FrozenCknsAndPortions_SubReport";
+            this.SR_PT_FrozenCknsAndPortions_SubReport.ReportSource = new DevExpressReports.Reports.Finance.SR_PT_FrozenCknsAndPortions_SubReport.SR_PT_FrozenCknsAndPortions_SubReport();
             // 
             // ReportFooterSub1
             // 
@@ -937,6 +937,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_FrozenCknsAndPortions_SubReport, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_FrozenCknsAndPortions_SubReport, "Default", "SizeF", new System.Drawing.SizeF(808.0002F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 127F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
@@ -950,9 +952,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(416.0017F, 75F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(808.0002F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "xrLabel1"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreport1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrSubreport1, "Default", "SizeF", new System.Drawing.SizeF(808.0002F, 23F))});
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "xrLabel1")});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
@@ -1107,6 +1107,6 @@
         private DataSets.dsFinance dsFinance1;
         private DataSets.dsFinanceTableAdapters.SR_FM_RationResultTableAdapter sR_FM_RationResultTableAdapter;
         private DevExpress.XtraReports.UI.SubBand SubBand8;
-        private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
+        private DevExpress.XtraReports.UI.XRSubreport SR_PT_FrozenCknsAndPortions_SubReport;
     }
 }

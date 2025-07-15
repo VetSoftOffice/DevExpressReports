@@ -172,7 +172,7 @@
         </Item1>
         <Item2 Ref="100" ControlType="SubBand" Name="SubBand8">
           <Controls>
-            <Item1 Ref="101" ControlType="XRSubreport" Name="xrSubreport1">
+            <Item1 Ref="101" ControlType="XRSubreport" Name="SR_PT_FrozenCknsAndPortions_SubReport">
               <ReportSource Ref="103" ControlType="DevExpressReports.Reports.Finance.SR_PT_FrozenCknsAndPortions_SubReport.SR_PT_FrozenCknsAndPortions_SubReport, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_PT_FrozenCknsAndPortions_SubReport" DataSource="#Ref-102" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="104" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
@@ -601,22 +601,22 @@
     <Item68 Ref="401" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item69 Ref="402" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
     <Item70 Ref="403" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item71 Ref="404" Component="#Ref-74" Culture="Default" Path="HeightF" Data="0" />
-    <Item72 Ref="405" Component="#Ref-76" Culture="Default" Path="HeightF" Data="127" />
-    <Item73 Ref="406" Component="#Ref-64" Culture="Default" Path="HeightF" Data="20" />
-    <Item74 Ref="407" Component="#Ref-58" Culture="Default" Path="HeightF" Data="23" />
-    <Item75 Ref="408" Component="#Ref-69" Culture="Default" Path="HeightF" Data="20" />
-    <Item76 Ref="409" Component="#Ref-52" Culture="Default" Path="HeightF" Data="20" />
-    <Item77 Ref="410" Component="#Ref-55" Culture="Default" Path="HeightF" Data="20" />
-    <Item78 Ref="411" Component="#Ref-100" Culture="Default" Path="HeightF" Data="23" />
-    <Item79 Ref="412" Component="#Ref-42" Culture="Default" Path="HeightF" Data="20" />
-    <Item80 Ref="413" Component="#Ref-77" Culture="Default" Path="LocationFloat" Data="0,21.16667" />
-    <Item81 Ref="414" Component="#Ref-77" Culture="Default" Path="SizeF" Data="416.0017,75" />
-    <Item82 Ref="415" Component="#Ref-59" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
-    <Item83 Ref="416" Component="#Ref-59" Culture="Default" Path="SizeF" Data="808.0002,23" />
-    <Item84 Ref="417" Component="#Ref-59" Culture="Default" Path="Text" Data="xrLabel1" />
-    <Item85 Ref="418" Component="#Ref-101" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
-    <Item86 Ref="419" Component="#Ref-101" Culture="Default" Path="SizeF" Data="808.0002,23" />
+    <Item71 Ref="404" Component="#Ref-101" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
+    <Item72 Ref="405" Component="#Ref-101" Culture="Default" Path="SizeF" Data="808.0002,23" />
+    <Item73 Ref="406" Component="#Ref-74" Culture="Default" Path="HeightF" Data="0" />
+    <Item74 Ref="407" Component="#Ref-76" Culture="Default" Path="HeightF" Data="127" />
+    <Item75 Ref="408" Component="#Ref-64" Culture="Default" Path="HeightF" Data="20" />
+    <Item76 Ref="409" Component="#Ref-58" Culture="Default" Path="HeightF" Data="23" />
+    <Item77 Ref="410" Component="#Ref-69" Culture="Default" Path="HeightF" Data="20" />
+    <Item78 Ref="411" Component="#Ref-52" Culture="Default" Path="HeightF" Data="20" />
+    <Item79 Ref="412" Component="#Ref-55" Culture="Default" Path="HeightF" Data="20" />
+    <Item80 Ref="413" Component="#Ref-100" Culture="Default" Path="HeightF" Data="23" />
+    <Item81 Ref="414" Component="#Ref-42" Culture="Default" Path="HeightF" Data="20" />
+    <Item82 Ref="415" Component="#Ref-77" Culture="Default" Path="LocationFloat" Data="0,21.16667" />
+    <Item83 Ref="416" Component="#Ref-77" Culture="Default" Path="SizeF" Data="416.0017,75" />
+    <Item84 Ref="417" Component="#Ref-59" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
+    <Item85 Ref="418" Component="#Ref-59" Culture="Default" Path="SizeF" Data="808.0002,23" />
+    <Item86 Ref="419" Component="#Ref-59" Culture="Default" Path="Text" Data="xrLabel1" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
     <Item1 Ref="420" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />

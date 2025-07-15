@@ -413,10 +413,10 @@
                   <Item9 Ref="279" Name="crossTabGeneralStyle1" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 9.75pt" ForeColor="Black" BackColor="White" BorderColor="255,160,160,160" Sides="All" StringFormat="Near;Near;0;None;Character;GenericDefault" />
                 </StyleSheet>
                 <LocalizationItems>
-                  <Item1 Ref="280" Component="#Ref-242" Culture="Default" Path="HeightF" Data="0" />
+                  <Item1 Ref="280" Component="#Ref-242" Culture="Default" Path="HeightF" Data="20" />
                   <Item2 Ref="281" Component="#Ref-208" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
                   <Item3 Ref="282" Component="#Ref-208" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-                  <Item4 Ref="283" Component="#Ref-208" Culture="Default" Path="Margins" Data="7, 10, 20, 0" />
+                  <Item4 Ref="283" Component="#Ref-208" Culture="Default" Path="Margins" Data="10, 10, 20, 20" />
                   <Item5 Ref="284" Component="#Ref-208" Culture="Default" Path="PaperKind" Data="A4" />
                   <Item6 Ref="285" Component="#Ref-218" Culture="Default" Path="Description" Data="From" />
                   <Item7 Ref="286" Component="#Ref-218" Culture="ar" Path="Description" Data="من" />
@@ -460,13 +460,13 @@
                   <Item45 Ref="324" Component="#Ref-261" Culture="Default" Path="Text" Data="xrLabel4" />
                   <Item46 Ref="325" Component="#Ref-261" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
                   <Item47 Ref="326" Component="#Ref-246" Culture="Default" Path="LocationFloat" Data="0,0" />
-                  <Item48 Ref="327" Component="#Ref-246" Culture="Default" Path="SizeF" Data="806.99,50.62501" />
+                  <Item48 Ref="327" Component="#Ref-246" Culture="Default" Path="SizeF" Data="805.72,50.62501" />
                   <Item49 Ref="328" Component="#Ref-248" Culture="Default" Path="Text" Data="" />
                   <Item50 Ref="329" Component="#Ref-248" Culture="Default" Path="Weight" Data="1.69665998779367" />
                   <Item51 Ref="330" Component="#Ref-252" Culture="Default" Path="Text" Data="" />
                   <Item52 Ref="331" Component="#Ref-252" Culture="Default" Path="Weight" Data="1.7676450804891255" />
                   <Item53 Ref="332" Component="#Ref-260" Culture="Default" Path="Text" Data="" />
-                  <Item54 Ref="333" Component="#Ref-260" Culture="Default" Path="Weight" Data="1.7782014170391134" />
+                  <Item54 Ref="333" Component="#Ref-260" Culture="Default" Path="Weight" Data="1.7676451776530786" />
                   <Item55 Ref="334" Component="#Ref-250" Culture="Default" Path="Text" Data="Explanation" />
                   <Item56 Ref="335" Component="#Ref-250" Culture="Default" Path="Weight" Data="1.4652519498615919" />
                   <Item57 Ref="336" Component="#Ref-247" Culture="Default" Path="Weight" Data="1" />
