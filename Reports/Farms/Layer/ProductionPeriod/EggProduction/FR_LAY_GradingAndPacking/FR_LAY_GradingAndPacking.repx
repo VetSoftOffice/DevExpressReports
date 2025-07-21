@@ -1243,7 +1243,7 @@
     <Item210 Ref="739" Component="#Ref-325" Culture="Default" Path="TextFormatString" Data="{0:#,#}" />
     <Item211 Ref="740" Component="#Ref-325" Culture="Default" Path="Weight" Data="0.7483845976396668" />
     <Item212 Ref="741" Component="#Ref-516" Culture="Default" Path="Text" Data="Special Packing" />
-    <Item213 Ref="742" Component="#Ref-516" Culture="ar" Path="Text" Data="تعبئة خاصى" />
+    <Item213 Ref="742" Component="#Ref-516" Culture="ar" Path="Text" Data="تعبئة خاصة" />
     <Item214 Ref="743" Component="#Ref-516" Culture="Default" Path="Weight" Data="73.480388272838326" />
     <Item215 Ref="744" Component="#Ref-81" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item216 Ref="745" Component="#Ref-81" Culture="Default" Path="Text" Data="xrTableCell36" />
