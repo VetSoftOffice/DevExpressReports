@@ -657,6 +657,7 @@
             // crossTabHeaderCell1
             // 
             this.crossTabHeaderCell1.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell1.BorderWidth = 1.4F;
             this.crossTabHeaderCell1.ColumnIndex = 0;
             this.crossTabHeaderCell1.Name = "crossTabHeaderCell1";
             this.crossTabHeaderCell1.RowIndex = 0;
@@ -664,6 +665,7 @@
             // 
             // crossTabDataCell1
             // 
+            this.crossTabDataCell1.BorderWidth = 1.4F;
             this.crossTabDataCell1.ColumnIndex = 18;
             this.crossTabDataCell1.Name = "crossTabDataCell1";
             this.crossTabDataCell1.RowIndex = 1;
@@ -671,6 +673,7 @@
             // crossTabHeaderCell2
             // 
             this.crossTabHeaderCell2.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell2.BorderWidth = 1.4F;
             this.crossTabHeaderCell2.ColumnIndex = 18;
             this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
             this.crossTabHeaderCell2.RowIndex = 0;
@@ -678,6 +681,7 @@
             // crossTabHeaderCell3
             // 
             this.crossTabHeaderCell3.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell3.BorderWidth = 1.4F;
             this.crossTabHeaderCell3.ColumnIndex = 0;
             this.crossTabHeaderCell3.Name = "crossTabHeaderCell3";
             this.crossTabHeaderCell3.RowIndex = 1;
@@ -700,6 +704,7 @@
             // crossTabHeaderCell5
             // 
             this.crossTabHeaderCell5.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell5.BorderWidth = 1.4F;
             this.crossTabHeaderCell5.ColumnIndex = 1;
             this.crossTabHeaderCell5.Name = "crossTabHeaderCell5";
             this.crossTabHeaderCell5.RowIndex = 0;
@@ -708,6 +713,7 @@
             // crossTabHeaderCell6
             // 
             this.crossTabHeaderCell6.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell6.BorderWidth = 1.4F;
             this.crossTabHeaderCell6.ColumnIndex = 1;
             this.crossTabHeaderCell6.Name = "crossTabHeaderCell6";
             this.crossTabHeaderCell6.RowIndex = 1;
@@ -730,6 +736,7 @@
             // crossTabHeaderCell8
             // 
             this.crossTabHeaderCell8.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell8.BorderWidth = 1.4F;
             this.crossTabHeaderCell8.ColumnIndex = 2;
             this.crossTabHeaderCell8.Name = "crossTabHeaderCell8";
             this.crossTabHeaderCell8.RowIndex = 0;
@@ -738,6 +745,7 @@
             // crossTabHeaderCell9
             // 
             this.crossTabHeaderCell9.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell9.BorderWidth = 1.4F;
             this.crossTabHeaderCell9.ColumnIndex = 2;
             this.crossTabHeaderCell9.Name = "crossTabHeaderCell9";
             this.crossTabHeaderCell9.RowIndex = 1;
@@ -760,6 +768,7 @@
             // crossTabHeaderCell11
             // 
             this.crossTabHeaderCell11.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell11.BorderWidth = 1.4F;
             this.crossTabHeaderCell11.ColumnIndex = 3;
             this.crossTabHeaderCell11.Name = "crossTabHeaderCell11";
             this.crossTabHeaderCell11.RowIndex = 0;
@@ -768,6 +777,7 @@
             // crossTabHeaderCell12
             // 
             this.crossTabHeaderCell12.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell12.BorderWidth = 1.4F;
             this.crossTabHeaderCell12.ColumnIndex = 3;
             this.crossTabHeaderCell12.Name = "crossTabHeaderCell12";
             this.crossTabHeaderCell12.RowIndex = 1;
@@ -790,6 +800,7 @@
             // crossTabHeaderCell14
             // 
             this.crossTabHeaderCell14.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell14.BorderWidth = 1.4F;
             this.crossTabHeaderCell14.ColumnIndex = 4;
             this.crossTabHeaderCell14.Name = "crossTabHeaderCell14";
             this.crossTabHeaderCell14.RowIndex = 0;
@@ -798,6 +809,7 @@
             // crossTabHeaderCell15
             // 
             this.crossTabHeaderCell15.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell15.BorderWidth = 1.4F;
             this.crossTabHeaderCell15.ColumnIndex = 4;
             this.crossTabHeaderCell15.Name = "crossTabHeaderCell15";
             this.crossTabHeaderCell15.RowIndex = 1;
@@ -820,6 +832,7 @@
             // crossTabHeaderCell17
             // 
             this.crossTabHeaderCell17.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell17.BorderWidth = 1.4F;
             this.crossTabHeaderCell17.ColumnIndex = 5;
             this.crossTabHeaderCell17.Name = "crossTabHeaderCell17";
             this.crossTabHeaderCell17.RowIndex = 0;
@@ -828,6 +841,7 @@
             // crossTabHeaderCell18
             // 
             this.crossTabHeaderCell18.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell18.BorderWidth = 1.4F;
             this.crossTabHeaderCell18.ColumnIndex = 5;
             this.crossTabHeaderCell18.Name = "crossTabHeaderCell18";
             this.crossTabHeaderCell18.RowIndex = 1;
@@ -850,6 +864,7 @@
             // crossTabHeaderCell20
             // 
             this.crossTabHeaderCell20.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell20.BorderWidth = 1.4F;
             this.crossTabHeaderCell20.ColumnIndex = 6;
             this.crossTabHeaderCell20.Name = "crossTabHeaderCell20";
             this.crossTabHeaderCell20.RowIndex = 0;
@@ -858,6 +873,7 @@
             // crossTabHeaderCell21
             // 
             this.crossTabHeaderCell21.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell21.BorderWidth = 1.4F;
             this.crossTabHeaderCell21.ColumnIndex = 6;
             this.crossTabHeaderCell21.Name = "crossTabHeaderCell21";
             this.crossTabHeaderCell21.RowIndex = 1;
@@ -880,6 +896,7 @@
             // crossTabHeaderCell23
             // 
             this.crossTabHeaderCell23.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell23.BorderWidth = 1.4F;
             this.crossTabHeaderCell23.ColumnIndex = 7;
             this.crossTabHeaderCell23.Name = "crossTabHeaderCell23";
             this.crossTabHeaderCell23.RowIndex = 0;
@@ -888,6 +905,7 @@
             // crossTabHeaderCell24
             // 
             this.crossTabHeaderCell24.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell24.BorderWidth = 1.4F;
             this.crossTabHeaderCell24.ColumnIndex = 7;
             this.crossTabHeaderCell24.Name = "crossTabHeaderCell24";
             this.crossTabHeaderCell24.RowIndex = 1;
@@ -910,6 +928,7 @@
             // crossTabHeaderCell26
             // 
             this.crossTabHeaderCell26.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell26.BorderWidth = 1.4F;
             this.crossTabHeaderCell26.ColumnIndex = 8;
             this.crossTabHeaderCell26.Name = "crossTabHeaderCell26";
             this.crossTabHeaderCell26.RowIndex = 0;
@@ -918,6 +937,7 @@
             // crossTabHeaderCell27
             // 
             this.crossTabHeaderCell27.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell27.BorderWidth = 1.4F;
             this.crossTabHeaderCell27.ColumnIndex = 8;
             this.crossTabHeaderCell27.Name = "crossTabHeaderCell27";
             this.crossTabHeaderCell27.RowIndex = 1;
@@ -940,6 +960,7 @@
             // crossTabHeaderCell29
             // 
             this.crossTabHeaderCell29.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell29.BorderWidth = 1.4F;
             this.crossTabHeaderCell29.ColumnIndex = 9;
             this.crossTabHeaderCell29.Name = "crossTabHeaderCell29";
             this.crossTabHeaderCell29.RowIndex = 0;
@@ -948,6 +969,7 @@
             // crossTabHeaderCell30
             // 
             this.crossTabHeaderCell30.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell30.BorderWidth = 1.4F;
             this.crossTabHeaderCell30.ColumnIndex = 9;
             this.crossTabHeaderCell30.Name = "crossTabHeaderCell30";
             this.crossTabHeaderCell30.RowIndex = 1;
@@ -970,6 +992,7 @@
             // crossTabHeaderCell32
             // 
             this.crossTabHeaderCell32.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell32.BorderWidth = 1.4F;
             this.crossTabHeaderCell32.ColumnIndex = 10;
             this.crossTabHeaderCell32.Name = "crossTabHeaderCell32";
             this.crossTabHeaderCell32.RowIndex = 0;
@@ -978,6 +1001,7 @@
             // crossTabHeaderCell33
             // 
             this.crossTabHeaderCell33.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell33.BorderWidth = 1.4F;
             this.crossTabHeaderCell33.ColumnIndex = 10;
             this.crossTabHeaderCell33.Name = "crossTabHeaderCell33";
             this.crossTabHeaderCell33.RowIndex = 1;
@@ -1000,6 +1024,7 @@
             // crossTabHeaderCell35
             // 
             this.crossTabHeaderCell35.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell35.BorderWidth = 1.4F;
             this.crossTabHeaderCell35.ColumnIndex = 11;
             this.crossTabHeaderCell35.Name = "crossTabHeaderCell35";
             this.crossTabHeaderCell35.RowIndex = 0;
@@ -1008,6 +1033,7 @@
             // crossTabHeaderCell36
             // 
             this.crossTabHeaderCell36.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell36.BorderWidth = 1.4F;
             this.crossTabHeaderCell36.ColumnIndex = 11;
             this.crossTabHeaderCell36.Name = "crossTabHeaderCell36";
             this.crossTabHeaderCell36.RowIndex = 1;
@@ -1029,6 +1055,7 @@
             // crossTabHeaderCell38
             // 
             this.crossTabHeaderCell38.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell38.BorderWidth = 1.4F;
             this.crossTabHeaderCell38.ColumnIndex = 12;
             this.crossTabHeaderCell38.Name = "crossTabHeaderCell38";
             this.crossTabHeaderCell38.RowIndex = 0;
@@ -1037,6 +1064,7 @@
             // crossTabHeaderCell39
             // 
             this.crossTabHeaderCell39.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell39.BorderWidth = 1.4F;
             this.crossTabHeaderCell39.ColumnIndex = 12;
             this.crossTabHeaderCell39.Name = "crossTabHeaderCell39";
             this.crossTabHeaderCell39.RowIndex = 1;
@@ -1717,6 +1745,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Breed, "Default", "Description", "Breed"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Text", "No of Samples"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "ar", "Text", "عدد العينات"),
@@ -1813,7 +1842,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "Default", "Description", "From"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "ar", "Description", "من"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateTo, "Default", "Description", "DateTo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 5.208333F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Farm, "Default", "Description", "Farm"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Flock, "Default", "Description", "Flock"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),

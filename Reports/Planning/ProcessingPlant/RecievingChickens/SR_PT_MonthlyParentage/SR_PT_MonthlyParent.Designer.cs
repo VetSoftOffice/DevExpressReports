@@ -179,6 +179,7 @@
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.NetTotal = new DevExpress.XtraReports.UI.CalculatedField();
             this.NetWeightPerc = new DevExpress.XtraReports.UI.CalculatedField();
+            this.sR_PT_MonthlyParentTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_PT_MonthlyParentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -1416,6 +1417,10 @@
             this.NetWeightPerc.Expression = "Iif([NetWeight] != 0, [BreastLegsMeat]/[NetWeight]*100,0 )";
             this.NetWeightPerc.Name = "NetWeightPerc";
             // 
+            // sR_PT_MonthlyParentTableAdapter
+            // 
+            this.sR_PT_MonthlyParentTableAdapter.ClearBeforeFill = true;
+            // 
             // SR_PT_MonthlyParent
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1900,5 +1905,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.CalculatedField NetTotal;
         private DevExpress.XtraReports.UI.CalculatedField NetWeightPerc;
+        private Finance.DataSets.dsFinanceTableAdapters.SR_PT_MonthlyParentTableAdapter sR_PT_MonthlyParentTableAdapter;
     }
 }
