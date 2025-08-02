@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
+            DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
+            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(0.0115607F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(2.000008F);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_HT_WeeklyHatDetails));
@@ -250,11 +255,6 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression101 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column102 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression102 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem1 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", false);
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem2 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", true);
             this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
@@ -266,7 +266,6 @@
             this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
@@ -280,8 +279,19 @@
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.xrCrossTab2 = new DevExpress.XtraReports.UI.XRCrossTab();
+            this.crossTabHeaderCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabDataCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell4 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell5 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell8 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell3 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.xrCrossTab1 = new DevExpress.XtraReports.UI.XRCrossTab();
             this.crossTabHeaderCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabDataCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -351,24 +361,16 @@
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.sR_HT_WeeklyReportTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_WeeklyReportTableAdapter();
-            this.xrCrossTab2 = new DevExpress.XtraReports.UI.XRCrossTab();
-            this.crossTabHeaderCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabDataCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell4 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell5 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabGeneralStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabHeaderStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.crossTabHeaderCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell8 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell3 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_HT_WeeklyHatDetails_Chicks = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_HT_WeeklyHatDetails_Vac = new DevExpress.XtraReports.UI.XRSubreport();
+            ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // ShowSignature
@@ -407,7 +409,6 @@
             this.xrPageInfo2,
             this.xrPageInfo1,
             this.pageInfoCurrentTime,
-            this.pageInfoCurrentDate,
             this.pageInfoPageNoOfTotal});
             this.BottomMargin.Name = "BottomMargin";
             // 
@@ -426,7 +427,8 @@
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.StyleName = "PageInfo";
             this.xrPageInfo1.StylePriority.UseBorders = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrPageInfo1.StylePriority.UseTextAlignment = false;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // pageInfoCurrentTime
             // 
@@ -438,15 +440,6 @@
             this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.pageInfoCurrentTime.StyleName = "PageInfo";
             this.pageInfoCurrentTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // pageInfoCurrentDate
-            // 
-            this.pageInfoCurrentDate.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.pageInfoCurrentDate.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.pageInfoCurrentDate.Name = "pageInfoCurrentDate";
-            this.pageInfoCurrentDate.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.pageInfoCurrentDate.StyleName = "PageInfo";
-            this.pageInfoCurrentDate.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // pageInfoPageNoOfTotal
             // 
@@ -539,6 +532,15 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not (IsNullOrEmpty(?DateFrom) And IsNullOrEmpty(?DateTo))")});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
             // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeTo)\n")});
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.StylePriority.UseBorders = false;
+            this.xrLabel2.StylePriority.UseFont = false;
+            // 
             // xrLabel1
             // 
             this.xrLabel1.CanGrow = false;
@@ -551,9 +553,107 @@
             this.xrCrossTab1});
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.SubBand1,
             this.ReportFooterSub3,
             this.ReportFooterSub1,
             this.ReportFooterSub2});
+            // 
+            // xrCrossTab2
+            // 
+            this.xrCrossTab2.Cells.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.crossTabHeaderCell2,
+            this.crossTabDataCell2,
+            this.crossTabHeaderCell4,
+            this.crossTabHeaderCell5,
+            this.crossTabHeaderCell7,
+            this.crossTabTotalCell1,
+            this.crossTabHeaderCell8,
+            this.crossTabTotalCell2,
+            this.crossTabTotalCell3});
+            crossTabColumnDefinition1.Visible = false;
+            this.xrCrossTab2.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F),
+            crossTabColumnDefinition1});
+            crossTabColumnField1.FieldName = "FarmFlockBreedCode";
+            this.xrCrossTab2.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
+            crossTabColumnField1});
+            this.xrCrossTab2.DataAreaStyleName = "crossTabDataStyle2";
+            crossTabDataField1.FieldName = "EggValue";
+            this.xrCrossTab2.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
+            crossTabDataField1});
+            this.xrCrossTab2.GeneralStyleName = "crossTabGeneralStyle2";
+            this.xrCrossTab2.HeaderAreaStyleName = "crossTabHeaderStyle2";
+            this.xrCrossTab2.Name = "xrCrossTab2";
+            crossTabRowDefinition1.Visible = false;
+            this.xrCrossTab2.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
+            crossTabRowDefinition1});
+            crossTabRowField1.FieldName = "DataType";
+            this.xrCrossTab2.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
+            crossTabRowField1});
+            this.xrCrossTab2.TotalAreaStyleName = "crossTabTotalStyle2";
+            // 
+            // crossTabHeaderCell2
+            // 
+            this.crossTabHeaderCell2.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell2.ColumnIndex = 0;
+            this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
+            this.crossTabHeaderCell2.RowIndex = 0;
+            this.crossTabHeaderCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabDataCell2
+            // 
+            this.crossTabDataCell2.BackColor = System.Drawing.Color.White;
+            this.crossTabDataCell2.ColumnIndex = 1;
+            this.crossTabDataCell2.Name = "crossTabDataCell2";
+            this.crossTabDataCell2.RowIndex = 1;
+            // 
+            // crossTabHeaderCell4
+            // 
+            this.crossTabHeaderCell4.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell4.ColumnIndex = 1;
+            this.crossTabHeaderCell4.Name = "crossTabHeaderCell4";
+            this.crossTabHeaderCell4.RowIndex = 0;
+            this.crossTabHeaderCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabHeaderCell5
+            // 
+            this.crossTabHeaderCell5.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell5.ColumnIndex = 0;
+            this.crossTabHeaderCell5.Name = "crossTabHeaderCell5";
+            this.crossTabHeaderCell5.RowIndex = 1;
+            // 
+            // crossTabHeaderCell7
+            // 
+            this.crossTabHeaderCell7.ColumnIndex = 0;
+            this.crossTabHeaderCell7.Name = "crossTabHeaderCell7";
+            this.crossTabHeaderCell7.RowIndex = 2;
+            // 
+            // crossTabTotalCell1
+            // 
+            this.crossTabTotalCell1.ColumnIndex = 1;
+            this.crossTabTotalCell1.Name = "crossTabTotalCell1";
+            this.crossTabTotalCell1.RowIndex = 2;
+            // 
+            // crossTabHeaderCell8
+            // 
+            this.crossTabHeaderCell8.ColumnIndex = 2;
+            this.crossTabHeaderCell8.Name = "crossTabHeaderCell8";
+            this.crossTabHeaderCell8.RowIndex = 0;
+            // 
+            // crossTabTotalCell2
+            // 
+            this.crossTabTotalCell2.ColumnIndex = 2;
+            this.crossTabTotalCell2.Name = "crossTabTotalCell2";
+            this.crossTabTotalCell2.RowIndex = 1;
+            // 
+            // crossTabTotalCell3
+            // 
+            this.crossTabTotalCell3.ColumnIndex = 2;
+            this.crossTabTotalCell3.Name = "crossTabTotalCell3";
+            this.crossTabTotalCell3.RowIndex = 2;
             // 
             // xrCrossTab1
             // 
@@ -608,6 +708,8 @@
             // 
             // ReportFooterSub3
             // 
+            this.ReportFooterSub3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_HT_WeeklyHatDetails_Vac});
             this.ReportFooterSub3.Name = "ReportFooterSub3";
             this.ReportFooterSub3.Scripts.OnBeforePrint = "ReportFooterSub3_BeforePrint";
             // 
@@ -1458,73 +1560,6 @@
             // 
             this.sR_HT_WeeklyReportTableAdapter.ClearBeforeFill = true;
             // 
-            // xrCrossTab2
-            // 
-            this.xrCrossTab2.Cells.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.crossTabHeaderCell2,
-            this.crossTabDataCell2,
-            this.crossTabHeaderCell4,
-            this.crossTabHeaderCell5,
-            this.crossTabHeaderCell7,
-            this.crossTabTotalCell1,
-            this.crossTabHeaderCell8,
-            this.crossTabTotalCell2,
-            this.crossTabTotalCell3});
-            crossTabColumnDefinition1.Visible = false;
-            this.xrCrossTab2.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F),
-            crossTabColumnDefinition1});
-            crossTabColumnField1.FieldName = "FarmFlockBreedCode";
-            this.xrCrossTab2.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
-            crossTabColumnField1});
-            this.xrCrossTab2.DataAreaStyleName = "crossTabDataStyle2";
-            crossTabDataField1.FieldName = "EggValue";
-            this.xrCrossTab2.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
-            crossTabDataField1});
-            this.xrCrossTab2.GeneralStyleName = "crossTabGeneralStyle2";
-            this.xrCrossTab2.HeaderAreaStyleName = "crossTabHeaderStyle2";
-            this.xrCrossTab2.Name = "xrCrossTab2";
-            crossTabRowDefinition1.Visible = false;
-            this.xrCrossTab2.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
-            crossTabRowDefinition1});
-            crossTabRowField1.FieldName = "DataType";
-            this.xrCrossTab2.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
-            crossTabRowField1});
-            this.xrCrossTab2.TotalAreaStyleName = "crossTabTotalStyle2";
-            // 
-            // crossTabHeaderCell2
-            // 
-            this.crossTabHeaderCell2.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell2.ColumnIndex = 0;
-            this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
-            this.crossTabHeaderCell2.RowIndex = 0;
-            this.crossTabHeaderCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // crossTabDataCell2
-            // 
-            this.crossTabDataCell2.BackColor = System.Drawing.Color.White;
-            this.crossTabDataCell2.ColumnIndex = 1;
-            this.crossTabDataCell2.Name = "crossTabDataCell2";
-            this.crossTabDataCell2.RowIndex = 1;
-            // 
-            // crossTabHeaderCell4
-            // 
-            this.crossTabHeaderCell4.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell4.ColumnIndex = 1;
-            this.crossTabHeaderCell4.Name = "crossTabHeaderCell4";
-            this.crossTabHeaderCell4.RowIndex = 0;
-            this.crossTabHeaderCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // crossTabHeaderCell5
-            // 
-            this.crossTabHeaderCell5.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell5.ColumnIndex = 0;
-            this.crossTabHeaderCell5.Name = "crossTabHeaderCell5";
-            this.crossTabHeaderCell5.RowIndex = 1;
-            // 
             // crossTabGeneralStyle2
             // 
             this.crossTabGeneralStyle2.BackColor = System.Drawing.Color.White;
@@ -1553,44 +1588,21 @@
             this.crossTabTotalStyle2.Name = "crossTabTotalStyle2";
             this.crossTabTotalStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // crossTabHeaderCell7
+            // SubBand1
             // 
-            this.crossTabHeaderCell7.ColumnIndex = 0;
-            this.crossTabHeaderCell7.Name = "crossTabHeaderCell7";
-            this.crossTabHeaderCell7.RowIndex = 2;
+            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_HT_WeeklyHatDetails_Chicks});
+            this.SubBand1.Name = "SubBand1";
             // 
-            // crossTabTotalCell1
+            // SR_HT_WeeklyHatDetails_Chicks
             // 
-            this.crossTabTotalCell1.ColumnIndex = 1;
-            this.crossTabTotalCell1.Name = "crossTabTotalCell1";
-            this.crossTabTotalCell1.RowIndex = 2;
+            this.SR_HT_WeeklyHatDetails_Chicks.Name = "SR_HT_WeeklyHatDetails_Chicks";
+            this.SR_HT_WeeklyHatDetails_Chicks.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_WeeklyHatDetails_Chicks.SR_HT_WeeklyHatDetails_Chicks();
             // 
-            // crossTabHeaderCell8
+            // SR_HT_WeeklyHatDetails_Vac
             // 
-            this.crossTabHeaderCell8.ColumnIndex = 2;
-            this.crossTabHeaderCell8.Name = "crossTabHeaderCell8";
-            this.crossTabHeaderCell8.RowIndex = 0;
-            // 
-            // crossTabTotalCell2
-            // 
-            this.crossTabTotalCell2.ColumnIndex = 2;
-            this.crossTabTotalCell2.Name = "crossTabTotalCell2";
-            this.crossTabTotalCell2.RowIndex = 1;
-            // 
-            // crossTabTotalCell3
-            // 
-            this.crossTabTotalCell3.ColumnIndex = 2;
-            this.crossTabTotalCell3.Name = "crossTabTotalCell3";
-            this.crossTabTotalCell3.RowIndex = 2;
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeTo)\n")});
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.StylePriority.UseBorders = false;
-            this.xrLabel2.StylePriority.UseFont = false;
+            this.SR_HT_WeeklyHatDetails_Vac.Name = "SR_HT_WeeklyHatDetails_Vac";
+            this.SR_HT_WeeklyHatDetails_Vac.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_WeeklyHatDetails_Vac.SR_HT_WeeklyHatDetails_Vac();
             // 
             // SR_HT_WeeklyHatDetails
             // 
@@ -1685,10 +1697,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(344F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(309.5551F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(538.1057F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(449.6866F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(303.6117F, 9.999996F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1280.101F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(344F, 20F)),
@@ -1696,7 +1706,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 123.5417F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub2, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub3, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "Default", "Description", "Show signature"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "ar", "Description", "عرض التوقيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "Show signature in all page"),
@@ -1718,6 +1728,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_HT_WeeklyHatDetails_Chicks, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_HT_WeeklyHatDetails_Chicks, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_HT_WeeklyHatDetails_Vac, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_HT_WeeklyHatDetails_Vac, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
@@ -1734,7 +1749,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(237.9167F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(157.8997F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(607.6699F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(949.6699F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "SizeF", new System.Drawing.SizeF(209.33F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(5.435118F, 0F)),
@@ -1805,9 +1820,9 @@
             this.crossTabTotalStyle2});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.Version = "24.2";
+            ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1819,7 +1834,6 @@
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfoCurrentTime;
-        private DevExpress.XtraReports.UI.XRPageInfo pageInfoCurrentDate;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfoPageNoOfTotal;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
@@ -1923,5 +1937,8 @@
         private DevExpress.XtraReports.UI.XRControlStyle crossTabDataStyle2;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabTotalStyle2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.SubBand SubBand1;
+        private DevExpress.XtraReports.UI.XRSubreport SR_HT_WeeklyHatDetails_Chicks;
+        private DevExpress.XtraReports.UI.XRSubreport SR_HT_WeeklyHatDetails_Vac;
     }
 }
