@@ -108,6 +108,7 @@
     <Folder Include="Reports\GrandParent\Summary\WeeklyAnalysisLayFlks\" />
     <Folder Include="Reports\GrandParent\Summary\WeeklyAnalysisRearFlks\" />
     <Folder Include="Reports\Hatchery\IYA\" />
+    <Folder Include="Reports\Hatchery\Summary\NewFolder\" />
     <Folder Include="Reports\Hatchery\Summary\SR_HT_CandlingBreakOutPeriod\" />
     <Folder Include="Reports\Hatchery\Summary\SR_HT_ChicksAllocation\" />
     <Folder Include="Reports\Hatchery\Summary\SR_HT_DailyEggStockSum\" />
