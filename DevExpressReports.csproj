@@ -104,7 +104,6 @@
     <Folder Include="Reports\FurtherProcessing\Summary\" />
     <Folder Include="Reports\GeneralLedger\PaymentsAndReceiptsDate\" />
     <Folder Include="Reports\GeneralLedger\PaymentsAndReceiptsDet\" />
-    <Folder Include="Reports\GPHatchery\Summary\" />
     <Folder Include="Reports\GrandParent\Summary\WeeklyAnalysisLayFlks\" />
     <Folder Include="Reports\GrandParent\Summary\WeeklyAnalysisRearFlks\" />
     <Folder Include="Reports\Hatchery\IYA\" />
