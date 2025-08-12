@@ -145,6 +145,25 @@
     <value>Iif([SR_HT_FlkSumProdReport.POL] &lt;&gt; 0, ([CumChicks] + [SR_HT_FlkSumProdReport.SelChicks_1] + [SR_HT_FlkSumProdReport.CullsChicks_1] + [SR_HT_FlkSumProdReport.DeadChicks_1]) / [SR_HT_FlkSumProdReport.POL], 0)
 </value>
   </data>
+  <data name="Data_2.Expression" xml:space="preserve">
+    <value>Iif(?IsRTL,[Data] + ' (' + [After] + ' ' + ToStr([DaysNO]) + ' ' + [Day] + ') ' + [Data] + ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' ' + [Day] + ' ' + [Only]
+ , [Data] + ' (' + [After] + ' ' + ToStr([DaysNO]) + ' ' + [Days] + ') ' + [Data] + + [Only]+ ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' ' + [Days] 
+)</value>
+  </data>
+  <data name="Perf2.Expression" xml:space="preserve">
+    <value>Iif(?IsRTL,
+    [Performance] + ' (' + [After] + ' ' + ToStr([DaysNO]) + ' ' + [Day] + ') ' + [Data] + ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' ' + [Day] + ' ' + [Only],
+    'Performance (After ' + ToStr([DaysNO]) + ' days) Data only ' + ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' days'
+)
+</value>
+  </data>
+  <data name="ActHatchBalanceEggs_1.Expression" xml:space="preserve">
+    <value>Iif([SR_HT_FlkSumProdReport.SetEggBalHatEgg_1] &lt;&gt; 0, 
+    ([SR_HT_FlkSumProdReport.SelChickBalHatEgg_1] + [SR_HT_FlkSumProdReport.CullsBalHatEgg_1] + [SR_HT_FlkSumProdReport.DeadsBalHatEgg_1]) / [SR_HT_FlkSumProdReport.SetEggBalHatEgg_1] * 100, 
+    0
+)
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>public string storedEmployeeName = "";
 
