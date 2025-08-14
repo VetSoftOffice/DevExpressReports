@@ -532,7 +532,7 @@
             // crossTabHeaderCell1
             // 
             this.crossTabHeaderCell1.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell1.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell1.BorderWidth = 1.4F;
             this.crossTabHeaderCell1.ColumnIndex = 0;
             this.crossTabHeaderCell1.Name = "crossTabHeaderCell1";
@@ -541,7 +541,7 @@
             // 
             // crossTabDataCell2
             // 
-            this.crossTabDataCell2.BorderColor = System.Drawing.Color.White;
+            this.crossTabDataCell2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabDataCell2.BorderWidth = 1.4F;
             this.crossTabDataCell2.ColumnIndex = 7;
             this.crossTabDataCell2.Name = "crossTabDataCell2";
@@ -551,7 +551,7 @@
             // crossTabHeaderCell3
             // 
             this.crossTabHeaderCell3.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell3.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell3.BorderWidth = 1.4F;
             this.crossTabHeaderCell3.ColumnIndex = 7;
             this.crossTabHeaderCell3.Name = "crossTabHeaderCell3";
@@ -561,7 +561,7 @@
             // crossTabHeaderCell4
             // 
             this.crossTabHeaderCell4.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell4.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell4.BorderWidth = 1.4F;
             this.crossTabHeaderCell4.ColumnIndex = 0;
             this.crossTabHeaderCell4.Name = "crossTabHeaderCell4";
@@ -571,7 +571,7 @@
             // crossTabHeaderCell6
             // 
             this.crossTabHeaderCell6.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell6.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell6.BorderWidth = 1.4F;
             this.crossTabHeaderCell6.ColumnIndex = 8;
             this.crossTabHeaderCell6.Name = "crossTabHeaderCell6";
@@ -580,6 +580,7 @@
             // 
             // crossTabTotalCell1
             // 
+            this.crossTabTotalCell1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabTotalCell1.BorderWidth = 1.4F;
             this.crossTabTotalCell1.ColumnIndex = 8;
             this.crossTabTotalCell1.Name = "crossTabTotalCell1";
@@ -610,7 +611,7 @@
             // crossTabHeaderCell9
             // 
             this.crossTabHeaderCell9.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell9.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell9.BorderWidth = 1.4F;
             this.crossTabHeaderCell9.ColumnIndex = 1;
             this.crossTabHeaderCell9.Name = "crossTabHeaderCell9";
@@ -620,7 +621,7 @@
             // crossTabHeaderCell10
             // 
             this.crossTabHeaderCell10.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell10.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell10.BorderWidth = 1.4F;
             this.crossTabHeaderCell10.ColumnIndex = 1;
             this.crossTabHeaderCell10.Name = "crossTabHeaderCell10";
@@ -650,7 +651,7 @@
             // crossTabHeaderCell12
             // 
             this.crossTabHeaderCell12.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell12.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell12.BorderWidth = 1.4F;
             this.crossTabHeaderCell12.ColumnIndex = 2;
             this.crossTabHeaderCell12.Name = "crossTabHeaderCell12";
@@ -660,7 +661,7 @@
             // crossTabHeaderCell13
             // 
             this.crossTabHeaderCell13.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell13.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell13.BorderWidth = 1.4F;
             this.crossTabHeaderCell13.ColumnIndex = 2;
             this.crossTabHeaderCell13.Name = "crossTabHeaderCell13";
@@ -690,7 +691,7 @@
             // crossTabHeaderCell15
             // 
             this.crossTabHeaderCell15.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell15.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell15.BorderWidth = 1.4F;
             this.crossTabHeaderCell15.ColumnIndex = 3;
             this.crossTabHeaderCell15.Name = "crossTabHeaderCell15";
@@ -700,7 +701,7 @@
             // crossTabHeaderCell16
             // 
             this.crossTabHeaderCell16.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell16.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell16.BorderWidth = 1.4F;
             this.crossTabHeaderCell16.ColumnIndex = 3;
             this.crossTabHeaderCell16.Name = "crossTabHeaderCell16";
@@ -730,7 +731,7 @@
             // crossTabHeaderCell18
             // 
             this.crossTabHeaderCell18.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell18.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell18.BorderWidth = 1.4F;
             this.crossTabHeaderCell18.ColumnIndex = 4;
             this.crossTabHeaderCell18.Name = "crossTabHeaderCell18";
@@ -740,7 +741,7 @@
             // crossTabHeaderCell19
             // 
             this.crossTabHeaderCell19.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell19.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell19.BorderWidth = 1.4F;
             this.crossTabHeaderCell19.ColumnIndex = 4;
             this.crossTabHeaderCell19.Name = "crossTabHeaderCell19";
@@ -770,7 +771,7 @@
             // crossTabHeaderCell21
             // 
             this.crossTabHeaderCell21.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell21.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell21.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell21.BorderWidth = 1.4F;
             this.crossTabHeaderCell21.ColumnIndex = 5;
             this.crossTabHeaderCell21.Name = "crossTabHeaderCell21";
@@ -780,7 +781,7 @@
             // crossTabHeaderCell22
             // 
             this.crossTabHeaderCell22.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell22.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell22.ColumnIndex = 5;
             this.crossTabHeaderCell22.Name = "crossTabHeaderCell22";
             this.crossTabHeaderCell22.RowIndex = 1;
@@ -808,7 +809,7 @@
             // crossTabHeaderCell24
             // 
             this.crossTabHeaderCell24.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell24.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell24.BorderWidth = 1.4F;
             this.crossTabHeaderCell24.ColumnIndex = 6;
             this.crossTabHeaderCell24.Name = "crossTabHeaderCell24";
@@ -818,7 +819,7 @@
             // crossTabHeaderCell25
             // 
             this.crossTabHeaderCell25.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell25.BorderColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell25.BorderWidth = 1.4F;
             this.crossTabHeaderCell25.ColumnIndex = 6;
             this.crossTabHeaderCell25.Name = "crossTabHeaderCell25";
@@ -1294,6 +1295,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell21, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell21, "Default", "Text", "From CEGS"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell21, "ar", "Text", "المكان"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell22, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell23, "Default", "TextFormatString", "Total {0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell24, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell24, "Default", "Text", "Received Eggs"),
@@ -1325,7 +1327,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "Default", "Description", "From"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "ar", "Description", "من"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateTo, "Default", "Description", "DateTo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 2.499994F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
@@ -1403,6 +1405,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(196.125F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(168.3163F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Eggs Station: [CEGSCodes]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "محطة جمع البيض\n: [CEGSCodes]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(3.003359F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(237.205F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "√ = Grade   × = Un-Grade")});

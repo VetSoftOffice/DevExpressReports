@@ -628,21 +628,6 @@
             this.xrTableCell178 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell179 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell238 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable77 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow77 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell180 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell181 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell241 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable78 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow78 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell182 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell183 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell244 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable79 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow79 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell184 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell185 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell247 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable80 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow80 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell186 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -717,22 +702,10 @@
             this.xrTableRow97 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell236 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell237 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable98 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow98 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell239 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell240 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable99 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow99 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell242 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell243 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable100 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow100 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell245 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell246 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable101 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow101 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell248 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell249 = new DevExpress.XtraReports.UI.XRTableCell();
             this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
@@ -887,8 +860,17 @@
             this.EstChicks_PerEgg_HH_1 = new DevExpress.XtraReports.UI.CalculatedField();
             this.EStChicks_PerStockHE_HH_1 = new DevExpress.XtraReports.UI.CalculatedField();
             this.CumChicks_ActEst_HH_1 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.calculatedField2 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.calculatedField3 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SettedEggs_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.RejChicks_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.GradeA_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.CumChicks_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.CumHatchability_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SoldHatEggs_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SoldTableEggs_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.EggsToOffal_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.TotalEggSold_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
+            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
@@ -965,9 +947,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable76)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable77)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable78)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable79)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable80)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable81)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable82)).BeginInit();
@@ -986,10 +965,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable95)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable96)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable97)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable98)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable99)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable100)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable101)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable106)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable105)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable104)).BeginInit();
@@ -1031,6 +1007,8 @@
             // BottomMargin
             // 
             this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPageInfo2,
+            this.xrPageInfo1,
             this.pageInfoCurrentTime,
             this.pageInfoCurrentDate,
             this.pageInfoPageNoOfTotal});
@@ -1268,6 +1246,7 @@
             // srReportSignature_PageFooter
             // 
             this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
+            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
             // SubBand5
             // 
@@ -1314,6 +1293,7 @@
             // 
             this.srReportHeader.Name = "srReportHeader";
             this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
             // PageHeaderSub1
             // 
@@ -1376,20 +1356,24 @@
             this.xrTableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell28.BorderWidth = 1.4F;
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
             this.xrTableCell28.StylePriority.UseBorders = false;
+            this.xrTableCell28.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell29
             // 
             this.xrTableCell29.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell29.BorderWidth = 1.4F;
             this.xrTableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DeplAge]")});
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.StylePriority.UseBorders = false;
+            this.xrTableCell29.StylePriority.UseBorderWidth = false;
             // 
             // xrTable10
             // 
@@ -1410,20 +1394,24 @@
             this.xrTableCell25.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell25.BorderWidth = 1.4F;
             this.xrTableCell25.Multiline = true;
             this.xrTableCell25.Name = "xrTableCell25";
             this.xrTableCell25.StylePriority.UseBorders = false;
+            this.xrTableCell25.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell26
             // 
             this.xrTableCell26.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell26.BorderWidth = 1.4F;
             this.xrTableCell26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FemalesDepleted]")});
             this.xrTableCell26.Multiline = true;
             this.xrTableCell26.Name = "xrTableCell26";
             this.xrTableCell26.StylePriority.UseBorders = false;
+            this.xrTableCell26.StylePriority.UseBorderWidth = false;
             // 
             // xrTable9
             // 
@@ -1444,20 +1432,24 @@
             this.xrTableCell22.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell22.BorderWidth = 1.4F;
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.StylePriority.UseBorders = false;
+            this.xrTableCell22.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell23
             // 
             this.xrTableCell23.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell23.BorderWidth = 1.4F;
             this.xrTableCell23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FemalesTrans]")});
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.StylePriority.UseBorders = false;
+            this.xrTableCell23.StylePriority.UseBorderWidth = false;
             // 
             // xrTable8
             // 
@@ -1478,20 +1470,24 @@
             this.xrTableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell19.BorderWidth = 1.4F;
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
             this.xrTableCell19.StylePriority.UseBorders = false;
+            this.xrTableCell19.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell20
             // 
             this.xrTableCell20.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell20.BorderWidth = 1.4F;
             this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DeplDate]")});
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
             this.xrTableCell20.StylePriority.UseBorders = false;
+            this.xrTableCell20.StylePriority.UseBorderWidth = false;
             // 
             // xrTable7
             // 
@@ -1512,20 +1508,24 @@
             this.xrTableCell5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell5.BorderWidth = 1.4F;
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.StylePriority.UseBorders = false;
+            this.xrTableCell5.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell9
             // 
             this.xrTableCell9.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell9.BorderWidth = 1.4F;
             this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TransferDate]")});
             this.xrTableCell9.Multiline = true;
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.StylePriority.UseBorders = false;
+            this.xrTableCell9.StylePriority.UseBorderWidth = false;
             // 
             // xrTable6
             // 
@@ -1546,20 +1546,24 @@
             this.xrTableCell14.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell14.BorderWidth = 1.4F;
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
             this.xrTableCell14.StylePriority.UseBorders = false;
+            this.xrTableCell14.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell18
             // 
             this.xrTableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell18.BorderWidth = 1.4F;
             this.xrTableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[POL]")});
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.StylePriority.UseBorders = false;
+            this.xrTableCell18.StylePriority.UseBorderWidth = false;
             // 
             // xrTable5
             // 
@@ -1580,20 +1584,24 @@
             this.xrTableCell11.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell11.BorderWidth = 1.4F;
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.StylePriority.UseBorders = false;
+            this.xrTableCell11.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell12
             // 
             this.xrTableCell12.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell12.BorderWidth = 1.4F;
             this.xrTableCell12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Breed]")});
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
             this.xrTableCell12.StylePriority.UseBorders = false;
+            this.xrTableCell12.StylePriority.UseBorderWidth = false;
             // 
             // xrTable3
             // 
@@ -1614,20 +1622,24 @@
             this.xrTableCell6.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell6.BorderWidth = 1.4F;
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.StylePriority.UseBorders = false;
+            this.xrTableCell6.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell7
             // 
             this.xrTableCell7.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell7.BorderWidth = 1.4F;
             this.xrTableCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FlockCode]")});
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseBorders = false;
+            this.xrTableCell7.StylePriority.UseBorderWidth = false;
             // 
             // xrTable2
             // 
@@ -1648,20 +1660,24 @@
             this.xrTableCell3.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell3.BorderWidth = 1.4F;
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.StylePriority.UseBorders = false;
+            this.xrTableCell3.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell4
             // 
             this.xrTableCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell4.BorderWidth = 1.4F;
             this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?CropNo")});
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.StylePriority.UseBorders = false;
+            this.xrTableCell4.StylePriority.UseBorderWidth = false;
             // 
             // xrTable1
             // 
@@ -1682,20 +1698,24 @@
             this.xrTableCell1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell1.BorderWidth = 1.4F;
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.StylePriority.UseBorders = false;
+            this.xrTableCell1.StylePriority.UseBorderWidth = false;
             // 
             // xrTableCell2
             // 
             this.xrTableCell2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell2.BorderWidth = 1.4F;
             this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?FarmCode")});
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
             this.xrTableCell2.StylePriority.UseBorders = false;
+            this.xrTableCell2.StylePriority.UseBorderWidth = false;
             // 
             // SubBand1
             // 
@@ -1751,10 +1771,12 @@
             // 
             // xrTable56
             // 
+            this.xrTable56.BorderWidth = 1.4F;
             this.xrTable56.Name = "xrTable56";
             this.xrTable56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable56.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow56});
+            this.xrTable56.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow56
             // 
@@ -1793,10 +1815,12 @@
             // 
             // xrTable55
             // 
+            this.xrTable55.BorderWidth = 1.4F;
             this.xrTable55.Name = "xrTable55";
             this.xrTable55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable55.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow55});
+            this.xrTable55.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow55
             // 
@@ -1821,7 +1845,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell127.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_ActEst_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_ActEst_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell127.Multiline = true;
             this.xrTableCell127.Name = "xrTableCell127";
             this.xrTableCell127.StylePriority.UseBorders = false;
@@ -1832,17 +1857,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell140.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ChicksHCum_Std]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ChicksHCum_Std]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell140.Multiline = true;
             this.xrTableCell140.Name = "xrTableCell140";
             this.xrTableCell140.StylePriority.UseBorders = false;
             // 
             // xrTable54
             // 
+            this.xrTable54.BorderWidth = 1.4F;
             this.xrTable54.Name = "xrTable54";
             this.xrTable54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable54.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow54});
+            this.xrTable54.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow54
             // 
@@ -1867,7 +1895,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell124.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EStChicks_PerStockHE_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EStChicks_PerStockHE_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell124.Multiline = true;
             this.xrTableCell124.Name = "xrTableCell124";
             this.xrTableCell124.StylePriority.UseBorders = false;
@@ -1883,10 +1912,12 @@
             // 
             // xrTable53
             // 
+            this.xrTable53.BorderWidth = 1.4F;
             this.xrTable53.Name = "xrTable53";
             this.xrTable53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable53.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow53});
+            this.xrTable53.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow53
             // 
@@ -1925,10 +1956,12 @@
             // 
             // xrTable52
             // 
+            this.xrTable52.BorderWidth = 1.4F;
             this.xrTable52.Name = "xrTable52";
             this.xrTable52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable52.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow52});
+            this.xrTable52.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow52
             // 
@@ -1953,7 +1986,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell118.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell118.Multiline = true;
             this.xrTableCell118.Name = "xrTableCell118";
             this.xrTableCell118.StylePriority.UseBorders = false;
@@ -1969,10 +2003,12 @@
             // 
             // xrTable51
             // 
+            this.xrTable51.BorderWidth = 1.4F;
             this.xrTable51.Name = "xrTable51";
             this.xrTable51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable51.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow51});
+            this.xrTable51.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow51
             // 
@@ -2011,10 +2047,12 @@
             // 
             // xrTable50
             // 
+            this.xrTable50.BorderWidth = 1.4F;
             this.xrTable50.Name = "xrTable50";
             this.xrTable50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable50.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow50});
+            this.xrTable50.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow50
             // 
@@ -2053,10 +2091,12 @@
             // 
             // xrTable49
             // 
+            this.xrTable49.BorderWidth = 1.4F;
             this.xrTable49.Name = "xrTable49";
             this.xrTable49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable49.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow49});
+            this.xrTable49.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow49
             // 
@@ -2095,10 +2135,12 @@
             // 
             // xrTable48
             // 
+            this.xrTable48.BorderWidth = 1.4F;
             this.xrTable48.Name = "xrTable48";
             this.xrTable48.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable48.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow48});
+            this.xrTable48.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow48
             // 
@@ -2137,10 +2179,12 @@
             // 
             // xrTable47
             // 
+            this.xrTable47.BorderWidth = 1.4F;
             this.xrTable47.Name = "xrTable47";
             this.xrTable47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable47.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow47});
+            this.xrTable47.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow47
             // 
@@ -2165,7 +2209,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell94.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumAGradeChicks_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumAGradeChicks_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell94.Multiline = true;
             this.xrTableCell94.Name = "xrTableCell94";
             this.xrTableCell94.StylePriority.UseBorders = false;
@@ -2181,10 +2226,12 @@
             // 
             // xrTable46
             // 
+            this.xrTable46.BorderWidth = 1.4F;
             this.xrTable46.Name = "xrTable46";
             this.xrTable46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable46.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow46});
+            this.xrTable46.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow46
             // 
@@ -2209,7 +2256,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell85.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksRej_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksRej_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell85.Multiline = true;
             this.xrTableCell85.Name = "xrTableCell85";
             this.xrTableCell85.StylePriority.UseBorders = false;
@@ -2225,10 +2273,12 @@
             // 
             // xrTable45
             // 
+            this.xrTable45.BorderWidth = 1.4F;
             this.xrTable45.Name = "xrTable45";
             this.xrTable45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable45.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow45});
+            this.xrTable45.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow45
             // 
@@ -2253,7 +2303,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell107.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell107.Multiline = true;
             this.xrTableCell107.Name = "xrTableCell107";
             this.xrTableCell107.StylePriority.UseBorders = false;
@@ -2264,17 +2315,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell129.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HatchBalance]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HatchBalance]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell129.Multiline = true;
             this.xrTableCell129.Name = "xrTableCell129";
             this.xrTableCell129.StylePriority.UseBorders = false;
             // 
             // xrTable44
             // 
+            this.xrTable44.BorderWidth = 1.4F;
             this.xrTable44.Name = "xrTable44";
             this.xrTable44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable44.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow44});
+            this.xrTable44.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow44
             // 
@@ -2299,7 +2353,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell104.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksAct_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksAct_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell104.Multiline = true;
             this.xrTableCell104.Name = "xrTableCell104";
             this.xrTableCell104.StylePriority.UseBorders = false;
@@ -2315,10 +2370,12 @@
             // 
             // xrTable43
             // 
+            this.xrTable43.BorderWidth = 1.4F;
             this.xrTable43.Name = "xrTable43";
             this.xrTable43.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable43.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow43});
+            this.xrTable43.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow43
             // 
@@ -2357,10 +2414,12 @@
             // 
             // xrTable42
             // 
+            this.xrTable42.BorderWidth = 1.4F;
             this.xrTable42.Name = "xrTable42";
             this.xrTable42.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable42.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow42});
+            this.xrTable42.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow42
             // 
@@ -2385,7 +2444,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell98.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumFinalHatEgg_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumFinalHatEgg_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell98.Multiline = true;
             this.xrTableCell98.Name = "xrTableCell98";
             this.xrTableCell98.StylePriority.UseBorders = false;
@@ -2396,17 +2456,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell123.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HatchEggs_Std]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HatchEggs_Std]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell123.Multiline = true;
             this.xrTableCell123.Name = "xrTableCell123";
             this.xrTableCell123.StylePriority.UseBorders = false;
             // 
             // xrTable41
             // 
+            this.xrTable41.BorderWidth = 1.4F;
             this.xrTable41.Name = "xrTable41";
             this.xrTable41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable41.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow41});
+            this.xrTable41.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow41
             // 
@@ -2431,7 +2494,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell95.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell95.Multiline = true;
             this.xrTableCell95.Name = "xrTableCell95";
             this.xrTableCell95.StylePriority.UseBorders = false;
@@ -2447,10 +2511,12 @@
             // 
             // xrTable40
             // 
+            this.xrTable40.BorderWidth = 1.4F;
             this.xrTable40.Name = "xrTable40";
             this.xrTable40.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable40.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow40});
+            this.xrTable40.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow40
             // 
@@ -2489,10 +2555,12 @@
             // 
             // xrTable39
             // 
+            this.xrTable39.BorderWidth = 1.4F;
             this.xrTable39.Name = "xrTable39";
             this.xrTable39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable39.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow39});
+            this.xrTable39.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow39
             // 
@@ -2531,10 +2599,12 @@
             // 
             // xrTable38
             // 
+            this.xrTable38.BorderWidth = 1.4F;
             this.xrTable38.Name = "xrTable38";
             this.xrTable38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable38.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow38});
+            this.xrTable38.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow38
             // 
@@ -2573,10 +2643,12 @@
             // 
             // xrTable37
             // 
+            this.xrTable37.BorderWidth = 1.4F;
             this.xrTable37.Name = "xrTable37";
             this.xrTable37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable37.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow37});
+            this.xrTable37.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow37
             // 
@@ -2615,10 +2687,12 @@
             // 
             // xrTable36
             // 
+            this.xrTable36.BorderWidth = 1.4F;
             this.xrTable36.Name = "xrTable36";
             this.xrTable36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable36.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow36});
+            this.xrTable36.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow36
             // 
@@ -2643,7 +2717,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell73.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumRecEggs_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumRecEggs_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell73.Multiline = true;
             this.xrTableCell73.Name = "xrTableCell73";
             this.xrTableCell73.StylePriority.UseBorders = false;
@@ -2659,10 +2734,12 @@
             // 
             // xrTable35
             // 
+            this.xrTable35.BorderWidth = 1.4F;
             this.xrTable35.Name = "xrTable35";
             this.xrTable35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable35.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow35});
+            this.xrTable35.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow35
             // 
@@ -2686,17 +2763,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell83.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_Act_Est]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_Act_Est]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell83.Multiline = true;
             this.xrTableCell83.Name = "xrTableCell83";
             this.xrTableCell83.StylePriority.UseBorders = false;
             // 
             // xrTable34
             // 
+            this.xrTable34.BorderWidth = 1.4F;
             this.xrTable34.Name = "xrTable34";
             this.xrTable34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable34.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow34});
+            this.xrTable34.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow34
             // 
@@ -2720,17 +2800,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell80.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ActHatchBalanceEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ActHatchBalanceEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell80.Multiline = true;
             this.xrTableCell80.Name = "xrTableCell80";
             this.xrTableCell80.StylePriority.UseBorders = false;
             // 
             // xrTable33
             // 
+            this.xrTable33.BorderWidth = 1.4F;
             this.xrTable33.Name = "xrTable33";
             this.xrTable33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable33.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow33});
+            this.xrTable33.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow33
             // 
@@ -2754,17 +2837,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell77.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ESTChicks_PerStock_HE]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ESTChicks_PerStock_HE]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell77.Multiline = true;
             this.xrTableCell77.Name = "xrTableCell77";
             this.xrTableCell77.StylePriority.UseBorders = false;
             // 
             // xrTable32
             // 
+            this.xrTable32.BorderWidth = 1.4F;
             this.xrTable32.Name = "xrTable32";
             this.xrTable32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable32.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow32});
+            this.xrTable32.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow32
             // 
@@ -2788,17 +2874,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell74.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StockHatEggBal]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StockHatEggBal]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell74.Multiline = true;
             this.xrTableCell74.Name = "xrTableCell74";
             this.xrTableCell74.StylePriority.UseBorders = false;
             // 
             // xrTable31
             // 
+            this.xrTable31.BorderWidth = 1.4F;
             this.xrTable31.Name = "xrTable31";
             this.xrTable31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable31.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow31});
+            this.xrTable31.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow31
             // 
@@ -2822,17 +2911,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell71.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell71.Multiline = true;
             this.xrTableCell71.Name = "xrTableCell71";
             this.xrTableCell71.StylePriority.UseBorders = false;
             // 
             // xrTable30
             // 
+            this.xrTable30.BorderWidth = 1.4F;
             this.xrTable30.Name = "xrTable30";
             this.xrTable30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable30.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow30});
+            this.xrTable30.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow30
             // 
@@ -2856,17 +2948,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell68.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalEggSold]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalEggSold]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell68.Multiline = true;
             this.xrTableCell68.Name = "xrTableCell68";
             this.xrTableCell68.StylePriority.UseBorders = false;
             // 
             // xrTable29
             // 
+            this.xrTable29.BorderWidth = 1.4F;
             this.xrTable29.Name = "xrTable29";
             this.xrTable29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable29.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow29});
+            this.xrTable29.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow29
             // 
@@ -2890,17 +2985,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell65.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell65.Multiline = true;
             this.xrTableCell65.Name = "xrTableCell65";
             this.xrTableCell65.StylePriority.UseBorders = false;
             // 
             // xrTable28
             // 
+            this.xrTable28.BorderWidth = 1.4F;
             this.xrTable28.Name = "xrTable28";
             this.xrTable28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable28.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow28});
+            this.xrTable28.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow28
             // 
@@ -2924,17 +3022,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell63.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldTableEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldTableEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell63.Multiline = true;
             this.xrTableCell63.Name = "xrTableCell63";
             this.xrTableCell63.StylePriority.UseBorders = false;
             // 
             // xrTable27
             // 
+            this.xrTable27.BorderWidth = 1.4F;
             this.xrTable27.Name = "xrTable27";
             this.xrTable27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable27.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow27});
+            this.xrTable27.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow27
             // 
@@ -2958,17 +3059,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell57.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldHatEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldHatEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell57.Multiline = true;
             this.xrTableCell57.Name = "xrTableCell57";
             this.xrTableCell57.StylePriority.UseBorders = false;
             // 
             // xrTable26
             // 
+            this.xrTable26.BorderWidth = 1.4F;
             this.xrTable26.Name = "xrTable26";
             this.xrTable26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable26.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow26});
+            this.xrTable26.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow26
             // 
@@ -2989,10 +3093,12 @@
             // 
             // xrTable25
             // 
+            this.xrTable25.BorderWidth = 1.4F;
             this.xrTable25.Name = "xrTable25";
             this.xrTable25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable25.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow25});
+            this.xrTable25.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow25
             // 
@@ -3016,17 +3122,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell64.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SelChicks]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SelChicks]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell64.Multiline = true;
             this.xrTableCell64.Name = "xrTableCell64";
             this.xrTableCell64.StylePriority.UseBorders = false;
             // 
             // xrTable24
             // 
+            this.xrTable24.BorderWidth = 1.4F;
             this.xrTable24.Name = "xrTable24";
             this.xrTable24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable24.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow24});
+            this.xrTable24.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow24
             // 
@@ -3050,17 +3159,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell61.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejChicks]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejChicks]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell61.Multiline = true;
             this.xrTableCell61.Name = "xrTableCell61";
             this.xrTableCell61.StylePriority.UseBorders = false;
             // 
             // xrTable23
             // 
+            this.xrTable23.BorderWidth = 1.4F;
             this.xrTable23.Name = "xrTable23";
             this.xrTable23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable23.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow23});
+            this.xrTable23.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow23
             // 
@@ -3084,17 +3196,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell58.Multiline = true;
             this.xrTableCell58.Name = "xrTableCell58";
             this.xrTableCell58.StylePriority.UseBorders = false;
             // 
             // xrTable22
             // 
+            this.xrTable22.BorderWidth = 1.4F;
             this.xrTable22.Name = "xrTable22";
             this.xrTable22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable22.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow22});
+            this.xrTable22.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow22
             // 
@@ -3118,17 +3233,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell55.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell55.Multiline = true;
             this.xrTableCell55.Name = "xrTableCell55";
             this.xrTableCell55.StylePriority.UseBorders = false;
             // 
             // xrTable21
             // 
+            this.xrTable21.BorderWidth = 1.4F;
             this.xrTable21.Name = "xrTable21";
             this.xrTable21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable21.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow21});
+            this.xrTable21.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow21
             // 
@@ -3152,17 +3270,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell52.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell52.Multiline = true;
             this.xrTableCell52.Name = "xrTableCell52";
             this.xrTableCell52.StylePriority.UseBorders = false;
             // 
             // xrTable20
             // 
+            this.xrTable20.BorderWidth = 1.4F;
             this.xrTable20.Name = "xrTable20";
             this.xrTable20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable20.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow20});
+            this.xrTable20.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow20
             // 
@@ -3186,17 +3307,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell49.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BalOfHatEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BalOfHatEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell49.Multiline = true;
             this.xrTableCell49.Name = "xrTableCell49";
             this.xrTableCell49.StylePriority.UseBorders = false;
             // 
             // xrTable19
             // 
+            this.xrTable19.BorderWidth = 1.4F;
             this.xrTable19.Name = "xrTable19";
             this.xrTable19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable19.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow19});
+            this.xrTable19.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow19
             // 
@@ -3220,17 +3344,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell47.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell47.Multiline = true;
             this.xrTableCell47.Name = "xrTableCell47";
             this.xrTableCell47.StylePriority.UseBorders = false;
             // 
             // xrTable18
             // 
+            this.xrTable18.BorderWidth = 1.4F;
             this.xrTable18.Name = "xrTable18";
             this.xrTable18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable18.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow18});
+            this.xrTable18.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow18
             // 
@@ -3254,17 +3381,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell45.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejOther]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejOther]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell45.Multiline = true;
             this.xrTableCell45.Name = "xrTableCell45";
             this.xrTableCell45.StylePriority.UseBorders = false;
             // 
             // xrTable17
             // 
+            this.xrTable17.BorderWidth = 1.4F;
             this.xrTable17.Name = "xrTable17";
             this.xrTable17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable17.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow17});
+            this.xrTable17.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow17
             // 
@@ -3288,17 +3418,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejBroken]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejBroken]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.StylePriority.UseBorders = false;
             // 
             // xrTable16
             // 
+            this.xrTable16.BorderWidth = 1.4F;
             this.xrTable16.Name = "xrTable16";
             this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow16});
+            this.xrTable16.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow16
             // 
@@ -3322,17 +3455,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell41.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejCrack]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejCrack]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell41.Multiline = true;
             this.xrTableCell41.Name = "xrTableCell41";
             this.xrTableCell41.StylePriority.UseBorders = false;
             // 
             // xrTable15
             // 
+            this.xrTable15.BorderWidth = 1.4F;
             this.xrTable15.Name = "xrTable15";
             this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow15});
+            this.xrTable15.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow15
             // 
@@ -3356,17 +3492,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejDef]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejDef]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
             this.xrTableCell38.StylePriority.UseBorders = false;
             // 
             // xrTable14
             // 
+            this.xrTable14.BorderWidth = 1.4F;
             this.xrTable14.Name = "xrTable14";
             this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow14});
+            this.xrTable14.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow14
             // 
@@ -3387,10 +3526,12 @@
             // 
             // xrTable13
             // 
+            this.xrTable13.BorderWidth = 1.4F;
             this.xrTable13.Name = "xrTable13";
             this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow13});
+            this.xrTable13.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow13
             // 
@@ -3414,33 +3555,40 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FarmInTake]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FarmInTake]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
             this.xrTableCell36.StylePriority.UseBorders = false;
             // 
             // xrLabel2
             // 
+            this.xrLabel2.BorderWidth = 1.4F;
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.StylePriority.UseBorderWidth = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel1
             // 
+            this.xrLabel1.BorderWidth = 1.4F;
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.StylePriority.UseBorderWidth = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable12
             // 
+            this.xrTable12.BorderWidth = 1.4F;
             this.xrTable12.Name = "xrTable12";
             this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
+            this.xrTable12.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow12
             // 
@@ -3512,9 +3660,6 @@
             this.xrTable74,
             this.xrTable75,
             this.xrTable76,
-            this.xrTable77,
-            this.xrTable78,
-            this.xrTable79,
             this.xrTable80,
             this.xrTable81,
             this.xrTable82,
@@ -3533,18 +3678,17 @@
             this.xrTable95,
             this.xrTable96,
             this.xrTable97,
-            this.xrTable98,
-            this.xrTable99,
-            this.xrTable100,
-            this.xrTable101});
+            this.xrTable100});
             this.SubBand6.Name = "SubBand6";
             // 
             // xrTable57
             // 
+            this.xrTable57.BorderWidth = 1.4F;
             this.xrTable57.Name = "xrTable57";
             this.xrTable57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable57.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow57});
+            this.xrTable57.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow57
             // 
@@ -3589,10 +3733,12 @@
             // 
             // xrTable58
             // 
+            this.xrTable58.BorderWidth = 1.4F;
             this.xrTable58.Name = "xrTable58";
             this.xrTable58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable58.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow58});
+            this.xrTable58.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow58
             // 
@@ -3617,7 +3763,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell145.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FarmInTake_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FarmInTake_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell145.Multiline = true;
             this.xrTableCell145.Name = "xrTableCell145";
             this.xrTableCell145.StylePriority.UseBorders = false;
@@ -3633,10 +3780,12 @@
             // 
             // xrTable59
             // 
+            this.xrTable59.BorderWidth = 1.4F;
             this.xrTable59.Name = "xrTable59";
             this.xrTable59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable59.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow59});
+            this.xrTable59.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow59
             // 
@@ -3657,10 +3806,12 @@
             // 
             // xrTable60
             // 
+            this.xrTable60.BorderWidth = 1.4F;
             this.xrTable60.Name = "xrTable60";
             this.xrTable60.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable60.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow60});
+            this.xrTable60.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow60
             // 
@@ -3685,7 +3836,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell148.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejDef_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejDef_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell148.Multiline = true;
             this.xrTableCell148.Name = "xrTableCell148";
             this.xrTableCell148.StylePriority.UseBorders = false;
@@ -3701,10 +3853,12 @@
             // 
             // xrTable61
             // 
+            this.xrTable61.BorderWidth = 1.4F;
             this.xrTable61.Name = "xrTable61";
             this.xrTable61.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable61.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow61});
+            this.xrTable61.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow61
             // 
@@ -3729,7 +3883,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell150.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejCrack_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejCrack_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell150.Multiline = true;
             this.xrTableCell150.Name = "xrTableCell150";
             this.xrTableCell150.StylePriority.UseBorders = false;
@@ -3745,10 +3900,12 @@
             // 
             // xrTable62
             // 
+            this.xrTable62.BorderWidth = 1.4F;
             this.xrTable62.Name = "xrTable62";
             this.xrTable62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable62.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow62});
+            this.xrTable62.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow62
             // 
@@ -3773,10 +3930,13 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell152.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejBroken_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejBroken_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell152.Multiline = true;
             this.xrTableCell152.Name = "xrTableCell152";
             this.xrTableCell152.StylePriority.UseBorders = false;
+            this.xrTableCell152.StylePriority.UseTextAlignment = false;
+            this.xrTableCell152.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell199
             // 
@@ -3789,10 +3949,12 @@
             // 
             // xrTable63
             // 
+            this.xrTable63.BorderWidth = 1.4F;
             this.xrTable63.Name = "xrTable63";
             this.xrTable63.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable63.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow63});
+            this.xrTable63.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow63
             // 
@@ -3817,7 +3979,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell154.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejOther_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejOther_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell154.Multiline = true;
             this.xrTableCell154.Name = "xrTableCell154";
             this.xrTableCell154.StylePriority.UseBorders = false;
@@ -3833,10 +3996,12 @@
             // 
             // xrTable64
             // 
+            this.xrTable64.BorderWidth = 1.4F;
             this.xrTable64.Name = "xrTable64";
             this.xrTable64.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable64.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow64});
+            this.xrTable64.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow64
             // 
@@ -3861,7 +4026,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell156.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell156.Multiline = true;
             this.xrTableCell156.Name = "xrTableCell156";
             this.xrTableCell156.StylePriority.UseBorders = false;
@@ -3877,10 +4043,12 @@
             // 
             // xrTable65
             // 
+            this.xrTable65.BorderWidth = 1.4F;
             this.xrTable65.Name = "xrTable65";
             this.xrTable65.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable65.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow65});
+            this.xrTable65.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow65
             // 
@@ -3905,7 +4073,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell158.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BalOfHatEggs_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BalOfHatEggs_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell158.Multiline = true;
             this.xrTableCell158.Name = "xrTableCell158";
             this.xrTableCell158.StylePriority.UseBorders = false;
@@ -3921,10 +4090,12 @@
             // 
             // xrTable66
             // 
+            this.xrTable66.BorderWidth = 1.4F;
             this.xrTable66.Name = "xrTable66";
             this.xrTable66.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable66.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow66});
+            this.xrTable66.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow66
             // 
@@ -3949,7 +4120,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell160.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell160.Multiline = true;
             this.xrTableCell160.Name = "xrTableCell160";
             this.xrTableCell160.StylePriority.UseBorders = false;
@@ -3959,16 +4131,21 @@
             this.xrTableCell211.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell211.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell211.Multiline = true;
             this.xrTableCell211.Name = "xrTableCell211";
             this.xrTableCell211.StylePriority.UseBorders = false;
             // 
             // xrTable67
             // 
+            this.xrTable67.BorderWidth = 1.4F;
             this.xrTable67.Name = "xrTable67";
             this.xrTable67.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable67.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow67});
+            this.xrTable67.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow67
             // 
@@ -3993,7 +4170,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell162.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell162.Multiline = true;
             this.xrTableCell162.Name = "xrTableCell162";
             this.xrTableCell162.StylePriority.UseBorders = false;
@@ -4003,16 +4181,21 @@
             this.xrTableCell214.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell214.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell214.Multiline = true;
             this.xrTableCell214.Name = "xrTableCell214";
             this.xrTableCell214.StylePriority.UseBorders = false;
             // 
             // xrTable68
             // 
+            this.xrTable68.BorderWidth = 1.4F;
             this.xrTable68.Name = "xrTable68";
             this.xrTable68.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable68.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow68});
+            this.xrTable68.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow68
             // 
@@ -4037,7 +4220,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell164.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell164.Multiline = true;
             this.xrTableCell164.Name = "xrTableCell164";
             this.xrTableCell164.StylePriority.UseBorders = false;
@@ -4047,16 +4231,21 @@
             this.xrTableCell217.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell217.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell217.Multiline = true;
             this.xrTableCell217.Name = "xrTableCell217";
             this.xrTableCell217.StylePriority.UseBorders = false;
             // 
             // xrTable69
             // 
+            this.xrTable69.BorderWidth = 1.4F;
             this.xrTable69.Name = "xrTable69";
             this.xrTable69.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable69.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow69});
+            this.xrTable69.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow69
             // 
@@ -4081,7 +4270,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell166.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejChicks_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejChicks_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell166.Multiline = true;
             this.xrTableCell166.Name = "xrTableCell166";
             this.xrTableCell166.StylePriority.UseBorders = false;
@@ -4091,16 +4281,21 @@
             this.xrTableCell220.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell220.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejChicks_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell220.Multiline = true;
             this.xrTableCell220.Name = "xrTableCell220";
             this.xrTableCell220.StylePriority.UseBorders = false;
             // 
             // xrTable70
             // 
+            this.xrTable70.BorderWidth = 1.4F;
             this.xrTable70.Name = "xrTable70";
             this.xrTable70.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable70.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow70});
+            this.xrTable70.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow70
             // 
@@ -4125,7 +4320,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell168.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SelChicks_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SelChicks_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell168.Multiline = true;
             this.xrTableCell168.Name = "xrTableCell168";
             this.xrTableCell168.StylePriority.UseBorders = false;
@@ -4135,16 +4331,21 @@
             this.xrTableCell223.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell223.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[GradeA_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell223.Multiline = true;
             this.xrTableCell223.Name = "xrTableCell223";
             this.xrTableCell223.StylePriority.UseBorders = false;
             // 
             // xrTable71
             // 
+            this.xrTable71.BorderWidth = 1.4F;
             this.xrTable71.Name = "xrTable71";
             this.xrTable71.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable71.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow71});
+            this.xrTable71.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow71
             // 
@@ -4165,10 +4366,12 @@
             // 
             // xrTable72
             // 
+            this.xrTable72.BorderWidth = 1.4F;
             this.xrTable72.Name = "xrTable72";
             this.xrTable72.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable72.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow72});
+            this.xrTable72.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow72
             // 
@@ -4193,7 +4396,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell171.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldHatEggs_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldHatEggs_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell171.Multiline = true;
             this.xrTableCell171.Name = "xrTableCell171";
             this.xrTableCell171.StylePriority.UseBorders = false;
@@ -4203,16 +4407,21 @@
             this.xrTableCell226.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell226.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldHatEggs_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell226.Multiline = true;
             this.xrTableCell226.Name = "xrTableCell226";
             this.xrTableCell226.StylePriority.UseBorders = false;
             // 
             // xrTable73
             // 
+            this.xrTable73.BorderWidth = 1.4F;
             this.xrTable73.Name = "xrTable73";
             this.xrTable73.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable73.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow73});
+            this.xrTable73.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow73
             // 
@@ -4237,7 +4446,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell173.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldTableEggs_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldTableEggs_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell173.Multiline = true;
             this.xrTableCell173.Name = "xrTableCell173";
             this.xrTableCell173.StylePriority.UseBorders = false;
@@ -4247,16 +4457,21 @@
             this.xrTableCell229.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell229.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SoldTableEggs_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell229.Multiline = true;
             this.xrTableCell229.Name = "xrTableCell229";
             this.xrTableCell229.StylePriority.UseBorders = false;
             // 
             // xrTable74
             // 
+            this.xrTable74.BorderWidth = 1.4F;
             this.xrTable74.Name = "xrTable74";
             this.xrTable74.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable74.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow74});
+            this.xrTable74.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow74
             // 
@@ -4281,7 +4496,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell175.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell175.Multiline = true;
             this.xrTableCell175.Name = "xrTableCell175";
             this.xrTableCell175.StylePriority.UseBorders = false;
@@ -4291,16 +4507,21 @@
             this.xrTableCell232.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell232.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell232.Multiline = true;
             this.xrTableCell232.Name = "xrTableCell232";
             this.xrTableCell232.StylePriority.UseBorders = false;
             // 
             // xrTable75
             // 
+            this.xrTable75.BorderWidth = 1.4F;
             this.xrTable75.Name = "xrTable75";
             this.xrTable75.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable75.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow75});
+            this.xrTable75.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow75
             // 
@@ -4325,7 +4546,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell177.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalEggSold_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalEggSold_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell177.Multiline = true;
             this.xrTableCell177.Name = "xrTableCell177";
             this.xrTableCell177.StylePriority.UseBorders = false;
@@ -4335,16 +4557,21 @@
             this.xrTableCell235.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell235.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalEggSold_1_FromPartA]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell235.Multiline = true;
             this.xrTableCell235.Name = "xrTableCell235";
             this.xrTableCell235.StylePriority.UseBorders = false;
             // 
             // xrTable76
             // 
+            this.xrTable76.BorderWidth = 1.4F;
             this.xrTable76.Name = "xrTable76";
             this.xrTable76.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable76.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow76});
+            this.xrTable76.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow76
             // 
@@ -4369,7 +4596,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell179.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell179.Multiline = true;
             this.xrTableCell179.Name = "xrTableCell179";
             this.xrTableCell179.StylePriority.UseBorders = false;
@@ -4383,144 +4611,14 @@
             this.xrTableCell238.Name = "xrTableCell238";
             this.xrTableCell238.StylePriority.UseBorders = false;
             // 
-            // xrTable77
-            // 
-            this.xrTable77.Name = "xrTable77";
-            this.xrTable77.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable77.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow77});
-            // 
-            // xrTableRow77
-            // 
-            this.xrTableRow77.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell180,
-            this.xrTableCell181,
-            this.xrTableCell241});
-            this.xrTableRow77.Name = "xrTableRow77";
-            // 
-            // xrTableCell180
-            // 
-            this.xrTableCell180.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell180.Multiline = true;
-            this.xrTableCell180.Name = "xrTableCell180";
-            this.xrTableCell180.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell181
-            // 
-            this.xrTableCell181.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell181.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[StockHatEggBal_1]")});
-            this.xrTableCell181.Multiline = true;
-            this.xrTableCell181.Name = "xrTableCell181";
-            this.xrTableCell181.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell241
-            // 
-            this.xrTableCell241.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell241.Multiline = true;
-            this.xrTableCell241.Name = "xrTableCell241";
-            this.xrTableCell241.StylePriority.UseBorders = false;
-            // 
-            // xrTable78
-            // 
-            this.xrTable78.Name = "xrTable78";
-            this.xrTable78.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable78.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow78});
-            // 
-            // xrTableRow78
-            // 
-            this.xrTableRow78.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell182,
-            this.xrTableCell183,
-            this.xrTableCell244});
-            this.xrTableRow78.Name = "xrTableRow78";
-            // 
-            // xrTableCell182
-            // 
-            this.xrTableCell182.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell182.Multiline = true;
-            this.xrTableCell182.Name = "xrTableCell182";
-            this.xrTableCell182.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell183
-            // 
-            this.xrTableCell183.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell183.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ESTChicks_PerStock_HE_1]")});
-            this.xrTableCell183.Multiline = true;
-            this.xrTableCell183.Name = "xrTableCell183";
-            this.xrTableCell183.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell244
-            // 
-            this.xrTableCell244.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell244.Multiline = true;
-            this.xrTableCell244.Name = "xrTableCell244";
-            this.xrTableCell244.StylePriority.UseBorders = false;
-            // 
-            // xrTable79
-            // 
-            this.xrTable79.Name = "xrTable79";
-            this.xrTable79.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable79.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow79});
-            // 
-            // xrTableRow79
-            // 
-            this.xrTableRow79.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell184,
-            this.xrTableCell185,
-            this.xrTableCell247});
-            this.xrTableRow79.Name = "xrTableRow79";
-            // 
-            // xrTableCell184
-            // 
-            this.xrTableCell184.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell184.Multiline = true;
-            this.xrTableCell184.Name = "xrTableCell184";
-            this.xrTableCell184.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell185
-            // 
-            this.xrTableCell185.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell185.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ActHatchBalanceEggs_1]")});
-            this.xrTableCell185.Multiline = true;
-            this.xrTableCell185.Name = "xrTableCell185";
-            this.xrTableCell185.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell247
-            // 
-            this.xrTableCell247.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell247.Multiline = true;
-            this.xrTableCell247.Name = "xrTableCell247";
-            this.xrTableCell247.StylePriority.UseBorders = false;
-            // 
             // xrTable80
             // 
+            this.xrTable80.BorderWidth = 1.4F;
             this.xrTable80.Name = "xrTable80";
             this.xrTable80.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable80.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow80});
+            this.xrTable80.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow80
             // 
@@ -4545,7 +4643,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell187.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_Act_Est_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_Act_Est_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell187.Multiline = true;
             this.xrTableCell187.Name = "xrTableCell187";
             this.xrTableCell187.StylePriority.UseBorders = false;
@@ -4561,10 +4660,12 @@
             // 
             // xrTable81
             // 
+            this.xrTable81.BorderWidth = 1.4F;
             this.xrTable81.Name = "xrTable81";
             this.xrTable81.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable81.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow81});
+            this.xrTable81.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow81
             // 
@@ -4588,17 +4689,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell189.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumRecEggs_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumRecEggs_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell189.Multiline = true;
             this.xrTableCell189.Name = "xrTableCell189";
             this.xrTableCell189.StylePriority.UseBorders = false;
             // 
             // xrTable82
             // 
+            this.xrTable82.BorderWidth = 1.4F;
             this.xrTable82.Name = "xrTable82";
             this.xrTable82.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable82.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow82});
+            this.xrTable82.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow82
             // 
@@ -4647,10 +4751,12 @@
             // 
             // xrTable83
             // 
+            this.xrTable83.BorderWidth = 1.4F;
             this.xrTable83.Name = "xrTable83";
             this.xrTable83.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable83.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow83});
+            this.xrTable83.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow83
             // 
@@ -4679,10 +4785,12 @@
             // 
             // xrTable84
             // 
+            this.xrTable84.BorderWidth = 1.4F;
             this.xrTable84.Name = "xrTable84";
             this.xrTable84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable84.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow84});
+            this.xrTable84.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow84
             // 
@@ -4711,10 +4819,12 @@
             // 
             // xrTable85
             // 
+            this.xrTable85.BorderWidth = 1.4F;
             this.xrTable85.Name = "xrTable85";
             this.xrTable85.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable85.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow85});
+            this.xrTable85.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow85
             // 
@@ -4743,10 +4853,12 @@
             // 
             // xrTable86
             // 
+            this.xrTable86.BorderWidth = 1.4F;
             this.xrTable86.Name = "xrTable86";
             this.xrTable86.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable86.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow86});
+            this.xrTable86.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow86
             // 
@@ -4770,17 +4882,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell204.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total_RejEggs_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell204.Multiline = true;
             this.xrTableCell204.Name = "xrTableCell204";
             this.xrTableCell204.StylePriority.UseBorders = false;
             // 
             // xrTable87
             // 
+            this.xrTable87.BorderWidth = 1.4F;
             this.xrTable87.Name = "xrTable87";
             this.xrTable87.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable87.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow87});
+            this.xrTable87.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow87
             // 
@@ -4804,17 +4919,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell207.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumFinalHatEgg_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumFinalHatEgg_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell207.Multiline = true;
             this.xrTableCell207.Name = "xrTableCell207";
             this.xrTableCell207.StylePriority.UseBorders = false;
             // 
             // xrTable88
             // 
+            this.xrTable88.BorderWidth = 1.4F;
             this.xrTable88.Name = "xrTable88";
             this.xrTable88.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable88.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow88});
+            this.xrTable88.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow88
             // 
@@ -4843,10 +4961,12 @@
             // 
             // xrTable89
             // 
+            this.xrTable89.BorderWidth = 1.4F;
             this.xrTable89.Name = "xrTable89";
             this.xrTable89.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable89.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow89});
+            this.xrTable89.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow89
             // 
@@ -4870,17 +4990,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell213.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksAct_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksAct_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell213.Multiline = true;
             this.xrTableCell213.Name = "xrTableCell213";
             this.xrTableCell213.StylePriority.UseBorders = false;
             // 
             // xrTable90
             // 
+            this.xrTable90.BorderWidth = 1.4F;
             this.xrTable90.Name = "xrTable90";
             this.xrTable90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable90.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow90});
+            this.xrTable90.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow90
             // 
@@ -4904,17 +5027,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell216.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell216.Multiline = true;
             this.xrTableCell216.Name = "xrTableCell216";
             this.xrTableCell216.StylePriority.UseBorders = false;
             // 
             // xrTable91
             // 
+            this.xrTable91.BorderWidth = 1.4F;
             this.xrTable91.Name = "xrTable91";
             this.xrTable91.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable91.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow91});
+            this.xrTable91.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow91
             // 
@@ -4938,17 +5064,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell219.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksRej_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicksRej_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell219.Multiline = true;
             this.xrTableCell219.Name = "xrTableCell219";
             this.xrTableCell219.StylePriority.UseBorders = false;
             // 
             // xrTable92
             // 
+            this.xrTable92.BorderWidth = 1.4F;
             this.xrTable92.Name = "xrTable92";
             this.xrTable92.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable92.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow92});
+            this.xrTable92.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow92
             // 
@@ -4972,17 +5101,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell222.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumAGradeChicks_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumAGradeChicks_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell222.Multiline = true;
             this.xrTableCell222.Name = "xrTableCell222";
             this.xrTableCell222.StylePriority.UseBorders = false;
             // 
             // xrTable93
             // 
+            this.xrTable93.BorderWidth = 1.4F;
             this.xrTable93.Name = "xrTable93";
             this.xrTable93.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable93.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow93});
+            this.xrTable93.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow93
             // 
@@ -5011,10 +5143,12 @@
             // 
             // xrTable94
             // 
+            this.xrTable94.BorderWidth = 1.4F;
             this.xrTable94.Name = "xrTable94";
             this.xrTable94.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable94.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow94});
+            this.xrTable94.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow94
             // 
@@ -5043,10 +5177,12 @@
             // 
             // xrTable95
             // 
+            this.xrTable95.BorderWidth = 1.4F;
             this.xrTable95.Name = "xrTable95";
             this.xrTable95.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable95.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow95});
+            this.xrTable95.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow95
             // 
@@ -5075,10 +5211,12 @@
             // 
             // xrTable96
             // 
+            this.xrTable96.BorderWidth = 1.4F;
             this.xrTable96.Name = "xrTable96";
             this.xrTable96.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable96.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow96});
+            this.xrTable96.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow96
             // 
@@ -5107,10 +5245,12 @@
             // 
             // xrTable97
             // 
+            this.xrTable97.BorderWidth = 1.4F;
             this.xrTable97.Name = "xrTable97";
             this.xrTable97.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable97.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow97});
+            this.xrTable97.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow97
             // 
@@ -5134,83 +5274,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell237.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstChicks_PerEgg_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell237.Multiline = true;
             this.xrTableCell237.Name = "xrTableCell237";
             this.xrTableCell237.StylePriority.UseBorders = false;
             // 
-            // xrTable98
-            // 
-            this.xrTable98.Name = "xrTable98";
-            this.xrTable98.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable98.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow98});
-            // 
-            // xrTableRow98
-            // 
-            this.xrTableRow98.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell239,
-            this.xrTableCell240});
-            this.xrTableRow98.Name = "xrTableRow98";
-            // 
-            // xrTableCell239
-            // 
-            this.xrTableCell239.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell239.Multiline = true;
-            this.xrTableCell239.Name = "xrTableCell239";
-            this.xrTableCell239.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell240
-            // 
-            this.xrTableCell240.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell240.Multiline = true;
-            this.xrTableCell240.Name = "xrTableCell240";
-            this.xrTableCell240.StylePriority.UseBorders = false;
-            // 
-            // xrTable99
-            // 
-            this.xrTable99.Name = "xrTable99";
-            this.xrTable99.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable99.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow99});
-            // 
-            // xrTableRow99
-            // 
-            this.xrTableRow99.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell242,
-            this.xrTableCell243});
-            this.xrTableRow99.Name = "xrTableRow99";
-            // 
-            // xrTableCell242
-            // 
-            this.xrTableCell242.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell242.Multiline = true;
-            this.xrTableCell242.Name = "xrTableCell242";
-            this.xrTableCell242.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell243
-            // 
-            this.xrTableCell243.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell243.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EStChicks_PerStockHE_HH_1]")});
-            this.xrTableCell243.Multiline = true;
-            this.xrTableCell243.Name = "xrTableCell243";
-            this.xrTableCell243.StylePriority.UseBorders = false;
-            // 
             // xrTable100
             // 
+            this.xrTable100.BorderWidth = 1.4F;
             this.xrTable100.Name = "xrTable100";
             this.xrTable100.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable100.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow100});
+            this.xrTable100.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow100
             // 
@@ -5234,42 +5311,11 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell246.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_ActEst_HH_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumChicks_ActEst_HH_1]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell246.Multiline = true;
             this.xrTableCell246.Name = "xrTableCell246";
             this.xrTableCell246.StylePriority.UseBorders = false;
-            // 
-            // xrTable101
-            // 
-            this.xrTable101.Name = "xrTable101";
-            this.xrTable101.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable101.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow101});
-            // 
-            // xrTableRow101
-            // 
-            this.xrTableRow101.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell248,
-            this.xrTableCell249});
-            this.xrTableRow101.Name = "xrTableRow101";
-            // 
-            // xrTableCell248
-            // 
-            this.xrTableCell248.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell248.Multiline = true;
-            this.xrTableCell248.Name = "xrTableCell248";
-            this.xrTableCell248.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell249
-            // 
-            this.xrTableCell249.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell249.Multiline = true;
-            this.xrTableCell249.Name = "xrTableCell249";
-            this.xrTableCell249.StylePriority.UseBorders = false;
             // 
             // SubBand7
             // 
@@ -5318,9 +5364,11 @@
             this.xrTableCell269.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell269.BorderWidth = 1.4F;
             this.xrTableCell269.Multiline = true;
             this.xrTableCell269.Name = "xrTableCell269";
             this.xrTableCell269.StylePriority.UseBorders = false;
+            this.xrTableCell269.StylePriority.UseBorderWidth = false;
             this.xrTableCell269.StylePriority.UseTextAlignment = false;
             this.xrTableCell269.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -5329,18 +5377,22 @@
             this.xrTableCell270.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell270.BorderWidth = 1.4F;
             this.xrTableCell270.Multiline = true;
             this.xrTableCell270.Name = "xrTableCell270";
             this.xrTableCell270.StylePriority.UseBorders = false;
+            this.xrTableCell270.StylePriority.UseBorderWidth = false;
             this.xrTableCell270.StylePriority.UseTextAlignment = false;
             this.xrTableCell270.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable105
             // 
+            this.xrTable105.BorderWidth = 1.4F;
             this.xrTable105.Name = "xrTable105";
             this.xrTable105.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable105.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow105});
+            this.xrTable105.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow105
             // 
@@ -5364,17 +5416,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell261.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumHatchability]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumHatchability]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell261.Multiline = true;
             this.xrTableCell261.Name = "xrTableCell261";
             this.xrTableCell261.StylePriority.UseBorders = false;
             // 
             // xrTable104
             // 
+            this.xrTable104.BorderWidth = 1.4F;
             this.xrTable104.Name = "xrTable104";
             this.xrTable104.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable104.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow104});
+            this.xrTable104.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow104
             // 
@@ -5401,7 +5456,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell258.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumHatchEggsHH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumHatchEggsHH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell258.Multiline = true;
             this.xrTableCell258.Name = "xrTableCell258";
             this.xrTableCell258.StylePriority.UseBorders = false;
@@ -5421,7 +5477,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell267.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumAGradeChicksHH_VS_Act]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumAGradeChicksHH_VS_Act]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell267.Multiline = true;
             this.xrTableCell267.Name = "xrTableCell267";
             this.xrTableCell267.StylePriority.UseBorders = false;
@@ -5432,17 +5489,22 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell268.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumAGradeChicksHH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumAGradeChicksHH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell268.Multiline = true;
             this.xrTableCell268.Name = "xrTableCell268";
             this.xrTableCell268.StylePriority.UseBorders = false;
+            this.xrTableCell268.StylePriority.UseTextAlignment = false;
+            this.xrTableCell268.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTable103
             // 
+            this.xrTable103.BorderWidth = 1.4F;
             this.xrTable103.Name = "xrTable103";
             this.xrTable103.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable103.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow103});
+            this.xrTable103.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow103
             // 
@@ -5469,7 +5531,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell255.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejEggsHH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejEggsHH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell255.Multiline = true;
             this.xrTableCell255.Name = "xrTableCell255";
             this.xrTableCell255.StylePriority.UseBorders = false;
@@ -5486,7 +5549,8 @@
             // xrTableCell265
             // 
             this.xrTableCell265.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejChicksHH_VS_Act]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejChicksHH_VS_Act]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell265.Multiline = true;
             this.xrTableCell265.Name = "xrTableCell265";
             // 
@@ -5496,17 +5560,20 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell266.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejChicksHH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejChicksHH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell266.Multiline = true;
             this.xrTableCell266.Name = "xrTableCell266";
             this.xrTableCell266.StylePriority.UseBorders = false;
             // 
             // xrTable102
             // 
+            this.xrTable102.BorderWidth = 1.4F;
             this.xrTable102.Name = "xrTable102";
             this.xrTable102.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable102.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow102});
+            this.xrTable102.StylePriority.UseBorderWidth = false;
             // 
             // xrTableRow102
             // 
@@ -5533,7 +5600,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell252.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumTotalEggs_HH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumTotalEggs_HH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell252.Multiline = true;
             this.xrTableCell252.Name = "xrTableCell252";
             this.xrTableCell252.StylePriority.UseBorders = false;
@@ -5553,7 +5621,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell263.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumTotalChicksHH_VS_Act]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumTotalChicksHH_VS_Act]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell263.Multiline = true;
             this.xrTableCell263.Name = "xrTableCell263";
             this.xrTableCell263.StylePriority.UseBorders = false;
@@ -5564,7 +5633,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell264.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumTotalChicksHH]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_CumTotalChicksHH]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell264.Multiline = true;
             this.xrTableCell264.Name = "xrTableCell264";
             this.xrTableCell264.StylePriority.UseBorders = false;
@@ -5578,6 +5648,7 @@
             // srReportNotes
             // 
             this.srReportNotes.Name = "srReportNotes";
+            this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
             // 
             // ReportFooterSub2
             // 
@@ -5590,6 +5661,7 @@
             // srReportSignature
             // 
             this.srReportSignature.Name = "srReportSignature";
+            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
             // Title
             // 
@@ -6780,15 +6852,79 @@
     "dReport.POL_1], 0)\n";
             this.CumChicks_ActEst_HH_1.Name = "CumChicks_ActEst_HH_1";
             // 
-            // calculatedField2
+            // SettedEggs_1_FromPartA
             // 
-            this.calculatedField2.DataMember = "SR_HT_FlkSumProdReport";
-            this.calculatedField2.Name = "calculatedField2";
+            this.SettedEggs_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.SettedEggs_1_FromPartA.Expression = "[SettedEggs_1]";
+            this.SettedEggs_1_FromPartA.Name = "SettedEggs_1_FromPartA";
             // 
-            // calculatedField3
+            // RejChicks_1_FromPartA
             // 
-            this.calculatedField3.DataMember = "SR_HT_FlkSumProdReport";
-            this.calculatedField3.Name = "calculatedField3";
+            this.RejChicks_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.RejChicks_1_FromPartA.Expression = "[CullsChicks_1] + [DeadChicks_1]";
+            this.RejChicks_1_FromPartA.Name = "RejChicks_1_FromPartA";
+            // 
+            // GradeA_1_FromPartA
+            // 
+            this.GradeA_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.GradeA_1_FromPartA.Expression = "[SelChicks_1]";
+            this.GradeA_1_FromPartA.Name = "GradeA_1_FromPartA";
+            // 
+            // CumChicks_1_FromPartA
+            // 
+            this.CumChicks_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.CumChicks_1_FromPartA.Expression = "[GradeA_1_FromPartA] + [RejChicks_1_FromPartA]";
+            this.CumChicks_1_FromPartA.Name = "CumChicks_1_FromPartA";
+            // 
+            // CumHatchability_1_FromPartA
+            // 
+            this.CumHatchability_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.CumHatchability_1_FromPartA.Expression = "Iif([SettedEggs_1_FromPartA] != 0, [CumChicks_1_FromPartA] * 100 / [SettedEggs_1_" +
+    "FromPartA], 0)\n";
+            this.CumHatchability_1_FromPartA.Name = "CumHatchability_1_FromPartA";
+            // 
+            // SoldHatEggs_1_FromPartA
+            // 
+            this.SoldHatEggs_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.SoldHatEggs_1_FromPartA.Expression = "IsNull([SR_HT_FlkSumProdReport.ER_SoldAsHatEggs_1], 0) + IsNull([SR_HT_FlkSumProd" +
+    "Report.ES_SoldAsHatEggs_1], 0)\n";
+            this.SoldHatEggs_1_FromPartA.Name = "SoldHatEggs_1_FromPartA";
+            // 
+            // SoldTableEggs_1_FromPartA
+            // 
+            this.SoldTableEggs_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.SoldTableEggs_1_FromPartA.Expression = "[SR_HT_FlkSumProdReport.ER_SoldAsTableEggs_1] + [SR_HT_FlkSumProdReport.ES_SoldAs" +
+    "TableEggs_1]\n";
+            this.SoldTableEggs_1_FromPartA.Name = "SoldTableEggs_1_FromPartA";
+            // 
+            // EggsToOffal_1_FromPartA
+            // 
+            this.EggsToOffal_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.EggsToOffal_1_FromPartA.Expression = "[SR_HT_FlkSumProdReport.ER_SendToOffal_1] + [SR_HT_FlkSumProdReport.ES_SendToOffa" +
+    "l_1]\n";
+            this.EggsToOffal_1_FromPartA.Name = "EggsToOffal_1_FromPartA";
+            // 
+            // TotalEggSold_1_FromPartA
+            // 
+            this.TotalEggSold_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
+            this.TotalEggSold_1_FromPartA.Expression = "[SoldHatEggs_1_FromPartA] + [SoldTableEggs_1_FromPartA] + [EggsToOffal_1_FromPart" +
+    "A]\n";
+            this.TotalEggSold_1_FromPartA.Name = "TotalEggSold_1_FromPartA";
+            // 
+            // xrPageInfo1
+            // 
+            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrPageInfo1.Name = "xrPageInfo1";
+            this.xrPageInfo1.StyleName = "PageInfo";
+            this.xrPageInfo1.StylePriority.UseBorders = false;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrPageInfo2
+            // 
+            this.xrPageInfo2.Name = "xrPageInfo2";
+            this.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.xrPageInfo2.StyleName = "PageInfo";
+            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // SR_HT_FlkSumProdReport
             // 
@@ -6897,18 +7033,24 @@
             this.EstChicks_PerEgg_HH_1,
             this.EStChicks_PerStockHE_HH_1,
             this.CumChicks_ActEst_HH_1,
-            this.calculatedField2,
-            this.calculatedField3});
+            this.SettedEggs_1_FromPartA,
+            this.RejChicks_1_FromPartA,
+            this.GradeA_1_FromPartA,
+            this.CumChicks_1_FromPartA,
+            this.CumHatchability_1_FromPartA,
+            this.SoldHatEggs_1_FromPartA,
+            this.SoldTableEggs_1_FromPartA,
+            this.EggsToOffal_1_FromPartA,
+            this.TotalEggSold_1_FromPartA});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
             this.DataMember = "SR_HT_FlkSumProdReport";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
-            this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 25.08105F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSupp, "Default", "Description", "CustSupp"),
@@ -6936,12 +7078,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 20.41669F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(391.5022F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(2F, 25.08105F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(454.2838F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(667.4131F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(182.4131F, 25.08105F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1328.379F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(315.6177F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(2F, 25.08105F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageType, "Default", "Description", "PageType"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
@@ -6953,59 +7095,68 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "Show signature in all page"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "ar", "Description", "عرض التوقيع في كل الصفحات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(1643.997F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.000005F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(1643F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.00001F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(1158F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(1644F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(1644F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1644F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1643.997F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "DisplayName", "SR_FC_FM_StockMovement"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "ar", "DisplayName", "قيود يومية تفصيلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 25.08105F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 474.0002F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 486.588F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 426.588F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 131.6225F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(65.625F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "( A )"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "(أ)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(248.0701F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(109.375F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "SUMMARY"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "الملخص"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0.4166921F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(322.483F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Std Book:[?BookPerf]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00019F, 12.58778F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(65.625F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "( B )"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "(ب)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(253.0703F, 12.58778F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(109.375F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "SUMMARY"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "الملخص"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(248.0701F, 0.07616352F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "SizeF", new System.Drawing.SizeF(179.0598F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "Text", "Performance Summary"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "ar", "Text", "ملخص الاداء"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(427.13F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "SizeF", new System.Drawing.SizeF(100F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "Text", "(A + B)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "ar", "Text", "(أ + ب)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(949.67F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "SizeF", new System.Drawing.SizeF(209.33F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "TextFormatString", "Page {0} of {1}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(5.625001F, 2.997716F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "SizeF", new System.Drawing.SizeF(204.12F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(24.13269F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(177.8695F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable10, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(576.4584F, 60.00004F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable10, "Default", "SizeF", new System.Drawing.SizeF(262.5F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 466.588F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 406.588F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "SizeF", new System.Drawing.SizeF(541.0103F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable101, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 446.588F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable101, "Default", "SizeF", new System.Drawing.SizeF(541.0103F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00025F, 23.07618F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "SizeF", new System.Drawing.SizeF(799.3907F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable103, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00031F, 43.07618F)),
@@ -7079,7 +7230,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable39, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(509.9999F, 114F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable39, "Default", "SizeF", new System.Drawing.SizeF(642.7081F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.9997559F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable4, "Default", "SizeF", new System.Drawing.SizeF(1643F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable4, "Default", "SizeF", new System.Drawing.SizeF(1158F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable40, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510F, 134F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable40, "Default", "SizeF", new System.Drawing.SizeF(642.708F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable41, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 154F)),
@@ -7160,15 +7311,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable75, "Default", "SizeF", new System.Drawing.SizeF(601.6974F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable76, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00043F, 386.588F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable76, "Default", "SizeF", new System.Drawing.SizeF(601.6974F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable77, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15F, 406.588F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable77, "Default", "SizeF", new System.Drawing.SizeF(601.698F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable78, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00043F, 426.588F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable78, "Default", "SizeF", new System.Drawing.SizeF(601.6976F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable79, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15F, 446.588F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable79, "Default", "SizeF", new System.Drawing.SizeF(601.698F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable8, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(576.4584F, 20.00001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable8, "Default", "SizeF", new System.Drawing.SizeF(262.5F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable80, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00043F, 466.588F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable80, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00054F, 406.588F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable80, "Default", "SizeF", new System.Drawing.SizeF(601.6976F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable81, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 66.58778F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable81, "Default", "SizeF", new System.Drawing.SizeF(541.0102F, 20F)),
@@ -7206,11 +7351,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable96, "Default", "SizeF", new System.Drawing.SizeF(541.0105F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable97, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 386.588F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable97, "Default", "SizeF", new System.Drawing.SizeF(541.0106F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable98, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.6981F, 406.588F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable98, "Default", "SizeF", new System.Drawing.SizeF(541.0105F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable99, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.6981F, 426.5879F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable99, "Default", "SizeF", new System.Drawing.SizeF(541.0099F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Text", "Farm #"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "ar", "Text", "رقم المزرعة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Text", "tdAccountName_From"),
@@ -7221,22 +7363,27 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell101, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell101, "Default", "Weight", 1.4988525390625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell102, "Default", "Text", "1 - Cum.Chicks (Actual)   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell102, "ar", "Text", "\\1- إجمالي الكتاكيت الفعلية (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell102, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell103, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell103, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell104, "Default", "Text", "xrTableCell104"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell104, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell104, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell105, "Default", "Text", "Cum.Hatchability\t\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell105, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell105, "Default", "Weight", 3.7708343505859379D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell106, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell106, "Default", "Weight", 3.7708325195312504D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell107, "Default", "Text", "xrTableCell107"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell107, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell107, "Default", "Weight", 1.4988537597656248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell108, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell108, "Default", "Weight", 1.157392578125D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell109, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell109, "Default", "Weight", 1.4988537597656248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Text", "Breed"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "ar", "Text", "السلالة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Weight", 0.99999984741210934D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell110, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell110, "Default", "Weight", 3.7708325195312504D),
@@ -7254,6 +7401,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell116, "Default", "Weight", 3.7708361816406248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell117, "Default", "Weight", 1.1573925781249998D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell118, "Default", "Text", "xrTableCell118"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell118, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell118, "Default", "Weight", 1.49885498046875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell119, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell119, "Default", "Weight", 3.7708331298828126D),
@@ -7263,18 +7411,24 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell121, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell121, "Default", "Weight", 1.4988549804687497D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell122, "Default", "Text", "3 - Estimated Chicks (as per Stock of H.E) HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell122, "ar", "Text", "2- الكتاكيت المتوقعة حسب البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell122, "Default", "Weight", 3.7708325195312495D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell123, "Default", "Text", "xrTableCell123"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell123, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell123, "Default", "Weight", 1.1573937988281251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell124, "Default", "Text", "xrTableCell124"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell124, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell124, "Default", "Weight", 1.4988525390625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell125, "Default", "Text", "Cum.Chicks    HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell125, "ar", "Text", "اجمالي الكتاكيت (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell125, "Default", "Weight", 3.7708325195312504D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell126, "Default", "Weight", 1.1573950195312501D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell127, "Default", "Text", "xrTableCell127"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell127, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell127, "Default", "Weight", 1.4988537597656248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell128, "Default", "Weight", 1.1573937988281251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell129, "Default", "Text", ""),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell129, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell129, "Default", "Weight", 1.1573937988281249D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Weight", 5.0000012207031252D),
@@ -7289,24 +7443,31 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell138, "Default", "Weight", 1.157392578125D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell139, "Default", "Weight", 1.1573937988281249D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Text", "POL"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "ar", "Text", "بداية وضع البيض (POL)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Weight", 1.6866298468472116D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell140, "Default", "Text", "xrTableCell140"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell140, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell140, "Default", "Weight", 1.1573937988281249D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell141, "Default", "Weight", 3.2715189985655013D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell142, "Default", "Weight", 3.1555604692079364D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell143, "Default", "Text", "* Prv.Calc"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell143, "ar", "Text", "الحساب السابق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell143, "Default", "Weight", 1.0676124953545236D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell144, "Default", "Text", "Cum Eggs received from parent farm"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell144, "ar", "Text", "البيض المستلم من القطيع الأم"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell144, "Default", "Weight", 3.930016784667969D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell145, "Default", "Text", "xrTableCell36"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell145, "Default", "Weight", 1.0282577540116009D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell146, "Default", "Text", "Rejected Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell146, "ar", "Text", "البيض المرفوض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell146, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell147, "Default", "Text", "Deformed"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell147, "ar", "Text", "مشوه"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell147, "Default", "Weight", 1.7808280776840877D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell148, "Default", "Text", "xrTableCell38"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell148, "Default", "Weight", 1.0199792665769949D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell149, "Default", "Text", "Crack"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell149, "ar", "Text", "مشقق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell149, "Default", "Weight", 1.7808275941933056D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Text", "tdItemCode_DebitCredit"),
@@ -7314,22 +7475,27 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell150, "Default", "Text", "xrTableCell41"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell150, "Default", "Weight", 1.0199797536318373D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell151, "Default", "Text", "Broken"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell151, "ar", "Text", "مكسور"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell151, "Default", "Weight", 1.7808280803072543D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell152, "Default", "Text", "xrTableCell42"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell152, "Default", "Weight", 1.0199792639872616D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell153, "Default", "Text", "Other"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell153, "ar", "Text", "أسباب أخرى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell153, "Default", "Weight", 1.7808280803072665D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell154, "Default", "Text", "xrTableCell45"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell154, "Default", "Weight", 1.0199792639873126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell155, "Default", "Text", "Total Rejected"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell155, "ar", "Text", "إجمالي البيض المرفوض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell155, "Default", "Weight", 3.9300171291446584D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell156, "Default", "Text", "xrTableCell47"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell156, "Default", "Weight", 1.0199787460880403D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell157, "Default", "Text", "Balance Of Hatching Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell157, "ar", "Text", "رصيد بيض التفريخ المتبقي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell157, "Default", "Weight", 2.3580097149855819D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell158, "Default", "Text", "xrTableCell49"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell158, "Default", "Weight", 0.611987356052823D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell159, "Default", "Text", "Eggs Setted in Hatcheries"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell159, "ar", "Text", "البيض الموضوع في ماكينات التفريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell159, "Default", "Weight", 2.3580097149855819D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell16, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell16, "Default", "Text", "xrTableCell43"),
@@ -7337,70 +7503,71 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell160, "Default", "Text", "xrTableCell52"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell160, "Default", "Weight", 0.611987356052823D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell161, "Default", "Text", "Cum. Chicks(as per egg set)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell161, "ar", "Text", "إجمالي الكتاكيت (حسب البيض الموضوع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell161, "Default", "Weight", 3.7298886243409668D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell162, "Default", "Text", "xrTableCell55"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell162, "Default", "Weight", 0.96804258824665179D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "Default", "Text", "Cum.Hatchability\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "Default", "Weight", 2.3580105145213159D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell164, "Default", "Text", "xrTableCell58"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell164, "Default", "Weight", 0.61198765819320688D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell165, "Default", "Text", "Chicks Rejected "),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell165, "ar", "Text", "الكتاكيت المرفوضة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell165, "Default", "Weight", 3.9300148403260931D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell166, "Default", "Text", "xrTableCell61"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell166, "Default", "Weight", 1.0199790512640092D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell167, "Default", "Text", "Cum A Grade Chicks"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell167, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell167, "Default", "Weight", 2.3580112512278339D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell168, "Default", "Text", "xrTableCell64"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell168, "Default", "Weight", 0.61198782863943679D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell169, "Default", "Text", "Sold Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell169, "ar", "Text", "البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell169, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell17, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell17, "Default", "Text", "xrTableCell44"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell17, "Default", "Weight", 2.4546151655719539D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell170, "Default", "Text", "Hatching Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell170, "ar", "Text", "بيض التفريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell170, "Default", "Weight", 2.1741049194335935D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell171, "Default", "Text", "xrTableCell57"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell171, "Default", "Weight", 1.0199789428710935D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell172, "Default", "Text", "Table Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell172, "ar", "Text", "بيض المائدة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell172, "Default", "Weight", 2.1741061401367188D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell173, "Default", "Text", "xrTableCell63"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell173, "Default", "Weight", 1.0199783325195309D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell174, "Default", "Text", "Eggs Sent To Offal"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell174, "ar", "Text", "البيض المرسل للنفايات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell174, "Default", "Weight", 2.1741055297851561D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell175, "Default", "Text", "xrTableCell65"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell175, "Default", "Weight", 1.0199789428710937D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell176, "Default", "Text", "Total Egg Sold"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell176, "ar", "Text", "إجمالي البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell176, "Default", "Weight", 3.9300151455019088D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell177, "Default", "Text", "xrTableCell68"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell177, "Default", "Weight", 1.0199775253849486D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell178, "Default", "Text", "Estimated Chicks (as per eggs sold)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell178, "ar", "Text", "الكتاكيت المتوقعة (حسب البيض المباع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell178, "Default", "Weight", 2.3580105416325194D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell179, "Default", "Text", "xrTableCell71"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell179, "Default", "Weight", 0.61198759812097858D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell18, "Default", "Text", "xrTableCell18"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell18, "Default", "Weight", 1.3133701531527884D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell180, "Default", "Text", "Balance Stock of Hatching Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell180, "Default", "Weight", 3.9300192275046211D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell181, "Default", "Text", "xrTableCell74"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell181, "Default", "Weight", 1.0199771102078765D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell182, "Default", "Text", "Estimated Chicks (as per Stock of H.E.)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell182, "Default", "Weight", 3.9300146498679474D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell183, "Default", "Text", "xrTableCell77"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell183, "Default", "Weight", 1.0199768050320337D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell184, "Default", "Text", "Actual Hatchability of balance eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell184, "Default", "Weight", 2.3580101087593945D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell185, "Default", "Text", "xrTableCell80"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell185, "Default", "Weight", 0.61198551538732193D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell186, "Default", "Text", "Cum.Chicks(Actual + Estimated)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell186, "ar", "Text", "إجمالي الكتاكيت (الفعلي + المتوقع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell186, "Default", "Weight", 2.3580099851348097D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell187, "Default", "Text", "xrTableCell83"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell187, "Default", "Weight", 0.61198597214876749D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "Default", "Text", "Cum.Received Eggs\t                                                               " +
                     "                 \t\t\t\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "ar", "Text", "اجمالي البيض اامستلم (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell189, "Default", "Text", "xrTableCell73"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell189, "Default", "Weight", 2.6562463378906251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "Text", "Depletion Date"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "ar", "Text", "تاريخ الاستنفاد"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell190, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell190, "Default", "Weight", 1.0587030039503391D),
@@ -7420,17 +7587,20 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Text", "xrTableCell2"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 0.77869522094726573D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Text", "xrTableCell20"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell200, "Default", "Weight", 3.2715185865359864D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell201, "Default", "Weight", 3.1555614915890131D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell202, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell202, "Default", "Weight", 1.0669812154530405D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "Default", "Text", "Cum.Egg Rejected   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "ar", "Text", "إجمالي البيض المرفوض (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "Default", "Weight", 3.2715181786461622D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell204, "Default", "Weight", 3.1555625098304D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell205, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell205, "Default", "Weight", 1.0669822527465413D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "Default", "Text", "Cum.Final Hatching Eggs  HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "ar", "Text", "إجمالي بيض التفريخ النهائي (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell207, "Default", "Text", "xrTableCell98"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell207, "Default", "Weight", 2.6562475585937504D),
@@ -7443,27 +7613,32 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell211, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell211, "Default", "Weight", 0.64018936505255231D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell212, "Default", "Text", "1 - Cum.Chicks (Actual)   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell212, "ar", "Text", "1- إجمالي الكتاكيت الفعلية (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell212, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell213, "Default", "Text", "xrTableCell104"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell213, "Default", "Weight", 2.6562475585937504D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell214, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell214, "Default", "Weight", 1.0126444368681464D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Text", "Cum.Hatchability\t\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Weight", 3.2715204484710934D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell216, "Default", "Text", "xrTableCell107"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell216, "Default", "Weight", 3.155561460708594D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell217, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell217, "Default", "Weight", 0.64018936200916465D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "Default", "Text", "Cum.Chicks Rejected   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "ar", "Text", "إجمالي الكتاكيت المرفوضة (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell219, "Default", "Text", "xrTableCell85"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell219, "Default", "Weight", 2.6562487792968748D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Text", "No. Of Females Transferred"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "ar", "Text", "عدد الإناث المنقولة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell220, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell220, "Default", "Weight", 1.0669817949829319D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Text", "Cum.A grade Chicks(Actual)\tHH                                                    " +
                     "                                   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (الفعلي - حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell222, "Default", "Text", "xrTableCell94"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell222, "Default", "Weight", 2.6562487792968748D),
@@ -7488,56 +7663,53 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell235, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell235, "Default", "Weight", 1.0669817949829945D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "Default", "Text", "2 - Estimated Chicks (as per egg sold)\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "ar", "Text", "2- الكتاكيت المتوقعة حسب البيض المباع\tHH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell237, "Default", "Text", "xrTableCell118"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell237, "Default", "Weight", 2.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell238, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell238, "Default", "Weight", 0.64018969913171286D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell239, "Default", "Weight", 2.75385498046875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Text", "Standard"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "ar", "Text", "القياسي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Weight", 1.1573937988281244D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell240, "Default", "Weight", 2.6562499999999991D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell241, "Default", "Text", ""),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell241, "Default", "Weight", 1.0669836641906925D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell242, "Default", "Text", "3 - Estimated Chicks (as per Stock of H.E) HH"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell242, "Default", "Weight", 2.7538543701171871D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell243, "Default", "Text", "xrTableCell124"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell243, "Default", "Weight", 2.6562451171875D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell244, "Default", "Text", ""),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell244, "Default", "Weight", 1.0669848848942747D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell245, "Default", "Text", "Cum.Chicks    HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell245, "ar", "Text", "اجمالي الكتاكيت (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell245, "Default", "Weight", 2.7538555908203128D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell246, "Default", "Text", "xrTableCell127"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell246, "Default", "Weight", 2.6562475585937495D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell247, "Default", "Text", ""),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell247, "Default", "Weight", 0.64019011676467819D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell248, "Default", "Weight", 2.7538555908203124D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell249, "Default", "Weight", 2.6562475585937495D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Text", "No. Of Females Depleted"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "ar", "Text", "عدد الإناث المستنفدة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell250, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell250, "Default", "Weight", 0.64019156592056592D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell251, "Default", "Text", "Cum Total Eggs\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell251, "ar", "Text", "إجمالي البيض (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell251, "Default", "Weight", 2.4307009631042544D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell252, "Default", "Text", "xrTableCell252"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell252, "Default", "Weight", 1.0437477856519182D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Text", "Cum Total Chicks HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "ar", "Text", "إجمالي الكتاكيت (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Weight", 2.1901325344312506D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Text", "Rejected Eggs        HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "ar", "Text", "البيض المرفوض (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Weight", 2.4307000443207305D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell255, "Default", "Text", "xrTableCell255"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell255, "Default", "Weight", 1.0437481671036797D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "Default", "Text", "Rejected Chicks HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "ar", "Text", "الكتاكيت المرفوضة (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "Default", "Weight", 2.1901324582539217D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "Default", "Text", " Cum Hatching Eggs\t      HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "ar", "Text", "إجمالي بيض التفريخ (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "Default", "Weight", 2.4307003494964992D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell258, "Default", "Text", "xrTableCell258"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell258, "Default", "Weight", 1.0437474804582005D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "Default", "Text", "Cum A Grade Chicks HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "Default", "Weight", 2.1901329160175744D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Text", "xrTableCell26"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "Default", "Text", "Cum.Total Hatchability\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "Default", "Weight", 2.43069986458672D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Text", "xrTableCell261"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Weight", 1.043747789146696D),
@@ -7554,16 +7726,21 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell268, "Default", "Text", "xrTableCell268"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell268, "Default", "Weight", 1.294700001125348D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "Default", "Text", "Actual"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "ar", "Text", "فعلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "Default", "Weight", 1.0346258557373063D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Text", "Cum Eggs received from parent farm"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Weight", 3.930016784667969D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "ar", "Text", "البيض المستلم من القطيع الأم"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Weight", 3.5244534549293998D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "Default", "Text", "Estimated"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "ar", "Text", "متوقع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "Default", "Weight", 1.2947003998984516D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Text", "Depletion Flock Age"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "ar", "Text", "عمر القطيع عند الاستنفاد"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Text", "xrTableCell29"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Text", "Crop #"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "ar", "Text", "رقم المحصول"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Weight", 1.6866295414570942D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Text", "xrTableCell45"),
@@ -7572,6 +7749,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Text", "xrTableCell46"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Weight", 2.4546144772621314D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Text", "Rejected Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "ar", "Text", "البيض المرفوض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Text", "xrTableCell33"),
@@ -7583,115 +7761,163 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Text", "xrTableCell35"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Weight", 2.4546144772621314D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Text", "xrTableCell36"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Weight", 1.0699838256835941D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Weight", 1.4755471554221635D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Text", "Deformed"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "ar", "Text", "مشوه"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Weight", 1.3792906160046687D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Text", "xrTableCell38"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Weight", 1.4715203886340031D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Text", "Crack"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "ar", "Text", "متشقق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Weight", 1.3792903137207031D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Text", "xrTableCell4"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Weight", 1.3133704585429058D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Text", "Broken"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "ar", "Text", "مكسور"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Weight", 1.3792906188964844D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Text", "xrTableCell41"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Weight", 1.4715219116210938D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "Text", "xrTableCell42"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "Weight", 1.4715197753906248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "Default", "Text", "Total Rejected"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "ar", "Text", "إجمالي البيض المرفوض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "Default", "Weight", 3.5284786987304693D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Text", "Other"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "ar", "Text", "أسباب أخرى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Weight", 1.3792906188964844D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "Text", "xrTableCell45"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "Weight", 1.4715216064453125D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell46, "Default", "Text", "Balance Of Hatching Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell46, "ar", "Text", "رصيد بيض التفريخ المتبقي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell46, "Default", "Weight", 2.1170869608048144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Text", "xrTableCell47"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Weight", 1.4715219116210938D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "Default", "Text", "Sold Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "ar", "Text", "البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Text", "xrTableCell49"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Weight", 0.8829130391951856D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Text", "Transfer Date"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "تاريخ النقل"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Text", "Eggs Setted in Hatcheries"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "ar", "Text", "البيض الموضوع في ماكينات التفريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Weight", 2.1170869608048144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Text", "Hatching Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "ar", "Text", "بيض التفريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Weight", 1.7725704956054686D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Text", "xrTableCell52"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Weight", 0.8829130391951856D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Text", "Cum. Chicks(as per egg set)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "ar", "Text", "إجمالي الكتاكيت (حسب البيض الموضوع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Weight", 3.3487969421471009D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Text", "Table Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "ar", "Text", "بيض المائدة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Weight", 1.7725662231445314D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Text", "xrTableCell55"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Weight", 1.3965872377449542D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Text", "Cum.Hatchability\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Weight", 2.1170869608048144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Text", "xrTableCell57"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Weight", 1.4715164184570313D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Text", "xrTableCell58"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Weight", 0.8829130391951856D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "Default", "Text", "Chicks Rejected "),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "ar", "Text", "الكتاكيت المرفوضة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "Default", "Weight", 3.5284786987304684D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "Text", "Flock"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "ar", "Text", "القطيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "Weight", 1.6866297236038839D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell60, "Default", "Text", "Eggs Sent To Offal"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell60, "ar", "Text", "البيض المرسل للنفايات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell60, "Default", "Weight", 1.7725704956054689D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Text", "xrTableCell61"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Weight", 1.4715200805664062D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Text", "Cum A Grade Chicks"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Weight", 2.1170875387069747D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Text", "xrTableCell63"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Weight", 1.4715206909179686D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Text", "xrTableCell64"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Weight", 0.882912461293025D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Text", "xrTableCell65"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Weight", 1.4715200805664062D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Text", "Total Egg Sold"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "ar", "Text", "إجمالي البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Weight", 3.5284786987304688D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Text", "Cum.Received Eggs\t                                                               " +
                     "                 \t\t\t\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "ar", "Text", "إجمالي البيض المستلم"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell68, "Default", "Text", "xrTableCell68"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell68, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell68, "Default", "Weight", 1.4715200805664059D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "Default", "Text", "Estimated Chicks (as per eggs sold)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "ar", "Text", "الكتاكيت المتوقعة (حسب البيض المباع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "Default", "Weight", 2.1170892867082878D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Text", "xrTableCell7"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 1.3133702763961161D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "Default", "Text", "Cum.Chicks Rejected   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "ar", "Text", "إجمالي الكتاكيت المرفوضة (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "Default", "Weight", 3.7708337402343748D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell71, "Default", "Text", "xrTableCell71"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell71, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell71, "Default", "Weight", 0.88291071329171222D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell72, "Default", "Text", "Balance Stock of Hatching Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell72, "ar", "Text", "رصيد بيض التفريخ في المخزون"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell72, "Default", "Weight", 3.5284829711914059D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell73, "Default", "Text", "xrTableCell73"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell73, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell73, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell74, "Default", "Text", "xrTableCell74"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell74, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell74, "Default", "Weight", 1.4715164184570313D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell75, "Default", "Text", "Estimated Chicks (as per Stock of H.E.)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell75, "ar", "Text", "الكتاكيت المتوقعة (حسب رصيد بيض التفريخ)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell75, "Default", "Weight", 3.5284744262695313D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell76, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell76, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell77, "Default", "Text", "xrTableCell77"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell77, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell77, "Default", "Weight", 1.4715237426757812D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell78, "Default", "Text", "Actual Hatchability of balance eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell78, "ar", "Text", "معدل الفقس الفعلي للبيض المتبقي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell78, "Default", "Weight", 2.1170885515816944D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell79, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell79, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Weight", 2.41799225717714D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell80, "Default", "Text", "xrTableCell80"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell80, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell80, "Default", "Weight", 0.88291144841830538D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell81, "Default", "Text", "Cum.Chicks(Actual + Estimated)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell81, "ar", "Text", "إجمالي الكتاكيت (الفعلي + المتوقع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell81, "Default", "Weight", 2.1170879335038819D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell82, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell82, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell83, "Default", "Text", "xrTableCell83"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell83, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell83, "Default", "Weight", 0.88291206649611809D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell84, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell84, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell85, "Default", "Text", "xrTableCell85"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell85, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell85, "Default", "Weight", 1.4988537597656248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell86, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell86, "Default", "Weight", 1.4988537597656251D),
@@ -7699,10 +7925,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell87, "Default", "Weight", 3.7708349609375D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "Default", "Text", "Cum.A grade Chicks(Actual)\tHH                                                    " +
                     "                                   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (الفعلي - حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell89, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell89, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Text", "xrTableCell9"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Weight", 3.7708337402343748D),
@@ -7711,23 +7939,27 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell92, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell92, "Default", "Weight", 1.4988537597656248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell93, "Default", "Text", "Cum.Egg Rejected   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell93, "ar", "Text", "إجمالي البيض المرفوض (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell93, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell94, "Default", "Text", "xrTableCell94"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell94, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell94, "Default", "Weight", 1.4988525390624998D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell95, "Default", "Text", ""),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell95, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell95, "Default", "Weight", 1.4988525390624998D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell96, "Default", "Text", "Cum.Final Hatching Eggs  HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell96, "ar", "Text", "إجمالي بيض التفريخ النهائي (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell96, "Default", "Weight", 3.7708349609375D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell97, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell97, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell98, "Default", "Text", "xrTableCell98"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell98, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell98, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell99, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell99, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow1, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow10, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow100, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow101, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow102, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow103, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow104, "Default", "Weight", 1D),
@@ -7805,9 +8037,6 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow74, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow75, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow76, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow77, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow78, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow79, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow8, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow80, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow81, "Default", "Weight", 1D),
@@ -7827,12 +8056,10 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow94, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow95, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow96, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow97, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow98, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow99, "Default", "Weight", 1D)});
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow97, "Default", "Weight", 1D)});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.PageHeight = 1169;
-            this.PageWidth = 1654;
+            this.PageHeight = 1654;
+            this.PageWidth = 1169;
             groupLayoutItem1.BorderVisible = false;
             groupLayoutItem1.Items.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignature, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -7966,9 +8193,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable76)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable77)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable78)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable79)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable80)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable81)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable82)).EndInit();
@@ -7987,10 +8211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable95)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable96)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable97)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable98)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable99)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable100)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable101)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable106)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable105)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable104)).EndInit();
@@ -8443,18 +8664,6 @@
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow76;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell178;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell179;
-        private DevExpress.XtraReports.UI.XRTable xrTable77;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow77;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell180;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell181;
-        private DevExpress.XtraReports.UI.XRTable xrTable78;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow78;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell182;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell183;
-        private DevExpress.XtraReports.UI.XRTable xrTable79;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow79;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell184;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell185;
         private DevExpress.XtraReports.UI.XRTable xrTable80;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow80;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell186;
@@ -8527,22 +8736,10 @@
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow97;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell236;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell237;
-        private DevExpress.XtraReports.UI.XRTable xrTable98;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow98;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell239;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell240;
-        private DevExpress.XtraReports.UI.XRTable xrTable99;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow99;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell242;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell243;
         private DevExpress.XtraReports.UI.XRTable xrTable100;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow100;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell245;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell246;
-        private DevExpress.XtraReports.UI.XRTable xrTable101;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow101;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell248;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell249;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell190;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell143;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell193;
@@ -8561,9 +8758,6 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell232;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell235;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell238;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell241;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell244;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell247;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell250;
         private DevExpress.XtraReports.UI.SubBand SubBand7;
         private DevExpress.XtraReports.UI.XRTable xrTable102;
@@ -8639,7 +8833,16 @@
         private DevExpress.XtraReports.UI.CalculatedField EstChicks_PerEgg_HH_1;
         private DevExpress.XtraReports.UI.CalculatedField EStChicks_PerStockHE_HH_1;
         private DevExpress.XtraReports.UI.CalculatedField CumChicks_ActEst_HH_1;
-        private DevExpress.XtraReports.UI.CalculatedField calculatedField2;
-        private DevExpress.XtraReports.UI.CalculatedField calculatedField3;
+        private DevExpress.XtraReports.UI.CalculatedField SettedEggs_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField RejChicks_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField GradeA_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField CumChicks_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField CumHatchability_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField SoldHatEggs_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField SoldTableEggs_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField EggsToOffal_1_FromPartA;
+        private DevExpress.XtraReports.UI.CalculatedField TotalEggSold_1_FromPartA;
+        private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
+        private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
     }
 }
