@@ -297,7 +297,10 @@
             this.crossTabDataCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabHeaderCell3 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabHeaderCell6 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_HT_WeeklyHatDetails_Chicks = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub3 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_HT_WeeklyHatDetails_Vac = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
@@ -365,9 +368,6 @@
             this.crossTabHeaderStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_HT_WeeklyHatDetails_Chicks = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SR_HT_WeeklyHatDetails_Vac = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
@@ -598,6 +598,7 @@
             // crossTabHeaderCell2
             // 
             this.crossTabHeaderCell2.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell2.BorderWidth = 1.4F;
             this.crossTabHeaderCell2.ColumnIndex = 0;
             this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
             this.crossTabHeaderCell2.RowIndex = 0;
@@ -606,6 +607,7 @@
             // crossTabDataCell2
             // 
             this.crossTabDataCell2.BackColor = System.Drawing.Color.White;
+            this.crossTabDataCell2.BorderWidth = 1.4F;
             this.crossTabDataCell2.ColumnIndex = 1;
             this.crossTabDataCell2.Name = "crossTabDataCell2";
             this.crossTabDataCell2.RowIndex = 1;
@@ -613,6 +615,7 @@
             // crossTabHeaderCell4
             // 
             this.crossTabHeaderCell4.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell4.BorderWidth = 1.4F;
             this.crossTabHeaderCell4.ColumnIndex = 1;
             this.crossTabHeaderCell4.Name = "crossTabHeaderCell4";
             this.crossTabHeaderCell4.RowIndex = 0;
@@ -621,6 +624,7 @@
             // crossTabHeaderCell5
             // 
             this.crossTabHeaderCell5.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell5.BorderWidth = 1.4F;
             this.crossTabHeaderCell5.ColumnIndex = 0;
             this.crossTabHeaderCell5.Name = "crossTabHeaderCell5";
             this.crossTabHeaderCell5.RowIndex = 1;
@@ -706,12 +710,28 @@
             this.crossTabHeaderCell6.RowIndex = 0;
             this.crossTabHeaderCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
+            // SubBand1
+            // 
+            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_HT_WeeklyHatDetails_Chicks});
+            this.SubBand1.Name = "SubBand1";
+            // 
+            // SR_HT_WeeklyHatDetails_Chicks
+            // 
+            this.SR_HT_WeeklyHatDetails_Chicks.Name = "SR_HT_WeeklyHatDetails_Chicks";
+            this.SR_HT_WeeklyHatDetails_Chicks.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_WeeklyHatDetails_Chicks.SR_HT_WeeklyHatDetails_Chicks();
+            // 
             // ReportFooterSub3
             // 
             this.ReportFooterSub3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.SR_HT_WeeklyHatDetails_Vac});
             this.ReportFooterSub3.Name = "ReportFooterSub3";
             this.ReportFooterSub3.Scripts.OnBeforePrint = "ReportFooterSub3_BeforePrint";
+            // 
+            // SR_HT_WeeklyHatDetails_Vac
+            // 
+            this.SR_HT_WeeklyHatDetails_Vac.Name = "SR_HT_WeeklyHatDetails_Vac";
+            this.SR_HT_WeeklyHatDetails_Vac.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_WeeklyHatDetails_Vac.SR_HT_WeeklyHatDetails_Vac();
             // 
             // ReportFooterSub1
             // 
@@ -1588,22 +1608,6 @@
             this.crossTabTotalStyle2.Name = "crossTabTotalStyle2";
             this.crossTabTotalStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // SubBand1
-            // 
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_HT_WeeklyHatDetails_Chicks});
-            this.SubBand1.Name = "SubBand1";
-            // 
-            // SR_HT_WeeklyHatDetails_Chicks
-            // 
-            this.SR_HT_WeeklyHatDetails_Chicks.Name = "SR_HT_WeeklyHatDetails_Chicks";
-            this.SR_HT_WeeklyHatDetails_Chicks.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_WeeklyHatDetails_Chicks.SR_HT_WeeklyHatDetails_Chicks();
-            // 
-            // SR_HT_WeeklyHatDetails_Vac
-            // 
-            this.SR_HT_WeeklyHatDetails_Vac.Name = "SR_HT_WeeklyHatDetails_Vac";
-            this.SR_HT_WeeklyHatDetails_Vac.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_WeeklyHatDetails_Vac.SR_HT_WeeklyHatDetails_Vac();
-            // 
             // SR_HT_WeeklyHatDetails
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1665,6 +1669,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Text", "Data Type"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "ar", "Text", "نوع البيانات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -1749,6 +1754,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(237.9167F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(157.8997F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "الي: [?DateTo!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(949.6699F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "SizeF", new System.Drawing.SizeF(209.33F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "TextFormatString", "Page {0} of {1}"),

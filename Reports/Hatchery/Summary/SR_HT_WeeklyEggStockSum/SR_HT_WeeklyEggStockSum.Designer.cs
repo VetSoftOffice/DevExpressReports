@@ -468,7 +468,7 @@
             this.tdCredit.StylePriority.UseBorders = false;
             this.tdCredit.StylePriority.UseFont = false;
             this.tdCredit.StylePriority.UseTextAlignment = false;
-            this.tdCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft;
+            this.tdCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
             // 
             // xrTableCell1
             // 
@@ -483,7 +483,7 @@
             this.xrTableCell1.StylePriority.UseBorders = false;
             this.xrTableCell1.StylePriority.UseFont = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
-            this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft;
             // 
             // xrTableCell8
             // 
@@ -536,7 +536,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[St_RejBroken]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[St_RejBroken]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
             this.xrTableCell34.StylePriority.UseBorders = false;
@@ -550,7 +551,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejBroken]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejBroken]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
             this.xrTableCell35.StylePriority.UseBorders = false;
@@ -564,7 +566,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[St_RejOther]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[St_RejOther]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
             this.xrTableCell36.StylePriority.UseBorders = false;
@@ -578,7 +581,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejOther]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RejOther]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
             this.xrTableCell37.StylePriority.UseBorders = false;
@@ -592,7 +596,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SellToLogistic]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SellToLogistic]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
             this.xrTableCell38.StylePriority.UseBorders = false;
@@ -606,7 +611,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell39.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SellOfHatEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SellOfHatEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
             this.xrTableCell39.StylePriority.UseBorders = false;
@@ -620,7 +626,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell40.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SendToCollage]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SendToCollage]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell40.Multiline = true;
             this.xrTableCell40.Name = "xrTableCell40";
             this.xrTableCell40.StylePriority.UseBorders = false;
@@ -634,7 +641,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell41.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EggsToOffal]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell41.Multiline = true;
             this.xrTableCell41.Name = "xrTableCell41";
             this.xrTableCell41.StylePriority.UseBorders = false;
@@ -648,7 +656,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TransToHatchery]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TransToHatchery]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell42.Multiline = true;
             this.xrTableCell42.Name = "xrTableCell42";
             this.xrTableCell42.StylePriority.UseBorders = false;
@@ -662,7 +671,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell43.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SettedEggs]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell43.Multiline = true;
             this.xrTableCell43.Name = "xrTableCell43";
             this.xrTableCell43.StylePriority.UseBorders = false;
@@ -676,7 +686,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell44.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalStock]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalStock]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell44.Multiline = true;
             this.xrTableCell44.Name = "xrTableCell44";
             this.xrTableCell44.StylePriority.UseBorders = false;
@@ -1484,7 +1495,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell49.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([St_RejBroken])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([St_RejBroken])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell49.Multiline = true;
             this.xrTableCell49.Name = "xrTableCell49";
             this.xrTableCell49.StylePriority.UseBorders = false;
@@ -1500,7 +1512,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell50.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejBroken])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejBroken])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell50.Multiline = true;
             this.xrTableCell50.Name = "xrTableCell50";
             this.xrTableCell50.StylePriority.UseBorders = false;
@@ -1516,7 +1529,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell51.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([St_RejOther])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([St_RejOther])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell51.Multiline = true;
             this.xrTableCell51.Name = "xrTableCell51";
             this.xrTableCell51.StylePriority.UseBorders = false;
@@ -1532,7 +1546,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell52.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejOther])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejOther])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell52.Multiline = true;
             this.xrTableCell52.Name = "xrTableCell52";
             this.xrTableCell52.StylePriority.UseBorders = false;
@@ -1548,7 +1563,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell53.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SellToLogistic])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SellToLogistic])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell53.Multiline = true;
             this.xrTableCell53.Name = "xrTableCell53";
             this.xrTableCell53.StylePriority.UseBorders = false;
@@ -1564,7 +1580,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell54.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SellOfHatEggs])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SellOfHatEggs])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell54.Multiline = true;
             this.xrTableCell54.Name = "xrTableCell54";
             this.xrTableCell54.StylePriority.UseBorders = false;
@@ -1580,7 +1597,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell55.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SendToCollage])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SendToCollage])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell55.Multiline = true;
             this.xrTableCell55.Name = "xrTableCell55";
             this.xrTableCell55.StylePriority.UseBorders = false;
@@ -1596,7 +1614,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell56.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([EggsToOffal])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([EggsToOffal])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell56.Multiline = true;
             this.xrTableCell56.Name = "xrTableCell56";
             this.xrTableCell56.StylePriority.UseBorders = false;
@@ -1612,7 +1631,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell57.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TransToHatchery])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TransToHatchery])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell57.Multiline = true;
             this.xrTableCell57.Name = "xrTableCell57";
             this.xrTableCell57.StylePriority.UseBorders = false;
@@ -1628,7 +1648,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SettedEggs])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([SettedEggs])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell58.Multiline = true;
             this.xrTableCell58.Name = "xrTableCell58";
             this.xrTableCell58.StylePriority.UseBorders = false;
@@ -1644,7 +1665,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell59.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalStock])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalStock])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell59.Multiline = true;
             this.xrTableCell59.Name = "xrTableCell59";
             this.xrTableCell59.StylePriority.UseBorders = false;
@@ -1691,7 +1713,8 @@
             // xrTableCell60
             // 
             this.xrTableCell60.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejWhole_CF])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejWhole_CF])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell60.Multiline = true;
             this.xrTableCell60.Name = "xrTableCell60";
             this.xrTableCell60.StylePriority.UseFont = false;
@@ -1703,7 +1726,8 @@
             // xrTableCell61
             // 
             this.xrTableCell61.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejBroken_CF])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejBroken_CF])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell61.Multiline = true;
             this.xrTableCell61.Name = "xrTableCell61";
             this.xrTableCell61.StylePriority.UseFont = false;
@@ -1715,7 +1739,8 @@
             // xrTableCell62
             // 
             this.xrTableCell62.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejOther_CF])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([RejOther_CF])"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.xrTableCell62.Multiline = true;
             this.xrTableCell62.Name = "xrTableCell62";
             this.xrTableCell62.StylePriority.UseFont = false;
