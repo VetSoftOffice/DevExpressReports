@@ -121,16 +121,37 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>
-private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
-     XRCrossTabCell cell = sender as XRCrossTabCell;
-
-    if (string.IsNullOrWhiteSpace(cell.Text))
+    <value>decimal distinctSum = 0;
+int distinctCount = 0;
+private void xrCrossTab2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     var table = (this.DataSource as DataSet)?.Tables["SR_HT_WeeklyHatPerf"];
+    if (table != null)
     {
-        cell.Text = "0.00";
+        distinctCount = table.AsEnumerable()
+                             .Select(r =&gt; r.Field&lt;string&gt;("HatcheryCode"))
+                             .Distinct()
+                             .Count();
     }
-   
+    distinctSum = 0; // reset sum at start of report
+}
 
+private void crossTabDataCell4_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    XRControl cell = (XRControl)sender;
+    decimal hatPerf = Convert.ToDecimal(GetCurrentColumnValue("HatPerf"));
+    decimal result = (distinctCount &gt; 0) ? (hatPerf / distinctCount) : 0;
+
+    // display the per-cell result
+    cell.Text = result.ToString("0.00");
+
+    // accumulate sum (for the total cell)
+    distinctSum += result;
+}
+
+private void crossTabTotalCell22_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    XRControl cell = (XRControl)sender;
+
+    // show accumulated sum in the CrossTab total cell
+    cell.Text = distinctSum.ToString("0.00");
 }
 </value>
   </data>
