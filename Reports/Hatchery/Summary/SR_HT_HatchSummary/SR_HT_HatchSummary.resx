@@ -128,18 +128,18 @@
   </data>
   <data name="StrDay.Expression" xml:space="preserve">
     <value>Iif(
-    GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 1, 'Sunday', 
+    GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 1, 'Sun', 
     Iif(
-        GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 2, 'Monday',
+        GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 2, 'Mon',
         Iif(
-            GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 3, 'Tuesday', 
+            GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 3, 'Tue', 
             Iif(
-                GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 4, 'Wednesday', 
+                GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 4, 'Wed', 
                 Iif(
-                    GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 5, 'Thursday', 
+                    GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 5, 'Thu', 
                     Iif(
-                        GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 6, 'Friday', 
-                        'Saturday'
+                        GetDayOfWeek([SR_HT_HatchSummary.RegDate]) = 6, 'Fri', 
+                        'Sat'
                     )
                 )
             )
@@ -149,63 +149,127 @@
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using DevExpress.XtraReports.UI;
-using System.Collections;
-using System.Collections.Generic;
+    <value>// Global variables (define ONCE at the top)
+decimal settedEggs = 0;
+decimal selChicks = 0;
+decimal percentage = 0;
 
-public void HideSubbandIfFeedMillLessThanTwo(SubBand band)
-{
-    XtraReport report = band.Report as XtraReport;
-    if (report != null)
-    {
-        IEnumerable dataSource = report.DataSource as IEnumerable;
-        if (dataSource != null)
-        {
-            int feedMillCount = CountDistinctFeedMills(dataSource);
-            band.Visible = (feedMillCount &gt;= 2);
-        }
-        else
-        {
-            band.Visible = false;
-        }
-    }
-    else
-    {
-        band.Visible = false;
-    }
+decimal settedEggs_Sum = 0;
+decimal selChicks_Sum = 0;
+decimal percentage2 = 0;
+
+decimal deadChicks = 0;
+decimal cullsChicks = 0;
+decimal totalDeadAndCulls = 0;
+decimal grandTotalDeadAndCulls = 0;
+
+decimal rejChicks = 0;
+decimal totalRejSel = 0;
+decimal grandTotalRejSel = 0;
+
+decimal grandTotalSettedEggs = 0;
+decimal grandTotalRejectChicks = 0;   // renamed for clarity
+decimal grandTotalChicksHatchery = 0;
+decimal grandTotalPercent = 0; // declare this at class level
+decimal rowPercent = 0;        // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
+
+private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = (XRTableCell)sender;
+
+    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    selChicks  = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+
+    percentage = (settedEggs &gt; 0) ? (selChicks / settedEggs) * 100 : 0;
+
+    cell.Text = percentage.ToString("0.##");
 }
 
-private int CountDistinctFeedMills(IEnumerable dataSource)
-{
-    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();
-    foreach (object item in dataSource)
-    {
-        object feedMillValue = GetFieldValue(item, "FeedMill");
-        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))
-        {
-            distinctFeedMills.Add(feedMillValue);
-        }
-    }
-    return distinctFeedMills.Count;
+private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+    deadChicks  = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+    cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+
+    totalDeadAndCulls = deadChicks + cullsChicks;
+    cell.Text = totalDeadAndCulls.ToString("N2");
+
+    grandTotalDeadAndCulls += totalDeadAndCulls;
 }
 
-private object GetFieldValue(object item, string fieldName)
-{
-    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);
-    if (property != null)
-    {
-        return property.GetValue(item, null);
-    }
-    return null;
+private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+    settedEggs  = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    deadChicks  = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+    cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+
+    rejChicks = deadChicks + cullsChicks;
+    decimal rejPercent = (settedEggs &gt; 0) ? (rejChicks / settedEggs) * 100 : 0;
+
+    cell.Text = rejPercent.ToString("N2");
+
+    // accumulate totals
+    grandTotalSettedEggs += settedEggs;
+    grandTotalRejectChicks += rejChicks;
 }
 
-private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
-{
-    SubBand subBand = ReportFooterSub3 as SubBand;
-    if (subBand != null)
+private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+    rejChicks = Convert.ToDecimal(GetCurrentColumnValue("RejChicks"));
+    selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+
+    totalRejSel = rejChicks + selChicks;
+    cell.Text = totalRejSel.ToString("N2");
+
+    grandTotalRejSel += totalRejSel;
+}
+
+private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+   XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values
+    decimal rejChicks = Convert.ToDecimal(GetCurrentColumnValue("RejChicks"));
+    decimal selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+    decimal settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+
+    // ChickHatchery = RejChicks + SelChicks
+    decimal chickHatchery = rejChicks + selChicks;
+
+    // Calculate percentage
+    decimal percent = 0;
+    if (settedEggs &gt; 0)
     {
-        HideSubbandIfFeedMillLessThanTwo(subBand);
+        percent = (chickHatchery / settedEggs) * 100;
     }
-}</value>
+     grandTotalPercent += percent ;
+    // Show with 2 decimal places
+    cell.Text = percent.ToString("N2");    
+     }
+
+// ---------------- FOOTER TOTAL CELLS ----------------
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    ((XRTableCell)sender).Text = grandTotalDeadAndCulls.ToString("N2");
+}
+
+private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    decimal totalRejectPercent = (grandTotalSettedEggs &gt; 0) 
+        ? (grandTotalRejectChicks / grandTotalSettedEggs) * 100 
+        : 0;
+    cell.Text = totalRejectPercent.ToString("N2");
+}
+
+private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    ((XRTableCell)sender).Text = grandTotalRejSel.ToString("N2");
+}
+
+private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+
+    cell.Text = grandTotalPercent.ToString("N2"); // show grand total percent
+    }
+</value>
   </data>
 </root>
