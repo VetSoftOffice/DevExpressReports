@@ -170,8 +170,9 @@ decimal grandTotalRejSel = 0;
 decimal grandTotalSettedEggs = 0;
 decimal grandTotalRejectChicks = 0;   // renamed for clarity
 decimal grandTotalChicksHatchery = 0;
-decimal grandTotalPercent = 0; // declare this at class level
-decimal rowPercent = 0;        // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
+decimal sumRowPercentages = 0m;
+int rowCount = 0;
+     // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
 
 private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = (XRTableCell)sender;
@@ -216,37 +217,41 @@ private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.Canc
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
 
-    rejChicks = Convert.ToDecimal(GetCurrentColumnValue("RejChicks"));
-    selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+    // Get the previously calculated RejChicks for this row
+    decimal deadChicks  = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+    decimal cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+    decimal rejChicks   = deadChicks + cullsChicks;
 
-    totalRejSel = rejChicks + selChicks;
+    // Get SelChicks from dataset
+    decimal selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+
+    // Equation: RejChicks + SelChicks
+    decimal totalRejSel = rejChicks + selChicks;
+
+    // Set value in cell
     cell.Text = totalRejSel.ToString("N2");
 
+    // Keep grand total for all rows
     grandTotalRejSel += totalRejSel;
 }
 
 private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-   XRTableCell cell = sender as XRTableCell;
+  XRTableCell cell = (XRTableCell)sender;
 
-    // Get current row values
-    decimal rejChicks = Convert.ToDecimal(GetCurrentColumnValue("RejChicks"));
-    decimal selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+    decimal rejChicks  = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+                       + Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+    decimal selChicks  = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
     decimal settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
 
-    // ChickHatchery = RejChicks + SelChicks
-    decimal chickHatchery = rejChicks + selChicks;
+    decimal rowPercentage = (settedEggs &gt; 0) ? (rejChicks + selChicks) / settedEggs * 100m : 0m;
 
-    // Calculate percentage
-    decimal percent = 0;
-    if (settedEggs &gt; 0)
-    {
-        percent = (chickHatchery / settedEggs) * 100;
-    }
-     grandTotalPercent += percent ;
-    // Show with 2 decimal places
-    cell.Text = percent.ToString("N2");    
-     }
+    cell.Text = rowPercentage.ToString("N2");
 
+    // accumulate for the footer average
+    sumRowPercentages += rowPercentage;
+    rowCount++;
+               }
+ 
 // ---------------- FOOTER TOTAL CELLS ----------------
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -258,6 +263,7 @@ private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.Canc
     decimal totalRejectPercent = (grandTotalSettedEggs &gt; 0) 
         ? (grandTotalRejectChicks / grandTotalSettedEggs) * 100 
         : 0;
+        
     cell.Text = totalRejectPercent.ToString("N2");
 }
 
@@ -266,10 +272,10 @@ private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
+        XRTableCell cell = (XRTableCell)sender;
 
-    cell.Text = grandTotalPercent.ToString("N2"); // show grand total percent
-    }
+    decimal avgPercentage = (rowCount &gt; 0) ? (sumRowPercentages / rowCount) : 0m;
+    cell.Text = avgPercentage.ToString("N2");         
 </value>
   </data>
 </root>

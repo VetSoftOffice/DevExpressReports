@@ -768,7 +768,7 @@
             this.xrTableCell55.StylePriority.UseBorders = false;
             this.xrTableCell55.StylePriority.UseFont = false;
             this.xrTableCell55.StylePriority.UseTextAlignment = false;
-            this.xrTableCell55.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell55.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell56
             // 
@@ -2894,7 +2894,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Weight", 1.4303254853440766D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Text", "xrTableCell55"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Weight", 0.97641375003724828D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Text", "xrTableCell56"),
