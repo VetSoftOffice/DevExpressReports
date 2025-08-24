@@ -102,6 +102,9 @@
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.xrCrossTab1 = new DevExpress.XtraReports.UI.XRCrossTab();
@@ -174,6 +177,22 @@
             this.crossTabTotalCell25 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell26 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell27 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell42 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell43 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell44 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell28 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell29 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell45 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell46 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell47 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell30 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell31 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell48 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell49 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabHeaderCell50 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell32 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.crossTabTotalCell33 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
+            this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
@@ -227,26 +246,7 @@
             this.Total_Res = new DevExpress.XtraReports.Parameters.Parameter();
             this.FeedMillCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.sR_HT_BreakOutTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_BreakOutTableAdapter();
-            this.crossTabHeaderCell42 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell43 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell44 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell28 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell29 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell45 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell46 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell47 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell30 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell31 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell48 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell49 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabHeaderCell50 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell32 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.crossTabTotalCell33 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -396,6 +396,34 @@
             this.xrLabel2});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
             // 
+            // xrLabel4
+            // 
+            this.xrLabel4.AutoWidth = true;
+            this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?DateeFrom != ?DateeTo")});
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.StylePriority.UseBorders = false;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeTo)\n")});
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.StylePriority.UseBorders = false;
+            this.xrLabel1.StylePriority.UseFont = false;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel2.CanGrow = false;
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeFrom)\n")});
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.StylePriority.UseBorders = false;
+            // 
             // ReportFooter
             // 
             this.ReportFooter.Name = "ReportFooter";
@@ -498,24 +526,24 @@
             this.crossTabTotalCell32,
             this.crossTabTotalCell33});
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25676F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.25677F)});
             crossTabColumnField1.FieldName = "SerialNo";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
@@ -528,6 +556,8 @@
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.Name = "xrCrossTab1";
+            this.xrCrossTab1.Parameters.AddRange(new DevExpress.XtraReports.UI.XRControlParameter[] {
+            new DevExpress.XtraReports.UI.XRControlParameter("IsRTL", this.IsRTL)});
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
             crossTabRowDefinition3.Visible = false;
@@ -603,10 +633,13 @@
             this.crossTabHeaderCell1.ColumnIndex = 0;
             this.crossTabHeaderCell1.Name = "crossTabHeaderCell1";
             this.crossTabHeaderCell1.RowIndex = 0;
+            this.crossTabHeaderCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabDataCell1
             // 
             this.crossTabDataCell1.ColumnIndex = 16;
+            this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
             this.crossTabDataCell1.Name = "crossTabDataCell1";
             this.crossTabDataCell1.RowIndex = 1;
             // 
@@ -616,6 +649,7 @@
             this.crossTabHeaderCell2.ColumnIndex = 16;
             this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
             this.crossTabHeaderCell2.RowIndex = 0;
+            this.crossTabHeaderCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell3
             // 
@@ -636,6 +670,8 @@
             // crossTabTotalCell1
             // 
             this.crossTabTotalCell1.ColumnIndex = 16;
+            this.crossTabTotalCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
             this.crossTabTotalCell1.Name = "crossTabTotalCell1";
             this.crossTabTotalCell1.RowIndex = 17;
             // 
@@ -645,6 +681,7 @@
             this.crossTabHeaderCell5.ColumnIndex = 1;
             this.crossTabHeaderCell5.Name = "crossTabHeaderCell5";
             this.crossTabHeaderCell5.RowIndex = 0;
+            this.crossTabHeaderCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell6
             // 
@@ -673,6 +710,7 @@
             this.crossTabHeaderCell8.ColumnIndex = 2;
             this.crossTabHeaderCell8.Name = "crossTabHeaderCell8";
             this.crossTabHeaderCell8.RowIndex = 0;
+            this.crossTabHeaderCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell9
             // 
@@ -701,6 +739,7 @@
             this.crossTabHeaderCell11.ColumnIndex = 3;
             this.crossTabHeaderCell11.Name = "crossTabHeaderCell11";
             this.crossTabHeaderCell11.RowIndex = 0;
+            this.crossTabHeaderCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell12
             // 
@@ -729,6 +768,7 @@
             this.crossTabHeaderCell14.ColumnIndex = 4;
             this.crossTabHeaderCell14.Name = "crossTabHeaderCell14";
             this.crossTabHeaderCell14.RowIndex = 0;
+            this.crossTabHeaderCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell15
             // 
@@ -745,6 +785,7 @@
             this.crossTabHeaderCell16.ColumnSpan = 13;
             this.crossTabHeaderCell16.Name = "crossTabHeaderCell16";
             this.crossTabHeaderCell16.RowIndex = 13;
+            this.crossTabHeaderCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabTotalCell5
             // 
@@ -758,6 +799,7 @@
             this.crossTabHeaderCell17.ColumnIndex = 5;
             this.crossTabHeaderCell17.Name = "crossTabHeaderCell17";
             this.crossTabHeaderCell17.RowIndex = 0;
+            this.crossTabHeaderCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell18
             // 
@@ -773,6 +815,7 @@
             this.crossTabHeaderCell19.ColumnSpan = 12;
             this.crossTabHeaderCell19.Name = "crossTabHeaderCell19";
             this.crossTabHeaderCell19.RowIndex = 12;
+            this.crossTabHeaderCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabTotalCell6
             // 
@@ -786,6 +829,7 @@
             this.crossTabHeaderCell20.ColumnIndex = 6;
             this.crossTabHeaderCell20.Name = "crossTabHeaderCell20";
             this.crossTabHeaderCell20.RowIndex = 0;
+            this.crossTabHeaderCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell21
             // 
@@ -814,6 +858,7 @@
             this.crossTabHeaderCell23.ColumnIndex = 7;
             this.crossTabHeaderCell23.Name = "crossTabHeaderCell23";
             this.crossTabHeaderCell23.RowIndex = 0;
+            this.crossTabHeaderCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell24
             // 
@@ -842,6 +887,7 @@
             this.crossTabHeaderCell26.ColumnIndex = 8;
             this.crossTabHeaderCell26.Name = "crossTabHeaderCell26";
             this.crossTabHeaderCell26.RowIndex = 0;
+            this.crossTabHeaderCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell27
             // 
@@ -870,6 +916,7 @@
             this.crossTabHeaderCell29.ColumnIndex = 9;
             this.crossTabHeaderCell29.Name = "crossTabHeaderCell29";
             this.crossTabHeaderCell29.RowIndex = 0;
+            this.crossTabHeaderCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell30
             // 
@@ -898,6 +945,7 @@
             this.crossTabHeaderCell32.ColumnIndex = 10;
             this.crossTabHeaderCell32.Name = "crossTabHeaderCell32";
             this.crossTabHeaderCell32.RowIndex = 0;
+            this.crossTabHeaderCell32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell33
             // 
@@ -926,6 +974,7 @@
             this.crossTabHeaderCell35.ColumnIndex = 11;
             this.crossTabHeaderCell35.Name = "crossTabHeaderCell35";
             this.crossTabHeaderCell35.RowIndex = 0;
+            this.crossTabHeaderCell35.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell36
             // 
@@ -955,6 +1004,7 @@
             this.crossTabHeaderCell38.ColumnIndex = 12;
             this.crossTabHeaderCell38.Name = "crossTabHeaderCell38";
             this.crossTabHeaderCell38.RowIndex = 0;
+            this.crossTabHeaderCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell39
             // 
@@ -984,10 +1034,13 @@
             this.crossTabHeaderCell41.ColumnIndex = 17;
             this.crossTabHeaderCell41.Name = "crossTabHeaderCell41";
             this.crossTabHeaderCell41.RowIndex = 0;
+            this.crossTabHeaderCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabTotalCell14
             // 
             this.crossTabTotalCell14.ColumnIndex = 17;
+            this.crossTabTotalCell14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
             this.crossTabTotalCell14.Name = "crossTabTotalCell14";
             this.crossTabTotalCell14.RowIndex = 1;
             // 
@@ -1067,8 +1120,132 @@
             // 
             this.crossTabTotalCell27.BorderColor = System.Drawing.Color.White;
             this.crossTabTotalCell27.ColumnIndex = 17;
+            this.crossTabTotalCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
             this.crossTabTotalCell27.Name = "crossTabTotalCell27";
             this.crossTabTotalCell27.RowIndex = 17;
+            // 
+            // crossTabHeaderCell42
+            // 
+            this.crossTabHeaderCell42.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell42.BorderColor = System.Drawing.Color.Transparent;
+            this.crossTabHeaderCell42.ColumnIndex = 13;
+            this.crossTabHeaderCell42.Name = "crossTabHeaderCell42";
+            this.crossTabHeaderCell42.RowIndex = 0;
+            this.crossTabHeaderCell42.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabHeaderCell43
+            // 
+            this.crossTabHeaderCell43.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell43.BorderColor = System.Drawing.Color.Transparent;
+            this.crossTabHeaderCell43.ColumnIndex = 13;
+            this.crossTabHeaderCell43.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
+            this.crossTabHeaderCell43.Name = "crossTabHeaderCell43";
+            this.crossTabHeaderCell43.RowIndex = 1;
+            this.crossTabHeaderCell43.RowSpan = 2;
+            this.crossTabHeaderCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabHeaderCell44
+            // 
+            this.crossTabHeaderCell44.ColumnIndex = 12;
+            this.crossTabHeaderCell44.ColumnSpan = 4;
+            this.crossTabHeaderCell44.Name = "crossTabHeaderCell44";
+            this.crossTabHeaderCell44.RowIndex = 4;
+            // 
+            // crossTabTotalCell28
+            // 
+            this.crossTabTotalCell28.ColumnIndex = 16;
+            this.crossTabTotalCell28.Name = "crossTabTotalCell28";
+            this.crossTabTotalCell28.RowIndex = 4;
+            // 
+            // crossTabTotalCell29
+            // 
+            this.crossTabTotalCell29.ColumnIndex = 17;
+            this.crossTabTotalCell29.Name = "crossTabTotalCell29";
+            this.crossTabTotalCell29.RowIndex = 4;
+            // 
+            // crossTabHeaderCell45
+            // 
+            this.crossTabHeaderCell45.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell45.BorderColor = System.Drawing.Color.Transparent;
+            this.crossTabHeaderCell45.ColumnIndex = 14;
+            this.crossTabHeaderCell45.Name = "crossTabHeaderCell45";
+            this.crossTabHeaderCell45.RowIndex = 0;
+            this.crossTabHeaderCell45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabHeaderCell46
+            // 
+            this.crossTabHeaderCell46.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell46.BorderColor = System.Drawing.Color.Transparent;
+            this.crossTabHeaderCell46.ColumnIndex = 14;
+            this.crossTabHeaderCell46.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
+            this.crossTabHeaderCell46.Name = "crossTabHeaderCell46";
+            this.crossTabHeaderCell46.RowIndex = 1;
+            // 
+            // crossTabHeaderCell47
+            // 
+            this.crossTabHeaderCell47.ColumnIndex = 13;
+            this.crossTabHeaderCell47.ColumnSpan = 3;
+            this.crossTabHeaderCell47.Name = "crossTabHeaderCell47";
+            this.crossTabHeaderCell47.RowIndex = 3;
+            // 
+            // crossTabTotalCell30
+            // 
+            this.crossTabTotalCell30.ColumnIndex = 16;
+            this.crossTabTotalCell30.Name = "crossTabTotalCell30";
+            this.crossTabTotalCell30.RowIndex = 3;
+            // 
+            // crossTabTotalCell31
+            // 
+            this.crossTabTotalCell31.ColumnIndex = 17;
+            this.crossTabTotalCell31.Name = "crossTabTotalCell31";
+            this.crossTabTotalCell31.RowIndex = 3;
+            // 
+            // crossTabHeaderCell48
+            // 
+            this.crossTabHeaderCell48.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell48.BorderColor = System.Drawing.Color.Transparent;
+            this.crossTabHeaderCell48.ColumnIndex = 15;
+            this.crossTabHeaderCell48.Name = "crossTabHeaderCell48";
+            this.crossTabHeaderCell48.RowIndex = 0;
+            this.crossTabHeaderCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabHeaderCell49
+            // 
+            this.crossTabHeaderCell49.BackColor = System.Drawing.Color.White;
+            this.crossTabHeaderCell49.BorderColor = System.Drawing.Color.Transparent;
+            this.crossTabHeaderCell49.ColumnIndex = 15;
+            this.crossTabHeaderCell49.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
+            this.crossTabHeaderCell49.Name = "crossTabHeaderCell49";
+            this.crossTabHeaderCell49.RowIndex = 1;
+            this.crossTabHeaderCell49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // crossTabHeaderCell50
+            // 
+            this.crossTabHeaderCell50.ColumnIndex = 14;
+            this.crossTabHeaderCell50.ColumnSpan = 2;
+            this.crossTabHeaderCell50.Name = "crossTabHeaderCell50";
+            this.crossTabHeaderCell50.RowIndex = 2;
+            // 
+            // crossTabTotalCell32
+            // 
+            this.crossTabTotalCell32.ColumnIndex = 16;
+            this.crossTabTotalCell32.Name = "crossTabTotalCell32";
+            this.crossTabTotalCell32.RowIndex = 2;
+            // 
+            // crossTabTotalCell33
+            // 
+            this.crossTabTotalCell33.ColumnIndex = 17;
+            this.crossTabTotalCell33.Name = "crossTabTotalCell33";
+            this.crossTabTotalCell33.RowIndex = 2;
+            // 
+            // dsFinance1
+            // 
+            this.dsFinance1.DataSetName = "dsFinance";
+            this.dsFinance1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ReportFooterSub1
             // 
@@ -1448,148 +1625,9 @@
             selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
-            // dsFinance1
-            // 
-            this.dsFinance1.DataSetName = "dsFinance";
-            this.dsFinance1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // sR_HT_BreakOutTableAdapter
             // 
             this.sR_HT_BreakOutTableAdapter.ClearBeforeFill = true;
-            // 
-            // crossTabHeaderCell42
-            // 
-            this.crossTabHeaderCell42.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell42.BorderColor = System.Drawing.Color.Transparent;
-            this.crossTabHeaderCell42.ColumnIndex = 13;
-            this.crossTabHeaderCell42.Name = "crossTabHeaderCell42";
-            this.crossTabHeaderCell42.RowIndex = 0;
-            // 
-            // crossTabHeaderCell43
-            // 
-            this.crossTabHeaderCell43.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell43.BorderColor = System.Drawing.Color.Transparent;
-            this.crossTabHeaderCell43.ColumnIndex = 13;
-            this.crossTabHeaderCell43.Name = "crossTabHeaderCell43";
-            this.crossTabHeaderCell43.RowIndex = 1;
-            this.crossTabHeaderCell43.RowSpan = 2;
-            // 
-            // crossTabHeaderCell44
-            // 
-            this.crossTabHeaderCell44.ColumnIndex = 12;
-            this.crossTabHeaderCell44.ColumnSpan = 4;
-            this.crossTabHeaderCell44.Name = "crossTabHeaderCell44";
-            this.crossTabHeaderCell44.RowIndex = 4;
-            // 
-            // crossTabTotalCell28
-            // 
-            this.crossTabTotalCell28.ColumnIndex = 16;
-            this.crossTabTotalCell28.Name = "crossTabTotalCell28";
-            this.crossTabTotalCell28.RowIndex = 4;
-            // 
-            // crossTabTotalCell29
-            // 
-            this.crossTabTotalCell29.ColumnIndex = 17;
-            this.crossTabTotalCell29.Name = "crossTabTotalCell29";
-            this.crossTabTotalCell29.RowIndex = 4;
-            // 
-            // crossTabHeaderCell45
-            // 
-            this.crossTabHeaderCell45.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell45.BorderColor = System.Drawing.Color.Transparent;
-            this.crossTabHeaderCell45.ColumnIndex = 14;
-            this.crossTabHeaderCell45.Name = "crossTabHeaderCell45";
-            this.crossTabHeaderCell45.RowIndex = 0;
-            // 
-            // crossTabHeaderCell46
-            // 
-            this.crossTabHeaderCell46.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell46.BorderColor = System.Drawing.Color.Transparent;
-            this.crossTabHeaderCell46.ColumnIndex = 14;
-            this.crossTabHeaderCell46.Name = "crossTabHeaderCell46";
-            this.crossTabHeaderCell46.RowIndex = 1;
-            // 
-            // crossTabHeaderCell47
-            // 
-            this.crossTabHeaderCell47.ColumnIndex = 13;
-            this.crossTabHeaderCell47.ColumnSpan = 3;
-            this.crossTabHeaderCell47.Name = "crossTabHeaderCell47";
-            this.crossTabHeaderCell47.RowIndex = 3;
-            // 
-            // crossTabTotalCell30
-            // 
-            this.crossTabTotalCell30.ColumnIndex = 16;
-            this.crossTabTotalCell30.Name = "crossTabTotalCell30";
-            this.crossTabTotalCell30.RowIndex = 3;
-            // 
-            // crossTabTotalCell31
-            // 
-            this.crossTabTotalCell31.ColumnIndex = 17;
-            this.crossTabTotalCell31.Name = "crossTabTotalCell31";
-            this.crossTabTotalCell31.RowIndex = 3;
-            // 
-            // crossTabHeaderCell48
-            // 
-            this.crossTabHeaderCell48.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell48.BorderColor = System.Drawing.Color.Transparent;
-            this.crossTabHeaderCell48.ColumnIndex = 15;
-            this.crossTabHeaderCell48.Name = "crossTabHeaderCell48";
-            this.crossTabHeaderCell48.RowIndex = 0;
-            // 
-            // crossTabHeaderCell49
-            // 
-            this.crossTabHeaderCell49.BackColor = System.Drawing.Color.White;
-            this.crossTabHeaderCell49.BorderColor = System.Drawing.Color.Transparent;
-            this.crossTabHeaderCell49.ColumnIndex = 15;
-            this.crossTabHeaderCell49.Name = "crossTabHeaderCell49";
-            this.crossTabHeaderCell49.RowIndex = 1;
-            // 
-            // crossTabHeaderCell50
-            // 
-            this.crossTabHeaderCell50.ColumnIndex = 14;
-            this.crossTabHeaderCell50.ColumnSpan = 2;
-            this.crossTabHeaderCell50.Name = "crossTabHeaderCell50";
-            this.crossTabHeaderCell50.RowIndex = 2;
-            // 
-            // crossTabTotalCell32
-            // 
-            this.crossTabTotalCell32.ColumnIndex = 16;
-            this.crossTabTotalCell32.Name = "crossTabTotalCell32";
-            this.crossTabTotalCell32.RowIndex = 2;
-            // 
-            // crossTabTotalCell33
-            // 
-            this.crossTabTotalCell33.ColumnIndex = 17;
-            this.crossTabTotalCell33.Name = "crossTabTotalCell33";
-            this.crossTabTotalCell33.RowIndex = 2;
-            // 
-            // xrLabel4
-            // 
-            this.xrLabel4.AutoWidth = true;
-            this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?DateeFrom != ?DateeTo")});
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.StylePriority.UseBorders = false;
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeTo)\n")});
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.StylePriority.UseBorders = false;
-            this.xrLabel1.StylePriority.UseFont = false;
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel2.CanGrow = false;
-            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeFrom)\n")});
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.StylePriority.UseBorders = false;
             // 
             // SR_HT_BreakOut
             // 
@@ -1635,39 +1673,86 @@
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Text", "Patch Code"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell11, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell11, "Default", "Text", "Exit Date"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell12, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell12, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell13, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell14, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell14, "Default", "Text", "Farm Code"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell16, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell17, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell17, "Default", "Text", "Crop No"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell18, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell19, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell20, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell20, "Default", "Text", "Flock Code"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell21, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell22, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell23, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell23, "Default", "Text", "Flock Age"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell24, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell25, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell25, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell26, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell26, "Default", "Text", "Setter Code"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell27, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell28, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell29, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell29, "Default", "Text", "Hatcher Code"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell30, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell31, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell32, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell32, "Default", "Text", "Trolly"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell33, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell34, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell35, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell35, "Default", "Text", "Tray Hatcher"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell36, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell37, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell38, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell38, "Default", "Text", "Store Age"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell39, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Text", "Grand Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell40, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell41, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell41, "Default", "Text", "Total"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell42, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell42, "Default", "Text", "Sample Eggs"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell43, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell43, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell44, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell45, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell45, "Default", "Text", "Chicks"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell46, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell46, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell47, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell48, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell48, "Default", "Text", "Culls"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell49, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell49, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "Default", "Text", "Setting Date"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell50, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "Default", "TextFormatString", "Total {0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Text", "Candling Date"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell1, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell14, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell14, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell27, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSupp, "Default", "Description", "CustSupp"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "Default", "Description", "From"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "ar", "Description", "من"),
@@ -1812,7 +1897,7 @@
             this.crossTabDataStyle1,
             this.crossTabTotalStyle1});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.1";
+            this.Version = "24.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

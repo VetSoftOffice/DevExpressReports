@@ -300,9 +300,7 @@
             // 
             // tDetail
             // 
-            this.tDetail.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tDetail.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.tDetail.Name = "tDetail";
             this.tDetail.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.trDetail});
@@ -663,10 +661,12 @@
             // 
             // xrTable17
             // 
+            this.xrTable17.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable17.Name = "xrTable17";
             this.xrTable17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable17.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow17});
+            this.xrTable17.StylePriority.UseBorders = false;
             // 
             // xrTableRow17
             // 
@@ -691,10 +691,12 @@
             // 
             // xrTable16
             // 
+            this.xrTable16.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable16.Name = "xrTable16";
             this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow16});
+            this.xrTable16.StylePriority.UseBorders = false;
             // 
             // xrTableRow16
             // 
@@ -735,10 +737,12 @@
             // 
             // xrTable15
             // 
+            this.xrTable15.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable15.Name = "xrTable15";
             this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow15});
+            this.xrTable15.StylePriority.UseBorders = false;
             // 
             // xrTableRow15
             // 
@@ -763,10 +767,12 @@
             // 
             // xrTable14
             // 
+            this.xrTable14.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable14.Name = "xrTable14";
             this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow14});
+            this.xrTable14.StylePriority.UseBorders = false;
             // 
             // xrTableRow14
             // 
@@ -807,10 +813,12 @@
             // 
             // xrTable13
             // 
+            this.xrTable13.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable13.Name = "xrTable13";
             this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow13});
+            this.xrTable13.StylePriority.UseBorders = false;
             // 
             // xrTableRow13
             // 
@@ -835,10 +843,12 @@
             // 
             // xrTable12
             // 
+            this.xrTable12.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable12.Name = "xrTable12";
             this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
+            this.xrTable12.StylePriority.UseBorders = false;
             // 
             // xrTableRow12
             // 
@@ -879,10 +889,12 @@
             // 
             // xrTable11
             // 
+            this.xrTable11.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow11});
+            this.xrTable11.StylePriority.UseBorders = false;
             // 
             // xrTableRow11
             // 
@@ -907,10 +919,12 @@
             // 
             // xrTable10
             // 
+            this.xrTable10.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable10.Name = "xrTable10";
             this.xrTable10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable10.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow10});
+            this.xrTable10.StylePriority.UseBorders = false;
             // 
             // xrTableRow10
             // 
@@ -951,10 +965,12 @@
             // 
             // xrTable9
             // 
+            this.xrTable9.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable9.Name = "xrTable9";
             this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow9});
+            this.xrTable9.StylePriority.UseBorders = false;
             // 
             // xrTableRow9
             // 
@@ -980,10 +996,12 @@
             // 
             // xrTable8
             // 
+            this.xrTable8.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow8});
+            this.xrTable8.StylePriority.UseBorders = false;
             // 
             // xrTableRow8
             // 
@@ -1024,10 +1042,12 @@
             // 
             // xrTable7
             // 
+            this.xrTable7.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7});
+            this.xrTable7.StylePriority.UseBorders = false;
             // 
             // xrTableRow7
             // 
@@ -1052,10 +1072,12 @@
             // 
             // xrTable6
             // 
+            this.xrTable6.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow6});
+            this.xrTable6.StylePriority.UseBorders = false;
             // 
             // xrTableRow6
             // 
@@ -1096,10 +1118,12 @@
             // 
             // xrTable5
             // 
+            this.xrTable5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
+            this.xrTable5.StylePriority.UseBorders = false;
             // 
             // xrTableRow5
             // 
@@ -1124,10 +1148,12 @@
             // 
             // xrTable4
             // 
+            this.xrTable4.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
+            this.xrTable4.StylePriority.UseBorders = false;
             // 
             // xrTableRow4
             // 
@@ -1168,10 +1194,12 @@
             // 
             // xrTable3
             // 
+            this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
+            this.xrTable3.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
             // 
@@ -1196,10 +1224,12 @@
             // 
             // xrTable2
             // 
+            this.xrTable2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
+            this.xrTable2.StylePriority.UseBorders = false;
             // 
             // xrTableRow2
             // 
@@ -1241,9 +1271,7 @@
             // xrLabel5
             // 
             this.xrLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.xrLabel5.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel5.BorderWidth = 1.4F;
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
@@ -1271,10 +1299,12 @@
             // 
             // xrTable20
             // 
+            this.xrTable20.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable20.Name = "xrTable20";
             this.xrTable20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable20.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow20});
+            this.xrTable20.StylePriority.UseBorders = false;
             // 
             // xrTableRow20
             // 
@@ -1317,10 +1347,12 @@
             // 
             // xrTable19
             // 
+            this.xrTable19.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable19.Name = "xrTable19";
             this.xrTable19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable19.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow19});
+            this.xrTable19.StylePriority.UseBorders = false;
             // 
             // xrTableRow19
             // 
@@ -1344,10 +1376,12 @@
             // 
             // xrTable18
             // 
+            this.xrTable18.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable18.Name = "xrTable18";
             this.xrTable18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable18.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow18});
+            this.xrTable18.StylePriority.UseBorders = false;
             // 
             // xrTableRow18
             // 
@@ -1460,10 +1494,12 @@
             // 
             // xrTable1
             // 
+            this.xrTable1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
+            this.xrTable1.StylePriority.UseBorders = false;
             // 
             // xrTableRow1
             // 
