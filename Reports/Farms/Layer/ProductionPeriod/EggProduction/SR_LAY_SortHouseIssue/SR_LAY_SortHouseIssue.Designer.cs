@@ -160,6 +160,7 @@
             this.crossTabHeaderStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabGeneralStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.SR_LAY_SortHouseIssue_Sub = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -431,7 +432,7 @@
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(15F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(110F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(55F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.99998F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2});
             crossTabColumnField1.FieldName = "ColData1";
@@ -593,6 +594,8 @@
             // 
             // SubBand1
             // 
+            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_LAY_SortHouseIssue_Sub});
             this.SubBand1.Name = "SubBand1";
             // 
             // ReportFooterSub1
@@ -981,6 +984,12 @@
             this.crossTabGeneralStyle1.Name = "crossTabGeneralStyle1";
             this.crossTabGeneralStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             // 
+            // SR_LAY_SortHouseIssue_Sub
+            // 
+            this.SR_LAY_SortHouseIssue_Sub.CanShrink = true;
+            this.SR_LAY_SortHouseIssue_Sub.Name = "SR_LAY_SortHouseIssue_Sub";
+            this.SR_LAY_SortHouseIssue_Sub.ReportSource = new DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_LAY_SortHouseIssue_Sub.SR_LAY_SortHouseIssue_Sub();
+            // 
             // SR_LAY_SortHouseIssue
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1088,7 +1097,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 8F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_LAY_SortHouseIssue_Sub, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_LAY_SortHouseIssue_Sub, "Default", "SizeF", new System.Drawing.SizeF(810.0002F, 24.4583F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 24.4583F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 150F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
@@ -1261,5 +1272,6 @@
         private DevExpress.XtraReports.UI.XRControlStyle crossTabHeaderStyle1;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabDataStyle1;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabGeneralStyle1;
+        private DevExpress.XtraReports.UI.XRSubreport SR_LAY_SortHouseIssue_Sub;
     }
 }

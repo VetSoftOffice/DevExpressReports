@@ -1,10 +1,6 @@
 ﻿using DevExpress.XtraReports.UI;
-using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
 
-namespace DevExpressReports.PredefinedReports
+namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_LAY_SortHouseIssue_Sub
 {
     public partial class SR_LAY_SortHouseIssue_Sub : XtraReport
     {
