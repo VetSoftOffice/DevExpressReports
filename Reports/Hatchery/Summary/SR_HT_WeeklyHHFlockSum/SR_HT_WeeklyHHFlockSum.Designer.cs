@@ -55,6 +55,7 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
@@ -78,10 +79,14 @@
             this.xrTableCell21 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.FontSize = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
@@ -154,11 +159,6 @@
             this.BookPerf = new DevExpress.XtraReports.Parameters.Parameter();
             this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.WeekNo = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
-            this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
-            this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
@@ -185,6 +185,16 @@
             this.pageInfoCurrentDate,
             this.pageInfoPageNoOfTotal});
             this.BottomMargin.Name = "BottomMargin";
+            // 
+            // xrPageInfo1
+            // 
+            this.xrPageInfo1.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
+            this.xrPageInfo1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrPageInfo1.Name = "xrPageInfo1";
+            this.xrPageInfo1.StyleName = "PageInfo";
+            this.xrPageInfo1.StylePriority.UseBorders = false;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // pageInfoCurrentTime
             // 
@@ -306,8 +316,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.tdDebit.Multiline = true;
             this.tdDebit.Name = "tdDebit";
+            this.tdDebit.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.tdDebit.StylePriority.UseBorders = false;
             this.tdDebit.StylePriority.UseFont = false;
+            this.tdDebit.StylePriority.UsePadding = false;
             this.tdDebit.StylePriority.UseTextAlignment = false;
             this.tdDebit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -321,8 +333,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
+            this.xrTableCell6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell6.StylePriority.UseBorders = false;
             this.xrTableCell6.StylePriority.UseFont = false;
+            this.xrTableCell6.StylePriority.UsePadding = false;
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
             this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -336,8 +350,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.StylePriority.UseFont = false;
+            this.xrTableCell3.StylePriority.UsePadding = false;
             this.xrTableCell3.StylePriority.UseTextAlignment = false;
             this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -350,8 +366,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[EstHatEggs]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.tdCredit.Name = "tdCredit";
+            this.tdCredit.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.tdCredit.StylePriority.UseBorders = false;
             this.tdCredit.StylePriority.UseFont = false;
+            this.tdCredit.StylePriority.UsePadding = false;
             this.tdCredit.StylePriority.UseTextAlignment = false;
             this.tdCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -365,8 +383,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ActEggSetHHCum]")});
             this.xrTableCell1.Multiline = true;
             this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell1.StylePriority.UseBorders = false;
             this.xrTableCell1.StylePriority.UseFont = false;
+            this.xrTableCell1.StylePriority.UsePadding = false;
             this.xrTableCell1.StylePriority.UseTextAlignment = false;
             this.xrTableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -394,8 +414,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
+            this.xrTableCell16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell16.StylePriority.UseBorders = false;
             this.xrTableCell16.StylePriority.UseFont = false;
+            this.xrTableCell16.StylePriority.UsePadding = false;
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -409,8 +431,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
+            this.xrTableCell17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell17.StylePriority.UseBorders = false;
             this.xrTableCell17.StylePriority.UseFont = false;
+            this.xrTableCell17.StylePriority.UsePadding = false;
             this.xrTableCell17.StylePriority.UseTextAlignment = false;
             this.xrTableCell17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -424,8 +448,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
+            this.xrTableCell18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell18.StylePriority.UseBorders = false;
             this.xrTableCell18.StylePriority.UseFont = false;
+            this.xrTableCell18.StylePriority.UsePadding = false;
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -439,8 +465,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
+            this.xrTableCell19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell19.StylePriority.UseBorders = false;
             this.xrTableCell19.StylePriority.UseFont = false;
+            this.xrTableCell19.StylePriority.UsePadding = false;
             this.xrTableCell19.StylePriority.UseTextAlignment = false;
             this.xrTableCell19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -454,8 +482,10 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
+            this.xrTableCell20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 100F);
             this.xrTableCell20.StylePriority.UseBorders = false;
             this.xrTableCell20.StylePriority.UseFont = false;
+            this.xrTableCell20.StylePriority.UsePadding = false;
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
@@ -465,12 +495,15 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Diviation]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif((IsNull([ActHatch_Per_Cum])), 0,[ActHatch_Per_Cum] ) - Iif(IsNull([StdHatchCu" +
+                    "m]),0 , [StdHatchCum])\n")});
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
+            this.xrTableCell21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrTableCell21.StylePriority.UseBorders = false;
             this.xrTableCell21.StylePriority.UseFont = false;
+            this.xrTableCell21.StylePriority.UsePadding = false;
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
@@ -497,6 +530,46 @@
             this.SubBand4,
             this.SubBand5});
             // 
+            // SubBand7
+            // 
+            this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportNotes});
+            this.SubBand7.Name = "SubBand7";
+            // 
+            // srReportNotes
+            // 
+            this.srReportNotes.Name = "srReportNotes";
+            this.srReportNotes.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
+            this.srReportNotes.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FontSize", this.FontSize));
+            this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
+            // 
+            // IsRTL
+            // 
+            this.IsRTL.Name = "IsRTL";
+            this.IsRTL.Type = typeof(bool);
+            this.IsRTL.ValueInfo = "False";
+            this.IsRTL.Visible = false;
+            // 
+            // FontSize
+            // 
+            this.FontSize.Name = "FontSize";
+            this.FontSize.Visible = false;
+            // 
+            // SubBand8
+            // 
+            this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportSignature});
+            this.SubBand8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True And ?ShowSignatureAllPages == False\n")});
+            this.SubBand8.Name = "SubBand8";
+            // 
+            // srReportSignature
+            // 
+            this.srReportSignature.Name = "srReportSignature";
+            this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
+            this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FontSize", this.FontSize));
+            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            // 
             // SubBand4
             // 
             this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -510,18 +583,6 @@
             this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
             this.srReportSignature_PageFooter.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
             this.srReportSignature_PageFooter.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FontSize", this.FontSize));
-            // 
-            // IsRTL
-            // 
-            this.IsRTL.Name = "IsRTL";
-            this.IsRTL.Type = typeof(bool);
-            this.IsRTL.ValueInfo = "False";
-            this.IsRTL.Visible = false;
-            // 
-            // FontSize
-            // 
-            this.FontSize.Name = "FontSize";
-            this.FontSize.Visible = false;
             // 
             // SubBand5
             // 
@@ -1058,42 +1119,6 @@
             this.WeekNo.Name = "WeekNo";
             this.WeekNo.Visible = false;
             // 
-            // xrPageInfo1
-            // 
-            this.xrPageInfo1.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.xrPageInfo1.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrPageInfo1.Name = "xrPageInfo1";
-            this.xrPageInfo1.StyleName = "PageInfo";
-            this.xrPageInfo1.StylePriority.UseBorders = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // SubBand7
-            // 
-            this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportNotes});
-            this.SubBand7.Name = "SubBand7";
-            // 
-            // SubBand8
-            // 
-            this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportSignature});
-            this.SubBand8.Name = "SubBand8";
-            // 
-            // srReportNotes
-            // 
-            this.srReportNotes.Name = "srReportNotes";
-            this.srReportNotes.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
-            this.srReportNotes.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FontSize", this.FontSize));
-            this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
-            // 
-            // srReportSignature
-            // 
-            this.srReportSignature.Name = "srReportSignature";
-            this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
-            this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FontSize", this.FontSize));
-            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
-            // 
             // SR_HT_WeeklyHHFlockSum
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1163,7 +1188,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(204.12F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(492.7409F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(446.8542F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(272.9167F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1487.67F, 0F)),
@@ -1213,7 +1238,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdDebit, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdDebit, "Default", "Weight", 1.8563841883116152D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(8.106232E-06F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "SizeF", new System.Drawing.SizeF(1149F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdSr, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdSr, "Default", "Text", "ItemType"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdSr, "Default", "Weight", 1.5529794115898341D),
@@ -1230,7 +1255,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "ar", "Text", "إجمالي البيض المستلم / لكل قطيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Weight", 1.6490113785024216D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(1159F, 63.82248F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(1149F, 63.82248F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Text", "Farm"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "المزرعة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Weight", 1.3795019248928826D),
@@ -1267,7 +1292,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Weight", 1.3674527500254952D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Text", "Remarks"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "ar", "Text", "ملاحظات"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Weight", 4.4058638274085311D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Weight", 4.1741250428791909D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Text", "xrTableCell15"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "TextFormatString", ""),
@@ -1300,7 +1325,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell21, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell21, "Default", "Weight", 1.5394276468523336D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 4.95991479836777D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 4.6990340221137945D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Text", "xrTableCell3"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "TextFormatString", "{0:N2}"),

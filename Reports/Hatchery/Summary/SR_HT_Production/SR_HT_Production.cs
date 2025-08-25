@@ -12,5 +12,10 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_Production
         {
             InitializeComponent();
         }
+
+        private void SR_HT_Production_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

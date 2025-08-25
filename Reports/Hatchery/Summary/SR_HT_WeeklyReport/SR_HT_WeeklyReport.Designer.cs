@@ -596,13 +596,14 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2});
-            crossTabColumnField1.FieldName = "ColSequence";
+            crossTabColumnField1.FieldName = "FarmCode";
             crossTabColumnField2.FieldName = "FlockCode";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1,
             crossTabColumnField2});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
             crossTabDataField1.FieldName = "Value";
+            crossTabDataField1.SummaryType = DevExpress.XtraReports.UI.CrossTab.SummaryType.Max;
             this.xrCrossTab1.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
             crossTabDataField1});
             this.xrCrossTab1.DataMember = "SR_HT_WeeklyReport";
@@ -610,6 +611,8 @@
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.Name = "xrCrossTab1";
+            this.xrCrossTab1.Parameters.AddRange(new DevExpress.XtraReports.UI.XRControlParameter[] {
+            new DevExpress.XtraReports.UI.XRControlParameter("IsRTL", this.IsRTL)});
             crossTabRowDefinition1.Visible = false;
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
@@ -617,6 +620,7 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
             crossTabRowDefinition1});
             crossTabRowField1.FieldName = "Type1";
+            crossTabRowField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             this.xrCrossTab1.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
             crossTabRowField1});
             this.xrCrossTab1.TotalAreaStyleName = "crossTabTotalStyle1";
@@ -635,6 +639,8 @@
             // 
             this.crossTabDataCell1.BorderWidth = 1.4F;
             this.crossTabDataCell1.ColumnIndex = 1;
+            this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL, \'MiddleLeft\' , \'MiddleRight\')")});
             this.crossTabDataCell1.Name = "crossTabDataCell1";
             this.crossTabDataCell1.RowIndex = 2;
             // 
