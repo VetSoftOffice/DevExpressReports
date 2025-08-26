@@ -793,14 +793,14 @@
                 <Item2 Ref="403" ControlType="XRLabel" Name="xrLabel9" Multiline="true" Borders="None" />
                 <Item3 Ref="404" ControlType="XRLabel" Name="xrLabel5" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" Borders="None">
                   <ExpressionBindings>
-                    <Item1 Ref="405" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?AccountDim)&#xA;" />
+                    <Item1 Ref="405" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([AccountDim])&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="406" UseBorders="false" />
                 </Item3>
                 <Item4 Ref="407" ControlType="XRLabel" Name="xrLabel4" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" Borders="None">
                   <Scripts Ref="408" OnBeforePrint="xrLabel3_BeforePrint" />
                   <ExpressionBindings>
-                    <Item1 Ref="409" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?AccountDim)&#xA;" />
+                    <Item1 Ref="409" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([AccountDim])&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="410" UseBorders="false" />
                 </Item4>
