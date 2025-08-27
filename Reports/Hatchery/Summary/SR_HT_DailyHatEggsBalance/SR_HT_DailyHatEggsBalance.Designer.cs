@@ -401,6 +401,8 @@
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.Name = "xrCrossTab1";
+            this.xrCrossTab1.Parameters.AddRange(new DevExpress.XtraReports.UI.XRControlParameter[] {
+            new DevExpress.XtraReports.UI.XRControlParameter("IsRTL", this.IsRTL)});
             crossTabRowDefinition1.Visible = false;
             crossTabRowDefinition2.Visible = false;
             crossTabRowDefinition3.Visible = false;
@@ -439,8 +441,11 @@
             // 
             this.crossTabDataCell1.BorderWidth = 1.4F;
             this.crossTabDataCell1.ColumnIndex = 5;
+            this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )")});
             this.crossTabDataCell1.Name = "crossTabDataCell1";
             this.crossTabDataCell1.RowIndex = 1;
+            this.crossTabDataCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft;
             // 
             // crossTabHeaderCell2
             // 
@@ -459,6 +464,7 @@
             this.crossTabHeaderCell3.Name = "crossTabHeaderCell3";
             this.crossTabHeaderCell3.RowIndex = 1;
             this.crossTabHeaderCell3.RowSpan = 4;
+            this.crossTabHeaderCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell4
             // 
@@ -473,6 +479,8 @@
             // 
             this.crossTabTotalCell1.BorderWidth = 1.4F;
             this.crossTabTotalCell1.ColumnIndex = 5;
+            this.crossTabTotalCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.crossTabTotalCell1.Name = "crossTabTotalCell1";
             this.crossTabTotalCell1.RowIndex = 6;
             // 
@@ -493,6 +501,7 @@
             this.crossTabHeaderCell6.Name = "crossTabHeaderCell6";
             this.crossTabHeaderCell6.RowIndex = 1;
             this.crossTabHeaderCell6.RowSpan = 3;
+            this.crossTabHeaderCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell7
             // 
@@ -524,6 +533,7 @@
             this.crossTabHeaderCell9.Name = "crossTabHeaderCell9";
             this.crossTabHeaderCell9.RowIndex = 1;
             this.crossTabHeaderCell9.RowSpan = 2;
+            this.crossTabHeaderCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell10
             // 
@@ -554,6 +564,7 @@
             this.crossTabHeaderCell12.ColumnIndex = 3;
             this.crossTabHeaderCell12.Name = "crossTabHeaderCell12";
             this.crossTabHeaderCell12.RowIndex = 1;
+            this.crossTabHeaderCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell13
             // 
@@ -581,6 +592,8 @@
             // 
             this.crossTabHeaderCell15.BorderWidth = 1.4F;
             this.crossTabHeaderCell15.ColumnIndex = 4;
+            this.crossTabHeaderCell15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )")});
             this.crossTabHeaderCell15.Name = "crossTabHeaderCell15";
             this.crossTabHeaderCell15.RowIndex = 1;
             // 
@@ -610,6 +623,8 @@
             // 
             this.crossTabTotalCell6.BorderWidth = 1.4F;
             this.crossTabTotalCell6.ColumnIndex = 6;
+            this.crossTabTotalCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.crossTabTotalCell6.Name = "crossTabTotalCell6";
             this.crossTabTotalCell6.RowIndex = 1;
             // 
@@ -641,6 +656,8 @@
             // 
             this.crossTabTotalCell11.BorderWidth = 1.4F;
             this.crossTabTotalCell11.ColumnIndex = 6;
+            this.crossTabTotalCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\' )\n")});
             this.crossTabTotalCell11.Name = "crossTabTotalCell11";
             this.crossTabTotalCell11.RowIndex = 6;
             // 

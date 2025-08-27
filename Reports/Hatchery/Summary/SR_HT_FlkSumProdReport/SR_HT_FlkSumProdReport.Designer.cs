@@ -257,6 +257,8 @@
             this.HideReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
@@ -467,15 +469,7 @@
             this.xrTableCell63 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable27 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow27 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell51 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell57 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable26 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow26 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell48 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable25 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow25 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell62 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell64 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable24 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow24 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell59 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -869,8 +863,17 @@
             this.SoldTableEggs_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
             this.EggsToOffal_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
             this.TotalEggSold_1_FromPartA = new DevExpress.XtraReports.UI.CalculatedField();
-            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrTableCell180 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.Female_Per = new DevExpress.XtraReports.UI.CalculatedField();
+            this.Week_CF = new DevExpress.XtraReports.UI.CalculatedField();
+            this.xrTableCell51 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell62 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow25 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTable25 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableCell64 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell48 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow26 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTable26 = new DevExpress.XtraReports.UI.XRTable();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
@@ -912,8 +915,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable22)).BeginInit();
@@ -972,6 +973,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable103)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable102)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // ShowSignature
@@ -1013,6 +1016,21 @@
             this.pageInfoCurrentDate,
             this.pageInfoPageNoOfTotal});
             this.BottomMargin.Name = "BottomMargin";
+            // 
+            // xrPageInfo2
+            // 
+            this.xrPageInfo2.Name = "xrPageInfo2";
+            this.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.xrPageInfo2.StyleName = "PageInfo";
+            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrPageInfo1
+            // 
+            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrPageInfo1.Name = "xrPageInfo1";
+            this.xrPageInfo1.StyleName = "PageInfo";
+            this.xrPageInfo1.StylePriority.UseBorders = false;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // pageInfoCurrentTime
             // 
@@ -1369,11 +1387,13 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell29.BorderWidth = 1.4F;
             this.xrTableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DeplAge]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DeplAge] + \' \'  + [Week_CF]")});
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.StylePriority.UseBorders = false;
             this.xrTableCell29.StylePriority.UseBorderWidth = false;
+            this.xrTableCell29.StylePriority.UseTextAlignment = false;
+            this.xrTableCell29.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable10
             // 
@@ -1386,7 +1406,8 @@
             // 
             this.xrTableRow10.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell25,
-            this.xrTableCell26});
+            this.xrTableCell26,
+            this.xrTableCell180});
             this.xrTableRow10.Name = "xrTableRow10";
             // 
             // xrTableCell25
@@ -1412,6 +1433,8 @@
             this.xrTableCell26.Name = "xrTableCell26";
             this.xrTableCell26.StylePriority.UseBorders = false;
             this.xrTableCell26.StylePriority.UseBorderWidth = false;
+            this.xrTableCell26.StylePriority.UseTextAlignment = false;
+            this.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable9
             // 
@@ -1450,6 +1473,8 @@
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.StylePriority.UseBorders = false;
             this.xrTableCell23.StylePriority.UseBorderWidth = false;
+            this.xrTableCell23.StylePriority.UseTextAlignment = false;
+            this.xrTableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable8
             // 
@@ -1488,6 +1513,8 @@
             this.xrTableCell20.Name = "xrTableCell20";
             this.xrTableCell20.StylePriority.UseBorders = false;
             this.xrTableCell20.StylePriority.UseBorderWidth = false;
+            this.xrTableCell20.StylePriority.UseTextAlignment = false;
+            this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable7
             // 
@@ -1526,6 +1553,8 @@
             this.xrTableCell9.Name = "xrTableCell9";
             this.xrTableCell9.StylePriority.UseBorders = false;
             this.xrTableCell9.StylePriority.UseBorderWidth = false;
+            this.xrTableCell9.StylePriority.UseTextAlignment = false;
+            this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTable6
             // 
@@ -3044,15 +3073,6 @@
             this.xrTableCell57});
             this.xrTableRow27.Name = "xrTableRow27";
             // 
-            // xrTableCell51
-            // 
-            this.xrTableCell51.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell51.Multiline = true;
-            this.xrTableCell51.Name = "xrTableCell51";
-            this.xrTableCell51.StylePriority.UseBorders = false;
-            // 
             // xrTableCell57
             // 
             this.xrTableCell57.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -3064,69 +3084,6 @@
             this.xrTableCell57.Multiline = true;
             this.xrTableCell57.Name = "xrTableCell57";
             this.xrTableCell57.StylePriority.UseBorders = false;
-            // 
-            // xrTable26
-            // 
-            this.xrTable26.BorderWidth = 1.4F;
-            this.xrTable26.Name = "xrTable26";
-            this.xrTable26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable26.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow26});
-            this.xrTable26.StylePriority.UseBorderWidth = false;
-            // 
-            // xrTableRow26
-            // 
-            this.xrTableRow26.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell48});
-            this.xrTableRow26.Name = "xrTableRow26";
-            // 
-            // xrTableCell48
-            // 
-            this.xrTableCell48.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell48.Multiline = true;
-            this.xrTableCell48.Name = "xrTableCell48";
-            this.xrTableCell48.StylePriority.UseBorders = false;
-            this.xrTableCell48.StylePriority.UseTextAlignment = false;
-            this.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrTable25
-            // 
-            this.xrTable25.BorderWidth = 1.4F;
-            this.xrTable25.Name = "xrTable25";
-            this.xrTable25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable25.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow25});
-            this.xrTable25.StylePriority.UseBorderWidth = false;
-            // 
-            // xrTableRow25
-            // 
-            this.xrTableRow25.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell62,
-            this.xrTableCell64});
-            this.xrTableRow25.Name = "xrTableRow25";
-            // 
-            // xrTableCell62
-            // 
-            this.xrTableCell62.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell62.Multiline = true;
-            this.xrTableCell62.Name = "xrTableCell62";
-            this.xrTableCell62.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell64
-            // 
-            this.xrTableCell64.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell64.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SelChicks]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
-            this.xrTableCell64.Multiline = true;
-            this.xrTableCell64.Name = "xrTableCell64";
-            this.xrTableCell64.StylePriority.UseBorders = false;
             // 
             // xrTable24
             // 
@@ -6350,15 +6307,13 @@
             // Data_1
             // 
             this.Data_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.Data_1.Expression = "[Data] + \' (\' + ToStr([AgePartA]) + [Week] + \') \' + ToStr([DaysNO]) + \' \' + [Day]" +
-    "\n";
+            this.Data_1.Expression = "[Data] + \' (\' + ToStr([AgePartA]) + [Week] + \') \' + [DaysNO] + \' \' + [Day]\n";
             this.Data_1.Name = "Data_1";
             // 
             // AgePartA
             // 
             this.AgePartA.DataMember = "SR_HT_FlkSumProdReport";
-            this.AgePartA.Expression = "Iif([SR_HT_FlkSumProdReport.LastDays] > 0, [SR_HT_FlkSumProdReport.DeplAge] - 1, " +
-    "[SR_HT_FlkSumProdReport.DeplAge])\n";
+            this.AgePartA.Expression = "Iif([LastDays] > 0, [DeplAge] - 1, [DeplAge])\n";
             this.AgePartA.Name = "AgePartA";
             // 
             // DaysNO
@@ -6408,45 +6363,49 @@
             // RejDef
             // 
             this.RejDef.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejDef.Expression = "[SR_HT_FlkSumProdReport.HT_RejDeformed] + [SR_HT_FlkSumProdReport.ST_RejDeformed]" +
-    "\n";
+            this.RejDef.Expression = "iif(IsNullOrEmpty([HT_RejDeformed]),0,[HT_RejDeformed]) + iif(IsNullOrEmpty([HT_R" +
+    "ejDeformed]),0,[ST_RejDeformed])\n";
             this.RejDef.Name = "RejDef";
             // 
             // RejCrack
             // 
             this.RejCrack.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejCrack.Expression = "[SR_HT_FlkSumProdReport.ST_RejCracks] + [SR_HT_FlkSumProdReport.HT_RejCracks]\n";
+            this.RejCrack.Expression = "iif(IsNullOrEmpty([HT_RejCracks]),0,[HT_RejCracks]) + iif(IsNullOrEmpty([ST_RejCr" +
+    "acks]),0,[ST_RejCracks])\n";
             this.RejCrack.Name = "RejCrack";
             // 
             // RejBroken
             // 
             this.RejBroken.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejBroken.Expression = "[SR_HT_FlkSumProdReport.ST_RejBroken] + [SR_HT_FlkSumProdReport.HT_RejBroken]\n";
+            this.RejBroken.Expression = "iif(IsNullOrEmpty([HT_RejBroken]),0,[HT_RejBroken]) + iif(IsNullOrEmpty([ST_RejBr" +
+    "oken]),0,[ST_RejBroken])\n";
             this.RejBroken.Name = "RejBroken";
             // 
             // RejOther
             // 
             this.RejOther.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejOther.Expression = "[SR_HT_FlkSumProdReport.ST_RejOther] + [SR_HT_FlkSumProdReport.HT_RejOther]\n";
+            this.RejOther.Expression = "iif(IsNullOrEmpty([HT_RejOther]),0,[HT_RejOther]) + iif(IsNullOrEmpty([ST_RejOthe" +
+    "r]),0,[ST_RejOther])\n";
             this.RejOther.Name = "RejOther";
             // 
             // Total_RejEggs
             // 
             this.Total_RejEggs.DataMember = "SR_HT_FlkSumProdReport";
-            this.Total_RejEggs.Expression = "[RejBroken] + [RejCrack] + [RejDef] + [RejOther]\n";
+            this.Total_RejEggs.Expression = resources.GetString("Total_RejEggs.Expression");
             this.Total_RejEggs.Name = "Total_RejEggs";
             // 
             // BalOfHatEggs
             // 
             this.BalOfHatEggs.DataMember = "SR_HT_FlkSumProdReport";
-            this.BalOfHatEggs.Expression = "[SR_HT_FlkSumProdReport.FarmInTake] - [Total_RejEggs]\n";
+            this.BalOfHatEggs.Expression = "[FarmInTake] - [Total_RejEggs]\n";
             this.BalOfHatEggs.Name = "BalOfHatEggs";
             // 
             // CumChicks
             // 
             this.CumChicks.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicks.Expression = "[SR_HT_FlkSumProdReport.SelChicks] + [SR_HT_FlkSumProdReport.CullsChicks] + [SR_H" +
-    "T_FlkSumProdReport.DeadChicks]\n";
+            this.CumChicks.Expression = "Iif(IsNull([SelChicks]) Or [SelChicks] == 0, 0, [SelChicks]) +\nIif(IsNull([CullsC" +
+    "hicks]) Or [CullsChicks] == 0, 0, [CullsChicks]) +\nIif(IsNull([DeadChicks]) Or [" +
+    "DeadChicks] == 0, 0, [DeadChicks])\n";
             this.CumChicks.Name = "CumChicks";
             // 
             // CumHatchability
@@ -6464,46 +6423,53 @@
             // SoldHatEggs
             // 
             this.SoldHatEggs.DataMember = "SR_HT_FlkSumProdReport";
-            this.SoldHatEggs.Expression = "[SR_HT_FlkSumProdReport.ER_SoldAsHatEggs] + [SR_HT_FlkSumProdReport.ES_SoldAsHatE" +
-    "ggs]\n";
+            this.SoldHatEggs.Expression = "Iif(IsNullOrEmpty([ER_SoldAsHatEggs]) Or [ER_SoldAsHatEggs] == 0, 0, [ER_SoldAsHa" +
+    "tEggs]) +\nIif(IsNullOrEmpty([ES_SoldAsHatEggs]) Or [ES_SoldAsHatEggs] == 0, 0, [" +
+    "ES_SoldAsHatEggs])\n";
             this.SoldHatEggs.Name = "SoldHatEggs";
             // 
             // SoldTableEggs
             // 
             this.SoldTableEggs.DataMember = "SR_HT_FlkSumProdReport";
-            this.SoldTableEggs.Expression = "[SR_HT_FlkSumProdReport.ER_SoldAsTableEggs] + [SR_HT_FlkSumProdReport.ES_SoldAsTa" +
-    "bleEggs]\n";
+            this.SoldTableEggs.Expression = "Iif(IsNullOrEmpty([ER_SoldAsTableEggs]) Or [ER_SoldAsTableEggs] == 0, 0, [ER_Sold" +
+    "AsTableEggs]) +\nIif(IsNullOrEmpty([ES_SoldAsTableEggs]) Or [ES_SoldAsTableEggs] " +
+    "== 0, 0, [ES_SoldAsTableEggs])\n";
             this.SoldTableEggs.Name = "SoldTableEggs";
             // 
             // EggsToOffal
             // 
             this.EggsToOffal.DataMember = "SR_HT_FlkSumProdReport";
-            this.EggsToOffal.Expression = "[SR_HT_FlkSumProdReport.ER_SendToOffal] + [SR_HT_FlkSumProdReport.ES_SendToOffal]" +
-    "\n";
+            this.EggsToOffal.Expression = "Iif(IsNullOrEmpty([ER_SendToOffal]) Or [ER_SendToOffal] == 0, 0, [ER_SendToOffal]" +
+    ") +\nIif(IsNullOrEmpty([ES_SendToOffal]) Or [ES_SendToOffal] == 0, 0, [ES_SendToO" +
+    "ffal])\n";
             this.EggsToOffal.Name = "EggsToOffal";
             // 
             // TotalEggSold
             // 
             this.TotalEggSold.DataMember = "SR_HT_FlkSumProdReport";
-            this.TotalEggSold.Expression = "[SoldHatEggs] + [SoldTableEggs] + [EggsToOffal]\n";
+            this.TotalEggSold.Expression = resources.GetString("TotalEggSold.Expression");
             this.TotalEggSold.Name = "TotalEggSold";
             // 
             // EstChicks_PerEgg
             // 
             this.EstChicks_PerEgg.DataMember = "SR_HT_FlkSumProdReport";
-            this.EstChicks_PerEgg.Expression = "[TotalEggSold] * [CumHatchability] / 100\n";
+            this.EstChicks_PerEgg.Expression = "Iif(IsNullOrEmpty([TotalEggSold]) Or [TotalEggSold] == 0, 0, [TotalEggSold]) *\nIi" +
+    "f(IsNullOrEmpty([CumHatchability]) Or [CumHatchability] == 0, 0, [CumHatchabilit" +
+    "y]) / 100\n";
             this.EstChicks_PerEgg.Name = "EstChicks_PerEgg";
             // 
             // StockHatEggBal
             // 
             this.StockHatEggBal.DataMember = "SR_HT_FlkSumProdReport";
-            this.StockHatEggBal.Expression = "[BalOfHatEggs] - ([SR_HT_FlkSumProdReport.SettedEggs] + [TotalEggSold])\n";
+            this.StockHatEggBal.Expression = resources.GetString("StockHatEggBal.Expression");
             this.StockHatEggBal.Name = "StockHatEggBal";
             // 
             // ESTChicks_PerStock_HE
             // 
             this.ESTChicks_PerStock_HE.DataMember = "SR_HT_FlkSumProdReport";
-            this.ESTChicks_PerStock_HE.Expression = "[StockHatEggBal] * [ActHatchBalanceEggs] / 100\n";
+            this.ESTChicks_PerStock_HE.Expression = "Iif(IsNullOrEmpty([StockHatEggBal]) Or [StockHatEggBal] == 0, 0, [StockHatEggBal]" +
+    ") *\nIif(IsNullOrEmpty([ActHatchBalanceEggs]) Or [ActHatchBalanceEggs] == 0, 0, [" +
+    "ActHatchBalanceEggs]) / 100\n";
             this.ESTChicks_PerStock_HE.Name = "ESTChicks_PerStock_HE";
             // 
             // ActHatchBalanceEggs
@@ -6515,35 +6481,33 @@
             // CumChicks_Act_Est
             // 
             this.CumChicks_Act_Est.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicks_Act_Est.Expression = "[EstChicks_PerEgg] + [ESTChicks_PerStock_HE] + [CumChicks]\n";
+            this.CumChicks_Act_Est.Expression = "Iif(IsNullOrEmpty([EstChicks_PerEgg]), 0, [EstChicks_PerEgg]) \n+ Iif(IsNullOrEmpt" +
+    "y([ESTChicks_PerStock_HE]), 0, [ESTChicks_PerStock_HE]) \n+ Iif(IsNullOrEmpty([Cu" +
+    "mChicks]), 0, [CumChicks])\n";
             this.CumChicks_Act_Est.Name = "CumChicks_Act_Est";
             // 
             // CumRecEggs_HH
             // 
             this.CumRecEggs_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumRecEggs_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [SR_HT_FlkSumProdReport.FarmInTake] / [SR_" +
-    "HT_FlkSumProdReport.POL], 0)\n";
+            this.CumRecEggs_HH.Expression = "Iif([POL] <> 0, [FarmInTake] / [POL], 0)\n";
             this.CumRecEggs_HH.Name = "CumRecEggs_HH";
             // 
             // Total_RejEggs_HH
             // 
             this.Total_RejEggs_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.Total_RejEggs_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [Total_RejEggs] / [SR_HT_FlkSumProdReport." +
-    "POL], 0)\n";
+            this.Total_RejEggs_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [Total_RejEggs] / [POL])\n";
             this.Total_RejEggs_HH.Name = "Total_RejEggs_HH";
             // 
             // CumFinalHatEgg_HH
             // 
             this.CumFinalHatEgg_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumFinalHatEgg_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [BalOfHatEggs] / [SR_HT_FlkSumProdReport.P" +
-    "OL], 0)\n";
+            this.CumFinalHatEgg_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [BalOfHatEggs] / [POL])\n";
             this.CumFinalHatEgg_HH.Name = "CumFinalHatEgg_HH";
             // 
             // CumChicksAct_HH
             // 
             this.CumChicksAct_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicksAct_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [CumChicks] / [SR_HT_FlkSumProdReport.POL]" +
-    ", 0)\n";
+            this.CumChicksAct_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [CumChicks] / [POL])\n";
             this.CumChicksAct_HH.Name = "CumChicksAct_HH";
             // 
             // CumHatchability_HH
@@ -6555,49 +6519,45 @@
             // CumChicksRej_HH
             // 
             this.CumChicksRej_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicksRej_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [RejChicks] / [SR_HT_FlkSumProdReport.POL]" +
-    ", 0)\n";
+            this.CumChicksRej_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [RejChicks] / [POL])\n";
             this.CumChicksRej_HH.Name = "CumChicksRej_HH";
             // 
             // CumAGradeChicks_HH
             // 
             this.CumAGradeChicks_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumAGradeChicks_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [SR_HT_FlkSumProdReport.SelChicks] / [SR_H" +
-    "T_FlkSumProdReport.POL], 0)\n";
+            this.CumAGradeChicks_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [SelChicks] / [POL])\n";
             this.CumAGradeChicks_HH.Name = "CumAGradeChicks_HH";
             // 
             // EstChicks_PerEgg_HH
             // 
             this.EstChicks_PerEgg_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.EstChicks_PerEgg_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [EstChicks_PerEgg] / [SR_HT_FlkSumProdRepo" +
-    "rt.POL], 0)\n";
+            this.EstChicks_PerEgg_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [EstChicks_PerEgg] / [POL])\n";
             this.EstChicks_PerEgg_HH.Name = "EstChicks_PerEgg_HH";
             // 
             // EStChicks_PerStockHE_HH
             // 
             this.EStChicks_PerStockHE_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.EStChicks_PerStockHE_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [ESTChicks_PerStock_HE] / [SR_HT_FlkSumPro" +
-    "dReport.POL], 0)\n";
+            this.EStChicks_PerStockHE_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [ESTChicks_PerStock_HE] / [POL])\n";
             this.EStChicks_PerStockHE_HH.Name = "EStChicks_PerStockHE_HH";
             // 
             // CumChicks_ActEst_HH
             // 
             this.CumChicks_ActEst_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicks_ActEst_HH.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [CumChicks_Act_Est] / [SR_HT_FlkSumProdRep" +
-    "ort.POL], 0)\n";
+            this.CumChicks_ActEst_HH.Expression = "Iif(IsNullOrEmpty([POL]) Or [POL] = 0, 0, [CumChicks_Act_Est] / [POL])\n";
             this.CumChicks_ActEst_HH.Name = "CumChicks_ActEst_HH";
             // 
             // CumRecEggs_HH_1
             // 
             this.CumRecEggs_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumRecEggs_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, [SR_HT_FlkSumProdReport.FarmInTake_1] / [S" +
-    "R_HT_FlkSumProdReport.POL], 0)\n";
+            this.CumRecEggs_HH_1.Expression = "Iif([POL] <> 0, [FarmInTake_1] / [POL], 0)\n";
             this.CumRecEggs_HH_1.Name = "CumRecEggs_HH_1";
             // 
             // AB_CumTotalEggs_HH
             // 
             this.AB_CumTotalEggs_HH.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_CumTotalEggs_HH.Expression = "[CumRecEggs_HH] + [CumRecEggs_HH_1]";
+            this.AB_CumTotalEggs_HH.Expression = "Iif(IsNullOrEmpty([CumRecEggs_HH]) OR [CumRecEggs_HH] == 0, 0, [CumRecEggs_HH])\n+" +
+    "\nIif(IsNullOrEmpty([CumRecEggs_HH_1]) OR [CumRecEggs_HH_1] == 0, 0, [CumRecEggs_" +
+    "HH_1])\n";
             this.AB_CumTotalEggs_HH.Name = "AB_CumTotalEggs_HH";
             // 
             // AB_RejEggsHH
@@ -6609,37 +6569,45 @@
             // Total_RejEggs_1
             // 
             this.Total_RejEggs_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.Total_RejEggs_1.Expression = "[RejBroken_1] + [RejCrack_1] + [RejDef_1] + [RejOther_1]\n";
+            this.Total_RejEggs_1.Expression = resources.GetString("Total_RejEggs_1.Expression");
             this.Total_RejEggs_1.Name = "Total_RejEggs_1";
             // 
             // RejDef_1
             // 
             this.RejDef_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejDef_1.Expression = "[HT_RejDeformed_1] + [ST_RejDeformed_1]\n";
+            this.RejDef_1.Expression = "Iif(IsNullOrEmpty([HT_RejDeformed_1]) Or [HT_RejDeformed_1] = 0 \n    Or IsNullOrE" +
+    "mpty([ST_RejDeformed_1]) Or [ST_RejDeformed_1] = 0,\n    0,\n    [HT_RejDeformed_1" +
+    "] + [ST_RejDeformed_1])\n";
             this.RejDef_1.Name = "RejDef_1";
             // 
             // RejCrack_1
             // 
             this.RejCrack_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejCrack_1.Expression = "[ST_RejCracks_1] + [HT_RejCracks_1]\n";
+            this.RejCrack_1.Expression = "Iif(IsNullOrEmpty([ST_RejCracks_1]) Or [ST_RejCracks_1] = 0\n Or IsNullOrEmpty([HT" +
+    "_RejCracks_1]) Or [HT_RejCracks_1] = 0,\n 0,\n [ST_RejCracks_1] + [HT_RejCracks_1]" +
+    ")\n";
             this.RejCrack_1.Name = "RejCrack_1";
             // 
             // RejBroken_1
             // 
             this.RejBroken_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejBroken_1.Expression = "[ST_RejBroken_1] + [HT_RejBroken_1]\n";
+            this.RejBroken_1.Expression = "Iif(IsNullOrEmpty([ST_RejBroken_1]) Or [ST_RejBroken_1] = 0\n Or IsNullOrEmpty([HT" +
+    "_RejBroken_1]) Or [HT_RejBroken_1] = 0,\n 0,\n [ST_RejBroken_1] + [HT_RejBroken_1]" +
+    ")\n";
             this.RejBroken_1.Name = "RejBroken_1";
             // 
             // RejOther_1
             // 
             this.RejOther_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejOther_1.Expression = "[ST_RejOther] + [ST_RejOther_1]";
+            this.RejOther_1.Expression = "Iif(IsNullOrEmpty([ST_RejOther]) Or [ST_RejOther] = 0\n Or IsNullOrEmpty([ST_RejOt" +
+    "her_1]) Or [ST_RejOther_1] = 0,\n 0,\n [ST_RejOther] + [ST_RejOther_1])\n";
             this.RejOther_1.Name = "RejOther_1";
             // 
             // BalOfHatEggs_1
             // 
             this.BalOfHatEggs_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.BalOfHatEggs_1.Expression = "[FarmInTake_1] - [Total_RejEggs_1]\n";
+            this.BalOfHatEggs_1.Expression = "Iif(IsNullOrEmpty([FarmInTake_1]) Or [FarmInTake_1] = 0\n Or IsNullOrEmpty([Total_" +
+    "RejEggs_1]) Or [Total_RejEggs_1] = 0,\n 0,\n [FarmInTake_1] - [Total_RejEggs_1])\n";
             this.BalOfHatEggs_1.Name = "BalOfHatEggs_1";
             // 
             // CumFinalHatEgg_HH_1
@@ -6651,13 +6619,15 @@
             // AB_CumHatchEggsHH
             // 
             this.AB_CumHatchEggsHH.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_CumHatchEggsHH.Expression = "[CumFinalHatEgg_HH] + [CumFinalHatEgg_HH_1]";
+            this.AB_CumHatchEggsHH.Expression = "Iif(IsNullOrEmpty([CumFinalHatEgg_HH]) OR [CumFinalHatEgg_HH] == 0, 0, [CumFinalH" +
+    "atEgg_HH])\n+\nIif(IsNullOrEmpty([CumFinalHatEgg_HH_1]) OR [CumFinalHatEgg_HH_1] =" +
+    "= 0, 0, [CumFinalHatEgg_HH_1])\n";
             this.AB_CumHatchEggsHH.Name = "AB_CumHatchEggsHH";
             // 
             // CumChicks_1
             // 
             this.CumChicks_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicks_1.Expression = "[SelChicks_1] + [CullsChicks_1]+ [DeadChicks_1]\n";
+            this.CumChicks_1.Expression = resources.GetString("CumChicks_1.Expression");
             this.CumChicks_1.Name = "CumChicks_1";
             // 
             // CumHatchability_1
@@ -6669,28 +6639,26 @@
             // SoldTableEggs_1
             // 
             this.SoldTableEggs_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.SoldTableEggs_1.Expression = "[SR_HT_FlkSumProdReport.ER_SoldAsTableEggs_1] + [SR_HT_FlkSumProdReport.ES_SoldAs" +
-    "TableEggs_1]\n";
+            this.SoldTableEggs_1.Expression = resources.GetString("SoldTableEggs_1.Expression");
             this.SoldTableEggs_1.Name = "SoldTableEggs_1";
             // 
             // EggsToOffal_1
             // 
             this.EggsToOffal_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.EggsToOffal_1.Expression = "[SR_HT_FlkSumProdReport.ER_SendToOffal_1] + [SR_HT_FlkSumProdReport.ES_SendToOffa" +
-    "l_1]\n";
+            this.EggsToOffal_1.Expression = resources.GetString("EggsToOffal_1.Expression");
             this.EggsToOffal_1.Name = "EggsToOffal_1";
             // 
             // SoldHatEggs_1
             // 
             this.SoldHatEggs_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.SoldHatEggs_1.Expression = "[SR_HT_FlkSumProdReport.ER_SoldAsHatEggs_1] + [SR_HT_FlkSumProdReport.ES_SoldAsHa" +
-    "tEggs_1]\n";
+            this.SoldHatEggs_1.Expression = "Iif(IsNullOrEmpty([ER_SoldAsHatEggs_1]), 0, [ER_SoldAsHatEggs_1]) \n+ Iif(IsNullOr" +
+    "Empty([ES_SoldAsHatEggs_1]), 0, [ES_SoldAsHatEggs_1])\n";
             this.SoldHatEggs_1.Name = "SoldHatEggs_1";
             // 
             // TotalEggSold_1
             // 
             this.TotalEggSold_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.TotalEggSold_1.Expression = "[SoldHatEggs_1] + [SoldTableEggs_1] + [EggsToOffal_1]\n";
+            this.TotalEggSold_1.Expression = resources.GetString("TotalEggSold_1.Expression");
             this.TotalEggSold_1.Name = "TotalEggSold_1";
             // 
             // ESTChicks_PerStock_HE_1
@@ -6709,7 +6677,7 @@
             // CumChicks_Act_Est_1
             // 
             this.CumChicks_Act_Est_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicks_Act_Est_1.Expression = "[EstChicks_PerEgg_1] + [ESTChicks_PerStock_HE_1] + [CumChicks_1]\n";
+            this.CumChicks_Act_Est_1.Expression = resources.GetString("CumChicks_Act_Est_1.Expression");
             this.CumChicks_Act_Est_1.Name = "CumChicks_Act_Est_1";
             // 
             // AB_CumTotalChicksHH_VS_Act
@@ -6721,34 +6689,35 @@
             // AB_RejChicksHH_VS_Act
             // 
             this.AB_RejChicksHH_VS_Act.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_RejChicksHH_VS_Act.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, ([RejChicks] + [SR_HT_FlkSumProdReport.Cul" +
-    "lsChicks_1] + [SR_HT_FlkSumProdReport.DeadChicks_1]) / [SR_HT_FlkSumProdReport.P" +
-    "OL], 0)\n";
+            this.AB_RejChicksHH_VS_Act.Expression = resources.GetString("AB_RejChicksHH_VS_Act.Expression");
             this.AB_RejChicksHH_VS_Act.Name = "AB_RejChicksHH_VS_Act";
             // 
             // AB_CumAGradeChicksHH_VS_Act
             // 
             this.AB_CumAGradeChicksHH_VS_Act.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_CumAGradeChicksHH_VS_Act.Expression = "Iif([SR_HT_FlkSumProdReport.POL] <> 0, ([SR_HT_FlkSumProdReport.SelChicks] + [SR_" +
-    "HT_FlkSumProdReport.SelChicks_1]) / [SR_HT_FlkSumProdReport.POL], 0)\n";
+            this.AB_CumAGradeChicksHH_VS_Act.Expression = resources.GetString("AB_CumAGradeChicksHH_VS_Act.Expression");
             this.AB_CumAGradeChicksHH_VS_Act.Name = "AB_CumAGradeChicksHH_VS_Act";
             // 
             // AB_CumTotalChicksHH
             // 
             this.AB_CumTotalChicksHH.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_CumTotalChicksHH.Expression = "[CumChicks_ActEst_HH] + [CumChicks_ActEst_HH_1]\n";
+            this.AB_CumTotalChicksHH.Expression = resources.GetString("AB_CumTotalChicksHH.Expression");
             this.AB_CumTotalChicksHH.Name = "AB_CumTotalChicksHH";
             // 
             // AB_RejChicksHH
             // 
             this.AB_RejChicksHH.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_RejChicksHH.Expression = "[CumChicksRej_HH] + [CumChicksRej_HH_1]\n";
+            this.AB_RejChicksHH.Expression = "Iif(IsNullOrEmpty([CumChicksRej_HH]) OR [CumChicksRej_HH] == 0, 0, [CumChicksRej_" +
+    "HH])\n+\nIif(IsNullOrEmpty([CumChicksRej_HH_1]) OR [CumChicksRej_HH_1] == 0, 0, [C" +
+    "umChicksRej_HH_1])\n";
             this.AB_RejChicksHH.Name = "AB_RejChicksHH";
             // 
             // AB_CumAGradeChicksHH
             // 
             this.AB_CumAGradeChicksHH.DataMember = "SR_HT_FlkSumProdReport";
-            this.AB_CumAGradeChicksHH.Expression = "[AB_CumTotalChicksHH] - [AB_RejChicksHH]\n";
+            this.AB_CumAGradeChicksHH.Expression = "Iif(IsNullOrEmpty([AB_CumTotalChicksHH]) OR [AB_CumTotalChicksHH] == 0, 0, [AB_Cu" +
+    "mTotalChicksHH])\n-\nIif(IsNullOrEmpty([AB_RejChicksHH]) OR [AB_RejChicksHH] == 0," +
+    " 0, [AB_RejChicksHH])\n";
             this.AB_CumAGradeChicksHH.Name = "AB_CumAGradeChicksHH";
             // 
             // Data_2
@@ -6772,13 +6741,17 @@
             // RejChicks_1
             // 
             this.RejChicks_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejChicks_1.Expression = "[CullsChicks_1] + [DeadChicks_1]";
+            this.RejChicks_1.Expression = "Iif(\n    IsNullOrEmpty([CullsChicks_1]) Or [CullsChicks_1] = 0, 0, [CullsChicks_1" +
+    "]\n) \n+ \nIif(\n    IsNullOrEmpty([DeadChicks_1]) Or [DeadChicks_1] = 0, 0, [DeadCh" +
+    "icks_1]\n)\n";
             this.RejChicks_1.Name = "RejChicks_1";
             // 
             // EstChicks_PerEgg_1
             // 
             this.EstChicks_PerEgg_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.EstChicks_PerEgg_1.Expression = "[TotalEggSold_1] * [CumHatchability_1] / 100\n";
+            this.EstChicks_PerEgg_1.Expression = "(\n    Iif(IsNullOrEmpty([TotalEggSold_1]) OR [TotalEggSold_1] == 0, 0, [TotalEggS" +
+    "old_1])\n)\n*\n(\n    Iif(IsNullOrEmpty([CumHatchability_1]) OR [CumHatchability_1] " +
+    "== 0, 0, [CumHatchability_1])\n)\n/\n100\n";
             this.EstChicks_PerEgg_1.Name = "EstChicks_PerEgg_1";
             // 
             // StockHatEggBal_1
@@ -6800,15 +6773,13 @@
             // Total_RejEggs_HH_1
             // 
             this.Total_RejEggs_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.Total_RejEggs_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL_1] <> 0, [Total_RejEggs_1] / [SR_HT_FlkSumProdRep" +
-    "ort.POL_1], 0)\n";
+            this.Total_RejEggs_HH_1.Expression = "Iif([POL_1] <> 0, [Total_RejEggs_1] / [POL_1], 0)\n";
             this.Total_RejEggs_HH_1.Name = "Total_RejEggs_HH_1";
             // 
             // CumChicksAct_HH_1
             // 
             this.CumChicksAct_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicksAct_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL_1] <> 0, [CumChicks_1] / [SR_HT_FlkSumProdReport." +
-    "POL_1], 0)\n";
+            this.CumChicksAct_HH_1.Expression = "Iif([POL_1] <> 0, [CumChicks_1] / [POL_1], 0)\n";
             this.CumChicksAct_HH_1.Name = "CumChicksAct_HH_1";
             // 
             // CumHatchability_HH_1
@@ -6820,22 +6791,19 @@
             // CumChicksRej_HH_1
             // 
             this.CumChicksRej_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicksRej_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL_1] <> 0, [RejChicks_1] / [SR_HT_FlkSumProdReport." +
-    "POL_1], 0)\n";
+            this.CumChicksRej_HH_1.Expression = "Iif([POL_1] <> 0, [RejChicks_1] / [POL_1], 0)\n";
             this.CumChicksRej_HH_1.Name = "CumChicksRej_HH_1";
             // 
             // CumAGradeChicks_HH_1
             // 
             this.CumAGradeChicks_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumAGradeChicks_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL_1] <> 0, [SR_HT_FlkSumProdReport.SelChicks_1] / [" +
-    "SR_HT_FlkSumProdReport.POL_1], 0)\n";
+            this.CumAGradeChicks_HH_1.Expression = "Iif([POL_1] <> 0, [SelChicks_1] / [POL_1], 0)\n";
             this.CumAGradeChicks_HH_1.Name = "CumAGradeChicks_HH_1";
             // 
             // EstChicks_PerEgg_HH_1
             // 
             this.EstChicks_PerEgg_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.EstChicks_PerEgg_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL_1] <> 0, [EstChicks_PerEgg_1] / [SR_HT_FlkSumProd" +
-    "Report.POL_1], 0)\n";
+            this.EstChicks_PerEgg_HH_1.Expression = "Iif([POL_1] <> 0, [EstChicks_PerEgg_1] / [POL_1], 0)\n";
             this.EstChicks_PerEgg_HH_1.Name = "EstChicks_PerEgg_HH_1";
             // 
             // EStChicks_PerStockHE_HH_1
@@ -6848,8 +6816,7 @@
             // CumChicks_ActEst_HH_1
             // 
             this.CumChicks_ActEst_HH_1.DataMember = "SR_HT_FlkSumProdReport";
-            this.CumChicks_ActEst_HH_1.Expression = "Iif([SR_HT_FlkSumProdReport.POL_1] <> 0, [CumChicks_Act_Est_1] / [SR_HT_FlkSumPro" +
-    "dReport.POL_1], 0)\n";
+            this.CumChicks_ActEst_HH_1.Expression = "Iif([POL_1] <> 0, [CumChicks_Act_Est_1] / [POL_1], 0)\n";
             this.CumChicks_ActEst_HH_1.Name = "CumChicks_ActEst_HH_1";
             // 
             // SettedEggs_1_FromPartA
@@ -6861,7 +6828,8 @@
             // RejChicks_1_FromPartA
             // 
             this.RejChicks_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejChicks_1_FromPartA.Expression = "[CullsChicks_1] + [DeadChicks_1]";
+            this.RejChicks_1_FromPartA.Expression = "Iif(IsNullOrEmpty([CullsChicks_1]), 0, [CullsChicks_1]) \n+ Iif(IsNullOrEmpty([Dea" +
+    "dChicks_1]), 0, [DeadChicks_1])\n";
             this.RejChicks_1_FromPartA.Name = "RejChicks_1_FromPartA";
             // 
             // GradeA_1_FromPartA
@@ -6886,22 +6854,23 @@
             // SoldHatEggs_1_FromPartA
             // 
             this.SoldHatEggs_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
-            this.SoldHatEggs_1_FromPartA.Expression = "IsNull([SR_HT_FlkSumProdReport.ER_SoldAsHatEggs_1], 0) + IsNull([SR_HT_FlkSumProd" +
-    "Report.ES_SoldAsHatEggs_1], 0)\n";
+            this.SoldHatEggs_1_FromPartA.Expression = "Iif(IsNullOrEmpty([ER_SoldAsHatEggs_1]) Or [ER_SoldAsHatEggs_1] == 0, 0, [ER_Sold" +
+    "AsHatEggs_1]) \n+ Iif(IsNullOrEmpty([ES_SoldAsHatEggs_1]) Or [ES_SoldAsHatEggs_1]" +
+    " == 0, 0, [ES_SoldAsHatEggs_1])\n";
             this.SoldHatEggs_1_FromPartA.Name = "SoldHatEggs_1_FromPartA";
             // 
             // SoldTableEggs_1_FromPartA
             // 
             this.SoldTableEggs_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
-            this.SoldTableEggs_1_FromPartA.Expression = "[SR_HT_FlkSumProdReport.ER_SoldAsTableEggs_1] + [SR_HT_FlkSumProdReport.ES_SoldAs" +
-    "TableEggs_1]\n";
+            this.SoldTableEggs_1_FromPartA.Expression = resources.GetString("SoldTableEggs_1_FromPartA.Expression");
             this.SoldTableEggs_1_FromPartA.Name = "SoldTableEggs_1_FromPartA";
             // 
             // EggsToOffal_1_FromPartA
             // 
             this.EggsToOffal_1_FromPartA.DataMember = "SR_HT_FlkSumProdReport";
-            this.EggsToOffal_1_FromPartA.Expression = "[SR_HT_FlkSumProdReport.ER_SendToOffal_1] + [SR_HT_FlkSumProdReport.ES_SendToOffa" +
-    "l_1]\n";
+            this.EggsToOffal_1_FromPartA.Expression = "Iif(IsNullOrEmpty([ER_SendToOffal_1]) OR [ER_SendToOffal_1] == 0, 0, [ER_SendToOf" +
+    "fal_1])\n+\nIif(IsNullOrEmpty([ES_SendToOffal_1]) OR [ES_SendToOffal_1] == 0, 0, [" +
+    "ES_SendToOffal_1])\n";
             this.EggsToOffal_1_FromPartA.Name = "EggsToOffal_1_FromPartA";
             // 
             // TotalEggSold_1_FromPartA
@@ -6911,20 +6880,104 @@
     "A]\n";
             this.TotalEggSold_1_FromPartA.Name = "TotalEggSold_1_FromPartA";
             // 
-            // xrPageInfo1
+            // xrTableCell180
             // 
-            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrPageInfo1.Name = "xrPageInfo1";
-            this.xrPageInfo1.StyleName = "PageInfo";
-            this.xrPageInfo1.StylePriority.UseBorders = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.xrTableCell180.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell180.BorderWidth = 1.4F;
+            this.xrTableCell180.Multiline = true;
+            this.xrTableCell180.Name = "xrTableCell180";
+            this.xrTableCell180.Scripts.OnBeforePrint = "xrTableCell180_BeforePrint";
+            this.xrTableCell180.StylePriority.UseBorders = false;
+            this.xrTableCell180.StylePriority.UseBorderWidth = false;
+            this.xrTableCell180.StylePriority.UseTextAlignment = false;
+            this.xrTableCell180.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrPageInfo2
+            // Female_Per
             // 
-            this.xrPageInfo2.Name = "xrPageInfo2";
-            this.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.xrPageInfo2.StyleName = "PageInfo";
-            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.Female_Per.DataMember = "SR_HT_FlkSumProdReport";
+            this.Female_Per.Expression = "Iif([SR_HT_FlkSumProdReport.FemalesTrans] <> 0, \n    [SR_HT_FlkSumProdReport.Fema" +
+    "lesDepleted] / [SR_HT_FlkSumProdReport.FemalesTrans] * 100, \n    0)\n";
+            this.Female_Per.Name = "Female_Per";
+            // 
+            // Week_CF
+            // 
+            this.Week_CF.DataMember = "SR_HT_FlkSumProdReport";
+            this.Week_CF.Expression = "Iif(?IsRTL, \'أسابيع\' , \'Weeks\')";
+            this.Week_CF.Name = "Week_CF";
+            // 
+            // xrTableCell51
+            // 
+            this.xrTableCell51.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell51.Multiline = true;
+            this.xrTableCell51.Name = "xrTableCell51";
+            this.xrTableCell51.StylePriority.UseBorders = false;
+            // 
+            // xrTableCell62
+            // 
+            this.xrTableCell62.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell62.Multiline = true;
+            this.xrTableCell62.Name = "xrTableCell62";
+            this.xrTableCell62.StylePriority.UseBorders = false;
+            // 
+            // xrTableRow25
+            // 
+            this.xrTableRow25.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell62,
+            this.xrTableCell64});
+            this.xrTableRow25.Name = "xrTableRow25";
+            // 
+            // xrTable25
+            // 
+            this.xrTable25.BorderWidth = 1.4F;
+            this.xrTable25.Name = "xrTable25";
+            this.xrTable25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable25.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow25});
+            this.xrTable25.StylePriority.UseBorderWidth = false;
+            // 
+            // xrTableCell64
+            // 
+            this.xrTableCell64.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell64.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SelChicks]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
+            this.xrTableCell64.Multiline = true;
+            this.xrTableCell64.Name = "xrTableCell64";
+            this.xrTableCell64.StylePriority.UseBorders = false;
+            // 
+            // xrTableCell48
+            // 
+            this.xrTableCell48.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell48.Multiline = true;
+            this.xrTableCell48.Name = "xrTableCell48";
+            this.xrTableCell48.StylePriority.UseBorders = false;
+            this.xrTableCell48.StylePriority.UseTextAlignment = false;
+            this.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrTableRow26
+            // 
+            this.xrTableRow26.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell48});
+            this.xrTableRow26.Name = "xrTableRow26";
+            // 
+            // xrTable26
+            // 
+            this.xrTable26.BorderWidth = 1.4F;
+            this.xrTable26.Name = "xrTable26";
+            this.xrTable26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable26.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow26});
+            this.xrTable26.StylePriority.UseBorderWidth = false;
             // 
             // SR_HT_FlkSumProdReport
             // 
@@ -7041,7 +7094,9 @@
             this.SoldHatEggs_1_FromPartA,
             this.SoldTableEggs_1_FromPartA,
             this.EggsToOffal_1_FromPartA,
-            this.TotalEggSold_1_FromPartA});
+            this.TotalEggSold_1_FromPartA,
+            this.Female_Per,
+            this.Week_CF});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
@@ -7111,7 +7166,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 25.08105F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 474.0002F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 530.8751F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
@@ -7152,9 +7207,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(5.625001F, 2.997716F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "SizeF", new System.Drawing.SizeF(204.12F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(24.13269F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(177.8695F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(242.4529F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable10, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(576.4584F, 60.00004F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable10, "Default", "SizeF", new System.Drawing.SizeF(262.5F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable10, "Default", "SizeF", new System.Drawing.SizeF(359.375F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 406.588F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "SizeF", new System.Drawing.SizeF(541.0103F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00025F, 23.07618F)),
@@ -7169,10 +7224,10 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable106, "Default", "SizeF", new System.Drawing.SizeF(232.9326F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable11, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(576.4584F, 80.00005F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable11, "Default", "SizeF", new System.Drawing.SizeF(262.5F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable12, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 32.99999F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable12, "Default", "SizeF", new System.Drawing.SizeF(1142.708F, 21F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable13, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 53.99997F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable13, "Default", "SizeF", new System.Drawing.SizeF(500.0001F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable12, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 22.99999F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable12, "Default", "SizeF", new System.Drawing.SizeF(1142.708F, 17.45834F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable13, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 40.45833F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable13, "Default", "SizeF", new System.Drawing.SizeF(500.0001F, 33.54165F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable14, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 73.99998F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable14, "Default", "SizeF", new System.Drawing.SizeF(214.9188F, 80.00005F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable15, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(224.9188F, 73.99998F)),
@@ -7186,7 +7241,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable19, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 154F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable19, "Default", "SizeF", new System.Drawing.SizeF(500.0001F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(24.13268F, 20.00001F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "SizeF", new System.Drawing.SizeF(177.8696F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "SizeF", new System.Drawing.SizeF(242.453F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable20, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00001F, 174F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable20, "Default", "SizeF", new System.Drawing.SizeF(500.0001F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable21, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00003F, 194.0001F)),
@@ -7208,7 +7263,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable29, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(185.5911F, 334.0001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable29, "Default", "SizeF", new System.Drawing.SizeF(324.4091F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(24.1327F, 40.00003F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable3, "Default", "SizeF", new System.Drawing.SizeF(177.8695F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable3, "Default", "SizeF", new System.Drawing.SizeF(242.4529F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable30, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00024F, 354.0002F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable30, "Default", "SizeF", new System.Drawing.SizeF(499.9999F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable31, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00024F, 374.0002F)),
@@ -7221,8 +7276,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable34, "Default", "SizeF", new System.Drawing.SizeF(500.0003F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable35, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00024F, 454.0002F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable35, "Default", "SizeF", new System.Drawing.SizeF(499.9998F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable36, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 54F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable36, "Default", "SizeF", new System.Drawing.SizeF(642.7079F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable36, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 40.45833F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable36, "Default", "SizeF", new System.Drawing.SizeF(642.7079F, 33.54168F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable37, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 74.00001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable37, "Default", "SizeF", new System.Drawing.SizeF(642.7079F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable38, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 94.00001F)),
@@ -7252,7 +7307,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable49, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 314.0001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable49, "Default", "SizeF", new System.Drawing.SizeF(642.7083F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(24.13271F, 60.00004F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "SizeF", new System.Drawing.SizeF(177.8695F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "SizeF", new System.Drawing.SizeF(242.4529F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable50, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 334.0002F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable50, "Default", "SizeF", new System.Drawing.SizeF(642.7083F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable51, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(510.0001F, 354.0002F)),
@@ -7274,7 +7329,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable59, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00019F, 86.58775F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable59, "Default", "SizeF", new System.Drawing.SizeF(214.9188F, 80.00005F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(24.13271F, 80.00005F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "SizeF", new System.Drawing.SizeF(177.8695F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "SizeF", new System.Drawing.SizeF(242.4529F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable60, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(229.919F, 86.58775F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable60, "Default", "SizeF", new System.Drawing.SizeF(386.7789F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable61, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(229.919F, 106.5878F)),
@@ -7397,7 +7452,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell114, "Default", "Weight", 1.157392578125D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell115, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell115, "Default", "Weight", 1.4988537597656248D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell116, "Default", "Text", "2 - Estimated Chicks (as per egg sold)\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell116, "Default", "Text", "2 - Estimated Chicks (as per egg sold)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell116, "Default", "Weight", 3.7708361816406248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell117, "Default", "Weight", 1.1573925781249998D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell118, "Default", "Text", "xrTableCell118"),
@@ -7406,7 +7461,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell119, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell119, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "Text", "xrTableCell12"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "Weight", 0.77869522094726551D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "Weight", 1.4245291137695313D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell120, "Default", "Weight", 1.15739501953125D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell121, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell121, "Default", "Weight", 1.4988549804687497D),
@@ -7457,6 +7512,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell144, "ar", "Text", "البيض المستلم من القطيع الأم"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell144, "Default", "Weight", 3.930016784667969D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell145, "Default", "Text", "xrTableCell36"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell145, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell145, "Default", "Weight", 1.0282577540116009D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell146, "Default", "Text", "Rejected Eggs"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell146, "ar", "Text", "البيض المرفوض"),
@@ -7465,6 +7521,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell147, "ar", "Text", "مشوه"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell147, "Default", "Weight", 1.7808280776840877D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell148, "Default", "Text", "xrTableCell38"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell148, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell148, "Default", "Weight", 1.0199792665769949D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell149, "Default", "Text", "Crack"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell149, "ar", "Text", "مشقق"),
@@ -7473,16 +7530,19 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Text", "tdItemCode_DebitCredit"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Weight", 2.4546165902966171D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell150, "Default", "Text", "xrTableCell41"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell150, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell150, "Default", "Weight", 1.0199797536318373D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell151, "Default", "Text", "Broken"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell151, "ar", "Text", "مكسور"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell151, "Default", "Weight", 1.7808280803072543D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell152, "Default", "Text", "xrTableCell42"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell152, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell152, "Default", "Weight", 1.0199792639872616D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell153, "Default", "Text", "Other"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell153, "ar", "Text", "أسباب أخرى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell153, "Default", "Weight", 1.7808280803072665D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell154, "Default", "Text", "xrTableCell45"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell154, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell154, "Default", "Weight", 1.0199792639873126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell155, "Default", "Text", "Total Rejected"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell155, "ar", "Text", "إجمالي البيض المرفوض"),
@@ -7507,7 +7567,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell161, "Default", "Weight", 3.7298886243409668D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell162, "Default", "Text", "xrTableCell55"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell162, "Default", "Weight", 0.96804258824665179D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "Default", "Text", "Cum.Hatchability\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "Default", "Text", "Cum.Hatchability\t     %"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell163, "Default", "Weight", 2.3580105145213159D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell164, "Default", "Text", "xrTableCell58"),
@@ -7554,14 +7614,17 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell179, "Default", "Text", "xrTableCell71"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell179, "Default", "Weight", 0.61198759812097858D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell18, "Default", "Text", "xrTableCell18"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell18, "Default", "Weight", 1.3133701531527884D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell18, "Default", "TextFormatString", "{0:N0}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell18, "Default", "Weight", 2.4026526749579817D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell180, "Default", "Text", ""),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell180, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell180, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell186, "Default", "Text", "Cum.Chicks(Actual + Estimated)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell186, "ar", "Text", "إجمالي الكتاكيت (الفعلي + المتوقع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell186, "Default", "Weight", 2.3580099851348097D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell187, "Default", "Text", "xrTableCell83"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell187, "Default", "Weight", 0.61198597214876749D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "Default", "Text", "Cum.Received Eggs\t                                                               " +
-                    "                 \t\t\t\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "Default", "Text", "Cum.Received Eggs  HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "ar", "Text", "اجمالي البيض اامستلم (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell188, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell189, "Default", "Text", "xrTableCell73"),
@@ -7585,7 +7648,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell199, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell199, "Default", "Weight", 1.0669824361560698D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Text", "xrTableCell2"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 0.77869522094726573D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 1.424529245467264D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Text", "xrTableCell20"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Weight", 0.96875D),
@@ -7619,7 +7682,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell213, "Default", "Weight", 2.6562475585937504D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell214, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell214, "Default", "Weight", 1.0126444368681464D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Text", "Cum.Hatchability\t\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Text", "Cum.Hatchability              %"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Weight", 3.2715204484710934D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell216, "Default", "Text", "xrTableCell107"),
@@ -7636,8 +7699,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell220, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell220, "Default", "Weight", 1.0669817949829319D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Text", "Cum.A grade Chicks(Actual)\tHH                                                    " +
-                    "                                   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Text", "Cum.A grade Chicks(Actual)  HH                                                   " +
+                    "       "),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (الفعلي - حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell222, "Default", "Text", "xrTableCell94"),
@@ -7653,6 +7716,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell229, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell229, "Default", "Weight", 1.0669818115234375D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Text", "xrTableCell23"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell230, "Default", "Weight", 2.7538555908203128D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell231, "Default", "Weight", 2.65625D),
@@ -7662,7 +7726,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell234, "Default", "Weight", 2.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell235, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell235, "Default", "Weight", 1.0669817949829945D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "Default", "Text", "2 - Estimated Chicks (as per egg sold)\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "Default", "Text", "2 - Estimated Chicks (as per egg sold)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "ar", "Text", "2- الكتاكيت المتوقعة حسب البيض المباع\tHH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell236, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell237, "Default", "Text", "xrTableCell118"),
@@ -7707,6 +7771,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "Default", "Weight", 2.1901329160175744D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Text", "xrTableCell26"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "Default", "Text", "Cum.Total Hatchability\t\t%"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "ar", "Text", "معدل الفقس التراكمي"),
@@ -7714,30 +7779,31 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Text", "xrTableCell261"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Weight", 1.043747789146696D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Text", "xrTableCell263"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Weight", 1.0346251664032708D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Weight", 1.1934288707208878D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Text", "xrTableCell264"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Weight", 1.2947000775272959D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Weight", 1.135896373209679D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Text", "xrTableCell265"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Weight", 1.0346257767406013D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Weight", 1.1934288706415268D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell266, "Default", "Text", "xrTableCell266"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell266, "Default", "Weight", 1.29470007741929D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell266, "Default", "Weight", 1.1358969835183645D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell267, "Default", "Text", "xrTableCell267"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell267, "Default", "Weight", 1.0346251663890649D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell267, "Default", "Weight", 1.1934282602899906D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell268, "Default", "Text", "xrTableCell268"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell268, "Default", "Weight", 1.294700001125348D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell268, "Default", "Weight", 1.1358969072244223D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "Default", "Text", "Actual"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "ar", "Text", "فعلي"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "Default", "Weight", 1.0346258557373063D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell269, "Default", "Weight", 1.1934296590820221D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Text", "Cum Eggs received from parent farm"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "ar", "Text", "البيض المستلم من القطيع الأم"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Weight", 3.5244534549293998D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "Default", "Text", "Estimated"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "ar", "Text", "متوقع"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "Default", "Weight", 1.2947003998984516D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell270, "Default", "Weight", 1.1358965965537358D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Text", "Depletion Flock Age"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "ar", "Text", "عمر القطيع عند الاستنفاد"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Text", "xrTableCell29"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Text", "Crop #"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "ar", "Text", "رقم المحصول"),
@@ -7761,27 +7827,27 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Text", "xrTableCell35"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Weight", 2.4546144772621314D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Text", "xrTableCell36"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Weight", 1.4755471554221635D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Text", "Deformed"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "ar", "Text", "مشوه"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Weight", 1.3792906160046687D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Text", "xrTableCell38"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Weight", 1.4715203886340031D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Text", "Crack"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "ar", "Text", "متشقق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Weight", 1.3792903137207031D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Text", "xrTableCell4"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Weight", 1.3133704585429058D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Weight", 2.4026529343927532D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Text", "Broken"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "ar", "Text", "مكسور"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Weight", 1.3792906188964844D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Text", "xrTableCell41"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Weight", 1.4715219116210938D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "Text", "xrTableCell42"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "Weight", 1.4715197753906248D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "Default", "Text", "Total Rejected"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "ar", "Text", "إجمالي البيض المرفوض"),
@@ -7790,19 +7856,18 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "ar", "Text", "أسباب أخرى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Weight", 1.3792906188964844D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "Text", "xrTableCell45"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "Weight", 1.4715216064453125D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell46, "Default", "Text", "Balance Of Hatching Eggs"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell46, "ar", "Text", "رصيد بيض التفريخ المتبقي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell46, "Default", "Weight", 2.1170869608048144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Text", "xrTableCell47"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Weight", 1.4715219116210938D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "Default", "Text", "Sold Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "ar", "Text", "البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Text", "xrTableCell49"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Weight", 0.8829130391951856D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Text", "Transfer Date"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "تاريخ النقل"),
@@ -7811,7 +7876,6 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "ar", "Text", "البيض الموضوع في ماكينات التفريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Weight", 2.1170869608048144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Text", "Hatching Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "ar", "Text", "بيض التفريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Weight", 1.7725704956054686D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Text", "xrTableCell52"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "TextFormatString", "{0:N2}"),
@@ -7847,7 +7911,6 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Weight", 1.4715200805664062D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Text", "Cum A Grade Chicks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Weight", 2.1170875387069747D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Text", "xrTableCell63"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "TextFormatString", "{0:N2}"),
@@ -7861,8 +7924,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Text", "Total Egg Sold"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "ar", "Text", "إجمالي البيض المباع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Weight", 3.5284786987304688D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Text", "Cum.Received Eggs\t                                                               " +
-                    "                 \t\t\t\tHH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Text", "Cum.Received Eggs\t                   HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "ar", "Text", "إجمالي البيض المستلم"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell68, "Default", "Text", "xrTableCell68"),
@@ -7872,7 +7934,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "ar", "Text", "الكتاكيت المتوقعة (حسب البيض المباع)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "Default", "Weight", 2.1170892867082878D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Text", "xrTableCell7"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 1.3133702763961161D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 2.4026529268809469D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "Default", "Text", "Cum.Chicks Rejected   HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "ar", "Text", "إجمالي الكتاكيت المرفوضة (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "Default", "Weight", 3.7708337402343748D),
@@ -7923,8 +7985,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell86, "Default", "Weight", 1.4988537597656251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell87, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell87, "Default", "Weight", 3.7708349609375D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "Default", "Text", "Cum.A grade Chicks(Actual)\tHH                                                    " +
-                    "                                   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "Default", "Text", "Cum.A grade Chicks(Actual)  HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (الفعلي - حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell88, "Default", "Weight", 3.7708331298828126D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell89, "Default", "Text", ""),
@@ -8158,8 +8219,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable22)).EndInit();
@@ -8218,6 +8277,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable103)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable102)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -8387,10 +8448,6 @@
         private DevExpress.XtraReports.UI.CalculatedField RejCrack;
         private DevExpress.XtraReports.UI.CalculatedField RejBroken;
         private DevExpress.XtraReports.UI.CalculatedField RejOther;
-        private DevExpress.XtraReports.UI.XRTable xrTable25;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow25;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell62;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell64;
         private DevExpress.XtraReports.UI.XRTable xrTable24;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow24;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell59;
@@ -8425,11 +8482,7 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell63;
         private DevExpress.XtraReports.UI.XRTable xrTable27;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow27;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell51;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell57;
-        private DevExpress.XtraReports.UI.XRTable xrTable26;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow26;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell48;
         private DevExpress.XtraReports.UI.CalculatedField RejChicks;
         private DevExpress.XtraReports.UI.XRTable xrTable29;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow29;
@@ -8844,5 +8897,16 @@
         private DevExpress.XtraReports.UI.CalculatedField TotalEggSold_1_FromPartA;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell180;
+        private DevExpress.XtraReports.UI.CalculatedField Female_Per;
+        private DevExpress.XtraReports.UI.CalculatedField Week_CF;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell51;
+        private DevExpress.XtraReports.UI.XRTable xrTable26;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow26;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell48;
+        private DevExpress.XtraReports.UI.XRTable xrTable25;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow25;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell62;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell64;
     }
 }

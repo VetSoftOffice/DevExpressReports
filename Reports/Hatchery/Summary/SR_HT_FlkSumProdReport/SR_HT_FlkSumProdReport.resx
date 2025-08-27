@@ -120,6 +120,13 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXQiPjxGaWVsZCBOYW1lPSJ0U3RBY3Rpb25JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5CYWxhbmNlRm9yZWlnbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByaWNlVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFN1cHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZUZvcmVpZ24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaWxsU3RhdGVtZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXRfT0xEIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0U3VwcE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQmlsbFN0YXRlbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRGViaXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRmxrRGlyZWN0Q29zdCI+PEZpZWxkIE5hbWU9IlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVG90YWxDb3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ2hpY2tzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUE9MIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2hpY2tlbkNvc3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQbGFjZWRObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ2hlY2tlbnNXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJc0Nvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48VmlldyBOYW1lPSJTUl9GQ19GTV9TdG9ja01vdmVtZW50Ij48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkluT3V0T3JkZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRNaWxsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvV2hvbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXRfUHJvZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGb3JtdWxhT3BlcmFuZF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik91dHB1dHNTdGRVbml0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3RoZXJPdXRwdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbmRMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uc3VtZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTb2xkVHJhbnNmZXJPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCYXRjaENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEduSXRlbVR5cGVJRF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSXRlbUNvZGVfQ29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VCYWxhbmNlVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbnB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdGhlck91dHB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzU3RkVW5pdFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uZExvc3NWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbnN1bWVkVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb25WYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGRUcmFuc2Zlck91dFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2xvc2VCYWxhbmNlIj48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VkRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZDdW1EZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkN1bVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGQ3VtT3RoZXJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUN1bU90aGVyT3V0cHV0cyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0l0ZW1CYWxhbmNlIj48RmllbGQgTmFtZT0iQ3VzdE5hbWVXaXRob3V0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX01vbnRobHlEaXJlY3RDb3N0Ij48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="Total_RejEggs.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([RejBroken]) Or [RejBroken] == 0, 0, [RejBroken]) +
+Iif(IsNullOrEmpty([RejCrack]) Or [RejCrack] == 0, 0, [RejCrack]) +
+Iif(IsNullOrEmpty([RejDef]) Or [RejDef] == 0, 0, [RejDef]) +
+Iif(IsNullOrEmpty([RejOther]) Or [RejOther] == 0, 0, [RejOther])
+</value>
+  </data>
   <data name="CumHatchability.Expression" xml:space="preserve">
     <value>Iif([SR_HT_FlkSumProdReport.SettedEggs] &lt;&gt; 0, 
     ([SR_HT_FlkSumProdReport.SelChicks] + [SR_HT_FlkSumProdReport.CullsChicks] + [SR_HT_FlkSumProdReport.DeadChicks]) / [SR_HT_FlkSumProdReport.SettedEggs] * 100, 
@@ -127,22 +134,138 @@
 )
 </value>
   </data>
-  <data name="ActHatchBalanceEggs.Expression" xml:space="preserve">
-    <value>Iif([SR_HT_FlkSumProdReport.SetEggBalHatEgg] &lt;&gt; 0, 
-    ([SR_HT_FlkSumProdReport.SelChickBalHatEgg] + [SR_HT_FlkSumProdReport.CullsBalHatEgg] + [SR_HT_FlkSumProdReport.DeadsBalHatEgg]) / [SR_HT_FlkSumProdReport.SetEggBalHatEgg] * 100, 
-    0
+  <data name="TotalEggSold.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([SoldHatEggs]) Or [SoldHatEggs] == 0, 0, [SoldHatEggs]) +
+Iif(IsNullOrEmpty([SoldTableEggs]) Or [SoldTableEggs] == 0, 0, [SoldTableEggs]) +
+Iif(IsNullOrEmpty([EggsToOffal]) Or [EggsToOffal] == 0, 0, [EggsToOffal])
+</value>
+  </data>
+  <data name="StockHatEggBal.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([BalOfHatEggs]) Or [BalOfHatEggs] == 0, 0, [BalOfHatEggs]) -
+(
+    Iif(IsNullOrEmpty([SR_HT_FlkSumProdReport.SettedEggs]) Or [SR_HT_FlkSumProdReport.SettedEggs] == 0, 0, [SR_HT_FlkSumProdReport.SettedEggs]) +
+    Iif(IsNullOrEmpty([TotalEggSold]) Or [TotalEggSold] == 0, 0, [TotalEggSold])
 )
+</value>
+  </data>
+  <data name="ActHatchBalanceEggs.Expression" xml:space="preserve">
+    <value>Iif(
+    (IsNullOrEmpty([SetEggBalHatEgg]) Or [SetEggBalHatEgg] == 0), 
+    0, 
+    (Iif(IsNullOrEmpty([SelChickBalHatEgg]), 0, [SelChickBalHatEgg]) 
+    + Iif(IsNullOrEmpty([CullsBalHatEgg]), 0, [CullsBalHatEgg]) 
+    + Iif(IsNullOrEmpty([DeadsBalHatEgg]), 0, [DeadsBalHatEgg])) 
+    / [SetEggBalHatEgg] * 100
+)
+</value>
+  </data>
+  <data name="Total_RejEggs_1.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([RejBroken_1]) Or [RejBroken_1] = 0
+ Or IsNullOrEmpty([RejCrack_1]) Or [RejCrack_1] = 0
+ Or IsNullOrEmpty([RejDef_1]) Or [RejDef_1] = 0
+ Or IsNullOrEmpty([RejOther_1]) Or [RejOther_1] = 0,
+ 0,
+ [RejBroken_1] + [RejCrack_1] + [RejDef_1] + [RejOther_1])
+</value>
+  </data>
+  <data name="CumChicks_1.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([SelChicks_1]) Or [SelChicks_1] = 0
+ Or IsNullOrEmpty([CullsChicks_1]) Or [CullsChicks_1] = 0
+ Or IsNullOrEmpty([DeadChicks_1]) Or [DeadChicks_1] = 0,
+ 0,
+ [SelChicks_1] + [CullsChicks_1] + [DeadChicks_1])
 </value>
   </data>
   <data name="CumHatchability_1.Expression" xml:space="preserve">
-    <value>Iif([SR_HT_FlkSumProdReport.SettedEggs_1] &lt;&gt; 0, 
-    ([SR_HT_FlkSumProdReport.SelChicks_1] + [SR_HT_FlkSumProdReport.CullsChicks_1] + [SR_HT_FlkSumProdReport.DeadChicks_1]) / [SR_HT_FlkSumProdReport.SettedEggs_1] * 100, 
+    <value>Iif(
+    IsNullOrEmpty([SettedEggs_1]) Or [SettedEggs_1] = 0,
+    0,
+    (
+        Iif(IsNullOrEmpty([SelChicks_1]) Or [SelChicks_1] = 0, 0, [SelChicks_1]) +
+        Iif(IsNullOrEmpty([CullsChicks_1]) Or [CullsChicks_1] = 0, 0, [CullsChicks_1]) +
+        Iif(IsNullOrEmpty([DeadChicks_1]) Or [DeadChicks_1] = 0, 0, [DeadChicks_1])
+    ) / [SettedEggs_1] * 100
+)
+</value>
+  </data>
+  <data name="SoldTableEggs_1.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([ER_SoldAsTableEggs_1]) Or [ER_SoldAsTableEggs_1] == 0, 0, [ER_SoldAsTableEggs_1]) 
++ Iif(IsNullOrEmpty([ES_SoldAsTableEggs_1]) Or [ES_SoldAsTableEggs_1] == 0, 0, [ES_SoldAsTableEggs_1])
+</value>
+  </data>
+  <data name="EggsToOffal_1.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([SR_HT_FlkSumProdReport.ER_SendToOffal_1]) OR [SR_HT_FlkSumProdReport.ER_SendToOffal_1] == 0, 0, [SR_HT_FlkSumProdReport.ER_SendToOffal_1]) 
++ 
+Iif(IsNullOrEmpty([SR_HT_FlkSumProdReport.ES_SendToOffal_1]) OR [SR_HT_FlkSumProdReport.ES_SendToOffal_1] == 0, 0, [SR_HT_FlkSumProdReport.ES_SendToOffal_1])
+</value>
+  </data>
+  <data name="TotalEggSold_1.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([SoldHatEggs_1]) OR [SoldHatEggs_1] == 0, 0, [SoldHatEggs_1])
++
+Iif(IsNullOrEmpty([SoldTableEggs_1]) OR [SoldTableEggs_1] == 0, 0, [SoldTableEggs_1])
++
+Iif(IsNullOrEmpty([EggsToOffal_1]) OR [EggsToOffal_1] == 0, 0, [EggsToOffal_1])
+</value>
+  </data>
+  <data name="CumChicks_Act_Est_1.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([EstChicks_PerEgg_1]) OR [EstChicks_PerEgg_1] == 0, 0, [EstChicks_PerEgg_1])
++
+Iif(IsNullOrEmpty([ESTChicks_PerStock_HE_1]) OR [ESTChicks_PerStock_HE_1] == 0, 0, [ESTChicks_PerStock_HE_1])
++
+Iif(IsNullOrEmpty([CumChicks_1]) OR [CumChicks_1] == 0, 0, [CumChicks_1])
+</value>
+  </data>
+  <data name="AB_CumTotalChicksHH_VS_Act.Expression" xml:space="preserve">
+    <value>Iif(
+    [POL] &lt;&gt; 0,
+    (
+        Iif(IsNullOrEmpty([CumChicks]) OR [CumChicks] == 0, 0, [CumChicks])
+        +
+        Iif(IsNullOrEmpty([SelChicks_1]) OR [SelChicks_1] == 0, 0, [SelChicks_1])
+        +
+        Iif(IsNullOrEmpty([CullsChicks_1]) OR [CullsChicks_1] == 0, 0, [CullsChicks_1])
+        +
+        Iif(IsNullOrEmpty([DeadChicks_1]) OR [DeadChicks_1] == 0, 0, [DeadChicks_1])
+    )
+    / [POL],
     0
 )
 </value>
   </data>
-  <data name="AB_CumTotalChicksHH_VS_Act.Expression" xml:space="preserve">
-    <value>Iif([SR_HT_FlkSumProdReport.POL] &lt;&gt; 0, ([CumChicks] + [SR_HT_FlkSumProdReport.SelChicks_1] + [SR_HT_FlkSumProdReport.CullsChicks_1] + [SR_HT_FlkSumProdReport.DeadChicks_1]) / [SR_HT_FlkSumProdReport.POL], 0)
+  <data name="AB_RejChicksHH_VS_Act.Expression" xml:space="preserve">
+    <value>Iif(
+    [POL] &lt;&gt; 0,
+    (
+        Iif(IsNullOrEmpty([RejChicks]) OR [RejChicks] == 0, 0, [RejChicks])
+        +
+        Iif(IsNullOrEmpty([CullsChicks_1]) OR [CullsChicks_1] == 0, 0, [CullsChicks_1])
+        +
+        Iif(IsNullOrEmpty([DeadChicks_1]) OR [DeadChicks_1] == 0, 0, [DeadChicks_1])
+    )
+    / [POL],
+    0
+)
+</value>
+  </data>
+  <data name="AB_CumAGradeChicksHH_VS_Act.Expression" xml:space="preserve">
+    <value>Iif(
+    [POL] &lt;&gt; 0,
+    (
+        Iif(IsNullOrEmpty([RejChicks]) OR [RejChicks] == 0, 0, [RejChicks])
+        +
+        Iif(IsNullOrEmpty([CullsChicks_1]) OR [CullsChicks_1] == 0, 0, [CullsChicks_1])
+        +
+        Iif(IsNullOrEmpty([DeadChicks_1]) OR [DeadChicks_1] == 0, 0, [DeadChicks_1])
+    )
+    / [POL],
+    0
+)
+</value>
+  </data>
+  <data name="AB_CumTotalChicksHH.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([CumChicks_ActEst_HH]) OR [CumChicks_ActEst_HH] == 0, 0, [CumChicks_ActEst_HH])
++
+Iif(IsNullOrEmpty([CumChicks_ActEst_HH_1]) OR [CumChicks_ActEst_HH_1] == 0, 0, [CumChicks_ActEst_HH_1])
 </value>
   </data>
   <data name="Data_2.Expression" xml:space="preserve">
@@ -164,19 +287,21 @@
 )
 </value>
   </data>
+  <data name="SoldTableEggs_1_FromPartA.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([ER_SoldAsTableEggs_1]) Or [ER_SoldAsTableEggs_1] == 0, 0, [ER_SoldAsTableEggs_1]) 
++ Iif(IsNullOrEmpty([ES_SoldAsTableEggs_1]) Or [ES_SoldAsTableEggs_1] == 0, 0, [ES_SoldAsTableEggs_1])
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>public string storedEmployeeName = "";
+    <value>
+private void xrTableCell180_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    var femalesTrans = Convert.ToDecimal(GetCurrentColumnValue("FemalesTrans"));
+    var femalesDepleted = Convert.ToDecimal(GetCurrentColumnValue("FemalesDepleted"));
 
-private void xrLabel3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        storedEmployeeName = GetCurrentColumnValue("EmployeeName_en") as string;
-
-}
-
-private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    string currentEmployee = GetCurrentColumnValue("EmployeeName_en") as string;
-
-    // Ensure the label is only visible when the group is ending
-    ((XRLabel)sender).Visible = (currentEmployee == storedEmployeeName);
+    if (femalesTrans != 0)
+        ((XRTableCell)sender).Text = ((femalesDepleted / femalesTrans) * 100).ToString("N2");
+    else
+        ((XRTableCell)sender).Text = "0";
 }
 </value>
   </data>
