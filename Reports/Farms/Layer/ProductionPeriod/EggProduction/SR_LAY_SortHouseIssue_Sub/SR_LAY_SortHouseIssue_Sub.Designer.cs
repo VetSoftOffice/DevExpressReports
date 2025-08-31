@@ -74,25 +74,20 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 0F;
             this.TopMargin.Name = "TopMargin";
             // 
             // Detail
             // 
-            this.Detail.HeightF = 0F;
             this.Detail.Name = "Detail";
-            this.Detail.Visible = false;
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 0F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrCrossTab1});
-            this.ReportHeader.HeightF = 75F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrCrossTab1
@@ -108,9 +103,9 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             this.crossTabTotalCell9,
             this.crossTabTotalCell11});
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.54165F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.83332F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.83332F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.54166F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.83333F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.83333F)});
             crossTabColumnField1.FieldName = "ColData";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
@@ -120,7 +115,6 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             crossTabDataField1});
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
-            this.xrCrossTab1.LocationFloat = new DevExpress.Utils.PointFloat(3.003375F, 0F);
             this.xrCrossTab1.Name = "xrCrossTab1";
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
@@ -129,7 +123,6 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             crossTabRowField1.FieldName = "RowData";
             this.xrCrossTab1.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
             crossTabRowField1});
-            this.xrCrossTab1.SizeF = new System.Drawing.SizeF(230.2083F, 75F);
             this.xrCrossTab1.TotalAreaStyleName = "crossTabTotalStyle1";
             // 
             // crossTabDataCell1
@@ -137,14 +130,12 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             this.crossTabDataCell1.ColumnIndex = 1;
             this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL != True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.crossTabDataCell1.Font = new DevExpress.Drawing.DXFont("Arial", 8F);
             this.crossTabDataCell1.Name = "crossTabDataCell1";
             this.crossTabDataCell1.RowIndex = 1;
             // 
             // crossTabHeaderCell2
             // 
             this.crossTabHeaderCell2.ColumnIndex = 1;
-            this.crossTabHeaderCell2.Font = new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
             this.crossTabHeaderCell2.RowIndex = 0;
             this.crossTabHeaderCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -154,24 +145,20 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             this.crossTabHeaderCell3.ColumnIndex = 0;
             this.crossTabHeaderCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SR_LAY_SortHouseIssue_Sub.RowData]")});
-            this.crossTabHeaderCell3.Font = new DevExpress.Drawing.DXFont("Arial", 8F);
             this.crossTabHeaderCell3.Name = "crossTabHeaderCell3";
             this.crossTabHeaderCell3.RowIndex = 1;
             // 
             // crossTabHeaderCell4
             // 
             this.crossTabHeaderCell4.ColumnIndex = 0;
-            this.crossTabHeaderCell4.Font = new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.crossTabHeaderCell4.Name = "crossTabHeaderCell4";
             this.crossTabHeaderCell4.RowIndex = 2;
-            this.crossTabHeaderCell4.Text = " Total";
             // 
             // crossTabTotalCell1
             // 
             this.crossTabTotalCell1.ColumnIndex = 1;
             this.crossTabTotalCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL != True, \'MiddleLeft\', \'MiddleRight\')\n\n")});
-            this.crossTabTotalCell1.Font = new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.crossTabTotalCell1.Name = "crossTabTotalCell1";
             this.crossTabTotalCell1.RowIndex = 2;
             // 
@@ -184,47 +171,39 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             // crossTabHeaderCell12
             // 
             this.crossTabHeaderCell12.ColumnIndex = 2;
-            this.crossTabHeaderCell12.Font = new DevExpress.Drawing.DXFont("Arial", 8F);
             this.crossTabHeaderCell12.Name = "crossTabHeaderCell12";
             this.crossTabHeaderCell12.RowIndex = 0;
-            this.crossTabHeaderCell12.Text = "Grand Total";
             this.crossTabHeaderCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabTotalCell9
             // 
             this.crossTabTotalCell9.ColumnIndex = 2;
-            this.crossTabTotalCell9.Font = new DevExpress.Drawing.DXFont("Arial", 8F);
             this.crossTabTotalCell9.Name = "crossTabTotalCell9";
             this.crossTabTotalCell9.RowIndex = 1;
             // 
             // crossTabTotalCell11
             // 
             this.crossTabTotalCell11.ColumnIndex = 2;
-            this.crossTabTotalCell11.Font = new DevExpress.Drawing.DXFont("Arial", 8F);
             this.crossTabTotalCell11.Name = "crossTabTotalCell11";
             this.crossTabTotalCell11.RowIndex = 2;
             // 
             // Notes
             // 
-            this.Notes.Description = "Parameter1";
             this.Notes.Name = "Notes";
             this.Notes.Visible = false;
             // 
             // FilterData
             // 
-            this.FilterData.Description = "Parameter1";
             this.FilterData.Name = "FilterData";
             this.FilterData.Visible = false;
             // 
             // FilterDataHeader
             // 
-            this.FilterDataHeader.Description = "Parameter1";
             this.FilterDataHeader.Name = "FilterDataHeader";
             this.FilterDataHeader.Visible = false;
             // 
             // IsRTL
             // 
-            this.IsRTL.Description = "Parameter1";
             this.IsRTL.Name = "IsRTL";
             this.IsRTL.Type = typeof(bool);
             this.IsRTL.ValueInfo = "False";
@@ -232,7 +211,6 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             // 
             // FontSize
             // 
-            this.FontSize.Description = "Parameter1";
             this.FontSize.Name = "FontSize";
             this.FontSize.Visible = false;
             // 
@@ -302,11 +280,36 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             this.sqlDataSource1});
             this.DataMember = "SR_LAY_SortHouseIssue_Sub";
             this.DataSource = this.sqlDataSource1;
-            this.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
-            this.Margins = new DevExpress.Drawing.DXMargins(10F, 10F, 0F, 0F);
+            this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell12, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell12, "Default", "Text", "Grand Total"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell12, "ar", "Text", "الإجمالي الكلي"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Text", " Total"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "ar", "Text", "إجمالي"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell11, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "Visible", false),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.FilterData, "Default", "Description", "Parameter1"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.FilterDataHeader, "Default", "Description", "Parameter1"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Parameter1"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "Default", "Description", "Parameter1"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Notes, "Default", "Description", "Parameter1"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportHeader, "Default", "HeightF", 75F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(3.003375F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(230.2083F, 75F))});
             this.PageHeight = 1169;
             this.PageWidth = 827;
-            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsRTL, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Notes, DevExpress.XtraReports.Parameters.Orientation.Vertical),
