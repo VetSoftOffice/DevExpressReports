@@ -137,32 +137,157 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.ComponentModel;
 using DevExpress.XtraReports.Parameters;
+decimal groupSettedEggs = 0;
+decimal groupGradeOut = 0;
+decimal groupSettedEggsBC = 0;
+decimal groupGradeOutBC = 0;
+decimal groupBreeders = 0;
+decimal groupBreedersBC = 0;
+decimal groupBroilers = 0;
+decimal groupBroilersBC = 0;
+decimal groupTotalChicks = 0;
+decimal groupTotalChicksBC = 0;
 
-int groupCounter = 1;
+private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Get values from the current row
+    decimal settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    decimal gradeOut   = Convert.ToDecimal(GetCurrentColumnValue("GradeOut"));
 
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
-{
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
+    // Calculate safely
+    decimal result = 0;
+    if (settedEggs != 0)
+        result = (gradeOut * 100m) / settedEggs;
+    // Set the cell text
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00"); // format with 2 decimals
+   
+
+}
+
+
+private void GroupHeader3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Reset for this group
+    groupSettedEggs = 0;
+    groupGradeOut = 0;
+    groupBreeders = 0;
+    groupBroilers = 0;
+    groupTotalChicks = 0;
     
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-}</value>
+} 
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Accumulate for this group
+    groupSettedEggs += Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    groupGradeOut += Convert.ToDecimal(GetCurrentColumnValue("GradeOut"));
+    groupBreeders += Convert.ToDecimal(GetCurrentColumnValue("Breeders"));
+    groupBroilers += Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
+    groupTotalChicks += Convert.ToDecimal(GetCurrentColumnValue("TotalChicks"));
+}
+
+private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal result = 0;
+    if (groupSettedEggs != 0)
+        result = (groupGradeOut * 100m) / groupSettedEggs;
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+}
+
+
+
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    groupSettedEggsBC = 0;
+    groupGradeOutBC = 0;
+    groupBreedersBC = 0;
+    groupBroilersBC = 0;
+    groupTotalChicksBC = 0;
+    groupSettedEggsBC += Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    groupGradeOutBC += Convert.ToDecimal(GetCurrentColumnValue("GradeOut"));
+    groupBreedersBC += Convert.ToDecimal(GetCurrentColumnValue("Breeders"));
+    groupBroilersBC += Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
+    groupTotalChicksBC += Convert.ToDecimal(GetCurrentColumnValue("TotalChicks"));
+}
+private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       
+    decimal result = 0;
+    if (groupSettedEggsBC != 0)
+        result = (groupGradeOutBC * 100m) / groupSettedEggsBC ;
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+}
+
+
+private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Get values from the current row
+    decimal settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    decimal breeders= Convert.ToDecimal(GetCurrentColumnValue("Breeders"));
+
+    // Calculate safely
+    decimal result = 0;
+    if (settedEggs != 0)
+        result = (breeders * 100m) / settedEggs;
+    // Set the cell text
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00"); // format with 2 decimals
+}
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal result = 0;
+    if (groupSettedEggs != 0)
+        result = (groupBreeders * 100m) / groupSettedEggs;
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+
+}
+
+private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = 0;
+    if (groupSettedEggsBC != 0)
+        result = (groupBreedersBC * 100m) / groupSettedEggsBC ;
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+
+}
+
+private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal result = 0;
+    if (groupSettedEggs != 0)
+        result = (groupBroilers * 100m) / groupSettedEggs;
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+
+}
+
+private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal result = 0;
+    if (groupSettedEggsBC != 0)
+        result = (groupBroilersBC * 100m) / groupSettedEggsBC ;
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+
+}
+
+
+
+private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = 0;
+    if (groupSettedEggs != 0)
+        result = (groupTotalChicks * 100m) / groupSettedEggs;
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal result = 0;
+    if (groupSettedEggsBC != 0)
+        result = (groupTotalChicksBC * 100m) / groupSettedEggsBC ;
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
+}
+</value>
   </data>
 </root>

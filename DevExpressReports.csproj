@@ -19,21 +19,25 @@
     <Compile Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
     <Compile Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
     <Compile Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <Compile Remove="Reports\GPHatchery\Summary\SR_GHT_BreakOut\**" />
     <Content Remove="Reports\CashAndBank\**" />
     <Content Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
     <Content Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
     <Content Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
     <Content Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <Content Remove="Reports\GPHatchery\Summary\SR_GHT_BreakOut\**" />
     <EmbeddedResource Remove="Reports\CashAndBank\**" />
     <EmbeddedResource Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
     <EmbeddedResource Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
     <EmbeddedResource Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
     <EmbeddedResource Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <EmbeddedResource Remove="Reports\GPHatchery\Summary\SR_GHT_BreakOut\**" />
     <None Remove="Reports\CashAndBank\**" />
     <None Remove="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_GradingAndPacking\**" />
     <None Remove="Reports\Finance\CostSummary\SR_ST_DeliveryCost\**" />
     <None Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostBroiler_OLD1\**" />
     <None Remove="Reports\Finance\Farms\SR_FC_FlkDirectCostLayerOLD\**" />
+    <None Remove="Reports\GPHatchery\Summary\SR_GHT_BreakOut\**" />
   </ItemGroup>
 
   <ItemGroup>
