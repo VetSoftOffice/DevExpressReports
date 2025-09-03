@@ -154,9 +154,6 @@ decimal settedEggs = 0;
 decimal selChicks = 0;
 decimal percentage = 0;
 
-decimal settedEggs_Sum = 0;
-decimal selChicks_Sum = 0;
-decimal percentage2 = 0;
 
 decimal deadChicks = 0;
 decimal cullsChicks = 0;
@@ -164,12 +161,10 @@ decimal totalDeadAndCulls = 0;
 decimal grandTotalDeadAndCulls = 0;
 
 decimal rejChicks = 0;
-decimal totalRejSel = 0;
 decimal grandTotalRejSel = 0;
 
 decimal grandTotalSettedEggs = 0;
 decimal grandTotalRejectChicks = 0;   // renamed for clarity
-decimal grandTotalChicksHatchery = 0;
 decimal sumRowPercentages = 0m;
 int rowCount = 0;
      // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
@@ -276,6 +271,6 @@ private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.Canc
 
     decimal avgPercentage = (rowCount &gt; 0) ? (sumRowPercentages / rowCount) : 0m;
     cell.Text = avgPercentage.ToString("N2");         
-</value>
+}</value>
   </data>
 </root>

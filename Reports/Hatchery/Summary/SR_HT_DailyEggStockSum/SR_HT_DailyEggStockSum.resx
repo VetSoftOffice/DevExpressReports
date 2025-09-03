@@ -168,23 +168,23 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PEZpZWxkIE5hbWU9Ikl0ZW1UeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbnRhaW5lciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTZW50T3JDbGFjUXR5IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJDYWxjUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFkanVzdGVkUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <data name="TotalStock_CF.Expression" xml:space="preserve">
-    <value>[SR_HT_WeeklyEggStockSum.OpenStockReceivingHall] +
-[SR_HT_WeeklyEggStockSum.FarmIntake] +
-[SR_HT_WeeklyEggStockSum.HatcheryIntake] -
-[SR_HT_WeeklyEggStockSum.RejCracks] -
-[SR_HT_WeeklyEggStockSum.RejWhole] -
-[SR_HT_WeeklyEggStockSum.RejBroken] -
-[SR_HT_WeeklyEggStockSum.RejOther] -
-[SR_HT_WeeklyEggStockSum.SellToLogistic] -
-[SR_HT_WeeklyEggStockSum.SellOfHatEggs] -
-[SR_HT_WeeklyEggStockSum.EggsToCollage] -
-[SR_HT_WeeklyEggStockSum.TransToHatchery] -
-[SR_HT_WeeklyEggStockSum.SettedEggs] -
-[SR_HT_WeeklyEggStockSum.St_RejCrack] -
-[SR_HT_WeeklyEggStockSum.St_RejWhole] -
-[SR_HT_WeeklyEggStockSum.St_RejBroken] -
-[SR_HT_WeeklyEggStockSum.St_RejOther] -
-[SR_HT_WeeklyEggStockSum.EggsToOffal]
+    <value>[OpenStockReceivingHall] +
+[FarmIntake] +
+[HatcheryIntake] -
+[RejCracks] -
+[RejWhole] -
+[RejBroken] -
+[RejOther] -
+[SellToLogistic] -
+[SellOfHatEggs] -
+[EggsToCollage] -
+[TransToHatchery] -
+[SettedEggs] -
+[St_RejCrack] -
+[St_RejWhole] -
+[St_RejBroken] -
+[St_RejOther] -
+[EggsToOffal]
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
