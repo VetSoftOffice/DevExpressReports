@@ -123,7 +123,7 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>using System.Text.RegularExpressions;
 
-private void xrLabel10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+private void xrLabel9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
         string rawValue = Parameters["AccountDim"].Value as string;
 
     if (!string.IsNullOrWhiteSpace(rawValue))
@@ -139,11 +139,26 @@ private void xrLabel10_BeforePrint(object sender, System.ComponentModel.CancelEv
         // Optional: remove other special characters
         rawValue = Regex.Replace(rawValue, @"[^\w\s\-]", ""); // keeps letters, digits, space, dash
 
-        xrLabel10.Text = rawValue;
+        xrLabel9.Text = rawValue;
     }
     else
     {
-        xrLabel10.Text = string.Empty;
+        xrLabel9.Text = string.Empty;
+    }
+
+}
+
+private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    string rawValue = Parameters["CustSupp"].Value as string;
+
+    if (!string.IsNullOrEmpty(rawValue) &amp;&amp;
+        rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
+    {
+        xrLabel5.Text = rawValue.Substring(1, rawValue.Length - 2); // Remove first and last character
+    }
+    else
+    {
+        xrLabel5.Text = rawValue;
     }
 
 }
