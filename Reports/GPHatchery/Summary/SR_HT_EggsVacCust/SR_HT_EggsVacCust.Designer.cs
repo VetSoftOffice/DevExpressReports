@@ -374,11 +374,15 @@
             this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.sR_FC_CustSuppSheet_OLDTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FC_CustSuppSheet_OLDTableAdapter();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.dsFinance2 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
+            this.sR_FC_CustSuppSheetTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FC_CustSuppSheetTableAdapter();
+            this.sR_HT_EggsVacCustTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_EggsVacCustTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsFinance2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // ShowSignature
@@ -1932,6 +1936,19 @@
             this.xrTable1});
             this.GroupFooter1.Name = "GroupFooter1";
             // 
+            // dsFinance2
+            // 
+            this.dsFinance2.DataSetName = "dsFinance";
+            this.dsFinance2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sR_FC_CustSuppSheetTableAdapter
+            // 
+            this.sR_FC_CustSuppSheetTableAdapter.ClearBeforeFill = true;
+            // 
+            // sR_HT_EggsVacCustTableAdapter
+            // 
+            this.sR_HT_EggsVacCustTableAdapter.ClearBeforeFill = true;
+            // 
             // SR_HT_EggsVacCust
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1965,8 +1982,9 @@
             this.calculatedField1});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
-            this.dsFinance1});
-            this.DataMember = "SR_HT_EggsVacCust";
+            this.dsFinance1,
+            this.dsFinance2});
+            this.DataMember = "SR_HT_EggsVacCust1";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.Landscape = true;
@@ -2026,7 +2044,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1158.994F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1159F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "DisplayName", "SR_FC_FM_StockMovement"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "DisplayName", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "ar", "DisplayName", "قيود يومية تفصيلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 20F)),
@@ -2243,7 +2261,6 @@
             this.PageType});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
-            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,
@@ -2257,6 +2274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsFinance2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -2382,5 +2400,8 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private Finance.DataSets.dsFinance dsFinance2;
+        private Finance.DataSets.dsFinanceTableAdapters.SR_FC_CustSuppSheetTableAdapter sR_FC_CustSuppSheetTableAdapter;
+        private Finance.DataSets.dsFinanceTableAdapters.SR_HT_EggsVacCustTableAdapter sR_HT_EggsVacCustTableAdapter;
     }
 }
