@@ -103,7 +103,7 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             this.crossTabTotalCell9,
             this.crossTabTotalCell11});
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.54166F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.54164F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.83333F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.83333F)});
             crossTabColumnField1.FieldName = "ColData";
@@ -303,7 +303,7 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Notes, "Default", "Description", "Parameter1"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportHeader, "Default", "HeightF", 75F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(3.003375F, 0F)),
