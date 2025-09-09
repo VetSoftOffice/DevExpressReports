@@ -120,4 +120,22 @@
   <data name="dsLayer.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNMYXllciI+PFZpZXcgTmFtZT0iU1JfTEFZX1NvcnRIb3VzZURlbWFuZElzc3VlIj48RmllbGQgTmFtZT0iUm93U2VxMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJvd0RhdGExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvd1NlcTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXExIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGFWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    string rawValue = Parameters["FeedMillCode"].Value as string;
+
+    if (!string.IsNullOrEmpty(rawValue) &amp;&amp;
+        rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
+    {
+        xrLabel2.Text = rawValue.Substring(1, rawValue.Length - 2); // Remove first and last character
+    }
+    else
+    {
+        xrLabel2.Text = rawValue;
+    }
+
+}
+</value>
+  </data>
 </root>

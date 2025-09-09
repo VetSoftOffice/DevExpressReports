@@ -173,4 +173,23 @@
 
 </value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    string rawValue = Parameters["FeedMillCode"].Value as string;
+
+    if (!string.IsNullOrEmpty(rawValue) &amp;&amp;
+        rawValue.StartsWith("'") &amp;&amp; rawValue.EndsWith("'"))
+    {
+        xrLabel2.Text = rawValue.Substring(1, rawValue.Length - 2); // Remove first and last character
+    }
+    else
+    {
+        xrLabel2.Text = rawValue;
+    }
+
+
+}
+</value>
+  </data>
 </root>
