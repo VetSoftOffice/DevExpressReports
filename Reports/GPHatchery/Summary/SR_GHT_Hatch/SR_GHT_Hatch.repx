@@ -826,7 +826,7 @@
     <Item2 Ref="480" Component="#Ref-18" Culture="Default" Path="Description" Data="AdjustedPrice Str" />
     <Item3 Ref="481" Component="#Ref-20" Culture="Default" Path="Description" Data="Available" />
     <Item4 Ref="482" Component="#Ref-24" Culture="Default" Path="Description" Data="BookPerf" />
-    <Item5 Ref="483" Component="#Ref-69" Culture="Default" Path="HeightF" Data="30.8024864" />
+    <Item5 Ref="483" Component="#Ref-69" Culture="Default" Path="HeightF" Data="30.80249" />
     <Item6 Ref="484" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
     <Item7 Ref="485" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
     <Item8 Ref="486" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
@@ -840,7 +840,7 @@
     <Item16 Ref="494" Component="#Ref-366" Culture="Default" Path="HeightF" Data="20" />
     <Item17 Ref="495" Component="#Ref-425" Culture="Default" Path="HeightF" Data="20" />
     <Item18 Ref="496" Component="#Ref-339" Culture="Default" Path="HeightF" Data="60.64771" />
-    <Item19 Ref="497" Component="#Ref-410" Culture="Default" Path="HeightF" Data="20.7784653" />
+    <Item19 Ref="497" Component="#Ref-410" Culture="Default" Path="HeightF" Data="20.77847" />
     <Item20 Ref="498" Component="#Ref-422" Culture="Default" Path="HeightF" Data="0" />
     <Item21 Ref="499" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
     <Item22 Ref="500" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />
@@ -888,7 +888,7 @@
     <Item64 Ref="542" Component="#Ref-167" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item65 Ref="543" Component="#Ref-167" Culture="Default" Path="SizeF" Data="1169,20" />
     <Item66 Ref="544" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item67 Ref="545" Component="#Ref-1" Culture="Default" Path="Margins" Data="0, 0, 20, 30.8024864" />
+    <Item67 Ref="545" Component="#Ref-1" Culture="Default" Path="Margins" Data="0, 0, 20, 30.80249" />
     <Item68 Ref="546" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
     <Item69 Ref="547" Component="#Ref-246" Culture="Default" Path="HeightF" Data="0.778466" />
     <Item70 Ref="548" Component="#Ref-204" Culture="Default" Path="HeightF" Data="20" />
@@ -912,276 +912,277 @@
     <Item88 Ref="566" Component="#Ref-106" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item89 Ref="567" Component="#Ref-106" Culture="Default" Path="Weight" Data="2.3270299455756178" />
     <Item90 Ref="568" Component="#Ref-80" Culture="Default" Path="LocationFloat" Data="9.999466,0" />
-    <Item91 Ref="569" Component="#Ref-80" Culture="Default" Path="SizeF" Data="1149.00049,20" />
+    <Item91 Ref="569" Component="#Ref-80" Culture="Default" Path="SizeF" Data="1149,20" />
     <Item92 Ref="570" Component="#Ref-345" Culture="Default" Path="Text" Data="Farm" />
-    <Item93 Ref="571" Component="#Ref-345" Culture="ar" Path="Text" Data="دفعة" />
+    <Item93 Ref="571" Component="#Ref-345" Culture="ar" Path="Text" Data="مزرعة" />
     <Item94 Ref="572" Component="#Ref-345" Culture="Default" Path="Weight" Data="2.0219929036925972" />
     <Item95 Ref="573" Component="#Ref-346" Culture="Default" Path="Text" Data="Flock" />
-    <Item96 Ref="574" Component="#Ref-346" Culture="ar" Path="Text" Data="تاريخ الرص  &#xD;&#xA;" />
+    <Item96 Ref="574" Component="#Ref-346" Culture="ar" Path="Text" Data="قطيع" />
     <Item97 Ref="575" Component="#Ref-346" Culture="Default" Path="Weight" Data="1.7339413659771674" />
     <Item98 Ref="576" Component="#Ref-350" Culture="Default" Path="Text" Data="Non Hatched" />
-    <Item99 Ref="577" Component="#Ref-350" Culture="ar" Path="Text" Data="مزرعة" />
+    <Item99 Ref="577" Component="#Ref-350" Culture="ar" Path="Text" Data="البيض غير فاقس" />
     <Item100 Ref="578" Component="#Ref-350" Culture="Default" Path="Weight" Data="2.4998577679921041" />
     <Item101 Ref="579" Component="#Ref-347" Culture="Default" Path="Text" Data="Crop" />
-    <Item102 Ref="580" Component="#Ref-347" Culture="ar" Path="Text" Data="تاريخ النقل  &#xD;&#xA;" />
+    <Item102 Ref="580" Component="#Ref-347" Culture="ar" Path="Text" Data="محصول" />
     <Item103 Ref="581" Component="#Ref-347" Culture="Default" Path="Weight" Data="1.3858706136039203" />
-    <Item104 Ref="582" Component="#Ref-342" Culture="Default" Path="LocationFloat" Data="10.0000048,0" />
-    <Item105 Ref="583" Component="#Ref-342" Culture="Default" Path="SizeF" Data="1149.00012,60.64771" />
+    <Item104 Ref="582" Component="#Ref-342" Culture="Default" Path="LocationFloat" Data="10,0" />
+    <Item105 Ref="583" Component="#Ref-342" Culture="Default" Path="SizeF" Data="1149,60.64771" />
     <Item106 Ref="584" Component="#Ref-344" Culture="Default" Path="Text" Data="Line Type" />
-    <Item107 Ref="585" Component="#Ref-344" Culture="ar" Path="Text" Data="#م" />
+    <Item107 Ref="585" Component="#Ref-344" Culture="ar" Path="Text" Data="النوع" />
     <Item108 Ref="586" Component="#Ref-344" Culture="Default" Path="Weight" Data="2.3720952207235042" />
     <Item109 Ref="587" Component="#Ref-67" Culture="Default" Path="HeightF" Data="20" />
     <Item110 Ref="588" Component="#Ref-81" Culture="Default" Path="Weight" Data="1" />
     <Item111 Ref="589" Component="#Ref-343" Culture="Default" Path="Weight" Data="1" />
-    <Item112 Ref="590" Component="#Ref-420" Culture="Default" Path="LocationFloat" Data="189.931213,0" />
+    <Item112 Ref="590" Component="#Ref-420" Culture="Default" Path="LocationFloat" Data="189.9312,0" />
     <Item113 Ref="591" Component="#Ref-420" Culture="Default" Path="SizeF" Data="157.8997,20" />
     <Item114 Ref="592" Component="#Ref-420" Culture="Default" Path="Text" Data="Batch Code: [PatchCode]" />
     <Item115 Ref="593" Component="#Ref-420" Culture="ar" Path="Text" Data="الي: [?DateTo!dd-MM-yyyy]" />
-    <Item116 Ref="594" Component="#Ref-418" Culture="Default" Path="LocationFloat" Data="10.0000038,0" />
+    <Item116 Ref="594" Component="#Ref-418" Culture="Default" Path="LocationFloat" Data="10,0" />
     <Item117 Ref="595" Component="#Ref-418" Culture="Default" Path="SizeF" Data="158.3163,20" />
     <Item118 Ref="596" Component="#Ref-418" Culture="Default" Path="Text" Data="Hatchery: [HatcheryCode]" />
     <Item119 Ref="597" Component="#Ref-418" Culture="ar" Path="Text" Data="من: [?DateFrom!dd-MM-yyyy]" />
     <Item120 Ref="598" Component="#Ref-416" Culture="Default" Path="LocationFloat" Data="383.003,0" />
     <Item121 Ref="599" Component="#Ref-416" Culture="Default" Path="SizeF" Data="164.1655,20" />
     <Item122 Ref="600" Component="#Ref-416" Culture="Default" Path="Text" Data="Setting Date: [SettingDate!dd/MM/yyyy]" />
-    <Item123 Ref="601" Component="#Ref-416" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
-    <Item124 Ref="602" Component="#Ref-414" Culture="Default" Path="LocationFloat" Data="621.2914,0" />
-    <Item125 Ref="603" Component="#Ref-414" Culture="Default" Path="SizeF" Data="164.1655,20" />
-    <Item126 Ref="604" Component="#Ref-414" Culture="Default" Path="Text" Data="Transfer Date: [TransferDate!dd/MM/yyyy]" />
-    <Item127 Ref="605" Component="#Ref-414" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
-    <Item128 Ref="606" Component="#Ref-412" Culture="Default" Path="LocationFloat" Data="849.2146,0" />
-    <Item129 Ref="607" Component="#Ref-412" Culture="Default" Path="SizeF" Data="164.1655,20" />
-    <Item130 Ref="608" Component="#Ref-412" Culture="Default" Path="Text" Data="Exit Date: [ExitDate!dd/MM/yyyy]" />
-    <Item131 Ref="609" Component="#Ref-412" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
-    <Item132 Ref="610" Component="#Ref-70" Culture="Default" Path="LocationFloat" Data="1000.98474,0" />
-    <Item133 Ref="611" Component="#Ref-70" Culture="Default" Path="SizeF" Data="168.0157,21.505" />
-    <Item134 Ref="612" Component="#Ref-70" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
-    <Item135 Ref="613" Component="#Ref-367" Culture="Default" Path="LocationFloat" Data="10.000001,0" />
-    <Item136 Ref="614" Component="#Ref-367" Culture="Default" Path="SizeF" Data="814.914368,20" />
-    <Item137 Ref="615" Component="#Ref-427" Culture="Default" Path="LocationFloat" Data="10.000001,0" />
-    <Item138 Ref="616" Component="#Ref-427" Culture="Default" Path="SizeF" Data="814.914368,20" />
-    <Item139 Ref="617" Component="#Ref-124" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item140 Ref="618" Component="#Ref-124" Culture="Default" Path="Text" Data="xrTableCell1" />
-    <Item141 Ref="619" Component="#Ref-124" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item142 Ref="620" Component="#Ref-124" Culture="Default" Path="Weight" Data="2.2645183465872849" />
-    <Item143 Ref="621" Component="#Ref-355" Culture="Default" Path="Text" Data="Broilers" />
-    <Item144 Ref="622" Component="#Ref-355" Culture="ar" Path="Text" Data="وزن بيض عند النقل  &#xD;&#xA;" />
-    <Item145 Ref="623" Component="#Ref-355" Culture="Default" Path="Weight" Data="2.7984529183143478" />
-    <Item146 Ref="624" Component="#Ref-362" Culture="Default" Path="Text" Data="H.O.F % " />
-    <Item147 Ref="625" Component="#Ref-362" Culture="ar" Path="Text" Data="متوسط وزن كتكوت  &#xD;&#xA;" />
-    <Item148 Ref="626" Component="#Ref-362" Culture="Default" Path="Weight" Data="2.50746636316899" />
-    <Item149 Ref="627" Component="#Ref-363" Culture="Default" Path="Text" Data="H.O.F % Std" />
-    <Item150 Ref="628" Component="#Ref-363" Culture="ar" Path="Text" Data="Chicks Yield %  &#xD;&#xA;" />
-    <Item151 Ref="629" Component="#Ref-363" Culture="Default" Path="Weight" Data="1.9832401597001419" />
-    <Item152 Ref="630" Component="#Ref-364" Culture="Default" Path="Text" Data="Store" />
-    <Item153 Ref="631" Component="#Ref-364" Culture="Default" Path="Weight" Data="1.9403462188849729" />
-    <Item154 Ref="632" Component="#Ref-160" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item155 Ref="633" Component="#Ref-160" Culture="Default" Path="Text" Data="xrTableCell14" />
-    <Item156 Ref="634" Component="#Ref-160" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item157 Ref="635" Component="#Ref-160" Culture="Default" Path="Weight" Data="1.5701412517919875" />
-    <Item158 Ref="636" Component="#Ref-128" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item159 Ref="637" Component="#Ref-128" Culture="Default" Path="Text" Data="xrTableCell15" />
-    <Item160 Ref="638" Component="#Ref-128" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item161 Ref="639" Component="#Ref-128" Culture="Default" Path="Weight" Data="1.4394899635090859" />
-    <Item162 Ref="640" Component="#Ref-132" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item163 Ref="641" Component="#Ref-132" Culture="Default" Path="Text" Data="xrTableCell16" />
-    <Item164 Ref="642" Component="#Ref-132" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item165 Ref="643" Component="#Ref-132" Culture="Default" Path="Weight" Data="2.36738228104981" />
-    <Item166 Ref="644" Component="#Ref-136" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item167 Ref="645" Component="#Ref-136" Culture="Default" Path="Text" Data="xrTableCell17" />
-    <Item168 Ref="646" Component="#Ref-136" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item169 Ref="647" Component="#Ref-136" Culture="Default" Path="Weight" Data="1.2358745672028153" />
-    <Item170 Ref="648" Component="#Ref-140" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item171 Ref="649" Component="#Ref-140" Culture="Default" Path="Text" Data="xrTableCell18" />
-    <Item172 Ref="650" Component="#Ref-140" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item173 Ref="651" Component="#Ref-140" Culture="Default" Path="Weight" Data="1.7039225373291425" />
-    <Item174 Ref="652" Component="#Ref-152" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item175 Ref="653" Component="#Ref-152" Culture="Default" Path="Text" Data="xrTableCell19" />
-    <Item176 Ref="654" Component="#Ref-152" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item177 Ref="655" Component="#Ref-152" Culture="Default" Path="Weight" Data="2.0290530797561606" />
-    <Item178 Ref="656" Component="#Ref-349" Culture="Default" Path="Text" Data="Setted Eggs" />
-    <Item179 Ref="657" Component="#Ref-349" Culture="ar" Path="Text" Data="الحضانة" />
-    <Item180 Ref="658" Component="#Ref-349" Culture="Default" Path="Weight" Data="2.5571860155896613" />
-    <Item181 Ref="659" Component="#Ref-156" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item182 Ref="660" Component="#Ref-156" Culture="Default" Path="Text" Data="xrTableCell20" />
-    <Item183 Ref="661" Component="#Ref-156" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item184 Ref="662" Component="#Ref-156" Culture="Default" Path="Weight" Data="1.6048396916026739" />
-    <Item185 Ref="663" Component="#Ref-429" Culture="Default" Path="Text" Data="Total" />
-    <Item186 Ref="664" Component="#Ref-429" Culture="Default" Path="Weight" Data="1.740424894305008" />
-    <Item187 Ref="665" Component="#Ref-431" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item188 Ref="666" Component="#Ref-431" Culture="Default" Path="Text" Data="xrTableCell40" />
-    <Item189 Ref="667" Component="#Ref-431" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item190 Ref="668" Component="#Ref-431" Culture="Default" Path="Weight" Data="0.49996637086239648" />
-    <Item191 Ref="669" Component="#Ref-436" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item192 Ref="670" Component="#Ref-436" Culture="Default" Path="Text" Data="xrTableCell41" />
-    <Item193 Ref="671" Component="#Ref-436" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item194 Ref="672" Component="#Ref-436" Culture="Default" Path="Weight" Data="0.48874935001351605" />
-    <Item195 Ref="673" Component="#Ref-441" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item196 Ref="674" Component="#Ref-441" Culture="Default" Path="Text" Data="xrTableCell42" />
-    <Item197 Ref="675" Component="#Ref-441" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item198 Ref="676" Component="#Ref-441" Culture="Default" Path="Weight" Data="0.56223687156990976" />
-    <Item199 Ref="677" Component="#Ref-445" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item200 Ref="678" Component="#Ref-445" Culture="Default" Path="Text" Data="xrTableCell43" />
-    <Item201 Ref="679" Component="#Ref-445" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item202 Ref="680" Component="#Ref-445" Culture="Default" Path="Weight" Data="0.30932670072041968" />
-    <Item203 Ref="681" Component="#Ref-102" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item204 Ref="682" Component="#Ref-102" Culture="Default" Path="Text" Data="xrTableCell26" />
-    <Item205 Ref="683" Component="#Ref-102" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item206 Ref="684" Component="#Ref-102" Culture="Default" Path="Weight" Data="2.0228914078081988" />
-    <Item207 Ref="685" Component="#Ref-356" Culture="Default" Path="Text" Data="%" />
-    <Item208 Ref="686" Component="#Ref-356" Culture="ar" Path="Text" Data="وزن صينية" />
-    <Item209 Ref="687" Component="#Ref-356" Culture="Default" Path="Weight" Data="1.7789032982251909" />
-    <Item210 Ref="688" Component="#Ref-144" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item211 Ref="689" Component="#Ref-144" Culture="Default" Path="Text" Data="xrTableCell28" />
-    <Item212 Ref="690" Component="#Ref-144" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item213 Ref="691" Component="#Ref-144" Culture="Default" Path="Weight" Data="1.7680199724874468" />
-    <Item214 Ref="692" Component="#Ref-357" Culture="Default" Path="Text" Data="Total Chicks" />
-    <Item215 Ref="693" Component="#Ref-357" Culture="ar" Path="Text" Data="صافي وزن بيض عند الرص  &#xD;&#xA;" />
-    <Item216 Ref="694" Component="#Ref-357" Culture="Default" Path="Weight" Data="2.9255634589971873" />
-    <Item217 Ref="695" Component="#Ref-115" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item218 Ref="696" Component="#Ref-115" Culture="Default" Path="Text" Data="" />
-    <Item219 Ref="697" Component="#Ref-115" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item220 Ref="698" Component="#Ref-115" Culture="Default" Path="Weight" Data="1.9224562803008993" />
-    <Item221 Ref="699" Component="#Ref-148" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
-    <Item222 Ref="700" Component="#Ref-148" Culture="Default" Path="Text" Data="xrTableCell30" />
-    <Item223 Ref="701" Component="#Ref-148" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item224 Ref="702" Component="#Ref-148" Culture="Default" Path="Weight" Data="1.7883512140110982" />
-    <Item225 Ref="703" Component="#Ref-358" Culture="Default" Path="Text" Data="%" />
-    <Item226 Ref="704" Component="#Ref-358" Culture="ar" Path="Text" Data="نسبة الحي  &#xD;&#xA;" />
-    <Item227 Ref="705" Component="#Ref-358" Culture="Default" Path="Weight" Data="1.5272856518274427" />
-    <Item228 Ref="706" Component="#Ref-359" Culture="Default" Path="Text" Data="Hat % Std" />
-    <Item229 Ref="707" Component="#Ref-359" Culture="ar" Path="Text" Data="متوسط فقد رطوبة  &#xD;&#xA;" />
-    <Item230 Ref="708" Component="#Ref-359" Culture="Default" Path="Weight" Data="2.1056777000185054" />
-    <Item231 Ref="709" Component="#Ref-360" Culture="Default" Path="Text" Data="Fert %" />
-    <Item232 Ref="710" Component="#Ref-360" Culture="ar" Path="Text" Data="متوسط وزن بيضة عند الرص  &#xD;&#xA;" />
-    <Item233 Ref="711" Component="#Ref-360" Culture="Default" Path="Weight" Data="2.1848857819863756" />
-    <Item234 Ref="712" Component="#Ref-361" Culture="Default" Path="Text" Data="Fert % Std" />
-    <Item235 Ref="713" Component="#Ref-361" Culture="ar" Path="Text" Data="% تجانس بيض" />
-    <Item236 Ref="714" Component="#Ref-361" Culture="Default" Path="Weight" Data="2.2100132142187361" />
-    <Item237 Ref="715" Component="#Ref-91" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item238 Ref="716" Component="#Ref-91" Culture="Default" Path="Text" Data="xrTableCell35" />
-    <Item239 Ref="717" Component="#Ref-91" Culture="Default" Path="Weight" Data="1.1214496218511143" />
-    <Item240 Ref="718" Component="#Ref-88" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item241 Ref="719" Component="#Ref-88" Culture="Default" Path="Text" Data="xrTableCell36" />
-    <Item242 Ref="720" Component="#Ref-88" Culture="Default" Path="TextFormatString" Data="" />
-    <Item243 Ref="721" Component="#Ref-88" Culture="Default" Path="Weight" Data="1.4031109893011582" />
-    <Item244 Ref="722" Component="#Ref-85" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item245 Ref="723" Component="#Ref-85" Culture="Default" Path="Text" Data="xrTableCell37" />
-    <Item246 Ref="724" Component="#Ref-85" Culture="Default" Path="Weight" Data="1.6362021690204696" />
-    <Item247 Ref="725" Component="#Ref-82" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item248 Ref="726" Component="#Ref-82" Culture="Default" Path="Text" Data="xrTableCell38" />
-    <Item249 Ref="727" Component="#Ref-82" Culture="Default" Path="Weight" Data="1.9195067207847223" />
-    <Item250 Ref="728" Component="#Ref-369" Culture="Default" Path="Text" Data="Sub Total" />
-    <Item251 Ref="729" Component="#Ref-369" Culture="ar" Path="Text" Data="اجمالي" />
-    <Item252 Ref="730" Component="#Ref-369" Culture="Default" Path="Weight" Data="1.740424894305008" />
-    <Item253 Ref="731" Component="#Ref-348" Culture="Default" Path="Text" Data="Age" />
-    <Item254 Ref="732" Component="#Ref-348" Culture="ar" Path="Text" Data="تاريخ خروج  &#xD;&#xA;" />
-    <Item255 Ref="733" Component="#Ref-348" Culture="Default" Path="Weight" Data="1.3879740487538585" />
-    <Item256 Ref="734" Component="#Ref-371" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item257 Ref="735" Component="#Ref-371" Culture="Default" Path="Text" Data="xrTableCell40" />
-    <Item258 Ref="736" Component="#Ref-371" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item259 Ref="737" Component="#Ref-371" Culture="Default" Path="Weight" Data="0.49996637086239648" />
-    <Item260 Ref="738" Component="#Ref-376" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item261 Ref="739" Component="#Ref-376" Culture="Default" Path="Text" Data="xrTableCell41" />
-    <Item262 Ref="740" Component="#Ref-376" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item263 Ref="741" Component="#Ref-376" Culture="Default" Path="Weight" Data="0.48874935001351605" />
-    <Item264 Ref="742" Component="#Ref-381" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item265 Ref="743" Component="#Ref-381" Culture="Default" Path="Text" Data="xrTableCell42" />
-    <Item266 Ref="744" Component="#Ref-381" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item267 Ref="745" Component="#Ref-381" Culture="Default" Path="Weight" Data="0.56223687156990976" />
-    <Item268 Ref="746" Component="#Ref-385" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item269 Ref="747" Component="#Ref-385" Culture="Default" Path="Text" Data="" />
-    <Item270 Ref="748" Component="#Ref-385" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item271 Ref="749" Component="#Ref-385" Culture="Default" Path="Weight" Data="0.30932670072041968" />
-    <Item272 Ref="750" Component="#Ref-388" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item273 Ref="751" Component="#Ref-388" Culture="Default" Path="Text" Data="xrTableCell44" />
-    <Item274 Ref="752" Component="#Ref-388" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item275 Ref="753" Component="#Ref-388" Culture="Default" Path="Weight" Data="0.46448703835966576" />
-    <Item276 Ref="754" Component="#Ref-392" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item277 Ref="755" Component="#Ref-392" Culture="Default" Path="Text" Data="" />
-    <Item278 Ref="756" Component="#Ref-392" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item279 Ref="757" Component="#Ref-392" Culture="Default" Path="Weight" Data="0.33640390251829477" />
-    <Item280 Ref="758" Component="#Ref-395" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item281 Ref="759" Component="#Ref-395" Culture="Default" Path="Text" Data="xrTableCell46" />
-    <Item282 Ref="760" Component="#Ref-395" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item283 Ref="761" Component="#Ref-395" Culture="Default" Path="Weight" Data="0.54713293433445531" />
-    <Item284 Ref="762" Component="#Ref-399" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item285 Ref="763" Component="#Ref-399" Culture="Default" Path="Text" Data="" />
-    <Item286 Ref="764" Component="#Ref-399" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item287 Ref="765" Component="#Ref-399" Culture="Default" Path="Weight" Data="0.34779755999912942" />
-    <Item288 Ref="766" Component="#Ref-402" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item289 Ref="767" Component="#Ref-402" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item290 Ref="768" Component="#Ref-402" Culture="Default" Path="Weight" Data="0.57198464769182289" />
-    <Item291 Ref="769" Component="#Ref-407" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item292 Ref="770" Component="#Ref-407" Culture="Default" Path="Text" Data="" />
-    <Item293 Ref="771" Component="#Ref-407" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item294 Ref="772" Component="#Ref-407" Culture="Default" Path="Weight" Data="0.29860358699713974" />
-    <Item295 Ref="773" Component="#Ref-351" Culture="Default" Path="Text" Data="Grade Out" />
-    <Item296 Ref="774" Component="#Ref-351" Culture="ar" Path="Text" Data="محصول" />
-    <Item297 Ref="775" Component="#Ref-351" Culture="Default" Path="Weight" Data="2.8757049259591865" />
-    <Item298 Ref="776" Component="#Ref-448" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item299 Ref="777" Component="#Ref-448" Culture="Default" Path="Text" Data="xrTableCell44" />
-    <Item300 Ref="778" Component="#Ref-448" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item301 Ref="779" Component="#Ref-448" Culture="Default" Path="Weight" Data="0.46448703835966576" />
-    <Item302 Ref="780" Component="#Ref-452" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item303 Ref="781" Component="#Ref-452" Culture="Default" Path="Text" Data="" />
-    <Item304 Ref="782" Component="#Ref-452" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item305 Ref="783" Component="#Ref-452" Culture="Default" Path="Weight" Data="0.33640390251829477" />
-    <Item306 Ref="784" Component="#Ref-455" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item307 Ref="785" Component="#Ref-455" Culture="Default" Path="Text" Data="xrTableCell46" />
-    <Item308 Ref="786" Component="#Ref-455" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item309 Ref="787" Component="#Ref-455" Culture="Default" Path="Weight" Data="0.54713293433445531" />
-    <Item310 Ref="788" Component="#Ref-459" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item311 Ref="789" Component="#Ref-459" Culture="Default" Path="Text" Data="" />
-    <Item312 Ref="790" Component="#Ref-459" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item313 Ref="791" Component="#Ref-459" Culture="Default" Path="Weight" Data="0.34779755999912942" />
-    <Item314 Ref="792" Component="#Ref-462" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item315 Ref="793" Component="#Ref-462" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item316 Ref="794" Component="#Ref-462" Culture="Default" Path="Weight" Data="0.57198464769182289" />
-    <Item317 Ref="795" Component="#Ref-467" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item318 Ref="796" Component="#Ref-467" Culture="Default" Path="Text" Data="" />
-    <Item319 Ref="797" Component="#Ref-467" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item320 Ref="798" Component="#Ref-467" Culture="Default" Path="Weight" Data="0.29860358699713974" />
-    <Item321 Ref="799" Component="#Ref-111" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item322 Ref="800" Component="#Ref-111" Culture="Default" Path="Text" Data="" />
-    <Item323 Ref="801" Component="#Ref-111" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item324 Ref="802" Component="#Ref-111" Culture="Default" Path="Weight" Data="1.2802491799335554" />
-    <Item325 Ref="803" Component="#Ref-352" Culture="Default" Path="Text" Data="%" />
-    <Item326 Ref="804" Component="#Ref-352" Culture="ar" Path="Text" Data="قطيع" />
-    <Item327 Ref="805" Component="#Ref-352" Culture="Default" Path="Weight" Data="1.5821102328610681" />
-    <Item328 Ref="806" Component="#Ref-353" Culture="Default" Path="Text" Data="Breeders" />
-    <Item329 Ref="807" Component="#Ref-353" Culture="ar" Path="Text" Data="العمر" />
-    <Item330 Ref="808" Component="#Ref-353" Culture="Default" Path="Weight" Data="2.3757428814127124" />
-    <Item331 Ref="809" Component="#Ref-354" Culture="Default" Path="Text" Data="%" />
-    <Item332 Ref="810" Component="#Ref-354" Culture="ar" Path="Text" Data="وزن بيض عند الرص  &#xD;&#xA;" />
-    <Item333 Ref="811" Component="#Ref-354" Culture="Default" Path="Weight" Data="1.7206198581723717" />
-    <Item334 Ref="812" Component="#Ref-368" Culture="Default" Path="Weight" Data="1" />
-    <Item335 Ref="813" Component="#Ref-428" Culture="Default" Path="Weight" Data="1" />
+    <Item123 Ref="601" Component="#Ref-416" Culture="ar" Path="Text" Data="تاريخ الايداع: [SettingDate!dd/MM/yyyy]" />
+    <Item124 Ref="602" Component="#Ref-416" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
+    <Item125 Ref="603" Component="#Ref-414" Culture="Default" Path="LocationFloat" Data="621.2914,0" />
+    <Item126 Ref="604" Component="#Ref-414" Culture="Default" Path="SizeF" Data="164.1655,20" />
+    <Item127 Ref="605" Component="#Ref-414" Culture="Default" Path="Text" Data="Transfer Date: [TransferDate!dd/MM/yyyy]" />
+    <Item128 Ref="606" Component="#Ref-414" Culture="ar" Path="Text" Data="تاريخ التحويل: [TransferDate!dd/MM/yyyy]" />
+    <Item129 Ref="607" Component="#Ref-414" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
+    <Item130 Ref="608" Component="#Ref-412" Culture="Default" Path="LocationFloat" Data="849.2146,0" />
+    <Item131 Ref="609" Component="#Ref-412" Culture="Default" Path="SizeF" Data="164.1655,20" />
+    <Item132 Ref="610" Component="#Ref-412" Culture="Default" Path="Text" Data="Exit Date: [ExitDate!dd/MM/yyyy]" />
+    <Item133 Ref="611" Component="#Ref-412" Culture="ar" Path="Text" Data="تاريخ الخروج: [ExitDate!dd/MM/yyyy]" />
+    <Item134 Ref="612" Component="#Ref-412" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
+    <Item135 Ref="613" Component="#Ref-70" Culture="Default" Path="LocationFloat" Data="1000.985,0" />
+    <Item136 Ref="614" Component="#Ref-70" Culture="Default" Path="SizeF" Data="168.0157,21.505" />
+    <Item137 Ref="615" Component="#Ref-70" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
+    <Item138 Ref="616" Component="#Ref-367" Culture="Default" Path="LocationFloat" Data="10,0" />
+    <Item139 Ref="617" Component="#Ref-367" Culture="Default" Path="SizeF" Data="814.9144,20" />
+    <Item140 Ref="618" Component="#Ref-427" Culture="Default" Path="LocationFloat" Data="10,0" />
+    <Item141 Ref="619" Component="#Ref-427" Culture="Default" Path="SizeF" Data="814.9144,20" />
+    <Item142 Ref="620" Component="#Ref-124" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item143 Ref="621" Component="#Ref-124" Culture="Default" Path="Text" Data="xrTableCell1" />
+    <Item144 Ref="622" Component="#Ref-124" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item145 Ref="623" Component="#Ref-124" Culture="Default" Path="Weight" Data="2.2645183465872849" />
+    <Item146 Ref="624" Component="#Ref-355" Culture="Default" Path="Text" Data="Broilers" />
+    <Item147 Ref="625" Component="#Ref-355" Culture="ar" Path="Text" Data="تسمين" />
+    <Item148 Ref="626" Component="#Ref-355" Culture="Default" Path="Weight" Data="2.7984529183143478" />
+    <Item149 Ref="627" Component="#Ref-362" Culture="Default" Path="Text" Data="H.O.F % " />
+    <Item150 Ref="628" Component="#Ref-362" Culture="ar" Path="Text" Data="نسبة الفقس من المخصب" />
+    <Item151 Ref="629" Component="#Ref-362" Culture="Default" Path="Weight" Data="2.50746636316899" />
+    <Item152 Ref="630" Component="#Ref-363" Culture="Default" Path="Text" Data="H.O.F % Std" />
+    <Item153 Ref="631" Component="#Ref-363" Culture="ar" Path="Text" Data="نسبة الفقس من المخصب القياسية" />
+    <Item154 Ref="632" Component="#Ref-363" Culture="Default" Path="Weight" Data="1.9832401597001419" />
+    <Item155 Ref="633" Component="#Ref-364" Culture="Default" Path="Text" Data="Store" />
+    <Item156 Ref="634" Component="#Ref-364" Culture="ar" Path="Text" Data="المخزن" />
+    <Item157 Ref="635" Component="#Ref-364" Culture="Default" Path="Weight" Data="1.9403462188849729" />
+    <Item158 Ref="636" Component="#Ref-160" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item159 Ref="637" Component="#Ref-160" Culture="Default" Path="Text" Data="xrTableCell14" />
+    <Item160 Ref="638" Component="#Ref-160" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item161 Ref="639" Component="#Ref-160" Culture="Default" Path="Weight" Data="1.5701412517919875" />
+    <Item162 Ref="640" Component="#Ref-128" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item163 Ref="641" Component="#Ref-128" Culture="Default" Path="Text" Data="xrTableCell15" />
+    <Item164 Ref="642" Component="#Ref-128" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item165 Ref="643" Component="#Ref-128" Culture="Default" Path="Weight" Data="1.4394899635090859" />
+    <Item166 Ref="644" Component="#Ref-132" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item167 Ref="645" Component="#Ref-132" Culture="Default" Path="Text" Data="xrTableCell16" />
+    <Item168 Ref="646" Component="#Ref-132" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item169 Ref="647" Component="#Ref-132" Culture="Default" Path="Weight" Data="2.36738228104981" />
+    <Item170 Ref="648" Component="#Ref-136" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item171 Ref="649" Component="#Ref-136" Culture="Default" Path="Text" Data="xrTableCell17" />
+    <Item172 Ref="650" Component="#Ref-136" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item173 Ref="651" Component="#Ref-136" Culture="Default" Path="Weight" Data="1.2358745672028153" />
+    <Item174 Ref="652" Component="#Ref-140" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item175 Ref="653" Component="#Ref-140" Culture="Default" Path="Text" Data="xrTableCell18" />
+    <Item176 Ref="654" Component="#Ref-140" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item177 Ref="655" Component="#Ref-140" Culture="Default" Path="Weight" Data="1.7039225373291425" />
+    <Item178 Ref="656" Component="#Ref-152" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item179 Ref="657" Component="#Ref-152" Culture="Default" Path="Text" Data="xrTableCell19" />
+    <Item180 Ref="658" Component="#Ref-152" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item181 Ref="659" Component="#Ref-152" Culture="Default" Path="Weight" Data="2.0290530797561606" />
+    <Item182 Ref="660" Component="#Ref-349" Culture="Default" Path="Text" Data="Setted Eggs" />
+    <Item183 Ref="661" Component="#Ref-349" Culture="ar" Path="Text" Data="البيض الموضوع" />
+    <Item184 Ref="662" Component="#Ref-349" Culture="Default" Path="Weight" Data="2.5571860155896613" />
+    <Item185 Ref="663" Component="#Ref-156" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item186 Ref="664" Component="#Ref-156" Culture="Default" Path="Text" Data="xrTableCell20" />
+    <Item187 Ref="665" Component="#Ref-156" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item188 Ref="666" Component="#Ref-156" Culture="Default" Path="Weight" Data="1.6048396916026739" />
+    <Item189 Ref="667" Component="#Ref-429" Culture="Default" Path="Text" Data="Total" />
+    <Item190 Ref="668" Component="#Ref-429" Culture="ar" Path="Text" Data="الاجمالي" />
+    <Item191 Ref="669" Component="#Ref-429" Culture="Default" Path="Weight" Data="1.740424894305008" />
+    <Item192 Ref="670" Component="#Ref-431" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item193 Ref="671" Component="#Ref-431" Culture="Default" Path="Text" Data="xrTableCell40" />
+    <Item194 Ref="672" Component="#Ref-431" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item195 Ref="673" Component="#Ref-431" Culture="Default" Path="Weight" Data="0.49996637086239648" />
+    <Item196 Ref="674" Component="#Ref-436" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item197 Ref="675" Component="#Ref-436" Culture="Default" Path="Text" Data="xrTableCell41" />
+    <Item198 Ref="676" Component="#Ref-436" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item199 Ref="677" Component="#Ref-436" Culture="Default" Path="Weight" Data="0.48874935001351605" />
+    <Item200 Ref="678" Component="#Ref-441" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item201 Ref="679" Component="#Ref-441" Culture="Default" Path="Text" Data="xrTableCell42" />
+    <Item202 Ref="680" Component="#Ref-441" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item203 Ref="681" Component="#Ref-441" Culture="Default" Path="Weight" Data="0.56223687156990976" />
+    <Item204 Ref="682" Component="#Ref-445" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item205 Ref="683" Component="#Ref-445" Culture="Default" Path="Text" Data="" />
+    <Item206 Ref="684" Component="#Ref-445" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item207 Ref="685" Component="#Ref-445" Culture="Default" Path="Weight" Data="0.30932670072041968" />
+    <Item208 Ref="686" Component="#Ref-102" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item209 Ref="687" Component="#Ref-102" Culture="Default" Path="Text" Data="xrTableCell26" />
+    <Item210 Ref="688" Component="#Ref-102" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item211 Ref="689" Component="#Ref-102" Culture="Default" Path="Weight" Data="2.0228914078081988" />
+    <Item212 Ref="690" Component="#Ref-356" Culture="Default" Path="Text" Data="%" />
+    <Item213 Ref="691" Component="#Ref-356" Culture="Default" Path="Weight" Data="1.7789032982251909" />
+    <Item214 Ref="692" Component="#Ref-144" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item215 Ref="693" Component="#Ref-144" Culture="Default" Path="Text" Data="xrTableCell28" />
+    <Item216 Ref="694" Component="#Ref-144" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item217 Ref="695" Component="#Ref-144" Culture="Default" Path="Weight" Data="1.7680199724874468" />
+    <Item218 Ref="696" Component="#Ref-357" Culture="Default" Path="Text" Data="Total Chicks" />
+    <Item219 Ref="697" Component="#Ref-357" Culture="ar" Path="Text" Data="اجمالي الكتاكيت" />
+    <Item220 Ref="698" Component="#Ref-357" Culture="Default" Path="Weight" Data="2.9255634589971873" />
+    <Item221 Ref="699" Component="#Ref-115" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item222 Ref="700" Component="#Ref-115" Culture="Default" Path="Text" Data="" />
+    <Item223 Ref="701" Component="#Ref-115" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item224 Ref="702" Component="#Ref-115" Culture="Default" Path="Weight" Data="1.9224562803008993" />
+    <Item225 Ref="703" Component="#Ref-148" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item226 Ref="704" Component="#Ref-148" Culture="Default" Path="Text" Data="xrTableCell30" />
+    <Item227 Ref="705" Component="#Ref-148" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item228 Ref="706" Component="#Ref-148" Culture="Default" Path="Weight" Data="1.7883512140110982" />
+    <Item229 Ref="707" Component="#Ref-358" Culture="Default" Path="Text" Data="%" />
+    <Item230 Ref="708" Component="#Ref-358" Culture="Default" Path="Weight" Data="1.5272856518274427" />
+    <Item231 Ref="709" Component="#Ref-359" Culture="Default" Path="Text" Data="Hat % Std" />
+    <Item232 Ref="710" Component="#Ref-359" Culture="ar" Path="Text" Data="نسبة الفقس القياسية" />
+    <Item233 Ref="711" Component="#Ref-359" Culture="Default" Path="Weight" Data="2.1056777000185054" />
+    <Item234 Ref="712" Component="#Ref-360" Culture="Default" Path="Text" Data="Fert %" />
+    <Item235 Ref="713" Component="#Ref-360" Culture="ar" Path="Text" Data="نسبة الخصوبة" />
+    <Item236 Ref="714" Component="#Ref-360" Culture="Default" Path="Weight" Data="2.1848857819863756" />
+    <Item237 Ref="715" Component="#Ref-361" Culture="Default" Path="Text" Data="Fert % Std" />
+    <Item238 Ref="716" Component="#Ref-361" Culture="ar" Path="Text" Data="نسبة الخصوبة القياسية" />
+    <Item239 Ref="717" Component="#Ref-361" Culture="Default" Path="Weight" Data="2.2100132142187361" />
+    <Item240 Ref="718" Component="#Ref-91" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item241 Ref="719" Component="#Ref-91" Culture="Default" Path="Text" Data="xrTableCell35" />
+    <Item242 Ref="720" Component="#Ref-91" Culture="Default" Path="Weight" Data="1.1214496218511143" />
+    <Item243 Ref="721" Component="#Ref-88" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item244 Ref="722" Component="#Ref-88" Culture="Default" Path="Text" Data="xrTableCell36" />
+    <Item245 Ref="723" Component="#Ref-88" Culture="Default" Path="TextFormatString" Data="" />
+    <Item246 Ref="724" Component="#Ref-88" Culture="Default" Path="Weight" Data="1.4031109893011582" />
+    <Item247 Ref="725" Component="#Ref-85" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item248 Ref="726" Component="#Ref-85" Culture="Default" Path="Text" Data="xrTableCell37" />
+    <Item249 Ref="727" Component="#Ref-85" Culture="Default" Path="Weight" Data="1.6362021690204696" />
+    <Item250 Ref="728" Component="#Ref-82" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item251 Ref="729" Component="#Ref-82" Culture="Default" Path="Text" Data="xrTableCell38" />
+    <Item252 Ref="730" Component="#Ref-82" Culture="Default" Path="Weight" Data="1.9195067207847223" />
+    <Item253 Ref="731" Component="#Ref-369" Culture="Default" Path="Text" Data="Sub Total" />
+    <Item254 Ref="732" Component="#Ref-369" Culture="ar" Path="Text" Data="الاجمالي الفرعي" />
+    <Item255 Ref="733" Component="#Ref-369" Culture="Default" Path="Weight" Data="1.740424894305008" />
+    <Item256 Ref="734" Component="#Ref-348" Culture="Default" Path="Text" Data="Age" />
+    <Item257 Ref="735" Component="#Ref-348" Culture="ar" Path="Text" Data="العمر" />
+    <Item258 Ref="736" Component="#Ref-348" Culture="Default" Path="Weight" Data="1.3879740487538585" />
+    <Item259 Ref="737" Component="#Ref-371" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item260 Ref="738" Component="#Ref-371" Culture="Default" Path="Text" Data="xrTableCell40" />
+    <Item261 Ref="739" Component="#Ref-371" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item262 Ref="740" Component="#Ref-371" Culture="Default" Path="Weight" Data="0.49996637086239648" />
+    <Item263 Ref="741" Component="#Ref-376" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item264 Ref="742" Component="#Ref-376" Culture="Default" Path="Text" Data="xrTableCell41" />
+    <Item265 Ref="743" Component="#Ref-376" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item266 Ref="744" Component="#Ref-376" Culture="Default" Path="Weight" Data="0.48874935001351605" />
+    <Item267 Ref="745" Component="#Ref-381" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item268 Ref="746" Component="#Ref-381" Culture="Default" Path="Text" Data="xrTableCell42" />
+    <Item269 Ref="747" Component="#Ref-381" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item270 Ref="748" Component="#Ref-381" Culture="Default" Path="Weight" Data="0.56223687156990976" />
+    <Item271 Ref="749" Component="#Ref-385" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item272 Ref="750" Component="#Ref-385" Culture="Default" Path="Text" Data="" />
+    <Item273 Ref="751" Component="#Ref-385" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item274 Ref="752" Component="#Ref-385" Culture="Default" Path="Weight" Data="0.30932670072041968" />
+    <Item275 Ref="753" Component="#Ref-388" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item276 Ref="754" Component="#Ref-388" Culture="Default" Path="Text" Data="xrTableCell44" />
+    <Item277 Ref="755" Component="#Ref-388" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item278 Ref="756" Component="#Ref-388" Culture="Default" Path="Weight" Data="0.46448703835966576" />
+    <Item279 Ref="757" Component="#Ref-392" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item280 Ref="758" Component="#Ref-392" Culture="Default" Path="Text" Data="" />
+    <Item281 Ref="759" Component="#Ref-392" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item282 Ref="760" Component="#Ref-392" Culture="Default" Path="Weight" Data="0.33640390251829477" />
+    <Item283 Ref="761" Component="#Ref-395" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item284 Ref="762" Component="#Ref-395" Culture="Default" Path="Text" Data="xrTableCell46" />
+    <Item285 Ref="763" Component="#Ref-395" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item286 Ref="764" Component="#Ref-395" Culture="Default" Path="Weight" Data="0.54713293433445531" />
+    <Item287 Ref="765" Component="#Ref-399" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item288 Ref="766" Component="#Ref-399" Culture="Default" Path="Text" Data="" />
+    <Item289 Ref="767" Component="#Ref-399" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item290 Ref="768" Component="#Ref-399" Culture="Default" Path="Weight" Data="0.34779755999912942" />
+    <Item291 Ref="769" Component="#Ref-402" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item292 Ref="770" Component="#Ref-402" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item293 Ref="771" Component="#Ref-402" Culture="Default" Path="Weight" Data="0.57198464769182289" />
+    <Item294 Ref="772" Component="#Ref-407" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item295 Ref="773" Component="#Ref-407" Culture="Default" Path="Text" Data="" />
+    <Item296 Ref="774" Component="#Ref-407" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item297 Ref="775" Component="#Ref-407" Culture="Default" Path="Weight" Data="0.29860358699713974" />
+    <Item298 Ref="776" Component="#Ref-351" Culture="Default" Path="Text" Data="Grade Out" />
+    <Item299 Ref="777" Component="#Ref-351" Culture="ar" Path="Text" Data="مرفوض" />
+    <Item300 Ref="778" Component="#Ref-351" Culture="Default" Path="Weight" Data="2.8757049259591865" />
+    <Item301 Ref="779" Component="#Ref-448" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item302 Ref="780" Component="#Ref-448" Culture="Default" Path="Text" Data="xrTableCell44" />
+    <Item303 Ref="781" Component="#Ref-448" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item304 Ref="782" Component="#Ref-448" Culture="Default" Path="Weight" Data="0.46448703835966576" />
+    <Item305 Ref="783" Component="#Ref-452" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item306 Ref="784" Component="#Ref-452" Culture="Default" Path="Text" Data="" />
+    <Item307 Ref="785" Component="#Ref-452" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item308 Ref="786" Component="#Ref-452" Culture="Default" Path="Weight" Data="0.33640390251829477" />
+    <Item309 Ref="787" Component="#Ref-455" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item310 Ref="788" Component="#Ref-455" Culture="Default" Path="Text" Data="xrTableCell46" />
+    <Item311 Ref="789" Component="#Ref-455" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item312 Ref="790" Component="#Ref-455" Culture="Default" Path="Weight" Data="0.54713293433445531" />
+    <Item313 Ref="791" Component="#Ref-459" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item314 Ref="792" Component="#Ref-459" Culture="Default" Path="Text" Data="" />
+    <Item315 Ref="793" Component="#Ref-459" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item316 Ref="794" Component="#Ref-459" Culture="Default" Path="Weight" Data="0.34779755999912942" />
+    <Item317 Ref="795" Component="#Ref-462" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item318 Ref="796" Component="#Ref-462" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item319 Ref="797" Component="#Ref-462" Culture="Default" Path="Weight" Data="0.57198464769182289" />
+    <Item320 Ref="798" Component="#Ref-467" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item321 Ref="799" Component="#Ref-467" Culture="Default" Path="Text" Data="" />
+    <Item322 Ref="800" Component="#Ref-467" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item323 Ref="801" Component="#Ref-467" Culture="Default" Path="Weight" Data="0.29860358699713974" />
+    <Item324 Ref="802" Component="#Ref-111" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item325 Ref="803" Component="#Ref-111" Culture="Default" Path="Text" Data="" />
+    <Item326 Ref="804" Component="#Ref-111" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item327 Ref="805" Component="#Ref-111" Culture="Default" Path="Weight" Data="1.2802491799335554" />
+    <Item328 Ref="806" Component="#Ref-352" Culture="Default" Path="Text" Data="%" />
+    <Item329 Ref="807" Component="#Ref-352" Culture="Default" Path="Weight" Data="1.5821102328610681" />
+    <Item330 Ref="808" Component="#Ref-353" Culture="Default" Path="Text" Data="Breeders" />
+    <Item331 Ref="809" Component="#Ref-353" Culture="ar" Path="Text" Data="أمهات" />
+    <Item332 Ref="810" Component="#Ref-353" Culture="Default" Path="Weight" Data="2.3757428814127124" />
+    <Item333 Ref="811" Component="#Ref-354" Culture="Default" Path="Text" Data="%" />
+    <Item334 Ref="812" Component="#Ref-354" Culture="Default" Path="Weight" Data="1.7206198581723717" />
+    <Item335 Ref="813" Component="#Ref-368" Culture="Default" Path="Weight" Data="1" />
+    <Item336 Ref="814" Component="#Ref-428" Culture="Default" Path="Weight" Data="1" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
-    <Item1 Ref="814" LayoutItemType="Parameter" Parameter="#Ref-3" />
-    <Item2 Ref="815" LayoutItemType="Parameter" Parameter="#Ref-4" />
-    <Item3 Ref="816" LayoutItemType="Parameter" Parameter="#Ref-5" />
-    <Item4 Ref="817" LayoutItemType="Parameter" Parameter="#Ref-6" />
-    <Item5 Ref="818" LayoutItemType="Parameter" Parameter="#Ref-7" />
-    <Item6 Ref="819" LayoutItemType="Parameter" Parameter="#Ref-8" />
-    <Item7 Ref="820" LayoutItemType="Parameter" Parameter="#Ref-9" />
-    <Item8 Ref="821" LayoutItemType="Parameter" Parameter="#Ref-11" />
-    <Item9 Ref="822" LayoutItemType="Parameter" Parameter="#Ref-12" />
-    <Item10 Ref="823" LayoutItemType="Parameter" Parameter="#Ref-13" />
-    <Item11 Ref="824" LayoutItemType="Parameter" Parameter="#Ref-14" />
-    <Item12 Ref="825" LayoutItemType="Parameter" Parameter="#Ref-16" />
-    <Item13 Ref="826" LayoutItemType="Parameter" Parameter="#Ref-17" />
-    <Item14 Ref="827" LayoutItemType="Parameter" Parameter="#Ref-18" />
-    <Item15 Ref="828" LayoutItemType="Parameter" Parameter="#Ref-19" />
-    <Item16 Ref="829" LayoutItemType="Parameter" Parameter="#Ref-20" />
-    <Item17 Ref="830" LayoutItemType="Parameter" Parameter="#Ref-21" />
-    <Item18 Ref="831" LayoutItemType="Parameter" Parameter="#Ref-22" />
-    <Item19 Ref="832" LayoutItemType="Parameter" Parameter="#Ref-23" />
-    <Item20 Ref="833" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-24" />
+    <Item1 Ref="815" LayoutItemType="Parameter" Parameter="#Ref-3" />
+    <Item2 Ref="816" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item3 Ref="817" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item4 Ref="818" LayoutItemType="Parameter" Parameter="#Ref-6" />
+    <Item5 Ref="819" LayoutItemType="Parameter" Parameter="#Ref-7" />
+    <Item6 Ref="820" LayoutItemType="Parameter" Parameter="#Ref-8" />
+    <Item7 Ref="821" LayoutItemType="Parameter" Parameter="#Ref-9" />
+    <Item8 Ref="822" LayoutItemType="Parameter" Parameter="#Ref-11" />
+    <Item9 Ref="823" LayoutItemType="Parameter" Parameter="#Ref-12" />
+    <Item10 Ref="824" LayoutItemType="Parameter" Parameter="#Ref-13" />
+    <Item11 Ref="825" LayoutItemType="Parameter" Parameter="#Ref-14" />
+    <Item12 Ref="826" LayoutItemType="Parameter" Parameter="#Ref-16" />
+    <Item13 Ref="827" LayoutItemType="Parameter" Parameter="#Ref-17" />
+    <Item14 Ref="828" LayoutItemType="Parameter" Parameter="#Ref-18" />
+    <Item15 Ref="829" LayoutItemType="Parameter" Parameter="#Ref-19" />
+    <Item16 Ref="830" LayoutItemType="Parameter" Parameter="#Ref-20" />
+    <Item17 Ref="831" LayoutItemType="Parameter" Parameter="#Ref-21" />
+    <Item18 Ref="832" LayoutItemType="Parameter" Parameter="#Ref-22" />
+    <Item19 Ref="833" LayoutItemType="Parameter" Parameter="#Ref-23" />
+    <Item20 Ref="834" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-24" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="834" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="dsFinance" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNGaW5hbmNlIj48Q29ubmVjdGlvbiBOYW1lPSJkc0ZpbmFuY2UiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjEyNSIgSGVpZ2h0PSIyNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9Ikl0ZW1UeXBlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDb250YWluZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9IlByb2R1Y3RzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJEZXNjcmlwdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iRXhwaXJ5RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iU2VudE9yQ2xhY1F0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDYWxjUHJpY2VVbml0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzRmluYW5jZSI+PFZpZXcgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciPjxGaWVsZCBOYW1lPSJJdGVtVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb250YWluZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VudE9yQ2xhY1F0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBY3R1YWxRdHkiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ2FsY1ByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+    <Item1 Ref="835" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="dsFinance" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNGaW5hbmNlIj48Q29ubmVjdGlvbiBOYW1lPSJkc0ZpbmFuY2UiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjEyNSIgSGVpZ2h0PSIyNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9Ikl0ZW1UeXBlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDb250YWluZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9IlByb2R1Y3RzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJEZXNjcmlwdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iRXhwaXJ5RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iU2VudE9yQ2xhY1F0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDYWxjUHJpY2VVbml0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzRmluYW5jZSI+PFZpZXcgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciPjxGaWVsZCBOYW1lPSJJdGVtVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb250YWluZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VudE9yQ2xhY1F0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBY3R1YWxRdHkiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ2FsY1ByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
     <Item2 Ref="0" />
   </ComponentStorage>
   <ObjectStorage>
