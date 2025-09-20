@@ -46,9 +46,6 @@
             DevExpress.XtraReports.UI.XRSummary xrSummary15 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary16 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary17 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary18 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary19 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary20 = new DevExpress.XtraReports.UI.XRSummary();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_HT_DailyHatcheryReport));
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
@@ -659,7 +656,6 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell2.BorderWidth = 1.4F;
             this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalHatchChicks_DailySub]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell2.Multiline = true;
             this.xrTableCell2.Name = "xrTableCell2";
@@ -677,10 +673,10 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell3.BorderWidth = 1.4F;
             this.xrTableCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalHatchChicksPerc_DailySub]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell3.Multiline = true;
             this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.Scripts.OnBeforePrint = "xrTableCell3_BeforePrint";
             this.xrTableCell3.StylePriority.UseBorders = false;
             this.xrTableCell3.StylePriority.UseBorderWidth = false;
             this.xrTableCell3.StylePriority.UseFont = false;
@@ -1671,16 +1667,14 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell37.BorderWidth = 1.4F;
             this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalHatchChicks_DailySub])"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
+            this.xrTableCell37.Scripts.OnBeforePrint = "xrTableCell37_BeforePrint";
             this.xrTableCell37.StylePriority.UseBorders = false;
             this.xrTableCell37.StylePriority.UseBorderWidth = false;
             this.xrTableCell37.StylePriority.UseFont = false;
             this.xrTableCell37.StylePriority.UseTextAlignment = false;
-            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell37.Summary = xrSummary7;
             this.xrTableCell37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell38
@@ -1690,16 +1684,14 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell38.BorderWidth = 1.4F;
             this.xrTableCell38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalHatchChicksPerc_DailySub])"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
+            this.xrTableCell38.Scripts.OnBeforePrint = "xrTableCell38_BeforePrint";
             this.xrTableCell38.StylePriority.UseBorders = false;
             this.xrTableCell38.StylePriority.UseBorderWidth = false;
             this.xrTableCell38.StylePriority.UseFont = false;
             this.xrTableCell38.StylePriority.UseTextAlignment = false;
-            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell38.Summary = xrSummary8;
             this.xrTableCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell67
@@ -1717,8 +1709,8 @@
             this.xrTableCell67.StylePriority.UseBorderWidth = false;
             this.xrTableCell67.StylePriority.UseFont = false;
             this.xrTableCell67.StylePriority.UseTextAlignment = false;
-            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell67.Summary = xrSummary9;
+            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell67.Summary = xrSummary7;
             this.xrTableCell67.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell68
@@ -1737,8 +1729,8 @@
             this.xrTableCell68.StylePriority.UseBorderWidth = false;
             this.xrTableCell68.StylePriority.UseFont = false;
             this.xrTableCell68.StylePriority.UseTextAlignment = false;
-            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell68.Summary = xrSummary10;
+            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell68.Summary = xrSummary8;
             this.xrTableCell68.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // SubBand7
@@ -1874,8 +1866,8 @@
             this.xrTableCell78.StylePriority.UseBorders = false;
             this.xrTableCell78.StylePriority.UseBorderWidth = false;
             this.xrTableCell78.StylePriority.UseFont = false;
-            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell78.Summary = xrSummary11;
+            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell78.Summary = xrSummary9;
             // 
             // xrTableCell79
             // 
@@ -1891,8 +1883,8 @@
             this.xrTableCell79.StylePriority.UseBorders = false;
             this.xrTableCell79.StylePriority.UseBorderWidth = false;
             this.xrTableCell79.StylePriority.UseFont = false;
-            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell79.Summary = xrSummary12;
+            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell79.Summary = xrSummary10;
             // 
             // xrTableCell80
             // 
@@ -1923,8 +1915,8 @@
             this.xrTableCell82.StylePriority.UseBorders = false;
             this.xrTableCell82.StylePriority.UseBorderWidth = false;
             this.xrTableCell82.StylePriority.UseFont = false;
-            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell82.Summary = xrSummary13;
+            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell82.Summary = xrSummary11;
             // 
             // xrTableCell83
             // 
@@ -1941,8 +1933,8 @@
             this.xrTableCell83.StylePriority.UseBorders = false;
             this.xrTableCell83.StylePriority.UseBorderWidth = false;
             this.xrTableCell83.StylePriority.UseFont = false;
-            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell83.Summary = xrSummary14;
+            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell83.Summary = xrSummary12;
             // 
             // xrTableCell84
             // 
@@ -1973,8 +1965,8 @@
             this.xrTableCell86.StylePriority.UseBorders = false;
             this.xrTableCell86.StylePriority.UseBorderWidth = false;
             this.xrTableCell86.StylePriority.UseFont = false;
-            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell86.Summary = xrSummary15;
+            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell86.Summary = xrSummary13;
             // 
             // xrTableCell87
             // 
@@ -2004,8 +1996,8 @@
             this.xrTableCell88.StylePriority.UseBorders = false;
             this.xrTableCell88.StylePriority.UseBorderWidth = false;
             this.xrTableCell88.StylePriority.UseFont = false;
-            xrSummary16.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell88.Summary = xrSummary16;
+            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell88.Summary = xrSummary14;
             // 
             // xrTableCell89
             // 
@@ -2029,15 +2021,13 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell90.BorderWidth = 1.4F;
             this.xrTableCell90.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalHatchChicks_DailySub])"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell90.Multiline = true;
             this.xrTableCell90.Name = "xrTableCell90";
+            this.xrTableCell90.Scripts.OnBeforePrint = "xrTableCell90_BeforePrint";
             this.xrTableCell90.StylePriority.UseBorders = false;
             this.xrTableCell90.StylePriority.UseBorderWidth = false;
             this.xrTableCell90.StylePriority.UseFont = false;
-            xrSummary17.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell90.Summary = xrSummary17;
             // 
             // xrTableCell91
             // 
@@ -2046,15 +2036,15 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell91.BorderWidth = 1.4F;
             this.xrTableCell91.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([TotalHatchChicksPerc_DailySub])"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell91.Multiline = true;
             this.xrTableCell91.Name = "xrTableCell91";
+            this.xrTableCell91.Scripts.OnBeforePrint = "xrTableCell91_BeforePrint";
             this.xrTableCell91.StylePriority.UseBorders = false;
             this.xrTableCell91.StylePriority.UseBorderWidth = false;
             this.xrTableCell91.StylePriority.UseFont = false;
-            xrSummary18.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell91.Summary = xrSummary18;
+            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell91.Summary = xrSummary15;
             // 
             // xrTableCell92
             // 
@@ -2071,8 +2061,8 @@
             this.xrTableCell92.StylePriority.UseBorders = false;
             this.xrTableCell92.StylePriority.UseBorderWidth = false;
             this.xrTableCell92.StylePriority.UseFont = false;
-            xrSummary19.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell92.Summary = xrSummary19;
+            xrSummary16.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell92.Summary = xrSummary16;
             // 
             // xrTableCell93
             // 
@@ -2089,8 +2079,8 @@
             this.xrTableCell93.StylePriority.UseBorders = false;
             this.xrTableCell93.StylePriority.UseBorderWidth = false;
             this.xrTableCell93.StylePriority.UseFont = false;
-            xrSummary20.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell93.Summary = xrSummary20;
+            xrSummary17.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell93.Summary = xrSummary17;
             // 
             // Title
             // 
@@ -2880,7 +2870,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "Weight", 1.7416164627541235D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Text", "xrTableCell2"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 1.9992491085439292D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
@@ -2918,7 +2908,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Text", "%"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Weight", 0.4814289647693884D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Text", "xrTableCell3"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Weight", 1.5054616212989735D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -2942,11 +2932,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Weight", 0.29354862371638069D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Text", "xrTableCell37"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Weight", 0.36690216069114667D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Text", "xrTableCell38"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Weight", 0.28418299834234673D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Text", "Grand Total"),
@@ -3096,11 +3086,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell89, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell89, "Default", "Weight", 0.18099447209572794D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Text", "xrTableCell90"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Weight", 0.24131822398065605D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell91, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell91, "Default", "Text", "xrTableCell91"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell91, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell91, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell91, "Default", "Weight", 0.18171536401155841D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell92, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),

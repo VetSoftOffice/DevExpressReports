@@ -512,6 +512,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
+            this.xrTableCell30.Scripts.OnBeforePrint = "xrTableCell30_BeforePrint";
             this.xrTableCell30.StylePriority.UseBorders = false;
             this.xrTableCell30.StylePriority.UseFont = false;
             this.xrTableCell30.StylePriority.UseTextAlignment = false;
@@ -572,6 +573,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
+            this.xrTableCell22.Scripts.OnBeforePrint = "xrTableCell22_BeforePrint";
             this.xrTableCell22.StylePriority.UseBorders = false;
             this.xrTableCell22.StylePriority.UseFont = false;
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
@@ -1082,6 +1084,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell47.Multiline = true;
             this.xrTableCell47.Name = "xrTableCell47";
+            this.xrTableCell47.Scripts.OnBeforePrint = "xrTableCell47_BeforePrint";
             this.xrTableCell47.StylePriority.UseBorders = false;
             this.xrTableCell47.StylePriority.UseFont = false;
             this.xrTableCell47.StylePriority.UseTextAlignment = false;
@@ -1109,6 +1112,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell49.Multiline = true;
             this.xrTableCell49.Name = "xrTableCell49";
+            this.xrTableCell49.Scripts.OnBeforePrint = "xrTableCell49_BeforePrint";
             this.xrTableCell49.StylePriority.UseBorders = false;
             this.xrTableCell49.StylePriority.UseFont = false;
             this.xrTableCell49.StylePriority.UseTextAlignment = false;
@@ -1136,6 +1140,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell51.Multiline = true;
             this.xrTableCell51.Name = "xrTableCell51";
+            this.xrTableCell51.Scripts.OnBeforePrint = "xrTableCell51_BeforePrint";
             this.xrTableCell51.StylePriority.UseBorders = false;
             this.xrTableCell51.StylePriority.UseFont = false;
             this.xrTableCell51.StylePriority.UseTextAlignment = false;

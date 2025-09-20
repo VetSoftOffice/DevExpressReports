@@ -535,6 +535,7 @@
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell18.Scripts.OnBeforePrint = "xrTableCell18_BeforePrint";
             this.xrTableCell18.StylePriority.UseBorders = false;
             this.xrTableCell18.StylePriority.UseBorderWidth = false;
             this.xrTableCell18.StylePriority.UseFont = false;
@@ -606,12 +607,11 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell22.BorderWidth = 1.4F;
             this.xrTableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "iif(?IsRTL,\'MiddleLft\',\'MiddleRight\')\n"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([FertPer] <> 0, \n    Iif([ChicksSettedEggs] <> 0, \n        (([Chicks] * 100.0" +
-                    " / [ChicksSettedEggs]) / [FertPer]) * 100, \n        0\n    ), \n    0\n)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "iif(?IsRTL,\'MiddleLft\',\'MiddleRight\')\n")});
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell22.Scripts.OnBeforePrint = "xrTableCell22_BeforePrint";
             this.xrTableCell22.StylePriority.UseBorders = false;
             this.xrTableCell22.StylePriority.UseBorderWidth = false;
             this.xrTableCell22.StylePriority.UseFont = false;
@@ -1151,6 +1151,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "iif(?IsRTL,\'MiddleLft\',\'MiddleRight\')\n")});
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
+            this.xrTableCell37.Scripts.OnBeforePrint = "xrTableCell37_BeforePrint";
             this.xrTableCell37.StylePriority.UseBorders = false;
             // 
             // xrTableCell38
@@ -1168,11 +1169,10 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell39.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(Sum([ChicksSettedEggs]) <> 0, Sum([FertileEggs]) * 100.0 / Sum([ChicksSettedE" +
-                    "ggs]), 0)\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "iif(?IsRTL,\'MiddleLft\',\'MiddleRight\')\n")});
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
+            this.xrTableCell39.Scripts.OnBeforePrint = "xrTableCell39_BeforePrint";
             this.xrTableCell39.StylePriority.UseBorders = false;
             // 
             // xrTableCell40
@@ -1190,12 +1190,10 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell41.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(Avg([FertPer]) <> 0, \n    [ChicksSettedEggs] * 100.0 / \n        Iif(Sum([Chic" +
-                    "ksSettedEggs]) <> 0, Sum([FertileEggs]) * 100.0 / Sum([ChicksSettedEggs]), 0), \n" +
-                    "    0)\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "iif(?IsRTL,\'MiddleLft\',\'MiddleRight\')\n")});
             this.xrTableCell41.Multiline = true;
             this.xrTableCell41.Name = "xrTableCell41";
+            this.xrTableCell41.Scripts.OnBeforePrint = "xrTableCell41_BeforePrint";
             this.xrTableCell41.StylePriority.UseBorders = false;
             // 
             // xrTableCell42
@@ -1682,7 +1680,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20.62506F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 23.9583F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdAccount_From, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdAccount_From, "Default", "Text", "tdContainer"),
