@@ -127,63 +127,128 @@
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using DevExpress.XtraReports.UI;
-using System.Collections;
-using System.Collections.Generic;
+    <value>decimal TotalSpecialEggsReport  = 0;
+decimal TotalhatchingEggsReportPerc  = 0 ;
 
-public void HideSubbandIfFeedMillLessThanTwo(SubBand band)
-{
-    XtraReport report = band.Report as XtraReport;
-    if (report != null)
-    {
-        IEnumerable dataSource = report.DataSource as IEnumerable;
-        if (dataSource != null)
-        {
-            int feedMillCount = CountDistinctFeedMills(dataSource);
-            band.Visible = (feedMillCount &gt;= 2);
-        }
-        else
-        {
-            band.Visible = false;
-        }
-    }
-    else
-    {
-        band.Visible = false;
-    }
+private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       // --- Declare values ---
+decimal softShellEggs = 0;
+decimal minorCrackedEggs = 0;
+decimal majorCrackedEggs = 0;
+decimal thinShellEggs = 0;
+decimal otherEggs = 0;
+decimal wholeEggs = 0;
+decimal brokenEggs = 0;
+decimal smallEggs = 0;
+decimal overWeightEggs = 0;
+decimal dirtyEggs = 0;
+decimal deformityEggs = 0;
+decimal crackedEggs = 0;
+decimal doubleYolkEggs = 0;
+decimal TotalSpecialEggs  = 0 ;
+decimal Total = 0 ;
+decimal TotalPercReport  =0;
+// --- Read values ---
+if (GetCurrentColumnValue("SoftShellEggs") != null)
+    softShellEggs = Convert.ToDecimal(GetCurrentColumnValue("SoftShellEggs"));
+
+if (GetCurrentColumnValue("MinorCrackedEggs") != null)
+    minorCrackedEggs = Convert.ToDecimal(GetCurrentColumnValue("MinorCrackedEggs"));
+
+if (GetCurrentColumnValue("MajorCrackedEggs") != null)
+    majorCrackedEggs = Convert.ToDecimal(GetCurrentColumnValue("MajorCrackedEggs"));
+
+if (GetCurrentColumnValue("ThinShellEggs") != null)
+    thinShellEggs = Convert.ToDecimal(GetCurrentColumnValue("ThinShellEggs"));
+
+if (GetCurrentColumnValue("OtherEggs") != null)
+    otherEggs = Convert.ToDecimal(GetCurrentColumnValue("OtherEggs"));
+
+if (GetCurrentColumnValue("WholeEggs") != null)
+    wholeEggs = Convert.ToDecimal(GetCurrentColumnValue("WholeEggs"));
+
+if (GetCurrentColumnValue("BrokenEggs") != null)
+    brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
+
+if (GetCurrentColumnValue("SmallEggs") != null)
+    smallEggs = Convert.ToDecimal(GetCurrentColumnValue("SmallEggs"));
+
+if (GetCurrentColumnValue("OverWeightEggs") != null)
+    overWeightEggs = Convert.ToDecimal(GetCurrentColumnValue("OverWeightEggs"));
+
+if (GetCurrentColumnValue("DirtyEggs") != null)
+    dirtyEggs = Convert.ToDecimal(GetCurrentColumnValue("DirtyEggs"));
+
+if (GetCurrentColumnValue("DeformityEggs") != null)
+    deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
+
+if (GetCurrentColumnValue("CrackedEggs") != null)
+    crackedEggs = Convert.ToDecimal(GetCurrentColumnValue("CrackedEggs"));
+
+if (GetCurrentColumnValue("DoubleYolkEggs") != null)
+    doubleYolkEggs = Convert.ToDecimal(GetCurrentColumnValue("DoubleYolkEggs"));
+
+// --- Sum them ---
+decimal result = softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
+                 otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
+                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs;
+
+// --- Add to group total ---
+Total += result;
+
+
+// --- Add IIf logic ---
+if (recEggs != 0)
+    TotalPerc = (totalUnHatch * 100.0m / recEggs);
+
+TotalPercReport += TotalPerc 
+
+
+TotalSpecialEggs = result + TotalPerc 
+TotalSpecialEggsReport = Total  + TotalPercReport 
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = TotalSpecialEggs.ToString("0"); // no decimals
+
+
 }
 
-private int CountDistinctFeedMills(IEnumerable dataSource)
-{
-    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();
-    foreach (object item in dataSource)
-    {
-        object feedMillValue = GetFieldValue(item, "FeedMill");
-        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))
-        {
-            distinctFeedMills.Add(feedMillValue);
-        }
-    }
-    return distinctFeedMills.Count;
+private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      xrTableCell64.Text = TotalSpecialEggsReport.ToString("0");
+      TotalSpecialEggsReport  = 0; // reset for next group
+
 }
 
-private object GetFieldValue(object item, string fieldName)
-{
-    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);
-    if (property != null)
-    {
-        return property.GetValue(item, null);
-    }
-    return null;
+private void xrTableCell54_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // --- Declare values ---
+decimal hatchingEggs = 0;
+decimal recEggs = 0;
+
+// --- HatchingEggs ---
+if (GetCurrentColumnValue("HatchingEggs") != null)
+    hatchingEggs = Convert.ToDecimal(GetCurrentColumnValue("HatchingEggs"));
+
+// --- RecEggs ---
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (recEggs != 0)
+    percentage = (hatchingEggs * 100m) / recEggs;
+    TotalhatchingEggsReportPerc += percentage 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.00"); // 2 decimals
+
 }
 
-private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
-{
-    SubBand subBand = ReportFooterSub3 as SubBand;
-    if (subBand != null)
-    {
-        HideSubbandIfFeedMillLessThanTwo(subBand);
-    }
-}</value>
+private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      xrTableCell66.Text = TotalhatchingEggsReportPerc.ToString("0");
+      TotalhatchingEggsReportPerc  = 0; // reset for next group
+
+}
+</value>
   </data>
 </root>
