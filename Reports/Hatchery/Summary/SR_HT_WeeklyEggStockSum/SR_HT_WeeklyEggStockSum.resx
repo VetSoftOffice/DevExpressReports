@@ -168,34 +168,109 @@ Iif(IsNull([EggsToOffal]), 0, [EggsToOffal])
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using System.ComponentModel;
-using DevExpress.XtraReports.Parameters;
+    <value>decimal TotalRejBrokenReport = 0 ;
+decimal TotalRejOtherReport  = 0;
+decimal TotalRejWholeReport  = 0;
+decimal TotalRejCracksReport  = 0;
+private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal rejBroken = 0;
+decimal stRejBroken = 0;
 
-int groupCounter = 1;
+// --- Read values ---
+if (GetCurrentColumnValue("RejBroken") != null)
+    rejBroken = Convert.ToDecimal(GetCurrentColumnValue("RejBroken"));
 
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
-{
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
-    
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-}</value>
+if (GetCurrentColumnValue("St_RejBroken") != null)
+    stRejBroken = Convert.ToDecimal(GetCurrentColumnValue("St_RejBroken"));
+
+// --- Equation: Sum of both fields ---
+decimal totalRejBroken = rejBroken + stRejBroken;
+
+// --- Add to report totals (for overall sum if needed) ---
+decimal TotalRejBrokenReport = 0;
+TotalRejBrokenReport += totalRejBroken;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = TotalRejBrokenReport.ToString("0"); // no decimals
+
+}
+
+private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal rejOther = 0;
+decimal stRejOther = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("RejOther") != null)
+    rejOther = Convert.ToDecimal(GetCurrentColumnValue("RejOther"));
+
+if (GetCurrentColumnValue("St_RejOther") != null)
+    stRejOther = Convert.ToDecimal(GetCurrentColumnValue("St_RejOther"));
+
+// --- Equation: Sum of both fields ---
+decimal totalRejOther = rejOther + stRejOther;
+
+// --- Add to report totals (for overall sum if needed) ---
+decimal TotalRejOtherReport = 0;
+TotalRejOtherReport += totalRejOther;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = TotalRejOtherReport.ToString("0"); // no decimals
+
+}
+
+private void xrTableCell60_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal rejWhole = 0;
+decimal stRejWhole = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("RejWhole") != null)
+    rejWhole = Convert.ToDecimal(GetCurrentColumnValue("RejWhole"));
+
+if (GetCurrentColumnValue("St_RejWhole") != null)
+    stRejWhole = Convert.ToDecimal(GetCurrentColumnValue("St_RejWhole"));
+
+// --- Equation: Sum of both fields ---
+decimal totalRejWhole = rejWhole + stRejWhole;
+
+// --- Add to report totals (for overall sum if needed) ---
+decimal TotalRejWholeReport = 0;
+TotalRejWholeReport += totalRejWhole;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = TotalRejWholeReport.ToString("0"); // no decimals
+
+}
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal rejCracks = 0;
+decimal stRejCrack = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("RejCracks") != null)
+    rejCracks = Convert.ToDecimal(GetCurrentColumnValue("RejCracks"));
+
+if (GetCurrentColumnValue("St_RejCrack") != null)
+    stRejCrack = Convert.ToDecimal(GetCurrentColumnValue("St_RejCrack"));
+
+// --- Equation: Sum of both fields ---
+decimal totalRejCracks = rejCracks + stRejCrack;
+
+// --- Add to report totals (for overall sum if needed) ---
+decimal TotalRejCracksReport = 0;
+TotalRejCracksReport += totalRejCracks;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = TotalRejCracksReport.ToString("0"); // no decimals
+
+}
+</value>
   </data>
 </root>
