@@ -117,4 +117,104 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal PluckRejectPercReport  = 0;
+decimal DOAPercReport  = 0;
+decimal CullsPercReport  =0 ;
+private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal pluckReject = 0;
+decimal counterTotal = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("PluckReject") != null)
+    pluckReject = Convert.ToDecimal(GetCurrentColumnValue("PluckReject"));
+
+if (GetCurrentColumnValue("CounterTotal") != null)
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (counterTotal &gt; 0)
+    percentage = (pluckReject * 100m) / counterTotal;
+
+// --- Add to report total (for averaging/summaries if needed) ---
+PluckRejectPercReport += percentage;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+           xrTableCell26.Text = PluckRejectPercReport.ToString("0");
+          PluckRejectPercReport= 0; // reset for next LineType group
+}
+
+private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values --- 
+decimal doa = 0;
+decimal counterTotal = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("DOA") != null)
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
+
+if (GetCurrentColumnValue("CounterTotal") != null)
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (counterTotal &gt; 0)
+    percentage = (doa * 100m) / counterTotal;
+
+// --- Add to report total (for averaging/summaries if needed) ---
+DOAPercReport += percentage;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          xrTableCell28.Text = DOAPercReport.ToString("0");
+          DOAPercReport = 0; // reset for next LineType group
+
+}
+
+private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values --- 
+decimal culls = 0;
+decimal counterTotal = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("Culls") != null)
+    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+
+if (GetCurrentColumnValue("CounterTotal") != null)
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (counterTotal &gt; 0)
+    percentage = (culls * 100m) / counterTotal;
+
+// --- Add to report total (for averaging/summaries if needed) ---
+CullsPercReport += percentage;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      xrTableCell30.Text = CullsPercReport.ToString("0");
+      CullsPercReport = 0; // reset for next LineType group
+
+}
+</value>
+  </data>
 </root>
