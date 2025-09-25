@@ -117,4 +117,85 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal prodWeight = 0;
+decimal totalCheckensPortionWeight = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("ProdWeight") != null)
+    prodWeight = Convert.ToDecimal(GetCurrentColumnValue("ProdWeight"));
+
+if (GetCurrentColumnValue("TotalCheckensPortionWeight") != null)
+    totalCheckensPortionWeight = Convert.ToDecimal(GetCurrentColumnValue("TotalCheckensPortionWeight"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (totalCheckensPortionWeight != 0)
+    percentage = (prodWeight * 100m) / totalCheckensPortionWeight;
+
+// --- Add to report total (optional for summaries/averages) ---
+ProdPortionPercReport += percentage;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal lossQty = 0;
+decimal totalCheckensPortionWeight = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("LossQty") != null)
+    lossQty = Convert.ToDecimal(GetCurrentColumnValue("LossQty"));
+
+if (GetCurrentColumnValue("TotalCheckensPortionWeight") != null)
+    totalCheckensPortionWeight = Convert.ToDecimal(GetCurrentColumnValue("TotalCheckensPortionWeight"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (totalCheckensPortionWeight != 0)
+    percentage = (lossQty * 100m) / totalCheckensPortionWeight;
+
+// --- Add to report total (optional for summaries/averages) ---
+LossQtyPercReport += percentage;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal condQty = 0;
+decimal totalCheckensPortionWeight = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("CondQty") != null)
+    condQty = Convert.ToDecimal(GetCurrentColumnValue("CondQty"));
+
+if (GetCurrentColumnValue("TotalCheckensPortionWeight") != null)
+    totalCheckensPortionWeight = Convert.ToDecimal(GetCurrentColumnValue("TotalCheckensPortionWeight"));
+
+// --- Equation ---
+decimal percentage = 0;
+if (totalCheckensPortionWeight != 0)
+    percentage = (condQty * 100m) / totalCheckensPortionWeight;
+
+// --- Add to report total (optional for summaries/averages) ---
+CondQtyPercReport += percentage;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+}
+</value>
+  </data>
 </root>
