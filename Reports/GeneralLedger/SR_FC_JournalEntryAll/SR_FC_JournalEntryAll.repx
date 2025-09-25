@@ -951,8 +951,8 @@
     <Item116 Ref="530" Component="#Ref-338" Culture="Default" Path="Weight" Data="0.76568589868026282" />
     <Item117 Ref="531" Component="#Ref-328" Culture="Default" Path="LocationFloat" Data="1,0" />
     <Item118 Ref="532" Component="#Ref-328" Culture="Default" Path="SizeF" Data="805,20" />
-    <Item119 Ref="533" Component="#Ref-334" Culture="Default" Path="Text" Data="Source" />
-    <Item120 Ref="534" Component="#Ref-334" Culture="ar" Path="Text" Data="المصدر" />
+    <Item119 Ref="533" Component="#Ref-334" Culture="Default" Path="Text" Data="Source / Item" />
+    <Item120 Ref="534" Component="#Ref-334" Culture="ar" Path="Text" Data="المصدر / البند" />
     <Item121 Ref="535" Component="#Ref-334" Culture="Default" Path="Weight" Data="1.2442396427343736" />
     <Item122 Ref="536" Component="#Ref-342" Culture="Default" Path="Text" Data="Notes" />
     <Item123 Ref="537" Component="#Ref-342" Culture="ar" Path="Text" Data="ملاحظات" />
