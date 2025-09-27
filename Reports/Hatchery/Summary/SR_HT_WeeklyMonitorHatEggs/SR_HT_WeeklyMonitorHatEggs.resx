@@ -553,7 +553,6 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
-
 private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        xrTableCell65.Text = avgPercentageUpsideDown.ToString("0");
       avgPercentageUpsideDown = 0; // reset for next group

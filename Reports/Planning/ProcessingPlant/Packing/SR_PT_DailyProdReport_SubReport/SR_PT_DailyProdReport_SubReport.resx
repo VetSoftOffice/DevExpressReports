@@ -134,6 +134,239 @@ private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEve
     // Ensure the label is only visible when the group is ending
     ((XRLabel)sender).Visible = (currentEmployee == storedEmployeeName);
 }
+
+private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal liveBirds = 0;
+decimal liveBirdsWt = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("LiveBirds") != null)
+    liveBirds = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds"));
+
+if (GetCurrentColumnValue("LiveBirds_Wt") != null)
+    liveBirdsWt = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds_Wt"));
+
+// --- Equation ---
+decimal avgWeightPerBird = 0;
+if (liveBirds &gt; 0)
+    avgWeightPerBird = liveBirdsWt / liveBirds;
+
+// --- (Optional) Add to report-level total if you want to calculate averages later ---
+AvgLiveBirdWeightReport += avgWeightPerBird;   // define AvgLiveBirdWeightReport at report level
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = avgWeightPerBird.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal culls = 0;
+decimal doa = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("Culls") != null)
+    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+
+if (GetCurrentColumnValue("DOA") != null)
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
+
+// --- Equation ---
+decimal result = culls + doa;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal liveBirds = 0;
+decimal culls = 0;
+decimal doa = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("LiveBirds") != null)
+    liveBirds = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds"));
+
+if (GetCurrentColumnValue("Culls") != null)
+    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+
+if (GetCurrentColumnValue("DOA") != null)
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
+
+// --- Equation ---
+decimal result = liveBirds - (culls + doa);
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal liveBirds = 0;
+decimal culls = 0;
+decimal doa = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("LiveBirds") != null)
+    liveBirds = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds"));
+
+if (GetCurrentColumnValue("Culls") != null)
+    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+
+if (GetCurrentColumnValue("DOA") != null)
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
+
+// --- Equation ---
+// First part: (Culls + DOA)
+decimal cullsDoa = culls + doa;
+
+// Second part: (LiveBirds - (Culls + DOA))
+decimal remaining = liveBirds - cullsDoa;
+
+// Final result: (Culls + DOA) + (LiveBirds - (Culls + DOA))
+decimal result = cullsDoa + remaining;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal cullsWt = 0;
+decimal pluckRejWt = 0;
+decimal doaWt = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("Culls_Wt") != null)
+    cullsWt = Convert.ToDecimal(GetCurrentColumnValue("Culls_Wt"));
+
+if (GetCurrentColumnValue("PluckRej_Wt") != null)
+    pluckRejWt = Convert.ToDecimal(GetCurrentColumnValue("PluckRej_Wt"));
+
+if (GetCurrentColumnValue("DOA_Wt") != null)
+    doaWt = Convert.ToDecimal(GetCurrentColumnValue("DOA_Wt"));
+
+// --- Equation ---
+decimal result = cullsWt + pluckRejWt + doaWt;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal liveBirdsWt = 0;
+decimal cullsWt = 0;
+decimal pluckRejWt = 0;
+decimal doaWt = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("LiveBirds_Wt") != null)
+    liveBirdsWt = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds_Wt"));
+
+if (GetCurrentColumnValue("Culls_Wt") != null)
+    cullsWt = Convert.ToDecimal(GetCurrentColumnValue("Culls_Wt"));
+
+if (GetCurrentColumnValue("PluckRej_Wt") != null)
+    pluckRejWt = Convert.ToDecimal(GetCurrentColumnValue("PluckRej_Wt"));
+
+if (GetCurrentColumnValue("DOA_Wt") != null)
+    doaWt = Convert.ToDecimal(GetCurrentColumnValue("DOA_Wt"));
+
+// --- Equation ---
+decimal result = liveBirdsWt + (cullsWt + pluckRejWt + doaWt);
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values --- 
+decimal cullsWt = 0;
+decimal pluckRejWt = 0;
+decimal doaWt = 0;
+decimal liveBirdsWt = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("Culls_Wt") != null)
+    cullsWt = Convert.ToDecimal(GetCurrentColumnValue("Culls_Wt"));
+
+if (GetCurrentColumnValue("PluckRej_Wt") != null)
+    pluckRejWt = Convert.ToDecimal(GetCurrentColumnValue("PluckRej_Wt"));
+
+if (GetCurrentColumnValue("DOA_Wt") != null)
+    doaWt = Convert.ToDecimal(GetCurrentColumnValue("DOA_Wt"));
+
+if (GetCurrentColumnValue("LiveBirds_Wt") != null)
+    liveBirdsWt = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds_Wt"));
+
+// --- Equation ---
+// Formula = (Culls_Wt + PluckRej_Wt + DOA_Wt) + LiveBirds_Wt + (Culls_Wt + PluckRej_Wt + DOA_Wt)
+decimal result = (cullsWt + pluckRejWt + doaWt) + liveBirdsWt + (cullsWt + pluckRejWt + doaWt);
+
+// --- Add to group total ---
+groupSumCullsPluckDOALive += result;   // define at report level
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal liveBirdsWt = 0;
+decimal cullsWt = 0;
+decimal pluckRejWt = 0;
+decimal doaWt = 0;
+decimal portionsTotalWeight = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("LiveBirds_Wt") != null)
+    liveBirdsWt = Convert.ToDecimal(GetCurrentColumnValue("LiveBirds_Wt"));
+
+if (GetCurrentColumnValue("Culls_Wt") != null)
+    cullsWt = Convert.ToDecimal(GetCurrentColumnValue("Culls_Wt"));
+
+if (GetCurrentColumnValue("PluckRej_Wt") != null)
+    pluckRejWt = Convert.ToDecimal(GetCurrentColumnValue("PluckRej_Wt"));
+
+if (GetCurrentColumnValue("DOA_Wt") != null)
+    doaWt = Convert.ToDecimal(GetCurrentColumnValue("DOA_Wt"));
+
+if (GetCurrentColumnValue("PortionsTotalWeight") != null)
+    portionsTotalWeight = Convert.ToDecimal(GetCurrentColumnValue("PortionsTotalWeight"));
+
+// --- Equation ---
+decimal denominator = liveBirdsWt + cullsWt + pluckRejWt + doaWt;
+decimal percentage = 0;
+if (denominator &gt; 0)
+    percentage = (portionsTotalWeight / denominator) * 100m;
+
+// --- (Optional) Add to report-level accumulator ---
+PortionsPercReport += percentage;   // define PortionsPercReport at report level if needed
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // up to 2 decimals
+
+}
 </value>
   </data>
 </root>

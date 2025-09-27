@@ -303,6 +303,254 @@ private void xrTableCell180_BeforePrint(object sender, System.ComponentModel.Can
     else
         ((XRTableCell)sender).Text = "0";
 }
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal htRejDeformed = 0;
+decimal stRejDeformed = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("HT_RejDeformed") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("HT_RejDeformed").ToString()))
+{
+    htRejDeformed = Convert.ToDecimal(GetCurrentColumnValue("HT_RejDeformed"));
+}
+
+if (GetCurrentColumnValue("ST_RejDeformed") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ST_RejDeformed").ToString()))
+{
+    stRejDeformed = Convert.ToDecimal(GetCurrentColumnValue("ST_RejDeformed"));
+}
+
+// --- Equation ---
+decimal result = htRejDeformed + stRejDeformed;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal htRejCracks = 0;
+decimal stRejCracks = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("HT_RejCracks") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("HT_RejCracks").ToString()))
+{
+    htRejCracks = Convert.ToDecimal(GetCurrentColumnValue("HT_RejCracks"));
+}
+
+if (GetCurrentColumnValue("ST_RejCracks") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ST_RejCracks").ToString()))
+{
+    stRejCracks = Convert.ToDecimal(GetCurrentColumnValue("ST_RejCracks"));
+}
+
+// --- Equation ---
+decimal result = htRejCracks + stRejCracks;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal htRejBroken = 0;
+decimal stRejBroken = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("HT_RejBroken") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("HT_RejBroken").ToString()))
+{
+    htRejBroken = Convert.ToDecimal(GetCurrentColumnValue("HT_RejBroken"));
+}
+
+if (GetCurrentColumnValue("ST_RejBroken") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ST_RejBroken").ToString()))
+{
+    stRejBroken = Convert.ToDecimal(GetCurrentColumnValue("ST_RejBroken"));
+}
+
+// --- Equation ---
+decimal result = htRejBroken + stRejBroken;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal htRejOther = 0;
+decimal stRejOther = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("HT_RejOther") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("HT_RejOther").ToString()))
+{
+    htRejOther = Convert.ToDecimal(GetCurrentColumnValue("HT_RejOther"));
+}
+
+if (GetCurrentColumnValue("ST_RejOther") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ST_RejOther").ToString()))
+{
+    stRejOther = Convert.ToDecimal(GetCurrentColumnValue("ST_RejOther"));
+}
+
+// --- Equation ---
+decimal result = htRejOther + stRejOther;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal rejBroken = 0;
+decimal rejCrack = 0;
+decimal rejDef = 0;
+decimal rejOther = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("RejBroken") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejBroken").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) != 0)
+{
+    rejBroken = Convert.ToDecimal(GetCurrentColumnValue("RejBroken"));
+}
+
+if (GetCurrentColumnValue("RejCrack") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejCrack").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejCrack")) != 0)
+{
+    rejCrack = Convert.ToDecimal(GetCurrentColumnValue("RejCrack"));
+}
+
+if (GetCurrentColumnValue("RejDef") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejDef").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejDef")) != 0)
+{
+    rejDef = Convert.ToDecimal(GetCurrentColumnValue("RejDef"));
+}
+
+if (GetCurrentColumnValue("RejOther") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejOther").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejOther")) != 0)
+{
+    rejOther = Convert.ToDecimal(GetCurrentColumnValue("RejOther"));
+}
+
+// --- Equation ---
+decimal result = rejBroken + rejCrack + rejDef + rejOther;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal farmInTake = 0;
+decimal rejBroken = 0;
+decimal rejCrack = 0;
+decimal rejDef = 0;
+decimal rejOther = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("FarmInTake") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("FarmInTake").ToString()))
+{
+    farmInTake = Convert.ToDecimal(GetCurrentColumnValue("FarmInTake"));
+}
+
+if (GetCurrentColumnValue("RejBroken") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejBroken").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) != 0)
+{
+    rejBroken = Convert.ToDecimal(GetCurrentColumnValue("RejBroken"));
+}
+
+if (GetCurrentColumnValue("RejCrack") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejCrack").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejCrack")) != 0)
+{
+    rejCrack = Convert.ToDecimal(GetCurrentColumnValue("RejCrack"));
+}
+
+if (GetCurrentColumnValue("RejDef") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejDef").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejDef")) != 0)
+{
+    rejDef = Convert.ToDecimal(GetCurrentColumnValue("RejDef"));
+}
+
+if (GetCurrentColumnValue("RejOther") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejOther").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("RejOther")) != 0)
+{
+    rejOther = Convert.ToDecimal(GetCurrentColumnValue("RejOther"));
+}
+
+// --- Equation ---
+decimal totalRej = rejBroken + rejCrack + rejDef + rejOther;
+decimal result = farmInTake - totalRej;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+// --- Declare values ---
+decimal selChicks = 0;
+decimal cullsChicks = 0;
+decimal deadChicks = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("SelChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("SelChicks").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("SelChicks")) != 0)
+{
+    selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
+}
+
+if (GetCurrentColumnValue("CullsChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CullsChicks").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("CullsChicks")) != 0)
+{
+    cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+}
+
+if (GetCurrentColumnValue("DeadChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DeadChicks").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("DeadChicks")) != 0)
+{
+    deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+}
+
+// --- Equation ---
+decimal totalChicks = selChicks + cullsChicks + deadChicks;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalChicks.ToString("0.##");   // format with 2 decimals
+
+}
 </value>
   </data>
 </root>
