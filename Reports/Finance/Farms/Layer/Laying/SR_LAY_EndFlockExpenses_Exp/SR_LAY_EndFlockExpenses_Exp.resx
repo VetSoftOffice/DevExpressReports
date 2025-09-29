@@ -120,4 +120,23 @@
   <data name="dsFinance.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2tFeHBlbnNlc19FeHAiPjxGaWVsZCBOYW1lPSJJdGVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlYXJWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void tdDate_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // --- Declare value ---
+    decimal itemcValue = 0;
+
+    // --- Read safely from current row ---
+    if (GetCurrentColumnValue("Item") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("Item").ToString()))
+    {
+        itemValue = Convert.ToDecimal(GetCurrentColumnValue("Item"));
+    }
+
+    // --- Assign to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = itemValue.ToString("0.##");  // format with 2 decimals
+}
+</value>
+  </data>
 </root>
