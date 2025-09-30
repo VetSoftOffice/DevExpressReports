@@ -293,7 +293,8 @@ Iif(IsNullOrEmpty([CumChicks_ActEst_HH_1]) OR [CumChicks_ActEst_HH_1] == 0, 0, [
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>
+    <value>// Declare at report level (top of the report's class)
+decimal total = 0;
 private void xrTableCell180_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     var femalesTrans = Convert.ToDecimal(GetCurrentColumnValue("FemalesTrans"));
     var femalesDepleted = Convert.ToDecimal(GetCurrentColumnValue("FemalesDepleted"));
@@ -550,6 +551,705 @@ decimal totalChicks = selChicks + cullsChicks + deadChicks;
 XRTableCell cell = sender as XRTableCell;
 cell.Text = totalChicks.ToString("0.##");   // format with 2 decimals
 
+}
+
+private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal cullsChicks = 0;
+decimal deadChicks = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("CullsChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CullsChicks").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("CullsChicks")) != 0)
+{
+    cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+}
+
+if (GetCurrentColumnValue("DeadChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DeadChicks").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("DeadChicks")) != 0)
+{
+    deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+}
+
+// --- Equation ---
+decimal totalChicks = cullsChicks + deadChicks;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalChicks.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal openBalance = 0;
+
+// --- Read value safely ---
+if (GetCurrentColumnValue("OpenBalance") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("OpenBalance").ToString()))
+{
+    openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenBalance"));
+}
+
+// --- Equation (absolute value) ---
+decimal absOpenBalance = Math.Abs(openBalance);
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = absOpenBalance.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal erSoldAsHatEggs = 0;
+decimal esSoldAsHatEggs = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("ER_SoldAsHatEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SoldAsHatEggs").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs")) != 0)
+{
+    erSoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs"));
+}
+
+if (GetCurrentColumnValue("ES_SoldAsHatEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SoldAsHatEggs").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs")) != 0)
+{
+    esSoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs"));
+}
+
+// --- Equation ---
+decimal totalSoldAsHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalSoldAsHatEggs.ToString("0.##");   // format with 2 decimals
+
+}
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal erSoldAsTableEggs = 0;
+decimal esSoldAsTableEggs = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("ER_SoldAsTableEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SoldAsTableEggs").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs")) != 0)
+{
+    erSoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs"));
+}
+
+if (GetCurrentColumnValue("ES_SoldAsTableEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SoldAsTableEggs").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs")) != 0)
+{
+    esSoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs"));
+}
+
+// --- Equation ---
+decimal totalSoldAsTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalSoldAsTableEggs.ToString("0.##");   // format with up to 2 decimals
+
+}
+
+private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal erSendToOffal = 0;
+decimal esSendToOffal = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("ER_SendToOffal") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SendToOffal").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal")) != 0)
+{
+    erSendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal"));
+}
+
+if (GetCurrentColumnValue("ES_SendToOffal") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SendToOffal").ToString()) &amp;&amp;
+    Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal")) != 0)
+{
+    esSendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal"));
+}
+
+// --- Equation ---
+decimal totalSendToOffal = erSendToOffal + esSendToOffal;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalSendToOffal.ToString("0.##");   // format with up to 2 decimals
+
+}
+
+private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+    decimal erSoldAsHatEggs = 0;
+    decimal esSoldAsHatEggs = 0;
+    decimal erSoldAsTableEggs = 0;
+    decimal esSoldAsTableEggs = 0;
+    decimal erSendToOffal = 0;
+    decimal esSendToOffal = 0;
+
+    // --- Read values safely ---
+    if (GetCurrentColumnValue("ER_SoldAsHatEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SoldAsHatEggs").ToString()) &amp;&amp;
+        Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs")) != 0)
+    {
+        erSoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs"));
+    }
+
+    if (GetCurrentColumnValue("ES_SoldAsHatEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SoldAsHatEggs").ToString()) &amp;&amp;
+        Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs")) != 0)
+    {
+        esSoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs"));
+    }
+
+    if (GetCurrentColumnValue("ER_SoldAsTableEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SoldAsTableEggs").ToString()) &amp;&amp;
+        Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs")) != 0)
+    {
+        erSoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs"));
+    }
+
+    if (GetCurrentColumnValue("ES_SoldAsTableEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SoldAsTableEggs").ToString()) &amp;&amp;
+        Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs")) != 0)
+    {
+        esSoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs"));
+    }
+
+    if (GetCurrentColumnValue("ER_SendToOffal") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SendToOffal").ToString()) &amp;&amp;
+        Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal")) != 0)
+    {
+        erSendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal"));
+    }
+
+    if (GetCurrentColumnValue("ES_SendToOffal") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SendToOffal").ToString()) &amp;&amp;
+        Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal")) != 0)
+    {
+        esSendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal"));
+    }
+
+    // --- Equation ---
+    total = (erSoldAsHatEggs + esSoldAsHatEggs) +
+                    (erSoldAsTableEggs + esSoldAsTableEggs) +
+                    (erSendToOffal + esSendToOffal);
+
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = total.ToString("0.##");   // format with 2 decimals
+
+
+}
+
+private void xrTableCell71_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    ecimal selChicks = 0;
+    decimal cullsChicks = 0;
+    decimal deadChicks = 0;
+    decimal settedEggs = 0;
+
+    // --- Read values directly ---
+    if (GetCurrentColumnValue("SR_HT_FlkSumProdReport.SelChicks") != null)
+        selChicks = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SelChicks"));
+
+    if (GetCurrentColumnValue("SR_HT_FlkSumProdReport.CullsChicks") != null)
+        cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.CullsChicks"));
+
+    if (GetCurrentColumnValue("SR_HT_FlkSumProdReport.DeadChicks") != null)
+        deadChicks = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.DeadChicks"));
+
+    if (GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs") != null)
+        settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs"));
+
+    // --- Calculate CumHatchability ---
+    decimal cumHatchability = 0;
+    if (settedEggs != 0)
+        cumHatchability = (selChicks + cullsChicks + deadChicks) / settedEggs * 100m;
+
+    // --- Equation with totalEggsSold ---
+    decimal result = total * cumHatchability / 100m;
+
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##"); // format with 2 decimals
+}
+
+private void xrTableCell74_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // --- FarmInTake ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+        farmInTake = tempFarm;
+
+    // --- Total_RejEggs ---
+    decimal totalRejEggs = 0;
+    object valRej = GetCurrentColumnValue("Total_RejEggs");
+    if (valRej != null &amp;&amp; decimal.TryParse(valRej.ToString(), out decimal tempRej))
+        totalRejEggs = tempRej;
+
+    // --- BalOfHatEggs = FarmInTake - Total_RejEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+    // --- SettedEggs ---
+    decimal settedEggs = 0;
+    object valSet = GetCurrentColumnValue("SettedEggs");
+    if (valSet != null &amp;&amp; decimal.TryParse(valSet.ToString(), out decimal tempSet))
+        settedEggs = tempSet;
+
+    // --- Final equation ---
+    decimal result = balOfHatEggs - (settedEggs + total);
+
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
+}
+
+private void xrTableCell77_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // --- StockHatEggBal ---
+    decimal stockHatEggBal = 0;
+    object valStock = GetCurrentColumnValue("StockHatEggBal");
+    if (valStock != null &amp;&amp; decimal.TryParse(valStock.ToString(), out decimal tempStock) &amp;&amp; tempStock != 0)
+        stockHatEggBal = tempStock;
+
+    // --- SetEggBalHatEgg ---
+    decimal setEggBalHatEgg = 0;
+    object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
+    if (valSetEgg != null &amp;&amp; decimal.TryParse(valSetEgg.ToString(), out decimal tempSetEgg))
+        setEggBalHatEgg = tempSetEgg;
+
+    // --- ActHatchBalanceEggs ---
+    decimal actHatchBalanceEggs = 0;
+    if (setEggBalHatEgg != 0)
+    {
+        decimal selChick = 0, culls = 0, deads = 0;
+
+        object valSel = GetCurrentColumnValue("SelChickBalHatEgg");
+        if (valSel != null &amp;&amp; decimal.TryParse(valSel.ToString(), out decimal tempSel))
+            selChick = tempSel;
+
+        object valCulls = GetCurrentColumnValue("CullsBalHatEgg");
+        if (valCulls != null &amp;&amp; decimal.TryParse(valCulls.ToString(), out decimal tempCulls))
+            culls = tempCulls;
+
+        object valDeads = GetCurrentColumnValue("DeadsBalHatEgg");
+        if (valDeads != null &amp;&amp; decimal.TryParse(valDeads.ToString(), out decimal tempDeads))
+            deads = tempDeads;
+
+        actHatchBalanceEggs = (selChick + culls + deads) / setEggBalHatEgg * 100;
+    }
+
+    // --- Final equation ---
+    decimal result = stockHatEggBal * actHatchBalanceEggs / 100;
+
+    // --- Assign result ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
+}
+
+private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        decimal result = 0;
+
+    // --- Read SetEggBalHatEgg ---
+    object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
+    if (valSetEgg != null &amp;&amp; decimal.TryParse(valSetEgg.ToString(), out decimal setEggBalHatEgg) &amp;&amp; setEggBalHatEgg != 0)
+    {
+        // --- Read SelChickBalHatEgg ---
+        decimal selChick = 0;
+        object valSel = GetCurrentColumnValue("SelChickBalHatEgg");
+        if (valSel != null &amp;&amp; decimal.TryParse(valSel.ToString(), out decimal tempSel))
+            selChick = tempSel;
+
+        // --- Read CullsBalHatEgg ---
+        decimal culls = 0;
+        object valCulls = GetCurrentColumnValue("CullsBalHatEgg");
+        if (valCulls != null &amp;&amp; decimal.TryParse(valCulls.ToString(), out decimal tempCulls))
+            culls = tempCulls;
+
+        // --- Read DeadsBalHatEgg ---
+        decimal deads = 0;
+        object valDeads = GetCurrentColumnValue("DeadsBalHatEgg");
+        if (valDeads != null &amp;&amp; decimal.TryParse(valDeads.ToString(), out decimal tempDeads))
+            deads = tempDeads;
+
+        // --- Equation ---
+        result = (selChick + culls + deads) / setEggBalHatEgg * 100;
+    }
+
+    // --- Assign to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
+}
+
+private void xrTableCell83_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = 0;
+
+    // ------------------ EstChicks_PerEgg ------------------
+    decimal estChicks_PerEgg = 0;
+    decimal cumHatchability = 0;
+
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal settedEggs) &amp;&amp; settedEggs != 0)
+    {
+        // Sel + Culls + Deads
+        decimal sel = 0, culls = 0, dead = 0;
+
+        if (decimal.TryParse(GetCurrentColumnValue("SelChicks")?.ToString(), out decimal tempSel)) sel = tempSel;
+        if (decimal.TryParse(GetCurrentColumnValue("CullsChicks")?.ToString(), out decimal tempCulls)) culls = tempCulls;
+        if (decimal.TryParse(GetCurrentColumnValue("DeadChicks")?.ToString(), out decimal tempDead)) dead = tempDead;
+
+        cumHatchability = (sel + culls + dead) / settedEggs * 100;
+    }
+
+    // use global "total" for TotalEggSold
+    estChicks_PerEgg = total * cumHatchability / 100;
+
+    // ------------------ ESTChicks_PerStock_HE ------------------
+    decimal estChicks_PerStock_HE = 0;
+
+    if (decimal.TryParse(GetCurrentColumnValue("StockHatEggBal")?.ToString(), out decimal stockBal) &amp;&amp; stockBal != 0)
+    {
+        // Calculate ActHatchBalanceEggs
+        decimal actHatchBalanceEggs = 0;
+        if (decimal.TryParse(GetCurrentColumnValue("SetEggBalHatEgg")?.ToString(), out decimal setEggBal) &amp;&amp; setEggBal != 0)
+        {
+            decimal selBal = 0, cullsBal = 0, deadBal = 0;
+
+            if (decimal.TryParse(GetCurrentColumnValue("SelChickBalHatEgg")?.ToString(), out decimal tempSelBal)) selBal = tempSelBal;
+            if (decimal.TryParse(GetCurrentColumnValue("CullsBalHatEgg")?.ToString(), out decimal tempCullsBal)) cullsBal = tempCullsBal;
+            if (decimal.TryParse(GetCurrentColumnValue("DeadsBalHatEgg")?.ToString(), out decimal tempDeadBal)) deadBal = tempDeadBal;
+
+            actHatchBalanceEggs = (selBal + cullsBal + deadBal) / setEggBal * 100;
+        }
+
+        estChicks_PerStock_HE = stockBal * actHatchBalanceEggs / 100;
+    }
+
+    // ------------------ CumChicks ------------------
+    decimal cumChicks = 0;
+    if (decimal.TryParse(GetCurrentColumnValue("CumChicks")?.ToString(), out decimal tempCum))
+        cumChicks = tempCum;
+
+    // ------------------ Final Equation ------------------
+    result = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
+
+    // Assign to cell
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
+}
+
+private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake")) : 0;
+    decimal pol = GetCurrentColumnValue("POL") != null ? Convert.ToDecimal(GetCurrentColumnValue("POL")) : 0;
+
+    if (pol != 0)
+        ((XRTableCell)sender).Text = (farmInTake / pol).ToString("0.00"); // formatted to 2 decimals
+    else
+        ((XRTableCell)sender).Text = "0";
+}
+
+private void xrTableCell95_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Get values safely with null checks
+    decimal pol = GetCurrentColumnValue("POL") != null ? Convert.ToDecimal(GetCurrentColumnValue("POL")) : 0;
+
+    decimal rejBroken = GetCurrentColumnValue("RejBroken") != null ? Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) : 0;
+    decimal rejCrack  = GetCurrentColumnValue("RejCrack")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejCrack"))  : 0;
+    decimal rejDef    = GetCurrentColumnValue("RejDef")    != null ? Convert.ToDecimal(GetCurrentColumnValue("RejDef"))    : 0;
+    decimal rejOther  = GetCurrentColumnValue("RejOther")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejOther"))  : 0;
+
+    // Total rejected eggs
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+    // Final calculation
+    decimal result = (pol == 0) ? 0 : (totalRejEggs / pol);
+
+    // Assign to cell text (formatted with 2 decimals)
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell98_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Get POL
+    decimal pol = GetCurrentColumnValue("POL") != null ? Convert.ToDecimal(GetCurrentColumnValue("POL")) : 0;
+
+    // FarmInTake
+    decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake")) : 0;
+
+    // Rejections
+    decimal rejBroken = GetCurrentColumnValue("RejBroken") != null ? Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) : 0;
+    decimal rejCrack  = GetCurrentColumnValue("RejCrack")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejCrack"))  : 0;
+    decimal rejDef    = GetCurrentColumnValue("RejDef")    != null ? Convert.ToDecimal(GetCurrentColumnValue("RejDef"))    : 0;
+    decimal rejOther  = GetCurrentColumnValue("RejOther")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejOther"))  : 0;
+
+    // Total rejected eggs
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+    // BalOfHatEggs = FarmInTake - Total_RejEggs
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+    // Final calculation
+    decimal result = (pol == 0) ? 0 : (balOfHatEggs / pol);
+
+    // Assign result to the cell (2 decimals formatting)
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell104_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Get POL
+    decimal pol = GetCurrentColumnValue("POL") != null ? Convert.ToDecimal(GetCurrentColumnValue("POL")) : 0;
+
+    // Get CumChicks
+    decimal cumChicks = GetCurrentColumnValue("CumChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("CumChicks")) : 0;
+
+    // Final calculation
+    decimal result = (pol == 0) ? 0 : (cumChicks / pol);
+
+    // Assign result to the cell (formatted with 2 decimals)
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell107_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Get values from dataset
+    decimal settedEggs = GetCurrentColumnValue("SettedEggs") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"))
+        : 0;
+
+    decimal selChicks = GetCurrentColumnValue("SelChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+        : 0;
+
+    decimal cullsChicks = GetCurrentColumnValue("CullsChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"))
+        : 0;
+
+    decimal deadChicks = GetCurrentColumnValue("DeadChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+        : 0;
+
+    // Compute CumHatchability
+    decimal result = (settedEggs != 0)
+        ? ((selChicks + cullsChicks + deadChicks) / settedEggs * 100)
+        : 0;
+
+    // Assign result to the XRTableCell
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell85_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Get values
+    decimal pol = GetCurrentColumnValue("POL") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
+        : 0;
+
+    decimal rejChicks = GetCurrentColumnValue("RejChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("RejChicks"))
+        : 0;
+
+    // Compute result
+    decimal result = (pol != 0) ? (rejChicks / pol) : 0;
+
+    // Assign result to cell
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell94_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Get values
+    decimal pol = GetCurrentColumnValue("POL") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
+        : 0;
+
+    decimal selChicks = GetCurrentColumnValue("SelChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+        : 0;
+
+    // Compute result
+    decimal result = (pol != 0) ? (selChicks / pol) : 0;
+
+    // Assign result to the table cell
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell118_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Read POL
+    decimal pol = GetCurrentColumnValue("POL") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
+        : 0;
+
+    // Read TotalEggSold (from global variable "total")
+    decimal totalEggSold = total;  // &lt;--- as you said, global from another script
+
+    // Compute CumHatchability
+    decimal settedEggs = GetCurrentColumnValue("SettedEggs") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"))
+        : 0;
+    decimal selChicks = GetCurrentColumnValue("SelChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+        : 0;
+    decimal cullsChicks = GetCurrentColumnValue("CullsChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"))
+        : 0;
+    decimal deadChicks = GetCurrentColumnValue("DeadChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+        : 0;
+
+    decimal cumHatchability = (settedEggs != 0)
+        ? ((selChicks + cullsChicks + deadChicks) / settedEggs) * 100
+        : 0;
+
+    // Compute EstChicks_PerEgg
+    decimal estChicksPerEgg = (totalEggSold != 0 &amp;&amp; cumHatchability != 0)
+        ? (totalEggSold * cumHatchability / 100)
+        : 0;
+
+    // Final formula: divide by POL
+    decimal result = (pol != 0) ? (estChicksPerEgg / pol) : 0;
+
+    // Assign result
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell124_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- POL ---
+    decimal pol = GetCurrentColumnValue("POL") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
+        : 0;
+
+    // --- BalOfHatEggs = FarmInTake - Total_RejEggs ---
+    decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake"))
+        : 0;
+
+    decimal rejEggs = 0;
+    decimal rejBroken = GetCurrentColumnValue("RejBroken") != null ? Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) : 0;
+    decimal rejCrack  = GetCurrentColumnValue("RejCrack")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejCrack"))  : 0;
+    decimal rejDef    = GetCurrentColumnValue("RejDef")    != null ? Convert.ToDecimal(GetCurrentColumnValue("RejDef"))    : 0;
+    decimal rejOther  = GetCurrentColumnValue("RejOther")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejOther"))  : 0;
+    rejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+    decimal balOfHatEggs = farmInTake - rejEggs;
+
+    // --- TotalEggSold (global from another script) ---
+    decimal totalEggSold = total;
+
+    // --- StockHatEggBal ---
+    decimal settedEggs = GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs"))
+        : 0;
+
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+    // --- ActHatchBalanceEggs ---
+    decimal setEggBalHatEgg = GetCurrentColumnValue("SetEggBalHatEgg") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SetEggBalHatEgg"))
+        : 0;
+    decimal selChickBal = GetCurrentColumnValue("SelChickBalHatEgg") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SelChickBalHatEgg"))
+        : 0;
+    decimal cullsBal = GetCurrentColumnValue("CullsBalHatEgg") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CullsBalHatEgg"))
+        : 0;
+    decimal deadsBal = GetCurrentColumnValue("DeadsBalHatEgg") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("DeadsBalHatEgg"))
+        : 0;
+
+    decimal actHatchBalanceEggs = (setEggBalHatEgg != 0)
+        ? ((selChickBal + cullsBal + deadsBal) / setEggBalHatEgg) * 100
+        : 0;
+
+    // --- ESTChicks_PerStock_HE ---
+    decimal estChicksPerStockHE = (stockHatEggBal != 0 &amp;&amp; actHatchBalanceEggs != 0)
+        ? (stockHatEggBal * actHatchBalanceEggs / 100)
+        : 0;
+
+    // --- Final Result ---
+    decimal result = (pol != 0) ? (estChicksPerStockHE / pol) : 0;
+
+    // --- Assign to cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell127_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // --- POL ---
+    decimal pol = GetCurrentColumnValue("POL") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
+        : 0;
+
+    // --- BalOfHatEggs = FarmInTake - RejectedEggs ---
+    decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake"))
+        : 0;
+
+    decimal rejBroken = GetCurrentColumnValue("RejBroken") != null ? Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) : 0;
+    decimal rejCrack  = GetCurrentColumnValue("RejCrack")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejCrack"))  : 0;
+    decimal rejDef    = GetCurrentColumnValue("RejDef")    != null ? Convert.ToDecimal(GetCurrentColumnValue("RejDef"))    : 0;
+    decimal rejOther  = GetCurrentColumnValue("RejOther")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejOther"))  : 0;
+
+    decimal balOfHatEggs = farmInTake - (rejBroken + rejCrack + rejDef + rejOther);
+
+    // --- TotalEggSold (already global) ---
+    decimal totalEggSold = total;
+
+    // --- Setted Eggs ---
+    decimal settedEggs = GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs"))
+        : 0;
+
+    // --- CumHatchability ---
+    decimal selChicks  = GetCurrentColumnValue("SR_HT_FlkSumProdReport.SelChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SelChicks")) : 0;
+    decimal cullsChicks= GetCurrentColumnValue("SR_HT_FlkSumProdReport.CullsChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.CullsChicks")) : 0;
+    decimal deadChicks = GetCurrentColumnValue("SR_HT_FlkSumProdReport.DeadChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.DeadChicks")) : 0;
+
+    decimal cumHatchability = (settedEggs != 0)
+        ? ((selChicks + cullsChicks + deadChicks) / settedEggs) * 100
+        : 0;
+
+    // --- EstChicks_PerEgg ---
+    decimal estChicksPerEgg = (totalEggSold != 0 &amp;&amp; cumHatchability != 0)
+        ? (totalEggSold * cumHatchability / 100)
+        : 0;
+
+    // --- StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+    // --- ActHatchBalanceEggs ---
+    decimal setEggBalHatEgg = GetCurrentColumnValue("SetEggBalHatEgg") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SetEggBalHatEgg"))
+        : 0;
+    decimal selChickBal = GetCurrentColumnValue("SelChickBalHatEgg") != null ? Convert.ToDecimal(GetCurrentColumnValue("SelChickBalHatEgg")) : 0;
+    decimal cullsBal    = GetCurrentColumnValue("CullsBalHatEgg") != null ? Convert.ToDecimal(GetCurrentColumnValue("CullsBalHatEgg")) : 0;
+    decimal deadsBal    = GetCurrentColumnValue("DeadsBalHatEgg") != null ? Convert.ToDecimal(GetCurrentColumnValue("DeadsBalHatEgg")) : 0;
+
+    decimal actHatchBalanceEggs = (setEggBalHatEgg != 0)
+        ? ((selChickBal + cullsBal + deadsBal) / setEggBalHatEgg) * 100
+        : 0;
+
+    // --- ESTChicks_PerStock_HE ---
+    decimal estChicksPerStockHE = (stockHatEggBal != 0 &amp;&amp; actHatchBalanceEggs != 0)
+        ? (stockHatEggBal * actHatchBalanceEggs / 100)
+        : 0;
+
+    // --- CumChicks (direct column) ---
+    decimal cumChicks = GetCurrentColumnValue("CumChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CumChicks"))
+        : 0;
+
+    // --- CumChicks_Act_Est ---
+    decimal cumChicksActEst = estChicksPerEgg + estChicksPerStockHE + cumChicks;
+
+    // --- Final Result ---
+    decimal result = (pol != 0) ? (cumChicksActEst / pol) : 0;
+
+    // --- Assign to cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
 }
 </value>
   </data>

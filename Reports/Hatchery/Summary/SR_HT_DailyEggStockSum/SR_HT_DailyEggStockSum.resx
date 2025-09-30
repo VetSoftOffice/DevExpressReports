@@ -431,6 +431,7 @@ private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.Canc
       TotalStockGroup = 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>

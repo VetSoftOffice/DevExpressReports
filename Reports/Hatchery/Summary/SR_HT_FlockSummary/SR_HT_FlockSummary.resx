@@ -143,34 +143,114 @@
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using System.ComponentModel;
-using DevExpress.XtraReports.Parameters;
+    <value>decimal rejectChicksSum = 0;
+decimal selChicksSum  = 0;
+decimal eggsSettedSum  = 0
+private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // --- Get Values ---
+    decimal eggsSetted = GetCurrentColumnValue("EggsSetted") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
+        : 0;
+    eggsSettedSum += eggsSetted;
+    decimal selChicks = GetCurrentColumnValue("SelChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+        : 0;
+    selChicksSum += eggsSetted;
+    // --- Calculate Result ---
+    decimal result = (eggsSetted &gt; 0)
+        ? (selChicks * 100 / eggsSetted)
+        : 0;
 
-int groupCounter = 1;
+    // --- Assign to Cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
 
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
-{
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
-    
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-}</value>
+private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // --- Use global variables directly ---
+    decimal result = (eggsSettedSum &gt; 0)
+        ? (selChicksSum * 100 / eggsSettedSum)
+        : 0;
+
+    // --- Assign to Cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      // --- Get values from the current row ---
+    decimal eggsSetted = GetCurrentColumnValue("SR_HT_FlockSummary.EggsSetted") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlockSummary.EggsSetted"))
+        : 0;
+
+    decimal culls = GetCurrentColumnValue("SR_HT_FlockSummary.Culls") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlockSummary.Culls"))
+        : 0;
+
+    decimal deadChicks = GetCurrentColumnValue("SR_HT_FlockSummary.DeadChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlockSummary.DeadChicks"))
+        : 0;
+
+    // --- RejectChicks = Culls + DeadChicks ---
+    decimal rejectChicks = culls + deadChicks;
+    rejectChicksSum += rejectChicks 
+    // --- Calculate percentage ---
+    decimal result = (eggsSetted &gt; 0)
+        ? (rejectChicks * 100 / eggsSetted)
+        : 0;
+
+    // --- Assign to cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Use global variables directly ---
+    decimal result = (eggsSettedSum &gt; 0)
+        ? (rejectChicksSum  * 100 / eggsSettedSum)
+        : 0;
+
+    // --- Assign to Cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // --- Get values from the current row ---
+    decimal eggsSetted = GetCurrentColumnValue("EggsSetted") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
+        : 0;
+
+    decimal selChicks = GetCurrentColumnValue("SelChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+        : 0;
+
+    decimal culls = GetCurrentColumnValue("Culls") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("Culls"))
+        : 0;
+
+    decimal deadChicks = GetCurrentColumnValue("DeadChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+        : 0;
+
+    // --- TotalChicks = SelChicks + Culls + DeadChicks ---
+    decimal totalChicks = selChicks + culls + deadChicks;
+    totalChicksSum+= totalChicks 
+    // --- Calculate percentage ---
+    decimal result = (eggsSetted &gt; 0)
+        ? (totalChicks * 100 / eggsSetted)
+        : 0;
+
+    // --- Assign to cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+
+}
+
+private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Use global variables directly ---
+    decimal result = (eggsSettedSum &gt; 0)
+        ? (totalChicksSum* 100 / eggsSettedSum)
+        : 0;
+
+    // --- Assign to Cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+</value>
   </data>
 </root>
