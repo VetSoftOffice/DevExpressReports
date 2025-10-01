@@ -120,4 +120,44 @@
   <data name="dsFinance.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2tFeHBlbnNlcyI+PEZpZWxkIE5hbWU9IkN5Y2xlTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU291cmNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlYXJTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJQT0xTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJMYXlDbG9zZUZsa1N0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkxheUNsb3NlRmxrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9Ikxhc3RFZ2dzQ29kZUhhdGNoRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlJlYXJQZXJpb2RXa3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlQZXJpb2RXa3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb3VzZXNDb3VudCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZlbWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZSZWFyRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1SZWFyRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZSZWFyRGVwbFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNUmVhckRlcGxQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5U3RhcnRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5U3RhcnRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZMYXlEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUxheURlcGwiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGTGF5RGVwbFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNTGF5RGVwbFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlDbG9zZUZsa0ZlbWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlDbG9zZUZsa01hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dzUHJvZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlakVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWpFZ2dzUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSEVnZ3NQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dISCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhFZ2dzSEgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGUmVhckZlZWRDb25zIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVJlYXJGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZMYXlGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1MYXlGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1GZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZWVkQ29uc1VuaXRQcmljZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheUZlZWRDb25zVW5pdFByaWNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkZlZWRDb25zSEgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNRmVlZENvbnNISCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRDb25zUGVySEVnZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ikdvb2RFZ2dzVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlDbG9zZUZsa1ZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3RoZXJSZXZWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsUmV2IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFeHAiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9maXRMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRWdnU2VsbFByaWNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGFibGVFZ2dDb3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR29vZEVnZ1Byb2ZpdExvc3MiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal fRearDep = 0.00m;
+
+    if (GetCurrentColumnValue("FRearDep") != null &amp;&amp; 
+        !string.IsNullOrEmpty(GetCurrentColumnValue("FRearDep").ToString()))
+    {
+        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearDep"));
+    }
+
+    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+}
+
+private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal fRearDep = 0.00m;
+
+    if (GetCurrentColumnValue("FRearFeedCons") != null &amp;&amp; 
+        !string.IsNullOrEmpty(GetCurrentColumnValue("FRearFeedCons").ToString()))
+    {
+        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearFeedCons"));
+    }
+
+    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+}
+
+private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal fRearDep = 0.00m;
+
+    if (GetCurrentColumnValue("RearFeedConsUnitPrice") != null &amp;&amp; 
+        !string.IsNullOrEmpty(GetCurrentColumnValue("RearFeedConsUnitPrice").ToString()))
+    {
+        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("RearFeedConsUnitPrice"));
+    }
+
+    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+
+}
+</value>
+  </data>
 </root>

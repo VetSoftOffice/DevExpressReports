@@ -120,4 +120,20 @@
   <data name="dsFinance.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2tFeHBlbnNlc19SZXYiPjxGaWVsZCBOYW1lPSJJdGVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGFWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrTableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal fRearDep = 0.00m;
+
+    if (GetCurrentColumnValue("DataValue") != null &amp;&amp; 
+        !string.IsNullOrEmpty(GetCurrentColumnValue("DataValue").ToString()))
+    {
+        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("DataValue"));
+    }
+
+    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+
+}
+</value>
+  </data>
 </root>
