@@ -3912,6 +3912,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell148.Multiline = true;
             this.xrTableCell148.Name = "xrTableCell148";
+            this.xrTableCell148.Scripts.OnBeforePrint = "xrTableCell148_BeforePrint";
             this.xrTableCell148.StylePriority.UseBorders = false;
             // 
             // xrTableCell193
@@ -3959,6 +3960,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell150.Multiline = true;
             this.xrTableCell150.Name = "xrTableCell150";
+            this.xrTableCell150.Scripts.OnBeforePrint = "xrTableCell150_BeforePrint";
             this.xrTableCell150.StylePriority.UseBorders = false;
             // 
             // xrTableCell196
@@ -4006,6 +4008,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell152.Multiline = true;
             this.xrTableCell152.Name = "xrTableCell152";
+            this.xrTableCell152.Scripts.OnBeforePrint = "xrTableCell152_BeforePrint";
             this.xrTableCell152.StylePriority.UseBorders = false;
             this.xrTableCell152.StylePriority.UseTextAlignment = false;
             this.xrTableCell152.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -4055,6 +4058,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell154.Multiline = true;
             this.xrTableCell154.Name = "xrTableCell154";
+            this.xrTableCell154.Scripts.OnBeforePrint = "xrTableCell154_BeforePrint";
             this.xrTableCell154.StylePriority.UseBorders = false;
             // 
             // xrTableCell202
@@ -4102,6 +4106,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell156.Multiline = true;
             this.xrTableCell156.Name = "xrTableCell156";
+            this.xrTableCell156.Scripts.OnBeforePrint = "xrTableCell156_BeforePrint";
             this.xrTableCell156.StylePriority.UseBorders = false;
             // 
             // xrTableCell205
@@ -4149,6 +4154,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell158.Multiline = true;
             this.xrTableCell158.Name = "xrTableCell158";
+            this.xrTableCell158.Scripts.OnBeforePrint = "xrTableCell158_BeforePrint";
             this.xrTableCell158.StylePriority.UseBorders = false;
             // 
             // xrTableCell208
@@ -4196,6 +4202,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell160.Multiline = true;
             this.xrTableCell160.Name = "xrTableCell160";
+            this.xrTableCell160.Scripts.OnBeforePrint = "xrTableCell160_BeforePrint";
             this.xrTableCell160.StylePriority.UseBorders = false;
             // 
             // xrTableCell211
@@ -4246,6 +4253,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell162.Multiline = true;
             this.xrTableCell162.Name = "xrTableCell162";
+            this.xrTableCell162.Scripts.OnBeforePrint = "xrTableCell162_BeforePrint";
             this.xrTableCell162.StylePriority.UseBorders = false;
             // 
             // xrTableCell214
@@ -4258,6 +4266,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell214.Multiline = true;
             this.xrTableCell214.Name = "xrTableCell214";
+            this.xrTableCell214.Scripts.OnBeforePrint = "xrTableCell214_BeforePrint";
             this.xrTableCell214.StylePriority.UseBorders = false;
             // 
             // xrTable68
@@ -4308,6 +4317,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell217.Multiline = true;
             this.xrTableCell217.Name = "xrTableCell217";
+            this.xrTableCell217.Scripts.OnBeforePrint = "xrTableCell217_BeforePrint";
             this.xrTableCell217.StylePriority.UseBorders = false;
             // 
             // xrTable69
@@ -4346,6 +4356,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell166.Multiline = true;
             this.xrTableCell166.Name = "xrTableCell166";
+            this.xrTableCell166.Scripts.OnBeforePrint = "xrTableCell166_BeforePrint";
             this.xrTableCell166.StylePriority.UseBorders = false;
             // 
             // xrTableCell220
@@ -4358,6 +4369,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell220.Multiline = true;
             this.xrTableCell220.Name = "xrTableCell220";
+            this.xrTableCell220.Scripts.OnBeforePrint = "xrTableCell220_BeforePrint";
             this.xrTableCell220.StylePriority.UseBorders = false;
             // 
             // xrTable70
@@ -4472,6 +4484,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell171.Multiline = true;
             this.xrTableCell171.Name = "xrTableCell171";
+            this.xrTableCell171.Scripts.OnBeforePrint = "xrTableCell171_BeforePrint";
             this.xrTableCell171.StylePriority.UseBorders = false;
             // 
             // xrTableCell226
@@ -4484,6 +4497,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell226.Multiline = true;
             this.xrTableCell226.Name = "xrTableCell226";
+            this.xrTableCell226.Scripts.OnBeforePrint = "xrTableCell226_BeforePrint";
             this.xrTableCell226.StylePriority.UseBorders = false;
             // 
             // xrTable73
@@ -4522,6 +4536,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell173.Multiline = true;
             this.xrTableCell173.Name = "xrTableCell173";
+            this.xrTableCell173.Scripts.OnBeforePrint = "xrTableCell173_BeforePrint";
             this.xrTableCell173.StylePriority.UseBorders = false;
             // 
             // xrTableCell229
@@ -4534,6 +4549,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell229.Multiline = true;
             this.xrTableCell229.Name = "xrTableCell229";
+            this.xrTableCell229.Scripts.OnBeforePrint = "xrTableCell229_BeforePrint";
             this.xrTableCell229.StylePriority.UseBorders = false;
             // 
             // xrTable74
@@ -4572,6 +4588,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell175.Multiline = true;
             this.xrTableCell175.Name = "xrTableCell175";
+            this.xrTableCell175.Scripts.OnBeforePrint = "xrTableCell175_BeforePrint";
             this.xrTableCell175.StylePriority.UseBorders = false;
             // 
             // xrTableCell232
@@ -4584,6 +4601,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell232.Multiline = true;
             this.xrTableCell232.Name = "xrTableCell232";
+            this.xrTableCell232.Scripts.OnBeforePrint = "xrTableCell232_BeforePrint";
             this.xrTableCell232.StylePriority.UseBorders = false;
             // 
             // xrTable75
@@ -4622,6 +4640,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell177.Multiline = true;
             this.xrTableCell177.Name = "xrTableCell177";
+            this.xrTableCell177.Scripts.OnBeforePrint = "xrTableCell177_BeforePrint";
             this.xrTableCell177.StylePriority.UseBorders = false;
             // 
             // xrTableCell235
@@ -4634,6 +4653,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell235.Multiline = true;
             this.xrTableCell235.Name = "xrTableCell235";
+            this.xrTableCell235.Scripts.OnBeforePrint = "xrTableCell235_BeforePrint";
             this.xrTableCell235.StylePriority.UseBorders = false;
             // 
             // xrTable76
@@ -4672,6 +4692,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell179.Multiline = true;
             this.xrTableCell179.Name = "xrTableCell179";
+            this.xrTableCell179.Scripts.OnBeforePrint = "xrTableCell179_BeforePrint";
             this.xrTableCell179.StylePriority.UseBorders = false;
             // 
             // xrTableCell238
@@ -4719,6 +4740,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell187.Multiline = true;
             this.xrTableCell187.Name = "xrTableCell187";
+            this.xrTableCell187.Scripts.OnBeforePrint = "xrTableCell187_BeforePrint";
             this.xrTableCell187.StylePriority.UseBorders = false;
             // 
             // xrTableCell250
@@ -4765,6 +4787,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell189.Multiline = true;
             this.xrTableCell189.Name = "xrTableCell189";
+            this.xrTableCell189.Scripts.OnBeforePrint = "xrTableCell189_BeforePrint";
             this.xrTableCell189.StylePriority.UseBorders = false;
             // 
             // xrTable82

@@ -146,6 +146,8 @@
     <value>decimal rejectChicksSum = 0;
 decimal selChicksSum  = 0;
 decimal eggsSettedSum  = 0
+decimal totalCumChicksPercentReport = 0;
+decimal totalCumChicksMinusHatchabilityReport = 0;
 private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      // --- Get Values ---
     decimal eggsSetted = GetCurrentColumnValue("EggsSetted") != null
@@ -250,6 +252,246 @@ private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.Canc
 
     // --- Assign to Cell ---
     ((XRTableCell)sender).Text = result.ToString("0.00");
+}
+
+private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    //-- new logic for BrdStd Percentage using total EggsSetted
+// --- Declare variables ---
+decimal totalEggsSetted = 0;
+decimal brdStdAsNumber = 0;
+decimal brdStdPercent = 0;
+
+// --- Get total sum of EggsSetted for the report ---
+totalEggsSetted = Convert.ToDecimal(Sum(GetCurrentColumnValue("EggsSetted")));
+
+// --- Read BrdStdAsNumber safely ---
+if (GetCurrentColumnValue("BrdStdAsNumber") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("BrdStdAsNumber").ToString()))
+{
+    brdStdAsNumber = Convert.ToDecimal(GetCurrentColumnValue("BrdStdAsNumber"));
+}
+
+// --- Equation (same as Iif(Sum(EggsSetted) &gt; 0, Sum(BrdStdAsNumber) * 100 / Sum(EggsSetted), 0)) ---
+if (totalEggsSetted &gt; 0)
+{
+    brdStdPercent = brdStdAsNumber * 100 / totalEggsSetted;
+}
+else
+{
+    brdStdPercent = 0;
+}
+
+// --- Optional: accumulate total ---
+totalBrdStdPercentReport += brdStdPercent;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalBrdStdPercentReport.ToString("N2");
+
+}
+
+private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    //-- new logic for Cum Chicks Percentage ((CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs)
+// --- Declare variables ---
+decimal cumSettingEggs = 0;
+decimal cumDeadChicks = 0;
+decimal cumCulls = 0;
+decimal cumBroiler = 0;
+decimal cumChicksPercent = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("CumSettingEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumSettingEggs").ToString()))
+{
+    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"));
+}
+
+if (GetCurrentColumnValue("CumDeadChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumDeadChicks").ToString()))
+{
+    cumDeadChicks = Convert.ToDecimal(GetCurrentColumnValue("CumDeadChicks"));
+}
+
+if (GetCurrentColumnValue("CumCulls") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumCulls").ToString()))
+{
+    cumCulls = Convert.ToDecimal(GetCurrentColumnValue("CumCulls"));
+}
+
+if (GetCurrentColumnValue("CumBroiler") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumBroiler").ToString()))
+{
+    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue("CumBroiler"));
+}
+
+// --- Equation (same as Iif(CumSettingEggs &gt; 0, (CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs, 0)) ---
+if (cumSettingEggs &gt; 0)
+{
+    cumChicksPercent = (cumDeadChicks + cumCulls + cumBroiler) * 100 / cumSettingEggs;
+}
+else
+{
+    cumChicksPercent = 0;
+}
+
+// --- Optional: accumulate total ---
+totalCumChicksPercentReport += cumChicksPercent;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = cumChicksPercent.ToString("N2");
+
+}
+
+private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     xrTableCell41.Text = totalCumChicksPercentReport.ToString("0");
+      totalCumChicksPercentReport= 0; // reset for next group
+
+}
+
+private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    //-- new logic for Cum Chicks Percentage minus StadCumHatchability
+// --- Declare variables ---
+decimal cumSettingEggs = 0;
+decimal cumDeadChicks = 0;
+decimal cumCulls = 0;
+decimal cumBroiler = 0;
+decimal stadCumHatchability = 0;
+decimal resultValue = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("CumSettingEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumSettingEggs").ToString()))
+{
+    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"));
+}
+
+if (GetCurrentColumnValue("CumDeadChicks") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumDeadChicks").ToString()))
+{
+    cumDeadChicks = Convert.ToDecimal(GetCurrentColumnValue("CumDeadChicks"));
+}
+
+if (GetCurrentColumnValue("CumCulls") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumCulls").ToString()))
+{
+    cumCulls = Convert.ToDecimal(GetCurrentColumnValue("CumCulls"));
+}
+
+if (GetCurrentColumnValue("CumBroiler") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumBroiler").ToString()))
+{
+    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue("CumBroiler"));
+}
+
+if (GetCurrentColumnValue("StadCumHatchability") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("StadCumHatchability").ToString()))
+{
+    stadCumHatchability = Convert.ToDecimal(GetCurrentColumnValue("StadCumHatchability"));
+}
+
+// --- Calculate (CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs ---
+decimal cumChicksPercent = 0;
+if (cumSettingEggs &gt; 0)
+{
+    cumChicksPercent = (cumDeadChicks + cumCulls + cumBroiler) * 100 / cumSettingEggs;
+}
+
+// --- Final result: subtract StadCumHatchability ---
+resultValue = cumChicksPercent - stadCumHatchability;
+
+// --- Optional: accumulate total ---
+totalCumChicksMinusHatchabilityReport += resultValue;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = resultValue.ToString("N2");
+
+}
+
+private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    //-- new logic for Cum Broiler Percentage (CumBroiler * 100 / CumSettingEggs)
+// --- Declare variables ---
+decimal cumSettingEggs = 0;
+decimal cumBroiler = 0;
+decimal cumBroilerPercent = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("CumSettingEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumSettingEggs").ToString()))
+{
+    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"));
+}
+
+if (GetCurrentColumnValue("CumBroiler") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumBroiler").ToString()))
+{
+    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue("CumBroiler"));
+}
+
+// --- Equation (same as Iif(CumSettingEggs &gt; 0, CumBroiler * 100 / CumSettingEggs, 0)) ---
+if (cumSettingEggs &gt; 0)
+{
+    cumBroilerPercent = cumBroiler * 100 / cumSettingEggs;
+}
+else
+{
+    cumBroilerPercent = 0;
+}
+
+// --- Optional: accumulate total ---
+totalCumBroilerPercentReport += cumBroilerPercent;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = cumBroilerPercent.ToString("N2");
+
+}
+
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    //-- new logic for Cum Broiler Percentage minus StadCumHatchabilityAGrade
+// --- Declare variables ---
+decimal cumSettingEggs = 0;
+decimal cumBroiler = 0;
+decimal stadCumHatchabilityAGrade = 0;
+decimal resultValue = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("CumSettingEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumSettingEggs").ToString()))
+{
+    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"));
+}
+
+if (GetCurrentColumnValue("CumBroiler") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CumBroiler").ToString()))
+{
+    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue("CumBroiler"));
+}
+
+if (GetCurrentColumnValue("StadCumHatchabilityAGrade") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("StadCumHatchabilityAGrade").ToString()))
+{
+    stadCumHatchabilityAGrade = Convert.ToDecimal(GetCurrentColumnValue("StadCumHatchabilityAGrade"));
+}
+
+// --- Equation (same as (Iif(CumSettingEggs &gt; 0, CumBroiler / CumSettingEggs * 100, 0)) - StadCumHatchabilityAGrade) ---
+decimal cumBroilerPercent = 0;
+
+if (cumSettingEggs &gt; 0)
+{
+    cumBroilerPercent = (cumBroiler / cumSettingEggs) * 100;
+}
+
+resultValue = cumBroilerPercent - stadCumHatchabilityAGrade;
+
+// --- Optional: accumulate total ---
+totalCumBroilerMinusHatchabilityAGradeReport += resultValue;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = resultValue.ToString("N2");
+
 }
 </value>
   </data>

@@ -626,6 +626,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell17.Multiline = true;
             this.xrTableCell17.Name = "xrTableCell17";
+            this.xrTableCell17.Scripts.OnBeforePrint = "xrTableCell17_BeforePrint";
             this.xrTableCell17.StylePriority.UseBorders = false;
             this.xrTableCell17.StylePriority.UseBorderWidth = false;
             this.xrTableCell17.StylePriority.UseFont = false;
@@ -660,6 +661,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
+            this.xrTableCell28.Scripts.OnBeforePrint = "xrTableCell28_BeforePrint";
             this.xrTableCell28.StylePriority.UseBorders = false;
             this.xrTableCell28.StylePriority.UseBorderWidth = false;
             this.xrTableCell28.StylePriority.UseFont = false;
@@ -711,6 +713,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
+            this.xrTableCell20.Scripts.OnBeforePrint = "xrTableCell20_BeforePrint";
             this.xrTableCell20.StylePriority.UseBorders = false;
             this.xrTableCell20.StylePriority.UseBorderWidth = false;
             this.xrTableCell20.StylePriority.UseFont = false;
@@ -741,10 +744,10 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell22.BorderWidth = 1.4F;
             this.xrTableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HOFPerc]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
+            this.xrTableCell22.Scripts.OnBeforePrint = "xrTableCell22_BeforePrint";
             this.xrTableCell22.StylePriority.UseBorders = false;
             this.xrTableCell22.StylePriority.UseBorderWidth = false;
             this.xrTableCell22.StylePriority.UseFont = false;
@@ -1365,12 +1368,17 @@
             // 
             // xrTableCell58
             // 
+            this.xrTableCell58.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell58.BorderWidth = 1.4F;
             this.xrTableCell58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[GT_BrdStdAsNumber]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell58.Multiline = true;
             this.xrTableCell58.Name = "xrTableCell58";
+            this.xrTableCell58.Scripts.OnBeforePrint = "xrTableCell58_BeforePrint";
+            this.xrTableCell58.StylePriority.UseBorders = false;
             this.xrTableCell58.StylePriority.UseBorderWidth = false;
             this.xrTableCell58.StylePriority.UseFont = false;
             // 
@@ -1417,6 +1425,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell41.Multiline = true;
             this.xrTableCell41.Name = "xrTableCell41";
+            this.xrTableCell41.Scripts.OnBeforePrint = "xrTableCell41_BeforePrint";
             this.xrTableCell41.StylePriority.UseBorders = false;
             this.xrTableCell41.StylePriority.UseBorderWidth = false;
             this.xrTableCell41.StylePriority.UseFont = false;
