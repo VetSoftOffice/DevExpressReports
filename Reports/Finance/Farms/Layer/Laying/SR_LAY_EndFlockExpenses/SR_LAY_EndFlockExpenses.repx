@@ -1053,7 +1053,7 @@
                   <Cells>
                     <Item1 Ref="536" ControlType="XRTableCell" Name="xrTableCell35" Multiline="true" TextAlignment="MiddleLeft" BackColor="White">
                       <ExpressionBindings>
-                        <Item1 Ref="537" EventName="BeforePrint" PropertyName="Text" Expression="Iif(?IsRTL,&#xA;    Iif(?ModuleID == 2,&#xA;        'كمية العلف المسهتلك لكل بيضة صالحة(كجم)',&#xA;        'كمية العلف المسهتلك لكل بيضة مخصبة(كجم)'&#xA;    ),&#xA;    'Total feed consumption / sellable egg / Kg'&#xA;)&#xA;" />
+                        <Item1 Ref="537" EventName="BeforePrint" PropertyName="Text" Expression="Iif(?IsRTL,&#xA;    Iif(?ModuleID == 2,&#xA;        'كمية العلف المستهلك لكل بيضة صالحة(كجم)',&#xA;        'كمية العلف المستهلك لكل بيضة مخصبة(كجم)'&#xA;    ),&#xA;    'Total feed consumption / sellable egg / Kg'&#xA;)&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="538" UseFont="false" UseBackColor="false" UseTextAlignment="false" />
                     </Item1>
@@ -1660,7 +1660,7 @@
     <Item223 Ref="962" Component="#Ref-452" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item224 Ref="963" Component="#Ref-457" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item225 Ref="964" Component="#Ref-457" Culture="Default" Path="Text" Data="Rejected eggs %" />
-    <Item226 Ref="965" Component="#Ref-457" Culture="ar" Path="Text" Data="% البيض المستبعد" />
+    <Item226 Ref="965" Component="#Ref-457" Culture="ar" Path="Text" Data=" البيض المستبعد %" />
     <Item227 Ref="966" Component="#Ref-457" Culture="Default" Path="Weight" Data="4.2364120060071713" />
     <Item228 Ref="967" Component="#Ref-459" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item229 Ref="968" Component="#Ref-459" Culture="Default" Path="TextFormatString" Data="{0:#.00}" />
@@ -1674,7 +1674,7 @@
     <Item237 Ref="976" Component="#Ref-466" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item238 Ref="977" Component="#Ref-471" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item239 Ref="978" Component="#Ref-471" Culture="Default" Path="Text" Data="Sellable eggs %" />
-    <Item240 Ref="979" Component="#Ref-471" Culture="ar" Path="Text" Data="% البيض الصالح" />
+    <Item240 Ref="979" Component="#Ref-471" Culture="ar" Path="Text" Data="البيض الصالح %" />
     <Item241 Ref="980" Component="#Ref-471" Culture="Default" Path="Weight" Data="4.2364120060071713" />
     <Item242 Ref="981" Component="#Ref-473" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item243 Ref="982" Component="#Ref-473" Culture="Default" Path="TextFormatString" Data="{0:#.00}" />
@@ -1740,7 +1740,7 @@
     <Item303 Ref="1042" Component="#Ref-522" Culture="ar" Path="Text" Data="متوسط سعر طن العلف فترة إنتاج" />
     <Item304 Ref="1043" Component="#Ref-522" Culture="Default" Path="Weight" Data="4.2364120060071713" />
     <Item305 Ref="1044" Component="#Ref-524" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
-    <Item306 Ref="1045" Component="#Ref-524" Culture="Default" Path="TextFormatString" Data="{0:N3}" />
+    <Item306 Ref="1045" Component="#Ref-524" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item307 Ref="1046" Component="#Ref-524" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item308 Ref="1047" Component="#Ref-529" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item309 Ref="1048" Component="#Ref-529" Culture="Default" Path="Text" Data="Total feed consumption HH / Kg" />
