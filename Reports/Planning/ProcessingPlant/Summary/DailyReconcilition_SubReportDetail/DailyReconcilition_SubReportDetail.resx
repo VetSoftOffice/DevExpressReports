@@ -118,63 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using DevExpress.XtraReports.UI;
-using System.Collections;
-using System.Collections.Generic;
+    <value>
+private void xrTableCell72_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal counterTotal = 0;
+decimal pluckReject = 0;
+decimal result = 0;
 
-public void HideSubbandIfFeedMillLessThanTwo(SubBand band)
+// --- Read values safely ---
+if (GetCurrentColumnValue("CounterTotal") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CounterTotal").ToString()))
 {
-    XtraReport report = band.Report as XtraReport;
-    if (report != null)
-    {
-        IEnumerable dataSource = report.DataSource as IEnumerable;
-        if (dataSource != null)
-        {
-            int feedMillCount = CountDistinctFeedMills(dataSource);
-            band.Visible = (feedMillCount &gt;= 2);
-        }
-        else
-        {
-            band.Visible = false;
-        }
-    }
-    else
-    {
-        band.Visible = false;
-    }
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
 }
 
-private int CountDistinctFeedMills(IEnumerable dataSource)
+if (GetCurrentColumnValue("PluckReject") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("PluckReject").ToString()))
 {
-    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();
-    foreach (object item in dataSource)
-    {
-        object feedMillValue = GetFieldValue(item, "FeedMill");
-        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))
-        {
-            distinctFeedMills.Add(feedMillValue);
-        }
-    }
-    return distinctFeedMills.Count;
+    pluckReject = Convert.ToDecimal(GetCurrentColumnValue("PluckReject"));
 }
 
-private object GetFieldValue(object item, string fieldName)
-{
-    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);
-    if (property != null)
-    {
-        return property.GetValue(item, null);
-    }
-    return null;
-}
+// --- Equation (same as Iif([CounterTotal] != 0, [PluckReject] / [CounterTotal] * 100, 0)) ---
+if (counterTotal != 0)
+    result = (pluckReject / counterTotal) * 100;
+else
+    result = 0;
 
-private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
-{
-    SubBand subBand = ReportFooterSub3 as SubBand;
-    if (subBand != null)
-    {
-        HideSubbandIfFeedMillLessThanTwo(subBand);
-    }
-}</value>
+// --- Optional: accumulate total ---
+pluckRejectPercentTotal += result;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+</value>
   </data>
 </root>

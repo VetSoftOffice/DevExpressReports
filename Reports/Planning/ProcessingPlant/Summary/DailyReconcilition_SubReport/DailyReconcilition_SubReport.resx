@@ -118,63 +118,325 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using DevExpress.XtraReports.UI;
-using System.Collections;
-using System.Collections.Generic;
+    <value>decimal pluckRejectPercentTotal  = 0;
+private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare running total variables (outside or static in the class scope if cumulative across rows) ---
+decimal counterTotal = 0;
+decimal doa = 0;
+decimal culls = 0;
+decimal scaleWeight = 0;
 
-public void HideSubbandIfFeedMillLessThanTwo(SubBand band)
+// --- Read values safely from the current record ---
+if (GetCurrentColumnValue("CounterTotal") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CounterTotal").ToString()))
 {
-    XtraReport report = band.Report as XtraReport;
-    if (report != null)
-    {
-        IEnumerable dataSource = report.DataSource as IEnumerable;
-        if (dataSource != null)
-        {
-            int feedMillCount = CountDistinctFeedMills(dataSource);
-            band.Visible = (feedMillCount &gt;= 2);
-        }
-        else
-        {
-            band.Visible = false;
-        }
-    }
-    else
-    {
-        band.Visible = false;
-    }
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
 }
 
-private int CountDistinctFeedMills(IEnumerable dataSource)
+if (GetCurrentColumnValue("DOA") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DOA").ToString()))
 {
-    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();
-    foreach (object item in dataSource)
-    {
-        object feedMillValue = GetFieldValue(item, "FeedMill");
-        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))
-        {
-            distinctFeedMills.Add(feedMillValue);
-        }
-    }
-    return distinctFeedMills.Count;
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
 }
 
-private object GetFieldValue(object item, string fieldName)
+if (GetCurrentColumnValue("Culls") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("Culls").ToString()))
 {
-    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);
-    if (property != null)
-    {
-        return property.GetValue(item, null);
-    }
-    return null;
+    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
 }
 
-private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
+if (GetCurrentColumnValue("ScaleWeight") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("ScaleWeight").ToString()))
 {
-    SubBand subBand = ReportFooterSub3 as SubBand;
-    if (subBand != null)
-    {
-        HideSubbandIfFeedMillLessThanTwo(subBand);
-    }
-}</value>
+    scaleWeight = Convert.ToDecimal(GetCurrentColumnValue("ScaleWeight"));
+}
+
+// --- Accumulate totals across all records (these must be declared as class-level variables above the method) ---
+counterTotalSum += counterTotal;
+doaSum += doa;
+cullsSum += culls;
+scaleWeightSum += scaleWeight;
+
+// --- Compute denominator and final result ---
+decimal denominator = counterTotalSum + doaSum + cullsSum;
+decimal result = 0;
+
+if (counterTotalSum &gt; 0 &amp;&amp; denominator != 0)
+    result = scaleWeightSum / denominator;
+else
+    result = 0;
+
+// --- Assign result to table cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");  // format with 2 decimal places
+
+}
+
+private void xrTableCell72_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+            //-- new logic for Pluck Reject Percentage
+// --- Declare variables ---
+decimal counterTotal = 0;
+decimal pluckReject = 0;
+decimal result = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("CounterTotal") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CounterTotal").ToString()))
+{
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
+}
+
+if (GetCurrentColumnValue("PluckReject") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("PluckReject").ToString()))
+{
+    pluckReject = Convert.ToDecimal(GetCurrentColumnValue("PluckReject"));
+}
+
+// --- Equation (same as Iif([CounterTotal] != 0, [PluckReject] / [CounterTotal] * 100, 0)) ---
+if (counterTotal != 0)
+    result = (pluckReject / counterTotal) * 100;
+else
+    result = 0;
+
+// --- Optional: accumulate total ---
+pluckRejectPercentTotal += result;
+// --- Assign result to table cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");  // format with 2 decimal places
+
+}
+
+private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal rfFemaleStarted = 0;
+decimal deplation = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("rf_Female_Started") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_Female_Started").ToString()))
+{
+    rfFemaleStarted = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+}
+
+if (GetCurrentColumnValue("DEPLATION") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DEPLATION").ToString()))
+{
+    deplation = Convert.ToDecimal(GetCurrentColumnValue("DEPLATION"));
+}
+
+// --- Accumulate sums across all records ---
+// (these should be declared as class-level variables at the top of the report)
+decimal rfFemaleStartedSum = 0;
+decimal deplationSum = 0;
+
+rfFemaleStartedSum += rfFemaleStarted;
+deplationSum += deplation;
+
+// --- Equation (same as Iif(Sum(...) &lt;&gt; 0, Sum(DEPLATION)/Sum(rf_Female_Started)*100, 0)) ---
+decimal result = 0;
+if (rfFemaleStartedSum != 0)
+    result = (deplationSum / rfFemaleStartedSum) * 100;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");  // format with 2 decimal places
+
+}
+
+private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal rfFemaleStarted = 0;
+decimal rfLiveFemale = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("rf_Female_Started") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_Female_Started").ToString()))
+{
+    rfFemaleStarted = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+}
+
+if (GetCurrentColumnValue("rf_LiveFemale") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_LiveFemale").ToString()))
+{
+    rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale"));
+}
+
+// --- Accumulate sums across all records ---
+// (define these variables at the top of your report class)
+decimal rfFemaleStartedSum = 0;
+decimal rfLiveFemaleSum = 0;
+
+rfFemaleStartedSum += rfFemaleStarted;
+rfLiveFemaleSum += rfLiveFemale;
+
+// --- Equation (same as Iif(Sum([rf_Female_Started]) &lt;&gt; 0, (Sum([rf_LiveFemale]) / Sum([rf_Female_Started])) * 100, 0)) ---
+decimal result = 0;
+if (rfFemaleStartedSum != 0)
+    result = (rfLiveFemaleSum / rfFemaleStartedSum) * 100;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");  // format with 2 decimal places
+
+}
+
+private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal rfLiveFemale = 0;
+decimal doa = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("rf_LiveFemale") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_LiveFemale").ToString()))
+{
+    rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale"));
+}
+
+if (GetCurrentColumnValue("DOA") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DOA").ToString()))
+{
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
+}
+
+// --- Accumulate sums across all records ---
+// (define these at the top of your report class)
+decimal rfLiveFemaleSum  = 0;
+decimal doaSum = 0;
+
+rfLiveFemaleSum += rfLiveFemale;
+doaSum += doa;
+
+// --- Equation (same as Iif(Sum([rf_LiveFemale]) &lt;&gt; 0, Sum([DOA]) * 100 / Sum([rf_LiveFemale]), 0)) ---
+decimal result = 0;
+if (rfLiveFemaleSum != 0)
+    result = (doaSum * 100) / rfLiveFemaleSum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");   // format with 2 decimals
+
+}
+
+private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal rfLiveFemale = 0;
+decimal culls = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("rf_LiveFemale") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_LiveFemale").ToString()))
+{
+    rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale"));
+}
+
+if (GetCurrentColumnValue("Culls") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("Culls").ToString()))
+{
+    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+}
+
+// --- Accumulate sums across all records ---
+// (define these at the top of your report class)
+decimal rfLiveFemaleSum  = 0;
+decimal cullsSum  = 0;
+rfLiveFemaleSum += rfLiveFemale;
+cullsSum += culls;
+
+// --- Equation (same as Iif(Sum([rf_LiveFemale]) &lt;&gt; 0, Sum([Culls]) * 100 / Sum([rf_LiveFemale]), 0)) ---
+decimal result = 0;
+if (rfLiveFemaleSum != 0)
+    result = (cullsSum * 100) / rfLiveFemaleSum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");   // format with 2 decimals
+
+}
+
+private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal rfLiveFemale = 0;
+decimal counterTotal = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("rf_LiveFemale") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_LiveFemale").ToString()))
+{
+    rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale"));
+}
+
+if (GetCurrentColumnValue("CounterTotal") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CounterTotal").ToString()))
+{
+    counterTotal = Convert.ToDecimal(GetCurrentColumnValue("CounterTotal"));
+}
+
+// --- Accumulate sums across all records ---
+// (define these at the top of your report class)
+decimal rfLiveFemaleSum  = 0;
+decimal counterTotalSum  = 0;
+rfLiveFemaleSum += rfLiveFemale;
+counterTotalSum += counterTotal;
+
+// --- Equation (same as Iif(Sum([rf_LiveFemale]) &lt;&gt; 0, Sum([CounterTotal]) * 100 / Sum([rf_LiveFemale]), 0)) ---
+decimal result = 0;
+if (rfLiveFemaleSum != 0)
+    result = (counterTotalSum * 100) / rfLiveFemaleSum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");   // format with 2 decimals
+
+}
+
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal rfLiveFemale = 0;
+decimal deviation = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("rf_LiveFemale") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("rf_LiveFemale").ToString()))
+{
+    rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale"));
+}
+
+if (GetCurrentColumnValue("Deviation") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("Deviation").ToString()))
+{
+    deviation = Convert.ToDecimal(GetCurrentColumnValue("Deviation"));
+}
+
+// --- Accumulate sums across all records ---
+// (define these at the top of your report class)
+decimal rfLiveFemaleSum = 0;
+decimal deviationSum = 0;
+
+rfLiveFemaleSum += rfLiveFemale;
+deviationSum += deviation;
+
+// --- Equation (same as Iif(Sum([rf_LiveFemale]) &lt;&gt; 0, Sum([Deviation]) * 100 / Sum([rf_LiveFemale]), 0)) ---
+decimal result = 0;
+if (rfLiveFemaleSum != 0)
+    result = (deviationSum * 100) / rfLiveFemaleSum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");   // format with 2 decimals
+
+}
+</value>
   </data>
 </root>
