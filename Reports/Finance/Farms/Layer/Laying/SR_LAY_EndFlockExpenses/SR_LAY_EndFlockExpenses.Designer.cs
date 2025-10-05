@@ -320,6 +320,10 @@
             this.dsFinance = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TotalFeedLocalization = new DevExpress.XtraReports.UI.CalculatedField();
             this.ModuleID = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubBand9 = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand11 = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand12 = new DevExpress.XtraReports.UI.SubBand();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -569,8 +573,6 @@
             // 
             // SubBand4
             // 
-            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.tHeader});
             this.SubBand4.Name = "SubBand4";
             // 
             // tHeader
@@ -916,8 +918,6 @@
             // 
             // SR_BRD_EndFlockExpenses_Exp_Section
             // 
-            this.SR_BRD_EndFlockExpenses_Exp_Section.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_EndFlockExpenses_Exp});
             this.SR_BRD_EndFlockExpenses_Exp_Section.Name = "SR_BRD_EndFlockExpenses_Exp_Section";
             // 
             // SR_BRD_EndFlockExpenses_Exp
@@ -934,8 +934,6 @@
             // 
             // SubBand1
             // 
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable1});
             this.SubBand1.Name = "SubBand1";
             // 
             // xrTable1
@@ -1668,8 +1666,6 @@
             // 
             // SR_BRD_EndFlockExpenses_Rev_Section
             // 
-            this.SR_BRD_EndFlockExpenses_Rev_Section.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_EndFlockExpenses_Rev});
             this.SR_BRD_EndFlockExpenses_Rev_Section.Name = "SR_BRD_EndFlockExpenses_Rev_Section";
             // 
             // SR_BRD_EndFlockExpenses_Rev
@@ -1681,8 +1677,6 @@
             // 
             // SubBand2
             // 
-            this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable2});
             this.SubBand2.Name = "SubBand2";
             // 
             // xrTable2
@@ -1943,8 +1937,15 @@
             // 
             // Detail
             // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.tHeader});
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
+            this.Detail.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.SubBand9,
+            this.SubBand10,
+            this.SubBand11,
+            this.SubBand12});
             // 
             // CropNo
             // 
@@ -2196,6 +2197,30 @@
             this.ModuleID.Name = "ModuleID";
             this.ModuleID.Visible = false;
             // 
+            // SubBand9
+            // 
+            this.SubBand9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_EndFlockExpenses_Exp});
+            this.SubBand9.Name = "SubBand9";
+            // 
+            // SubBand10
+            // 
+            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable1});
+            this.SubBand10.Name = "SubBand10";
+            // 
+            // SubBand11
+            // 
+            this.SubBand11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_EndFlockExpenses_Rev});
+            this.SubBand11.Name = "SubBand11";
+            // 
+            // SubBand12
+            // 
+            this.SubBand12.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2});
+            this.SubBand12.Name = "SubBand12";
+            // 
             // SR_LAY_EndFlockExpenses
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2222,7 +2247,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropLabel, "Default", "Text", "Crop: [?CropNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropLabel, "ar", "Text", "المحصول: [?CropNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 216.8751F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmCode, "Default", "Description", "FarmCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10F, 0F)),
@@ -2281,28 +2306,34 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(806.9969F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(806.9969F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95832F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95834F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp, "Default", "SizeF", new System.Drawing.SizeF(669.5578F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp_Section, "Default", "HeightF", 20.41651F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp_Section, "Default", "Visible", true),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp_Section, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Exp_Section, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95834F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev, "Default", "SizeF", new System.Drawing.SizeF(650.8079F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev_Section, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev_Section, "Default", "Visible", true),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev_Section, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_EndFlockExpenses_Rev_Section, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "DisplayName", "FC_LAY_RearingFarmsSummary"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "ar", "DisplayName", "قيود يومية تفصيلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 430.6252F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 96.66677F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "Visible", true),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "Visible", false),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand10, "Default", "HeightF", 430.6252F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand11, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand12, "Default", "HeightF", 96.66677F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 216.8751F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand8, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand9, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdBreed, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdBreed, "Default", "Weight", 4.6634069884768055D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdClosingFlockEndDate, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F)),
@@ -2351,7 +2382,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCrop, "Default", "Text", "Crop"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCrop, "ar", "Text", "محصول"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCrop, "Default", "Weight", 4.2364115445925021D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95834F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95843F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(650.8079F, 216.8751F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thFarm, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thFarm, "Default", "Text", "Farm"),
@@ -2383,9 +2414,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSource, "Default", "Weight", 4.2364115445925021D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trHeader, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95834F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95843F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(650.808F, 430.6252F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95834F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(48.95844F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "SizeF", new System.Drawing.SizeF(650.808F, 96.66677F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Text", "Particulars & Results"),
@@ -2864,5 +2895,9 @@
         private DevExpress.XtraReports.UI.XRSubreport SR_BRD_EndFlockExpenses_Rev;
         private DevExpress.XtraReports.UI.CalculatedField TotalFeedLocalization;
         private DevExpress.XtraReports.Parameters.Parameter ModuleID;
+        private DevExpress.XtraReports.UI.SubBand SubBand9;
+        private DevExpress.XtraReports.UI.SubBand SubBand10;
+        private DevExpress.XtraReports.UI.SubBand SubBand11;
+        private DevExpress.XtraReports.UI.SubBand SubBand12;
     }
 }
