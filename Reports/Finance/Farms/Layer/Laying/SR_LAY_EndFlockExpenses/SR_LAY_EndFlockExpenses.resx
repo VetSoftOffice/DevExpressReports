@@ -158,6 +158,31 @@ private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
 
 }
+
+
+private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variable ---
+decimal feedConsPerHEgg = 0;
+decimal result = 0;
+
+// --- Read value safely ---
+if (GetCurrentColumnValue("FeedConsPerHEgg") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("FeedConsPerHEgg").ToString()))
+{
+    feedConsPerHEgg = Convert.ToDecimal(GetCurrentColumnValue("FeedConsPerHEgg"));
+}
+
+// --- Convert from kg to g ---
+result = feedConsPerHEgg * 1000;
+
+// --- Round to nearest 10 grams (e.g., 175.14 → 180) ---
+result = Math.Round(result / 10, 0) * 10;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0"); // No decimals, just e.g. "180"
+
+}
 </value>
   </data>
 </root>

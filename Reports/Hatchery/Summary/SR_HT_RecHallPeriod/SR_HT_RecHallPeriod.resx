@@ -1057,6 +1057,7 @@ private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.Canc
        TotalOtherEggsReport= 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>

@@ -273,6 +273,10 @@ if (pol &gt; 0)
         hatchPerc = ((actChicks + cullsChicks + deadChicks) / settedEggs) * 100m;
 
     percentage = (estHatEggsBefore21days * (hatchPerc / 100m)) / pol;
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##");   // 2 decimal places
+
 
 }
 
