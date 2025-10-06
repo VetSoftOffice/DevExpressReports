@@ -175,6 +175,10 @@
             this.CropLabel = new DevExpress.XtraReports.UI.XRLabel();
             this.FarmLabel = new DevExpress.XtraReports.UI.XRLabel();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_EndFlockExpenses_Exp_Section = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_EndFlockExpenses_Rev_Section = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.tHeader = new DevExpress.XtraReports.UI.XRTable();
             this.trHeader = new DevExpress.XtraReports.UI.XRTableRow();
             this.thFarm = new DevExpress.XtraReports.UI.XRTableCell();
@@ -209,10 +213,8 @@
             this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.thLayingPeriodWks = new DevExpress.XtraReports.UI.XRTableCell();
             this.tdLayingPeriodWks = new DevExpress.XtraReports.UI.XRTableCell();
-            this.SR_BRD_EndFlockExpenses_Exp_Section = new DevExpress.XtraReports.UI.SubBand();
             this.SR_BRD_EndFlockExpenses_Exp = new DevExpress.XtraReports.UI.XRSubreport();
             this.FlockCode = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -283,9 +285,7 @@
             this.xrTableRow28 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell35 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell36 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.SR_BRD_EndFlockExpenses_Rev_Section = new DevExpress.XtraReports.UI.SubBand();
             this.SR_BRD_EndFlockExpenses_Rev = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow37 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell53 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -316,14 +316,14 @@
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
             this.FarmCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.CropNo = new DevExpress.XtraReports.Parameters.Parameter();
-            this.dsFinance = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.TotalFeedLocalization = new DevExpress.XtraReports.UI.CalculatedField();
-            this.ModuleID = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubBand9 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand11 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand12 = new DevExpress.XtraReports.UI.SubBand();
+            this.CropNo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.dsFinance = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.TotalFeedLocalization = new DevExpress.XtraReports.UI.CalculatedField();
+            this.ModuleID = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -574,6 +574,22 @@
             // SubBand4
             // 
             this.SubBand4.Name = "SubBand4";
+            // 
+            // SR_BRD_EndFlockExpenses_Exp_Section
+            // 
+            this.SR_BRD_EndFlockExpenses_Exp_Section.Name = "SR_BRD_EndFlockExpenses_Exp_Section";
+            // 
+            // SubBand1
+            // 
+            this.SubBand1.Name = "SubBand1";
+            // 
+            // SR_BRD_EndFlockExpenses_Rev_Section
+            // 
+            this.SR_BRD_EndFlockExpenses_Rev_Section.Name = "SR_BRD_EndFlockExpenses_Rev_Section";
+            // 
+            // SubBand2
+            // 
+            this.SubBand2.Name = "SubBand2";
             // 
             // tHeader
             // 
@@ -916,10 +932,6 @@
             this.tdLayingPeriodWks.StylePriority.UseTextAlignment = false;
             this.tdLayingPeriodWks.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // SR_BRD_EndFlockExpenses_Exp_Section
-            // 
-            this.SR_BRD_EndFlockExpenses_Exp_Section.Name = "SR_BRD_EndFlockExpenses_Exp_Section";
-            // 
             // SR_BRD_EndFlockExpenses_Exp
             // 
             this.SR_BRD_EndFlockExpenses_Exp.Name = "SR_BRD_EndFlockExpenses_Exp";
@@ -931,10 +943,6 @@
             // 
             this.FlockCode.Name = "FlockCode";
             this.FlockCode.Visible = false;
-            // 
-            // SubBand1
-            // 
-            this.SubBand1.Name = "SubBand1";
             // 
             // xrTable1
             // 
@@ -1664,20 +1672,12 @@
             this.xrTableCell36.StylePriority.UseTextAlignment = false;
             this.xrTableCell36.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // SR_BRD_EndFlockExpenses_Rev_Section
-            // 
-            this.SR_BRD_EndFlockExpenses_Rev_Section.Name = "SR_BRD_EndFlockExpenses_Rev_Section";
-            // 
             // SR_BRD_EndFlockExpenses_Rev
             // 
             this.SR_BRD_EndFlockExpenses_Rev.Name = "SR_BRD_EndFlockExpenses_Rev";
             this.SR_BRD_EndFlockExpenses_Rev.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
             this.SR_BRD_EndFlockExpenses_Rev.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FlockCode", this.FlockCode));
             this.SR_BRD_EndFlockExpenses_Rev.ReportSource = new DevExpressReports.Reports.Finance.Farms.Layer.Laying.SR_LAY_EndFlockExpenses_Rev.SR_LAY_EndFlockExpenses_Rev();
-            // 
-            // SubBand2
-            // 
-            this.SubBand2.Name = "SubBand2";
             // 
             // xrTable2
             // 
@@ -1947,6 +1947,30 @@
             this.SubBand11,
             this.SubBand12});
             // 
+            // SubBand9
+            // 
+            this.SubBand9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_EndFlockExpenses_Exp});
+            this.SubBand9.Name = "SubBand9";
+            // 
+            // SubBand10
+            // 
+            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable1});
+            this.SubBand10.Name = "SubBand10";
+            // 
+            // SubBand11
+            // 
+            this.SubBand11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_EndFlockExpenses_Rev});
+            this.SubBand11.Name = "SubBand11";
+            // 
+            // SubBand12
+            // 
+            this.SubBand12.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable2});
+            this.SubBand12.Name = "SubBand12";
+            // 
             // CropNo
             // 
             this.CropNo.Name = "CropNo";
@@ -2196,30 +2220,6 @@
             // 
             this.ModuleID.Name = "ModuleID";
             this.ModuleID.Visible = false;
-            // 
-            // SubBand9
-            // 
-            this.SubBand9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_EndFlockExpenses_Exp});
-            this.SubBand9.Name = "SubBand9";
-            // 
-            // SubBand10
-            // 
-            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable1});
-            this.SubBand10.Name = "SubBand10";
-            // 
-            // SubBand11
-            // 
-            this.SubBand11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_EndFlockExpenses_Rev});
-            this.SubBand11.Name = "SubBand11";
-            // 
-            // SubBand12
-            // 
-            this.SubBand12.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable2});
-            this.SubBand12.Name = "SubBand12";
             // 
             // SR_LAY_EndFlockExpenses
             // 
@@ -2609,7 +2609,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Weight", 4.2364120060071713D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Text", ""),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "TextFormatString", "{0:#,#.00}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Weight", 4.6634073617199086D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Text", "Rearing depletion"),

@@ -267,8 +267,6 @@ private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    private void xrTableCell_TotalLoss_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
-{
     // --- Direct fields ---
     decimal unHatEggs = 0;
     decimal destroyedEggs = 0;
