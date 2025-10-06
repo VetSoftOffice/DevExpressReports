@@ -166,6 +166,10 @@ private void xrTableCell1_BeforePrint(object sender, System.ComponentModel.Cance
     if (settedEggs != 0)
         percentage = (SelChicks* 100m) / settedEggs;
         TotalPercentageSelChicks+= percentage 
+        // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = percentage.ToString("0.##");   // 2 decimal places
+
      
 }
 
@@ -193,8 +197,12 @@ private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.Canc
     if (settedEggs != 0)
         percentage = (TotalCulls* 100m) / settedEggs;
         TotalPercentageTotalCulls+= percentage 
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = percentage.ToString("0.##");   // 2 decimal places
 
 }
+
 </value>
   </data>
 </root>

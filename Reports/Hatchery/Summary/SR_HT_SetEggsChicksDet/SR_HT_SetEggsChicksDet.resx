@@ -339,6 +339,7 @@ private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.Canc
       TotalPerc= 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>
