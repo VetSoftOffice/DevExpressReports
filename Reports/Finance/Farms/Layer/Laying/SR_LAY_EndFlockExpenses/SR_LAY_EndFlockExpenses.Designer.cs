@@ -1649,9 +1649,9 @@
             // 
             this.xrTableCell35.BackColor = System.Drawing.Color.White;
             this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(?IsRTL,\n    Iif(?ModuleID == 2,\n        \'كمية العلف المستهلك لكل بيضة صالحة(ج" +
-                    "م)\',\n        \'كمية العلف المستهلك لكل بيضة مخصبة(جم)\'\n    ),\n    \'Total feed con" +
-                    "sumption / sellable egg / g\'\n)\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(?IsRTL,\n    Iif(?ModuleID == 2,\n        \'كمية العلف المستهلك لكل بيضة صالحة (" +
+                    "جم)\',\n        \'كمية العلف المستهلك لكل بيضة مخصبة (جم)\'\n    ),\n    \'Total feed c" +
+                    "onsumption / sellable egg / g\'\n)\n")});
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
             this.xrTableCell35.StylePriority.UseBackColor = false;

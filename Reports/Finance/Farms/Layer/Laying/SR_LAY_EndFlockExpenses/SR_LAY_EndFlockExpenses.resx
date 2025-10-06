@@ -172,15 +172,12 @@ if (GetCurrentColumnValue("FeedConsPerHEgg") != null &amp;&amp;
     feedConsPerHEgg = Convert.ToDecimal(GetCurrentColumnValue("FeedConsPerHEgg"));
 }
 
-// --- Convert from kg to g ---
+// --- Convert from kg to g (1 kg = 1000 g) ---
 result = feedConsPerHEgg * 1000;
 
-// --- Round to nearest 10 grams (e.g., 175.14 → 180) ---
-result = Math.Round(result / 10, 0) * 10;
-
-// --- Assign result to cell ---
+// --- Assign converted value to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N0"); // No decimals, just e.g. "180"
+cell.Text = result.ToString("N0");   // format with 2 decimals (e.g., 1250.00)
 
 }
 </value>
