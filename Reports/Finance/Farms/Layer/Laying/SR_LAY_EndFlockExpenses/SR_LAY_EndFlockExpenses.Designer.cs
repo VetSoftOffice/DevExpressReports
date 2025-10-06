@@ -1651,7 +1651,7 @@
             this.xrTableCell35.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(?IsRTL,\n    Iif(?ModuleID == 2,\n        \'كمية العلف المستهلك لكل بيضة صالحة(ج" +
                     "م)\',\n        \'كمية العلف المستهلك لكل بيضة مخصبة(جم)\'\n    ),\n    \'Total feed con" +
-                    "sumption / sellable egg / Kg\'\n)\n")});
+                    "sumption / sellable egg / g\'\n)\n")});
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
             this.xrTableCell35.StylePriority.UseBackColor = false;

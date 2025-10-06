@@ -537,7 +537,7 @@
                   <Cells>
                     <Item1 Ref="302" ControlType="XRTableCell" Name="xrTableCell35" Multiline="true" TextAlignment="MiddleLeft" BackColor="White">
                       <ExpressionBindings>
-                        <Item1 Ref="303" EventName="BeforePrint" PropertyName="Text" Expression="Iif(?IsRTL,&#xA;    Iif(?ModuleID == 2,&#xA;        'كمية العلف المستهلك لكل بيضة صالحة(جم)',&#xA;        'كمية العلف المستهلك لكل بيضة مخصبة(جم)'&#xA;    ),&#xA;    'Total feed consumption / sellable egg / Kg'&#xA;)&#xA;" />
+                        <Item1 Ref="303" EventName="BeforePrint" PropertyName="Text" Expression="Iif(?IsRTL,&#xA;    Iif(?ModuleID == 2,&#xA;        'كمية العلف المستهلك لكل بيضة صالحة(جم)',&#xA;        'كمية العلف المستهلك لكل بيضة مخصبة(جم)'&#xA;    ),&#xA;    'Total feed consumption / sellable egg / g'&#xA;)&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="304" UseFont="false" UseBackColor="false" UseTextAlignment="false" />
                     </Item1>
