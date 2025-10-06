@@ -1767,7 +1767,7 @@
     <Item324 Ref="1067" Component="#Ref-396" Culture="Default" Path="Weight" Data="4.2364120060071713" />
     <Item325 Ref="1068" Component="#Ref-398" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item326 Ref="1069" Component="#Ref-398" Culture="Default" Path="Text" Data="" />
-    <Item327 Ref="1070" Component="#Ref-398" Culture="Default" Path="TextFormatString" Data="{0:#,#.00}" />
+    <Item327 Ref="1070" Component="#Ref-398" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item328 Ref="1071" Component="#Ref-398" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item329 Ref="1072" Component="#Ref-159" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item330 Ref="1073" Component="#Ref-159" Culture="Default" Path="Text" Data="Received birds" />
@@ -1778,14 +1778,14 @@
     <Item335 Ref="1078" Component="#Ref-368" Culture="ar" Path="Text" Data="إجمالي إيرادات" />
     <Item336 Ref="1079" Component="#Ref-368" Culture="Default" Path="Weight" Data="4.2364120060071713" />
     <Item337 Ref="1080" Component="#Ref-370" Culture="Default" Path="Font" Data="Tahoma, 9pt, style=Bold" />
-    <Item338 Ref="1081" Component="#Ref-370" Culture="Default" Path="TextFormatString" Data="{0:#,#.00}" />
+    <Item338 Ref="1081" Component="#Ref-370" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item339 Ref="1082" Component="#Ref-370" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item340 Ref="1083" Component="#Ref-375" Culture="Default" Path="Font" Data="Tahoma, 9pt, style=Bold" />
     <Item341 Ref="1084" Component="#Ref-375" Culture="Default" Path="Text" Data="Total Expenses" />
     <Item342 Ref="1085" Component="#Ref-375" Culture="ar" Path="Text" Data="إجمالي تكاليف" />
     <Item343 Ref="1086" Component="#Ref-375" Culture="Default" Path="Weight" Data="4.2364120060071713" />
     <Item344 Ref="1087" Component="#Ref-377" Culture="Default" Path="Font" Data="Tahoma, 9pt, style=Bold" />
-    <Item345 Ref="1088" Component="#Ref-377" Culture="Default" Path="TextFormatString" Data="{0:#,#.00}" />
+    <Item345 Ref="1088" Component="#Ref-377" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item346 Ref="1089" Component="#Ref-377" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item347 Ref="1090" Component="#Ref-382" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item348 Ref="1091" Component="#Ref-382" Culture="Default" Path="Text" Data="Profit / Loss" />
@@ -1802,7 +1802,7 @@
     <Item359 Ref="1102" Component="#Ref-161" Culture="Default" Path="TextFormatString" Data="{0:#,#}" />
     <Item360 Ref="1103" Component="#Ref-161" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item361 Ref="1104" Component="#Ref-391" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
-    <Item362 Ref="1105" Component="#Ref-391" Culture="Default" Path="TextFormatString" Data="{0:#,#.00}" />
+    <Item362 Ref="1105" Component="#Ref-391" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item363 Ref="1106" Component="#Ref-391" Culture="Default" Path="Weight" Data="4.6634073617199086" />
     <Item364 Ref="1107" Component="#Ref-403" Culture="Default" Path="Font" Data="Tahoma, 9pt" />
     <Item365 Ref="1108" Component="#Ref-403" Culture="Default" Path="Text" Data="Sellable egg profit / loss" />
