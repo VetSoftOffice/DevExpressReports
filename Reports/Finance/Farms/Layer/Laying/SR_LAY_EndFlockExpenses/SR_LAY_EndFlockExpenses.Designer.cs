@@ -1127,7 +1127,8 @@
             // 
             this.xrTableCell52.BackColor = System.Drawing.Color.White;
             this.xrTableCell52.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ScrapValue]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ScrapValue]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell52.Multiline = true;
             this.xrTableCell52.Name = "xrTableCell52";
             this.xrTableCell52.StylePriority.UseBackColor = false;
