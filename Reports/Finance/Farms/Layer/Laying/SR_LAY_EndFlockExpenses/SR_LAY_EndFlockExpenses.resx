@@ -131,7 +131,7 @@ private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.Cance
         fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearDepl"));
     }
 
-    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+    ((XRTableCell)sender).Text = fRearDep.ToString("N0"); // formats as 0.00
 }
 
 private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -143,7 +143,7 @@ private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.Canc
         fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearFeedCons"));
     }
 
-    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+    ((XRTableCell)sender).Text = fRearDep.ToString("N3"); // formats as 0.00
 }
 
 private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
