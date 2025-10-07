@@ -180,6 +180,38 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("N0");   // format with 2 decimals (e.g., 1250.00)
 
 }
+
+private void tdClosingFlockEndDate_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+// --- Declare variables ---
+DateTime startDate = DateTime.MinValue;
+DateTime endDate = DateTime.MinValue;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("LayCloseFlkStartDate") != null &amp;&amp;
+    DateTime.TryParse(GetCurrentColumnValue("LayCloseFlkStartDate").ToString(), out DateTime parsedStart))
+{
+    startDate = parsedStart;
+}
+
+if (GetCurrentColumnValue("LayCloseFlkEndDate") != null &amp;&amp;
+    DateTime.TryParse(GetCurrentColumnValue("LayCloseFlkEndDate").ToString(), out DateTime parsedEnd))
+{
+    endDate = parsedEnd;
+}
+
+// --- Logic: if equal show one date, else show both separated by "/" ---
+XRTableCell cell = sender as XRTableCell;
+
+if (startDate == endDate)
+{
+    cell.Text = startDate.ToString("dd-MM-yyyy");  // &lt;-- Your desired format
+}
+else
+{
+    cell.Text = $"{startDate:dd-MM-yyyy} / {endDate:dd-MM-yyyy}";
+}
+
+}
 </value>
   </data>
 </root>

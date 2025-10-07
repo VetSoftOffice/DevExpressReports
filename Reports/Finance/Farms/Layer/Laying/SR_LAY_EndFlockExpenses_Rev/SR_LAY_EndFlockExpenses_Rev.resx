@@ -122,16 +122,29 @@
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
-private void xrTableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal fRearDep = 0.00m;
+private void xrTableCell1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal dataValue = 0.00m;
 
-    if (GetCurrentColumnValue("DataValue") != null &amp;&amp; 
-        !string.IsNullOrEmpty(GetCurrentColumnValue("DataValue").ToString()))
-    {
-        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("DataValue"));
-    }
+if (GetCurrentColumnValue("DataValue") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DataValue").ToString()))
+{
+    dataValue = Convert.ToDecimal(GetCurrentColumnValue("DataValue"));
+}
 
-    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
+((XRTableCell)sender).Text = dataValue.ToString("N2"); // formats as 0.00
+
+}
+
+private void xrTableCell2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal dataValuePerc = 0.00m;
+
+if (GetCurrentColumnValue("DataValuePerc") != null &amp;&amp; 
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DataValuePerc").ToString()))
+{
+    dataValuePerc = Convert.ToDecimal(GetCurrentColumnValue("DataValuePerc"));
+}
+
+((XRTableCell)sender).Text = dataValuePerc.ToString("N2"); // formats as 0
 
 }
 </value>
