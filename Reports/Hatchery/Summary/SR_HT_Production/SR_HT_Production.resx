@@ -290,6 +290,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = TotalPercentageChicksSettedVsFert.ToString("0.00");  // Row level %
 
 }
+
 </value>
   </data>
 </root>
