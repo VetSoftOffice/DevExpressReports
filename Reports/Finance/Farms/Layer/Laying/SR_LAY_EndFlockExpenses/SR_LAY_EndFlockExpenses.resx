@@ -125,10 +125,10 @@
 private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      decimal fRearDep = 0.00m;
 
-    if (GetCurrentColumnValue("FRearDep") != null &amp;&amp; 
-        !string.IsNullOrEmpty(GetCurrentColumnValue("FRearDep").ToString()))
+    if (GetCurrentColumnValue("FRearDepl") != null &amp;&amp; 
+        !string.IsNullOrEmpty(GetCurrentColumnValue("FRearDepl").ToString()))
     {
-        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearDep"));
+        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearDepl"));
     }
 
     ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
