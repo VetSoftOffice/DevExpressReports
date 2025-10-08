@@ -360,6 +360,7 @@ private void xrTableCell71_BeforePrint(object sender, System.ComponentModel.Canc
           CloseMachineReport  = 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>

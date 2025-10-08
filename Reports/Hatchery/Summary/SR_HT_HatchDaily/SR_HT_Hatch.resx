@@ -191,12 +191,12 @@ decimal totalReportSettedEggs = 0;
 // --- FertileEggs ---
 if (GetCurrentColumnValue("FertileEggs") != null)
     fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
-totalReportFertileEggs += fertileEggs;
+    totalReportFertileEggs += fertileEggs;
 
 // --- SettedEggs ---
 if (GetCurrentColumnValue("SettedEggs") != null)
     settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-totalReportSettedEggs += settedEggs;
+    totalReportSettedEggs += settedEggs;
 
 // --- Total percentage ---
 if (totalReportSettedEggs != 0)
@@ -220,12 +220,12 @@ decimal totalReportFertPer = 0;
 // --- HatchPer ---
 if (GetCurrentColumnValue("HatchPer") != null)
     hatchPer = Convert.ToDecimal(GetCurrentColumnValue("HatchPer"));
-totalReportHatchPer += hatchPer;
+    totalReportHatchPer += hatchPer;
 
 // --- FertPer ---
 if (GetCurrentColumnValue("FertPer") != null)
     fertPer = Convert.ToDecimal(GetCurrentColumnValue("FertPer"));
-totalReportFertPer += fertPer;
+    totalReportFertPer += fertPer;
 
 // --- Equation (row level %) ---
 decimal percentage = 0;

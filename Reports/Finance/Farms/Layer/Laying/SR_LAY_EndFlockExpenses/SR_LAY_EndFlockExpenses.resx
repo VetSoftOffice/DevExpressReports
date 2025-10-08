@@ -122,64 +122,7 @@
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
-private void xrTableCell8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal fRearDep = 0.00m;
 
-    if (GetCurrentColumnValue("FRearDepl") != null &amp;&amp; 
-        !string.IsNullOrEmpty(GetCurrentColumnValue("FRearDepl").ToString()))
-    {
-        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearDepl"));
-    }
-
-    ((XRTableCell)sender).Text = fRearDep.ToString("N0"); // formats as 0.00
-}
-
-private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal fRearDep = 0.00m;
-
-    if (GetCurrentColumnValue("FRearFeedCons") != null &amp;&amp; 
-        !string.IsNullOrEmpty(GetCurrentColumnValue("FRearFeedCons").ToString()))
-    {
-        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("FRearFeedCons"));
-    }
-
-    ((XRTableCell)sender).Text = fRearDep.ToString("N3"); // formats as 0.00
-}
-
-private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal fRearDep = 0.00m;
-
-    if (GetCurrentColumnValue("RearFeedConsUnitPrice") != null &amp;&amp; 
-        !string.IsNullOrEmpty(GetCurrentColumnValue("RearFeedConsUnitPrice").ToString()))
-    {
-        fRearDep = Convert.ToDecimal(GetCurrentColumnValue("RearFeedConsUnitPrice"));
-    }
-
-    ((XRTableCell)sender).Text = fRearDep.ToString("N2"); // formats as 0.00
-
-}
-
-
-private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare local variable ---
-decimal feedConsPerHEgg = 0;
-decimal result = 0;
-
-// --- Read value safely ---
-if (GetCurrentColumnValue("FeedConsPerHEgg") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("FeedConsPerHEgg").ToString()))
-{
-    feedConsPerHEgg = Convert.ToDecimal(GetCurrentColumnValue("FeedConsPerHEgg"));
-}
-
-// --- Convert from kg to g (1 kg = 1000 g) ---
-result = feedConsPerHEgg * 1000;
-
-// --- Assign converted value to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N0");   // format with 2 decimals (e.g., 1250.00)
-
-}
 
 private void tdClosingFlockEndDate_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
 // --- Declare variables ---
@@ -210,6 +153,27 @@ else
 {
     cell.Text = $"{startDate:dd-MM-yyyy} / {endDate:dd-MM-yyyy}";
 }
+
+}
+
+private void xrTableCell114_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // --- Declare local variable ---
+decimal feedConsPerHEgg = 0;
+decimal result = 0;
+
+// --- Read value safely ---
+if (GetCurrentColumnValue("FeedConsPerHEgg") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("FeedConsPerHEgg").ToString()))
+{
+    feedConsPerHEgg = Convert.ToDecimal(GetCurrentColumnValue("FeedConsPerHEgg"));
+}
+
+// --- Convert from kg to g (1 kg = 1000 g) ---
+result = feedConsPerHEgg * 1000;
+
+// --- Assign converted value to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0");   // format with 2 decimals (e.g., 1250.00)
 
 }
 </value>
