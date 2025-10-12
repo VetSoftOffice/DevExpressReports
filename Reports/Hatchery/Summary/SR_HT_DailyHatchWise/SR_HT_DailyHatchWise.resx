@@ -902,6 +902,7 @@ private void xrTableCell109_BeforePrint(object sender, System.ComponentModel.Can
      SaleFertileReport= 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>
