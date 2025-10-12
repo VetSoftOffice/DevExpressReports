@@ -137,7 +137,6 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal SettedAndRejEggsTotal  = 0;
 decimal SettedAndRejEggsTotalReport = 0;
-decimal SettedAndRejEggsTotalReport  = 0;
 decimal SettedAndRejUnSellableEggsTotal  = 0;
 decimal infertileEggsTotalReport=0;
 decimal infertileEggsTotal = 0 ;
@@ -203,9 +202,6 @@ if (SettedAndRejEggs &gt; 0)
     result = (RejSellEggs / SettedAndRejEggs) * 100;
     SettedAndRejEggsTotal +=result ;
    //-- new logic for unSellableEggs
-       decimal SettedEggs = 0;
-decimal RejSellEggs = 0;
-decimal RejUnSellEggs = 0;
 
 if (GetCurrentColumnValue("SettedEggs") != null)
     SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
@@ -216,17 +212,16 @@ if (GetCurrentColumnValue("RejSellEggs") != null)
 if (GetCurrentColumnValue("RejUnSellEggs") != null)
     RejUnSellEggs = Convert.ToDecimal(GetCurrentColumnValue("RejUnSellEggs"));
 
-decimal SettedAndRejEggs = SettedEggs + RejSellEggs + RejUnSellEggs;
-decimal result = 0;
+decimal SettedAndRejEggs1 = SettedEggs + RejSellEggs + RejUnSellEggs;
+decimal result1 = 0;
 
-if (SettedAndRejEggs &gt; 0)
-    result = (RejUnSellEggs / SettedAndRejEggs) * 100;
-    SettedAndRejUnSellableEggsTotal +=result ;
+if (SettedAndRejEggs1 &gt; 0)
+    result = (RejUnSellEggs / SettedAndRejEggs1) * 100;
+    SettedAndRejUnSellableEggsTotal +=result1 ;
    //-- new logic for Infertile Eggs
     // --- Declare variables ---
-    decimal settedEggs = 0;
     decimal infertileEggs = 0;
-    decimal result = 0;
+    decimal result2 = 0;
 
     // --- Read values safely ---
     if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
@@ -243,15 +238,14 @@ if (SettedAndRejEggs &gt; 0)
 
     // --- Equation (same as Iif([SettedEggs] &gt; 0, [InfertileEggs] / [SettedEggs] * 100, 0)) ---
     if (settedEggs &gt; 0)
-        result = (infertileEggs / settedEggs) * 100;
-        infertileEggsTotal +=result ;
+        result2 = (infertileEggs / settedEggs) * 100;
+        infertileEggsTotal +=result2 ;
     else
-        result = 0;
+        result2 = 0;
     //-- new logic for Fertile Eggs
     // --- Declare variables ---
-    decimal settedEggs = 0;
     decimal fertileEggs = 0;
-    decimal result = 0;
+    decimal result3 = 0;
     
     // --- Read values safely ---
     if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
@@ -269,19 +263,19 @@ if (SettedAndRejEggs &gt; 0)
     // --- Equation (same as Iif([SettedEggs] &gt; 0, [FertileEggs] / [SettedEggs] * 100, 0)) ---
     if (settedEggs &gt; 0)
     {
-        result = (fertileEggs / settedEggs) * 100;
-        fertileEggsTotal += result;
+        result3 = (fertileEggs / settedEggs) * 100;
+        fertileEggsTotal += result3;
     }
     else
     {
-        result = 0;
+        result3 = 0;
     }
 
        //-- new logic for Total Chicks (Culls + SellableChicks)
         // --- Declare variables ---
         decimal culls = 0;
         decimal sellableChicks = 0;
-        decimal result = 0;
+        decimal result4 = 0;
         
         // --- Read values safely ---
         if (GetCurrentColumnValue("Culls") != null &amp;&amp;
@@ -297,12 +291,11 @@ if (SettedAndRejEggs &gt; 0)
         }
         
         // --- Equation (same as [Culls] + [SellableChicks]) ---
-        result = culls + sellableChicks;
+        result4 = culls + sellableChicks;
         
         // --- Optional: accumulate total ---
-        totalCullsAndSellableChicks += result;
+        totalCullsAndSellableChicks += result4;
         //-- new logic for Deads Eggs
-        decimal settedEggs = 0;
         decimal deads = 0;
         decimal deadRatio = 0;
         
@@ -333,7 +326,6 @@ if (SettedAndRejEggs &gt; 0)
         totalDeadRatioReport += deadRatio;
             //-- new logic for Culls Ratio (Culls / SettedEggs)
         // --- Declare variables ---
-        decimal settedEggs = 0;
         decimal culls = 0;
         decimal cullsRatio = 0;
         
@@ -365,7 +357,6 @@ if (SettedAndRejEggs &gt; 0)
         
             //-- new logic for Sellable Chicks Ratio (SellableChicks / SettedEggs)
         // --- Declare variables ---
-        decimal settedEggs = 0;
         decimal sellableChicks = 0;
         decimal sellableRatio = 0;
         
@@ -396,7 +387,6 @@ if (SettedAndRejEggs &gt; 0)
         totalSellableRatio += sellableRatio;
     //-- new logic for Total Chicks Ratio ((Culls + SellableChicks) / SettedEggs)
 // --- Declare variables ---
-decimal settedEggs = 0;
 decimal culls = 0;
 decimal sellableChicks = 0;
 decimal totalRatio = 0;
@@ -437,7 +427,7 @@ totalChicksRatio += totalRatio;
 // --- Declare variables ---
 decimal fertileEggs = 0;
 decimal sellableChicks = 0;
-decimal result = 0;
+decimal result5 = 0;
 
 // --- Read values safely ---
 if (GetCurrentColumnValue("FertileEggs") != null &amp;&amp;
@@ -455,13 +445,13 @@ if (GetCurrentColumnValue("SellableChicks") != null &amp;&amp;
 // --- Perform calculation ---
 if (fertileEggs &gt; 0)
 {
-    result = (sellableChicks / fertileEggs) * 100;
+    result5 = (sellableChicks / fertileEggs) * 100;
 }
 else
 {
-    result = 0;
+    result5 = 0;
 }
-SaleFertile += result ;
+SaleFertile += result5 ;
 
     
 
@@ -902,6 +892,7 @@ private void xrTableCell109_BeforePrint(object sender, System.ComponentModel.Can
      SaleFertileReport= 0; // reset for next group
 
 }
+
 
 </value>
   </data>

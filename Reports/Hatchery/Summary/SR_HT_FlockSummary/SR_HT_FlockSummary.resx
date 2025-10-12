@@ -493,6 +493,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = resultValue.ToString("N2");
 
 }
+
 </value>
   </data>
 </root>

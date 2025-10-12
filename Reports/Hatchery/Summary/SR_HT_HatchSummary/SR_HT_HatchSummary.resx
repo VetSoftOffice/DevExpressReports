@@ -271,6 +271,7 @@ private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.Canc
 
     decimal avgPercentage = (rowCount &gt; 0) ? (sumRowPercentages / rowCount) : 0m;
     cell.Text = avgPercentage.ToString("N2");         
-}</value>
+}
+</value>
   </data>
 </root>
