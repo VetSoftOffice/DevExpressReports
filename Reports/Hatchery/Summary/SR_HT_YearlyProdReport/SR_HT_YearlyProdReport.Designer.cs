@@ -3550,14 +3550,15 @@
             // TotalBalanceStart
             // 
             this.TotalBalanceStart.DataMember = "SR_HT_YearlyProdReport";
-            this.TotalBalanceStart.Expression = "[SR_HT_YearlyProdReport.BeginOfYearSettedEggs] + [SR_HT_YearlyProdReport.BeginOut" +
-    "Side]\n";
+            this.TotalBalanceStart.Expression = "Iif(IsNullOrEmpty([BeginOfYearSettedEggs]), 0,[BeginOfYearSettedEggs]) + Iif(IsNu" +
+    "llOrEmpty([BeginOutSide]), 0,[BeginOutSide]) \n";
             this.TotalBalanceStart.Name = "TotalBalanceStart";
             // 
             // TotalFarmIn_DataVar
             // 
             this.TotalFarmIn_DataVar.DataMember = "SR_HT_YearlyProdReport";
-            this.TotalFarmIn_DataVar.Expression = "[SR_HT_YearlyProdReport.AddDataVar] + [SR_HT_YearlyProdReport.FarmIntake]\n";
+            this.TotalFarmIn_DataVar.Expression = "Iif(IsNullOrEmpty([AddDataVar]),0 ,[AddDataVar] ) + Iif(IsNullOrEmpty([FarmIntake" +
+    "]),0 ,[FarmIntake] )";
             this.TotalFarmIn_DataVar.Name = "TotalFarmIn_DataVar";
             // 
             // InputTotal
@@ -3624,15 +3625,13 @@
             // SoldEggs
             // 
             this.SoldEggs.DataMember = "SR_HT_YearlyProdReport";
-            this.SoldEggs.Expression = "[SR_HT_YearlyProdReport.RH_SoldEggs] + [SR_HT_YearlyProdReport.ES_SoldEggs] - [SR" +
-    "_HT_YearlyProdReport.MOL] - [SR_HT_YearlyProdReport.EggsToCollage]\n";
+            this.SoldEggs.Expression = resources.GetString("SoldEggs.Expression");
             this.SoldEggs.Name = "SoldEggs";
             // 
             // AvailableHatchEgg
             // 
             this.AvailableHatchEgg.DataMember = "SR_HT_YearlyProdReport";
-            this.AvailableHatchEgg.Expression = "[InputTotal] - [TotalRej] - [SR_HT_YearlyProdReport.EggsToCollage] - [SR_HT_Yearl" +
-    "yProdReport.MOL] - [SoldEggs]\n";
+            this.AvailableHatchEgg.Expression = resources.GetString("AvailableHatchEgg.Expression");
             this.AvailableHatchEgg.Name = "AvailableHatchEgg";
             // 
             // MOL_Per
@@ -3672,7 +3671,8 @@
             // ChiksRejHat
             // 
             this.ChiksRejHat.DataMember = "SR_HT_YearlyProdReport";
-            this.ChiksRejHat.Expression = "[SR_HT_YearlyProdReport.CullsChicks] + [SR_HT_YearlyProdReport.DeadChicks]\n";
+            this.ChiksRejHat.Expression = "Iif(IsNullOrEmpty([CullsChicks]), 0, [CullsChicks]) +\nIif(IsNullOrEmpty([DeadChic" +
+    "ks]), 0, [DeadChicks])\n";
             this.ChiksRejHat.Name = "ChiksRejHat";
             // 
             // TotalChiksTrans
@@ -3684,7 +3684,8 @@
             // TotalChickProd
             // 
             this.TotalChickProd.DataMember = "SR_HT_YearlyProdReport";
-            this.TotalChickProd.Expression = "[TotalChiksTrans] + [SR_HT_YearlyProdReport.DOA] + [ChiksRejHat]\n";
+            this.TotalChickProd.Expression = "Iif(IsNullOrEmpty([TotalChiksTrans]), 0, [TotalChiksTrans]) +\nIif(IsNullOrEmpty([" +
+    "DOA]), 0, [DOA]) +\nIif(IsNullOrEmpty([ChiksRejHat]), 0, [ChiksRejHat])\n";
             this.TotalChickProd.Name = "TotalChickProd";
             // 
             // ChiksBrioler_Per
@@ -3730,15 +3731,14 @@
             // TotalBalnce_End
             // 
             this.TotalBalnce_End.DataMember = "SR_HT_YearlyProdReport";
-            this.TotalBalnce_End.Expression = "[SR_HT_YearlyProdReport.EndOfYearSettedEggs] + [SR_HT_YearlyProdReport.EndOutSide" +
-    "]\n";
+            this.TotalBalnce_End.Expression = "Iif(IsNullOrEmpty([EndOfYearSettedEggs]), 0, [EndOfYearSettedEggs]) +\nIif(IsNullO" +
+    "rEmpty([EndOutSide]), 0, [EndOutSide])\n";
             this.TotalBalnce_End.Name = "TotalBalnce_End";
             // 
             // TotalHat_Per
             // 
             this.TotalHat_Per.DataMember = "SR_HT_YearlyProdReport";
-            this.TotalHat_Per.Expression = "IIf([AvailableHatchEgg] - [TotalBalnce_End] <> 0, [TotalChickProd] / ([AvailableH" +
-    "atchEgg] - [TotalBalnce_End]) * 100, 0)\n";
+            this.TotalHat_Per.Expression = resources.GetString("TotalHat_Per.Expression");
             this.TotalHat_Per.Name = "TotalHat_Per";
             // 
             // OtherChicks_Per_CF

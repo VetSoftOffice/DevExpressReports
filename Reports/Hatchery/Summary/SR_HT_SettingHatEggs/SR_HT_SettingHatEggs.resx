@@ -248,6 +248,8 @@ private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.Canc
     TotalDeadsReport  = 0; // reset for next LineType group
 
 }
+
+
 </value>
   </data>
 </root>

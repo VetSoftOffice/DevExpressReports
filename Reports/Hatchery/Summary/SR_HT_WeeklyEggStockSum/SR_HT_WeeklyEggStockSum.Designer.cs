@@ -893,8 +893,6 @@
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.CanGrow = false;
-            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?DateeFrom)\n")});
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
@@ -2594,7 +2592,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Text", " Egg Setting"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "ar", "Text", "رص البيض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Weight", 1.4215787251055869D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Text", "Total Egg Stock"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "ar", "Text", "اجمالي مخزون البيض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Weight", 1.2960754270855919D),

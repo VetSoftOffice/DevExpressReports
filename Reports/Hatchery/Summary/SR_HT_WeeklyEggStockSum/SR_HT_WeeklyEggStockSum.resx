@@ -271,6 +271,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = TotalRejCracksReport.ToString("0"); // no decimals
 
 }
+
 </value>
   </data>
 </root>

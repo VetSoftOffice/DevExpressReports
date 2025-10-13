@@ -151,8 +151,9 @@
     <value>decimal QtyReport = 0 ;
 decimal QtyGroup = 0 ;
 private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal Broiler= 0, Female = 0, Male= 0
-
+    decimal Broiler= 0;
+    decimal Female = 0;
+    decimal  Male= 0;
     if (GetCurrentColumnValue("Broiler") != null)
         Broiler= Convert.ToDecimal(GetCurrentColumnValue("Broiler"));
 
@@ -164,14 +165,16 @@ private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.Canc
 
    
     decimal Qty = Broiler + Female + Male;
-    QtyReport+= Qty 
+    QtyReport += Qty;
      // Set value in cell
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = total.ToString("0"); // show as integer, adjust if needed
+    cell.Text = Qty.ToString("0"); // show as integer, adjust if needed
 }
 
 private void detailBand1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal Broiler= 0, Female = 0, Male= 0
+    decimal Broiler= 0;
+    decimal Female = 0;
+    decimal Male= 0;
 
     if (GetCurrentColumnValue("Broiler") != null)
         Broiler= Convert.ToDecimal(GetCurrentColumnValue("Broiler"));
@@ -183,7 +186,7 @@ private void detailBand1_BeforePrint(object sender, System.ComponentModel.Cancel
         Male= Convert.ToDecimal(GetCurrentColumnValue("Male"));
 
    
-    QtyGroup+= Broiler + Female + Male;
+    QtyGroup += Broiler + Female + Male;
 
 }
 

@@ -447,7 +447,7 @@ if (fertileEggs &gt; 0)
 {
     result5 = (sellableChicks / fertileEggs) * 100;
 }
-else
+els
 {
     result5 = 0;
 }

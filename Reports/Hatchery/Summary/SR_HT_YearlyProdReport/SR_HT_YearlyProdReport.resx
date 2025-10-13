@@ -121,12 +121,38 @@
     <value>[SR_HT_YearlyProdReport.RejCracks] + [SR_HT_YearlyProdReport.RejWhole] + [SR_HT_YearlyProdReport.RejBroken] + [SR_HT_YearlyProdReport.HT_RejEggs] + [SR_HT_YearlyProdReport.HT_BrokenEggs] + [SR_HT_YearlyProdReport.OtherEggs]
 </value>
   </data>
+  <data name="SoldEggs.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([RH_SoldEggs]), 0, [RH_SoldEggs]) +
+Iif(IsNullOrEmpty([ES_SoldEggs]), 0, [ES_SoldEggs]) -
+Iif(IsNullOrEmpty([MOL]), 0, [MOL]) -
+Iif(IsNullOrEmpty([EggsToCollage]), 0, [EggsToCollage])
+</value>
+  </data>
+  <data name="AvailableHatchEgg.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([InputTotal]), 0, [InputTotal]) -
+Iif(IsNullOrEmpty([TotalRej]), 0, [TotalRej]) -
+Iif(IsNullOrEmpty([EggsToCollage]), 0, [EggsToCollage]) -
+Iif(IsNullOrEmpty([MOL]), 0, [MOL]) -
+Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs])
+</value>
+  </data>
   <data name="TotalChiksTrans.Expression" xml:space="preserve">
-    <value>[SR_HT_YearlyProdReport.ChicksToVet] + 
-[SR_HT_YearlyProdReport.ChicksToBroiler] + 
-[SR_HT_YearlyProdReport.SoldChicksWithoutCollege] + 
-[SR_HT_YearlyProdReport.CondemnedChicks] + 
-[SR_HT_YearlyProdReport.OtherSentChicks]
+    <value>Iif(IsNullOrEmpty([ChicksToVet]), 0, [ChicksToVet]) +
+Iif(IsNullOrEmpty([ChicksToBroiler]), 0, [ChicksToBroiler]) +
+Iif(IsNullOrEmpty([SoldChicksWithoutCollege]), 0, [SoldChicksWithoutCollege]) +
+Iif(IsNullOrEmpty([CondemnedChicks]), 0, [CondemnedChicks]) +
+Iif(IsNullOrEmpty([OtherSentChicks]), 0, [OtherSentChicks])
+</value>
+  </data>
+  <data name="TotalHat_Per.Expression" xml:space="preserve">
+    <value>Iif(
+    (Iif(IsNullOrEmpty([AvailableHatchEgg]), 0, [AvailableHatchEgg]) - 
+     Iif(IsNullOrEmpty([TotalBalnce_End]), 0, [TotalBalnce_End])) &lt;&gt; 0,
+    Iif(IsNullOrEmpty([TotalChickProd]), 0, [TotalChickProd]) / 
+    (Iif(IsNullOrEmpty([AvailableHatchEgg]), 0, [AvailableHatchEgg]) - 
+     Iif(IsNullOrEmpty([TotalBalnce_End]), 0, [TotalBalnce_End])) * 100,
+    0
+)
 </value>
   </data>
 </root>
