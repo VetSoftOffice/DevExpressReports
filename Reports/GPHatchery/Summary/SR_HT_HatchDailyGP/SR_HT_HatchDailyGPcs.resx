@@ -288,6 +288,7 @@ private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.Canc
     XRTableCell cell = sender as XRTableCell;
     cell.Text = result.ToString("0.00");
 }
+
 </value>
   </data>
 </root>

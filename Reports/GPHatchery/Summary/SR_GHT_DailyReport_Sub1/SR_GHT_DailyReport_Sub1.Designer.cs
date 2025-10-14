@@ -622,6 +622,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell35.Multiline = true;
             this.xrTableCell35.Name = "xrTableCell35";
+            this.xrTableCell35.Scripts.OnBeforePrint = "xrTableCell35_BeforePrint";
             this.xrTableCell35.StylePriority.UseBorders = false;
             this.xrTableCell35.StylePriority.UseFont = false;
             this.xrTableCell35.StylePriority.UseTextAlignment = false;
@@ -1097,6 +1098,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
+            this.xrTableCell19.Scripts.OnBeforePrint = "xrTableCell19_BeforePrint";
             this.xrTableCell19.StylePriority.UseBorders = false;
             this.xrTableCell19.StylePriority.UseFont = false;
             this.xrTableCell19.StylePriority.UseTextAlignment = false;
@@ -1132,6 +1134,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
+            this.xrTableCell37.Scripts.OnBeforePrint = "xrTableCell37_BeforePrint";
             this.xrTableCell37.StylePriority.UseBorders = false;
             this.xrTableCell37.StylePriority.UseFont = false;
             this.xrTableCell37.StylePriority.UseTextAlignment = false;
@@ -1341,6 +1344,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell50.Multiline = true;
             this.xrTableCell50.Name = "xrTableCell50";
+            this.xrTableCell50.Scripts.OnBeforePrint = "xrTableCell50_BeforePrint";
             this.xrTableCell50.StylePriority.UseBorders = false;
             this.xrTableCell50.StylePriority.UseFont = false;
             this.xrTableCell50.StylePriority.UseTextAlignment = false;
@@ -2111,7 +2115,7 @@
             // Rejected
             // 
             this.Rejected.DataMember = "SR_GHT_DailyReport_Sub1";
-            this.Rejected.Expression = "[Deads] + [Culls] + [DestroyedEggs]";
+            this.Rejected.Expression = resources.GetString("Rejected.Expression");
             this.Rejected.Name = "Rejected";
             // 
             // RejectedPerc
@@ -2124,7 +2128,9 @@
             // Total
             // 
             this.Total.DataMember = "SR_GHT_DailyReport_Sub1";
-            this.Total.Expression = "[SR_GHT_DailyReport_Sub1.Chicks] + [Broiler] + [Rejected]\n";
+            this.Total.Expression = "Iif(IsNull([Chicks]) Or [Chicks] = \'\', 0, [Chicks]) +\nIif(IsNull([Broiler]) Or [B" +
+    "roiler] = \'\', 0, [Broiler]) +\nIif(IsNull([Rejected]) Or [Rejected] = \'\', 0, [Rej" +
+    "ected])\n";
             this.Total.Name = "Total";
             // 
             // SR_GHT_DailyReport_Sub1

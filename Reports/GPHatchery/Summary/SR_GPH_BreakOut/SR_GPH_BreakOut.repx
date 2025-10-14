@@ -264,30 +264,30 @@
                 <Item1 Ref="152" FieldName="CategValue" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="153" Width="63.1227341" />
-                <Item2 Ref="154" Width="63.1227341" />
-                <Item3 Ref="155" Width="63.1227341" />
-                <Item4 Ref="156" Width="63.1227341" />
-                <Item5 Ref="157" Width="63.1227341" />
-                <Item6 Ref="158" Width="63.1227341" />
-                <Item7 Ref="159" Width="63.1227341" />
-                <Item8 Ref="160" Width="63.1227341" />
-                <Item9 Ref="161" Width="63.1227341" />
-                <Item10 Ref="162" Width="45.4012032" />
-                <Item11 Ref="163" Width="52.68669" />
+                <Item1 Ref="153" Width="63.1227379" />
+                <Item2 Ref="154" Width="63.1227379" />
+                <Item3 Ref="155" Width="63.1227379" />
+                <Item4 Ref="156" Width="63.1227379" />
+                <Item5 Ref="157" Width="63.1227379" />
+                <Item6 Ref="158" Width="63.1227379" />
+                <Item7 Ref="159" Width="63.1227379" />
+                <Item8 Ref="160" Width="63.1227379" />
+                <Item9 Ref="161" Width="63.1227379" />
+                <Item10 Ref="162" Width="45.401207" />
+                <Item11 Ref="163" Width="52.6867027" />
               </ColumnDefinitions>
               <RowDefinitions>
-                <Item1 Ref="164" Height="38.5416641" />
-                <Item2 Ref="165" Height="24.9999962" />
-                <Item3 Ref="166" Height="24.9999962" Visible="false" />
-                <Item4 Ref="167" Height="24.9999962" Visible="false" />
-                <Item5 Ref="168" Height="24.9999962" Visible="false" />
-                <Item6 Ref="169" Height="24.9999962" Visible="false" />
-                <Item7 Ref="170" Height="24.9999962" Visible="false" />
-                <Item8 Ref="171" Height="24.9999962" Visible="false" />
-                <Item9 Ref="172" Height="24.9999962" Visible="false" />
-                <Item10 Ref="173" Height="24.9999962" Visible="false" />
-                <Item11 Ref="174" Height="24.9999962" />
+                <Item1 Ref="164" Height="38.5416527" />
+                <Item2 Ref="165" Height="24.9999943" />
+                <Item3 Ref="166" Height="24.9999943" Visible="false" />
+                <Item4 Ref="167" Height="24.9999943" Visible="false" />
+                <Item5 Ref="168" Height="24.9999943" Visible="false" />
+                <Item6 Ref="169" Height="24.9999943" Visible="false" />
+                <Item7 Ref="170" Height="24.9999943" Visible="false" />
+                <Item8 Ref="171" Height="24.9999943" Visible="false" />
+                <Item9 Ref="172" Height="24.9999943" Visible="false" />
+                <Item10 Ref="173" Height="24.9999943" Visible="false" />
+                <Item11 Ref="174" Height="24.9999943" />
               </RowDefinitions>
               <Cells>
                 <Item1 Ref="175" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderColor="DarkGray" BorderWidth="1.3" />
@@ -652,20 +652,20 @@
     <Item107 Ref="435" Component="#Ref-52" Culture="Default" Path="HeightF" Data="20" />
     <Item108 Ref="436" Component="#Ref-82" Culture="Default" Path="HeightF" Data="20" />
     <Item109 Ref="437" Component="#Ref-42" Culture="Default" Path="HeightF" Data="20" />
-    <Item110 Ref="438" Component="#Ref-139" Culture="Default" Path="LocationFloat" Data="3.00335884,10.0000067" />
-    <Item111 Ref="439" Component="#Ref-139" Culture="Default" Path="SizeF" Data="666.1925,288.541626" />
+    <Item110 Ref="438" Component="#Ref-139" Culture="Default" Path="LocationFloat" Data="3.003359,10.00001" />
+    <Item111 Ref="439" Component="#Ref-139" Culture="Default" Path="SizeF" Data="666.1925,288.5416" />
     <Item112 Ref="440" Component="#Ref-135" Culture="Default" Path="LocationFloat" Data="194.12,0" />
     <Item113 Ref="441" Component="#Ref-135" Culture="Default" Path="SizeF" Data="157.8997,20" />
     <Item114 Ref="442" Component="#Ref-135" Culture="Default" Path="Text" Data="Settet No: [SetterCode]" />
     <Item115 Ref="443" Component="#Ref-133" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item116 Ref="444" Component="#Ref-133" Culture="Default" Path="SizeF" Data="158.3163,20" />
     <Item117 Ref="445" Component="#Ref-133" Culture="Default" Path="Text" Data="Hatchery: [HatcheryCode]" />
-    <Item118 Ref="446" Component="#Ref-129" Culture="Default" Path="LocationFloat" Data="373.00354,0" />
+    <Item118 Ref="446" Component="#Ref-129" Culture="Default" Path="LocationFloat" Data="373.0035,0" />
     <Item119 Ref="447" Component="#Ref-129" Culture="Default" Path="SizeF" Data="164.1655,20" />
     <Item120 Ref="448" Component="#Ref-129" Culture="Default" Path="Text" Data="Setting Date: [SettingDate!dd/MM/yyyy]" />
     <Item121 Ref="449" Component="#Ref-129" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
     <Item122 Ref="450" Component="#Ref-131" Culture="Default" Path="LocationFloat" Data="568.1047,0" />
-    <Item123 Ref="451" Component="#Ref-131" Culture="Default" Path="SizeF" Data="208.957153,20" />
+    <Item123 Ref="451" Component="#Ref-131" Culture="Default" Path="SizeF" Data="208.9572,20" />
     <Item124 Ref="452" Component="#Ref-131" Culture="Default" Path="Text" Data="Hatching Date: [ExitDate!dd/MM/yyyy]" />
     <Item125 Ref="453" Component="#Ref-131" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
   </LocalizationItems>
