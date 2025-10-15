@@ -163,9 +163,7 @@ if (GetCurrentColumnValue("PluckReject") != null)
 
 // --- Equation ---
 decimal result = recQty - mortUnderWt + medicalCondemnation + pluckReject;
-
-// --- Add to report total (if required for average/summaries) ---
-TotalRecQtyCalc += result;
+TotalRecQtyCalc += result;  // --- Add to report total (if required for average/summaries) ---
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;

@@ -137,9 +137,8 @@ if (GetCurrentColumnValue("CounterTotal") != null)
 decimal percentage = 0;
 if (counterTotal &gt; 0)
     percentage = (pluckReject * 100m) / counterTotal;
+    PluckRejectPercReport += percentage;  // --- Add to report total (for averaging/summaries if needed) ---
 
-// --- Add to report total (for averaging/summaries if needed) ---
-PluckRejectPercReport += percentage;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
@@ -168,9 +167,8 @@ if (GetCurrentColumnValue("CounterTotal") != null)
 decimal percentage = 0;
 if (counterTotal &gt; 0)
     percentage = (doa * 100m) / counterTotal;
+    DOAPercReport += percentage;   // --- Add to report total (for averaging/summaries if needed) ---
 
-// --- Add to report total (for averaging/summaries if needed) ---
-DOAPercReport += percentage;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
@@ -200,9 +198,8 @@ if (GetCurrentColumnValue("CounterTotal") != null)
 decimal percentage = 0;
 if (counterTotal &gt; 0)
     percentage = (culls * 100m) / counterTotal;
+    CullsPercReport += percentage;  // --- Add to report total (for averaging/summaries if needed) ---
 
-// --- Add to report total (for averaging/summaries if needed) ---
-CullsPercReport += percentage;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;

@@ -316,6 +316,7 @@ private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.Canc
        TotalPluckMedAccMinusCounterQty= 0; // reset for next LineType group
 
 }
+
 </value>
   </data>
 </root>

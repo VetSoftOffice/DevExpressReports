@@ -131,38 +131,287 @@
     0)
 </value>
   </data>
+  <data name="AcceptQty.Expression" xml:space="preserve">
+    <value>Iif(IsNull([RecQty]) Or [RecQty] = '', 0, [RecQty]) 
+- Iif(IsNull([MortUnderWt]) Or [MortUnderWt] = '', 0, [MortUnderWt]) 
++ Iif(IsNull([MedicalCondemnation]) Or [MedicalCondemnation] = '', 0, [MedicalCondemnation]) 
++ Iif(IsNull([PluckReject]) Or [PluckReject] = '', 0, [PluckReject])
+</value>
+  </data>
+  <data name="AcceptQtyWt.Expression" xml:space="preserve">
+    <value>Iif(IsNull([RecWeight]) Or [RecWeight] = '', 0, [RecWeight]) 
+- Iif(IsNull([MortUnerWtWt]) Or [MortUnerWtWt] = '', 0, [MortUnerWtWt]) 
++ Iif(IsNull([MedicalCondWeight]) Or [MedicalCondWeight] = '', 0, [MedicalCondWeight]) 
++ Iif(IsNull([PluckRejectWeight]) Or [PluckRejectWeight] = '', 0, [PluckRejectWeight])
+</value>
+  </data>
   <data name="dsFinance.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PEZpZWxkIE5hbWU9Ikl0ZW1UeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbnRhaW5lciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTZW50T3JDbGFjUXR5IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJDYWxjUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFkanVzdGVkUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using System.ComponentModel;
-using DevExpress.XtraReports.Parameters;
+    <value>private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal recQty = 0;
+decimal doa = 0;
 
-int groupCounter = 1;
-
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
+// --- Read values safely ---
+if (GetCurrentColumnValue("RecQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RecQty").ToString()))
 {
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
-    
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-}</value>
+    recQty = Convert.ToDecimal(GetCurrentColumnValue("RecQty"));
+}
+
+if (GetCurrentColumnValue("DOA") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("DOA").ToString()))
+{
+    doa = Convert.ToDecimal(GetCurrentColumnValue("DOA"));
+}
+
+// --- Accumulate totals across all records ---
+// (Define these as class-level variables at the top of your report)
+decimal recQtySum = 0;
+decimal doaSum = 0;
+
+recQtySum += recQty;
+doaSum += doa;
+
+// --- Equation (same as Iif(Sum([RecQty]) &lt;&gt; 0, Sum([DOA]) * 100 / Sum([RecQty]), 0)) ---
+decimal result = 0;
+if (recQtySum != 0)
+    result = (doaSum * 100) / recQtySum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2"); // format with 2 decimal places
+}
+
+private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal recQty = 0;
+decimal rejectedQty = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("RecQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RecQty").ToString()))
+{
+    recQty = Convert.ToDecimal(GetCurrentColumnValue("RecQty"));
+}
+
+if (GetCurrentColumnValue("RejectedQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejectedQty").ToString()))
+{
+    rejectedQty = Convert.ToDecimal(GetCurrentColumnValue("RejectedQty"));
+}
+
+// --- Accumulate totals across all records ---
+// (Define these at the top of your report class)
+decimal recQtySum = 0;
+decimal rejectedQtySum = 0;
+
+recQtySum += recQty;
+rejectedQtySum += rejectedQty;
+
+// --- Equation (same as Iif(Sum([RecQty]) &lt;&gt; 0, Sum([RejectedQty]) * 100 / Sum([RecQty]), 0)) ---
+decimal result = 0;
+if (recQtySum != 0)
+    result = (rejectedQtySum * 100) / recQtySum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2"); // format with 2 decimal places
+
+}
+
+private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal recQty = 0;
+decimal pluckReject = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("RecQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RecQty").ToString()))
+{
+    recQty = Convert.ToDecimal(GetCurrentColumnValue("RecQty"));
+}
+
+if (GetCurrentColumnValue("PluckReject") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("PluckReject").ToString()))
+{
+    pluckReject = Convert.ToDecimal(GetCurrentColumnValue("PluckReject"));
+}
+
+// --- Accumulate totals across all records ---
+// (Define these at the top of your report class)
+// decimal recQtySum = 0;
+// decimal pluckRejectSum = 0;
+decimal recQtySum = 0;
+decimal pluckRejectSum = 0;
+
+recQtySum += recQty;
+pluckRejectSum += pluckReject;
+
+// --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([PluckReject]) * 100 / Sum([RecQty]), 0)) ---
+decimal result = 0;
+if (recQtySum != 0)
+    result = (pluckRejectSum * 100) / recQtySum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2"); // format with 2 decimal places
+
+}
+
+private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal recQty = 0;
+decimal medicalCondemnation = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("RecQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RecQty").ToString()))
+{
+    recQty = Convert.ToDecimal(GetCurrentColumnValue("RecQty"));
+}
+
+if (GetCurrentColumnValue("MedicalCondemnation") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("MedicalCondemnation").ToString()))
+{
+    medicalCondemnation = Convert.ToDecimal(GetCurrentColumnValue("MedicalCondemnation"));
+}
+
+// --- Accumulate totals across all records ---
+// (Define these at the top of your report class)
+// decimal recQtySum = 0;
+// decimal medicalCondemnationSum = 0;
+decimal recQtySum = 0;
+decimal medicalCondemnationSum = 0;
+
+recQtySum += recQty;
+medicalCondemnationSum += medicalCondemnation;
+
+// --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([MedicalCondemnation]) * 100 / Sum([RecQty]), 0)) ---
+decimal result = 0;
+if (recQtySum != 0)
+    result = (medicalCondemnationSum * 100) / recQtySum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2"); // format with 2 decimal places
+
+}
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal recQty = 0;
+decimal acceptWt = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("RecQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RecQty").ToString()))
+{
+    recQty = Convert.ToDecimal(GetCurrentColumnValue("RecQty"));
+}
+
+if (GetCurrentColumnValue("AcceptWt") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("AcceptWt").ToString()))
+{
+    acceptWt = Convert.ToDecimal(GetCurrentColumnValue("AcceptWt"));
+}
+
+// --- Accumulate totals across all records ---
+// (Define these fields once at the top of your report class)
+// decimal recQtySum = 0;
+// decimal acceptWtSum = 0;
+decimal recQtySum = 0;
+decimal acceptWtSum = 0;
+
+recQtySum += recQty;
+acceptWtSum += acceptWt;
+
+// --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([AcceptWt]) * 100 / Sum([RecQty]), 0)) ---
+decimal result = 0;
+if (recQtySum != 0)
+    result = (acceptWtSum * 100) / recQtySum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2"); // Format with 2 decimal places
+
+}
+
+private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variables for current record ---
+decimal recQty = 0;
+decimal counterQty = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("RecQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RecQty").ToString()))
+{
+    recQty = Convert.ToDecimal(GetCurrentColumnValue("RecQty"));
+}
+
+if (GetCurrentColumnValue("CounterQty") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("CounterQty").ToString()))
+{
+    counterQty = Convert.ToDecimal(GetCurrentColumnValue("CounterQty"));
+}
+
+// --- Accumulate totals across all records ---
+// (Define these fields once at the top of your report class)
+// decimal recQtySum = 0;
+// decimal counterQtySum = 0;
+decimal recQtySum = 0;
+decimal counterQtySum = 0;
+
+recQtySum += recQty;
+counterQtySum += counterQty;
+
+// --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([CounterQty]) * 100 / Sum([RecQty]), 0)) ---
+decimal result = 0;
+if (recQtySum != 0)
+    result = (counterQtySum * 100) / recQtySum;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2"); // format with 2 decimal places
+
+}
+
+private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare local variable for current record ---
+decimal totalProblem = 0;
+
+// --- Read value safely ---
+if (GetCurrentColumnValue("TotalProblem") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("TotalProblem").ToString()))
+{
+    totalProblem = Convert.ToDecimal(GetCurrentColumnValue("TotalProblem"));
+}
+
+// --- Accumulate total across all records ---
+// (Define this field once at the top of your report class)
+// decimal totalProblemSum = 0;
+
+totalProblemSum += totalProblem;
+
+// --- Assign result to the cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalProblemSum.ToString("N2"); // format with 2 decimal places
+
+}
+</value>
   </data>
 </root>

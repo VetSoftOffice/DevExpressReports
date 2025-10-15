@@ -437,8 +437,9 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell34.BorderWidth = 1.4F;
             this.xrTableCell34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[MortUnderWt]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNull([DOA]) Or [DOA] = \'\', 0, [DOA]) +\nIif(IsNull([RejectedQty]) Or [Reject" +
+                    "edQty] = \'\', 0, [RejectedQty])\n")});
             this.xrTableCell34.Multiline = true;
             this.xrTableCell34.Name = "xrTableCell34";
             this.xrTableCell34.StylePriority.UseBorders = false;
@@ -1373,6 +1374,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell69.Multiline = true;
             this.xrTableCell69.Name = "xrTableCell69";
+            this.xrTableCell69.Scripts.OnBeforePrint = "xrTableCell69_BeforePrint";
             this.xrTableCell69.StylePriority.UseBorders = false;
             this.xrTableCell69.StylePriority.UseBorderWidth = false;
             this.xrTableCell69.StylePriority.UseFont = false;
@@ -1409,6 +1411,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
+            this.xrTableCell24.Scripts.OnBeforePrint = "xrTableCell24_BeforePrint";
             this.xrTableCell24.StylePriority.UseBorders = false;
             this.xrTableCell24.StylePriority.UseBorderWidth = false;
             this.xrTableCell24.StylePriority.UseFont = false;
@@ -1424,6 +1427,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
+            this.xrTableCell27.Scripts.OnBeforePrint = "xrTableCell27_BeforePrint";
             this.xrTableCell27.StylePriority.UseBorders = false;
             this.xrTableCell27.StylePriority.UseBorderWidth = false;
             this.xrTableCell27.StylePriority.UseFont = false;
@@ -1452,6 +1456,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
+            this.xrTableCell36.Scripts.OnBeforePrint = "xrTableCell36_BeforePrint";
             this.xrTableCell36.StylePriority.UseBorders = false;
             this.xrTableCell36.StylePriority.UseBorderWidth = false;
             this.xrTableCell36.StylePriority.UseFont = false;
@@ -1467,6 +1472,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell37.Multiline = true;
             this.xrTableCell37.Name = "xrTableCell37";
+            this.xrTableCell37.Scripts.OnBeforePrint = "xrTableCell37_BeforePrint";
             this.xrTableCell37.StylePriority.UseBorders = false;
             this.xrTableCell37.StylePriority.UseBorderWidth = false;
             this.xrTableCell37.StylePriority.UseFont = false;
@@ -1482,6 +1488,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
+            this.xrTableCell38.Scripts.OnBeforePrint = "xrTableCell38_BeforePrint";
             this.xrTableCell38.StylePriority.UseBorders = false;
             this.xrTableCell38.StylePriority.UseBorderWidth = false;
             this.xrTableCell38.StylePriority.UseFont = false;
@@ -1497,6 +1504,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
+            this.xrTableCell39.Scripts.OnBeforePrint = "xrTableCell39_BeforePrint";
             this.xrTableCell39.StylePriority.UseBorders = false;
             this.xrTableCell39.StylePriority.UseBorderWidth = false;
             this.xrTableCell39.StylePriority.UseFont = false;
@@ -2011,19 +2019,20 @@
             // MortUnerWtWt
             // 
             this.MortUnerWtWt.DataMember = "SR_PT_DailySalughtering";
-            this.MortUnerWtWt.Expression = "[DOAWeight] + [RejectedQtyWeight]";
+            this.MortUnerWtWt.Expression = "Iif(IsNull([DOAWeight]) Or [DOAWeight] = \'\', 0, [DOAWeight]) + \nIif(IsNull([Rejec" +
+    "tedQtyWeight]) Or [RejectedQtyWeight] = \'\', 0, [RejectedQtyWeight])\n";
             this.MortUnerWtWt.Name = "MortUnerWtWt";
             // 
             // AcceptQty
             // 
             this.AcceptQty.DataMember = "SR_PT_DailySalughtering";
-            this.AcceptQty.Expression = "[RecQty] - [MortUnderWt] + [MedicalCondemnation] + [PluckReject]";
+            this.AcceptQty.Expression = resources.GetString("AcceptQty.Expression");
             this.AcceptQty.Name = "AcceptQty";
             // 
             // AcceptQtyWt
             // 
             this.AcceptQtyWt.DataMember = "SR_PT_DailySalughtering";
-            this.AcceptQtyWt.Expression = "[RecWeight] - [MortUnerWtWt] + [MedicalCondWeight] + [PluckRejectWeight]\n";
+            this.AcceptQtyWt.Expression = resources.GetString("AcceptQtyWt.Expression");
             this.AcceptQtyWt.Name = "AcceptQtyWt";
             // 
             // PluckMedAcc
@@ -2041,7 +2050,8 @@
             // DiffranceQty
             // 
             this.DiffranceQty.DataMember = "SR_PT_DailySalughtering";
-            this.DiffranceQty.Expression = "[PluckMedAcc] - [CounterQty]";
+            this.DiffranceQty.Expression = "Iif(IsNull([PluckMedAcc]) Or [PluckMedAcc] = \'\', 0, [PluckMedAcc]) \n- Iif(IsNull(" +
+    "[CounterQty]) Or [CounterQty] = \'\', 0, [CounterQty])\n";
             this.DiffranceQty.Name = "DiffranceQty";
             // 
             // IsCustomReportHeader

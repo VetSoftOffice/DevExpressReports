@@ -230,6 +230,8 @@ private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.Canc
      TotalCounterPluck= 0; // reset for next LineType group
 
 }
+
+
 </value>
   </data>
 </root>
