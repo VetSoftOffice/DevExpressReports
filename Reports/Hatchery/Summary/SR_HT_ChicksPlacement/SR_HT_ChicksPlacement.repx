@@ -99,12 +99,12 @@
                   </ExpressionBindings>
                   <StylePriority Ref="65" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item7>
-                <Item8 Ref="66" ControlType="XRTableCell" Name="xrTableCell6" Multiline="true" TextAlignment="MiddleRight" Borders="All" BorderWidth="1.4">
+                <Item8 Ref="66" ControlType="XRTableCell" Name="xrTableCell6" Multiline="true" TextAlignment="MiddleRight" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="67" EventName="BeforePrint" PropertyName="Text" Expression="[Chicks]" />
                     <Item2 Ref="68" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
-                  <StylePriority Ref="69" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="69" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item8>
               </Cells>
             </Item1>
@@ -648,7 +648,7 @@
     <Item79 Ref="383" Component="#Ref-59" Culture="Default" Path="Weight" Data="3.2656827262552937" />
     <Item80 Ref="384" Component="#Ref-53" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item81 Ref="385" Component="#Ref-53" Culture="Default" Path="Text" Data="tdDebit" />
-    <Item82 Ref="386" Component="#Ref-53" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item82 Ref="386" Component="#Ref-53" Culture="Default" Path="TextFormatString" Data="" />
     <Item83 Ref="387" Component="#Ref-53" Culture="Default" Path="Weight" Data="2.8649317678256581" />
     <Item84 Ref="388" Component="#Ref-41" Culture="Default" Path="LocationFloat" Data="8.106232E-06,0" />
     <Item85 Ref="389" Component="#Ref-41" Culture="Default" Path="SizeF" Data="923.0001,20" />

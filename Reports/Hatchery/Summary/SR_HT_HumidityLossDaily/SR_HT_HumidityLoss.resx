@@ -181,6 +181,7 @@ private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.Canc
       avgChickWtRatioAvg= 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>
