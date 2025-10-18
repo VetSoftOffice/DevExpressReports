@@ -272,6 +272,28 @@ cell.Text = TotalRejCracksReport.ToString("0"); // no decimals
 
 }
 
+
+private void tdDebit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Get the current cell ---
+XRTableCell cell = sender as XRTableCell;
+
+// --- Read value safely ---
+decimal openStockReceivingHall = 0;
+
+if (GetCurrentColumnValue("OpenStockReceivingHall") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("OpenStockReceivingHall").ToString()))
+{
+    openStockReceivingHall = Convert.ToDecimal(GetCurrentColumnValue("OpenStockReceivingHall"));
+}
+else
+{
+    openStockReceivingHall = 0;
+}
+
+// --- Assign the value to the cell ---
+cell.Text = openStockReceivingHall.ToString("N2"); // Format with 2 decimal places
+
+}
 </value>
   </data>
 </root>

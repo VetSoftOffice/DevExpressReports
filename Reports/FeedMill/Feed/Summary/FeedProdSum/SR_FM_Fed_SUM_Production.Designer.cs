@@ -35,7 +35,6 @@
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_FM_Fed_SUM_Production));
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
@@ -52,6 +51,7 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_FM_Fed_SUM_Production));
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem1 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", false);
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem2 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", true);
             this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
@@ -133,7 +133,6 @@
             this.ProdType_Prod = new DevExpress.XtraReports.UI.CalculatedField();
             this.Produced = new DevExpress.XtraReports.UI.CalculatedField();
             this.Rejected = new DevExpress.XtraReports.UI.CalculatedField();
-            this.MonthName = new DevExpress.XtraReports.UI.CalculatedField();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsDealType = new DevExpress.XtraReports.Parameters.Parameter();
@@ -151,6 +150,7 @@
             this.FeedMillCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sR_FM_Fed_SUM_DeliveryTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FM_Fed_SUM_DeliveryTableAdapter();
+            this.MonthName_CF = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -279,6 +279,7 @@
             // 
             this.srReportHeaderCustom.Name = "srReportHeaderCustom";
             this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            this.srReportHeaderCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeaderCustom();
             // 
             // SubBand5
             // 
@@ -292,6 +293,7 @@
             // 
             this.srReportHeader.Name = "srReportHeader";
             this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
             // PageHeaderSub1
             // 
@@ -369,13 +371,13 @@
             crossTabColumnDefinition1.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(103.4844F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.52663F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(73.52664F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.61948F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(71.05347F),
             crossTabColumnDefinition1});
             crossTabColumnField1.FieldName = "BirdType_en";
             crossTabColumnField2.FieldName = "RegYEAR";
-            crossTabColumnField3.FieldName = "MonthName";
+            crossTabColumnField3.FieldName = "MonthName_CF";
             crossTabColumnField3.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1,
@@ -786,12 +788,6 @@
             this.Rejected.Expression = "IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )";
             this.Rejected.Name = "Rejected";
             // 
-            // MonthName
-            // 
-            this.MonthName.DataMember = "SR_FM_Fed_SUM_Delivery";
-            this.MonthName.Expression = resources.GetString("MonthName.Expression");
-            this.MonthName.Name = "MonthName";
-            // 
             // IsCustomReportFooter
             // 
             this.IsCustomReportFooter.Name = "IsCustomReportFooter";
@@ -925,6 +921,12 @@
             // 
             this.sR_FM_Fed_SUM_DeliveryTableAdapter.ClearBeforeFill = true;
             // 
+            // MonthName_CF
+            // 
+            this.MonthName_CF.DataMember = "SR_FM_Fed_SUM_Production";
+            this.MonthName_CF.Expression = resources.GetString("MonthName_CF.Expression");
+            this.MonthName_CF.Name = "MonthName_CF";
+            // 
             // SR_FM_Fed_SUM_Production
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -956,7 +958,7 @@
             this.ProdType_Prod,
             this.Produced,
             this.Rejected,
-            this.MonthName});
+            this.MonthName_CF});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
@@ -1233,7 +1235,6 @@
         private DevExpress.XtraReports.UI.CalculatedField ProdType_Prod;
         private DevExpress.XtraReports.UI.CalculatedField Produced;
         private DevExpress.XtraReports.UI.CalculatedField Rejected;
-        private DevExpress.XtraReports.UI.CalculatedField MonthName;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportFooter;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportHeader;
         private DevExpress.XtraReports.Parameters.Parameter ShowSignature;
@@ -1255,5 +1256,6 @@
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private Finance.DataSets.dsFinance dsFinance1;
         private Finance.DataSets.dsFinanceTableAdapters.SR_FM_Fed_SUM_DeliveryTableAdapter sR_FM_Fed_SUM_DeliveryTableAdapter;
+        private DevExpress.XtraReports.UI.CalculatedField MonthName_CF;
     }
 }

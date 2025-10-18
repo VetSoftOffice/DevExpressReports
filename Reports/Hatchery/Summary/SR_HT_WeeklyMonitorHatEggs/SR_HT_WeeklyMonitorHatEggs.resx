@@ -221,7 +221,7 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell45.Text = avgPercentageAdheringShaving.ToString("0");
+     xrTableCell45.Text = avgPercentageAdheringShaving.ToString("N2");
     avgPercentageAdheringShaving = 0; // reset for next group
 
 }
@@ -347,7 +347,7 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell51.Text = avgPercentageSlabSides.ToString("0");
+      xrTableCell51.Text = avgPercentageSlabSides.ToString("N2");
      avgPercentageSlabSides = 0; // reset for next group
 
 
@@ -426,7 +426,7 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell59_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell59.Text = avgPercentageWrinkled.ToString("0");
+     xrTableCell59.Text = avgPercentageWrinkled.ToString("N2");
           avgPercentageWrinkled = 0; // reset for next group
 
 }
@@ -466,7 +466,7 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell61.Text = avgPercentageThinSpot.ToString("0");
+    xrTableCell61.Text = avgPercentageThinSpot.ToString("N2");
     avgPercentageThinSpot = 0; // reset for next group
 
 
@@ -516,7 +516,7 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell63.Text = avgPercentageShellDefects.ToString("0");
+     xrTableCell63.Text = avgPercentageShellDefects.ToString("N2");
     avgPercentageShellDefects = 0; // reset for next group
 
 }
@@ -554,10 +554,11 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       xrTableCell65.Text = avgPercentageUpsideDown.ToString("0");
+       xrTableCell65.Text = avgPercentageUpsideDown.ToString("N2");
       avgPercentageUpsideDown = 0; // reset for next group
 
 }
+
 </value>
   </data>
 </root>

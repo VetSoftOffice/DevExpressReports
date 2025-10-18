@@ -268,12 +268,12 @@ decimal percentage = 0;
 
 if (pol &gt; 0)
 {
-    decimal hatchPerc = 0;
-    if (settedEggs != 0)
+     decimal hatchPerc  = 0;
+       if (settedEggs != 0)
         hatchPerc = ((actChicks + cullsChicks + deadChicks) / settedEggs) * 100m;
-
-    percentage = (estHatEggsBefore21days * (hatchPerc / 100m)) / pol;
-// --- Assign result to cell ---
+        percentage = (estHatEggsBefore21days * (hatchPerc / 100m)) / pol;
+}
+   // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.##");   // 2 decimal places
 
