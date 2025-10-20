@@ -168,7 +168,7 @@ private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.Canc
     QtyReport += Qty;
      // Set value in cell
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = Qty.ToString("0"); // show as integer, adjust if needed
+    cell.Text = Qty.ToString("N0"); // show as integer, adjust if needed
 }
 
 private void detailBand1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -191,16 +191,17 @@ private void detailBand1_BeforePrint(object sender, System.ComponentModel.Cancel
 }
 
 private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell21.Text = QtyGroup.ToString("0");
+      xrTableCell21.Text = QtyGroup.ToString("N0");
       QtyGroup= 0; // reset for next LineType group
 
 }
 
 private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell10.Text = QtyReport.ToString("0");
+      xrTableCell10.Text = QtyReport.ToString("N0");
       QtyReport= 0; // reset for next LineType group
 
 }
+
 </value>
   </data>
 </root>

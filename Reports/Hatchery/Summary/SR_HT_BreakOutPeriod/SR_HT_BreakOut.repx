@@ -240,24 +240,24 @@
                 <Item18 Ref="151" Width="85.2567749" />
               </ColumnDefinitions>
               <RowDefinitions>
-                <Item1 Ref="152" />
-                <Item2 Ref="153" />
-                <Item3 Ref="154" Visible="false" />
-                <Item4 Ref="155" Visible="false" />
-                <Item5 Ref="156" Visible="false" />
-                <Item6 Ref="157" Visible="false" />
-                <Item7 Ref="158" Visible="false" />
-                <Item8 Ref="159" Visible="false" />
-                <Item9 Ref="160" Visible="false" />
-                <Item10 Ref="161" Visible="false" />
-                <Item11 Ref="162" Visible="false" />
-                <Item12 Ref="163" Visible="false" />
-                <Item13 Ref="164" Visible="false" />
-                <Item14 Ref="165" Visible="false" />
-                <Item15 Ref="166" Visible="false" />
-                <Item16 Ref="167" Visible="false" />
-                <Item17 Ref="168" Visible="false" />
-                <Item18 Ref="169" />
+                <Item1 Ref="152" Height="25.0000019" />
+                <Item2 Ref="153" Height="25.0000019" />
+                <Item3 Ref="154" Height="25.0000019" Visible="false" />
+                <Item4 Ref="155" Height="25.0000019" Visible="false" />
+                <Item5 Ref="156" Height="25.0000019" Visible="false" />
+                <Item6 Ref="157" Height="25.0000019" Visible="false" />
+                <Item7 Ref="158" Height="25.0000019" Visible="false" />
+                <Item8 Ref="159" Height="25.0000019" Visible="false" />
+                <Item9 Ref="160" Height="25.0000019" Visible="false" />
+                <Item10 Ref="161" Height="25.0000019" Visible="false" />
+                <Item11 Ref="162" Height="25.0000019" Visible="false" />
+                <Item12 Ref="163" Height="25.0000019" Visible="false" />
+                <Item13 Ref="164" Height="25.0000019" Visible="false" />
+                <Item14 Ref="165" Height="25.0000019" Visible="false" />
+                <Item15 Ref="166" Height="25.0000019" Visible="false" />
+                <Item16 Ref="167" Height="25.0000019" Visible="false" />
+                <Item17 Ref="168" Height="25.0000019" Visible="false" />
+                <Item18 Ref="169" Height="25.0000019" />
               </RowDefinitions>
               <Cells>
                 <Item1 Ref="170" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" />
@@ -677,7 +677,7 @@
     <Item123 Ref="482" Component="#Ref-12" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
     <Item124 Ref="483" Component="#Ref-55" Culture="Default" Path="HeightF" Data="0" />
     <Item125 Ref="484" Component="#Ref-63" Culture="Default" Path="HeightF" Data="0" />
-    <Item126 Ref="485" Component="#Ref-105" Culture="Default" Path="HeightF" Data="20.56704" />
+    <Item126 Ref="485" Component="#Ref-105" Culture="Default" Path="HeightF" Data="20" />
     <Item127 Ref="486" Component="#Ref-51" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item128 Ref="487" Component="#Ref-51" Culture="Default" Path="SizeF" Data="223.9325,23" />
     <Item129 Ref="488" Component="#Ref-52" Culture="Default" Path="LocationFloat" Data="466.5855,0" />
@@ -731,7 +731,7 @@
     <Item177 Ref="536" Component="#Ref-106" Culture="Default" Path="Text" Data="Hatchery:[?HatcheryNo]" />
     <Item178 Ref="537" Component="#Ref-106" Culture="ar" Path="Text" Data="معمل التفريغ:[?HatcheryNo]" />
     <Item179 Ref="538" Component="#Ref-49" Culture="Default" Path="LocationFloat" Data="1387.228,0" />
-    <Item180 Ref="539" Component="#Ref-49" Culture="Default" Path="SizeF" Data="194.771973,23" />
+    <Item180 Ref="539" Component="#Ref-49" Culture="Default" Path="SizeF" Data="194.772,23" />
     <Item181 Ref="540" Component="#Ref-49" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
