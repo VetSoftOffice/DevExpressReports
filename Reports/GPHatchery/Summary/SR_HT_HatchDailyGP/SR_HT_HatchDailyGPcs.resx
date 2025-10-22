@@ -289,6 +289,7 @@ private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.Canc
     cell.Text = result.ToString("0.00");
 }
 
+
 </value>
   </data>
 </root>

@@ -240,6 +240,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = TotalPercentageHatchPer.ToString("0.00");  // Row level %
 
 }
+
 </value>
   </data>
 </root>
