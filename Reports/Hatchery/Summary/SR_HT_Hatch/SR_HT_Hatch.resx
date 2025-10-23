@@ -138,45 +138,9 @@
     <value>decimal TotalPercentageSellableChicks  =0;
 decimal TotalPercentageFertileEggs  = 0;
 decimal TotalPercentageHatchPer = 0;
-private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal sellableChicks = 0;
-decimal settedEggs = 0;
-
-// --- Accumulators for totals ---
 decimal totalReportSellableChicks = 0;
 decimal totalReportSettedEggs = 0;
 
-// --- SellableChicks ---
-if (GetCurrentColumnValue("SellableChicks") != null)
-    sellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
-totalReportSellableChicks += sellableChicks;
-
-// --- SettedEggs ---
-if (GetCurrentColumnValue("SettedEggs") != null)
-    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-totalReportSettedEggs += settedEggs;
-
-// --- Equation (row level %) ---
-decimal percentage = 0;
-if (settedEggs != 0)
-    percentage = (sellableChicks * 100m) / settedEggs;
-
-// --- Total percentage ---
-if (totalReportSettedEggs != 0)
-    TotalPercentageSellableChicks = (totalReportSellableChicks * 100m) / totalReportSettedEggs;
-
-// --- Assign row % to the cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.00");  // Row level %
-
-}
-
-private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell47.Text = TotalPercentageSellableChicks.ToString("0");
-      TotalPercentageSellableChicks  = 0; // reset for next group
-
-}
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
@@ -241,6 +205,55 @@ cell.Text = TotalPercentageHatchPer.ToString("0.00");  // Row level %
 
 }
 
+
+private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       // --- Declare values ---
+decimal sellableChicks = 0;
+decimal settedEggs = 0;
+
+// --- SellableChicks ---
+if (GetCurrentColumnValue("SellableChicks") != null)
+    sellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
+
+// --- SettedEggs ---
+if (GetCurrentColumnValue("SettedEggs") != null)
+    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+
+// --- Equation (row level %) ---
+decimal percentage = 0;
+if (settedEggs != 0)
+    percentage = (sellableChicks * 100m) / settedEggs;
+
+// --- Total percentage ---
+totalReportSellableChicks += sellableChicks;
+totalReportSettedEggs += settedEggs;
+if (totalReportSettedEggs != 0)
+    TotalPercentageSellableChicks = (totalReportSellableChicks * 100m) / totalReportSettedEggs;
+
+// --- Assign row % to the cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.00");  // Row level %
+
+}
+private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      xrTableCell47.Text = TotalPercentageSellableChicks.ToString("N2");
+
+}
+
+private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    object handledEggsValue = GetCurrentColumnValue("HandledEggs");
+    
+    if (handledEggsValue == null || handledEggsValue == DBNull.Value || string.IsNullOrEmpty(handledEggsValue.ToString()))
+    {
+        // Set to 0 if null, DBNull, or empty
+        tdCredit.Text = "0";
+    }
+    else
+    {
+        // Use the actual value
+        tdCredit.Text = handledEggsValue.ToString();
+    }
+}
 </value>
   </data>
 </root>
