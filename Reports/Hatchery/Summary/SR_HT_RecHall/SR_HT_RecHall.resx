@@ -210,14 +210,16 @@ Total += result;
 if (recEggs != 0)
     TotalPerc = (totalUnHatch * 100.0m / recEggs);
 
-TotalPercReport += TotalPerc 
+TotalPercReport += TotalPerc; 
 
 
-TotalSpecialEggs = result + TotalPerc 
-TotalSpecialEggsReport = Total  + TotalPercReport 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = TotalSpecialEggs.ToString("0"); // no decimals
+
+TotalSpecialEggs = result + TotalPerc; 
+TotalSpecialEggsReport = Total  + TotalPercReport; 
+
 
 
 }
@@ -245,11 +247,12 @@ if (GetCurrentColumnValue("RecEggs") != null)
 decimal percentage = 0;
 if (recEggs != 0)
     percentage = (hatchingEggs * 100m) / recEggs;
-    TotalhatchingEggsReportPerc += percentage 
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00"); // 2 decimals
+TotalhatchingEggsReportPerc += percentage;
+
 
 }
 
@@ -285,14 +288,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalSpecialEggs = total + totalPerc ;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalSpecialEggs.ToString("0"); // no decimals
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalSpecialEggsReport = TotalReport + TotalPercReport ;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalSpecialEggs.ToString("0"); // no decimals
 
 }
 
@@ -329,14 +333,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalOverWeightEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalOverWeightEggs.ToString("0"); // no decimals
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalOverWeightEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalOverWeightEggs.ToString("0"); // no decimals
 }
 
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -372,14 +377,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDirtyEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalDirtyEggs.ToString("0"); // no decimals
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDirtyEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDirtyEggs.ToString("0"); // no decimals
 }
 
 private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -415,14 +421,16 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDeformityEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalDeformityEggs.ToString("0"); // no decimals
+
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDeformityEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDeformityEggs.ToString("0"); // no decimals
 
 }
 
@@ -459,14 +467,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalBrokenEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalBrokenEggs.ToString("0"); // no decimals
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalBrokenEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalBrokenEggs.ToString("0"); // no decimals
 
 }
 
@@ -503,14 +512,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDestroyedEggs = total + totalPerc;
 
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalDestroyedEggs.ToString("0"); // no decimals
+
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDestroyedEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDestroyedEggs.ToString("0"); // no decimals
 
 }
 
@@ -547,14 +557,16 @@ if (recEggs != 0)
 // --- Final sum ---
 totalCrackedEggs = total + totalPerc;
 
+;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalCrackedEggs.ToString("0"); // no decimals
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalCrackedEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalCrackedEggs.ToString("0"); // no decimals
 }
 
 private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -590,14 +602,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDoubleYolkEggs = total + totalPerc;
 
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalDoubleYolkEggs.ToString("0"); // no decimals
+
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDoubleYolkEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDoubleYolkEggs.ToString("0"); // no decimals
 
 }
 
@@ -634,14 +647,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalOtherEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalOtherEggs.ToString("0"); // no decimals
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalOtherEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalOtherEggs.ToString("0"); // no decimals
 
 }
 

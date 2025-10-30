@@ -152,7 +152,6 @@
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
-            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailData1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -1170,8 +1169,6 @@
             this.xrTableCell38.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell38.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HatchPerStd]")});
             this.xrTableCell38.Multiline = true;
             this.xrTableCell38.Name = "xrTableCell38";
             this.xrTableCell38.StylePriority.UseBorders = false;
@@ -1186,7 +1183,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "iif(?IsRTL,\'MiddleLft\',\'MiddleRight\')\n")});
             this.xrTableCell39.Multiline = true;
             this.xrTableCell39.Name = "xrTableCell39";
-            this.xrTableCell39.Scripts.OnBeforePrint = "xrTableCell39_BeforePrint";
+            this.xrTableCell39.Scripts.OnBeforePrint = "xrTableCell39_BeforePrint_1";
             this.xrTableCell39.StylePriority.UseBorders = false;
             this.xrTableCell39.StylePriority.UseFont = false;
             // 
@@ -1250,12 +1247,6 @@
             this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
             this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FontSize", this.FontSize));
             this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
-            // 
-            // GroupHeader1
-            // 
-            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("Breed", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader1.Name = "GroupHeader1";
             // 
             // Title
             // 
@@ -1597,8 +1588,7 @@
             this.Detail,
             this.PageFooter,
             this.PageHeader,
-            this.ReportFooter,
-            this.GroupHeader1});
+            this.ReportFooter});
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.BorderWidth = 0.5F;
@@ -1643,7 +1633,6 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmNo, "Default", "Description", "FarmNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader1, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HatcheryNo, "Default", "Description", "HatcheryNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "Default", "Description", "Hide report footer"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "ar", "Description", "إخفاء ذيل التقرير"),
@@ -1956,6 +1945,7 @@
             this.Scripts.OnAfterPrint = "SR_FC_JournalEntryAll_AfterPrint";
             this.Scripts.OnParametersRequestValueChanged = "SR_FC_JournalEntryAll_ParametersRequestValueChanged";
             this.Scripts.OnPrintProgress = "SR_FC_JournalEntryAll_PrintProgress";
+            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,
@@ -2029,7 +2019,6 @@
         private DevExpress.XtraReports.UI.XRSubreport srReportNotes;
         private DevExpress.XtraReports.UI.SubBand ReportFooterSub2;
         private DevExpress.XtraReports.UI.XRSubreport srReportSignature;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
         private DevExpress.XtraReports.UI.XRControlStyle Title;
         private DevExpress.XtraReports.UI.XRControlStyle DetailCaption1;
         private DevExpress.XtraReports.UI.XRControlStyle DetailData1;

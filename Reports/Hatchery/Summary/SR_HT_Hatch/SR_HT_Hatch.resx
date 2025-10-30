@@ -224,19 +224,19 @@ decimal percentage = 0;
 if (settedEggs != 0)
     percentage = (sellableChicks * 100m) / settedEggs;
 
-// --- Total percentage ---
-totalReportSellableChicks += sellableChicks;
-totalReportSettedEggs += settedEggs;
-if (totalReportSettedEggs != 0)
-    TotalPercentageSellableChicks = (totalReportSellableChicks * 100m) / totalReportSettedEggs;
 
 // --- Assign row % to the cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00");  // Row level %
+totalReportSellableChicks += sellableChicks;
+totalReportSettedEggs += settedEggs;
+
 
 }
 private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell47.Text = TotalPercentageSellableChicks.ToString("N2");
+    if (totalReportSettedEggs != 0)
+    TotalPercentageSellableChicks = (totalReportSellableChicks * 100m) / totalReportSettedEggs;
+    ((XRTableCell)sender).Text = TotalPercentageSellableChicks.ToString("0.00");
 
 }
 

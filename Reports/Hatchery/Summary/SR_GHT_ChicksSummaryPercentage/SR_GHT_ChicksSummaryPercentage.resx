@@ -315,6 +315,7 @@ private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.Canc
     cell.Text = percentageTotal.ToString("0.00");
     percentageTotal = 0;
 }
+
 </value>
   </data>
 </root>

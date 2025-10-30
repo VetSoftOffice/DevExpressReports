@@ -287,6 +287,8 @@
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeaderCustom = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
@@ -396,8 +398,6 @@
             this.Crop = new DevExpress.XtraReports.Parameters.Parameter();
             this.Flock = new DevExpress.XtraReports.Parameters.Parameter();
             this.LineType = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
@@ -770,6 +770,18 @@
             this.srReportHeaderCustom.Name = "srReportHeaderCustom";
             this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
             this.srReportHeaderCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
+            // 
+            // SubBand1
+            // 
+            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportHeader});
+            this.SubBand1.Name = "SubBand1";
+            // 
+            // srReportHeader
+            // 
+            this.srReportHeader.Name = "srReportHeader";
+            this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
             // SubBand3
             // 
@@ -2117,18 +2129,6 @@
             // 
             this.LineType.Name = "LineType";
             this.LineType.Visible = false;
-            // 
-            // SubBand1
-            // 
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportHeader});
-            this.SubBand1.Name = "SubBand1";
-            // 
-            // srReportHeader
-            // 
-            this.srReportHeader.Name = "srReportHeader";
-            this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
-            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
             // SR_GHT_ChicksSummary
             // 

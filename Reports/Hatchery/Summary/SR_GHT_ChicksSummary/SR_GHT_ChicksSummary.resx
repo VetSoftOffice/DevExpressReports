@@ -359,6 +359,7 @@ private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.Canc
     xrTableCell68.Text = groupResultOfTotal.ToString("N0");
     groupResultOfTotal = 0;
 }
+
 </value>
   </data>
 </root>

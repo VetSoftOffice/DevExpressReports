@@ -223,12 +223,13 @@ if (recEggs != 0)
 
 TotalPercReport += TotalPerc 
 
-
-TotalSpecialEggs = result + TotalPerc 
-TotalSpecialEggsReport = Total  + TotalPercReport 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = TotalSpecialEggs.ToString("0"); // no decimals
+
+TotalSpecialEggs = result + TotalPerc;
+TotalSpecialEggsReport = Total  + TotalPercReport;
+
 
 }
 
@@ -312,7 +313,7 @@ if (recEggs != 0)
     TotalPercGroup += (totalUnHatch * 100.0m / recEggs);
     
     
-groupTotalSumSpecialEggs = groupSumSpecialEggs + TotalPercGroup 
+groupTotalSumSpecialEggs = groupSumSpecialEggs + TotalPercGroup; 
 // -- new logic for Hatching eggs
 decimal HatchingEggs = 0;
 decimal RecEggs = 0;
@@ -583,7 +584,7 @@ if (GetCurrentColumnValue("RecEggs") != null)
 decimal percentage = 0;
 if (recEggs != 0)
     percentage = (hatchingEggs * 100m) / recEggs;
-    TotalhatchingEggsReportPerc += percentage 
+    TotalhatchingEggsReportPerc += percentage;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
