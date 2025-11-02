@@ -273,6 +273,7 @@ private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.Canc
     cell.Text = avgPercentage.ToString("N2");         
 }
 
+
 </value>
   </data>
 </root>

@@ -205,7 +205,7 @@ private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.Canc
     decimal result = FarmIntake + HatcheryIntake;
     TotalRec+= result; 
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0"); // no decimals, adjust format if needed
+    cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
 
 }
 
@@ -309,13 +309,11 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 }
 
 private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell69.Text = ToalRecGroup.ToString("0");
-      ToalRecGroup = 0; // reset for next group
+     xrTableCell69.Text = ToalRecGroup.ToString("N0");
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell45.Text = TotalRec.ToString("0");
-      TotalRec = 0; // reset for next group
+      xrTableCell45.Text = TotalRec.ToString("N0");
 
 }
 
@@ -413,21 +411,33 @@ private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.Canc
     TotalStock += result;
 
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0"); // no decimals, adjust as needed
+    cell.Text = result.ToString("N0"); // no decimals, adjust as needed
 }
 
 
 private void xrTableCell84_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell84.Text = TotalStock.ToString("0");
-      TotalStock = 0; // reset for next group
+      xrTableCell84.Text = TotalStockGroup.ToString("N0");
 
 
 }
 
 private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell68.Text = TotalStockGroup.ToString("0");
-    TotalStockGroup = 0; // reset for next group
+    xrTableCell68.Text = TotalStock.ToString("N0");
 
-}</value>
+}
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        var cell = (XRTableCell)sender;
+    object value = GetCurrentColumnValue("SendToCollage");
+    
+    if (value == null || value == DBNull.Value)
+    {
+        cell.Text = "0";
+    }
+    else
+    {
+        cell.Text = value.ToString();
+    }
+}
+</value>
   </data>
 </root>

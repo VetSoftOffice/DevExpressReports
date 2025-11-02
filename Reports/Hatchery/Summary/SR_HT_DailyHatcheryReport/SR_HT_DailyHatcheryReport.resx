@@ -154,7 +154,6 @@ decimal TotalPercentageCullsSellable  = 0;
 decimal TotalPercentageCullsSellableChicks = 0;
 decimal TotalCullsSellableEggsGroupChicks  = 0;
 decimal SellableChicks =0 ;
-decimal Culls = 0;
 decimal TotalInfertileSettedEggs = 0 ;
 decimal InfertileEggs  =0;
 decimal TotalgroupInfertileEggs  = 0;
@@ -167,7 +166,14 @@ decimal groupDeadEggs = 0;
 decimal groupCullsEggs = 0;    
 decimal totalReportDeads = 0;
 decimal totalReportCulls = 0;
-     
+decimal settedEggsInfertile  = 0;
+decimal settedEggsInfertileReport  = 0;
+decimal settedEggsNonHatchery= 0;
+decimal settedEggsNonHatcheryReport = 0;
+private decimal settedEggsDeads;
+private decimal totalsettedEggsDeadsReport;
+private decimal settedEggsCulls;
+private decimal totalSettedEggsCullsReport;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        decimal settedEggs  = 0;
        if (GetCurrentColumnValue("SellableChicks") != null)
@@ -219,6 +225,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     groupDeadEggs += Dead;
     TotalDeadEggsGroup = (groupDeadEggs * 100m) / groupSettedEggs;
     //---------- new logic for Culls Eggs ------------------
+    decimal Culls = 0;
     if (GetCurrentColumnValue("Culls") != null)
          Culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
     groupCullsEggs += Culls;
@@ -285,35 +292,35 @@ private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.Canc
 
 private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal InfertileEggs = 0;
-    decimal settedEggs = 0;
     // --- InfertileEggs---
     if (GetCurrentColumnValue("InfertileEggs") != null){
               InfertileEggs = Convert.ToDecimal(GetCurrentColumnValue("InfertileEggs"));
-              TotalReportInfertileEggs += InfertileEggs;
+
+              
 
         }
 
-
-    // --- SettedEggs ---
-    if (GetCurrentColumnValue("SettedEggs") != null){
-            settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-            totalReportSettedEggs += settedEggs;
-
-        }
         
             // --- Equation ---
     decimal percentage = 0;
-    if (settedEggs != 0)
-        percentage = (InfertileEggs * 100m) / settedEggs;
-    // ---TOTAL -----
-    TotalReportInfertileEggs += InfertileEggs;
-    totalReportSettedEggs += settedEggs;
-    if (totalReportSettedEggs  != 0)
-         TotalInfertileEggs = (TotalReportInfertileEggs * 100)  /  totalReportSettedEggs;
-    // --- Assign result to cell ---
+    if (settedEggsInfertile != 0)
+        percentage = (InfertileEggs * 100m) / settedEggsInfertile ;
+        
+           // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
     cell.Text = percentage.ToString("0.00"); // 2 decimals, adjust format if needed
+    if (GetCurrentColumnValue("SettedEggs") != null){
+            settedEggsInfertile = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+            settedEggsInfertileReport += settedEggsInfertile ;
 
+
+        }
+         TotalReportInfertileEggs += InfertileEggs;
+     if (totalReportSettedEggs  != 0){
+              TotalInfertileEggs = (TotalReportInfertileEggs  * 100m) / settedEggsInfertileReport;
+         }
+
+    
 }
 
 private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -322,6 +329,7 @@ private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+         
      xrTableCell45.Text = TotalInfertileEggs.ToString("N2");
 
 }
@@ -330,8 +338,6 @@ private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.Canc
     // --- Declare values ---
 decimal nonHatEggs = 0;
 decimal settedEggs = 0;
-
-
 // --- NonHatEggs ---
 if (GetCurrentColumnValue("NonHatEggs") != null)
     nonHatEggs = Convert.ToDecimal(GetCurrentColumnValue("NonHatEggs"));
@@ -345,15 +351,19 @@ decimal percentage = 0;
 if (settedEggs != 0)
     percentage = (nonHatEggs * 100m) / settedEggs;
 
-// --- Total percentage ---
-    totalReportNonHatEggs += nonHatEggs;
-    totalReportSettedEggs += settedEggs;
-if (totalReportSettedEggs != 0)
-    TotalPercentageNonHatEggs = (totalReportNonHatEggs * 100m) / totalReportSettedEggs;
-
 // --- Assign row % to the cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00");  // Row level %
+ if (GetCurrentColumnValue("SettedEggs") != null){
+            settedEggsNonHatchery = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+            settedEggsNonHatcheryReport += settedEggsNonHatchery;
+
+
+        }
+        totalReportNonHatEggs += nonHatEggs;
+  if (settedEggsNonHatcheryReport != 0)
+    TotalPercentageNonHatEggs = (totalReportNonHatEggs * 100m) / settedEggsNonHatcheryReport ;
+
 }
 
 
@@ -375,26 +385,34 @@ decimal settedEggs = 0;
 // --- Deads ---
 if (GetCurrentColumnValue("Deads") != null)
     deads = Convert.ToDecimal(GetCurrentColumnValue("Deads"));
-
-// --- SettedEggs ---
+//--- SettedEggs ---
 if (GetCurrentColumnValue("SettedEggs") != null)
     settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+
+
 
 // --- Equation (row level %) ---
 decimal percentage = 0;
 if (settedEggs != 0)
     percentage = (deads * 100m) / settedEggs;
 
-// --- Total percentage ---
-totalReportDeads += deads;
-totalReportSettedEggs += settedEggs;
-
-if (totalReportSettedEggs != 0)
-    TotalPercentageDeads = (totalReportDeads * 100m) / totalReportSettedEggs;
 
 // --- Assign row % to the cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00");  // Row level
+
+// --- SettedEggs ---
+if (GetCurrentColumnValue("SettedEggs") != null){
+        settedEggsDeads = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        totalsettedEggsDeadsReport += settedEggsDeads; 
+
+    }
+    totalReportDeads += deads;
+
+
+if (totalsettedEggsDeadsReport != 0)
+    TotalPercentageDeads = (totalReportDeads * 100m) / totalsettedEggsDeadsReport ;
+
 }
 
 private void xrTableCell87_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -425,21 +443,29 @@ decimal percentage = 0;
 if (settedEggs != 0)
     percentage = (culls * 100m) / settedEggs;
 
-// --- Total percentage ---
-totalReportCulls += culls;
-totalReportSettedEggs += settedEggs;
 
-if (totalReportSettedEggs != 0)
-    TotalPercentageCulls = (totalReportCulls * 100m) / totalReportSettedEggs;
 
 // --- Assign row % to the cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00");  // Row level %
+// --- SettedEggs ---
+if (GetCurrentColumnValue("SettedEggs") != null){
+        settedEggsCulls = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        totalSettedEggsCullsReport+= settedEggsCulls ;
+
+
+    
+    }
+totalReportCulls += culls;
+
+if (totalSettedEggsCullsReport!= 0)
+    TotalPercentageCulls = (totalReportCulls * 100m) / totalSettedEggsCullsReport;
+
 
 }
 
 private void xrTableCell89_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell89.Text = TotalCullsEggsGroup.ToString("N2");
+          xrTableCell89.Text = TotalCullsEggsGroup.ToString("N2");
 
 }
 
@@ -553,6 +579,7 @@ private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 }
+
 
 
 </value>
