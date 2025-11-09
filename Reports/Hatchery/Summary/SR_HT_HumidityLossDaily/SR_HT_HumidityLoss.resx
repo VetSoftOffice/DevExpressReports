@@ -165,22 +165,23 @@ else
 decimal avgChickWtRatioSum = 0;
 int avgChickWtRatioCount = 0;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");  // format with 2 decimal places
 avgChickWtRatioSum += result;
 avgChickWtRatioCount++;
 if (avgChickWtRatioCount &gt; 0)
     avgChickWtRatioAvg = avgChickWtRatioSum / avgChickWtRatioCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N2");  // format with 2 decimal places
 
 }
 
 private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell48.Text = avgChickWtRatioAvg.ToString("0");
-      avgChickWtRatioAvg= 0; // reset for next group
 
 }
+
 
 </value>
   </data>

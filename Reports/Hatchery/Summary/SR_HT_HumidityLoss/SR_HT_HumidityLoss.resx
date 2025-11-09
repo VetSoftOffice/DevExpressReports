@@ -161,6 +161,10 @@ if (avgOneSetEggWt != 0)
     result = (avgChickWt * 100) / avgOneSetEggWt;
 else
     result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");  // format with 2 decimal places
 // --- Accumulate total for average later ---
 decimal avgChickWtRatioSum = 0;
 int avgChickWtRatioCount = 0;
@@ -170,15 +174,11 @@ avgChickWtRatioCount++;
 if (avgChickWtRatioCount &gt; 0)
     avgChickWtRatioAvg = avgChickWtRatioSum / avgChickWtRatioCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N2");  // format with 2 decimal places
 
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
          xrTableCell49.Text = avgChickWtRatioAvg.ToString("0");
-      avgChickWtRatioAvg= 0; // reset for next group
 
 }
 </value>

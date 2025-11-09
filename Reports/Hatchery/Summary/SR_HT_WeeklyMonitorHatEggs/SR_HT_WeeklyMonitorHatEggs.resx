@@ -167,6 +167,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---
 decimal StainedPercReportSum = 0;
 int StainedPercReportCount = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 StainedPercReportSum += percentage;   // sum of percentages
 StainedPercReportCount++;             // count how many percentages added
 
@@ -175,9 +179,6 @@ decimal avgPercentage = 0;
 if (StainedPercReportCount &gt; 0)
     avgPercentageStained = StainedPercReportSum / StainedPercReportCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
@@ -207,6 +208,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---
 decimal AdheringShavingPercReportSum  = 0;
 int AdheringShavingPercReportCount = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 AdheringShavingPercReportSum += percentage;   // keep sum of percentages
 AdheringShavingPercReportCount++;             // count how many percentages added
 
@@ -214,15 +219,11 @@ AdheringShavingPercReportCount++;             // count how many percentages adde
 if (AdheringShavingPercReportCount &gt; 0)
     avgPercentageAdheringShaving = AdheringShavingPercReportSum / AdheringShavingPercReportCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell45.Text = avgPercentageAdheringShaving.ToString("N2");
-    avgPercentageAdheringShaving = 0; // reset for next group
 
 }
 
@@ -246,6 +247,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---
 decimal DirtyEggPercReportSum  = 0;
 int DirtyEggPercReportCount = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 DirtyEggPercReportSum += percentage;   // keep sum of percentages
 DirtyEggPercReportCount++;             // count how many percentages added
 
@@ -254,15 +259,11 @@ decimal avgPercentage = 0;
 if (DirtyEggPercReportCount &gt; 0)
     avgPercentageDirtyEgg = DirtyEggPercReportSum / DirtyEggPercReportCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell47.Text = avgPercentageDirtyEgg.ToString("0");
-     avgPercentageDirtyEgg = 0; // reset for next group
 
 }
 
@@ -294,6 +295,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---
 decimal TotalSpecialEggsPercSum  = 0;
 int TotalSpecialEggsPercCount = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 TotalSpecialEggsPercSum += percentage;   // sum of combined percentages
 TotalSpecialEggsPercCount++;             // count of rows
 
@@ -301,15 +306,11 @@ TotalSpecialEggsPercCount++;             // count of rows
 if (TotalSpecialEggsPercCount &gt; 0)
     avgPercentageTotalDirty = TotalSpecialEggsPercSum / TotalSpecialEggsPercCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell49.Text = avgPercentageTotalDirty.ToString("0");
-     avgPercentageTotalDirty = 0; // reset for next group
 
 }
 
@@ -333,6 +334,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---  
 decimal SlabSidesPercReportSum = 0;
 int SlabSidesPercReportCount = 0;
+
+// --- Assign result to cell ---  
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 SlabSidesPercReportSum += percentage;   // keep sum of percentages  
 SlabSidesPercReportCount++;             // count how many percentages added  
 
@@ -340,15 +345,11 @@ SlabSidesPercReportCount++;             // count how many percentages added
 if (SlabSidesPercReportCount &gt; 0)
     avgPercentageSlabSides = SlabSidesPercReportSum / SlabSidesPercReportCount;
 
-// --- Assign result to cell ---  
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
       xrTableCell51.Text = avgPercentageSlabSides.ToString("N2");
-     avgPercentageSlabSides = 0; // reset for next group
 
 
 }
@@ -373,6 +374,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---  
 decimal BodyCheckPercReportSum = 0;
 int BodyCheckPercReportCount = 0;
+
+// --- Assign result to cell ---  
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 BodyCheckPercReportSum += percentage;   // keep sum of percentages  
 BodyCheckPercReportCount++;             // count how many percentages added  
 
@@ -380,15 +385,11 @@ BodyCheckPercReportCount++;             // count how many percentages added
 if (BodyCheckPercReportCount &gt; 0)
     avgPercentageBodyCheck = BodyCheckPercReportSum / BodyCheckPercReportCount;
 
-// --- Assign result to cell ---  
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
           xrTableCell57.Text = avgPercentageBodyCheck.ToString("0");
-          avgPercentageBodyCheck= 0; // reset for next group
 
 }
 
@@ -412,6 +413,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---  
 decimal WrinkledPercReportSum = 0;
 int WrinkledPercReportCount = 0;
+
+// --- Assign result to cell ---  
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 WrinkledPercReportSum += percentage;   // keep sum of percentages  
 WrinkledPercReportCount++;             // count how many percentages added  
 
@@ -419,15 +424,11 @@ WrinkledPercReportCount++;             // count how many percentages added
 if (WrinkledPercReportCount &gt; 0)
     avgPercentageWrinkled = WrinkledPercReportSum / WrinkledPercReportCount;
 
-// --- Assign result to cell ---  
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell59_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell59.Text = avgPercentageWrinkled.ToString("N2");
-          avgPercentageWrinkled = 0; // reset for next group
 
 }
 
@@ -451,6 +452,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---  
 decimal ThinSpotPercReportSum = 0;
 int ThinSpotPercReportCount = 0;
+
+// --- Assign result to cell ---  
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 ThinSpotPercReportSum += percentage;   // keep sum of percentages  
 ThinSpotPercReportCount++;             // count how many percentages added  
 
@@ -459,15 +464,11 @@ decimal avgPercentageThinSpot = 0;
 if (ThinSpotPercReportCount &gt; 0)
     avgPercentageThinSpot = ThinSpotPercReportSum / ThinSpotPercReportCount;
 
-// --- Assign result to cell ---  
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     xrTableCell61.Text = avgPercentageThinSpot.ToString("N2");
-    avgPercentageThinSpot = 0; // reset for next group
 
 
 }
@@ -501,6 +502,9 @@ decimal percentage = 0;
 if (sampleQty &gt; 0)
     percentage = ((slabSides + bodyCheck + wrinkled + thinSpot) * 100m) / sampleQty;
 
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 // --- Add to report totals (for average) ---
 TotalShellDefectsPercSum += percentage;   // sum of combined percentages
 TotalShellDefectsPercCount++;             // count of rows
@@ -509,15 +513,12 @@ TotalShellDefectsPercCount++;             // count of rows
 if (TotalShellDefectsPercCount &gt; 0)
     avgPercentageShellDefects = TotalShellDefectsPercSum / TotalShellDefectsPercCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
 
 }
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell63.Text = avgPercentageShellDefects.ToString("N2");
-    avgPercentageShellDefects = 0; // reset for next group
 
 }
 
@@ -541,6 +542,10 @@ if (sampleQty &gt; 0)
 // --- Add to report totals (for average) ---
 decimal UpsideDownPercReportSum = 0;
 int UpsideDownPercReportCount = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 UpsideDownPercReportSum += percentage;   // keep sum of percentages
 UpsideDownPercReportCount++;             // count how many percentages added
 
@@ -548,14 +553,10 @@ UpsideDownPercReportCount++;             // count how many percentages added
 if (UpsideDownPercReportCount &gt; 0)
     avgPercentageUpsideDown = UpsideDownPercReportSum / UpsideDownPercReportCount;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 }
 private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        xrTableCell65.Text = avgPercentageUpsideDown.ToString("N2");
-      avgPercentageUpsideDown = 0; // reset for next group
 
 }
 

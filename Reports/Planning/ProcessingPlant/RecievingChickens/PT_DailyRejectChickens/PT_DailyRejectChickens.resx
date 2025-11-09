@@ -212,6 +212,7 @@ private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.Canc
       CullsPercReport = 0; // reset for next LineType group
 
 }
+
 </value>
   </data>
 </root>

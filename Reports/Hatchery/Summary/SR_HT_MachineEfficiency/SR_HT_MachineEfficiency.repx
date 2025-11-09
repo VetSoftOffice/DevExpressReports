@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_HT_MachineEfficiency" ScriptsSource="&#xD;&#xA;private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Get the current cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;&#xD;&#xA;// --- Read value safely ---&#xD;&#xA;decimal gradeAChicks = 0;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;GradeAChicks&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;GradeAChicks&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    gradeAChicks = Convert.ToDecimal(GetCurrentColumnValue(&quot;GradeAChicks&quot;));&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    gradeAChicks = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Assign the value to the cell ---&#xD;&#xA;cell.Text = gradeAChicks.ToString(&quot;N0&quot;); // Format with 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Get the current cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;&#xD;&#xA;// --- Read value safely ---&#xD;&#xA;decimal culls = 0;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;Culls&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;Culls&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    culls = Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;));&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    culls = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Assign the value to the cell ---&#xD;&#xA;cell.Text = culls.ToString(&quot;N0&quot;); // Format with 2 decimal places&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidth="1169" PageHeight="1654" Version="24.2" DataMember="SR_HT_MachineEfficiency" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_HT_MachineEfficiency" ScriptsSource="&#xD;&#xA;private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Get the current cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;&#xD;&#xA;// --- Read value safely ---&#xD;&#xA;decimal gradeAChicks = 0;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;GradeAChicks&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;GradeAChicks&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    gradeAChicks = Convert.ToDecimal(GetCurrentColumnValue(&quot;GradeAChicks&quot;));&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    gradeAChicks = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Assign the value to the cell ---&#xD;&#xA;cell.Text = gradeAChicks.ToString(&quot;N0&quot;); // Format with 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Get the current cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;&#xD;&#xA;// --- Read value safely ---&#xD;&#xA;decimal culls = 0;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;Culls&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;Culls&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    culls = Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;));&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    culls = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Assign the value to the cell ---&#xD;&#xA;cell.Text = culls.ToString(&quot;N0&quot;); // Format with 2 decimal places&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" PageWidth="1169" PageHeight="1654" Version="24.2" DataMember="SR_HT_MachineEfficiency" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -550,7 +550,7 @@
     <Item79 Ref="347" Component="#Ref-83" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item80 Ref="348" Component="#Ref-83" Culture="Default" Path="Weight" Data="1.7006138704114813" />
     <Item81 Ref="349" Component="#Ref-63" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item82 Ref="350" Component="#Ref-63" Culture="Default" Path="SizeF" Data="1160.358,20" />
+    <Item82 Ref="350" Component="#Ref-63" Culture="Default" Path="SizeF" Data="1159,20" />
     <Item83 Ref="351" Component="#Ref-175" Culture="Default" Path="Text" Data="Setter Code" />
     <Item84 Ref="352" Component="#Ref-175" Culture="ar" Path="Text" Data="رمز الفقاسة" />
     <Item85 Ref="353" Component="#Ref-175" Culture="Default" Path="Weight" Data="2.324373455413657" />
@@ -590,7 +590,7 @@
     <Item119 Ref="387" Component="#Ref-54" Culture="Default" Path="SizeF" Data="212.9932,20" />
     <Item120 Ref="388" Component="#Ref-54" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item121 Ref="389" Component="#Ref-206" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
-    <Item122 Ref="390" Component="#Ref-206" Culture="Default" Path="SizeF" Data="1159,20" />
+    <Item122 Ref="390" Component="#Ref-206" Culture="Default" Path="SizeF" Data="1157.642,20" />
     <Item123 Ref="391" Component="#Ref-95" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item124 Ref="392" Component="#Ref-95" Culture="Default" Path="Text" Data="xrTableCell1" />
     <Item125 Ref="393" Component="#Ref-95" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -644,7 +644,7 @@
     <Item173 Ref="441" Component="#Ref-133" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item174 Ref="442" Component="#Ref-133" Culture="Default" Path="Text" Data="xrTableCell22" />
     <Item175 Ref="443" Component="#Ref-133" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item176 Ref="444" Component="#Ref-133" Culture="Default" Path="Weight" Data="1.5026090490691075" />
+    <Item176 Ref="444" Component="#Ref-133" Culture="Default" Path="Weight" Data="1.46007243736006" />
     <Item177 Ref="445" Component="#Ref-80" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item178 Ref="446" Component="#Ref-80" Culture="Default" Path="Text" Data="xrTableCell26" />
     <Item179 Ref="447" Component="#Ref-80" Culture="Default" Path="Weight" Data="1.756351758260406" />
@@ -695,7 +695,7 @@
     <Item224 Ref="492" Component="#Ref-254" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item225 Ref="493" Component="#Ref-254" Culture="Default" Path="Text" Data="xrTableCell4" />
     <Item226 Ref="494" Component="#Ref-254" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item227 Ref="495" Component="#Ref-254" Culture="Default" Path="Weight" Data="0.27244417433160084" />
+    <Item227 Ref="495" Component="#Ref-254" Culture="Default" Path="Weight" Data="0.26450700424045293" />
     <Item228 Ref="496" Component="#Ref-209" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item229 Ref="497" Component="#Ref-209" Culture="Default" Path="Text" Data="xrTableCell42" />
     <Item230 Ref="498" Component="#Ref-209" Culture="Default" Path="TextFormatString" Data="{0:N2}" />

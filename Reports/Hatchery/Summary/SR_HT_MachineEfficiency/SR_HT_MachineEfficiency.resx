@@ -179,6 +179,7 @@ else
 cell.Text = culls.ToString("N0"); // Format with 2 decimal places
 
 }
+
 </value>
   </data>
 </root>
