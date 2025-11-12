@@ -91,7 +91,7 @@
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_PT_DailyProdPortionCheckens_SubReports = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_PT_DailyProdPortionCheckens_Sub1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
@@ -501,13 +501,13 @@
             // SubBand7
             // 
             this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_PT_DailyProdPortionCheckens_SubReports});
+            this.SR_PT_DailyProdPortionCheckens_Sub1});
             this.SubBand7.Name = "SubBand7";
             // 
-            // SR_PT_DailyProdPortionCheckens_SubReports
+            // SR_PT_DailyProdPortionCheckens_Sub1
             // 
-            this.SR_PT_DailyProdPortionCheckens_SubReports.Name = "SR_PT_DailyProdPortionCheckens_SubReports";
-            this.SR_PT_DailyProdPortionCheckens_SubReports.ReportSource = new DevExpressReports.Reports.Planning.ProcessingPlant.Packing.SR_PT_DailyProdPortionCheckens_SubReports.SR_PT_DailyProdPortionCheckens_SubReports();
+            this.SR_PT_DailyProdPortionCheckens_Sub1.Name = "SR_PT_DailyProdPortionCheckens_Sub1";
+            this.SR_PT_DailyProdPortionCheckens_Sub1.ReportSource = new DevExpressReports.Reports.Planning.ProcessingPlant.Packing.SR_PT_DailyProdPortionCheckens_SubReports.SR_PT_DailyProdPortionCheckens_SubReports();
             // 
             // SubBand8
             // 
@@ -1185,8 +1185,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdPortionCheckens_SubReports, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.0005483627F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdPortionCheckens_SubReports, "Default", "SizeF", new System.Drawing.SizeF(816.9998F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdPortionCheckens_Sub1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.0005483627F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdPortionCheckens_Sub1, "Default", "SizeF", new System.Drawing.SizeF(816.9998F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
@@ -1442,7 +1442,7 @@
         private Finance.DataSets.dsFinanceTableAdapters.SR_FM_Ing_GoodReceNoteTableAdapter sR_FM_Ing_GoodReceNoteTableAdapter;
         private DevExpress.XtraReports.Parameters.Parameter PlantCode;
         private DevExpress.XtraReports.UI.SubBand SubBand7;
-        private DevExpress.XtraReports.UI.XRSubreport SR_PT_DailyProdPortionCheckens_SubReports;
+        private DevExpress.XtraReports.UI.XRSubreport SR_PT_DailyProdPortionCheckens_Sub1;
         private DevExpress.XtraReports.UI.SubBand SubBand8;
         private DevExpress.XtraReports.UI.SubBand SubBand9;
         private DevExpress.XtraReports.UI.XRTable xrTable1;

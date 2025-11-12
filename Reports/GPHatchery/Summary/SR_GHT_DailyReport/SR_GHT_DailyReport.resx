@@ -179,13 +179,13 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
 private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    xrTableCell46.Text = groupSumOpenEggs.ToString("0");
+    xrTableCell46.Text = groupSumOpenEggs.ToString("N0");
     groupSumOpenEggs = 0;
 }
 
 private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    xrTableCell14.Text = OpenMachineReport.ToString("0");
+    xrTableCell14.Text = OpenMachineReport.ToString("N0");
     OpenMachineReport = 0;
 }
 
@@ -209,13 +209,13 @@ private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.Canc
 
 private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    xrTableCell53.Text = groupSumCloseEggs.ToString("0");
+    xrTableCell53.Text = groupSumCloseEggs.ToString("N0");
     groupSumCloseEggs = 0;
 }
 
 private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-    xrTableCell40.Text = CloseMachineReport.ToString("0");
+    xrTableCell40.Text = CloseMachineReport.ToString("N0");
     CloseMachineReport = 0;
 }
 

@@ -150,7 +150,6 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell19.Text = PluckRejectPercReport.ToString("0");
-      PluckRejectPercReport= 0; // reset for next LineType group
 
 }
 </value>

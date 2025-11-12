@@ -349,8 +349,8 @@
             this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.sR_FC_CustSuppSheet_OLDTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_FC_CustSuppSheet_OLDTableAdapter();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_PT_DailyProdWholeChickens_SubReport2 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SR_PT_DailyProdWholeChickens_SubReport1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_PT_DailyProdWholeChickens_Sub2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_PT_DailyProdWholeChickens_Sub1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
@@ -1711,19 +1711,19 @@
             // SubBand1
             // 
             this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_PT_DailyProdWholeChickens_SubReport2,
-            this.SR_PT_DailyProdWholeChickens_SubReport1});
+            this.SR_PT_DailyProdWholeChickens_Sub2,
+            this.SR_PT_DailyProdWholeChickens_Sub1});
             this.SubBand1.Name = "SubBand1";
             // 
-            // SR_PT_DailyProdWholeChickens_SubReport2
+            // SR_PT_DailyProdWholeChickens_Sub2
             // 
-            this.SR_PT_DailyProdWholeChickens_SubReport2.Name = "SR_PT_DailyProdWholeChickens_SubReport2";
-            this.SR_PT_DailyProdWholeChickens_SubReport2.ReportSource = new DevExpressReports.Reports.Planning.ProcessingPlant.Packing.SR_PT_DailyProdWholeChickens_SubReport2.SR_PT_DailyProdWholeChickens_SubReport2();
+            this.SR_PT_DailyProdWholeChickens_Sub2.Name = "SR_PT_DailyProdWholeChickens_Sub2";
+            this.SR_PT_DailyProdWholeChickens_Sub2.ReportSource = new DevExpressReports.Reports.Planning.ProcessingPlant.Packing.SR_PT_DailyProdWholeChickens_SubReport2.SR_PT_DailyProdWholeChickens_SubReport2();
             // 
-            // SR_PT_DailyProdWholeChickens_SubReport1
+            // SR_PT_DailyProdWholeChickens_Sub1
             // 
-            this.SR_PT_DailyProdWholeChickens_SubReport1.Name = "SR_PT_DailyProdWholeChickens_SubReport1";
-            this.SR_PT_DailyProdWholeChickens_SubReport1.ReportSource = new DevExpressReports.Reports.Planning.ProcessingPlant.Packing.SR_PT_DailyProdWholeChickens_SubReport1.SR_PT_DailyProdWholeChickens_SubReport1();
+            this.SR_PT_DailyProdWholeChickens_Sub1.Name = "SR_PT_DailyProdWholeChickens_Sub1";
+            this.SR_PT_DailyProdWholeChickens_Sub1.ReportSource = new DevExpressReports.Reports.Planning.ProcessingPlant.Packing.SR_PT_DailyProdWholeChickens_SubReport1.SR_PT_DailyProdWholeChickens_SubReport1();
             // 
             // srReportSignature
             // 
@@ -1787,8 +1787,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalChickensPortion]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([TotalChickensPortion]\n),0 ,[TotalChickensPortion]\n )")});
             this.xrTableCell19.Multiline = true;
             this.xrTableCell19.Name = "xrTableCell19";
             this.xrTableCell19.StylePriority.UseBorders = false;
@@ -1802,8 +1802,9 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TotalCheckensPortionWeight]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([TotalCheckensPortionWeight]\n),0 , [TotalCheckensPortionWeight]" +
+                    "\n)")});
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.StylePriority.UseBorders = false;
@@ -1817,8 +1818,8 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AgvWeightPortion]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([AgvWeightPortion]\n),0 , [AgvWeightPortion]\n)")});
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
             this.xrTableCell32.StylePriority.UseBorders = false;
@@ -1991,11 +1992,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.Custom),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_SubReport1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_SubReport1, "Default", "SizeF", new System.Drawing.SizeF(427.0833F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_SubReport2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(427.0834F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_SubReport2, "Default", "SizeF", new System.Drawing.SizeF(578.9135F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 23F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_Sub1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00002F, 17.08323F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_Sub1, "Default", "SizeF", new System.Drawing.SizeF(324.375F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_Sub2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(540.0032F, 17.08323F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PT_DailyProdWholeChickens_Sub2, "Default", "SizeF", new System.Drawing.SizeF(397.6634F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 40.08325F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
@@ -2052,6 +2053,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Weight", 1.7554831790758008D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell16, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell16, "Default", "Text", "xrTableCell43"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell16, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell16, "Default", "Weight", 1.5773899853216902D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell17, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell17, "Default", "Text", "xrTableCell44"),
@@ -2093,6 +2095,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Weight", 0.64359391620138318D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Text", "xrTableCell28"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Weight", 2.4546115189242492D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Text", "xrTableCell29"),
@@ -2102,6 +2105,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Weight", 1.5104165515132362D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Text", "xrTableCell45"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Weight", 1.8145068666524153D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Text", "xrTableCell46"),
@@ -2112,6 +2116,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Weight", 0.99999969482421869D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Text", "xrTableCell33"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Weight", 1.543812411633164D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Text", "xrTableCell34"),
@@ -2119,6 +2124,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Weight", 1.5438064487159311D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Text", "xrTableCell35"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Weight", 1.5326341779189621D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Text", "Chickens Portions"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "ar", "Text", "اجزاء الكتاكيت"),
@@ -2191,7 +2197,6 @@
             this.PageType});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
-            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,
@@ -2320,8 +2325,8 @@
         private DevExpress.XtraReports.UI.SubBand ReportFooterSub1;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.SubBand SubBand7;
-        private DevExpress.XtraReports.UI.XRSubreport SR_PT_DailyProdWholeChickens_SubReport2;
-        private DevExpress.XtraReports.UI.XRSubreport SR_PT_DailyProdWholeChickens_SubReport1;
+        private DevExpress.XtraReports.UI.XRSubreport SR_PT_DailyProdWholeChickens_Sub2;
+        private DevExpress.XtraReports.UI.XRSubreport SR_PT_DailyProdWholeChickens_Sub1;
         private DevExpress.XtraReports.UI.XRTable xrTable8;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow8;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell19;

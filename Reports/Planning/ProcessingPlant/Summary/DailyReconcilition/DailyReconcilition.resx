@@ -184,7 +184,6 @@ pluckRejectPercentTotal += result;
 
 private void xrTableCell13_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
       xrTableCell13.Text = pluckRejectPercentTotal.ToString("0");
-      pluckRejectPercentTotal= 0; // reset for next group
 
 }
 </value>

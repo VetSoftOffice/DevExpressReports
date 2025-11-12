@@ -437,6 +437,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("N2");   // format with 2 decimals
 
 }
+
 </value>
   </data>
 </root>

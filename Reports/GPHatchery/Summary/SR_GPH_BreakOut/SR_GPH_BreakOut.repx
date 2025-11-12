@@ -298,7 +298,7 @@
                   <Scripts Ref="178" OnBeforePrint="crossTabDataCell1_BeforePrint" />
                 </Item2>
                 <Item3 Ref="179" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="9" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderColor="DarkGray" BorderWidth="1.3" />
-                <Item4 Ref="180" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" RowSpan="8" BackColor="White" Padding="5,5,0,0,100" BorderColor="DarkGray" BorderWidth="1.3" />
+                <Item4 Ref="180" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" RowSpan="8" TextAlignment="MiddleCenter" BackColor="White" Padding="5,5,0,0,100" BorderColor="DarkGray" BorderWidth="1.3" />
                 <Item5 Ref="181" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="10" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderColor="DarkGray" BorderWidth="1.3" />
                 <Item6 Ref="182" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="10" RowIndex="1" TextAlignment="MiddleCenter" BackColor="White" Padding="4,4,0,0,100" BorderColor="DarkGray" BorderWidth="1.3">
                   <ExpressionBindings>
