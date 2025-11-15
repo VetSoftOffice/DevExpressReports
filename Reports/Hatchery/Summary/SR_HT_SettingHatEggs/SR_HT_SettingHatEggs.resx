@@ -161,11 +161,16 @@ if (GetCurrentColumnValue("ExitCullsChicks") != null)
 
 // --- Sum them all ---
 decimal result = rfHatsCulls + rfInjCulls + injCulls + culls + exitCullsChicks;
-TotalCullsReport += result 
+
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0"); // no decimals, adjust format if needed
-
+cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
+rfHatsCullsReport += rfHatsCulls ;
+rfInjCullsReport  += rfInjCulls ;
+injCullsReport  += injCulls ;
+cullsReport += culls ;
+exitCullsChicksReport += exitCullsChicks ;
+TotalCullsReport = rfHatsCullsReport  + rfInjCullsReport   + injCullsReport   + cullsReport  + exitCullsChicksReport  ;
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -197,7 +202,13 @@ if (GetCurrentColumnValue("ExitCullsChicks") != null)
     exitCullsChicks = Convert.ToDecimal(GetCurrentColumnValue("ExitCullsChicks"));
 
 // --- Add to group sum ---
-groupSumCulls += (rfHatsCulls + rfInjCulls + injCulls + culls + exitCullsChicks);
+rfHatsCullsGroup += rfHatsCulls ;
+rfInjCullsGroup  += rfInjCulls ;
+injCullsGroup  += injCulls ;
+cullsGroup += culls ;
+exitCullsChicksGroup += exitCullsChicks ;
+
+groupSumCulls = (rfHatsCullsGroup + rfInjCullsGroup  + injCullsGroup  + cullsGroup + exitCullsChicksGroup );
 
    // --- New logic for total deads
 if (GetCurrentColumnValue("ExitDeadChicks") != null)

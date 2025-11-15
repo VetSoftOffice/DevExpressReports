@@ -159,7 +159,11 @@ decimal deadChicks = 0;
 decimal cullsChicks = 0;
 decimal totalDeadAndCulls = 0;
 decimal grandTotalDeadAndCulls = 0;
-
+decimal deadChicksReport  = 0;
+decimal cullsChicksReport  = 0;
+decimal selChicksReport = 0;
+decimal settedEggsReport  = 0;
+decimal grandTotalSelChicks  = 0;
 decimal rejChicks = 0;
 decimal grandTotalRejSel = 0;
 
@@ -178,6 +182,10 @@ private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.Canc
     percentage = (settedEggs &gt; 0) ? (selChicks / settedEggs) * 100 : 0;
 
     cell.Text = percentage.ToString("0.##");
+    selChicksReport +=  deadChicks  ;
+    settedEggsReport += cullsChicks ;
+    grandTotalSelChicks = selChicksReport + settedEggsReport ;
+
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -187,9 +195,10 @@ private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.Canc
     cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
 
     totalDeadAndCulls = deadChicks + cullsChicks;
-    cell.Text = totalDeadAndCulls.ToString("N2");
-
-    grandTotalDeadAndCulls += totalDeadAndCulls;
+    cell.Text = totalDeadAndCulls.ToString("N0");
+    deadChicksReport +=  deadChicks  ;
+    cullsChicksReport += cullsChicks ;
+    grandTotalDeadAndCulls = deadChicksReport  + cullsChicksReport ;
 }
 
 private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {

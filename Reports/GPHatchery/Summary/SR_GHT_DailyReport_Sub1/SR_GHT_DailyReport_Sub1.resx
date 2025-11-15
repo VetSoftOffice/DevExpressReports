@@ -133,60 +133,29 @@
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal BroilerPercGroup = 0;
-decimal BroilerPercReport  = 0;
-decimal ChicksPercReport  = 0;
-decimal ChicksPercGroup  = 0;
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare variables ---
-decimal broiler = 0;
-decimal settedEggs = 0;
-decimal result = 0;
-
-// --- Read values safely ---
-if (GetCurrentColumnValue("Broiler") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("Broiler").ToString()))
-{
-    broiler = Convert.ToDecimal(GetCurrentColumnValue("Broiler"));
-}
-
-if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
-{
-    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-}
-
-// --- Calculate result ---
-if (settedEggs != 0)
-{
-    result = broiler * 100 / settedEggs;
-    BroilerPercReport += result;
-}
-else
-{
-    result = 0;
-    BroilerPercReport = 0 ;
-}
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N2");
-
-}
-
+    <value>decimal groupSumChicks  = 0;
+decimal fChicksGroup  = 0;
+decimal mChicksGroup = 0;
+decimal groupSettedEggs  = 0;
+decimal PercentageBreeder  = 0;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
-       // --- Declare variables ---
-decimal broiler = 0;
-decimal settedEggs = 0;
-decimal result = 0;
+    // logic for breeder
+    decimal fChicks = 0, mChicks = 0, settedEggs = 0;
 
-// --- Read values safely ---
-if (GetCurrentColumnValue("Broiler") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("Broiler").ToString()))
-{
-    broiler = Convert.ToDecimal(GetCurrentColumnValue("Broiler"));
-}
+    if (GetCurrentColumnValue("FChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("FChicks").ToString()))
+        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
+
+    if (GetCurrentColumnValue("MChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("MChicks").ToString()))
+        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
+
+    fChicksGroup += fChicks ;
+    mChicksGroup += mChicks ;
+    groupSumChicks = (fChicksGroup + mChicksGroup);
+
+       // --- Declare variables ---
+decimal settedEggs = 0;decimal result = 0;
+
 
 if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
@@ -195,16 +164,10 @@ if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
 }
 
 // --- Calculate result ---
-if (settedEggs != 0)
-{
-    result = broiler * 100 / settedEggs;
-    BroilerPercGroup += result;
-}
-else
-{
-    result = 0;
-    BroilerPercGroup = 0;
-}
+groupSettedEggs += settedEggs;
+
+if (groupSettedEggs != 0)
+        PercentageBreeder = (groupSumChicks * 100m) / groupSettedEggs;
 
 //new logic for Breeder Perc
     // --- Declare variables ---
@@ -242,67 +205,78 @@ else
 
 
 
-private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell50.Text = BroilerPercGroup.ToString("0");
-    BroilerPercGroup= 0;
+
+private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      decimal fChicks = 0;
+    decimal mChicks = 0;
+
+    if (GetCurrentColumnValue("FChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("FChicks").ToString()))
+        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
+
+    if (GetCurrentColumnValue("MChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("MChicks").ToString()))
+        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
+
+    decimal result = fChicks + mChicks;
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0"); 
+    fChicksReport   += fChicks ;
+    mChicksReport += mChicks  ; 
+    TotalChicksReport = fChicksReport + mChicksReport;
+
+    
+}  
+
+private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    cell.Text = groupSumChicks.ToString("N0");
 }
 
+private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    cell.Text = TotalChicksReport.ToString("N0");
+
+}
+
+private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal fChicks = 0;
+    decimal mChicks = 0;
+    decimal SettedEggs = 0;
+    decimal result = 0;
+    if (GetCurrentColumnValue("FChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("FChicks").ToString()))
+        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
+
+    if (GetCurrentColumnValue("MChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("MChicks").ToString()))
+        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
+        
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    
+    if (SettedEggs != 0)
+    result = ((fChicks  + mChicks) *100)/ SettedEggs ;
+
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N2"); 
+    mChicksReport += mChicks  ;
+    fChicksReport += fChicks ;
+    ReportSettedEggs += SettedEggs ;
+    
+    
+    
+
+}
+
+private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    cell.Text = PercentageBreeder.ToString("N2");
+}
 
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell19.Text = BroilerPercReport.ToString("0");
-     BroilerPercReport= 0;
-}
-
-private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare variables ---
-decimal chicks = 0;
-decimal settedEggs = 0;
-decimal result = 0;
-
-// --- Read values safely ---
-if (GetCurrentColumnValue("Chicks") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("Chicks").ToString()))
-{
-    chicks = Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
-}
-
-if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
-{
-    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-}
-
-// --- Calculate result ---
-if (settedEggs != 0)
-{
-    result = chicks * 100 / settedEggs;
-    ChicksPercReport += result;
-}
-else
-{
-    result = 0;
-    ChicksPercReport  = 0;
-}
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N2");
+     XRTableCell cell = sender as XRTableCell;
+    cell.Text = ReportSettedEggs.ToString("N2");
 
 }
-
-private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell50.Text = ChicksPercGroup.ToString("0");
-     ChicksPercGroup = 0;
-
-}
-
-private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell37.Text = ChicksPercReport.ToString("0");
-     ChicksPercReport = 0;
-
-
-}
-
 </value>
   </data>
 </root>

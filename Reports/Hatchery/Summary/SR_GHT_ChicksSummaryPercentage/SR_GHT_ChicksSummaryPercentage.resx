@@ -135,7 +135,12 @@ decimal percentageDestroyed = 0;
 decimal percentageUnHatEggs = 0;
 decimal percentageTotalLoss = 0;
 decimal percentageTotal = 0;
-
+decimal fChicksGroup  = 0;
+decimal mChicksGroup  = 0;
+decimal FChicksGroupBreeder = 0;
+decimal MChicksGroupBreeder = 0;
+decimal TotalChicksGroupBreeder = 0;
+decimal percentageBreeder =0;
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     decimal fChicks = 0;
@@ -150,7 +155,7 @@ private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.Canc
     decimal result = fChicks + mChicks;
 
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0"); 
+    cell.Text = result.ToString("N0"); 
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
@@ -163,7 +168,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     if (GetCurrentColumnValue("MChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("MChicks").ToString()))
         mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
 
-    groupSumChicks += (fChicks + mChicks);
+    fChicksGroup += fChicks ;
+    mChicksGroup += mChicks ;
+    groupSumChicks = (fChicksGroup + mChicksGroup);
+
 
     if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
         settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
@@ -172,13 +180,26 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     if (groupSettedEggs != 0)
         percentage = (groupSumChicks * 100m) / groupSettedEggs;
-
-    decimal chicks = 0;
-    if (GetCurrentColumnValue("Chicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("Chicks").ToString()))
-        chicks = Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
-
-    if (groupSettedEggs != 0)
-        percentageBroiler = (chicks * 100m) / groupSettedEggs;
+        
+    // new logic for Qty Perc of Breeder
+    
+    decimal FChiks = 0;
+    decimal MChiks = 0;
+    decimal SettedEggsBreeder  = 0;
+    if (GetCurrentColumnValue("FChicks") != null)
+        FChiks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
+        
+    if (GetCurrentColumnValue("MChicks") != null)
+        MChiks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
+    
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        SettedEggsBreeder = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        
+    FChicksGroupBreeder += FChiks ;
+    MChicksGroupBreeder += MChiks ;
+    TotalChicksGroupBreeder = FChicksGroupBreeder  + MChicksGroupBreeder ;
+    if (TotalChicksGroupBreeder != 0)
+        percentageBreeder = (TotalChicksGroupBreeder * 100m) / SettedEggsBreeder ;
 
     decimal DestroyedEggs = 0;
     if (GetCurrentColumnValue("DestroyedEggs") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("DestroyedEggs").ToString()))
@@ -242,15 +263,13 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = groupSumChicks.ToString("0");
-    groupSumChicks = 0;
+    cell.Text = groupSumChicks.ToString("N0");
 }
 
 private void xrTableCell56_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = percentage.ToString("0.00");
-    percentage = 0;
+    cell.Text = percentageBreeder.ToString("0.00");
 }
 
 private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
@@ -317,6 +336,29 @@ private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 
+
+private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal fChicks = 0;
+    decimal mChicks = 0;
+    decimal SettedEggs = 0;
+    decimal result = 0;
+    if (GetCurrentColumnValue("FChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("FChicks").ToString()))
+        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
+
+    if (GetCurrentColumnValue("MChicks") != null &amp;&amp; !string.IsNullOrEmpty(GetCurrentColumnValue("MChicks").ToString()))
+        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
+        
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    
+    if (SettedEggs != 0)
+    result = ((fChicks  + mChicks) *100)/ SettedEggs ;
+
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0"); 
+
+}
 </value>
   </data>
 </root>

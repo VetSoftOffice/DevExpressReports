@@ -133,7 +133,10 @@ Iif(IsNullOrEmpty([Deads]), 0, [Deads])
 decimal groupSumOpenEggs = 0;
 decimal CloseMachineReport = 0;
 decimal groupSumCloseEggs = 0;
-
+decimal openSetterEggsGroup  = 0;
+decimal openHatcherEggsGroup  = 0;
+decimal closeSetterEggsReport =0;
+decimal closeHatcherEggsReport = 0;
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     decimal openSetterEggs = 0;
@@ -146,10 +149,12 @@ private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.Canc
         openHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenHatcherEggs"));
 
     decimal result = openSetterEggs + openHatcherEggs;
-    OpenMachineReport += result; // ✅ added semicolon
 
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0");
+    cell.Text = result.ToString("N0");
+    openSetterEggsReport += openSetterEggs ;
+    openHatcherEggsReport += openHatcherEggs ;
+    OpenMachineReport = openSetterEggsReport + openHatcherEggsReport ;
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
@@ -162,8 +167,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     if (GetCurrentColumnValue("OpenHatcherEggs") != null)
         openHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenHatcherEggs"));
-
-    groupSumOpenEggs += (openSetterEggs + openHatcherEggs);
+        
+    openSetterEggsGroup +=  openSetterEggs ;
+    openHatcherEggsGroup += openHatcherEggs ;
+    groupSumOpenEggs = (openSetterEggsGroup + openHatcherEggsGroup );
 
     decimal closeSetterEggs = 0;
     decimal closeHatcherEggs = 0;
@@ -173,20 +180,19 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     if (GetCurrentColumnValue("CloseHatcherEggs") != null)
         closeHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("CloseHatcherEggs"));
-
+    closeSetterEggsReport += closeSetterEggs ;
+    closeHatcherEggsReport += closeHatcherEggs;
     groupSumCloseEggs += (closeSetterEggs + closeHatcherEggs);
 }
 
 private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     xrTableCell46.Text = groupSumOpenEggs.ToString("N0");
-    groupSumOpenEggs = 0;
 }
 
 private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     xrTableCell14.Text = OpenMachineReport.ToString("N0");
-    OpenMachineReport = 0;
 }
 
 private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
@@ -201,22 +207,22 @@ private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.Canc
         closeHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("CloseHatcherEggs"));
 
     decimal result = closeSetterEggs + closeHatcherEggs; // ✅ fixed: use close variables
-    CloseMachineReport += result; // ✅ added semicolon
 
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0");
+    cell.Text = result.ToString("N0");
+    closeSetterEggsReport += closeSetterEggs ;
+    closeHatcherEggsReport += closeHatcherEggs ;
+    CloseMachineReport = closeSetterEggsReport  + closeHatcherEggsReport ;
 }
 
 private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     xrTableCell53.Text = groupSumCloseEggs.ToString("N0");
-    groupSumCloseEggs = 0;
 }
 
 private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     xrTableCell40.Text = CloseMachineReport.ToString("N0");
-    CloseMachineReport = 0;
 }
 
 

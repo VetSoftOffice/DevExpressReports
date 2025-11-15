@@ -287,7 +287,8 @@ private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.Canc
     if (GetCurrentColumnValue("RejectChicks") != null)
         rejectChicks = Convert.ToDecimal(GetCurrentColumnValue("RejectChicks"));
 
-    decimal result = saleableChicks + rejectChicks;
+    decimal result = 0
+    result  = saleableChicks + rejectChicks;
     TotalSaleableRejectChicksReport += result;
 
     XRTableCell cell = sender as XRTableCell;
@@ -298,14 +299,12 @@ private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.Canc
 {
     XRTableCell cell = sender as XRTableCell;
     cell.Text = groupSumSaleableRejectChicks.ToString("N0");
-    groupSumSaleableRejectChicks = 0;
 }
 
 private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     XRTableCell cell = sender as XRTableCell;
     cell.Text = TotalSaleableRejectChicksReport.ToString("N0");
-    TotalSaleableRejectChicksReport = 0;
 }
 
 private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
@@ -337,7 +336,6 @@ private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.Canc
 {
     XRTableCell cell = sender as XRTableCell;
     cell.Text = TotalPercGroup.ToString("N2");
-    TotalPercGroup = 0;
 }
 
 private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)

@@ -184,10 +184,11 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
        decimal settedEggs  = 0;
        if (GetCurrentColumnValue("SellableChicks") != null)
         SellableChicks= Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
-        groupSellableChicks+= SellableChicks;
 
      if (GetCurrentColumnValue("SettedEggs") != null)
         settedEggs= Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        
+     groupSellableChicks+= SellableChicks;
      groupSettedEggs += settedEggs;
      TotalSelChicksGroup = (groupSellableChicks* 100m) / groupSettedEggs ;
     //---------- new logic for Infertile Eggs ------------------
@@ -268,8 +269,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
 
 private void xrTableCell93_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       xrTableCell93.Text = TotalSelChicksGroup.ToString("0");
-      TotalSelChicksGroup = 0; // reset for next group
+       xrTableCell93.Text = TotalSelChicksGroup.ToString("N2");
 
 
 }
@@ -284,7 +284,9 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
 
      if (GetCurrentColumnValue("SettedEggs") != null)
         settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-        TotalSettedEggs += settedEggs;
+        
+      TotalSellableChicks += SellableChicks;
+      TotalSettedEggs += settedEggs;
      Total = (TotalSettedEggs * 100)  /  TotalSellableChicks ;
 
 }

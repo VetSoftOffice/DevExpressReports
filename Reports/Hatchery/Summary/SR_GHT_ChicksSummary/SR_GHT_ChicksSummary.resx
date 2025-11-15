@@ -128,7 +128,12 @@ decimal groupSumOfTotalLoss = 0;
 decimal groupSumOfTotalCullsDead = 0;
 decimal groupResultOfTotal = 0;
 decimal groupResultOfTotalLoss = 0;
-
+decimal fChicksGroup  = 0;
+decimal mChicksGroup  = 0;
+decimal fCullsGroup = 0 ;
+decimal mCullsGroup = 0;
+decimal fDeadGroup = 0;
+decimal mDeadGroup = 0;
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal fChicks = 0;
     decimal mChicks = 0;
@@ -154,8 +159,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     if (GetCurrentColumnValue("MChicks") != null)
         mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
-
-    groupSumChicks += (fChicks + mChicks);
+        
+    fChicksGroup += fChicks ;
+    mChicksGroup += mChicks ;
+    groupSumChicks = (fChicksGroup + mChicksGroup);
 
     // --- New logic for culls + dead ---
     decimal fCulls = 0;
@@ -174,8 +181,13 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     if (GetCurrentColumnValue("MDead") != null)
         mDead = Convert.ToDecimal(GetCurrentColumnValue("MDead"));
+    decimal fCullsGroup += fCulls ;
+    decimal mCullsGroup += mCulls;
+    decimal fDeadGroup += fDead;
+    decimal mDeadGroup += mDead;
 
-    groupSumCullsDead += (fCulls + mCulls + fDead + mDead);
+
+    groupSumCullsDead = (fCullsGroup + mCullsGroup + fDeadGroup + mDeadGroup );
 
     // -- new logic for culls and dead without specifying the gender
     decimal Culls = 0;
@@ -213,7 +225,6 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
 private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     xrTableCell55.Text = groupSumChicks.ToString("N0");
-    groupSumChicks = 0; // reset for next LineType group
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -241,8 +252,7 @@ private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell63.Text = groupSumCullsDead.ToString("0");
-    groupSumCullsDead = 0;
+    xrTableCell63.Text = groupSumCullsDead.ToString("N0");
 }
 
 private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
