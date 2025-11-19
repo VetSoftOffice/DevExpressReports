@@ -239,6 +239,8 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     TotalCullsEggsGroup = (groupCullsEggs * 100m) / groupSettedEggs;
     //---------- new logic for Culls + SellableChicks ------------------
     decimal groupCullsSellableEggs  = 0;
+    decimal CullsGroup  = 0;
+    decimal SellableChicksGroup  = 0;
     // --- Culls ---
     if (GetCurrentColumnValue("Culls") != null)
         Culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
@@ -246,8 +248,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     // --- SellableChicks ---
     if (GetCurrentColumnValue("SellableChicks") != null)
         SellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
-        groupCullsSellableEggs += (Culls + SellableChicks );
-    
+        
+    CullsGroup += Culls ;
+    SellableChicksGroup += SellableChicks ;
+    groupCullsSellableEggs  = CullsGroup  + SellableChicksGroup  ;
     // --- Percentage ---
     TotalCullsSellableEggsGroup = (groupCullsSellableEggs * 100m) / groupSettedEggs;
     //---------- new logic for Culls + SellableChicks ------------------
@@ -320,14 +324,9 @@ private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.Canc
     if (GetCurrentColumnValue("SettedEggs") != null){
             settedEggsInfertile = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
             settedEggsInfertileReport += settedEggsInfertile ;
-
-
         }
-         TotalReportInfertileEggs += InfertileEggs;
-     if (totalReportSettedEggs  != 0){
-              TotalInfertileEggs = (TotalReportInfertileEggs  * 100m) / settedEggsInfertileReport;
-         }
-
+    TotalReportInfertileEggs += InfertileEggs;
+    
     
 }
 
@@ -337,7 +336,9 @@ private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         
+      if (totalReportSettedEggs  != 0){
+              TotalInfertileEggs = (TotalReportInfertileEggs  * 100m) / settedEggsInfertileReport;
+         }
      xrTableCell45.Text = TotalInfertileEggs.ToString("N2");
 
 }

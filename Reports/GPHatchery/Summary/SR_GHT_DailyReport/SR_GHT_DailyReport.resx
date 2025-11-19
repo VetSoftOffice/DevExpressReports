@@ -129,14 +129,17 @@ Iif(IsNullOrEmpty([Deads]), 0, [Deads])
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal OpenMachineReport = 0;
+    <value>decimal openSetterEggsGroup  = 0;
+decimal openHatcherEggsGroup  = 0;
+decimal openSetterEggsReport  = 0;
+decimal openHatcherEggsReport  = 0;
+decimal closeSetterEggsReport =0;
+decimal closeHatcherEggsReport = 0;
+decimal OpenMachineReport = 0;
 decimal groupSumOpenEggs = 0;
 decimal CloseMachineReport = 0;
 decimal groupSumCloseEggs = 0;
-decimal openSetterEggsGroup  = 0;
-decimal openHatcherEggsGroup  = 0;
-decimal closeSetterEggsReport =0;
-decimal closeHatcherEggsReport = 0;
+
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     decimal openSetterEggs = 0;

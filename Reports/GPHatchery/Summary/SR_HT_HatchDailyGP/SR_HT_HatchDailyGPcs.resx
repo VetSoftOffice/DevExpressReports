@@ -138,6 +138,7 @@
     <value>decimal SellableChickReport = 0;
 decimal SettedEggsSellableChicksReport  = 0;
 decimal TotahHatchPer  =0;
+decimal FertPer  = 0;
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal SellableChicks= 0;
     decimal SettedEggsSellableChicks = 0;
@@ -167,6 +168,37 @@ private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.Canc
         
     XRTableCell cell = sender as XRTableCell;
     cell.Text = TotahHatchPer.ToString("0.00");
+
+}
+
+private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal FertileEggs= 0;
+    decimal SettedEggsFertile = 0;
+    decimal result = 0;
+    if (GetCurrentColumnValue("FertileEggs") != null )
+        FertileEggs= Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
+        
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        SettedEggsFertile = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    
+    if (SettedEggsFertile != 0)
+    result = (FertileEggs*100)/ SettedEggsFertile ;
+
+
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N2"); 
+    FertileEggsReport += FertileEggs;
+    SettedEggsFertileReport += SettedEggsFertile ;
+}
+
+private void xrTableCell69_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
+    if(SettedEggsFertileReport != 0){
+        
+           FertPer = ( FertileEggsReport * 100m) / SettedEggsFertileReport ;
+        }
+        
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = FertPer.ToString("0.00");
 
 }
 </value>

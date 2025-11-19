@@ -139,6 +139,11 @@
 decimal CullsReport  = 0;
 decimal SettedEggsGradeOutReport  = 0;
 decimal GradeOutReport = 0;
+decimal DeadsGroup = 0;
+decimal CullsGroup = 0;
+decimal SettedEggsGradeOutGroup = 0;
+decimal GradeOutGroup = 0;
+
 private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal Deads = 0;
     decimal Culls= 0;
@@ -164,6 +169,48 @@ private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.Cance
     CullsReport += Culls;
     SettedEggsGradeOutReport += SettedEggsGradeOut ;
     GradeOutReport = DeadsReport  + CullsReport ;
+
+}
+
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      decimal Deads = 0;
+    decimal Culls= 0;
+    decimal SettedEggsGradeOut = 0;
+    decimal result = 0;
+    if (GetCurrentColumnValue("Deads") != null )
+        Deads = Convert.ToDecimal(GetCurrentColumnValue("Deads"));
+        
+    if (GetCurrentColumnValue("Culls") != null)
+        Culls= Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+        
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        SettedEggsGradeOut = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        
+    DeadsGroup += Deads ;
+    CullsGroup += Culls;
+    SettedEggsGradeOutGroup += SettedEggsGradeOut ;
+    GradeOutGroup = DeadsGroup + CullsGroup ;
+
+}
+
+private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    if(SettedEggsGradeOutGroup  != 0){
+        
+            GradeGradeOutTotalGroup = (GradeOutGroup * 100m) / SettedEggsGradeOutGroup ;
+        }
+     XRTableCell cell = sender as XRTableCell;
+     cell.Text = GradeGradeOutTotalGroup.ToString("0.00");
+
+}
+
+private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     if(SettedEggsGradeOutReport  != 0){
+        
+            GradeGradeOutTotalReport = (GradeOutReport * 100m) / SettedEggsGradeOutReport ;
+        }
+     XRTableCell cell = sender as XRTableCell;
+     cell.Text = GradeGradeOutTotalReport.ToString("0.00");
 
 }
 </value>

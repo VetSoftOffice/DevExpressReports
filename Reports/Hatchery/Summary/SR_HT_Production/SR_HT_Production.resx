@@ -144,6 +144,8 @@ decimal totalChicksSettedEggs_Hatch = 0;
 decimal totalFertPer_Hatch = 0;
 decimal totalFertileEggs_Hatch = 0;
 decimal totalChicks_Hatch = 0;
+decimal totalFertileEggs_Fertile = 0;
+decimal totalChicksSettedEggs_Fertile = 0;
 private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
    decimal chicks = 0;
     decimal settedEggs = 0;
@@ -176,31 +178,6 @@ private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = totalHatchPercent.ToString("0.00");   
    }
 
-private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    
-}
-
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal fertileEggs = 0;
-    decimal settedEggs = 0;
-
-    if (GetCurrentColumnValue("FertileEggs") != null)
-        fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
-
-    if (GetCurrentColumnValue("ChicksSettedEggs") != null)
-        settedEggs = Convert.ToDecimal(GetCurrentColumnValue("ChicksSettedEggs"));
-      // accumulate totals for the footer calculation
-    totalFertileEggs += fertileEggs;
-    totalChicksSettedEggs_Fert += settedEggs;
-}
-
-private void xrTableCell39_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
-
-    if (totalChicksSettedEggs_Fert &gt; 0)
-        totalFertPercent = totalFertileEggs * 100 / totalChicksSettedEggs_Fert;
-
-    ((XRTableCell)sender).Text = totalFertPercent.ToString("0.00");
-}
 
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal Chicks_HOF= 0;
@@ -259,6 +236,27 @@ private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 
+
+private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal settedEggs_Fertile = 0;
+    decimal fertileEggs_Fertile = 0;
+    decimal FertPer  =0;
+    if (GetCurrentColumnValue("ChicksSettedEggs") != null)
+        settedEggs_Fertile = Convert.ToDecimal(GetCurrentColumnValue("ChicksSettedEggs"));
+        
+    if (GetCurrentColumnValue("FertileEggs") != null)
+        fertileEggs_Fertile = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
+        
+    // Compute @HatchPer
+    if (settedEggs_Fertile&gt; 0)
+        FertPer = (fertileEggs_Fertile * 100m) / settedEggs_Fertile;
+        
+      ((XRTableCell)sender).Text = FertPer.ToString("0.00");
+      
+    totalFertileEggs_Fertile += fertileEggs_Fertile;
+    totalChicksSettedEggs_Fertile += settedEggs_Fertile;
+
+}
 </value>
   </data>
 </root>

@@ -236,7 +236,11 @@ private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.Canc
     cell.Text = totalRejSel.ToString("N2");
 
     // Keep grand total for all rows
-    grandTotalRejSel += totalRejSel;
+        // accumulate totals
+    grandTotalDeadChicks   += deadChicks  ;
+    grandTotalCullsChicks += CullsChicks;
+    grandTotalSelChicks += selChicks;
+
 }
 
 private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {

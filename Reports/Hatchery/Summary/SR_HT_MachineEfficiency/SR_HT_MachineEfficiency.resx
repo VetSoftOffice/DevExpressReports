@@ -180,6 +180,32 @@ cell.Text = culls.ToString("N0"); // Format with 2 decimal places
 
 }
 
+
+private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+decimal SettedEggs= 0;
+decimal GradeAChicks = 0;
+decimal result = 0;
+// --- Deads ---
+if (GetCurrentColumnValue("SettedEggs") != null)
+    SettedEggs= Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+
+// --- Culls ---
+if (GetCurrentColumnValue("GradeAChicks") != null)
+    GradeAChicks= Convert.ToDecimal(GetCurrentColumnValue("GradeAChicks"));
+   
+   if(SettedEggs != 0){
+        result  = (GradeAChicks * 100m) / SettedEggs;
+       }
+  
+   XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
+
+ 
+}
+
+private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    
+}
 </value>
   </data>
 </root>

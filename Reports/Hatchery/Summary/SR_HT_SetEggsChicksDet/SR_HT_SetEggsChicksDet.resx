@@ -207,8 +207,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     if (GetCurrentColumnValue("RejectChicks") != null)
         rejectChicks = Convert.ToDecimal(GetCurrentColumnValue("RejectChicks"));
 
-    decimal result = saleableChicks + rejectChicks;
-    groupSumSaleableRejectChicks += result;
+    saleableChicksGroup += saleableChicks ;
+    rejectChicksGroup += rejectChicks  ;
+    
+    groupSumSaleableRejectChicks = saleableChicksGroup  + rejectChicksGroup  ;
 
     //
     if (settedEggs != 0)
@@ -287,12 +289,13 @@ private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.Canc
     if (GetCurrentColumnValue("RejectChicks") != null)
         rejectChicks = Convert.ToDecimal(GetCurrentColumnValue("RejectChicks"));
 
-    decimal result = 0
-    result  = saleableChicks + rejectChicks;
-    TotalSaleableRejectChicksReport += result;
 
     XRTableCell cell = sender as XRTableCell;
     cell.Text = result.ToString("N0");
+    saleableChicksReport += saleableChicks ;
+    rejectChicksReport += rejectChicks  ;
+    TotalSaleableRejectChicksReport = saleableChicksReport  + rejectChicksReport ;
+
 }
 
 private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)

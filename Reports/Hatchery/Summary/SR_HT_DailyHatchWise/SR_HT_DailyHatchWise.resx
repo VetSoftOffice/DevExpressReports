@@ -157,6 +157,19 @@ decimal SaleFertile  = 0;
 decimal infertileEggsTotal_1 = 0;
 decimal InfertileEggsSettedEggs =0;
 decimal InfertileEggsSettedEggsReport = 0;
+decimal settedEggsRejSelableReport = 0;
+decimal rejSellEggsReport = 0;
+decimal rejSellEggsReport = 0;
+decimal TotalRejSelable = 0;
+decimal settedEggsUnSellableRejSelableReport = 0;
+decimal rejUnSellableSellEggsReport = 0;
+decimal rejUnSellEggsReport = 0;
+decimal TotalRejUnSellableSelable = 0;
+decimal settedEggsInfertileEggsGroup = 0;
+decimal InfertileEggsGroup = 0;
+decimal InfertileEggsTotal = 0;
+decimal infertileEggsReport = 0;
+decimal settedEggsInfertileReport = 0;
 private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     
     // --- Get values from the current row ---
@@ -179,13 +192,19 @@ private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.Canc
     decimal result = (settedAndRejEggs &gt; 0)
         ? (rejSellEggs / settedAndRejEggs) * 100
         : 0;
-     SettedAndRejEggsTotalReport += result;
     // --- Assign to cell ---
     ((XRTableCell)sender).Text = result.ToString("0.00");
+     settedEggsRejSelableReport +=  settedEggs ;
+     rejSellEggsReport += rejSellEggs ;
+     rejSellEggsReport += rejUnSellEggs ;
+     TotalRejSelable = settedEggsRejSelableReport  + rejSellEggsReport  + rejUnSellEggsReport ;
+     
+     SettedAndRejEggsTotalReport += result;
+
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal SettedEggs = 0;
+decimal SettedEggs = 0;
 decimal RejSellEggs = 0;
 decimal RejUnSellEggs = 0;
 
@@ -198,41 +217,23 @@ if (GetCurrentColumnValue("RejSellEggs") != null)
 if (GetCurrentColumnValue("RejUnSellEggs") != null)
     RejUnSellEggs = Convert.ToDecimal(GetCurrentColumnValue("RejUnSellEggs"));
 
-decimal SettedAndRejEggs = SettedEggs + RejSellEggs + RejUnSellEggs;
-decimal result = 0;
-
-if (SettedAndRejEggs &gt; 0)
-    result = (RejSellEggs / SettedAndRejEggs) * 100;
-    SettedAndRejEggsTotal +=result ;
+settedEggsRejSelableGroup +=  SettedEggs ;
+rejSellEggsGroup += RejSellEggs ;
+rejUnSellEggsGroup += RejUnSellEggs ;
+SettedAndRejEggsTotalGroup = settedEggsRejSelableGroup + rejSellEggsGroup + rejUnSellEggsGroup ;
+if (SettedAndRejEggsTotalGroup &gt; 0)
+    SettedAndRejEggsTotal = (rejSellEggsGroup / SettedAndRejEggsTotalGroup ) * 100;
    //-- new logic for unSellableEggs
+if (SettedAndRejEggsTotalGroup &gt; 0)
+    SettedAndRejUnSelableEggsTotal = (RejUnSellEggs / SettedAndRejEggsTotalGroup ) * 100;
 
-if (GetCurrentColumnValue("SettedEggs") != null)
-    SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-
-if (GetCurrentColumnValue("RejSellEggs") != null)
-    RejSellEggs = Convert.ToDecimal(GetCurrentColumnValue("RejSellEggs"));
-
-if (GetCurrentColumnValue("RejUnSellEggs") != null)
-    RejUnSellEggs = Convert.ToDecimal(GetCurrentColumnValue("RejUnSellEggs"));
-
-decimal SettedAndRejEggs1 = SettedEggs + RejSellEggs + RejUnSellEggs;
-decimal result1 = 0;
-
-if (SettedAndRejEggs1 &gt; 0)
-    result = (RejUnSellEggs / SettedAndRejEggs1) * 100;
-    SettedAndRejUnSellableEggsTotal +=result1 ;
    //-- new logic for Infertile Eggs
     // --- Declare variables ---
     decimal infertileEggs = 0;
     decimal result2 = 0;
 
     // --- Read values safely ---
-    if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
-    {
-        SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-    }
-
+    
     if (GetCurrentColumnValue("InfertileEggs") != null &amp;&amp;
         !string.IsNullOrEmpty(GetCurrentColumnValue("InfertileEggs").ToString()))
     {
@@ -240,17 +241,12 @@ if (SettedAndRejEggs1 &gt; 0)
     }
 
     // --- Equation (same as Iif([SettedEggs] &gt; 0, [InfertileEggs] / [SettedEggs] * 100, 0)) ---
-    if (SettedEggs &gt; 0){
-        result2 = infertileEggs / SettedEggs;
+    settedEggsInfertileEggsGroup +=  SettedEggs ;
+    InfertileEggsGroup += infertileEggs ;
+    if (settedEggsInfertileEggsGroup &gt; 0)
+        InfertileEggsTotal = (InfertileEggsGroup / settedEggsInfertileEggsGroup ) * 100;
 
-        
-      }
-    else{
-         result2 = 0;
-        
-        }
-     infertileEggsTotal +=result2 ;
-    //-- new logic for Fertile Eggs
+        //-- new logic for Fertile Eggs
     // --- Declare variables ---
     decimal fertileEggs = 0;
     decimal result3 = 0;
@@ -491,22 +487,25 @@ decimal result = 0;
 
 if (SettedAndRejEggs &gt; 0){
     result = (RejUnSellEggs / SettedAndRejEggs) * 100;
-   SettedAndRejEggsTotalReport  += result; 
   }
  XRTableCell cell = sender as XRTableCell;
  cell.Text = result.ToString("N2"); // format with 2 decimals
+ settedEggsUnSellableRejSelableReport +=  settedEggs ;
+ rejUnSellableSellEggsReport += rejSellEggs ;
+ rejUnSellEggsReport += rejUnSellEggs ;
+ TotalRejUnSellableSelable = settedEggsRejSelableReport  + rejSellEggsReport  + rejUnSellEggsReport ;
+     
+
 
 }
 
 private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell80.Text = SettedAndRejUnSellableEggsTotal.ToString("N2");
-      SettedAndRejUnSellableEggsTotal= 0; // reset for next group
 
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         xrTableCell49.Text = SettedAndRejEggsTotalReport.ToString("N2");
-      SettedAndRejEggsTotalReport  = 0; // reset for next group
+         xrTableCell49.Text = SettedAndUnSellableRejEggsTotalReport.ToString("N2");
 
 }
 
@@ -537,16 +536,8 @@ private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.Canc
     // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
     cell.Text = result.ToString("N2"); // format with 2 decimals
-    infertileEggsTotal_1+= infertileEggs ;
-    if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
-    {
-        InfertileEggsSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-        InfertileEggsSettedEggsReport += InfertileEggsSettedEggs;
-    }
-    if(InfertileEggsSettedEggsReport  !=0){
-           infertileEggsTotalReport = (infertileEggsTotal_1* 100m) / InfertileEggsSettedEggsReport; 
-        }
+    infertileEggsReport +=  infertileEggs ;
+    settedEggsInfertileReport += settedEggs ;
 
 }
 
