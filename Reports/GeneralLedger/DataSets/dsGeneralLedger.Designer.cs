@@ -15285,6 +15285,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             private global::System.Data.DataColumn columnFreeQty;
             
+            private global::System.Data.DataColumn columnTotalPriceAsText;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_FC_DealingsAndAccountsDataTable() {
@@ -15890,6 +15892,14 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalPriceAsTextColumn {
+                get {
+                    return this.columnTotalPriceAsText;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -15996,7 +16006,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                         string Address, 
                         string VATNumber, 
                         string CommercialRegNo_Comp, 
-                        int FreeQty) {
+                        int FreeQty, 
+                        string TotalPriceAsText) {
                 SR_FC_DealingsAndAccountsRow rowSR_FC_DealingsAndAccountsRow = ((SR_FC_DealingsAndAccountsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         tStActionID,
@@ -16069,7 +16080,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                         Address,
                         VATNumber,
                         CommercialRegNo_Comp,
-                        FreeQty};
+                        FreeQty,
+                        TotalPriceAsText};
                 rowSR_FC_DealingsAndAccountsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSR_FC_DealingsAndAccountsRow);
                 return rowSR_FC_DealingsAndAccountsRow;
@@ -16163,6 +16175,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 this.columnVATNumber = base.Columns["VATNumber"];
                 this.columnCommercialRegNo_Comp = base.Columns["CommercialRegNo_Comp"];
                 this.columnFreeQty = base.Columns["FreeQty"];
+                this.columnTotalPriceAsText = base.Columns["TotalPriceAsText"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16310,6 +16323,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 base.Columns.Add(this.columnCommercialRegNo_Comp);
                 this.columnFreeQty = new global::System.Data.DataColumn("FreeQty", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFreeQty);
+                this.columnTotalPriceAsText = new global::System.Data.DataColumn("TotalPriceAsText", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalPriceAsText);
                 this.columntStActionID.ReadOnly = true;
                 this.columnDocNumber.ReadOnly = true;
                 this.columnDocNumber.MaxLength = 1;
@@ -16413,6 +16428,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
                 this.columnCommercialRegNo_Comp.ReadOnly = true;
                 this.columnCommercialRegNo_Comp.MaxLength = 1;
                 this.columnFreeQty.ReadOnly = true;
+                this.columnTotalPriceAsText.ReadOnly = true;
+                this.columnTotalPriceAsText.MaxLength = 1;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -30107,6 +30124,23 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TotalPriceAsText {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_FC_DealingsAndAccounts.TotalPriceAsTextColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalPriceAsText\' in table \'SR_FC_DealingsAndAccounts\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_FC_DealingsAndAccounts.TotalPriceAsTextColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IstStActionIDNull() {
                 return this.IsNull(this.tableSR_FC_DealingsAndAccounts.tStActionIDColumn);
             }
@@ -30955,6 +30989,18 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFreeQtyNull() {
                 this[this.tableSR_FC_DealingsAndAccounts.FreeQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalPriceAsTextNull() {
+                return this.IsNull(this.tableSR_FC_DealingsAndAccounts.TotalPriceAsTextColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalPriceAsTextNull() {
+                this[this.tableSR_FC_DealingsAndAccounts.TotalPriceAsTextColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -39354,6 +39400,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
             tableMapping.ColumnMappings.Add("VATNumber", "VATNumber");
             tableMapping.ColumnMappings.Add("CommercialRegNo_Comp", "CommercialRegNo_Comp");
             tableMapping.ColumnMappings.Add("FreeQty", "FreeQty");
+            tableMapping.ColumnMappings.Add("TotalPriceAsText", "TotalPriceAsText");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -39380,6 +39427,8 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptStActionID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 19, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptStActionTypeSettingID", global::System.Data.SqlDbType.SmallInt, 2, global::System.Data.ParameterDirection.Input, 5, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pWhichReport", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateFrom", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateTo", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pIsDebug", global::System.Data.SqlDbType.Bit, 1, global::System.Data.ParameterDirection.Input, 1, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -39387,7 +39436,7 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsGeneralLedger.SR_FC_DealingsAndAccountsDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptHrEmployeeID, global::System.Nullable<long> ptStActionID, global::System.Nullable<short> ptStActionTypeSettingID, global::System.Nullable<byte> pWhichReport, global::System.Nullable<bool> pIsDebug) {
+        public virtual dsGeneralLedger.SR_FC_DealingsAndAccountsDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptHrEmployeeID, global::System.Nullable<long> ptStActionID, global::System.Nullable<short> ptStActionTypeSettingID, global::System.Nullable<byte> pWhichReport, global::System.Nullable<global::System.DateTime> pDateFrom, global::System.Nullable<global::System.DateTime> pDateTo, global::System.Nullable<bool> pIsDebug) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((ptGnBookID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptGnBookID.Value));
@@ -39425,11 +39474,23 @@ namespace DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableA
             else {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((pIsDebug.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[7].Value = ((bool)(pIsDebug.Value));
+            if ((pDateFrom.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((System.DateTime)(pDateFrom.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((pDateTo.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((System.DateTime)(pDateTo.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((pIsDebug.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((bool)(pIsDebug.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             dsGeneralLedger.SR_FC_DealingsAndAccountsDataTable dataTable = new dsGeneralLedger.SR_FC_DealingsAndAccountsDataTable();
             this.Adapter.Fill(dataTable);
