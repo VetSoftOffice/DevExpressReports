@@ -2818,6 +2818,7 @@
             this.xrLabel3});
             this.GroupFooter2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Iif(sum([TotalPrice])==[BillTotalPrice],false ,true )\n")});
+            this.GroupFooter2.KeepTogether = true;
             this.GroupFooter2.Level = 1;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
@@ -2882,6 +2883,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowQR\n")});
             this.GroupFooter8.Level = 7;
             this.GroupFooter8.Name = "GroupFooter8";
+            this.GroupFooter8.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
             // 
             // SubBand5
             // 

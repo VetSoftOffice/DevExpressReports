@@ -1080,7 +1080,7 @@
         </Item1>
       </Controls>
     </Item15>
-    <Item16 Ref="533" ControlType="GroupFooterBand" Name="GroupFooter2" Level="1">
+    <Item16 Ref="533" ControlType="GroupFooterBand" Name="GroupFooter2" Level="1" KeepTogether="true">
       <Controls>
         <Item1 Ref="534" ControlType="XRLabel" Name="xrLabel9" Multiline="true" TextAlignment="MiddleRight" Borders="None">
           <Summary Ref="535" Running="Group" />
@@ -1206,7 +1206,7 @@
         </Item7>
       </Controls>
     </Item21>
-    <Item22 Ref="596" ControlType="GroupFooterBand" Name="GroupFooter8" Level="7">
+    <Item22 Ref="596" ControlType="GroupFooterBand" Name="GroupFooter8" Level="7" PageBreak="AfterBand">
       <Controls>
         <Item1 Ref="597" ControlType="XRBarCode" Name="xrBarCode1" Module="1500" AutoModule="true" BarCodeOrientation="RotateRight" TextAlignment="MiddleRight" ShowText="false" Padding="10,10,0,0,100">
           <Symbology Ref="598" Name="QRCode" CompactionMode="Byte" />
