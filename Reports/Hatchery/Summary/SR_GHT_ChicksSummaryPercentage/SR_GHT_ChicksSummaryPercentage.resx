@@ -359,6 +359,7 @@ private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.Canc
     cell.Text = result.ToString("N0"); 
 
 }
+
 </value>
   </data>
 </root>
