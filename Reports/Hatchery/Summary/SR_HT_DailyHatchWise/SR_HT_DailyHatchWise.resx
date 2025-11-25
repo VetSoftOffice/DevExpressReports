@@ -137,11 +137,7 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal SettedAndRejEggsTotal  = 0;
 decimal SettedAndRejEggsTotalReport = 0;
-decimal SettedAndRejUnSellableEggsTotal  = 0;
 decimal infertileEggsTotalReport=0;
-decimal infertileEggsTotal = 0 ;
-decimal fertileEggsTotalReport = 0;
-decimal fertileEggsTotal  =0;
 decimal totalCullsAndSellableChicksReport  = 0;
 decimal totalCullsAndSellableChicks  = 0;
 decimal totalDeadRatioReport = 0;
@@ -154,22 +150,46 @@ decimal totalChicksRatioReport = 0;
 decimal totalChicksRatio = 0;
 decimal SaleFertileReport  = 0;
 decimal SaleFertile  = 0;
-decimal infertileEggsTotal_1 = 0;
-decimal InfertileEggsSettedEggs =0;
-decimal InfertileEggsSettedEggsReport = 0;
-decimal settedEggsRejSelableReport = 0;
-decimal rejSellEggsReport = 0;
-decimal rejSellEggsReport = 0;
-decimal TotalRejSelable = 0;
-decimal settedEggsUnSellableRejSelableReport = 0;
-decimal rejUnSellableSellEggsReport = 0;
-decimal rejUnSellEggsReport = 0;
-decimal TotalRejUnSellableSelable = 0;
+decimal TotalAllSettedEggs = 0;
+decimal TotalAllSettedEggsGroup = 0;
+// Group variables
+decimal settedEggsRejSelableGroup = 0;
+decimal rejSellEggsGroup = 0;
+decimal rejUnSellEggsGroup = 0;
+decimal SettedAndRejEggsTotalGroup = 0;
+decimal SettedAndRejUnSelableEggsTotal = 0;
 decimal settedEggsInfertileEggsGroup = 0;
 decimal InfertileEggsGroup = 0;
 decimal InfertileEggsTotal = 0;
+decimal NonHatEggsSettedEggsGroup = 0;
+decimal NonHatEggsGroup = 0;
+decimal NonHatEggsTotal = 0;
+decimal deadsSettedEggsGroup = 0;
+decimal deadsGroup = 0;
+decimal CullsSettedEggsGroup= 0;
+decimal cullsGroup= 0;
+decimal sellableChicksSettedEggsGroup  = 0;
+decimal sellableChicksGroup= 0;
+decimal TotalChicksRatioSettedEggsGroup= 0;
+decimal TotalChicksRatiocullsGroup= 0;
+decimal TotalChicksRatioSellableChicksGroup= 0; 
+decimal SellablePercSettedEggsGroup= 0;
+decimal sellableChicksPercGroup= 0;
+decimal TotalChicksRatioFertileEggsGroup  = 0;
+decimal TotalSaleFertileGroup  = 0;
+// Report variables
 decimal infertileEggsReport = 0;
 decimal settedEggsInfertileReport = 0;
+decimal settedEggsRejSelableReport = 0;
+decimal rejSellEggsReport = 0;
+decimal rejUnSellEggsReportForSellableEggs  = 0;
+decimal rejUnSellEggsReportForUnSellableEggs = 0;
+decimal TotalRejSelable = 0;
+decimal settedEggsUnSellableRejSelableReport = 0;
+decimal rejUnSellableSellEggsReport = 0;
+decimal TotalRejUnSellableSelable = 0;
+decimal SettedAndUnSellableRejEggsTotalReport = 0;
+
 private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     
     // --- Get values from the current row ---
@@ -196,10 +216,9 @@ private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = result.ToString("0.00");
      settedEggsRejSelableReport +=  settedEggs ;
      rejSellEggsReport += rejSellEggs ;
-     rejSellEggsReport += rejUnSellEggs ;
-     TotalRejSelable = settedEggsRejSelableReport  + rejSellEggsReport  + rejUnSellEggsReport ;
+     rejUnSellEggsReportForSellableEggs += rejUnSellEggs ;
+     TotalRejSelable = settedEggsRejSelableReport  + rejSellEggsReport  + rejUnSellEggsReportForSellableEggs ;
      
-     SettedAndRejEggsTotalReport += result;
 
 }
 
@@ -225,14 +244,15 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
     SettedAndRejEggsTotal = (rejSellEggsGroup / SettedAndRejEggsTotalGroup ) * 100;
    //-- new logic for unSellableEggs
 if (SettedAndRejEggsTotalGroup &gt; 0)
-    SettedAndRejUnSelableEggsTotal = (RejUnSellEggs / SettedAndRejEggsTotalGroup ) * 100;
+    SettedAndRejUnSelableEggsTotal = SettedAndRejEggsTotalGroup ;
 
    //-- new logic for Infertile Eggs
     // --- Declare variables ---
     decimal infertileEggs = 0;
-    decimal result2 = 0;
-
+    decimal SettedEggsinfertileEggs   = 0;
     // --- Read values safely ---
+    if (GetCurrentColumnValue("SettedEggs") != null)
+    SettedEggsinfertileEggs  = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
     
     if (GetCurrentColumnValue("InfertileEggs") != null &amp;&amp;
         !string.IsNullOrEmpty(GetCurrentColumnValue("InfertileEggs").ToString()))
@@ -241,38 +261,38 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
     }
 
     // --- Equation (same as Iif([SettedEggs] &gt; 0, [InfertileEggs] / [SettedEggs] * 100, 0)) ---
-    settedEggsInfertileEggsGroup +=  SettedEggs ;
+    settedEggsInfertileEggsGroup +=  SettedEggsinfertileEggs  ;
     InfertileEggsGroup += infertileEggs ;
     if (settedEggsInfertileEggsGroup &gt; 0)
-        InfertileEggsTotal = (InfertileEggsGroup / settedEggsInfertileEggsGroup ) * 100;
+        InfertileEggsTotal =  (InfertileEggsGroup  * 100m) / settedEggsInfertileEggsGroup ;
 
-        //-- new logic for Fertile Eggs
+        //-- new logic for NonHat Eggs
     // --- Declare variables ---
-    decimal fertileEggs = 0;
-    decimal result3 = 0;
-    
+    decimal NonHatEggs = 0;
+    decimal NonHatEggsSettedEggs  = 0;
     // --- Read values safely ---
     if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
         !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
     {
-        SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        NonHatEggsSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
     }
     
-    if (GetCurrentColumnValue("FertileEggs") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("FertileEggs").ToString()))
+    if (GetCurrentColumnValue("NonHatEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("NonHatEggs").ToString()))
     {
-        fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
+        NonHatEggs = Convert.ToDecimal(GetCurrentColumnValue("NonHatEggs"));
     }
-    
-    // --- Equation (same as Iif([SettedEggs] &gt; 0, [FertileEggs] / [SettedEggs] * 100, 0)) ---
-    if (SettedEggs &gt; 0)
+    NonHatEggsSettedEggsGroup += NonHatEggsSettedEggs ;
+    NonHatEggsGroup += NonHatEggs ;
+    // --- Equation (same as Iif([SettedEggs] &gt; 0, [NonHatEggs] / [SettedEggs] * 100, 0)) ---
+    if (NonHatEggsSettedEggsGroup &gt; 0)
     {
-        result3 = (fertileEggs / SettedEggs ) * 100;
-        fertileEggsTotal += result3;
+        NonHatEggsTotal =  (NonHatEggsGroup * 100m)/ NonHatEggsSettedEggsGroup ;
+    
     }
     else
     {
-        result3 = 0;
+        NonHatEggsTotal = 0;
     }
 
        //-- new logic for Total Chicks (Culls + SellableChicks)
@@ -300,6 +320,7 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         // --- Optional: accumulate total ---
         totalCullsAndSellableChicks += result4;
         //-- new logic for Deads Eggs
+        decimal deadsSettedEggs  = 0;
         decimal deads = 0;
         decimal deadRatio = 0;
         
@@ -307,7 +328,7 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
             !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
         {
-            SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+            deadsSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
         }
         
         if (GetCurrentColumnValue("Deads") != null &amp;&amp;
@@ -315,11 +336,12 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         {
             deads = Convert.ToDecimal(GetCurrentColumnValue("Deads"));
         }
-        
+        deadsSettedEggsGroup += deadsSettedEggs ;
+        deadsGroup += deads  ;
         // --- Equation (same as Iif([SettedEggs] &gt; 0, [Deads] / [SettedEggs], 0)) ---
-        if (SettedEggs &gt; 0)
+        if (deadsSettedEggsGroup &gt; 0)
         {
-            deadRatio = deads / SettedEggs ;
+            deadRatio = (deadsGroup * 100m)/ deadsSettedEggsGroup ;
         }
         else
         {
@@ -327,16 +349,16 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         }
         
         // --- Optional: accumulate total ---
-        totalDeadRatioReport += deadRatio;
+        
+        totalDeadRatioReport = deadRatio;
             //-- new logic for Culls Ratio (Culls / SettedEggs)
         // --- Declare variables ---
-        decimal cullsRatio = 0;
-        
+        decimal CullsSettedEggs  = 0;
         // --- Read values safely ---
         if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
             !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
         {
-            SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+            CullsSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
         }
         
         if (GetCurrentColumnValue("Culls") != null &amp;&amp;
@@ -346,27 +368,27 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         }
         
         // --- Equation (same as Iif([SettedEggs] &gt; 0, [Culls] / [SettedEggs], 0)) ---
-        if (SettedEggs &gt; 0)
+        CullsSettedEggsGroup += CullsSettedEggs ;
+        cullsGroup += culls ;
+        if (CullsSettedEggsGroup &gt; 0)
         {
-            cullsRatio = culls / SettedEggs ;
-        }
+            totalCullsRatio =  (cullsGroup * 100m) / CullsSettedEggsGroup ;  
+                    }
         else
         {
-            cullsRatio = 0;
+            totalCullsRatio = 0;
         }
         
         // --- Optional: accumulate total ---
-        totalCullsRatio += cullsRatio;
         
             //-- new logic for Sellable Chicks Ratio (SellableChicks / SettedEggs)
         // --- Declare variables ---
-        decimal sellableRatio = 0;
-        
+        decimal sellableChicksSettedEggs  = 0;
         // --- Read values safely ---
         if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
             !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
         {
-            SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+            sellableChicksSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
         }
         
         if (GetCurrentColumnValue("SellableChicks") != null &amp;&amp;
@@ -376,44 +398,56 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         }
         
         // --- Equation (same as Iif([SettedEggs] &gt; 0, [SellableChicks] / [SettedEggs], 0)) ---
-        if (SettedEggs &gt; 0)
+        sellableChicksSettedEggsGroup  += sellableChicksSettedEggs ;
+        sellableChicksGroup += sellableChicks ;
+        if (sellableChicksSettedEggsGroup  &gt; 0)
         {
-            sellableRatio = sellableChicks / SettedEggs ;
+            totalSellableRatio = (sellableChicksGroup * 100m) / sellableChicksSettedEggsGroup  ;
         }
         else
         {
-            sellableRatio = 0;
+            totalSellableRatio = 0;
         }
-        
-        // --- Optional: accumulate total ---
-        totalSellableRatio += sellableRatio;
     //-- new logic for Total Chicks Ratio ((Culls + SellableChicks) / SettedEggs)
 // --- Declare variables ---
 decimal totalRatio = 0;
-
+decimal TotalChicksRatioSettedEggs  = 0;
+decimal TotalChicksRatioCulls = 0;
+decimal TotalChicksRatioSellableChicks  = 0;
+decimal TotalChicksRatioFertileEggs  = 0;
 // --- Read values safely ---
 if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
 {
-    SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    TotalChicksRatioSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
 }
 
 if (GetCurrentColumnValue("Culls") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("Culls").ToString()))
 {
-    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+    TotalChicksRatioCulls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
 }
 
 if (GetCurrentColumnValue("SellableChicks") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("SellableChicks").ToString()))
 {
-    sellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
+    TotalChicksRatioSellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
+}
+if (GetCurrentColumnValue("FertileEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("FertileEggs").ToString()))
+{
+    TotalChicksRatioFertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
 }
 
 // --- Equation (same as Iif([SettedEggs] &gt; 0, ([Culls] + [SellableChicks]) / [SettedEggs], 0)) ---
-if (SettedEggs &gt; 0)
+TotalChicksRatioSettedEggsGroup += TotalChicksRatioSettedEggs ;
+TotalChicksRatiocullsGroup +=  TotalChicksRatioCulls ;
+TotalChicksRatioSellableChicksGroup += TotalChicksRatioSellableChicks  ;
+TotalChicksRatioFertileEggsGroup += TotalChicksRatioFertileEggs ;
+
+if (TotalChicksRatioSettedEggsGroup &gt; 0)
 {
-    totalRatio = (culls + sellableChicks) / SettedEggs ;
+    totalRatio = ((TotalChicksRatiocullsGroup + TotalChicksRatioSellableChicksGroup ) * 100m)/ TotalChicksRatioSettedEggsGroup ;
 }
 else
 {
@@ -421,49 +455,67 @@ else
 }
 
 // --- Optional: accumulate total ---
-totalChicksRatio += totalRatio;
+totalChicksRatio = totalRatio;
     // -- New Logic for Sellable Chicks Percentage --
 
 // --- Declare variables ---
-decimal result5 = 0;
-
+decimal SellablePercSettedEggs = 0 ;
+decimal sellableChicksPercSellableChicks = 0;
+decimal SellablePerc = 0 ;
 // --- Read values safely ---
-if (GetCurrentColumnValue("FertileEggs") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("FertileEggs").ToString()))
+if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
 {
-    fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
+    SellablePercSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
 }
 
 if (GetCurrentColumnValue("SellableChicks") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("SellableChicks").ToString()))
 {
-    sellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
+    sellableChicksPercSellableChicks = Convert.ToDecimal(GetCurrentColumnValue("SellableChicks"));
 }
 
 // --- Perform calculation ---
-if (fertileEggs &gt; 0)
+SellablePercSettedEggsGroup += SellablePercSettedEggs ;
+sellableChicksPercGroup += sellableChicksPercSellableChicks ;
+if (SellablePercSettedEggsGroup &gt; 0)
 {
-    result5 = (sellableChicks / fertileEggs) * 100;
+    SellablePerc = (sellableChicksPercGroup * 100m) / SellablePercSettedEggsGroup ;
 }
 else
 {
-    result5 = 0;
+    SellablePerc = 0;
 }
-SaleFertile += result5 ;
+SaleFertile  = SellablePerc ;
 
+//New Logic for AllSetted Hatchibilty
+TotalAllSettedEggs = TotalChicksRatiocullsGroup  + TotalChicksRatioSellableChicksGroup ;
+if(TotalChicksRatioSettedEggsGroup  &gt; 0){
     
+    TotalAllSettedEggsGroup = (TotalAllSettedEggs * 100m) / TotalChicksRatioSettedEggsGroup  ;
+ }
+ 
+
+//New Logic for Sale / Fertile Hatchibilty
+if(TotalChicksRatioFertileEggsGroup&gt; 0){
+    
+    TotalSaleFertileGroup = (TotalChicksRatioSellableChicksGroup * 100m) / TotalChicksRatioFertileEggsGroup;
+ }
+ 
 
 }
 
 private void xrTableCell78_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
       xrTableCell78.Text = SettedAndRejEggsTotal.ToString("N2");
-      SettedAndRejEggsTotal= 0; // reset for next group
 
 }
 
 private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     if(TotalRejSelable  &gt; 0){
+           
+            SettedAndRejEggsTotalReport = (rejSellEggsReport * 100m) / TotalRejSelable  ;
+         }
      xrTableCell47.Text = SettedAndRejEggsTotalReport.ToString("N2");
-      SettedAndRejEggsTotalReport= 0; // reset for next group
 
 
 }
@@ -490,21 +542,27 @@ if (SettedAndRejEggs &gt; 0){
   }
  XRTableCell cell = sender as XRTableCell;
  cell.Text = result.ToString("N2"); // format with 2 decimals
- settedEggsUnSellableRejSelableReport +=  settedEggs ;
- rejUnSellableSellEggsReport += rejSellEggs ;
- rejUnSellEggsReport += rejUnSellEggs ;
- TotalRejUnSellableSelable = settedEggsRejSelableReport  + rejSellEggsReport  + rejUnSellEggsReport ;
+ settedEggsUnSellableRejSelableReport +=  SettedEggs ;
+ rejUnSellableSellEggsReport += RejSellEggs ;
+ rejUnSellEggsReportForUnSellableEggs += RejUnSellEggs ;
+ TotalRejUnSellableSelable = settedEggsUnSellableRejSelableReport + rejUnSellableSellEggsReport  + rejUnSellEggsReportForUnSellableEggs ;
      
 
 
 }
 
 private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell80.Text = SettedAndRejUnSellableEggsTotal.ToString("N2");
+     if(SettedAndRejEggsTotalGroup &gt; 0){ 
+                  SettedAndRejUnSelableEggsTotal = (rejUnSellEggsGroup * 100m) / SettedAndRejEggsTotalGroup ;
+             }
+     xrTableCell80.Text = SettedAndRejUnSelableEggsTotal.ToString("N2");
 
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+         if(TotalRejUnSellableSelable  &gt; 0){ 
+                  SettedAndUnSellableRejEggsTotalReport = (rejUnSellEggsReportForUnSellableEggs * 100m) / TotalRejUnSellableSelable ;
+             }
          xrTableCell49.Text = SettedAndUnSellableRejEggsTotalReport.ToString("N2");
 
 }
@@ -541,11 +599,6 @@ private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.Canc
 
 }
 
-private void xrTableCell83_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell83.Text = infertileEggsTotal.ToString("N2");
-}
-
-
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
       xrTableCell52.Text = infertileEggsTotalReport.ToString("N2");
 }
@@ -553,7 +606,7 @@ private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.Canc
 private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare variables ---
 decimal settedEggs = 0;
-decimal fertileEggs = 0;
+decimal NonHatEggs = 0;
 decimal result = 0;
 
 // --- Read values safely ---
@@ -563,17 +616,16 @@ if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
     settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
 }
 
-if (GetCurrentColumnValue("FertileEggs") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("FertileEggs").ToString()))
+if (GetCurrentColumnValue("NonHatEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("NonHatEggs").ToString()))
 {
-    fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
+    NonHatEggs = Convert.ToDecimal(GetCurrentColumnValue("NonHatEggs"));
 }
 
 // --- Equation (same as Iif([SettedEggs] &gt; 0, [FertileEggs] / [SettedEggs], 0)) ---
 if (settedEggs &gt; 0){
     
-        result = (fertileEggs / settedEggs) * 100;   // multiply by 100 if you want percentage
-        fertileEggsTotalReport+= result;
+        result = (NonHatEggs / settedEggs) * 100;   // multiply by 100 if you want percentage
 
     }
 else{
@@ -588,16 +640,10 @@ cell.Text = result.ToString("N2");   // format with 2 decimal places
 }
 
 private void xrTableCell87_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell87.Text = fertileEggsTotalReport.ToString("N2");
-      fertileEggsTotalReport = 0; // reset for next group
+      xrTableCell87.Text = NonHatEggsTotal.ToString("N2");
 
 }
 
-private void xrTableCell100_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell100.Text = fertileEggsTotal.ToString("N2");
-      fertileEggsTotal  = 0; // reset for next group
-
-}
 
 private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     //-- new logic for Total Chicks (Culls + SellableChicks)
@@ -716,7 +762,7 @@ if (GetCurrentColumnValue("Culls") != null &amp;&amp;
 // --- Equation (same as Iif([SettedEggs] &gt; 0, [Culls] / [SettedEggs], 0)) ---
 if (settedEggs &gt; 0)
 {
-    cullsRatio = culls / settedEggs;
+    cullsRatio = (culls * 100m)/ settedEggs;
 }
 else
 {
@@ -732,17 +778,7 @@ cell.Text = cullsRatio.ToString("N2");
 
 }
 
-private void xrTableCell92_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell92.Text = totalCullsRatioReport.ToString("N2");
-      totalCullsRatioReport= 0; // reset for next group
 
-}
-
-private void xrTableCell105_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell105.Text = totalCullsRatio.ToString("N2");
-      totalCullsRatio= 0; // reset for next group
-
-}
 
 private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     //-- new logic for Sellable Chicks Ratio (SellableChicks / SettedEggs)
@@ -825,7 +861,7 @@ if (GetCurrentColumnValue("SellableChicks") != null &amp;&amp;
 // --- Equation (same as Iif([SettedEggs] &gt; 0, ([Culls] + [SellableChicks]) / [SettedEggs], 0)) ---
 if (settedEggs &gt; 0)
 {
-    totalRatio = (culls + sellableChicks) / settedEggs;
+    totalRatio = ((culls + sellableChicks) * 100m) / settedEggs;
 }
 else
 {
@@ -891,8 +927,7 @@ cell.Text = result.ToString("0.00");
 }
 
 private void xrTableCell96_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell96.Text = SaleFertile.ToString("N2");
-     SaleFertile= 0; // reset for next group
+     xrTableCell96.Text = TotalSaleFertileGroup.ToString("N2");
 
 }
 
@@ -901,12 +936,17 @@ private void xrTableCell109_BeforePrint(object sender, System.ComponentModel.Can
      SaleFertileReport= 0; // reset for next group
 
 }
+private void xrTableCell83_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+              xrTableCell83.Text = InfertileEggsTotal.ToString("N2");
+
+}
 
 
 
+private void xrTableCell92_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          xrTableCell92.Text = totalCullsRatio.ToString("N2");
 
-
-
+}
 </value>
   </data>
 </root>

@@ -145,19 +145,128 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal rejectChicksSum = 0;
 decimal selChicksSum  = 0;
-decimal eggsSettedSum  = 0
+decimal eggsSettedSum  = 0 ;
 decimal totalCumChicksPercentReport = 0;
 decimal totalCumChicksMinusHatchabilityReport = 0;
+decimal totalChicksSum  =0;
+decimal totalCumBroilerPercentReport  = 0;
+decimal totalCumBroilerMinusHatchabilityAGradeReport  = 0;
+decimal TotalCullsReport = 0;
+decimal TotalDeadChicksReport  = 0;
+decimal RejEggsSum = 0;
+decimal eggsSettedSumStdbrds = 0;
+decimal brdStdAsNumberTotal = 0;
+decimal BrdSTDTotal  =0;
+decimal totalHatchPrec = 0;
+decimal stadHatchabilityDev = 0;
+decimal brdStdAsNumberTotalDev = 0;
+decimal gtTotalChicksPer = 0;
+decimal gtBrdStdAsNumberPercent = 0;
+decimal TotalHatch  = 0;
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       //-- new logic for BrdStd Percentage using total EggsSetted
+// --- Get Values ---
+decimal eggsSettedSTD = GetCurrentColumnValue("EggsSetted") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
+    : 0;
+
+decimal stadHatchability = GetCurrentColumnValue("StadHatchability") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadHatchability"))
+    : 0;
+
+// --- Calculate @BrdStdAsNumber ---
+eggsSettedSumStdbrds += eggsSettedSTD ;
+brdStdAsNumberTotal += (stadHatchability * eggsSettedSTD / 100);
+
+//new logic for Dev 
+   // --- Calculate @TotalChicks ---
+decimal selChicks = GetCurrentColumnValue("SelChicks") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+    : 0;
+
+decimal culls = GetCurrentColumnValue("Culls") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("Culls"))
+    : 0;
+
+decimal deadChicks = GetCurrentColumnValue("DeadChicks") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+    : 0;
+
+decimal totalChicks = selChicks + culls + deadChicks;
+
+// --- Calculate @TotalHatchPrec ---
+decimal eggsSettedDev = GetCurrentColumnValue("EggsSetted") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
+    : 0;
+
+if (eggsSettedDev &gt; 0)
+{
+    totalHatchPrec = (totalChicks / eggsSettedDev ) * 100;;
+}
+
+// --- Get StadHatchability ---
+stadHatchabilityDev = GetCurrentColumnValue("StadHatchability") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadHatchability"))
+    : 0;
+
+//Logic To get Dev for all records 
+    // --- Cumulative variables (declare at class level) ---
+decimal eggsSettedSumDev = 0;
+decimal totalChicksSumDev = 0;
+
+// --- In your script ---
+// --- Get current row values ---
+decimal eggsSettedHatDev = GetCurrentColumnValue("EggsSetted") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
+    : 0;
+
+decimal selChicksDev = GetCurrentColumnValue("SelChicks") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
+    : 0;
+
+decimal cullsDev = GetCurrentColumnValue("Culls") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("Culls"))
+    : 0;
+
+decimal deadChicksDev = GetCurrentColumnValue("DeadChicks") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+    : 0;
+
+decimal stadHatchabilityHatDev = GetCurrentColumnValue("StadHatchability") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadHatchability"))
+    : 0;
+
+// --- Calculate current row values ---
+decimal currentTotalChicks = selChicksDev + cullsDev + deadChicksDev ;
+decimal currentBrdStdAsNumber = stadHatchabilityHatDev * eggsSettedHatDev / 100;
+
+// --- Accumulate sums ---
+eggsSettedSumDev += eggsSettedHatDev ;
+totalChicksSumDev += currentTotalChicks;
+brdStdAsNumberTotalDev += currentBrdStdAsNumber;
+
+// --- Calculate @GT_TotalChicksPer ---
+// --- Calculate @GT_TotalChicksPer ---
+if (eggsSettedSumDev &gt; 0)
+{
+    gtTotalChicksPer = (totalChicksSumDev / eggsSettedSumDev) * 100;
+}
+
+// --- Calculate @GT_BrdStdAsNumber as percentage ---
+if (eggsSettedSumDev &gt; 0)
+{
+    gtBrdStdAsNumberPercent = (brdStdAsNumberTotalDev / eggsSettedSumDev) * 100;
+}
+}
+
 private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      // --- Get Values ---
     decimal eggsSetted = GetCurrentColumnValue("EggsSetted") != null
         ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
         : 0;
-    eggsSettedSum += eggsSetted;
     decimal selChicks = GetCurrentColumnValue("SelChicks") != null
         ? Convert.ToDecimal(GetCurrentColumnValue("SelChicks"))
         : 0;
-    selChicksSum += eggsSetted;
     // --- Calculate Result ---
     decimal result = (eggsSetted &gt; 0)
         ? (selChicks * 100 / eggsSetted)
@@ -165,6 +274,9 @@ private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.Canc
 
     // --- Assign to Cell ---
     ((XRTableCell)sender).Text = result.ToString("0.00");
+     eggsSettedSum += eggsSetted;
+     selChicksSum += selChicks ;
+
 }
 
 private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -177,41 +289,7 @@ private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = result.ToString("0.00");
 }
 
-private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      // --- Get values from the current row ---
-    decimal eggsSetted = GetCurrentColumnValue("SR_HT_FlockSummary.EggsSetted") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlockSummary.EggsSetted"))
-        : 0;
 
-    decimal culls = GetCurrentColumnValue("SR_HT_FlockSummary.Culls") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlockSummary.Culls"))
-        : 0;
-
-    decimal deadChicks = GetCurrentColumnValue("SR_HT_FlockSummary.DeadChicks") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlockSummary.DeadChicks"))
-        : 0;
-
-    // --- RejectChicks = Culls + DeadChicks ---
-    decimal rejectChicks = culls + deadChicks;
-    rejectChicksSum += rejectChicks 
-    // --- Calculate percentage ---
-    decimal result = (eggsSetted &gt; 0)
-        ? (rejectChicks * 100 / eggsSetted)
-        : 0;
-
-    // --- Assign to cell ---
-    ((XRTableCell)sender).Text = result.ToString("0.00");
-}
-
-private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Use global variables directly ---
-    decimal result = (eggsSettedSum &gt; 0)
-        ? (rejectChicksSum  * 100 / eggsSettedSum)
-        : 0;
-
-    // --- Assign to Cell ---
-    ((XRTableCell)sender).Text = result.ToString("0.00");
-}
 
 private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
         // --- Get values from the current row ---
@@ -233,60 +311,39 @@ private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEve
 
     // --- TotalChicks = SelChicks + Culls + DeadChicks ---
     decimal totalChicks = selChicks + culls + deadChicks;
-    totalChicksSum+= totalChicks 
+    totalChicksSum += totalChicks ;
     // --- Calculate percentage ---
     decimal result = (eggsSetted &gt; 0)
         ? (totalChicks * 100 / eggsSetted)
         : 0;
 
     // --- Assign to cell ---
+   
     ((XRTableCell)sender).Text = result.ToString("0.00");
 
 }
 
 private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Use global variables directly ---
-    decimal result = (eggsSettedSum &gt; 0)
+    TotalHatch  = (eggsSettedSum &gt; 0)
         ? (totalChicksSum* 100 / eggsSettedSum)
         : 0;
 
     // --- Assign to Cell ---
-    ((XRTableCell)sender).Text = result.ToString("0.00");
+    ((XRTableCell)sender).Text = TotalHatch.ToString("0.00");
 }
 
 private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    //-- new logic for BrdStd Percentage using total EggsSetted
-// --- Declare variables ---
-decimal totalEggsSetted = 0;
-decimal brdStdAsNumber = 0;
-decimal brdStdPercent = 0;
+    
+// --- Calculate Result ---
+if(eggsSettedSumStdbrds &gt; 0){
+        
+          BrdSTDTotal =  (brdStdAsNumberTotal * 100 / eggsSettedSumStdbrds );
+          
+                          }
 
-// --- Get total sum of EggsSetted for the report ---
-totalEggsSetted = Convert.ToDecimal(Sum(GetCurrentColumnValue("EggsSetted")));
+((XRTableCell)sender).Text = BrdSTDTotal.ToString("0.00");
 
-// --- Read BrdStdAsNumber safely ---
-if (GetCurrentColumnValue("BrdStdAsNumber") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("BrdStdAsNumber").ToString()))
-{
-    brdStdAsNumber = Convert.ToDecimal(GetCurrentColumnValue("BrdStdAsNumber"));
-}
-
-// --- Equation (same as Iif(Sum(EggsSetted) &gt; 0, Sum(BrdStdAsNumber) * 100 / Sum(EggsSetted), 0)) ---
-if (totalEggsSetted &gt; 0)
-{
-    brdStdPercent = brdStdAsNumber * 100 / totalEggsSetted;
-}
-else
-{
-    brdStdPercent = 0;
-}
-
-// --- Optional: accumulate total ---
-totalBrdStdPercentReport += brdStdPercent;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalBrdStdPercentReport.ToString("N2");
 
 }
 
@@ -494,6 +551,74 @@ cell.Text = resultValue.ToString("N2");
 
 }
 
+
+
+private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal eggsSetted;
+    decimal culls;
+    decimal deadChicks;
+    decimal rejectChicks = 0;
+    decimal result = 0;
+    
+    // Assignments
+    eggsSetted = GetCurrentColumnValue("EggsSetted") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("EggsSetted"))
+        : 0;
+    
+    culls = GetCurrentColumnValue("Culls") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("Culls"))
+        : 0;
+    
+    deadChicks = GetCurrentColumnValue("DeadChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"))
+        : 0;
+    
+    // --- Calculate percentage ---
+    rejectChicks = culls + deadChicks;
+    
+    if (eggsSetted &gt; 0)
+    {
+        result = (rejectChicks * 100m) / eggsSetted;
+    }
+         // --- Assign to cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+    RejEggsSum += eggsSetted ;
+    TotalCullsReport += culls ;
+    TotalDeadChicksReport += deadChicks ;
+    rejectChicksSum = TotalCullsReport  + TotalDeadChicksReport ;
+
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // --- Use global variables directly ---
+    decimal result = 0 ;
+     if(RejEggsSum &gt; 0){
+         
+           result = (rejectChicksSum  * 100m) / RejEggsSum ;
+         }
+        
+    // --- Assign to Cell ---
+    ((XRTableCell)sender).Text = result.ToString("0.00");
+
+}
+
+
+private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+ 
+// --- Calculate Final Result: {@TotalHatchPrec} - {SR_HT_FlockSummary.StadHatchability} ---
+    decimal finalResult = totalHatchPrec - stadHatchabilityDev;
+    ((XRTableCell)sender).Text = finalResult.ToString("0.00");
+
+
+}
+
+private void xrTableCell59_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+decimal DevTotal =  Math.Round(TotalHatch  , 2)  -  Math.Round(BrdSTDTotal , 2);
+
+
+// --- Assign to cell ---
+((XRTableCell)sender).Text = DevTotal.ToString("0.00");
+}
 </value>
   </data>
 </root>

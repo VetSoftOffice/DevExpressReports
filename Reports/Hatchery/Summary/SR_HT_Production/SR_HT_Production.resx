@@ -137,9 +137,6 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal totalChicks = 0;
 decimal totalSettedEggs = 0;
-decimal totalFertileEggs = 0;
-decimal totalChicksSettedEggs_Fert = 0;
-decimal totalFertPercent = 0;
 decimal totalChicksSettedEggs_Hatch = 0;
 decimal totalFertPer_Hatch = 0;
 decimal totalFertileEggs_Hatch = 0;
@@ -238,6 +235,17 @@ private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal FertPer   = 0;
+    // Compute @HatchPer
+    if (totalChicksSettedEggs_Fertile&gt; 0)
+        FertPer = ( totalFertileEggs_Fertile * 100m) / totalChicksSettedEggs_Fertile;
+        
+      ((XRTableCell)sender).Text =  FertPer.ToString("0.00");
+      
+
+}
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal settedEggs_Fertile = 0;
     decimal fertileEggs_Fertile = 0;
     decimal FertPer  =0;
@@ -246,13 +254,7 @@ private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.Canc
         
     if (GetCurrentColumnValue("FertileEggs") != null)
         fertileEggs_Fertile = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
-        
-    // Compute @HatchPer
-    if (settedEggs_Fertile&gt; 0)
-        FertPer = (fertileEggs_Fertile * 100m) / settedEggs_Fertile;
-        
-      ((XRTableCell)sender).Text = FertPer.ToString("0.00");
-      
+       
     totalFertileEggs_Fertile += fertileEggs_Fertile;
     totalChicksSettedEggs_Fertile += settedEggs_Fertile;
 

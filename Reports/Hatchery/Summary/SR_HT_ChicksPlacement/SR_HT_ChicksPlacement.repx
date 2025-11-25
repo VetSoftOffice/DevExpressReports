@@ -61,43 +61,43 @@
                   </ExpressionBindings>
                   <StylePriority Ref="45" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item1>
-                <Item2 Ref="46" ControlType="XRTableCell" Name="tdAccount_From" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item2 Ref="46" ControlType="XRTableCell" Name="tdAccount_From" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="47" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;" />
                     <Item2 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="[HatcheryCode]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="49" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="49" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item2>
-                <Item3 Ref="50" ControlType="XRTableCell" Name="tdCostCenter" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item3 Ref="50" ControlType="XRTableCell" Name="tdCostCenter" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="51" EventName="BeforePrint" PropertyName="Text" Expression="[FarmCode]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="52" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="52" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item3>
-                <Item4 Ref="53" ControlType="XRTableCell" Name="tdDebit" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item4 Ref="53" ControlType="XRTableCell" Name="tdDebit" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="54" EventName="BeforePrint" PropertyName="Text" Expression="[CropNo]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="55" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="55" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item4>
-                <Item5 Ref="56" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item5 Ref="56" ControlType="XRTableCell" Name="xrTableCell3" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="57" EventName="BeforePrint" PropertyName="Text" Expression="[FlockCode]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="58" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="58" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item5>
-                <Item6 Ref="59" ControlType="XRTableCell" Name="tdCredit" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item6 Ref="59" ControlType="XRTableCell" Name="tdCredit" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="60" EventName="BeforePrint" PropertyName="Text" Expression="[GroupBreed]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="61" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="61" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item6>
-                <Item7 Ref="62" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item7 Ref="62" ControlType="XRTableCell" Name="xrTableCell1" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="63" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')" />
                     <Item2 Ref="64" EventName="BeforePrint" PropertyName="Text" Expression="[HouseCode]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="65" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                  <StylePriority Ref="65" UseFont="false" UsePadding="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item7>
                 <Item8 Ref="66" ControlType="XRTableCell" Name="xrTableCell6" Multiline="true" TextAlignment="MiddleRight" Padding="2,2,0,0,100" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>

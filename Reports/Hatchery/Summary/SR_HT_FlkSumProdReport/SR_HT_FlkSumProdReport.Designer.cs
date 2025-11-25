@@ -5643,11 +5643,15 @@
             // 
             // xrTableCell265
             // 
+            this.xrTableCell265.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell265.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AB_RejChicksHH_VS_Act]"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell265.Multiline = true;
             this.xrTableCell265.Name = "xrTableCell265";
+            this.xrTableCell265.StylePriority.UseBorders = false;
             // 
             // xrTableCell266
             // 
@@ -7811,7 +7815,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell252, "Default", "Weight", 1.0437477856519182D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Text", "Cum Total Chicks HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "ar", "Text", "إجمالي الكتاكيت (حضانة منزلية)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Weight", 2.1901325344312506D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Weight", 2.1901331447827879D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Text", "Rejected Eggs        HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "ar", "Text", "البيض المرفوض (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Weight", 2.4307000443207305D),
@@ -7837,9 +7841,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Text", "xrTableCell261"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Weight", 1.043747789146696D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Text", "xrTableCell263"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Weight", 1.1934288707208878D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Weight", 1.1928999248200858D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Text", "xrTableCell264"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Weight", 1.135896373209679D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Weight", 1.1364247087589439D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Text", "xrTableCell265"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Weight", 1.1934288706415268D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell266, "Default", "Text", "xrTableCell266"),
