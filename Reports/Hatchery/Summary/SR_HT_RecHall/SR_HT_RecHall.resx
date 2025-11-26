@@ -129,7 +129,6 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal TotalSpecialEggsReport  = 0;
 decimal TotalhatchingEggsReportPerc  = 0 ;
-decimal TotalSpecialEggsReport  = 0;
 decimal TotalOverWeightEggsReport = 0;
 decimal TotalDirtyEggsReport = 0;
 decimal TotalDeformityEggsReport = 0;
@@ -156,7 +155,8 @@ decimal crackedEggs = 0;
 decimal doubleYolkEggs = 0;
 decimal TotalSpecialEggs  = 0 ;
 decimal Total = 0 ;
-decimal TotalPercReport  =0;
+decimal recEggs = 0;
+
 // --- Read values ---
 if (GetCurrentColumnValue("SoftShellEggs") != null)
     softShellEggs = Convert.ToDecimal(GetCurrentColumnValue("SoftShellEggs"));
@@ -175,6 +175,9 @@ if (GetCurrentColumnValue("OtherEggs") != null)
 
 if (GetCurrentColumnValue("WholeEggs") != null)
     wholeEggs = Convert.ToDecimal(GetCurrentColumnValue("WholeEggs"));
+    
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
 
 if (GetCurrentColumnValue("BrokenEggs") != null)
     brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
@@ -206,19 +209,12 @@ decimal result = softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShell
 Total += result;
 
 
-// --- Add IIf logic ---
-if (recEggs != 0)
-    TotalPerc = (totalUnHatch * 100.0m / recEggs);
-
-TotalPercReport += TotalPerc; 
 
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = TotalSpecialEggs.ToString("0"); // no decimals
 
-TotalSpecialEggs = result + TotalPerc; 
-TotalSpecialEggsReport = Total  + TotalPercReport; 
 
 
 

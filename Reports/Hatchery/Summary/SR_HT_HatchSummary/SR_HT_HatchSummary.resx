@@ -169,8 +169,10 @@ decimal grandTotalRejSel = 0;
 
 decimal grandTotalSettedEggs = 0;
 decimal grandTotalRejectChicks = 0;   // renamed for clarity
-decimal sumRowPercentages = 0m;
+decimal sumRowPercentages = 0;
 int rowCount = 0;
+decimal grandTotalDeadChicks    = 0;
+decimal grandTotalCullsChicks = 0;
      // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
 
 private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -238,7 +240,7 @@ private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.Canc
     // Keep grand total for all rows
         // accumulate totals
     grandTotalDeadChicks   += deadChicks  ;
-    grandTotalCullsChicks += CullsChicks;
+    grandTotalCullsChicks += cullsChicks ;
     grandTotalSelChicks += selChicks;
 
 }

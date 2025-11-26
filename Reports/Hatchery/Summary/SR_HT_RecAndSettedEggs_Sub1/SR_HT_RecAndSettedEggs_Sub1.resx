@@ -132,7 +132,7 @@ private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.Canc
     if (GetCurrentColumnValue("HatchPerc") != null)
         HatchPerc= Convert.ToDecimal(GetCurrentColumnValue("HatchPerc"));
 
-    if (settedEggs != 0)
+    if (FertPer != 0)
         HOFPerc= FertPer* 100 / HatchPerc;
 
     ((XRTableCell)sender).Text = HOFPerc.ToString("0.00");

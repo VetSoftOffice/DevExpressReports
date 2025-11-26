@@ -163,7 +163,27 @@ decimal brdStdAsNumberTotalDev = 0;
 decimal gtTotalChicksPer = 0;
 decimal gtBrdStdAsNumberPercent = 0;
 decimal TotalHatch  = 0;
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+decimal cumSettingEggsTotal = 0;
+decimal cumDeadChicksTotal = 0;
+decimal cumCullsTotal = 0;
+decimal cumBroilerTotal = 0;
+decimal cumSettedSumSTDBrd  = 0;
+decimal brdStdAsNumberCumTotalSTDBrd  = 0;
+decimal ResultSTDBrd = 0;
+decimal eggsSettedSumStdbrdsCum = 0;
+decimal brdStdAsNumberTotalCum  = 0;
+decimal totalChicksSumCum  = 0;
+decimal TotalHatchCum = 0;
+decimal BrdSTDTotalCum = 0;
+decimal cumSettingEggsReport = 0;
+decimal cumBroilerReport = 0;
+decimal brdStdAsNumberCumTotalSTDBrdGrade  = 0;
+decimal ResultSTDBrdGrade  = 0;
+decimal AGradebrdStdAsNumberTotalCum   = 0;
+decimal totalChicksSumCumAGrade  = 0;
+decimal TotalHatchCumGrade   = 0;
+decimal BrdSTDTotalCumAGrade  = 0;
+void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        //-- new logic for BrdStd Percentage using total EggsSetted
 // --- Get Values ---
 decimal eggsSettedSTD = GetCurrentColumnValue("EggsSetted") != null
@@ -256,7 +276,111 @@ if (eggsSettedSumDev &gt; 0)
 if (eggsSettedSumDev &gt; 0)
 {
     gtBrdStdAsNumberPercent = (brdStdAsNumberTotalDev / eggsSettedSumDev) * 100;
+    
 }
+
+//Cum STDBrd Logic 
+   // --- Declare cumulative variables at class level ---
+
+// --- In Before Print script ---
+// --- Get current row values ---
+decimal cumSettingEggsSTDbrd = GetCurrentColumnValue("CumSettingEggs") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"))
+    : 0;
+
+decimal stadCumHatchabilitySTDbrd = GetCurrentColumnValue("StadCumHatchability") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadCumHatchability"))
+    : 0;
+    
+decimal stadCumHatchabilitySTDbrdGrade = GetCurrentColumnValue("StadCumHatchabilityAGrade") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadCumHatchabilityAGrade"))
+    : 0;
+
+// --- Calculate current row @BrdStdAsNumber_Cum ---
+// --- Calculate current row @BrdStdAsNumber_Cum ---
+
+// --- Accumulate sums ---
+cumSettedSumSTDBrd  += cumSettingEggsSTDbrd ;
+brdStdAsNumberCumTotalSTDBrd += (stadCumHatchabilitySTDbrd * cumSettingEggsSTDbrd / 100);
+brdStdAsNumberCumTotalSTDBrdGrade += (stadCumHatchabilitySTDbrdGrade * cumSettingEggsSTDbrd / 100);
+
+// --- Assign to Cell ---
+    if (cumSettedSumSTDBrd &gt; 0)
+    {
+        ResultSTDBrd =  (brdStdAsNumberCumTotalSTDBrd * 100) / cumSettedSumSTDBrd;
+    }
+// Assign to another cell for Grade 
+if (cumSettedSumSTDBrd &gt; 0)
+    {
+        ResultSTDBrdGrade =  (brdStdAsNumberCumTotalSTDBrdGrade * 100) / cumSettedSumSTDBrd;
+    }
+
+//Logic for Cum Dev
+// --- Get Values ---
+decimal eggsSettedSTDCum = GetCurrentColumnValue("CumSettingEggs") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"))
+    : 0;
+
+decimal stadHatchabilityCum = GetCurrentColumnValue("StadCumHatchability") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadCumHatchability"))
+    : 0;
+decimal AGradestadHatchabilityCum = GetCurrentColumnValue("StadCumHatchabilityAGrade") != null
+    ? Convert.ToDecimal(GetCurrentColumnValue("StadCumHatchabilityAGrade"))
+    : 0;
+
+// --- Calculate @BrdStdAsNumber ---
+eggsSettedSumStdbrdsCum += eggsSettedSTDCum ;
+brdStdAsNumberTotalCum += (stadHatchabilityCum * eggsSettedSTDCum / 100);
+AGradebrdStdAsNumberTotalCum  += (AGradestadHatchabilityCum * eggsSettedSTDCum / 100);
+    // --- Get values from the current row ---
+    decimal eggsSettedCum = GetCurrentColumnValue("CumSettingEggs") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CumSettingEggs"))
+        : 0;
+
+    decimal BroilerChicksCum = GetCurrentColumnValue("CumBroiler") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CumBroiler"))
+        : 0;
+        
+    decimal BroilerChicksCumAGrade = GetCurrentColumnValue("CumBroiler") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CumBroiler"))
+        : 0;
+
+
+    decimal cullsCum = GetCurrentColumnValue("CumCulls") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CumCulls"))
+        : 0;
+
+    decimal deadChicksCum = GetCurrentColumnValue("CumDeadChicks") != null
+        ? Convert.ToDecimal(GetCurrentColumnValue("CumDeadChicks"))
+        : 0;
+
+    // --- TotalChicks = BroilerChicks + Culls + DeadChicks ---
+    decimal totalChicksCum = BroilerChicksCum + cullsCum + deadChicksCum ;
+    totalChicksSumCum += totalChicksCum ;
+    decimal totalChicksCumAGrade = BroilerChicksCumAGrade  ;
+    totalChicksSumCumAGrade += totalChicksCumAGrade ;
+    // --- Calculate percentages ---
+    TotalHatchCum  = (eggsSettedSumStdbrdsCum &gt; 0)
+        ? (totalChicksSumCum * 100 / eggsSettedSumStdbrdsCum )
+        : 0;
+    // --- Calculate Result ---
+    if(eggsSettedSumStdbrdsCum &gt; 0){
+            
+              BrdSTDTotalCum =  (brdStdAsNumberTotalCum * 100 / eggsSettedSumStdbrdsCum);
+          
+      }
+
+   //Calculate Percetnages for Grade
+   TotalHatchCumGrade  = (eggsSettedSumStdbrdsCum &gt; 0)
+        ? (totalChicksSumCumAGrade * 100 / eggsSettedSumStdbrdsCum )
+        : 0;
+    // --- Calculate Result ---
+    if(eggsSettedSumStdbrdsCum &gt; 0){
+            
+              BrdSTDTotalCumAGrade =  (AGradebrdStdAsNumberTotalCum  * 100 / eggsSettedSumStdbrdsCum);
+          
+      }
+
 }
 
 private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -391,18 +515,24 @@ else
     cumChicksPercent = 0;
 }
 
-// --- Optional: accumulate total ---
-totalCumChicksPercentReport += cumChicksPercent;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = cumChicksPercent.ToString("N2");
+// --- Optional: accumulate total ---
+cumSettingEggsTotal += cumSettingEggs ;
+cumDeadChicksTotal += cumDeadChicks ;
+cumCullsTotal  += cumCulls ;
+cumBroilerTotal  += cumBroiler ;
 
 }
 
 private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell41.Text = totalCumChicksPercentReport.ToString("0");
-      totalCumChicksPercentReport= 0; // reset for next group
+     if(cumSettingEggsTotal  &gt; 0) {
+             decimal totalChicks = cumDeadChicksTotal + cumCullsTotal + cumBroilerTotal;
+             totalCumChicksPercentReport = (totalChicks / cumSettingEggsTotal) * 100;
+         }
+     xrTableCell41.Text = totalCumChicksPercentReport.ToString("N2");
 
 }
 
@@ -497,11 +627,13 @@ else
 }
 
 // --- Optional: accumulate total ---
-totalCumBroilerPercentReport += cumBroilerPercent;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = cumBroilerPercent.ToString("N2");
+cumSettingEggsReport += cumSettingEggs ;
+cumBroilerReport += cumBroiler ;
+
 
 }
 
@@ -618,6 +750,40 @@ decimal DevTotal =  Math.Round(TotalHatch  , 2)  -  Math.Round(BrdSTDTotal , 2);
 
 // --- Assign to cell ---
 ((XRTableCell)sender).Text = DevTotal.ToString("0.00");
+}
+
+
+private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+
+    // --- Assign to cell in Report Footer ---
+    xrTableCell42.Text = ResultSTDBrd.ToString("0.00");
+
+}
+
+private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+  
+    decimal DevTotalCum =  Math.Round(TotalHatchCum  , 2)  -  Math.Round(BrdSTDTotalCum , 2);
+        xrTableCell43.Text = DevTotalCum.ToString("0.00");
+
+
+}
+
+private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    if(cumSettingEggsReport &gt; 0){
+             totalCumBroilerPercentReport = (cumBroilerReport * 100m) / cumSettingEggsReport ;
+        }
+      xrTableCell47.Text = totalCumBroilerPercentReport.ToString("0.00");
+
+}
+
+private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        xrTableCell49.Text = ResultSTDBrdGrade.ToString("0.00");
+}
+
+private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal DevTotalCumAGrade =  Math.Round(TotalHatchCumGrade, 2)  -  Math.Round(BrdSTDTotalCumAGrade, 2);
+        xrTableCell52.Text = DevTotalCumAGrade.ToString("0.00");
+
 }
 </value>
   </data>

@@ -162,6 +162,9 @@ decimal settedEggsInfertileEggsGroup = 0;
 decimal InfertileEggsGroup = 0;
 decimal InfertileEggsTotal = 0;
 decimal NonHatEggsSettedEggsGroup = 0;
+decimal NonHatEggsRejSellEggsGroup = 0;
+decimal NonHatEggsRejUnSellEggsGroup = 0;
+decimal TotaalSettedRejEggsGroup = 0;
 decimal NonHatEggsGroup = 0;
 decimal NonHatEggsTotal = 0;
 decimal deadsSettedEggsGroup = 0;
@@ -190,9 +193,8 @@ decimal rejUnSellableSellEggsReport = 0;
 decimal TotalRejUnSellableSelable = 0;
 decimal SettedAndUnSellableRejEggsTotalReport = 0;
 
-
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-decimal SettedEggs = 0;
+    decimal SettedEggs = 0;
 decimal RejSellEggs = 0;
 decimal RejUnSellEggs = 0;
 
@@ -239,24 +241,39 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
     // --- Declare variables ---
     decimal NonHatEggs = 0;
     decimal NonHatEggsSettedEggs  = 0;
+    decimal NonHatEggsRejSellEggs  = 0;
+    decimal NonHatEggsRejUnSellEggs  = 0;
     // --- Read values safely ---
     if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
         !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
     {
         NonHatEggsSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
     }
-    
+    if (GetCurrentColumnValue("RejSellEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("RejSellEggs").ToString()))
+    {
+        NonHatEggsRejSellEggs = Convert.ToDecimal(GetCurrentColumnValue("RejSellEggs"));
+    }
+    if (GetCurrentColumnValue("RejUnSellEggs") != null &amp;&amp;
+        !string.IsNullOrEmpty(GetCurrentColumnValue("RejUnSellEggs").ToString()))
+    {
+        NonHatEggsRejUnSellEggs = Convert.ToDecimal(GetCurrentColumnValue("RejUnSellEggs"));
+    }
+
     if (GetCurrentColumnValue("NonHatEggs") != null &amp;&amp;
         !string.IsNullOrEmpty(GetCurrentColumnValue("NonHatEggs").ToString()))
     {
         NonHatEggs = Convert.ToDecimal(GetCurrentColumnValue("NonHatEggs"));
     }
     NonHatEggsSettedEggsGroup += NonHatEggsSettedEggs ;
+    NonHatEggsRejSellEggsGroup += NonHatEggsRejSellEggs ;
+    NonHatEggsRejUnSellEggsGroup += NonHatEggsRejUnSellEggs ;
     NonHatEggsGroup += NonHatEggs ;
+    TotaalSettedRejEggsGroup = NonHatEggsSettedEggsGroup  + NonHatEggsRejSellEggsGroup  + NonHatEggsRejUnSellEggsGroup ;
     // --- Equation (same as Iif([SettedEggs] &gt; 0, [NonHatEggs] / [SettedEggs] * 100, 0)) ---
     if (NonHatEggsSettedEggsGroup &gt; 0)
     {
-        NonHatEggsTotal =  (NonHatEggsGroup * 100m)/ NonHatEggsSettedEggsGroup ;
+        NonHatEggsTotal =  (NonHatEggsGroup * 100m)/ TotaalSettedRejEggsGroup ;
     
     }
     else
@@ -692,12 +709,24 @@ private void xrTableCell11_BeforePrint(object sender, System.ComponentModel.Canc
 decimal settedEggs = 0;
 decimal NonHatEggs = 0;
 decimal result = 0;
-
+decimal RejSellEggsNonHat  =0;
+decimal RejUnSellEggsNonHat  = 0;
 // --- Read values safely ---
 if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
 {
     settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+}
+if (GetCurrentColumnValue("RejSellEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejSellEggs").ToString()))
+{
+    RejSellEggsNonHat = Convert.ToDecimal(GetCurrentColumnValue("RejSellEggs"));
+}
+
+if (GetCurrentColumnValue("RejUnSellEggs") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("RejUnSellEggs").ToString()))
+{
+    RejUnSellEggsNonHat = Convert.ToDecimal(GetCurrentColumnValue("RejUnSellEggs"));
 }
 
 if (GetCurrentColumnValue("NonHatEggs") != null &amp;&amp;
@@ -707,9 +736,10 @@ if (GetCurrentColumnValue("NonHatEggs") != null &amp;&amp;
 }
 
 // --- Equation (same as Iif([SettedEggs] &gt; 0, [FertileEggs] / [SettedEggs], 0)) ---
-if (settedEggs &gt; 0){
+decimal SettedRejTotal = settedEggs  + RejSellEggsNonHat  + RejUnSellEggsNonHat ;
+if (SettedRejTotal &gt; 0){
     
-        result = (NonHatEggs / settedEggs) * 100;   // multiply by 100 if you want percentage
+        result = (NonHatEggs / SettedRejTotal ) * 100;   // multiply by 100 if you want percentage
 
     }
 else{
@@ -996,6 +1026,7 @@ private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 }
+
 </value>
   </data>
 </root>

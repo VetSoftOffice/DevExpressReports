@@ -139,6 +139,15 @@ decimal recEggsReport  = 0;
 decimal groupSumOpenBalance = 0 ;
 decimal TotalEggsAndChicksReport  = 0 ;
 decimal groupSumEggsAndChicks  = 0 ;
+decimal openSetterEggsGroup  = 0;
+decimal openHatcherEggsGroup  = 0;
+decimal closeSetterEggsReport  = 0;
+decimal closeHatcherEggsReport = 0;
+decimal deadsGroup = 0;
+decimal cullsGroup = 0;
+decimal destroyedEggsGroup = 0;
+decimal unHatEggsGroup = 0;
+decimal chicksGroup = 0;
 private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
 decimal openSetterEggs = 0;
@@ -303,19 +312,21 @@ decimal result = openEggStoreEggs + recEggs;
 
 // --- Assign result to the cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0"); // no decimals, adjust format if needed
-OpenEggsReport += result;
+cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
+openEggStoreEggsReport += openEggStoreEggs ;
+recEggsReport += recEggs ;
+OpenEggsReport = openEggStoreEggsReport + recEggsReport ;
 
 
 }
 
 private void xrTableCell79_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         xrTableCell79.Text = groupSumOpenBalance.ToString("0");
+         xrTableCell79.Text = groupSumOpenBalance.ToString("N0");
 
 }
 
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell22.Text = OpenEggsReport.ToString("0");
+      xrTableCell22.Text = OpenEggsReport.ToString("N0");
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -325,6 +336,11 @@ decimal culls = 0;
 decimal destroyedEggs = 0;
 decimal unHatEggs = 0;
 decimal chicks = 0;
+decimal deadsTotalReport = 0;
+decimal cullsTotalReport = 0;
+decimal destroyedEggsTotalReport = 0;
+decimal unHatEggsTotalReport = 0;
+decimal chicksTotalReport = 0;
 
 // --- Deads ---
 if (GetCurrentColumnValue("Deads") != null)
@@ -352,27 +368,32 @@ decimal result = deads + culls + destroyedEggs + unHatEggs + chicks;
 // --- Assign result to the cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("0"); // no decimals, adjust format if needed
-TotalEggsAndChicksReport += result;
+deadsTotalReport += deads;
+cullsTotalReport += culls;
+destroyedEggsTotalReport += destroyedEggs;
+unHatEggsTotalReport += unHatEggs;
+chicksTotalReport += chicks;
+TotalEggsAndChicksReport = deadsTotalReport  + cullsTotalReport  + destroyedEggsTotalReport  + unHatEggsTotalReport  + chicksTotalReport ;
 
 
 }
 
 private void xrTableCell82_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell82.Text = groupSumEggsAndChicks.ToString("0");
+     xrTableCell82.Text = groupSumEggsAndChicks.ToString("N0");
 
 }
 
 private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell62.Text = TotalEggsAndChicksReport.ToString("0");
+      xrTableCell62.Text = TotalEggsAndChicksReport.ToString("N0");
 
 }
 
 private void xrTableCell91_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell91.Text = groupSumCloseEggs.ToString("0");
+          xrTableCell91.Text = groupSumCloseEggs.ToString("N0");
 }
 
 private void xrTableCell71_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell71.Text = CloseMachineReport.ToString("0");
+          xrTableCell71.Text = CloseMachineReport.ToString("N0");
 
 }
 
