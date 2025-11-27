@@ -120,6 +120,31 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXQiPjxGaWVsZCBOYW1lPSJ0U3RBY3Rpb25JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5CYWxhbmNlRm9yZWlnbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByaWNlVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFN1cHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZUZvcmVpZ24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaWxsU3RhdGVtZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXRfT0xEIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0U3VwcE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQmlsbFN0YXRlbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRGViaXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRmxrRGlyZWN0Q29zdCI+PEZpZWxkIE5hbWU9IlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVG90YWxDb3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ2hpY2tzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUE9MIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2hpY2tlbkNvc3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQbGFjZWRObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ2hlY2tlbnNXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJc0Nvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48VmlldyBOYW1lPSJTUl9GQ19GTV9TdG9ja01vdmVtZW50Ij48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkluT3V0T3JkZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRNaWxsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvV2hvbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXRfUHJvZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGb3JtdWxhT3BlcmFuZF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik91dHB1dHNTdGRVbml0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3RoZXJPdXRwdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbmRMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uc3VtZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTb2xkVHJhbnNmZXJPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCYXRjaENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEduSXRlbVR5cGVJRF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSXRlbUNvZGVfQ29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VCYWxhbmNlVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbnB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdGhlck91dHB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzU3RkVW5pdFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uZExvc3NWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbnN1bWVkVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb25WYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGRUcmFuc2Zlck91dFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2xvc2VCYWxhbmNlIj48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VkRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZDdW1EZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkN1bVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGQ3VtT3RoZXJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUN1bU90aGVyT3V0cHV0cyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0l0ZW1CYWxhbmNlIj48RmllbGQgTmFtZT0iQ3VzdE5hbWVXaXRob3V0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX01vbnRobHlEaXJlY3RDb3N0Ij48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="TotalCulls.Expression" xml:space="preserve">
+    <value>(
+    Iif(IsNullOrEmpty([UnHatEggs]), 0, [UnHatEggs]) +
+    Iif(IsNullOrEmpty([DestroyedEggs]), 0, [DestroyedEggs]) +
+    Iif(IsNullOrEmpty([FCulls]), 0, [FCulls]) +
+    Iif(IsNullOrEmpty([MCulls]), 0, [MCulls]) +
+    Iif(IsNullOrEmpty([FDead]), 0, [FDead]) +
+    Iif(IsNullOrEmpty([MDead]), 0, [MDead]) +
+    Iif(IsNullOrEmpty([Culls]), 0, [Culls]) +
+    Iif(IsNullOrEmpty([Dead]), 0, [Dead])
+)</value>
+  </data>
+  <data name="Total.Expression" xml:space="preserve">
+    <value>Iif(IsNull([Chicks]), 0, [Chicks]) +
+Iif(IsNull([FCulls]), 0, [FCulls]) +
+Iif(IsNull([MCulls]), 0, [MCulls]) +
+Iif(IsNull([FDead]), 0, [FDead]) +
+Iif(IsNull([MDead]), 0, [MDead]) +
+Iif(IsNull([DestroyedEggs]), 0, [DestroyedEggs]) +
+Iif(IsNull([UnHatEggs]), 0, [UnHatEggs]) +
+Iif(IsNull([FChicks]), 0, [FChicks]) +
+Iif(IsNull([MChicks]), 0, [MChicks])
+
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal groupSumChicks = 0;
 decimal groupSumCullsDead = 0;
@@ -134,42 +159,18 @@ decimal fCullsGroup = 0 ;
 decimal mCullsGroup = 0;
 decimal fDeadGroup = 0;
 decimal mDeadGroup = 0;
-private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal fChicks = 0;
-    decimal mChicks = 0;
-
-    if (GetCurrentColumnValue("FChicks") != null)
-        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
-
-    if (GetCurrentColumnValue("MChicks") != null)
-        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
-
-    decimal result = fChicks + mChicks;
-
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
-}
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal fChicks = 0;
-    decimal mChicks = 0;
-
-    if (GetCurrentColumnValue("FChicks") != null)
-        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
-
-    if (GetCurrentColumnValue("MChicks") != null)
-        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
-        
-    fChicksGroup += fChicks ;
-    mChicksGroup += mChicks ;
-    groupSumChicks = (fChicksGroup + mChicksGroup);
-
+    
     // --- New logic for culls + dead ---
     decimal fCulls = 0;
     decimal mCulls = 0;
     decimal fDead = 0;
     decimal mDead = 0;
-
+    decimal fCullsGroup = 0;
+    decimal mCullsGroup = 0;
+    decimal fDeadGroup = 0;
+    decimal mDeadGroup  = 0;
     if (GetCurrentColumnValue("FCulls") != null)
         fCulls = Convert.ToDecimal(GetCurrentColumnValue("FCulls"));
 
@@ -181,10 +182,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     if (GetCurrentColumnValue("MDead") != null)
         mDead = Convert.ToDecimal(GetCurrentColumnValue("MDead"));
-    decimal fCullsGroup += fCulls ;
-    decimal mCullsGroup += mCulls;
-    decimal fDeadGroup += fDead;
-    decimal mDeadGroup += mDead;
+    fCullsGroup += fCulls;
+    mCullsGroup += mCulls;
+    fDeadGroup += fDead;
+    mDeadGroup += mDead;
 
 
     groupSumCullsDead = (fCullsGroup + mCullsGroup + fDeadGroup + mDeadGroup );
@@ -223,152 +224,6 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     groupResultOfTotal = Chicks + groupSumOfTotalLoss + groupSumCullsDead + groupSumChicks;
 }
 
-private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell55.Text = groupSumChicks.ToString("N0");
-}
-
-private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal fCulls = 0;
-    decimal mCulls = 0;
-    decimal fDead = 0;
-    decimal mDead = 0;
-
-    if (GetCurrentColumnValue("FCulls") != null)
-        fCulls = Convert.ToDecimal(GetCurrentColumnValue("FCulls"));
-
-    if (GetCurrentColumnValue("MCulls") != null)
-        mCulls = Convert.ToDecimal(GetCurrentColumnValue("MCulls"));
-
-    if (GetCurrentColumnValue("FDead") != null)
-        fDead = Convert.ToDecimal(GetCurrentColumnValue("FDead"));
-
-    if (GetCurrentColumnValue("MDead") != null)
-        mDead = Convert.ToDecimal(GetCurrentColumnValue("MDead"));
-
-    decimal result = fCulls + mCulls + fDead + mDead;
-
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
-}
-
-private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell63.Text = groupSumCullsDead.ToString("N0");
-}
-
-private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal Culls = 0;
-    decimal Dead = 0;
-
-    if (GetCurrentColumnValue("Culls") != null)
-        Culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
-
-    if (GetCurrentColumnValue("Dead") != null)
-        Dead = Convert.ToDecimal(GetCurrentColumnValue("Dead"));
-
-    decimal result = Culls + Dead;
-
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
-}
-
-private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell64.Text = groupSumOfCullsDead.ToString("N0");
-    groupSumOfCullsDead = 0;
-}
-
-private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Direct fields ---
-    decimal unHatEggs = 0;
-    decimal destroyedEggs = 0;
-
-    if (GetCurrentColumnValue("UnHatEggs") != null)
-        unHatEggs = Convert.ToDecimal(GetCurrentColumnValue("UnHatEggs"));
-
-    if (GetCurrentColumnValue("DestroyedEggs") != null)
-        destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
-
-    // --- BroilerBreederMort = FCulls + MCulls + FDead + MDead ---
-    decimal fCulls = 0, mCulls = 0, fDead = 0, mDead = 0;
-    if (GetCurrentColumnValue("FCulls") != null)
-        fCulls = Convert.ToDecimal(GetCurrentColumnValue("FCulls"));
-    if (GetCurrentColumnValue("MCulls") != null)
-        mCulls = Convert.ToDecimal(GetCurrentColumnValue("MCulls"));
-    if (GetCurrentColumnValue("FDead") != null)
-        fDead = Convert.ToDecimal(GetCurrentColumnValue("FDead"));
-    if (GetCurrentColumnValue("MDead") != null)
-        mDead = Convert.ToDecimal(GetCurrentColumnValue("MDead"));
-
-    decimal broilerBreederMort = fCulls + mCulls + fDead + mDead;
-
-    // --- BroilerMort = Culls + Dead ---
-    decimal culls = 0, dead = 0;
-    if (GetCurrentColumnValue("Culls") != null)
-        culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
-    if (GetCurrentColumnValue("Dead") != null)
-        dead = Convert.ToDecimal(GetCurrentColumnValue("Dead"));
-
-    decimal broilerMort = culls + dead;
-
-    // --- Final Result ---
-    decimal total = unHatEggs + destroyedEggs + broilerBreederMort + broilerMort;
-
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = total.ToString("N0");
-}
-
-private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell66.Text = groupResultOfTotalLoss.ToString("N0");
-    groupResultOfTotalLoss = 0;
-}
-
-private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal chicks = 0, destroyedEggs = 0, unHatEggs = 0;
-
-    if (GetCurrentColumnValue("Chicks") != null)
-        chicks = Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
-
-    if (GetCurrentColumnValue("DestroyedEggs") != null)
-        destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
-
-    if (GetCurrentColumnValue("UnHatEggs") != null)
-        unHatEggs = Convert.ToDecimal(GetCurrentColumnValue("UnHatEggs"));
-
-    decimal fCulls = 0, mCulls = 0, fDead = 0, mDead = 0;
-
-    if (GetCurrentColumnValue("FCulls") != null)
-        fCulls = Convert.ToDecimal(GetCurrentColumnValue("FCulls"));
-
-    if (GetCurrentColumnValue("MCulls") != null)
-        mCulls = Convert.ToDecimal(GetCurrentColumnValue("MCulls"));
-
-    if (GetCurrentColumnValue("FDead") != null)
-        fDead = Convert.ToDecimal(GetCurrentColumnValue("FDead"));
-
-    if (GetCurrentColumnValue("MDead") != null)
-        mDead = Convert.ToDecimal(GetCurrentColumnValue("MDead"));
-
-    decimal broilerBreederMort = fCulls + mCulls + fDead + mDead;
-
-    decimal fChicks = 0, mChicks = 0;
-
-    if (GetCurrentColumnValue("FChicks") != null)
-        fChicks = Convert.ToDecimal(GetCurrentColumnValue("FChicks"));
-
-    if (GetCurrentColumnValue("MChicks") != null)
-        mChicks = Convert.ToDecimal(GetCurrentColumnValue("MChicks"));
-
-    decimal boilerBreeder = fChicks + mChicks;
-
-    decimal total = chicks + broilerBreederMort + destroyedEggs + unHatEggs + boilerBreeder;
-
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = total.ToString("N0");
-}
-
-private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell68.Text = groupResultOfTotal.ToString("N0");
-    groupResultOfTotal = 0;
-}
 
 
 </value>
