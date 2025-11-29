@@ -2192,6 +2192,10 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
             
             private global::System.Data.DataColumn columnDataValue;
             
+            private global::System.Data.DataColumn columnColData1;
+            
+            private global::System.Data.DataColumn columnColData2;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_LAY_SortHouseIssue_SubDataTable() {
@@ -2261,6 +2265,22 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ColData1Column {
+                get {
+                    return this.columnColData1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ColData2Column {
+                get {
+                    return this.columnColData2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2296,13 +2316,15 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_SortHouseIssue_SubRow AddSR_LAY_SortHouseIssue_SubRow(int RowSeq, string RowData, string ColData, int DataValue) {
+            public SR_LAY_SortHouseIssue_SubRow AddSR_LAY_SortHouseIssue_SubRow(int RowSeq, string RowData, string ColData, int DataValue, string ColData1, string ColData2) {
                 SR_LAY_SortHouseIssue_SubRow rowSR_LAY_SortHouseIssue_SubRow = ((SR_LAY_SortHouseIssue_SubRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         RowSeq,
                         RowData,
                         ColData,
-                        DataValue};
+                        DataValue,
+                        ColData1,
+                        ColData2};
                 rowSR_LAY_SortHouseIssue_SubRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSR_LAY_SortHouseIssue_SubRow);
                 return rowSR_LAY_SortHouseIssue_SubRow;
@@ -2329,6 +2351,8 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
                 this.columnRowData = base.Columns["RowData"];
                 this.columnColData = base.Columns["ColData"];
                 this.columnDataValue = base.Columns["DataValue"];
+                this.columnColData1 = base.Columns["ColData1"];
+                this.columnColData2 = base.Columns["ColData2"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2342,12 +2366,20 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
                 base.Columns.Add(this.columnColData);
                 this.columnDataValue = new global::System.Data.DataColumn("DataValue", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataValue);
+                this.columnColData1 = new global::System.Data.DataColumn("ColData1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColData1);
+                this.columnColData2 = new global::System.Data.DataColumn("ColData2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColData2);
                 this.columnRowSeq.ReadOnly = true;
                 this.columnRowData.ReadOnly = true;
                 this.columnRowData.MaxLength = 1;
                 this.columnColData.ReadOnly = true;
                 this.columnColData.MaxLength = 1;
                 this.columnDataValue.ReadOnly = true;
+                this.columnColData1.ReadOnly = true;
+                this.columnColData1.MaxLength = 1;
+                this.columnColData2.ReadOnly = true;
+                this.columnColData2.MaxLength = 1;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8722,6 +8754,38 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ColData1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_SortHouseIssue_Sub.ColData1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ColData1\' in table \'SR_LAY_SortHouseIssue_Sub\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_SortHouseIssue_Sub.ColData1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ColData2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_SortHouseIssue_Sub.ColData2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ColData2\' in table \'SR_LAY_SortHouseIssue_Sub\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_SortHouseIssue_Sub.ColData2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsRowSeqNull() {
                 return this.IsNull(this.tableSR_LAY_SortHouseIssue_Sub.RowSeqColumn);
             }
@@ -8766,6 +8830,30 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDataValueNull() {
                 this[this.tableSR_LAY_SortHouseIssue_Sub.DataValueColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsColData1Null() {
+                return this.IsNull(this.tableSR_LAY_SortHouseIssue_Sub.ColData1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetColData1Null() {
+                this[this.tableSR_LAY_SortHouseIssue_Sub.ColData1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsColData2Null() {
+                return this.IsNull(this.tableSR_LAY_SortHouseIssue_Sub.ColData2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetColData2Null() {
+                this[this.tableSR_LAY_SortHouseIssue_Sub.ColData2Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -15574,6 +15662,8 @@ namespace DevExpressReports.Reports.Farms.Layer.DataSets.dsGeneralLedgerTableAda
             tableMapping.ColumnMappings.Add("RowData", "RowData");
             tableMapping.ColumnMappings.Add("ColData", "ColData");
             tableMapping.ColumnMappings.Add("DataValue", "DataValue");
+            tableMapping.ColumnMappings.Add("ColData1", "ColData1");
+            tableMapping.ColumnMappings.Add("ColData2", "ColData2");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
