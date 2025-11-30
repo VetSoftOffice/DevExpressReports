@@ -454,6 +454,7 @@
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrCrossTab1});
+            this.Detail.Expanded = false;
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
@@ -625,7 +626,7 @@
             crossTabColumnDefinition2.Visible = false;
             this.xrCrossTab2.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(62.49998F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(91.5833F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(91.58331F),
             crossTabColumnDefinition2});
             crossTabColumnField1.FieldName = "FarmFlockBreedCode";
             this.xrCrossTab2.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {

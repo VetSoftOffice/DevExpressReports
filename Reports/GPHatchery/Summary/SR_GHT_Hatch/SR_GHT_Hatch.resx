@@ -159,7 +159,7 @@ decimal TotalChicksReport  = 0;
 decimal SettedEggsTotalChicksReport  = 0;
 decimal TotalChicksGroup = 0;
 decimal SettedEggstotalChicksGroup = 0;
-
+decimal NonHatchedReport  = 0;
 private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal Deads = 0;
     decimal Culls= 0;
@@ -279,12 +279,10 @@ private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.Canc
     decimal GradeGradeOutTotalGroup  = 0;
     if(SettedEggsGradeOutGroup  != 0){
         
-            GradeGradeOutTotalGroup = (GradeOutGroup * 100m) / SettedEggsGradeOutGroup ;
-        }
+            GradeGradeOutTotalGroup = ((DeadsGroup + CullsGroup) * 100) / SettedEggsGradeOutGroup;         }
      XRTableCell cell = sender as XRTableCell;
      cell.Text = GradeGradeOutTotalGroup.ToString("0.00");
-
-}
+    }
 
 private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal GradeGradeOutTotalReport  = 0;
@@ -335,23 +333,24 @@ SettedEggsBreederReport += SettedEggs;
 }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal BreederTotalReport  = 0;
-     if(SettedEggsBreederReport != 0){
-        
-            BreederTotalReport  = (BreederTotal * 100m) / SettedEggsBreederReport ;
-        }
-     XRTableCell cell = sender as XRTableCell;
-     cell.Text = BreederTotalReport.ToString("0.00");
-}
-
-private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal BreederTotalGroup  = 0;
+       decimal BreederTotalGroup  = 0;
     if(SettedEggsBreederGroup != 0){
         
             BreederTotalGroup  = (BreederGroup * 100m) / SettedEggsBreederGroup ;
         }
      XRTableCell cell = sender as XRTableCell;
      cell.Text = BreederTotalGroup.ToString("0.00");
+
+}
+
+private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        decimal BreederTotalReport  = 0;
+     if(SettedEggsBreederReport != 0){
+        
+            BreederTotalReport  = (BreederTotal * 100m) / SettedEggsBreederReport ;
+        }
+     XRTableCell cell = sender as XRTableCell;
+     cell.Text = BreederTotalReport.ToString("0.00");
 
 }
 
@@ -370,7 +369,7 @@ if (GetCurrentColumnValue("SettedEggs") != null)
 
 // --- Calculate Percentage ---
 if (SettedEggs != 0)
-    result = (Chicks * 100) / SettedEggs;
+    result = (Chicks * 100m) / SettedEggs;
 
 // --- Write to cell ---
 XRTableCell cell = sender as XRTableCell;
@@ -380,6 +379,8 @@ cell.Text = result.ToString("N2");
 ChicksReport += Chicks;
 SettedEggsChicksReport += SettedEggs;
 }
+
+
 
 private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal ChicksTotalGroup  = 0;
@@ -395,8 +396,8 @@ private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.Canc
     decimal ChicksTotalReport = 0;
     if(SettedEggsChicksReport != 0){
         
-            ChicksTotalReport = (ChicksReport * 100m) / SettedEggsChicksReport ;
-        }
+                   ChicksTotalReport = (ChicksReport * 100m) / SettedEggsChicksReport ;
+       }
      XRTableCell cell = sender as XRTableCell;
      cell.Text = ChicksTotalReport.ToString("0.00");
 
@@ -437,6 +438,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("N2");
 
 // --- Accumulators if needed ---
+NonHatchedReport +=  NonHatched ;
 TotalChicksReport += TotalChicks;
 SettedEggsTotalChicksReport += SettedEggsTotalChicks ;
 
@@ -454,15 +456,57 @@ private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         decimal TotalChicksReportPer  = 0;
+    decimal TotalChicksReportPer  = 0;
     if(SettedEggsTotalChicksReport != 0){
         
-            TotalChicksReportPer  = (TotalChicksReport * 100m) / SettedEggsTotalChicksReport ;
+            TotalChicksReportPer   = (TotalChicksReport * 100m) / SettedEggsTotalChicksReport ;
         }
      XRTableCell cell = sender as XRTableCell;
      cell.Text = TotalChicksReportPer.ToString("0.00");
 
 }
+
+private void GroupHeader3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // RESET group variables for next group
+    DeadsGroup = 0;
+    CullsGroup = 0;
+    SettedEggsGradeOutGroup = 0;
+    
+    //for breeders
+    FChicksGroup = 0;
+    MChicksGroup = 0;
+    SettedEggsBreederGroup = 0 ;
+    BreederGroup = 0;
+    //for broilers
+    ChicksGroup = 0;
+    SettedEggsChicksGroup = 0;
+    // for total chicks
+    TotalChicksGroup = 0;
+    SettedEggstotalChicksGroup = 0;
+
+
+}
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    DeadsReport = 0;
+    CullsReport = 0;
+    SettedEggsGradeOutReport = 0;
+    
+    //for breeders
+    FChicksReport = 0;
+    MChicksReport = 0;
+    SettedEggsBreederReport = 0;
+    BreederTotal = 0;
+    //for broilers
+    ChicksReport = 0;
+    SettedEggsChicksReport = 0;
+    
+    // for total chicks
+    TotalChicksReport = 0;
+    SettedEggsTotalChicksReport = 0;
+
+}
+
 </value>
   </data>
 </root>

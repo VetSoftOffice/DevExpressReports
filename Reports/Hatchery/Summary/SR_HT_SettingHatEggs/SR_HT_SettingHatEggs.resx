@@ -131,6 +131,16 @@
 decimal groupSumCulls  = 0;
 decimal TotalDeadsReport  = 0;
 decimal groupSumDeads  = 0;
+decimal rfHatsCullsReport = 0;
+decimal rfInjCullsReport = 0;
+decimal injCullsReport = 0;
+decimal cullsReport = 0;
+decimal exitCullsChicksReport = 0;
+decimal rfHatsCullsGroup = 0;
+decimal rfInjCullsGroup = 0;
+decimal injCullsGroup = 0;
+decimal cullsGroup = 0;
+decimal exitCullsChicksGroup = 0;
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
 decimal rfHatsCulls = 0;
@@ -180,6 +190,7 @@ decimal rfInjCulls = 0;
 decimal injCulls = 0;
 decimal culls = 0;
 decimal exitCullsChicks = 0;
+decimal exitDeadChicks = 0;
 
 // --- rf_HatsCulls ---
 if (GetCurrentColumnValue("rf_HatsCulls") != null)
@@ -212,22 +223,22 @@ groupSumCulls = (rfHatsCullsGroup + rfInjCullsGroup  + injCullsGroup  + cullsGro
 
    // --- New logic for total deads
 if (GetCurrentColumnValue("ExitDeadChicks") != null)
-    exitCullsChicks = Convert.ToDecimal(GetCurrentColumnValue("ExitDeadChicks"));
+    exitDeadChicks = Convert.ToDecimal(GetCurrentColumnValue("ExitDeadChicks"));
 
 // --- Add to group sum ---
-groupSumDeads += exitCullsChicks ;
+groupSumDeads += exitDeadChicks ;
 
 
 }
 
 private void xrTableCell29_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell29.Text = groupSumCulls.ToString("0");
+      xrTableCell29.Text = groupSumCulls.ToString("N0");
       groupSumCulls = 0; // reset for next group
 
 }
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell63.Text = TotalCullsReport.ToString("0");
+    xrTableCell63.Text = TotalCullsReport.ToString("N0");
     TotalCullsReport = 0; // reset for next group
 
 
@@ -240,23 +251,23 @@ decimal exitDeadChicks = 0;
 // --- ExitDeadChicks ---
 if (GetCurrentColumnValue("ExitDeadChicks") != null)
     exitDeadChicks = Convert.ToDecimal(GetCurrentColumnValue("ExitDeadChicks"));
-    TotalCullsReport += exitDeadChicks 
+    
+TotalDeadsReport += exitDeadChicks ;
 
 // --- Assign value to the cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = exitDeadChicks.ToString("0"); // no decimals, adjust format if needed
+cell.Text = exitDeadChicks.ToString("N0"); // no decimals, adjust format if needed
 
 }
 
 private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell34.Text = groupSumDeads.ToString("0");
+    xrTableCell34.Text = groupSumDeads.ToString("N0");
     groupSumDeads  = 0; // reset for next LineType group
 
 }
 
 private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell64.Text = TotalDeadsReport.ToString("0");
-    TotalDeadsReport  = 0; // reset for next LineType group
+    xrTableCell64.Text = TotalDeadsReport.ToString("N0");
 
 }
 

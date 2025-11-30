@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>
-private void xrLabel36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    <value>decimal groupSumChickensNo  = 0;
+private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
 decimal chickensNo = 0;
 
@@ -143,6 +143,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("0.##"); // up to 2 decimals
 
 }
+
 </value>
   </data>
 </root>

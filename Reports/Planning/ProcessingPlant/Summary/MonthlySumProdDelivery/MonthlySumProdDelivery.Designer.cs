@@ -1589,7 +1589,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 23F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "Visible", true),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TotalDressedWeight, "Default", "Description", "TotalDressedWeight"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WaitingTime, "Default", "Description", "WaitingTime"),

@@ -547,12 +547,12 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BroilersPerc]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BroilersPrc]")});
             this.xrTableCell15.Multiline = true;
             this.xrTableCell15.Name = "xrTableCell15";
             this.xrTableCell15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrTableCell15.Scripts.OnBeforePrint = "Detail_BeforePrint";
+            this.xrTableCell15.Scripts.OnBeforePrint = "xrTableCell15_BeforePrint";
             this.xrTableCell15.StylePriority.UseBorders = false;
             this.xrTableCell15.StylePriority.UseFont = false;
             this.xrTableCell15.StylePriority.UsePadding = false;
@@ -1626,8 +1626,7 @@
             // TotalChicks
             // 
             this.TotalChicks.DataMember = "SR_GHT_Hatch";
-            this.TotalChicks.Expression = "[SettedEggs] - (Iif(IsNullOrEmpty([UnHatEggs]), 0 , [UnHatEggs]) + Iif(IsNullOrEm" +
-    "pty([DestroyEggs]), 0 , [DestroyEggs])\n)";
+            this.TotalChicks.Expression = "[SettedEggs] - [NonHatched]";
             this.TotalChicks.Name = "TotalChicks";
             // 
             // TotalChicksPerc

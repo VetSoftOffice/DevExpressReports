@@ -60,8 +60,8 @@
                 </Item1>
                 <Item2 Ref="48" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
-                    <Item1 Ref="49" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
-                    <Item2 Ref="50" EventName="BeforePrint" PropertyName="Text" Expression="[PageTitle_en]" />
+                    <Item1 Ref="49" EventName="BeforePrint" PropertyName="Text" Expression="[PageTitle_en]" />
+                    <Item2 Ref="50" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="51" UseFont="false" UseBorders="false" UseBorderWidth="false" />
                 </Item2>

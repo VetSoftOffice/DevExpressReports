@@ -528,7 +528,7 @@
     <Item7 Ref="296" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
     <Item8 Ref="297" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
     <Item9 Ref="298" Component="#Ref-14" Culture="ar" Path="Description" Data="إلى" />
-    <Item10 Ref="299" Component="#Ref-46" Culture="Default" Path="HeightF" Data="24.5833282" />
+    <Item10 Ref="299" Component="#Ref-46" Culture="Default" Path="HeightF" Data="24.58333" />
     <Item11 Ref="300" Component="#Ref-19" Culture="Default" Path="Description" Data="DiffPrice" />
     <Item12 Ref="301" Component="#Ref-22" Culture="Default" Path="Description" Data="DiffQty" />
     <Item13 Ref="302" Component="#Ref-23" Culture="Default" Path="Description" Data="FarmNo" />
@@ -604,7 +604,7 @@
     <Item83 Ref="372" Component="#Ref-59" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item84 Ref="373" Component="#Ref-59" Culture="Default" Path="Weight" Data="3.9353589017631752" />
     <Item85 Ref="374" Component="#Ref-47" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
-    <Item86 Ref="375" Component="#Ref-47" Culture="Default" Path="SizeF" Data="1697,24.5833282" />
+    <Item86 Ref="375" Component="#Ref-47" Culture="Default" Path="SizeF" Data="1697,24.58333" />
     <Item87 Ref="376" Component="#Ref-49" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item88 Ref="377" Component="#Ref-49" Culture="Default" Path="Text" Data="ItemType" />
     <Item89 Ref="378" Component="#Ref-49" Culture="Default" Path="Weight" Data="1.8519051998406968" />

@@ -532,7 +532,7 @@
                   <Item47 Ref="323" Component="#Ref-248" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
                   <Item48 Ref="324" Component="#Ref-248" Culture="Default" Path="Text" Data="tdUnit" />
                   <Item49 Ref="325" Component="#Ref-248" Culture="Default" Path="TextFormatString" Data="{0:hh:mm}" />
-                  <Item50 Ref="326" Component="#Ref-248" Culture="Default" Path="Weight" Data="4.19158348724472" />
+                  <Item50 Ref="326" Component="#Ref-248" Culture="Default" Path="Weight" Data="4.1416494465256921" />
                   <Item51 Ref="327" Component="#Ref-239" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
                   <Item52 Ref="328" Component="#Ref-239" Culture="Default" Path="Text" Data="tdDebit" />
                   <Item53 Ref="329" Component="#Ref-239" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -570,7 +570,7 @@
                   <Item85 Ref="361" Component="#Ref-261" Culture="Default" Path="Weight" Data="2.52248596360844" />
                   <Item86 Ref="362" Component="#Ref-242" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
                   <Item87 Ref="363" Component="#Ref-242" Culture="Default" Path="Text" Data="xrTableCell6" />
-                  <Item88 Ref="364" Component="#Ref-242" Culture="Default" Path="Weight" Data="2.80016303620898" />
+                  <Item88 Ref="364" Component="#Ref-242" Culture="Default" Path="Weight" Data="2.8500970769280078" />
                 </LocalizationItems>
                 <ParameterPanelLayoutItems>
                   <Item1 Ref="365" LayoutItemType="Parameter" Parameter="#Ref-201" />
@@ -1021,9 +1021,9 @@
     <Item60 Ref="634" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item61 Ref="635" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 9, 20, 20.00001" />
     <Item62 Ref="636" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item63 Ref="637" Component="#Ref-198" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item63 Ref="637" Component="#Ref-198" Culture="Default" Path="LocationFloat" Data="1.00288391,18.5432434" />
     <Item64 Ref="638" Component="#Ref-198" Culture="Default" Path="SizeF" Data="806.9973,19.99999" />
-    <Item65 Ref="639" Component="#Ref-197" Culture="Default" Path="HeightF" Data="19.99999" />
+    <Item65 Ref="639" Component="#Ref-197" Culture="Default" Path="HeightF" Data="38.5432549" />
     <Item66 Ref="640" Component="#Ref-120" Culture="Default" Path="HeightF" Data="20" />
     <Item67 Ref="641" Component="#Ref-125" Culture="Default" Path="HeightF" Data="20" />
     <Item68 Ref="642" Component="#Ref-112" Culture="Default" Path="HeightF" Data="20" />
