@@ -8,5 +8,10 @@ namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.S
         {
             InitializeComponent();
         }
+
+        private void crossTabHeaderCell3_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e)
+        {
+
+        }
     }
 }
