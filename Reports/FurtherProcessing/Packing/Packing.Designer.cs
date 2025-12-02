@@ -356,8 +356,8 @@
             crossTabColumnDefinition2.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(202.46F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(76.41832F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(96.875F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(76.41833F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(96.87502F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2});
             crossTabColumnField1.FieldName = "GroubeID";
@@ -416,7 +416,7 @@
             this.crossTabDataCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(4, 4, 0, 0, 100F);
             this.crossTabDataCell1.RowIndex = 2;
             this.crossTabDataCell1.Scripts.OnBeforePrint = "crossTabDataCell1_BeforePrint";
-            this.crossTabDataCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.crossTabDataCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft;
             // 
             // crossTabHeaderCell2
             // 

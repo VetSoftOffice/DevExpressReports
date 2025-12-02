@@ -152,6 +152,7 @@ private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.Canc
      xrTableCell19.Text = PluckRejectPercReport.ToString("0");
 
 }
+
 </value>
   </data>
 </root>

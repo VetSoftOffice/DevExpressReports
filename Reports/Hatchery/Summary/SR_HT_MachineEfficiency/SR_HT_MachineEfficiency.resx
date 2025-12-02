@@ -138,8 +138,13 @@
     <value>decimal SettedEggsHatchTotal =0;
 decimal GradeAChicksHatchTotal  = 0;
 decimal SettedEggsFertilityTotal =0;
+decimal FertilityWeightedSum = 0;
+decimal weightedAverageHatch = 0;
 decimal FertilityTotal  = 0;
-
+decimal weightedAverageFertility = 0;
+decimal SettedEggsTotalHOF = 0;
+decimal FertilityWeightedSumHOF = 0;
+decimal HatchPercWeightedSumHOF = 0;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
 decimal SettedEggsHatch = 0;
 decimal GradeAChicksHatch = 0;
@@ -168,8 +173,21 @@ if (GetCurrentColumnValue("Fertility") != null)
     Fertility = Convert.ToDecimal(GetCurrentColumnValue("Fertility"));
     
     SettedEggsFertilityTotal += SettedEggsFertility ;
-    FertilityTotal  += Fertility ;
+    FertilityTotal += Fertility;
+    FertilityWeightedSum += (Fertility * SettedEggsFertility );
 
+//new logic for HOF
+    decimal HatchPerc = 0;
+    if (SettedEggsHatch != 0)
+    {
+        HatchPerc = (GradeAChicksHatch * 100m) / SettedEggsHatch ;
+    }
+    
+    // Accumulate for weighted averages
+    SettedEggsTotalHOF += SettedEggsHatch ;
+    FertilityWeightedSumHOF += (Fertility * SettedEggsHatch );
+    HatchPercWeightedSumHOF += (HatchPerc * SettedEggsFertility );
+    
 
 }
 
@@ -243,7 +261,6 @@ if (GetCurrentColumnValue("GradeAChicks") != null)
 
 
 private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       decimal weightedAverageHatch = 0;
     
     if (SettedEggsHatchTotal &gt; 0)
     {
@@ -256,18 +273,65 @@ private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 
+
 private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      decimal weightedAverageFertility = 0;
+    
+    if (SettedEggsFertilityTotal &gt; 0)
+    {
+        weightedAverageFertility = FertilityWeightedSum  / SettedEggsFertilityTotal  ;
+    }
+    
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = weightedAverageFertility.ToString("N2");
+ 
+ 
+ }
+
+private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal HatchPerc = 0;
+    decimal result = 0;
+    decimal SettedEggs_HOF  = 0;
+    decimal GradeAChicksHatch_HOF = 0;
+    decimal Fertility_HOF = 0;
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        SettedEggs_HOF= Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+
+    if (GetCurrentColumnValue("GradeAChicks") != null)
+        GradeAChicksHatch_HOF = Convert.ToDecimal(GetCurrentColumnValue("GradeAChicks"));
+        
+    if (GetCurrentColumnValue("Fertility") != null)
+        Fertility_HOF = Convert.ToDecimal(GetCurrentColumnValue("Fertility"));
+        
+     if(SettedEggs_HOF!= 0){
+           HatchPerc = (GradeAChicksHatch_HOF* 100m) / SettedEggs_HOF;
+         }
+
+      if(Fertility_HOF!= 0){
+           result = (HatchPerc * 100m) / Fertility_HOF;
+         }
+  
+   XRTableCell cell = sender as XRTableCell;
+   cell.Text = result.ToString("N2"); // no decimals, adjust format if needed
+
+}
+
+private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = 0;
     
-    if (SettedEggsFertilityTotal &gt; 0)
+    // Calculate weighted averages
+    decimal weightedAvgFertility = (SettedEggsTotalHOF &gt; 0) ? FertilityWeightedSumHOF / SettedEggsTotalHOF : 0;
+    decimal weightedAvgHatchPerc = (SettedEggsTotalHOF &gt; 0) ? HatchPercWeightedSumHOF / SettedEggsTotalHOF : 0;
+    
+    // Apply the equation: (WeightedAvgHatchPerc * 100) / WeightedAvgFertility
+    if (weightedAvgFertility != 0)
     {
-        weightedAverageFertility = FertilityTotal  ;
+        result = (weightedAvgHatchPerc * 100m) / weightedAvgFertility;
     }
     
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = weightedAverageFertility.ToString("N2");
-
-}
+    cell.Text = result.ToString("N2");    
+    
+   }
 </value>
   </data>
 </root>

@@ -150,11 +150,8 @@
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>// Global variables (define ONCE at the top)
+
 decimal settedEggs = 0;
-decimal selChicks = 0;
-decimal percentage = 0;
-
-
 decimal deadChicks = 0;
 decimal cullsChicks = 0;
 decimal totalDeadAndCulls = 0;
@@ -173,19 +170,24 @@ decimal sumRowPercentages = 0;
 int rowCount = 0;
 decimal grandTotalDeadChicks    = 0;
 decimal grandTotalCullsChicks = 0;
+decimal TotalChicksHatch = 0;
      // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
 
 private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = (XRTableCell)sender;
+    decimal settedEggs_Hatch = 0;
+    decimal selChicks = 0;
+    decimal percentage = 0;
+    
 
-    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    settedEggs_Hatch = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
     selChicks  = Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
 
-    percentage = (settedEggs &gt; 0) ? (selChicks / settedEggs) * 100 : 0;
-
+    percentage = (settedEggs_Hatch &gt; 0) ? (selChicks / settedEggs_Hatch ) * 100 : 0;
+    
+    XRTableCell cell = (XRTableCell)sender;
     cell.Text = percentage.ToString("0.##");
-    selChicksReport +=  deadChicks  ;
-    settedEggsReport += cullsChicks ;
+    selChicksReport +=  selChicks ;
+    settedEggsReport += settedEggs_Hatch ;
     grandTotalSelChicks = selChicksReport + settedEggsReport ;
 
 }
@@ -240,7 +242,7 @@ private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.Canc
     // Keep grand total for all rows
         // accumulate totals
     grandTotalDeadChicks   += deadChicks  ;
-    grandTotalCullsChicks += cullsChicks ;
+    grandTotalCullsChicks += totalRejSel ;
     grandTotalSelChicks += selChicks;
 
 }
@@ -278,18 +280,31 @@ private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    ((XRTableCell)sender).Text = grandTotalRejSel.ToString("N2");
+    TotalChicksHatch = grandTotalCullsChicks  ;
+    ((XRTableCell)sender).Text = TotalChicksHatch.ToString("N0");
 }
 
 private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        XRTableCell cell = (XRTableCell)sender;
-
-    decimal avgPercentage = (rowCount &gt; 0) ? (sumRowPercentages / rowCount) : 0m;
-    cell.Text = avgPercentage.ToString("N2");         
+        XRTableCell cell = sender as XRTableCell;
+    decimal totalHatchPer = (grandTotalSettedEggs &gt; 0) 
+        ? (TotalChicksHatch/ grandTotalSettedEggs) * 100 
+        : 0;
+        
+    cell.Text = totalHatchPer.ToString("N2");        
 }
 
 
 
+
+private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    decimal totalHatchPercent = (settedEggsReport &gt; 0) 
+        ? (selChicksReport / settedEggsReport ) * 100 
+        : 0;
+        
+    cell.Text = totalHatchPercent.ToString("N2");
+
+}
 </value>
   </data>
 </root>
