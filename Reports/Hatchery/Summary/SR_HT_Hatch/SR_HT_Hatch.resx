@@ -140,35 +140,37 @@ decimal TotalPercentageFertileEggs  = 0;
 decimal TotalPercentageHatchPer = 0;
 decimal totalReportSellableChicks = 0;
 decimal totalReportSettedEggs = 0;
+decimal totalFertileEggs = 0;
+decimal totalSettedEggs = 0;
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal fertPer = 0;
+    decimal settedEggs = 0;
+
+    // Read fields safely
+    if (GetCurrentColumnValue("FertPer") != null)
+        fertPer = Convert.ToDecimal(GetCurrentColumnValue("FertPer"));
+
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+
+    // Calculate FertileEggs = FertPer * SettedEggs / 100
+    decimal fertileEggs = (fertPer * settedEggs) / 100;
+
+    // Sum Running totals
+    totalFertileEggs += fertileEggs;
+    totalSettedEggs += settedEggs;
+   }
 
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal fertileEggs = 0;
-decimal settedEggs = 0;
+// Final Result
+    decimal finalResult = 0;
+    if (totalSettedEggs != 0)
+        finalResult = (totalFertileEggs * 100) / totalSettedEggs;
 
-// --- Accumulators for totals ---
-decimal totalReportFertileEggs = 0;
-decimal totalReportSettedEggs = 0;
-
-// --- FertileEggs ---
-if (GetCurrentColumnValue("FertileEggs") != null)
-    fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
-totalReportFertileEggs += fertileEggs;
-
-// --- SettedEggs ---
-if (GetCurrentColumnValue("SettedEggs") != null)
-    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-totalReportSettedEggs += settedEggs;
-
-// --- Total percentage ---
-if (totalReportSettedEggs != 0)
-    TotalPercentageFertileEggs = (totalReportFertileEggs * 100m) / totalReportSettedEggs;
-
-// --- Assign row % to the cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = TotalPercentageFertileEggs.ToString("0.00");  // Row level %
-
+    // Display formatted value (2 decimals + % sign)
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = finalResult.ToString("N2");
 }
 
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -254,6 +256,8 @@ private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEve
         tdCredit.Text = handledEggsValue.ToString();
     }
 }
+
+
 
 
 </value>

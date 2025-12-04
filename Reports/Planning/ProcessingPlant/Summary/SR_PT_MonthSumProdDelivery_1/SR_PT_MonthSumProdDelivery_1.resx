@@ -149,9 +149,10 @@ cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell19.Text = PluckRejectPercReport.ToString("0");
+     xrTableCell19.Text = PluckRejectPercReport.ToString("N2");
 
 }
+
 
 </value>
   </data>

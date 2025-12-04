@@ -126,9 +126,15 @@
 [SR_HT_RecHall.DoubleYolkEggs] + [SR_HT_RecHall.DestroyedEggs]
 </value>
   </data>
+  <data name="DailyBalance.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([HatchingEggs]), 0, [HatchingEggs]) +
+Iif(IsNullOrEmpty([OpenStock]), 0, [OpenStock]) -
+Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs]) -
+Iif(IsNullOrEmpty([SettedEggs]), 0, [SettedEggs])
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal TotalSpecialEggsReport  = 0;
-decimal TotalhatchingEggsReportPerc  = 0 ;
+    <value>decimal TotalhatchingEggsReportPerc  = 0 ;
 decimal TotalOverWeightEggsReport = 0;
 decimal TotalDirtyEggsReport = 0;
 decimal TotalDeformityEggsReport = 0;
@@ -137,7 +143,12 @@ decimal TotalDestroyedEggsReport = 0;
 decimal TotalCrackedEggsReport = 0;
 decimal TotalDoubleYolkEggsReport = 0;
 decimal TotalOtherEggsReport = 0;
-
+decimal TotalRecEggs = 0;
+decimal TotalOtherEggs = 0;
+decimal TotalPerc  = 0;
+decimal TotalSpecialEggsReport = 0;
+decimal TotalhatchingEggs   = 0;
+decimal TotalRecEggsHatch = 0;
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        // --- Declare values ---
 decimal softShellEggs = 0;
@@ -153,10 +164,8 @@ decimal dirtyEggs = 0;
 decimal deformityEggs = 0;
 decimal crackedEggs = 0;
 decimal doubleYolkEggs = 0;
-decimal TotalSpecialEggs  = 0 ;
-decimal Total = 0 ;
 decimal recEggs = 0;
-
+decimal destroyedEggs = 0;
 // --- Read values ---
 if (GetCurrentColumnValue("SoftShellEggs") != null)
     softShellEggs = Convert.ToDecimal(GetCurrentColumnValue("SoftShellEggs"));
@@ -196,33 +205,35 @@ if (GetCurrentColumnValue("DeformityEggs") != null)
 
 if (GetCurrentColumnValue("CrackedEggs") != null)
     crackedEggs = Convert.ToDecimal(GetCurrentColumnValue("CrackedEggs"));
+    
+if (GetCurrentColumnValue("DestroyedEggs") != null)
+    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
+
 
 if (GetCurrentColumnValue("DoubleYolkEggs") != null)
     doubleYolkEggs = Convert.ToDecimal(GetCurrentColumnValue("DoubleYolkEggs"));
 
 // --- Sum them ---
-decimal result = softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
-                 otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
-                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs;
+decimal result =  softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
+                 otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
+                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs  ;
 
 // --- Add to group total ---
-Total += result;
-
-
-
+decimal percentage = 0;
+if (recEggs != 0)
+    percentage = (result * 100m) / recEggs;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = TotalSpecialEggs.ToString("0"); // no decimals
-
+cell.Text = string.Format("{0:N0}\n{1:N2}", result , percentage);
+TotalPerc += result;
 
 
 
 }
 
 private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell64.Text = TotalSpecialEggsReport.ToString("0");
-      TotalSpecialEggsReport  = 0; // reset for next group
+      xrTableCell64.Text = TotalPerc.ToString("N0");
 
 }
 
@@ -247,14 +258,17 @@ if (recEggs != 0)
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00"); // 2 decimals
-TotalhatchingEggsReportPerc += percentage;
+TotalhatchingEggs  += hatchingEggs ;
+TotalRecEggsHatch += recEggs ;
 
 
 }
 
 private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell66.Text = TotalhatchingEggsReportPerc.ToString("0");
-      TotalhatchingEggsReportPerc  = 0; // reset for next group
+    if(TotalRecEggsHatch != 0){
+        TotalhatchingEggsReportPerc = (TotalhatchingEggs   * 100m) / TotalRecEggsHatch ;
+        }
+      xrTableCell66.Text = TotalhatchingEggsReportPerc.ToString("N2");
 
 }
 
@@ -287,7 +301,7 @@ totalSpecialEggs = total + totalPerc ;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalSpecialEggs.ToString("0"); // no decimals
+cell.Text = string.Format("{0:N0}\n{1:N2}", smallEggs, totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
@@ -332,7 +346,7 @@ totalOverWeightEggs = total + totalPerc;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalOverWeightEggs.ToString("0"); // no decimals
+cell.Text = string.Format("{0:N0}\n{1:N2}", overWeightEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
@@ -376,7 +390,7 @@ totalDirtyEggs = total + totalPerc;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDirtyEggs.ToString("0"); // no decimals
+cell.Text = string.Format("{0:N0}\n{1:N2}", dirtyEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
@@ -390,45 +404,6 @@ private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.Canc
 
 }
 
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // --- Declare values ---
-decimal deformityEggs = 0;
-decimal recEggs = 0;
-decimal total = 0;
-decimal totalPerc = 0;
-decimal totalDeformityEggs = 0;
-decimal TotalReport  = 0;
-decimal TotalPercReport  = 0;
-
-// --- Read values ---
-if (GetCurrentColumnValue("DeformityEggs") != null)
-    deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Base total (DeformityEggs) ---
-total = deformityEggs;
-
-// --- IIf logic: DeformityEggs % of RecEggs ---
-if (recEggs != 0)
-    totalPerc = (deformityEggs * 100.0m / recEggs);
-
-// --- Final sum ---
-totalDeformityEggs = total + totalPerc;
-
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDeformityEggs.ToString("0"); // no decimals
-
-// --- Add to group totals ---
-TotalReport += total;
-TotalPercReport += totalPerc;
-TotalDeformityEggsReport = TotalReport + TotalPercReport;
-
-
-}
 
 private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell21.Text = TotalDeformityEggsReport.ToString("0");
@@ -436,44 +411,6 @@ private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.Canc
 
 }
 
-private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // --- Declare values ---
-decimal brokenEggs = 0;
-decimal recEggs = 0;
-decimal total = 0;
-decimal totalPerc = 0;
-decimal totalBrokenEggs = 0;
-decimal TotalReport  = 0;
-decimal TotalPercReport  = 0;
-
-// --- Read values ---
-if (GetCurrentColumnValue("BrokenEggs") != null)
-    brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Base total (BrokenEggs) ---
-total = brokenEggs;
-
-// --- IIf logic: BrokenEggs % of RecEggs ---
-if (recEggs != 0)
-    totalPerc = (brokenEggs * 100.0m / recEggs);
-
-// --- Final sum ---
-totalBrokenEggs = total + totalPerc;
-
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalBrokenEggs.ToString("0"); // no decimals
-// --- Add to group totals ---
-TotalReport += total;
-TotalPercReport += totalPerc;
-TotalBrokenEggsReport = TotalReport + TotalPercReport;
-
-
-}
 
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      xrTableCell22.Text = TotalBrokenEggsReport.ToString("0");
@@ -510,8 +447,7 @@ totalDestroyedEggs = total + totalPerc;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDestroyedEggs.ToString("0"); // no decimals
-
+cell.Text = string.Format("{0:N0}\n{1:N2}", destroyedEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
@@ -557,7 +493,7 @@ totalCrackedEggs = total + totalPerc;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalCrackedEggs.ToString("0"); // no decimals
+cell.Text = string.Format("{0:N0}\n{1:N2}", crackedEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
@@ -600,8 +536,7 @@ totalDoubleYolkEggs = total + totalPerc;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDoubleYolkEggs.ToString("0"); // no decimals
-
+cell.Text = string.Format("{0:N0}\n{1:N2}", doubleYolkEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
@@ -620,11 +555,7 @@ private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.Canc
        // --- Declare values ---  
 decimal otherEggs = 0;
 decimal recEggs = 0;
-decimal total = 0;
 decimal totalPerc = 0;
-decimal totalOtherEggs = 0;
-decimal TotalReport  = 0;
-decimal TotalPercReport  = 0;
 
 // --- Read values ---
 if (GetCurrentColumnValue("OtherEggs") != null)
@@ -633,36 +564,113 @@ if (GetCurrentColumnValue("OtherEggs") != null)
 if (GetCurrentColumnValue("RecEggs") != null)
     recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
 
-// --- Base total (OtherEggs) ---
-total = otherEggs;
-
 // --- IIf logic: OtherEggs % of RecEggs ---
 if (recEggs != 0)
     totalPerc = (otherEggs * 100.0m / recEggs);
 
-// --- Final sum ---
-totalOtherEggs = total + totalPerc;
 
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalOtherEggs.ToString("0"); // no decimals
+cell.Text = string.Format("{0:N0}\n{1:N2}", otherEggs , totalPerc);
 // --- Add to group totals ---
-TotalReport += total;
-TotalPercReport += totalPerc;
-TotalOtherEggsReport = TotalReport + TotalPercReport;
+TotalRecEggs += recEggs ;
+TotalOtherEggs += otherEggs ;
 
 
 }
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell63.Text = TotalOtherEggsReport.ToString("0");
-       TotalOtherEggsReport= 0; // reset for next group
+    if(TotalRecEggs  != 0){
+        TotalOtherEggsReport = (TotalOtherEggs  * 100m) / TotalRecEggs ;
+        
+        }
+    xrTableCell63.Text = TotalOtherEggsReport.ToString("N0");
 
 }
 
 
 
+
+
+private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          // --- Declare values ---
+decimal deformityEggs = 0;
+decimal recEggs = 0;
+decimal total = 0;
+decimal totalPerc = 0;
+decimal totalDeformityEggs = 0;
+decimal TotalReport  = 0;
+decimal TotalPercReport  = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("DeformityEggs") != null)
+    deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
+
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
+
+// --- Base total (DeformityEggs) ---
+total = deformityEggs;
+
+// --- IIf logic: DeformityEggs % of RecEggs ---
+if (recEggs != 0)
+    totalPerc = (deformityEggs * 100.0m / recEggs);
+
+// --- Final sum ---
+totalDeformityEggs = total + totalPerc;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalPerc.ToString("N2"); // no decimals
+
+// --- Add to group totals ---
+TotalReport += total;
+TotalPercReport += totalPerc;
+TotalDeformityEggsReport = TotalReport + TotalPercReport;
+
+}
+
+
+
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        decimal brokenEggs = 0;
+decimal recEggs = 0;
+decimal total = 0;
+decimal totalPerc = 0;
+decimal totalBrokenEggs = 0;
+decimal TotalReport  = 0;
+decimal TotalPercReport  = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("BrokenEggs") != null)
+    brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
+
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
+
+// --- Base total (BrokenEggs) ---
+total = brokenEggs;
+
+// --- IIf logic: BrokenEggs % of RecEggs ---
+if (recEggs != 0)
+    totalPerc = (brokenEggs * 100.0m / recEggs);
+
+// --- Final sum ---
+totalBrokenEggs = total + totalPerc;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", brokenEggs, totalPerc);
+// --- Add to group totals ---
+TotalReport += total;
+TotalPercReport += totalPerc;
+TotalBrokenEggsReport = TotalReport + TotalPercReport;
+
+}
 </value>
   </data>
 </root>

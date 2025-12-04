@@ -121,32 +121,193 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>
+    <value>decimal totalSettedEggs = 0;
+
 private void crossTabDataCell2_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
-       // Get full current row as a data record
-    var row = this.GetCurrentRow() as XRDataRecord;
-    if (row == null)
+     XRCrossTabCell cell = (XRCrossTabCell)sender;
+
+    // Get values from the data source
+    decimal settedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs");
+    decimal chicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks");
+
+    // Apply calculation
+    decimal result = (settedEggs != 0) ? ((chicks / settedEggs) * 100) : 0;
+
+    // Display result formatted as percentage (two decimals)
+    cell.Text = result.ToString("0.00") ;
+   
+  }
+
+private void crossTabTotalCell31_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+       XRCrossTabCell cell = (XRCrossTabCell)sender;
+
+// Safe conversion using Convert.ToDecimal instead of casting directly
+    decimal totalEggs = Convert.ToDecimal(cell.GetCurrentFieldValue("TotalEggs"));
+    decimal settedEggs = Convert.ToDecimal(cell.GetCurrentFieldValue("SettedEggs"));
+
+    // Percentage calculation
+    decimal result = (totalEggs != 0) ? (settedEggs / totalEggs) * 100 : 0;
+
+    // Assign formatted text to cell
+    cell.Text = result.ToString("0.00") ;
+
+}
+
+
+private void crossTabTotalCell5_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    XRCrossTabCell cell = (XRCrossTabCell)sender;
+
+    decimal value = 0;
+    try { value = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs"); } catch {}
+
+    totalSettedEggs += value;  // accumulate total
+}
+
+private void crossTabTotalCell10_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    XRCrossTabCell cell = (XRCrossTabCell)sender;
+    decimal totalSettedEggsChicksPerc = 0;
+    decimal valuOfSettedEggs = 0;
+    decimal totalChicksPerc = 0;
+    decimal valuOfChicks = 0;
+
+    try { valuOfSettedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs"); } catch {}
+    try { valuOfChicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks"); } catch {}
+    totalSettedEggsChicksPerc += valuOfSettedEggs ;  // accumulate total
+    totalChicksPerc += valuOfChicks ;
+    decimal weightedAvg = (totalSettedEggsChicksPerc != 0)
+                            ? (totalChicksPerc / totalSettedEggsChicksPerc ) * 100 
+                            : 0;
+
+    cell.Text = weightedAvg.ToString("0.00") ;
+}
+
+private void crossTabTotalCell8_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    XRCrossTabCell cell = (XRCrossTabCell)sender;
+
+    // Get values from the data source
+    decimal settedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs");
+    decimal chicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks");
+
+    // Apply calculation
+    decimal result = (settedEggs != 0) ? ((chicks / settedEggs) * 100) : 0;
+
+    // Display result formatted as percentage (two decimals)
+    cell.Text = result.ToString("0.00") ;
+
+}
+
+private void crossTabTotalCell13_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+     XRCrossTabCell cell = (XRCrossTabCell)sender;
+    decimal totalSettedEggsChicksPerc = 0;
+    decimal valuOfSettedEggs = 0;
+    decimal totalChicksPerc = 0;
+    decimal valuOfChicks = 0;
+
+    try { valuOfSettedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs"); } catch {}
+    try { valuOfChicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks"); } catch {}
+    totalSettedEggsChicksPerc += valuOfSettedEggs ;  // accumulate total
+    totalChicksPerc += valuOfChicks ;
+    decimal weightedAvg = (totalSettedEggsChicksPerc != 0)
+                            ? (totalChicksPerc / totalSettedEggsChicksPerc ) * 100 
+                            : 0;
+
+    cell.Text = weightedAvg.ToString("0.00") ;
+
+}
+
+private void crossTabTotalCell34_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+         XRCrossTabCell cell = (XRCrossTabCell)sender;
+
+    decimal totalSettedEggsChicksPerc = 0;
+    decimal valuOfSettedEggs = 0;
+
+    try { valuOfSettedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs"); } catch {}
+    totalSettedEggsChicksPerc += valuOfSettedEggs ;  // accumulate total
+    decimal Percentage = (totalSettedEggsChicksPerc != 0)
+                            ? (totalSettedEggsChicksPerc / totalSettedEggsChicksPerc ) * 100 
+                            : 0;
+
+    cell.Text = Percentage.ToString("N2") ;
+
+}
+
+private void xrTableCell7_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+
+    decimal valuOfSettedEggs = 0;
+    decimal totalSettedEggsChicksPerc = 0;
+
+    // Read field value safely
+    if (GetCurrentColumnValue("SettedEggs") != null)
     {
-        ((XRCrossTabCell)sender).Text = "";
-        return;
+        try
+        {
+            valuOfSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+        }
+        catch { }
     }
 
-    decimal chicks = 0;
-    decimal settedEggs = 0;
+    // accumulate
+    totalSettedEggsChicksPerc += valuOfSettedEggs;
+    decimal TotalSettedEggs = totalSettedEggsChicksPerc;
 
-    // Read fields directly from the data row
-    if (row["Chicks"] != null)
-        chicks = Convert.ToDecimal(row["Chicks"]);
+    // assign result to cell
+    cell.Text = TotalSettedEggs.ToString("N0");   // formatted with no decimals
+    }
 
-    if (row["SettedEggs"] != null)
-        settedEggs = Convert.ToDecimal(row["SettedEggs"]);
+private void crossTabTotalCell11_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+     XRCrossTabCell cell = (XRCrossTabCell)sender;
+    decimal totalSettedEggsChicksPerc = 0;
+    decimal valuOfSettedEggs = 0;
+    decimal totalChicksPerc = 0;
+    decimal valuOfChicks = 0;
 
-    // Calculate %
-    if (settedEggs &gt; 0)
-        ((XRCrossTabCell)sender).Text = ((chicks * 100m) / settedEggs).ToString("N2");
-    else
-        ((XRCrossTabCell)sender).Text = "";
+    try { valuOfSettedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs"); } catch {}
+    try { valuOfChicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks"); } catch {}
+    totalSettedEggsChicksPerc += valuOfSettedEggs ;  // accumulate total
+    totalChicksPerc += valuOfChicks ;
+    decimal weightedAvg = (totalSettedEggsChicksPerc != 0)
+                            ? (totalChicksPerc / totalSettedEggsChicksPerc ) * 100 
+                            : 0;
+
+    cell.Text = weightedAvg.ToString("0.00") ;
+
 }
+
+private void crossTabTotalCell32_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+        XRCrossTabCell cell = (XRCrossTabCell)sender;
+
+// Safe conversion using Convert.ToDecimal instead of casting directly
+    decimal totalEggs = Convert.ToDecimal(cell.GetCurrentFieldValue("TotalEggs"));
+    decimal settedEggs = Convert.ToDecimal(cell.GetCurrentFieldValue("SettedEggs"));
+
+    // Percentage calculation
+    decimal result = (totalEggs != 0) ? (settedEggs / totalEggs) * 100 : 0;
+
+    // Assign formatted text to cell
+    cell.Text = result.ToString("0.00") ;
+
+}
+
+private void crossTabTotalCell14_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+     XRCrossTabCell cell = (XRCrossTabCell)sender;
+    decimal totalSettedEggsChicksPerc = 0;
+    decimal valuOfSettedEggs = 0;
+    decimal totalChicksPerc = 0;
+    decimal valuOfChicks = 0;
+
+    try { valuOfSettedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs"); } catch {}
+    try { valuOfChicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks"); } catch {}
+    totalSettedEggsChicksPerc += valuOfSettedEggs ;  // accumulate total
+    totalChicksPerc += valuOfChicks ;
+    decimal weightedAvg = (totalSettedEggsChicksPerc != 0)
+                            ? (totalChicksPerc / totalSettedEggsChicksPerc ) * 100 
+                            : 0;
+
+    cell.Text = weightedAvg.ToString("0.00") ;
+
+}
+
 </value>
   </data>
 </root>

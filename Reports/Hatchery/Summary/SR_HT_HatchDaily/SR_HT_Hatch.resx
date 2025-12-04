@@ -138,6 +138,8 @@
     <value>decimal TotalPercentageSellableChicks  =0;
 decimal TotalPercentageFertileEggs  = 0;
 decimal TotalPercentageHatchPer  = 0;
+decimal totalReportFertileEggs = 0;
+decimal totalReportSettedEggs = 0;
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
         // --- Declare values ---
 decimal sellableChicks = 0;
@@ -179,7 +181,7 @@ private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // --- Declare values ---
+    // --- Declare values ---
 decimal fertileEggs = 0;
 decimal settedEggs = 0;
 
@@ -190,12 +192,12 @@ decimal totalReportSettedEggs = 0;
 // --- FertileEggs ---
 if (GetCurrentColumnValue("FertileEggs") != null)
     fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
-    totalReportFertileEggs += fertileEggs;
+totalReportFertileEggs += fertileEggs;
 
 // --- SettedEggs ---
 if (GetCurrentColumnValue("SettedEggs") != null)
     settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
-    totalReportSettedEggs += settedEggs;
+totalReportSettedEggs += settedEggs;
 
 // --- Total percentage ---
 if (totalReportSettedEggs != 0)
@@ -261,6 +263,29 @@ private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEve
         // Use the actual value
         tdCredit.Text = handledEggsValue.ToString();
     }
+}
+
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare values ---
+decimal fertileEggs = 0;
+decimal settedEggs = 0;
+
+// --- Accumulators for totals ---
+decimal totalReportFertileEggs = 0;
+decimal totalReportSettedEggs = 0;
+
+// --- FertileEggs ---
+if (GetCurrentColumnValue("FertileEggs") != null)
+    fertileEggs = Convert.ToDecimal(GetCurrentColumnValue("FertileEggs"));
+
+// --- SettedEggs ---
+if (GetCurrentColumnValue("SettedEggs") != null)
+    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    
+totalReportFertileEggs += fertileEggs;
+totalReportSettedEggs += settedEggs;
+
 }
 </value>
   </data>

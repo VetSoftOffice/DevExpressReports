@@ -138,6 +138,26 @@ private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.Canc
          xrTableCell20.Text = groupSumChicks.ToString("N0");
 
 }
+
+
+private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell c = sender as XRTableCell;
+
+    var cur = GetCurrentColumnValue("HatcheryCode");
+    var prev = GetPreviousColumnValue("HatcheryCode");
+
+    bool isGroupStart = (prev == null || !prev.Equals(cur));
+
+    if (isGroupStart)
+    {
+        c.Visible = true;
+        c.Text = cur?.ToString();
+    }
+    else
+    {
+        c.Visible = false;
+        c.Text = "";
+    }}
 </value>
   </data>
 </root>
