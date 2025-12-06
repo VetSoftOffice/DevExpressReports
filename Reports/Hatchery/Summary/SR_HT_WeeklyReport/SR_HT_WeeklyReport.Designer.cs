@@ -363,6 +363,7 @@
             this.crossTabTotalStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.sR_HT_RecHallTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_RecHallTableAdapter();
             this.BookPerf = new DevExpress.XtraReports.Parameters.Parameter();
+            this.sR_HT_WeeklyReportTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_WeeklyReportTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -1563,6 +1564,10 @@
             this.BookPerf.Name = "BookPerf";
             this.BookPerf.Visible = false;
             // 
+            // sR_HT_WeeklyReportTableAdapter
+            // 
+            this.sR_HT_WeeklyReportTableAdapter.ClearBeforeFill = true;
+            // 
             // SR_HT_WeeklyReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1892,5 +1897,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.Parameters.Parameter BookPerf;
         private DevExpress.XtraReports.UI.XRSubreport SR_HT_WeeklyReport_Sub1;
+        private Finance.DataSets.dsFinanceTableAdapters.SR_HT_WeeklyReportTableAdapter sR_HT_WeeklyReportTableAdapter;
     }
 }

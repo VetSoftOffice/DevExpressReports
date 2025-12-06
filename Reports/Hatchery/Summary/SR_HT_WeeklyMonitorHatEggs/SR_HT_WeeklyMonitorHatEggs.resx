@@ -183,8 +183,7 @@ if (StainedPercReportCount &gt; 0)
 }
 
 private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell43.Text = avgPercentageStained.ToString("0");
-    avgPercentageStained = 0; // reset for next group
+    xrTableCell43.Text = avgPercentageStained.ToString("N2");
 
 }
 
@@ -559,6 +558,7 @@ private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.Canc
        xrTableCell65.Text = avgPercentageUpsideDown.ToString("N2");
 
 }
+
 
 
 </value>

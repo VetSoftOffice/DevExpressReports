@@ -154,8 +154,13 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal TotalPercentageSelChicks = 0;
 decimal TotalPercentageTotalCulls = 0 ;
+decimal totalSelChicks  = 0;
+decimal totalsettedEggs   = 0;
+decimal totalTotalCulls  = 0;
+decimal totalSettedEggsCulls = 0;
 private void xrTableCell1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal SelChicks= 0
+    decimal settedEggs  = 0;
     if (GetCurrentColumnValue("SelChicks") != null)
         SelChicks= Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
     if (GetCurrentColumnValue("SettedEggs") != null)
@@ -165,23 +170,22 @@ private void xrTableCell1_BeforePrint(object sender, System.ComponentModel.Cance
     decimal percentage = 0;
     if (settedEggs != 0)
         percentage = (SelChicks* 100m) / settedEggs;
-        TotalPercentageSelChicks+= percentage 
         // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
     cell.Text = percentage.ToString("0.##");   // 2 decimal places
-
-     
+    totalSelChicks += SelChicks;
+    totalsettedEggs  += settedEggs ;
 }
 
-private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell46.Text = TotalPercentageTotalCulls.ToString("0");
-      TotalPercentageTotalCulls= 0; 
-
-}
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell45.Text = TotalPercentageSelChicks.ToString("0");
-      TotalPercentageSelChicks = 0; 
+    if(totalsettedEggs   != 0)
+    {
+        
+        TotalPercentageSelChicks = (totalSelChicks  * 100m) / totalsettedEggs  ;
+    }
+    
+     xrTableCell45.Text = TotalPercentageSelChicks.ToString("N2");
 
 }
 
@@ -196,13 +200,18 @@ private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.Canc
     decimal percentage = 0;
     if (settedEggs != 0)
         percentage = (TotalCulls* 100m) / settedEggs;
-        TotalPercentageTotalCulls+= percentage 
     // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
     cell.Text = percentage.ToString("0.##");   // 2 decimal places
+    totalTotalCulls += TotalCulls;
+    totalSettedEggsCulls += settedEggs ;
 
 }
 
+private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      xrTableCell46.Text = TotalPercentageTotalCulls.ToString("N2");
+
+}
 
 </value>
   </data>
