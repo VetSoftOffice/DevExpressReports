@@ -123,35 +123,38 @@
 [SR_HT_RecHall.DoubleYolkEggs] + [SR_HT_RecHall.DestroyedEggs]
 </value>
   </data>
+  <data name="DailyBalance.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([HatchingEggs]), 0, [HatchingEggs]) +
+Iif(IsNullOrEmpty([OpenStock]), 0, [OpenStock]) -
+Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs]) -
+Iif(IsNullOrEmpty([SettedEggs]), 0, [SettedEggs])
+</value>
+  </data>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXQiPjxGaWVsZCBOYW1lPSJ0U3RBY3Rpb25JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5CYWxhbmNlRm9yZWlnbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByaWNlVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFN1cHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZUZvcmVpZ24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaWxsU3RhdGVtZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXRfT0xEIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0U3VwcE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQmlsbFN0YXRlbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRGViaXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRmxrRGlyZWN0Q29zdCI+PEZpZWxkIE5hbWU9IlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVG90YWxDb3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ2hpY2tzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUE9MIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2hpY2tlbkNvc3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQbGFjZWRObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ2hlY2tlbnNXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJc0Nvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48VmlldyBOYW1lPSJTUl9GQ19GTV9TdG9ja01vdmVtZW50Ij48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkluT3V0T3JkZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRNaWxsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvV2hvbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXRfUHJvZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGb3JtdWxhT3BlcmFuZF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik91dHB1dHNTdGRVbml0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3RoZXJPdXRwdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbmRMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uc3VtZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTb2xkVHJhbnNmZXJPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCYXRjaENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEduSXRlbVR5cGVJRF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSXRlbUNvZGVfQ29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VCYWxhbmNlVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbnB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdGhlck91dHB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzU3RkVW5pdFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uZExvc3NWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbnN1bWVkVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb25WYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGRUcmFuc2Zlck91dFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2xvc2VCYWxhbmNlIj48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VkRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZDdW1EZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkN1bVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGQ3VtT3RoZXJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUN1bU90aGVyT3V0cHV0cyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0l0ZW1CYWxhbmNlIj48RmllbGQgTmFtZT0iQ3VzdE5hbWVXaXRob3V0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX01vbnRobHlEaXJlY3RDb3N0Ij48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal TotalSpecialEggsReport  = 0;
-decimal groupTotalSumSpecialEggs = 0;
-decimal TotalhatchingEggsReportPerc  = 0 ;
-decimal TotalpercentageHatchingEggsGroup  = 0 ;
-decimal TotalSpecialEggsReport  = 0;
-decimal groupTotalSmallEggs = 0;
-decimal TotalOverWeightEggsReport =0 ;
-decimal groupTotalOverWeightEggs  = 0;
+    <value>decimal TotalhatchingEggsReportPerc  = 0 ;
+decimal TotalOverWeightEggsReport = 0;
 decimal TotalDirtyEggsReport = 0;
-decimal groupTotalDirtyEggs = 0;
 decimal TotalDeformityEggsReport = 0;
-decimal groupTotalDeformityEggs = 0;
 decimal TotalBrokenEggsReport = 0;
-decimal groupTotalBrokenEggs = 0;
 decimal TotalDestroyedEggsReport = 0;
-decimal groupTotalDestroyedEggs = 0;
 decimal TotalCrackedEggsReport = 0;
-decimal groupTotalCrackedEggs = 0;
 decimal TotalDoubleYolkEggsReport = 0;
-decimal groupTotalDoubleYolkEggs = 0;
 decimal TotalOtherEggsReport = 0;
-decimal groupTotalOtherEggs = 0;
-
-private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
+decimal TotalRecEggs = 0;
+decimal TotalOtherEggs = 0;
+decimal TotalPerc  = 0;
+decimal TotalSpecialEggsReport = 0;
+decimal TotalhatchingEggs   = 0;
+decimal TotalRecEggsHatch = 0;
+decimal TotalPercGroup  = 0;
+decimal TotalhatchingEggsGroup   = 0;
+decimal TotalRecEggsHatchGroup = 0;
+decimal TotalhatchingEggsGroupPerc = 0;
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          // --- Declare values ---
 decimal softShellEggs = 0;
 decimal minorCrackedEggs = 0;
 decimal majorCrackedEggs = 0;
@@ -165,9 +168,8 @@ decimal dirtyEggs = 0;
 decimal deformityEggs = 0;
 decimal crackedEggs = 0;
 decimal doubleYolkEggs = 0;
-decimal TotalSpecialEggs  = 0 ;
-decimal Total = 0 ;
-decimal TotalPercReport  =0;
+decimal recEggs = 0;
+decimal destroyedEggs = 0;
 // --- Read values ---
 if (GetCurrentColumnValue("SoftShellEggs") != null)
     softShellEggs = Convert.ToDecimal(GetCurrentColumnValue("SoftShellEggs"));
@@ -186,6 +188,9 @@ if (GetCurrentColumnValue("OtherEggs") != null)
 
 if (GetCurrentColumnValue("WholeEggs") != null)
     wholeEggs = Convert.ToDecimal(GetCurrentColumnValue("WholeEggs"));
+    
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
 
 if (GetCurrentColumnValue("BrokenEggs") != null)
     brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
@@ -204,37 +209,37 @@ if (GetCurrentColumnValue("DeformityEggs") != null)
 
 if (GetCurrentColumnValue("CrackedEggs") != null)
     crackedEggs = Convert.ToDecimal(GetCurrentColumnValue("CrackedEggs"));
+    
+if (GetCurrentColumnValue("DestroyedEggs") != null)
+    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
+
 
 if (GetCurrentColumnValue("DoubleYolkEggs") != null)
     doubleYolkEggs = Convert.ToDecimal(GetCurrentColumnValue("DoubleYolkEggs"));
 
 // --- Sum them ---
-decimal result = softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
+decimal result =  softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
                  otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
-                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs;
-
-// --- Add to group total ---
-Total += result;
+                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs  ;
+TotalPercGroup += result ;
 
 
-// --- Add IIf logic ---
-if (recEggs != 0)
-    TotalPerc = (totalUnHatch * 100.0m / recEggs);
+//Logic for Hatch %
+       // --- Declare values ---
+decimal hatchingEggs = 0;
 
-TotalPercReport += TotalPerc 
+// --- HatchingEggs ---
+if (GetCurrentColumnValue("HatchingEggs") != null)
+    hatchingEggs = Convert.ToDecimal(GetCurrentColumnValue("HatchingEggs"));
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = TotalSpecialEggs.ToString("0"); // no decimals
 
-TotalSpecialEggs = result + TotalPerc;
-TotalSpecialEggsReport = Total  + TotalPercReport;
-
+TotalhatchingEggsGroup  += hatchingEggs ;
+TotalRecEggsHatchGroup += recEggs ;
 
 }
 
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
+private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       // --- Declare values ---
 decimal softShellEggs = 0;
 decimal minorCrackedEggs = 0;
 decimal majorCrackedEggs = 0;
@@ -248,13 +253,8 @@ decimal dirtyEggs = 0;
 decimal deformityEggs = 0;
 decimal crackedEggs = 0;
 decimal doubleYolkEggs = 0;
-decimal destroyedEggs = 0;
-
-decimal totalUnHatch = 0;
 decimal recEggs = 0;
-
-decimal groupSumSpecialEggs  =  0;
-decimal TotalPercGroup  = 0 ;
+decimal destroyedEggs = 0;
 // --- Read values ---
 if (GetCurrentColumnValue("SoftShellEggs") != null)
     softShellEggs = Convert.ToDecimal(GetCurrentColumnValue("SoftShellEggs"));
@@ -273,6 +273,9 @@ if (GetCurrentColumnValue("OtherEggs") != null)
 
 if (GetCurrentColumnValue("WholeEggs") != null)
     wholeEggs = Convert.ToDecimal(GetCurrentColumnValue("WholeEggs"));
+    
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
 
 if (GetCurrentColumnValue("BrokenEggs") != null)
     brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
@@ -291,284 +294,40 @@ if (GetCurrentColumnValue("DeformityEggs") != null)
 
 if (GetCurrentColumnValue("CrackedEggs") != null)
     crackedEggs = Convert.ToDecimal(GetCurrentColumnValue("CrackedEggs"));
+    
+if (GetCurrentColumnValue("DestroyedEggs") != null)
+    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
+
 
 if (GetCurrentColumnValue("DoubleYolkEggs") != null)
     doubleYolkEggs = Convert.ToDecimal(GetCurrentColumnValue("DoubleYolkEggs"));
 
-if (GetCurrentColumnValue("DestroyedEggs") != null)
-    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
+// --- Sum them ---
+decimal result =  softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
+                 otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
+                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs  ;
 
-if (GetCurrentColumnValue("TotalUnHatch") != null)
-    totalUnHatch = Convert.ToDecimal(GetCurrentColumnValue("TotalUnHatch"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-// --- Add to group sum ---
-groupSumSpecialEggs += (softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
-                        otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
-                        dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs);
- 
-// --- Add IIf logic ---
+// --- Add to group total ---
+decimal percentage = 0;
 if (recEggs != 0)
-    TotalPercGroup += (totalUnHatch * 100.0m / recEggs);
-    
-    
-groupTotalSumSpecialEggs = groupSumSpecialEggs + TotalPercGroup; 
-// -- new logic for Hatching eggs
-decimal HatchingEggs = 0;
-decimal RecEggs = 0;
+    percentage = (result * 100m) / recEggs;
 
-// --- HatchingEggs ---
-if (GetCurrentColumnValue("HatchingEggs") != null)
-    HatchingEggs += Convert.ToDecimal(GetCurrentColumnValue("HatchingEggs"));
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", result , percentage);
+TotalPerc += result;
 
-// --- RecEggs ---
-if (GetCurrentColumnValue("RecEggs") != null)
-    RecEggs += Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
 
-// --- Percentage calculation ---
-if (RecEggs != 0)
-    TotalpercentageHatchingEggsGroup = (HatchingEggs * 100m) / RecEggs;
-    
-  // new logic for Small Eggs
-  // --- Declare values --- 
-decimal smallEggs = 0;
-decimal recEggs = 0;
 
-decimal groupSumSmallEggs = 0;
-decimal groupPercSmallEggs = 0;
-
-// --- Read values ---
-if (GetCurrentColumnValue("SmallEggs") != null)
-    smallEggs = Convert.ToDecimal(GetCurrentColumnValue("SmallEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add SmallEggs to group sum ---
-groupSumSmallEggs += smallEggs;
-
-// --- Add IIf logic (percentage of RecEggs) ---
-if (recEggs != 0)
-    groupPercSmallEggs += (smallEggs * 100.0m / recEggs);
-
-// --- Final group total ---
-groupTotalSmallEggs = groupSumSmallEggs + groupPercSmallEggs;
-
-// new logic for OverWeightEggs 
-// --- Declare values --- 
-decimal overWeightEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumOverWeightEggs = 0;
-decimal groupPercOverWeightEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("OverWeightEggs") != null)
-    overWeightEggs = Convert.ToDecimal(GetCurrentColumnValue("OverWeightEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add OverWeightEggs to group sum --- 
-groupSumOverWeightEggs += overWeightEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercOverWeightEggs += (overWeightEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalOverWeightEggs = groupSumOverWeightEggs + groupPercOverWeightEggs;
-
-// new logic for DirtyEggs 
-// --- Declare values --- 
-decimal dirtyEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumDirtyEggs = 0;
-decimal groupPercDirtyEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("DirtyEggs") != null)
-    dirtyEggs = Convert.ToDecimal(GetCurrentColumnValue("DirtyEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add DirtyEggs to group sum --- 
-groupSumDirtyEggs += dirtyEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercDirtyEggs += (dirtyEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalDirtyEggs = groupSumDirtyEggs + groupPercDirtyEggs;
-
-// new logic for DeformityEggs 
-// --- Declare values --- 
-decimal deformityEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumDeformityEggs = 0;
-decimal groupPercDeformityEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("DeformityEggs") != null)
-    deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add DeformityEggs to group sum --- 
-groupSumDeformityEggs += deformityEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercDeformityEggs += (deformityEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalDeformityEggs = groupSumDeformityEggs + groupPercDeformityEggs;
-
-// --- Declare values --- 
-decimal brokenEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumBrokenEggs = 0;
-decimal groupPercBrokenEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("BrokenEggs") != null)
-    brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add BrokenEggs to group sum --- 
-groupSumBrokenEggs += brokenEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercBrokenEggs += (brokenEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalBrokenEggs = groupSumBrokenEggs + groupPercBrokenEggs;
-
-// --- Declare values --- 
-decimal destroyedEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumDestroyedEggs = 0;
-decimal groupPercDestroyedEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("DestroyedEggs") != null)
-    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add DestroyedEggs to group sum --- 
-groupSumDestroyedEggs += destroyedEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercDestroyedEggs += (destroyedEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalDestroyedEggs = groupSumDestroyedEggs + groupPercDestroyedEggs;
-
-// --- Declare values --- 
-decimal crackedEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumCrackedEggs = 0;
-decimal groupPercCrackedEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("CrackedEggs") != null)
-    crackedEggs = Convert.ToDecimal(GetCurrentColumnValue("CrackedEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add CrackedEggs to group sum --- 
-groupSumCrackedEggs += crackedEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercCrackedEggs += (crackedEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalCrackedEggs = groupSumCrackedEggs + groupPercCrackedEggs;
-
-// new logic for DoubleYolkEggs  
-// --- Declare values --- 
-decimal doubleYolkEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumDoubleYolkEggs = 0;
-decimal groupPercDoubleYolkEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("DoubleYolkEggs") != null)
-    doubleYolkEggs = Convert.ToDecimal(GetCurrentColumnValue("DoubleYolkEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add DoubleYolkEggs to group sum --- 
-groupSumDoubleYolkEggs += doubleYolkEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercDoubleYolkEggs += (doubleYolkEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalDoubleYolkEggs = groupSumDoubleYolkEggs + groupPercDoubleYolkEggs;
-
-// --- Declare values --- 
-decimal otherEggs = 0;
-decimal recEggs = 0;
-
-decimal groupSumOtherEggs = 0;
-decimal groupPercOtherEggs = 0;
-
-// --- Read values --- 
-if (GetCurrentColumnValue("OtherEggs") != null)
-    otherEggs = Convert.ToDecimal(GetCurrentColumnValue("OtherEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add OtherEggs to group sum --- 
-groupSumOtherEggs += otherEggs;
-
-// --- Add IIf logic (percentage of RecEggs) --- 
-if (recEggs != 0)
-    groupPercOtherEggs += (otherEggs * 100.0m / recEggs);
-
-// --- Final group total --- 
-groupTotalOtherEggs = groupSumOtherEggs + groupPercOtherEggs;
-
-
-
-
-}
-
-private void xrTableCell88_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell88.Text = TotalSpecialEggsReport.ToString("0");
-      TotalSpecialEggsReport  = 0; // reset for next group
 }
 
 private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell64.Text = groupTotalSumSpecialEggs.ToString("0");
-      groupTotalSumSpecialEggs = 0; // reset for next group
+      xrTableCell64.Text = TotalPerc.ToString("N0");
 
 }
 
 private void xrTableCell54_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
+        // --- Declare values ---
 decimal hatchingEggs = 0;
 decimal recEggs = 0;
 
@@ -584,28 +343,25 @@ if (GetCurrentColumnValue("RecEggs") != null)
 decimal percentage = 0;
 if (recEggs != 0)
     percentage = (hatchingEggs * 100m) / recEggs;
-    TotalhatchingEggsReportPerc += percentage;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.00"); // 2 decimals
+TotalhatchingEggs  += hatchingEggs ;
+TotalRecEggsHatch += recEggs ;
+
 
 }
-
-private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell90.Text = TotalpercentageHatchingEggsGroup.ToString("0");
-      TotalpercentageHatchingEggsGroup  = 0; // reset for next group
-
-}
-
 private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell66.Text = TotalhatchingEggsReportPerc.ToString("0");
-      TotalhatchingEggsReportPerc  = 0; // reset for next group
+    if(TotalRecEggsHatch != 0){
+        TotalhatchingEggsReportPerc = (TotalhatchingEggs   * 100m) / TotalRecEggsHatch;
+        }
+      xrTableCell66.Text = TotalhatchingEggsReportPerc.ToString("N2");
 
 }
 
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
+       // --- Declare values ---
 decimal smallEggs = 0;
 decimal recEggs = 0;
 decimal total = 0;
@@ -630,20 +386,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalSpecialEggs = total + totalPerc ;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", smallEggs, totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalSpecialEggsReport = TotalReport + TotalPercReport ;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalSpecialEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell79_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell79.Text = groupTotalSmallEggs.ToString("0");
-      groupTotalSmallEggs = 0; // reset for next group
 
 }
 
@@ -654,7 +405,7 @@ private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-// --- Declare values ---
+    // --- Declare values ---
 decimal overWeightEggs = 0;
 decimal recEggs = 0;
 decimal total = 0;
@@ -680,32 +431,25 @@ if (recEggs != 0)
 // --- Final sum ---
 totalOverWeightEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", overWeightEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalOverWeightEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalOverWeightEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell80.Text = groupTotalOverWeightEggs.ToString("0");
-      groupTotalOverWeightEggs  = 0; // reset for next group
-
 }
 
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       xrTableCell19.Text = TotalOverWeightEggsReport.ToString("0");
+     xrTableCell19.Text = TotalOverWeightEggsReport.ToString("0");
        TotalOverWeightEggsReport = 0; // reset for next group
-
 
 }
 
 private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
+       // --- Declare values ---
 decimal dirtyEggs = 0;
 decimal recEggs = 0;
 decimal total = 0;
@@ -731,132 +475,39 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDirtyEggs = total + totalPerc;
 
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", dirtyEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDirtyEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDirtyEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell81_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       xrTableCell81.Text = groupTotalDirtyEggs.ToString("0");
-      groupTotalDirtyEggs = 0; // reset for next group
-
 }
 
 private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell20.Text = TotalDirtyEggsReport.ToString("0");
+      xrTableCell20.Text = TotalDirtyEggsReport.ToString("0");
       TotalDirtyEggsReport = 0; // reset for next group
- 
-}
-
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal deformityEggs = 0;
-decimal recEggs = 0;
-decimal total = 0;
-decimal totalPerc = 0;
-decimal totalDeformityEggs = 0;
-decimal TotalReport  = 0;
-decimal TotalPercReport  = 0;
-
-// --- Read values ---
-if (GetCurrentColumnValue("DeformityEggs") != null)
-    deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Base total (DeformityEggs) ---
-total = deformityEggs;
-
-// --- IIf logic: DeformityEggs % of RecEggs ---
-if (recEggs != 0)
-    totalPerc = (deformityEggs * 100.0m / recEggs);
-
-// --- Final sum ---
-totalDeformityEggs = total + totalPerc;
-
-// --- Add to group totals ---
-TotalReport += total;
-TotalPercReport += totalPerc;
-TotalDeformityEggsReport = TotalReport + TotalPercReport;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDeformityEggs.ToString("0"); // no decimals
 
 }
 
-private void xrTableCell82_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell82.Text = groupTotalDeformityEggs.ToString("0");
-     groupTotalDeformityEggs= 0; // reset for next group
-
-}
 
 private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell21.Text = TotalDeformityEggsReport.ToString("0");
+     xrTableCell21.Text = TotalDeformityEggsReport.ToString("0");
      TotalDeformityEggsReport= 0; // reset for next group
 
 }
 
-private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal brokenEggs = 0;
-decimal recEggs = 0;
-decimal total = 0;
-decimal totalPerc = 0;
-decimal totalBrokenEggs = 0;
-decimal TotalReport  = 0;
-decimal TotalPercReport  = 0;
-
-// --- Read values ---
-if (GetCurrentColumnValue("BrokenEggs") != null)
-    brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
-
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Base total (BrokenEggs) ---
-total = brokenEggs;
-
-// --- IIf logic: BrokenEggs % of RecEggs ---
-if (recEggs != 0)
-    totalPerc = (brokenEggs * 100.0m / recEggs);
-
-// --- Final sum ---
-totalBrokenEggs = total + totalPerc;
-
-// --- Add to group totals ---
-TotalReport += total;
-TotalPercReport += totalPerc;
-TotalBrokenEggsReport = TotalReport + TotalPercReport;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalBrokenEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell83_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell83.Text = groupTotalBrokenEggs.ToString("0");
-     groupTotalBrokenEggs= 0; // reset for next group
-
-
-}
 
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        xrTableCell22.Text = TotalBrokenEggsReport.ToString("0");
-        TotalBrokenEggsReport = 0; // reset for next group
+     xrTableCell22.Text = TotalBrokenEggsReport.ToString("0");
+     TotalBrokenEggsReport = 0; // reset for next group
 
 }
 
 private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values --- 
+       // --- Declare values --- 
 decimal destroyedEggs = 0;
 decimal recEggs = 0;
 decimal total = 0;
@@ -882,33 +533,25 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDestroyedEggs = total + totalPerc;
 
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", destroyedEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDestroyedEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDestroyedEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell84_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell84.Text = groupTotalDestroyedEggs.ToString("0");
-     groupTotalDestroyedEggs= 0; // reset for next group
-
 
 }
 
 private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       xrTableCell23.Text = TotalDestroyedEggsReport.ToString("0");
-       TotalDestroyedEggsReport= 0; // reset for next group
-
+      xrTableCell23.Text = TotalDestroyedEggsReport.ToString("0");
+      TotalDestroyedEggsReport= 0; // reset for next group
 
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values --- 
+       // --- Declare values --- 
 decimal crackedEggs = 0;
 decimal recEggs = 0;
 decimal total = 0;
@@ -934,21 +577,15 @@ if (recEggs != 0)
 // --- Final sum ---
 totalCrackedEggs = total + totalPerc;
 
+;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", crackedEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalCrackedEggsReport = TotalReport + TotalPercReport;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalCrackedEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell85_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell85.Text = groupTotalCrackedEggs.ToString("0");
-       groupTotalCrackedEggs= 0; // reset for next group
-
 
 }
 
@@ -956,11 +593,10 @@ private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.Canc
      xrTableCell61.Text = TotalCrackedEggsReport.ToString("0");
        TotalCrackedEggsReport= 0; // reset for next group
 
-
 }
 
 private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---  
+        // --- Declare values ---  
 decimal doubleYolkEggs = 0;
 decimal recEggs = 0;
 decimal total = 0;
@@ -986,39 +622,28 @@ if (recEggs != 0)
 // --- Final sum ---
 totalDoubleYolkEggs = total + totalPerc;
 
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", doubleYolkEggs , totalPerc);
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
 TotalDoubleYolkEggsReport = TotalReport + TotalPercReport;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalDoubleYolkEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell86_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell86.Text = groupTotalDoubleYolkEggs.ToString("0");
-       groupTotalDoubleYolkEggs= 0; // reset for next group
-
 
 }
 
 private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         xrTableCell62.Text = TotalDoubleYolkEggsReport.ToString("0");
+       xrTableCell62.Text = TotalDoubleYolkEggsReport.ToString("0");
        TotalDoubleYolkEggsReport= 0; // reset for next group
 
 }
 
 private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---  
+       // --- Declare values ---  
 decimal otherEggs = 0;
 decimal recEggs = 0;
-decimal total = 0;
 decimal totalPerc = 0;
-decimal totalOtherEggs = 0;
-decimal TotalReport  = 0;
-decimal TotalPercReport  = 0;
 
 // --- Read values ---
 if (GetCurrentColumnValue("OtherEggs") != null)
@@ -1027,39 +652,128 @@ if (GetCurrentColumnValue("OtherEggs") != null)
 if (GetCurrentColumnValue("RecEggs") != null)
     recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
 
-// --- Base total (OtherEggs) ---
-total = otherEggs;
-
 // --- IIf logic: OtherEggs % of RecEggs ---
 if (recEggs != 0)
     totalPerc = (otherEggs * 100.0m / recEggs);
 
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = string.Format("{0:N0}\n{1:N2}", otherEggs , totalPerc);
+// --- Add to group totals ---
+TotalRecEggs += recEggs ;
+TotalOtherEggs += otherEggs ;
+
+
+}
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    if(TotalRecEggs  != 0){
+        TotalOtherEggsReport = (TotalOtherEggs  * 100m) / TotalRecEggs ;
+        
+        }
+    xrTableCell63.Text = TotalOtherEggsReport.ToString("N0");
+
+}
+
+
+
+
+
+private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          // --- Declare values ---
+decimal deformityEggs = 0;
+decimal recEggs = 0;
+decimal total = 0;
+decimal totalPerc = 0;
+decimal totalDeformityEggs = 0;
+decimal TotalReport  = 0;
+decimal TotalPercReport  = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("DeformityEggs") != null)
+    deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
+
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
+
+// --- Base total (DeformityEggs) ---
+total = deformityEggs;
+
+// --- IIf logic: DeformityEggs % of RecEggs ---
+if (recEggs != 0)
+    totalPerc = (deformityEggs * 100.0m / recEggs);
+
 // --- Final sum ---
-totalOtherEggs = total + totalPerc;
+totalDeformityEggs = total + totalPerc;
+
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = totalPerc.ToString("N2"); // no decimals
 
 // --- Add to group totals ---
 TotalReport += total;
 TotalPercReport += totalPerc;
-TotalOtherEggsReport = TotalReport + TotalPercReport;
+TotalDeformityEggsReport = TotalReport + TotalPercReport;
+
+}
+
+
+
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        decimal brokenEggs = 0;
+decimal recEggs = 0;
+decimal total = 0;
+decimal totalPerc = 0;
+decimal totalBrokenEggs = 0;
+decimal TotalReport  = 0;
+decimal TotalPercReport  = 0;
+
+// --- Read values ---
+if (GetCurrentColumnValue("BrokenEggs") != null)
+    brokenEggs = Convert.ToDecimal(GetCurrentColumnValue("BrokenEggs"));
+
+if (GetCurrentColumnValue("RecEggs") != null)
+    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
+
+// --- Base total (BrokenEggs) ---
+total = brokenEggs;
+
+// --- IIf logic: BrokenEggs % of RecEggs ---
+if (recEggs != 0)
+    totalPerc = (brokenEggs * 100.0m / recEggs);
+
+// --- Final sum ---
+totalBrokenEggs = total + totalPerc;
+
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalOtherEggs.ToString("0"); // no decimals
-
-}
-
-private void xrTableCell87_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    xrTableCell87.Text = groupTotalOtherEggs.ToString("0");
-       groupTotalOtherEggs= 0; // reset for next group
-}
-
-private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell63.Text = TotalOtherEggsReport.ToString("0");
-       TotalOtherEggsReport= 0; // reset for next group
+cell.Text = string.Format("{0:N0}\n{1:N2}", brokenEggs, totalPerc);
+// --- Add to group totals ---
+TotalReport += total;
+TotalPercReport += totalPerc;
+TotalBrokenEggsReport = TotalReport + TotalPercReport;
 
 }
 
 
+private void xrTableCell88_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          xrTableCell88.Text = TotalPercGroup.ToString("N0");
+
+}
+
+
+    
+private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      if(TotalRecEggsHatchGroup != 0){
+        TotalhatchingEggsGroupPerc = (TotalhatchingEggsGroup  * 100m) / TotalRecEggsHatchGroup ;
+                }
+      xrTableCell90.Text = TotalhatchingEggsGroupPerc.ToString("N2");
+}
 
 </value>
   </data>

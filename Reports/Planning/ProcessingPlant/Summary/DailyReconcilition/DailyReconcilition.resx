@@ -186,6 +186,7 @@ private void xrTableCell13_BeforePrint(object sender, System.ComponentModel.Canc
       xrTableCell13.Text = pluckRejectPercentTotal.ToString("0");
 
 }
+
 </value>
   </data>
 </root>

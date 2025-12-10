@@ -121,7 +121,11 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>
+    <value>decimal TotalQtyCartons  = 0;
+decimal GrandTotalQtyCartons   = 0;
+decimal TotalQtyCartonsSec  = 0;
+decimal GrandTotalQtyCartonsSec   = 0;
+
 private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
      XRCrossTabCell cell = sender as XRCrossTabCell;
 
@@ -131,6 +135,27 @@ private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports
     }
    
 
+}
+
+private void crossTabTotalCell4_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+       XRCrossTabCell cell = (XRCrossTabCell)sender;
+       // Get values from the data source
+    decimal QtyCartons = cell.GetCurrentFieldValue&lt;decimal&gt;("QtyCartons");
+    // Apply calculation  
+    TotalQtyCartons += QtyCartons ;  // accumulate total
+    GrandTotalQtyCartons  += QtyCartons ;
+    decimal result = (GrandTotalQtyCartons  != 0) ? ((TotalQtyCartons / GrandTotalQtyCartons ) * 100) : 0;
+
+}
+
+private void crossTabTotalCell6_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+      XRCrossTabCell cell = (XRCrossTabCell)sender;
+       // Get values from the data source
+    decimal QtyCartons = cell.GetCurrentFieldValue&lt;decimal&gt;("QtyCartons");
+    // Apply calculation  
+    TotalQtyCartonsSec += QtyCartons ;  // accumulate total
+    GrandTotalQtyCartonsSec  += QtyCartons ;
+    decimal result = (GrandTotalQtyCartonsSec  != 0) ? ((TotalQtyCartonsSec / GrandTotalQtyCartonsSec  ) * 100) : 0;
 }
 </value>
   </data>

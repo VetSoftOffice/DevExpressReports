@@ -259,6 +259,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     totalChicksSettedEggs_Fertile += settedEggs_Fertile;
 
 }
+
 </value>
   </data>
 </root>

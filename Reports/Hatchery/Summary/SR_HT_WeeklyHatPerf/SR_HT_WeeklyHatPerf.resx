@@ -125,8 +125,7 @@
 
 private void crossTabDataCell2_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
      XRCrossTabCell cell = (XRCrossTabCell)sender;
-
-    // Get values from the data source
+       // Get values from the data source
     decimal settedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs");
     decimal chicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks");
 
@@ -308,6 +307,21 @@ private void crossTabTotalCell14_BeforePrint(object sender, DevExpress.XtraRepor
 
 }
 
+
+
+private void crossTabTotalCell22_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    XRCrossTabCell cell = (XRCrossTabCell)sender;
+       // Get values from the data source
+    decimal settedEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SettedEggs");
+    decimal chicks = cell.GetCurrentFieldValue&lt;decimal&gt;("Chicks");
+
+    // Apply calculation
+    decimal result = (settedEggs != 0) ? ((chicks / settedEggs) * 100) : 0;
+
+    // Display result formatted as percentage (two decimals)
+    cell.Text = result.ToString("0.00") ;
+    
+    }
 </value>
   </data>
 </root>

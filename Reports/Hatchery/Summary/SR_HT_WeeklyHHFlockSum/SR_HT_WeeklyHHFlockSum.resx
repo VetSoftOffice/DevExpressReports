@@ -140,6 +140,7 @@ private void tdDebit_BeforePrint(object sender, System.ComponentModel.CancelEven
     // --- Declare values ---
 decimal pol = 0;
 decimal actRecEggs = 0;
+decimal rejEggs  = 0;
 
 // --- Read values ---
 if (GetCurrentColumnValue("POL") != null)
@@ -148,15 +149,22 @@ if (GetCurrentColumnValue("POL") != null)
 if (GetCurrentColumnValue("ActRecEggs") != null)
     actRecEggs = Convert.ToDecimal(GetCurrentColumnValue("ActRecEggs"));
 
+if (GetCurrentColumnValue("RejEggs") != null)
+    rejEggs = Convert.ToDecimal(GetCurrentColumnValue("RejEggs"));
 // --- Equation ---
+decimal ActRecEggsHHCum = 0;
+decimal RegEggHHCum = 0;
 decimal result = 0;
 if (pol != 0)
-    result = actRecEggs / pol;
+    ActRecEggsHHCum = actRecEggs / pol;
 
+if (pol != 0)
+    RegEggHHCum = rejEggs / pol;
 
+result  = ActRecEggsHHCum ;
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = ActRecEggsHHCum.ToString("0.##"); // format with up to 2 decimals
 
 }
 
@@ -175,7 +183,7 @@ if (GetCurrentColumnValue("RejEggs") != null)
 // --- Equation ---
 decimal percentage = 0;
 if (pol != 0)
-    percentage = (rejEggs / pol) * 100m;
+    percentage = (rejEggs / pol);
 
 
 // --- Assign result to cell ---
@@ -185,9 +193,10 @@ cell.Text = percentage.ToString("0.##"); // up to 2 decimals
 }
 
 private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
+   // --- Declare values ---
 decimal pol = 0;
 decimal actRecEggs = 0;
+decimal rejEggs  = 0;
 
 // --- Read values ---
 if (GetCurrentColumnValue("POL") != null)
@@ -196,21 +205,22 @@ if (GetCurrentColumnValue("POL") != null)
 if (GetCurrentColumnValue("ActRecEggs") != null)
     actRecEggs = Convert.ToDecimal(GetCurrentColumnValue("ActRecEggs"));
 
+if (GetCurrentColumnValue("RejEggs") != null)
+    rejEggs = Convert.ToDecimal(GetCurrentColumnValue("RejEggs"));
 // --- Equation ---
-decimal perc1 = 0;
-decimal perc2 = 0;
+decimal ActRecEggsHHCum = 0;
+decimal RegEggHHCum = 0;
+decimal result = 0;
+if (pol != 0)
+    ActRecEggsHHCum = actRecEggs / pol;
 
 if (pol != 0)
-{
-    perc1 = (actRecEggs / pol) * 100m;
-    perc2 = (actRecEggs / pol) * 100m;   // same formula again
-}
+    RegEggHHCum = rejEggs / pol;
 
-decimal result = perc1 - perc2; // will always be 0 in current form
-
+result  = ActRecEggsHHCum - RegEggHHCum ;
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // up to 2 decimals
+cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 
 }
 
@@ -229,7 +239,7 @@ if (GetCurrentColumnValue("ActSetEggCum") != null)
 // --- Equation ---
 decimal percentage = 0;
 if (pol != 0)
-    percentage = (actSetEggCum / pol) * 100m;
+    percentage = actSetEggCum / pol ;
 
 
 // --- Assign result to cell ---
@@ -240,47 +250,54 @@ cell.Text = percentage.ToString("0.##"); // up to 2 decimals
 
 private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
-decimal pol = 0;
-decimal settedEggs = 0;
-decimal estHatEggsBefore21days = 0;
-decimal actChicks = 0;
-decimal cullsChicks = 0;
-decimal deadChicks = 0;
+ decimal pol = 0;
+    decimal settedEggs = 0;
+    decimal actRecEggsBefore21days = 0;
+    decimal rejEggsBefore21days = 0;
+    decimal actChicks = 0;
+    decimal cullsChicks = 0;
+    decimal deadChicks = 0;
 
-// --- Read values ---
-if (GetCurrentColumnValue("POL") != null)
-    pol = Convert.ToDecimal(GetCurrentColumnValue("POL"));
+    // ================= Read Values Safely =================
+    if (GetCurrentColumnValue("POL") != null)
+        pol = Convert.ToDecimal(GetCurrentColumnValue("POL"));
 
-if (GetCurrentColumnValue("SettedEggs") != null)
-    settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
+    if (GetCurrentColumnValue("SettedEggs") != null)
+        settedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
 
-if (GetCurrentColumnValue("EstHatEggsBefore21days") != null)
-    estHatEggsBefore21days = Convert.ToDecimal(GetCurrentColumnValue("EstHatEggsBefore21days"));
+    if (GetCurrentColumnValue("ActRecEggsBefore21days") != null)
+        actRecEggsBefore21days = Convert.ToDecimal(GetCurrentColumnValue("ActRecEggsBefore21days"));
 
-if (GetCurrentColumnValue("ActChicks") != null)
-    actChicks = Convert.ToDecimal(GetCurrentColumnValue("ActChicks"));
+    if (GetCurrentColumnValue("RejEggsBefore21days") != null)
+        rejEggsBefore21days = Convert.ToDecimal(GetCurrentColumnValue("RejEggsBefore21days"));
 
-if (GetCurrentColumnValue("CullsChicks") != null)
-    cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+    if (GetCurrentColumnValue("ActChicks") != null)
+        actChicks = Convert.ToDecimal(GetCurrentColumnValue("ActChicks"));
 
-if (GetCurrentColumnValue("DeadChicks") != null)
-    deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+    if (GetCurrentColumnValue("CullsChicks") != null)
+        cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
 
-// --- Equation ---
-decimal percentage = 0;
+    if (GetCurrentColumnValue("DeadChicks") != null)
+        deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
 
-if (pol &gt; 0)
-{
+    // ================= Calculations =================
+    // @EstHatEggsBefore21days
+    decimal estHatEggsBefore21days = actRecEggsBefore21days - rejEggsBefore21days;
+
+    // @ActHatch_Per_Cum
     decimal hatchPerc = 0;
     if (settedEggs != 0)
         hatchPerc = ((actChicks + cullsChicks + deadChicks) / settedEggs) * 100m;
 
-    percentage = (estHatEggsBefore21days * (hatchPerc / 100m)) / pol;
-}
+    // Final Equation:
+    // if(POL &gt; 0) then (EstHatEggsBefore21days * ActHatch_Per_Cum / 100) / POL
+    decimal percentage = 0;
+    if (pol &gt; 0)
+        percentage = (estHatEggsBefore21days * (hatchPerc / 100m)) / pol;
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+    // ================= Assign Result =================
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = percentage.ToString("0.##");   // up to 2 decimals
 
 }
 
@@ -307,7 +324,7 @@ if (GetCurrentColumnValue("DeadChicks") != null)
 // --- Equation ---
 decimal percentage = 0;
 if (pol != 0)
-    percentage = ((actChicks + cullsChicks + deadChicks) / pol) * 100m;
+    percentage = ((actChicks + cullsChicks + deadChicks) / pol) ;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
@@ -384,6 +401,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 
 }
+
 
 
 

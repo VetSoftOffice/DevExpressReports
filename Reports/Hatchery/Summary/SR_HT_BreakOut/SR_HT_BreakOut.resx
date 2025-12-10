@@ -120,4 +120,57 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSI+PEZpZWxkIE5hbWU9IlJvd1NlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSb3dTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUm93RGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>int RowCount = 0;
+int RowCountSec  = 0;
+decimal TotalCategValue  = 0;
+decimal TotalSampleEggs = 0;
+decimal TotalCategValueSec  = 0;
+decimal TotalSampleEggsSec = 0;
+
+private void crossTabTotalCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    
+        XRCrossTabCell cell = (XRCrossTabCell)sender;
+       // Get values from the data source
+    decimal SampleEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SampleEggs");
+    decimal CategValue = cell.GetCurrentFieldValue&lt;decimal&gt;("CategValue");
+    if(CategValue !=0){
+              RowCount++;
+        }
+    // Apply calculation  
+    TotalCategValue += CategValue ;  // accumulate total
+    TotalSampleEggs += SampleEggs  ;
+    decimal result = (TotalSampleEggs != 0) ? ((TotalCategValue / TotalSampleEggs ) * 100) : 0;
+    decimal avg = (RowCount &gt; 0) ? result / RowCount: 0;
+    // Display result formatted as percentage (two decimals)
+    cell.Text = string.Format("{0:N0}\n{1:N2}", TotalCategValue , avg);
+
+}
+
+private void crossTabTotalCell27_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+    
+        XRCrossTabCell cell = (XRCrossTabCell)sender;
+       // Get values from the data source
+    decimal SampleEggs = cell.GetCurrentFieldValue&lt;decimal&gt;("SampleEggs");
+    decimal CategValue = cell.GetCurrentFieldValue&lt;decimal&gt;("CategValue");
+    if(CategValue !=0){
+              RowCountSec++;
+        }
+    // Apply calculation  
+    TotalCategValueSec  += CategValue ;  // accumulate total
+    TotalSampleEggsSec  += SampleEggs  ;
+    decimal result = (TotalSampleEggsSec != 0) ? ((TotalCategValueSec  / TotalSampleEggsSec  ) * 100) : 0;
+    decimal avg = (RowCountSec &gt; 0) ? result / RowCountSec : 0;
+    // Display result formatted as percentage (two decimals)
+    cell.Text = string.Format("{0:N0}\n{1:N2}", TotalCategValueSec  , avg);
+}
+
+private void crossTabTotalCell14_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
+            XRCrossTabCell cell = (XRCrossTabCell)sender;
+            string EmptySpace = '    ';
+            cell.Text = EmptySpace ;
+
+}
+</value>
+  </data>
 </root>
