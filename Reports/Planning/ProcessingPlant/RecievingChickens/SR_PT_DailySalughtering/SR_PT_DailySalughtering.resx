@@ -193,7 +193,6 @@ decimal result = recQty  - (DOA + RejectedQty ) + medicalCondemnation +pluckReje
     MedicalCondemnationReport += medicalCondemnation;
     PluckRejectReport += pluckReject;
 // --- Add to report total (if required for average/summaries) ---
-TotalRecQtyCalc = recQtyReport  - (DOAReport +RejectedQtyReport) + MedicalCondemnationReport +PluckRejectReport ;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
@@ -202,7 +201,8 @@ cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell52.Text = TotalRecQtyCalc.ToString("N2");
+    TotalRecQtyCalc = recQtyReport  - (DOAReport +RejectedQtyReport) + MedicalCondemnationReport +PluckRejectReport ;
+    xrTableCell52.Text = TotalRecQtyCalc.ToString("N2");
 
 }
 
@@ -240,7 +240,6 @@ decimal result = recWeight - (DOAWeight + RejectedQtyWeight) + medicalCondWeight
     MedicalCondWeightReportMort += medicalCondWeight;
     PluckRejectWeightReportMort += pluckRejectWeight;
 
-TotalRecWeightCalc = recWeightReportMort -( DOAWeightReportMort  + RejectedQtyWeightReportMort )+ MedicalCondWeightReportMort  + PluckRejectWeightReportMort ;
 
 
 // --- Assign result to cell ---
@@ -250,6 +249,7 @@ cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    TotalRecWeightCalc = recWeightReportMort -( DOAWeightReportMort  + RejectedQtyWeightReportMort )+ MedicalCondWeightReportMort  + PluckRejectWeightReportMort ;
      xrTableCell65.Text = TotalRecWeightCalc.ToString("N2");
 }
 
@@ -277,7 +277,6 @@ decimal result = medicalCondemnation + pluckReject + acceptQty;
     pluckRejectReportTotalCounter += pluckReject;
     acceptQtyReportTotalCounter += acceptQty;
 
-TotalMedPluckAcceptCalc = medicalCondemnationReportTotalCounter  + pluckRejectReportTotalCounter  + acceptQtyReportTotalCounter ;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
@@ -286,8 +285,8 @@ cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    
-       xrTableCell66.Text = TotalMedPluckAcceptCalc.ToString("N2");
+    TotalMedPluckAcceptCalc = medicalCondemnationReportTotalCounter  + pluckRejectReportTotalCounter  + acceptQtyReportTotalCounter ;
+    xrTableCell66.Text = TotalMedPluckAcceptCalc.ToString("N2");
 
 }
 
@@ -316,15 +315,14 @@ decimal result = medicalCondWeight + pluckRejectWeight + acceptQtyWt;
     pluckRejectWeightReportTotalCounterWt += pluckRejectWeight;
     acceptQtyWtReportTotalCounterWt += acceptQtyWt;
 
-TotalMedPluckAcceptWtCalc = medicalCondWeightReportTotalCounterWt  + pluckRejectWeightReportTotalCounterWt  +  acceptQtyWtReportTotalCounterWt; 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    
-       xrTableCell67.Text = TotalMedPluckAcceptWtCalc.ToString("N2");
+    TotalMedPluckAcceptWtCalc = medicalCondWeightReportTotalCounterWt  + pluckRejectWeightReportTotalCounterWt  +  acceptQtyWtReportTotalCounterWt; 
+    xrTableCell67.Text = TotalMedPluckAcceptWtCalc.ToString("N2");
 
 }
 
@@ -347,7 +345,6 @@ decimal result = pluckMedAcc - counterQty;
     pluckMedAccReportDiff += pluckMedAcc;
     counterQtyReportDiff += counterQty;
 
-TotalPluckMedAccMinusCounterQty = pluckMedAccReportDiff  - counterQtyReportDiff  ;
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("0.##"); // format with up to 2 decimals
@@ -355,6 +352,7 @@ cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 }
 
 private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    TotalPluckMedAccMinusCounterQty = pluckMedAccReportDiff  - counterQtyReportDiff  ;
      xrTableCell69.Text = TotalPluckMedAccMinusCounterQty.ToString("N2");
 
 }

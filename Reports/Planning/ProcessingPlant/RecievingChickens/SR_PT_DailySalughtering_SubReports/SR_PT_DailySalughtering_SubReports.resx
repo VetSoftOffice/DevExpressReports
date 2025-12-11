@@ -149,7 +149,18 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PEZpZWxkIE5hbWU9Ikl0ZW1UeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbnRhaW5lciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTZW50T3JDbGFjUXR5IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJDYWxjUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFkanVzdGVkUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    <value>decimal recQtySum = 0;
+decimal doaSum = 0;
+decimal recQtyRejSum = 0;
+decimal rejectedQtySum = 0;
+decimal recQtyPlukRejSum = 0;
+decimal pluckRejectSum = 0;
+decimal recQtyMedicalCondemnationSum  = 0;
+decimal medicalCondemnationSum  = 0;
+decimal recQtyAcceptWtSum = 0;
+decimal acceptWtSum = 0;
+
+private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare local variables for current record ---
 decimal recQty = 0;
 decimal doa = 0;
@@ -168,9 +179,6 @@ if (GetCurrentColumnValue("DOA") != null &amp;&amp;
 }
 
 // --- Accumulate totals across all records ---
-// (Define these as class-level variables at the top of your report)
-decimal recQtySum = 0;
-decimal doaSum = 0;
 
 recQtySum += recQty;
 doaSum += doa;
@@ -205,18 +213,14 @@ if (GetCurrentColumnValue("RejectedQty") != null &amp;&amp;
     rejectedQty = Convert.ToDecimal(GetCurrentColumnValue("RejectedQty"));
 }
 
-// --- Accumulate totals across all records ---
-// (Define these at the top of your report class)
-decimal recQtySum = 0;
-decimal rejectedQtySum = 0;
 
-recQtySum += recQty;
+recQtyRejSum += recQty;
 rejectedQtySum += rejectedQty;
 
 // --- Equation (same as Iif(Sum([RecQty]) &lt;&gt; 0, Sum([RejectedQty]) * 100 / Sum([RecQty]), 0)) ---
 decimal result = 0;
-if (recQtySum != 0)
-    result = (rejectedQtySum * 100) / recQtySum;
+if (recQtyRejSum != 0)
+    result = (rejectedQtySum * 100) / recQtyRejSum ;
 else
     result = 0;
 
@@ -245,19 +249,14 @@ if (GetCurrentColumnValue("PluckReject") != null &amp;&amp;
 }
 
 // --- Accumulate totals across all records ---
-// (Define these at the top of your report class)
-// decimal recQtySum = 0;
-// decimal pluckRejectSum = 0;
-decimal recQtySum = 0;
-decimal pluckRejectSum = 0;
 
-recQtySum += recQty;
+recQtyPlukRejSum += recQty;
 pluckRejectSum += pluckReject;
 
 // --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([PluckReject]) * 100 / Sum([RecQty]), 0)) ---
 decimal result = 0;
-if (recQtySum != 0)
-    result = (pluckRejectSum * 100) / recQtySum;
+if (recQtyPlukRejSum != 0)
+    result = (pluckRejectSum * 100) / recQtyPlukRejSum ;
 else
     result = 0;
 
@@ -286,19 +285,14 @@ if (GetCurrentColumnValue("MedicalCondemnation") != null &amp;&amp;
 }
 
 // --- Accumulate totals across all records ---
-// (Define these at the top of your report class)
-// decimal recQtySum = 0;
-// decimal medicalCondemnationSum = 0;
-decimal recQtySum = 0;
-decimal medicalCondemnationSum = 0;
 
-recQtySum += recQty;
+recQtyMedicalCondemnationSum += recQty;
 medicalCondemnationSum += medicalCondemnation;
 
 // --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([MedicalCondemnation]) * 100 / Sum([RecQty]), 0)) ---
 decimal result = 0;
-if (recQtySum != 0)
-    result = (medicalCondemnationSum * 100) / recQtySum;
+if (recQtyMedicalCondemnationSum != 0)
+    result = (medicalCondemnationSum * 100) / recQtyMedicalCondemnationSum ;
 else
     result = 0;
 
@@ -327,19 +321,14 @@ if (GetCurrentColumnValue("AcceptWt") != null &amp;&amp;
 }
 
 // --- Accumulate totals across all records ---
-// (Define these fields once at the top of your report class)
-// decimal recQtySum = 0;
-// decimal acceptWtSum = 0;
-decimal recQtySum = 0;
-decimal acceptWtSum = 0;
 
-recQtySum += recQty;
+recQtyAcceptWtSum += recQty;
 acceptWtSum += acceptWt;
 
 // --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([AcceptWt]) * 100 / Sum([RecQty]), 0)) ---
 decimal result = 0;
-if (recQtySum != 0)
-    result = (acceptWtSum * 100) / recQtySum;
+if (recQtyAcceptWtSum != 0)
+    result = (acceptWtSum * 100) / recQtyAcceptWtSum ;
 else
     result = 0;
 
@@ -368,19 +357,13 @@ if (GetCurrentColumnValue("CounterQty") != null &amp;&amp;
 }
 
 // --- Accumulate totals across all records ---
-// (Define these fields once at the top of your report class)
-// decimal recQtySum = 0;
-// decimal counterQtySum = 0;
-decimal recQtySum = 0;
-decimal counterQtySum = 0;
-
-recQtySum += recQty;
+recQtyCounterSum += recQty;
 counterQtySum += counterQty;
 
 // --- Equation (Iif(Sum([RecQty]) &lt;&gt; 0, Sum([CounterQty]) * 100 / Sum([RecQty]), 0)) ---
 decimal result = 0;
-if (recQtySum != 0)
-    result = (counterQtySum * 100) / recQtySum;
+if (recQtyCounterSum != 0)
+    result = (counterQtySum * 100) / recQtyCounterSum ;
 else
     result = 0;
 
