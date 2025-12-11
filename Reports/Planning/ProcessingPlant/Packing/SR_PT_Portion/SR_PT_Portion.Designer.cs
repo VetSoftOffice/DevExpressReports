@@ -427,14 +427,14 @@
             crossTabColumnDefinition2.Visible = false;
             crossTabColumnDefinition3.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.52536F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(89.56702F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.52534F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(89.567F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(102.238F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2,
             crossTabColumnDefinition3,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(57.83194F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(57.83194F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(57.83193F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(57.83193F)});
             crossTabColumnField1.FieldName = "SubProductSerialNo";
             crossTabColumnField2.FieldName = "ComputerNo";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
@@ -607,7 +607,7 @@
             this.crossTabTotalCell4.ColumnIndex = 7;
             this.crossTabTotalCell4.Name = "crossTabTotalCell4";
             this.crossTabTotalCell4.RowIndex = 3;
-            this.crossTabTotalCell4.Scripts.OnBeforePrint = "crossTabTotalCell4_BeforePrint";
+            this.crossTabTotalCell4.Scripts.OnBeforePrint = "crossTabDataCell1_BeforePrint";
             // 
             // crossTabTotalCell5
             // 

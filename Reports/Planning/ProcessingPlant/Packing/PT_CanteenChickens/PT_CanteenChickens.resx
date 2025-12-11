@@ -131,7 +131,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 }
 
 private void tdDebit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        decimal percent = 0;
+    decimal percent = 0;
 
     if (totalCartonNo != 0)
         percent = currentCartonNo / totalCartonNo;
@@ -139,6 +139,7 @@ private void tdDebit_BeforePrint(object sender, System.ComponentModel.CancelEven
     XRTableCell cell = sender as XRTableCell;
     cell.Text = percent.ToString("0.00");
 }
+
 </value>
   </data>
 </root>

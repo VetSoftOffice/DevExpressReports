@@ -150,7 +150,7 @@ decimal TotalSpecialEggsReport = 0;
 decimal TotalhatchingEggs   = 0;
 decimal TotalRecEggsHatch = 0;
 decimal TotalPercGroup  = 0;
-decimal TotalhatchingEggsGroup   = 0;
+decimal TotalhatchingEggsGroup   = 0;
 decimal TotalRecEggsHatchGroup = 0;
 decimal TotalhatchingEggsGroupPerc = 0;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -354,7 +354,7 @@ TotalRecEggsHatch += recEggs ;
 }
 private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     if(TotalRecEggsHatch != 0){
-        TotalhatchingEggsReportPerc = (TotalhatchingEggs   * 100m) / TotalRecEggsHatch;
+        TotalhatchingEggsReportPerc = (TotalhatchingEggs   * 100m) / TotalRecEggsHatch;
         }
       xrTableCell66.Text = TotalhatchingEggsReportPerc.ToString("N2");
 
@@ -770,10 +770,11 @@ private void xrTableCell88_BeforePrint(object sender, System.ComponentModel.Canc
     
 private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
       if(TotalRecEggsHatchGroup != 0){
-        TotalhatchingEggsGroupPerc = (TotalhatchingEggsGroup  * 100m) / TotalRecEggsHatchGroup ;
+        TotalhatchingEggsGroupPerc = (TotalhatchingEggsGroup  * 100m) / TotalRecEggsHatchGroup ;
                 }
       xrTableCell90.Text = TotalhatchingEggsGroupPerc.ToString("N2");
 }
+
 
 </value>
   </data>
