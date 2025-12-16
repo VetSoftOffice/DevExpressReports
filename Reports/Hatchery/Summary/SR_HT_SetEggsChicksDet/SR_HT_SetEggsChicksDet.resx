@@ -329,6 +329,16 @@ private void xrTableCell13_BeforePrint(object sender, System.ComponentModel.Canc
     ((XRTableCell)sender).Text = SaleableChicksPercReport.ToString("0.00"); 
 }
 
+
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+saleableChicksGroup = 0;
+settedEggsGroup = 0;
+rejectChicksGroup = 0;
+settedEggsRejGroup = 0;
+groupSumSaleableRejectChicks = 0;
+
+}
 </value>
   </data>
 </root>

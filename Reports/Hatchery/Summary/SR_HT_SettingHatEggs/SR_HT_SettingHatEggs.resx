@@ -274,6 +274,18 @@ private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 
+
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    rfHatsCullsGroup = 0;
+rfInjCullsGroup = 0;
+injCullsGroup = 0;
+cullsGroup = 0;
+exitCullsChicksGroup = 0;
+groupSumCulls = 0;
+groupSumDeads = 0;
+
+}
 </value>
   </data>
 </root>

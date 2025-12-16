@@ -147,7 +147,7 @@ decimal TotalRecEggs = 0;
 decimal TotalOtherEggs = 0;
 decimal TotalPerc  = 0;
 decimal TotalSpecialEggsReport = 0;
-decimal TotalhatchingEggs   = 0;
+decimal TotalhatchingEggs   = 0;
 decimal TotalRecEggsHatch = 0;
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        // --- Declare values ---
@@ -215,8 +215,8 @@ if (GetCurrentColumnValue("DoubleYolkEggs") != null)
 
 // --- Sum them ---
 decimal result =  softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
-                 otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
-                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs  ;
+                 otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
+                 dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs  ;
 
 // --- Add to group total ---
 decimal percentage = 0;
@@ -671,6 +671,7 @@ TotalPercReport += totalPerc;
 TotalBrokenEggsReport = TotalReport + TotalPercReport;
 
 }
+
 </value>
   </data>
 </root>

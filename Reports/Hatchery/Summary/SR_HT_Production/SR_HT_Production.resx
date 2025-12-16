@@ -260,6 +260,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
 }
 
+
 </value>
   </data>
 </root>

@@ -153,6 +153,7 @@ decimal TotalPercGroup  = 0;
 decimal TotalhatchingEggsGroup   = 0;
 decimal TotalRecEggsHatchGroup = 0;
 decimal TotalhatchingEggsGroupPerc = 0;
+decimal Total = 0;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
           // --- Declare values ---
 decimal softShellEggs = 0;
@@ -218,10 +219,10 @@ if (GetCurrentColumnValue("DoubleYolkEggs") != null)
     doubleYolkEggs = Convert.ToDecimal(GetCurrentColumnValue("DoubleYolkEggs"));
 
 // --- Sum them ---
-decimal result =  softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
+Total =  softShellEggs + minorCrackedEggs + majorCrackedEggs + thinShellEggs +
                  otherEggs + wholeEggs + brokenEggs + smallEggs + overWeightEggs +
                  dirtyEggs + deformityEggs + crackedEggs + doubleYolkEggs + destroyedEggs  ;
-TotalPercGroup += result ;
+TotalPercGroup += Total ;
 
 
 //Logic for Hatch %
@@ -776,6 +777,13 @@ private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 
+
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    Total = 0;
+    TotalhatchingEggsGroup   = 0;
+    TotalRecEggsHatchGroup = 0;
+}
 </value>
   </data>
 </root>

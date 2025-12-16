@@ -39,15 +39,15 @@
     <Item15 Ref="38" Name="RejHatBroken_Per" Expression="Iif([TotalFarmIn_DataVar] &gt; 0, [SR_HT_YearlyProdReport.HT_BrokenEggs] / [TotalFarmIn_DataVar] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item16 Ref="39" Name="sndCollages_Per" Expression="Iif([AvailableHatchEgg] != 0, [SR_HT_YearlyProdReport.EggsToCollage] / [AvailableHatchEgg] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item17 Ref="40" Name="TotalRej" Expression="[SR_HT_YearlyProdReport.RejCracks] + [SR_HT_YearlyProdReport.RejWhole] + [SR_HT_YearlyProdReport.RejBroken] + [SR_HT_YearlyProdReport.HT_RejEggs] + [SR_HT_YearlyProdReport.HT_BrokenEggs] + [SR_HT_YearlyProdReport.OtherEggs]&#xD;&#xA;" DataMember="SR_HT_YearlyProdReport" />
-    <Item18 Ref="41" Name="SoldEggs" Expression="Iif(IsNullOrEmpty([RH_SoldEggs]), 0, [RH_SoldEggs]) +&#xA;Iif(IsNullOrEmpty([ES_SoldEggs]), 0, [ES_SoldEggs]) -&#xA;Iif(IsNullOrEmpty([MOL]), 0, [MOL]) -&#xA;Iif(IsNullOrEmpty([EggsToCollage]), 0, [EggsToCollage])&#xA;" DataMember="SR_HT_YearlyProdReport" />
-    <Item19 Ref="42" Name="AvailableHatchEgg" Expression="Iif(IsNullOrEmpty([InputTotal]), 0, [InputTotal]) -&#xA;Iif(IsNullOrEmpty([TotalRej]), 0, [TotalRej]) -&#xA;Iif(IsNullOrEmpty([EggsToCollage]), 0, [EggsToCollage]) -&#xA;Iif(IsNullOrEmpty([MOL]), 0, [MOL]) -&#xA;Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs])&#xA;" DataMember="SR_HT_YearlyProdReport" />
+    <Item18 Ref="41" Name="SoldEggs" Expression="Iif(IsNullOrEmpty([RH_SoldEggs]), 0, [RH_SoldEggs]) +&#xD;&#xA;Iif(IsNullOrEmpty([ES_SoldEggs]), 0, [ES_SoldEggs]) -&#xD;&#xA;Iif(IsNullOrEmpty([MOL]), 0, [MOL]) -&#xD;&#xA;Iif(IsNullOrEmpty([EggsToCollage]), 0, [EggsToCollage])&#xD;&#xA;" DataMember="SR_HT_YearlyProdReport" />
+    <Item19 Ref="42" Name="AvailableHatchEgg" Expression="Iif(IsNullOrEmpty([InputTotal]), 0, [InputTotal]) -&#xD;&#xA;Iif(IsNullOrEmpty([TotalRej]), 0, [TotalRej]) -&#xD;&#xA;Iif(IsNullOrEmpty([EggsToCollage]), 0, [EggsToCollage]) -&#xD;&#xA;Iif(IsNullOrEmpty([MOL]), 0, [MOL]) -&#xD;&#xA;Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs])&#xD;&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item20 Ref="43" Name="MOL_Per" Expression="IIf([AvailableHatchEgg] &lt;&gt; 0, [SR_HT_YearlyProdReport.MOL] / [AvailableHatchEgg] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item21 Ref="44" Name="SoldEggsToCust_Per" Expression="IIf([AvailableHatchEgg] &lt;&gt; 0, [SoldEggs] / [AvailableHatchEgg] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item22 Ref="45" Name="SoldEggsToStores_Per" Expression="IIf([AvailableHatchEgg] &lt;&gt; 0, [SR_HT_YearlyProdReport.SoldEggsToStore] / [AvailableHatchEgg] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item23 Ref="46" Name="CondEggs_Per" Expression="IIf([AvailableHatchEgg] &lt;&gt; 0, [SR_HT_YearlyProdReport.CondEggs] / [AvailableHatchEgg] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item24 Ref="47" Name="ChickVetLab_Per" Expression="IIf([TotalChickProd] &lt;&gt; 0, [SR_HT_YearlyProdReport.ChicksToVet] / [TotalChickProd] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item25 Ref="48" Name="ChiksRejHat" Expression="Iif(IsNullOrEmpty([CullsChicks]), 0, [CullsChicks]) +&#xA;Iif(IsNullOrEmpty([DeadChicks]), 0, [DeadChicks])&#xA;" DataMember="SR_HT_YearlyProdReport" />
-    <Item26 Ref="49" Name="TotalChiksTrans" Expression="Iif(IsNullOrEmpty([ChicksToVet]), 0, [ChicksToVet]) +&#xA;Iif(IsNullOrEmpty([ChicksToBroiler]), 0, [ChicksToBroiler]) +&#xA;Iif(IsNullOrEmpty([SoldChicksWithoutCollege]), 0, [SoldChicksWithoutCollege]) +&#xA;Iif(IsNullOrEmpty([CondemnedChicks]), 0, [CondemnedChicks]) +&#xA;Iif(IsNullOrEmpty([OtherSentChicks]), 0, [OtherSentChicks])&#xA;" DataMember="SR_HT_YearlyProdReport" />
+    <Item26 Ref="49" Name="TotalChiksTrans" Expression="Iif(IsNullOrEmpty([ChicksToVet]), 0, [ChicksToVet]) +&#xD;&#xA;Iif(IsNullOrEmpty([ChicksToBroiler]), 0, [ChicksToBroiler]) +&#xD;&#xA;Iif(IsNullOrEmpty([SoldChicksWithoutCollege]), 0, [SoldChicksWithoutCollege]) +&#xD;&#xA;Iif(IsNullOrEmpty([CondemnedChicks]), 0, [CondemnedChicks]) +&#xD;&#xA;Iif(IsNullOrEmpty([OtherSentChicks]), 0, [OtherSentChicks])&#xD;&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item27 Ref="50" Name="TotalChickProd" Expression="Iif(IsNullOrEmpty([TotalChiksTrans]), 0, [TotalChiksTrans]) +&#xA;Iif(IsNullOrEmpty([DOA]), 0, [DOA]) +&#xA;Iif(IsNullOrEmpty([ChiksRejHat]), 0, [ChiksRejHat])&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item28 Ref="51" Name="ChiksBrioler_Per" Expression="IIf([TotalChickProd] &lt;&gt; 0, [SR_HT_YearlyProdReport.ChicksToBroiler] / [TotalChickProd] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item29 Ref="52" Name="SoldChicks_Per" Expression="IIf([TotalChickProd] &lt;&gt; 0, [SR_HT_YearlyProdReport.SoldChicksWithoutCollege] / [TotalChickProd] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
@@ -56,7 +56,7 @@
     <Item32 Ref="55" Name="DOA_Per" Expression="IIf([TotalChickProd] &lt;&gt; 0, [SR_HT_YearlyProdReport.DOA] / [TotalChickProd] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item33 Ref="56" Name="ChiksRejHat_Per" Expression="IIf([TotalChickProd] &lt;&gt; 0, [ChiksRejHat] / [TotalChickProd] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item34 Ref="57" Name="TotalBalnce_End" Expression="Iif(IsNullOrEmpty([EndOfYearSettedEggs]), 0, [EndOfYearSettedEggs]) +&#xA;Iif(IsNullOrEmpty([EndOutSide]), 0, [EndOutSide])&#xA;" DataMember="SR_HT_YearlyProdReport" />
-    <Item35 Ref="58" Name="TotalHat_Per" Expression="Iif(&#xA;    (Iif(IsNullOrEmpty([AvailableHatchEgg]), 0, [AvailableHatchEgg]) - &#xA;     Iif(IsNullOrEmpty([TotalBalnce_End]), 0, [TotalBalnce_End])) &lt;&gt; 0,&#xA;    Iif(IsNullOrEmpty([TotalChickProd]), 0, [TotalChickProd]) / &#xA;    (Iif(IsNullOrEmpty([AvailableHatchEgg]), 0, [AvailableHatchEgg]) - &#xA;     Iif(IsNullOrEmpty([TotalBalnce_End]), 0, [TotalBalnce_End])) * 100,&#xA;    0&#xA;)&#xA;" DataMember="SR_HT_YearlyProdReport" />
+    <Item35 Ref="58" Name="TotalHat_Per" Expression="Iif(&#xD;&#xA;    (Iif(IsNullOrEmpty([AvailableHatchEgg]), 0, [AvailableHatchEgg]) - &#xD;&#xA;     Iif(IsNullOrEmpty([TotalBalnce_End]), 0, [TotalBalnce_End])) &lt;&gt; 0,&#xD;&#xA;    Iif(IsNullOrEmpty([TotalChickProd]), 0, [TotalChickProd]) / &#xD;&#xA;    (Iif(IsNullOrEmpty([AvailableHatchEgg]), 0, [AvailableHatchEgg]) - &#xD;&#xA;     Iif(IsNullOrEmpty([TotalBalnce_End]), 0, [TotalBalnce_End])) * 100,&#xD;&#xA;    0&#xD;&#xA;)&#xD;&#xA;" DataMember="SR_HT_YearlyProdReport" />
     <Item36 Ref="59" Name="OtherChicks_Per_CF" Expression="IIf([TotalChickProd] &lt;&gt; 0, [SR_HT_YearlyProdReport.OtherSentChicks] / [TotalChickProd] * 100, 0)&#xA;" DataMember="SR_HT_YearlyProdReport" />
   </CalculatedFields>
   <Bands>
@@ -1844,7 +1844,7 @@
     <Item34 Ref="786" Component="#Ref-63" Culture="Default" Path="SizeF" Data="216.6666,20" />
     <Item35 Ref="787" Component="#Ref-63" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item36 Ref="788" Component="#Ref-67" Culture="Default" Path="LocationFloat" Data="890.3751,0" />
-    <Item37 Ref="789" Component="#Ref-67" Culture="Default" Path="SizeF" Data="199.6254,20" />
+    <Item37 Ref="789" Component="#Ref-67" Culture="Default" Path="SizeF" Data="188.624634,20" />
     <Item38 Ref="790" Component="#Ref-67" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item39 Ref="791" Component="#Ref-17" Culture="Default" Path="Description" Data="Price Str" />
     <Item40 Ref="792" Component="#Ref-653" Culture="Default" Path="HeightF" Data="0" />
@@ -1856,26 +1856,26 @@
     <Item46 Ref="798" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
     <Item47 Ref="799" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل صفحة" />
     <Item48 Ref="800" Component="#Ref-594" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item49 Ref="801" Component="#Ref-594" Culture="Default" Path="SizeF" Data="1090,20" />
-    <Item50 Ref="802" Component="#Ref-603" Culture="Default" Path="LocationFloat" Data="0.0005324681,0" />
-    <Item51 Ref="803" Component="#Ref-603" Culture="Default" Path="SizeF" Data="1090,20" />
+    <Item49 Ref="801" Component="#Ref-594" Culture="Default" Path="SizeF" Data="1079.00012,20" />
+    <Item50 Ref="802" Component="#Ref-603" Culture="Default" Path="LocationFloat" Data="0.000532468141,0" />
+    <Item51 Ref="803" Component="#Ref-603" Culture="Default" Path="SizeF" Data="1078.99963,20" />
     <Item52 Ref="804" Component="#Ref-599" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item53 Ref="805" Component="#Ref-599" Culture="Default" Path="SizeF" Data="1090,20" />
+    <Item53 Ref="805" Component="#Ref-599" Culture="Default" Path="SizeF" Data="1078.99963,20" />
     <Item54 Ref="806" Component="#Ref-655" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item55 Ref="807" Component="#Ref-655" Culture="Default" Path="SizeF" Data="1090,20" />
+    <Item55 Ref="807" Component="#Ref-655" Culture="Default" Path="SizeF" Data="1079.00012,20" />
     <Item56 Ref="808" Component="#Ref-713" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item57 Ref="809" Component="#Ref-713" Culture="Default" Path="SizeF" Data="1090,20" />
+    <Item57 Ref="809" Component="#Ref-713" Culture="Default" Path="SizeF" Data="1079.00012,20" />
     <Item58 Ref="810" Component="#Ref-588" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item59 Ref="811" Component="#Ref-588" Culture="Default" Path="SizeF" Data="1090,20" />
+    <Item59 Ref="811" Component="#Ref-588" Culture="Default" Path="SizeF" Data="1079.00012,20" />
     <Item60 Ref="812" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item61 Ref="813" Component="#Ref-1" Culture="Default" Path="Margins" Data="9, 0, 20, 20" />
+    <Item61 Ref="813" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 20" />
     <Item62 Ref="814" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="Custom" />
     <Item63 Ref="815" Component="#Ref-644" Culture="Default" Path="HeightF" Data="20" />
     <Item64 Ref="816" Component="#Ref-598" Culture="Default" Path="HeightF" Data="20" />
     <Item65 Ref="817" Component="#Ref-602" Culture="Default" Path="HeightF" Data="20" />
     <Item66 Ref="818" Component="#Ref-587" Culture="Default" Path="HeightF" Data="20" />
     <Item67 Ref="819" Component="#Ref-593" Culture="Default" Path="HeightF" Data="20" />
-    <Item68 Ref="820" Component="#Ref-639" Culture="Default" Path="HeightF" Data="21.45837" />
+    <Item68 Ref="820" Component="#Ref-639" Culture="Default" Path="HeightF" Data="20" />
     <Item69 Ref="821" Component="#Ref-648" Culture="Default" Path="Text" Data="Sub-Total" />
     <Item70 Ref="822" Component="#Ref-648" Culture="ar" Path="Text" Data="الاجمالي الفرعي" />
     <Item71 Ref="823" Component="#Ref-648" Culture="Default" Path="Weight" Data="6.9298304091075869" />
@@ -1883,7 +1883,7 @@
     <Item73 Ref="825" Component="#Ref-649" Culture="ar" Path="Text" Data="الاجمالي" />
     <Item74 Ref="826" Component="#Ref-649" Culture="Default" Path="Weight" Data="7.2553964026023472" />
     <Item75 Ref="827" Component="#Ref-645" Culture="Default" Path="LocationFloat" Data="0.0005187988,0" />
-    <Item76 Ref="828" Component="#Ref-645" Culture="Default" Path="SizeF" Data="1090,20" />
+    <Item76 Ref="828" Component="#Ref-645" Culture="Default" Path="SizeF" Data="1078.99951,20" />
     <Item77 Ref="829" Component="#Ref-60" Culture="Default" Path="HeightF" Data="20" />
     <Item78 Ref="830" Component="#Ref-646" Culture="Default" Path="Weight" Data="1" />
     <Item79 Ref="831" Component="#Ref-642" Culture="Default" Path="LocationFloat" Data="0,0" />
@@ -1905,8 +1905,8 @@
     <Item95 Ref="847" Component="#Ref-71" Culture="Default" Path="SizeF" Data="19,850" />
     <Item96 Ref="848" Component="#Ref-70" Culture="Default" Path="LocationFloat" Data="817.7305,0" />
     <Item97 Ref="849" Component="#Ref-70" Culture="Default" Path="SizeF" Data="15,850" />
-    <Item98 Ref="850" Component="#Ref-73" Culture="Default" Path="LocationFloat" Data="0.0005324681,0" />
-    <Item99 Ref="851" Component="#Ref-73" Culture="Default" Path="SizeF" Data="1090,850" />
+    <Item98 Ref="850" Component="#Ref-73" Culture="Default" Path="LocationFloat" Data="0.000532468141,0" />
+    <Item99 Ref="851" Component="#Ref-73" Culture="Default" Path="SizeF" Data="1078.99963,850" />
     <Item100 Ref="852" Component="#Ref-132" Culture="Default" Path="LocationFloat" Data="383.8237,0" />
     <Item101 Ref="853" Component="#Ref-132" Culture="Default" Path="SizeF" Data="130.2082,25" />
     <Item102 Ref="854" Component="#Ref-145" Culture="Default" Path="LocationFloat" Data="675.4161,0" />
@@ -2262,7 +2262,7 @@
     <Item452 Ref="1204" Component="#Ref-371" Culture="Default" Path="Text" Data="xrTableCell39" />
     <Item453 Ref="1205" Component="#Ref-371" Culture="Default" Path="Weight" Data="3" />
     <Item454 Ref="1206" Component="#Ref-650" Culture="Default" Path="Text" Data="%" />
-    <Item455 Ref="1207" Component="#Ref-650" Culture="Default" Path="Weight" Data="7.63144299676145" />
+    <Item455 Ref="1207" Component="#Ref-650" Culture="Default" Path="Weight" Data="7.3140663535258108" />
     <Item456 Ref="1208" Component="#Ref-389" Culture="Default" Path="Text" Data="xrTableCell40" />
     <Item457 Ref="1209" Component="#Ref-389" Culture="Default" Path="Weight" Data="3" />
     <Item458 Ref="1210" Component="#Ref-407" Culture="Default" Path="Text" Data="xrTableCell41" />

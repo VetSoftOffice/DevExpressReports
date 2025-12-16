@@ -168,7 +168,7 @@ decimal grandTotalSettedEggs = 0;
 decimal grandTotalRejectChicks = 0;   // renamed for clarity
 decimal sumRowPercentages = 0;
 int rowCount = 0;
-decimal grandTotalDeadChicks    = 0;
+decimal grandTotalDeadChicks    = 0;
 decimal grandTotalCullsChicks = 0;
 decimal TotalChicksHatch = 0;
      // also declare at class level// ---------------- ROW LEVEL CALCULATIONS ----------------
@@ -267,7 +267,7 @@ private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.Canc
 // ---------------- FOOTER TOTAL CELLS ----------------
 
 private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    ((XRTableCell)sender).Text = grandTotalDeadAndCulls.ToString("N2");
+    ((XRTableCell)sender).Text = grandTotalDeadAndCulls.ToString("N0");
 }
 
 private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -305,6 +305,7 @@ private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.Canc
     cell.Text = totalHatchPercent.ToString("N2");
 
 }
+
 </value>
   </data>
 </root>

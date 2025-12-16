@@ -177,6 +177,7 @@ decimal SellablePercSettedEggsGroup= 0;
 decimal sellableChicksPercGroup= 0;
 decimal TotalChicksRatioFertileEggsGroup  = 0;
 decimal TotalSaleFertileGroup  = 0;
+decimal result4 = 0;
 // Report variables
 decimal infertileEggsReport = 0;
 decimal settedEggsInfertileReport = 0;
@@ -299,7 +300,6 @@ if (SettedAndRejEggsTotalGroup &gt; 0)
         // --- Declare variables ---
         decimal culls = 0;
         decimal sellableChicks = 0;
-        decimal result4 = 0;
         
         // --- Read values safely ---
         if (GetCurrentColumnValue("Culls") != null &amp;&amp;
@@ -946,6 +946,52 @@ private void xrTableCell83_BeforePrint(object sender, System.ComponentModel.Canc
 private void xrTableCell92_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
           xrTableCell92.Text = totalCullsRatio.ToString("N2");
 
+}
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // ================= RESET NEW GROUP VARIABLES =================
+
+// Rejected &amp; sellable eggs
+settedEggsRejSelableGroup = 0;
+rejSellEggsGroup = 0;
+rejUnSellEggsGroup = 0;
+SettedAndRejEggsTotalGroup = 0;
+
+// Infertile eggs
+settedEggsInfertileEggsGroup = 0;
+InfertileEggsGroup = 0;
+
+// Non-hatch eggs
+NonHatEggsSettedEggsGroup = 0;
+NonHatEggsGroup = 0;
+
+// Results
+result4 = 0;
+
+// Deads
+deadsSettedEggsGroup = 0;
+deadsGroup = 0;
+
+// Culls
+CullsSettedEggsGroup = 0;
+cullsGroup = 0;
+
+// Sellable chicks
+sellableChicksSettedEggsGroup = 0;
+sellableChicksGroup = 0;
+
+// Total chicks ratios
+TotalChicksRatioSettedEggsGroup = 0;
+TotalChicksRatiocullsGroup = 0;
+TotalChicksRatioSellableChicksGroup = 0;
+TotalChicksRatioFertileEggsGroup = 0;
+
+// Sellable percentages
+SellablePercSettedEggsGroup = 0;
+sellableChicksPercGroup = 0;
+
+// Grand total
+TotalAllSettedEggs = 0;
 }
 </value>
   </data>

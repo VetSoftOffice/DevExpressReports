@@ -438,6 +438,11 @@ private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.Canc
         cell.Text = value.ToString();
     }
 }
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    ToalRecGroup = 0;
+    TotalStockGroup = 0;
+}
 </value>
   </data>
 </root>

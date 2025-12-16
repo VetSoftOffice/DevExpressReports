@@ -153,6 +153,7 @@ decimal TotalCullsSellableEggsGroup  = 0;
 decimal TotalPercentageCullsSellable  = 0;
 decimal TotalPercentageCullsSellableChicks = 0;
 decimal TotalCullsSellableEggsGroupChicks  = 0;
+decimal groupCullsSellableEggs  = 0;
 decimal SellableChicks =0 ;
 decimal TotalInfertileSettedEggs = 0 ;
 decimal InfertileEggs  =0;
@@ -163,10 +164,13 @@ decimal totalReportNonHatEggs = 0;
 decimal totaltNonHatEggsGroup = 0;
 decimal totalNonHatSettedEggsGroup = 0;
 decimal groupDeadEggs = 0;  
-decimal groupCullsEggs = 0;    
+decimal groupCullsEggs = 0; 
+decimal totalHatchChiksSettedEggsGroup  = 0;  
+decimal CullsGroup  = 0;
+decimal SellableChicksGroup  = 0; 
+decimal groupCullsSellableEggsChicks  = 0;
 decimal totalReportDeads = 0;
 decimal totalReportCulls = 0;
-decimal settedEggsInfertile  = 0;
 decimal settedEggsInfertileReport  = 0;
 decimal settedEggsNonHatchery= 0;
 decimal settedEggsNonHatcheryReport = 0;
@@ -245,13 +249,9 @@ private void detailBand1_BeforePrint(object sender, System.ComponentModel.Cancel
             TotalCullsEggsGroup = (groupCullsEggs * 100m) / groupSettedEggs;
         }
     //---------- new logic for Culls + SellableChicks ------------------
-    decimal groupCullsSellableEggs  = 0;
-    decimal CullsGroup  = 0;
-    decimal SellableChicksGroup  = 0;
-    decimal CullsTotalHatch = 0;
+       decimal CullsTotalHatch = 0;
     decimal SellableChicksHatch = 0; 
     decimal settedEggs_TotalHatch = 0;
-    decimal totalHatchChiksSettedEggsGroup  = 0;
     if (GetCurrentColumnValue("SettedEggs") != null)
         settedEggs_TotalHatch= Convert.ToDecimal(GetCurrentColumnValue("SettedEggs"));
     // --- Culls ---
@@ -269,7 +269,6 @@ private void detailBand1_BeforePrint(object sender, System.ComponentModel.Cancel
     // --- Percentage ---
     TotalCullsSellableEggsGroup = ((groupSellableChicks +groupCullsEggs ) * 100m)  / groupSettedEggs;
     //---------- new logic for Culls + SellableChicks ------------------
-    decimal groupCullsSellableEggsChicks  = 0;
     // --- Culls ---
     if (GetCurrentColumnValue("Culls") != null)
         Culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
@@ -620,6 +619,38 @@ private void xrTableCell93_BeforePrint(object sender, System.ComponentModel.Canc
                   xrTableCell93.Text = TotalSelChicksGroup.ToString("N2");
 
     
+}
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // ================= RESET ADDITIONAL GROUP VARIABLES =================
+
+// Sellable chicks vs setted eggs
+groupSellableChicks = 0;
+groupSettedEggs = 0;
+
+// Infertile eggs
+TotalgroupInfertileEggs = 0;
+TotalInfertileSettedEggs = 0;
+
+// Non-hatch eggs
+totaltNonHatEggsGroup = 0;
+totalNonHatSettedEggsGroup = 0;
+
+// Dead &amp; culls eggs
+groupDeadEggs = 0;
+groupCullsEggs = 0;
+
+// Hatch chicks vs setted eggs
+totalHatchChiksSettedEggsGroup = 0;
+
+// Groups
+CullsGroup = 0;
+SellableChicksGroup = 0;
+
+// Culls sellable eggs / chicks
+groupCullsSellableEggs = 0;
+groupCullsSellableEggsChicks = 0;
+
 }
 </value>
   </data>
