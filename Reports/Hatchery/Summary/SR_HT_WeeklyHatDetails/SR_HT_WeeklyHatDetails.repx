@@ -1178,7 +1178,7 @@
     <Item46 Ref="790" Component="#Ref-63" Culture="Default" Path="LocationFloat" Data="1280.101,0" />
     <Item47 Ref="791" Component="#Ref-63" Culture="Default" Path="SizeF" Data="344,20.00003" />
     <Item48 Ref="792" Component="#Ref-63" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
-    <Item49 Ref="793" Component="#Ref-156" Culture="Default" Path="HeightF" Data="168.2083" />
+    <Item49 Ref="793" Component="#Ref-156" Culture="Default" Path="HeightF" Data="154.875" />
     <Item50 Ref="794" Component="#Ref-621" Culture="Default" Path="HeightF" Data="20" />
     <Item51 Ref="795" Component="#Ref-677" Culture="Default" Path="HeightF" Data="20" />
     <Item52 Ref="796" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
@@ -1204,7 +1204,7 @@
     <Item72 Ref="816" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
     <Item73 Ref="817" Component="#Ref-158" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item74 Ref="818" Component="#Ref-158" Culture="Default" Path="SizeF" Data="1159,20" />
-    <Item75 Ref="819" Component="#Ref-429" Culture="Default" Path="LocationFloat" Data="0.9999911,13.041687" />
+    <Item75 Ref="819" Component="#Ref-429" Culture="Default" Path="LocationFloat" Data="0.9999911,13.04169" />
     <Item76 Ref="820" Component="#Ref-429" Culture="Default" Path="SizeF" Data="1158,20" />
     <Item77 Ref="821" Component="#Ref-157" Culture="Default" Path="HeightF" Data="20" />
     <Item78 Ref="822" Component="#Ref-110" Culture="Default" Path="HeightF" Data="20" />

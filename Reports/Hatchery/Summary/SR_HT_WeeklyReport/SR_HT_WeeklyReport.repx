@@ -981,8 +981,8 @@
     <Item66 Ref="646" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item67 Ref="647" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 0, 20, 20" />
     <Item68 Ref="648" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
-    <Item69 Ref="649" Component="#Ref-151" Culture="Default" Path="LocationFloat" Data="9.999998,18.1250248" />
-    <Item70 Ref="650" Component="#Ref-151" Culture="Default" Path="SizeF" Data="1634,19.9999981" />
+    <Item69 Ref="649" Component="#Ref-151" Culture="Default" Path="LocationFloat" Data="9.999998,18.12502" />
+    <Item70 Ref="650" Component="#Ref-151" Culture="Default" Path="SizeF" Data="1634,20" />
     <Item71 Ref="651" Component="#Ref-150" Culture="Default" Path="HeightF" Data="38.12504" />
     <Item72 Ref="652" Component="#Ref-100" Culture="Default" Path="HeightF" Data="20" />
     <Item73 Ref="653" Component="#Ref-105" Culture="Default" Path="HeightF" Data="20" />
