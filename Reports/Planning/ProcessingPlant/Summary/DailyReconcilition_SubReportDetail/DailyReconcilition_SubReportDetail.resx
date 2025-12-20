@@ -150,6 +150,7 @@ pluckRejectPercentTotal += result;
 XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("N2");
 }
+
 </value>
   </data>
 </root>

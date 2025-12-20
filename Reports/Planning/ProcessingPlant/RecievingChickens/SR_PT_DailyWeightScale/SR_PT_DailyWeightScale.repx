@@ -761,8 +761,8 @@
     <Item115 Ref="467" Component="#Ref-337" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item116 Ref="468" Component="#Ref-168" Culture="Default" Path="LocationFloat" Data="0.9997559,0" />
     <Item117 Ref="469" Component="#Ref-168" Culture="Default" Path="SizeF" Data="803.5994,20" />
-    <Item118 Ref="470" Component="#Ref-45" Culture="Default" Path="LocationFloat" Data="3.81469727E-06,0" />
-    <Item119 Ref="471" Component="#Ref-45" Culture="Default" Path="SizeF" Data="804.59906,20" />
+    <Item118 Ref="470" Component="#Ref-45" Culture="Default" Path="LocationFloat" Data="3.814697E-06,0" />
+    <Item119 Ref="471" Component="#Ref-45" Culture="Default" Path="SizeF" Data="804.5991,20" />
     <Item120 Ref="472" Component="#Ref-302" Culture="Default" Path="LocationFloat" Data="1.002979,0" />
     <Item121 Ref="473" Component="#Ref-302" Culture="Default" Path="SizeF" Data="803.5962,25" />
     <Item122 Ref="474" Component="#Ref-304" Culture="Default" Path="Text" Data="TruckNo" />
@@ -859,7 +859,7 @@
     <Item213 Ref="565" Component="#Ref-316" Culture="ar" Path="Text" Data="المستبعدات" />
     <Item214 Ref="566" Component="#Ref-316" Culture="Default" Path="Weight" Data="0.73147326087853082" />
     <Item215 Ref="567" Component="#Ref-318" Culture="Default" Path="Text" Data="Culls Wt" />
-    <Item216 Ref="568" Component="#Ref-318" Culture="ar" Path="Text" Data="وزن المستبعجات" />
+    <Item216 Ref="568" Component="#Ref-318" Culture="ar" Path="Text" Data="وزن المستبعدات" />
     <Item217 Ref="569" Component="#Ref-318" Culture="Default" Path="Weight" Data="0.78214044181698428" />
     <Item218 Ref="570" Component="#Ref-322" Culture="Default" Path="Text" Data="Accepted Wt" />
     <Item219 Ref="571" Component="#Ref-322" Culture="ar" Path="Text" Data="وزن الكمية المقبولة" />
