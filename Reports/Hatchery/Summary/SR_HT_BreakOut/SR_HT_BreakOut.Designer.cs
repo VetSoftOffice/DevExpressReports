@@ -515,21 +515,21 @@
             this.crossTabTotalCell26,
             this.crossTabTotalCell27});
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.84146F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(67.09146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(54.59146F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(67.09149F)});
             crossTabColumnField1.FieldName = "SerialNo";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
@@ -557,7 +557,7 @@
             crossTabRowDefinition11.Visible = false;
             crossTabRowDefinition12.Visible = false;
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(39.58334F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
             crossTabRowDefinition1,
             crossTabRowDefinition2,
@@ -1682,7 +1682,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(0F, 0F, 20F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 385F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 410F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
@@ -1690,8 +1690,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Total_Res, "Default", "Description", "Total_Res"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WeekNo, "Default", "Description", "WeekNo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(37.37836F, 10.00001F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(1287.622F, 375F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00001F, 9.999974F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(843.872F, 389.5833F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(187.5F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(164.1655F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Batch No:[Patch Code]"),

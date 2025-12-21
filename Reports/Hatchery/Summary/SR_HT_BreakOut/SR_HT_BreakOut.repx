@@ -236,24 +236,24 @@
                 <Item1 Ref="139" FieldName="Combined_CF" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="140" Width="85.84146" />
-                <Item2 Ref="141" Width="85.84146" />
-                <Item3 Ref="142" Width="85.84146" />
-                <Item4 Ref="143" Width="85.84146" />
-                <Item5 Ref="144" Width="85.84146" />
-                <Item6 Ref="145" Width="85.84146" />
-                <Item7 Ref="146" Width="85.84146" />
-                <Item8 Ref="147" Width="85.84146" />
-                <Item9 Ref="148" Width="85.84146" />
-                <Item10 Ref="149" Width="85.84146" />
-                <Item11 Ref="150" Width="85.84146" />
-                <Item12 Ref="151" Width="85.84146" />
-                <Item13 Ref="152" Width="85.84146" />
-                <Item14 Ref="153" Width="85.84146" />
-                <Item15 Ref="154" Width="85.84146" />
+                <Item1 Ref="140" Width="54.591465" />
+                <Item2 Ref="141" Width="54.591465" />
+                <Item3 Ref="142" Width="54.591465" />
+                <Item4 Ref="143" Width="54.591465" />
+                <Item5 Ref="144" Width="54.591465" />
+                <Item6 Ref="145" Width="54.591465" />
+                <Item7 Ref="146" Width="54.591465" />
+                <Item8 Ref="147" Width="54.591465" />
+                <Item9 Ref="148" Width="67.09146" />
+                <Item10 Ref="149" Width="54.591465" />
+                <Item11 Ref="150" Width="54.591465" />
+                <Item12 Ref="151" Width="54.591465" />
+                <Item13 Ref="152" Width="54.591465" />
+                <Item14 Ref="153" Width="54.591465" />
+                <Item15 Ref="154" Width="67.09149" />
               </ColumnDefinitions>
               <RowDefinitions>
-                <Item1 Ref="155" />
+                <Item1 Ref="155" Height="39.5833359" />
                 <Item2 Ref="156" />
                 <Item3 Ref="157" Visible="false" />
                 <Item4 Ref="158" Visible="false" />
@@ -698,7 +698,7 @@
     <Item141 Ref="490" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item142 Ref="491" Component="#Ref-1" Culture="Default" Path="Margins" Data="0, 0, 20, 23" />
     <Item143 Ref="492" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
-    <Item144 Ref="493" Component="#Ref-122" Culture="Default" Path="HeightF" Data="385" />
+    <Item144 Ref="493" Component="#Ref-122" Culture="Default" Path="HeightF" Data="409.999969" />
     <Item145 Ref="494" Component="#Ref-65" Culture="Default" Path="HeightF" Data="20" />
     <Item146 Ref="495" Component="#Ref-70" Culture="Default" Path="HeightF" Data="20" />
     <Item147 Ref="496" Component="#Ref-57" Culture="Default" Path="HeightF" Data="20" />
@@ -706,8 +706,8 @@
     <Item149 Ref="498" Component="#Ref-48" Culture="Default" Path="HeightF" Data="20" />
     <Item150 Ref="499" Component="#Ref-23" Culture="Default" Path="Description" Data="Total_Res" />
     <Item151 Ref="500" Component="#Ref-21" Culture="Default" Path="Description" Data="WeekNo" />
-    <Item152 Ref="501" Component="#Ref-123" Culture="Default" Path="LocationFloat" Data="37.37836,10.00001" />
-    <Item153 Ref="502" Component="#Ref-123" Culture="Default" Path="SizeF" Data="1287.622,375" />
+    <Item152 Ref="501" Component="#Ref-123" Culture="Default" Path="LocationFloat" Data="10.0000067,9.999974" />
+    <Item153 Ref="502" Component="#Ref-123" Culture="Default" Path="SizeF" Data="843.872,389.583344" />
     <Item154 Ref="503" Component="#Ref-116" Culture="Default" Path="LocationFloat" Data="187.5,0" />
     <Item155 Ref="504" Component="#Ref-116" Culture="Default" Path="SizeF" Data="164.1655,20" />
     <Item156 Ref="505" Component="#Ref-116" Culture="Default" Path="Text" Data="Batch No:[Patch Code]" />
