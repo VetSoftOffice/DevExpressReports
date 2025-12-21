@@ -134,10 +134,15 @@
   <data name="dsFinance.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNGaW5hbmNlIj48VmlldyBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PEZpZWxkIE5hbWU9Ikl0ZW1UeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbnRhaW5lciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTZW50T3JDbGFjUXR5IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJDYWxjUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkFkanVzdGVkUHJpY2VVbml0IiBUeXBlPSJEb3VibGUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="TotalRejEggs.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([SR_HT_WeeklyMonitorHatEggs.SlabSides]), 0, [SR_HT_WeeklyMonitorHatEggs.SlabSides]) +
+Iif(IsNullOrEmpty([SR_HT_WeeklyMonitorHatEggs.BodyCheck]), 0, [SR_HT_WeeklyMonitorHatEggs.BodyCheck]) +
+Iif(IsNullOrEmpty([SR_HT_WeeklyMonitorHatEggs.Wrinkled]), 0, [SR_HT_WeeklyMonitorHatEggs.Wrinkled]) +
+Iif(IsNullOrEmpty([SR_HT_WeeklyMonitorHatEggs.ThinSpot]), 0, [SR_HT_WeeklyMonitorHatEggs.ThinSpot])
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal  StainedPercReport = 0;
-decimal AdheringShavingPercReport  = 0;
-decimal avgPercentageDirtyEgg = 0;
+    <value>decimal avgPercentageDirtyEgg = 0;
 decimal PercentageAdheringShaving  = 0;
 decimal avgPercentageAdheringShaving = 0;
 decimal PercentageStained  = 0;
@@ -149,9 +154,9 @@ decimal avgPercentageWrinkled = 0;
 decimal avgPercentageThinSpot  =0;
 decimal avgPercentageShellDefects = 0;
 decimal avgPercentageUpsideDown = 0;
+decimal avgPercentageAdhering  = 0;
+decimal avgPercentageSpecialEggs = 0;
 decimal countRows = 0;
-decimal TotalAdheringShaving = 0;
-decimal TotalAdheringSampleQty = 0;
 decimal TotalAdheringShaving = 0;
 decimal TotalAdheringSampleQty = 0;
 decimal TotalDirtyEgg = 0;
@@ -178,7 +183,8 @@ decimal PercentageCombined = 0;
 decimal TotalUpsideDown = 0;
 decimal TotalUpsideDownSampleQty = 0;
 decimal PercentageUpsideDown = 0;
-
+decimal TotalStainedReport = 0;
+decimal TotalSampleQty = 0 ;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
 double sample = Convert.ToDouble(GetCurrentColumnValue("SampleQty"));
 double stained = Convert.ToDouble(GetCurrentColumnValue("Stained"));
@@ -224,7 +230,7 @@ if (TotalSampleQty &gt; 0){
     PercentageStained =( TotalStainedReport / TotalSampleQty) * 100m ;
 }
 if (countRows &gt; 0){
-    avgPercentageStained =( avgPercentageStained / countRows )  ;
+    avgPercentageStained =( PercentageStained / countRows )  ;
 }
 
     xrTableCell43.Text = avgPercentageStained.ToString("N2");
@@ -267,7 +273,7 @@ if (TotalAdheringSampleQty &gt; 0)
 if (countRows &gt; 0)
      avgPercentageAdhering = (PercentageAdheringShaving / countRows );
 
-     xrTableCell45.Text = avgPercentageAdheringShaving.ToString("N2");
+     xrTableCell45.Text = avgPercentageAdhering.ToString("N2");
 
 }
 
@@ -275,7 +281,6 @@ private void xrTableCell56_BeforePrint(object sender, System.ComponentModel.Canc
 // --- Declare values ---  
 decimal dirtyEgg = 0;
 decimal sampleQty = 0;
-decimal DirtyEggPercReportCount = 0;
 // --- Read values ---
 if (GetCurrentColumnValue("DirtyEgg") != null)
     dirtyEgg = Convert.ToDecimal(GetCurrentColumnValue("DirtyEgg"));

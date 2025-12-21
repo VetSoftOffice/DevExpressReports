@@ -270,7 +270,7 @@
               <EditOptions Ref="140" Enabled="true" />
               <ExpressionBindings>
                 <Item1 Ref="141" EventName="BeforePrint" PropertyName="BorderWidth" Expression="Iif(?HideBorders, 0, 0.5)&#xA;" />
-                <Item2 Ref="142" EventName="BeforePrint" PropertyName="Text" Expression="Iif(!IsNullOrEmpty(?TStActionID_Ref),[ItemCode_Product] , [ItemCode_To])" />
+                <Item2 Ref="142" EventName="BeforePrint" PropertyName="Text" Expression="[ItemCode_To]" />
               </ExpressionBindings>
               <StylePriority Ref="143" UseFont="false" UseBorders="false" />
             </Item4>
@@ -299,7 +299,7 @@
               <ExpressionBindings>
                 <Item1 Ref="156" EventName="BeforePrint" PropertyName="BorderWidth" Expression="Iif(?HideBorders, 0, 0.5)&#xA;&#xA;" />
                 <Item2 Ref="157" EventName="BeforePrint" PropertyName="Visible" Expression="[Paid] Is Not Null Or [TotalDetail] Is Not Null" />
-                <Item3 Ref="158" EventName="BeforePrint" PropertyName="Text" Expression="Iif(!IsNullOrEmpty(?TStActionID_Ref),[TotalDetail],[TotalPrice])&#xA;" />
+                <Item3 Ref="158" EventName="BeforePrint" PropertyName="Text" Expression="[TotalPrice]" />
               </ExpressionBindings>
               <StylePriority Ref="159" UseFont="false" UseBorders="false" />
             </Item2>

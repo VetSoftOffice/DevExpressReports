@@ -159,7 +159,7 @@ decimal totalsettedEggs   = 0;
 decimal totalTotalCulls  = 0;
 decimal totalSettedEggsCulls = 0;
 private void xrTableCell1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal SelChicks= 0
+    decimal SelChicks= 0;
     decimal settedEggs  = 0;
     if (GetCurrentColumnValue("SelChicks") != null)
         SelChicks= Convert.ToDecimal(GetCurrentColumnValue("SelChicks"));
@@ -190,7 +190,8 @@ private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     decimal TotalCulls= 0
+     decimal TotalCulls= 0;
+     decimal settedEggs = 0;
     if (GetCurrentColumnValue("TotalCulls") != null)
         TotalCulls= Convert.ToDecimal(GetCurrentColumnValue("TotalCulls"));
     if (GetCurrentColumnValue("SettedEggs") != null)
