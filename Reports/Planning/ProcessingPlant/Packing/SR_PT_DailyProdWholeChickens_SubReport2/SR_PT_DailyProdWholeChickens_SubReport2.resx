@@ -180,8 +180,6 @@ if (GetCurrentColumnValue("ProdWt") != null)
 
 if (GetCurrentColumnValue("TotalWeightPluacking") != null)
     totalWeightPluacking = Convert.ToDecimal(GetCurrentColumnValue("TotalWeightPluacking"));
-// --- Accumulate ProdWt for SUM ---
-AccumulatedProdWt += prodWt;   // define AccumulatedProdWt at report level
 
 // --- Equation ---
 decimal percentage = 0;
@@ -192,6 +190,9 @@ if (totalWeightPluacking != 0)
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+// --- Accumulate ProdWt for SUM ---
+AccumulatedProdWt += prodWt;   // define AccumulatedProdWt at report level
+
 
 }
 
@@ -215,9 +216,6 @@ if (GetCurrentColumnValue("TotalWeightProduct") != null)
 if (GetCurrentColumnValue("TotalWeightPluacking") != null)
     totalWeightPluacking = Convert.ToDecimal(GetCurrentColumnValue("TotalWeightPluacking"));
 
-// --- Accumulate ProdWt for SUM ---
-AccumulatedProdWt += prodWt;   // define AccumulatedProdWt at report level
-
 // --- Equation ---
 decimal percentage = 0;
 if (totalWeightPluacking != 0)
@@ -227,6 +225,10 @@ if (totalWeightPluacking != 0)
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.##"); // format with up to 2 decimals
+
+// --- Accumulate ProdWt for SUM ---
+AccumulatedProdWt += prodWt;   // define AccumulatedProdWt at report level
+
 
 }
 

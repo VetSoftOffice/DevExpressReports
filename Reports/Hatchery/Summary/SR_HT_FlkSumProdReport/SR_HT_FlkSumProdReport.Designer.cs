@@ -673,10 +673,6 @@
             this.xrTableRow89 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell212 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell213 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable90 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow90 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell215 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell216 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable91 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow91 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell218 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -875,6 +871,10 @@
             this.Female_Per = new DevExpress.XtraReports.UI.CalculatedField();
             this.Week_CF = new DevExpress.XtraReports.UI.CalculatedField();
             this.calculatedField2 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.xrTableCell215 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableRow90 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTable90 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableCell216 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
@@ -961,7 +961,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable87)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable88)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable89)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable90)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable91)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable92)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable93)).BeginInit();
@@ -976,6 +975,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable103)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable102)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable90)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // ShowSignature
@@ -3049,7 +3049,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell65.Multiline = true;
             this.xrTableCell65.Name = "xrTableCell65";
-            this.xrTableCell65.Scripts.OnBeforePrint = "xrTableCell65_BeforePrint_1";
+            this.xrTableCell65.Scripts.OnBeforePrint = "xrTableCell65_BeforePrint";
             this.xrTableCell65.StylePriority.UseBorders = false;
             // 
             // xrTable28
@@ -3189,7 +3189,6 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell64.Multiline = true;
             this.xrTableCell64.Name = "xrTableCell64";
-            this.xrTableCell64.Scripts.OnBeforePrint = "xrTableCell64_BeforePrint";
             this.xrTableCell64.StylePriority.UseBorders = false;
             // 
             // xrTable24
@@ -3416,7 +3415,6 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell47.Multiline = true;
             this.xrTableCell47.Name = "xrTableCell47";
-            this.xrTableCell47.Scripts.OnBeforePrint = "xrTableCell47_BeforePrint";
             this.xrTableCell47.StylePriority.UseBorders = false;
             // 
             // xrTable18
@@ -4107,7 +4105,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell156.Multiline = true;
             this.xrTableCell156.Name = "xrTableCell156";
-            this.xrTableCell156.Scripts.OnBeforePrint = "xrTableCell156_BeforePrint";
+            this.xrTableCell156.Scripts.OnBeforePrint = "xrTableCell156_BeforePrint_1";
             this.xrTableCell156.StylePriority.UseBorders = false;
             // 
             // xrTableCell205
@@ -4306,6 +4304,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell164.Multiline = true;
             this.xrTableCell164.Name = "xrTableCell164";
+            this.xrTableCell164.Scripts.OnBeforePrint = "xrTableCell164_BeforePrint";
             this.xrTableCell164.StylePriority.UseBorders = false;
             // 
             // xrTableCell217
@@ -4409,6 +4408,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell168.Multiline = true;
             this.xrTableCell168.Name = "xrTableCell168";
+            this.xrTableCell168.Scripts.OnBeforePrint = "xrTableCell168_BeforePrint";
             this.xrTableCell168.StylePriority.UseBorders = false;
             // 
             // xrTableCell223
@@ -4982,6 +4982,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell204.Multiline = true;
             this.xrTableCell204.Name = "xrTableCell204";
+            this.xrTableCell204.Scripts.OnBeforePrint = "xrTableCell204_BeforePrint";
             this.xrTableCell204.StylePriority.UseBorders = false;
             // 
             // xrTable87
@@ -5019,6 +5020,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell207.Multiline = true;
             this.xrTableCell207.Name = "xrTableCell207";
+            this.xrTableCell207.Scripts.OnBeforePrint = "xrTableCell207_BeforePrint";
             this.xrTableCell207.StylePriority.UseBorders = false;
             // 
             // xrTable88
@@ -5090,44 +5092,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell213.Multiline = true;
             this.xrTableCell213.Name = "xrTableCell213";
+            this.xrTableCell213.Scripts.OnBeforePrint = "xrTableCell213_BeforePrint";
             this.xrTableCell213.StylePriority.UseBorders = false;
-            // 
-            // xrTable90
-            // 
-            this.xrTable90.BorderWidth = 1.4F;
-            this.xrTable90.Name = "xrTable90";
-            this.xrTable90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrTable90.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow90});
-            this.xrTable90.StylePriority.UseBorderWidth = false;
-            // 
-            // xrTableRow90
-            // 
-            this.xrTableRow90.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell215,
-            this.xrTableCell216});
-            this.xrTableRow90.Name = "xrTableRow90";
-            // 
-            // xrTableCell215
-            // 
-            this.xrTableCell215.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell215.Multiline = true;
-            this.xrTableCell215.Name = "xrTableCell215";
-            this.xrTableCell215.StylePriority.UseBorders = false;
-            // 
-            // xrTableCell216
-            // 
-            this.xrTableCell216.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrTableCell216.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumHatchability_HH_1]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
-            this.xrTableCell216.Multiline = true;
-            this.xrTableCell216.Name = "xrTableCell216";
-            this.xrTableCell216.StylePriority.UseBorders = false;
             // 
             // xrTable91
             // 
@@ -5164,6 +5130,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell219.Multiline = true;
             this.xrTableCell219.Name = "xrTableCell219";
+            this.xrTableCell219.Scripts.OnBeforePrint = "xrTableCell219_BeforePrint";
             this.xrTableCell219.StylePriority.UseBorders = false;
             // 
             // xrTable92
@@ -5201,6 +5168,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell222.Multiline = true;
             this.xrTableCell222.Name = "xrTableCell222";
+            this.xrTableCell222.Scripts.OnBeforePrint = "xrTableCell222_BeforePrint";
             this.xrTableCell222.StylePriority.UseBorders = false;
             // 
             // xrTable93
@@ -5374,6 +5342,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell237.Multiline = true;
             this.xrTableCell237.Name = "xrTableCell237";
+            this.xrTableCell237.Scripts.OnBeforePrint = "xrTableCell237_BeforePrint";
             this.xrTableCell237.StylePriority.UseBorders = false;
             // 
             // xrTable100
@@ -5411,6 +5380,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell246.Multiline = true;
             this.xrTableCell246.Name = "xrTableCell246";
+            this.xrTableCell246.Scripts.OnBeforePrint = "xrTableCell246_BeforePrint";
             this.xrTableCell246.StylePriority.UseBorders = false;
             // 
             // SubBand7
@@ -5516,6 +5486,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell261.Multiline = true;
             this.xrTableCell261.Name = "xrTableCell261";
+            this.xrTableCell261.Scripts.OnBeforePrint = "xrTableCell261_BeforePrint";
             this.xrTableCell261.StylePriority.UseBorders = false;
             // 
             // xrTable104
@@ -5556,6 +5527,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell258.Multiline = true;
             this.xrTableCell258.Name = "xrTableCell258";
+            this.xrTableCell258.Scripts.OnBeforePrint = "xrTableCell258_BeforePrint";
             this.xrTableCell258.StylePriority.UseBorders = false;
             // 
             // xrTableCell259
@@ -5631,6 +5603,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell255.Multiline = true;
             this.xrTableCell255.Name = "xrTableCell255";
+            this.xrTableCell255.Scripts.OnBeforePrint = "xrTableCell255_BeforePrint";
             this.xrTableCell255.StylePriority.UseBorders = false;
             // 
             // xrTableCell256
@@ -5704,6 +5677,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
             this.xrTableCell252.Multiline = true;
             this.xrTableCell252.Name = "xrTableCell252";
+            this.xrTableCell252.Scripts.OnBeforePrint = "xrTableCell252_BeforePrint";
             this.xrTableCell252.StylePriority.UseBorders = false;
             // 
             // xrTableCell253
@@ -7041,6 +7015,42 @@
             this.calculatedField2.DataMember = "SR_HT_FlkSumProdReport";
             this.calculatedField2.Name = "calculatedField2";
             // 
+            // xrTableCell215
+            // 
+            this.xrTableCell215.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell215.Multiline = true;
+            this.xrTableCell215.Name = "xrTableCell215";
+            this.xrTableCell215.StylePriority.UseBorders = false;
+            // 
+            // xrTableRow90
+            // 
+            this.xrTableRow90.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell215,
+            this.xrTableCell216});
+            this.xrTableRow90.Name = "xrTableRow90";
+            // 
+            // xrTable90
+            // 
+            this.xrTable90.BorderWidth = 1.4F;
+            this.xrTable90.Name = "xrTable90";
+            this.xrTable90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable90.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow90});
+            this.xrTable90.StylePriority.UseBorderWidth = false;
+            // 
+            // xrTableCell216
+            // 
+            this.xrTableCell216.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell216.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\' ,\'MiddleRight\')\n")});
+            this.xrTableCell216.Multiline = true;
+            this.xrTableCell216.Name = "xrTableCell216";
+            this.xrTableCell216.StylePriority.UseBorders = false;
+            // 
             // SR_HT_FlkSumProdReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -7256,12 +7266,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(109.375F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "SUMMARY"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "الملخص"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(248.0701F, 0.07616352F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "SizeF", new System.Drawing.SizeF(179.0598F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(248.0701F, 0.07616679F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "SizeF", new System.Drawing.SizeF(159.9318F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "Text", "Performance Summary"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "ar", "Text", "ملخص الاداء"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(427.13F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "SizeF", new System.Drawing.SizeF(100F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(408.002F, 0.07616679F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "SizeF", new System.Drawing.SizeF(56.19998F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "Default", "Text", "(A + B)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel7, "ar", "Text", "(أ + ب)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(949.67F, 0F)),
@@ -7275,14 +7285,14 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable10, "Default", "SizeF", new System.Drawing.SizeF(359.375F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(616.698F, 406.588F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable100, "Default", "SizeF", new System.Drawing.SizeF(541.0103F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00025F, 23.07618F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "SizeF", new System.Drawing.SizeF(799.3907F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable103, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00031F, 43.07618F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable103, "Default", "SizeF", new System.Drawing.SizeF(799.3907F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable104, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00031F, 63.07618F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable104, "Default", "SizeF", new System.Drawing.SizeF(799.3906F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable105, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00031F, 83.07618F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable105, "Default", "SizeF", new System.Drawing.SizeF(347.4448F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15F, 23.07612F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable102, "Default", "SizeF", new System.Drawing.SizeF(794.3911F, 20.00001F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable103, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00008F, 43.07618F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable103, "Default", "SizeF", new System.Drawing.SizeF(794.3909F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable104, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00005F, 63.07618F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable104, "Default", "SizeF", new System.Drawing.SizeF(794.3909F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable105, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(15.00008F, 83.07618F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable105, "Default", "SizeF", new System.Drawing.SizeF(345.2717F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable106, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(576.4584F, 3.076178F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable106, "Default", "SizeF", new System.Drawing.SizeF(232.9326F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable11, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(576.4584F, 80.00005F)),
@@ -7719,13 +7729,13 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell201, "Default", "Weight", 3.1555614915890131D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell202, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell202, "Default", "Weight", 1.0669812154530405D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "Default", "Text", "Cum.Egg Rejected   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "Default", "Text", "Cum Rejected Eggs      HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "ar", "Text", "إجمالي البيض المرفوض (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell203, "Default", "Weight", 3.2715181786461622D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell204, "Default", "Weight", 3.1555625098304D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell205, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell205, "Default", "Weight", 1.0669822527465413D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "Default", "Text", "Cum.Final Hatching Eggs  HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "Default", "Text", "Cum Hatching Eggs   HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "ar", "Text", "إجمالي بيض التفريخ النهائي (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell206, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell207, "Default", "Text", "xrTableCell98"),
@@ -7737,6 +7747,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell21, "Default", "Weight", 5.2696887207031251D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell210, "Default", "Weight", 2.6562475585937504D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell211, "Default", "Text", ""),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell211, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell211, "Default", "Weight", 0.64018936505255231D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell212, "Default", "Text", "1 - Cum.Chicks (Actual)   HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell212, "ar", "Text", "1- إجمالي الكتاكيت الفعلية (حضانة منزلية)"),
@@ -7745,14 +7756,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell213, "Default", "Weight", 2.6562475585937504D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell214, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell214, "Default", "Weight", 1.0126444368681464D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Text", "Cum.Hatchability              %"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell215, "Default", "Weight", 3.2715204484710934D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell216, "Default", "Text", "xrTableCell107"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell216, "Default", "Weight", 3.155561460708594D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell217, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell217, "Default", "Weight", 0.64018936200916465D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "Default", "Text", "Cum.Chicks Rejected   HH"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "Default", "Text", "Cum Chicks Rejected   HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "ar", "Text", "إجمالي الكتاكيت المرفوضة (حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell218, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell219, "Default", "Text", "xrTableCell85"),
@@ -7762,13 +7770,14 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 1.65625D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell220, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell220, "Default", "Weight", 1.0669817949829319D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Text", "Cum.A grade Chicks(Actual)  HH                                                   " +
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Text", "Cum A grade Chicks(Actual)  HH                                                   " +
                     "       "),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (الفعلي - حضانة منزلية)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell221, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell222, "Default", "Text", "xrTableCell94"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell222, "Default", "Weight", 2.6562487792968748D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell223, "Default", "Text", ""),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell223, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell223, "Default", "Weight", 0.640189462607289D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell224, "Default", "Weight", 2.7538555908203124D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell225, "Default", "Weight", 2.65625D),
@@ -7816,37 +7825,37 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell252, "Default", "Weight", 1.0437477856519182D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Text", "Cum Total Chicks HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "ar", "Text", "إجمالي الكتاكيت (حضانة منزلية)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Weight", 2.1901331447827879D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell253, "Default", "Weight", 2.1754709018576475D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Text", "Rejected Eggs        HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "ar", "Text", "البيض المرفوض (حضانة منزلية)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Weight", 2.4307000443207305D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell254, "Default", "Weight", 2.4154980179251297D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell255, "Default", "Text", "xrTableCell255"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell255, "Default", "Weight", 1.0437481671036797D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell255, "Default", "Weight", 1.0372194657216911D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "Default", "Text", "Rejected Chicks HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "ar", "Text", "الكتاكيت المرفوضة (حضانة منزلية)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "Default", "Weight", 2.1901324582539217D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell256, "Default", "Weight", 2.1618653243667043D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "Default", "Text", " Cum Hatching Eggs\t      HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "ar", "Text", "إجمالي بيض التفريخ (حضانة منزلية)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "Default", "Weight", 2.4307003494964992D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell257, "Default", "Weight", 2.4154984770255017D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell258, "Default", "Text", "xrTableCell258"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell258, "Default", "Weight", 1.0437474804582005D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell258, "Default", "Weight", 1.0372189314132905D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "Default", "Text", "Cum A Grade Chicks HH"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "ar", "Text", "إجمالي كتاكيت الدرجة الأولى (حضانة منزلية)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "Default", "Weight", 2.1901329160175744D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell259, "Default", "Weight", 2.1618659336323245D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Text", "xrTableCell26"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Weight", 0.96875D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "Default", "Text", "Cum.Total Hatchability\t\t%"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "ar", "Text", "معدل الفقس التراكمي"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "Default", "Weight", 2.43069986458672D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell260, "Default", "Weight", 2.415497841009421D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Text", "xrTableCell261"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Weight", 1.043747789146696D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell261, "Default", "Weight", 1.0372188598539553D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Text", "xrTableCell263"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Weight", 1.1928999248200858D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell263, "Default", "Weight", 1.2009393258427432D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Text", "xrTableCell264"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Weight", 1.1364247087589439D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell264, "Default", "Weight", 1.1430475506614268D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Text", "xrTableCell265"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Weight", 1.1934288706415268D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell265, "Default", "Weight", 1.193429023229408D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell266, "Default", "Text", "xrTableCell266"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell266, "Default", "Weight", 1.1358969835183645D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell267, "Default", "Text", "xrTableCell267"),
@@ -7941,7 +7950,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Text", "Hatching Eggs"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Weight", 1.7725704956054686D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Text", "xrTableCell52"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Weight", 0.8829130391951856D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Text", "Cum. Chicks(as per egg set)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "ar", "Text", "إجمالي الكتاكيت (حسب البيض الموضوع)"),
@@ -7952,7 +7961,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Text", "xrTableCell55"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Weight", 1.3965872377449542D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Text", "Cum.Hatchability\t\t\t\t%"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Text", "Cum.Hatchability\t%\t                                                              " +
+                    "                                                                               \t" +
+                    "\t"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "ar", "Text", "معدل الفقس التراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Weight", 2.1170869608048144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Text", "xrTableCell57"),
@@ -7971,7 +7982,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell60, "ar", "Text", "البيض المرسل للنفايات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell60, "Default", "Weight", 1.7725704956054689D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Text", "xrTableCell61"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Weight", 1.4715200805664062D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Text", "Cum A Grade Chicks"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Weight", 2.1170875387069747D),
@@ -7979,7 +7990,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Weight", 1.4715206909179686D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Text", "xrTableCell64"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Weight", 0.882912461293025D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Text", "xrTableCell65"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "TextFormatString", "{0:N2}"),
@@ -8327,7 +8338,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable87)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable88)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable89)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable90)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable91)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable92)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable93)).EndInit();
@@ -8342,6 +8352,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable103)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable102)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable90)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -8820,10 +8831,6 @@
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow89;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell212;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell213;
-        private DevExpress.XtraReports.UI.XRTable xrTable90;
-        private DevExpress.XtraReports.UI.XRTableRow xrTableRow90;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell215;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell216;
         private DevExpress.XtraReports.UI.XRTable xrTable91;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow91;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell218;
@@ -8972,5 +8979,9 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell62;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell64;
         private DevExpress.XtraReports.UI.CalculatedField calculatedField2;
+        private DevExpress.XtraReports.UI.XRTable xrTable90;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow90;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell215;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell216;
     }
 }

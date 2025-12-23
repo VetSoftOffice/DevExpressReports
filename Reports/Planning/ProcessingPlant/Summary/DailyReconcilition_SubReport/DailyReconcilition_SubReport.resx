@@ -119,6 +119,8 @@
   </resheader>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal pluckRejectPercentTotal  = 0;
+int CountRows = 0;
+decimal TotalDressedWeightGroup  = 0;
 private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare running total variables (outside or static in the class scope if cumulative across rows) ---
 decimal counterTotal = 0;
@@ -440,6 +442,31 @@ cell.Text = result.ToString("N2");   // format with 2 decimals
 
 
 
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal TotalDressedWeight = 0;
+    if (GetCurrentColumnValue("TotalDressedWeight") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("TotalDressedWeight").ToString()))
+{
+    TotalDressedWeight= Convert.ToDecimal(GetCurrentColumnValue("TotalDressedWeight"));
+    CountRows++
+}
+  TotalDressedWeightGroup += TotalDressedWeight;
+
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = 0;
+if (CountRows!= 0)
+    result = (TotalDressedWeightGroup * 100) / CountRows;
+else
+    result = 0;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");   // format with 2 decimals
+
+}
 </value>
   </data>
 </root>

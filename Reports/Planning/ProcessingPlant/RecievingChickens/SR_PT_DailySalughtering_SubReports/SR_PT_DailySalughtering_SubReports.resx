@@ -395,6 +395,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = totalProblemSum.ToString("N2"); // format with 2 decimal places
 
 }
+
 </value>
   </data>
 </root>

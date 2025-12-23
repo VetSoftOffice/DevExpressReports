@@ -140,11 +140,12 @@ if (liveBirds &gt; 0)
     avgWeightPerBird = liveBirdsWt / liveBirds;
 
 // --- (Optional) Add to report-level total if you want to calculate averages later ---
-AvgLiveBirdWeightReport += avgWeightPerBird;   // define AvgLiveBirdWeightReport at report level
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = avgWeightPerBird.ToString("0.##"); // format with up to 2 decimals
+AvgLiveBirdWeightReport += avgWeightPerBird;   // define AvgLiveBirdWeightReport at report level
+
 
 }
 
@@ -165,7 +166,7 @@ decimal result = culls + doa;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N0"); // format with up to 2 decimals
 
 }
 
@@ -191,7 +192,7 @@ decimal result = liveBirds - (culls + doa);
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N0"); // format with up to 2 decimals
 
 }
 
@@ -223,7 +224,7 @@ decimal result = cullsDoa + remaining;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N0"); // format with up to 2 decimals
 
 }
 
@@ -347,11 +348,12 @@ if (denominator &gt; 0)
     percentage = (portionsTotalWeight / denominator) * 100m;
 
 // --- (Optional) Add to report-level accumulator ---
-PortionsPercReport += percentage;   // define PortionsPercReport at report level if needed
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = percentage.ToString("0.##"); // up to 2 decimals
+PortionsPercReport += percentage;   // define PortionsPercReport at report level if needed
+
 
 }
 

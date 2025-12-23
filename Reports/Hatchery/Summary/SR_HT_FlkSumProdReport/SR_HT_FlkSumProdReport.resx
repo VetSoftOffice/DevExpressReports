@@ -293,12 +293,10 @@ Iif(IsNullOrEmpty([CumChicks_ActEst_HH_1]) OR [CumChicks_ActEst_HH_1] == 0, 0, [
 </value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>// Declare at report level (top of the report's class)
-decimal total = 0;
+    <value>decimal total = 0 ;
 decimal total_1 = 0;
 decimal RejDef  = 0;
 decimal RejCrack  = 0;
-// Report-level fields (no access modifier)
 decimal RejBroken = 0;
 decimal RejOther = 0;
 decimal TotalRej = 0;
@@ -396,7 +394,7 @@ RejBroken = htRejBroken + stRejBroken;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = RejBroken.ToString("N2");   // format with 2 decimals
+cell.Text = RejBroken.ToString("N0");   // format with 2 decimals
 
 }
 
@@ -424,7 +422,7 @@ RejOther  = htRejOther + stRejOther;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = RejOther.ToString("N2");   // format with 2 decimals
+cell.Text = RejOther.ToString("N0");   // format with 2 decimals
 
 }
 
@@ -522,7 +520,7 @@ BalanceOfHatEggs = farmInTake - totalRej;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = BalanceOfHatEggs.ToString("0.##");   // format with 2 decimals
+cell.Text = BalanceOfHatEggs.ToString("N0");   // format with 2 decimals
 
 }
 
@@ -589,7 +587,7 @@ decimal totalChicks = cullsChicks + deadChicks;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalChicks.ToString("0.##");   // format with 2 decimals
+cell.Text = totalChicks.ToString("N0");   // format with 2 decimals
 
 }
 
@@ -677,7 +675,7 @@ decimal totalSendToOffal = erSendToOffal + esSendToOffal;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = totalSendToOffal.ToString("0.##");   // format with up to 2 decimals
+cell.Text = totalSendToOffal.ToString("N0");   // format with up to 2 decimals
 
 }
 
@@ -770,7 +768,7 @@ decimal cumHatchability = 0;
 if (settedEggs != 0)
     cumHatchability = (selChicks + cullsChicks + deadChicks) / settedEggs * 100m;
 
-decimal result =( total * cumHatchability ) / settedEggs  * 100m
+decimal result = ( total * cumHatchability ) / settedEggs  * 100m;
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("0.##"); // format with 2 decimals
@@ -804,49 +802,136 @@ private void xrTableCell74_BeforePrint(object sender, System.ComponentModel.Canc
 
     // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0.##");
+    cell.Text = result.ToString("N0");
 }
 
 private void xrTableCell77_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // --- StockHatEggBal ---
-    decimal stockHatEggBal = 0;
-    object valStock = GetCurrentColumnValue("StockHatEggBal");
-    if (valStock != null &amp;&amp; decimal.TryParse(valStock.ToString(), out decimal tempStock) &amp;&amp; tempStock != 0)
-        stockHatEggBal = tempStock;
-
-    // --- SetEggBalHatEgg ---
+      // --- Step 1: Read basic values ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+        farmInTake = tempFarm;
+    
+    decimal settedEggs = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+        settedEggs = tempSetted;
+    
     decimal setEggBalHatEgg = 0;
     object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
     if (valSetEgg != null &amp;&amp; decimal.TryParse(valSetEgg.ToString(), out decimal tempSetEgg))
         setEggBalHatEgg = tempSetEgg;
-
-    // --- ActHatchBalanceEggs ---
+    
+    // --- Step 2: Calculate Total_RejEggs ---
+    decimal htRejBroken = 0, stRejBroken = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken");
+    if (valHtBroken != null &amp;&amp; decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+        htRejBroken = tempHtBroken;
+    
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken");
+    if (valStBroken != null &amp;&amp; decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+        stRejBroken = tempStBroken;
+    
+    decimal htRejCracks = 0, stRejCracks = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks");
+    if (valHtCracks != null &amp;&amp; decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+        htRejCracks = tempHtCracks;
+    
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks");
+    if (valStCracks != null &amp;&amp; decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+        stRejCracks = tempStCracks;
+    
+    decimal htRejDeformed = 0, stRejDeformed = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed");
+    if (valHtDeformed != null &amp;&amp; decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+        htRejDeformed = tempHtDeformed;
+    
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed");
+    if (valStDeformed != null &amp;&amp; decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+        stRejDeformed = tempStDeformed;
+    
+    decimal htRejOther = 0, stRejOther = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther");
+    if (valHtOther != null &amp;&amp; decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+        htRejOther = tempHtOther;
+    
+    object valStOther = GetCurrentColumnValue("ST_RejOther");
+    if (valStOther != null &amp;&amp; decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+        stRejOther = tempStOther;
+    
+    decimal rejBroken = htRejBroken + stRejBroken;
+    decimal rejCrack = htRejCracks + stRejCracks;
+    decimal rejDef = htRejDeformed + stRejDeformed;
+    decimal rejOther = htRejOther + stRejOther;
+    
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- Step 3: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- Step 4: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = 0, esSoldAsHatEggs = 0;
+    object valErHat = GetCurrentColumnValue("ER_SoldAsHatEggs");
+    if (valErHat != null &amp;&amp; decimal.TryParse(valErHat.ToString(), out decimal tempErHat))
+        erSoldAsHatEggs = tempErHat;
+    
+    object valEsHat = GetCurrentColumnValue("ES_SoldAsHatEggs");
+    if (valEsHat != null &amp;&amp; decimal.TryParse(valEsHat.ToString(), out decimal tempEsHat))
+        esSoldAsHatEggs = tempEsHat;
+    
+    decimal erSoldAsTableEggs = 0, esSoldAsTableEggs = 0;
+    object valErTable = GetCurrentColumnValue("ER_SoldAsTableEggs");
+    if (valErTable != null &amp;&amp; decimal.TryParse(valErTable.ToString(), out decimal tempErTable))
+        erSoldAsTableEggs = tempErTable;
+    
+    object valEsTable = GetCurrentColumnValue("ES_SoldAsTableEggs");
+    if (valEsTable != null &amp;&amp; decimal.TryParse(valEsTable.ToString(), out decimal tempEsTable))
+        esSoldAsTableEggs = tempEsTable;
+    
+    decimal erSendToOffal = 0, esSendToOffal = 0;
+    object valErOffal = GetCurrentColumnValue("ER_SendToOffal");
+    if (valErOffal != null &amp;&amp; decimal.TryParse(valErOffal.ToString(), out decimal tempErOffal))
+        erSendToOffal = tempErOffal;
+    
+    object valEsOffal = GetCurrentColumnValue("ES_SendToOffal");
+    if (valEsOffal != null &amp;&amp; decimal.TryParse(valEsOffal.ToString(), out decimal tempEsOffal))
+        esSendToOffal = tempEsOffal;
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- Step 5: Calculate StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- Step 6: Calculate ActHatchBalanceEggs ---
     decimal actHatchBalanceEggs = 0;
     if (setEggBalHatEgg != 0)
     {
         decimal selChick = 0, culls = 0, deads = 0;
-
+        
         object valSel = GetCurrentColumnValue("SelChickBalHatEgg");
         if (valSel != null &amp;&amp; decimal.TryParse(valSel.ToString(), out decimal tempSel))
             selChick = tempSel;
-
+        
         object valCulls = GetCurrentColumnValue("CullsBalHatEgg");
         if (valCulls != null &amp;&amp; decimal.TryParse(valCulls.ToString(), out decimal tempCulls))
             culls = tempCulls;
-
+        
         object valDeads = GetCurrentColumnValue("DeadsBalHatEgg");
         if (valDeads != null &amp;&amp; decimal.TryParse(valDeads.ToString(), out decimal tempDeads))
             deads = tempDeads;
-
+        
         actHatchBalanceEggs = (selChick + culls + deads) / setEggBalHatEgg * 100;
     }
-
-    // --- Final equation ---
+    
+    // --- Step 7: Final equation ---
     decimal result = stockHatEggBal * actHatchBalanceEggs / 100;
-
+    
     // --- Assign result ---
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0.##");
+    cell.Text = result.ToString("N0");
 }
 
 private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -884,61 +969,164 @@ private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell83_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal result = 0;
-
-    // ------------------ EstChicks_PerEgg ------------------
-    decimal estChicks_PerEgg = 0;
-    decimal cumHatchability = 0;
-
+    // --- STEP 1: Read all basic values ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+        farmInTake = tempFarm;
+    
+    decimal settedEggs = 0;
     object valSetted = GetCurrentColumnValue("SettedEggs");
-    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal settedEggs) &amp;&amp; settedEggs != 0)
+    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+        settedEggs = tempSetted;
+    
+    decimal setEggBalHatEgg = 0;
+    object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
+    if (valSetEgg != null &amp;&amp; decimal.TryParse(valSetEgg.ToString(), out decimal tempSetEgg))
+        setEggBalHatEgg = tempSetEgg;
+    
+    // --- STEP 2: Calculate Total_RejEggs ---
+    decimal htRejBroken = 0, stRejBroken = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken");
+    if (valHtBroken != null &amp;&amp; decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+        htRejBroken = tempHtBroken;
+    
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken");
+    if (valStBroken != null &amp;&amp; decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+        stRejBroken = tempStBroken;
+    
+    decimal htRejCracks = 0, stRejCracks = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks");
+    if (valHtCracks != null &amp;&amp; decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+        htRejCracks = tempHtCracks;
+    
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks");
+    if (valStCracks != null &amp;&amp; decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+        stRejCracks = tempStCracks;
+    
+    decimal htRejDeformed = 0, stRejDeformed = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed");
+    if (valHtDeformed != null &amp;&amp; decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+        htRejDeformed = tempHtDeformed;
+    
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed");
+    if (valStDeformed != null &amp;&amp; decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+        stRejDeformed = tempStDeformed;
+    
+    decimal htRejOther = 0, stRejOther = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther");
+    if (valHtOther != null &amp;&amp; decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+        htRejOther = tempHtOther;
+    
+    object valStOther = GetCurrentColumnValue("ST_RejOther");
+    if (valStOther != null &amp;&amp; decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+        stRejOther = tempStOther;
+    
+    decimal rejBroken = htRejBroken + stRejBroken;
+    decimal rejCrack = htRejCracks + stRejCracks;
+    decimal rejDef = htRejDeformed + stRejDeformed;
+    decimal rejOther = htRejOther + stRejOther;
+    
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 3: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 4: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = 0, esSoldAsHatEggs = 0;
+    object valErHat = GetCurrentColumnValue("ER_SoldAsHatEggs");
+    if (valErHat != null &amp;&amp; decimal.TryParse(valErHat.ToString(), out decimal tempErHat))
+        erSoldAsHatEggs = tempErHat;
+    
+    object valEsHat = GetCurrentColumnValue("ES_SoldAsHatEggs");
+    if (valEsHat != null &amp;&amp; decimal.TryParse(valEsHat.ToString(), out decimal tempEsHat))
+        esSoldAsHatEggs = tempEsHat;
+    
+    decimal erSoldAsTableEggs = 0, esSoldAsTableEggs = 0;
+    object valErTable = GetCurrentColumnValue("ER_SoldAsTableEggs");
+    if (valErTable != null &amp;&amp; decimal.TryParse(valErTable.ToString(), out decimal tempErTable))
+        erSoldAsTableEggs = tempErTable;
+    
+    object valEsTable = GetCurrentColumnValue("ES_SoldAsTableEggs");
+    if (valEsTable != null &amp;&amp; decimal.TryParse(valEsTable.ToString(), out decimal tempEsTable))
+        esSoldAsTableEggs = tempEsTable;
+    
+    decimal erSendToOffal = 0, esSendToOffal = 0;
+    object valErOffal = GetCurrentColumnValue("ER_SendToOffal");
+    if (valErOffal != null &amp;&amp; decimal.TryParse(valErOffal.ToString(), out decimal tempErOffal))
+        erSendToOffal = tempErOffal;
+    
+    object valEsOffal = GetCurrentColumnValue("ES_SendToOffal");
+    if (valEsOffal != null &amp;&amp; decimal.TryParse(valEsOffal.ToString(), out decimal tempEsOffal))
+        esSendToOffal = tempEsOffal;
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 5: Calculate StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- STEP 6: Calculate CumHatchability ---
+    decimal cumHatchability = 0;
+    decimal selChicks = 0, cullsChicks = 0, deadChicks = 0;  // Declared once here
+    
+    object valSel = GetCurrentColumnValue("SelChicks");
+    if (valSel != null &amp;&amp; decimal.TryParse(valSel.ToString(), out decimal tempSel))
+        selChicks = tempSel;
+    
+    object valCulls = GetCurrentColumnValue("CullsChicks");
+    if (valCulls != null &amp;&amp; decimal.TryParse(valCulls.ToString(), out decimal tempCulls))
+        cullsChicks = tempCulls;
+    
+    object valDead = GetCurrentColumnValue("DeadChicks");
+    if (valDead != null &amp;&amp; decimal.TryParse(valDead.ToString(), out decimal tempDead))
+        deadChicks = tempDead;
+    
+    if (settedEggs != 0)
     {
-        // Sel + Culls + Deads
-        decimal sel = 0, culls = 0, dead = 0;
-
-        if (decimal.TryParse(GetCurrentColumnValue("SelChicks")?.ToString(), out decimal tempSel)) sel = tempSel;
-        if (decimal.TryParse(GetCurrentColumnValue("CullsChicks")?.ToString(), out decimal tempCulls)) culls = tempCulls;
-        if (decimal.TryParse(GetCurrentColumnValue("DeadChicks")?.ToString(), out decimal tempDead)) dead = tempDead;
-
-        cumHatchability = (sel + culls + dead) / settedEggs * 100;
+        cumHatchability = (selChicks + cullsChicks + deadChicks) / settedEggs * 100;
     }
-
-    // use global "total" for TotalEggSold
-    estChicks_PerEgg = total * cumHatchability / 100;
-
-    // ------------------ ESTChicks_PerStock_HE ------------------
-    decimal estChicks_PerStock_HE = 0;
-
-    if (decimal.TryParse(GetCurrentColumnValue("StockHatEggBal")?.ToString(), out decimal stockBal) &amp;&amp; stockBal != 0)
+    
+    // --- STEP 7: Calculate EstChicks_PerEgg ---
+    decimal estChicks_PerEgg = totalEggSold * cumHatchability / 100;
+    
+    // --- STEP 8: Calculate ActHatchBalanceEggs ---
+    decimal actHatchBalanceEggs = 0;
+    if (setEggBalHatEgg != 0)
     {
-        // Calculate ActHatchBalanceEggs
-        decimal actHatchBalanceEggs = 0;
-        if (decimal.TryParse(GetCurrentColumnValue("SetEggBalHatEgg")?.ToString(), out decimal setEggBal) &amp;&amp; setEggBal != 0)
-        {
-            decimal selBal = 0, cullsBal = 0, deadBal = 0;
-
-            if (decimal.TryParse(GetCurrentColumnValue("SelChickBalHatEgg")?.ToString(), out decimal tempSelBal)) selBal = tempSelBal;
-            if (decimal.TryParse(GetCurrentColumnValue("CullsBalHatEgg")?.ToString(), out decimal tempCullsBal)) cullsBal = tempCullsBal;
-            if (decimal.TryParse(GetCurrentColumnValue("DeadsBalHatEgg")?.ToString(), out decimal tempDeadBal)) deadBal = tempDeadBal;
-
-            actHatchBalanceEggs = (selBal + cullsBal + deadBal) / setEggBal * 100;
-        }
-
-        estChicks_PerStock_HE = stockBal * actHatchBalanceEggs / 100;
+        decimal selChickBal = 0, cullsBal = 0, deadsBal = 0;
+        
+        object valSelBal = GetCurrentColumnValue("SelChickBalHatEgg");
+        if (valSelBal != null &amp;&amp; decimal.TryParse(valSelBal.ToString(), out decimal tempSelBal))
+            selChickBal = tempSelBal;
+        
+        object valCullsBal = GetCurrentColumnValue("CullsBalHatEgg");
+        if (valCullsBal != null &amp;&amp; decimal.TryParse(valCullsBal.ToString(), out decimal tempCullsBal))
+            cullsBal = tempCullsBal;
+        
+        object valDeadsBal = GetCurrentColumnValue("DeadsBalHatEgg");
+        if (valDeadsBal != null &amp;&amp; decimal.TryParse(valDeadsBal.ToString(), out decimal tempDeadsBal))
+            deadsBal = tempDeadsBal;
+        
+        actHatchBalanceEggs = (selChickBal + cullsBal + deadsBal) / setEggBalHatEgg * 100;
     }
-
-    // ------------------ CumChicks ------------------
-    decimal cumChicks = 0;
-    if (decimal.TryParse(GetCurrentColumnValue("CumChicks")?.ToString(), out decimal tempCum))
-        cumChicks = tempCum;
-
-    // ------------------ Final Equation ------------------
-    result = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
-
-    // Assign to cell
+    
+    // --- STEP 9: Calculate ESTChicks_PerStock_HE ---
+    decimal estChicks_PerStock_HE = stockHatEggBal * actHatchBalanceEggs / 100;
+    
+    // --- STEP 10: Calculate CumChicks ---
+    // Use the existing selChicks, cullsChicks, deadChicks variables (already declared in Step 6)
+    decimal cumChicks = selChicks + cullsChicks + deadChicks;
+    
+    // --- STEP 11: Final Equation ---
+    decimal result = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
+    
+    // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0.##");
-}
+    cell.Text = result.ToString("N0");
+   }
 
 private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake")) : 0;
@@ -1110,138 +1298,322 @@ private void xrTableCell118_BeforePrint(object sender, System.ComponentModel.Can
 }
 
 private void xrTableCell124_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- POL ---
-    decimal pol = GetCurrentColumnValue("POL") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
-        : 0;
-
-    // --- BalOfHatEggs = FarmInTake - Total_RejEggs ---
-    decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake"))
-        : 0;
-
-    decimal rejEggs = 0;
-    decimal rejBroken = GetCurrentColumnValue("RejBroken") != null ? Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) : 0;
-    decimal rejCrack  = GetCurrentColumnValue("RejCrack")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejCrack"))  : 0;
-    decimal rejDef    = GetCurrentColumnValue("RejDef")    != null ? Convert.ToDecimal(GetCurrentColumnValue("RejDef"))    : 0;
-    decimal rejOther  = GetCurrentColumnValue("RejOther")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejOther"))  : 0;
-    rejEggs = rejBroken + rejCrack + rejDef + rejOther;
-
-    decimal balOfHatEggs = farmInTake - rejEggs;
-
-    // --- TotalEggSold (global from another script) ---
-    decimal totalEggSold = total;
-
-    // --- StockHatEggBal ---
-    decimal settedEggs = GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs"))
-        : 0;
-
+    // --- STEP 1: Read POL ---
+    decimal pol = 0;
+    object valPol = GetCurrentColumnValue("POL");
+    if (valPol != null &amp;&amp; decimal.TryParse(valPol.ToString(), out decimal tempPol))
+        pol = tempPol;
+    
+    // --- STEP 2: Read FarmInTake ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+        farmInTake = tempFarm;
+    
+    // --- STEP 3: Read SettedEggs ---
+    decimal settedEggs = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+        settedEggs = tempSetted;
+    
+    // --- STEP 4: Read SetEggBalHatEgg ---
+    decimal setEggBalHatEgg = 0;
+    object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
+    if (valSetEgg != null &amp;&amp; decimal.TryParse(valSetEgg.ToString(), out decimal tempSetEgg))
+        setEggBalHatEgg = tempSetEgg;
+    
+    // --- STEP 5: Calculate Total_RejEggs ---
+    decimal htRejBroken = 0, stRejBroken = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken");
+    if (valHtBroken != null &amp;&amp; decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+        htRejBroken = tempHtBroken;
+    
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken");
+    if (valStBroken != null &amp;&amp; decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+        stRejBroken = tempStBroken;
+    
+    decimal htRejCracks = 0, stRejCracks = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks");
+    if (valHtCracks != null &amp;&amp; decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+        htRejCracks = tempHtCracks;
+    
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks");
+    if (valStCracks != null &amp;&amp; decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+        stRejCracks = tempStCracks;
+    
+    decimal htRejDeformed = 0, stRejDeformed = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed");
+    if (valHtDeformed != null &amp;&amp; decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+        htRejDeformed = tempHtDeformed;
+    
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed");
+    if (valStDeformed != null &amp;&amp; decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+        stRejDeformed = tempStDeformed;
+    
+    decimal htRejOther = 0, stRejOther = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther");
+    if (valHtOther != null &amp;&amp; decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+        htRejOther = tempHtOther;
+    
+    object valStOther = GetCurrentColumnValue("ST_RejOther");
+    if (valStOther != null &amp;&amp; decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+        stRejOther = tempStOther;
+    
+    decimal rejBroken = htRejBroken + stRejBroken;
+    decimal rejCrack = htRejCracks + stRejCracks;
+    decimal rejDef = htRejDeformed + stRejDeformed;
+    decimal rejOther = htRejOther + stRejOther;
+    
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 6: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 7: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = 0, esSoldAsHatEggs = 0;
+    object valErHat = GetCurrentColumnValue("ER_SoldAsHatEggs");
+    if (valErHat != null &amp;&amp; decimal.TryParse(valErHat.ToString(), out decimal tempErHat))
+        erSoldAsHatEggs = tempErHat;
+    
+    object valEsHat = GetCurrentColumnValue("ES_SoldAsHatEggs");
+    if (valEsHat != null &amp;&amp; decimal.TryParse(valEsHat.ToString(), out decimal tempEsHat))
+        esSoldAsHatEggs = tempEsHat;
+    
+    decimal erSoldAsTableEggs = 0, esSoldAsTableEggs = 0;
+    object valErTable = GetCurrentColumnValue("ER_SoldAsTableEggs");
+    if (valErTable != null &amp;&amp; decimal.TryParse(valErTable.ToString(), out decimal tempErTable))
+        erSoldAsTableEggs = tempErTable;
+    
+    object valEsTable = GetCurrentColumnValue("ES_SoldAsTableEggs");
+    if (valEsTable != null &amp;&amp; decimal.TryParse(valEsTable.ToString(), out decimal tempEsTable))
+        esSoldAsTableEggs = tempEsTable;
+    
+    decimal erSendToOffal = 0, esSendToOffal = 0;
+    object valErOffal = GetCurrentColumnValue("ER_SendToOffal");
+    if (valErOffal != null &amp;&amp; decimal.TryParse(valErOffal.ToString(), out decimal tempErOffal))
+        erSendToOffal = tempErOffal;
+    
+    object valEsOffal = GetCurrentColumnValue("ES_SendToOffal");
+    if (valEsOffal != null &amp;&amp; decimal.TryParse(valEsOffal.ToString(), out decimal tempEsOffal))
+        esSendToOffal = tempEsOffal;
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 8: Calculate StockHatEggBal ---
     decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
-
-    // --- ActHatchBalanceEggs ---
-    decimal setEggBalHatEgg = GetCurrentColumnValue("SetEggBalHatEgg") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SetEggBalHatEgg"))
-        : 0;
-    decimal selChickBal = GetCurrentColumnValue("SelChickBalHatEgg") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SelChickBalHatEgg"))
-        : 0;
-    decimal cullsBal = GetCurrentColumnValue("CullsBalHatEgg") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("CullsBalHatEgg"))
-        : 0;
-    decimal deadsBal = GetCurrentColumnValue("DeadsBalHatEgg") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("DeadsBalHatEgg"))
-        : 0;
-
-    decimal actHatchBalanceEggs = (setEggBalHatEgg != 0)
-        ? ((selChickBal + cullsBal + deadsBal) / setEggBalHatEgg) * 100
-        : 0;
-
-    // --- ESTChicks_PerStock_HE ---
-    decimal estChicksPerStockHE = (stockHatEggBal != 0 &amp;&amp; actHatchBalanceEggs != 0)
-        ? (stockHatEggBal * actHatchBalanceEggs / 100)
-        : 0;
-
-    // --- Final Result ---
-    decimal result = (pol != 0) ? (estChicksPerStockHE / pol) : 0;
-
+    
+    // --- STEP 9: Calculate ActHatchBalanceEggs ---
+    decimal actHatchBalanceEggs = 0;
+    if (setEggBalHatEgg != 0)
+    {
+        decimal selChickBal = 0, cullsBal = 0, deadsBal = 0;
+        
+        object valSelBal = GetCurrentColumnValue("SelChickBalHatEgg");
+        if (valSelBal != null &amp;&amp; decimal.TryParse(valSelBal.ToString(), out decimal tempSelBal))
+            selChickBal = tempSelBal;
+        
+        object valCullsBal = GetCurrentColumnValue("CullsBalHatEgg");
+        if (valCullsBal != null &amp;&amp; decimal.TryParse(valCullsBal.ToString(), out decimal tempCullsBal))
+            cullsBal = tempCullsBal;
+        
+        object valDeadsBal = GetCurrentColumnValue("DeadsBalHatEgg");
+        if (valDeadsBal != null &amp;&amp; decimal.TryParse(valDeadsBal.ToString(), out decimal tempDeadsBal))
+            deadsBal = tempDeadsBal;
+        
+        actHatchBalanceEggs = (selChickBal + cullsBal + deadsBal) / setEggBalHatEgg * 100;
+    }
+    
+    // --- STEP 10: Calculate ESTChicks_PerStock_HE ---
+    decimal estChicksPerStockHE = stockHatEggBal * actHatchBalanceEggs / 100;
+    
+    // --- STEP 11: Final Result (divide by POL if not zero) ---
+    decimal result = 0;
+    if (pol != 0)
+    {
+        result = estChicksPerStockHE / pol;
+    }
+    
     // --- Assign to cell ---
-    ((XRTableCell)sender).Text = result.ToString("0.00");
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
 }
 
 private void xrTableCell127_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // --- POL ---
-    decimal pol = GetCurrentColumnValue("POL") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("POL"))
-        : 0;
-
-    // --- BalOfHatEggs = FarmInTake - RejectedEggs ---
-    decimal farmInTake = GetCurrentColumnValue("FarmInTake") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("FarmInTake"))
-        : 0;
-
-    decimal rejBroken = GetCurrentColumnValue("RejBroken") != null ? Convert.ToDecimal(GetCurrentColumnValue("RejBroken")) : 0;
-    decimal rejCrack  = GetCurrentColumnValue("RejCrack")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejCrack"))  : 0;
-    decimal rejDef    = GetCurrentColumnValue("RejDef")    != null ? Convert.ToDecimal(GetCurrentColumnValue("RejDef"))    : 0;
-    decimal rejOther  = GetCurrentColumnValue("RejOther")  != null ? Convert.ToDecimal(GetCurrentColumnValue("RejOther"))  : 0;
-
-    decimal balOfHatEggs = farmInTake - (rejBroken + rejCrack + rejDef + rejOther);
-
-    // --- TotalEggSold (already global) ---
-    decimal totalEggSold = total;
-
-    // --- Setted Eggs ---
-    decimal settedEggs = GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SettedEggs"))
-        : 0;
-
-    // --- CumHatchability ---
-    decimal selChicks  = GetCurrentColumnValue("SR_HT_FlkSumProdReport.SelChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.SelChicks")) : 0;
-    decimal cullsChicks= GetCurrentColumnValue("SR_HT_FlkSumProdReport.CullsChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.CullsChicks")) : 0;
-    decimal deadChicks = GetCurrentColumnValue("SR_HT_FlkSumProdReport.DeadChicks") != null ? Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport.DeadChicks")) : 0;
-
-    decimal cumHatchability = (settedEggs != 0)
-        ? ((selChicks + cullsChicks + deadChicks) / settedEggs) * 100
-        : 0;
-
-    // --- EstChicks_PerEgg ---
-    decimal estChicksPerEgg = (totalEggSold != 0 &amp;&amp; cumHatchability != 0)
-        ? (totalEggSold * cumHatchability / 100)
-        : 0;
-
-    // --- StockHatEggBal ---
+        // --- STEP 1: Read POL ---
+    decimal pol = 0;
+    object valPol = GetCurrentColumnValue("POL");
+    if (valPol != null &amp;&amp; decimal.TryParse(valPol.ToString(), out decimal tempPol))
+        pol = tempPol;
+    
+    // --- STEP 2: Read FarmInTake ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+        farmInTake = tempFarm;
+    
+    // --- STEP 3: Read SettedEggs ---
+    decimal settedEggs = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+        settedEggs = tempSetted;
+    
+    // --- STEP 4: Read SetEggBalHatEgg ---
+    decimal setEggBalHatEgg = 0;
+    object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
+    if (valSetEgg != null &amp;&amp; decimal.TryParse(valSetEgg.ToString(), out decimal tempSetEgg))
+        setEggBalHatEgg = tempSetEgg;
+    
+    // --- STEP 5: Read SelChicks, CullsChicks, DeadChicks ---
+    decimal selChicks = 0, cullsChicks = 0, deadChicks = 0;
+    
+    object valSel = GetCurrentColumnValue("SelChicks");
+    if (valSel != null &amp;&amp; decimal.TryParse(valSel.ToString(), out decimal tempSel))
+        selChicks = tempSel;
+    
+    object valCulls = GetCurrentColumnValue("CullsChicks");
+    if (valCulls != null &amp;&amp; decimal.TryParse(valCulls.ToString(), out decimal tempCulls))
+        cullsChicks = tempCulls;
+    
+    object valDead = GetCurrentColumnValue("DeadChicks");
+    if (valDead != null &amp;&amp; decimal.TryParse(valDead.ToString(), out decimal tempDead))
+        deadChicks = tempDead;
+    
+    // --- STEP 6: Calculate Total_RejEggs ---
+    decimal htRejBroken = 0, stRejBroken = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken");
+    if (valHtBroken != null &amp;&amp; decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+        htRejBroken = tempHtBroken;
+    
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken");
+    if (valStBroken != null &amp;&amp; decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+        stRejBroken = tempStBroken;
+    
+    decimal htRejCracks = 0, stRejCracks = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks");
+    if (valHtCracks != null &amp;&amp; decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+        htRejCracks = tempHtCracks;
+    
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks");
+    if (valStCracks != null &amp;&amp; decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+        stRejCracks = tempStCracks;
+    
+    decimal htRejDeformed = 0, stRejDeformed = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed");
+    if (valHtDeformed != null &amp;&amp; decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+        htRejDeformed = tempHtDeformed;
+    
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed");
+    if (valStDeformed != null &amp;&amp; decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+        stRejDeformed = tempStDeformed;
+    
+    decimal htRejOther = 0, stRejOther = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther");
+    if (valHtOther != null &amp;&amp; decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+        htRejOther = tempHtOther;
+    
+    object valStOther = GetCurrentColumnValue("ST_RejOther");
+    if (valStOther != null &amp;&amp; decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+        stRejOther = tempStOther;
+    
+    decimal rejBroken = htRejBroken + stRejBroken;
+    decimal rejCrack = htRejCracks + stRejCracks;
+    decimal rejDef = htRejDeformed + stRejDeformed;
+    decimal rejOther = htRejOther + stRejOther;
+    
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 7: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 8: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = 0, esSoldAsHatEggs = 0;
+    object valErHat = GetCurrentColumnValue("ER_SoldAsHatEggs");
+    if (valErHat != null &amp;&amp; decimal.TryParse(valErHat.ToString(), out decimal tempErHat))
+        erSoldAsHatEggs = tempErHat;
+    
+    object valEsHat = GetCurrentColumnValue("ES_SoldAsHatEggs");
+    if (valEsHat != null &amp;&amp; decimal.TryParse(valEsHat.ToString(), out decimal tempEsHat))
+        esSoldAsHatEggs = tempEsHat;
+    
+    decimal erSoldAsTableEggs = 0, esSoldAsTableEggs = 0;
+    object valErTable = GetCurrentColumnValue("ER_SoldAsTableEggs");
+    if (valErTable != null &amp;&amp; decimal.TryParse(valErTable.ToString(), out decimal tempErTable))
+        erSoldAsTableEggs = tempErTable;
+    
+    object valEsTable = GetCurrentColumnValue("ES_SoldAsTableEggs");
+    if (valEsTable != null &amp;&amp; decimal.TryParse(valEsTable.ToString(), out decimal tempEsTable))
+        esSoldAsTableEggs = tempEsTable;
+    
+    decimal erSendToOffal = 0, esSendToOffal = 0;
+    object valErOffal = GetCurrentColumnValue("ER_SendToOffal");
+    if (valErOffal != null &amp;&amp; decimal.TryParse(valErOffal.ToString(), out decimal tempErOffal))
+        erSendToOffal = tempErOffal;
+    
+    object valEsOffal = GetCurrentColumnValue("ES_SendToOffal");
+    if (valEsOffal != null &amp;&amp; decimal.TryParse(valEsOffal.ToString(), out decimal tempEsOffal))
+        esSendToOffal = tempEsOffal;
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 9: Calculate StockHatEggBal ---
     decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
-
-    // --- ActHatchBalanceEggs ---
-    decimal setEggBalHatEgg = GetCurrentColumnValue("SetEggBalHatEgg") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("SetEggBalHatEgg"))
-        : 0;
-    decimal selChickBal = GetCurrentColumnValue("SelChickBalHatEgg") != null ? Convert.ToDecimal(GetCurrentColumnValue("SelChickBalHatEgg")) : 0;
-    decimal cullsBal    = GetCurrentColumnValue("CullsBalHatEgg") != null ? Convert.ToDecimal(GetCurrentColumnValue("CullsBalHatEgg")) : 0;
-    decimal deadsBal    = GetCurrentColumnValue("DeadsBalHatEgg") != null ? Convert.ToDecimal(GetCurrentColumnValue("DeadsBalHatEgg")) : 0;
-
-    decimal actHatchBalanceEggs = (setEggBalHatEgg != 0)
-        ? ((selChickBal + cullsBal + deadsBal) / setEggBalHatEgg) * 100
-        : 0;
-
-    // --- ESTChicks_PerStock_HE ---
-    decimal estChicksPerStockHE = (stockHatEggBal != 0 &amp;&amp; actHatchBalanceEggs != 0)
-        ? (stockHatEggBal * actHatchBalanceEggs / 100)
-        : 0;
-
-    // --- CumChicks (direct column) ---
-    decimal cumChicks = GetCurrentColumnValue("CumChicks") != null
-        ? Convert.ToDecimal(GetCurrentColumnValue("CumChicks"))
-        : 0;
-
-    // --- CumChicks_Act_Est ---
-    decimal cumChicksActEst = estChicksPerEgg + estChicksPerStockHE + cumChicks;
-
-    // --- Final Result ---
-    decimal result = (pol != 0) ? (cumChicksActEst / pol) : 0;
-
+    
+    // --- STEP 10: Calculate CumHatchability ---
+    decimal cumHatchability = 0;
+    if (settedEggs != 0)
+    {
+        cumHatchability = (selChicks + cullsChicks + deadChicks) / settedEggs * 100;
+    }
+    
+    // --- STEP 11: Calculate EstChicks_PerEgg ---
+    decimal estChicks_PerEgg = totalEggSold * cumHatchability / 100;
+    
+    // --- STEP 12: Calculate ActHatchBalanceEggs ---
+    decimal actHatchBalanceEggs = 0;
+    if (setEggBalHatEgg != 0)
+    {
+        decimal selChickBal = 0, cullsBal = 0, deadsBal = 0;
+        
+        object valSelBal = GetCurrentColumnValue("SelChickBalHatEgg");
+        if (valSelBal != null &amp;&amp; decimal.TryParse(valSelBal.ToString(), out decimal tempSelBal))
+            selChickBal = tempSelBal;
+        
+        object valCullsBal = GetCurrentColumnValue("CullsBalHatEgg");
+        if (valCullsBal != null &amp;&amp; decimal.TryParse(valCullsBal.ToString(), out decimal tempCullsBal))
+            cullsBal = tempCullsBal;
+        
+        object valDeadsBal = GetCurrentColumnValue("DeadsBalHatEgg");
+        if (valDeadsBal != null &amp;&amp; decimal.TryParse(valDeadsBal.ToString(), out decimal tempDeadsBal))
+            deadsBal = tempDeadsBal;
+        
+        actHatchBalanceEggs = (selChickBal + cullsBal + deadsBal) / setEggBalHatEgg * 100;
+    }
+    
+    // --- STEP 13: Calculate ESTChicks_PerStock_HE ---
+    decimal estChicks_PerStock_HE = stockHatEggBal * actHatchBalanceEggs / 100;
+    
+    // --- STEP 14: Calculate CumChicks ---
+    decimal cumChicks = selChicks + cullsChicks + deadChicks;
+    
+    // --- STEP 15: Calculate CumChicks_Act_Est ---
+    decimal cumChicks_Act_Est = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
+    
+    // --- STEP 16: Final Result (divide by POL if not zero) ---
+    decimal result = 0;
+    if (pol != 0)
+    {
+        result = cumChicks_Act_Est / pol;
+    }
+    
     // --- Assign to cell ---
-    ((XRTableCell)sender).Text = result.ToString("0.00");
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.00");
 }
 
 private void xrTableCell148_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -1398,150 +1770,488 @@ cell.Text = result.ToString("0.##");   // format with 2 decimals
 }
 
 private void xrTableCell158_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal farmInTake_1 = 0;
-decimal rejBroken_1 = 0;
-decimal rejCrack_1 = 0;
-decimal rejDef_1 = 0;
-decimal rejOther_1 = 0;
-
-// --- Read values safely ---
-if (GetCurrentColumnValue("FarmInTake_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("FarmInTake_1").ToString()))
-{
-    farmInTake_1 = Convert.ToDecimal(GetCurrentColumnValue("FarmInTake_1"));
-}
-
-if (GetCurrentColumnValue("RejBroken_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("RejBroken_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("RejBroken_1")) != 0)
-{
-    rejBroken_1 = Convert.ToDecimal(GetCurrentColumnValue("RejBroken_1"));
-}
-
-if (GetCurrentColumnValue("RejCrack_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("RejCrack_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("RejCrack_1")) != 0)
-{
-    rejCrack_1 = Convert.ToDecimal(GetCurrentColumnValue("RejCrack_1"));
-}
-
-if (GetCurrentColumnValue("RejDef_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("RejDef_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("RejDef_1")) != 0)
-{
-    rejDef_1 = Convert.ToDecimal(GetCurrentColumnValue("RejDef_1"));
-}
-
-if (GetCurrentColumnValue("RejOther_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("RejOther_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("RejOther_1")) != 0)
-{
-    rejOther_1 = Convert.ToDecimal(GetCurrentColumnValue("RejOther_1"));
-}
-
-// --- Equation ---
-decimal totalRej_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
-decimal result_1 = farmInTake_1 - totalRej_1;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result_1.ToString("0.##");   // format with 2 decimals
+     // --- Declare values ---
+    decimal farmInTake_1 = 0;
+    
+    // --- Read FarmInTake_1 safely ---
+    object valFarm = GetCurrentColumnValue("FarmInTake_1");
+    if (valFarm != null &amp;&amp; !string.IsNullOrEmpty(valFarm.ToString()))
+    {
+        if (decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+            farmInTake_1 = tempFarm;
+    }
+    
+    // --- STEP 1: Calculate RejBroken_1 from HT_RejBroken_1 and ST_RejBroken_1 ---
+    decimal htRejBroken_1 = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken_1");
+    if (valHtBroken != null &amp;&amp; !string.IsNullOrEmpty(valHtBroken.ToString()))
+    {
+        if (decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+            htRejBroken_1 = tempHtBroken;
+    }
+    
+    decimal stRejBroken_1 = 0;
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken_1");
+    if (valStBroken != null &amp;&amp; !string.IsNullOrEmpty(valStBroken.ToString()))
+    {
+        if (decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+            stRejBroken_1 = tempStBroken;
+    }
+    
+    decimal rejBroken_1 = htRejBroken_1 + stRejBroken_1;
+    
+    // --- STEP 2: Calculate RejCrack_1 from HT_RejCracks_1 and ST_RejCracks_1 ---
+    decimal htRejCracks_1 = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks_1");
+    if (valHtCracks != null &amp;&amp; !string.IsNullOrEmpty(valHtCracks.ToString()))
+    {
+        if (decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+            htRejCracks_1 = tempHtCracks;
+    }
+    
+    decimal stRejCracks_1 = 0;
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks_1");
+    if (valStCracks != null &amp;&amp; !string.IsNullOrEmpty(valStCracks.ToString()))
+    {
+        if (decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+            stRejCracks_1 = tempStCracks;
+    }
+    
+    decimal rejCrack_1 = htRejCracks_1 + stRejCracks_1;
+    
+    // --- STEP 3: Calculate RejDef_1 from HT_RejDeformed_1 and ST_RejDeformed_1 ---
+    decimal htRejDeformed_1 = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed_1");
+    if (valHtDeformed != null &amp;&amp; !string.IsNullOrEmpty(valHtDeformed.ToString()))
+    {
+        if (decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+            htRejDeformed_1 = tempHtDeformed;
+    }
+    
+    decimal stRejDeformed_1 = 0;
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed_1");
+    if (valStDeformed != null &amp;&amp; !string.IsNullOrEmpty(valStDeformed.ToString()))
+    {
+        if (decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+            stRejDeformed_1 = tempStDeformed;
+    }
+    
+    decimal rejDef_1 = htRejDeformed_1 + stRejDeformed_1;
+    
+    // --- STEP 4: Calculate RejOther_1 from HT_RejOther_1 and ST_RejOther_1 ---
+    decimal htRejOther_1 = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther_1");
+    if (valHtOther != null &amp;&amp; !string.IsNullOrEmpty(valHtOther.ToString()))
+    {
+        if (decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+            htRejOther_1 = tempHtOther;
+    }
+    
+    decimal stRejOther_1 = 0;
+    object valStOther = GetCurrentColumnValue("ST_RejOther_1");
+    if (valStOther != null &amp;&amp; !string.IsNullOrEmpty(valStOther.ToString()))
+    {
+        if (decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+            stRejOther_1 = tempStOther;
+    }
+    
+    decimal rejOther_1 = htRejOther_1 + stRejOther_1;
+    
+    // --- Calculate Total_RejEggs_1 ---
+    decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+    
+    // --- Equation: FarmInTake_1 - Total_RejEggs_1 ---
+    decimal result_1 = farmInTake_1 - totalRejEggs_1;
+    
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result_1.ToString("0.##");
 
 }
 
 private void xrTableCell160_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal selChicks_1 = 0;
-decimal cullsChicks_1 = 0;
-decimal deadChicks_1 = 0;
-
-// --- Read values safely ---
-if (GetCurrentColumnValue("SelChicks_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("SelChicks_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("SelChicks_1")) != 0)
-{
-    selChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SelChicks_1"));
-}
-
-if (GetCurrentColumnValue("CullsChicks_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("CullsChicks_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1")) != 0)
-{
-    cullsChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1"));
-}
-
-if (GetCurrentColumnValue("DeadChicks_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("DeadChicks_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1")) != 0)
-{
-    deadChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1"));
-}
-
-// --- Equation ---
-decimal totalChicks_1 = selChicks_1 + cullsChicks_1 + deadChicks_1;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalChicks_1.ToString("0.##");   // format with 2 decimals
-
+  // --- STEP 1: Read basic values ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; !string.IsNullOrEmpty(valFarm.ToString()))
+    {
+        if (decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+            farmInTake = tempFarm;
+    }
+    
+    decimal settedEggs = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; !string.IsNullOrEmpty(valSetted.ToString()))
+    {
+        if (decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+            settedEggs = tempSetted;
+    }
+    
+    decimal settedEggs_1 = 0;
+    object valSetted1 = GetCurrentColumnValue("SettedEggs_1");
+    if (valSetted1 != null &amp;&amp; !string.IsNullOrEmpty(valSetted1.ToString()))
+    {
+        if (decimal.TryParse(valSetted1.ToString(), out decimal tempSetted1))
+            settedEggs_1 = tempSetted1;
+    }
+    
+    // --- STEP 2: Calculate Total_RejEggs ---
+    decimal htRejBroken = 0, stRejBroken = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken");
+    if (valHtBroken != null &amp;&amp; !string.IsNullOrEmpty(valHtBroken.ToString()))
+    {
+        if (decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+            htRejBroken = tempHtBroken;
+    }
+    
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken");
+    if (valStBroken != null &amp;&amp; !string.IsNullOrEmpty(valStBroken.ToString()))
+    {
+        if (decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+            stRejBroken = tempStBroken;
+    }
+    
+    decimal htRejCracks = 0, stRejCracks = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks");
+    if (valHtCracks != null &amp;&amp; !string.IsNullOrEmpty(valHtCracks.ToString()))
+    {
+        if (decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+            htRejCracks = tempHtCracks;
+    }
+    
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks");
+    if (valStCracks != null &amp;&amp; !string.IsNullOrEmpty(valStCracks.ToString()))
+    {
+        if (decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+            stRejCracks = tempStCracks;
+    }
+    
+    decimal htRejDeformed = 0, stRejDeformed = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed");
+    if (valHtDeformed != null &amp;&amp; !string.IsNullOrEmpty(valHtDeformed.ToString()))
+    {
+        if (decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+            htRejDeformed = tempHtDeformed;
+    }
+    
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed");
+    if (valStDeformed != null &amp;&amp; !string.IsNullOrEmpty(valStDeformed.ToString()))
+    {
+        if (decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+            stRejDeformed = tempStDeformed;
+    }
+    
+    decimal htRejOther = 0, stRejOther = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther");
+    if (valHtOther != null &amp;&amp; !string.IsNullOrEmpty(valHtOther.ToString()))
+    {
+        if (decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+            htRejOther = tempHtOther;
+    }
+    
+    object valStOther = GetCurrentColumnValue("ST_RejOther");
+    if (valStOther != null &amp;&amp; !string.IsNullOrEmpty(valStOther.ToString()))
+    {
+        if (decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+            stRejOther = tempStOther;
+    }
+    
+    decimal rejBroken = htRejBroken + stRejBroken;
+    decimal rejCrack = htRejCracks + stRejCracks;
+    decimal rejDef = htRejDeformed + stRejDeformed;
+    decimal rejOther = htRejOther + stRejOther;
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 3: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 4: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = 0, esSoldAsHatEggs = 0;
+    object valErHat = GetCurrentColumnValue("ER_SoldAsHatEggs");
+    if (valErHat != null &amp;&amp; !string.IsNullOrEmpty(valErHat.ToString()))
+    {
+        if (decimal.TryParse(valErHat.ToString(), out decimal tempErHat))
+            erSoldAsHatEggs = tempErHat;
+    }
+    
+    object valEsHat = GetCurrentColumnValue("ES_SoldAsHatEggs");
+    if (valEsHat != null &amp;&amp; !string.IsNullOrEmpty(valEsHat.ToString()))
+    {
+        if (decimal.TryParse(valEsHat.ToString(), out decimal tempEsHat))
+            esSoldAsHatEggs = tempEsHat;
+    }
+    
+    decimal erSoldAsTableEggs = 0, esSoldAsTableEggs = 0;
+    object valErTable = GetCurrentColumnValue("ER_SoldAsTableEggs");
+    if (valErTable != null &amp;&amp; !string.IsNullOrEmpty(valErTable.ToString()))
+    {
+        if (decimal.TryParse(valErTable.ToString(), out decimal tempErTable))
+            erSoldAsTableEggs = tempErTable;
+    }
+    
+    object valEsTable = GetCurrentColumnValue("ES_SoldAsTableEggs");
+    if (valEsTable != null &amp;&amp; !string.IsNullOrEmpty(valEsTable.ToString()))
+    {
+        if (decimal.TryParse(valEsTable.ToString(), out decimal tempEsTable))
+            esSoldAsTableEggs = tempEsTable;
+    }
+    
+    decimal erSendToOffal = 0, esSendToOffal = 0;
+    object valErOffal = GetCurrentColumnValue("ER_SendToOffal");
+    if (valErOffal != null &amp;&amp; !string.IsNullOrEmpty(valErOffal.ToString()))
+    {
+        if (decimal.TryParse(valErOffal.ToString(), out decimal tempErOffal))
+            erSendToOffal = tempErOffal;
+    }
+    
+    object valEsOffal = GetCurrentColumnValue("ES_SendToOffal");
+    if (valEsOffal != null &amp;&amp; !string.IsNullOrEmpty(valEsOffal.ToString()))
+    {
+        if (decimal.TryParse(valEsOffal.ToString(), out decimal tempEsOffal))
+            esSendToOffal = tempEsOffal;
+    }
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 5: Calculate StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- STEP 6: Calculate the difference ---
+    decimal difference = settedEggs_1 - stockHatEggBal;
+    
+    // --- STEP 7: Apply condition ---
+    decimal result = 0;
+    if (difference &gt;= 0)
+    {
+        result = difference;
+    }
+    
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
 }
 
 private void xrTableCell162_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // --- Declare values ---
-    decimal cullsChicks = 0;
-    decimal deadChicks = 0;
-
-    // --- Read values safely ---
-    if (GetCurrentColumnValue("CullsChicks") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("CullsChicks").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("CullsChicks")) != 0)
+    // --- STEP 1: Read all basic values ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; !string.IsNullOrEmpty(valFarm.ToString()))
     {
-        cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks"));
+        if (decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+            farmInTake = tempFarm;
     }
-
-    if (GetCurrentColumnValue("DeadChicks") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("DeadChicks").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("DeadChicks")) != 0)
+    
+    decimal settedEggs = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; !string.IsNullOrEmpty(valSetted.ToString()))
     {
-        deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks"));
+        if (decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+            settedEggs = tempSetted;
     }
-
-    // --- Equation ---
-    decimal totalChicks = cullsChicks + deadChicks;
-
+    
+    decimal settedEggs_1 = 0;
+    object valSetted1 = GetCurrentColumnValue("SettedEggs_1");
+    if (valSetted1 != null &amp;&amp; !string.IsNullOrEmpty(valSetted1.ToString()))
+    {
+        if (decimal.TryParse(valSetted1.ToString(), out decimal tempSetted1))
+            settedEggs_1 = tempSetted1;
+    }
+    
+    decimal selChicks_1 = 0;
+    object valSel1 = GetCurrentColumnValue("SelChicks_1");
+    if (valSel1 != null &amp;&amp; !string.IsNullOrEmpty(valSel1.ToString()))
+    {
+        if (decimal.TryParse(valSel1.ToString(), out decimal tempSel1))
+            selChicks_1 = tempSel1;
+    }
+    
+    decimal cullsChicks_1 = 0;
+    object valCulls1 = GetCurrentColumnValue("CullsChicks_1");
+    if (valCulls1 != null &amp;&amp; !string.IsNullOrEmpty(valCulls1.ToString()))
+    {
+        if (decimal.TryParse(valCulls1.ToString(), out decimal tempCulls1))
+            cullsChicks_1 = tempCulls1;
+    }
+    
+    decimal deadChicks_1 = 0;
+    object valDead1 = GetCurrentColumnValue("DeadChicks_1");
+    if (valDead1 != null &amp;&amp; !string.IsNullOrEmpty(valDead1.ToString()))
+    {
+        if (decimal.TryParse(valDead1.ToString(), out decimal tempDead1))
+            deadChicks_1 = tempDead1;
+    }
+    
+    // --- STEP 2: Calculate Total_RejEggs ---
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+    
+    decimal rejBroken = GetFieldValue("HT_RejBroken") + GetFieldValue("ST_RejBroken");
+    decimal rejCrack = GetFieldValue("HT_RejCracks") + GetFieldValue("ST_RejCracks");
+    decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+    decimal rejOther = GetFieldValue("HT_RejOther") + GetFieldValue("ST_RejOther");
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 3: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 4: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = GetFieldValue("ER_SoldAsHatEggs");
+    decimal esSoldAsHatEggs = GetFieldValue("ES_SoldAsHatEggs");
+    decimal erSoldAsTableEggs = GetFieldValue("ER_SoldAsTableEggs");
+    decimal esSoldAsTableEggs = GetFieldValue("ES_SoldAsTableEggs");
+    decimal erSendToOffal = GetFieldValue("ER_SendToOffal");
+    decimal esSendToOffal = GetFieldValue("ES_SendToOffal");
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 5: Calculate StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- STEP 6: Calculate SettedEggs_1 (with condition) ---
+    decimal settedEggs_1_Calculated = 0;
+    decimal difference = settedEggs_1 - stockHatEggBal;
+    if (difference &gt;= 0)
+    {
+        settedEggs_1_Calculated = difference;
+    }
+    
+    // --- STEP 7: Calculate GradeA_1 ---
+    decimal gradeA_1 = 0;
+    if (settedEggs_1 != 0)
+    {
+        gradeA_1 = selChicks_1 * (settedEggs_1_Calculated / settedEggs_1);
+    }
+    
+    // --- STEP 8: Calculate RejChicks_1 ---
+    decimal rejChicks_1 = 0;
+    if (settedEggs_1 != 0)
+    {
+        rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1_Calculated / settedEggs_1);
+    }
+    
+    // --- STEP 9: Final Equation ---
+    decimal total_1 = gradeA_1 + rejChicks_1;
+    
     // --- Assign result to cell ---
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = totalChicks.ToString("0.##");   // format with 2 decimals
-}
+    XRTableCell cell_1 = sender as XRTableCell;
+    cell_1.Text = total_1.ToString("N0");
+  }
 
 
 private void xrTableCell166_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal cullsChicks = 0;
-decimal deadChicks = 0;
-
-// --- Read values safely ---
-if (GetCurrentColumnValue("CullsChicks_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("CullsChicks_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1")) != 0)
-{
-    cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1"));
-}
-
-if (GetCurrentColumnValue("DeadChicks_1") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("DeadChicks_1").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1")) != 0)
-{
-    deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1"));
-}
-
-// --- Equation ---
-decimal totalChicks = cullsChicks + deadChicks;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = totalChicks.ToString("0.##");   // format with 2 decimals
+    // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+    
+    // --- STEP 1: Read all basic values ---
+    decimal farmInTake = 0;
+    object valFarm = GetCurrentColumnValue("FarmInTake");
+    if (valFarm != null &amp;&amp; !string.IsNullOrEmpty(valFarm.ToString()))
+    {
+        if (decimal.TryParse(valFarm.ToString(), out decimal tempFarm))
+            farmInTake = tempFarm;
+    }
+    
+    decimal settedEggs = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs");
+    if (valSetted != null &amp;&amp; !string.IsNullOrEmpty(valSetted.ToString()))
+    {
+        if (decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+            settedEggs = tempSetted;
+    }
+    
+    decimal settedEggs_1 = 0;
+    object valSetted1 = GetCurrentColumnValue("SettedEggs_1");
+    if (valSetted1 != null &amp;&amp; !string.IsNullOrEmpty(valSetted1.ToString()))
+    {
+        if (decimal.TryParse(valSetted1.ToString(), out decimal tempSetted1))
+            settedEggs_1 = tempSetted1;
+    }
+    
+    decimal cullsChicks_1 = 0;
+    object valCulls1 = GetCurrentColumnValue("CullsChicks_1");
+    if (valCulls1 != null &amp;&amp; !string.IsNullOrEmpty(valCulls1.ToString()))
+    {
+        if (decimal.TryParse(valCulls1.ToString(), out decimal tempCulls1))
+            cullsChicks_1 = tempCulls1;
+    }
+    
+    decimal deadChicks_1 = 0;
+    object valDead1 = GetCurrentColumnValue("DeadChicks_1");
+    if (valDead1 != null &amp;&amp; !string.IsNullOrEmpty(valDead1.ToString()))
+    {
+        if (decimal.TryParse(valDead1.ToString(), out decimal tempDead1))
+            deadChicks_1 = tempDead1;
+    }
+    
+    // --- STEP 2: Calculate Total_RejEggs ---
+    decimal rejBroken = GetFieldValue("HT_RejBroken") + GetFieldValue("ST_RejBroken");
+    decimal rejCrack = GetFieldValue("HT_RejCracks") + GetFieldValue("ST_RejCracks");
+    decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+    decimal rejOther = GetFieldValue("HT_RejOther") + GetFieldValue("ST_RejOther");
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 3: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 4: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = GetFieldValue("ER_SoldAsHatEggs");
+    decimal esSoldAsHatEggs = GetFieldValue("ES_SoldAsHatEggs");
+    decimal erSoldAsTableEggs = GetFieldValue("ER_SoldAsTableEggs");
+    decimal esSoldAsTableEggs = GetFieldValue("ES_SoldAsTableEggs");
+    decimal erSendToOffal = GetFieldValue("ER_SendToOffal");
+    decimal esSendToOffal = GetFieldValue("ES_SendToOffal");
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 5: Calculate StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- STEP 6: Calculate SettedEggs_1 (with condition) ---
+    decimal settedEggs_1_Calculated = 0;
+    decimal difference = settedEggs_1 - stockHatEggBal;
+    if (difference &gt;= 0)
+    {
+        settedEggs_1_Calculated = difference;
+    }
+    
+    // --- STEP 7: Main Equation ---
+    decimal result = 0;
+    if (settedEggs_1 != 0)
+    {
+        decimal totalRejChicks = cullsChicks_1 + deadChicks_1;
+        decimal ratio = settedEggs_1_Calculated / settedEggs_1;
+        result = totalRejChicks * ratio;
+    }
+    
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
 
 }
 
@@ -1599,7 +2309,7 @@ decimal totalSoldAsTableEggs_1 = erSoldAsTableEggs_1 + esSoldAsTableEggs_1;
 
 // --- Assign result to cell ---
 XRTableCell cell_1 = sender as XRTableCell;
-cell_1.Text = totalSoldAsTableEggs_1.ToString("0.##");   // format with up to 2 decimals
+cell_1.Text = totalSoldAsTableEggs_1.ToString("N0");   // format with up to 2 decimals
 
 }
 
@@ -1628,7 +2338,7 @@ decimal totalSendToOffal_1 = erSendToOffal_1 + esSendToOffal_1;
 
 // --- Assign result to cell ---
 XRTableCell cell_1 = sender as XRTableCell;
-cell_1.Text = totalSendToOffal_1.ToString("0.##");   // format with up to 2 decimals
+cell_1.Text = totalSendToOffal_1.ToString("N0");   // format with up to 2 decimals
 
 }
 
@@ -1696,96 +2406,234 @@ cell_1.Text = total_1.ToString("0.##");   // format with up to 2 decimals
 }
 
 private void xrTableCell179_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal selChicks_1 = 0;
-decimal cullsChicks_1 = 0;
-decimal deadChicks_1 = 0;
-decimal settedEggs_1 = 0;
-
-// --- Read values directly ---
-if (GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.SelChicks_1") != null)
-    selChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.SelChicks_1"));
-
-if (GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.CullsChicks_1") != null)
-    cullsChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.CullsChicks_1"));
-
-if (GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.DeadChicks_1") != null)
-    deadChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.DeadChicks_1"));
-
-if (GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.SettedEggs_1") != null)
-    settedEggs_1 = Convert.ToDecimal(GetCurrentColumnValue("SR_HT_FlkSumProdReport_1.SettedEggs_1"));
-
-// --- Calculate CumHatchability ---
-decimal cumHatchability_1 = 0;
-if (settedEggs_1 != 0)
-    cumHatchability_1 = (selChicks_1 + cullsChicks_1 + deadChicks_1) / settedEggs_1 * 100m;
-
-// --- Equation with totalEggsSold ---
-decimal result_1 = total_1 * cumHatchability_1 / 100m;
-
-// --- Assign result to cell ---
-XRTableCell cell_1 = sender as XRTableCell;
-cell_1.Text = result_1.ToString("0.##");   // format with up to 2 decimals
-
-}
-
-private void xrTableCell187_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      decimal result = 0;
-
-    // ------------------ EstChicks_PerEgg ------------------
-    decimal estChicks_PerEgg = 0;
-    decimal cumHatchability = 0;
-
-    object valSetted = GetCurrentColumnValue("SettedEggs");
-    if (valSetted != null &amp;&amp; decimal.TryParse(valSetted.ToString(), out decimal settedEggs) &amp;&amp; settedEggs != 0)
+       // Helper method to safely get decimal value with null/empty checks
+    decimal GetDecimalValue(string fieldName)
     {
-        // Sel + Culls + Deads
-        decimal sel = 0, culls = 0, dead = 0;
-
-        if (decimal.TryParse(GetCurrentColumnValue("SelChicks")?.ToString(), out decimal tempSel)) sel = tempSel;
-        if (decimal.TryParse(GetCurrentColumnValue("CullsChicks")?.ToString(), out decimal tempCulls)) culls = tempCulls;
-        if (decimal.TryParse(GetCurrentColumnValue("DeadChicks")?.ToString(), out decimal tempDead)) dead = tempDead;
-
-        cumHatchability = (sel + culls + dead) / settedEggs * 100;
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
     }
-
-    // use global "total" for TotalEggSold
-    estChicks_PerEgg = total * cumHatchability / 100;
-
-    // ------------------ ESTChicks_PerStock_HE ------------------
-    decimal estChicks_PerStock_HE = 0;
-
-    if (decimal.TryParse(GetCurrentColumnValue("StockHatEggBal")?.ToString(), out decimal stockBal) &amp;&amp; stockBal != 0)
+    
+    // --- STEP 1: Read PART 1 values (for StockHatEggBal calculation) ---
+    decimal farmInTake = GetDecimalValue("FarmInTake");
+    decimal settedEggs = GetDecimalValue("SettedEggs");
+    
+    // --- Calculate Total_RejEggs for PART 1 ---
+    decimal rejBroken = GetDecimalValue("HT_RejBroken") + GetDecimalValue("ST_RejBroken");
+    decimal rejCrack = GetDecimalValue("HT_RejCracks") + GetDecimalValue("ST_RejCracks");
+    decimal rejDef = GetDecimalValue("HT_RejDeformed") + GetDecimalValue("ST_RejDeformed");
+    decimal rejOther = GetDecimalValue("HT_RejOther") + GetDecimalValue("ST_RejOther");
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- Calculate BalOfHatEggs for PART 1 ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- Calculate TotalEggSold for PART 1 ---
+    decimal erSoldAsHatEggs = GetDecimalValue("ER_SoldAsHatEggs");
+    decimal esSoldAsHatEggs = GetDecimalValue("ES_SoldAsHatEggs");
+    decimal erSoldAsTableEggs = GetDecimalValue("ER_SoldAsTableEggs");
+    decimal esSoldAsTableEggs = GetDecimalValue("ES_SoldAsTableEggs");
+    decimal erSendToOffal = GetDecimalValue("ER_SendToOffal");
+    decimal esSendToOffal = GetDecimalValue("ES_SendToOffal");
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- Calculate StockHatEggBal for PART 1 ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- STEP 2: Read PART 2 values ---
+    decimal farmInTake_1 = GetDecimalValue("FarmInTake_1");
+    decimal settedEggs_1 = GetDecimalValue("SettedEggs_1");
+    
+    // --- Calculate Total_RejEggs_1 for PART 2 ---
+    decimal rejBroken_1 = GetDecimalValue("HT_RejBroken_1") + GetDecimalValue("ST_RejBroken_1");
+    decimal rejCrack_1 = GetDecimalValue("HT_RejCracks_1") + GetDecimalValue("ST_RejCracks_1");
+    decimal rejDef_1 = GetDecimalValue("HT_RejDeformed_1") + GetDecimalValue("ST_RejDeformed_1");
+    decimal rejOther_1 = GetDecimalValue("HT_RejOther_1") + GetDecimalValue("ST_RejOther_1");
+    decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+    
+    // --- Calculate BalOfHatEggs_1 for PART 2 ---
+    decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+    
+    // --- Calculate SettedEggs_1 (with condition) ---
+    decimal settedEggs_1_Calculated = 0;
+    decimal difference = settedEggs_1 - stockHatEggBal;
+    if (difference &gt;= 0)
+    {
+        settedEggs_1_Calculated = difference;
+    }
+    
+    // --- STEP 3: Calculate CumHatchability_1 ---
+    decimal cumHatchability_1 = 0;
+    
+    // Check if SettedEggs_1 is not zero
+    if (settedEggs_1 != 0)
+    {
+        decimal selChicks_1 = GetDecimalValue("SelChicks_1");
+        decimal cullsChicks_1 = GetDecimalValue("CullsChicks_1");
+        decimal deadChicks_1 = GetDecimalValue("DeadChicks_1");
+        
+        decimal totalChicks_1 = selChicks_1 + cullsChicks_1 + deadChicks_1;
+        cumHatchability_1 = totalChicks_1 * 100 / settedEggs_1;
+    }
+    else
     {
         // Calculate ActHatchBalanceEggs
-        decimal actHatchBalanceEggs = 0;
-        if (decimal.TryParse(GetCurrentColumnValue("SetEggBalHatEgg")?.ToString(), out decimal setEggBal) &amp;&amp; setEggBal != 0)
+        decimal setEggBalHatEgg = GetDecimalValue("SetEggBalHatEgg");
+        if (setEggBalHatEgg != 0)
         {
-            decimal selBal = 0, cullsBal = 0, deadBal = 0;
-
-            if (decimal.TryParse(GetCurrentColumnValue("SelChickBalHatEgg")?.ToString(), out decimal tempSelBal)) selBal = tempSelBal;
-            if (decimal.TryParse(GetCurrentColumnValue("CullsBalHatEgg")?.ToString(), out decimal tempCullsBal)) cullsBal = tempCullsBal;
-            if (decimal.TryParse(GetCurrentColumnValue("DeadsBalHatEgg")?.ToString(), out decimal tempDeadBal)) deadBal = tempDeadBal;
-
-            actHatchBalanceEggs = (selBal + cullsBal + deadBal) / setEggBal * 100;
+            decimal selChickBal = GetDecimalValue("SelChickBalHatEgg");
+            decimal cullsBal = GetDecimalValue("CullsBalHatEgg");
+            decimal deadsBal = GetDecimalValue("DeadsBalHatEgg");
+            
+            decimal totalBal = selChickBal + cullsBal + deadsBal;
+            cumHatchability_1 = totalBal / setEggBalHatEgg * 100;
         }
-
-        estChicks_PerStock_HE = stockBal * actHatchBalanceEggs / 100;
     }
-
-    // ------------------ CumChicks ------------------
-    decimal cumChicks = 0;
-    if (decimal.TryParse(GetCurrentColumnValue("CumChicks")?.ToString(), out decimal tempCum))
-        cumChicks = tempCum;
-
-    // ------------------ Final Equation ------------------
-    result = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
-
-    // Assign to cell
+    
+    // --- STEP 4: Final Equation ---
+    decimal result = 0;
+    decimal difference_1 = balOfHatEggs_1 - settedEggs_1_Calculated;
+    result = difference_1 * cumHatchability_1 / 100;
+    
+    // --- Assign result to cell ---
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("0.##");
+    cell.Text = result.ToString("N0");
+  }
 
+private void xrTableCell187_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
 }
+
+// Helper function to get field value by report field name
+decimal GetReportFieldValue(string fieldName)
+{
+    // Assuming SR_HT_FlkSumProdReport is the data source
+    // You'll need to adjust this based on your actual data access method
+    return GetFieldValue(fieldName);
+}
+
+// --- Calculate Part 1 components ---
+
+// Rejected eggs for Part 1
+decimal RejBroken = GetReportFieldValue("ST_RejBroken") + GetReportFieldValue("HT_RejBroken");
+decimal RejCrack = GetReportFieldValue("ST_RejCracks") + GetReportFieldValue("HT_RejCracks");
+decimal RejDef = GetReportFieldValue("HT_RejDeformed") + GetReportFieldValue("ST_RejDeformed");
+decimal RejOther = GetReportFieldValue("ST_RejOther") + GetReportFieldValue("HT_RejOther");
+decimal Total_RejEggs = RejBroken + RejCrack + RejDef + RejOther;
+
+// Balance of Hatchery Eggs for Part 1
+decimal FarmInTake = GetReportFieldValue("FarmInTake");
+decimal BalOfHatEggs = FarmInTake - Total_RejEggs;
+
+// Total Eggs Sold for Part 1
+decimal SoldHatEggs = GetReportFieldValue("ER_SoldAsHatEggs") + GetReportFieldValue("ES_SoldAsHatEggs");
+decimal SoldTableEggs = GetReportFieldValue("ER_SoldAsTableEggs") + GetReportFieldValue("ES_SoldAsTableEggs");
+decimal EggsToOffal = GetReportFieldValue("ER_SendToOffal") + GetReportFieldValue("ES_SendToOffal");
+decimal TotalEggSold = SoldHatEggs + SoldTableEggs + EggsToOffal;
+
+// Stock Hatchery Egg Balance
+decimal SettedEggs = GetReportFieldValue("SettedEggs");
+decimal StockHatEggBal = BalOfHatEggs - (SettedEggs + TotalEggSold);
+
+// --- Calculate Part 2 components ---
+
+// Rejected eggs for Part 2
+decimal RejBroken_1 = GetReportFieldValue("ST_RejBroken_1") + GetReportFieldValue("HT_RejBroken_1");
+decimal RejCrack_1 = GetReportFieldValue("ST_RejCracks_1") + GetReportFieldValue("HT_RejCracks_1");
+decimal RejDef_1 = GetReportFieldValue("HT_RejDeformed_1") + GetReportFieldValue("ST_RejDeformed_1");
+decimal RejOther_1 = GetReportFieldValue("ST_RejOther_1") + GetReportFieldValue("HT_RejOther_1");
+decimal Total_RejEggs_1 = RejBroken_1 + RejCrack_1 + RejDef_1 + RejOther_1;
+
+// Balance of Hatchery Eggs for Part 2
+decimal FarmInTake_1 = GetReportFieldValue("FarmInTake_1");
+decimal BalOfHatEggs_1 = FarmInTake_1 - Total_RejEggs_1;
+
+// Setted Eggs for Part 2 (with condition)
+decimal SettedEggs_1_Raw = GetReportFieldValue("SettedEggs_1");
+decimal SettedEggs_1 = 0;
+decimal difference = SettedEggs_1_Raw - StockHatEggBal;
+if (difference &gt;= 0)
+{
+    SettedEggs_1 = difference;
+}
+
+// --- Calculate CumHatchability_1 ---
+decimal CumHatchability_1 = 0;
+
+if (SettedEggs_1_Raw != 0)
+{
+    decimal SelChicks_1 = GetReportFieldValue("SelChicks_1");
+    decimal CullsChicks_1 = GetReportFieldValue("CullsChicks_1");
+    decimal DeadChicks_1 = GetReportFieldValue("DeadChicks_1");
+    
+    decimal totalChicks = SelChicks_1 + CullsChicks_1 + DeadChicks_1;
+    CumHatchability_1 = totalChicks * 100 / SettedEggs_1_Raw;
+}
+else
+{
+    decimal SetEggBalHatEgg = GetReportFieldValue("SetEggBalHatEgg");
+    if (SetEggBalHatEgg != 0)
+    {
+        decimal SelChickBal = GetReportFieldValue("SelChickBalHatEgg");
+        decimal CullsBal = GetReportFieldValue("CullsBalHatEgg");
+        decimal DeadsBal = GetReportFieldValue("DeadsBalHatEgg");
+        
+        decimal totalBal = SelChickBal + CullsBal + DeadsBal;
+        CumHatchability_1 = totalBal / SetEggBalHatEgg * 100;
+    }
+}
+
+// --- Calculate EstChicks_PerEgg_1 ---
+decimal EstChicks_PerEgg_1 = (BalOfHatEggs_1 - SettedEggs_1) * CumHatchability_1 / 100;
+
+// --- Calculate CumChicks_1 ---
+// Note: This calculation differs from the previous one
+// Based on the formula: {@CumChicks_1}---&gt;{@GradeA_1} + {@RejChicks_1}
+
+// Calculate GradeA_1
+decimal GradeA_1 = 0;
+if (SettedEggs_1_Raw != 0)
+{
+    decimal SelChicks_1 = GetReportFieldValue("SelChicks_1");
+    GradeA_1 = SelChicks_1 * (SettedEggs_1 / SettedEggs_1_Raw);
+}
+
+// Calculate RejChicks_1
+decimal RejChicks_1 = 0;
+if (SettedEggs_1_Raw != 0)
+{
+    decimal CullsChicks_1 = GetReportFieldValue("CullsChicks_1");
+    decimal DeadChicks_1 = GetReportFieldValue("DeadChicks_1");
+    RejChicks_1 = (CullsChicks_1 + DeadChicks_1) * (SettedEggs_1 / SettedEggs_1_Raw);
+}
+
+// Calculate CumChicks_1
+decimal CumChicks_1 = GradeA_1 + RejChicks_1;
+
+// --- Final Calculation ---
+decimal result = EstChicks_PerEgg_1 + CumChicks_1;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0");
+ }
 
 private void xrTableCell214_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
@@ -1812,38 +2660,62 @@ decimal total_1 = gradeA_1_FromPartA + rejChicks_1_FromPartA;
 
 // --- Assign result to cell ---
 XRTableCell cell_1 = sender as XRTableCell;
-cell_1.Text = total_1.ToString("0.##");   // format with up to 2 decimals
+cell_1.Text = total_1.ToString("N0");   // format with up to 2 decimals
 
 }
 
 private void xrTableCell217_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal settedEggs_1_FromPartA = 0;
-decimal cumChicks_1_FromPartA = 0;
-
-// --- Read values safely ---
-if (GetCurrentColumnValue("SettedEggs_1_FromPartA") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs_1_FromPartA").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("SettedEggs_1_FromPartA")) != 0)
-{
-    settedEggs_1_FromPartA = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs_1_FromPartA"));
-}
-
-if (GetCurrentColumnValue("CumChicks_1_FromPartA") != null &amp;&amp;
-    !string.IsNullOrEmpty(GetCurrentColumnValue("CumChicks_1_FromPartA").ToString()) &amp;&amp;
-    Convert.ToDecimal(GetCurrentColumnValue("CumChicks_1_FromPartA")) != 0)
-{
-    cumChicks_1_FromPartA = Convert.ToDecimal(GetCurrentColumnValue("CumChicks_1_FromPartA"));
-}
-
-// --- Equation ---
-decimal result = 0;
-if (settedEggs_1_FromPartA != 0)
-    result = cumChicks_1_FromPartA * 100 / settedEggs_1_FromPartA;
-
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##");   // format with up to 2 decimals
+     // --- Read SettedEggs_1_FromPartA (which is SettedEggs_1) ---
+    decimal settedEggs_1_FromPartA = 0;
+    object valSetted = GetCurrentColumnValue("SettedEggs_1");
+    if (valSetted != null &amp;&amp; !string.IsNullOrEmpty(valSetted.ToString()))
+    {
+        if (decimal.TryParse(valSetted.ToString(), out decimal tempSetted))
+            settedEggs_1_FromPartA = tempSetted;
+    }
+    
+    // --- Read GradeA_1_FromPartA (which is SelChicks_1) ---
+    decimal gradeA_1_FromPartA = 0;
+    object valSel = GetCurrentColumnValue("SelChicks_1");
+    if (valSel != null &amp;&amp; !string.IsNullOrEmpty(valSel.ToString()))
+    {
+        if (decimal.TryParse(valSel.ToString(), out decimal tempSel))
+            gradeA_1_FromPartA = tempSel;
+    }
+    
+    // --- Read RejChicks_1_FromPartA components ---
+    decimal cullsChicks_1 = 0;
+    object valCulls = GetCurrentColumnValue("CullsChicks_1");
+    if (valCulls != null &amp;&amp; !string.IsNullOrEmpty(valCulls.ToString()))
+    {
+        if (decimal.TryParse(valCulls.ToString(), out decimal tempCulls))
+            cullsChicks_1 = tempCulls;
+    }
+    
+    decimal deadChicks_1 = 0;
+    object valDead = GetCurrentColumnValue("DeadChicks_1");
+    if (valDead != null &amp;&amp; !string.IsNullOrEmpty(valDead.ToString()))
+    {
+        if (decimal.TryParse(valDead.ToString(), out decimal tempDead))
+            deadChicks_1 = tempDead;
+    }
+    
+    // --- Calculate RejChicks_1_FromPartA ---
+    decimal rejChicks_1_FromPartA = cullsChicks_1 + deadChicks_1;
+    
+    // --- Calculate CumChicks_1_FromPartA ---
+    decimal cumChicks_1_FromPartA = gradeA_1_FromPartA + rejChicks_1_FromPartA;
+    
+    // --- Equation ---
+    decimal result = 0;
+    if (settedEggs_1_FromPartA != 0)
+    {
+        result = cumChicks_1_FromPartA * 100 / settedEggs_1_FromPartA;
+    }
+    
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
 
 }
 
@@ -1870,7 +2742,7 @@ decimal result = cullsChicks_1 + deadChicks_1;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##");   // format with up to 2 decimals
+cell.Text = result.ToString("N0");   // format with up to 2 decimals
 
 }
 
@@ -1928,7 +2800,7 @@ decimal result = erSoldAsTableEggs_1 + esSoldAsTableEggs_1;
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##");  // format with up to 2 decimals
+cell.Text = result.ToString("N0");  // format with up to 2 decimals
 
 }
 
@@ -1961,71 +2833,74 @@ private void xrTableCell232_BeforePrint(object sender, System.ComponentModel.Can
 }
 
 private void xrTableCell235_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // --- Declare variables ---
+        // --- Declare variables ---
     decimal erSoldAsHatEggs = 0;
     decimal esSoldAsHatEggs = 0;
     decimal erSoldAsTableEggs = 0;
     decimal esSoldAsTableEggs = 0;
     decimal erSendToOffal = 0;
     decimal esSendToOffal = 0;
-
+    
     // --- Read ER_SoldAsHatEggs_1 ---
-    if (GetCurrentColumnValue("ER_SoldAsHatEggs_1") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SoldAsHatEggs_1").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs_1")) != 0)
+    object valErHat = GetCurrentColumnValue("ER_SoldAsHatEggs_1");
+    if (valErHat != null &amp;&amp; !string.IsNullOrEmpty(valErHat.ToString()))
     {
-        erSoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs_1"));
+        if (decimal.TryParse(valErHat.ToString(), out decimal tempErHat))
+            erSoldAsHatEggs = tempErHat;
     }
-
+    
     // --- Read ES_SoldAsHatEggs_1 ---
-    if (GetCurrentColumnValue("ES_SoldAsHatEggs_1") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SoldAsHatEggs_1").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs_1")) != 0)
+    object valEsHat = GetCurrentColumnValue("ES_SoldAsHatEggs_1");
+    if (valEsHat != null &amp;&amp; !string.IsNullOrEmpty(valEsHat.ToString()))
     {
-        esSoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs_1"));
+        if (decimal.TryParse(valEsHat.ToString(), out decimal tempEsHat))
+            esSoldAsHatEggs = tempEsHat;
     }
-
+    
     // --- Read ER_SoldAsTableEggs_1 ---
-    if (GetCurrentColumnValue("ER_SoldAsTableEggs_1") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SoldAsTableEggs_1").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs_1")) != 0)
+    object valErTable = GetCurrentColumnValue("ER_SoldAsTableEggs_1");
+    if (valErTable != null &amp;&amp; !string.IsNullOrEmpty(valErTable.ToString()))
     {
-        erSoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs_1"));
+        if (decimal.TryParse(valErTable.ToString(), out decimal tempErTable))
+            erSoldAsTableEggs = tempErTable;
     }
-
+    
     // --- Read ES_SoldAsTableEggs_1 ---
-    if (GetCurrentColumnValue("ES_SoldAsTableEggs_1") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SoldAsTableEggs_1").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs_1")) != 0)
+    object valEsTable = GetCurrentColumnValue("ES_SoldAsTableEggs_1");
+    if (valEsTable != null &amp;&amp; !string.IsNullOrEmpty(valEsTable.ToString()))
     {
-        esSoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs_1"));
+        if (decimal.TryParse(valEsTable.ToString(), out decimal tempEsTable))
+            esSoldAsTableEggs = tempEsTable;
     }
-
+    
     // --- Read ER_SendToOffal_1 ---
-    if (GetCurrentColumnValue("ER_SendToOffal_1") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("ER_SendToOffal_1").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal_1")) != 0)
+    object valErOffal = GetCurrentColumnValue("ER_SendToOffal_1");
+    if (valErOffal != null &amp;&amp; !string.IsNullOrEmpty(valErOffal.ToString()))
     {
-        erSendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal_1"));
+        if (decimal.TryParse(valErOffal.ToString(), out decimal tempErOffal))
+            erSendToOffal = tempErOffal;
     }
-
+    
     // --- Read ES_SendToOffal_1 ---
-    if (GetCurrentColumnValue("ES_SendToOffal_1") != null &amp;&amp;
-        !string.IsNullOrEmpty(GetCurrentColumnValue("ES_SendToOffal_1").ToString()) &amp;&amp;
-        Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal_1")) != 0)
+    object valEsOffal = GetCurrentColumnValue("ES_SendToOffal_1");
+    if (valEsOffal != null &amp;&amp; !string.IsNullOrEmpty(valEsOffal.ToString()))
     {
-        esSendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal_1"));
+        if (decimal.TryParse(valEsOffal.ToString(), out decimal tempEsOffal))
+            esSendToOffal = tempEsOffal;
     }
-
+    
+    // --- Calculate components ---
+    decimal soldHatEggs_1_FromPartA = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs_1_FromPartA = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal_1_FromPartA = erSendToOffal + esSendToOffal;
+    
     // --- Calculate total ---
-    decimal total = erSoldAsHatEggs + esSoldAsHatEggs +
-                    erSoldAsTableEggs + esSoldAsTableEggs +
-                    erSendToOffal + esSendToOffal;
-
+    decimal total = soldHatEggs_1_FromPartA + soldTableEggs_1_FromPartA + eggsToOffal_1_FromPartA;
+    
     // --- Assign result to XRTableCell ---
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = total.ToString("0.##");  // formatted to 2 decimals
-}
+    cell.Text = total.ToString("N0");
+   }
 
 private void xrTableCell189_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
@@ -2086,6 +2961,1068 @@ if (settedEggs != 0)
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
 cell.Text = cumHatchability.ToString("0.##"); // format with 2 decimals
+}
+
+private void xrTableCell246_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- STEP 1: Calculate Part 1 components (for StockHatEggBal) ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// Calculate TotalEggSold for Part 1
+decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
+decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
+decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// Calculate StockHatEggBal
+decimal settedEggs = GetFieldValue("SettedEggs");
+decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+// --- STEP 2: Calculate Part 2 rejection components ---
+
+// Calculate rejection components for Part 2
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// Calculate BalOfHatEggs_1 for Part 2
+decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// --- STEP 3: Calculate SettedEggs_1 (adjusted) ---
+decimal settedEggs_1_Raw = GetFieldValue("SettedEggs_1");
+decimal settedEggs_1 = 0;
+decimal difference = settedEggs_1_Raw - stockHatEggBal;
+if (difference &gt;= 0)
+{
+    settedEggs_1 = difference;
+}
+
+// --- STEP 4: Calculate CumHatchability_1 ---
+decimal cumHatchability_1 = 0;
+
+if (settedEggs_1_Raw != 0)
+{
+    decimal selChicks_1 = GetFieldValue("SelChicks_1");
+    decimal cullsChicks_1 = GetFieldValue("CullsChicks_1");
+    decimal deadChicks_1 = GetFieldValue("DeadChicks_1");
+    
+    decimal totalChicks_1 = selChicks_1 + cullsChicks_1 + deadChicks_1;
+    cumHatchability_1 = totalChicks_1 * 100 / settedEggs_1_Raw;
+}
+else
+{
+    decimal setEggBalHatEgg = GetFieldValue("SetEggBalHatEgg");
+    if (setEggBalHatEgg != 0)
+    {
+        decimal selChickBal = GetFieldValue("SelChickBalHatEgg");
+        decimal cullsBal = GetFieldValue("CullsBalHatEgg");
+        decimal deadsBal = GetFieldValue("DeadsBalHatEgg");
+        
+        decimal totalBal = selChickBal + cullsBal + deadsBal;
+        cumHatchability_1 = totalBal / setEggBalHatEgg * 100;
+    }
+}
+
+// --- STEP 5: Calculate EstChicks_PerEgg_1 ---
+decimal estChicks_PerEgg_1 = (balOfHatEggs_1 - settedEggs_1) * cumHatchability_1 / 100;
+
+// --- STEP 6: Calculate GradeA_1 ---
+decimal gradeA_1 = 0;
+if (settedEggs_1_Raw != 0)
+{
+    decimal selChicks_1 = GetFieldValue("SelChicks_1");
+    gradeA_1 = selChicks_1 * (settedEggs_1 / settedEggs_1_Raw);
+}
+
+// --- STEP 7: Calculate RejChicks_1 ---
+decimal rejChicks_1 = 0;
+if (settedEggs_1_Raw != 0)
+{
+    decimal cullsChicks_1 = GetFieldValue("CullsChicks_1");
+    decimal deadChicks_1 = GetFieldValue("DeadChicks_1");
+    rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settedEggs_1_Raw);
+}
+
+// --- STEP 8: Calculate CumChicks_1 ---
+decimal cumChicks_1 = gradeA_1 + rejChicks_1;
+
+// --- STEP 9: Calculate CumChicks_Act_Est_1 ---
+decimal cumChicks_Act_Est_1 = estChicks_PerEgg_1 + cumChicks_1;
+
+// --- STEP 10: Get POL and calculate the ratio ---
+decimal pol = GetFieldValue("POL");
+decimal result = 0;
+
+if (pol != 0)
+{
+    result = cumChicks_Act_Est_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+    }
+
+private void xrTableCell156_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
+       // --- Declare values --- 
+    decimal rejBroken_1 = 0;
+    decimal rejCrack_1 = 0;
+    decimal rejDef_1 = 0;
+    decimal rejOther_1 = 0;
+
+    // --- STEP 1: Calculate RejBroken_1 from HT_RejBroken and ST_RejBroken ---
+    decimal htRejBroken_1 = 0;
+    object valHtBroken = GetCurrentColumnValue("HT_RejBroken_1");
+    if (valHtBroken != null &amp;&amp; !string.IsNullOrEmpty(valHtBroken.ToString()))
+    {
+        if (decimal.TryParse(valHtBroken.ToString(), out decimal tempHtBroken))
+            htRejBroken_1 = tempHtBroken;
+    }
+    
+    decimal stRejBroken_1 = 0;
+    object valStBroken = GetCurrentColumnValue("ST_RejBroken_1");
+    if (valStBroken != null &amp;&amp; !string.IsNullOrEmpty(valStBroken.ToString()))
+    {
+        if (decimal.TryParse(valStBroken.ToString(), out decimal tempStBroken))
+            stRejBroken_1 = tempStBroken;
+    }
+    
+    rejBroken_1 = htRejBroken_1 + stRejBroken_1;
+
+    // --- STEP 2: Calculate RejCrack_1 from HT_RejCracks and ST_RejCracks ---
+    decimal htRejCracks_1 = 0;
+    object valHtCracks = GetCurrentColumnValue("HT_RejCracks_1");
+    if (valHtCracks != null &amp;&amp; !string.IsNullOrEmpty(valHtCracks.ToString()))
+    {
+        if (decimal.TryParse(valHtCracks.ToString(), out decimal tempHtCracks))
+            htRejCracks_1 = tempHtCracks;
+    }
+    
+    decimal stRejCracks_1 = 0;
+    object valStCracks = GetCurrentColumnValue("ST_RejCracks_1");
+    if (valStCracks != null &amp;&amp; !string.IsNullOrEmpty(valStCracks.ToString()))
+    {
+        if (decimal.TryParse(valStCracks.ToString(), out decimal tempStCracks))
+            stRejCracks_1 = tempStCracks;
+    }
+    
+    rejCrack_1 = htRejCracks_1 + stRejCracks_1;
+
+    // --- STEP 3: Calculate RejDef_1 from HT_RejDeformed and ST_RejDeformed ---
+    decimal htRejDeformed_1 = 0;
+    object valHtDeformed = GetCurrentColumnValue("HT_RejDeformed_1");
+    if (valHtDeformed != null &amp;&amp; !string.IsNullOrEmpty(valHtDeformed.ToString()))
+    {
+        if (decimal.TryParse(valHtDeformed.ToString(), out decimal tempHtDeformed))
+            htRejDeformed_1 = tempHtDeformed;
+    }
+    
+    decimal stRejDeformed_1 = 0;
+    object valStDeformed = GetCurrentColumnValue("ST_RejDeformed_1");
+    if (valStDeformed != null &amp;&amp; !string.IsNullOrEmpty(valStDeformed.ToString()))
+    {
+        if (decimal.TryParse(valStDeformed.ToString(), out decimal tempStDeformed))
+            stRejDeformed_1 = tempStDeformed;
+    }
+    
+    rejDef_1 = htRejDeformed_1 + stRejDeformed_1;
+
+    // --- STEP 4: Calculate RejOther_1 from HT_RejOther and ST_RejOther ---
+    decimal htRejOther_1 = 0;
+    object valHtOther = GetCurrentColumnValue("HT_RejOther_1");
+    if (valHtOther != null &amp;&amp; !string.IsNullOrEmpty(valHtOther.ToString()))
+    {
+        if (decimal.TryParse(valHtOther.ToString(), out decimal tempHtOther))
+            htRejOther_1 = tempHtOther;
+    }
+    
+    decimal stRejOther_1 = 0;
+    object valStOther = GetCurrentColumnValue("ST_RejOther_1");
+    if (valStOther != null &amp;&amp; !string.IsNullOrEmpty(valStOther.ToString()))
+    {
+        if (decimal.TryParse(valStOther.ToString(), out decimal tempStOther))
+            stRejOther_1 = tempStOther;
+    }
+    
+    rejOther_1 = htRejOther_1 + stRejOther_1;
+
+    // --- Equation ---
+    decimal result = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell164_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = 0;
+    
+    // --- Read SettedEggs_1 ---
+    decimal settedEggs_1 = 0;
+    object valSetted1 = GetCurrentColumnValue("SettedEggs_1");
+    if (valSetted1 != null &amp;&amp; !string.IsNullOrEmpty(valSetted1.ToString()))
+    {
+        if (decimal.TryParse(valSetted1.ToString(), out decimal tempSetted1))
+            settedEggs_1 = tempSetted1;
+    }
+    
+    // --- Main condition: if SettedEggs_1 &lt;&gt; 0 ---
+    if (settedEggs_1 != 0)
+    {
+        // --- Read values for first calculation ---
+        decimal selChicks_1 = 0;
+        object valSel1 = GetCurrentColumnValue("SelChicks_1");
+        if (valSel1 != null &amp;&amp; !string.IsNullOrEmpty(valSel1.ToString()))
+        {
+            if (decimal.TryParse(valSel1.ToString(), out decimal tempSel1))
+                selChicks_1 = tempSel1;
+        }
+        
+        decimal cullsChicks_1 = 0;
+        object valCulls1 = GetCurrentColumnValue("CullsChicks_1");
+        if (valCulls1 != null &amp;&amp; !string.IsNullOrEmpty(valCulls1.ToString()))
+        {
+            if (decimal.TryParse(valCulls1.ToString(), out decimal tempCulls1))
+                cullsChicks_1 = tempCulls1;
+        }
+        
+        decimal deadChicks_1 = 0;
+        object valDead1 = GetCurrentColumnValue("DeadChicks_1");
+        if (valDead1 != null &amp;&amp; !string.IsNullOrEmpty(valDead1.ToString()))
+        {
+            if (decimal.TryParse(valDead1.ToString(), out decimal tempDead1))
+                deadChicks_1 = tempDead1;
+        }
+        
+        // Calculate: (SelChicks_1 + CullsChicks_1 + DeadChicks_1) * 100 / SettedEggs_1
+        decimal totalChicks_1 = selChicks_1 + cullsChicks_1 + deadChicks_1;
+        result = totalChicks_1 * 100 / settedEggs_1;
+    }
+    else
+    {
+        // --- Read values for ActHatchBalanceEggs calculation ---
+        decimal setEggBalHatEgg = 0;
+        object valSetEgg = GetCurrentColumnValue("SetEggBalHatEgg");
+        if (valSetEgg != null &amp;&amp; !string.IsNullOrEmpty(valSetEgg.ToString()))
+        {
+            if (decimal.TryParse(valSetEgg.ToString(), out decimal tempSetEgg))
+                setEggBalHatEgg = tempSetEgg;
+        }
+        
+        // Calculate ActHatchBalanceEggs: if SetEggBalHatEgg &lt;&gt; 0
+        decimal actHatchBalanceEggs = 0;
+        if (setEggBalHatEgg != 0)
+        {
+            decimal selChickBal = 0;
+            object valSelBal = GetCurrentColumnValue("SelChickBalHatEgg");
+            if (valSelBal != null &amp;&amp; !string.IsNullOrEmpty(valSelBal.ToString()))
+            {
+                if (decimal.TryParse(valSelBal.ToString(), out decimal tempSelBal))
+                    selChickBal = tempSelBal;
+            }
+            
+            decimal cullsBal = 0;
+            object valCullsBal = GetCurrentColumnValue("CullsBalHatEgg");
+            if (valCullsBal != null &amp;&amp; !string.IsNullOrEmpty(valCullsBal.ToString()))
+            {
+                if (decimal.TryParse(valCullsBal.ToString(), out decimal tempCullsBal))
+                    cullsBal = tempCullsBal;
+            }
+            
+            decimal deadsBal = 0;
+            object valDeadsBal = GetCurrentColumnValue("DeadsBalHatEgg");
+            if (valDeadsBal != null &amp;&amp; !string.IsNullOrEmpty(valDeadsBal.ToString()))
+            {
+                if (decimal.TryParse(valDeadsBal.ToString(), out decimal tempDeadsBal))
+                    deadsBal = tempDeadsBal;
+            }
+            
+            decimal totalBal = selChickBal + cullsBal + deadsBal;
+            actHatchBalanceEggs = totalBal / setEggBalHatEgg * 100;
+        }
+        
+        result = actHatchBalanceEggs;
+    }
+    
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
+}
+
+private void xrTableCell168_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+    
+    // --- STEP 1: Read all basic values ---
+    decimal farmInTake = GetFieldValue("FarmInTake");
+    decimal settedEggs = GetFieldValue("SettedEggs");
+    decimal settedEggs_1 = GetFieldValue("SettedEggs_1");
+    decimal selChicks_1 = GetFieldValue("SelChicks_1");
+    
+    // --- STEP 2: Calculate Total_RejEggs ---
+    decimal rejBroken = GetFieldValue("HT_RejBroken") + GetFieldValue("ST_RejBroken");
+    decimal rejCrack = GetFieldValue("HT_RejCracks") + GetFieldValue("ST_RejCracks");
+    decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+    decimal rejOther = GetFieldValue("HT_RejOther") + GetFieldValue("ST_RejOther");
+    decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+    
+    // --- STEP 3: Calculate BalOfHatEggs ---
+    decimal balOfHatEggs = farmInTake - totalRejEggs;
+    
+    // --- STEP 4: Calculate TotalEggSold ---
+    decimal erSoldAsHatEggs = GetFieldValue("ER_SoldAsHatEggs");
+    decimal esSoldAsHatEggs = GetFieldValue("ES_SoldAsHatEggs");
+    decimal erSoldAsTableEggs = GetFieldValue("ER_SoldAsTableEggs");
+    decimal esSoldAsTableEggs = GetFieldValue("ES_SoldAsTableEggs");
+    decimal erSendToOffal = GetFieldValue("ER_SendToOffal");
+    decimal esSendToOffal = GetFieldValue("ES_SendToOffal");
+    
+    decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+    decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+    decimal eggsToOffal = erSendToOffal + esSendToOffal;
+    decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+    
+    // --- STEP 5: Calculate StockHatEggBal ---
+    decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+    
+    // --- STEP 6: Calculate SettedEggs_1 (with condition) ---
+    decimal settedEggs_1_Calculated = 0;
+    decimal difference = settedEggs_1 - stockHatEggBal;
+    if (difference &gt;= 0)
+    {
+        settedEggs_1_Calculated = difference;
+    }
+    
+    // --- STEP 7: Main Equation ---
+    decimal result = 0;
+    if (settedEggs_1 != 0)
+    {
+        decimal ratio = settedEggs_1_Calculated / settedEggs_1;
+        result = selChicks_1 * ratio;
+    }
+    
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##");
+}
+
+private void xrTableCell204_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- Calculate individual rejection components for Part 2 ---
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+
+// --- Calculate Total_RejEggs_1 ---
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// --- Get POL value ---
+decimal pol = GetFieldValue("POL");
+
+// --- Calculate the rejection rate ---
+decimal rejectionRate = 0;
+
+if (pol != 0)
+{
+    rejectionRate = totalRejEggs_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+
+// Format the result - choose one of these options:
+
+// Option 1: Simple decimal (e.g., 0.1234)
+cell.Text = rejectionRate.ToString("N2");
+}
+
+private void xrTableCell207_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- Calculate individual rejection components for Part 2 ---
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+
+// --- Calculate Total_RejEggs_1 ---
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// --- Calculate BalOfHatEggs_1 ---
+decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// --- Get POL value ---
+decimal pol = GetFieldValue("POL");
+
+// --- Calculate the ratio ---
+decimal result = 0;
+
+if (pol != 0)
+{
+    result = balOfHatEggs_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+
+// Format options:
+
+// Option 1: Decimal ratio (e.g., 0.8765)
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell213_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- STEP 1: Calculate Part 1 components (for StockHatEggBal) ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// Calculate TotalEggSold for Part 1
+decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
+decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
+decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// Calculate StockHatEggBal
+decimal settedEggs = GetFieldValue("SettedEggs");
+decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+// --- STEP 2: Calculate SettedEggs_1 (adjusted) ---
+decimal settedEggs_1_Raw = GetFieldValue("SettedEggs_1");
+decimal settedEggs_1 = 0;
+decimal difference = settedEggs_1_Raw - stockHatEggBal;
+if (difference &gt;= 0)
+{
+    settedEggs_1 = difference;
+}
+
+// --- STEP 3: Calculate GradeA_1 ---
+decimal gradeA_1 = 0;
+if (settedEggs_1_Raw != 0)
+{
+    decimal selChicks_1 = GetFieldValue("SelChicks_1");
+    gradeA_1 = selChicks_1 * (settedEggs_1 / settedEggs_1_Raw);
+}
+
+// --- STEP 4: Calculate RejChicks_1 ---
+decimal rejChicks_1 = 0;
+if (settedEggs_1_Raw != 0)
+{
+    decimal cullsChicks_1 = GetFieldValue("CullsChicks_1");
+    decimal deadChicks_1 = GetFieldValue("DeadChicks_1");
+    rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settedEggs_1_Raw);
+}
+
+// --- STEP 5: Calculate CumChicks_1 ---
+decimal cumChicks_1 = gradeA_1 + rejChicks_1;
+
+// --- STEP 6: Get POL and calculate the ratio ---
+decimal pol = GetFieldValue("POL");
+decimal result = 0;
+
+if (pol != 0)
+{
+    result = cumChicks_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell219_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- STEP 1: Calculate Part 1 components (for StockHatEggBal) ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// Calculate TotalEggSold for Part 1
+decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
+decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
+decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// Calculate StockHatEggBal
+decimal settedEggs = GetFieldValue("SettedEggs");
+decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+// --- STEP 2: Calculate SettedEggs_1 (adjusted) ---
+decimal settedEggs_1_Raw = GetFieldValue("SettedEggs_1");
+decimal settedEggs_1 = 0;
+decimal difference = settedEggs_1_Raw - stockHatEggBal;
+if (difference &gt;= 0)
+{
+    settedEggs_1 = difference;
+}
+
+// --- STEP 3: Calculate RejChicks_1 ---
+decimal rejChicks_1 = 0;
+if (settedEggs_1_Raw != 0)
+{
+    decimal cullsChicks_1 = GetFieldValue("CullsChicks_1");
+    decimal deadChicks_1 = GetFieldValue("DeadChicks_1");
+    rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settedEggs_1_Raw);
+}
+
+// --- STEP 4: Get POL and calculate the ratio ---
+decimal pol = GetFieldValue("POL");
+decimal result = 0;
+
+if (pol != 0)
+{
+    result = rejChicks_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell222_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- Calculate Part 1 components (for StockHatEggBal) ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// Calculate TotalEggSold for Part 1
+decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
+decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
+decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// Calculate StockHatEggBal
+decimal settedEggs = GetFieldValue("SettedEggs");
+decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+// --- Calculate SettedEggs_1 (adjusted) ---
+decimal settedEggs_1_Raw = GetFieldValue("SettedEggs_1");
+decimal settedEggs_1 = 0;
+decimal difference = settedEggs_1_Raw - stockHatEggBal;
+if (difference &gt;= 0)
+{
+    settedEggs_1 = difference;
+}
+
+// --- Calculate GradeA_1 ---
+decimal gradeA_1 = 0;
+if (settedEggs_1_Raw != 0)
+{
+    decimal selChicks_1 = GetFieldValue("SelChicks_1");
+    gradeA_1 = selChicks_1 * (settedEggs_1 / settedEggs_1_Raw);
+}
+
+// --- Get POL and calculate the ratio ---
+decimal pol = GetFieldValue("POL");
+decimal result = 0;
+
+if (pol != 0)
+{
+    result = gradeA_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell237_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- STEP 1: Calculate Part 1 components (for StockHatEggBal) ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// Calculate TotalEggSold for Part 1
+decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
+decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
+decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// Calculate StockHatEggBal
+decimal settedEggs = GetFieldValue("SettedEggs");
+decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+// --- STEP 2: Calculate Part 2 rejection components ---
+
+// Calculate rejection components for Part 2
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// Calculate BalOfHatEggs_1 for Part 2
+decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// --- STEP 3: Calculate SettedEggs_1 (adjusted) ---
+decimal settedEggs_1_Raw = GetFieldValue("SettedEggs_1");
+decimal settedEggs_1 = 0;
+decimal difference = settedEggs_1_Raw - stockHatEggBal;
+if (difference &gt;= 0)
+{
+    settedEggs_1 = difference;
+}
+
+// --- STEP 4: Calculate CumHatchability_1 ---
+decimal cumHatchability_1 = 0;
+
+if (settedEggs_1_Raw != 0)
+{
+    decimal selChicks_1 = GetFieldValue("SelChicks_1");
+    decimal cullsChicks_1 = GetFieldValue("CullsChicks_1");
+    decimal deadChicks_1 = GetFieldValue("DeadChicks_1");
+    
+    decimal totalChicks_1 = selChicks_1 + cullsChicks_1 + deadChicks_1;
+    cumHatchability_1 = totalChicks_1 * 100 / settedEggs_1_Raw;
+}
+else
+{
+    decimal setEggBalHatEgg = GetFieldValue("SetEggBalHatEgg");
+    if (setEggBalHatEgg != 0)
+    {
+        decimal selChickBal = GetFieldValue("SelChickBalHatEgg");
+        decimal cullsBal = GetFieldValue("CullsBalHatEgg");
+        decimal deadsBal = GetFieldValue("DeadsBalHatEgg");
+        
+        decimal totalBal = selChickBal + cullsBal + deadsBal;
+        cumHatchability_1 = totalBal / setEggBalHatEgg * 100;
+    }
+}
+
+// --- STEP 5: Calculate EstChicks_PerEgg_1 ---
+decimal estChicks_PerEgg_1 = (balOfHatEggs_1 - settedEggs_1) * cumHatchability_1 / 100;
+
+// --- STEP 6: Get POL and calculate the ratio ---
+decimal pol = GetFieldValue("POL");
+decimal result = 0;
+
+if (pol != 0)
+{
+    result = estChicks_PerEgg_1 / pol;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell252_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- Get values ---
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
+decimal pol = GetFieldValue("POL");
+
+// --- Calculate CumRecEggs_HH ---
+decimal cumRecEggs_HH = 0;
+if (pol != 0)
+{
+    cumRecEggs_HH = farmInTake / pol;
+}
+
+// --- Calculate CumRecEggs_HH_1 ---
+decimal cumRecEggs_HH_1 = 0;
+if (pol != 0)
+{
+    cumRecEggs_HH_1 = farmInTake_1 / pol;
+}
+
+// --- Calculate the sum ---
+decimal result = cumRecEggs_HH + cumRecEggs_HH_1;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell255_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- Calculate Part 1 rejection components ---
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// --- Calculate Part 2 rejection components ---
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// --- Get POL value ---
+decimal pol = GetFieldValue("POL");
+
+// --- Calculate the ratios ---
+decimal totalRejEggs_HH = 0;
+decimal totalRejEggs_HH_1 = 0;
+
+if (pol != 0)
+{
+    totalRejEggs_HH = totalRejEggs / pol;
+    totalRejEggs_HH_1 = totalRejEggs_1 / pol;
+}
+
+// --- Calculate the sum ---
+decimal result = totalRejEggs_HH + totalRejEggs_HH_1;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell258_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- Calculate Part 1 components ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// --- Calculate Part 2 components ---
+
+// Calculate rejection components for Part 2
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// Calculate BalOfHatEggs_1 for Part 2
+decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// --- Get POL value ---
+decimal pol = GetFieldValue("POL");
+
+// --- Calculate the ratios ---
+decimal cumFinalHatEgg_HH = 0;
+decimal cumHatEgg_HH_1 = 0;
+
+if (pol != 0)
+{
+    cumFinalHatEgg_HH = balOfHatEggs / pol;
+    cumHatEgg_HH_1 = balOfHatEggs_1 / pol;
+}
+
+// --- Calculate the sum ---
+decimal result = cumFinalHatEgg_HH + cumHatEgg_HH_1;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
+}
+
+private void xrTableCell261_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // Helper function for safe parsing
+decimal GetFieldValue(string fieldName)
+{
+    object value = GetCurrentColumnValue(fieldName);
+    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+    {
+        if (decimal.TryParse(value.ToString(), out decimal result))
+            return result;
+    }
+    return 0;
+}
+
+// --- STEP 1: Calculate Part 1 components ---
+
+// Calculate rejection components for Part 1
+decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
+decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
+decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
+decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// Calculate BalOfHatEggs for Part 1
+decimal farmInTake = GetFieldValue("FarmInTake");
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// Calculate TotalEggSold for Part 1
+decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
+decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
+decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// Calculate SettedEggs for Part 1
+decimal settedEggs = GetFieldValue("SettedEggs");
+
+// Calculate StockHatEggBal for Part 1
+decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+
+// Calculate CumChicks for Part 1
+decimal selChicks = GetFieldValue("SelChicks");
+decimal cullsChicks = GetFieldValue("CullsChicks");
+decimal deadChicks = GetFieldValue("DeadChicks");
+decimal cumChicks = selChicks + cullsChicks + deadChicks;
+
+// Calculate CumHatchability for Part 1
+decimal cumHatchability = 0;
+if (settedEggs != 0)
+{
+    cumHatchability = cumChicks / settedEggs * 100;
+}
+
+// Calculate EstChicks_PerEgg for Part 1
+decimal estChicks_PerEgg = totalEggSold * cumHatchability / 100;
+
+// Calculate ActHatchBalanceEggs for Part 1
+decimal actHatchBalanceEggs = 0;
+decimal setEggBalHatEgg = GetFieldValue("SetEggBalHatEgg");
+if (setEggBalHatEgg != 0)
+{
+    decimal selChickBal = GetFieldValue("SelChickBalHatEgg");
+    decimal cullsBal = GetFieldValue("CullsBalHatEgg");
+    decimal deadsBal = GetFieldValue("DeadsBalHatEgg");
+    decimal totalBal = selChickBal + cullsBal + deadsBal;
+    actHatchBalanceEggs = totalBal / setEggBalHatEgg * 100;
+}
+
+// Calculate ESTChicks_PerStock_HE for Part 1
+decimal estChicks_PerStock_HE = stockHatEggBal * actHatchBalanceEggs / 100;
+
+// Calculate CumChicks_Act_Est for Part 1
+decimal cumChicks_Act_Est = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
+
+// --- STEP 2: Calculate Part 2 components ---
+
+// Calculate rejection components for Part 2
+decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
+decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
+decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
+decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// Calculate BalOfHatEggs_1 for Part 2
+decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// --- STEP 3: Get POL and calculate ratios ---
+decimal pol = GetFieldValue("POL");
+
+// Calculate CumFinalHatEgg_HH (Part 1 ratio)
+decimal cumFinalHatEgg_HH = 0;
+if (pol != 0)
+{
+    cumFinalHatEgg_HH = balOfHatEggs / pol;
+}
+
+// Calculate CumHatEgg_HH_1 (Part 2 ratio)
+decimal cumHatEgg_HH_1 = 0;
+if (pol != 0)
+{
+    cumHatEgg_HH_1 = balOfHatEggs_1 / pol;
+}
+
+// Calculate AB_CumHatchEggsHH
+decimal ab_CumHatchEggsHH = cumFinalHatEgg_HH + cumHatEgg_HH_1;
+
+// Calculate CumChicks_ActEst_HH (Part 1 chicks ratio)
+decimal cumChicks_ActEst_HH = 0;
+if (pol != 0)
+{
+    cumChicks_ActEst_HH = cumChicks_Act_Est / pol;
+}
+
+// --- Note: Need CumChicks_ActEst_HH_1 calculation for Part 2 ---
+// The formula doesn't provide definition for {@CumChicks_ActEst_HH_1}
+// Assuming it's similar to Part 1 but with "_1" suffix fields
+// For now, I'll set it to 0 or you need to provide the formula
+
+decimal cumChicks_ActEst_HH_1 = 0; // Need proper formula for this
+
+// Calculate AB_CumTotalChicksHH
+decimal ab_CumTotalChicksHH = cumChicks_ActEst_HH + cumChicks_ActEst_HH_1;
+
+// --- STEP 4: Calculate final hatchability percentage ---
+decimal result = 0;
+
+if (ab_CumHatchEggsHH != 0)
+{
+    result = ab_CumTotalChicksHH / ab_CumHatchEggsHH * 100;
+}
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N2");
 }
 </value>
   </data>
