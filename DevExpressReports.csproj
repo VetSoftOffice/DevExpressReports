@@ -84,7 +84,6 @@
 
   <ItemGroup>
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\DeplationAndBodyWeight\" />
-    <Folder Include="Reports\Farms\Breeder\ProductionPeriod\EggProduction\" />
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\Performance\WeeklyAnalysisLayFlks\" />
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\FlockSummary\" />
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\WeeklyAnalysisRearFlks\" />
@@ -99,7 +98,6 @@
     <Folder Include="Reports\FeedMill\Ingredient\GoodReceivedNote\NewFolder\" />
     <Folder Include="Reports\FeedMill\Ingredient\Summary\" />
     <Folder Include="Reports\Finance\DetailedCosting\" />
-    <Folder Include="Reports\Finance\Farms\Breeder\Summary\" />
     <Folder Include="Reports\Finance\Farms\SR_FC_FlkDirectCostBroilerSubPlace\" />
     <Folder Include="Reports\Finance\FeedMill\" />
     <Folder Include="Reports\Finance\FinalReports\NewFolder\" />
