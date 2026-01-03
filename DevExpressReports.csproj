@@ -54,24 +54,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.AspNetCore.Common" Version="24.2.6" />
-    <PackageReference Include="DevExpress.AspNetCore.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Charts" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Charts.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.CodeParser" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Data" Version="24.2.6" />
-    <PackageReference Include="DevExpress.DataAccess" Version="24.2.6" />
-    <PackageReference Include="DevExpress.DataVisualization.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Drawing" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Gauges.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Office.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Pdf.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.PivotGrid.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Reporting.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.6" />
-    <PackageReference Include="DevExpress.Sparkline.Core" Version="24.2.6" />
+    <PackageReference Include="DevExpress.AspNetCore.Common" Version="25.2.3" />
+    <PackageReference Include="DevExpress.AspNetCore.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Charts" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.CodeParser" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Data" Version="25.2.3" />
+    <PackageReference Include="DevExpress.DataAccess" Version="25.2.3" />
+    <PackageReference Include="DevExpress.DataVisualization.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Drawing" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Gauges.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Office.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Pdf.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="25.2.3" />
+    <PackageReference Include="DevExpress.Sparkline.Core" Version="25.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.4" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="4.13.0" />
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
