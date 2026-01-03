@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_SortHouseIssue_Sub" PageWidth="827" PageHeight="1169" Version="24.2" DataMember="SR_LAY_SortHouseIssue_Sub" DataSource="#Ref-0" TextAlignment="MiddleLeft">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_SortHouseIssue_Sub" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_LAY_SortHouseIssue_Sub" DataSource="#Ref-0" TextAlignment="MiddleLeft">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="5" Visible="false" Name="Notes" />
@@ -13,7 +13,7 @@
     <Item3 Ref="11" ControlType="BottomMarginBand" Name="BottomMargin" />
     <Item4 Ref="12" ControlType="ReportHeaderBand" Name="ReportHeader">
       <Controls>
-        <Item1 Ref="13" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="SR_LAY_SortHouseIssue_Sub">
+        <Item1 Ref="13" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1">
           <RowFields>
             <Item1 Ref="14" FieldName="RowData" />
           </RowFields>
@@ -24,9 +24,9 @@
             <Item1 Ref="16" FieldName="DataValue" />
           </DataFields>
           <ColumnDefinitions>
-            <Item1 Ref="17" Width="111.999992" />
-            <Item2 Ref="18" Width="49.9999847" />
-            <Item3 Ref="19" Width="49.9999962" />
+            <Item1 Ref="17" Width="110" />
+            <Item2 Ref="18" Width="49.9999924" />
+            <Item3 Ref="19" Width="50.0000153" />
           </ColumnDefinitions>
           <RowDefinitions>
             <Item1 Ref="20" />
@@ -40,73 +40,69 @@
               </ExpressionBindings>
             </Item1>
             <Item2 Ref="25" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="1" RowIndex="0" TextAlignment="MiddleCenter" />
-            <Item3 Ref="26" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1">
+            <Item3 Ref="26" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="1" />
+            <Item4 Ref="27" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="2" />
+            <Item5 Ref="28" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="2">
               <ExpressionBindings>
-                <Item1 Ref="27" EventName="BeforePrint" PropertyName="Text" Expression="[SR_LAY_SortHouseIssue_Sub.RowData]" />
-              </ExpressionBindings>
-            </Item3>
-            <Item4 Ref="28" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="2" />
-            <Item5 Ref="29" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="1" RowIndex="2">
-              <ExpressionBindings>
-                <Item1 Ref="30" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
+                <Item1 Ref="29" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL != True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
               </ExpressionBindings>
             </Item5>
-            <Item6 Ref="31" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="0" RowIndex="0" />
-            <Item7 Ref="32" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" />
-            <Item8 Ref="33" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="2" RowIndex="1" />
-            <Item9 Ref="34" ControlType="XRCrossTabCell" Name="crossTabTotalCell11" ColumnIndex="2" RowIndex="2" />
+            <Item6 Ref="30" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="0" RowIndex="0" />
+            <Item7 Ref="31" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" />
+            <Item8 Ref="32" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="2" RowIndex="1" />
+            <Item9 Ref="33" ControlType="XRCrossTabCell" Name="crossTabTotalCell11" ColumnIndex="2" RowIndex="2" />
           </Cells>
         </Item1>
       </Controls>
     </Item4>
   </Bands>
   <StyleSheet>
-    <Item1 Ref="35" Name="crossTabGeneralStyle1" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 9.75pt" ForeColor="Black" BackColor="White" BorderColor="255,160,160,160" Sides="All" StringFormat="Near;Near;0;None;Character;GenericDefault" />
-    <Item2 Ref="36" Name="crossTabHeaderStyle1" BorderStyle="Inset" BackColor="255,240,240,240" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" />
-    <Item3 Ref="37" Name="crossTabDataStyle1" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;GenericDefault" TextAlignment="MiddleRight" />
-    <Item4 Ref="38" Name="crossTabTotalStyle1" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;GenericDefault" TextAlignment="MiddleRight" />
+    <Item1 Ref="34" Name="crossTabGeneralStyle1" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 9.75pt" ForeColor="Black" BackColor="White" BorderColor="255,160,160,160" Sides="All" StringFormat="Near;Near;0;None;Character;GenericDefault" />
+    <Item2 Ref="35" Name="crossTabHeaderStyle1" BorderStyle="Inset" BackColor="255,240,240,240" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" />
+    <Item3 Ref="36" Name="crossTabDataStyle1" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;GenericDefault" TextAlignment="MiddleRight" />
+    <Item4 Ref="37" Name="crossTabTotalStyle1" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;GenericDefault" TextAlignment="MiddleRight" />
   </StyleSheet>
   <LocalizationItems>
-    <Item1 Ref="39" Component="#Ref-11" Culture="Default" Path="HeightF" Data="0" />
-    <Item2 Ref="40" Component="#Ref-23" Culture="Default" Path="Font" Data="Arial, 7pt" />
-    <Item3 Ref="41" Component="#Ref-32" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
-    <Item4 Ref="42" Component="#Ref-32" Culture="Default" Path="Text" Data="Grand Total" />
-    <Item5 Ref="43" Component="#Ref-32" Culture="ar" Path="Text" Data="الإجمالي الكلي" />
-    <Item6 Ref="44" Component="#Ref-25" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
-    <Item7 Ref="45" Component="#Ref-26" Culture="Default" Path="Font" Data="Arial, 7pt" />
-    <Item8 Ref="46" Component="#Ref-28" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
-    <Item9 Ref="47" Component="#Ref-28" Culture="Default" Path="Text" Data=" Total" />
-    <Item10 Ref="48" Component="#Ref-28" Culture="ar" Path="Text" Data="الاجمالي" />
-    <Item11 Ref="49" Component="#Ref-31" Culture="Default" Path="Font" Data="Arial, 7pt" />
-    <Item12 Ref="50" Component="#Ref-29" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
-    <Item13 Ref="51" Component="#Ref-34" Culture="Default" Path="Font" Data="Arial, 7pt" />
-    <Item14 Ref="52" Component="#Ref-33" Culture="Default" Path="Font" Data="Arial, 7pt" />
-    <Item15 Ref="53" Component="#Ref-10" Culture="Default" Path="HeightF" Data="0" />
-    <Item16 Ref="54" Component="#Ref-10" Culture="Default" Path="Visible" Data="false" />
-    <Item17 Ref="55" Component="#Ref-7" Culture="Default" Path="Description" Data="Parameter1" />
-    <Item18 Ref="56" Component="#Ref-6" Culture="Default" Path="Description" Data="Parameter1" />
-    <Item19 Ref="57" Component="#Ref-8" Culture="Default" Path="Description" Data="Parameter1" />
-    <Item20 Ref="58" Component="#Ref-3" Culture="Default" Path="Description" Data="Parameter1" />
-    <Item21 Ref="59" Component="#Ref-5" Culture="Default" Path="Description" Data="Parameter1" />
-    <Item22 Ref="60" Component="#Ref-12" Culture="Default" Path="HeightF" Data="75" />
-    <Item23 Ref="61" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item24 Ref="62" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 0, 0, 0" />
-    <Item25 Ref="63" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item26 Ref="64" Component="#Ref-9" Culture="Default" Path="HeightF" Data="0" />
-    <Item27 Ref="65" Component="#Ref-13" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
-    <Item28 Ref="66" Component="#Ref-13" Culture="Default" Path="SizeF" Data="211.999969,75" />
+    <Item1 Ref="38" Component="#Ref-11" Culture="Default" Path="HeightF" Data="0" />
+    <Item2 Ref="39" Component="#Ref-23" Culture="Default" Path="Font" Data="Arial, 7pt" />
+    <Item3 Ref="40" Component="#Ref-31" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
+    <Item4 Ref="41" Component="#Ref-31" Culture="Default" Path="Text" Data="Grand Total" />
+    <Item5 Ref="42" Component="#Ref-31" Culture="ar" Path="Text" Data="الإجمالي الكلي" />
+    <Item6 Ref="43" Component="#Ref-25" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
+    <Item7 Ref="44" Component="#Ref-26" Culture="Default" Path="Font" Data="Arial, 7pt" />
+    <Item8 Ref="45" Component="#Ref-27" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
+    <Item9 Ref="46" Component="#Ref-27" Culture="Default" Path="Text" Data=" Total" />
+    <Item10 Ref="47" Component="#Ref-27" Culture="ar" Path="Text" Data="الاجمالي" />
+    <Item11 Ref="48" Component="#Ref-30" Culture="Default" Path="Font" Data="Arial, 7pt" />
+    <Item12 Ref="49" Component="#Ref-28" Culture="Default" Path="Font" Data="Arial, 7pt, style=Bold" />
+    <Item13 Ref="50" Component="#Ref-33" Culture="Default" Path="Font" Data="Arial, 7pt" />
+    <Item14 Ref="51" Component="#Ref-32" Culture="Default" Path="Font" Data="Arial, 7pt" />
+    <Item15 Ref="52" Component="#Ref-10" Culture="Default" Path="HeightF" Data="0" />
+    <Item16 Ref="53" Component="#Ref-10" Culture="Default" Path="Visible" Data="false" />
+    <Item17 Ref="54" Component="#Ref-7" Culture="Default" Path="Description" Data="Parameter1" />
+    <Item18 Ref="55" Component="#Ref-6" Culture="Default" Path="Description" Data="Parameter1" />
+    <Item19 Ref="56" Component="#Ref-8" Culture="Default" Path="Description" Data="Parameter1" />
+    <Item20 Ref="57" Component="#Ref-3" Culture="Default" Path="Description" Data="Parameter1" />
+    <Item21 Ref="58" Component="#Ref-5" Culture="Default" Path="Description" Data="Parameter1" />
+    <Item22 Ref="59" Component="#Ref-12" Culture="Default" Path="HeightF" Data="75" />
+    <Item23 Ref="60" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item24 Ref="61" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 3, 0, 0" />
+    <Item25 Ref="62" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
+    <Item26 Ref="63" Component="#Ref-9" Culture="Default" Path="HeightF" Data="0" />
+    <Item27 Ref="64" Component="#Ref-13" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
+    <Item28 Ref="65" Component="#Ref-13" Culture="Default" Path="SizeF" Data="210,75" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
-    <Item1 Ref="67" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />
-    <Item2 Ref="68" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-5" />
-    <Item3 Ref="69" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-6" />
-    <Item4 Ref="70" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-7" />
-    <Item5 Ref="71" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-8" />
+    <Item1 Ref="66" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-3" />
+    <Item2 Ref="67" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-5" />
+    <Item3 Ref="68" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-6" />
+    <Item4 Ref="69" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-7" />
+    <Item5 Ref="70" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-8" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzbGF5ZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9MQVlfU29ydEhvdXNlSXNzdWVfU3ViIj48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9MQVlfU29ydEhvdXNlSXNzdWVfU3ViIiBYPSIzMCIgWT0iMzAiIFdpZHRoPSIxMjUiIEhlaWdodD0iMTgzIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IlJvd1NlcSIgLz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWVfU3ViIiBOYW1lPSJSb3dEYXRhIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IkNvbERhdGEiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlX1N1YiIgTmFtZT0iRGF0YVZhbHVlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IkNvbERhdGExIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IkNvbERhdGEyIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzbGF5ZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9MQVlfU29ydEhvdXNlSXNzdWVfU3ViIj48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9MQVlfU29ydEhvdXNlSXNzdWVfU3ViIiBYPSIzMCIgWT0iMzAiIFdpZHRoPSIxMjUiIEhlaWdodD0iMTgzIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IlJvd1NlcSIgLz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWVfU3ViIiBOYW1lPSJSb3dEYXRhIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IkNvbERhdGEiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlX1N1YiIgTmFtZT0iRGF0YVZhbHVlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IkNvbERhdGExIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiIE5hbWU9IkNvbERhdGEyIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZV9TdWIiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
   </ComponentStorage>
   <ObjectStorage>
-    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
   </ObjectStorage>
 </XtraReportsLayoutSerializer>
