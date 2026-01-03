@@ -400,6 +400,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n")});
             this.tdAccount_From.Multiline = true;
             this.tdAccount_From.Name = "tdAccount_From";
+            this.tdAccount_From.NavigateUrl = "FormatString(\'https://localhost:53021/api/GlFilterReport/Post?TGnModuleTypeID=37&" +
+    "ReportNumber = 33511&TStActionID={0}\', [tStActionID])";
             this.tdAccount_From.StylePriority.UseBorders = false;
             this.tdAccount_From.StylePriority.UseBorderWidth = false;
             this.tdAccount_From.StylePriority.UseFont = false;
