@@ -1,6 +1,6 @@
-﻿namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd
+﻿namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_SecProds
 {
-    partial class SR_BRD_FlocksActProd
+    partial class SR_BRD_FlocksActProd_SecProds
     {
         /// <summary>
         /// Required designer variable.
@@ -33,19 +33,6 @@
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_BRD_FlocksActProd));
             DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
@@ -82,6 +69,43 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression20 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column21 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression21 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column22 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression22 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column29 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_BRD_FlocksActProd_SecProds));
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem1 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", false);
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem2 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", true);
             this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
@@ -90,21 +114,8 @@
             this.HideReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
-            this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
-            this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportHeaderCustom = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
-            this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
@@ -122,17 +133,8 @@
             this.crossTabHeaderCell12 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell8 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
-            this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
-            this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_BRD_FlocksActProd_HatEggs = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_BRD_FlocksActProd_SecProds = new DevExpress.XtraReports.UI.XRSubreport();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailData1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -142,6 +144,10 @@
             this.crossTabHeaderStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.crossTabGeneralStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.crossTabHeaderStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.crossTabDataStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
+            this.crossTabTotalStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.Abs_OpenBal = new DevExpress.XtraReports.UI.CalculatedField();
             this.DebitCreditOpenBalRes = new DevExpress.XtraReports.UI.CalculatedField();
             this.Debit_Str = new DevExpress.XtraReports.UI.CalculatedField();
@@ -162,6 +168,8 @@
             this.Produced = new DevExpress.XtraReports.UI.CalculatedField();
             this.Rejected = new DevExpress.XtraReports.UI.CalculatedField();
             this.CopyRight = new DevExpress.XtraReports.UI.CalculatedField();
+            this.MonthName = new DevExpress.XtraReports.UI.CalculatedField();
+            this.MonthName_HatEggs = new DevExpress.XtraReports.UI.CalculatedField();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
             this.NoOfGroupsPerPage = new DevExpress.XtraReports.Parameters.Parameter();
@@ -175,11 +183,10 @@
             this.CropNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.Breed = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsBreeder = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.crossTabGeneralStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.crossTabHeaderStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.crossTabDataStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.crossTabTotalStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.MonthName = new DevExpress.XtraReports.UI.CalculatedField();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource4 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.MonthNamhe_Source = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -215,123 +222,18 @@
             // 
             // BottomMargin
             // 
-            this.BottomMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.pageInfoCurrentTime,
-            this.pageInfoCurrentDate,
-            this.pageInfoPageNoOfTotal});
             this.BottomMargin.Name = "BottomMargin";
-            // 
-            // pageInfoCurrentTime
-            // 
-            this.pageInfoCurrentTime.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.pageInfoCurrentTime.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.pageInfoCurrentTime.ForeColor = System.Drawing.Color.Black;
-            this.pageInfoCurrentTime.Name = "pageInfoCurrentTime";
-            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.pageInfoCurrentTime.StyleName = "PageInfo";
-            this.pageInfoCurrentTime.StylePriority.UseForeColor = false;
-            this.pageInfoCurrentTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // pageInfoCurrentDate
-            // 
-            this.pageInfoCurrentDate.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.pageInfoCurrentDate.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.pageInfoCurrentDate.ForeColor = System.Drawing.Color.Black;
-            this.pageInfoCurrentDate.Name = "pageInfoCurrentDate";
-            this.pageInfoCurrentDate.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.pageInfoCurrentDate.StyleName = "PageInfo";
-            this.pageInfoCurrentDate.StylePriority.UseForeColor = false;
-            this.pageInfoCurrentDate.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // pageInfoPageNoOfTotal
-            // 
-            this.pageInfoPageNoOfTotal.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.pageInfoPageNoOfTotal.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.pageInfoPageNoOfTotal.ForeColor = System.Drawing.Color.Black;
-            this.pageInfoPageNoOfTotal.Name = "pageInfoPageNoOfTotal";
-            this.pageInfoPageNoOfTotal.StyleName = "PageInfo";
-            this.pageInfoPageNoOfTotal.StylePriority.UseForeColor = false;
-            this.pageInfoPageNoOfTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // Detail
             // 
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             // 
-            // PageFooter
-            // 
-            this.PageFooter.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?HideReportFooter==false")});
-            this.PageFooter.Name = "PageFooter";
-            this.PageFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand6,
-            this.SubBand7});
-            // 
-            // SubBand6
-            // 
-            this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportSignature_PageFooter});
-            this.SubBand6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
-            this.SubBand6.Name = "SubBand6";
-            // 
-            // srReportSignature_PageFooter
-            // 
-            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
-            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
-            // 
-            // SubBand7
-            // 
-            this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportFooterCustom});
-            this.SubBand7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportFooter")});
-            this.SubBand7.Name = "SubBand7";
-            // 
-            // srReportFooterCustom
-            // 
-            this.srReportFooterCustom.Name = "srReportFooterCustom";
-            // 
             // PageHeader
             // 
             this.PageHeader.Name = "PageHeader";
             this.PageHeader.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand3,
-            this.SubBand5,
-            this.PageHeaderSub1,
             this.SubBand1});
-            // 
-            // SubBand3
-            // 
-            this.SubBand3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportHeaderCustom});
-            this.SubBand3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportHeader\nand ?HideReportHeader==false\n")});
-            this.SubBand3.Name = "SubBand3";
-            // 
-            // srReportHeaderCustom
-            // 
-            this.srReportHeaderCustom.Name = "srReportHeaderCustom";
-            this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
-            // 
-            // SubBand5
-            // 
-            this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportHeader});
-            this.SubBand5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not ?IsCustomReportHeader\nand ?HideReportHeader==false\n")});
-            this.SubBand5.Name = "SubBand5";
-            // 
-            // srReportHeader
-            // 
-            this.srReportHeader.Name = "srReportHeader";
-            this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
-            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
-            // 
-            // PageHeaderSub1
-            // 
-            this.PageHeaderSub1.Name = "PageHeaderSub1";
             // 
             // SubBand1
             // 
@@ -350,11 +252,6 @@
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrCrossTab2});
             this.ReportFooter.Name = "ReportFooter";
-            this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.ReportFooterSub1,
-            this.ReportFooterSub2,
-            this.SubBand2,
-            this.SubBand4});
             // 
             // xrCrossTab2
             // 
@@ -379,7 +276,7 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F)});
             crossTabColumnField1.FieldName = "DataYear";
             crossTabColumnField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
-            crossTabColumnField2.FieldName = "MonthName";
+            crossTabColumnField2.FieldName = "MonthNamhe_Source";
             crossTabColumnField2.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             this.xrCrossTab2.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1,
@@ -388,8 +285,8 @@
             crossTabDataField1.FieldName = "DataValue";
             this.xrCrossTab2.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
             crossTabDataField1});
-            this.xrCrossTab2.DataMember = "SR_BRD_FlocksActProd";
-            this.xrCrossTab2.DataSource = this.sqlDataSource2;
+            this.xrCrossTab2.DataMember = "SR_BRD_FlocksActProd_SecProds";
+            this.xrCrossTab2.DataSource = this.sqlDataSource4;
             this.xrCrossTab2.GeneralStyleName = "crossTabGeneralStyle2";
             this.xrCrossTab2.HeaderAreaStyleName = "crossTabHeaderStyle2";
             this.xrCrossTab2.Name = "xrCrossTab2";
@@ -524,96 +421,12 @@
             this.crossTabTotalCell8.Name = "crossTabTotalCell8";
             this.crossTabTotalCell8.RowIndex = 3;
             // 
-            // sqlDataSource2
+            // sqlDataSource3
             // 
-            this.sqlDataSource2.ConnectionName = "dsBreeder";
-            this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression1.ColumnName = "FlockCode";
-            table1.Name = "SR_BRD_FlocksActProd";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "DataYear";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "DataMonth";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "DataMonthNo";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "DataValue";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Name = "SR_BRD_FlocksActProd";
-            selectQuery1.Tables.Add(table1);
-            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
-            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
-            // 
-            // IsRTL
-            // 
-            this.IsRTL.Name = "IsRTL";
-            this.IsRTL.Type = typeof(bool);
-            this.IsRTL.ValueInfo = "False";
-            this.IsRTL.Visible = false;
-            // 
-            // ReportFooterSub1
-            // 
-            this.ReportFooterSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportNotes});
-            this.ReportFooterSub1.Name = "ReportFooterSub1";
-            // 
-            // srReportNotes
-            // 
-            this.srReportNotes.Name = "srReportNotes";
-            this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
-            // 
-            // ReportFooterSub2
-            // 
-            this.ReportFooterSub2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportSignature});
-            this.ReportFooterSub2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == False")});
-            this.ReportFooterSub2.Name = "ReportFooterSub2";
-            // 
-            // srReportSignature
-            // 
-            this.srReportSignature.Name = "srReportSignature";
-            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
-            // 
-            // SubBand2
-            // 
-            this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_FlocksActProd_HatEggs});
-            this.SubBand2.Name = "SubBand2";
-            // 
-            // SR_BRD_FlocksActProd_HatEggs
-            // 
-            this.SR_BRD_FlocksActProd_HatEggs.Name = "SR_BRD_FlocksActProd_HatEggs";
-            this.SR_BRD_FlocksActProd_HatEggs.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_HatEggs.SR_BRD_FlocksActProd_HatEggs();
-            // 
-            // SubBand4
-            // 
-            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_FlocksActProd_SecProds});
-            this.SubBand4.Name = "SubBand4";
-            // 
-            // SR_BRD_FlocksActProd_SecProds
-            // 
-            this.SR_BRD_FlocksActProd_SecProds.Name = "SR_BRD_FlocksActProd_SecProds";
-            this.SR_BRD_FlocksActProd_SecProds.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_SecProds.SR_BRD_FlocksActProd_SecProds();
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "dsBreeder";
-            this.sqlDataSource1.Name = "sqlDataSource1";
+            this.sqlDataSource3.ConnectionName = "dsBreeder";
+            this.sqlDataSource3.Name = "sqlDataSource3";
             columnExpression6.ColumnName = "FlockCode";
-            table2.Name = "SR_BRD_FlocksActProd";
+            table2.Name = "SR_BRD_FlocksActProd_HatEggs";
             columnExpression6.Table = table2;
             column6.Expression = columnExpression6;
             columnExpression7.ColumnName = "DataYear";
@@ -633,11 +446,18 @@
             selectQuery2.Columns.Add(column8);
             selectQuery2.Columns.Add(column9);
             selectQuery2.Columns.Add(column10);
-            selectQuery2.Name = "SR_BRD_FlocksActProd";
+            selectQuery2.Name = "SR_BRD_FlocksActProd_HatEggs";
             selectQuery2.Tables.Add(table2);
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             selectQuery2});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
+            // 
+            // IsRTL
+            // 
+            this.IsRTL.Name = "IsRTL";
+            this.IsRTL.Type = typeof(bool);
+            this.IsRTL.ValueInfo = "False";
+            this.IsRTL.Visible = false;
             // 
             // Title
             // 
@@ -647,7 +467,7 @@
             this.Title.BorderWidth = 1F;
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.Title.Name = "Title";
-            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
+            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             // 
             // DetailCaption1
             // 
@@ -657,7 +477,7 @@
             this.DetailCaption1.BorderWidth = 2F;
             this.DetailCaption1.ForeColor = System.Drawing.Color.White;
             this.DetailCaption1.Name = "DetailCaption1";
-            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
+            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.DetailCaption1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData1
@@ -667,7 +487,7 @@
             this.DetailData1.BorderWidth = 2F;
             this.DetailData1.ForeColor = System.Drawing.Color.Black;
             this.DetailData1.Name = "DetailData1";
-            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
+            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.DetailData1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData3_Odd
@@ -678,14 +498,14 @@
             this.DetailData3_Odd.BorderWidth = 1F;
             this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
             this.DetailData3_Odd.Name = "DetailData3_Odd";
-            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
+            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.DetailData3_Odd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // PageInfo
             // 
             this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.PageInfo.Name = "PageInfo";
-            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
+            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             // 
             // crossTabGeneralStyle1
             // 
@@ -697,7 +517,7 @@
             this.crossTabGeneralStyle1.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.crossTabGeneralStyle1.ForeColor = System.Drawing.Color.Black;
             this.crossTabGeneralStyle1.Name = "crossTabGeneralStyle1";
-            this.crossTabGeneralStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.crossTabGeneralStyle1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             // 
             // crossTabHeaderStyle1
             // 
@@ -714,6 +534,34 @@
             // 
             this.crossTabTotalStyle1.Name = "crossTabTotalStyle1";
             this.crossTabTotalStyle1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // crossTabGeneralStyle2
+            // 
+            this.crossTabGeneralStyle2.BackColor = System.Drawing.Color.White;
+            this.crossTabGeneralStyle2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.crossTabGeneralStyle2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.crossTabGeneralStyle2.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
+            this.crossTabGeneralStyle2.ForeColor = System.Drawing.Color.Black;
+            this.crossTabGeneralStyle2.Name = "crossTabGeneralStyle2";
+            this.crossTabGeneralStyle2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
+            // 
+            // crossTabHeaderStyle2
+            // 
+            this.crossTabHeaderStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.crossTabHeaderStyle2.Name = "crossTabHeaderStyle2";
+            this.crossTabHeaderStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // crossTabDataStyle2
+            // 
+            this.crossTabDataStyle2.Name = "crossTabDataStyle2";
+            this.crossTabDataStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // crossTabTotalStyle2
+            // 
+            this.crossTabTotalStyle2.Name = "crossTabTotalStyle2";
+            this.crossTabTotalStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // Abs_OpenBal
             // 
@@ -840,6 +688,18 @@
     "03-2025 VetSoft Office, All rights reserved\')\n";
             this.CopyRight.Name = "CopyRight";
             // 
+            // MonthName
+            // 
+            this.MonthName.DataMember = "SR_BRD_FlocksActProd";
+            this.MonthName.Expression = resources.GetString("MonthName.Expression");
+            this.MonthName.Name = "MonthName";
+            // 
+            // MonthName_HatEggs
+            // 
+            this.MonthName_HatEggs.DataMember = "SR_BRD_FlocksActProd_HatEggs";
+            this.MonthName_HatEggs.Expression = resources.GetString("MonthName_HatEggs.Expression");
+            this.MonthName_HatEggs.Name = "MonthName_HatEggs";
+            // 
             // IsCustomReportFooter
             // 
             this.IsCustomReportFooter.Name = "IsCustomReportFooter";
@@ -961,47 +821,111 @@
             selectQuery3});
             this.dsBreeder.ResultSchemaSerializable = resources.GetString("dsBreeder.ResultSchemaSerializable");
             // 
-            // crossTabGeneralStyle2
+            // sqlDataSource1
             // 
-            this.crossTabGeneralStyle2.BackColor = System.Drawing.Color.White;
-            this.crossTabGeneralStyle2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.crossTabGeneralStyle2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.crossTabGeneralStyle2.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.crossTabGeneralStyle2.ForeColor = System.Drawing.Color.Black;
-            this.crossTabGeneralStyle2.Name = "crossTabGeneralStyle2";
-            this.crossTabGeneralStyle2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.sqlDataSource1.ConnectionName = "dsBreeder";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression22.ColumnName = "FlockCode";
+            table4.Name = "SR_BRD_FlocksActProd";
+            columnExpression22.Table = table4;
+            column22.Expression = columnExpression22;
+            columnExpression23.ColumnName = "DataYear";
+            columnExpression23.Table = table4;
+            column23.Expression = columnExpression23;
+            columnExpression24.ColumnName = "DataMonth";
+            columnExpression24.Table = table4;
+            column24.Expression = columnExpression24;
+            columnExpression25.ColumnName = "DataMonthNo";
+            columnExpression25.Table = table4;
+            column25.Expression = columnExpression25;
+            columnExpression26.ColumnName = "DataValue";
+            columnExpression26.Table = table4;
+            column26.Expression = columnExpression26;
+            selectQuery4.Columns.Add(column22);
+            selectQuery4.Columns.Add(column23);
+            selectQuery4.Columns.Add(column24);
+            selectQuery4.Columns.Add(column25);
+            selectQuery4.Columns.Add(column26);
+            selectQuery4.Name = "SR_BRD_FlocksActProd";
+            selectQuery4.Tables.Add(table4);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery4});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
-            // crossTabHeaderStyle2
+            // sqlDataSource2
             // 
-            this.crossTabHeaderStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.crossTabHeaderStyle2.Name = "crossTabHeaderStyle2";
-            this.crossTabHeaderStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.sqlDataSource2.ConnectionName = "dsBreeder";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            columnExpression27.ColumnName = "FlockCode";
+            table5.Name = "SR_BRD_FlocksActProd";
+            columnExpression27.Table = table5;
+            column27.Expression = columnExpression27;
+            columnExpression28.ColumnName = "DataYear";
+            columnExpression28.Table = table5;
+            column28.Expression = columnExpression28;
+            columnExpression29.ColumnName = "DataMonth";
+            columnExpression29.Table = table5;
+            column29.Expression = columnExpression29;
+            columnExpression30.ColumnName = "DataMonthNo";
+            columnExpression30.Table = table5;
+            column30.Expression = columnExpression30;
+            columnExpression31.ColumnName = "DataValue";
+            columnExpression31.Table = table5;
+            column31.Expression = columnExpression31;
+            selectQuery5.Columns.Add(column27);
+            selectQuery5.Columns.Add(column28);
+            selectQuery5.Columns.Add(column29);
+            selectQuery5.Columns.Add(column30);
+            selectQuery5.Columns.Add(column31);
+            selectQuery5.Name = "SR_BRD_FlocksActProd";
+            selectQuery5.Tables.Add(table5);
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery5});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
-            // crossTabDataStyle2
+            // sqlDataSource4
             // 
-            this.crossTabDataStyle2.Name = "crossTabDataStyle2";
-            this.crossTabDataStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.sqlDataSource4.ConnectionName = "dsBreeder";
+            this.sqlDataSource4.Name = "sqlDataSource4";
+            columnExpression1.ColumnName = "FlockCode";
+            table1.Name = "SR_BRD_FlocksActProd_SecProds";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "DataYear";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "DataMonth";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "DataMonthNo";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "DataValue";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Name = "SR_BRD_FlocksActProd_SecProds";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
-            // crossTabTotalStyle2
+            // MonthNamhe_Source
             // 
-            this.crossTabTotalStyle2.Name = "crossTabTotalStyle2";
-            this.crossTabTotalStyle2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.MonthNamhe_Source.DataMember = "SR_BRD_FlocksActProd_SecProds";
+            this.MonthNamhe_Source.Expression = resources.GetString("MonthNamhe_Source.Expression");
+            this.MonthNamhe_Source.Name = "MonthNamhe_Source";
             // 
-            // MonthName
-            // 
-            this.MonthName.DataMember = "SR_BRD_FlocksActProd";
-            this.MonthName.Expression = resources.GetString("MonthName.Expression");
-            this.MonthName.Name = "MonthName";
-            // 
-            // SR_BRD_FlocksActProd
+            // SR_BRD_FlocksActProd_SecProds
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
             this.BottomMargin,
             this.Detail,
-            this.PageFooter,
             this.PageHeader,
             this.ReportFooter});
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
@@ -1027,17 +951,21 @@
             this.Produced,
             this.Rejected,
             this.CopyRight,
-            this.MonthName});
+            this.MonthName,
+            this.MonthName_HatEggs,
+            this.MonthNamhe_Source});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.dsBreeder,
             this.sqlDataSource1,
-            this.sqlDataSource2});
-            this.DataMember = "SR_BRD_FlocksActProd";
-            this.DataSource = this.sqlDataSource2;
+            this.sqlDataSource2,
+            this.sqlDataSource3,
+            this.sqlDataSource4});
+            this.DataMember = "SR_BRD_FlocksActProd_SecProds";
+            this.DataSource = this.sqlDataSource4;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Breed, "Default", "Description", "Breed"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
@@ -1080,58 +1008,24 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "ar", "Description", "عرض من اليمبن لليسار"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "Default", "Description", "No of groups / page"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "ar", "Description", "عدد المجموعات / صفحة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(289.2517F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(353.5F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(445F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(850.708F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(301.2888F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 136.25F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub1, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SheetNo, "Default", "Description", "SheetNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "Default", "Description", "Show signature"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "ar", "Description", "عرض التوقيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "Show signature in all page"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "ar", "Description", "عرض التوقيع في كل الصفحات"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(1151.997F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(3.003359F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(1148.997F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(1151.997F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(1152F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1152F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1150F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "ar", "DisplayName", "قيود يومية تفصيلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 20F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 20F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_HatEggs, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_HatEggs, "Default", "SizeF", new System.Drawing.SizeF(1149.997F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_SecProds, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_SecProds, "Default", "SizeF", new System.Drawing.SizeF(1151.997F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 23F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 23F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 23F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(20.08332F, 21.16667F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab2, "Default", "SizeF", new System.Drawing.SizeF(400F, 100F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(20.08332F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(227.0833F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Chicks Data")});
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Hatching Eggs")});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.PageHeightF = 1653.543F;
             this.PageWidthF = 1169.291F;
@@ -1205,29 +1099,27 @@
 
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
-        private DevExpress.XtraReports.UI.XRPageInfo pageInfoCurrentTime;
-        private DevExpress.XtraReports.UI.XRPageInfo pageInfoCurrentDate;
-        private DevExpress.XtraReports.UI.XRPageInfo pageInfoPageNoOfTotal;
         private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
-        private DevExpress.XtraReports.UI.SubBand SubBand6;
-        private DevExpress.XtraReports.UI.XRSubreport srReportSignature_PageFooter;
-        private DevExpress.XtraReports.UI.SubBand SubBand7;
-        private DevExpress.XtraReports.UI.XRSubreport srReportFooterCustom;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
-        private DevExpress.XtraReports.UI.SubBand SubBand3;
-        private DevExpress.XtraReports.UI.XRSubreport srReportHeaderCustom;
-        private DevExpress.XtraReports.Parameters.Parameter HideReportHeader;
-        private DevExpress.XtraReports.UI.SubBand SubBand5;
-        private DevExpress.XtraReports.UI.XRSubreport srReportHeader;
-        private DevExpress.XtraReports.UI.SubBand PageHeaderSub1;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private DevExpress.XtraReports.UI.XRCrossTab xrCrossTab2;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell6;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabDataCell2;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell7;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell8;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell9;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell4;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell10;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell5;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell6;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell11;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell12;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell7;
+        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell8;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource3;
         private DevExpress.XtraReports.Parameters.Parameter IsRTL;
-        private DevExpress.XtraReports.UI.SubBand ReportFooterSub1;
-        private DevExpress.XtraReports.UI.XRSubreport srReportNotes;
-        private DevExpress.XtraReports.UI.SubBand ReportFooterSub2;
-        private DevExpress.XtraReports.UI.XRSubreport srReportSignature;
         private DevExpress.XtraReports.UI.XRControlStyle Title;
         private DevExpress.XtraReports.UI.XRControlStyle DetailCaption1;
         private DevExpress.XtraReports.UI.XRControlStyle DetailData1;
@@ -1237,6 +1129,10 @@
         private DevExpress.XtraReports.UI.XRControlStyle crossTabHeaderStyle1;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabDataStyle1;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabTotalStyle1;
+        private DevExpress.XtraReports.UI.XRControlStyle crossTabGeneralStyle2;
+        private DevExpress.XtraReports.UI.XRControlStyle crossTabHeaderStyle2;
+        private DevExpress.XtraReports.UI.XRControlStyle crossTabDataStyle2;
+        private DevExpress.XtraReports.UI.XRControlStyle crossTabTotalStyle2;
         private DevExpress.XtraReports.UI.CalculatedField Abs_OpenBal;
         private DevExpress.XtraReports.UI.CalculatedField DebitCreditOpenBalRes;
         private DevExpress.XtraReports.UI.CalculatedField Debit_Str;
@@ -1257,10 +1153,13 @@
         private DevExpress.XtraReports.UI.CalculatedField Produced;
         private DevExpress.XtraReports.UI.CalculatedField Rejected;
         private DevExpress.XtraReports.UI.CalculatedField CopyRight;
+        private DevExpress.XtraReports.UI.CalculatedField MonthName;
+        private DevExpress.XtraReports.UI.CalculatedField MonthName_HatEggs;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportFooter;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportHeader;
         private DevExpress.XtraReports.Parameters.Parameter ShowSignature;
         private DevExpress.XtraReports.Parameters.Parameter ShowSignatureAllPages;
+        private DevExpress.XtraReports.Parameters.Parameter HideReportHeader;
         private DevExpress.XtraReports.Parameters.Parameter HideReportFooter;
         private DevExpress.XtraReports.Parameters.Parameter NoOfGroupsPerPage;
         private DevExpress.XtraReports.Parameters.Parameter FontSize;
@@ -1275,29 +1174,7 @@
         private DevExpress.DataAccess.Sql.SqlDataSource dsBreeder;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
-        private DevExpress.XtraReports.UI.XRCrossTab xrCrossTab2;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell6;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabDataCell2;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell7;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell8;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell9;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell4;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell10;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell5;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell6;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell11;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell12;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell7;
-        private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell8;
-        private DevExpress.XtraReports.UI.XRControlStyle crossTabGeneralStyle2;
-        private DevExpress.XtraReports.UI.XRControlStyle crossTabHeaderStyle2;
-        private DevExpress.XtraReports.UI.XRControlStyle crossTabDataStyle2;
-        private DevExpress.XtraReports.UI.XRControlStyle crossTabTotalStyle2;
-        private DevExpress.XtraReports.UI.CalculatedField MonthName;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
-        private DevExpress.XtraReports.UI.SubBand SubBand2;
-        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlocksActProd_HatEggs;
-        private DevExpress.XtraReports.UI.SubBand SubBand4;
-        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlocksActProd_SecProds;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource4;
+        private DevExpress.XtraReports.UI.CalculatedField MonthNamhe_Source;
     }
 }
