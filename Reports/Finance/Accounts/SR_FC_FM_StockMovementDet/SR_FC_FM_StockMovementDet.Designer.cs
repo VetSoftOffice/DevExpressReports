@@ -568,8 +568,8 @@
             this.xrTableCell40.BorderWidth = 1.4F;
             this.xrTableCell40.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n\n"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRunningSum(IsNull([Inputs_Prod], 0)) - sumRunningSum(IsNull([Outputs], 0)) + I" +
-                    "sNull([Open_Balance_Prod], 0)")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumRunningSum(IsNull([Inputs_Prod], 0)) - sumRunningSum(IsNull([Outputs_Prod], 0)" +
+                    ") + IsNull([Open_Balance_Prod], 0)")});
             this.xrTableCell40.Multiline = true;
             this.xrTableCell40.Name = "xrTableCell40";
             this.xrTableCell40.StylePriority.UseBorders = false;

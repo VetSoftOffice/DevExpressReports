@@ -89,7 +89,7 @@
                   <Summary Ref="64" Running="Group" />
                   <ExpressionBindings>
                     <Item1 Ref="65" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
-                    <Item2 Ref="66" EventName="BeforePrint" PropertyName="Text" Expression="sumRunningSum(IsNull([Inputs_Prod], 0)) - sumRunningSum(IsNull([Outputs], 0)) + IsNull([Open_Balance_Prod], 0)" />
+                    <Item2 Ref="66" EventName="BeforePrint" PropertyName="Text" Expression="sumRunningSum(IsNull([Inputs_Prod], 0)) - sumRunningSum(IsNull([Outputs_Prod], 0)) + IsNull([Open_Balance_Prod], 0)" />
                   </ExpressionBindings>
                   <StylePriority Ref="67" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item6>
