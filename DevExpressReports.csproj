@@ -83,7 +83,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Reports\Farms\Breeder\ProductionPeriod\DeplationAndBodyWeight\" />
+    <Folder Include="Reports\Farms\Breeder\ProductionPeriod\Performance\NewFolder\" />
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\Performance\WeeklyAnalysisLayFlks\" />
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\FlockSummary\" />
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\WeeklyAnalysisRearFlks\" />
