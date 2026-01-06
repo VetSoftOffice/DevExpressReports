@@ -140,141 +140,217 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PEZpZWxkIE5hbWU9IlZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFjY2luZU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWFudWZhY3R1cmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvdXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRheUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEYXlUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1RvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmF0Y2hObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRG9zZXNVc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF0ZUdpdmVuIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0dWFsQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVJlYXJpbmdNb3J0aWxpdHkiPjxGaWVsZCBOYW1lPSJ0ckhvdXNlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfRGF5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VsbHNGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdWxsc01vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhUZW1wIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWluVGVtcCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heEh1bWlkaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWluSHVtaWRpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVmFjY2luYXRpb25fZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWVkaWNhdGlvbl9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2l0ZV9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSZWdpb25fZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9GbGtQZXJpb2RTdW0iPjxGaWVsZCBOYW1lPSJGYXJtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPcGVuRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3Blbk1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEZlbWFsTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsTWFsZURlcGwiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEZlbWFsZUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxNYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nRmVhbWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ01hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNGZWFtbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNNYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhbnNGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUcmFuc01hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUZlYW1sZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlTWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsSGF0RWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvYXRhbERlbEVnZyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal totalLiveFemale = 0;
-decimal totalFemaleMort = 0;
-decimal totalCullsFemale = 0;
-decimal totalLiveMale = 0;
-decimal totalMaleMort = 0;
-decimal totalCullsMale = 0;
-private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // Calculate result for the group
-    XRTableCell resultCell = xrTableCell_Result; // Your result cell
+    <value>decimal sumFemaleMortPercent = 0;
+int countFemaleMortPercent = 0;
+decimal sumMaleDeplPercent = 0;
+int countMaleDeplPercent = 0;
+decimal sumFemaleCullsPercent = 0;
+int countFemaleCullsPercent = 0;
+decimal sumMaleCullsPercent = 0;
+int countMaleCullsPercent = 0;
+decimal sumEggsPerFemale = 0;
+int countEggsPerFemale = 0;
+private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
     
-    if (totalLiveFemale &gt; 0) {
-        decimal result = (totalFemaleMort / totalLiveFemale) * 100;
-        resultCell.Text = result.ToString("N0") ;
+    // Get values from fields (note: TotalFemalMort has typo in field name)
+    decimal openFemale = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
+    decimal totalFemaleMort = Convert.ToDecimal(GetCurrentColumnValue("TotalFemalMort") ?? 0);
+    
+    // Calculate: (TotalFemaleMort × 100) / OpenFemale
+    if (openFemale &gt; 0) {
+        decimal result = (totalFemaleMort * 100) / openFemale;
+        cell.Text = result.ToString("N2") ; // 2 decimal places with %
+        // Or without %: result.ToString("F2")
     } else {
-        resultCell.Text = "0";
+        cell.Text = "0.00"; // or "0"
     }
-    
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // Accumulate values for each detail row for female
-    object liveFemaleObj = GetCurrentColumnValue("rf_LiveFemale");
-    object femaleMortObj = GetCurrentColumnValue("FemaleMort");
-    object CullsFemaleObj = GetCurrentColumnValue("CullsFemale");
-    if (liveFemaleObj != null &amp;&amp; liveFemaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(liveFemaleObj.ToString(), out value)) {
-            totalLiveFemale += value;
-        }
+    // Get values for current row
+    decimal openFemale = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
+    decimal totalFemaleMort = Convert.ToDecimal(GetCurrentColumnValue("TotalFemalMort") ?? 0);
+    
+    // Calculate mortality percentage for this row
+    if (openFemale &gt; 0) {
+        decimal rowMortPercent = (totalFemaleMort * 100) / openFemale;
+        sumFemaleMortPercent += rowMortPercent;
+        countFemaleMortPercent++;
     }
     
-    if (femaleMortObj != null &amp;&amp; femaleMortObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(femaleMortObj.ToString(), out value)) {
-            totalFemaleMort += value;
-        }
+     // Get values for current row
+    decimal openMale = Convert.ToDecimal(GetCurrentColumnValue("OpenMale") ?? 0);
+    decimal totalMaleDepl = Convert.ToDecimal(GetCurrentColumnValue("TotalMaleDepl") ?? 0);
+    
+    // Calculate deployment percentage for this row
+    if (openMale &gt; 0) {
+        decimal rowDeplPercent = (totalMaleDepl * 100) / openMale;
+        sumMaleDeplPercent += rowDeplPercent;
+        countMaleDeplPercent++;
     }
     
-    if (CullsFemaleObj != null &amp;&amp; CullsFemaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(CullsFemaleObj.ToString(), out value)) {
-            totalCullsFemale += value;
-        }
-    }
-
-    // Accumulate values for each detail row for Male
-        // Accumulate values for each detail row for MALE
-    object liveMaleObj = GetCurrentColumnValue("rf_LiveMale");
-    object maleMortObj = GetCurrentColumnValue("MaleMort");
-    object cullsMaleObj = GetCurrentColumnValue("CullsMale");
+      // Get values for current row
+    decimal openFemaleCulls = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
+    decimal totalFemaleCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalFemaleCulls") ?? 0);
     
-    if (liveMaleObj != null &amp;&amp; liveMaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(liveMaleObj.ToString(), out value)) {
-            totalLiveMale += value;
-        }
+    // Calculate culls percentage for this row
+    if (openFemale &gt; 0) {
+        decimal rowCullsPercent = (totalFemaleCulls * 100) / openFemaleCulls ;
+        sumFemaleCullsPercent += rowCullsPercent;
+        countFemaleCullsPercent++;
     }
     
-    if (maleMortObj != null &amp;&amp; maleMortObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(maleMortObj.ToString(), out value)) {
-            totalMaleMort += value;
-        }
+    // Get values for current row
+    decimal openMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("OpenMale") ?? 0);
+    decimal totalMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalMaleCulls") ?? 0);
+    
+    // Calculate culls percentage for this row
+    if (openMale &gt; 0) {
+        decimal rowCullsPercent = (totalMaleCulls * 100) / openMaleCulls ;
+        sumMaleCullsPercent += rowCullsPercent;
+        countMaleCullsPercent++;
     }
     
-    if (cullsMaleObj != null &amp;&amp; cullsMaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(cullsMaleObj.ToString(), out value)) {
-            totalCullsMale += value;
-        }
+    // Get values for current row
+    decimal openFemaleHat = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
+    decimal totalHatEggs = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEggs") ?? 0);
+    
+    // Calculate eggs per female for this row
+    if (openFemale &gt; 0) {
+        decimal rowEggsPerFemale = totalHatEggs / openFemaleHat ;
+        sumEggsPerFemale += rowEggsPerFemale;
+        countEggsPerFemale++;
     }
-
 }
 
-private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // Calculate result for the group
-    XRTableCell resultCell = xrTableCell_Result; // Your result cell
+private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
     
-    if (totalLiveFemale &gt; 0) {
-        decimal result = (totalCullsFemale / totalLiveFemale) * 100;
-        resultCell.Text = result.ToString("N0") ;
+    if (countFemaleMortPercent &gt; 0) {
+        decimal avgMortPercent = sumFemaleMortPercent / countFemaleMortPercent;
+        cell.Text = avgMortPercent.ToString("N2");
     } else {
-        resultCell.Text = "0";
+        cell.Text = "0.00";
     }
-
 }
 
-private void xrTableCell29_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell resultCell = xrTableCell_Result; // Your result cell
+private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
     
-    if (totalLiveFemale &gt; 0) {
-        decimal result = ((totalCullsFemale + totalFemaleMort) / totalLiveFemale) * 100;
-        resultCell.Text = result.ToString("N0") ;
+    // Get values from fields
+    decimal openMale = Convert.ToDecimal(GetCurrentColumnValue("OpenMale") ?? 0);
+    decimal totalMaleDepl = Convert.ToDecimal(GetCurrentColumnValue("TotalMaleDepl") ?? 0);
+    
+    // Calculate: (TotalMaleDepl × 100) / OpenMale
+    if (openMale &gt; 0) {
+        decimal result = (totalMaleDepl * 100) / openMale;
+        cell.Text = result.ToString("N2"); // 2 decimal places with %
+        // Or without %: result.ToString("F2")
+        // Or whole number: result.ToString("N0") + "%"
     } else {
-        resultCell.Text = "0";
+        cell.Text = "0.00"; // or "0"
     }
-
 }
 
-private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Calculate Male Mortality percentage
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (countMaleDeplPercent &gt; 0) {
+        decimal avgDeplPercent = sumMaleDeplPercent / countMaleDeplPercent;
+        cell.Text = avgDeplPercent.ToString("N2") ;
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
     
-    if (totalLiveMale &gt; 0) {
-        decimal result = (totalMaleMort / totalLiveMale) * 100;
-        cell.Text = result.ToString("N0");
+    // Get values from fields
+    decimal openFemale = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
+    decimal totalFemaleCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalFemaleCulls") ?? 0);
+    
+    // Calculate: (TotalFemaleCulls × 100) / OpenFemale
+    if (openFemale &gt; 0) {
+        decimal result = (totalFemaleCulls * 100) / openFemale;
+        cell.Text = result.ToString("N2"); // 2 decimal places with %
+        // Or without %: result.ToString("F2")
+        // Or whole number: result.ToString("N0") + "%"
     } else {
-        cell.Text = "0";
+        cell.Text = "0.00"; // or "0"
     }
 }
 
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Calculate Male Culls percentage
-    XRTableCell cell = sender as XRTableCell;
+private void xrTableCell72_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
     
-    if (totalLiveMale &gt; 0) {
-        decimal result = (totalCullsMale / totalLiveMale) * 100;
-        cell.Text = result.ToString("N0");
+    if (countFemaleCullsPercent &gt; 0) {
+        decimal avgCullsPercent = sumFemaleCullsPercent / countFemaleCullsPercent;
+        cell.Text = avgCullsPercent.ToString("N2");
     } else {
-        cell.Text = "0";
+        cell.Text = "0.00";
     }
 }
 
-private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      // Calculate Male Total Loss percentage (Mortality + Culls)
-    XRTableCell cell = sender as XRTableCell;
+private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
     
-    if (totalLiveMale &gt; 0) {
-        decimal result = ((totalCullsMale + totalMaleMort) / totalLiveMale) * 100;
-        cell.Text = result.ToString("N0");
+    // Get values from fields
+    decimal openMale = Convert.ToDecimal(GetCurrentColumnValue("OpenMale") ?? 0);
+    decimal totalMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalMaleCulls") ?? 0);
+    
+    // Calculate: (TotalMaleCulls × 100) / OpenMale
+    if (openMale &gt; 0) {
+        decimal result = (totalMaleCulls * 100) / openMale;
+        cell.Text = result.ToString("N2"); // 2 decimal places with %
+        // Or without %: result.ToString("F2")
+        // Or whole number: result.ToString("N0") + "%"
     } else {
-        cell.Text = "0";
+        cell.Text = "0.00"; // or "0"
+    }
+}
+
+private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (countMaleCullsPercent &gt; 0) {
+        decimal avgCullsPercent = sumMaleCullsPercent / countMaleCullsPercent;
+        cell.Text = avgCullsPercent.ToString("N2");
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell60_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    // Get values from fields
+    decimal openFemale = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
+    decimal totalHatEggs = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEggs") ?? 0);
+    
+    // Calculate: TotalHatEggs / OpenFemale
+    if (openFemale &gt; 0) {
+        decimal result = totalHatEggs / openFemale;
+        cell.Text = result.ToString("N2"); // 2 decimal places
+        // Or: result.ToString("N3") for 3 decimal places
+        // Or: result.ToString("N1") for 1 decimal place
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell70_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (countEggsPerFemale &gt; 0) {
+        decimal avgEggsPerFemale = sumEggsPerFemale / countEggsPerFemale;
+        cell.Text = avgEggsPerFemale.ToString("N2");
+    } else {
+        cell.Text = "0.00";
     }
 }
 </value>

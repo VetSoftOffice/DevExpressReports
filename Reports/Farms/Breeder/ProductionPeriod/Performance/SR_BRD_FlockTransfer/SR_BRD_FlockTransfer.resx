@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JST19Tb2xkQmlyZHNBbmRTbGF1Z2h0ZXIiPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iSXNFeHRlcm5hbCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iQmlyZHNfUFQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFd0X1BUIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmlyZHNfU0wiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFd0X1NMIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVtYXJrcyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="TotalHE.Expression" xml:space="preserve">
     <value>Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +
@@ -139,144 +139,172 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PEZpZWxkIE5hbWU9IlZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFjY2luZU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWFudWZhY3R1cmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvdXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRheUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEYXlUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1RvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmF0Y2hObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRG9zZXNVc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF0ZUdpdmVuIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0dWFsQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
-  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVJlYXJpbmdNb3J0aWxpdHkiPjxGaWVsZCBOYW1lPSJ0ckhvdXNlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfRGF5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VsbHNGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdWxsc01vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhUZW1wIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWluVGVtcCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heEh1bWlkaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWluSHVtaWRpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVmFjY2luYXRpb25fZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWVkaWNhdGlvbl9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2l0ZV9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSZWdpb25fZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JSRF9GbG9ja1RyYW5zZmVyIj48RmllbGQgTmFtZT0iUmVhcmluZ0Zhcm0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmFybSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlVHJhbnNCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRyYW5zQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5zRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhckZlbWFsZUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhckZlbWFsZUVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhckZlbWFsZVRyYW5zZmVyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhck1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhck1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJNYWxlRXJyb3IiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTWFsZVRyYW5zZmVyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheUZlbWFsZVRyYW5zZmVyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5TWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNYWxlVHJhbnNmZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlU2VsZWN0aW9uIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal totalLiveFemale = 0;
-decimal totalFemaleMort = 0;
-decimal totalCullsFemale = 0;
-decimal totalLiveMale = 0;
-decimal totalMaleMort = 0;
-decimal totalCullsMale = 0;
-private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // Calculate result for the group
-    XRTableCell resultCell = xrTableCell_Result; // Your result cell
-    
-    if (totalLiveFemale &gt; 0) {
-        decimal result = (totalFemaleMort / totalLiveFemale) * 100;
-        resultCell.Text = result.ToString("N0") ;
-    } else {
-        resultCell.Text = "0";
-    }
-    
-}
+    <value>decimal sumFemaleTransfer = 0;
+decimal sumFemaleMort = 0;
+decimal sumFemaleCulls = 0;
+decimal sumFemaleError = 0;
+decimal sumMaleMort = 0;
+decimal sumMaleSelection = 0;
+decimal sumMaleCulls = 0;
+decimal sumMaleError = 0;
+decimal sumMaleTransfer = 0;
+decimal totalLayFemaleTransfer = 0;
+decimal totalLayMaleMort = 0;
+decimal totalLayMaleTransfer = 0;
+decimal totalRearFemaleMort = 0;
+decimal totalLayFemaleMort = 0;
+decimal totalRearFemaleCulls = 0;
+decimal totalRearFemaleError = 0;
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // Accumulate values for each detail row for female
-    object liveFemaleObj = GetCurrentColumnValue("rf_LiveFemale");
-    object femaleMortObj = GetCurrentColumnValue("FemaleMort");
-    object CullsFemaleObj = GetCurrentColumnValue("CullsFemale");
-    if (liveFemaleObj != null &amp;&amp; liveFemaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(liveFemaleObj.ToString(), out value)) {
-            totalLiveFemale += value;
-        }
-    }
+    // Accumulate values
+    sumFemaleMort += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleMort") ?? 0);
+    sumFemaleCulls += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleCulls") ?? 0);
+    sumFemaleError += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleError") ?? 0);
+    sumFemaleTransfer += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleTransfer") ?? 0);
     
-    if (femaleMortObj != null &amp;&amp; femaleMortObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(femaleMortObj.ToString(), out value)) {
-            totalFemaleMort += value;
-        }
-    }
+    // Accumulate male values
+    sumMaleMort += Convert.ToDecimal(GetCurrentColumnValue("RearMaleMort") ?? 0);
+    sumMaleSelection += Convert.ToDecimal(GetCurrentColumnValue("MaleSelection") ?? 0);
+    sumMaleCulls += Convert.ToDecimal(GetCurrentColumnValue("RearMaleCulls") ?? 0);
+    sumMaleError += Convert.ToDecimal(GetCurrentColumnValue("RearMaleError") ?? 0);
+    sumMaleTransfer += Convert.ToDecimal(GetCurrentColumnValue("RearMaleTransfer") ?? 0);
     
-    if (CullsFemaleObj != null &amp;&amp; CullsFemaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(CullsFemaleObj.ToString(), out value)) {
-            totalCullsFemale += value;
-        }
-    }
+    // Accumulate sums from each detail row
+    totalLayFemaleTransfer += Convert.ToDecimal(GetCurrentColumnValue("LayFemaleTransfer") ?? 0);
+    totalLayMaleMort += Convert.ToDecimal(GetCurrentColumnValue("LayMaleMort") ?? 0);
+    totalLayMaleTransfer += Convert.ToDecimal(GetCurrentColumnValue("LayMaleTransfer") ?? 0);
+    
+        totalRearFemaleCulls += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleCulls") ?? 0);
+        totalRearFemaleError += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleError") ?? 0);
+}
 
-    // Accumulate values for each detail row for Male
-        // Accumulate values for each detail row for MALE
-    object liveMaleObj = GetCurrentColumnValue("rf_LiveMale");
-    object maleMortObj = GetCurrentColumnValue("MaleMort");
-    object cullsMaleObj = GetCurrentColumnValue("CullsMale");
+private void xrTableCell56_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
     
-    if (liveMaleObj != null &amp;&amp; liveMaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(liveMaleObj.ToString(), out value)) {
-            totalLiveMale += value;
-        }
-    }
+    // Get current FemaleTransBalance (should be total/group value)
+    decimal femaleTransBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleTransBalance") ?? 0);
     
-    if (maleMortObj != null &amp;&amp; maleMortObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(maleMortObj.ToString(), out value)) {
-            totalMaleMort += value;
-        }
-    }
+    // Calculate result
+    decimal totalDeductions = sumFemaleMort + sumFemaleCulls + sumFemaleError + sumFemaleTransfer;
+    decimal result = femaleTransBalance - totalDeductions;
     
-    if (cullsMaleObj != null &amp;&amp; cullsMaleObj != DBNull.Value) {
-        decimal value;
-        if (decimal.TryParse(cullsMaleObj.ToString(), out value)) {
-            totalCullsMale += value;
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Get current MaleTransBalance (should be total/group value)
+    decimal maleTransBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleTransBalance") ?? 0);
+    
+    // Calculate result
+    decimal totalDeductions = sumMaleMort + sumMaleSelection + sumMaleCulls + sumMaleError + sumMaleTransfer;
+    decimal result = maleTransBalance - totalDeductions;
+    
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Apply equation to the SUMS: Σ(LayFemaleTransfer) - Σ(LayMaleMort)
+    decimal result = totalLayFemaleTransfer - totalLayMaleMort;
+    
+    cell.Text = result.ToString("N0"); // Whole number format
         }
-    }
+
+private void xrTableCell60_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Apply equation to the SUMS: Σ(LayMaleTransfer) - Σ(LayMaleMort)
+    decimal result = totalLayMaleTransfer - totalLayMaleMort;
+    
+    cell.Text = result.ToString("N0"); // Whole number format
+    
+}
+
+private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Calculate total: Σ(RearFemaleMort) + Σ(LayFemaleMort)
+    decimal totalFemaleMort = totalRearFemaleMort + totalLayFemaleMort;
+    
+    cell.Text = totalFemaleMort.ToString("N0"); // Whole number format
+}
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Display the total sum
+    cell.Text = totalRearFemaleCulls.ToString("N0"); // Whole number format
+}
+
+private void xrTableCell64_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Display the total sum
+    cell.Text = totalRearFemaleError.ToString("N0"); // Whole number format
+}
+
+private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get FemaleTransBalance value
+    decimal femaleTransBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleTransBalance") ?? 0);
+     // Apply formula: FemaleTransBalance - (TotalErrorFemale + TotalFemaleCulls + TotalMortFemale)
+    decimal totalDeductions = sumFemaleError + sumFemaleCulls + sumFemaleMort ;
+    decimal result = femaleTransBalance - totalDeductions;
+    
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    decimal result = sumMaleMort + totalLayMaleMort;
+    
+    cell.Text = result.ToString("N0");
+
+    
+}
+
+private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+           XRTableCell cell = sender as XRTableCell;
+    
+    decimal result = sumMaleCulls ;
+    
+    cell.Text = result.ToString("N0");
+
+    
+}
+
+private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+               XRTableCell cell = sender as XRTableCell;
+    
+    decimal result = sumMaleError ;
+    
+    cell.Text = result.ToString("N0");
 
 }
 
-private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // Calculate result for the group
-    XRTableCell resultCell = xrTableCell_Result; // Your result cell
+private void xrTableCell70_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+
+    decimal MaleTransBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleTransBalance") ?? 0);
+    decimal result = MaleTransBalance - (sumMaleCulls  + sumMaleError + sumMaleMort  + totalLayMaleMort ) ;
     
-    if (totalLiveFemale &gt; 0) {
-        decimal result = (totalCullsFemale / totalLiveFemale) * 100;
-        resultCell.Text = result.ToString("N0") ;
-    } else {
-        resultCell.Text = "0";
-    }
+    cell.Text = result.ToString("N0");
 
 }
 
-private void xrTableCell29_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell resultCell = xrTableCell_Result; // Your result cell
-    
-    if (totalLiveFemale &gt; 0) {
-        decimal result = ((totalCullsFemale + totalFemaleMort) / totalLiveFemale) * 100;
-        resultCell.Text = result.ToString("N0") ;
-    } else {
-        resultCell.Text = "0";
-    }
-
-}
-
-private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Calculate Male Mortality percentage
-    XRTableCell cell = sender as XRTableCell;
-    
-    if (totalLiveMale &gt; 0) {
-        decimal result = (totalMaleMort / totalLiveMale) * 100;
-        cell.Text = result.ToString("N0");
-    } else {
-        cell.Text = "0";
-    }
-}
-
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Calculate Male Culls percentage
-    XRTableCell cell = sender as XRTableCell;
-    
-    if (totalLiveMale &gt; 0) {
-        decimal result = (totalCullsMale / totalLiveMale) * 100;
-        cell.Text = result.ToString("N0");
-    } else {
-        cell.Text = "0";
-    }
-}
-
-private void xrTableCell34_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      // Calculate Male Total Loss percentage (Mortality + Culls)
-    XRTableCell cell = sender as XRTableCell;
-    
-    if (totalLiveMale &gt; 0) {
-        decimal result = ((totalCullsMale + totalMaleMort) / totalLiveMale) * 100;
-        cell.Text = result.ToString("N0");
-    } else {
-        cell.Text = "0";
-    }
-}
 </value>
   </data>
 </root>
