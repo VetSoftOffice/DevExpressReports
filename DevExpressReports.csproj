@@ -74,6 +74,7 @@
     <PackageReference Include="DevExpress.Sparkline.Core" Version="25.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.4" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="4.13.0" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />

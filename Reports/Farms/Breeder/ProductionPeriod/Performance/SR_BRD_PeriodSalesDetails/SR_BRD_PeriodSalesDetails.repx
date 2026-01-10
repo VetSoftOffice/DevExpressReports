@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_PeriodSalesDetails" ScriptsSource="using System.ComponentModel;&#xD;&#xA;using DevExpress.XtraReports.Parameters;&#xD;&#xA;&#xD;&#xA;int groupCounter = 1;&#xD;&#xA;&#xD;&#xA;private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    GroupFooterBand groupFooter = (GroupFooterBand)sender;&#xD;&#xA;    XtraReport report = (XtraReport)groupFooter.Report;&#xD;&#xA;    &#xD;&#xA;    Parameter noOfGroupsPerPageParam = report.Parameters[&quot;NoOfGroupsPerPage&quot;];&#xD;&#xA;    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != &quot;&quot;)&#xD;&#xA;    {&#xD;&#xA;        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);&#xD;&#xA;        if (noOfGroupsPerPage &gt; 0)&#xD;&#xA;        {&#xD;&#xA;            if (groupCounter == noOfGroupsPerPage)&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.AfterBand;&#xD;&#xA;                groupCounter = 1;&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.None;&#xD;&#xA;                groupCounter += 1;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}" PageWidth="1169" PageHeight="1654" Version="24.2" DataMember="SR_BRD_PeriodSales" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_PeriodSalesDetails" ScriptsSource="using System.ComponentModel;&#xD;&#xA;using DevExpress.XtraReports.Parameters;&#xD;&#xA;&#xD;&#xA;int groupCounter = 1;&#xD;&#xA;&#xD;&#xA;private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    GroupFooterBand groupFooter = (GroupFooterBand)sender;&#xD;&#xA;    XtraReport report = (XtraReport)groupFooter.Report;&#xD;&#xA;    &#xD;&#xA;    Parameter noOfGroupsPerPageParam = report.Parameters[&quot;NoOfGroupsPerPage&quot;];&#xD;&#xA;    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != &quot;&quot;)&#xD;&#xA;    {&#xD;&#xA;        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);&#xD;&#xA;        if (noOfGroupsPerPage &gt; 0)&#xD;&#xA;        {&#xD;&#xA;            if (groupCounter == noOfGroupsPerPage)&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.AfterBand;&#xD;&#xA;                groupCounter = 1;&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.None;&#xD;&#xA;                groupCounter += 1;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="25.2" DataMember="SR_BRD_PeriodSales" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -124,7 +124,7 @@
                 <Item1 Ref="77" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="78" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="79" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="79" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="80" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="81" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -170,7 +170,7 @@
                   <Item2 Ref="105" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-81" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -213,7 +213,7 @@
                 <Item1 Ref="118" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="119" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="120" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="120" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="121" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="122" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -273,7 +273,7 @@
                   <Item4 Ref="151" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-124" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -345,7 +345,7 @@
                 <Item1 Ref="186" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="187" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="188" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="188" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="189" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="190" Visible="false" Name="Notes" />
@@ -433,7 +433,7 @@
                   <Item5 Ref="241" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-193" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -446,7 +446,7 @@
                 <Item1 Ref="244" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="245" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="246" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="246" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="247" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="248" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -492,7 +492,7 @@
                   <Item2 Ref="272" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-248" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -596,11 +596,11 @@
     <Item53 Ref="346" Component="#Ref-74" Culture="Default" Path="HeightF" Data="20" />
     <Item54 Ref="347" Component="#Ref-107" Culture="Default" Path="HeightF" Data="20" />
     <Item55 Ref="348" Component="#Ref-153" Culture="Default" Path="HeightF" Data="51.25" />
-    <Item56 Ref="349" Component="#Ref-274" Culture="Default" Path="LocationFloat" Data="9.006923E-05,0" />
-    <Item57 Ref="350" Component="#Ref-274" Culture="Default" Path="SizeF" Data="1021.589,20" />
+    <Item56 Ref="349" Component="#Ref-274" Culture="Default" Path="LocationFloat" Data="10.00009,0" />
+    <Item57 Ref="350" Component="#Ref-274" Culture="Default" Path="SizeF" Data="1011.589,20" />
     <Item58 Ref="351" Component="#Ref-276" Culture="Default" Path="Text" Data="" />
     <Item59 Ref="352" Component="#Ref-276" Culture="ar" Path="Text" Data="اجمالي" />
-    <Item60 Ref="353" Component="#Ref-276" Culture="Default" Path="Weight" Data="6.2288141862039961" />
+    <Item60 Ref="353" Component="#Ref-276" Culture="Default" Path="Weight" Data="6.1619398118319788" />
     <Item61 Ref="354" Component="#Ref-171" Culture="Default" Path="Text" Data="Date" />
     <Item62 Ref="355" Component="#Ref-171" Culture="ar" Path="Text" Data="تاريخ" />
     <Item63 Ref="356" Component="#Ref-171" Culture="Default" Path="Weight" Data="0.88942364148565045" />
@@ -610,11 +610,11 @@
     <Item67 Ref="360" Component="#Ref-175" Culture="Default" Path="Text" Data="Product" />
     <Item68 Ref="361" Component="#Ref-175" Culture="ar" Path="Text" Data="المنتج" />
     <Item69 Ref="362" Component="#Ref-175" Culture="Default" Path="Weight" Data="1.8336675858783873" />
-    <Item70 Ref="363" Component="#Ref-168" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
-    <Item71 Ref="364" Component="#Ref-168" Culture="Default" Path="SizeF" Data="1021.589,20" />
+    <Item70 Ref="363" Component="#Ref-168" Culture="Default" Path="LocationFloat" Data="10.00001,0" />
+    <Item71 Ref="364" Component="#Ref-168" Culture="Default" Path="SizeF" Data="1011.58905,20" />
     <Item72 Ref="365" Component="#Ref-170" Culture="Default" Path="Text" Data="#" />
     <Item73 Ref="366" Component="#Ref-170" Culture="ar" Path="Text" Data="مسلسل" />
-    <Item74 Ref="367" Component="#Ref-170" Culture="Default" Path="Weight" Data="0.80795920218394857" />
+    <Item74 Ref="367" Component="#Ref-170" Culture="Default" Path="Weight" Data="0.70552786833911407" />
     <Item75 Ref="368" Component="#Ref-27" Culture="Default" Path="HeightF" Data="20" />
     <Item76 Ref="369" Component="#Ref-275" Culture="Default" Path="Weight" Data="1" />
     <Item77 Ref="370" Component="#Ref-169" Culture="Default" Path="Weight" Data="1" />
@@ -642,8 +642,8 @@
     <Item99 Ref="392" Component="#Ref-160" Culture="Default" Path="SizeF" Data="144.358,20" />
     <Item100 Ref="393" Component="#Ref-160" Culture="Default" Path="Text" Data="Line Type: [?LineType]" />
     <Item101 Ref="394" Component="#Ref-160" Culture="ar" Path="Text" Data="خط انتاج: [?LineType]" />
-    <Item102 Ref="395" Component="#Ref-29" Culture="Default" Path="LocationFloat" Data="8.106232E-06,0" />
-    <Item103 Ref="396" Component="#Ref-29" Culture="Default" Path="SizeF" Data="1021.58917,20" />
+    <Item102 Ref="395" Component="#Ref-29" Culture="Default" Path="LocationFloat" Data="9.999954,0" />
+    <Item103 Ref="396" Component="#Ref-29" Culture="Default" Path="SizeF" Data="1011.58905,20" />
     <Item104 Ref="397" Component="#Ref-173" Culture="Default" Path="Text" Data="Flock" />
     <Item105 Ref="398" Component="#Ref-173" Culture="ar" Path="Text" Data="قطيع" />
     <Item106 Ref="399" Component="#Ref-173" Culture="Default" Path="Weight" Data="0.8787529161148655" />
@@ -658,7 +658,7 @@
     <Item115 Ref="408" Component="#Ref-176" Culture="Default" Path="Weight" Data="0.79425056856447518" />
     <Item116 Ref="409" Component="#Ref-31" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item117 Ref="410" Component="#Ref-31" Culture="Default" Path="Text" Data="Item" />
-    <Item118 Ref="411" Component="#Ref-31" Culture="Default" Path="Weight" Data="1.0046717403966858" />
+    <Item118 Ref="411" Component="#Ref-31" Culture="Default" Path="Weight" Data="0.87730185231946867" />
     <Item119 Ref="412" Component="#Ref-34" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item120 Ref="413" Component="#Ref-34" Culture="Default" Path="Text" Data="tdAccount_From" />
     <Item121 Ref="414" Component="#Ref-34" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
@@ -731,12 +731,12 @@
     <Item17 Ref="479" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-21" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="480" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJDcm9wTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJHcm91cEJyZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR3JvdXBCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX01hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
-    <Item2 Ref="481" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="sqlDataSource2" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJDcm9wTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJHcm91cEJyZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMiI+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR3JvdXBCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX01hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
-    <Item3 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="sqlDataSource3" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9QZXJpb2RTYWxlcyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9QZXJpb2RTYWxlcyIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJDcm9wTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJGbG9ja0NvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJQcm9kdWN0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9QZXJpb2RTYWxlcyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfUGVyaW9kU2FsZXMiIE5hbWU9IkZlbWFsZXMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJNYWxlcyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfUGVyaW9kU2FsZXMiIE5hbWU9IlF0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfUGVyaW9kU2FsZXMiIE5hbWU9IlRvdGFsUHJpY2UiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJSZWdEYXRlIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0JSRF9QZXJpb2RTYWxlcyI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxQcmljZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+    <Item1 Ref="480" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJDcm9wTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJHcm91cEJyZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR3JvdXBCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX01hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item2 Ref="481" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource2" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJDcm9wTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJHcm91cEJyZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCIgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIiBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMiI+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2hpY2tzUGxhY2VkIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR3JvdXBCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX01hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item3 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource3" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9QZXJpb2RTYWxlcyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9QZXJpb2RTYWxlcyIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJDcm9wTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJGbG9ja0NvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJQcm9kdWN0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9QZXJpb2RTYWxlcyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfUGVyaW9kU2FsZXMiIE5hbWU9IkZlbWFsZXMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJNYWxlcyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfUGVyaW9kU2FsZXMiIE5hbWU9IlF0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfUGVyaW9kU2FsZXMiIE5hbWU9IlRvdGFsUHJpY2UiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1BlcmlvZFNhbGVzIiBOYW1lPSJSZWdEYXRlIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0JSRF9QZXJpb2RTYWxlcyI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxQcmljZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
   </ComponentStorage>
   <ObjectStorage>
-    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
-    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="18" Content="System.Int32" Type="System.Type" />
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="18" Content="System.Int32" Type="System.Type" />
   </ObjectStorage>
 </XtraReportsLayoutSerializer>
