@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9GYXJtUGVyaW9kUHJvZCI+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJQcm9kUGVyYyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQXZnUHJvZCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSG91c2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGF0RWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5zVG9IYXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dTdG9yZVN0b2NrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc0N1bSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdFRyYW5zQ3VtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0JSRF9GYXJtUGVyaW9kUHJvZCI+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJQcm9kUGVyYyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQXZnUHJvZCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iSG91c2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGF0RWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5zVG9IYXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dTdG9yZVN0b2NrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc0N1bSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdFRyYW5zQ3VtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
@@ -125,16 +128,6 @@
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal TotalAvg  = 0;
-private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
-     XRCrossTabCell cell = sender as XRCrossTabCell;
-
-    if (string.IsNullOrWhiteSpace(cell.Text))
-    {
-        cell.Text = "0.00";
-    }
-   
-
-}
 
 private void crossTabTotalCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
      XRCrossTabCell cell = sender as XRCrossTabCell;

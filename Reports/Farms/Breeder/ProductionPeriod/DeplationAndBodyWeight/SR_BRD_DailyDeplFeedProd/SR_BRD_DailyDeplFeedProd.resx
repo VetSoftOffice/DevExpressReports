@@ -146,227 +146,327 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseURlcGxGZWVkUHJvZCI+PEZpZWxkIE5hbWU9IkRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJGYXJtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFByb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGRQcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxIYXRFZ2ciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWxUb0hhdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRlbFRvQ0VHUyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ1N0b2NrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal runningTotal = 0;
-decimal runningTotalCloseF = 0;
-decimal runningTotalOpenC = 0;
-decimal runningTotalCloseC = 0;
-decimal runningTotalTotalEggs = 0;
-
-private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
-
-    // Get report parameters - replace with your actual parameter names
-    // You need to access them from your report's Parameters collection
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
-
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
-
-    // Calculate OpenF
-    decimal openF = GetFieldValue("OpenFHTEggsF") + GetFieldValue("OpenHTEggsF");
-
-    // Calculate result
-    decimal result = 0;
-
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotal += openF;
-        result = runningTotal;
-    }
-    else
-    {
-        result = 0;
-    }
-
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
-}
-
-private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
-
-    // Get report parameters - replace with your actual parameter names
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
-
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
-
-    // Calculate CloseF for current record
-    decimal closeF = GetFieldValue("CloseFHTEggsF") + GetFieldValue("CloseHTEggsF");
-
-    // Calculate result
-    decimal result = 0;
-
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalCloseF += closeF;
-        result = runningTotalCloseF;
-    }
-    else
-    {
-        result = 0;
-    }
-
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
-}
-
-private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
-
-    // Get report parameters - replace with your actual parameter names
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
-
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
-
-    // Calculate OpenC for current record
-    decimal openC = GetFieldValue("OpenFHTEggsC") + GetFieldValue("OpenHTEggsC");
-
-    // Calculate result
-    decimal result = 0;
-
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalOpenC += openC;
-        result = runningTotalOpenC;
-    }
-    else
-    {
-        result = 0;
-    }
-
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
-}
-
-private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
-
-    // Get report parameters
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
-
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
-
-    // Calculate Close for current record
-    decimal closeC = GetFieldValue("CloseFHTEggsC") + GetFieldValue("CloseHTEggsC");
-
-    // Calculate result
-    decimal result = 0;
-
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalCloseC += closeC;
-        result = runningTotalCloseC;
-    }
-    else
-    {
-        result = 0;
-    }
-
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
-}
-
-private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
-
-    // Get report parameters
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
-
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
-
-    // Calculate TotalFHE
-    decimal totalFHE = GetFieldValue("CloseFHTEggsC") + GetFieldValue("CloseFHTEggsF");
+    <value>decimal sumWeightedProdValues = 0;  // Σ(TotalProd × FemaleBalance)
+decimal sumWeights = 0;            // Σ(FemaleBalance)
+decimal sumWeightedHatEggValues = 0;  // Σ(TotalHatEgg × TotalProd)
+decimal sumWeightsHatEgg = 0;              // Σ(TotalProd)
+decimal sumWeightedHatEggValuesReport = 0;  // Σ(TotalHatEgg × TotalProd)
+decimal sumWeightsHatEggReport = 0;              // Σ(TotalProd)
+decimal TotalFemaleBalanceGroup  = 0;
+decimal TotalMaleBalanceGroup = 0;
+decimal sumFeedPer1000 = 0;
+int countFeedPer1000 = 0;
+decimal sumMaleFeedPer1000 = 0;
+decimal sumStockToHatEggRatio = 0;
+int countStockToHatEggRatio = 0;
+decimal sumFemaleDeplPercent = 0;
+int countFemaleDeplPercent = 0;
+decimal sumMaleDeplPercent = 0;
+int countMaleDeplPercent = 0;
+private void xrTableCell101_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
     
-    // Calculate TotalHE
-    decimal totalHE = GetFieldValue("CloseHTEggsC") + GetFieldValue("CloseHTEggsF");
+    // Get values from fields
+    decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+    decimal totalProd = Convert.ToDecimal(GetCurrentColumnValue("TotalProd") ?? 0);
     
-    // Calculate TotalEggs
-    decimal totalEggs = totalFHE + totalHE;
-
-    // Calculate result
-    decimal result = 0;
-
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalTotalEggs += totalEggs;
-        result = runningTotalTotalEggs;
+    // Calculate: (TotalProd / FemaleBalance) * 100
+    if (femaleBalance &gt; 0 &amp;&amp; totalProd &gt; 0) {
+        decimal result = (totalProd / femaleBalance) * 100;
+        cell.Text = result.ToString("N0"); // 1 decimal place with %
+        // Or: result.ToString("F1") without %
+    } else {
+        cell.Text = "0"; // or "0"
     }
-    else
-    {
-        result = 0;
-    }
+}
 
-    // Assign result to cell
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Get values from fields
+    decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+    decimal totalProd = Convert.ToDecimal(GetCurrentColumnValue("TotalProd") ?? 0);
+    
+    // Only accumulate if both values are positive
+    if (femaleBalance &gt; 0 &amp;&amp; totalProd &gt; 0) {
+        // For weighted average: (TotalProd × FemaleBalance)
+        // This gives more weight to rows with more birds
+        sumWeightedProdValues += (totalProd * femaleBalance);
+        sumWeights += femaleBalance;
+    }
+    
+        // Get values from fields
+    decimal totalProd = Convert.ToDecimal(GetCurrentColumnValue("TotalProd") ?? 0);
+    decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
+    
+    // Only accumulate if both values are positive
+    if (totalProd &gt; 0 &amp;&amp; totalHatEgg &gt; 0) {
+        // Weighted value: TotalHatEgg × TotalProd
+        sumWeightedHatEggValues += (totalHatEgg * totalProd);
+        sumWeights += totalProd;
+    }
+    
+     
+    // Get values from fields
+    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0)
+    TotalFemaleBalanceGroup += femaleBalance ;
+    TotalMaleBalanceGroup += maleBalance ;
+
+    decimal femaleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("FemaleFeedCons") ?? 0);
+    
+    if (femaleBalance &gt; 0) {
+        decimal feedPer1000 = (femaleFeedCons * 1000) / femaleBalance;
+        sumFeedPer1000 += feedPer1000;
+        countFeedPer1000++;
+    }
+    decimal maleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("MaleFeedCons") ?? 0);
+    
+    if (maleBalance &gt; 0) {
+        decimal feedPer1000 = (maleFeedCons * 1000) / maleBalance;
+        sumMaleFeedPer1000 += feedPer1000;
+        countMaleFeedPer1000++;
+    }
+    
+    decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
+    decimal eggStock = Convert.ToDecimal(GetCurrentColumnValue("EggStock") ?? 0);
+    
+    if (totalHatEgg &gt; 0) {
+        decimal ratio = eggStock / totalHatEgg;
+        sumStockToHatEggRatio += ratio;
+        countStockToHatEggRatio++;
+    }
+    
+     decimal femaleDepl = Convert.ToDecimal(GetCurrentColumnValue("FemaleDepl") ?? 0);
+    
+    if (femaleBalance &gt; 0) {
+        decimal percent = (femaleDepl * 100) / femaleBalance;
+        sumFemaleDeplPercent += percent;
+        countFemaleDeplPercent++;
+    }
+    
+    decimal maleDepl = Convert.ToDecimal(GetCurrentColumnValue("MaleDepl") ?? 0);
+    
+    if (maleBalance &gt; 0) {
+        decimal percent = (maleDepl * 100) / maleBalance;
+        sumMaleDeplPercent += percent;
+        countMaleDeplPercent++;
+    }
+}
+
+private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Calculate weighted average: Σ(TotalProd×FemaleBalance) / Σ(FemaleBalance) × 100
+    if (sumWeights &gt; 0) {
+        decimal weightedAvg = (sumWeightedProdValues / sumWeights) * 100;
+        cell.Text = weightedAvg.ToString("N2") ; // 1 decimal place
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell104_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    // Get values from fields
+    decimal totalProd = Convert.ToDecimal(GetCurrentColumnValue("TotalProd") ?? 0);
+    decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
+    
+    // Calculate: (TotalHatEgg × 100) / TotalProd
+    if (totalProd &gt; 0 &amp;&amp; totalHatEgg &gt; 0) {
+        decimal result = (totalHatEgg * 100) / totalProd;
+        cell.Text = result.ToString("N2") ; // 1 decimal place with %
+        // Or without %: result.ToString("F1")
+    } else {
+        cell.Text = "0.00"; // or "0"
+    }
+}
+
+private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
+    
+    // Calculate weighted average: Σ(TotalHatEgg×TotalProd) / Σ(TotalProd) × 100
+    if (sumWeights &gt; 0) {
+        decimal weightedAvg = (sumWeightedHatEggValues / sumWeights) * 100;
+        cell.Text = weightedAvg.ToString("N2") ; // 1 decimal place
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {  
+     XRTableCell cell = sender as XRTableCell;
+     decimal totalProd = Convert.ToDecimal(GetCurrentColumnValue("TotalProd") ?? 0);
+    decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
+    
+    // Only accumulate if both values are positive
+    if (totalProd &gt; 0 &amp;&amp; totalHatEgg &gt; 0) {
+        // Weighted value: TotalHatEgg × TotalProd
+        sumWeightedHatEggValuesReport += (totalHatEgg * totalProd);
+        sumWeightsHatEggReport += totalProd;
+    }
+     // Calculate weighted average: Σ(TotalHatEgg×TotalProd) / Σ(TotalProd) × 100
+    if (sumWeightsHatEggReport &gt; 0) {
+        decimal weightedAvg = (sumWeightedHatEggValuesReport / sumWeightsHatEggReport ) * 100;
+        cell.Text = weightedAvg.ToString("N2"); // 1 decimal place
+    } else {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell114_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    // Get values from fields
+    decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
+    
+    // Calculate: (MaleBalance × 100) / FemaleBalance
+    if (femaleBalance &gt; 0) {
+        decimal result = (maleBalance * 100) / femaleBalance;
+        cell.Text = result.ToString("N2") ; // 1 decimal place with %
+        // Or without %: result.ToString("F1")
+    } else {
+        cell.Text = "0.00"; // or "0"
+    }
+}
+
+private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          XRTableCell cell = sender as XRTableCell;
+ // Calculate: (MaleBalance × 100) / FemaleBalance
+    if (TotalFemaleBalanceGroup &gt; 0) {
+        decimal result = (TotalMaleBalanceGroup* 100) / TotalFemaleBalanceGroup ;
+        cell.Text = result.ToString("N2") ; // 1 decimal place with %
+        // Or without %: result.ToString("F1")
+    } else {
+        cell.Text = "0.00"; // or "0"
+    }
+
+    
+}
+
+private void xrTableCell118_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+decimal femaleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("FemaleFeedCons") ?? 0);
+    
+if (femaleBalance &gt; 0) {
+    decimal feedPer1000 = (femaleFeedCons * 1000) / femaleBalance;
+    cell.Text = feedPer1000.ToString("M2");
+} else {
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    if (countFeedPer1000 &gt; 0) {
+        decimal avgFeedPer1000 = sumFeedPer1000 / countFeedPer1000;
+        cell.Text = avgFeedPer1000.ToString("N2");
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell119_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
+decimal maleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("MaleFeedCons") ?? 0);
+    
+if (maleBalance &gt; 0) {
+    decimal feedPer1000 = (maleFeedCons * 1000) / maleBalance;
+    cell.Text = feedPer1000.ToString("N2");
+} else {
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell66_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (countMaleFeedPer1000 &gt; 0) {
+        decimal avgFeedPer1000 = sumMaleFeedPer1000 / countMaleFeedPer1000;
+        cell.Text = avgFeedPer1000.ToString("N2");
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell120_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
+decimal eggStock = Convert.ToDecimal(GetCurrentColumnValue("EggStock") ?? 0);
+    
+if (totalHatEgg &gt; 0) {
+    decimal result = eggStock / totalHatEgg;
+    cell.Text = result.ToString("N2");
+} else {
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    if (countStockToHatEggRatio &gt; 0) {
+        decimal avgRatio = sumStockToHatEggRatio / countStockToHatEggRatio;
+        cell.Text = avgRatio.ToString("N2");
+    } else {
+        cell.Text = "0.00";
+    }
+    }
+
+private void xrTableCell121_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+    decimal femaleDepl = Convert.ToDecimal(GetCurrentColumnValue("FemaleDepl") ?? 0);
+    
+    if (femaleBalance &gt; 0) {
+        decimal percent = (femaleDepl * 100) / femaleBalance;
+        cell.Text = percent.ToString("N2") ;
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (countFemaleDeplPercent &gt; 0) {
+        decimal avgPercent = sumFemaleDeplPercent / countFemaleDeplPercent;
+        cell.Text = avgPercent.ToString("N2") ;
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell122_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
+    decimal maleDepl = Convert.ToDecimal(GetCurrentColumnValue("MaleDepl") ?? 0);
+    
+    if (maleBalance &gt; 0) {
+        decimal percent = (maleDepl * 100) / maleBalance;
+        cell.Text = percent.ToString("N2");
+    } else {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    if (countMaleDeplPercent &gt; 0) {
+        decimal avgPercent = sumMaleDeplPercent / countMaleDeplPercent;
+        cell.Text = avgPercent.ToString("N2");
+    } else {
+        cell.Text = "0.00";
+    }
 }
 </value>
   </data>
