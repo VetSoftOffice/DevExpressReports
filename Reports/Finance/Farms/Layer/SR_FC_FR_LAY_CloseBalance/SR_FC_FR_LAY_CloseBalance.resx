@@ -149,6 +149,26 @@ private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
             }
         }
     }
-}</value>
+}
+private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    
+    XRLabel label = sender as XRLabel;
+    
+    if (Parameters["DateFrom"].Value != null) {
+        DateTime dt = Convert.ToDateTime(Parameters["DateFrom"].Value);
+        
+        // Fixed the string comparison issue
+        if (Parameters["IsRTL"].Value?.ToString() == "1") {
+            label.Text = dt.ToString("d/M/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+        } else {
+            label.Text = dt.ToString("yyyy/M/d", System.Globalization.CultureInfo.InvariantCulture);
+        }
+    } else {
+        label.Text = "";
+    }    
+    
+    
+ }
+    </value>
   </data>
 </root>
