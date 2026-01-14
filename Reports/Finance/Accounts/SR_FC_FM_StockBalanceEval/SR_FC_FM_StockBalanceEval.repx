@@ -831,7 +831,7 @@
     <Item69 Ref="454" Component="#Ref-18" Culture="Default" Path="Description" Data="WhichReport" />
     <Item70 Ref="455" Component="#Ref-237" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
     <Item71 Ref="456" Component="#Ref-237" Culture="Default" Path="SizeF" Data="144.358,20" />
-    <Item72 Ref="457" Component="#Ref-237" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />
+    <Item72 Ref="457" Component="#Ref-237" Culture="Default" Path="Text" Data="Date: [?DateFrom!dd-MM-yyyy]" />
     <Item73 Ref="458" Component="#Ref-237" Culture="ar" Path="Text" Data="التاريخ :  [?DateFrom!dd-MM-yyyy]" />
     <Item74 Ref="459" Component="#Ref-235" Culture="Default" Path="LocationFloat" Data="144.358,0" />
     <Item75 Ref="460" Component="#Ref-235" Culture="Default" Path="SizeF" Data="144.358,20" />
