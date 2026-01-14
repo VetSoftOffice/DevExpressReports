@@ -615,14 +615,14 @@
     <Item64 Ref="359" Component="#Ref-119" Culture="Default" Path="HeightF" Data="20" />
     <Item65 Ref="360" Component="#Ref-77" Culture="Default" Path="HeightF" Data="20" />
     <Item66 Ref="361" Component="#Ref-110" Culture="Default" Path="HeightF" Data="20" />
-    <Item67 Ref="362" Component="#Ref-156" Culture="Default" Path="HeightF" Data="51.25" />
+    <Item67 Ref="362" Component="#Ref-156" Culture="Default" Path="HeightF" Data="63.12504" />
     <Item68 Ref="363" Component="#Ref-48" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item69 Ref="364" Component="#Ref-48" Culture="Default" Path="Weight" Data="0.69485570949747566" />
     <Item70 Ref="365" Component="#Ref-52" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item71 Ref="366" Component="#Ref-52" Culture="Default" Path="Text" Data="tdDebit" />
     <Item72 Ref="367" Component="#Ref-52" Culture="Default" Path="Weight" Data="3.567331455822834" />
     <Item73 Ref="368" Component="#Ref-37" Culture="Default" Path="LocationFloat" Data="9.999962,0" />
-    <Item74 Ref="369" Component="#Ref-37" Culture="Default" Path="SizeF" Data="1011.58905,20" />
+    <Item74 Ref="369" Component="#Ref-37" Culture="Default" Path="SizeF" Data="1011.589,20" />
     <Item75 Ref="370" Component="#Ref-39" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item76 Ref="371" Component="#Ref-39" Culture="Default" Path="Text" Data="Item" />
     <Item77 Ref="372" Component="#Ref-39" Culture="Default" Path="Weight" Data="0.94838684892885372" />
@@ -637,8 +637,8 @@
     <Item86 Ref="381" Component="#Ref-177" Culture="Default" Path="Text" Data="Product" />
     <Item87 Ref="382" Component="#Ref-177" Culture="ar" Path="Text" Data="المنتج" />
     <Item88 Ref="383" Component="#Ref-177" Culture="Default" Path="Weight" Data="2.8688583557250116" />
-    <Item89 Ref="384" Component="#Ref-171" Culture="Default" Path="LocationFloat" Data="10.0000019,0" />
-    <Item90 Ref="385" Component="#Ref-171" Culture="Default" Path="SizeF" Data="1011.58905,20" />
+    <Item89 Ref="384" Component="#Ref-171" Culture="Default" Path="LocationFloat" Data="10,0" />
+    <Item90 Ref="385" Component="#Ref-171" Culture="Default" Path="SizeF" Data="1011.589,20" />
     <Item91 Ref="386" Component="#Ref-173" Culture="Default" Path="Text" Data="#" />
     <Item92 Ref="387" Component="#Ref-173" Culture="ar" Path="Text" Data="مسلسل" />
     <Item93 Ref="388" Component="#Ref-173" Culture="Default" Path="Weight" Data="0.76269374752407382" />
