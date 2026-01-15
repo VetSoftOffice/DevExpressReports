@@ -301,7 +301,7 @@
             this.lblVetSoftData.LockedInUserDesigner = true;
             this.lblVetSoftData.Multiline = true;
             this.lblVetSoftData.Name = "lblVetSoftData";
-            this.lblVetSoftData.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblVetSoftData.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // BottomMargin
             // 
@@ -316,7 +316,7 @@
             this.pageInfoCurrentTime.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.pageInfoCurrentTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pageInfoCurrentTime.Name = "pageInfoCurrentTime";
-            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.pageInfoCurrentTime.StylePriority.UseBorders = false;
             this.pageInfoCurrentTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -405,7 +405,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Vaccine]")});
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
-            this.xrTableCell31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableCell31.StylePriority.UseBorders = false;
             this.xrTableCell31.StylePriority.UseFont = false;
             this.xrTableCell31.StylePriority.UsePadding = false;
@@ -422,7 +422,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[VaccineName]")});
             this.xrTableCell36.Multiline = true;
             this.xrTableCell36.Name = "xrTableCell36";
-            this.xrTableCell36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableCell36.StylePriority.UseBorders = false;
             this.xrTableCell36.StylePriority.UseFont = false;
             this.xrTableCell36.StylePriority.UsePadding = false;
@@ -438,7 +438,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Route]")});
             this.xrTableCell44.Multiline = true;
             this.xrTableCell44.Name = "xrTableCell44";
-            this.xrTableCell44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableCell44.StylePriority.UseBorders = false;
             this.xrTableCell44.StylePriority.UseFont = false;
             this.xrTableCell44.StylePriority.UsePadding = false;
@@ -454,7 +454,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Manufacturer]")});
             this.xrTableCell45.Multiline = true;
             this.xrTableCell45.Name = "xrTableCell45";
-            this.xrTableCell45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTableCell45.StylePriority.UseBorders = false;
             this.xrTableCell45.StylePriority.UseFont = false;
             this.xrTableCell45.StylePriority.UsePadding = false;
@@ -587,7 +587,7 @@
             // xrTable2
             // 
             this.xrTable2.Name = "xrTable2";
-            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
             // 
@@ -837,7 +837,7 @@
             // xrTable1
             // 
             this.xrTable1.Name = "xrTable1";
-            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
             // 
@@ -869,7 +869,7 @@
             // xrTable12
             // 
             this.xrTable12.Name = "xrTable12";
-            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow13});
             // 
@@ -1063,7 +1063,7 @@
             this.Title.BorderWidth = 1F;
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.Title.Name = "Title";
-            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             // 
             // DetailCaption1
             // 
@@ -1073,7 +1073,7 @@
             this.DetailCaption1.BorderWidth = 2F;
             this.DetailCaption1.ForeColor = System.Drawing.Color.White;
             this.DetailCaption1.Name = "DetailCaption1";
-            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailCaption1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData1
@@ -1083,7 +1083,7 @@
             this.DetailData1.BorderWidth = 2F;
             this.DetailData1.ForeColor = System.Drawing.Color.Black;
             this.DetailData1.Name = "DetailData1";
-            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailData1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData3_Odd
@@ -1094,14 +1094,14 @@
             this.DetailData3_Odd.BorderWidth = 1F;
             this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
             this.DetailData3_Odd.Name = "DetailData3_Odd";
-            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailData3_Odd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // PageInfo
             // 
             this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.PageInfo.Name = "PageInfo";
-            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             // 
             // Result
             // 
@@ -1580,11 +1580,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "Farm: [?FarmCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "مزرعة: [?FarmCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(304.5833F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(168.3163F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Breed: [?Breed]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "السلالة: [?Breed]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(304.5833F, 20.00001F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(168.3163F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Crop: [?CropNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "محصول: [?CropNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(84.37498F, 0F)),
@@ -1665,8 +1665,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow13, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow2, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow3, "Default", "Weight", 1D)});
-            this.PageHeight = 827;
-            this.PageWidth = 1169;
+            this.PageHeightF = 826.7717F;
+            this.PageWidthF = 1169.291F;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsRTL, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsCustomReportHeader, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -1719,7 +1719,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.2";
+            this.Version = "25.2";
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();

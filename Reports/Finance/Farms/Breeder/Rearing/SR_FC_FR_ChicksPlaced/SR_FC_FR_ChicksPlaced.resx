@@ -123,35 +123,4 @@
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ikdyb3VwQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
-  <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using System.ComponentModel;
-using DevExpress.XtraReports.Parameters;
-
-int groupCounter = 1;
-
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
-{
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
-    
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-}</value>
-  </data>
 </root>
