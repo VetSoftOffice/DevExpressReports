@@ -120,4 +120,57 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSI+PEZpZWxkIE5hbWU9IlJvd1NlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSb3dTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUm93RGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrLabel7_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRLabel label = sender as XRLabel;
+
+if (Parameters["DateFrom"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateFrom"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"من: {dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"From: {dt:dd/MM/yyyy}";
+}
+
+}
+
+private void xrLabel8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRLabel label = sender as XRLabel;
+
+if (Parameters["DateTo"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateTo"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"الي: {dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"To: {dt:d/M/yyyy}";
+}
+
+}
+</value>
+  </data>
 </root>

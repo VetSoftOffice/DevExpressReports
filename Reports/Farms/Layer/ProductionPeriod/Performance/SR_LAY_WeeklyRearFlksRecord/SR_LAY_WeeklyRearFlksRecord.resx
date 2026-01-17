@@ -120,4 +120,32 @@
   <data name="dslayer.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNsYXllciI+PFZpZXcgTmFtZT0iU1JfTEFZX1dlZWtseVJlYXJGbGtzUmVjb3JkIj48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaXJkc0JhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0MSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vcnQyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydDMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0NCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vcnQ1IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydDYiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0NyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRDb25zVG9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZENvbnNCaXJkRGF5R21zIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVlZENvbnNCaXJkR21zU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQm9yZFdlaWdodCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1pbkJvcmRXZWlnaHRTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhCb2R5V2VpZ2h0U3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGlnaHRIb3VycyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlcyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+              XRLabel label = sender as XRLabel;
+
+if (Parameters["DateTo"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateTo"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"الي: {dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"To: {dt:d/M/yyyy}";
+}
+
+}
+</value>
+  </data>
 </root>

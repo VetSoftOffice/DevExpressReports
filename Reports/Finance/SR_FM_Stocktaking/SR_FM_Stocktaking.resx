@@ -149,6 +149,56 @@ private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
             }
         }
     }
-}</value>
+}
+private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          XRLabel label = sender as XRLabel;
+
+if (Parameters["DateFrom"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateFrom"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"من: {dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"From: {dt:dd/MM/yyyy}";
+}
+
+}
+
+private void xrLabel1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          XRLabel label = sender as XRLabel;
+
+if (Parameters["DateTo"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateTo"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"الي: {dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"To: {dt:d/M/yyyy}";
+}
+
+}
+</value>
   </data>
 </root>
