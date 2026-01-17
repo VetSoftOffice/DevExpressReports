@@ -99,6 +99,7 @@
     <Folder Include="Reports\FeedMill\Ingredient\GoodReceivedNote\NewFolder\" />
     <Folder Include="Reports\FeedMill\Ingredient\Summary\" />
     <Folder Include="Reports\Finance\DetailedCosting\" />
+    <Folder Include="Reports\Finance\Farms\Breeder\Summary\NewFolder\" />
     <Folder Include="Reports\Finance\Farms\SR_FC_FlkDirectCostBroilerSubPlace\" />
     <Folder Include="Reports\Finance\FeedMill\" />
     <Folder Include="Reports\Finance\FinalReports\NewFolder\" />
