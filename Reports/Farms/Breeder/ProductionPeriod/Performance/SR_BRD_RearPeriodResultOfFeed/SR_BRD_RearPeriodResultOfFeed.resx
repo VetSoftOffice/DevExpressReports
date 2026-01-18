@@ -289,18 +289,23 @@ private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    
      XRTableCell cell = sender as XRTableCell;
-    cell.Text = sumWeightsMale ;
+     if(sumWeightsMale &gt; 0){
+               decimal weightAvgMale = sumWeightedValuesMale / sumWeightsMale;
+               cell.Text = weightAvgMale.ToString("N0") ;
+         }
 }
 
 private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
       XRTableCell cell = sender as XRTableCell;
-    
-    decimal totalWeights = sumWeights + sumWeightsMale;
     decimal totalWeightedValues = sumWeightedValues + sumWeightedValuesMale;
-    
-    cell.Text = totalWeights &gt; 0 ? 
-        (totalWeightedValues / totalWeights).ToString("N0"): "0";
+    decimal totalWeights = sumWeights + sumWeightsMale;
+    if(totalWeights  &gt; 0){
+           decimal totalWeightAvg = totalWeightedValues / totalWeights;
+           cell.Text = totalWeightAvg.ToString("N0") ;
+        }
+   
 }
 
 private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -340,6 +345,7 @@ private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.Canc
         cell.Text = "0";
     }
 }
+
 </value>
   </data>
 </root>
