@@ -142,4 +142,107 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdWxsc0ZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InRGckhvdXNlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyc19GQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfTUFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX0ZlbWFsZUNWIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfTWFsZUNWIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfVW5pZm9ybWl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX01hbGVVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG91c2VDb2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZUZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0xpdmVNYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1NYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVBsYWNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZU1pc3NleCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNaXNzZXgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVSZWoiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUmVqIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal sumRfLiveFemale = 0;
+decimal sumFemaleFeed = 0;
+decimal sumRfLiveMale = 0;
+decimal sumMaleFeed = 0;
+decimal sumFemaleMort = 0;
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    // Get values from fields
+    decimal rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale") ?? 0);
+    decimal femaleFeed = Convert.ToDecimal(GetCurrentColumnValue("FemaleFeed") ?? 0);
+    
+    // Calculate: (FemaleFeed / 7 / rf_LiveFemale) * 1000
+    if (rfLiveFemale &gt; 0) {
+        decimal result = (femaleFeed / 7 / rfLiveFemale) * 1000;
+        cell.Text = result.ToString("N1") ; // 1 decimal place with unit
+    } else {
+        cell.Text = "0.0";
+    }
+}
+
+private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    // Get values from fields
+    decimal rfLiveMale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveMale") ?? 0);
+    decimal maleFeed = Convert.ToDecimal(GetCurrentColumnValue("MaleFeed") ?? 0);
+    
+    // Calculate: (MaleFeed / 7 / rf_LiveMale) * 1000
+    if (rfLiveMale &gt; 0) {
+        decimal result = (maleFeed / 7 / rfLiveMale) * 1000;
+        cell.Text = result.ToString("N1") ; // 1 decimal place with unit
+    } else {
+        cell.Text = "0.0";
+    }
+}
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+decimal rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale") ?? 0);
+    decimal femaleFeed = Convert.ToDecimal(GetCurrentColumnValue("FemaleFeed") ?? 0);
+    
+    sumRfLiveFemale += rfLiveFemale;
+    sumFemaleFeed += femaleFeed;
+    
+     // Accumulate male sums from each detail row
+    sumRfLiveMale += Convert.ToDecimal(GetCurrentColumnValue("rf_LiveMale") ?? 0);
+    sumMaleFeed += Convert.ToDecimal(GetCurrentColumnValue("MaleFeed") ?? 0);
+    
+     // Accumulate FemaleMort from each row
+    sumFemaleMort += Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
+    }
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    decimal days = 7;
+        
+    if (sumRfLiveFemale &gt; 0 &amp;&amp; days &gt; 0) {
+        decimal result = (sumFemaleFeed / days / sumRfLiveFemale) * 1000;
+        cell.Text = result.ToString("N1");
+    } else {
+        cell.Text = "0.0";
+    }
+}
+
+private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Get days from parameter or default to 7
+    decimal days = 7;
+        
+    // Apply equation to the ACCUMULATED SUMS: (TotalMaleFeed / days / TotalRfLiveMale) * 1000
+    if (sumRfLiveMale &gt; 0 &amp;&amp; days &gt; 0) {
+        decimal result = (sumMaleFeed / days / sumRfLiveMale) * 1000;
+        cell.Text = result.ToString("N1");
+    } else {
+        cell.Text = "0.0";
+    }
+}
+
+private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Get parameters
+    decimal femaleReceived = Convert.ToDecimal(Parameters["FemaleReceived"]?.Value ?? 0);
+    decimal femaleDOA = Convert.ToDecimal(Parameters["FemaleDOA"]?.Value ?? 0);
+    
+    // Calculate BirdsLeftFemale
+    decimal birdsLeftFemale = femaleReceived - femaleDOA;
+    
+    // Calculate percentage using accumulated sum
+    decimal denominator = birdsLeftFemale + femaleDOA;
+    
+    if (denominator &gt; 0) {
+        decimal result = (sumFemaleMort / denominator) * 100;
+        cell.Text = result.ToString("N2") ;
+    } else {
+        cell.Text = "0.00";
+    }
+}
+</value>
+  </data>
 </root>
