@@ -145,6 +145,9 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JSRF9Qcm9kSGF0Y2giPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEZyRmxvY2tBZ2VfVFQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dzUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NQZXJjU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1BlckZlbWFsZVBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kV2VlS05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1BlckZlbWFsZVBlcmNTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaFBlcmNTdGQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="sqlDataSource7.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTciPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseUZhcm1EYXRhIj48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0FnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0RmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0TWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1Nb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZGZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1GZWVkQ29ucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NQcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGluZVR5cGUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
 private void xrTableCell35_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -159,6 +162,35 @@ private void xrTableCell35_BeforePrint_1(object sender, System.ComponentModel.Ca
     } else {
         cell.Text = "0.00";
     }
+}
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+decimal eggsProd = 0;
+decimal fBalance = 0;
+decimal result = 0;
+
+// --- Read values safely ---
+if (GetCurrentColumnValue("EggsProd") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("EggsProd").ToString()))
+{
+    eggsProd = Convert.ToDecimal(GetCurrentColumnValue("EggsProd"));
+}
+
+if (GetCurrentColumnValue("FBalance") != null &amp;&amp;
+    !string.IsNullOrEmpty(GetCurrentColumnValue("FBalance").ToString()))
+{
+    fBalance = Convert.ToDecimal(GetCurrentColumnValue("FBalance"));
+}
+
+// --- Equation ---
+if (fBalance != 0)
+    result = (eggsProd / fBalance) * 100m;
+
+// --- Assign result ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");
+
+
 }
 </value>
   </data>

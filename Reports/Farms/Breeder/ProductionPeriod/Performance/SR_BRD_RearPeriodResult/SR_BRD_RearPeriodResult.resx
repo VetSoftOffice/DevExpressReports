@@ -338,7 +338,7 @@ private void xrTableCell86_BeforePrint(object sender, System.ComponentModel.Canc
      decimal rowRatio = 0;
     if (wcLiveFemale &gt; 0) 
         rowRatio = (wcLiveMale * 100) / wcLiveFemale;
-    cell.Text = rowRatio.ToString("N0");
+    cell.Text = rowRatio.ToString("N1");
 
    }
 
@@ -358,6 +358,7 @@ private void xrTableCell68_BeforePrint(object sender, System.ComponentModel.Canc
         cell.Text = "0.00"; // or "0"
     } 
 }
+
 </value>
   </data>
 </root>
