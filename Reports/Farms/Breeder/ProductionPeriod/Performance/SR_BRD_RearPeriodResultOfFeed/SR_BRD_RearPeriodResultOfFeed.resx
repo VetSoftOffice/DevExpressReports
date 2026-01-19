@@ -153,7 +153,8 @@ decimal dailyWeightedFemale = 0;
 decimal dailyWeightsFemale = 0;
 decimal dailyWeightedMale = 0;
 decimal dailyWeightsMale = 0;
-
+decimal sumWeightedFeedBirdsWeek = 0;
+decimal sumLiveBirds = 0;
 private void xrTableCell56_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      XRTableCell cell = sender as XRTableCell;
     
@@ -264,6 +265,13 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     dailyWeightedMale += (feedDayM * liveMale);
     dailyWeightsMale += liveMale;
     
+    decimal feedBirdsWeek = 0;
+    object feedObj = GetCurrentColumnValue("FeedBirdsWeek");
+    if (feedObj != null &amp;&amp; feedObj != DBNull.Value)
+    decimal.TryParse(feedObj.ToString(), out feedBirdsWeek);
+ 
+    sumLiveBirds = liveFemaleOpen + liveMaleOpen; 
+    sumWeightedFeedBirdsWeek += feedBirdsWeek * sumLiveBirds ;
 }
 
 private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -298,15 +306,18 @@ private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell cell = sender as XRTableCell;
-    decimal totalWeightedValues = sumWeightedValues + sumWeightedValuesMale;
-    decimal totalWeights = sumWeights + sumWeightsMale;
-    if(totalWeights  &gt; 0){
-           decimal totalWeightAvg = totalWeightedValues / totalWeights;
-           cell.Text = totalWeightAvg.ToString("N0") ;
-        }
-   
-}
+   XRTableCell cell = sender as XRTableCell;
+    decimal weightedAvgFeedBirdsWeek = 0;
+    decimal totalLiveBirds = sumWeights  + sumWeightsMale  ; 
+    if (totalLiveBirds &gt; 0){
+            weightedAvgFeedBirdsWeek = sumWeightedFeedBirdsWeek / totalLiveBirds ;
+        }
+
+
+
+     cell.Text = weightedAvgFeedBirdsWeek.ToString("N0");
+ 
+ }
 
 private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      XRTableCell cell = sender as XRTableCell;
