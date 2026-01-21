@@ -130,11 +130,14 @@
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.SR_BRD_FlocksActProd_HatEggs = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_FlocksActProd_SecProds = new DevExpress.XtraReports.UI.XRSubreport();
             this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
             this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
             this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_BRD_FlocksActProd_SecProds = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrPageInfo3 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -183,9 +186,6 @@
             this.crossTabDataStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle2 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.MonthName = new DevExpress.XtraReports.UI.CalculatedField();
-            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.xrPageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.xrPageInfo3 = new DevExpress.XtraReports.UI.XRPageInfo();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -600,6 +600,17 @@
             this.SR_BRD_FlocksActProd_HatEggs.Name = "SR_BRD_FlocksActProd_HatEggs";
             this.SR_BRD_FlocksActProd_HatEggs.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_HatEggs.SR_BRD_FlocksActProd_HatEggs();
             // 
+            // SubBand4
+            // 
+            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_FlocksActProd_SecProds});
+            this.SubBand4.Name = "SubBand4";
+            // 
+            // SR_BRD_FlocksActProd_SecProds
+            // 
+            this.SR_BRD_FlocksActProd_SecProds.Name = "SR_BRD_FlocksActProd_SecProds";
+            this.SR_BRD_FlocksActProd_SecProds.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_SecProds.SR_BRD_FlocksActProd_SecProds();
+            // 
             // topMarginBand1
             // 
             this.topMarginBand1.Name = "topMarginBand1";
@@ -616,16 +627,33 @@
             this.xrPageInfo3});
             this.bottomMarginBand1.Name = "bottomMarginBand1";
             // 
-            // SubBand4
+            // xrPageInfo1
             // 
-            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_FlocksActProd_SecProds});
-            this.SubBand4.Name = "SubBand4";
+            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrPageInfo1.Name = "xrPageInfo1";
+            this.xrPageInfo1.StyleName = "PageInfo";
+            this.xrPageInfo1.StylePriority.UseBorders = false;
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // SR_BRD_FlocksActProd_SecProds
+            // xrPageInfo2
             // 
-            this.SR_BRD_FlocksActProd_SecProds.Name = "SR_BRD_FlocksActProd_SecProds";
-            this.SR_BRD_FlocksActProd_SecProds.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_SecProds.SR_BRD_FlocksActProd_SecProds();
+            this.xrPageInfo2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrPageInfo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.xrPageInfo2.Name = "xrPageInfo2";
+            this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.xrPageInfo2.StyleName = "PageInfo";
+            this.xrPageInfo2.StylePriority.UseBorders = false;
+            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrPageInfo3
+            // 
+            this.xrPageInfo3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrPageInfo3.Name = "xrPageInfo3";
+            this.xrPageInfo3.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.xrPageInfo3.StyleName = "PageInfo";
+            this.xrPageInfo3.StylePriority.UseBorders = false;
+            this.xrPageInfo3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // sqlDataSource1
             // 
@@ -1014,34 +1042,6 @@
             this.MonthName.Expression = resources.GetString("MonthName.Expression");
             this.MonthName.Name = "MonthName";
             // 
-            // xrPageInfo1
-            // 
-            this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrPageInfo1.Name = "xrPageInfo1";
-            this.xrPageInfo1.StyleName = "PageInfo";
-            this.xrPageInfo1.StylePriority.UseBorders = false;
-            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // xrPageInfo2
-            // 
-            this.xrPageInfo2.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrPageInfo2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrPageInfo2.Name = "xrPageInfo2";
-            this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.xrPageInfo2.StyleName = "PageInfo";
-            this.xrPageInfo2.StylePriority.UseBorders = false;
-            this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // xrPageInfo3
-            // 
-            this.xrPageInfo3.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrPageInfo3.Name = "xrPageInfo3";
-            this.xrPageInfo3.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.xrPageInfo3.StyleName = "PageInfo";
-            this.xrPageInfo3.StylePriority.UseBorders = false;
-            this.xrPageInfo3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
             // SR_BRD_FlocksActProd
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1130,7 +1130,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 136.25F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 136.7917F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SheetNo, "Default", "Description", "SheetNo"),

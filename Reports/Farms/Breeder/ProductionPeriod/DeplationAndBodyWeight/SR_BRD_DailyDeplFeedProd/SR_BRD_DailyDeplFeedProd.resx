@@ -149,7 +149,6 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
     <value>decimal sumWeightedProdValues = 0;  // Σ(TotalProd × FemaleBalance)
 decimal sumWeights = 0;            // Σ(FemaleBalance)
 decimal sumWeightedHatEggValues = 0;  // Σ(TotalHatEgg × TotalProd)
-decimal sumWeightsHatEgg = 0;              // Σ(TotalProd)
 decimal sumWeightedHatEggValuesReport = 0;  // Σ(TotalHatEgg × TotalProd)
 decimal sumWeightsHatEggReport = 0;              // Σ(TotalProd)
 decimal TotalFemaleBalanceGroup  = 0;
@@ -157,6 +156,7 @@ decimal TotalMaleBalanceGroup = 0;
 decimal sumFeedPer1000 = 0;
 int countFeedPer1000 = 0;
 decimal sumMaleFeedPer1000 = 0;
+decimal countMaleFeedPer1000 = 0;
 decimal sumStockToHatEggRatio = 0;
 int countStockToHatEggRatio = 0;
 decimal sumFemaleDeplPercent = 0;
@@ -194,7 +194,6 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     }
     
         // Get values from fields
-    decimal totalProd = Convert.ToDecimal(GetCurrentColumnValue("TotalProd") ?? 0);
     decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
     
     // Only accumulate if both values are positive
@@ -206,7 +205,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     
      
     // Get values from fields
-    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0)
+    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
     TotalFemaleBalanceGroup += femaleBalance ;
     TotalMaleBalanceGroup += maleBalance ;
 
@@ -225,7 +224,6 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
         countMaleFeedPer1000++;
     }
     
-    decimal totalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEgg") ?? 0);
     decimal eggStock = Convert.ToDecimal(GetCurrentColumnValue("EggStock") ?? 0);
     
     if (totalHatEgg &gt; 0) {
@@ -352,7 +350,7 @@ decimal femaleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("FemaleFeedCons
     
 if (femaleBalance &gt; 0) {
     decimal feedPer1000 = (femaleFeedCons * 1000) / femaleBalance;
-    cell.Text = feedPer1000.ToString("M2");
+    cell.Text = feedPer1000.ToString("N2");
 } else {
     cell.Text = "0.00";
 }
@@ -468,6 +466,8 @@ private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.Canc
         cell.Text = "0.00";
     }
 }
+
+
 </value>
   </data>
 </root>
