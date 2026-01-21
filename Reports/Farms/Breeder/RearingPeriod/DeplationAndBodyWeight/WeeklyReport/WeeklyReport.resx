@@ -117,6 +117,96 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrTableCell75.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced])) &gt; 0,
+    
+    FormatString(
+        '{0:0.##} %',
+        sumSum(Iif(IsNullOrEmpty([CumMaleMissex]), 0, [CumMaleMissex]))
+        /
+        sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced]))
+        * 100
+    ),
+    
+    '0 %'
+)
+</value>
+  </data>
+  <data name="xrTableCell62.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    sumSum(Iif(IsNullOrEmpty([FemalePlaced]), 0, [FemalePlaced])) &gt; 0,
+    
+    FormatString(
+        '{0:0.##} %',
+        sumSum(Iif(IsNullOrEmpty([CumFemaleMissex]), 0, [CumFemaleMissex]))
+        /
+        sumSum(Iif(IsNullOrEmpty([FemalePlaced]), 0, [FemalePlaced]))
+        * 100
+    ),
+    
+    '0 %'
+)
+</value>
+  </data>
+  <data name="xrTableCell58.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced])) &gt; 0,
+    
+    (
+        sumSum(Iif(IsNullOrEmpty([CumMaleMort]), 0, [CumMaleMort]))
+        +
+        sumSum(Iif(IsNullOrEmpty([CumMaleCulls]), 0, [CumMaleCulls]))
+    )
+    /
+    sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced]))
+    * 100,
+    
+    0
+)
+</value>
+  </data>
+  <data name="xrTableCell59.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced])) &gt; 0,
+    
+    FormatString(
+        '{0:0.##} %',
+        (
+            sumSum(Iif(IsNullOrEmpty([CumMaleMort]), 0, [CumMaleMort]))
+            +
+            sumSum(Iif(IsNullOrEmpty([CumMaleCulls]), 0, [CumMaleCulls]))
+        )
+        /
+        sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced]))
+        * 100
+    ),
+    
+    '0 %'
+)
+</value>
+  </data>
+  <data name="xrTableCell56.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    sumSum(Iif(IsNullOrEmpty([FemalePlaced]), 0, [FemalePlaced])) &gt; 0,
+    
+    FormatString(
+        '{0:0.##} %',
+        (
+            sumSum(Iif(IsNullOrEmpty([CumFemaleMort]), 0, [CumFemaleMort]))
+            +
+            sumSum(Iif(IsNullOrEmpty([CumFemaleCulls]), 0, [CumFemaleCulls]))
+        )
+        /
+        sumSum(Iif(IsNullOrEmpty([FemalePlaced]), 0, [FemalePlaced]))
+        * 100
+    ),
+    
+    '0 %'
+)
+
+</value>
+  </data>
   <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
@@ -148,6 +238,23 @@ decimal sumFemaleFeed = 0;
 decimal sumRfLiveMale = 0;
 decimal sumMaleFeed = 0;
 decimal sumFemaleMort = 0;
+decimal sumCullsFemale = 0;
+decimal sumMaleMort = 0;
+decimal sumMaleCulls = 0;
+// Helper method to safely get decimal parameter values
+private decimal GetParameterDecimalValue(XtraReport report, string paramName)
+{
+    if (report == null || report.Parameters == null)
+        return 0;
+        
+    DevExpress.XtraReports.Parameters.Parameter param = report.Parameters[paramName];
+    if (param != null &amp;&amp; param.Value != null &amp;&amp; param.Value != DBNull.Value)
+    {
+        decimal.TryParse(param.Value.ToString(), out decimal value);
+        return value;
+    }
+    return 0;
+}
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
     
@@ -193,6 +300,27 @@ decimal rfLiveFemale = Convert.ToDecimal(GetCurrentColumnValue("rf_LiveFemale") 
     
      // Accumulate FemaleMort from each row
     sumFemaleMort += Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
+    
+     // --- Accumulate CullsFemale ---
+    object v = GetCurrentColumnValue("CullsFemale");
+    if (v != null &amp;&amp; v != DBNull.Value)
+    {
+        decimal.TryParse(v.ToString(), out decimal culls);
+        sumCullsFemale += culls;
+    }
+    v = GetCurrentColumnValue("MaleMort");
+    if (v != null &amp;&amp; v != DBNull.Value)
+    {
+        decimal.TryParse(v.ToString(), out decimal mort);
+        sumMaleMort += mort;
+    }
+    v = GetCurrentColumnValue("MaleCulls");
+    if (v != null &amp;&amp; v != DBNull.Value)
+    {
+        decimal.TryParse(v.ToString(), out decimal culls);
+        sumMaleCulls += culls;
+    }
+    
     }
 
 private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -226,11 +354,23 @@ private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.Canc
 private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      XRTableCell cell = sender as XRTableCell;
     
-    // Get parameters
-    decimal femaleReceived = Convert.ToDecimal(Parameters["FemaleReceived"]?.Value ?? 0);
-    decimal femaleDOA = Convert.ToDecimal(Parameters["FemaleDOA"]?.Value ?? 0);
+       decimal femaleReceived = 0;
+       decimal femaleDOA = 0;
+
+    // --- FemaleReceived (parameter) ---
+    if (this.Report.Parameters["FemaleReceived"] != null &amp;&amp;
+        this.Report.Parameters["FemaleReceived"].Value != null)
+    {
+        decimal.TryParse(this.Report.Parameters["FemaleReceived"].Value.ToString(), out femaleReceived);
+    }
     
-    // Calculate BirdsLeftFemale
+    // --- FemaleDOA (parameter) ---
+    if (Parameters["FemaleDOA"] != null &amp;&amp;
+        Parameters["FemaleDOA"].Value != null)
+    {
+        decimal.TryParse(Parameters["FemaleDOA"].Value.ToString(), out femaleDOA);
+    }
+        // Calculate BirdsLeftFemale
     decimal birdsLeftFemale = femaleReceived - femaleDOA;
     
     // Calculate percentage using accumulated sum
@@ -238,10 +378,109 @@ private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.Canc
     
     if (denominator &gt; 0) {
         decimal result = (sumFemaleMort / denominator) * 100;
-        cell.Text = result.ToString("N2") ;
+        cell.Text = result.ToString("N0") ;
     } else {
-        cell.Text = "0.00";
+        cell.Text = "0";
     }
+}
+
+private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal femaleReceived = 0;
+decimal femaleDOA = 0;
+decimal birdsLeftFemale = 0;
+decimal result = 0;
+
+// --- FemaleReceived (parameter) ---
+if (Parameters["FemaleReceived"] != null &amp;&amp;
+    Parameters["FemaleReceived"].Value != null)
+{
+    decimal.TryParse(Parameters["FemaleReceived"].Value.ToString(), out femaleReceived);
+}
+
+// --- FemaleDOA (parameter) ---
+if (Parameters["FemaleDOA"] != null &amp;&amp;
+    Parameters["FemaleDOA"].Value != null)
+{
+    decimal.TryParse(Parameters["FemaleDOA"].Value.ToString(), out femaleDOA);
+}
+
+// --- BirdsLeftFemale ---
+birdsLeftFemale = femaleReceived - femaleDOA;
+
+// --- Equation ---
+if (birdsLeftFemale &gt; 0)
+    result = (sumCullsFemale / (birdsLeftFemale + femaleDOA)) * 100m;
+
+// --- Assign result ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0");
+
+}
+
+private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal maleReceived = 0;
+decimal maleDOA = 0;
+decimal birdsLeftMale = 0;
+decimal result = 0;
+
+// --- MaleReceived (parameter) ---
+if (this.Report.Parameters["MaleReceived"] != null &amp;&amp;
+    this.Report.Parameters["MaleReceived"].Value != null)
+{
+    decimal.TryParse(this.Report.Parameters["MaleReceived"].Value.ToString(), out maleReceived);
+}
+
+// --- MaleDOA (parameter) ---
+if (Parameters["MaleDOA"] != null &amp;&amp;
+    Parameters["MaleDOA"].Value != null)
+{
+    decimal.TryParse(Parameters["MaleDOA"].Value.ToString(), out maleDOA);
+}
+
+// --- BirdsLeftMale ---
+birdsLeftMale = maleReceived - maleDOA;
+
+// --- Equation ---
+if (birdsLeftMale &gt; 0)
+    result = (sumMaleMort / (birdsLeftMale + maleDOA)) * 100m;
+
+// --- Assign result ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0");
+
+}
+
+private void xrTableCell54_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal maleReceived = 0;
+decimal maleDOA = 0;
+decimal birdsLeftMale = 0;
+decimal result = 0;
+
+// --- MaleReceived ---
+if (this.Report.Parameters["MaleReceived"] != null &amp;&amp;
+    this.Report.Parameters["MaleReceived"].Value != null)
+{
+    decimal.TryParse(this.Report.Parameters["MaleReceived"].Value.ToString(), out maleReceived);
+}
+
+// --- MaleDOA ---
+if (this.Report.Parameters["MaleDOA"] != null &amp;&amp;
+    this.Report.Parameters["MaleDOA"].Value != null)
+{
+    decimal.TryParse(this.Report.Parameters["MaleDOA"].Value.ToString(), out maleDOA);
+}
+
+// --- BirdsLeftMale ---
+birdsLeftMale = maleReceived - maleDOA;
+
+// --- Equation ---
+if (birdsLeftMale &gt; 0)
+    result = (sumMaleCulls / (birdsLeftMale + maleDOA)) * 100m;
+
+// --- Output ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0");
+
 }
 </value>
   </data>

@@ -139,228 +139,684 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PEZpZWxkIE5hbWU9IlZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFjY2luZU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWFudWZhY3R1cmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvdXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRheUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEYXlUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1RvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmF0Y2hObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRG9zZXNVc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF0ZUdpdmVuIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0dWFsQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseURlcGxQcm9kIj48RmllbGQgTmFtZT0iU2l0ZV9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdWxsc0ZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVNlY0Vycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VsbHNNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVNlY0Vycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWF4VGVtcCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1pblRlbXAiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhIdW1pZGl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1pbkh1bWlkaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGlnaHRIb3VycyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0xpdmVGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlTWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhvdXNlQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJyZWVkTmFtZV9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOZXN0ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvb3JFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdGbG9vckdfQSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRmxvb3JHX0IiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTbWFsbEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdmVyV2VpZ2h0RWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRlZm9ybWl0eUVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEb3VibGVWb2xrRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRpcnR5RWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJyb2tlbkVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXN0cm95ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU29mdFNoZWxsRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0RheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX1dlZWtObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNpdGVfYXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnaW9uX2VuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ2lvbl9hciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZVBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldhdGVyQ29uc3VtcHRpb24iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseURlcGxQcm9kIj48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVNleEVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VsbHNGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVTZXhFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bGxzTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heFRlbXAiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iTWluVGVtcCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJNYXhIdW1pZGl0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJNaW5IdW1pZGl0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTmVzdGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb29yRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRmxvb3JHX0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGluZ0Zsb29yR19CIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU21hbGxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3ZlcldlaWdodEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWZvcm1pdHlFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRG91YmxlWW9sa0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEaXJ0eUVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcm9rZW5FZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGVzdHJveWVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvZnRTaGVsbEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IlBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0RheSIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9InJmX1dlZUtObyIgVHlwZT0iSW50MTYiIC8+PEZpZWxkIE5hbWU9IlNpdGVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2l0ZV9hciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSZWdpb25fZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnaW9uX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhvdXNlUE9MIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2F0ZXJDb25zdW1wdGlvbiIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="AgePerWeeks.Expression" xml:space="preserve">
+    <value>Iif(
+    Max([rf_Day]) % 7 = 0,
+
+    FormatString('{0}', [rf_WeeKNo]),
+
+    FormatString('{0}', [rf_WeeKNo])
+    + ' , '
+    + FormatString('{0}', Floor(Max([rf_Day]) / 7))
+    + '+'
+    + FormatString('{0}', Max([rf_Day]) % 7)
+    + ' Day'
+)
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal runningTotal = 0;
-decimal runningTotalCloseF = 0;
-decimal runningTotalOpenC = 0;
-decimal runningTotalCloseC = 0;
-decimal runningTotalTotalEggs = 0;
+    <value>decimal sumEggsPerLiveFemale = 0;
+int countEggsPerLiveFemale = 0;
+decimal avgEggsPerLiveFemale = 0;
+decimal sumNestedEggs = 0;
+decimal sumFloorEggs = 0;
+decimal sumPOL = 0;
+decimal sumPercent = 0;
+int countRows = 0;
 
-private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
+decimal sumBrokenEggs = 0;
+decimal sumDeformityEggs = 0;
+decimal sumDestroyedEggs = 0;
+decimal sumDirtyEggs = 0;
+decimal sumDoubleYolkEggs = 0;
+decimal sumOverWeightEggs = 0;
+decimal sumSmallEggs = 0;
+decimal sumSoftShellEggs = 0;
+decimal sumFloorRejectAdj = 0;
+decimal sumRowPercent = 0;
+int validRowCount = 0;
+decimal sumHatchingPercent = 0;
+int validRowCountHat = 0;
+decimal sumFeedPerBird = 0;
+int validRowCountFeedBird = 0;
+decimal sumMaleFeedPerBird = 0;
+int maleRowCount = 0;
+decimal totalwaterConsumption =0;
+decimal TotaLiveFemaleAndMale = 0;
+private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal totalEggs = 0;
+decimal liveFemale = 0;
+decimal result = 0;
 
-    // Get report parameters - replace with your actual parameter names
-    // You need to access them from your report's Parameters collection
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+// --- Read NestedEggs ---
+object v = GetCurrentColumnValue("NestedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out nestedEggs);
 
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+// --- Read FloorEggs ---
+v = GetCurrentColumnValue("FloorEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out floorEggs);
 
-    // Calculate OpenF
-    decimal openF = GetFieldValue("OpenFHTEggsF") + GetFieldValue("OpenHTEggsF");
+// --- TotalEggs ---
+totalEggs = nestedEggs + floorEggs;
 
-    // Calculate result
-    decimal result = 0;
+// --- Read rf_LiveFemale ---
+v = GetCurrentColumnValue("rf_LiveFemale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveFemale);
 
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotal += openF;
-        result = runningTotal;
-    }
-    else
-    {
-        result = 0;
-    }
+// --- Equation ---
+if (liveFemale &gt; 0)
+    result = (totalEggs / liveFemale) * 100m;
 
-    // Assign result to cell
+// --- Assign result ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");
+
+}
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal totalEggs = 0;
+decimal liveFemale = 0;
+decimal rowValue = 0;
+
+// NestedEggs
+object v = GetCurrentColumnValue("NestedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out nestedEggs);
+
+// FloorEggs
+v = GetCurrentColumnValue("FloorEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out floorEggs);
+
+// TotalEggs
+totalEggs = nestedEggs + floorEggs;
+
+// rf_LiveFemale
+v = GetCurrentColumnValue("rf_LiveFemale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveFemale);
+
+// Row equation
+if (liveFemale &gt; 0)
+{
+    rowValue = (totalEggs / liveFemale) * 100m;
+
+    // Accumulate for average
+    sumEggsPerLiveFemale += rowValue;
+    countEggsPerLiveFemale++;
+}
+
+
+decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal pol = 0;
+
+
+
+// --- POL ---
+v = GetCurrentColumnValue("POL");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out pol);
+
+// --- Accumulate sums ---
+sumNestedEggs += nestedEggs;
+sumFloorEggs += floorEggs;
+sumPOL += pol;
+
+decimal totalEggs = 0;
+decimal percent = 0;
+
+
+// TotalEggs
+totalEggs = nestedEggs + floorEggs;
+
+// Equation
+if (totalEggs &gt; 0)
+{
+    percent = (floorEggs / totalEggs) * 100m;
+
+    // accumulate for AVG
+    sumPercent += percent;
+    countRows++;
+}
+decimal brokenEggs = 0;
+decimal deformityEggs = 0;
+decimal destroyedEggs = 0;
+decimal dirtyEggs = 0;
+decimal doubleYolkEggs = 0;
+decimal overWeightEggs = 0;
+decimal smallEggs = 0;
+decimal softShellEggs = 0;
+decimal floorRejectAdj = 0;
+decimal rowPercent = 0;
+
+
+
+// --- Read rejection fields ---
+v = GetCurrentColumnValue("BrokenEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out brokenEggs);
+v = GetCurrentColumnValue("DeformityEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out deformityEggs);
+v = GetCurrentColumnValue("DestroyedEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out destroyedEggs);
+v = GetCurrentColumnValue("DirtyEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out dirtyEggs);
+v = GetCurrentColumnValue("DoubleYolkEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out doubleYolkEggs);
+v = GetCurrentColumnValue("OverWeightEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out overWeightEggs);
+v = GetCurrentColumnValue("SmallEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out smallEggs);
+v = GetCurrentColumnValue("SoftShellEggs");
+if (v != null &amp;&amp; v != DBNull.Value) decimal.TryParse(v.ToString(), out softShellEggs);
+
+// --- Floor rejection adjustment ---
+v = GetCurrentColumnValue("HatchingFloorG_A");
+if (v != null &amp;&amp; v != DBNull.Value)
+{
+    decimal temp = 0;
+    decimal.TryParse(v.ToString(), out temp);
+    floorRejectAdj = floorEggs - temp;
+}
+
+// --- TotalRejectEggs for this row ---
+decimal rowRejectEggs = brokenEggs + deformityEggs + destroyedEggs +
+                        dirtyEggs + doubleYolkEggs + overWeightEggs +
+                        smallEggs + softShellEggs + floorRejectAdj;
+
+// --- Calculate row percentage ---
+if (totalEggs &gt; 0)
+{
+    rowPercent = (rowRejectEggs * 100m) / totalEggs;
+
+    // accumulate for AVG
+    sumRowPercent += rowPercent;
+    validRowCount++;
+}
+
+decimal hatchingEggs = 0;
+decimal hatchingFloorA = 0;
+decimal hatchingFloorB = 0;
+
+decimal totalHatchingEggs = 0;
+decimal rowPercentHat = 0;
+
+// --- Read Hatching Eggs ---
+v = GetCurrentColumnValue("HatchingEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out hatchingEggs);
+
+v = GetCurrentColumnValue("HatchingFloorG_A");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out hatchingFloorA);
+
+v = GetCurrentColumnValue("HatchingFloorG_B");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out hatchingFloorB);
+
+// --- Total Hatching Eggs ---
+totalHatchingEggs = hatchingEggs + hatchingFloorA + hatchingFloorB;
+
+// --- Calculate row % ---
+if (totalEggs &gt; 0)
+{
+    rowPercentHat = (totalHatchingEggs * 100m) / totalEggs;
+
+    // --- Accumulate for AVG ---
+    sumHatchingPercent += rowPercentHat ;
+    validRowCountHat++;
+}
+
+// --- Declare row variables ---
+decimal femaleFeed = 0;
+decimal rowValuefemaleFeed = 0;
+
+// --- Read FemaleFeed safely ---
+ v = GetCurrentColumnValue("FemaleFeed");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out femaleFeed);
+
+
+// --- Calculate row Feed per Bird x 1000 ---
+if (liveFemale &gt; 0)
+{
+    rowValuefemaleFeed = (femaleFeed / liveFemale) * 1000m;
+
+    // --- Accumulate for AVG ---
+    sumFeedPerBird += rowValuefemaleFeed ;
+    validRowCountFeedBird++;
+}
+
+
+// --- Declare variables ---
+decimal maleFeed = 0;
+decimal liveMale = 0;
+decimal result = 0;
+
+// --- Read MaleFeed safely ---
+v = GetCurrentColumnValue("MaleFeed");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out maleFeed);
+
+// --- Read LiveMale safely ---
+v = GetCurrentColumnValue("rf_LiveMale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveMale);
+
+// --- Calculate ---
+if (liveMale &gt; 0)
+    result = (maleFeed / liveMale) * 1000m;
+
+if (liveMale &gt; 0)
+{
+    sumMaleFeedPerBird += result;
+    maleRowCount++;
+}
+
+decimal totalLiveFemale += liveFemale;
+decimal totalLiveMale += liveMale;
+decimal waterConsumption = 0;
+// --- Read WaterConsumption ---
+v = GetCurrentColumnValue("WaterConsumption");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out waterConsumption);
+    
+totalwaterConsumption += waterConsumption;
+TotaLiveFemaleAndMale = totalLiveFemale + totalLiveMale ;
+}
+
+private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    if (countEggsPerLiveFemale &gt; 0)
+    avgEggsPerLiveFemale = sumEggsPerLiveFemale / countEggsPerLiveFemale;
+
     XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
+    cell.Text = avgEggsPerLiveFemale.ToString("0.##");
+}
+
+private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal totalEggs = 0;
+decimal pol = 0;
+decimal rowResult = 0;
+
+// --- NestedEggs ---
+object v = GetCurrentColumnValue("NestedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out nestedEggs);
+
+// --- FloorEggs ---
+v = GetCurrentColumnValue("FloorEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out floorEggs);
+
+// --- TotalEggs ---
+totalEggs = nestedEggs + floorEggs;
+
+// --- POL ---
+v = GetCurrentColumnValue("POL");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out pol);
+
+// --- Equation ---
+if (pol &gt; 0)
+{
+    rowResult = (totalEggs / pol) * 100m;
+
+}
+
+// --- Assign row value ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = rowResult.ToString("0.##");
 }
 
 private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
-
-    // Get report parameters - replace with your actual parameter names
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
-
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
-
-    // Calculate CloseF for current record
-    decimal closeF = GetFieldValue("CloseFHTEggsF") + GetFieldValue("CloseHTEggsF");
-
-    // Calculate result
     decimal result = 0;
+decimal totalEggs = sumNestedEggs + sumFloorEggs;
 
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalCloseF += closeF;
-        result = runningTotalCloseF;
-    }
-    else
-    {
-        result = 0;
-    }
+if (sumPOL &gt; 0)
+    result = (totalEggs / sumPOL) * 100m;
 
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");
+
 }
 
-private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
+private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal totalEggs = 0;
+decimal result = 0;
 
-    // Get report parameters - replace with your actual parameter names
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+// --- NestedEggs ---
+object v = GetCurrentColumnValue("NestedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out nestedEggs);
 
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+// --- FloorEggs ---
+v = GetCurrentColumnValue("FloorEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out floorEggs);
 
-    // Calculate OpenC for current record
-    decimal openC = GetFieldValue("OpenFHTEggsC") + GetFieldValue("OpenHTEggsC");
+// --- TotalEggs ---
+totalEggs = nestedEggs + floorEggs;
 
-    // Calculate result
-    decimal result = 0;
+// --- Equation ---
+if (totalEggs &gt; 0)
+    result = (floorEggs / totalEggs) * 100m;
 
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalOpenC += openC;
-        result = runningTotalOpenC;
-    }
-    else
-    {
-        result = 0;
-    }
+// --- Assign result ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");
 
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
 }
 
-private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
+private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal avg = 0;
 
-    // Get report parameters
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+if (countRows &gt; 0)
+    avg = sumPercent / countRows;
 
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+XRTableCell cell = sender as XRTableCell;
+cell.Text = avg.ToString("0.##");
 
-    // Calculate Close for current record
-    decimal closeC = GetFieldValue("CloseFHTEggsC") + GetFieldValue("CloseHTEggsC");
-
-    // Calculate result
-    decimal result = 0;
-
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalCloseC += closeC;
-        result = runningTotalCloseC;
-    }
-    else
-    {
-        result = 0;
-    }
-
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
 }
 
-private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        // Helper function for safe parsing
-    decimal GetFieldValue(string fieldName)
-    {
-        object value = GetCurrentColumnValue(fieldName);
-        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-        {
-            if (decimal.TryParse(value.ToString(), out decimal result))
-                return result;
-        }
-        return 0;
-    }
+private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare variables ---
+decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal totalEggs = 0;
 
-    // Get report parameters
-    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
-    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+decimal brokenEggs = 0;
+decimal deformityEggs = 0;
+decimal destroyedEggs = 0;
+decimal dirtyEggs = 0;
+decimal doubleYolkEggs = 0;
+decimal overWeightEggs = 0;
+decimal smallEggs = 0;
+decimal softShellEggs = 0;
+decimal floorRejectAdj = 0;
 
-    // Calculate SameDate
-    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+decimal totalRejectEggs = 0;
+decimal result = 0;
 
-    // Calculate TotalFHE
-    decimal totalFHE = GetFieldValue("CloseFHTEggsC") + GetFieldValue("CloseFHTEggsF");
-    
-    // Calculate TotalHE
-    decimal totalHE = GetFieldValue("CloseHTEggsC") + GetFieldValue("CloseHTEggsF");
-    
-    // Calculate TotalEggs
-    decimal totalEggs = totalFHE + totalHE;
+// --- Read NestedEggs ---
+object v = GetCurrentColumnValue("NestedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out nestedEggs);
 
-    // Calculate result
-    decimal result = 0;
+// --- Read FloorEggs ---
+v = GetCurrentColumnValue("FloorEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out floorEggs);
 
-    if (sameDate == 1)
-    {
-        // Add to running total
-        runningTotalTotalEggs += totalEggs;
-        result = runningTotalTotalEggs;
-    }
-    else
-    {
-        result = 0;
-    }
+// --- TotalEggs ---
+totalEggs = nestedEggs + floorEggs;
 
-    // Assign result to cell
-    XRTableCell cell = sender as XRTableCell;
-    cell.Text = result.ToString("N0");
+// --- Read rejection fields ---
+v = GetCurrentColumnValue("BrokenEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out brokenEggs);
+
+v = GetCurrentColumnValue("DeformityEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out deformityEggs);
+
+v = GetCurrentColumnValue("DestroyedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out destroyedEggs);
+
+v = GetCurrentColumnValue("DirtyEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out dirtyEggs);
+
+v = GetCurrentColumnValue("DoubleYolkEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out doubleYolkEggs);
+
+v = GetCurrentColumnValue("OverWeightEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out overWeightEggs);
+
+v = GetCurrentColumnValue("SmallEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out smallEggs);
+
+v = GetCurrentColumnValue("SoftShellEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out softShellEggs);
+
+// --- Floor rejection adjustment ---
+v = GetCurrentColumnValue("HatchingFloorG_A"); // used to calculate @RejectFloorEggs
+if (v != null &amp;&amp; v != DBNull.Value)
+{
+    decimal temp = 0;
+    decimal.TryParse(v.ToString(), out temp);
+    floorRejectAdj = floorEggs - temp;
+}
+
+// --- TotalRejectEggs ---
+totalRejectEggs = brokenEggs + deformityEggs + destroyedEggs + dirtyEggs +
+                  doubleYolkEggs + overWeightEggs + smallEggs + softShellEggs +
+                  floorRejectAdj;
+
+// --- Calculate % ---
+if (totalEggs != 0)
+    result = (totalRejectEggs * 100m) / totalEggs;
+
+// --- Assign to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");
+
+}
+
+private void xrTableCell86_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal avgRejectPercent = 0;
+if (validRowCount &gt; 0)
+    avgRejectPercent = sumRowPercent / validRowCount;
+
+XRTableCell cellAvg = sender as XRTableCell;
+cellAvg.Text = avgRejectPercent.ToString("0.##");
+
+}
+
+private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare variables ---
+decimal nestedEggs = 0;
+decimal floorEggs = 0;
+decimal totalEggs = 0;
+
+decimal hatchingEggs = 0;
+decimal hatchingFloorA = 0;
+decimal hatchingFloorB = 0;
+
+decimal totalHatchingEggs = 0;
+decimal result = 0;
+
+// --- Read NestedEggs ---
+object v = GetCurrentColumnValue("NestedEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out nestedEggs);
+
+// --- Read FloorEggs ---
+v = GetCurrentColumnValue("FloorEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out floorEggs);
+
+// --- TotalEggs ---
+totalEggs = nestedEggs + floorEggs;
+
+// --- Read Hatching Eggs ---
+v = GetCurrentColumnValue("HatchingEggs");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out hatchingEggs);
+
+v = GetCurrentColumnValue("HatchingFloorG_A");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out hatchingFloorA);
+
+v = GetCurrentColumnValue("HatchingFloorG_B");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out hatchingFloorB);
+
+// --- Total Hatching Eggs ---
+totalHatchingEggs = hatchingEggs + hatchingFloorA + hatchingFloorB;
+
+// --- Calculate % ---
+if (totalEggs &gt; 0)
+    result = (totalHatchingEggs * 100m) / totalEggs;
+
+// --- Assign to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##"); // format with 2 decimals
+
+}
+
+private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal avgHatchingPercent = 0;
+
+if (validRowCount &gt; 0)
+    avgHatchingPercent = sumHatchingPercent / validRowCountHat;
+
+XRTableCell cellAvg = sender as XRTableCell;
+cellAvg.Text = avgHatchingPercent.ToString("0.##");
+
+}
+
+private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare variables ---
+decimal femaleFeed = 0;
+decimal liveFemale = 0;
+decimal result = 0;
+
+// --- Read FemaleFeed ---
+object v = GetCurrentColumnValue("FemaleFeed");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out femaleFeed);
+
+// --- Read LiveFemale ---
+v = GetCurrentColumnValue("rf_LiveFemale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveFemale);
+
+// --- Calculate ---
+if (liveFemale &gt; 0)
+    result = (femaleFeed / liveFemale) * 1000m;
+
+// --- Assign to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0"); // format with up to 2 decimals
+}
+
+private void xrTableCell97_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal avgFeedPerBird = 0;
+
+// --- Calculate AVG across all valid rows ---
+if (validRowCount &gt; 0)
+    avgFeedPerBird = sumFeedPerBird / validRowCountFeedBird ;
+
+// --- Assign to footer cell ---
+XRTableCell cellAvg = sender as XRTableCell;
+cellAvg.Text = avgFeedPerBird.ToString("0.##");
+
+}
+
+private void xrTableCell81_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare variables ---
+decimal maleFeed = 0;
+decimal liveMale = 0;
+decimal result = 0;
+
+// --- Read MaleFeed safely ---
+object v = GetCurrentColumnValue("MaleFeed");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out maleFeed);
+
+// --- Read LiveMale safely ---
+v = GetCurrentColumnValue("rf_LiveMale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveMale);
+
+// --- Calculate ---
+if (liveMale &gt; 0)
+    result = (maleFeed / liveMale) * 1000m;
+
+// --- Assign to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("N0");
+
+}
+
+private void xrTableCell98_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal avgMaleFeedPerBird = 0;
+
+if (maleRowCount &gt; 0)
+    avgMaleFeedPerBird = sumMaleFeedPerBird / maleRowCount;
+
+XRTableCell cell = sender as XRTableCell;
+cell.Text = avgMaleFeedPerBird.ToString("0.##");
+
+}
+
+private void xrTableCell82_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    // --- Declare variables ---
+decimal waterConsumption = 0;
+decimal liveFemale = 0;
+decimal liveMale = 0;
+decimal totalLive = 0;
+decimal result = 0;
+
+// --- Read WaterConsumption ---
+object v = GetCurrentColumnValue("WaterConsumption");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out waterConsumption);
+
+// --- Read LiveFemale ---
+v = GetCurrentColumnValue("rf_LiveFemale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveFemale);
+
+// --- Read LiveMale ---
+v = GetCurrentColumnValue("rf_LiveMale");
+if (v != null &amp;&amp; v != DBNull.Value)
+    decimal.TryParse(v.ToString(), out liveMale);
+
+// --- Total Live Birds ---
+totalLive = liveFemale + liveMale;
+
+// --- Equation ---
+if (totalLive &gt; 0)
+    result = waterConsumption / totalLive;
+
+// --- Assign result to cell ---
+XRTableCell cell = sender as XRTableCell;
+cell.Text = result.ToString("0.##");
+
+}
+
+private void xrTableCell99_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+ decimal WaterConsPerBirds = 0;
+
+if (TotaLiveFemaleAndMale &gt; 0)
+    WaterConsPerBirds = totalwaterConsumption / TotaLiveFemaleAndMale ;
+
+XRTableCell cell = sender as XRTableCell;
+cell.Text = WaterConsPerBirds.ToString("0.##");
+
 }
 </value>
   </data>
