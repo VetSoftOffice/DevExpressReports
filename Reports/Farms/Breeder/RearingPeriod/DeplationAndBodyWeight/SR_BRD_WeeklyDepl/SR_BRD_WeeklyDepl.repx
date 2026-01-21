@@ -45,22 +45,22 @@
               <Cells>
                 <Item1 Ref="36" ControlType="XRTableCell" Name="xrTableCell5" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
-                    <Item2 Ref="38" EventName="BeforePrint" PropertyName="Text" Expression="[FarmCode]" />
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[FarmCode]" />
+                    <Item2 Ref="38" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="39" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item1>
                 <Item2 Ref="40" ControlType="XRTableCell" Name="xrTableCell9" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="41" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;&#xA;" />
-                    <Item2 Ref="42" EventName="BeforePrint" PropertyName="Text" Expression="[CropNo]" />
+                    <Item1 Ref="41" EventName="BeforePrint" PropertyName="Text" Expression="[CropNo]" />
+                    <Item2 Ref="42" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="43" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item2>
                 <Item3 Ref="44" ControlType="XRTableCell" Name="xrTableCell30" Multiline="true" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="45" EventName="BeforePrint" PropertyName="Text" Expression="[FlockCode]" />
-                    <Item2 Ref="46" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;&#xA;" />
+                    <Item2 Ref="46" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="47" UseFont="false" UseBorders="false" />
                 </Item3>
