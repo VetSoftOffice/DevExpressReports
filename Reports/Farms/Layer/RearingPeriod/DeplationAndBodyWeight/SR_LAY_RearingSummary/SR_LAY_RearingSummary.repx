@@ -841,14 +841,14 @@
     <Item100 Ref="504" Component="#Ref-36" Culture="Default" Path="Description" Data="WeeklyGain" />
     <Item101 Ref="505" Component="#Ref-47" Culture="Default" Path="Description" Data="WeeklyPerc" />
     <Item102 Ref="506" Component="#Ref-30" Culture="Default" Path="Description" Data="WeekNo" />
-    <Item103 Ref="507" Component="#Ref-276" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item103 Ref="507" Component="#Ref-276" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item104 Ref="508" Component="#Ref-276" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item105 Ref="509" Component="#Ref-279" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
+    <Item105 Ref="509" Component="#Ref-279" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item106 Ref="510" Component="#Ref-281" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item107 Ref="511" Component="#Ref-281" Culture="Default" Path="Text" Data="Total" />
     <Item108 Ref="512" Component="#Ref-281" Culture="ar" Path="Text" Data="اجمالي" />
     <Item109 Ref="513" Component="#Ref-282" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item110 Ref="514" Component="#Ref-284" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
+    <Item110 Ref="514" Component="#Ref-284" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item111 Ref="515" Component="#Ref-286" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item112 Ref="516" Component="#Ref-286" Culture="Default" Path="Text" Data="Total" />
     <Item113 Ref="517" Component="#Ref-286" Culture="ar" Path="Text" Data="اجماليl" />
