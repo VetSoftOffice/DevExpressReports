@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_DailyDataHsWise" ScriptsSource="&#xD;&#xA;private void xrLabel4_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;Date To: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_DailyDataHsWise" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_DailyDataHsWise" ScriptsSource="&#xD;&#xA;private void xrLabel4_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;Date To: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_DailyDataHsWise" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -694,7 +694,7 @@
     <Item41 Ref="381" Component="#Ref-41" Culture="Default" Path="SizeF" Data="103,20" />
     <Item42 Ref="382" Component="#Ref-41" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item43 Ref="383" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="666.3331,0" />
-    <Item44 Ref="384" Component="#Ref-43" Culture="Default" Path="SizeF" Data="143.663757,20" />
+    <Item44 Ref="384" Component="#Ref-43" Culture="Default" Path="SizeF" Data="143.6638,20" />
     <Item45 Ref="385" Component="#Ref-43" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item46 Ref="386" Component="#Ref-208" Culture="Default" Path="HeightF" Data="0" />
     <Item47 Ref="387" Component="#Ref-243" Culture="Default" Path="HeightF" Data="20" />
@@ -738,13 +738,13 @@
     <Item85 Ref="425" Component="#Ref-206" Culture="Default" Path="Text" Data="Flock Code: [?Flock]" />
     <Item86 Ref="426" Component="#Ref-206" Culture="ar" Path="Text" Data="قطيع: [?Flock]" />
     <Item87 Ref="427" Component="#Ref-205" Culture="Default" Path="LocationFloat" Data="239.5833,0" />
-    <Item88 Ref="428" Component="#Ref-205" Culture="Default" Path="SizeF" Data="116.666672,20.0000267" />
+    <Item88 Ref="428" Component="#Ref-205" Culture="Default" Path="SizeF" Data="116.6667,20.00003" />
     <Item89 Ref="429" Component="#Ref-205" Culture="Default" Path="Text" Data="Crop No: [?CropNo]" />
     <Item90 Ref="430" Component="#Ref-205" Culture="ar" Path="Text" Data="محصول: [?CropNo]" />
-    <Item91 Ref="431" Component="#Ref-203" Culture="Default" Path="LocationFloat" Data="356.249969,0" />
-    <Item92 Ref="432" Component="#Ref-203" Culture="Default" Path="SizeF" Data="149.333374,20.0000267" />
-    <Item93 Ref="433" Component="#Ref-202" Culture="Default" Path="LocationFloat" Data="505.583344,0" />
-    <Item94 Ref="434" Component="#Ref-202" Culture="Default" Path="SizeF" Data="301.413483,20.0000267" />
+    <Item91 Ref="431" Component="#Ref-203" Culture="Default" Path="LocationFloat" Data="356.25,0" />
+    <Item92 Ref="432" Component="#Ref-203" Culture="Default" Path="SizeF" Data="149.3334,20.00003" />
+    <Item93 Ref="433" Component="#Ref-202" Culture="Default" Path="LocationFloat" Data="505.5833,0" />
+    <Item94 Ref="434" Component="#Ref-202" Culture="Default" Path="SizeF" Data="301.4135,20.00003" />
     <Item95 Ref="435" Component="#Ref-202" Culture="Default" Path="Text" Data="Std: [?BookPerf]" />
     <Item96 Ref="436" Component="#Ref-202" Culture="ar" Path="Text" Data="قياسي: [?BookPerf]" />
   </LocalizationItems>

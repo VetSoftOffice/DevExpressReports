@@ -151,7 +151,7 @@ decimal totalMaleMort = 0;
 decimal totalCullsMale = 0;
 private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        // Calculate result for the group
-    XRTableCell resultCell = xrTableCell_Result; // Your result cell
+    XRTableCell resultCell = sender as XRTableCell; // Your result cell
     
     if (totalLiveFemale &gt; 0) {
         decimal result = (totalFemaleMort / totalLiveFemale) * 100;
@@ -219,7 +219,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
 private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        // Calculate result for the group
-    XRTableCell resultCell = xrTableCell_Result; // Your result cell
+    XRTableCell resultCell = sender as XRTableCell; // Your result cell
     
     if (totalLiveFemale &gt; 0) {
         decimal result = (totalCullsFemale / totalLiveFemale) * 100;
@@ -231,7 +231,7 @@ private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell29_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell resultCell = xrTableCell_Result; // Your result cell
+      XRTableCell resultCell = sender as XRTableCell;// Your result cell
     
     if (totalLiveFemale &gt; 0) {
         decimal result = ((totalCullsFemale + totalFemaleMort) / totalLiveFemale) * 100;

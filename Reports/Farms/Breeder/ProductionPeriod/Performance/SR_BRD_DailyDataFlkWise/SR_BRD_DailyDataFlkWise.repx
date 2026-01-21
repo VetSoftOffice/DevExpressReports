@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_DailyDataFlkWise" ScriptsSource="&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_DailyDataFlkWise" ScriptsSource="&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:d/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="2" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-1" />
     <Item2 Ref="3" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-1" />
@@ -741,12 +741,12 @@
     <Item46 Ref="409" Component="#Ref-110" Culture="Default" Path="HeightF" Data="0" />
     <Item47 Ref="410" Component="#Ref-202" Culture="Default" Path="HeightF" Data="23" />
     <Item48 Ref="411" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item49 Ref="412" Component="#Ref-43" Culture="Default" Path="SizeF" Data="218.836609,20" />
+    <Item49 Ref="412" Component="#Ref-43" Culture="Default" Path="SizeF" Data="218.8366,20" />
     <Item50 Ref="413" Component="#Ref-42" Culture="Default" Path="LocationFloat" Data="353.5,0" />
     <Item51 Ref="414" Component="#Ref-42" Culture="Default" Path="SizeF" Data="103,20" />
     <Item52 Ref="415" Component="#Ref-42" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item53 Ref="416" Component="#Ref-44" Culture="Default" Path="LocationFloat" Data="606.9581,0" />
-    <Item54 Ref="417" Component="#Ref-44" Culture="Default" Path="SizeF" Data="203.038757,20" />
+    <Item54 Ref="417" Component="#Ref-44" Culture="Default" Path="SizeF" Data="203.0388,20" />
     <Item55 Ref="418" Component="#Ref-44" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item56 Ref="419" Component="#Ref-217" Culture="Default" Path="HeightF" Data="0" />
     <Item57 Ref="420" Component="#Ref-266" Culture="Default" Path="HeightF" Data="20" />
@@ -781,8 +781,8 @@
     <Item86 Ref="449" Component="#Ref-40" Culture="Default" Path="HeightF" Data="20" />
     <Item87 Ref="450" Component="#Ref-219" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
     <Item88 Ref="451" Component="#Ref-219" Culture="Default" Path="SizeF" Data="278.1666,127" />
-    <Item89 Ref="452" Component="#Ref-208" Culture="Default" Path="LocationFloat" Data="3.00337481,0" />
-    <Item90 Ref="453" Component="#Ref-208" Culture="Default" Path="SizeF" Data="100,20.0000267" />
+    <Item89 Ref="452" Component="#Ref-208" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
+    <Item90 Ref="453" Component="#Ref-208" Culture="Default" Path="SizeF" Data="100,20.00003" />
     <Item91 Ref="454" Component="#Ref-208" Culture="Default" Path="Text" Data="Farm: [?Farm]" />
     <Item92 Ref="455" Component="#Ref-208" Culture="ar" Path="Text" Data="مزرعة: [?Farm]" />
     <Item93 Ref="456" Component="#Ref-211" Culture="Default" Path="LocationFloat" Data="253.8366,0" />
@@ -793,13 +793,13 @@
     <Item98 Ref="461" Component="#Ref-213" Culture="Default" Path="SizeF" Data="106.6869,20" />
     <Item99 Ref="462" Component="#Ref-213" Culture="Default" Path="Text" Data="Flock: [?Flock]" />
     <Item100 Ref="463" Component="#Ref-213" Culture="ar" Path="Text" Data="قطيع: [?Flock]" />
-    <Item101 Ref="464" Component="#Ref-203" Culture="Default" Path="LocationFloat" Data="3.00337481,0" />
+    <Item101 Ref="464" Component="#Ref-203" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
     <Item102 Ref="465" Component="#Ref-203" Culture="Default" Path="SizeF" Data="100,23" />
     <Item103 Ref="466" Component="#Ref-209" Culture="Default" Path="LocationFloat" Data="381.2332,0" />
     <Item104 Ref="467" Component="#Ref-209" Culture="Default" Path="SizeF" Data="155.8163,20" />
     <Item105 Ref="468" Component="#Ref-209" Culture="Default" Path="Text" Data="Breed: [?Breed]" />
     <Item106 Ref="469" Component="#Ref-209" Culture="ar" Path="Text" Data="سلالة: [?Breed]" />
-    <Item107 Ref="470" Component="#Ref-205" Culture="Default" Path="LocationFloat" Data="326.96167,0" />
+    <Item107 Ref="470" Component="#Ref-205" Culture="Default" Path="LocationFloat" Data="326.9617,0" />
     <Item108 Ref="471" Component="#Ref-205" Culture="Default" Path="SizeF" Data="144.358,20" />
     <Item109 Ref="472" Component="#Ref-205" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />
     <Item110 Ref="473" Component="#Ref-205" Culture="ar" Path="Text" Data="من:[?DateFrom!dd-MM-yyyy]" />

@@ -120,4 +120,67 @@
   <data name="dslayerEggs.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNsYXllckVnZ3MiPjxWaWV3IE5hbWU9IlNSX0xBWV9GbG9ja1N1bW1hcnkiPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGF5SG91c2VDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN0YXJ0UmVhckRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJTdGFydExheURhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSZWFyT3BlblN0b2NrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhckxvc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRmVlZENvbnMiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iUmVhckZlZWRDb25zUGVyQmlyZCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJSZWFyRmVlZENvbnNQZXJCaXJkU3RkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJpcmRzVHJhbnNmZXJUb0xheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheUxvc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlGZWVkQ29ucyIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJMYXlGZWVkQ29uc1BlckJpcmQiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iTGF5RmVlZENvbnNQZXJCaXJkU3RkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJpcmRzU3RvY2tBdDU1V2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGRCaXJkcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRlYWREdXJpbmdTZWxsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmlyZHNWYXJpYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheUJpcmRzUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uZGVtbkVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dzUGVyQmlyZDEwMFBlclN0ZCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJFZ2dzUGVyQmlyZDkzUGVyU3RkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkVnZ3NQZXJCaXJkNTVXZWVrU3RkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZWVkQ29uc1BlckJpcmRGcm9tU3RkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZWVkQ29uc1BlckJpcmRUb1N0ZCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJMYXlGZWVkQ29uc1BlckJpcmRGcm9tU3RkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkxheUZlZWRDb25zUGVyQmlyZFRvU3RkIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9IkZlZWRBY2hQZXJjIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRhcmdldFdlZWtObyIgVHlwZT0iQnl0ZSIgLz48RmllbGQgTmFtZT0iVGFyZ2V0UHJvZFdlZWtObyIgVHlwZT0iQnl0ZSIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+  XRLabel label = sender as XRLabel;
+
+// Read field value
+object val = GetCurrentColumnValue("StartRearDate");
+
+if (val == null || val == DBNull.Value)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(val);
+
+// Convert IsRTL safely (still a parameter)
+int isRtl = 0;
+if (Parameters["IsRTL"].Value != null)
+    isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"{dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"{dt:dd/MM/yyyy}";
+}
+
+}
+
+private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRLabel label = sender as XRLabel;
+
+// Read field value
+object val = GetCurrentColumnValue("StartLayDate");
+
+if (val == null || val == DBNull.Value)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(val);
+
+// Convert IsRTL safely (still a parameter)
+int isRtl = 0;
+if (Parameters["IsRTL"].Value != null)
+    isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"{dt:d/M/yyyy}";
+}
+else // English
+{
+    label.Text = $"{dt:dd/MM/yyyy}";
+}
+
+}
+</value>
+  </data>
 </root>

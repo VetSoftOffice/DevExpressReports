@@ -141,11 +141,11 @@ int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
 
 if (isRtl == 1) // Arabic
 {
-    label.Text = $"الي: {dt:d/M/yyyy}";
+    label.Text = $"الي: {dt:d/MM/yyyy}";
 }
 else // English
 {
-    label.Text = $"To: {dt:d/M/yyyy}";
+    label.Text = $"To: {dt:d/MM/yyyy}";
 }
 
 }

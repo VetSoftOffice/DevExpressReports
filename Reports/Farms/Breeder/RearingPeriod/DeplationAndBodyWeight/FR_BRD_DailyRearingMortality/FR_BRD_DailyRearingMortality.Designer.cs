@@ -2731,9 +2731,7 @@
             this.FarmNo,
             this.Flock,
             this.Datee});
-            this.Scripts.OnAfterPrint = "SR_FC_JournalEntryAll_AfterPrint";
-            this.Scripts.OnParametersRequestValueChanged = "SR_FC_JournalEntryAll_ParametersRequestValueChanged";
-            this.Scripts.OnPrintProgress = "SR_FC_JournalEntryAll_PrintProgress";
+           
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
