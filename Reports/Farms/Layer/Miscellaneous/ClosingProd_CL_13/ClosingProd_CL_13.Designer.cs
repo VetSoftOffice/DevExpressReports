@@ -119,11 +119,7 @@
             this.NoOfGroupsPerPage = new DevExpress.XtraReports.Parameters.Parameter();
             this.groupHeaderBand1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.DateLabel = new DevExpress.XtraReports.UI.XRLabel();
-            this.CustSuppNameLabel = new DevExpress.XtraReports.UI.XRLabel();
-            this.CustSuppCodeLabel = new DevExpress.XtraReports.UI.XRLabel();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.Supplier = new DevExpress.XtraReports.Parameters.Parameter();
             this.SupplierCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
@@ -135,6 +131,10 @@
             this.FlockCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.ReportNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.dslayer = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -729,11 +729,11 @@
             // groupHeaderBand1
             // 
             this.groupHeaderBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel4,
             this.xrLabel3,
+            this.xrLabel2,
             this.xrLabel1,
-            this.DateLabel,
-            this.CustSuppNameLabel,
-            this.CustSuppCodeLabel});
+            this.DateLabel});
             this.groupHeaderBand1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("tStActionID", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.groupHeaderBand1.KeepTogether = true;
@@ -749,39 +749,9 @@
             this.DateLabel.Scripts.OnBeforePrint = "DateLabel_BeforePrint";
             this.DateLabel.StylePriority.UseFont = false;
             // 
-            // CustSuppNameLabel
-            // 
-            this.CustSuppNameLabel.AutoWidth = true;
-            this.CustSuppNameLabel.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", " Not IsNullOrEmpty(?FarmNo)")});
-            this.CustSuppNameLabel.Multiline = true;
-            this.CustSuppNameLabel.Name = "CustSuppNameLabel";
-            this.CustSuppNameLabel.StylePriority.UseFont = false;
-            // 
-            // CustSuppCodeLabel
-            // 
-            this.CustSuppCodeLabel.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", " Not IsNullOrEmpty(?FlockCode)")});
-            this.CustSuppCodeLabel.Name = "CustSuppCodeLabel";
-            this.CustSuppCodeLabel.StylePriority.UseFont = false;
-            // 
             // SubBand1
             // 
             this.SubBand1.Name = "SubBand1";
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", " Not IsNullOrEmpty(?HouseNo)")});
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.StylePriority.UseFont = false;
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", " Not IsNullOrEmpty(?CropNo)")});
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.StylePriority.UseFont = false;
             // 
             // Supplier
             // 
@@ -890,6 +860,34 @@
             selectQuery1});
             this.dslayer.ResultSchemaSerializable = resources.GetString("dslayer.ResultSchemaSerializable");
             // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            // 
             // ClosingProd_CL_13
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -913,18 +911,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(337.876F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "SizeF", new System.Drawing.SizeF(130.912F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "Text", "Flock: [?FlockCode]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "ar", "Text", "قطيع: [?FlockCode]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(184.7339F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "SizeF", new System.Drawing.SizeF(153.1421F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "Text", " Farm No. : [?FarmNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "ar", "Text", "مزرعة: [?FarmNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(33.95832F, 3.178914E-05F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "SizeF", new System.Drawing.SizeF(129.1837F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "ar", "Text", "الي:"),
@@ -1012,7 +1000,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FlockCode, "Default", "Description", "FlockCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.groupHeaderBand1, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.groupHeaderBand1, "Default", "HeightF", 20.00003F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "Default", "Description", "Hide report footer"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "ar", "Description", "إخفاء ذيل التقرير"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportHeader, "Default", "Description", "Hide report header"),
@@ -1063,16 +1051,22 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Supplier, "Default", "Description", "Supplier"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SupplierCode, "Default", "Description", "SupplierCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(468.7881F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(129.1837F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Crop No. : [?CropNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "محصول: [?CropNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(609.75F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(153.1421F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "House No. : [?HouseNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "عنبر : [?HouseNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(184.7339F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(122.9167F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Farm No.: [?FarmNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(325.1249F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(128.3751F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "Flock.: [?FlockCode]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(469.1667F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(128.1249F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Crop No.: [?CropNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(620.2084F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(126.0416F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "House No.: [?HouseNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(184.7339F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable4, "Default", "SizeF", new System.Drawing.SizeF(467.4744F, 400F)),
@@ -1182,8 +1176,6 @@
         private DevExpress.XtraReports.UI.GroupHeaderBand groupHeaderBand1;
         private DevExpress.XtraReports.Parameters.Parameter Supplier;
         private DevExpress.XtraReports.Parameters.Parameter SupplierCode;
-        private DevExpress.XtraReports.UI.XRLabel CustSuppCodeLabel;
-        private DevExpress.XtraReports.UI.XRLabel CustSuppNameLabel;
         private DevExpress.XtraReports.UI.XRLabel DateLabel;
         private DevExpress.XtraReports.UI.SubBand SubBand5;
         private DevExpress.XtraReports.UI.SubBand SubBand6;
@@ -1201,7 +1193,6 @@
         private DevExpress.XtraReports.Parameters.Parameter FlockCode;
         private DevExpress.XtraReports.Parameters.Parameter ReportNo;
         private DevExpress.DataAccess.Sql.SqlDataSource dslayer;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
         private DevExpress.XtraReports.UI.XRTableCell dtInnerTransaction;
         private DevExpress.XtraReports.UI.XRTableCell dtTransIn;
@@ -1229,7 +1220,10 @@
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow10;
         private DevExpress.XtraReports.UI.XRTableCell dtCloseBalance;
         private DevExpress.XtraReports.UI.XRTableCell dtCloseBalanceValue;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }
