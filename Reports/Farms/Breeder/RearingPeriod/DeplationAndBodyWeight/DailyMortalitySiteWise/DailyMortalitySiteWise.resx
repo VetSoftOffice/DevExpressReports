@@ -560,6 +560,7 @@ private void xrTableCell96_BeforePrint(object sender, System.ComponentModel.Canc
         cell.Text = "0.00";
     }
 }
+
 </value>
   </data>
 </root>
