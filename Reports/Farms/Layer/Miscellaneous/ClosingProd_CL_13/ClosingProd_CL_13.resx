@@ -180,27 +180,40 @@ private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.C
     }
 }
 private void DateLabel_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRLabel label = sender as XRLabel;
+ XRLabel label = sender as XRLabel;
 
-// get parameter value safely
-object dateToValue = Parameters["DateTo"].Value;
-
+object dateToValue = base.Parameters["DateTo"].Value;
 if (dateToValue == null || dateToValue == DBNull.Value)
 {
     label.Text = "";
     return;
 }
 
-DateTime dt = (DateTime)dateToValue;
+DateTime dt;
 
-// Convert IsRTL safely
-int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+// لو DateTime
+if (dateToValue is DateTime)
+{
+    dt = (DateTime)dateToValue;
+}
+// لو String
+else if (DateTime.TryParse(dateToValue.ToString(), out DateTime parsedDate))
+{
+    dt = parsedDate;
+}
+else
+{
+    label.Text = "";
+    return;
+}
 
-if (isRtl == 1) // Arabic
+int isRtl = Convert.ToInt32(base.Parameters["IsRTL"].Value);
+
+if (isRtl == 1)
 {
     label.Text = $"الي: {dt:dd/MM/yyyy}";
 }
-else // English
+else
 {
     label.Text = $"Date To: {dt:dd/MM/yyyy}";
 }
