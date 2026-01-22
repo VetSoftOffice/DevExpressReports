@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_HTEggsBalanceAll" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" Version="25.2" DataMember="SR_BRD_HTEggsBalance" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_HTEggsBalanceAll" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="25.2" DataMember="SR_BRD_HTEggsBalance" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -771,7 +771,7 @@
   </StyleSheet>
   <LocalizationItems>
     <Item1 Ref="409" Component="#Ref-18" Culture="Default" Path="Description" Data="BookPerf" />
-    <Item2 Ref="410" Component="#Ref-42" Culture="Default" Path="HeightF" Data="20" />
+    <Item2 Ref="410" Component="#Ref-42" Culture="Default" Path="HeightF" Data="21.648571" />
     <Item3 Ref="411" Component="#Ref-22" Culture="Default" Path="Description" Data="Breed" />
     <Item4 Ref="412" Component="#Ref-21" Culture="Default" Path="Description" Data="CropNo" />
     <Item5 Ref="413" Component="#Ref-14" Culture="Default" Path="Description" Data="CycleFlkBatchCount" />
@@ -803,11 +803,11 @@
     <Item31 Ref="439" Component="#Ref-186" Culture="Default" Path="HeightF" Data="40.00002" />
     <Item32 Ref="440" Component="#Ref-45" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item33 Ref="441" Component="#Ref-45" Culture="Default" Path="SizeF" Data="204.12,20" />
-    <Item34 Ref="442" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="663.2342,0" />
+    <Item34 Ref="442" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="423.1026,0" />
     <Item35 Ref="443" Component="#Ref-43" Culture="Default" Path="SizeF" Data="347.748,20" />
     <Item36 Ref="444" Component="#Ref-43" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item37 Ref="445" Component="#Ref-47" Culture="Default" Path="LocationFloat" Data="1424.21338,0" />
-    <Item38 Ref="446" Component="#Ref-47" Culture="Default" Path="SizeF" Data="209.33,20" />
+    <Item37 Ref="445" Component="#Ref-47" Culture="Default" Path="LocationFloat" Data="951.577759,0" />
+    <Item38 Ref="446" Component="#Ref-47" Culture="Default" Path="SizeF" Data="197.713745,20" />
     <Item39 Ref="447" Component="#Ref-47" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item40 Ref="448" Component="#Ref-16" Culture="Default" Path="Description" Data="PlaceCode" />
     <Item41 Ref="449" Component="#Ref-255" Culture="Default" Path="HeightF" Data="0" />
@@ -819,19 +819,19 @@
     <Item47 Ref="455" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل صفحة" />
     <Item48 Ref="456" Component="#Ref-23" Culture="Default" Path="Description" Data="Sitee" />
     <Item49 Ref="457" Component="#Ref-142" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item50 Ref="458" Component="#Ref-142" Culture="Default" Path="SizeF" Data="1633.54346,20" />
+    <Item50 Ref="458" Component="#Ref-142" Culture="Default" Path="SizeF" Data="1148.99951,20" />
     <Item51 Ref="459" Component="#Ref-151" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item52 Ref="460" Component="#Ref-151" Culture="Default" Path="SizeF" Data="1633.54346,20" />
+    <Item52 Ref="460" Component="#Ref-151" Culture="Default" Path="SizeF" Data="1148.99951,20" />
     <Item53 Ref="461" Component="#Ref-147" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item54 Ref="462" Component="#Ref-147" Culture="Default" Path="SizeF" Data="1633.54346,20" />
+    <Item54 Ref="462" Component="#Ref-147" Culture="Default" Path="SizeF" Data="1148.99951,20" />
     <Item55 Ref="463" Component="#Ref-313" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item56 Ref="464" Component="#Ref-313" Culture="Default" Path="SizeF" Data="1633.54346,20" />
+    <Item56 Ref="464" Component="#Ref-313" Culture="Default" Path="SizeF" Data="1148.99951,20" />
     <Item57 Ref="465" Component="#Ref-370" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item58 Ref="466" Component="#Ref-370" Culture="Default" Path="SizeF" Data="1633.54346,20" />
+    <Item58 Ref="466" Component="#Ref-370" Culture="Default" Path="SizeF" Data="1148.99951,20" />
     <Item59 Ref="467" Component="#Ref-110" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item60 Ref="468" Component="#Ref-110" Culture="Default" Path="SizeF" Data="1633.54346,20" />
+    <Item60 Ref="468" Component="#Ref-110" Culture="Default" Path="SizeF" Data="1148.99951,20" />
     <Item61 Ref="469" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item62 Ref="470" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 20" />
+    <Item62 Ref="470" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 21.648571" />
     <Item63 Ref="471" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
     <Item64 Ref="472" Component="#Ref-146" Culture="Default" Path="HeightF" Data="20" />
     <Item65 Ref="473" Component="#Ref-150" Culture="Default" Path="HeightF" Data="20" />
@@ -839,7 +839,7 @@
     <Item67 Ref="475" Component="#Ref-141" Culture="Default" Path="HeightF" Data="20" />
     <Item68 Ref="476" Component="#Ref-256" Culture="Default" Path="HeightF" Data="20" />
     <Item69 Ref="477" Component="#Ref-194" Culture="Default" Path="HeightF" Data="20" />
-    <Item70 Ref="478" Component="#Ref-201" Culture="Default" Path="HeightF" Data="65.4166641" />
+    <Item70 Ref="478" Component="#Ref-201" Culture="Default" Path="HeightF" Data="65.41666" />
     <Item71 Ref="479" Component="#Ref-17" Culture="Default" Path="Description" Data="SupPlacesCount" />
     <Item72 Ref="480" Component="#Ref-50" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
     <Item73 Ref="481" Component="#Ref-50" Culture="Default" Path="SizeF" Data="1149,20" />
@@ -847,7 +847,7 @@
     <Item75 Ref="483" Component="#Ref-52" Culture="Default" Path="Text" Data="" />
     <Item76 Ref="484" Component="#Ref-52" Culture="Default" Path="Weight" Data="413.95166326949521" />
     <Item77 Ref="485" Component="#Ref-248" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item78 Ref="486" Component="#Ref-248" Culture="Default" Path="SizeF" Data="46.1596565,65.4166641" />
+    <Item78 Ref="486" Component="#Ref-248" Culture="Default" Path="SizeF" Data="46.15966,65.41666" />
     <Item79 Ref="487" Component="#Ref-250" Culture="Default" Path="Text" Data="Farm" />
     <Item80 Ref="488" Component="#Ref-250" Culture="ar" Path="Text" Data="مزرعة" />
     <Item81 Ref="489" Component="#Ref-250" Culture="Default" Path="Weight" Data="66.977148118463589" />
@@ -880,14 +880,14 @@
     <Item108 Ref="516" Component="#Ref-187" Culture="ar" Path="Text" Data="خط الانتاج: [?LineType]" />
     <Item109 Ref="517" Component="#Ref-242" Culture="Default" Path="LocationFloat" Data="46.15967,0" />
     <Item110 Ref="518" Component="#Ref-242" Culture="Default" Path="SizeF" Data="88.43439,65.41666" />
-    <Item111 Ref="519" Component="#Ref-236" Culture="Default" Path="LocationFloat" Data="134.59404,0" />
-    <Item112 Ref="520" Component="#Ref-236" Culture="Default" Path="SizeF" Data="115.256256,65.41666" />
+    <Item111 Ref="519" Component="#Ref-236" Culture="Default" Path="LocationFloat" Data="134.594,0" />
+    <Item112 Ref="520" Component="#Ref-236" Culture="Default" Path="SizeF" Data="115.2563,65.41666" />
     <Item113 Ref="521" Component="#Ref-232" Culture="Default" Path="LocationFloat" Data="249.8503,0" />
     <Item114 Ref="522" Component="#Ref-232" Culture="Default" Path="SizeF" Data="426.7569,25" />
     <Item115 Ref="523" Component="#Ref-220" Culture="Default" Path="LocationFloat" Data="249.8503,25" />
     <Item116 Ref="524" Component="#Ref-220" Culture="Default" Path="SizeF" Data="426.757,40.41666" />
     <Item117 Ref="525" Component="#Ref-206" Culture="Default" Path="LocationFloat" Data="676.6071,0" />
-    <Item118 Ref="526" Component="#Ref-206" Culture="Default" Path="SizeF" Data="334.375244,25" />
+    <Item118 Ref="526" Component="#Ref-206" Culture="Default" Path="SizeF" Data="334.3752,25" />
     <Item119 Ref="527" Component="#Ref-210" Culture="Default" Path="LocationFloat" Data="676.6071,25" />
     <Item120 Ref="528" Component="#Ref-210" Culture="Default" Path="SizeF" Data="334.3752,40.41666" />
     <Item121 Ref="529" Component="#Ref-202" Culture="Default" Path="LocationFloat" Data="1010.982,0" />
