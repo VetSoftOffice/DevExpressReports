@@ -242,19 +242,6 @@ decimal sumCullsFemale = 0;
 decimal sumMaleMort = 0;
 decimal sumMaleCulls = 0;
 // Helper method to safely get decimal parameter values
-private decimal GetParameterDecimalValue(XtraReport report, string paramName)
-{
-    if (report == null || report.Parameters == null)
-        return 0;
-        
-    DevExpress.XtraReports.Parameters.Parameter param = report.Parameters[paramName];
-    if (param != null &amp;&amp; param.Value != null &amp;&amp; param.Value != DBNull.Value)
-    {
-        decimal.TryParse(param.Value.ToString(), out decimal value);
-        return value;
-    }
-    return 0;
-}
 private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
     
@@ -358,10 +345,10 @@ private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.Canc
        decimal femaleDOA = 0;
 
     // --- FemaleReceived (parameter) ---
-    if (this.Report.Parameters["FemaleReceived"] != null &amp;&amp;
-        this.Report.Parameters["FemaleReceived"].Value != null)
+    if (Parameters["FemaleReceived"] != null &amp;&amp;
+        Parameters["FemaleReceived"].Value != null)
     {
-        decimal.TryParse(this.Report.Parameters["FemaleReceived"].Value.ToString(), out femaleReceived);
+        decimal.TryParse(Parameters["FemaleReceived"].Value.ToString(), out femaleReceived);
     }
     
     // --- FemaleDOA (parameter) ---
@@ -424,10 +411,10 @@ decimal birdsLeftMale = 0;
 decimal result = 0;
 
 // --- MaleReceived (parameter) ---
-if (this.Report.Parameters["MaleReceived"] != null &amp;&amp;
-    this.Report.Parameters["MaleReceived"].Value != null)
+if (Parameters["MaleReceived"] != null &amp;&amp;
+    Parameters["MaleReceived"].Value != null)
 {
-    decimal.TryParse(this.Report.Parameters["MaleReceived"].Value.ToString(), out maleReceived);
+    decimal.TryParse(Parameters["MaleReceived"].Value.ToString(), out maleReceived);
 }
 
 // --- MaleDOA (parameter) ---
@@ -457,17 +444,17 @@ decimal birdsLeftMale = 0;
 decimal result = 0;
 
 // --- MaleReceived ---
-if (this.Report.Parameters["MaleReceived"] != null &amp;&amp;
-    this.Report.Parameters["MaleReceived"].Value != null)
+if (Parameters["MaleReceived"] != null &amp;&amp;
+    Parameters["MaleReceived"].Value != null)
 {
-    decimal.TryParse(this.Report.Parameters["MaleReceived"].Value.ToString(), out maleReceived);
+    decimal.TryParse(Parameters["MaleReceived"].Value.ToString(), out maleReceived);
 }
 
 // --- MaleDOA ---
-if (this.Report.Parameters["MaleDOA"] != null &amp;&amp;
-    this.Report.Parameters["MaleDOA"].Value != null)
+if (Parameters["MaleDOA"] != null &amp;&amp;
+    Parameters["MaleDOA"].Value != null)
 {
-    decimal.TryParse(this.Report.Parameters["MaleDOA"].Value.ToString(), out maleDOA);
+    decimal.TryParse(Parameters["MaleDOA"].Value.ToString(), out maleDOA);
 }
 
 // --- BirdsLeftMale ---
@@ -482,6 +469,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = result.ToString("N0");
 
 }
+
 </value>
   </data>
 </root>

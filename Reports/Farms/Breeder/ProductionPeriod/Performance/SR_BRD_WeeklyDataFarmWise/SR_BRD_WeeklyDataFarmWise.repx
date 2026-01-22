@@ -965,7 +965,7 @@
     <Item126 Ref="559" Component="#Ref-283" Culture="Default" Path="LocationFloat" Data="339.3237,0" />
     <Item127 Ref="560" Component="#Ref-283" Culture="Default" Path="SizeF" Data="97.48291,25.62498" />
     <Item128 Ref="561" Component="#Ref-42" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item129 Ref="562" Component="#Ref-42" Culture="Default" Path="SizeF" Data="1149.00867,20" />
+    <Item129 Ref="562" Component="#Ref-42" Culture="Default" Path="SizeF" Data="1149.009,20" />
     <Item130 Ref="563" Component="#Ref-288" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item131 Ref="564" Component="#Ref-288" Culture="Default" Path="LocationFloat" Data="339.3237,25.62498" />
     <Item132 Ref="565" Component="#Ref-288" Culture="Default" Path="SizeF" Data="97.48291,50" />

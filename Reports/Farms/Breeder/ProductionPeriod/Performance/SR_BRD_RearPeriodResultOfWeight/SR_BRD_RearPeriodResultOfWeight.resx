@@ -135,6 +135,34 @@ private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports
    
 
 }
+
+private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal startFemale = 0;
+decimal startMale = 0;
+
+// قراءة القيم بأمان
+object fVal = GetCurrentColumnValue("StartFemaleBirds");
+object mVal = GetCurrentColumnValue("StartMaleBirds");
+
+if (fVal != null &amp;&amp; fVal != DBNull.Value)
+    decimal.TryParse(fVal.ToString(), out startFemale);
+
+if (mVal != null &amp;&amp; mVal != DBNull.Value)
+    decimal.TryParse(mVal.ToString(), out startMale);
+
+decimal result = 0;
+
+// نفس شرط Crystal
+if (startFemale != 0)
+{
+    result = (startMale * 100) / startFemale;
+}
+
+// عرض النتيجة
+XRLabel lbl = sender as XRLabel;
+lbl.Text = result.ToString("N2"); // أو N0 حسب اللي محتاجه
+
+}
 </value>
   </data>
 </root>
