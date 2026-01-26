@@ -896,7 +896,7 @@
     <Item277 Ref="622" Component="#Ref-206" Culture="Default" Path="Weight" Data="0.48991460509034224" />
     <Item278 Ref="623" Component="#Ref-208" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item279 Ref="624" Component="#Ref-208" Culture="Default" Path="Text" Data="Rejected Eggs std %" />
-    <Item280 Ref="625" Component="#Ref-208" Culture="ar" Path="Text" Data="قياسي بيض مرفوض %." />
+    <Item280 Ref="625" Component="#Ref-208" Culture="ar" Path="Text" Data=" قياسي بيض مرفوض %." />
     <Item281 Ref="626" Component="#Ref-208" Culture="Default" Path="Weight" Data="0.52347130354380933" />
     <Item282 Ref="627" Component="#Ref-223" Culture="Default" Path="Text" Data="" />
     <Item283 Ref="628" Component="#Ref-223" Culture="Default" Path="Weight" Data="1.273774896377474" />
