@@ -116,6 +116,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         
         private SR_BRD_FlkCumSummaryDataDataTable tableSR_BRD_FlkCumSummaryData;
         
+        private SR_BRD_FlockSummaryDataTable tableSR_BRD_FlockSummary;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -283,6 +285,9 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                 }
                 if ((ds.Tables["SR_BRD_FlkCumSummaryData"] != null)) {
                     base.Tables.Add(new SR_BRD_FlkCumSummaryDataDataTable(ds.Tables["SR_BRD_FlkCumSummaryData"]));
+                }
+                if ((ds.Tables["SR_BRD_FlockSummary"] != null)) {
+                    base.Tables.Add(new SR_BRD_FlockSummaryDataTable(ds.Tables["SR_BRD_FlockSummary"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -764,6 +769,16 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SR_BRD_FlockSummaryDataTable SR_BRD_FlockSummary {
+            get {
+                return this.tableSR_BRD_FlockSummary;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -966,6 +981,9 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                 }
                 if ((ds.Tables["SR_BRD_FlkCumSummaryData"] != null)) {
                     base.Tables.Add(new SR_BRD_FlkCumSummaryDataDataTable(ds.Tables["SR_BRD_FlkCumSummaryData"]));
+                }
+                if ((ds.Tables["SR_BRD_FlockSummary"] != null)) {
+                    base.Tables.Add(new SR_BRD_FlockSummaryDataTable(ds.Tables["SR_BRD_FlockSummary"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1276,6 +1294,12 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                     this.tableSR_BRD_FlkCumSummaryData.InitVars();
                 }
             }
+            this.tableSR_BRD_FlockSummary = ((SR_BRD_FlockSummaryDataTable)(base.Tables["SR_BRD_FlockSummary"]));
+            if ((initTable == true)) {
+                if ((this.tableSR_BRD_FlockSummary != null)) {
+                    this.tableSR_BRD_FlockSummary.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1378,6 +1402,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
             base.Tables.Add(this.tableSR_BRD_FlockSummary_1);
             this.tableSR_BRD_FlkCumSummaryData = new SR_BRD_FlkCumSummaryDataDataTable();
             base.Tables.Add(this.tableSR_BRD_FlkCumSummaryData);
+            this.tableSR_BRD_FlockSummary = new SR_BRD_FlockSummaryDataTable();
+            base.Tables.Add(this.tableSR_BRD_FlockSummary);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1658,6 +1684,12 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeSR_BRD_FlockSummary() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1848,6 +1880,9 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SR_BRD_FlkCumSummaryDataRowChangeEventHandler(object sender, SR_BRD_FlkCumSummaryDataRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void SR_BRD_FlockSummaryRowChangeEventHandler(object sender, SR_BRD_FlockSummaryRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -22922,6 +22957,817 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SR_BRD_FlockSummaryDataTable : global::System.Data.TypedTableBase<SR_BRD_FlockSummaryRow> {
+            
+            private global::System.Data.DataColumn columnFChickRecived;
+            
+            private global::System.Data.DataColumn columnMChickRecived;
+            
+            private global::System.Data.DataColumn columnFDOA;
+            
+            private global::System.Data.DataColumn columnMDOA;
+            
+            private global::System.Data.DataColumn columnFcasDAO;
+            
+            private global::System.Data.DataColumn columnFemale_Mort_Week;
+            
+            private global::System.Data.DataColumn columnMale_Mort_Week;
+            
+            private global::System.Data.DataColumn columnFemale_Mort;
+            
+            private global::System.Data.DataColumn columnMale_Mort;
+            
+            private global::System.Data.DataColumn columnFemale_SexError;
+            
+            private global::System.Data.DataColumn columnMale_SexError;
+            
+            private global::System.Data.DataColumn columnFemaleTransIn;
+            
+            private global::System.Data.DataColumn columnMaleTranIn;
+            
+            private global::System.Data.DataColumn columnMaleTranOut;
+            
+            private global::System.Data.DataColumn columnFemaleTransOut;
+            
+            private global::System.Data.DataColumn columnMale_Selection;
+            
+            private global::System.Data.DataColumn columnFABW;
+            
+            private global::System.Data.DataColumn columnFABW_Stad;
+            
+            private global::System.Data.DataColumn columnMABW;
+            
+            private global::System.Data.DataColumn columnMABW_Stad;
+            
+            private global::System.Data.DataColumn columnFemaleCV;
+            
+            private global::System.Data.DataColumn columnMaleCV;
+            
+            private global::System.Data.DataColumn columnUniformity;
+            
+            private global::System.Data.DataColumn columnMaleUniformity;
+            
+            private global::System.Data.DataColumn columnFinishWeekNo;
+            
+            private global::System.Data.DataColumn columnLiveFemale;
+            
+            private global::System.Data.DataColumn columnLiveMale;
+            
+            private global::System.Data.DataColumn columnFemaleSelling;
+            
+            private global::System.Data.DataColumn columnMaleSelling;
+            
+            private global::System.Data.DataColumn columnFVar;
+            
+            private global::System.Data.DataColumn columnMVar;
+            
+            private global::System.Data.DataColumn columnMcasDAO;
+            
+            private global::System.Data.DataColumn columnFemaleToVetAndMinAgr;
+            
+            private global::System.Data.DataColumn columnMaleToVetAndMinAgr;
+            
+            private global::System.Data.DataColumn columnTotalFemaleSamples;
+            
+            private global::System.Data.DataColumn columnTotalMaleSamples;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_FlockSummaryDataTable() {
+                this.TableName = "SR_BRD_FlockSummary";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_BRD_FlockSummaryDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
+            protected SR_BRD_FlockSummaryDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FChickRecivedColumn {
+                get {
+                    return this.columnFChickRecived;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MChickRecivedColumn {
+                get {
+                    return this.columnMChickRecived;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FDOAColumn {
+                get {
+                    return this.columnFDOA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MDOAColumn {
+                get {
+                    return this.columnMDOA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FcasDAOColumn {
+                get {
+                    return this.columnFcasDAO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Female_Mort_WeekColumn {
+                get {
+                    return this.columnFemale_Mort_Week;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Male_Mort_WeekColumn {
+                get {
+                    return this.columnMale_Mort_Week;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Female_MortColumn {
+                get {
+                    return this.columnFemale_Mort;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Male_MortColumn {
+                get {
+                    return this.columnMale_Mort;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Female_SexErrorColumn {
+                get {
+                    return this.columnFemale_SexError;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Male_SexErrorColumn {
+                get {
+                    return this.columnMale_SexError;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleTransInColumn {
+                get {
+                    return this.columnFemaleTransIn;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleTranInColumn {
+                get {
+                    return this.columnMaleTranIn;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleTranOutColumn {
+                get {
+                    return this.columnMaleTranOut;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleTransOutColumn {
+                get {
+                    return this.columnFemaleTransOut;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Male_SelectionColumn {
+                get {
+                    return this.columnMale_Selection;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FABWColumn {
+                get {
+                    return this.columnFABW;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FABW_StadColumn {
+                get {
+                    return this.columnFABW_Stad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MABWColumn {
+                get {
+                    return this.columnMABW;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MABW_StadColumn {
+                get {
+                    return this.columnMABW_Stad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleCVColumn {
+                get {
+                    return this.columnFemaleCV;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleCVColumn {
+                get {
+                    return this.columnMaleCV;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UniformityColumn {
+                get {
+                    return this.columnUniformity;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleUniformityColumn {
+                get {
+                    return this.columnMaleUniformity;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FinishWeekNoColumn {
+                get {
+                    return this.columnFinishWeekNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LiveFemaleColumn {
+                get {
+                    return this.columnLiveFemale;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LiveMaleColumn {
+                get {
+                    return this.columnLiveMale;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleSellingColumn {
+                get {
+                    return this.columnFemaleSelling;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleSellingColumn {
+                get {
+                    return this.columnMaleSelling;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FVarColumn {
+                get {
+                    return this.columnFVar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MVarColumn {
+                get {
+                    return this.columnMVar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn McasDAOColumn {
+                get {
+                    return this.columnMcasDAO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleToVetAndMinAgrColumn {
+                get {
+                    return this.columnFemaleToVetAndMinAgr;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleToVetAndMinAgrColumn {
+                get {
+                    return this.columnMaleToVetAndMinAgr;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalFemaleSamplesColumn {
+                get {
+                    return this.columnTotalFemaleSamples;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalMaleSamplesColumn {
+                get {
+                    return this.columnTotalMaleSamples;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_FlockSummaryRow this[int index] {
+                get {
+                    return ((SR_BRD_FlockSummaryRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_FlockSummaryRowChangeEventHandler SR_BRD_FlockSummaryRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_FlockSummaryRowChangeEventHandler SR_BRD_FlockSummaryRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_FlockSummaryRowChangeEventHandler SR_BRD_FlockSummaryRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_FlockSummaryRowChangeEventHandler SR_BRD_FlockSummaryRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddSR_BRD_FlockSummaryRow(SR_BRD_FlockSummaryRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_FlockSummaryRow AddSR_BRD_FlockSummaryRow(
+                        int FChickRecived, 
+                        int MChickRecived, 
+                        int FDOA, 
+                        int MDOA, 
+                        int FcasDAO, 
+                        int Female_Mort_Week, 
+                        int Male_Mort_Week, 
+                        int Female_Mort, 
+                        int Male_Mort, 
+                        int Female_SexError, 
+                        int Male_SexError, 
+                        int FemaleTransIn, 
+                        int MaleTranIn, 
+                        int MaleTranOut, 
+                        int FemaleTransOut, 
+                        int Male_Selection, 
+                        int FABW, 
+                        int FABW_Stad, 
+                        int MABW, 
+                        int MABW_Stad, 
+                        int FemaleCV, 
+                        int MaleCV, 
+                        int Uniformity, 
+                        int MaleUniformity, 
+                        int FinishWeekNo, 
+                        int LiveFemale, 
+                        int LiveMale, 
+                        int FemaleSelling, 
+                        int MaleSelling, 
+                        int FVar, 
+                        int MVar, 
+                        int McasDAO, 
+                        int FemaleToVetAndMinAgr, 
+                        int MaleToVetAndMinAgr, 
+                        int TotalFemaleSamples, 
+                        int TotalMaleSamples) {
+                SR_BRD_FlockSummaryRow rowSR_BRD_FlockSummaryRow = ((SR_BRD_FlockSummaryRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        FChickRecived,
+                        MChickRecived,
+                        FDOA,
+                        MDOA,
+                        FcasDAO,
+                        Female_Mort_Week,
+                        Male_Mort_Week,
+                        Female_Mort,
+                        Male_Mort,
+                        Female_SexError,
+                        Male_SexError,
+                        FemaleTransIn,
+                        MaleTranIn,
+                        MaleTranOut,
+                        FemaleTransOut,
+                        Male_Selection,
+                        FABW,
+                        FABW_Stad,
+                        MABW,
+                        MABW_Stad,
+                        FemaleCV,
+                        MaleCV,
+                        Uniformity,
+                        MaleUniformity,
+                        FinishWeekNo,
+                        LiveFemale,
+                        LiveMale,
+                        FemaleSelling,
+                        MaleSelling,
+                        FVar,
+                        MVar,
+                        McasDAO,
+                        FemaleToVetAndMinAgr,
+                        MaleToVetAndMinAgr,
+                        TotalFemaleSamples,
+                        TotalMaleSamples};
+                rowSR_BRD_FlockSummaryRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSR_BRD_FlockSummaryRow);
+                return rowSR_BRD_FlockSummaryRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SR_BRD_FlockSummaryDataTable cln = ((SR_BRD_FlockSummaryDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SR_BRD_FlockSummaryDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnFChickRecived = base.Columns["FChickRecived"];
+                this.columnMChickRecived = base.Columns["MChickRecived"];
+                this.columnFDOA = base.Columns["FDOA"];
+                this.columnMDOA = base.Columns["MDOA"];
+                this.columnFcasDAO = base.Columns["FcasDAO"];
+                this.columnFemale_Mort_Week = base.Columns["Female_Mort_Week"];
+                this.columnMale_Mort_Week = base.Columns["Male_Mort_Week"];
+                this.columnFemale_Mort = base.Columns["Female_Mort"];
+                this.columnMale_Mort = base.Columns["Male_Mort"];
+                this.columnFemale_SexError = base.Columns["Female_SexError"];
+                this.columnMale_SexError = base.Columns["Male_SexError"];
+                this.columnFemaleTransIn = base.Columns["FemaleTransIn"];
+                this.columnMaleTranIn = base.Columns["MaleTranIn"];
+                this.columnMaleTranOut = base.Columns["MaleTranOut"];
+                this.columnFemaleTransOut = base.Columns["FemaleTransOut"];
+                this.columnMale_Selection = base.Columns["Male_Selection"];
+                this.columnFABW = base.Columns["FABW"];
+                this.columnFABW_Stad = base.Columns["FABW_Stad"];
+                this.columnMABW = base.Columns["MABW"];
+                this.columnMABW_Stad = base.Columns["MABW_Stad"];
+                this.columnFemaleCV = base.Columns["FemaleCV"];
+                this.columnMaleCV = base.Columns["MaleCV"];
+                this.columnUniformity = base.Columns["Uniformity"];
+                this.columnMaleUniformity = base.Columns["MaleUniformity"];
+                this.columnFinishWeekNo = base.Columns["FinishWeekNo"];
+                this.columnLiveFemale = base.Columns["LiveFemale"];
+                this.columnLiveMale = base.Columns["LiveMale"];
+                this.columnFemaleSelling = base.Columns["FemaleSelling"];
+                this.columnMaleSelling = base.Columns["MaleSelling"];
+                this.columnFVar = base.Columns["FVar"];
+                this.columnMVar = base.Columns["MVar"];
+                this.columnMcasDAO = base.Columns["McasDAO"];
+                this.columnFemaleToVetAndMinAgr = base.Columns["FemaleToVetAndMinAgr"];
+                this.columnMaleToVetAndMinAgr = base.Columns["MaleToVetAndMinAgr"];
+                this.columnTotalFemaleSamples = base.Columns["TotalFemaleSamples"];
+                this.columnTotalMaleSamples = base.Columns["TotalMaleSamples"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnFChickRecived = new global::System.Data.DataColumn("FChickRecived", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFChickRecived);
+                this.columnMChickRecived = new global::System.Data.DataColumn("MChickRecived", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMChickRecived);
+                this.columnFDOA = new global::System.Data.DataColumn("FDOA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFDOA);
+                this.columnMDOA = new global::System.Data.DataColumn("MDOA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMDOA);
+                this.columnFcasDAO = new global::System.Data.DataColumn("FcasDAO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFcasDAO);
+                this.columnFemale_Mort_Week = new global::System.Data.DataColumn("Female_Mort_Week", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemale_Mort_Week);
+                this.columnMale_Mort_Week = new global::System.Data.DataColumn("Male_Mort_Week", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMale_Mort_Week);
+                this.columnFemale_Mort = new global::System.Data.DataColumn("Female_Mort", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemale_Mort);
+                this.columnMale_Mort = new global::System.Data.DataColumn("Male_Mort", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMale_Mort);
+                this.columnFemale_SexError = new global::System.Data.DataColumn("Female_SexError", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemale_SexError);
+                this.columnMale_SexError = new global::System.Data.DataColumn("Male_SexError", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMale_SexError);
+                this.columnFemaleTransIn = new global::System.Data.DataColumn("FemaleTransIn", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleTransIn);
+                this.columnMaleTranIn = new global::System.Data.DataColumn("MaleTranIn", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleTranIn);
+                this.columnMaleTranOut = new global::System.Data.DataColumn("MaleTranOut", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleTranOut);
+                this.columnFemaleTransOut = new global::System.Data.DataColumn("FemaleTransOut", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleTransOut);
+                this.columnMale_Selection = new global::System.Data.DataColumn("Male_Selection", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMale_Selection);
+                this.columnFABW = new global::System.Data.DataColumn("FABW", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFABW);
+                this.columnFABW_Stad = new global::System.Data.DataColumn("FABW_Stad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFABW_Stad);
+                this.columnMABW = new global::System.Data.DataColumn("MABW", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMABW);
+                this.columnMABW_Stad = new global::System.Data.DataColumn("MABW_Stad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMABW_Stad);
+                this.columnFemaleCV = new global::System.Data.DataColumn("FemaleCV", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleCV);
+                this.columnMaleCV = new global::System.Data.DataColumn("MaleCV", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleCV);
+                this.columnUniformity = new global::System.Data.DataColumn("Uniformity", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUniformity);
+                this.columnMaleUniformity = new global::System.Data.DataColumn("MaleUniformity", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleUniformity);
+                this.columnFinishWeekNo = new global::System.Data.DataColumn("FinishWeekNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFinishWeekNo);
+                this.columnLiveFemale = new global::System.Data.DataColumn("LiveFemale", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLiveFemale);
+                this.columnLiveMale = new global::System.Data.DataColumn("LiveMale", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLiveMale);
+                this.columnFemaleSelling = new global::System.Data.DataColumn("FemaleSelling", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleSelling);
+                this.columnMaleSelling = new global::System.Data.DataColumn("MaleSelling", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleSelling);
+                this.columnFVar = new global::System.Data.DataColumn("FVar", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFVar);
+                this.columnMVar = new global::System.Data.DataColumn("MVar", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVar);
+                this.columnMcasDAO = new global::System.Data.DataColumn("McasDAO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMcasDAO);
+                this.columnFemaleToVetAndMinAgr = new global::System.Data.DataColumn("FemaleToVetAndMinAgr", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleToVetAndMinAgr);
+                this.columnMaleToVetAndMinAgr = new global::System.Data.DataColumn("MaleToVetAndMinAgr", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleToVetAndMinAgr);
+                this.columnTotalFemaleSamples = new global::System.Data.DataColumn("TotalFemaleSamples", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalFemaleSamples);
+                this.columnTotalMaleSamples = new global::System.Data.DataColumn("TotalMaleSamples", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalMaleSamples);
+                this.columnFChickRecived.ReadOnly = true;
+                this.columnMChickRecived.ReadOnly = true;
+                this.columnFDOA.ReadOnly = true;
+                this.columnMDOA.ReadOnly = true;
+                this.columnFcasDAO.ReadOnly = true;
+                this.columnFemale_Mort_Week.ReadOnly = true;
+                this.columnMale_Mort_Week.ReadOnly = true;
+                this.columnFemale_Mort.ReadOnly = true;
+                this.columnMale_Mort.ReadOnly = true;
+                this.columnFemale_SexError.ReadOnly = true;
+                this.columnMale_SexError.ReadOnly = true;
+                this.columnFemaleTransIn.ReadOnly = true;
+                this.columnMaleTranIn.ReadOnly = true;
+                this.columnMaleTranOut.ReadOnly = true;
+                this.columnFemaleTransOut.ReadOnly = true;
+                this.columnMale_Selection.ReadOnly = true;
+                this.columnFABW.ReadOnly = true;
+                this.columnFABW_Stad.ReadOnly = true;
+                this.columnMABW.ReadOnly = true;
+                this.columnMABW_Stad.ReadOnly = true;
+                this.columnFemaleCV.ReadOnly = true;
+                this.columnMaleCV.ReadOnly = true;
+                this.columnUniformity.ReadOnly = true;
+                this.columnMaleUniformity.ReadOnly = true;
+                this.columnFinishWeekNo.ReadOnly = true;
+                this.columnLiveFemale.ReadOnly = true;
+                this.columnLiveMale.ReadOnly = true;
+                this.columnFemaleSelling.ReadOnly = true;
+                this.columnMaleSelling.ReadOnly = true;
+                this.columnFVar.ReadOnly = true;
+                this.columnMVar.ReadOnly = true;
+                this.columnMcasDAO.ReadOnly = true;
+                this.columnFemaleToVetAndMinAgr.ReadOnly = true;
+                this.columnMaleToVetAndMinAgr.ReadOnly = true;
+                this.columnTotalFemaleSamples.ReadOnly = true;
+                this.columnTotalMaleSamples.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_FlockSummaryRow NewSR_BRD_FlockSummaryRow() {
+                return ((SR_BRD_FlockSummaryRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SR_BRD_FlockSummaryRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SR_BRD_FlockSummaryRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SR_BRD_FlockSummaryRowChanged != null)) {
+                    this.SR_BRD_FlockSummaryRowChanged(this, new SR_BRD_FlockSummaryRowChangeEvent(((SR_BRD_FlockSummaryRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SR_BRD_FlockSummaryRowChanging != null)) {
+                    this.SR_BRD_FlockSummaryRowChanging(this, new SR_BRD_FlockSummaryRowChangeEvent(((SR_BRD_FlockSummaryRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SR_BRD_FlockSummaryRowDeleted != null)) {
+                    this.SR_BRD_FlockSummaryRowDeleted(this, new SR_BRD_FlockSummaryRowChangeEvent(((SR_BRD_FlockSummaryRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SR_BRD_FlockSummaryRowDeleting != null)) {
+                    this.SR_BRD_FlockSummaryRowDeleting(this, new SR_BRD_FlockSummaryRowChangeEvent(((SR_BRD_FlockSummaryRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveSR_BRD_FlockSummaryRow(SR_BRD_FlockSummaryRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsGeneralLedger ds = new dsGeneralLedger();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SR_BRD_FlockSummaryDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class SR_BRD_MainProdUnitDataRow : global::System.Data.DataRow {
@@ -41871,6 +42717,1034 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SR_BRD_FlockSummaryRow : global::System.Data.DataRow {
+            
+            private SR_BRD_FlockSummaryDataTable tableSR_BRD_FlockSummary;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_BRD_FlockSummaryRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSR_BRD_FlockSummary = ((SR_BRD_FlockSummaryDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FChickRecived {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FChickRecivedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FChickRecived\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FChickRecivedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MChickRecived {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MChickRecivedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MChickRecived\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MChickRecivedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FDOA {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FDOAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FDOA\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FDOAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MDOA {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MDOAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MDOA\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MDOAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FcasDAO {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FcasDAOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FcasDAO\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FcasDAOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Female_Mort_Week {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Female_Mort_WeekColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Female_Mort_Week\' in table \'SR_BRD_FlockSummary\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Female_Mort_WeekColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Male_Mort_Week {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Male_Mort_WeekColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Male_Mort_Week\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Male_Mort_WeekColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Female_Mort {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Female_MortColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Female_Mort\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Female_MortColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Male_Mort {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Male_MortColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Male_Mort\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Male_MortColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Female_SexError {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Female_SexErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Female_SexError\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Female_SexErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Male_SexError {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Male_SexErrorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Male_SexError\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Male_SexErrorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleTransIn {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FemaleTransInColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleTransIn\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FemaleTransInColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleTranIn {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MaleTranInColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleTranIn\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MaleTranInColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleTranOut {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MaleTranOutColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleTranOut\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MaleTranOutColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleTransOut {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FemaleTransOutColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleTransOut\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FemaleTransOutColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Male_Selection {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.Male_SelectionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Male_Selection\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.Male_SelectionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FABW {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FABWColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FABW\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FABWColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FABW_Stad {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FABW_StadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FABW_Stad\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FABW_StadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MABW {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MABWColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MABW\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MABWColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MABW_Stad {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MABW_StadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MABW_Stad\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MABW_StadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleCV {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FemaleCVColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleCV\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FemaleCVColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleCV {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MaleCVColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleCV\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MaleCVColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Uniformity {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.UniformityColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Uniformity\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.UniformityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleUniformity {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MaleUniformityColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleUniformity\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MaleUniformityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FinishWeekNo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FinishWeekNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FinishWeekNo\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FinishWeekNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int LiveFemale {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.LiveFemaleColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LiveFemale\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.LiveFemaleColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int LiveMale {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.LiveMaleColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LiveMale\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.LiveMaleColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleSelling {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FemaleSellingColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleSelling\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FemaleSellingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleSelling {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MaleSellingColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleSelling\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MaleSellingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FVar {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FVarColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FVar\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FVarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MVar {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MVarColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MVar\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MVarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int McasDAO {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.McasDAOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'McasDAO\' in table \'SR_BRD_FlockSummary\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.McasDAOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleToVetAndMinAgr {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.FemaleToVetAndMinAgrColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleToVetAndMinAgr\' in table \'SR_BRD_FlockSummary\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.FemaleToVetAndMinAgrColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleToVetAndMinAgr {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.MaleToVetAndMinAgrColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleToVetAndMinAgr\' in table \'SR_BRD_FlockSummary\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.MaleToVetAndMinAgrColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalFemaleSamples {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.TotalFemaleSamplesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalFemaleSamples\' in table \'SR_BRD_FlockSummary\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.TotalFemaleSamplesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalMaleSamples {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_FlockSummary.TotalMaleSamplesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalMaleSamples\' in table \'SR_BRD_FlockSummary\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_FlockSummary.TotalMaleSamplesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFChickRecivedNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FChickRecivedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFChickRecivedNull() {
+                this[this.tableSR_BRD_FlockSummary.FChickRecivedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMChickRecivedNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MChickRecivedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMChickRecivedNull() {
+                this[this.tableSR_BRD_FlockSummary.MChickRecivedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFDOANull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FDOAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFDOANull() {
+                this[this.tableSR_BRD_FlockSummary.FDOAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMDOANull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MDOAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMDOANull() {
+                this[this.tableSR_BRD_FlockSummary.MDOAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFcasDAONull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FcasDAOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFcasDAONull() {
+                this[this.tableSR_BRD_FlockSummary.FcasDAOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemale_Mort_WeekNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Female_Mort_WeekColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemale_Mort_WeekNull() {
+                this[this.tableSR_BRD_FlockSummary.Female_Mort_WeekColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMale_Mort_WeekNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Male_Mort_WeekColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMale_Mort_WeekNull() {
+                this[this.tableSR_BRD_FlockSummary.Male_Mort_WeekColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemale_MortNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Female_MortColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemale_MortNull() {
+                this[this.tableSR_BRD_FlockSummary.Female_MortColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMale_MortNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Male_MortColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMale_MortNull() {
+                this[this.tableSR_BRD_FlockSummary.Male_MortColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemale_SexErrorNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Female_SexErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemale_SexErrorNull() {
+                this[this.tableSR_BRD_FlockSummary.Female_SexErrorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMale_SexErrorNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Male_SexErrorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMale_SexErrorNull() {
+                this[this.tableSR_BRD_FlockSummary.Male_SexErrorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleTransInNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FemaleTransInColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleTransInNull() {
+                this[this.tableSR_BRD_FlockSummary.FemaleTransInColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleTranInNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MaleTranInColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleTranInNull() {
+                this[this.tableSR_BRD_FlockSummary.MaleTranInColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleTranOutNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MaleTranOutColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleTranOutNull() {
+                this[this.tableSR_BRD_FlockSummary.MaleTranOutColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleTransOutNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FemaleTransOutColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleTransOutNull() {
+                this[this.tableSR_BRD_FlockSummary.FemaleTransOutColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMale_SelectionNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.Male_SelectionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMale_SelectionNull() {
+                this[this.tableSR_BRD_FlockSummary.Male_SelectionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFABWNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FABWColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFABWNull() {
+                this[this.tableSR_BRD_FlockSummary.FABWColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFABW_StadNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FABW_StadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFABW_StadNull() {
+                this[this.tableSR_BRD_FlockSummary.FABW_StadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMABWNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MABWColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMABWNull() {
+                this[this.tableSR_BRD_FlockSummary.MABWColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMABW_StadNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MABW_StadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMABW_StadNull() {
+                this[this.tableSR_BRD_FlockSummary.MABW_StadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleCVNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FemaleCVColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleCVNull() {
+                this[this.tableSR_BRD_FlockSummary.FemaleCVColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleCVNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MaleCVColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleCVNull() {
+                this[this.tableSR_BRD_FlockSummary.MaleCVColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUniformityNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.UniformityColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUniformityNull() {
+                this[this.tableSR_BRD_FlockSummary.UniformityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleUniformityNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MaleUniformityColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleUniformityNull() {
+                this[this.tableSR_BRD_FlockSummary.MaleUniformityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFinishWeekNoNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FinishWeekNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFinishWeekNoNull() {
+                this[this.tableSR_BRD_FlockSummary.FinishWeekNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsLiveFemaleNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.LiveFemaleColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetLiveFemaleNull() {
+                this[this.tableSR_BRD_FlockSummary.LiveFemaleColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsLiveMaleNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.LiveMaleColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetLiveMaleNull() {
+                this[this.tableSR_BRD_FlockSummary.LiveMaleColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleSellingNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FemaleSellingColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleSellingNull() {
+                this[this.tableSR_BRD_FlockSummary.FemaleSellingColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleSellingNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MaleSellingColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleSellingNull() {
+                this[this.tableSR_BRD_FlockSummary.MaleSellingColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFVarNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FVarColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFVarNull() {
+                this[this.tableSR_BRD_FlockSummary.FVarColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMVarNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MVarColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMVarNull() {
+                this[this.tableSR_BRD_FlockSummary.MVarColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMcasDAONull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.McasDAOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMcasDAONull() {
+                this[this.tableSR_BRD_FlockSummary.McasDAOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleToVetAndMinAgrNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.FemaleToVetAndMinAgrColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleToVetAndMinAgrNull() {
+                this[this.tableSR_BRD_FlockSummary.FemaleToVetAndMinAgrColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleToVetAndMinAgrNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.MaleToVetAndMinAgrColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleToVetAndMinAgrNull() {
+                this[this.tableSR_BRD_FlockSummary.MaleToVetAndMinAgrColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalFemaleSamplesNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.TotalFemaleSamplesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalFemaleSamplesNull() {
+                this[this.tableSR_BRD_FlockSummary.TotalFemaleSamplesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalMaleSamplesNull() {
+                return this.IsNull(this.tableSR_BRD_FlockSummary.TotalMaleSamplesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalMaleSamplesNull() {
+                this[this.tableSR_BRD_FlockSummary.TotalMaleSamplesColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -43420,6 +45294,40 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_BRD_FlkCumSummaryDataRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class SR_BRD_FlockSummaryRowChangeEvent : global::System.EventArgs {
+            
+            private SR_BRD_FlockSummaryRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_FlockSummaryRowChangeEvent(SR_BRD_FlockSummaryRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_FlockSummaryRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -54271,6 +56179,225 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets.dsGeneralLedgerTableA
                 this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             dsGeneralLedger.SR_BRD_FlkCumSummaryDataDataTable dataTable = new dsGeneralLedger.SR_BRD_FlkCumSummaryDataDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SR_BRD_FlockSummaryTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public SR_BRD_FlockSummaryTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SR_BRD_FlockSummary";
+            tableMapping.ColumnMappings.Add("FChickRecived", "FChickRecived");
+            tableMapping.ColumnMappings.Add("MChickRecived", "MChickRecived");
+            tableMapping.ColumnMappings.Add("FDOA", "FDOA");
+            tableMapping.ColumnMappings.Add("MDOA", "MDOA");
+            tableMapping.ColumnMappings.Add("FcasDAO", "FcasDAO");
+            tableMapping.ColumnMappings.Add("Female_Mort_Week", "Female_Mort_Week");
+            tableMapping.ColumnMappings.Add("Male_Mort_Week", "Male_Mort_Week");
+            tableMapping.ColumnMappings.Add("Female_Mort", "Female_Mort");
+            tableMapping.ColumnMappings.Add("Male_Mort", "Male_Mort");
+            tableMapping.ColumnMappings.Add("Female_SexError", "Female_SexError");
+            tableMapping.ColumnMappings.Add("Male_SexError", "Male_SexError");
+            tableMapping.ColumnMappings.Add("FemaleTransIn", "FemaleTransIn");
+            tableMapping.ColumnMappings.Add("MaleTranIn", "MaleTranIn");
+            tableMapping.ColumnMappings.Add("MaleTranOut", "MaleTranOut");
+            tableMapping.ColumnMappings.Add("FemaleTransOut", "FemaleTransOut");
+            tableMapping.ColumnMappings.Add("Male_Selection", "Male_Selection");
+            tableMapping.ColumnMappings.Add("FABW", "FABW");
+            tableMapping.ColumnMappings.Add("FABW_Stad", "FABW_Stad");
+            tableMapping.ColumnMappings.Add("MABW", "MABW");
+            tableMapping.ColumnMappings.Add("MABW_Stad", "MABW_Stad");
+            tableMapping.ColumnMappings.Add("FemaleCV", "FemaleCV");
+            tableMapping.ColumnMappings.Add("MaleCV", "MaleCV");
+            tableMapping.ColumnMappings.Add("Uniformity", "Uniformity");
+            tableMapping.ColumnMappings.Add("MaleUniformity", "MaleUniformity");
+            tableMapping.ColumnMappings.Add("FinishWeekNo", "FinishWeekNo");
+            tableMapping.ColumnMappings.Add("LiveFemale", "LiveFemale");
+            tableMapping.ColumnMappings.Add("LiveMale", "LiveMale");
+            tableMapping.ColumnMappings.Add("FemaleSelling", "FemaleSelling");
+            tableMapping.ColumnMappings.Add("MaleSelling", "MaleSelling");
+            tableMapping.ColumnMappings.Add("FVar", "FVar");
+            tableMapping.ColumnMappings.Add("MVar", "MVar");
+            tableMapping.ColumnMappings.Add("McasDAO", "McasDAO");
+            tableMapping.ColumnMappings.Add("FemaleToVetAndMinAgr", "FemaleToVetAndMinAgr");
+            tableMapping.ColumnMappings.Add("MaleToVetAndMinAgr", "MaleToVetAndMinAgr");
+            tableMapping.ColumnMappings.Add("TotalFemaleSamples", "TotalFemaleSamples");
+            tableMapping.ColumnMappings.Add("TotalMaleSamples", "TotalMaleSamples");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
+                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.SR_BRD_FlockSummary";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrCropID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID_Perf", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFlockID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptHrEmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrLineTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsGeneralLedger.SR_BRD_FlockSummaryDataTable GetData(global::System.Nullable<int> ptFrCropID, global::System.Nullable<int> ptGnBookID, global::System.Nullable<int> ptGnBookID_Perf, global::System.Nullable<int> ptFrFlockID, global::System.Nullable<byte> ptGnModuleTypeID, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptHrEmployeeID, global::System.Nullable<byte> ptFrLineTypeID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ptFrCropID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptFrCropID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnBookID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(ptGnBookID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnBookID_Perf.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((int)(ptGnBookID_Perf.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrFlockID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((int)(ptFrFlockID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnModuleTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((byte)(ptGnModuleTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((pLang.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((byte)(pLang.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((ptHrEmployeeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((int)(ptHrEmployeeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrLineTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((byte)(ptFrLineTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            dsGeneralLedger.SR_BRD_FlockSummaryDataTable dataTable = new dsGeneralLedger.SR_BRD_FlockSummaryDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
