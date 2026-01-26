@@ -914,10 +914,10 @@
     <Item67 Ref="539" Component="#Ref-195" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
     <Item68 Ref="540" Component="#Ref-195" Culture="Default" Path="SizeF" Data="197.483,20" />
     <Item69 Ref="541" Component="#Ref-195" Culture="Default" Path="Text" Data="Date : [?DateFrom!dd-MM-yyyy]" />
-    <Item70 Ref="542" Component="#Ref-195" Culture="ar" Path="Text" Data="من: [?DateFrom!dd-MM-yyyy]" />
+    <Item70 Ref="542" Component="#Ref-195" Culture="ar" Path="Text" Data="التاريخ: [?DateFrom!dd-MM-yyyy]" />
     <Item71 Ref="543" Component="#Ref-194" Culture="Default" Path="LocationFloat" Data="283.9673,0" />
     <Item72 Ref="544" Component="#Ref-194" Culture="Default" Path="SizeF" Data="183.9413,20" />
-    <Item73 Ref="545" Component="#Ref-194" Culture="Default" Path="Text" Data="Hatchery:[?HatcheryNo]" />
+    <Item73 Ref="545" Component="#Ref-194" Culture="Default" Path="Text" Data="Hatchery: [?HatcheryNo]" />
     <Item74 Ref="546" Component="#Ref-194" Culture="ar" Path="Text" Data="معمل رقم: [?HatcheryNo]" />
     <Item75 Ref="547" Component="#Ref-360" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
     <Item76 Ref="548" Component="#Ref-360" Culture="Default" Path="SizeF" Data="1148,20" />

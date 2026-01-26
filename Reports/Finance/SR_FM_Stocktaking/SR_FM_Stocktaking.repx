@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FM_Stocktaking" ScriptsSource="using System.ComponentModel;&#xD;&#xA;using DevExpress.XtraReports.Parameters;&#xD;&#xA;&#xD;&#xA;int groupCounter = 1;&#xD;&#xA;&#xD;&#xA;private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    GroupFooterBand groupFooter = (GroupFooterBand)sender;&#xD;&#xA;    XtraReport report = (XtraReport)groupFooter.Report;&#xD;&#xA;    &#xD;&#xA;    Parameter noOfGroupsPerPageParam = report.Parameters[&quot;NoOfGroupsPerPage&quot;];&#xD;&#xA;    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != &quot;&quot;)&#xD;&#xA;    {&#xD;&#xA;        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);&#xD;&#xA;        if (noOfGroupsPerPage &gt; 0)&#xD;&#xA;        {&#xD;&#xA;            if (groupCounter == noOfGroupsPerPage)&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.AfterBand;&#xD;&#xA;                groupCounter = 1;&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.None;&#xD;&#xA;                groupCounter += 1;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;          XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;من: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;From: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrLabel1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;          XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_FM_Stocktaking" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FM_Stocktaking" ScriptsSource="using System.ComponentModel;&#xD;&#xA;using DevExpress.XtraReports.Parameters;&#xD;&#xA;&#xD;&#xA;int groupCounter = 1;&#xD;&#xA;&#xD;&#xA;private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    GroupFooterBand groupFooter = (GroupFooterBand)sender;&#xD;&#xA;    XtraReport report = (XtraReport)groupFooter.Report;&#xD;&#xA;    &#xD;&#xA;    Parameter noOfGroupsPerPageParam = report.Parameters[&quot;NoOfGroupsPerPage&quot;];&#xD;&#xA;    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != &quot;&quot;)&#xD;&#xA;    {&#xD;&#xA;        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);&#xD;&#xA;        if (noOfGroupsPerPage &gt; 0)&#xD;&#xA;        {&#xD;&#xA;            if (groupCounter == noOfGroupsPerPage)&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.AfterBand;&#xD;&#xA;                groupCounter = 1;&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.None;&#xD;&#xA;                groupCounter += 1;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;          XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;من: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;From: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrLabel1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;          XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_FM_Stocktaking" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -821,7 +821,7 @@
     <Item104 Ref="469" Component="#Ref-249" Culture="ar" Path="Text" Data="الوصف" />
     <Item105 Ref="470" Component="#Ref-249" Culture="Default" Path="Weight" Data="1.9428323750018976" />
     <Item106 Ref="471" Component="#Ref-241" Culture="Default" Path="LocationFloat" Data="4.768371E-05,0" />
-    <Item107 Ref="472" Component="#Ref-241" Culture="Default" Path="SizeF" Data="804.774841,20" />
+    <Item107 Ref="472" Component="#Ref-241" Culture="Default" Path="SizeF" Data="804.7748,20" />
     <Item108 Ref="473" Component="#Ref-243" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item109 Ref="474" Component="#Ref-243" Culture="Default" Path="Text" Data="Item Type" />
     <Item110 Ref="475" Component="#Ref-243" Culture="ar" Path="Text" Data="النوع" />
@@ -832,60 +832,58 @@
     <Item115 Ref="480" Component="#Ref-234" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item116 Ref="481" Component="#Ref-234" Culture="Default" Path="LocationFloat" Data="177.8565,0" />
     <Item117 Ref="482" Component="#Ref-234" Culture="Default" Path="SizeF" Data="144.358,20" />
-    <Item118 Ref="483" Component="#Ref-234" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
-    <Item119 Ref="484" Component="#Ref-234" Culture="ar" Path="Text" Data="إلى: [?DateTo!dd-MM-yyyy]" />
-    <Item120 Ref="485" Component="#Ref-237" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item121 Ref="486" Component="#Ref-237" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
-    <Item122 Ref="487" Component="#Ref-237" Culture="Default" Path="SizeF" Data="144.358,20" />
-    <Item123 Ref="488" Component="#Ref-237" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />
-    <Item124 Ref="489" Component="#Ref-237" Culture="ar" Path="Text" Data="من: [?DateFrom!dd-MM-yyyy]" />
-    <Item125 Ref="490" Component="#Ref-231" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item126 Ref="491" Component="#Ref-231" Culture="Default" Path="LocationFloat" Data="351.0715,0" />
-    <Item127 Ref="492" Component="#Ref-231" Culture="Default" Path="SizeF" Data="144.358,20" />
-    <Item128 Ref="493" Component="#Ref-231" Culture="Default" Path="Text" Data="Farm : [?FarmNo]" />
-    <Item129 Ref="494" Component="#Ref-231" Culture="ar" Path="Text" Data="مزرعة: [?FarmNo]" />
-    <Item130 Ref="495" Component="#Ref-58" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item131 Ref="496" Component="#Ref-58" Culture="Default" Path="Text" Data="xrTableCell1" />
-    <Item132 Ref="497" Component="#Ref-58" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item133 Ref="498" Component="#Ref-58" Culture="Default" Path="Weight" Data="1.7610114692557819" />
-    <Item134 Ref="499" Component="#Ref-251" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item135 Ref="500" Component="#Ref-251" Culture="Default" Path="Text" Data="Expiry Date" />
-    <Item136 Ref="501" Component="#Ref-251" Culture="ar" Path="Text" Data="تاريخ الانتهاء" />
-    <Item137 Ref="502" Component="#Ref-251" Culture="Default" Path="Weight" Data="1.5142723233848137" />
-    <Item138 Ref="503" Component="#Ref-52" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item139 Ref="504" Component="#Ref-52" Culture="Default" Path="Text" Data="xrTableCell3" />
-    <Item140 Ref="505" Component="#Ref-52" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy hh:mm:ss tt}" />
-    <Item141 Ref="506" Component="#Ref-52" Culture="Default" Path="Weight" Data="1.7109680333349457" />
-    <Item142 Ref="507" Component="#Ref-62" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item143 Ref="508" Component="#Ref-62" Culture="Default" Path="Text" Data="xrTableCell4" />
-    <Item144 Ref="509" Component="#Ref-62" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item145 Ref="510" Component="#Ref-62" Culture="Default" Path="Weight" Data="1.5189364240389911" />
-    <Item146 Ref="511" Component="#Ref-255" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item147 Ref="512" Component="#Ref-255" Culture="Default" Path="Text" Data="xrTableCell5" />
-    <Item148 Ref="513" Component="#Ref-255" Culture="Default" Path="Weight" Data="1.5585606820758691" />
-    <Item149 Ref="514" Component="#Ref-258" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item150 Ref="515" Component="#Ref-258" Culture="Default" Path="Text" Data="xrTableCell6" />
-    <Item151 Ref="516" Component="#Ref-258" Culture="Default" Path="Weight" Data="1.3443152084328633" />
-    <Item152 Ref="517" Component="#Ref-261" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item153 Ref="518" Component="#Ref-261" Culture="Default" Path="Text" Data="xrTableCell7" />
-    <Item154 Ref="519" Component="#Ref-261" Culture="Default" Path="Weight" Data="1.4404051170576448" />
-    <Item155 Ref="520" Component="#Ref-66" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item156 Ref="521" Component="#Ref-66" Culture="Default" Path="Text" Data="xrTableCell8" />
-    <Item157 Ref="522" Component="#Ref-66" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item158 Ref="523" Component="#Ref-66" Culture="Default" Path="Weight" Data="1.6275090060391271" />
+    <Item118 Ref="483" Component="#Ref-234" Culture="Default" Path="Text" Data="" />
+    <Item119 Ref="484" Component="#Ref-237" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item120 Ref="485" Component="#Ref-237" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
+    <Item121 Ref="486" Component="#Ref-237" Culture="Default" Path="SizeF" Data="144.358,20" />
+    <Item122 Ref="487" Component="#Ref-237" Culture="Default" Path="Text" Data="" />
+    <Item123 Ref="488" Component="#Ref-231" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item124 Ref="489" Component="#Ref-231" Culture="Default" Path="LocationFloat" Data="351.0715,0" />
+    <Item125 Ref="490" Component="#Ref-231" Culture="Default" Path="SizeF" Data="144.358,20" />
+    <Item126 Ref="491" Component="#Ref-231" Culture="Default" Path="Text" Data="Farm : [?FarmNo]" />
+    <Item127 Ref="492" Component="#Ref-231" Culture="ar" Path="Text" Data="مزرعة: [?FarmNo]" />
+    <Item128 Ref="493" Component="#Ref-58" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item129 Ref="494" Component="#Ref-58" Culture="Default" Path="Text" Data="xrTableCell1" />
+    <Item130 Ref="495" Component="#Ref-58" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item131 Ref="496" Component="#Ref-58" Culture="Default" Path="Weight" Data="1.7610114692557819" />
+    <Item132 Ref="497" Component="#Ref-251" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item133 Ref="498" Component="#Ref-251" Culture="Default" Path="Text" Data="Expiry Date" />
+    <Item134 Ref="499" Component="#Ref-251" Culture="ar" Path="Text" Data="تاريخ الانتهاء" />
+    <Item135 Ref="500" Component="#Ref-251" Culture="Default" Path="Weight" Data="1.5142723233848137" />
+    <Item136 Ref="501" Component="#Ref-52" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item137 Ref="502" Component="#Ref-52" Culture="Default" Path="Text" Data="xrTableCell3" />
+    <Item138 Ref="503" Component="#Ref-52" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy hh:mm:ss tt}" />
+    <Item139 Ref="504" Component="#Ref-52" Culture="Default" Path="Weight" Data="1.7109680333349457" />
+    <Item140 Ref="505" Component="#Ref-62" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item141 Ref="506" Component="#Ref-62" Culture="Default" Path="Text" Data="xrTableCell4" />
+    <Item142 Ref="507" Component="#Ref-62" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item143 Ref="508" Component="#Ref-62" Culture="Default" Path="Weight" Data="1.5189364240389911" />
+    <Item144 Ref="509" Component="#Ref-255" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item145 Ref="510" Component="#Ref-255" Culture="Default" Path="Text" Data="xrTableCell5" />
+    <Item146 Ref="511" Component="#Ref-255" Culture="Default" Path="Weight" Data="1.5585606820758691" />
+    <Item147 Ref="512" Component="#Ref-258" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item148 Ref="513" Component="#Ref-258" Culture="Default" Path="Text" Data="xrTableCell6" />
+    <Item149 Ref="514" Component="#Ref-258" Culture="Default" Path="Weight" Data="1.3443152084328633" />
+    <Item150 Ref="515" Component="#Ref-261" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item151 Ref="516" Component="#Ref-261" Culture="Default" Path="Text" Data="xrTableCell7" />
+    <Item152 Ref="517" Component="#Ref-261" Culture="Default" Path="Weight" Data="1.4404051170576448" />
+    <Item153 Ref="518" Component="#Ref-66" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item154 Ref="519" Component="#Ref-66" Culture="Default" Path="Text" Data="xrTableCell8" />
+    <Item155 Ref="520" Component="#Ref-66" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item156 Ref="521" Component="#Ref-66" Culture="Default" Path="Weight" Data="1.6275090060391271" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
-    <Item1 Ref="524" LayoutItemType="Parameter" Parameter="#Ref-3" />
-    <Item2 Ref="525" LayoutItemType="Parameter" Parameter="#Ref-4" />
-    <Item3 Ref="526" LayoutItemType="Parameter" Parameter="#Ref-5" />
-    <Item4 Ref="527" LayoutItemType="Parameter" Parameter="#Ref-6" />
-    <Item5 Ref="528" LayoutItemType="Parameter" Parameter="#Ref-7" />
-    <Item6 Ref="529" LayoutItemType="Parameter" Parameter="#Ref-8" />
-    <Item7 Ref="530" LayoutItemType="Parameter" Parameter="#Ref-9" />
-    <Item8 Ref="531" LayoutItemType="Parameter" Parameter="#Ref-11" />
-    <Item9 Ref="532" LayoutItemType="Parameter" Parameter="#Ref-12" />
-    <Item10 Ref="533" LayoutItemType="Parameter" Parameter="#Ref-13" />
-    <Item11 Ref="534" LayoutItemType="Parameter" Parameter="#Ref-14" />
+    <Item1 Ref="522" LayoutItemType="Parameter" Parameter="#Ref-3" />
+    <Item2 Ref="523" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item3 Ref="524" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item4 Ref="525" LayoutItemType="Parameter" Parameter="#Ref-6" />
+    <Item5 Ref="526" LayoutItemType="Parameter" Parameter="#Ref-7" />
+    <Item6 Ref="527" LayoutItemType="Parameter" Parameter="#Ref-8" />
+    <Item7 Ref="528" LayoutItemType="Parameter" Parameter="#Ref-9" />
+    <Item8 Ref="529" LayoutItemType="Parameter" Parameter="#Ref-11" />
+    <Item9 Ref="530" LayoutItemType="Parameter" Parameter="#Ref-12" />
+    <Item10 Ref="531" LayoutItemType="Parameter" Parameter="#Ref-13" />
+    <Item11 Ref="532" LayoutItemType="Parameter" Parameter="#Ref-14" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
     <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="dsFinance" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNGaW5hbmNlIj48Q29ubmVjdGlvbiBOYW1lPSJkc0ZpbmFuY2UiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjEyNSIgSGVpZ2h0PSIyNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9Ikl0ZW1UeXBlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDb250YWluZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9IlByb2R1Y3RzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJEZXNjcmlwdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iRXhwaXJ5RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iU2VudE9yQ2xhY1F0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDYWxjUHJpY2VVbml0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzRmluYW5jZSI+PFZpZXcgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciPjxGaWVsZCBOYW1lPSJJdGVtVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb250YWluZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VudE9yQ2xhY1F0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBY3R1YWxRdHkiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ2FsY1ByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />

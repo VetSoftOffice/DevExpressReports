@@ -793,8 +793,8 @@
     <Item98 Ref="461" Component="#Ref-213" Culture="Default" Path="SizeF" Data="106.6869,20" />
     <Item99 Ref="462" Component="#Ref-213" Culture="Default" Path="Text" Data="Flock: [?Flock]" />
     <Item100 Ref="463" Component="#Ref-213" Culture="ar" Path="Text" Data="قطيع: [?Flock]" />
-    <Item101 Ref="464" Component="#Ref-203" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
-    <Item102 Ref="465" Component="#Ref-203" Culture="Default" Path="SizeF" Data="100,23" />
+    <Item101 Ref="464" Component="#Ref-203" Culture="Default" Path="LocationFloat" Data="3.00337481,0" />
+    <Item102 Ref="465" Component="#Ref-203" Culture="Default" Path="SizeF" Data="183.333328,23" />
     <Item103 Ref="466" Component="#Ref-209" Culture="Default" Path="LocationFloat" Data="381.2332,0" />
     <Item104 Ref="467" Component="#Ref-209" Culture="Default" Path="SizeF" Data="155.8163,20" />
     <Item105 Ref="468" Component="#Ref-209" Culture="Default" Path="Text" Data="Breed: [?Breed]" />
