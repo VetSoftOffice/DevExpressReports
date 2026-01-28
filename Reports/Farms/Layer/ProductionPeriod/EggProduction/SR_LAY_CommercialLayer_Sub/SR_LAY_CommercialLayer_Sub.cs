@@ -1,0 +1,16 @@
+﻿using DevExpress.XtraReports.UI;
+using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Drawing;
+
+namespace DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_LAY_CommercialLayer_Sub
+{
+    public partial class SR_LAY_CommercialLayer_Sub : DevExpress.XtraReports.UI.XtraReport
+    {
+        public SR_LAY_CommercialLayer_Sub()
+        {
+            InitializeComponent();
+        }
+    }
+}
