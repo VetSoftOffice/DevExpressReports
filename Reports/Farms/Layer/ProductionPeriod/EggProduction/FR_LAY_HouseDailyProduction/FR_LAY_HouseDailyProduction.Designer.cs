@@ -378,6 +378,14 @@
             this.xrTableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell49 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell51 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.SubBand9 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.SR_PH_FR_Med_Notes = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.SR_PH_FR_Vacc_Notes = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand11 = new DevExpress.XtraReports.UI.SubBand();
+            this.DailyNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
@@ -433,14 +441,6 @@
             this.MobaProblems = new DevExpress.XtraReports.Parameters.Parameter();
             this.HouseProblems = new DevExpress.XtraReports.Parameters.Parameter();
             this.MenPower = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand9 = new DevExpress.XtraReports.UI.SubBand();
-            this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_PH_FR_Med_Notes = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SR_PH_FR_Vacc_Notes = new DevExpress.XtraReports.UI.XRSubreport();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
-            this.SubBand11 = new DevExpress.XtraReports.UI.SubBand();
-            this.DailyNotes = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
@@ -1675,6 +1675,57 @@
             this.xrTableCell51.Multiline = true;
             this.xrTableCell51.Name = "xrTableCell51";
             // 
+            // SubBand9
+            // 
+            this.SubBand9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
+            this.SR_PH_FR_Med_Notes});
+            this.SubBand9.Name = "SubBand9";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel1.StylePriority.UseBorders = false;
+            // 
+            // SR_PH_FR_Med_Notes
+            // 
+            this.SR_PH_FR_Med_Notes.Name = "SR_PH_FR_Med_Notes";
+            this.SR_PH_FR_Med_Notes.ReportSource = new DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Med_Notes.SR_PH_FR_Med_Notes();
+            // 
+            // SubBand10
+            // 
+            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel4,
+            this.SR_PH_FR_Vacc_Notes});
+            this.SubBand10.Name = "SubBand10";
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel4.StylePriority.UseBorders = false;
+            // 
+            // SR_PH_FR_Vacc_Notes
+            // 
+            this.SR_PH_FR_Vacc_Notes.Name = "SR_PH_FR_Vacc_Notes";
+            this.SR_PH_FR_Vacc_Notes.ReportSource = new DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Vacc_Notes.SR_PH_FR_Vacc_Notes();
+            // 
+            // SubBand11
+            // 
+            this.SubBand11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.DailyNotes});
+            this.SubBand11.Name = "SubBand11";
+            // 
+            // DailyNotes
+            // 
+            this.DailyNotes.Name = "DailyNotes";
+            this.DailyNotes.ReportSource = new DevExpressReports.Reports.Farms.Breeder.RearingPeriod.DeplationAndBodyWeight.DailyNotes.DailyNotes();
+            // 
             // ReportFooterSub1
             // 
             this.ReportFooterSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -2473,57 +2524,6 @@
             this.MenPower.Name = "MenPower";
             this.MenPower.Visible = false;
             // 
-            // SubBand9
-            // 
-            this.SubBand9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel1,
-            this.SR_PH_FR_Med_Notes});
-            this.SubBand9.Name = "SubBand9";
-            // 
-            // SubBand10
-            // 
-            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel4,
-            this.SR_PH_FR_Vacc_Notes});
-            this.SubBand10.Name = "SubBand10";
-            // 
-            // SR_PH_FR_Med_Notes
-            // 
-            this.SR_PH_FR_Med_Notes.Name = "SR_PH_FR_Med_Notes";
-            this.SR_PH_FR_Med_Notes.ReportSource = new DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Med_Notes.SR_PH_FR_Med_Notes();
-            // 
-            // SR_PH_FR_Vacc_Notes
-            // 
-            this.SR_PH_FR_Vacc_Notes.Name = "SR_PH_FR_Vacc_Notes";
-            this.SR_PH_FR_Vacc_Notes.ReportSource = new DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Vacc_Notes.SR_PH_FR_Vacc_Notes();
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrLabel1.StylePriority.UseBorders = false;
-            // 
-            // xrLabel4
-            // 
-            this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrLabel4.StylePriority.UseBorders = false;
-            // 
-            // SubBand11
-            // 
-            this.SubBand11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.DailyNotes});
-            this.SubBand11.Name = "SubBand11";
-            // 
-            // DailyNotes
-            // 
-            this.DailyNotes.Name = "DailyNotes";
-            this.DailyNotes.ReportSource = new DevExpressReports.Reports.Farms.Breeder.RearingPeriod.DeplationAndBodyWeight.DailyNotes.DailyNotes();
-            // 
             // FR_LAY_HouseDailyProduction
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2577,6 +2577,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "ar", "Description", "من"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateTo, "Default", "Description", "DateTo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "Visible", true),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmCode, "Default", "Description", "FarmCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmNo, "Default", "Description", "FarmNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FeedInfo, "Default", "Description", "FeedInfo"),
