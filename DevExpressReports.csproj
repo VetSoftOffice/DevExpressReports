@@ -90,6 +90,7 @@
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\WeeklyAnalysisRearFlks\" />
     <Folder Include="Reports\Farms\Broiler\DeplationAndBodyWeight\WeeklyDeplAllFarmWise\" />
     <Folder Include="Reports\Farms\Broiler\Miscellaneous\" />
+    <Folder Include="Reports\Farms\Layer\ProductionPeriod\EggProduction\NewFolder\" />
     <Folder Include="Reports\Farms\Layer\ProductionPeriod\EggProduction\SR_LAY_ProdAndIssueReport\" />
     <Folder Include="Reports\Farms\Layer\Shared\" />
     <Folder Include="Reports\FeedFormulation\IngNut\RationResult\NewFolder1\" />
