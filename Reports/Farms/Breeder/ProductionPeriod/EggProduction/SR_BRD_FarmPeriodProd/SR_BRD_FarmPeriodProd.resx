@@ -144,13 +144,13 @@ private void crossTabTotalCell1_BeforePrint(object sender, DevExpress.XtraReport
     if (CountProdPerc &gt; 0)
     avg = SumProdPerc / CountProdPerc;
     TotalAvg += avg ;
-    cell.Text = avg.ToString("0.##");
+    cell.Text = avg.ToString("N1");
 
 }
 
 private void crossTabTotalCell5_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
     XRCrossTabCell cell = sender as XRCrossTabCell;
-    cell.Text = TotalAvg.ToString("0.##");
+    cell.Text = TotalAvg.ToString("N1");
 
 }
 </value>

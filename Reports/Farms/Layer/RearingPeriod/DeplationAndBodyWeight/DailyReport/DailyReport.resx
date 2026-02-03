@@ -117,4 +117,278 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9SZWFyUGVyaW9kUmVzdWx0Ij48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhhdGNoRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFycml2YWxEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iU3RhcnRGZW1hbGVCaXJkcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0TWFsZUJpcmRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VzTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVfQ3VsbHNLaWxsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlX0N1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlX1NleEVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlX1NhbXBsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZV9UcmFucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVfQ3VsbHNLaWxsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZV9DdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVfU2V4RXJyb3IiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlX1NhbXBsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVfVHJhbnMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlX1NlbGVjdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YW5kRmVtYWxlQm9keVdlaWdodCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YW5kTWFsZUJvZHlXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFuZEZlbWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFuZEZlbWFsZUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhbmRNYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YW5kTWFsZUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1BQlciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXQ19EYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iV0NfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXQ19MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VEYXRlX0ZsayIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="TotalHE.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +
+Iif(IsNullOrEmpty([CloseFHTEggsF]), 0, [CloseFHTEggsF]) +
+Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC]) +
+Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
+</value>
+  </data>
+  <data name="FemaleDepl.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([Female_Culls]), 0, [Female_Culls]) 
++ Iif(IsNullOrEmpty([Female_CullsKill]), 0, [Female_CullsKill]) 
++ Iif(IsNullOrEmpty([Female_Sample]), 0, [Female_Sample]) 
++ Iif(IsNullOrEmpty([Female_SexError]), 0, [Female_SexError]) 
++ Iif(IsNullOrEmpty([Female_Trans]), 0, [Female_Trans]) 
++ Iif(IsNullOrEmpty([FemaleMort]), 0, [FemaleMort])</value>
+  </data>
+  <data name="MaleDepl.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([Male_Culls]), 0, [Male_Culls]) 
++ Iif(IsNullOrEmpty([Male_CullsKill]), 0, [Male_CullsKill]) 
++ Iif(IsNullOrEmpty([Male_Sample]), 0, [Male_Sample]) 
++ Iif(IsNullOrEmpty([Male_SexError]), 0, [Male_SexError]) 
++ Iif(IsNullOrEmpty([Male_Trans]), 0, [Male_Trans]) 
++ Iif(IsNullOrEmpty([MaleMort]), 0, [MaleMort])
+</value>
+  </data>
+  <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PEZpZWxkIE5hbWU9IlJlZ2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQbGFjZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaENvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlc0NvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1heENhcGFjaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtQZXJpb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1N0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlYWtSZWFzb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNBbmRDYXBjaXR5RGlmZiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhcGNpdHlQZXJjIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0xBWV9EYWlseVJlcG9ydCI+PEZpZWxkIE5hbWU9InRGckZhcm1JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9BY3R1YWxEYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9QbGFjZURhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxpZ2h0SG91cnMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodFN0YW5kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGFpbHlNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGFpbEN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfRkFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0RheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRJbnRha2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHNTdGFuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJhbGFuY2VCaXJkcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1Nb3J0U3RhbmQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZWVkU3RhbmQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vcnRTdGFuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1DdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bGxzU3RhbmQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQldTdGFuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1pbkZCV1N0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heEZCV1N0ZCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal _dailyMortAvgSum = 0;
+int _dailyMortAvgCount = 0;
+decimal _cummMortAvgSum = 0;
+int _cummMortAvgCount = 0;
+decimal _dailyCullsAvgSum = 0;
+int _dailyCullsAvgCount = 0;
+decimal _cummCullsAvgSum = 0;
+int _cummCullsAvgCount = 0;
+decimal _depletionAvgSum = 0;
+int _depletionAvgCount = 0;
+
+private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Read current row values safely
+decimal femaleStarted = GetCurrentColumnValue("rf_Female_Started") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+
+decimal dailyMort = GetCurrentColumnValue("DailyMort") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("DailyMort"));
+
+if (femaleStarted != 0)
+{
+    cell.Text = ((dailyMort / femaleStarted) * 100)
+        .ToString("0.##");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+}
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal femaleStarted = GetCurrentColumnValue("rf_Female_Started") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+
+decimal dailyMort = GetCurrentColumnValue("DailyMort") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("DailyMort"));
+
+if (femaleStarted != 0)
+{
+    _dailyMortAvgSum += (dailyMort / femaleStarted) * 100;
+    _dailyMortAvgCount++;
+}
+
+decimal cummMort = GetCurrentColumnValue("CummMort") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("CummMort"));
+
+if (femaleStarted != 0)
+{
+    _cummMortAvgSum += (cummMort / femaleStarted) * 100;
+    _cummMortAvgCount++;
+}
+
+
+decimal dailyCulls = GetCurrentColumnValue("DailCulls") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("DailCulls"));
+
+if (femaleStarted != 0)
+{
+    _dailyCullsAvgSum += (dailyCulls / femaleStarted) * 100;
+    _dailyCullsAvgCount++;
+}
+
+decimal cummCulls = GetCurrentColumnValue("CummCulls") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("CummCulls"));
+
+if (femaleStarted != 0)
+{
+    _cummCullsAvgSum += (cummCulls / femaleStarted) * 100;
+    _cummCullsAvgCount++;
+}
+
+
+
+if (femaleStarted != 0)
+{
+    decimal depletion = dailyMort + dailyCulls;
+    _depletionAvgSum += (depletion / femaleStarted) * 100;
+    _depletionAvgCount++;
+}
+}
+
+private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+cell.Text = _dailyMortAvgCount &gt; 0
+    ? (_dailyMortAvgSum / _dailyMortAvgCount).ToString("0.##") : "0.00";
+
+}
+
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+
+// Read current row values safely
+decimal femaleStarted = GetCurrentColumnValue("rf_Female_Started") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+
+decimal dailyMort = GetCurrentColumnValue("CummMort") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("CummMort"));
+
+if (femaleStarted != 0)
+{
+    cell.Text = ((dailyMort / femaleStarted) * 100)
+        .ToString("0.##");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+}
+
+private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+cell.Text = _cummMortAvgCount &gt; 0
+    ? (_cummMortAvgSum / _cummMortAvgCount).ToString("0.##")
+    : "0.00";
+
+}
+
+private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+// Read current row values safely
+decimal femaleStarted = GetCurrentColumnValue("rf_Female_Started") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+
+decimal dailyMort = GetCurrentColumnValue("DailCulls") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("DailCulls"));
+
+if (femaleStarted != 0)
+{
+    cell.Text = ((dailyMort / femaleStarted) * 100)
+        .ToString("0.##");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+}
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+cell.Text = _dailyCullsAvgCount &gt; 0
+    ? (_dailyCullsAvgSum / _dailyCullsAvgCount).ToString("0.##"): "0.00";
+
+}
+
+private void xrTableCell75_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Read current row values safely
+decimal femaleStarted = GetCurrentColumnValue("rf_Female_Started") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+
+decimal dailyMort = GetCurrentColumnValue("CummCulls") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("CummCulls"));
+
+if (femaleStarted != 0)
+{
+    cell.Text = ((dailyMort / femaleStarted) * 100)
+        .ToString("0.##");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+}
+
+private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+cell.Text = _cummCullsAvgCount &gt; 0
+    ? (_cummCullsAvgSum / _cummCullsAvgCount).ToString("0.##")
+    : "0.00";
+
+}
+
+private void xrTableCell78_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    decimal femaleStarted = GetCurrentColumnValue("rf_Female_Started") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started"));
+
+
+decimal dailyMort = GetCurrentColumnValue("DailyMort") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("DailyMort"));
+
+decimal dailyCulls = GetCurrentColumnValue("DailCulls") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("DailCulls"));
+
+decimal depletion = dailyMort + dailyCulls;
+
+if (femaleStarted != 0)
+{
+    cell.Text = ((depletion / femaleStarted) * 100)
+        .ToString("0.##");
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+cell.Text = _depletionAvgCount &gt; 0
+    ? (_depletionAvgSum / _depletionAvgCount).ToString("0.##")
+    : "0.00";
+
+}
+
+</value>
+  </data>
 </root>

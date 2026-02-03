@@ -447,7 +447,7 @@
                   </Item4>
                   <Item5 Ref="268" ControlType="ReportFooterBand" Name="ReportFooter">
                     <Controls>
-                      <Item1 Ref="269" ControlType="XRCrossTab" Name="xrCrossTab2" GeneralStyleName="crossTabGeneralStyle2" DataAreaStyleName="crossTabDataStyle2" HeaderAreaStyleName="crossTabHeaderStyle2" TotalAreaStyleName="crossTabTotalStyle2" DataSource="#Ref-221" DataMember="SR_BRD_FlocksActProd_HatEggs">
+                      <Item1 Ref="269" ControlType="XRCrossTab" Name="xrCrossTab2" GeneralStyleName="crossTabGeneralStyle2" DataAreaStyleName="crossTabDataStyle2" HeaderAreaStyleName="crossTabHeaderStyle2" TotalAreaStyleName="crossTabTotalStyle2">
                         <Parameters>
                           <Item1 Ref="271" Name="IsRTL" Parameter="#Ref-223" />
                         </Parameters>
@@ -703,7 +703,7 @@
                   </Item4>
                   <Item5 Ref="452" ControlType="ReportFooterBand" Name="ReportFooter">
                     <Controls>
-                      <Item1 Ref="453" ControlType="XRCrossTab" Name="xrCrossTab2" GeneralStyleName="crossTabGeneralStyle2" DataAreaStyleName="crossTabDataStyle2" HeaderAreaStyleName="crossTabHeaderStyle2" TotalAreaStyleName="crossTabTotalStyle2" DataSource="#Ref-404" DataMember="SR_BRD_FlocksActProd_SecProds">
+                      <Item1 Ref="453" ControlType="XRCrossTab" Name="xrCrossTab2" GeneralStyleName="crossTabGeneralStyle2" DataAreaStyleName="crossTabDataStyle2" HeaderAreaStyleName="crossTabHeaderStyle2" TotalAreaStyleName="crossTabTotalStyle2">
                         <Parameters>
                           <Item1 Ref="455" Name="IsRTL" Parameter="#Ref-406" />
                         </Parameters>
@@ -899,7 +899,7 @@
         </Item4>
       </SubBands>
       <Controls>
-        <Item1 Ref="587" ControlType="XRCrossTab" Name="xrCrossTab2" GeneralStyleName="crossTabGeneralStyle2" DataAreaStyleName="crossTabDataStyle2" HeaderAreaStyleName="crossTabHeaderStyle2" TotalAreaStyleName="crossTabTotalStyle2" DataSource="#Ref-0" DataMember="SR_BRD_FlocksActProd">
+        <Item1 Ref="587" ControlType="XRCrossTab" Name="xrCrossTab2" GeneralStyleName="crossTabGeneralStyle2" DataAreaStyleName="crossTabDataStyle2" HeaderAreaStyleName="crossTabHeaderStyle2" TotalAreaStyleName="crossTabTotalStyle2">
           <Parameters>
             <Item1 Ref="588" Name="IsRTL" Parameter="#Ref-3" />
           </Parameters>
@@ -1036,7 +1036,7 @@
     <Item45 Ref="680" Component="#Ref-52" Culture="Default" Path="HeightF" Data="0" />
     <Item46 Ref="681" Component="#Ref-87" Culture="Default" Path="HeightF" Data="0" />
     <Item47 Ref="682" Component="#Ref-129" Culture="Default" Path="HeightF" Data="0" />
-    <Item48 Ref="683" Component="#Ref-132" Culture="Default" Path="HeightF" Data="136.25" />
+    <Item48 Ref="683" Component="#Ref-132" Culture="Default" Path="HeightF" Data="136.7917" />
     <Item49 Ref="684" Component="#Ref-133" Culture="Default" Path="HeightF" Data="20" />
     <Item50 Ref="685" Component="#Ref-189" Culture="Default" Path="HeightF" Data="20" />
     <Item51 Ref="686" Component="#Ref-16" Culture="Default" Path="Description" Data="SheetNo" />

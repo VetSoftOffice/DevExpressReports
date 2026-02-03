@@ -818,6 +818,7 @@ XRTableCell cell = sender as XRTableCell;
 cell.Text = WaterConsPerBirds.ToString("0.##");
 
 }
+
 </value>
   </data>
 </root>

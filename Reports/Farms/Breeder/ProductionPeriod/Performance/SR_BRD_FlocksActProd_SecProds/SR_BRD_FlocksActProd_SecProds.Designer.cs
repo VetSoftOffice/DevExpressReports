@@ -285,8 +285,6 @@
             crossTabDataField1.FieldName = "DataValue";
             this.xrCrossTab2.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
             crossTabDataField1});
-            this.xrCrossTab2.DataMember = "SR_BRD_FlocksActProd_SecProds";
-            this.xrCrossTab2.DataSource = this.sqlDataSource4;
             this.xrCrossTab2.GeneralStyleName = "crossTabGeneralStyle2";
             this.xrCrossTab2.HeaderAreaStyleName = "crossTabHeaderStyle2";
             this.xrCrossTab2.Name = "xrCrossTab2";
