@@ -2243,7 +2243,7 @@
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SR_LAY_WeeklyEggsRejectTableAdapter" GeneratorDataComponentClassName="SR_LAY_WeeklyEggsRejectTableAdapter" Name="SR_LAY_WeeklyEggsReject" UserDataComponentName="SR_LAY_WeeklyEggsRejectTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SR_LAY_WeeklyEggsReject1TableAdapter" GeneratorDataComponentClassName="SR_LAY_WeeklyEggsReject1TableAdapter" Name="SR_LAY_WeeklyEggsReject1" UserDataComponentName="SR_LAY_WeeklyEggsReject1TableAdapter">
             <MainSource>
               <DbSource ConnectionRef="vetsoftserver.PMS.dbo" DbObjectName="PMS.dbo.SR_LAY_WeeklyEggsReject" DbObjectType="StoredProcedure" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="GetData">
                 <SelectCommand>
@@ -2272,10 +2272,12 @@
               <Mapping SourceColumn="EggsCat" DataSetColumn="EggsCat" />
               <Mapping SourceColumn="RejEggs" DataSetColumn="RejEggs" />
               <Mapping SourceColumn="FlockCode" DataSetColumn="FlockCode" />
+              <Mapping SourceColumn="TotalRejectedEggs" DataSetColumn="TotalRejectedEggs" />
+              <Mapping SourceColumn="MOBA" DataSetColumn="MOBA" />
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SR_LAY_WeeklyEggsReject1TableAdapter" GeneratorDataComponentClassName="SR_LAY_WeeklyEggsReject1TableAdapter" Name="SR_LAY_WeeklyEggsReject1" UserDataComponentName="SR_LAY_WeeklyEggsReject1TableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SR_LAY_WeeklyEggsRejectTableAdapter" GeneratorDataComponentClassName="SR_LAY_WeeklyEggsRejectTableAdapter" Name="SR_LAY_WeeklyEggsReject" UserDataComponentName="SR_LAY_WeeklyEggsRejectTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="vetsoftserver.PMS.dbo" DbObjectName="PMS.dbo.SR_LAY_WeeklyEggsReject" DbObjectType="StoredProcedure" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="GetData">
                 <SelectCommand>
@@ -4372,7 +4374,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SR_LAY_WeeklyEggsReject" msprop:Generator_RowEvHandlerName="SR_LAY_WeeklyEggsRejectRowChangeEventHandler" msprop:Generator_RowDeletedName="SR_LAY_WeeklyEggsRejectRowDeleted" msprop:Generator_RowDeletingName="SR_LAY_WeeklyEggsRejectRowDeleting" msprop:Generator_RowEvArgName="SR_LAY_WeeklyEggsRejectRowChangeEvent" msprop:Generator_TablePropName="SR_LAY_WeeklyEggsReject" msprop:Generator_RowChangedName="SR_LAY_WeeklyEggsRejectRowChanged" msprop:Generator_UserTableName="SR_LAY_WeeklyEggsReject" msprop:Generator_RowChangingName="SR_LAY_WeeklyEggsRejectRowChanging" msprop:Generator_RowClassName="SR_LAY_WeeklyEggsRejectRow" msprop:Generator_TableClassName="SR_LAY_WeeklyEggsRejectDataTable" msprop:Generator_TableVarName="tableSR_LAY_WeeklyEggsReject">
+        <xs:element name="SR_LAY_WeeklyEggsReject1" msprop:Generator_RowEvHandlerName="SR_LAY_WeeklyEggsReject1RowChangeEventHandler" msprop:Generator_RowDeletedName="SR_LAY_WeeklyEggsReject1RowDeleted" msprop:Generator_RowDeletingName="SR_LAY_WeeklyEggsReject1RowDeleting" msprop:Generator_RowEvArgName="SR_LAY_WeeklyEggsReject1RowChangeEvent" msprop:Generator_TablePropName="SR_LAY_WeeklyEggsReject1" msprop:Generator_RowChangedName="SR_LAY_WeeklyEggsReject1RowChanged" msprop:Generator_UserTableName="SR_LAY_WeeklyEggsReject1" msprop:Generator_RowChangingName="SR_LAY_WeeklyEggsReject1RowChanging" msprop:Generator_RowClassName="SR_LAY_WeeklyEggsReject1Row" msprop:Generator_TableClassName="SR_LAY_WeeklyEggsReject1DataTable" msprop:Generator_TableVarName="tableSR_LAY_WeeklyEggsReject1">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FarmCode" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="FarmCodeColumn" msprop:Generator_ColumnPropNameInRow="FarmCode" msprop:Generator_UserColumnName="FarmCode" msprop:Generator_ColumnVarNameInTable="columnFarmCode" minOccurs="0">
@@ -4414,10 +4416,12 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="TotalRejectedEggs" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="TotalRejectedEggsColumn" msprop:Generator_ColumnPropNameInRow="TotalRejectedEggs" msprop:Generator_UserColumnName="TotalRejectedEggs" msprop:Generator_ColumnVarNameInTable="columnTotalRejectedEggs" type="xs:int" minOccurs="0" />
+              <xs:element name="MOBA" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInTable="MOBAColumn" msprop:Generator_ColumnPropNameInRow="MOBA" msprop:Generator_UserColumnName="MOBA" msprop:Generator_ColumnVarNameInTable="columnMOBA" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SR_LAY_WeeklyEggsReject1" msprop:Generator_RowEvHandlerName="SR_LAY_WeeklyEggsReject1RowChangeEventHandler" msprop:Generator_RowDeletedName="SR_LAY_WeeklyEggsReject1RowDeleted" msprop:Generator_RowDeletingName="SR_LAY_WeeklyEggsReject1RowDeleting" msprop:Generator_RowEvArgName="SR_LAY_WeeklyEggsReject1RowChangeEvent" msprop:Generator_TablePropName="SR_LAY_WeeklyEggsReject1" msprop:Generator_RowChangedName="SR_LAY_WeeklyEggsReject1RowChanged" msprop:Generator_RowChangingName="SR_LAY_WeeklyEggsReject1RowChanging" msprop:Generator_TableClassName="SR_LAY_WeeklyEggsReject1DataTable" msprop:Generator_RowClassName="SR_LAY_WeeklyEggsReject1Row" msprop:Generator_TableVarName="tableSR_LAY_WeeklyEggsReject1" msprop:Generator_UserTableName="SR_LAY_WeeklyEggsReject1">
+        <xs:element name="SR_LAY_WeeklyEggsReject" msprop:Generator_RowEvHandlerName="SR_LAY_WeeklyEggsRejectRowChangeEventHandler" msprop:Generator_RowDeletedName="SR_LAY_WeeklyEggsRejectRowDeleted" msprop:Generator_RowDeletingName="SR_LAY_WeeklyEggsRejectRowDeleting" msprop:Generator_RowEvArgName="SR_LAY_WeeklyEggsRejectRowChangeEvent" msprop:Generator_TablePropName="SR_LAY_WeeklyEggsReject" msprop:Generator_RowChangedName="SR_LAY_WeeklyEggsRejectRowChanged" msprop:Generator_RowChangingName="SR_LAY_WeeklyEggsRejectRowChanging" msprop:Generator_TableClassName="SR_LAY_WeeklyEggsRejectDataTable" msprop:Generator_RowClassName="SR_LAY_WeeklyEggsRejectRow" msprop:Generator_TableVarName="tableSR_LAY_WeeklyEggsReject" msprop:Generator_UserTableName="SR_LAY_WeeklyEggsReject">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FarmCode" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="FarmCode" msprop:Generator_ColumnPropNameInTable="FarmCodeColumn" msprop:Generator_ColumnVarNameInTable="columnFarmCode" msprop:Generator_UserColumnName="FarmCode" minOccurs="0">

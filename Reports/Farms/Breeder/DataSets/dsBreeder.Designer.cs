@@ -130,9 +130,9 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         
         private SR_LAY_DailyReportDataTable tableSR_LAY_DailyReport;
         
-        private SR_LAY_WeeklyEggsRejectDataTable tableSR_LAY_WeeklyEggsReject;
-        
         private SR_LAY_WeeklyEggsReject1DataTable tableSR_LAY_WeeklyEggsReject1;
+        
+        private SR_LAY_WeeklyEggsRejectDataTable tableSR_LAY_WeeklyEggsReject;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -323,11 +323,11 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                 if ((ds.Tables["SR_LAY_DailyReport"] != null)) {
                     base.Tables.Add(new SR_LAY_DailyReportDataTable(ds.Tables["SR_LAY_DailyReport"]));
                 }
-                if ((ds.Tables["SR_LAY_WeeklyEggsReject"] != null)) {
-                    base.Tables.Add(new SR_LAY_WeeklyEggsRejectDataTable(ds.Tables["SR_LAY_WeeklyEggsReject"]));
-                }
                 if ((ds.Tables["SR_LAY_WeeklyEggsReject1"] != null)) {
                     base.Tables.Add(new SR_LAY_WeeklyEggsReject1DataTable(ds.Tables["SR_LAY_WeeklyEggsReject1"]));
+                }
+                if ((ds.Tables["SR_LAY_WeeklyEggsReject"] != null)) {
+                    base.Tables.Add(new SR_LAY_WeeklyEggsRejectDataTable(ds.Tables["SR_LAY_WeeklyEggsReject"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -881,9 +881,9 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SR_LAY_WeeklyEggsRejectDataTable SR_LAY_WeeklyEggsReject {
+        public SR_LAY_WeeklyEggsReject1DataTable SR_LAY_WeeklyEggsReject1 {
             get {
-                return this.tableSR_LAY_WeeklyEggsReject;
+                return this.tableSR_LAY_WeeklyEggsReject1;
             }
         }
         
@@ -891,9 +891,9 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SR_LAY_WeeklyEggsReject1DataTable SR_LAY_WeeklyEggsReject1 {
+        public SR_LAY_WeeklyEggsRejectDataTable SR_LAY_WeeklyEggsReject {
             get {
-                return this.tableSR_LAY_WeeklyEggsReject1;
+                return this.tableSR_LAY_WeeklyEggsReject;
             }
         }
         
@@ -1123,11 +1123,11 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                 if ((ds.Tables["SR_LAY_DailyReport"] != null)) {
                     base.Tables.Add(new SR_LAY_DailyReportDataTable(ds.Tables["SR_LAY_DailyReport"]));
                 }
-                if ((ds.Tables["SR_LAY_WeeklyEggsReject"] != null)) {
-                    base.Tables.Add(new SR_LAY_WeeklyEggsRejectDataTable(ds.Tables["SR_LAY_WeeklyEggsReject"]));
-                }
                 if ((ds.Tables["SR_LAY_WeeklyEggsReject1"] != null)) {
                     base.Tables.Add(new SR_LAY_WeeklyEggsReject1DataTable(ds.Tables["SR_LAY_WeeklyEggsReject1"]));
+                }
+                if ((ds.Tables["SR_LAY_WeeklyEggsReject"] != null)) {
+                    base.Tables.Add(new SR_LAY_WeeklyEggsRejectDataTable(ds.Tables["SR_LAY_WeeklyEggsReject"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1480,16 +1480,16 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                     this.tableSR_LAY_DailyReport.InitVars();
                 }
             }
-            this.tableSR_LAY_WeeklyEggsReject = ((SR_LAY_WeeklyEggsRejectDataTable)(base.Tables["SR_LAY_WeeklyEggsReject"]));
-            if ((initTable == true)) {
-                if ((this.tableSR_LAY_WeeklyEggsReject != null)) {
-                    this.tableSR_LAY_WeeklyEggsReject.InitVars();
-                }
-            }
             this.tableSR_LAY_WeeklyEggsReject1 = ((SR_LAY_WeeklyEggsReject1DataTable)(base.Tables["SR_LAY_WeeklyEggsReject1"]));
             if ((initTable == true)) {
                 if ((this.tableSR_LAY_WeeklyEggsReject1 != null)) {
                     this.tableSR_LAY_WeeklyEggsReject1.InitVars();
+                }
+            }
+            this.tableSR_LAY_WeeklyEggsReject = ((SR_LAY_WeeklyEggsRejectDataTable)(base.Tables["SR_LAY_WeeklyEggsReject"]));
+            if ((initTable == true)) {
+                if ((this.tableSR_LAY_WeeklyEggsReject != null)) {
+                    this.tableSR_LAY_WeeklyEggsReject.InitVars();
                 }
             }
         }
@@ -1608,10 +1608,10 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
             base.Tables.Add(this.tableSR_LAY_CommercialLayer_Sub);
             this.tableSR_LAY_DailyReport = new SR_LAY_DailyReportDataTable();
             base.Tables.Add(this.tableSR_LAY_DailyReport);
-            this.tableSR_LAY_WeeklyEggsReject = new SR_LAY_WeeklyEggsRejectDataTable();
-            base.Tables.Add(this.tableSR_LAY_WeeklyEggsReject);
             this.tableSR_LAY_WeeklyEggsReject1 = new SR_LAY_WeeklyEggsReject1DataTable();
             base.Tables.Add(this.tableSR_LAY_WeeklyEggsReject1);
+            this.tableSR_LAY_WeeklyEggsReject = new SR_LAY_WeeklyEggsRejectDataTable();
+            base.Tables.Add(this.tableSR_LAY_WeeklyEggsReject);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1934,13 +1934,13 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeSR_LAY_WeeklyEggsReject() {
+        private bool ShouldSerializeSR_LAY_WeeklyEggsReject1() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeSR_LAY_WeeklyEggsReject1() {
+        private bool ShouldSerializeSR_LAY_WeeklyEggsReject() {
             return false;
         }
         
@@ -2159,10 +2159,10 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         public delegate void SR_LAY_DailyReportRowChangeEventHandler(object sender, SR_LAY_DailyReportRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void SR_LAY_WeeklyEggsRejectRowChangeEventHandler(object sender, SR_LAY_WeeklyEggsRejectRowChangeEvent e);
+        public delegate void SR_LAY_WeeklyEggsReject1RowChangeEventHandler(object sender, SR_LAY_WeeklyEggsReject1RowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void SR_LAY_WeeklyEggsReject1RowChangeEventHandler(object sender, SR_LAY_WeeklyEggsReject1RowChangeEvent e);
+        public delegate void SR_LAY_WeeklyEggsRejectRowChangeEventHandler(object sender, SR_LAY_WeeklyEggsRejectRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -26404,381 +26404,6 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SR_LAY_WeeklyEggsRejectDataTable : global::System.Data.TypedTableBase<SR_LAY_WeeklyEggsRejectRow> {
-            
-            private global::System.Data.DataColumn columnFarmCode;
-            
-            private global::System.Data.DataColumn columnHouseCode;
-            
-            private global::System.Data.DataColumn columnCropNo;
-            
-            private global::System.Data.DataColumn columnBreedName_en;
-            
-            private global::System.Data.DataColumn columnrf_WeekNo;
-            
-            private global::System.Data.DataColumn columnTotalProduction;
-            
-            private global::System.Data.DataColumn columnEggsCat;
-            
-            private global::System.Data.DataColumn columnRejEggs;
-            
-            private global::System.Data.DataColumn columnFlockCode;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsRejectDataTable() {
-                this.TableName = "SR_LAY_WeeklyEggsReject";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal SR_LAY_WeeklyEggsRejectDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
-                " or extended by application code.", DiagnosticId="SYSLIB0051")]
-            protected SR_LAY_WeeklyEggsRejectDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FarmCodeColumn {
-                get {
-                    return this.columnFarmCode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn HouseCodeColumn {
-                get {
-                    return this.columnHouseCode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CropNoColumn {
-                get {
-                    return this.columnCropNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BreedName_enColumn {
-                get {
-                    return this.columnBreedName_en;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn rf_WeekNoColumn {
-                get {
-                    return this.columnrf_WeekNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TotalProductionColumn {
-                get {
-                    return this.columnTotalProduction;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EggsCatColumn {
-                get {
-                    return this.columnEggsCat;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn RejEggsColumn {
-                get {
-                    return this.columnRejEggs;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FlockCodeColumn {
-                get {
-                    return this.columnFlockCode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsRejectRow this[int index] {
-                get {
-                    return ((SR_LAY_WeeklyEggsRejectRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddSR_LAY_WeeklyEggsRejectRow(SR_LAY_WeeklyEggsRejectRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsRejectRow AddSR_LAY_WeeklyEggsRejectRow(string FarmCode, string HouseCode, string CropNo, string BreedName_en, int rf_WeekNo, int TotalProduction, int EggsCat, int RejEggs, string FlockCode) {
-                SR_LAY_WeeklyEggsRejectRow rowSR_LAY_WeeklyEggsRejectRow = ((SR_LAY_WeeklyEggsRejectRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        FarmCode,
-                        HouseCode,
-                        CropNo,
-                        BreedName_en,
-                        rf_WeekNo,
-                        TotalProduction,
-                        EggsCat,
-                        RejEggs,
-                        FlockCode};
-                rowSR_LAY_WeeklyEggsRejectRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSR_LAY_WeeklyEggsRejectRow);
-                return rowSR_LAY_WeeklyEggsRejectRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                SR_LAY_WeeklyEggsRejectDataTable cln = ((SR_LAY_WeeklyEggsRejectDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new SR_LAY_WeeklyEggsRejectDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal void InitVars() {
-                this.columnFarmCode = base.Columns["FarmCode"];
-                this.columnHouseCode = base.Columns["HouseCode"];
-                this.columnCropNo = base.Columns["CropNo"];
-                this.columnBreedName_en = base.Columns["BreedName_en"];
-                this.columnrf_WeekNo = base.Columns["rf_WeekNo"];
-                this.columnTotalProduction = base.Columns["TotalProduction"];
-                this.columnEggsCat = base.Columns["EggsCat"];
-                this.columnRejEggs = base.Columns["RejEggs"];
-                this.columnFlockCode = base.Columns["FlockCode"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            private void InitClass() {
-                this.columnFarmCode = new global::System.Data.DataColumn("FarmCode", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFarmCode);
-                this.columnHouseCode = new global::System.Data.DataColumn("HouseCode", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHouseCode);
-                this.columnCropNo = new global::System.Data.DataColumn("CropNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCropNo);
-                this.columnBreedName_en = new global::System.Data.DataColumn("BreedName_en", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBreedName_en);
-                this.columnrf_WeekNo = new global::System.Data.DataColumn("rf_WeekNo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnrf_WeekNo);
-                this.columnTotalProduction = new global::System.Data.DataColumn("TotalProduction", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTotalProduction);
-                this.columnEggsCat = new global::System.Data.DataColumn("EggsCat", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEggsCat);
-                this.columnRejEggs = new global::System.Data.DataColumn("RejEggs", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRejEggs);
-                this.columnFlockCode = new global::System.Data.DataColumn("FlockCode", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFlockCode);
-                this.columnFarmCode.ReadOnly = true;
-                this.columnFarmCode.MaxLength = 1;
-                this.columnHouseCode.ReadOnly = true;
-                this.columnHouseCode.MaxLength = 1;
-                this.columnCropNo.ReadOnly = true;
-                this.columnCropNo.MaxLength = 1;
-                this.columnBreedName_en.ReadOnly = true;
-                this.columnBreedName_en.MaxLength = 1;
-                this.columnrf_WeekNo.ReadOnly = true;
-                this.columnTotalProduction.ReadOnly = true;
-                this.columnEggsCat.ReadOnly = true;
-                this.columnRejEggs.ReadOnly = true;
-                this.columnFlockCode.ReadOnly = true;
-                this.columnFlockCode.MaxLength = 1;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsRejectRow NewSR_LAY_WeeklyEggsRejectRow() {
-                return ((SR_LAY_WeeklyEggsRejectRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SR_LAY_WeeklyEggsRejectRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(SR_LAY_WeeklyEggsRejectRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.SR_LAY_WeeklyEggsRejectRowChanged != null)) {
-                    this.SR_LAY_WeeklyEggsRejectRowChanged(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.SR_LAY_WeeklyEggsRejectRowChanging != null)) {
-                    this.SR_LAY_WeeklyEggsRejectRowChanging(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.SR_LAY_WeeklyEggsRejectRowDeleted != null)) {
-                    this.SR_LAY_WeeklyEggsRejectRowDeleted(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.SR_LAY_WeeklyEggsRejectRowDeleting != null)) {
-                    this.SR_LAY_WeeklyEggsRejectRowDeleting(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveSR_LAY_WeeklyEggsRejectRow(SR_LAY_WeeklyEggsRejectRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dsGeneralLedger ds = new dsGeneralLedger();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SR_LAY_WeeklyEggsRejectDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class SR_LAY_WeeklyEggsReject1DataTable : global::System.Data.TypedTableBase<SR_LAY_WeeklyEggsReject1Row> {
             
             private global::System.Data.DataColumn columnFarmCode;
@@ -27139,6 +26764,411 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "SR_LAY_WeeklyEggsReject1DataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SR_LAY_WeeklyEggsRejectDataTable : global::System.Data.TypedTableBase<SR_LAY_WeeklyEggsRejectRow> {
+            
+            private global::System.Data.DataColumn columnFarmCode;
+            
+            private global::System.Data.DataColumn columnHouseCode;
+            
+            private global::System.Data.DataColumn columnCropNo;
+            
+            private global::System.Data.DataColumn columnBreedName_en;
+            
+            private global::System.Data.DataColumn columnrf_WeekNo;
+            
+            private global::System.Data.DataColumn columnTotalProduction;
+            
+            private global::System.Data.DataColumn columnEggsCat;
+            
+            private global::System.Data.DataColumn columnRejEggs;
+            
+            private global::System.Data.DataColumn columnFlockCode;
+            
+            private global::System.Data.DataColumn columnTotalRejectedEggs;
+            
+            private global::System.Data.DataColumn columnMOBA;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_LAY_WeeklyEggsRejectDataTable() {
+                this.TableName = "SR_LAY_WeeklyEggsReject";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_LAY_WeeklyEggsRejectDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
+            protected SR_LAY_WeeklyEggsRejectDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FarmCodeColumn {
+                get {
+                    return this.columnFarmCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HouseCodeColumn {
+                get {
+                    return this.columnHouseCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CropNoColumn {
+                get {
+                    return this.columnCropNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BreedName_enColumn {
+                get {
+                    return this.columnBreedName_en;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn rf_WeekNoColumn {
+                get {
+                    return this.columnrf_WeekNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalProductionColumn {
+                get {
+                    return this.columnTotalProduction;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EggsCatColumn {
+                get {
+                    return this.columnEggsCat;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RejEggsColumn {
+                get {
+                    return this.columnRejEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FlockCodeColumn {
+                get {
+                    return this.columnFlockCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalRejectedEggsColumn {
+                get {
+                    return this.columnTotalRejectedEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MOBAColumn {
+                get {
+                    return this.columnMOBA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_LAY_WeeklyEggsRejectRow this[int index] {
+                get {
+                    return ((SR_LAY_WeeklyEggsRejectRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_LAY_WeeklyEggsRejectRowChangeEventHandler SR_LAY_WeeklyEggsRejectRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddSR_LAY_WeeklyEggsRejectRow(SR_LAY_WeeklyEggsRejectRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_LAY_WeeklyEggsRejectRow AddSR_LAY_WeeklyEggsRejectRow(string FarmCode, string HouseCode, string CropNo, string BreedName_en, int rf_WeekNo, int TotalProduction, int EggsCat, int RejEggs, string FlockCode, int TotalRejectedEggs, int MOBA) {
+                SR_LAY_WeeklyEggsRejectRow rowSR_LAY_WeeklyEggsRejectRow = ((SR_LAY_WeeklyEggsRejectRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        FarmCode,
+                        HouseCode,
+                        CropNo,
+                        BreedName_en,
+                        rf_WeekNo,
+                        TotalProduction,
+                        EggsCat,
+                        RejEggs,
+                        FlockCode,
+                        TotalRejectedEggs,
+                        MOBA};
+                rowSR_LAY_WeeklyEggsRejectRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSR_LAY_WeeklyEggsRejectRow);
+                return rowSR_LAY_WeeklyEggsRejectRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SR_LAY_WeeklyEggsRejectDataTable cln = ((SR_LAY_WeeklyEggsRejectDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SR_LAY_WeeklyEggsRejectDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnFarmCode = base.Columns["FarmCode"];
+                this.columnHouseCode = base.Columns["HouseCode"];
+                this.columnCropNo = base.Columns["CropNo"];
+                this.columnBreedName_en = base.Columns["BreedName_en"];
+                this.columnrf_WeekNo = base.Columns["rf_WeekNo"];
+                this.columnTotalProduction = base.Columns["TotalProduction"];
+                this.columnEggsCat = base.Columns["EggsCat"];
+                this.columnRejEggs = base.Columns["RejEggs"];
+                this.columnFlockCode = base.Columns["FlockCode"];
+                this.columnTotalRejectedEggs = base.Columns["TotalRejectedEggs"];
+                this.columnMOBA = base.Columns["MOBA"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnFarmCode = new global::System.Data.DataColumn("FarmCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFarmCode);
+                this.columnHouseCode = new global::System.Data.DataColumn("HouseCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHouseCode);
+                this.columnCropNo = new global::System.Data.DataColumn("CropNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCropNo);
+                this.columnBreedName_en = new global::System.Data.DataColumn("BreedName_en", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBreedName_en);
+                this.columnrf_WeekNo = new global::System.Data.DataColumn("rf_WeekNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrf_WeekNo);
+                this.columnTotalProduction = new global::System.Data.DataColumn("TotalProduction", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalProduction);
+                this.columnEggsCat = new global::System.Data.DataColumn("EggsCat", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEggsCat);
+                this.columnRejEggs = new global::System.Data.DataColumn("RejEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRejEggs);
+                this.columnFlockCode = new global::System.Data.DataColumn("FlockCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFlockCode);
+                this.columnTotalRejectedEggs = new global::System.Data.DataColumn("TotalRejectedEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalRejectedEggs);
+                this.columnMOBA = new global::System.Data.DataColumn("MOBA", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMOBA);
+                this.columnFarmCode.ReadOnly = true;
+                this.columnFarmCode.MaxLength = 1;
+                this.columnHouseCode.ReadOnly = true;
+                this.columnHouseCode.MaxLength = 1;
+                this.columnCropNo.ReadOnly = true;
+                this.columnCropNo.MaxLength = 1;
+                this.columnBreedName_en.ReadOnly = true;
+                this.columnBreedName_en.MaxLength = 1;
+                this.columnrf_WeekNo.ReadOnly = true;
+                this.columnTotalProduction.ReadOnly = true;
+                this.columnEggsCat.ReadOnly = true;
+                this.columnRejEggs.ReadOnly = true;
+                this.columnFlockCode.ReadOnly = true;
+                this.columnFlockCode.MaxLength = 1;
+                this.columnTotalRejectedEggs.ReadOnly = true;
+                this.columnMOBA.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_LAY_WeeklyEggsRejectRow NewSR_LAY_WeeklyEggsRejectRow() {
+                return ((SR_LAY_WeeklyEggsRejectRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SR_LAY_WeeklyEggsRejectRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SR_LAY_WeeklyEggsRejectRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SR_LAY_WeeklyEggsRejectRowChanged != null)) {
+                    this.SR_LAY_WeeklyEggsRejectRowChanged(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SR_LAY_WeeklyEggsRejectRowChanging != null)) {
+                    this.SR_LAY_WeeklyEggsRejectRowChanging(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SR_LAY_WeeklyEggsRejectRowDeleted != null)) {
+                    this.SR_LAY_WeeklyEggsRejectRowDeleted(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SR_LAY_WeeklyEggsRejectRowDeleting != null)) {
+                    this.SR_LAY_WeeklyEggsRejectRowDeleting(this, new SR_LAY_WeeklyEggsRejectRowChangeEvent(((SR_LAY_WeeklyEggsRejectRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveSR_LAY_WeeklyEggsRejectRow(SR_LAY_WeeklyEggsRejectRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsGeneralLedger ds = new dsGeneralLedger();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SR_LAY_WeeklyEggsRejectDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -48931,275 +48961,6 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SR_LAY_WeeklyEggsRejectRow : global::System.Data.DataRow {
-            
-            private SR_LAY_WeeklyEggsRejectDataTable tableSR_LAY_WeeklyEggsReject;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal SR_LAY_WeeklyEggsRejectRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableSR_LAY_WeeklyEggsReject = ((SR_LAY_WeeklyEggsRejectDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FarmCode {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FarmCode\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string HouseCode {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'HouseCode\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string CropNo {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.CropNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CropNo\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.CropNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string BreedName_en {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BreedName_en\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull." +
-                                "", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int rf_WeekNo {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'rf_WeekNo\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TotalProduction {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TotalProduction\' in table \'SR_LAY_WeeklyEggsReject\' is DBNu" +
-                                "ll.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int EggsCat {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'EggsCat\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int RejEggs {
-                get {
-                    try {
-                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RejEggs\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FlockCode {
-                get {
-                    try {
-                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FlockCode\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFarmCodeNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFarmCodeNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsHouseCodeNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetHouseCodeNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCropNoNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.CropNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCropNoNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.CropNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBreedName_enNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBreedName_enNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Isrf_WeekNoNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Setrf_WeekNoNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTotalProductionNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTotalProductionNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsEggsCatNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetEggsCatNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsRejEggsNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetRejEggsNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFlockCodeNull() {
-                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFlockCodeNull() {
-                this[this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
         public partial class SR_LAY_WeeklyEggsReject1Row : global::System.Data.DataRow {
             
             private SR_LAY_WeeklyEggsReject1DataTable tableSR_LAY_WeeklyEggsReject1;
@@ -49520,6 +49281,332 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMOBANull() {
                 this[this.tableSR_LAY_WeeklyEggsReject1.MOBAColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SR_LAY_WeeklyEggsRejectRow : global::System.Data.DataRow {
+            
+            private SR_LAY_WeeklyEggsRejectDataTable tableSR_LAY_WeeklyEggsReject;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_LAY_WeeklyEggsRejectRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSR_LAY_WeeklyEggsReject = ((SR_LAY_WeeklyEggsRejectDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FarmCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FarmCode\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string HouseCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HouseCode\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CropNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.CropNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CropNo\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.CropNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string BreedName_en {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BreedName_en\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int rf_WeekNo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'rf_WeekNo\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalProduction {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalProduction\' in table \'SR_LAY_WeeklyEggsReject\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int EggsCat {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EggsCat\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int RejEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RejEggs\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FlockCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FlockCode\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalRejectedEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.TotalRejectedEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalRejectedEggs\' in table \'SR_LAY_WeeklyEggsReject\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.TotalRejectedEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MOBA {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_LAY_WeeklyEggsReject.MOBAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MOBA\' in table \'SR_LAY_WeeklyEggsReject\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_LAY_WeeklyEggsReject.MOBAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFarmCodeNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFarmCodeNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.FarmCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHouseCodeNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHouseCodeNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.HouseCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCropNoNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.CropNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCropNoNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.CropNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBreedName_enNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBreedName_enNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.BreedName_enColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isrf_WeekNoNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setrf_WeekNoNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.rf_WeekNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalProductionNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalProductionNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.TotalProductionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEggsCatNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEggsCatNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.EggsCatColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRejEggsNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRejEggsNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.RejEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFlockCodeNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFlockCodeNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.FlockCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalRejectedEggsNull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.TotalRejectedEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalRejectedEggsNull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.TotalRejectedEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMOBANull() {
+                return this.IsNull(this.tableSR_LAY_WeeklyEggsReject.MOBAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMOBANull() {
+                this[this.tableSR_LAY_WeeklyEggsReject.MOBAColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -51329,22 +51416,22 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class SR_LAY_WeeklyEggsRejectRowChangeEvent : global::System.EventArgs {
+        public class SR_LAY_WeeklyEggsReject1RowChangeEvent : global::System.EventArgs {
             
-            private SR_LAY_WeeklyEggsRejectRow eventRow;
+            private SR_LAY_WeeklyEggsReject1Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsRejectRowChangeEvent(SR_LAY_WeeklyEggsRejectRow row, global::System.Data.DataRowAction action) {
+            public SR_LAY_WeeklyEggsReject1RowChangeEvent(SR_LAY_WeeklyEggsReject1Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsRejectRow Row {
+            public SR_LAY_WeeklyEggsReject1Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -51363,22 +51450,22 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class SR_LAY_WeeklyEggsReject1RowChangeEvent : global::System.EventArgs {
+        public class SR_LAY_WeeklyEggsRejectRowChangeEvent : global::System.EventArgs {
             
-            private SR_LAY_WeeklyEggsReject1Row eventRow;
+            private SR_LAY_WeeklyEggsRejectRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsReject1RowChangeEvent(SR_LAY_WeeklyEggsReject1Row row, global::System.Data.DataRowAction action) {
+            public SR_LAY_WeeklyEggsRejectRowChangeEvent(SR_LAY_WeeklyEggsRejectRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SR_LAY_WeeklyEggsReject1Row Row {
+            public SR_LAY_WeeklyEggsRejectRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -63677,184 +63764,6 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets.dsGeneralLedgerTableA
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SR_LAY_WeeklyEggsRejectTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public SR_LAY_WeeklyEggsRejectTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SR_LAY_WeeklyEggsReject";
-            tableMapping.ColumnMappings.Add("FarmCode", "FarmCode");
-            tableMapping.ColumnMappings.Add("HouseCode", "HouseCode");
-            tableMapping.ColumnMappings.Add("CropNo", "CropNo");
-            tableMapping.ColumnMappings.Add("BreedName_en", "BreedName_en");
-            tableMapping.ColumnMappings.Add("rf_WeekNo", "rf_WeekNo");
-            tableMapping.ColumnMappings.Add("TotalProduction", "TotalProduction");
-            tableMapping.ColumnMappings.Add("EggsCat", "EggsCat");
-            tableMapping.ColumnMappings.Add("RejEggs", "RejEggs");
-            tableMapping.ColumnMappings.Add("FlockCode", "FlockCode");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
-                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.SR_LAY_WeeklyEggsReject";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDate_From", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDate_To", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFlockID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dsGeneralLedger.SR_LAY_WeeklyEggsRejectDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<global::System.DateTime> pDate_From, global::System.Nullable<global::System.DateTime> pDate_To, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptFrFlockID, global::System.Nullable<byte> ptGnModuleTypeID) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((ptGnBookID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptGnBookID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((pDate_From.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(pDate_From.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((pDate_To.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(pDate_To.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((pLang.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((byte)(pLang.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((ptFrFlockID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(ptFrFlockID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            if ((ptGnModuleTypeID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[6].Value = ((byte)(ptGnModuleTypeID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            dsGeneralLedger.SR_LAY_WeeklyEggsRejectDataTable dataTable = new dsGeneralLedger.SR_LAY_WeeklyEggsRejectDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class SR_LAY_WeeklyEggsReject1TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -64021,6 +63930,186 @@ namespace DevExpressReports.Reports.Farms.Breeder.DataSets.dsGeneralLedgerTableA
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             dsGeneralLedger.SR_LAY_WeeklyEggsReject1DataTable dataTable = new dsGeneralLedger.SR_LAY_WeeklyEggsReject1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SR_LAY_WeeklyEggsRejectTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public SR_LAY_WeeklyEggsRejectTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SR_LAY_WeeklyEggsReject";
+            tableMapping.ColumnMappings.Add("FarmCode", "FarmCode");
+            tableMapping.ColumnMappings.Add("HouseCode", "HouseCode");
+            tableMapping.ColumnMappings.Add("CropNo", "CropNo");
+            tableMapping.ColumnMappings.Add("BreedName_en", "BreedName_en");
+            tableMapping.ColumnMappings.Add("rf_WeekNo", "rf_WeekNo");
+            tableMapping.ColumnMappings.Add("TotalProduction", "TotalProduction");
+            tableMapping.ColumnMappings.Add("EggsCat", "EggsCat");
+            tableMapping.ColumnMappings.Add("RejEggs", "RejEggs");
+            tableMapping.ColumnMappings.Add("FlockCode", "FlockCode");
+            tableMapping.ColumnMappings.Add("TotalRejectedEggs", "TotalRejectedEggs");
+            tableMapping.ColumnMappings.Add("MOBA", "MOBA");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
+                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.SR_LAY_WeeklyEggsReject";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDate_From", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDate_To", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFlockID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsGeneralLedger.SR_LAY_WeeklyEggsRejectDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<global::System.DateTime> pDate_From, global::System.Nullable<global::System.DateTime> pDate_To, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptFrFlockID, global::System.Nullable<byte> ptGnModuleTypeID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ptGnBookID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptGnBookID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((pDate_From.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(pDate_From.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((pDate_To.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(pDate_To.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((pLang.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((byte)(pLang.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrFlockID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(ptFrFlockID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnModuleTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((byte)(ptGnModuleTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            dsGeneralLedger.SR_LAY_WeeklyEggsRejectDataTable dataTable = new dsGeneralLedger.SR_LAY_WeeklyEggsRejectDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
