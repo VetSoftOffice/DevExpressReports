@@ -148,11 +148,12 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal sumWeightedProdValues = 0;  // Σ(TotalProd × FemaleBalance)
 decimal sumWeights = 0;            // Σ(FemaleBalance)
+decimal sumWeight = 0;            // Σ(FemaleBalance)
 decimal sumWeightedHatEggValues = 0;  // Σ(TotalHatEgg × TotalProd)
 decimal sumWeightedHatEggValuesReport = 0;  // Σ(TotalHatEgg × TotalProd)
 decimal sumWeightsHatEggReport = 0;              // Σ(TotalProd)
-decimal TotalFemaleBalanceGroup  = 0;
-decimal TotalMaleBalanceGroup = 0;
+decimal sumAvgValue = 0;
+int avgCount = 0;
 decimal sumFeedPer1000 = 0;
 int countFeedPer1000 = 0;
 decimal sumMaleFeedPer1000 = 0;
@@ -173,10 +174,10 @@ private void xrTableCell101_BeforePrint(object sender, System.ComponentModel.Can
     // Calculate: (TotalProd / FemaleBalance) * 100
     if (femaleBalance &gt; 0 &amp;&amp; totalProd &gt; 0) {
         decimal result = (totalProd / femaleBalance) * 100;
-        cell.Text = result.ToString("N0"); // 1 decimal place with %
+        cell.Text = result.ToString("N2"); // 1 decimal place with %
         // Or: result.ToString("F1") without %
     } else {
-        cell.Text = "0"; // or "0"
+        cell.Text = "0.00"; // or "0"
     }
 }
 
@@ -189,7 +190,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     if (femaleBalance &gt; 0 &amp;&amp; totalProd &gt; 0) {
         // For weighted average: (TotalProd × FemaleBalance)
         // This gives more weight to rows with more birds
-        sumWeightedProdValues += (totalProd * femaleBalance);
+        sumWeightedProdValues += totalProd * 100 ;
         sumWeights += femaleBalance;
     }
     
@@ -199,52 +200,51 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     // Only accumulate if both values are positive
     if (totalProd &gt; 0 &amp;&amp; totalHatEgg &gt; 0) {
         // Weighted value: TotalHatEgg × TotalProd
-        sumWeightedHatEggValues += (totalHatEgg * totalProd);
-        sumWeights += totalProd;
+        sumWeightedHatEggValues += totalHatEgg * 100;
+        sumWeight += totalProd;
     }
     
      
     // Get values from fields
     decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
-    TotalFemaleBalanceGroup += femaleBalance ;
-    TotalMaleBalanceGroup += maleBalance ;
-
+    if (femaleBalance &gt; 0)
+    {
+        sumAvgValue += (maleBalance * 100) / femaleBalance;
+        avgCount++;
+    }
+    
     decimal femaleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("FemaleFeedCons") ?? 0);
     
     if (femaleBalance &gt; 0) {
-        decimal feedPer1000 = (femaleFeedCons * 1000) / femaleBalance;
-        sumFeedPer1000 += feedPer1000;
+        sumFeedPer1000 += (femaleFeedCons * 1000) / femaleBalance;
         countFeedPer1000++;
     }
     decimal maleFeedCons = Convert.ToDecimal(GetCurrentColumnValue("MaleFeedCons") ?? 0);
     
     if (maleBalance &gt; 0) {
-        decimal feedPer1000 = (maleFeedCons * 1000) / maleBalance;
-        sumMaleFeedPer1000 += feedPer1000;
+        sumMaleFeedPer1000 += (maleFeedCons * 1000) / maleBalance;
+
         countMaleFeedPer1000++;
     }
     
     decimal eggStock = Convert.ToDecimal(GetCurrentColumnValue("EggStock") ?? 0);
     
     if (totalHatEgg &gt; 0) {
-        decimal ratio = eggStock / totalHatEgg;
-        sumStockToHatEggRatio += ratio;
+        sumStockToHatEggRatio += eggStock / totalHatEgg;
         countStockToHatEggRatio++;
     }
     
      decimal femaleDepl = Convert.ToDecimal(GetCurrentColumnValue("FemaleDepl") ?? 0);
     
     if (femaleBalance &gt; 0) {
-        decimal percent = (femaleDepl * 100) / femaleBalance;
-        sumFemaleDeplPercent += percent;
+        sumFemaleDeplPercent +=(femaleDepl * 100) / femaleBalance;
         countFemaleDeplPercent++;
     }
     
     decimal maleDepl = Convert.ToDecimal(GetCurrentColumnValue("MaleDepl") ?? 0);
     
     if (maleBalance &gt; 0) {
-        decimal percent = (maleDepl * 100) / maleBalance;
-        sumMaleDeplPercent += percent;
+        sumMaleDeplPercent += (maleDepl * 100) / maleBalance;
         countMaleDeplPercent++;
     }
 }
@@ -254,7 +254,7 @@ private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.Canc
     
     // Calculate weighted average: Σ(TotalProd×FemaleBalance) / Σ(FemaleBalance) × 100
     if (sumWeights &gt; 0) {
-        decimal weightedAvg = (sumWeightedProdValues / sumWeights) * 100;
+        decimal weightedAvg = (sumWeightedProdValues / sumWeights);
         cell.Text = weightedAvg.ToString("N2") ; // 1 decimal place
     } else {
         cell.Text = "0.00";
@@ -270,7 +270,7 @@ private void xrTableCell104_BeforePrint(object sender, System.ComponentModel.Can
     
     // Calculate: (TotalHatEgg × 100) / TotalProd
     if (totalProd &gt; 0 &amp;&amp; totalHatEgg &gt; 0) {
-        decimal result = (totalHatEgg * 100) / totalProd;
+        decimal result = (totalHatEgg * 100)/ totalProd;
         cell.Text = result.ToString("N2") ; // 1 decimal place with %
         // Or without %: result.ToString("F1")
     } else {
@@ -282,8 +282,8 @@ private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.Canc
     XRTableCell cell = sender as XRTableCell;
     
     // Calculate weighted average: Σ(TotalHatEgg×TotalProd) / Σ(TotalProd) × 100
-    if (sumWeights &gt; 0) {
-        decimal weightedAvg = (sumWeightedHatEggValues / sumWeights) * 100;
+    if (sumWeight &gt; 0) {
+        decimal weightedAvg = (sumWeightedHatEggValues / sumWeight) ;
         cell.Text = weightedAvg.ToString("N2") ; // 1 decimal place
     } else {
         cell.Text = "0.00";
@@ -331,8 +331,8 @@ private void xrTableCell114_BeforePrint(object sender, System.ComponentModel.Can
 private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
           XRTableCell cell = sender as XRTableCell;
  // Calculate: (MaleBalance × 100) / FemaleBalance
-    if (TotalFemaleBalanceGroup &gt; 0) {
-        decimal result = (TotalMaleBalanceGroup* 100) / TotalFemaleBalanceGroup ;
+    if (avgCount &gt; 0) {
+        decimal result =  sumAvgValue / avgCount ;
         cell.Text = result.ToString("N2") ; // 1 decimal place with %
         // Or without %: result.ToString("F1")
     } else {
@@ -469,6 +469,25 @@ private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 
+
+private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    sumWeightedProdValues = 0;
+    sumWeights = 0;
+    sumWeightedHatEggValues = 0;
+    sumWeight = 0;
+    sumAvgValue = 0;
+    avgCount = 0;
+    sumFeedPer1000 = 0;
+    countFeedPer1000 = 0;
+    sumMaleFeedPer1000 = 0;
+    countMaleFeedPer1000 = 0;
+    sumStockToHatEggRatio = 0;
+    countStockToHatEggRatio = 0;
+    sumFemaleDeplPercent = 0;
+    countFemaleDeplPercent = 0;
+    sumMaleDeplPercent = 0;
+    countMaleDeplPercent = 0;
+}
 </value>
   </data>
 </root>

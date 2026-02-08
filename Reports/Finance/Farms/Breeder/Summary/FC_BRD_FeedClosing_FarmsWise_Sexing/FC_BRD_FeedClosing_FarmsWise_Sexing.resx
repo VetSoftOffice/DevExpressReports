@@ -117,35 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>using System.ComponentModel;
-using DevExpress.XtraReports.Parameters;
-
-int groupCounter = 1;
-
-private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)
-{
-    GroupFooterBand groupFooter = (GroupFooterBand)sender;
-    XtraReport report = (XtraReport)groupFooter.Report;
-    
-    Parameter noOfGroupsPerPageParam = report.Parameters["NoOfGroupsPerPage"];
-    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != "")
-    {
-        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);
-        if (noOfGroupsPerPage &gt; 0)
-        {
-            if (groupCounter == noOfGroupsPerPage)
-            {
-                groupFooter.PageBreak = PageBreak.AfterBand;
-                groupCounter = 1;
-            }
-            else
-            {
-                groupFooter.PageBreak = PageBreak.None;
-                groupCounter += 1;
-            }
-        }
-    }
-}</value>
+  <data name="xrTableCell21.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    [SR_FC_FR_Feed.tFrFarmTypeID] == 1,
+    Iif(
+        [IsRTL],
+        'إجمالي ' + 'تربية',
+        'Total of ' + 'Rearing'
+    ),
+    Iif(
+        [IsRTL],
+        'إجمالي ' + 'إنتاج',
+        'Total of ' + 'Laying'
+    )
+)
+</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0ZSX0ZlZWQiPjxGaWVsZCBOYW1lPSJ0RnJGYXJtVHlwZUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVnaW9uX2VuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVF0eUtnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVF0eUtnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
 </root>

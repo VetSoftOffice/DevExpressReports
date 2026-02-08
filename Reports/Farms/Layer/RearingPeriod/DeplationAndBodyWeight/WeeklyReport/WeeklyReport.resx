@@ -142,6 +142,9 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlSZXBvcnQiPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlZWROYW1lX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbERlcCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFsaXZlQmlyZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENvbnN1bWVkRGVwIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZIb3VzZUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR3JvdXBDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InJzX1ZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icnNfTWVkaWNpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icnNfRmVlZFJjdmQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlSZXBvcnQiPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlZWROYW1lX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbERlcCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFsaXZlQmlyZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEN1bW1EZXAiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZkhvdXNlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJHcm91cENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icnNfVmFjY2luZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyc19NZWRpY2luZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEZlZWRSY3ZkIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal TotalfemaleStarted  = 0;
 decimal TotaltotalMort = 0;
@@ -151,6 +154,8 @@ decimal totalCullPercentageSum = 0;
 int totalRowsCountCulls = 0;
 decimal totalDepPercentageSum = 0;
 int totalRowsCountDep = 0;
+decimal totalCumDepPercentageSum  = 0;
+int totalRowsCountCumDep = 0;
 private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
 XRTableCell cell = sender as XRTableCell;
 
@@ -218,6 +223,20 @@ if (femaleStarted != 0)
 
 totalDepPercentageSum += percentageDep ;
 totalRowsCountDep++;
+
+
+decimal totalCumDep = GetCurrentColumnValue("TotalCummDep") == null
+    ? 0
+    : Convert.ToDecimal(GetCurrentColumnValue("TotalCummDep"));
+
+decimal percentageCumDep = 0;
+if (femaleStarted != 0)
+{
+    percentageCumDep = (totalCumDep / femaleStarted) * 100;
+}
+
+totalCumDepPercentageSum += percentageDep ;
+totalRowsCountCumDep++;
 }
 
 private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -332,6 +351,20 @@ else
     cell.Text = "0.00";
 }
  
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+  if (totalRowsCountCumDep &gt; 0)
+{
+    cell.Text = (totalCumDepPercentageSum / totalRowsCountCumDep).ToString("0.##");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
 }
 </value>
   </data>
