@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="xrTableCell29.ExpressionBindings" xml:space="preserve">
-    <value>Iif(IsNullOrEmpty([FChickRecived]),0 , [FChickRecived]) - Iif(IsNullOrEmpty([FDOA]),0 , [FDOA]) - Iif(IsNullOrEmpty([FemaleToVetAndMinAgr]),0 , [FemaleToVetAndMinAgr]) - Iif(IsNullOrEmpty([Female_Mort_Week]),0 , [Female_Mort_Week])</value>
+    <value>Iif(IsNullOrEmpty([FChickRecived]),0 , [FChickRecived]) - Iif(IsNullOrEmpty([FDOA]),0 , [FDOA]) - Iif(IsNullOrEmpty([FemaleToVetAndMinAgr]),0 , [FemaleToVetAndMinAgr]) - Iif(IsNullOrEmpty([Female_Mort_Week]),0 , [Female_Mort_Week])  </value>
   </data>
   <data name="xrTableCell30.ExpressionBindings" xml:space="preserve">
     <value>Iif(IsNullOrEmpty([MChickRecived]),0 , [MChickRecived]) - Iif(IsNullOrEmpty([MDOA]),0 , [MDOA]) - Iif(IsNullOrEmpty([MaleToVetAndMinAgr]),0 , [MaleToVetAndMinAgr]) - Iif(IsNullOrEmpty([Male_Mort_Week]),0 , [Male_Mort_Week])</value>
@@ -171,7 +171,7 @@ private void xrTableCell7_BeforePrint(object sender, System.ComponentModel.Cance
     if (f &gt; 0)
     {
         decimal result = (m / f) * 100;
-        cell.Text = result.ToString("N2") + "%";
+        cell.Text = result.ToString("N2") + "  %";
     }
     else
     {
@@ -197,7 +197,7 @@ private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.Canc
     if (fChicks &gt; 0)
     {
         decimal result = (fDoa / fChicks) * 100;
-        cell.Text = result.ToString("N2")  + "%"; 
+        cell.Text = result.ToString("N2")  + "  %"; 
     }
     else
     {
@@ -223,7 +223,7 @@ private void xrTableCell13_BeforePrint(object sender, System.ComponentModel.Canc
     if (mChicks &gt; 0)
     {
         decimal result = (mDoa / mChicks) * 100;
-        cell.Text = result.ToString("N2") + "%"; 
+        cell.Text = result.ToString("N2") + "  %"; 
     }
     else
     {
@@ -249,7 +249,7 @@ private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.Canc
     if (fChicks &gt; 0)
     {
         decimal result = (toVet / fChicks) * 100;
-        cell.Text = result.ToString("N2") + "%"; 
+        cell.Text = result.ToString("N2") + "  %"; 
     }
     else
     {
@@ -275,7 +275,7 @@ private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.Canc
     if (mChicks &gt; 0)
     {
         decimal result = (toVet / mChicks) * 100;
-        cell.Text = result.ToString("N2") + "%"; 
+        cell.Text = result.ToString("N2") + "  %"; 
     }
     else
     {
@@ -294,7 +294,7 @@ private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (femaleMortWeek / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+        cell.Text = percent.ToString("0.00") + "  %"; // format with 2 decimals
     }
     else
     {
@@ -313,7 +313,7 @@ private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (maleMortWeek / chicksReceived) * 100;
-        cell.Text = percent.ToString("N2") + "%"; // formatted with 2 decimals
+        cell.Text = percent.ToString("N2") + "  %"; // formatted with 2 decimals
     }
     else
     {
@@ -332,7 +332,7 @@ private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (femaleSexError / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+        cell.Text = percent.ToString("0.00") + "  %"; // format with 2 decimals
     }
     else
     {
@@ -351,7 +351,7 @@ private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (maleSexError / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+        cell.Text = percent.ToString("0.00") + "  %"; // format with 2 decimals
     }
     else
     {
@@ -370,7 +370,7 @@ private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (femaleSelling / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00")+ "%"; // format with 2 decimals
+        cell.Text = percent.ToString("0.00")+ "  %"; // format with 2 decimals
     }
     else
     {
@@ -389,7 +389,7 @@ private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (maleSelling / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+        cell.Text = percent.ToString("0.00") + "  %"; // format with 2 decimals
     }
     else
     {
@@ -408,7 +408,7 @@ private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (totalFemaleSamples / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%";     }
+        cell.Text = percent.ToString("0.00") + "  %";     }
     else
     {
         cell.Text = "0.00"; 
@@ -426,7 +426,7 @@ private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (totalMaleSamples / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; 
+        cell.Text = percent.ToString("0.00") + "  %"; 
     }
     else
     {
@@ -445,7 +445,7 @@ private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (femaleMort / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // add "%" and 2 decimals
+        cell.Text = percent.ToString("0.00") + "  %"; // add "%" and 2 decimals
     }
     else
     {
@@ -464,7 +464,7 @@ private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.Canc
     if (chicksReceived &gt; 0)
     {
         decimal percent = (maleMort / chicksReceived) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // 2 decimals + %
+        cell.Text = percent.ToString("0.00") + "  %"; // 2 decimals + %
     }
     else
     {
@@ -483,13 +483,14 @@ private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.Canc
     if (liveFemale &gt; 0)
     {
         decimal percent = (liveMale / liveFemale) * 100;
-        cell.Text = percent.ToString("0.00") + "%"; // 2 decimals + %
+        cell.Text = percent.ToString("0.00") + "  %"; // 2 decimals + %
     }
     else
     {
         cell.Text = "0.00"; // or "" if you prefer blank
     }
 }
+
 </value>
   </data>
 </root>
