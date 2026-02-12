@@ -117,4 +117,376 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="sqlDataSource7.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTciPjxWaWV3IE5hbWU9IlNSX0JSRF9GbG9ja1N1bW1hcnkiPjxGaWVsZCBOYW1lPSJGQ2hpY2tSZWNpdmVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUNoaWNrUmVjaXZlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNRE9BIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmNhc0RBTyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZV9Nb3J0X1dlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlX01vcnRfV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZV9Nb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZV9Nb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlX1NleEVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZV9TZXhFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlVHJhbkluIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRyYW5PdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVUcmFuc091dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVfU2VsZWN0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZBQldfU3RhZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1BQlciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNQUJXX1N0YWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVDViIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDViIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlVuaWZvcm1pdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlVW5pZm9ybWl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZpbmlzaFdlZWtObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxpdmVGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZlTWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlU2VsbGluZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZWYXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNVmFyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWNhc0RBTyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRvVmV0QW5kTWluQWdyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRvVmV0QW5kTWluQWdyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxGZW1hbGVTYW1wbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxNYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="calculatedField13.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +
+Iif(IsNullOrEmpty([CloseFHTEggsF]), 0, [CloseFHTEggsF]) +
+Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC]) +
+Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
+</value>
+  </data>
+  <data name="sqlDataSource8.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTgiPjxWaWV3IE5hbWU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIj48RmllbGQgTmFtZT0iUmVnaW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBsYWNlQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDeWNsZUZsa0JhdGNoQ291bnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDeWNsZUZsa0JhdGNoTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3ViUGxhY2VzQ291bnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFydFdvcmtEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iV29ya1R5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWF4Q2FwYWNpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJFbmREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iV29ya1BlcmlvZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJyZWFrU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQnJlYWtFbmREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQnJlYWtQZXJpb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1JlYXNvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXb3JrUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJyZWFrUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0FuZENhcGNpdHlEaWZmIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2FwY2l0eVBlcmMiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource9.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTkiPjxWaWV3IE5hbWU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCI+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iV2Vla0VuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVmFjY2luYXRpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1lZGljYXRpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBNTGVzaW9ucyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTYW1wbGVEaWFnbm9zaXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0U3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRmVlZFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1N0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZU1vcnRQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnRQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRmVlZFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlRmVlZFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEVnZ3NQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1BlcmMiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource10.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEwIj48VmlldyBOYW1lPSJTUl9CUkRfU2FtcGxlU2VudCI+PEZpZWxkIE5hbWU9IlNlbnRkYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRmFybSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWdlRGF5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWdlV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJyZWVkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhvdXNlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUcGVzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlc3RzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxhYiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMYWJSZXN1bHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDeWNsZU5vIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource11.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTExIj48VmlldyBOYW1lPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iPjxGaWVsZCBOYW1lPSJWYWNjaW5lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlZhY2NpbmVOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1hbnVmYWN0dXJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSb3V0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXlGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF5VG8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrRnJvbSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJhdGNoTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvc2VzVXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRhdGVHaXZlbiIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbEFnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkVuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource12.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEyIj48VmlldyBOYW1lPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iT3BlbkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPcGVuRkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoZXJ5SFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoZXJ5RkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDRUdTSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0hURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoZXJ5SFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoZXJ5RkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource13.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEzIj48VmlldyBOYW1lPSJTUl9CUkRfUGVyaW9kUmVzdWx0T2ZGZWVkIj48RmllbGQgTmFtZT0iUmVhckZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIYXRjaERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBcnJpdmFsRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0RmVtYWxlQmlyZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFydE1hbGVCaXJkcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJyZWVkIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhvdXNlc05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRW5kV2Vla0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFN0b2NrRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRTdG9ja00iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1GZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZEJJcmRzV2Vla0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZWVkQklyZHNXZWVrTSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRCSXJkc0RheUYiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZWVkQklyZHNEYXlNIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFJlY0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZWVkUmVjTSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlRiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGZWVkRWdnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZEhhdGNoRWdnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZEJJcmRzV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRCSXJkc0RheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxpdmVGZW1hbGVfT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxpdmVNYWxlX09wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQbGFjZURhdGVfRmxrIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource14.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTE0Ij48VmlldyBOYW1lPSJTUl9CUkRfRmxvY2tTdW1tYXJ5XzEiPjxGaWVsZCBOYW1lPSJDYXVzZU9mRE9BIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InJzX0hhdGNoRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbEFycml2YWxEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQnJlZWROYW1lX2FyIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrTableCell7_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    object fObj = GetCurrentColumnValue("FChickRecived");
+    object mObj = GetCurrentColumnValue("MChickRecived");
+
+    decimal f = 0;
+    decimal m = 0;
+
+    if (fObj != null &amp;&amp; fObj != DBNull.Value)
+        decimal.TryParse(fObj.ToString(), out f);
+
+    if (mObj != null &amp;&amp; mObj != DBNull.Value)
+        decimal.TryParse(mObj.ToString(), out m);
+
+    if (f &gt; 0)
+    {
+        decimal result = (m / f) * 100;
+        cell.Text = result.ToString("N2") + "%";
+    }
+    else
+    {
+        cell.Text = "0.00"; 
+    }
+}
+
+private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+    object fChicksObj = GetCurrentColumnValue("FChickRecived");
+    object fDoaObj    = GetCurrentColumnValue("FDOA");
+
+    decimal fChicks = 0;
+    decimal fDoa = 0;
+
+    if (fChicksObj != null &amp;&amp; fChicksObj != DBNull.Value)
+        decimal.TryParse(fChicksObj.ToString(), out fChicks);
+
+    if (fDoaObj != null &amp;&amp; fDoaObj != DBNull.Value)
+        decimal.TryParse(fDoaObj.ToString(), out fDoa);
+
+    if (fChicks &gt; 0)
+    {
+        decimal result = (fDoa / fChicks) * 100;
+        cell.Text = result.ToString("N2")  + "%"; 
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell13_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    object mChicksObj = GetCurrentColumnValue("MChickRecived");
+    object mDoaObj    = GetCurrentColumnValue("MDOA");
+
+    decimal mChicks = 0;
+    decimal mDoa = 0;
+
+    if (mChicksObj != null &amp;&amp; mChicksObj != DBNull.Value)
+        decimal.TryParse(mChicksObj.ToString(), out mChicks);
+
+    if (mDoaObj != null &amp;&amp; mDoaObj != DBNull.Value)
+        decimal.TryParse(mDoaObj.ToString(), out mDoa);
+
+    if (mChicks &gt; 0)
+    {
+        decimal result = (mDoa / mChicks) * 100;
+        cell.Text = result.ToString("N2") + "%"; 
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    object fChicksObj = GetCurrentColumnValue("FChickRecived");
+    object toVetObj   = GetCurrentColumnValue("FemaleToVetAndMinAgr");
+
+    decimal fChicks = 0;
+    decimal toVet = 0;
+
+    if (fChicksObj != null &amp;&amp; fChicksObj != DBNull.Value)
+        decimal.TryParse(fChicksObj.ToString(), out fChicks);
+
+    if (toVetObj != null &amp;&amp; toVetObj != DBNull.Value)
+        decimal.TryParse(toVetObj.ToString(), out toVet);
+
+    if (fChicks &gt; 0)
+    {
+        decimal result = (toVet / fChicks) * 100;
+        cell.Text = result.ToString("N2") + "%"; 
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+
+    object mChicksObj = GetCurrentColumnValue("MChickRecived");
+    object toVetObj   = GetCurrentColumnValue("MaleToVetAndMinAgr");
+
+    decimal mChicks = 0;
+    decimal toVet = 0;
+
+    if (mChicksObj != null &amp;&amp; mChicksObj != DBNull.Value)
+        decimal.TryParse(mChicksObj.ToString(), out mChicks);
+
+    if (toVetObj != null &amp;&amp; toVetObj != DBNull.Value)
+        decimal.TryParse(toVetObj.ToString(), out toVet);
+
+    if (mChicks &gt; 0)
+    {
+        decimal result = (toVet / mChicks) * 100;
+        cell.Text = result.ToString("N2") + "%"; 
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get the current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("FChickRecived"));
+    decimal femaleMortWeek = Convert.ToDecimal(GetCurrentColumnValue("Female_Mort_Week"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (femaleMortWeek / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or use "" if you want it blank
+    }
+}
+
+private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get the current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("MChickRecived"));
+    decimal maleMortWeek = Convert.ToDecimal(GetCurrentColumnValue("Male_Mort_Week"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (maleMortWeek / chicksReceived) * 100;
+        cell.Text = percent.ToString("N2") + "%"; // formatted with 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you want it blank
+    }
+}
+
+private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("FChickRecived"));
+    decimal femaleSexError = Convert.ToDecimal(GetCurrentColumnValue("Female_SexError"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (femaleSexError / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you want it blank
+    }
+}
+
+private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("MChickRecived"));
+    decimal maleSexError = Convert.ToDecimal(GetCurrentColumnValue("Male_SexError"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (maleSexError / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you prefer blank
+    }
+}
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("FChickRecived"));
+    decimal femaleSelling = Convert.ToDecimal(GetCurrentColumnValue("FemaleSelling"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (femaleSelling / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00")+ "%"; // format with 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you prefer blank
+    }
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("MChickRecived"));
+    decimal maleSelling = Convert.ToDecimal(GetCurrentColumnValue("MaleSelling"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (maleSelling / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // format with 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you prefer blank
+    }
+}
+
+private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("FChickRecived"));
+    decimal totalFemaleSamples = Convert.ToDecimal(GetCurrentColumnValue("TotalFemaleSamples"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (totalFemaleSamples / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%";     }
+    else
+    {
+        cell.Text = "0.00"; 
+    }
+}
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("MChickRecived"));
+    decimal totalMaleSamples = Convert.ToDecimal(GetCurrentColumnValue("TotalMaleSamples"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (totalMaleSamples / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; 
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("FChickRecived"));
+    decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("Female_Mort"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (femaleMort / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // add "%" and 2 decimals
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you prefer blank
+    }
+}
+
+private void xrTableCell50_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal chicksReceived = Convert.ToDecimal(GetCurrentColumnValue("MChickRecived"));
+    decimal maleMort = Convert.ToDecimal(GetCurrentColumnValue("Male_Mort"));
+
+    // Calculate percentage safely
+    if (chicksReceived &gt; 0)
+    {
+        decimal percent = (maleMort / chicksReceived) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // 2 decimals + %
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you prefer blank
+    }
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+
+    // Get current row values as decimals
+    decimal liveFemale = Convert.ToDecimal(GetCurrentColumnValue("LiveFemale"));
+    decimal liveMale = Convert.ToDecimal(GetCurrentColumnValue("LiveMale"));
+
+    // Calculate percentage safely
+    if (liveFemale &gt; 0)
+    {
+        decimal percent = (liveMale / liveFemale) * 100;
+        cell.Text = percent.ToString("0.00") + "%"; // 2 decimals + %
+    }
+    else
+    {
+        cell.Text = "0.00"; // or "" if you prefer blank
+    }
+}
+</value>
+  </data>
 </root>
