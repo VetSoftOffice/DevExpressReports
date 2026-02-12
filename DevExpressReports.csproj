@@ -136,6 +136,8 @@
     <Folder Include="Reports\Planning\ProcessingPlant\Sales\NewFolder\" />
     <Folder Include="Reports\Planning\Production\" />
     <Folder Include="Reports\Planning\Target\ChicksTarget\" />
+    <Folder Include="Reports\PoultryHealth\Breeder\NewFolder1\" />
+    <Folder Include="Reports\PoultryHealth\Breeder\NewFolder\" />
     <Folder Include="Reports\ProcessingPlant\Packing\" />
     <Folder Include="Reports\ProcessingPlant\RecivingChickens\" />
     <Folder Include="Reports\ProcessingPlant\Sales\" />
