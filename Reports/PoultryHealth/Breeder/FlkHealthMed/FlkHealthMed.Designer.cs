@@ -267,6 +267,22 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression107 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column108 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression108 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery9 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column109 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression109 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table9 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column110 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression110 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column111 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression111 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column112 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression112 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column113 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression113 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column114 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression114 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column115 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression115 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem1 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", false);
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem2 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", true);
             this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
@@ -352,6 +368,7 @@
             this.CycleNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.CropNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -1504,6 +1521,45 @@
             selectQuery8});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
+            // sqlDataSource3
+            // 
+            this.sqlDataSource3.ConnectionName = "dsBreeder";
+            this.sqlDataSource3.Name = "sqlDataSource3";
+            columnExpression109.ColumnName = "PhCompanyName_en";
+            table9.Name = "SR_PH_BRD_FlkHealth_Med";
+            columnExpression109.Table = table9;
+            column109.Expression = columnExpression109;
+            columnExpression110.ColumnName = "Dosage_Med";
+            columnExpression110.Table = table9;
+            column110.Expression = columnExpression110;
+            columnExpression111.ColumnName = "HousesNo";
+            columnExpression111.Table = table9;
+            column111.Expression = columnExpression111;
+            columnExpression112.ColumnName = "Duration_Med";
+            columnExpression112.Table = table9;
+            column112.Expression = columnExpression112;
+            columnExpression113.ColumnName = "TotalReq_Med";
+            columnExpression113.Table = table9;
+            column113.Expression = columnExpression113;
+            columnExpression114.ColumnName = "RouteName_en";
+            columnExpression114.Table = table9;
+            column114.Expression = columnExpression114;
+            columnExpression115.ColumnName = "Comments";
+            columnExpression115.Table = table9;
+            column115.Expression = columnExpression115;
+            selectQuery9.Columns.Add(column109);
+            selectQuery9.Columns.Add(column110);
+            selectQuery9.Columns.Add(column111);
+            selectQuery9.Columns.Add(column112);
+            selectQuery9.Columns.Add(column113);
+            selectQuery9.Columns.Add(column114);
+            selectQuery9.Columns.Add(column115);
+            selectQuery9.Name = "SR_PH_BRD_FlkHealth_Med";
+            selectQuery9.Tables.Add(table9);
+            this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery9});
+            this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
+            // 
             // FlkHealthMed
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1542,9 +1598,10 @@
             this.TotalBirds});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
-            this.sqlDataSource2});
-            this.DataMember = "SR_PH_BRD_FlkHealth_Morts";
-            this.DataSource = this.sqlDataSource2;
+            this.sqlDataSource2,
+            this.sqlDataSource3});
+            this.DataMember = "SR_PH_BRD_FlkHealth_Med";
+            this.DataSource = this.sqlDataSource3;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 0F),
@@ -1795,5 +1852,6 @@
         private DevExpress.XtraReports.Parameters.Parameter CycleNo;
         private DevExpress.XtraReports.Parameters.Parameter CropNo;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource3;
     }
 }
