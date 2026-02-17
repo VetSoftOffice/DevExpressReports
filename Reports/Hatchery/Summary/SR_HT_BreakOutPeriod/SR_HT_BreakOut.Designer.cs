@@ -87,6 +87,8 @@
             this.HideReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
@@ -246,8 +248,6 @@
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sR_HT_BreakOutTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_BreakOutTableAdapter();
             this.HatcheryNo = new DevExpress.XtraReports.Parameters.Parameter();
-            this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -289,6 +289,28 @@
             this.pageInfoPageNoOfTotal,
             this.pageInfoCurrentDate});
             this.BottomMargin.Name = "BottomMargin";
+            // 
+            // pageInfoCurrentTime
+            // 
+            this.pageInfoCurrentTime.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
+            this.pageInfoCurrentTime.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.pageInfoCurrentTime.ForeColor = System.Drawing.Color.Black;
+            this.pageInfoCurrentTime.Name = "pageInfoCurrentTime";
+            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.pageInfoCurrentTime.StyleName = "PageInfo";
+            this.pageInfoCurrentTime.StylePriority.UseForeColor = false;
+            this.pageInfoCurrentTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // pageInfoPageNoOfTotal
+            // 
+            this.pageInfoPageNoOfTotal.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
+            this.pageInfoPageNoOfTotal.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
+            this.pageInfoPageNoOfTotal.ForeColor = System.Drawing.Color.Black;
+            this.pageInfoPageNoOfTotal.Name = "pageInfoPageNoOfTotal";
+            this.pageInfoPageNoOfTotal.StyleName = "PageInfo";
+            this.pageInfoPageNoOfTotal.StylePriority.UseForeColor = false;
+            this.pageInfoPageNoOfTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // pageInfoCurrentDate
             // 
@@ -504,29 +526,29 @@
             this.crossTabTotalCell32,
             this.crossTabTotalCell33});
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(61.52991F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(60.48828F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.94659F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(63.36501F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(62.29231F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34675F)});
             crossTabColumnField1.FieldName = "SerialNo";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
-            crossTabDataField1.FieldName = "Combined_CF";
+            crossTabDataField1.FieldName = "CategValue";
             this.xrCrossTab1.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
             crossTabDataField1});
             this.xrCrossTab1.DataMember = "SR_HT_BreakOut";
@@ -1100,7 +1122,7 @@
             // 
             // crossTabTotalCell27
             // 
-            this.crossTabTotalCell27.BorderColor = System.Drawing.Color.White;
+            this.crossTabTotalCell27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.crossTabTotalCell27.ColumnIndex = 17;
             this.crossTabTotalCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL,\'MiddleLeft\',\'MiddleRight\' )\n")});
@@ -1616,28 +1638,6 @@
             this.HatcheryNo.Name = "HatcheryNo";
             this.HatcheryNo.Visible = false;
             // 
-            // pageInfoCurrentTime
-            // 
-            this.pageInfoCurrentTime.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.pageInfoCurrentTime.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.pageInfoCurrentTime.ForeColor = System.Drawing.Color.Black;
-            this.pageInfoCurrentTime.Name = "pageInfoCurrentTime";
-            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.pageInfoCurrentTime.StyleName = "PageInfo";
-            this.pageInfoCurrentTime.StylePriority.UseForeColor = false;
-            this.pageInfoCurrentTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // pageInfoPageNoOfTotal
-            // 
-            this.pageInfoPageNoOfTotal.AnchorHorizontal = ((DevExpress.XtraReports.UI.HorizontalAnchorStyles)((DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left | DevExpress.XtraReports.UI.HorizontalAnchorStyles.Right)));
-            this.pageInfoPageNoOfTotal.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
-            this.pageInfoPageNoOfTotal.ForeColor = System.Drawing.Color.Black;
-            this.pageInfoPageNoOfTotal.Name = "pageInfoPageNoOfTotal";
-            this.pageInfoPageNoOfTotal.StyleName = "PageInfo";
-            this.pageInfoPageNoOfTotal.StylePriority.UseForeColor = false;
-            this.pageInfoPageNoOfTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
             // SR_HT_BreakOut
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1679,6 +1679,7 @@
             this.DataMember = "SR_HT_BreakOut";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),
@@ -1741,7 +1742,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell38, "Default", "Text", "Store Age"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell38, "ar", "Text", "عمر التخزين"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell39, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Text", "Grand Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "ar", "Text", "الاجمالي الكلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell40, "Default", "TextFormatString", "Total {0}"),
@@ -1811,12 +1812,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 3.958337F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(212.3697F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(400.156F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(436.5609F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(327.3854F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(811.6373F, 20.00003F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1035.832F, 1.303604F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(133.4585F, 18.69641F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1304.582F, 1.303609F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(348.9606F, 18.69641F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub1, "Default", "HeightF", 20F),
@@ -1827,17 +1828,17 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "Show signature in all page"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "ar", "Description", "عرض التوقيع في كل الصفحات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(1169.294F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(3.003357F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(1166.288F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(1653.545F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(3.003343F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(1650.539F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(1169.292F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(1653.542F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(1169.294F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(1653.545F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1169.292F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000042F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1167.292F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(1653.543F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1651.543F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "DisplayName", "SR_FC_FM_StockMovement"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "ar", "DisplayName", "قيود يومية تفصيلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -1852,7 +1853,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Total_Res, "Default", "Description", "Total_Res"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WeekNo, "Default", "Description", "WeekNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00001F, 10.00001F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(873.1636F, 460.4167F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(899.2053F, 460.4167F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(195.312F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(165.1914F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
@@ -1866,8 +1867,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Hatchery:[?HatcheryNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "معمل التفريغ:[?HatcheryNo]")});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.PageHeightF = 1653.543F;
-            this.PageWidthF = 1169.291F;
+            this.PageHeightF = 1169.291F;
+            this.PageWidthF = 1653.543F;
             groupLayoutItem1.BorderVisible = false;
             groupLayoutItem1.Items.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignature, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -1921,7 +1922,6 @@
             this.HatcheryNo});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
-            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,

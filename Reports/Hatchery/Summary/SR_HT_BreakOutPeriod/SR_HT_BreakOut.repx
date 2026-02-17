@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_HT_BreakOut" ScriptsSource="&#xD;&#xA;private void crossTabTotalCell14_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;      XRCrossTabCell cell = (XRCrossTabCell)sender;&#xD;&#xA;       string EmptySpace = '    ';&#xD;&#xA;       cell.Text = EmptySpace ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void crossTabTotalCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;      XRCrossTabCell cell = (XRCrossTabCell)sender;&#xD;&#xA;&#xD;&#xA;    decimal value = 0;&#xD;&#xA;    try { value = cell.GetCurrentFieldValue&lt;decimal&gt;(&quot;CategValue&quot;); } catch {}&#xD;&#xA;&#xD;&#xA;    totalCategValue += value;  // accumulate total&#xD;&#xA;    cell.Text = totalCategValue.ToString(&quot;N0&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void crossTabTotalCell27_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;       XRCrossTabCell cell = (XRCrossTabCell)sender;&#xD;&#xA;&#xD;&#xA;    decimal value = 0;&#xD;&#xA;    try { value = cell.GetCurrentFieldValue&lt;decimal&gt;(&quot;CategValue&quot;); } catch {}&#xD;&#xA;&#xD;&#xA;    totalCategValue += value;  // accumulate total&#xD;&#xA;    cell.Text = totalCategValue.ToString(&quot;N0&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_HT_BreakOut" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_HT_BreakOut" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_HT_BreakOut" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -218,27 +218,27 @@
                 <Item1 Ref="133" FieldName="SerialNo" />
               </ColumnFields>
               <DataFields>
-                <Item1 Ref="134" FieldName="Combined_CF" />
+                <Item1 Ref="134" FieldName="CategValue" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="135" Width="46.9465866" />
-                <Item2 Ref="136" Width="46.9465866" />
-                <Item3 Ref="137" Width="61.5299149" />
-                <Item4 Ref="138" Width="46.9465866" />
-                <Item5 Ref="139" Width="46.9465866" />
-                <Item6 Ref="140" Width="46.9465866" />
-                <Item7 Ref="141" Width="46.9465866" />
-                <Item8 Ref="142" Width="46.9465866" />
-                <Item9 Ref="143" Width="46.9465866" />
-                <Item10 Ref="144" Width="60.4882774" />
-                <Item11 Ref="145" Width="46.9465866" />
-                <Item12 Ref="146" Width="46.9465866" />
-                <Item13 Ref="147" Width="46.9465866" />
-                <Item14 Ref="148" Width="46.9465866" />
-                <Item15 Ref="149" Width="46.9465866" />
-                <Item16 Ref="150" Width="46.9465866" />
-                <Item17 Ref="151" Width="46.9465866" />
-                <Item18 Ref="152" Width="46.9465866" />
+                <Item1 Ref="135" Width="48.34675" />
+                <Item2 Ref="136" Width="48.34675" />
+                <Item3 Ref="137" Width="63.36501" />
+                <Item4 Ref="138" Width="48.34675" />
+                <Item5 Ref="139" Width="48.34675" />
+                <Item6 Ref="140" Width="48.34675" />
+                <Item7 Ref="141" Width="48.34675" />
+                <Item8 Ref="142" Width="48.34675" />
+                <Item9 Ref="143" Width="48.34675" />
+                <Item10 Ref="144" Width="62.29231" />
+                <Item11 Ref="145" Width="48.34675" />
+                <Item12 Ref="146" Width="48.34675" />
+                <Item13 Ref="147" Width="48.34675" />
+                <Item14 Ref="148" Width="48.34675" />
+                <Item15 Ref="149" Width="48.34675" />
+                <Item16 Ref="150" Width="48.34675" />
+                <Item17 Ref="151" Width="48.34675" />
+                <Item18 Ref="152" Width="48.34675" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="153" Height="35.4166641" />
@@ -343,7 +343,7 @@
                 <Item66 Ref="241" ControlType="XRCrossTabCell" Name="crossTabTotalCell24" ColumnIndex="17" RowIndex="14" />
                 <Item67 Ref="242" ControlType="XRCrossTabCell" Name="crossTabTotalCell25" ColumnIndex="17" RowIndex="15" />
                 <Item68 Ref="243" ControlType="XRCrossTabCell" Name="crossTabTotalCell26" ColumnIndex="17" RowIndex="16" />
-                <Item69 Ref="244" ControlType="XRCrossTabCell" Name="crossTabTotalCell27" ColumnIndex="17" RowIndex="17" BorderColor="White">
+                <Item69 Ref="244" ControlType="XRCrossTabCell" Name="crossTabTotalCell27" ColumnIndex="17" RowIndex="17" BorderColor="255,160,160,160">
                   <ExpressionBindings>
                     <Item1 Ref="245" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL,'MiddleLeft','MiddleRight' )&#xA;" />
                   </ExpressionBindings>
@@ -617,7 +617,7 @@
     <Item59 Ref="422" Component="#Ref-224" Culture="Default" Path="Text" Data="Store Age" />
     <Item60 Ref="423" Component="#Ref-224" Culture="ar" Path="Text" Data="عمر التخزين" />
     <Item61 Ref="424" Component="#Ref-225" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item62 Ref="425" Component="#Ref-176" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
+    <Item62 Ref="425" Component="#Ref-176" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item63 Ref="426" Component="#Ref-176" Culture="Default" Path="Text" Data="Grand Total" />
     <Item64 Ref="427" Component="#Ref-176" Culture="ar" Path="Text" Data="الاجمالي الكلي" />
     <Item65 Ref="428" Component="#Ref-226" Culture="Default" Path="TextFormatString" Data="Total {0}" />
@@ -687,12 +687,12 @@
     <Item129 Ref="492" Component="#Ref-64" Culture="Default" Path="HeightF" Data="3.958337" />
     <Item130 Ref="493" Component="#Ref-106" Culture="Default" Path="HeightF" Data="20" />
     <Item131 Ref="494" Component="#Ref-54" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item132 Ref="495" Component="#Ref-54" Culture="Default" Path="SizeF" Data="212.36969,23" />
+    <Item132 Ref="495" Component="#Ref-54" Culture="Default" Path="SizeF" Data="400.156036,23" />
     <Item133 Ref="496" Component="#Ref-50" Culture="Default" Path="LocationFloat" Data="436.5609,0" />
-    <Item134 Ref="497" Component="#Ref-50" Culture="Default" Path="SizeF" Data="327.385376,20.0000324" />
+    <Item134 Ref="497" Component="#Ref-50" Culture="Default" Path="SizeF" Data="811.6373,20.00003" />
     <Item135 Ref="498" Component="#Ref-50" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item136 Ref="499" Component="#Ref-52" Culture="Default" Path="LocationFloat" Data="1035.8324,1.30360413" />
-    <Item137 Ref="500" Component="#Ref-52" Culture="Default" Path="SizeF" Data="133.4585,18.6964111" />
+    <Item136 Ref="499" Component="#Ref-52" Culture="Default" Path="LocationFloat" Data="1304.58191,1.30360925" />
+    <Item137 Ref="500" Component="#Ref-52" Culture="Default" Path="SizeF" Data="348.960571,18.69641" />
     <Item138 Ref="501" Component="#Ref-52" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item139 Ref="502" Component="#Ref-113" Culture="Default" Path="HeightF" Data="0" />
     <Item140 Ref="503" Component="#Ref-265" Culture="Default" Path="HeightF" Data="20" />
@@ -703,17 +703,17 @@
     <Item145 Ref="508" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
     <Item146 Ref="509" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item147 Ref="510" Component="#Ref-61" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item148 Ref="511" Component="#Ref-61" Culture="Default" Path="SizeF" Data="1169.29443,20" />
-    <Item149 Ref="512" Component="#Ref-71" Culture="Default" Path="LocationFloat" Data="3.0033567,0" />
-    <Item150 Ref="513" Component="#Ref-71" Culture="Default" Path="SizeF" Data="1166.2876,20" />
+    <Item148 Ref="511" Component="#Ref-61" Culture="Default" Path="SizeF" Data="1653.54541,20" />
+    <Item149 Ref="512" Component="#Ref-71" Culture="Default" Path="LocationFloat" Data="3.00334287,0" />
+    <Item150 Ref="513" Component="#Ref-71" Culture="Default" Path="SizeF" Data="1650.53857,20" />
     <Item151 Ref="514" Component="#Ref-66" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item152 Ref="515" Component="#Ref-66" Culture="Default" Path="SizeF" Data="1169.2915,20" />
+    <Item152 Ref="515" Component="#Ref-66" Culture="Default" Path="SizeF" Data="1653.54248,20" />
     <Item153 Ref="516" Component="#Ref-266" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item154 Ref="517" Component="#Ref-266" Culture="Default" Path="SizeF" Data="1169.29443,20" />
+    <Item154 Ref="517" Component="#Ref-266" Culture="Default" Path="SizeF" Data="1653.54541,20" />
     <Item155 Ref="518" Component="#Ref-322" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item156 Ref="519" Component="#Ref-322" Culture="Default" Path="SizeF" Data="1169.2915,20" />
-    <Item157 Ref="520" Component="#Ref-58" Culture="Default" Path="LocationFloat" Data="2.000042,0" />
-    <Item158 Ref="521" Component="#Ref-58" Culture="Default" Path="SizeF" Data="1167.2915,20" />
+    <Item156 Ref="519" Component="#Ref-322" Culture="Default" Path="SizeF" Data="1653.54333,20" />
+    <Item157 Ref="520" Component="#Ref-58" Culture="Default" Path="LocationFloat" Data="2.00004578,0" />
+    <Item158 Ref="521" Component="#Ref-58" Culture="Default" Path="SizeF" Data="1651.54333,20" />
     <Item159 Ref="522" Component="#Ref-1" Culture="Default" Path="DisplayName" Data="SR_FC_FM_StockMovement" />
     <Item160 Ref="523" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item161 Ref="524" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
@@ -727,8 +727,8 @@
     <Item169 Ref="532" Component="#Ref-48" Culture="Default" Path="HeightF" Data="20" />
     <Item170 Ref="533" Component="#Ref-23" Culture="Default" Path="Description" Data="Total_Res" />
     <Item171 Ref="534" Component="#Ref-21" Culture="Default" Path="Description" Data="WeekNo" />
-    <Item172 Ref="535" Component="#Ref-115" Culture="Default" Path="LocationFloat" Data="10.00001,10.00001" />
-    <Item173 Ref="536" Component="#Ref-115" Culture="Default" Path="SizeF" Data="873.1636,460.4167" />
+    <Item172 Ref="535" Component="#Ref-115" Culture="Default" Path="LocationFloat" Data="10.0000105,10.0000067" />
+    <Item173 Ref="536" Component="#Ref-115" Culture="Default" Path="SizeF" Data="899.205261,460.4167" />
     <Item174 Ref="537" Component="#Ref-109" Culture="Default" Path="LocationFloat" Data="195.312,0" />
     <Item175 Ref="538" Component="#Ref-109" Culture="Default" Path="SizeF" Data="165.1914,20" />
     <Item176 Ref="539" Component="#Ref-109" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />

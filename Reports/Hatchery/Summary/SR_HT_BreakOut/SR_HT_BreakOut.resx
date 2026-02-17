@@ -167,9 +167,8 @@ private void crossTabTotalCell27_BeforePrint(object sender, DevExpress.XtraRepor
 
 private void crossTabTotalCell14_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
             XRCrossTabCell cell = (XRCrossTabCell)sender;
-            string EmptySpace = '    ';
-            cell.Text = EmptySpace ;
-
+            string EmptySpace = "    ";  // Use double quotes for strings
+            cell.Text = EmptySpace;
 }
 </value>
   </data>
