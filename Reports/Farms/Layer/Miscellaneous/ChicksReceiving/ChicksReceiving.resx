@@ -123,11 +123,51 @@
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0xBWV9DaGlja3NSZWNlaXZpbmciPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlZWROYW1lX2VuIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNoaWNrc1BsYWNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZVRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX0ZlbWFsZV9BcnJpdmFsTW9ydGlsaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iVG90YWxSZWNlaXZlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InRGckZhcm1JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlZhcmlhbmNlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1cHBsaWVyIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
+  <data name="xrLabel8.ExpressionBindings" xml:space="preserve">
+    <value>Iif(
+    IsNullOrEmpty(sumAvg([FBW])),
+    '',
+    Iif(
+        ?IsRTL,
+        ?AverageWeightOfHousesAt + ' ' +
+        ?Age + ' ' +
+        FormatString('{0:N0}', [HouseCode].Count()) + ' ' +
+        ?Day,
+        ?AverageWeightOfHousesAt + ' ' +
+        FormatString('{0:N0}', [HouseCode].Count()) + ' ' +
+        ?Day + ' ' +
+        ?Age
+    )
+)
+
+</value>
+  </data>
+  <data name="AvgWtOfSixHouses.Expression" xml:space="preserve">
+    <value>Iif(
+    IsNullOrEmpty(Avg([FBW])),
+    '',
+    Iif(
+        ?IsRTL,
+        ?AverageWeightOfHousesAt + ' ' +
+        ?Age + ' ' +
+        FormatString('{0:N0}', [HouseCode].Count()) + ' ' +
+        ?Day,
+        ?AverageWeightOfHousesAt + ' ' +
+        FormatString('{0:N0}', [HouseCode].Count()) + ' ' +
+        ?Day + ' ' +
+        ?Age
+    )
+)
+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal TotaltotalReceived   = 0;
 decimal TotalarrivalMortality  = 0;
 decimal TotaltotalReceivedReport  = 0;
 decimal TotalarrivalMortalityReport  = 0;
+decimal sumArrivalMortalityPercent = 0;
+int validRowCount = 0;
+    
 private void xrTableCell7_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
     
@@ -149,6 +189,13 @@ private void xrTableCell7_BeforePrint(object sender, System.ComponentModel.Cance
     }
     TotaltotalReceivedReport += totalReceived ;
     TotalarrivalMortalityReport += TotalarrivalMortality  ;
+    
+     if (totalReceived != 0)
+        {
+            decimal percent = (arrivalMortality / totalReceived) * 100;
+            sumArrivalMortalityPercent += percent;
+            validRowCount++;
+        }
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -192,6 +239,20 @@ private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.Canc
             cell.Text = "0.00";
         }
 
+}
+
+private void xrLabel10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRLabel label = sender as XRLabel;
+        
+        if (validRowCount &gt; 0)
+        {
+            decimal avg = sumArrivalMortalityPercent / validRowCount;
+            label.Text = avg.ToString("N2");
+        }
+        else
+        {
+            label.Text = "Avg: 0.00";
+        }
 }
 </value>
   </data>

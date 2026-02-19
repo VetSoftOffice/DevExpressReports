@@ -118,10 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0dQX0Zsa1BlcmlvZFN1bSI+PEZpZWxkIE5hbWU9IlR5cGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcm9wRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJWYWx1ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJWYWx1VHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xzU29ydCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0dQX1dlZWtseVJlcG9ydCI+PEZpZWxkIE5hbWU9IlR5cGUxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHlwZTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGluQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMaW5lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlZhbHVlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0dQX0RhaWx5UmVwb3J0Ij48RmllbGQgTmFtZT0iVHlwZTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGluQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMaW5lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlNVIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0dQX1Byb2R1Y3REYWlseVJlcG9ydCI+PEZpZWxkIE5hbWU9IlR5cGUxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHlwZTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQaW5Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="TypeValue.Expression" xml:space="preserve">
+    <value>IIF(
+    !IsNullOrEmpty([ItemText]), [ItemText],
+    IIF([Type] = 1000000001, ?Total,
+    IIF([Type] = 1000000002, ?ProdPrec,
+    IIF([Type] = 1000000003, ?HatPerc,
+    IIF([Type] = 1000000004, ?StoreBalance, ''))))
+)</value>
+  </data>
+  <data name="Type1_CF.Expression" xml:space="preserve">
+    <value>IIF([Type1] = 1, ?BirdType,
+IIF([Type1] = 2, ?Female,
+IIF([Type1] = 3, ?Male,
+IIF([Type1] = 4, ?Feed,
+IIF([Type1] = 5, ?Water,
+IIF([Type1] = 6, ?Heat,
+IIF([Type1] = 9, ?HummidityHouse,
+IIF([Type1] = 7, ?EggsStore,
+IIF([Type1] = 8, ?LightTime,
+[Type1]
+)))))))))</value>
+  </data>
+  <data name="Type2_CF.Expression" xml:space="preserve">
+    <value>IIF([Type2] = 0, '',
+IIF([Type2] = 1, ?AgeBayDay,
+IIF([Type2] = 2, ?Transfer,
+IIF([Type2] = 3, ?Mort,
+IIF([Type2] = 4, ?Culls,
+IIF([Type2] = 5, ?Balance,
+IIF([Type2] = 6, ?Transfer,
+IIF([Type2] = 7, ?Mort,
+IIF([Type2] = 8, ?Balance,
+IIF([Type2] = 9, ?Type,
+IIF([Type2] = 10, ?Transfer,
+IIF([Type2] = 11, ?Inside,
+IIF([Type2] = 12, ?Used,
+IIF([Type2] = 13, ?Balance,
+IIF([Type2] = 14, ?GBayBird,
+IIF([Type2] = 15, ?LiterForHouse,
+IIF([Type2] = 16, ?MlByBird,
+IIF([Type2] = 17, ?High,
+IIF([Type2] = 18, ?Low,
+IIF([Type2] = 19, ?Low,
+IIF([Type2] = 20, ?High,
+IIF([Type2] = 23, ?LightTime,
+[Type2]
+))))))))))))))))))))))</value>
   </data>
   <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
@@ -129,20 +177,52 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0dQX0RhaWx5RWdnc1Byb2QiPjxGaWVsZCBOYW1lPSJUeXBlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkhvdXNlQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQaW5Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW1UZXh0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlZhbHVlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IldlZWtOTyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
-  <data name="TypeValue1.Expression" xml:space="preserve">
-    <value>IIF([Type] = 1, ?OpenBalance,
-IIF([Type] = 2, ?Recive,
-IIF([Type] = 3, ?Transfer,
-IIF([Type] = 4, ?Mort,
-IIF([Type] = 5, ?MortPerc,
-IIF([Type] = 6, ?Culls,
-IIF([Type] = 7, ?CullsPerc,
-IIF([Type] = 8, ?Error,
-IIF([Type] = 9, ?TransCullsSell,
-IIF([Type] = 10, ?Sold,
-IIF([Type] = 11, ?Close,
-IIF([Type] = 12, ?HatEggs,
-IIF([Type] = 13, ?ChicksBreeder,
-[Type])))))))))))))</value>
+  <data name="CF_Type2.Expression" xml:space="preserve">
+    <value>IIF([Type2] = 1, ?BirdStart,
+IIF([Type2] = 2, ?Age,
+IIF([Type2] = 3, ?BirdStartWeek,
+IIF([Type2] = 4, ?Mort1,
+IIF([Type2] = 5, ?Culls,
+IIF([Type2] = 6, ?Selection,
+IIF([Type2] = 7, ?BirdsEndWeek,
+IIF([Type2] = 8, ?PercMortBirds,
+IIF([Type2] = 9, ?PercMortStdWeek,
+IIF([Type2] = 10, ?PercCumMort,
+IIF([Type2] = 11, ?CumMortStd,
+IIF([Type2] = 12, ?FeedBirdG,
+IIF([Type2] = 13, ?FeedBirdGStd,
+IIF([Type2] = 14, ?FeedBirdKgDay,
+IIF([Type2] = 15, ?FeedBirdForComWeG,
+IIF([Type2] = 16, ?CumFeedWeekKg,
+IIF([Type2] = 17, ?CumFeedKg,
+IIF([Type2] = 18, ?TotalFeedPerHen,
+IIF([Type2] = 19, ?ProtinPerBirdG,
+IIF([Type2] = 20, ?KiloCalariesPerBird,
+IIF([Type2] = 21, ?TotalEggsNo,
+IIF([Type2] = 22, ?TotEggsStd,
+IIF([Type2] = 23, ?TotEggsPerc,
+IIF([Type2] = 24, ?TotEggsPercStd,
+IIF([Type2] = 25, ?CumTotEggsHH,
+IIF([Type2] = 26, ?CumTotEggsHHStd,
+IIF([Type2] = 27, ?TotEggsNoPerHen,
+IIF([Type2] = 28, ?TotEggsNoPerHenStd,
+IIF([Type2] = 29, ?TotHatEggs,
+IIF([Type2] = 30, ?TotHatEggsStd,
+IIF([Type2] = 31, ?TotHatEggsPerc,
+IIF([Type2] = 32, ?TotHatEggsPercStd,
+IIF([Type2] = 33, ?CumTotHatEggs,
+IIF([Type2] = 34, ?CumTotHatEggsStd,
+IIF([Type2] = 35, ?TotHatEggsNoPerHen,
+IIF([Type2] = 36, ?TotHatEggsNoPerHenStd,
+IIF([Type2] = 37, ?AverageWeeight,
+IIF([Type2] = 38, ?UtilizationHETEPerc,
+IIF([Type2] = 39, ?UtilizationHETEPercStd,
+IIF([Type2] = 40, ?BodyWeightGAge,
+IIF([Type2] = 41, ?BodyWeightTarget,
+IIF([Type2] = 42, ?UniformityPerc,
+IIF([Type2] = 43, ?TempMaxMin,
+IIF([Type2] = 44, ?HoursLight,
+[Type2]
+))))))))))))))))))))))))))))))))))))))))))))</value>
   </data>
 </root>
