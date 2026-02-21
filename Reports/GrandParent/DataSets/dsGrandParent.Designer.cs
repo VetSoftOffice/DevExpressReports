@@ -52,6 +52,8 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         private SR_BRO_DailyDataHsWise_PlaceGroupDataTable tableSR_BRO_DailyDataHsWise_PlaceGroup;
         
+        private SR_GP_SendingHatEggsDataTable tableSR_GP_SendingHatEggs;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -123,6 +125,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 }
                 if ((ds.Tables["SR_BRO_DailyDataHsWise_PlaceGroup"] != null)) {
                     base.Tables.Add(new SR_BRO_DailyDataHsWise_PlaceGroupDataTable(ds.Tables["SR_BRO_DailyDataHsWise_PlaceGroup"]));
+                }
+                if ((ds.Tables["SR_GP_SendingHatEggs"] != null)) {
+                    base.Tables.Add(new SR_GP_SendingHatEggsDataTable(ds.Tables["SR_GP_SendingHatEggs"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -284,6 +289,16 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SR_GP_SendingHatEggsDataTable SR_GP_SendingHatEggs {
+            get {
+                return this.tableSR_GP_SendingHatEggs;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -390,6 +405,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 }
                 if ((ds.Tables["SR_BRO_DailyDataHsWise_PlaceGroup"] != null)) {
                     base.Tables.Add(new SR_BRO_DailyDataHsWise_PlaceGroupDataTable(ds.Tables["SR_BRO_DailyDataHsWise_PlaceGroup"]));
+                }
+                if ((ds.Tables["SR_GP_SendingHatEggs"] != null)) {
+                    base.Tables.Add(new SR_GP_SendingHatEggsDataTable(ds.Tables["SR_GP_SendingHatEggs"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -508,6 +526,12 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                     this.tableSR_BRO_DailyDataHsWise_PlaceGroup.InitVars();
                 }
             }
+            this.tableSR_GP_SendingHatEggs = ((SR_GP_SendingHatEggsDataTable)(base.Tables["SR_GP_SendingHatEggs"]));
+            if ((initTable == true)) {
+                if ((this.tableSR_GP_SendingHatEggs != null)) {
+                    this.tableSR_GP_SendingHatEggs.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -546,6 +570,8 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
             base.Tables.Add(this.tableSR_BRO_DailyDataHsWise);
             this.tableSR_BRO_DailyDataHsWise_PlaceGroup = new SR_BRO_DailyDataHsWise_PlaceGroupDataTable();
             base.Tables.Add(this.tableSR_BRO_DailyDataHsWise_PlaceGroup);
+            this.tableSR_GP_SendingHatEggs = new SR_GP_SendingHatEggsDataTable();
+            base.Tables.Add(this.tableSR_GP_SendingHatEggs);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -629,6 +655,12 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeSR_BRO_DailyDataHsWise_PlaceGroup() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeSR_GP_SendingHatEggs() {
             return false;
         }
         
@@ -728,6 +760,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SR_BRO_DailyDataHsWise_PlaceGroupRowChangeEventHandler(object sender, SR_BRO_DailyDataHsWise_PlaceGroupRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void SR_GP_SendingHatEggsRowChangeEventHandler(object sender, SR_GP_SendingHatEggsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -6616,6 +6651,500 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SR_GP_SendingHatEggsDataTable : global::System.Data.TypedTableBase<SR_GP_SendingHatEggsRow> {
+            
+            private global::System.Data.DataColumn columnFemale_F;
+            
+            private global::System.Data.DataColumn columnMale_F;
+            
+            private global::System.Data.DataColumn columnFemale_M;
+            
+            private global::System.Data.DataColumn columnMale_M;
+            
+            private global::System.Data.DataColumn columnWeekNo;
+            
+            private global::System.Data.DataColumn columnCloseStock_F;
+            
+            private global::System.Data.DataColumn columnCloseStock_M;
+            
+            private global::System.Data.DataColumn columnHatEggs_F;
+            
+            private global::System.Data.DataColumn columnHatEggs_M;
+            
+            private global::System.Data.DataColumn columnOpenStock_F;
+            
+            private global::System.Data.DataColumn columnOpenStock_M;
+            
+            private global::System.Data.DataColumn columnFlockCode;
+            
+            private global::System.Data.DataColumn columnF_Line;
+            
+            private global::System.Data.DataColumn columnM_Line;
+            
+            private global::System.Data.DataColumn columnTotalHatchingEggsToHatchery_F;
+            
+            private global::System.Data.DataColumn columnTotalHatchingEggsToHatchery_M;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_GP_SendingHatEggsDataTable() {
+                this.TableName = "SR_GP_SendingHatEggs";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_GP_SendingHatEggsDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
+            protected SR_GP_SendingHatEggsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Female_FColumn {
+                get {
+                    return this.columnFemale_F;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Male_FColumn {
+                get {
+                    return this.columnMale_F;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Female_MColumn {
+                get {
+                    return this.columnFemale_M;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Male_MColumn {
+                get {
+                    return this.columnMale_M;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeekNoColumn {
+                get {
+                    return this.columnWeekNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CloseStock_FColumn {
+                get {
+                    return this.columnCloseStock_F;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CloseStock_MColumn {
+                get {
+                    return this.columnCloseStock_M;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatEggs_FColumn {
+                get {
+                    return this.columnHatEggs_F;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatEggs_MColumn {
+                get {
+                    return this.columnHatEggs_M;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OpenStock_FColumn {
+                get {
+                    return this.columnOpenStock_F;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OpenStock_MColumn {
+                get {
+                    return this.columnOpenStock_M;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FlockCodeColumn {
+                get {
+                    return this.columnFlockCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn F_LineColumn {
+                get {
+                    return this.columnF_Line;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn M_LineColumn {
+                get {
+                    return this.columnM_Line;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalHatchingEggsToHatchery_FColumn {
+                get {
+                    return this.columnTotalHatchingEggsToHatchery_F;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalHatchingEggsToHatchery_MColumn {
+                get {
+                    return this.columnTotalHatchingEggsToHatchery_M;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_GP_SendingHatEggsRow this[int index] {
+                get {
+                    return ((SR_GP_SendingHatEggsRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_GP_SendingHatEggsRowChangeEventHandler SR_GP_SendingHatEggsRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_GP_SendingHatEggsRowChangeEventHandler SR_GP_SendingHatEggsRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_GP_SendingHatEggsRowChangeEventHandler SR_GP_SendingHatEggsRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_GP_SendingHatEggsRowChangeEventHandler SR_GP_SendingHatEggsRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddSR_GP_SendingHatEggsRow(SR_GP_SendingHatEggsRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_GP_SendingHatEggsRow AddSR_GP_SendingHatEggsRow(
+                        int Female_F, 
+                        int Male_F, 
+                        int Female_M, 
+                        int Male_M, 
+                        int WeekNo, 
+                        int CloseStock_F, 
+                        int CloseStock_M, 
+                        int HatEggs_F, 
+                        int HatEggs_M, 
+                        int OpenStock_F, 
+                        int OpenStock_M, 
+                        string FlockCode, 
+                        string F_Line, 
+                        string M_Line, 
+                        int TotalHatchingEggsToHatchery_F, 
+                        int TotalHatchingEggsToHatchery_M) {
+                SR_GP_SendingHatEggsRow rowSR_GP_SendingHatEggsRow = ((SR_GP_SendingHatEggsRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Female_F,
+                        Male_F,
+                        Female_M,
+                        Male_M,
+                        WeekNo,
+                        CloseStock_F,
+                        CloseStock_M,
+                        HatEggs_F,
+                        HatEggs_M,
+                        OpenStock_F,
+                        OpenStock_M,
+                        FlockCode,
+                        F_Line,
+                        M_Line,
+                        TotalHatchingEggsToHatchery_F,
+                        TotalHatchingEggsToHatchery_M};
+                rowSR_GP_SendingHatEggsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSR_GP_SendingHatEggsRow);
+                return rowSR_GP_SendingHatEggsRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SR_GP_SendingHatEggsDataTable cln = ((SR_GP_SendingHatEggsDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SR_GP_SendingHatEggsDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnFemale_F = base.Columns["Female_F"];
+                this.columnMale_F = base.Columns["Male_F"];
+                this.columnFemale_M = base.Columns["Female_M"];
+                this.columnMale_M = base.Columns["Male_M"];
+                this.columnWeekNo = base.Columns["WeekNo"];
+                this.columnCloseStock_F = base.Columns["CloseStock_F"];
+                this.columnCloseStock_M = base.Columns["CloseStock_M"];
+                this.columnHatEggs_F = base.Columns["HatEggs_F"];
+                this.columnHatEggs_M = base.Columns["HatEggs_M"];
+                this.columnOpenStock_F = base.Columns["OpenStock_F"];
+                this.columnOpenStock_M = base.Columns["OpenStock_M"];
+                this.columnFlockCode = base.Columns["FlockCode"];
+                this.columnF_Line = base.Columns["F_Line"];
+                this.columnM_Line = base.Columns["M_Line"];
+                this.columnTotalHatchingEggsToHatchery_F = base.Columns["TotalHatchingEggsToHatchery_F"];
+                this.columnTotalHatchingEggsToHatchery_M = base.Columns["TotalHatchingEggsToHatchery_M"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnFemale_F = new global::System.Data.DataColumn("Female_F", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemale_F);
+                this.columnMale_F = new global::System.Data.DataColumn("Male_F", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMale_F);
+                this.columnFemale_M = new global::System.Data.DataColumn("Female_M", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemale_M);
+                this.columnMale_M = new global::System.Data.DataColumn("Male_M", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMale_M);
+                this.columnWeekNo = new global::System.Data.DataColumn("WeekNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeekNo);
+                this.columnCloseStock_F = new global::System.Data.DataColumn("CloseStock_F", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCloseStock_F);
+                this.columnCloseStock_M = new global::System.Data.DataColumn("CloseStock_M", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCloseStock_M);
+                this.columnHatEggs_F = new global::System.Data.DataColumn("HatEggs_F", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatEggs_F);
+                this.columnHatEggs_M = new global::System.Data.DataColumn("HatEggs_M", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatEggs_M);
+                this.columnOpenStock_F = new global::System.Data.DataColumn("OpenStock_F", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOpenStock_F);
+                this.columnOpenStock_M = new global::System.Data.DataColumn("OpenStock_M", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOpenStock_M);
+                this.columnFlockCode = new global::System.Data.DataColumn("FlockCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFlockCode);
+                this.columnF_Line = new global::System.Data.DataColumn("F_Line", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnF_Line);
+                this.columnM_Line = new global::System.Data.DataColumn("M_Line", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnM_Line);
+                this.columnTotalHatchingEggsToHatchery_F = new global::System.Data.DataColumn("TotalHatchingEggsToHatchery_F", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalHatchingEggsToHatchery_F);
+                this.columnTotalHatchingEggsToHatchery_M = new global::System.Data.DataColumn("TotalHatchingEggsToHatchery_M", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalHatchingEggsToHatchery_M);
+                this.columnFemale_F.ReadOnly = true;
+                this.columnMale_F.ReadOnly = true;
+                this.columnFemale_M.ReadOnly = true;
+                this.columnMale_M.ReadOnly = true;
+                this.columnWeekNo.ReadOnly = true;
+                this.columnCloseStock_F.ReadOnly = true;
+                this.columnCloseStock_M.ReadOnly = true;
+                this.columnHatEggs_F.ReadOnly = true;
+                this.columnHatEggs_M.ReadOnly = true;
+                this.columnOpenStock_F.ReadOnly = true;
+                this.columnOpenStock_M.ReadOnly = true;
+                this.columnFlockCode.ReadOnly = true;
+                this.columnFlockCode.MaxLength = 1;
+                this.columnF_Line.ReadOnly = true;
+                this.columnF_Line.MaxLength = 1;
+                this.columnM_Line.ReadOnly = true;
+                this.columnM_Line.MaxLength = 1;
+                this.columnTotalHatchingEggsToHatchery_F.ReadOnly = true;
+                this.columnTotalHatchingEggsToHatchery_M.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_GP_SendingHatEggsRow NewSR_GP_SendingHatEggsRow() {
+                return ((SR_GP_SendingHatEggsRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SR_GP_SendingHatEggsRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SR_GP_SendingHatEggsRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SR_GP_SendingHatEggsRowChanged != null)) {
+                    this.SR_GP_SendingHatEggsRowChanged(this, new SR_GP_SendingHatEggsRowChangeEvent(((SR_GP_SendingHatEggsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SR_GP_SendingHatEggsRowChanging != null)) {
+                    this.SR_GP_SendingHatEggsRowChanging(this, new SR_GP_SendingHatEggsRowChangeEvent(((SR_GP_SendingHatEggsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SR_GP_SendingHatEggsRowDeleted != null)) {
+                    this.SR_GP_SendingHatEggsRowDeleted(this, new SR_GP_SendingHatEggsRowChangeEvent(((SR_GP_SendingHatEggsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SR_GP_SendingHatEggsRowDeleting != null)) {
+                    this.SR_GP_SendingHatEggsRowDeleting(this, new SR_GP_SendingHatEggsRowChangeEvent(((SR_GP_SendingHatEggsRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveSR_GP_SendingHatEggsRow(SR_GP_SendingHatEggsRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsGeneralLedger ds = new dsGeneralLedger();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SR_GP_SendingHatEggsDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class SR_FC_FR_SummaryRow : global::System.Data.DataRow {
@@ -11605,6 +12134,471 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SR_GP_SendingHatEggsRow : global::System.Data.DataRow {
+            
+            private SR_GP_SendingHatEggsDataTable tableSR_GP_SendingHatEggs;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_GP_SendingHatEggsRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSR_GP_SendingHatEggs = ((SR_GP_SendingHatEggsDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Female_F {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.Female_FColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Female_F\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.Female_FColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Male_F {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.Male_FColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Male_F\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.Male_FColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Female_M {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.Female_MColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Female_M\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.Female_MColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Male_M {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.Male_MColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Male_M\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.Male_MColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeekNo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.WeekNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeekNo\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.WeekNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CloseStock_F {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.CloseStock_FColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CloseStock_F\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.CloseStock_FColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CloseStock_M {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.CloseStock_MColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CloseStock_M\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.CloseStock_MColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatEggs_F {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.HatEggs_FColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatEggs_F\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.HatEggs_FColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatEggs_M {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.HatEggs_MColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatEggs_M\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.HatEggs_MColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int OpenStock_F {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.OpenStock_FColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OpenStock_F\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.OpenStock_FColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int OpenStock_M {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.OpenStock_MColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OpenStock_M\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.OpenStock_MColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FlockCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_GP_SendingHatEggs.FlockCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FlockCode\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.FlockCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string F_Line {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_GP_SendingHatEggs.F_LineColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'F_Line\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.F_LineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string M_Line {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_GP_SendingHatEggs.M_LineColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'M_Line\' in table \'SR_GP_SendingHatEggs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.M_LineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalHatchingEggsToHatchery_F {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_FColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalHatchingEggsToHatchery_F\' in table \'SR_GP_SendingHatEg" +
+                                "gs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_FColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalHatchingEggsToHatchery_M {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_MColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalHatchingEggsToHatchery_M\' in table \'SR_GP_SendingHatEg" +
+                                "gs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_MColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemale_FNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.Female_FColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemale_FNull() {
+                this[this.tableSR_GP_SendingHatEggs.Female_FColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMale_FNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.Male_FColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMale_FNull() {
+                this[this.tableSR_GP_SendingHatEggs.Male_FColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemale_MNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.Female_MColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemale_MNull() {
+                this[this.tableSR_GP_SendingHatEggs.Female_MColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMale_MNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.Male_MColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMale_MNull() {
+                this[this.tableSR_GP_SendingHatEggs.Male_MColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeekNoNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.WeekNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeekNoNull() {
+                this[this.tableSR_GP_SendingHatEggs.WeekNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCloseStock_FNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.CloseStock_FColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCloseStock_FNull() {
+                this[this.tableSR_GP_SendingHatEggs.CloseStock_FColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCloseStock_MNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.CloseStock_MColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCloseStock_MNull() {
+                this[this.tableSR_GP_SendingHatEggs.CloseStock_MColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatEggs_FNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.HatEggs_FColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatEggs_FNull() {
+                this[this.tableSR_GP_SendingHatEggs.HatEggs_FColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatEggs_MNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.HatEggs_MColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatEggs_MNull() {
+                this[this.tableSR_GP_SendingHatEggs.HatEggs_MColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOpenStock_FNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.OpenStock_FColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOpenStock_FNull() {
+                this[this.tableSR_GP_SendingHatEggs.OpenStock_FColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOpenStock_MNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.OpenStock_MColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOpenStock_MNull() {
+                this[this.tableSR_GP_SendingHatEggs.OpenStock_MColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFlockCodeNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.FlockCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFlockCodeNull() {
+                this[this.tableSR_GP_SendingHatEggs.FlockCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsF_LineNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.F_LineColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetF_LineNull() {
+                this[this.tableSR_GP_SendingHatEggs.F_LineColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsM_LineNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.M_LineColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetM_LineNull() {
+                this[this.tableSR_GP_SendingHatEggs.M_LineColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalHatchingEggsToHatchery_FNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_FColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalHatchingEggsToHatchery_FNull() {
+                this[this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_FColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalHatchingEggsToHatchery_MNull() {
+                return this.IsNull(this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_MColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalHatchingEggsToHatchery_MNull() {
+                this[this.tableSR_GP_SendingHatEggs.TotalHatchingEggsToHatchery_MColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -12066,6 +13060,40 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_BRO_DailyDataHsWise_PlaceGroupRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class SR_GP_SendingHatEggsRowChangeEvent : global::System.EventArgs {
+            
+            private SR_GP_SendingHatEggsRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_GP_SendingHatEggsRowChangeEvent(SR_GP_SendingHatEggsRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_GP_SendingHatEggsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -15444,6 +16472,212 @@ namespace DevExpressReports.Reports.GrandParent.DataSets.dsGeneralLedgerTableAda
             else {
                 pData_JSON = ((string)(this.Adapter.SelectCommand.Parameters[12].Value));
             }
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SR_GP_SendingHatEggsTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public SR_GP_SendingHatEggsTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SR_GP_SendingHatEggs";
+            tableMapping.ColumnMappings.Add("Female_F", "Female_F");
+            tableMapping.ColumnMappings.Add("Male_F", "Male_F");
+            tableMapping.ColumnMappings.Add("Female_M", "Female_M");
+            tableMapping.ColumnMappings.Add("Male_M", "Male_M");
+            tableMapping.ColumnMappings.Add("WeekNo", "WeekNo");
+            tableMapping.ColumnMappings.Add("CloseStock_F", "CloseStock_F");
+            tableMapping.ColumnMappings.Add("CloseStock_M", "CloseStock_M");
+            tableMapping.ColumnMappings.Add("HatEggs_F", "HatEggs_F");
+            tableMapping.ColumnMappings.Add("HatEggs_M", "HatEggs_M");
+            tableMapping.ColumnMappings.Add("OpenStock_F", "OpenStock_F");
+            tableMapping.ColumnMappings.Add("OpenStock_M", "OpenStock_M");
+            tableMapping.ColumnMappings.Add("FlockCode", "FlockCode");
+            tableMapping.ColumnMappings.Add("F_Line", "F_Line");
+            tableMapping.ColumnMappings.Add("M_Line", "M_Line");
+            tableMapping.ColumnMappings.Add("TotalHatchingEggsToHatchery_F", "TotalHatchingEggsToHatchery_F");
+            tableMapping.ColumnMappings.Add("TotalHatchingEggsToHatchery_M", "TotalHatchingEggsToHatchery_M");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
+                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.SR_GP_SendingHatEggs";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateFrom", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDateTo", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFarmID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFlockID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrCropID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptHrEmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsGeneralLedger.SR_GP_SendingHatEggsDataTable GetData(global::System.Nullable<int> ptGnBookID, global::System.Nullable<byte> ptGnModuleTypeID, global::System.Nullable<byte> pLang, global::System.Nullable<global::System.DateTime> pDateFrom, global::System.Nullable<global::System.DateTime> pDateTo, global::System.Nullable<int> ptFrFarmID, global::System.Nullable<int> ptFrFlockID, global::System.Nullable<int> ptFrCropID, global::System.Nullable<int> ptHrEmployeeID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ptGnBookID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptGnBookID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnModuleTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((byte)(ptGnModuleTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((pLang.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((byte)(pLang.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((pDateFrom.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(pDateFrom.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((pDateTo.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((System.DateTime)(pDateTo.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrFarmID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((int)(ptFrFarmID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrFlockID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((int)(ptFrFlockID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrCropID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((int)(ptFrCropID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ptHrEmployeeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((int)(ptHrEmployeeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            dsGeneralLedger.SR_GP_SendingHatEggsDataTable dataTable = new dsGeneralLedger.SR_GP_SendingHatEggsDataTable();
+            this.Adapter.Fill(dataTable);
             return dataTable;
         }
     }
