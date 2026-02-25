@@ -28,35 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
-            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
+            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
-            // TopMargin
+            // topMarginBand1
             // 
-            this.TopMargin.Name = "TopMargin";
+            this.topMarginBand1.Name = "topMarginBand1";
             // 
-            // BottomMargin
+            // detailBand1
             // 
-            this.BottomMargin.Name = "BottomMargin";
+            this.detailBand1.Name = "detailBand1";
             // 
-            // Detail
+            // bottomMarginBand1
             // 
-            this.Detail.Name = "Detail";
+            this.bottomMarginBand1.Name = "bottomMarginBand1";
             // 
             // SR_BRO_LiveAndSlaughter_Feed
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
-            this.TopMargin,
-            this.BottomMargin,
-            this.Detail});
-            this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
+            this.topMarginBand1,
+            this.detailBand1,
+            this.bottomMarginBand1});
             this.Version = "25.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
 
         #endregion
+
+        private DevExpress.XtraReports.UI.TopMarginBand topMarginBand1;
+        private DevExpress.XtraReports.UI.DetailBand detailBand1;
+        private DevExpress.XtraReports.UI.BottomMarginBand bottomMarginBand1;
     }
 }

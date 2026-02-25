@@ -117,4 +117,254 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="TotalHE.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +
+Iif(IsNullOrEmpty([CloseFHTEggsF]), 0, [CloseFHTEggsF]) +
+Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC]) +
+Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
+</value>
+  </data>
+  <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PEZpZWxkIE5hbWU9IlJlZ2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQbGFjZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaENvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlc0NvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1heENhcGFjaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtQZXJpb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1N0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlYWtSZWFzb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNBbmRDYXBjaXR5RGlmZiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhcGNpdHlQZXJjIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCI+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iV2Vla0VuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVmFjY2luYXRpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1lZGljYXRpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBNTGVzaW9ucyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTYW1wbGVEaWFnbm9zaXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0U3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRmVlZFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1N0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZU1vcnRQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnRQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRmVlZFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlRmVlZFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEVnZ3NQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1BlcmMiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9TYW1wbGVTZW50Ij48RmllbGQgTmFtZT0iU2VudGRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJGYXJtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBZ2VEYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBZ2VXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRwZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGVzdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGFiIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxhYlJlc3VsdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN5Y2xlTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PEZpZWxkIE5hbWU9IlZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFjY2luZU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWFudWZhY3R1cmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvdXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRheUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEYXlUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1RvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmF0Y2hObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRG9zZXNVc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF0ZUdpdmVuIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0dWFsQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlCb2R5V2VpZ2h0Ij48RmllbGQgTmFtZT0idEZySG91c2VJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0RnJCcmVlZERhdGFJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhvdXNlQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0JXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhbkJvZHlXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbE1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImN1bGxzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29ja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ1YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla0VuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaXJkVHJhbnNmZXJyZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtTGF5ZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VObyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal runningTotal = 0;
+decimal runningTotalCloseF = 0;
+decimal runningTotalOpenC = 0;
+decimal runningTotalCloseC = 0;
+decimal runningTotalTotalEggs = 0;
+
+private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+
+    // Get report parameters - replace with your actual parameter names
+    // You need to access them from your report's Parameters collection
+    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
+    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+
+    // Calculate SameDate
+    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+
+    // Calculate OpenF
+    decimal openF = GetFieldValue("OpenFHTEggsF") + GetFieldValue("OpenHTEggsF");
+
+    // Calculate result
+    decimal result = 0;
+
+    if (sameDate == 1)
+    {
+        // Add to running total
+        runningTotal += openF;
+        result = runningTotal;
+    }
+    else
+    {
+        result = 0;
+    }
+
+    // Assign result to cell
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+
+    // Get report parameters - replace with your actual parameter names
+    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
+    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+
+    // Calculate SameDate
+    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+
+    // Calculate CloseF for current record
+    decimal closeF = GetFieldValue("CloseFHTEggsF") + GetFieldValue("CloseHTEggsF");
+
+    // Calculate result
+    decimal result = 0;
+
+    if (sameDate == 1)
+    {
+        // Add to running total
+        runningTotalCloseF += closeF;
+        result = runningTotalCloseF;
+    }
+    else
+    {
+        result = 0;
+    }
+
+    // Assign result to cell
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+
+    // Get report parameters - replace with your actual parameter names
+    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
+    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+
+    // Calculate SameDate
+    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+
+    // Calculate OpenC for current record
+    decimal openC = GetFieldValue("OpenFHTEggsC") + GetFieldValue("OpenHTEggsC");
+
+    // Calculate result
+    decimal result = 0;
+
+    if (sameDate == 1)
+    {
+        // Add to running total
+        runningTotalOpenC += openC;
+        result = runningTotalOpenC;
+    }
+    else
+    {
+        result = 0;
+    }
+
+    // Assign result to cell
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+
+    // Get report parameters
+    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
+    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+
+    // Calculate SameDate
+    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+
+    // Calculate Close for current record
+    decimal closeC = GetFieldValue("CloseFHTEggsC") + GetFieldValue("CloseHTEggsC");
+
+    // Calculate result
+    decimal result = 0;
+
+    if (sameDate == 1)
+    {
+        // Add to running total
+        runningTotalCloseC += closeC;
+        result = runningTotalCloseC;
+    }
+    else
+    {
+        result = 0;
+    }
+
+    // Assign result to cell
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
+}
+
+private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Helper function for safe parsing
+    decimal GetFieldValue(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
+        {
+            if (decimal.TryParse(value.ToString(), out decimal result))
+                return result;
+        }
+        return 0;
+    }
+
+    // Get report parameters
+    DateTime dateFrom = (DateTime)Report.GetParameterValue("DateFrom");
+    DateTime dateTo = (DateTime)Report.GetParameterValue("DateTo");
+
+    // Calculate SameDate
+    decimal sameDate = (dateFrom.Date == dateTo.Date) ? 1 : 0;
+
+    // Calculate TotalFHE
+    decimal totalFHE = GetFieldValue("CloseFHTEggsC") + GetFieldValue("CloseFHTEggsF");
+    
+    // Calculate TotalHE
+    decimal totalHE = GetFieldValue("CloseHTEggsC") + GetFieldValue("CloseHTEggsF");
+    
+    // Calculate TotalEggs
+    decimal totalEggs = totalFHE + totalHE;
+
+    // Calculate result
+    decimal result = 0;
+
+    if (sameDate == 1)
+    {
+        // Add to running total
+        runningTotalTotalEggs += totalEggs;
+        result = runningTotalTotalEggs;
+    }
+    else
+    {
+        result = 0;
+    }
+
+    // Assign result to cell
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("N0");
+}
+</value>
+  </data>
 </root>
