@@ -117,8 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  <data name="xrTableCell44.ExpressionBindings" xml:space="preserve">
+    <value>IIF(
+    (IIF(!IsNullOrEmpty([FABW]), [FABW], 0) - IIF(!IsNullOrEmpty([StanBodyWeight]), [StanBodyWeight], 0)) &lt;&gt; 0,
+    IIF(!IsNullOrEmpty([FABW]), [FABW], 0) - IIF(!IsNullOrEmpty([StanBodyWeight]), [StanBodyWeight], 0),
+    0
+)</value>
+  </data>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlCb2R5V2VpZ2h0Ij48RmllbGQgTmFtZT0idEZySG91c2VJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0RnJCcmVlZERhdGFJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhvdXNlQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0JXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhbkJvZHlXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbE1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImN1bGxzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29ja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ1YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla0VuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaXJkVHJhbnNmZXJyZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtTGF5ZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VObyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="TotalHE.Expression" xml:space="preserve">
     <value>Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +
@@ -139,8 +146,8 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PEZpZWxkIE5hbWU9IlZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFjY2luZU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWFudWZhY3R1cmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvdXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRheUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEYXlUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1RvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmF0Y2hObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRG9zZXNVc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF0ZUdpdmVuIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0dWFsQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
-  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlCb2R5V2VpZ2h0Ij48RmllbGQgTmFtZT0idEZySG91c2VJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0RnJCcmVlZERhdGFJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhvdXNlQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0JXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhbkJvZHlXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbE1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImN1bGxzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29ja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ1YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla0VuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaXJkVHJhbnNmZXJyZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtTGF5ZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VObyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal sumPercentageDiff = 0;
@@ -150,25 +157,6 @@ decimal sumTotalCulls = 0;
 decimal sumCocks = 0;
 decimal sumTotalMort = 0;
 decimal sumTotalDepl = 0;
-decimal sumBodyWeight  = 0;
-decimal sumfabw    = 0;
-decimal validRowBodyWeightCount = 0;
-decimal sumUniformity   = 0;
-decimal validRowUniformityCount = 0 ;
-decimal sumFemaleCV = 0;
-decimal validRowFemaleCVCount = 0;
-decimal reportSumstanBodyWeight  = 0;
-int reportValidRowstanBodyWeightCount = 0;
-decimal reportSumUniformity = 0;
-int reportValidRowUniformityCount = 0;
-decimal reportSumFABW = 0;
-int reportValidRowFABWCount = 0;
-decimal reportSumFemaleCV = 0;
-int reportValidRowFemaleCVCount = 0;
-double sumStdVSactReport  = 0;
-decimal sumNonZeroBWvsStdReport = 0;
-decimal sumPercentReport = 0;
-int countPercentReport = 0;
 private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
             XRTableCell cell = sender as XRTableCell;
         
@@ -188,24 +176,13 @@ private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.Canc
         // Calculate percentage if FABW is not zero
         if (fabw != 0)
         {
-             decimal result = 0;
-            result = (stdVSact / fabw) * 100;
-            cell.Text = result.ToString("N2") ;
+            decimal result = (stdVSact / fabw) * 100;
+            cell.Text = result.ToString("آ2") ;
         }
         else
         {
             cell.Text = "0.00";
         }
-        
-        decimal percent = 0;
-        if (fabw != 0)
-        {
-               percent = (stdVSact / fabw) * 100;
-               sumPercentReport += percent ;
-               countPercentReport++;       
-    
-      }
-
 }
 
 private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -231,7 +208,7 @@ private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.Canc
             cell.Text = "0.00";
         }
     }
-
+}
 // Method to calculate {@stdVSact} for a row
     private decimal CalculateStdVSact(decimal fabw, decimal stanBodyWeight)
     {
@@ -250,11 +227,9 @@ private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.Canc
     private decimal sumNonZeroBWvsStd = 0;
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        decimal fabw = Convert.ToDecimal(GetCurrentColumnValue("FABW") ?? 0);
+    decimal fabw = Convert.ToDecimal(GetCurrentColumnValue("FABW") ?? 0);
         decimal stanBodyWeight = Convert.ToDecimal(GetCurrentColumnValue("StanBodyWeight") ?? 0);
-        decimal Uniformity = Convert.ToDecimal(GetCurrentColumnValue("Uniformity") ?? 0);
-        decimal FemaleCV = Convert.ToDecimal(GetCurrentColumnValue("FemaleCV") ?? 0);
-
+        
         // Calculate {@stdVSact} for this row
         decimal stdVSact = CalculateStdVSact(fabw, stanBodyWeight);
         
@@ -269,26 +244,10 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
         if (fabw != 0)
         {
             decimal percentageDiff = (stdVSact / fabw) * 100;
-            sumfabw  += fabw ;
             sumPercentageDiff += percentageDiff;
             validRowCount++;
         }
-        if (stanBodyWeight != 0)
-        {
-            sumBodyWeight += stanBodyWeight ;
-            validRowBodyWeightCount++;
-        }
-        if (Uniformity != 0)
-         {
-             sumUniformity  += Uniformity ;
-             validRowUniformityCount++;
-         }
-         if (FemaleCV != 0)
-        {
-            sumFemaleCV += FemaleCV ;
-            validRowFemaleCVCount++;
-        }
-
+        
         // Calculate FirstWeekMort for this row (TotalMort + TotalCulls + Cocks)
         decimal totalMort = Convert.ToDecimal(GetCurrentColumnValue("TotalMort") ?? 0);
         decimal totalCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalCulls") ?? 0);
@@ -442,280 +401,6 @@ private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.Canc
         {
             cell.Text = "0.00";
         }
-}
-
-private void xrTableCell77_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        XRTableCell cell = sender as XRTableCell;
-
-        if (validRowBodyWeightCount != 0)
-        {
-            decimal result = (sumBodyWeight / validRowBodyWeightCount) ;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-    
-}
-
-private void xrTableCell78_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-            XRTableCell cell = sender as XRTableCell;
-
-        if (validRowCount != 0)
-        {
-            decimal result = (sumfabw   / validRowCount) ;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-}
-
-private void xrTableCell81_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       XRTableCell cell = sender as XRTableCell;
-
-        if (validRowUniformityCount != 0)
-        {
-            decimal result = (sumUniformity  / validRowUniformityCount) ;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-}
-
-private void xrTableCell82_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-
-        if (validRowFemaleCVCount != 0)
-        {
-            decimal result = (sumFemaleCV / validRowFemaleCVCount ) ;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-
-}
-
-
-private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    validRowBodyWeightCount  = 0;
-    sumBodyWeight  = 0;
-    sumUniformity   = 0;
-    validRowUniformityCount  = 0;
-    sumFemaleCV = 0;
-    validRowFemaleCVCount  = 0;
-    sumfabw   = 0;
-    validRowCount = 0;
-    sumStdVSact = 0;
-    sumNonZeroBWvsStd  = 0;
-    sumPercentageDiff = 0;
-    
-}
-
-private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        XRTableCell cell = sender as XRTableCell;
-        decimal stanBodyWeight = Convert.ToDecimal(GetCurrentColumnValue("StanBodyWeight") ?? 0);
-        if (stanBodyWeight != 0)
-        {
-            decimal result = stanBodyWeight ;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-        if (stanBodyWeight != 0)
-         {
-             reportSumstanBodyWeight  += stanBodyWeight ;
-            reportValidRowstanBodyWeightCount++;
-         }
-
-}
-
-private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        
-        if (reportValidRowstanBodyWeightCount &gt; 0)
-        {
-            decimal result = reportSumstanBodyWeight  / reportValidRowstanBodyWeightCount;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-        decimal fabw = Convert.ToDecimal(GetCurrentColumnValue("FABW") ?? 0);
-        if (fabw  != 0)
-        {
-            decimal result = fabw ;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-        if (fabw  != 0)
-         {
-             reportSumFABW += fabw ;
-             reportValidRowFABWCount ++;
-         }
-
-}
-
-private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        
-        if (reportValidRowFABWCount &gt; 0)
-        {
-            decimal result = reportSumFABW / reportValidRowFABWCount ;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-}
-
-private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        decimal Uniformity = Convert.ToDecimal(GetCurrentColumnValue("Uniformity") ?? 0);
-        if (Uniformity != 0)
-        {
-            decimal result = Uniformity ;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-        if (Uniformity != 0)
-         {
-             reportSumUniformity  += Uniformity ;
-             reportValidRowUniformityCount++;
-         }
-
-}
-
-private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-        
-        if (reportValidRowUniformityCount  &gt; 0)
-        {
-            decimal result = reportSumUniformity  / reportValidRowUniformityCount ;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-}
-
-private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-        decimal FemaleCV = Convert.ToDecimal(GetCurrentColumnValue("FemaleCV") ?? 0);
-        if (FemaleCV != 0)
-        {
-            decimal result = FemaleCV ;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-         if (FemaleCV != 0)
-        {
-             reportSumFemaleCV += FemaleCV ;
-             reportValidRowFemaleCVCount++;
-        }
-
-          
-
-}
-
-private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell cell = sender as XRTableCell;
-        
-        if (reportValidRowFemaleCVCount &gt; 0)
-        {
-            decimal result = reportSumFemaleCV / reportValidRowFemaleCVCount;
-            cell.Text =  result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-
-}
-
-private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-        XRTableCell cell = sender as XRTableCell;
-    if (cell == null)
-        return;
-
-    double fabw = Convert.ToDouble(GetCurrentColumnValue("FABW"));
-    double stanBodyWeight = Convert.ToDouble(GetCurrentColumnValue("StanBodyWeight"));
-
-    double diff = fabw - stanBodyWeight;
-
-    if (diff != 0)
-        cell.Text = diff.ToString("N2");
-    else
-        cell.Text = "0.00";
-    
-    if(diff != 0){
-        sumStdVSactReport  += diff ;
-        sumNonZeroBWvsStdReport++ ;
-        
-      }
-}
-
-
-private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell cell = sender as XRTableCell;
-    if (cell == null)
-        return;
-    
-    if (sumNonZeroBWvsStdReport &gt; 0)
-    {
-        double avg = sumStdVSactReport / (double)sumNonZeroBWvsStdReport;
-        cell.Text = avg.ToString("N2");
-    }
-    else
-    {
-        cell.Text = "0.00";
-    }
- }
-
-private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
-
-if (countPercentReport &gt; 0)
-{
-    decimal avg = sumPercentReport / countPercentReport;
-    cell.Text = avg.ToString("N2");
-}
-else
-{
-    cell.Text = "0.00";
-}
 }
 </value>
   </data>
