@@ -170,15 +170,6 @@ decimal sumPOL = 0;
 decimal sumPercent = 0;
 int countRows = 0;
 
-decimal sumBrokenEggs = 0;
-decimal sumDeformityEggs = 0;
-decimal sumDestroyedEggs = 0;
-decimal sumDirtyEggs = 0;
-decimal sumDoubleYolkEggs = 0;
-decimal sumOverWeightEggs = 0;
-decimal sumSmallEggs = 0;
-decimal sumSoftShellEggs = 0;
-decimal sumFloorRejectAdj = 0;
 decimal sumRowPercent = 0;
 int validRowCount = 0;
 decimal sumHatchingPercent = 0;
@@ -260,8 +251,6 @@ if (liveFemale &gt; 0)
 }
 
 
-decimal nestedEggs = 0;
-decimal floorEggs = 0;
 decimal pol = 0;
 
 
@@ -276,12 +265,8 @@ sumNestedEggs += nestedEggs;
 sumFloorEggs += floorEggs;
 sumPOL += pol;
 
-decimal totalEggs = 0;
 decimal percent = 0;
 
-
-// TotalEggs
-totalEggs = nestedEggs + floorEggs;
 
 // Equation
 if (totalEggs &gt; 0)
@@ -425,9 +410,11 @@ if (liveMale &gt; 0)
     sumMaleFeedPerBird += result;
     maleRowCount++;
 }
+decimal totalLiveFemale = 0;
+decimal totalLiveMale = 0;
 
-decimal totalLiveFemale += liveFemale;
-decimal totalLiveMale += liveMale;
+totalLiveFemale += liveFemale;
+totalLiveMale += liveMale;
 decimal waterConsumption = 0;
 // --- Read WaterConsumption ---
 v = GetCurrentColumnValue("WaterConsumption");
