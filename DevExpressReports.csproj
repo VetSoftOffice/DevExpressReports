@@ -88,6 +88,7 @@
     <Folder Include="Reports\Farms\Breeder\ProductionPeriod\Performance\WeeklyAnalysisLayFlks\" />
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\FlockSummary\" />
     <Folder Include="Reports\Farms\Breeder\RearingPeriod\Performance\WeeklyAnalysisRearFlks\" />
+    <Folder Include="Reports\Farms\Broiler\DeplationAndBodyWeight\NewFolder\" />
     <Folder Include="Reports\Farms\Broiler\DeplationAndBodyWeight\WeeklyDeplAllFarmWise\" />
     <Folder Include="Reports\Farms\Broiler\Miscellaneous\" />
     <Folder Include="Reports\Farms\Layer\ProductionPeriod\EggProduction\NewFolder\" />

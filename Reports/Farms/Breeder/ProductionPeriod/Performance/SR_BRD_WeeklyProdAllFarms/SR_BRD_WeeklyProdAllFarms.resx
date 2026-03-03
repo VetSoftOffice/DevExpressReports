@@ -117,13 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="xrTableCell44.ExpressionBindings" xml:space="preserve">
-    <value>IIF(
-    (IIF(!IsNullOrEmpty([FABW]), [FABW], 0) - IIF(!IsNullOrEmpty([StanBodyWeight]), [StanBodyWeight], 0)) &lt;&gt; 0,
-    IIF(!IsNullOrEmpty([FABW]), [FABW], 0) - IIF(!IsNullOrEmpty([StanBodyWeight]), [StanBodyWeight], 0),
-    0
-)</value>
-  </data>
   <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlCb2R5V2VpZ2h0Ij48RmllbGQgTmFtZT0idEZySG91c2VJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0RnJCcmVlZERhdGFJRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhvdXNlQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVfU3RhcnRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0JXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhbkJvZHlXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbE1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImN1bGxzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29ja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaWdodEhvdXJzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVlZFR5cGVfZW4xIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRUeXBlX2FyMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ1YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla0VuZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaXJkVHJhbnNmZXJyZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtTGF5ZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VObyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
@@ -149,167 +142,41 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JSRF9XZWVrbHlQcm9kQWxsRmFybXMiPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZXhUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN0YXJ0QmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVuZEJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBsYWNlZE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1DdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vcnRQZXJjU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZENvbnNLRyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRDb25zQmlyZERheUdtc1N0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlZWRCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQlciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCV1N0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUdhaW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrbHlHYWluU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVW5pZlBlcmMiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal sumPercentageDiff = 0;
-int validRowCount = 0;
-decimal sumFirstWeekMort = 0;
-decimal sumTotalCulls = 0;
-decimal sumCocks = 0;
-decimal sumTotalMort = 0;
-decimal sumTotalDepl = 0;
-private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-            XRTableCell cell = sender as XRTableCell;
-        
-        // Get FABW and StanBodyWeight values
-        decimal fabw = Convert.ToDecimal(GetCurrentColumnValue("FABW") ?? 0);
-        decimal stanBodyWeight = Convert.ToDecimal(GetCurrentColumnValue("StanBodyWeight") ?? 0);
-        
-        // Calculate {@stdVSact} - difference between actual and standard
-        decimal stdVSact = 0;
-        decimal difference = fabw - stanBodyWeight;
-        
-        if (difference != 0)
-        {
-            stdVSact = difference;
-        }
-        
-        // Calculate percentage if FABW is not zero
-        if (fabw != 0)
-        {
-            decimal result = (stdVSact / fabw) * 100;
-            cell.Text = result.ToString("آ2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-           XRTableCell cell = sender as XRTableCell;
-        
-        // Get rf_Female_Started value
-        decimal rfFemaleStarted = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
-        
-        // Calculate {@TotalDepl} (TotalMort + TotalCulls + Cocks)
-        decimal totalMort = Convert.ToDecimal(GetCurrentColumnValue("TotalMort") ?? 0);
-        decimal totalCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalCulls") ?? 0);
-        decimal cocks = Convert.ToDecimal(GetCurrentColumnValue("Cocks") ?? 0);
-        decimal totalDepl = totalMort + totalCulls + cocks;
-        
-        if (rfFemaleStarted != 0)
-        {
-            // Calculate total depletion percentage
-            decimal result = (totalDepl / rfFemaleStarted) * 100;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
+    <value>
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    // Get StartBalance and Mort values
+    decimal startBalance = Convert.ToDecimal(GetCurrentColumnValue("StartBalance") ?? 0);
+    decimal mort = Convert.ToDecimal(GetCurrentColumnValue("Mort") ?? 0);
+    
+    if (startBalance != 0)
+    {
+        // Calculate mortality percentage
+        decimal result = (mort / startBalance) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
     }
 }
-// Method to calculate {@stdVSact} for a row
-    private decimal CalculateStdVSact(decimal fabw, decimal stanBodyWeight)
+
+private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get PlacedNo and CumMort values
+    decimal placedNo = Convert.ToDecimal(GetCurrentColumnValue("PlacedNo") ?? 0);
+    decimal cumMort = Convert.ToDecimal(GetCurrentColumnValue("CumMort") ?? 0);
+    
+    if (placedNo != 0)
     {
-        decimal difference = fabw - stanBodyWeight;
-        return (difference != 0) ? difference : 0;
-    }
-    
-    // Method to calculate {@NonZeroBWvsStd} for a row
-    private int CalculateNonZeroBWvsStd(decimal stdVSact)
-    {
-        return (stdVSact != 0) ? 1 : 0;
-    }
-    
-    // Variables to store sums
-    private decimal sumStdVSact = 0;
-    private decimal sumNonZeroBWvsStd = 0;
-
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal fabw = Convert.ToDecimal(GetCurrentColumnValue("FABW") ?? 0);
-        decimal stanBodyWeight = Convert.ToDecimal(GetCurrentColumnValue("StanBodyWeight") ?? 0);
-        
-        // Calculate {@stdVSact} for this row
-        decimal stdVSact = CalculateStdVSact(fabw, stanBodyWeight);
-        
-        // Calculate {@NonZeroBWvsStd} for this row
-        int nonZeroBWvsStd = CalculateNonZeroBWvsStd(stdVSact);
-        
-        // Accumulate sums
-        sumStdVSact += stdVSact;
-        sumNonZeroBWvsStd += nonZeroBWvsStd;
-        
-        // Calculate percentage if FABW is not zero
-        if (fabw != 0)
-        {
-            decimal percentageDiff = (stdVSact / fabw) * 100;
-            sumPercentageDiff += percentageDiff;
-            validRowCount++;
-        }
-        
-        // Calculate FirstWeekMort for this row (TotalMort + TotalCulls + Cocks)
-        decimal totalMort = Convert.ToDecimal(GetCurrentColumnValue("TotalMort") ?? 0);
-        decimal totalCulls = Convert.ToDecimal(GetCurrentColumnValue("TotalCulls") ?? 0);
-        decimal cocks = Convert.ToDecimal(GetCurrentColumnValue("Cocks") ?? 0);
-        
-        decimal firstWeekMort = totalMort + totalCulls + cocks;
-        
-        // Add to the running total
-        sumFirstWeekMort += firstWeekMort;
-        
-                // Add current row's TotalCulls to the running total
-        sumTotalCulls += Convert.ToDecimal(GetCurrentColumnValue("TotalCulls") ?? 0);
-        sumCocks += Convert.ToDecimal(GetCurrentColumnValue("Cocks") ?? 0);
-        
-         sumTotalMort += Convert.ToDecimal(GetCurrentColumnValue("TotalMort") ?? 0);
-         
-        decimal totalDepl = totalMort + totalCulls + cocks;
-        
-        // Add to running totals
-        sumTotalDepl += totalDepl;
-         
-}
-
-private void xrTableCell79_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-        
-        if (sumNonZeroBWvsStd != 0)
-        {
-            decimal result = sumStdVSact / sumNonZeroBWvsStd;
-            cell.Text = result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
-        
-        if (validRowCount &gt; 0)
-        {
-            decimal avg = sumPercentageDiff / validRowCount;
-            cell.Text = avg.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      XRTableCell cell = sender as XRTableCell;
-    
-    // Get rf_Female_Started and DOA values
-    decimal rfFemaleStarted = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
-    decimal doa = Convert.ToDecimal(GetCurrentColumnValue("DOA") ?? 0);
-    
-    if (rfFemaleStarted != 0)
-    {
-        // Calculate DOA percentage
-        decimal result = (doa / rfFemaleStarted) * 100;
+        // Calculate cumulative mortality percentage
+        decimal result = (cumMort / placedNo) * 100.0m;
         cell.Text = result.ToString("N2");
     }
     else
@@ -318,89 +185,46 @@ private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.Canc
     }
 }
 
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        
-        // Get rf_Female_Started (you might need to decide which row's value to use)
-        // Option A: Use the current row's value
-        decimal rfFemaleStarted = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
-        
-        // Option B: Use the sum of rf_Female_Started across all rows
-        // decimal rfFemaleStarted = sumRFemaleStarted; // You'd need to accumulate this too
-        
-        if (rfFemaleStarted != 0)
-        {
-            decimal result = (sumFirstWeekMort / rfFemaleStarted) * 100;
-            cell.Text = result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
+private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    // Get PlacedNo and CumCulls values
+    decimal placedNo = Convert.ToDecimal(GetCurrentColumnValue("PlacedNo") ?? 0);
+    decimal cumCulls = Convert.ToDecimal(GetCurrentColumnValue("CumCulls") ?? 0);
+    
+    if (placedNo != 0)
+    {
+        // Calculate cumulative culls percentage
+        decimal result = (cumCulls * 100.0m) / placedNo;
+        cell.Text = result.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 }
 
-private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        
-        // Get {@ChicksPlaced} (rf_Female_Started) - using current row's value
-        // You need to decide which row's value to use for the denominator
-        decimal chicksPlaced = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
-        
-        if (chicksPlaced != 0)
-        {
-            decimal result = (sumTotalCulls / chicksPlaced) * 100;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
      XRTableCell cell = sender as XRTableCell;
-             decimal chicksPlaced = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
+    
+    // Get StartBalance and FeedConsKG values
+    decimal startBalance = Convert.ToDecimal(GetCurrentColumnValue("StartBalance") ?? 0);
+    decimal feedConsKG = Convert.ToDecimal(GetCurrentColumnValue("FeedConsKG") ?? 0);
+    
+    if (startBalance != 0)
+    {
+        // Calculate average daily feed consumption per bird in grams
+        // FeedConsKG * 1000 converts to grams
+        // Divide by startBalance gives grams per bird for the period
+        // Divide by 7.0 gives grams per bird per day
+        decimal result = (feedConsKG * 1000.0m) / startBalance / 7.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 
-        
-        if (chicksPlaced != 0)
-        {
-            decimal result = (sumCocks / chicksPlaced ) * 100;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell54_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        decimal chicksPlaced = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
-
-        if (chicksPlaced != 0)
-        {
-            decimal result = (sumTotalMort / chicksPlaced ) * 100;
-            cell.Text = result.ToString("N2");
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
-}
-
-private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-        decimal chicksPlaced = Convert.ToDecimal(GetCurrentColumnValue("rf_Female_Started") ?? 0);
-
-        if (chicksPlaced != 0)
-        {
-            decimal result = (sumTotalDepl / chicksPlaced ) * 100;
-            cell.Text = result.ToString("N2") ;
-        }
-        else
-        {
-            cell.Text = "0.00";
-        }
 }
 </value>
   </data>
