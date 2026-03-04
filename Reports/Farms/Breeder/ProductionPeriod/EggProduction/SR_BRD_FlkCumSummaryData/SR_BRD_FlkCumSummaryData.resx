@@ -123,6 +123,18 @@
   <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9GbGtDdW1TdW1tYXJ5RGF0YSI+PEZpZWxkIE5hbWU9IlR5cGUxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="Type.Expression" xml:space="preserve">
+    <value>IIF([Type1] = 1, ?Age, 
+IIF([Type1] = 2, ?RearingFarm, 
+IIF([Type1] = 3, ?LayingFarm, 
+IIF([Type1] = 4, ?StartDate, 
+IIF([Type1] = 5, ?LayingPeriodStartWeek, 
+IIF([Type1] = 6, ?ProductionWeek, 
+IIF([Type1] = 7, ?Status, NULL)))))))</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
 private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
