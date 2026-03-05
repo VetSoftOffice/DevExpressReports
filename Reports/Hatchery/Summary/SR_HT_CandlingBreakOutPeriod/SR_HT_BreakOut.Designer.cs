@@ -607,6 +607,8 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(39.88974F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(51.46853F)});
             crossTabColumnField1.FieldName = "BreakoutCat";
+            crossTabColumnField1.SortBySummaryInfo.FieldName = "SerialNo";
+            crossTabColumnField1.SortBySummaryInfo.SummaryType = DevExpress.XtraReports.UI.CrossTab.SummaryType.Max;
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
@@ -727,6 +729,7 @@
             // 
             // crossTabHeaderCell2
             // 
+            this.crossTabHeaderCell2.Angle = 450F;
             this.crossTabHeaderCell2.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell2.BorderWidth = 1.4F;
             this.crossTabHeaderCell2.ColumnIndex = 20;

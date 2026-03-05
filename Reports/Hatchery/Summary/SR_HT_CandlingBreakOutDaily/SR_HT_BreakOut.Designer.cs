@@ -562,6 +562,8 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(51.23947F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(51.23947F)});
             crossTabColumnField1.FieldName = "BreakoutCat";
+            crossTabColumnField1.SortBySummaryInfo.FieldName = "SerialNo";
+            crossTabColumnField1.SortBySummaryInfo.SummaryType = DevExpress.XtraReports.UI.CrossTab.SummaryType.Max;
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
