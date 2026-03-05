@@ -229,6 +229,8 @@
             this.ValuePerc = new DevExpress.XtraReports.UI.CalculatedField();
             this.Combined_CF = new DevExpress.XtraReports.UI.CalculatedField();
             this.HatcheryNo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.CategoryBreak = new DevExpress.XtraReports.UI.CalculatedField();
+            this.BreakoutCatStr = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -533,17 +535,15 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(51.96337F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(51.96337F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(51.96337F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(39.46344F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(49.88006F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(52.06079F)});
-            crossTabColumnField1.FieldName = "SerialNo";
+            crossTabColumnField1.FieldName = "CategoryBreak";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
             crossTabDataField1.FieldName = "Combined_CF";
             this.xrCrossTab1.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
             crossTabDataField1});
-            this.xrCrossTab1.DataMember = "SR_HT_BreakOut";
-            this.xrCrossTab1.DataSource = this.dsFinance1;
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.Name = "xrCrossTab1";
@@ -562,7 +562,7 @@
             crossTabRowDefinition11.Visible = false;
             crossTabRowDefinition12.Visible = false;
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(66.66666F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(80.20832F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(36.45834F),
             crossTabRowDefinition1,
             crossTabRowDefinition2,
@@ -1510,6 +1510,17 @@
             this.HatcheryNo.Name = "HatcheryNo";
             this.HatcheryNo.Visible = false;
             // 
+            // CategoryBreak
+            // 
+            this.CategoryBreak.DataMember = "SR_HT_BreakOut";
+            this.CategoryBreak.Expression = "IIF([Category] = \'\', ?BreakoutCatStr, [Category])";
+            this.CategoryBreak.Name = "CategoryBreak";
+            // 
+            // BreakoutCatStr
+            // 
+            this.BreakoutCatStr.Name = "BreakoutCatStr";
+            this.BreakoutCatStr.Visible = false;
+            // 
             // SR_HT_BreakOut
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1544,7 +1555,8 @@
             this.Rejected,
             this.ChicksPerc,
             this.ValuePerc,
-            this.Combined_CF});
+            this.Combined_CF,
+            this.CategoryBreak});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
@@ -1554,6 +1566,7 @@
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20.00003F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BreakoutCatStr, "Default", "Description", "BreakoutCatStr"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", "{0:N2}"),
@@ -1699,7 +1712,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 0F, 20F, 20.00003F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 438.1249F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 451.6666F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
@@ -1708,7 +1721,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Total_Res, "Default", "Description", "Total_Res"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WeekNo, "Default", "Description", "WeekNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00001F, 9.999974F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(765.4046F, 428.125F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(775.8212F, 441.6667F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(187.5F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(164.1655F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Batch No:[Patch Code]"),
@@ -1763,7 +1776,9 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.WeekNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.SheetNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Total_Res, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FeedMillCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FeedMillCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.HatcheryNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.BreakoutCatStr, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsRTL,
             this.IsCustomReportFooter,
@@ -1785,7 +1800,8 @@
             this.SheetNo,
             this.Total_Res,
             this.FeedMillCode,
-            this.HatcheryNo});
+            this.HatcheryNo,
+            this.BreakoutCatStr});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
@@ -1963,5 +1979,7 @@
         private DevExpress.XtraReports.Parameters.Parameter HatcheryNo;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfoCurrentTime;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfoPageNoOfTotal;
+        private DevExpress.XtraReports.UI.CalculatedField CategoryBreak;
+        private DevExpress.XtraReports.Parameters.Parameter BreakoutCatStr;
     }
 }

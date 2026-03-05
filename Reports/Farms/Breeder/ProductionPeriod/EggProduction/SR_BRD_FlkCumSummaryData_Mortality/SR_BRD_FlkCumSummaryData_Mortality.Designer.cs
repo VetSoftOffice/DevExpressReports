@@ -92,6 +92,7 @@
             this.xrChart1.LocationFloat = new DevExpress.Utils.PointFloat(73.95834F, 0F);
             this.xrChart1.Name = "xrChart1";
             series1.ArgumentDataMember = "SR_BRD_FlkCumSummaryData_Sub1.FlockCode";
+            series1.ColorDataMember = "SR_BRD_FlkCumSummaryData_Sub1.FlockCode";
             series1.Name = "Series 1";
             series1.SeriesID = 0;
             series1.ValueDataMembersSerializable = "SR_BRD_FlkCumSummaryData_Sub1.FloatQty";

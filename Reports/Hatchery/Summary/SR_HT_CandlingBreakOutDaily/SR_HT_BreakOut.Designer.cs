@@ -234,10 +234,10 @@
             this.FeedMillCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sR_HT_BreakOutTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_HT_BreakOutTableAdapter();
-            this.BreakoutCatStr = new DevExpress.XtraReports.UI.CalculatedField();
-            this.isShowBreakOutStr = new DevExpress.XtraReports.UI.CalculatedField();
             this.BreakoutCat = new DevExpress.XtraReports.UI.CalculatedField();
             this.HatcheryNo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BreakoutCatStr = new DevExpress.XtraReports.Parameters.Parameter();
+            this.isShowBreakOutStr = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -1565,28 +1565,28 @@
             // 
             this.sR_HT_BreakOutTableAdapter.ClearBeforeFill = true;
             // 
-            // BreakoutCatStr
-            // 
-            this.BreakoutCatStr.DataMember = "SR_HT_BreakOut";
-            this.BreakoutCatStr.Expression = "\' \'";
-            this.BreakoutCatStr.Name = "BreakoutCatStr";
-            // 
-            // isShowBreakOutStr
-            // 
-            this.isShowBreakOutStr.DataMember = "SR_HT_BreakOut";
-            this.isShowBreakOutStr.Expression = "true";
-            this.isShowBreakOutStr.Name = "isShowBreakOutStr";
-            // 
             // BreakoutCat
             // 
             this.BreakoutCat.DataMember = "SR_HT_BreakOut";
-            this.BreakoutCat.Expression = "Iif([isShowBreakOutStr] = True, [@BreakoutCatStr], [SR_HT_BreakOut.Category])\n";
+            this.BreakoutCat.Expression = "IIF(?isShowBreakOutStr = true, ?BreakoutCatStr, [Category])";
             this.BreakoutCat.Name = "BreakoutCat";
             // 
             // HatcheryNo
             // 
             this.HatcheryNo.Name = "HatcheryNo";
             this.HatcheryNo.Visible = false;
+            // 
+            // BreakoutCatStr
+            // 
+            this.BreakoutCatStr.Name = "BreakoutCatStr";
+            this.BreakoutCatStr.Visible = false;
+            // 
+            // isShowBreakOutStr
+            // 
+            this.isShowBreakOutStr.Name = "isShowBreakOutStr";
+            this.isShowBreakOutStr.Type = typeof(bool);
+            this.isShowBreakOutStr.ValueInfo = "False";
+            this.isShowBreakOutStr.Visible = false;
             // 
             // SR_HT_BreakOut
             // 
@@ -1622,8 +1622,6 @@
             this.ChicksPerc,
             this.ValuePerc,
             this.Combined_CF,
-            this.BreakoutCatStr,
-            this.isShowBreakOutStr,
             this.BreakoutCat});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
@@ -1635,6 +1633,7 @@
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20.00001F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BreakoutCatStr, "Default", "Description", "BreakoutCatStr"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", "{0:N2}"),
@@ -1747,6 +1746,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsDealType, "Default", "Description", "IsDealType"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "Default", "Description", "Right to left"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "ar", "Description", "عرض من اليمبن لليسار"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.isShowBreakOutStr, "Default", "Description", "isShowBreakOutStr"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "Default", "Description", "No of groups / page"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "ar", "Description", "عدد المجموعات / صفحة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
@@ -1838,6 +1838,7 @@
             groupLayoutItem1,
             groupLayoutItem2,
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsDealType, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.isShowBreakOutStr, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.NoOfGroupsPerPage, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FontSize, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DateFrom, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -1849,7 +1850,9 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.WeekNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.SheetNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Total_Res, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FeedMillCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FeedMillCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.HatcheryNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.BreakoutCatStr, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsRTL,
             this.IsCustomReportFooter,
@@ -1859,6 +1862,7 @@
             this.HideReportHeader,
             this.HideReportFooter,
             this.IsDealType,
+            this.isShowBreakOutStr,
             this.NoOfGroupsPerPage,
             this.FontSize,
             this.DateFrom,
@@ -1871,7 +1875,8 @@
             this.SheetNo,
             this.Total_Res,
             this.FeedMillCode,
-            this.HatcheryNo});
+            this.HatcheryNo,
+            this.BreakoutCatStr});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
@@ -2037,8 +2042,6 @@
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private Finance.DataSets.dsFinance dsFinance1;
         private Finance.DataSets.dsFinanceTableAdapters.SR_HT_BreakOutTableAdapter sR_HT_BreakOutTableAdapter;
-        private DevExpress.XtraReports.UI.CalculatedField BreakoutCatStr;
-        private DevExpress.XtraReports.UI.CalculatedField isShowBreakOutStr;
         private DevExpress.XtraReports.UI.CalculatedField BreakoutCat;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
@@ -2055,5 +2058,7 @@
         private DevExpress.XtraReports.UI.XRPageInfo pageInfoPageNoOfTotal;
         private DevExpress.XtraReports.UI.XRSubreport srReportHeaderCustom;
         private DevExpress.XtraReports.UI.XRSubreport srReportHeader;
+        private DevExpress.XtraReports.Parameters.Parameter BreakoutCatStr;
+        private DevExpress.XtraReports.Parameters.Parameter isShowBreakOutStr;
     }
 }

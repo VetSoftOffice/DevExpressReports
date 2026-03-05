@@ -282,6 +282,7 @@
             this.UnHatchPerc = new DevExpress.XtraReports.UI.CalculatedField();
             this.ChicksPerc = new DevExpress.XtraReports.UI.CalculatedField();
             this.HatcheryNo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BreakoutCatStr = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -1884,7 +1885,7 @@
             // BreakoutCat
             // 
             this.BreakoutCat.DataMember = "SR_HT_BreakOut";
-            this.BreakoutCat.Expression = "Iif([Category] == \'\', \'\', [Category])";
+            this.BreakoutCat.Expression = "Iif([Category] == \'\', ?BreakoutCatStr, [Category])";
             this.BreakoutCat.Name = "BreakoutCat";
             // 
             // UnHatchPerc
@@ -1903,6 +1904,11 @@
             // 
             this.HatcheryNo.Name = "HatcheryNo";
             this.HatcheryNo.Visible = false;
+            // 
+            // BreakoutCatStr
+            // 
+            this.BreakoutCatStr.Name = "BreakoutCatStr";
+            this.BreakoutCatStr.Visible = false;
             // 
             // SR_HT_BreakOut
             // 
@@ -1949,6 +1955,7 @@
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20.00002F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BreakoutCatStr, "Default", "Description", "BreakoutCatStr"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Breed, "Default", "Description", "Breed"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -2181,7 +2188,8 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CropNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Breed, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.HatcheryNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Module, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Module, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.BreakoutCatStr, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsRTL,
             this.IsCustomReportFooter,
@@ -2201,7 +2209,8 @@
             this.CropNo,
             this.Breed,
             this.HatcheryNo,
-            this.Module});
+            this.Module,
+            this.BreakoutCatStr});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
@@ -2410,5 +2419,6 @@
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell41;
         private DevExpress.XtraReports.Parameters.Parameter Module;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
+        private DevExpress.XtraReports.Parameters.Parameter BreakoutCatStr;
     }
 }

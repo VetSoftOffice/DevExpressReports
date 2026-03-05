@@ -111,12 +111,23 @@
             this.crossTabHeaderCell5 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell3 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_FlkCumSummaryData_Sub1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_FlkCumSummaryData_FeedConsumption = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_BRD_FlkCumSummaryData_Mortality = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand9 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_FlkCumSummaryData_FeedperHEHH = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_BRD_FlkCumSummaryData_HEHH = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_BRD_FlkCumSummaryData_ChiksHH = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_BRD_FlkCumSummaryData_FeedPerChicksHH = new DevExpress.XtraReports.UI.XRSubreport();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailData1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -330,6 +341,10 @@
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.SubBand2,
+            this.SubBand4,
+            this.SubBand8,
+            this.SubBand9,
+            this.SubBand10,
             this.ReportFooterSub1,
             this.ReportFooterSub2});
             // 
@@ -463,29 +478,6 @@
             this.crossTabTotalCell3.Name = "crossTabTotalCell3";
             this.crossTabTotalCell3.RowIndex = 2;
             // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "dsBreeder";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "Type1";
-            table1.Name = "SR_BRD_FlkCumSummaryData";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "FlockCode";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "Value";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Name = "SR_BRD_FlkCumSummaryData";
-            selectQuery1.Tables.Add(table1);
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
-            // 
             // IsRTL
             // 
             this.IsRTL.Name = "IsRTL";
@@ -516,6 +508,91 @@
             // 
             this.srReportSignature.Name = "srReportSignature";
             this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            // 
+            // SubBand4
+            // 
+            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_FlkCumSummaryData_Sub1});
+            this.SubBand4.Name = "SubBand4";
+            // 
+            // SR_BRD_FlkCumSummaryData_Sub1
+            // 
+            this.SR_BRD_FlkCumSummaryData_Sub1.Name = "SR_BRD_FlkCumSummaryData_Sub1";
+            this.SR_BRD_FlkCumSummaryData_Sub1.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_Sub1.SR_BRD_FlkCumSummaryData_Sub1();
+            // 
+            // SubBand8
+            // 
+            this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_FlkCumSummaryData_FeedConsumption,
+            this.SR_BRD_FlkCumSummaryData_Mortality});
+            this.SubBand8.Name = "SubBand8";
+            // 
+            // SR_BRD_FlkCumSummaryData_FeedConsumption
+            // 
+            this.SR_BRD_FlkCumSummaryData_FeedConsumption.Name = "SR_BRD_FlkCumSummaryData_FeedConsumption";
+            this.SR_BRD_FlkCumSummaryData_FeedConsumption.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedConsumption.SR_BRD_FlkCumSummaryData_FeedConsumption();
+            // 
+            // SR_BRD_FlkCumSummaryData_Mortality
+            // 
+            this.SR_BRD_FlkCumSummaryData_Mortality.Name = "SR_BRD_FlkCumSummaryData_Mortality";
+            this.SR_BRD_FlkCumSummaryData_Mortality.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_Mortality.SR_BRD_FlkCumSummaryData_Mortality();
+            // 
+            // SubBand9
+            // 
+            this.SubBand9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_FlkCumSummaryData_FeedperHEHH,
+            this.SR_BRD_FlkCumSummaryData_HEHH});
+            this.SubBand9.Name = "SubBand9";
+            // 
+            // SR_BRD_FlkCumSummaryData_FeedperHEHH
+            // 
+            this.SR_BRD_FlkCumSummaryData_FeedperHEHH.Name = "SR_BRD_FlkCumSummaryData_FeedperHEHH";
+            this.SR_BRD_FlkCumSummaryData_FeedperHEHH.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedperHEHH.XtSR_BRD_FlkCumSummaryData_FeedperHEHH();
+            // 
+            // SR_BRD_FlkCumSummaryData_HEHH
+            // 
+            this.SR_BRD_FlkCumSummaryData_HEHH.Name = "SR_BRD_FlkCumSummaryData_HEHH";
+            this.SR_BRD_FlkCumSummaryData_HEHH.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_HEHH.SR_BRD_FlkCumSummaryData_HEHH();
+            // 
+            // SubBand10
+            // 
+            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRD_FlkCumSummaryData_ChiksHH,
+            this.SR_BRD_FlkCumSummaryData_FeedPerChicksHH});
+            this.SubBand10.Name = "SubBand10";
+            // 
+            // SR_BRD_FlkCumSummaryData_ChiksHH
+            // 
+            this.SR_BRD_FlkCumSummaryData_ChiksHH.Name = "SR_BRD_FlkCumSummaryData_ChiksHH";
+            this.SR_BRD_FlkCumSummaryData_ChiksHH.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_ChiksHH.SR_BRD_FlkCumSummaryData_ChiksHH();
+            // 
+            // SR_BRD_FlkCumSummaryData_FeedPerChicksHH
+            // 
+            this.SR_BRD_FlkCumSummaryData_FeedPerChicksHH.Name = "SR_BRD_FlkCumSummaryData_FeedPerChicksHH";
+            this.SR_BRD_FlkCumSummaryData_FeedPerChicksHH.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedPerChicksHH.SR_BRD_FlkCumSummaryData_FeedPerChicksHH();
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "dsBreeder";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression1.ColumnName = "Type1";
+            table1.Name = "SR_BRD_FlkCumSummaryData";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "FlockCode";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "Value";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Name = "SR_BRD_FlkCumSummaryData";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // Title
             // 
@@ -1019,14 +1096,32 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_ChiksHH, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_ChiksHH, "Default", "SizeF", new System.Drawing.SizeF(400.6253F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_FeedConsumption, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(400.6253F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_FeedConsumption, "Default", "SizeF", new System.Drawing.SizeF(399.1464F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_FeedPerChicksHH, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(400.6253F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_FeedPerChicksHH, "Default", "SizeF", new System.Drawing.SizeF(409.3749F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_FeedperHEHH, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(400.6253F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_FeedperHEHH, "Default", "SizeF", new System.Drawing.SizeF(409.3749F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_HEHH, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_HEHH, "Default", "SizeF", new System.Drawing.SizeF(400.6253F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_Mortality, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_Mortality, "Default", "SizeF", new System.Drawing.SizeF(400.6253F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_Sub1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlkCumSummaryData_Sub1, "Default", "SizeF", new System.Drawing.SizeF(810.0002F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.StartDate, "Default", "Description", "StartDate"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Status, "Default", "Description", "Status"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand10, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 127F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand8, "Default", "HeightF", 23F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand9, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 21.16667F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(260.71F, 77F))});
@@ -1204,5 +1299,16 @@
         private DevExpress.XtraReports.Parameters.Parameter LayingPeriodStartWeek;
         private DevExpress.XtraReports.Parameters.Parameter ProductionWeek;
         private DevExpress.XtraReports.Parameters.Parameter Status;
+        private DevExpress.XtraReports.UI.SubBand SubBand4;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_Sub1;
+        private DevExpress.XtraReports.UI.SubBand SubBand8;
+        private DevExpress.XtraReports.UI.SubBand SubBand9;
+        private DevExpress.XtraReports.UI.SubBand SubBand10;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_FeedConsumption;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_Mortality;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_FeedperHEHH;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_HEHH;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_ChiksHH;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_FlkCumSummaryData_FeedPerChicksHH;
     }
 }
