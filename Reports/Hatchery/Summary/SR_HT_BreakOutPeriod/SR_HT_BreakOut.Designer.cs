@@ -547,6 +547,8 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(62.55133F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.34676F)});
             crossTabColumnField1.FieldName = "Category";
+            crossTabColumnField1.SortBySummaryInfo.FieldName = "SerialNo";
+            crossTabColumnField1.SortBySummaryInfo.SummaryType = DevExpress.XtraReports.UI.CrossTab.SummaryType.Max;
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
