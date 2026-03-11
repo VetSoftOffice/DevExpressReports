@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JST19EYWlseURlcGwiPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQlciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZlQ2hpY2tzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJc1dlZWtFbmQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVlZFBlckRheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldhdGVyQ29uc3VtcHRpb24iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ikdyb3VwQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0ZDX0ZSX0NoaWNrc1BsYWNlZCI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ikdyb3VwQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmZfRmVtYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9NYWxlX1N0YXJ0ZWQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0JSRF9QZXJpb2RTYWxlcyI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxQcmljZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JST19EYWlseURlcGxfU3ViMSI+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkN5Y2xlTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBsYWNlRGF0ZV9GbGsiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJSZWNEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iU3RhcnRCaXJkcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0JXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVW5pZm9ybWl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNWIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal totalCumMort = 0; 
+decimal totalCumCulls = 0;
+decimal totalFeed = 0;
+decimal maxBW = 0;
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Helper function to safely convert values
+    decimal SafeConvert(object value)
+    {
+        if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+            return 0;
+        return Convert.ToDecimal(value);
+    }
+    
+    // Accumulate Mort for {#RT_CumMort}
+    totalCumMort += SafeConvert(GetCurrentColumnValue("Mort"));
+    // Accumulate Culls for {#RT_CumCulls}
+    totalCumCulls += SafeConvert(GetCurrentColumnValue("Culls"));
+    
+    // Get TotalFeed
+    object feedObj = GetCurrentColumnValue("TotalFeed");
+    if (feedObj != null &amp;&amp; feedObj != DBNull.Value)
+    {
+        totalFeed += Convert.ToDecimal(feedObj);
+    }
+    
+    // Track max BW
+    object bwObj = GetCurrentColumnValue("BW");
+    if (bwObj != null &amp;&amp; bwObj != DBNull.Value)
+    {
+        decimal bw = Convert.ToDecimal(bwObj);
+        if (bw &gt; maxBW)
+        {
+            maxBW = bw;
+        }
+    }
+}
+
+private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get StartBirds parameter value
+    decimal startBirds = 0;
+    if (Report.Parameters["StartBirds"] != null)
+    {
+        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+    }
+    
+    // Check if StartBirds is not zero
+    if (startBirds != 0)
+    {
+        // Calculate: ({#RT_CumMort} * 100) / {@StartBirds}
+        decimal result = (totalCumMort * 100.0m) / startBirds;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult ;
+        
+       
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get StartBirds parameter value
+    decimal startBirds = 0;
+    if (Report.Parameters["StartBirds"] != null)
+    {
+        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+    }
+    
+    // Check if StartBirds is not zero
+    if (startBirds != 0)
+    {
+        // Calculate: ({#RT_CumCulls} * 100) / {@StartBirds}
+        decimal result = (totalCumCulls * 100.0m) / startBirds;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult + "%";
+   }
+    else
+    {
+        cell.Text = "0.00%";
+    }
+}
+
+private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get StartBirds parameter
+    decimal startBirds = 0;
+    if (Report.Parameters["StartBirds"] != null)
+    {
+        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+    }
+    
+    if (startBirds != 0)
+    {
+        decimal totalCumLose = totalCumMort + totalCumCulls;
+        decimal lossPct = (totalCumLose * 100.0m) / startBirds;
+        decimal mortPct = (totalCumMort * 100.0m) / startBirds;
+        decimal cullsPct = (totalCumCulls * 100.0m) / startBirds;
+        
+        cell.Text = lossPct.ToString("N2") + "%";
+        
+            }
+    else
+    {
+        cell.Text = "0.00%";
+    }
+}
+
+private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    decimal liveChicks = Convert.ToDecimal(GetCurrentColumnValue("LiveChicks") ?? 0);
+    
+    if (maxBW != 0 &amp;&amp; liveChicks != 0)
+    {
+        decimal result = (totalFeed * 1000.0m / maxBW) / liveChicks;
+        cell.Text = result.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+</value>
+  </data>
+</root>

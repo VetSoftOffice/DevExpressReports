@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5GSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNFR1NIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0ZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlY0ZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="TotalHE.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +
+Iif(IsNullOrEmpty([CloseFHTEggsF]), 0, [CloseFHTEggsF]) +
+Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC]) +
+Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
+</value>
+  </data>
+  <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PEZpZWxkIE5hbWU9IlJlZ2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQbGFjZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaENvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlc0NvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1heENhcGFjaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtQZXJpb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1N0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlYWtSZWFzb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNBbmRDYXBjaXR5RGlmZiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhcGNpdHlQZXJjIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCI+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iV2Vla0VuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kV2Vla05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVmFjY2luYXRpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1lZGljYXRpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBNTGVzaW9ucyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTYW1wbGVEaWFnbm9zaXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0U3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRmVlZFN0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxFZ2dzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1N0ZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZU1vcnRQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnRQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlRmVlZFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlRmVlZFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEVnZ3NQZXJjIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0RWdnc1BlcmMiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9TYW1wbGVTZW50Ij48RmllbGQgTmFtZT0iU2VudGRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJGYXJtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBZ2VEYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBZ2VXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSG91c2VzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRwZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGVzdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGFiIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkxhYlJlc3VsdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN5Y2xlTm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PEZpZWxkIE5hbWU9IlZhY2NpbmUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFjY2luZU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWFudWZhY3R1cmVyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvdXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRheUZyb20iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEYXlUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1RvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQmF0Y2hObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFeHBpcnlEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRG9zZXNVc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF0ZUdpdmVuIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0dWFsQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JST19EYWlseU1vcnQiPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSGF0Tm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQYXJlbnRGYXJtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikdyb3VwQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2F0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3VuIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVGhydSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZyaSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bVRvdGFsRGVwIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idEZyQ3JvcGxEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2hpY2tQbGFjZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJ0RnJHcm91cEJyZWVkSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBZ2UiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="WeekMortTotal.Expression" xml:space="preserve">
+    <value>IIF(IsNullOrEmpty([Sat]), 0, [Sat]) + 
+IIF(IsNullOrEmpty([Sun]), 0, [Sun]) + 
+IIF(IsNullOrEmpty([Mon]), 0, [Mon]) + 
+IIF(IsNullOrEmpty([Tue]), 0, [Tue]) + 
+IIF(IsNullOrEmpty([Wed]), 0, [Wed]) + 
+IIF(IsNullOrEmpty([Thru]), 0, [Thru]) + 
+IIF(IsNullOrEmpty([Fri]), 0, [Fri])
+</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal totalChicksPlaced = 0;
+decimal totalCobbField = 0;
+decimal totalRossField = 0;
+decimal totalOtherField = 0;
+decimal totalWeekMort = 0;
+decimal totalCumDep = 0;
+decimal totalSat = 0;
+decimal totalSun = 0;
+decimal totalMon = 0;
+decimal totalTue = 0;
+decimal totalWed = 0;
+decimal totalThru = 0;
+decimal totalFri = 0;
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // Get ChickPlaced value
+    object chicksObj = GetCurrentColumnValue("ChickPlaced");
+    decimal chickPlaced = 0;
+    
+    if (chicksObj != null &amp;&amp; chicksObj != DBNull.Value)
+    {
+        chickPlaced = Convert.ToDecimal(chicksObj);
+        totalChicksPlaced += chickPlaced;
+    }
+    
+    // Calculate @CobbField: if tFrGroupBreedID = 2 then ChickPlaced else 0
+    object breedIdObj = GetCurrentColumnValue("tFrGroupBreedID");
+    decimal cobbFieldValue = 0;
+    
+    if (breedIdObj != null &amp;&amp; breedIdObj != DBNull.Value)
+    {
+        int breedId = Convert.ToInt32(breedIdObj);
+        
+        // @CobbField logic: if tFrGroupBreedID = 2 then ChickPlaced else 0
+        if (breedId == 2)
+        {
+            cobbFieldValue = chickPlaced;
+        }
+    }
+    
+    totalCobbField += cobbFieldValue;
+    
+    
+    
+     // Helper function to get int values
+    int GetInt(string fieldName)
+    {
+        object value = GetCurrentColumnValue(fieldName);
+        if (value == null || value == DBNull.Value)
+            return 0;
+        return Convert.ToInt32(value);
+    }
+    
+    
+    // Calculate @RossField based on tFrGroupBreedID = 1
+    int breedId = GetInt("tFrGroupBreedID");
+    decimal rossFieldValue = (breedId == 1) ? chickPlaced : 0;
+    totalRossField += rossFieldValue;
+    
+    
+    
+    
+    // Calculate @OtherField: if tFrGroupBreedID is NOT 1 AND NOT 2 then ChickPlaced else 0
+    int breedId = GetInt("tFrGroupBreedID");
+    
+    // Check if breedId is neither 1 nor 2
+    if (breedId != 1 &amp;&amp; breedId != 2)
+    {
+        totalOtherField += chickPlaced;
+    }
+    
+        // Helper function to safely convert values
+    decimal SafeConvert(object value)
+    {
+        if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+            return 0;
+        return Convert.ToDecimal(value);
+    }
+    
+        
+    // Calculate @WeekMortTotal for this row: Sat + Sun + Mon + Tue + Wed + Thru + Fri
+    decimal weekMortTotal = 
+        SafeConvert(GetCurrentColumnValue("Sat")) +
+        SafeConvert(GetCurrentColumnValue("Sun")) +
+        SafeConvert(GetCurrentColumnValue("Mon")) +
+        SafeConvert(GetCurrentColumnValue("Tue")) +
+        SafeConvert(GetCurrentColumnValue("Wed")) +
+        SafeConvert(GetCurrentColumnValue("Thru")) +
+        SafeConvert(GetCurrentColumnValue("Fri"));
+    
+    // Accumulate weekly mortality
+    totalWeekMort += weekMortTotal;
+    
+        // Accumulate CumTotalDep
+    totalCumDep += SafeConvert(GetCurrentColumnValue("CumTotalDep"));
+    // Accumulate Saturday mortality
+    totalSat += SafeConvert(GetCurrentColumnValue("Sat"));
+    // Accumulate Sunday mortality
+    totalSun += SafeConvert(GetCurrentColumnValue("Sun"));
+    // Accumulate Monday mortality
+    totalMon += SafeConvert(GetCurrentColumnValue("Mon"));
+    // Accumulate Tuesday mortality
+    totalTue += SafeConvert(GetCurrentColumnValue("Tue"));
+        // Accumulate Wednesday mortality
+    totalWed += SafeConvert(GetCurrentColumnValue("Wed"));
+     // Accumulate Thursday (Thru) mortality
+    totalThru += SafeConvert(GetCurrentColumnValue("Thru"));
+        // Accumulate Friday mortality
+    totalFri += SafeConvert(GetCurrentColumnValue("Fri"));
+    }
+
+private void xrLabel7_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get RTL parameter
+    bool isRTL = false;
+    if (Report.Parameters["IsRTL"] != null)
+    {
+        isRTL = Convert.ToBoolean(Report.Parameters["IsRTL"].Value);
+    }
+    
+    // Calculate and display
+    if (totalChicksPlaced &gt; 0)
+    {
+        decimal result = (totalCobbField / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        if (isRTL)
+        {
+            cell.Text = "كوب%: " + formattedResult;
+        }
+        else
+        {
+            cell.Text = "COBB%: " + formattedResult;
+        }
+        
+    }
+    else
+    {
+        if (isRTL)
+        {
+            cell.Text = "كوب%: 0.00";
+        }
+        else
+        {
+            cell.Text = "COBB%: 0.00";
+        }
+    }
+}
+
+private void xrLabel8_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get RTL parameter
+    bool isRTL = false;
+    if (Report.Parameters["IsRTL"] != null)
+    {
+        isRTL = Convert.ToBoolean(Report.Parameters["IsRTL"].Value);
+    }
+    
+    // Calculate and display
+    if (totalChicksPlaced &gt; 0)
+    {
+        decimal result = (totalRossField / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        if (isRTL)
+        {
+            cell.Text = "روس%: " + formattedResult;
+        }
+        else
+        {
+            cell.Text = "ROSS%: " + formattedResult;
+        }
+        
+    }
+    else
+    {
+        if (isRTL)
+        {
+            cell.Text = "روس%: 0.00";
+        }
+        else
+        {
+            cell.Text = "ROSS%: 0.00";
+        }
+    }
+}
+
+private void xrLabel9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Get RTL parameter
+    bool isRTL = false;
+    if (Report.Parameters["IsRTL"] != null)
+    {
+        isRTL = Convert.ToBoolean(Report.Parameters["IsRTL"].Value);
+    }
+    
+    // Calculate and display
+    if (totalChicksPlaced &gt; 0)
+    {
+        decimal result = (totalOtherField / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        if (isRTL)
+        {
+            cell.Text = "أخرى%: " + formattedResult;
+        }
+        else
+        {
+            cell.Text = "OTHERS%: " + formattedResult;
+        }
+        
+    }
+    else
+    {
+        if (isRTL)
+        {
+            cell.Text = "أخرى%: 0.00";
+        }
+        else
+        {
+            cell.Text = "OTHERS%: 0.00";
+        }
+    }
+    
+    }
+
+private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal chickPlaced = Convert.ToDecimal(GetCurrentColumnValue("ChickPlaced") ?? 0);
+decimal sat = Convert.ToDecimal(GetCurrentColumnValue("Sat") ?? 0);
+decimal sun = Convert.ToDecimal(GetCurrentColumnValue("Sun") ?? 0);
+decimal mon = Convert.ToDecimal(GetCurrentColumnValue("Mon") ?? 0);
+decimal tue = Convert.ToDecimal(GetCurrentColumnValue("Tue") ?? 0);
+decimal wed = Convert.ToDecimal(GetCurrentColumnValue("Wed") ?? 0);
+decimal thru = Convert.ToDecimal(GetCurrentColumnValue("Thru") ?? 0);
+decimal fri = Convert.ToDecimal(GetCurrentColumnValue("Fri") ?? 0);
+
+// Calculate @WeekMortTotal = Sat + Sun + Mon + Tue + Wed + Thru + Fri
+decimal weekMortTotal = sat + sun + mon + tue + wed + thru + fri;
+
+if (chickPlaced &gt; 0)
+{
+    // Calculate: (@WeekMortTotal / ChickPlaced) * 100
+    // This gives weekly mortality percentage
+    decimal result = (weekMortTotal / chickPlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal chickPlaced = Convert.ToDecimal(GetCurrentColumnValue("ChickPlaced") ?? 0);
+decimal cumTotalDep = Convert.ToDecimal(GetCurrentColumnValue("CumTotalDep") ?? 0);
+
+if (chickPlaced &gt; 0)
+{
+    // Calculate: (CumTotalDep / ChickPlaced) * 100
+    // This gives cumulative total depletion percentage
+    decimal result = (cumTotalDep / chickPlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (totalChicksPlaced &gt; 0)
+    {
+        decimal totalWeekMort = totalSat + totalSun + totalMon + totalTue + totalWed + totalThu + totalFri;
+        decimal result = (totalWeekMort / totalChicksPlaced) * 100.0m;
+        
+        cell.Text = result.ToString("N2") ;
+        
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell60_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0 (@TotalChicksPlacedParam &gt; 0)
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalCumDep / totalChicksPlaced) * 100
+        decimal result = (totalCumDep / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalSat / totalChicksPlaced) * 100
+        decimal result = (totalSat / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult ;
+  }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalSun / totalChicksPlaced) * 100
+        decimal result = (totalSun / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult ;
+        
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalMon / totalChicksPlaced) * 100
+        decimal result = (totalMon / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult ;
+        
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalTue / totalChicksPlaced) * 100
+        decimal result = (totalTue / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult ;
+        
+       
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalWed / totalChicksPlaced) * 100
+        decimal result = (totalWed / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult ;
+        
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalThru / totalChicksPlaced) * 100
+        decimal result = (totalThru / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult + "%";
+        
+    }
+    else
+    {
+        cell.Text = "0.00%";
+    }
+    }
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    // Check if total chicks placed is greater than 0
+    if (totalChicksPlaced &gt; 0)
+    {
+        // Calculate: (totalFri / totalChicksPlaced) * 100
+        decimal result = (totalFri / totalChicksPlaced) * 100.0m;
+        string formattedResult = result.ToString("N2");
+        
+        cell.Text = formattedResult + "%";
+        
+            }
+    else
+    {
+        cell.Text = "0.00%";
+    }
+}
+</value>
+  </data>
+</root>
