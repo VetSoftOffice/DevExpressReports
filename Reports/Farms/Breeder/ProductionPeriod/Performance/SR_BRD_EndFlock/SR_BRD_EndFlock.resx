@@ -1320,6 +1320,45 @@ else
     cell.Text = "0.00";
 }
 }
+
+private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingFemaleConsFeed = Convert.ToDecimal(GetCurrentColumnValue("LayingFemaleConsFeed") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: LayingFemaleConsFeed / LayingFeamleOpen
+    decimal result = layingFemaleConsFeed / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingMaleConsFeed = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleConsFeed") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: LayingMaleConsFeed / LayingMaleOpen
+    decimal result = layingMaleConsFeed / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
 </value>
   </data>
 </root>
