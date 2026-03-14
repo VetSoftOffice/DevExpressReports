@@ -165,8 +165,8 @@ decimal reportSumFABW = 0;
 int reportValidRowFABWCount = 0;
 decimal reportSumFemaleCV = 0;
 int reportValidRowFemaleCVCount = 0;
-double sumStdVSactReport  = 0;
-decimal sumNonZeroBWvsStdReport = 0;
+decimal sumStdVSactReport  = 0;
+int sumNonZeroBWvsStdReport = 0;
 decimal sumPercentReport = 0;
 int countPercentReport = 0;
 private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -548,11 +548,11 @@ private void xrTableCell37_BeforePrint(object sender, System.ComponentModel.Canc
         if (reportValidRowstanBodyWeightCount &gt; 0)
         {
             decimal result = reportSumstanBodyWeight  / reportValidRowstanBodyWeightCount;
-            cell.Text =  result.ToString("N2");
+            cell.Text =  result.ToString("N0");
         }
         else
         {
-            cell.Text = "0.00";
+            cell.Text = "0";
         }
 }
 
@@ -582,11 +582,11 @@ private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.Canc
         if (reportValidRowFABWCount &gt; 0)
         {
             decimal result = reportSumFABW / reportValidRowFABWCount ;
-            cell.Text =  result.ToString("N2");
+            cell.Text =  result.ToString("N1");
         }
         else
         {
-            cell.Text = "0.00";
+            cell.Text = "0.0";
         }
 
 }
@@ -668,15 +668,19 @@ private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.Canc
     if (cell == null)
         return;
 
-    double fabw = Convert.ToDouble(GetCurrentColumnValue("FABW"));
-    double stanBodyWeight = Convert.ToDouble(GetCurrentColumnValue("StanBodyWeight"));
+    decimal fabw = Convert.ToDecimal(GetCurrentColumnValue("FABW") ?? 0);
+    decimal stanBodyWeight = Convert.ToDecimal(GetCurrentColumnValue("StanBodyWeight") ?? 0);
 
-    double diff = fabw - stanBodyWeight;
+    decimal diff = fabw - stanBodyWeight;
+    if (diff != 0){
+        decimal result = diff ;
+        cell.Text = result.ToString("N2");
 
-    if (diff != 0)
-        cell.Text = diff.ToString("N2");
-    else
-        cell.Text = "0.00";
+    }
+    else{
+        
+        cell.Text = "0.00";  
+    }
     
     if(diff != 0){
         sumStdVSactReport  += diff ;
@@ -693,12 +697,12 @@ private void xrTableCell39_BeforePrint(object sender, System.ComponentModel.Canc
     
     if (sumNonZeroBWvsStdReport &gt; 0)
     {
-        double avg = sumStdVSactReport / (double)sumNonZeroBWvsStdReport;
-        cell.Text = avg.ToString("N2");
+        decimal avg = sumStdVSactReport / sumNonZeroBWvsStdReport;
+        cell.Text = avg.ToString("N0");
     }
     else
     {
-        cell.Text = "0.00";
+        cell.Text = "0";
     }
  }
 
