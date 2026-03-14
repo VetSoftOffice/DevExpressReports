@@ -141,12 +141,6 @@ IIF(IsNullOrEmpty([RearMaleCK]), 0, ToDecimal([RearMaleCK])) +
 IIF(IsNullOrEmpty([RearMaleCS]), 0, ToDecimal([RearMaleCS])) + 
 IIF(IsNullOrEmpty([RearingMaleError]), 0, ToDecimal([RearingMaleError]))</value>
   </data>
-  <data name="xrTableCell29.ExpressionBindings" xml:space="preserve">
-    <value>Iif(IsNullOrEmpty([FChickRecived]),0 , [FChickRecived]) - Iif(IsNullOrEmpty([FDOA]),0 , [FDOA]) - Iif(IsNullOrEmpty([FemaleToVetAndMinAgr]),0 , [FemaleToVetAndMinAgr]) - Iif(IsNullOrEmpty([Female_Mort_Week]),0 , [Female_Mort_Week])</value>
-  </data>
-  <data name="xrTableCell30.ExpressionBindings" xml:space="preserve">
-    <value>Iif(IsNullOrEmpty([MChickRecived]),0 , [MChickRecived]) - Iif(IsNullOrEmpty([MDOA]),0 , [MDOA]) - Iif(IsNullOrEmpty([MaleToVetAndMinAgr]),0 , [MaleToVetAndMinAgr]) - Iif(IsNullOrEmpty([Male_Mort_Week]),0 , [Male_Mort_Week])</value>
-  </data>
   <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JSRF9GbG9ja1N1bW1hcnkiPjxGaWVsZCBOYW1lPSJGQ2hpY2tSZWNpdmVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUNoaWNrUmVjaXZlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNRE9BIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmNhc0RBTyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZV9Nb3J0X1dlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlX01vcnRfV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZV9Nb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZV9Nb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlX1NleEVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZV9TZXhFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlVHJhbkluIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRyYW5PdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVUcmFuc091dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVfU2VsZWN0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZBQldfU3RhZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1BQlciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNQUJXX1N0YWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVDViIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDViIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlVuaWZvcm1pdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlVW5pZm9ybWl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZpbmlzaFdlZWtObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxpdmVGZW1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZlTWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlU2VsbGluZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZWYXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNVmFyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWNhc0RBTyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRvVmV0QW5kTWluQWdyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRvVmV0QW5kTWluQWdyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxGZW1hbGVTYW1wbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxNYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
@@ -201,6 +195,15 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   </data>
   <data name="sqlDataSource15.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTE1Ij48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2siPjxGaWVsZCBOYW1lPSJSZWNEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZWFtbGVPcGVuIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nRmVtYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVUcmFucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVDb25zRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlQ29uc0ZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhQcm9kUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heFByb2RXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTnVtT2ZNYXhQcm9kV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nU29sZE1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdGZW1hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlQ2xvc2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNGZW1hbGVPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNNYWxlT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NwaWtpbmdPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nRmVtYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdTcGlraW5nSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVTYW1wbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZVNhbXBsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNRGV2aWF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRmxvY2tDb25kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUZsb2NrQ29uZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUZsb2NrU29sZFRvQ3VzdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGbG9ja1NvbGRUb0N1c3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGbG9ja1NlbmRUb1BsYW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZsb2NrU2VuZFRvUGxhbnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlQZXJpb2RFbmRXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhbnNmVG9TZWxsV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUJpcmRzU29sZEFzQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQmlyZHNTb2xkQXNDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUZsb2NrVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVGbG9ja1RyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdUcmFuc0ZlbWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1RyYW5zTWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdNYWxlVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJNYWxlQ0siIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRmVtYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5TVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbEZQcHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsRlBwcm9jZXNzaW5nQXNDUyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmdBc0NTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkRPQSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1ET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYXlpbmdNYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRkRldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZQcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTURldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5mZXJEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmFybSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNUHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="sqlDataSource16.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTE2Ij48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2siPjxGaWVsZCBOYW1lPSJSZWNEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZWFtbGVPcGVuIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nRmVtYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVUcmFucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVDb25zRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlQ29uc0ZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhQcm9kUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heFByb2RXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTnVtT2ZNYXhQcm9kV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nU29sZE1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdGZW1hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlQ2xvc2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNGZW1hbGVPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNNYWxlT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NwaWtpbmdPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nRmVtYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdTcGlraW5nSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVTYW1wbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZVNhbXBsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNRGV2aWF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRmxvY2tDb25kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUZsb2NrQ29uZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUZsb2NrU29sZFRvQ3VzdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGbG9ja1NvbGRUb0N1c3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGbG9ja1NlbmRUb1BsYW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZsb2NrU2VuZFRvUGxhbnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlQZXJpb2RFbmRXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhbnNmVG9TZWxsV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUJpcmRzU29sZEFzQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQmlyZHNTb2xkQXNDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUZsb2NrVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVGbG9ja1RyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdUcmFuc0ZlbWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1RyYW5zTWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdNYWxlVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJNYWxlQ0siIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRmVtYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5TVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbEZQcHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsRlBwcm9jZXNzaW5nQXNDUyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmdBc0NTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkRPQSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1ET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYXlpbmdNYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRkRldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZQcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTURldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5mZXJEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmFybSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNUHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRyYW5zIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRyYW5zMSIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="sqlDataSource17.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTE3Ij48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2siPjxGaWVsZCBOYW1lPSJSZWNEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZWFtbGVPcGVuIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nRmVtYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVUcmFucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVDb25zRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlQ29uc0ZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhQcm9kUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heFByb2RXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTnVtT2ZNYXhQcm9kV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nU29sZE1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdGZW1hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlQ2xvc2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNGZW1hbGVPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNNYWxlT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NwaWtpbmdPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nRmVtYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdTcGlraW5nSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVTYW1wbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZVNhbXBsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNRGV2aWF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRmxvY2tDb25kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUZsb2NrQ29uZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUZsb2NrU29sZFRvQ3VzdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGbG9ja1NvbGRUb0N1c3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGbG9ja1NlbmRUb1BsYW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZsb2NrU2VuZFRvUGxhbnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlQZXJpb2RFbmRXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhbnNmVG9TZWxsV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUJpcmRzU29sZEFzQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQmlyZHNTb2xkQXNDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUZsb2NrVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVGbG9ja1RyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdUcmFuc0ZlbWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1RyYW5zTWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdNYWxlVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJNYWxlQ0siIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRmVtYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5TVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbEZQcHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsRlBwcm9jZXNzaW5nQXNDUyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmdBc0NTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkRPQSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1ET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYXlpbmdNYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRkRldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZQcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTURldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5mZXJEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmFybSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNUHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRyYW5zIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRyYW5zMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdGZW1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource18.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTE4Ij48VmlldyBOYW1lPSJTUl9CUkRfRW5kRmxvY2siPjxGaWVsZCBOYW1lPSJSZWNEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZWFtbGVPcGVuIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZU9wZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nRmVtYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlT3BlbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVUcmFucyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVDb25zRmVlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlQ29uc0ZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYXhQcm9kUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1heFByb2RXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTnVtT2ZNYXhQcm9kV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNvbnNGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUNsb3NlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nU29sZE1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ1NvbGRNYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdGZW1hbGVDbG9zZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdNYWxlQ2xvc2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNGZW1hbGVPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nVHJhbnNNYWxlT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ1NwaWtpbmdPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nRmVtYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdNYWxlU2FtcGxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVGbG9ja1RyYW5zT3V0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyaW5nTWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdTcGlraW5nSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVTYW1wbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZVNhbXBsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNRGV2aWF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRmxvY2tDb25kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nTWFsZUZsb2NrQ29uZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUZsb2NrU29sZFRvQ3VzdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGbG9ja1NvbGRUb0N1c3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGbG9ja1NlbmRUb1BsYW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZsb2NrU2VuZFRvUGxhbnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlQZXJpb2RFbmRXZWVrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVNhbXBsZVRvVmV0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHJhbnNmVG9TZWxsV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZUJpcmRzU29sZEFzQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQmlyZHNTb2xkQXNDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUZsb2NrVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVGbG9ja1RyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdUcmFuc0ZlbWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ1RyYW5zTWFsZVRvU2VsbE91dCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZVRyYW5zSW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdNYWxlVHJhbnNJbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJNYWxlQ0siIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRmVtYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5TVBwcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbEZQcHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsRlBwcm9jZXNzaW5nQXNDUyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxNUHByb2Nlc3NpbmdBc0NTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkRPQSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1ET0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlpbmdGZW1hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVDSyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ0ZlbWFsZUNTIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iYXlpbmdNYWxlQ1MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyRkRldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlYXJpbmdGZW1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0ZlbWFsZUVycm9yIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ01hbGVFcnJvciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZQcm9jZXNzaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTVByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWFyTURldmlhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRyYW5mZXJEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmFybSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUcmFuc2ZlcldlZWsxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5aW5nRmVtYWxlRGVwbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheWluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGF5RlByb2Nlc3NpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNUHJvY2Vzc2luZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZVRyYW5zIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVRyYW5zMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdGZW1hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbGluZ01hbGVEZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRlZhciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1WYXIiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
@@ -948,6 +951,368 @@ if (layingMaleOpen &gt; 0)
 {
     // Calculate: (LayingMaleCK * 100) / LayingMaleOpen
     decimal result = (layingMaleCK * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell182_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get values from the current row
+decimal layingFemaleOpen = SafeConvert(GetCurrentColumnValue("LayingFeamleOpen"));
+decimal layingFemaleDepl = SafeConvert(GetCurrentColumnValue("LayingFemaleDepl"));
+decimal layingFemaleCK = SafeConvert(GetCurrentColumnValue("LayingFemaleCK"));
+decimal layingFemaleCS = SafeConvert(GetCurrentColumnValue("LayingFemaleCS"));
+
+// Calculate {@ProductionTotalDepl} for this row
+decimal productionTotalDepl = layingFemaleDepl + layingFemaleCK + layingFemaleCS;
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: ({@ProductionTotalDepl} * 100) / LayingFeamleOpen
+    decimal result = (productionTotalDepl * 100.0m) / layingFemaleOpen;
+    string formattedResult = result.ToString("N2");
+    
+    cell.Text = formattedResult ;
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell184_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get values from the current row
+decimal layingMaleOpen = SafeConvert(GetCurrentColumnValue("LayingMaleOpen"));
+decimal layingMaleDepl = SafeConvert(GetCurrentColumnValue("LayingMaleDepl"));
+decimal layingMaleCK = SafeConvert(GetCurrentColumnValue("LayingMaleCK"));
+decimal layingMaleCS = SafeConvert(GetCurrentColumnValue("LayingMaleCS"));
+
+// Calculate {@ProductionMaletotalDepl} for this row
+decimal productionMaleTotalDepl = layingMaleDepl + layingMaleCK + layingMaleCS;
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: ({@ProductionMaletotalDepl} * 100) / LayingMaleOpen
+    decimal result = (productionMaleTotalDepl * 100.0m) / layingMaleOpen;
+    string formattedResult = result.ToString("N2");
+    
+    cell.Text = formattedResult ;
+    
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell207_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingFemaleSamples = Convert.ToDecimal(GetCurrentColumnValue("LayingFemaleSamples") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (LayingFemaleSamples * 100) / LayingFeamleOpen
+    decimal result = (layingFemaleSamples * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell209_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingMaleSamples = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleSamples") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayingMaleSamples * 100) / LayingMaleOpen
+    decimal result = (layingMaleSamples * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell202_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingSoldFemales = Convert.ToDecimal(GetCurrentColumnValue("LayingSoldFemales") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (LayingSoldFemales * 100) / LayingFeamleOpen
+    decimal result = (layingSoldFemales * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell204_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingSoldMales = Convert.ToDecimal(GetCurrentColumnValue("LayingSoldMales") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayingSoldMales * 100) / LayingMaleOpen
+    decimal result = (layingSoldMales * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell197_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layFProcessing = Convert.ToDecimal(GetCurrentColumnValue("LayFProcessing") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (LayFProcessing * 100) / LayingFeamleOpen
+    decimal result = (layFProcessing * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell199_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layMProcessing = Convert.ToDecimal(GetCurrentColumnValue("LayMProcessing") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayMProcessing * 100) / LayingMaleOpen
+    decimal result = (layMProcessing * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell172_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal femaleTrans = Convert.ToDecimal(GetCurrentColumnValue("FemaleTrans") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (FemaleTrans * 100) / LayingFeamleOpen
+    decimal result = (femaleTrans * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell174_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal maleTrans = Convert.ToDecimal(GetCurrentColumnValue("MaleTrans") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (MaleTrans * 100) / LayingFeamleOpen
+    decimal result = (maleTrans * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell194_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingSpikingIn = Convert.ToDecimal(GetCurrentColumnValue("LayingSpikingIn") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayingSpikingIn * 100) / LayingMaleOpen
+    decimal result = (layingSpikingIn * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell217_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingFemaleTransIn = Convert.ToDecimal(GetCurrentColumnValue("LayingFemaleTransIn") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (LayingFemaleTransIn * 100) / LayingFeamleOpen
+    decimal result = (layingFemaleTransIn * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell219_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingMaleTransIn = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleTransIn") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayingMaleTransIn * 100) / LayingMaleOpen
+    decimal result = (layingMaleTransIn * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell222_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingFemaleClose = Convert.ToDecimal(GetCurrentColumnValue("LayingFemaleClose") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (LayingFemaleClose * 100) / LayingFeamleOpen
+    decimal result = (layingFemaleClose * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell224_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingMaleClose = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleClose") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayingMaleClose * 100) / LayingMaleOpen
+    decimal result = (layingMaleClose * 100.0m) / layingMaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell227_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+// Note: Using the exact field name with typo as in your formula
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingFemaleFlockCond = Convert.ToDecimal(GetCurrentColumnValue("LayingFemaleFlockCond") ?? 0);
+
+if (layingFemaleOpen &gt; 0)
+{
+    // Calculate: (LayingFemaleFlockCond * 100) / LayingFeamleOpen
+    decimal result = (layingFemaleFlockCond * 100.0m) / layingFemaleOpen;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell229_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingMaleFlockCond = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleFlockCond") ?? 0);
+
+if (layingMaleOpen &gt; 0)
+{
+    // Calculate: (LayingMaleFlockCond * 100) / LayingMaleOpen
+    decimal result = (layingMaleFlockCond * 100.0m) / layingMaleOpen;
     cell.Text = result.ToString("N2"); // Formats to 2 decimal places
 }
 else

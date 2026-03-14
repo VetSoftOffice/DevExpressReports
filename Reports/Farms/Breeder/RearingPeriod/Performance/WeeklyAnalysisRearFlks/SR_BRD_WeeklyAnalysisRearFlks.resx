@@ -117,4 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrLabel3.ExpressionBindings" xml:space="preserve">
+    <value>IIF(?IsRTL = true,
+    IIF(IsNullOrEmpty(?Breed), '', 'السلالة: ' + ?Breed + '      ') +
+    IIF(IsNullOrEmpty(?Region), '', 'المنطقة: ' + ?Region + '      ') +
+    IIF(IsNullOrEmpty(?Site), '', 'الموقع: ' + ?Site),
+    
+    IIF(IsNullOrEmpty(?Breed), '', 'Breed: ' + ?Breed + '      ') +
+    IIF(IsNullOrEmpty(?Region), '', 'Region: ' + ?Region + '      ') +
+    IIF(IsNullOrEmpty(?Site), '', 'Site: ' + ?Site)
+)</value>
+  </data>
+  <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0JSRF9XZWVrbHlBbmFseXNpcyI+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWdlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvd051bSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>
+private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+               XRLabel label = sender as XRLabel;
+
+if (Parameters["DateFrom"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateFrom"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"من: {dt:dd/MM/yyyy}";
+}
+else // English
+{
+    label.Text = $"From: {dt:dd/MM/yyyy}";
+}
+
+}
+
+private void xrLabel1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+              XRLabel label = sender as XRLabel;
+
+if (Parameters["DateTo"].Value == null)
+{
+    label.Text = "";
+    return;
+}
+
+DateTime dt = Convert.ToDateTime(Parameters["DateTo"].Value);
+
+// Convert IsRTL safely
+int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+
+if (isRtl == 1) // Arabic
+{
+    label.Text = $"الي: {dt:dd/MM/yyyy}";
+}
+else // English
+{
+    label.Text = $"To: {dt:dd/MM/yyyy}";
+}
+
+}
+</value>
+  </data>
 </root>
