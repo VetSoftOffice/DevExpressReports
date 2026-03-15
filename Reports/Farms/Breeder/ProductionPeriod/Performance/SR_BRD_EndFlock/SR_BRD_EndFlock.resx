@@ -1360,6 +1360,164 @@ else
 }
 }
 
+private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal layingFemaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingFeamleOpen") ?? 0);
+decimal layingMaleOpen = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleOpen") ?? 0);
+decimal layingFemaleConsFeed = Convert.ToDecimal(GetCurrentColumnValue("LayingFemaleConsFeed") ?? 0);
+decimal layingMaleConsFeed = Convert.ToDecimal(GetCurrentColumnValue("LayingMaleConsFeed") ?? 0);
+
+// Calculate totals
+decimal totalBirds = layingFemaleOpen + layingMaleOpen;
+decimal totalFeed = layingFemaleConsFeed + layingMaleConsFeed;
+
+if (totalBirds &gt; 0)
+{
+    // Calculate: (Total Feed) / (Total Birds)
+    decimal result = totalFeed / totalBirds;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+    
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell237_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get values for {@RearingPlacedMales} calculation
+decimal rearingFemaleOpen = SafeConvert(GetCurrentColumnValue("RearingFemaleOpen"));
+decimal fdoa = SafeConvert(GetCurrentColumnValue("FDOA"));
+decimal fSampleToVet = SafeConvert(GetCurrentColumnValue("FSampleToVet"));
+
+// Calculate {@RearingPlacedMales} = RearingFemaleOpen - FDOA - FSampleToVet
+decimal rearingPlacedMales = rearingFemaleOpen - fdoa - fSampleToVet;
+
+// Get male feed consumption values
+decimal rearingMaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingMaleConsFeed"));
+decimal layingMaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingMaleConsFeed"));
+
+// Calculate {@RearingMaleConsFeedTon} and {@LayingConsFeedMale}
+decimal rearingMaleConsFeedTon = rearingMaleConsFeed / 1000.0m;
+decimal layingConsFeedMale = layingMaleConsFeed / 1000.0m;
+
+// Calculate {@CycleMaleConsFeed} = rearingMaleConsFeedTon + layingConsFeedMale
+decimal cycleMaleConsFeed = rearingMaleConsFeedTon + layingConsFeedMale;
+
+if (rearingPlacedMales &gt; 0)
+{
+    // Calculate: ({@CycleMaleConsFeed} * 1000) / {@RearingPlacedMales}
+    // Note: cycleMaleConsFeed is in tons, multiplying by 1000 converts to kg
+    decimal result = (cycleMaleConsFeed * 1000.0m) / rearingPlacedMales;
+    
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell235_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// ====================================================================
+// PART 1: Get all raw values from data source
+// ====================================================================
+
+// Female feed consumption (kg)
+decimal rearingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingFemaleConsFeed"));
+decimal layingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingFemaleConsFeed"));
+
+// Male feed consumption (kg)
+decimal rearingMaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingMaleConsFeed"));
+decimal layingMaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingMaleConsFeed"));
+
+// Values for {@RearingPlacedMales} calculation
+decimal rearingFemaleOpen = SafeConvert(GetCurrentColumnValue("RearingFemaleOpen"));
+decimal fdoa = SafeConvert(GetCurrentColumnValue("FDOA"));
+decimal fSampleToVet = SafeConvert(GetCurrentColumnValue("FSampleToVet"));
+
+// ====================================================================
+// PART 2: Calculate female feed in tons
+// ====================================================================
+
+// {@RearingFemaleConsFeedTon} = RearingFemaleConsFeed / 1000
+decimal rearingFemaleConsFeedTon = rearingFemaleConsFeed / 1000.0m;
+
+// {@LayingConsFeedFemale} = LayingFemaleConsFeed / 1000
+decimal layingConsFeedFemale = layingFemaleConsFeed / 1000.0m;
+
+// {@CycleFemaleConsFeed} = rearingFemaleConsFeedTon + layingConsFeedFemale
+decimal cycleFemaleConsFeed = rearingFemaleConsFeedTon + layingConsFeedFemale;
+
+// ====================================================================
+// PART 3: Calculate male feed in tons
+// ====================================================================
+
+// {@RearingMaleConsFeedTon} = RearingMaleConsFeed / 1000
+decimal rearingMaleConsFeedTon = rearingMaleConsFeed / 1000.0m;
+
+// {@LayingConsFeedMale} = LayingMaleConsFeed / 1000
+decimal layingConsFeedMale = layingMaleConsFeed / 1000.0m;
+
+// {@CycleMaleConsFeed} (in tons) = rearingMaleConsFeedTon + layingConsFeedMale
+decimal cycleMaleConsFeedTons = rearingMaleConsFeedTon + layingConsFeedMale;
+
+// ====================================================================
+// PART 4: Calculate {@RearingPlacedMales}
+// ====================================================================
+
+// {@RearingPlacedMales} = RearingFemaleOpen - FDOA - FSampleToVet
+decimal rearingPlacedMales = rearingFemaleOpen - fdoa - fSampleToVet;
+
+// ====================================================================
+// PART 5: Calculate the final value
+// ====================================================================
+
+// The formula appears to be: {@CycleFemaleConsFeed} + (if(rearingPlacedMales&gt;0, cycleMaleConsFeedTons * 1000 / rearingPlacedMales, 0))
+// But this mixes tons and kg, so we need to be careful with units
+
+if (rearingPlacedMales &gt; 0)
+{
+    // {@CycleMaleConsFeed} in the final expression seems to be the result of the calculation, not the tons value
+    // Based on your formula: if({@RearingPlacedMales} &gt; 0) then {@CycleMaleConsFeed} * 1000 / {@RearingPlacedMales}
+    // This suggests {@CycleMaleConsFeed} is in tons, and we're converting to kg per male
+    decimal cycleMaleResult = (cycleMaleConsFeedTons * 1000.0m) / rearingPlacedMales;
+    
+    // Final result: {@CycleFemaleConsFeed} + cycleMaleResult
+    // Note: This adds tons (female) + kg/male (male) - verify if this is correct for your needs
+    decimal result = cycleFemaleConsFeed + cycleMaleResult;
+    
+    cell.Text = result.ToString("N2");
+    
+}
+else
+{
+    // If no placed males, just show female feed
+    cell.Text = cycleFemaleConsFeed.ToString("N2");
+}
+}
 </value>
   </data>
 </root>
