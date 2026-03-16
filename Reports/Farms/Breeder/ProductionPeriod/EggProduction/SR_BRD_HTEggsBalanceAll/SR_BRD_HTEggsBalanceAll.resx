@@ -139,4 +139,190 @@ Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC]) +
 Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
 </value>
   </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Drawing;
+using System.ComponentModel;
+using DevExpress.XtraReports.UI;
+
+private Dictionary&lt;string, DateTime&gt; flockFirstDate = new Dictionary&lt;string, DateTime&gt;();
+private Dictionary&lt;string, decimal&gt; flockFirstBalance = new Dictionary&lt;string, decimal&gt;();
+// Dictionary to store the last date and close balance for each flock
+private Dictionary&lt;string, DateTime&gt; flockLastDateClose = new Dictionary&lt;string, DateTime&gt;();
+private Dictionary&lt;string, decimal&gt; flockLastCloseBalance = new Dictionary&lt;string, decimal&gt;();
+// Dictionary to store the first date and open balance for category C for each flock
+private Dictionary&lt;string, DateTime&gt; flockFirstDateOpenC = new Dictionary&lt;string, DateTime&gt;();
+private Dictionary&lt;string, decimal&gt; flockFirstOpenBalanceC = new Dictionary&lt;string, decimal&gt;();
+private Dictionary&lt;string, DateTime&gt; flockLastDateCloseC = new Dictionary&lt;string, DateTime&gt;();
+private Dictionary&lt;string, decimal&gt; flockLastCloseBalanceC = new Dictionary&lt;string, decimal&gt;();
+
+// Dictionary to store the first date and total close balance for each flock
+private Dictionary&lt;string, DateTime&gt; flockLastDateTotalClose = new Dictionary&lt;string, DateTime&gt;();
+private Dictionary&lt;string, decimal&gt; flockLastTotalCloseBalance = new Dictionary&lt;string, decimal&gt;();
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        string flockCode = Convert.ToString(GetCurrentColumnValue("FlockCode") ?? "");
+    DateTime regDate = Convert.ToDateTime(GetCurrentColumnValue("RegDate") ?? DateTime.MinValue);
+    decimal openBalance = Convert.ToDecimal(GetCurrentColumnValue("OpenFHTEggsF") ?? 0) + 
+                          Convert.ToDecimal(GetCurrentColumnValue("OpenHTEggsF") ?? 0);
+
+    decimal closeBalance = Convert.ToDecimal(GetCurrentColumnValue("CloseFHTEggsF") ?? 0) + 
+                           Convert.ToDecimal(GetCurrentColumnValue("CloseHTEggsF") ?? 0);
+                           
+     decimal openBalanceC = Convert.ToDecimal(GetCurrentColumnValue("OpenFHTEggsC") ?? 0) + 
+                           Convert.ToDecimal(GetCurrentColumnValue("OpenHTEggsC") ?? 0);
+           
+     decimal closeBalanceC = Convert.ToDecimal(GetCurrentColumnValue("CloseFHTEggsC") ?? 0) + 
+                            Convert.ToDecimal(GetCurrentColumnValue("CloseHTEggsC") ?? 0);
+           
+                
+      // Calculate total close balance (all categories)
+    decimal totalCloseBalance = Convert.ToDecimal(GetCurrentColumnValue("CloseFHTEggsC") ?? 0) + 
+                                Convert.ToDecimal(GetCurrentColumnValue("CloseFHTEggsF") ?? 0) +
+                                Convert.ToDecimal(GetCurrentColumnValue("CloseHTEggsC") ?? 0) + 
+                                Convert.ToDecimal(GetCurrentColumnValue("CloseHTEggsF") ?? 0);
+                                     
+    if (string.IsNullOrEmpty(flockCode) || regDate == DateTime.MinValue)
+        return;
+
+    // If this flock is not yet recorded, add it with current date and balance
+    if (!flockFirstDate.ContainsKey(flockCode))
+    {
+        flockFirstDate[flockCode] = regDate;
+        flockFirstBalance[flockCode] = openBalance;
+    }
+    else
+    {
+        // If this date is earlier than the stored date, update the balance
+        if (regDate &lt; flockFirstDate[flockCode])
+        {
+            flockFirstDate[flockCode] = regDate;
+            flockFirstBalance[flockCode] = openBalance;
+        }
+    }
+    
+    // If this flock is not yet recorded, add it with current date and balance
+    if (!flockLastDateClose.ContainsKey(flockCode))
+    {
+        flockLastDateClose[flockCode] = regDate;
+        flockLastCloseBalance[flockCode] = closeBalance;
+    }
+    else
+    {
+        // If this date is LATER than the stored date, update the balance (for Close balance)
+        if (regDate &gt; flockLastDateClose[flockCode])
+        {
+            flockLastDateClose[flockCode] = regDate;
+            flockLastCloseBalance[flockCode] = closeBalance;
+        }
+    }    
+    
+     // If this flock is not yet recorded, add it with current date and balance
+    if (!flockFirstDateOpenC.ContainsKey(flockCode))
+    {
+        flockFirstDateOpenC[flockCode] = regDate;
+        flockFirstOpenBalanceC[flockCode] = openBalanceC;
+    }
+    else
+    {
+        // If this date is earlier than the stored date, update the balance
+        if (regDate &lt; flockFirstDateOpenC[flockCode])
+        {
+            flockFirstDateOpenC[flockCode] = regDate;
+            flockFirstOpenBalanceC[flockCode] = openBalanceC;
+        }
+    }
+    
+    
+     if (!flockLastDateCloseC.ContainsKey(flockCode))
+    {
+        flockLastDateCloseC[flockCode] = regDate;
+        flockLastCloseBalanceC[flockCode] = closeBalanceC;
+    }
+    else
+    {
+        // Keep the LATEST date
+        if (regDate &gt; flockLastDateCloseC[flockCode])
+        {
+            flockLastDateCloseC[flockCode] = regDate;
+            flockLastCloseBalanceC[flockCode] = closeBalanceC;
+        }
+    }  
+      
+    
+    if (!flockLastDateTotalClose.ContainsKey(flockCode))
+    {
+        flockLastDateTotalClose[flockCode] = regDate;
+        flockLastTotalCloseBalance[flockCode] = totalCloseBalance;
+    }
+    else
+    {
+        // Keep the LATEST date for close balance
+        if (regDate &gt; flockLastDateTotalClose[flockCode])
+        {
+            flockLastDateTotalClose[flockCode] = regDate;
+            flockLastTotalCloseBalance[flockCode] = totalCloseBalance;
+        }
+    }
+    
+    }
+
+private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    decimal total = 0;
+    foreach (var balance in flockFirstBalance.Values)
+    {
+        total += balance;
+    }
+
+    cell.Text = total.ToString("N0"); // or "N2" if you need decimals
+}
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+   XRTableCell cell = sender as XRTableCell;
+
+    decimal total = 0;
+    foreach (var balance in flockLastCloseBalance.Values)
+    {
+        total += balance;
+    }
+
+    cell.Text = total.ToString("N0");
+    }
+
+
+private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+
+    decimal total = 0;
+    foreach (var balance in flockFirstOpenBalanceC.Values)
+    {
+        total += balance;
+    }
+
+    cell.Text = total.ToString("N0");
+}
+
+private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    decimal total = 0;
+    foreach (var balance in flockLastCloseBalanceC.Values)
+        total += balance;
+    cell.Text = total.ToString("N0");
+    
+    }
+
+private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+   XRTableCell cell = sender as XRTableCell;
+    decimal total = 0;
+    foreach (var balance in flockLastTotalCloseBalance.Values)
+        total += balance;
+    cell.Text = total.ToString("N0");
+    
+    }
+</value>
+  </data>
 </root>

@@ -1518,6 +1518,263 @@ else
     cell.Text = cycleFemaleConsFeed.ToString("N2");
 }
 }
+
+private void xrTableCell233_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get raw values from data source
+decimal rearingFemaleOpen = SafeConvert(GetCurrentColumnValue("RearingFemaleOpen"));
+decimal fdoa = SafeConvert(GetCurrentColumnValue("FDOA"));
+decimal fSampleToVet = SafeConvert(GetCurrentColumnValue("FSampleToVet"));
+decimal rearingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingFemaleConsFeed"));
+decimal layingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingFemaleConsFeed"));
+
+// Calculate {@RearingPlacedFemales}
+decimal rearingPlacedFemales = rearingFemaleOpen - fdoa - fSampleToVet;
+
+// Calculate {@RearingFemaleConsFeedTon} (convert kg to tons)
+decimal rearingFemaleConsFeedTon = rearingFemaleConsFeed / 1000.0m;
+
+// Calculate {@LayingConsFeedFemale} (convert kg to tons)
+decimal layingConsFeedFemale = layingFemaleConsFeed / 1000.0m;
+
+// Calculate {@CycleFemaleConsFeed} (total female feed in tons)
+decimal cycleFemaleConsFeed = rearingFemaleConsFeedTon + layingConsFeedFemale;
+
+if (rearingPlacedFemales &gt; 0)
+{
+    // Calculate: ({@CycleFemaleConsFeed} * 1000) / {@RearingPlacedFemales}
+    // This gives kg per female (since cycleFemaleConsFeed is in tons, *1000 converts to kg)
+    decimal result = (cycleFemaleConsFeed * 1000.0m) / rearingPlacedFemales;
+    
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell231_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get raw values from data source
+decimal rearingMaleOpen = SafeConvert(GetCurrentColumnValue("RearingMaleOpen"));
+decimal mdoa = SafeConvert(GetCurrentColumnValue("MDOA"));
+decimal mSampleToVet = SafeConvert(GetCurrentColumnValue("MSampleToVet"));
+decimal rearingMaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingMaleConsFeed"));
+decimal layingMaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingMaleConsFeed"));
+
+// Calculate {@RearingPlacedMales}
+decimal rearingPlacedMales = rearingMaleOpen - mdoa - mSampleToVet;
+
+// Calculate {@RearingMaleConsFeedTon} (convert kg to tons)
+decimal rearingMaleConsFeedTon = rearingMaleConsFeed / 1000.0m;
+
+// Calculate {@LayingConsFeedMale} (convert kg to tons)
+decimal layingConsFeedMale = layingMaleConsFeed / 1000.0m;
+
+// Calculate {@CycleMaleConsFeed} (total male feed in tons)
+decimal cycleMaleConsFeed = rearingMaleConsFeedTon + layingConsFeedMale;
+
+if (rearingPlacedMales &gt; 0)
+{
+    // Calculate: ({@CycleMaleConsFeed} * 1000) / {@RearingPlacedMales}
+    // This gives kg per male (since cycleMaleConsFeed is in tons, *1000 converts to kg)
+    decimal result = (cycleMaleConsFeed * 1000.0m) / rearingPlacedMales;
+    
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+    
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get raw values from data source - Female
+decimal rearingFemaleOpen = SafeConvert(GetCurrentColumnValue("RearingFemaleOpen"));
+decimal fdoa = SafeConvert(GetCurrentColumnValue("FDOA"));
+decimal fSampleToVet = SafeConvert(GetCurrentColumnValue("FSampleToVet"));
+decimal rearingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingFemaleConsFeed"));
+decimal layingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingFemaleConsFeed"));
+
+// Get raw values from data source - Male
+decimal rearingMaleOpen = SafeConvert(GetCurrentColumnValue("RearingMaleOpen"));
+decimal mdoa = SafeConvert(GetCurrentColumnValue("MDOA"));
+decimal mSampleToVet = SafeConvert(GetCurrentColumnValue("MSampleToVet"));
+decimal rearingMaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingMaleConsFeed"));
+decimal layingMaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingMaleConsFeed"));
+
+// Calculate {@RearingPlacedFemales}
+decimal rearingPlacedFemales = rearingFemaleOpen - fdoa - fSampleToVet;
+
+// Calculate {@RearingPlacedMales}
+decimal rearingPlacedMales = rearingMaleOpen - mdoa - mSampleToVet;
+
+// Calculate total placed birds
+decimal totalPlacedBirds = rearingPlacedFemales + rearingPlacedMales;
+
+// Calculate female feed in tons
+decimal rearingFemaleConsFeedTon = rearingFemaleConsFeed / 1000.0m;
+decimal layingConsFeedFemale = layingFemaleConsFeed / 1000.0m;
+decimal cycleFemaleConsFeed = rearingFemaleConsFeedTon + layingConsFeedFemale;
+
+// Calculate male feed in tons
+decimal rearingMaleConsFeedTon = rearingMaleConsFeed / 1000.0m;
+decimal layingConsFeedMale = layingMaleConsFeed / 1000.0m;
+decimal cycleMaleConsFeed = rearingMaleConsFeedTon + layingConsFeedMale;
+
+// Calculate total feed in tons
+decimal totalFeedTons = cycleFemaleConsFeed + cycleMaleConsFeed;
+
+if (totalPlacedBirds &gt; 0)
+{
+    // Calculate: (Total Feed Tons * 1000) / Total Placed Birds
+    // This gives kg per bird (since total feed is in tons, *1000 converts to kg)
+    decimal result = (totalFeedTons * 1000.0m) / totalPlacedBirds;
+    
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get raw values from data source
+decimal rearingMaleOpen = SafeConvert(GetCurrentColumnValue("RearingMaleOpen"));
+decimal mdoa = SafeConvert(GetCurrentColumnValue("MDOA"));
+decimal mSampleToVet = SafeConvert(GetCurrentColumnValue("MSampleToVet"));
+decimal layingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingFemaleConsFeed"));
+decimal layingMaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingMaleConsFeed"));
+
+// Calculate {@RearingPlacedMales}
+decimal rearingPlacedMales = rearingMaleOpen - mdoa - mSampleToVet;
+
+// Calculate {@LayingConsFeedFemale} (convert kg to tons)
+decimal layingConsFeedFemale = layingFemaleConsFeed / 1000.0m;
+
+// Calculate {@LayingConsFeedMale} (convert kg to tons)
+decimal layingConsFeedMale = layingMaleConsFeed / 1000.0m;
+
+// Calculate {@LayingConsFeedTotal} (total laying feed in tons)
+decimal layingConsFeedTotal = layingConsFeedFemale + layingConsFeedMale;
+
+if (rearingPlacedMales &gt; 0)
+{
+    // Calculate: ({@LayingConsFeedTotal} * 1000) / {@RearingPlacedMales}
+    // This gives kg per male (since layingConsFeedTotal is in tons, *1000 converts to kg)
+    decimal result = (layingConsFeedTotal * 1000.0m) / rearingPlacedMales;
+    
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+    
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Helper function to safely convert values
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// Get raw values from data source - Female
+decimal rearingFemaleOpen = SafeConvert(GetCurrentColumnValue("RearingFemaleOpen"));
+decimal fdoa = SafeConvert(GetCurrentColumnValue("FDOA"));
+decimal fSampleToVet = SafeConvert(GetCurrentColumnValue("FSampleToVet"));
+decimal rearingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingFemaleConsFeed"));
+decimal layingFemaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingFemaleConsFeed"));
+
+// Get raw values from data source - Male
+decimal rearingMaleOpen = SafeConvert(GetCurrentColumnValue("RearingMaleOpen"));
+decimal mdoa = SafeConvert(GetCurrentColumnValue("MDOA"));
+decimal mSampleToVet = SafeConvert(GetCurrentColumnValue("MSampleToVet"));
+decimal rearingMaleConsFeed = SafeConvert(GetCurrentColumnValue("RearingMaleConsFeed"));
+decimal layingMaleConsFeed = SafeConvert(GetCurrentColumnValue("LayingMaleConsFeed"));
+
+// Calculate {@RearingPlacedFemales}
+decimal rearingPlacedFemales = rearingFemaleOpen - fdoa - fSampleToVet;
+
+// Calculate {@RearingPlacedMales}
+decimal rearingPlacedMales = rearingMaleOpen - mdoa - mSampleToVet;
+
+// Calculate total placed birds
+decimal totalPlacedBirds = rearingPlacedFemales + rearingPlacedMales;
+
+// Calculate female feed in tons
+decimal rearingFemaleConsFeedTon = rearingFemaleConsFeed / 1000.0m;
+decimal layingConsFeedFemale = layingFemaleConsFeed / 1000.0m;
+decimal cycleFemaleConsFeed = rearingFemaleConsFeedTon + layingConsFeedFemale;
+
+// Calculate male feed in tons
+decimal rearingMaleConsFeedTon = rearingMaleConsFeed / 1000.0m;
+decimal layingConsFeedMale = layingMaleConsFeed / 1000.0m;
+decimal cycleMaleConsFeed = rearingMaleConsFeedTon + layingConsFeedMale;
+
+// Calculate {@CycleBirdsConsFeed} (total cycle feed in tons)
+decimal cycleBirdsConsFeed = cycleFemaleConsFeed + cycleMaleConsFeed;
+
+if (totalPlacedBirds &gt; 0)
+{
+    // Calculate: ({@CycleBirdsConsFeed} * 1000) / totalPlacedBirds
+    // This gives kg per bird (since cycleBirdsConsFeed is in tons, *1000 converts to kg)
+    decimal result = (cycleBirdsConsFeed * 1000.0m) / totalPlacedBirds;
+    
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+    
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
 </value>
   </data>
 </root>
