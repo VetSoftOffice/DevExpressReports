@@ -1,4 +1,4 @@
-﻿namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_RecAndSettedEggs
+﻿namespace DevExpressReports.Reports.GPHatchery.Summary.SR_HT_RecAndSettedEggs
 {
     partial class SR_HT_RecAndSettedEggs
     {
@@ -991,6 +991,7 @@
             // srReportSignature_PageFooter
             // 
             this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
+            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
             // SubBand5
             // 
@@ -1038,6 +1039,7 @@
             // 
             this.srReportHeader.Name = "srReportHeader";
             this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
             // PageHeaderSub1
             // 
@@ -2098,7 +2100,7 @@
             // SR_HT_RecAndSettedEggs_Sub1
             // 
             this.SR_HT_RecAndSettedEggs_Sub1.Name = "SR_HT_RecAndSettedEggs_Sub1";
-            this.SR_HT_RecAndSettedEggs_Sub1.ReportSource = new DevExpressReports.Reports.Hatchery.Summary.SR_HT_RecAndSettedEggs_Sub1.SR_HT_RecAndSettedEggs_Sub1();
+            this.SR_HT_RecAndSettedEggs_Sub1.ReportSource = new DevExpressReports.Reports.GPHatchery.Summary.SR_HT_RecAndSettedEggs_Sub1.SR_HT_RecAndSettedEggs_Sub1();
             // 
             // ReportFooterSub1
             // 
@@ -2109,6 +2111,7 @@
             // srReportNotes
             // 
             this.srReportNotes.Name = "srReportNotes";
+            this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
             // 
             // ReportFooterSub2
             // 
@@ -2121,6 +2124,7 @@
             // srReportSignature
             // 
             this.srReportSignature.Name = "srReportSignature";
+            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
             // GroupHeader1
             // 
