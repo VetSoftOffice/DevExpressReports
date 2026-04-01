@@ -92,6 +92,8 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         private SR_BRO_DailyDeplDataTable tableSR_BRO_DailyDepl;
         
+        private SR_BRD_DailyProductionDataTable tableSR_BRD_DailyProduction;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -223,6 +225,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 }
                 if ((ds.Tables["SR_BRO_DailyDepl"] != null)) {
                     base.Tables.Add(new SR_BRO_DailyDeplDataTable(ds.Tables["SR_BRO_DailyDepl"]));
+                }
+                if ((ds.Tables["SR_BRD_DailyProduction"] != null)) {
+                    base.Tables.Add(new SR_BRD_DailyProductionDataTable(ds.Tables["SR_BRD_DailyProduction"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -584,6 +589,16 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SR_BRD_DailyProductionDataTable SR_BRD_DailyProduction {
+            get {
+                return this.tableSR_BRD_DailyProduction;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -750,6 +765,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 }
                 if ((ds.Tables["SR_BRO_DailyDepl"] != null)) {
                     base.Tables.Add(new SR_BRO_DailyDeplDataTable(ds.Tables["SR_BRO_DailyDepl"]));
+                }
+                if ((ds.Tables["SR_BRD_DailyProduction"] != null)) {
+                    base.Tables.Add(new SR_BRD_DailyProductionDataTable(ds.Tables["SR_BRD_DailyProduction"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -988,6 +1006,12 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                     this.tableSR_BRO_DailyDepl.InitVars();
                 }
             }
+            this.tableSR_BRD_DailyProduction = ((SR_BRD_DailyProductionDataTable)(base.Tables["SR_BRD_DailyProduction"]));
+            if ((initTable == true)) {
+                if ((this.tableSR_BRD_DailyProduction != null)) {
+                    this.tableSR_BRD_DailyProduction.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1066,6 +1090,8 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
             base.Tables.Add(this.tableSR_BRD_BreedPerf);
             this.tableSR_BRO_DailyDepl = new SR_BRO_DailyDeplDataTable();
             base.Tables.Add(this.tableSR_BRO_DailyDepl);
+            this.tableSR_BRD_DailyProduction = new SR_BRD_DailyProductionDataTable();
+            base.Tables.Add(this.tableSR_BRD_DailyProduction);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1274,6 +1300,12 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeSR_BRD_DailyProduction() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1428,6 +1460,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SR_BRO_DailyDeplRowChangeEventHandler(object sender, SR_BRO_DailyDeplRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void SR_BRD_DailyProductionRowChangeEventHandler(object sender, SR_BRD_DailyProductionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -18173,6 +18208,1345 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SR_BRD_DailyProductionDataTable : global::System.Data.TypedTableBase<SR_BRD_DailyProductionRow> {
+            
+            private global::System.Data.DataColumn columnHatchEggsBirdsWk;
+            
+            private global::System.Data.DataColumn columnHatchEggsBirdsWkCum;
+            
+            private global::System.Data.DataColumn columnCummHatchingEggs;
+            
+            private global::System.Data.DataColumn columnFertility;
+            
+            private global::System.Data.DataColumn columnHatchability;
+            
+            private global::System.Data.DataColumn columnCumHatchability;
+            
+            private global::System.Data.DataColumn columnHatchOfFertile;
+            
+            private global::System.Data.DataColumn columnChicksHenHoused;
+            
+            private global::System.Data.DataColumn columnCumChicksHenHoused;
+            
+            private global::System.Data.DataColumn columnPOL;
+            
+            private global::System.Data.DataColumn columnCummChicks;
+            
+            private global::System.Data.DataColumn columnCummCulls;
+            
+            private global::System.Data.DataColumn columnCummDeads;
+            
+            private global::System.Data.DataColumn columnCummSettedEggs;
+            
+            private global::System.Data.DataColumn columnWeeklyChicks;
+            
+            private global::System.Data.DataColumn columnWeeklyCulls;
+            
+            private global::System.Data.DataColumn columnWeeklyDeads;
+            
+            private global::System.Data.DataColumn columnWeeklySettedEggs;
+            
+            private global::System.Data.DataColumn columnCummSettedEggs1;
+            
+            private global::System.Data.DataColumn columnCummChicks1;
+            
+            private global::System.Data.DataColumn columnCummCulls1;
+            
+            private global::System.Data.DataColumn columnCummDeads1;
+            
+            private global::System.Data.DataColumn columnEstHatchEggs;
+            
+            private global::System.Data.DataColumn columnFlockCode;
+            
+            private global::System.Data.DataColumn columnAgeWeek;
+            
+            private global::System.Data.DataColumn columnFarmCode;
+            
+            private global::System.Data.DataColumn columnSite_en;
+            
+            private global::System.Data.DataColumn columnBreedName_en;
+            
+            private global::System.Data.DataColumn columnFemalePlaced;
+            
+            private global::System.Data.DataColumn columnMalePlaced;
+            
+            private global::System.Data.DataColumn columnRearingFarmCode;
+            
+            private global::System.Data.DataColumn columnCropNo;
+            
+            private global::System.Data.DataColumn columntFrFarmID;
+            
+            private global::System.Data.DataColumn columnFemaleMort;
+            
+            private global::System.Data.DataColumn columnMaleMort;
+            
+            private global::System.Data.DataColumn columnFemaleCulls;
+            
+            private global::System.Data.DataColumn columnMaleCulls;
+            
+            private global::System.Data.DataColumn columnrf_FemaleSelling;
+            
+            private global::System.Data.DataColumn columnrf_MaleSelling;
+            
+            private global::System.Data.DataColumn columnFemaleBalance;
+            
+            private global::System.Data.DataColumn columnMaleBalance;
+            
+            private global::System.Data.DataColumn columnWeekStartFemales;
+            
+            private global::System.Data.DataColumn columnWeekStartMales;
+            
+            private global::System.Data.DataColumn columnCummFemaleMort;
+            
+            private global::System.Data.DataColumn columnCummMaleMort;
+            
+            private global::System.Data.DataColumn columnCummFemaleCulls;
+            
+            private global::System.Data.DataColumn columnCummMaleCulls;
+            
+            private global::System.Data.DataColumn columnStadDeplation;
+            
+            private global::System.Data.DataColumn columnNestedEggs;
+            
+            private global::System.Data.DataColumn columnHatchingEggs;
+            
+            private global::System.Data.DataColumn columnHatchingFloorG_A;
+            
+            private global::System.Data.DataColumn columnFloorEggs;
+            
+            private global::System.Data.DataColumn columnHatchingFloorG_B;
+            
+            private global::System.Data.DataColumn columnSmallEggs;
+            
+            private global::System.Data.DataColumn columnOverWeightEggs;
+            
+            private global::System.Data.DataColumn columnDeformityEggs;
+            
+            private global::System.Data.DataColumn columnDoubleYolkEggs;
+            
+            private global::System.Data.DataColumn columnDirtyEggs;
+            
+            private global::System.Data.DataColumn columnBrokenEggs;
+            
+            private global::System.Data.DataColumn columnDestroyedEggs;
+            
+            private global::System.Data.DataColumn columnSoftShellEggs;
+            
+            private global::System.Data.DataColumn columnTotalProd;
+            
+            private global::System.Data.DataColumn columnLivability;
+            
+            private global::System.Data.DataColumn columnHenHoused;
+            
+            private global::System.Data.DataColumn columnHenWeek;
+            
+            private global::System.Data.DataColumn columnEggWeight;
+            
+            private global::System.Data.DataColumn columnEggMass;
+            
+            private global::System.Data.DataColumn columnEggsBirdsWk;
+            
+            private global::System.Data.DataColumn columnEggsBirdsWkCum;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_DailyProductionDataTable() {
+                this.TableName = "SR_BRD_DailyProduction";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_BRD_DailyProductionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
+            protected SR_BRD_DailyProductionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchEggsBirdsWkColumn {
+                get {
+                    return this.columnHatchEggsBirdsWk;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchEggsBirdsWkCumColumn {
+                get {
+                    return this.columnHatchEggsBirdsWkCum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummHatchingEggsColumn {
+                get {
+                    return this.columnCummHatchingEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FertilityColumn {
+                get {
+                    return this.columnFertility;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchabilityColumn {
+                get {
+                    return this.columnHatchability;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CumHatchabilityColumn {
+                get {
+                    return this.columnCumHatchability;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchOfFertileColumn {
+                get {
+                    return this.columnHatchOfFertile;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ChicksHenHousedColumn {
+                get {
+                    return this.columnChicksHenHoused;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CumChicksHenHousedColumn {
+                get {
+                    return this.columnCumChicksHenHoused;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn POLColumn {
+                get {
+                    return this.columnPOL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummChicksColumn {
+                get {
+                    return this.columnCummChicks;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummCullsColumn {
+                get {
+                    return this.columnCummCulls;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummDeadsColumn {
+                get {
+                    return this.columnCummDeads;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummSettedEggsColumn {
+                get {
+                    return this.columnCummSettedEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeeklyChicksColumn {
+                get {
+                    return this.columnWeeklyChicks;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeeklyCullsColumn {
+                get {
+                    return this.columnWeeklyCulls;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeeklyDeadsColumn {
+                get {
+                    return this.columnWeeklyDeads;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeeklySettedEggsColumn {
+                get {
+                    return this.columnWeeklySettedEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummSettedEggs1Column {
+                get {
+                    return this.columnCummSettedEggs1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummChicks1Column {
+                get {
+                    return this.columnCummChicks1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummCulls1Column {
+                get {
+                    return this.columnCummCulls1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummDeads1Column {
+                get {
+                    return this.columnCummDeads1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EstHatchEggsColumn {
+                get {
+                    return this.columnEstHatchEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FlockCodeColumn {
+                get {
+                    return this.columnFlockCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AgeWeekColumn {
+                get {
+                    return this.columnAgeWeek;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FarmCodeColumn {
+                get {
+                    return this.columnFarmCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Site_enColumn {
+                get {
+                    return this.columnSite_en;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BreedName_enColumn {
+                get {
+                    return this.columnBreedName_en;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemalePlacedColumn {
+                get {
+                    return this.columnFemalePlaced;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MalePlacedColumn {
+                get {
+                    return this.columnMalePlaced;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RearingFarmCodeColumn {
+                get {
+                    return this.columnRearingFarmCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CropNoColumn {
+                get {
+                    return this.columnCropNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn tFrFarmIDColumn {
+                get {
+                    return this.columntFrFarmID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleMortColumn {
+                get {
+                    return this.columnFemaleMort;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleMortColumn {
+                get {
+                    return this.columnMaleMort;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleCullsColumn {
+                get {
+                    return this.columnFemaleCulls;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleCullsColumn {
+                get {
+                    return this.columnMaleCulls;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn rf_FemaleSellingColumn {
+                get {
+                    return this.columnrf_FemaleSelling;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn rf_MaleSellingColumn {
+                get {
+                    return this.columnrf_MaleSelling;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FemaleBalanceColumn {
+                get {
+                    return this.columnFemaleBalance;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaleBalanceColumn {
+                get {
+                    return this.columnMaleBalance;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeekStartFemalesColumn {
+                get {
+                    return this.columnWeekStartFemales;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WeekStartMalesColumn {
+                get {
+                    return this.columnWeekStartMales;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummFemaleMortColumn {
+                get {
+                    return this.columnCummFemaleMort;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummMaleMortColumn {
+                get {
+                    return this.columnCummMaleMort;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummFemaleCullsColumn {
+                get {
+                    return this.columnCummFemaleCulls;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CummMaleCullsColumn {
+                get {
+                    return this.columnCummMaleCulls;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn StadDeplationColumn {
+                get {
+                    return this.columnStadDeplation;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NestedEggsColumn {
+                get {
+                    return this.columnNestedEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchingEggsColumn {
+                get {
+                    return this.columnHatchingEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchingFloorG_AColumn {
+                get {
+                    return this.columnHatchingFloorG_A;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FloorEggsColumn {
+                get {
+                    return this.columnFloorEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HatchingFloorG_BColumn {
+                get {
+                    return this.columnHatchingFloorG_B;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SmallEggsColumn {
+                get {
+                    return this.columnSmallEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OverWeightEggsColumn {
+                get {
+                    return this.columnOverWeightEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DeformityEggsColumn {
+                get {
+                    return this.columnDeformityEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DoubleYolkEggsColumn {
+                get {
+                    return this.columnDoubleYolkEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DirtyEggsColumn {
+                get {
+                    return this.columnDirtyEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BrokenEggsColumn {
+                get {
+                    return this.columnBrokenEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DestroyedEggsColumn {
+                get {
+                    return this.columnDestroyedEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SoftShellEggsColumn {
+                get {
+                    return this.columnSoftShellEggs;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TotalProdColumn {
+                get {
+                    return this.columnTotalProd;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn LivabilityColumn {
+                get {
+                    return this.columnLivability;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HenHousedColumn {
+                get {
+                    return this.columnHenHoused;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HenWeekColumn {
+                get {
+                    return this.columnHenWeek;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EggWeightColumn {
+                get {
+                    return this.columnEggWeight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EggMassColumn {
+                get {
+                    return this.columnEggMass;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EggsBirdsWkColumn {
+                get {
+                    return this.columnEggsBirdsWk;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EggsBirdsWkCumColumn {
+                get {
+                    return this.columnEggsBirdsWkCum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_DailyProductionRow this[int index] {
+                get {
+                    return ((SR_BRD_DailyProductionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_DailyProductionRowChangeEventHandler SR_BRD_DailyProductionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_DailyProductionRowChangeEventHandler SR_BRD_DailyProductionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_DailyProductionRowChangeEventHandler SR_BRD_DailyProductionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_BRD_DailyProductionRowChangeEventHandler SR_BRD_DailyProductionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddSR_BRD_DailyProductionRow(SR_BRD_DailyProductionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_DailyProductionRow AddSR_BRD_DailyProductionRow(
+                        int HatchEggsBirdsWk, 
+                        int HatchEggsBirdsWkCum, 
+                        int CummHatchingEggs, 
+                        int Fertility, 
+                        int Hatchability, 
+                        int CumHatchability, 
+                        int HatchOfFertile, 
+                        int ChicksHenHoused, 
+                        int CumChicksHenHoused, 
+                        int POL, 
+                        int CummChicks, 
+                        int CummCulls, 
+                        int CummDeads, 
+                        int CummSettedEggs, 
+                        int WeeklyChicks, 
+                        int WeeklyCulls, 
+                        int WeeklyDeads, 
+                        int WeeklySettedEggs, 
+                        int CummSettedEggs1, 
+                        int CummChicks1, 
+                        int CummCulls1, 
+                        int CummDeads1, 
+                        int EstHatchEggs, 
+                        int FlockCode, 
+                        int AgeWeek, 
+                        int FarmCode, 
+                        int Site_en, 
+                        int BreedName_en, 
+                        int FemalePlaced, 
+                        int MalePlaced, 
+                        int RearingFarmCode, 
+                        int CropNo, 
+                        int tFrFarmID, 
+                        int FemaleMort, 
+                        int MaleMort, 
+                        int FemaleCulls, 
+                        int MaleCulls, 
+                        int rf_FemaleSelling, 
+                        int rf_MaleSelling, 
+                        int FemaleBalance, 
+                        int MaleBalance, 
+                        int WeekStartFemales, 
+                        int WeekStartMales, 
+                        int CummFemaleMort, 
+                        int CummMaleMort, 
+                        int CummFemaleCulls, 
+                        int CummMaleCulls, 
+                        int StadDeplation, 
+                        int NestedEggs, 
+                        int HatchingEggs, 
+                        int HatchingFloorG_A, 
+                        int FloorEggs, 
+                        int HatchingFloorG_B, 
+                        int SmallEggs, 
+                        int OverWeightEggs, 
+                        int DeformityEggs, 
+                        int DoubleYolkEggs, 
+                        int DirtyEggs, 
+                        int BrokenEggs, 
+                        int DestroyedEggs, 
+                        int SoftShellEggs, 
+                        int TotalProd, 
+                        int Livability, 
+                        int HenHoused, 
+                        int HenWeek, 
+                        int EggWeight, 
+                        int EggMass, 
+                        int EggsBirdsWk, 
+                        int EggsBirdsWkCum) {
+                SR_BRD_DailyProductionRow rowSR_BRD_DailyProductionRow = ((SR_BRD_DailyProductionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        HatchEggsBirdsWk,
+                        HatchEggsBirdsWkCum,
+                        CummHatchingEggs,
+                        Fertility,
+                        Hatchability,
+                        CumHatchability,
+                        HatchOfFertile,
+                        ChicksHenHoused,
+                        CumChicksHenHoused,
+                        POL,
+                        CummChicks,
+                        CummCulls,
+                        CummDeads,
+                        CummSettedEggs,
+                        WeeklyChicks,
+                        WeeklyCulls,
+                        WeeklyDeads,
+                        WeeklySettedEggs,
+                        CummSettedEggs1,
+                        CummChicks1,
+                        CummCulls1,
+                        CummDeads1,
+                        EstHatchEggs,
+                        FlockCode,
+                        AgeWeek,
+                        FarmCode,
+                        Site_en,
+                        BreedName_en,
+                        FemalePlaced,
+                        MalePlaced,
+                        RearingFarmCode,
+                        CropNo,
+                        tFrFarmID,
+                        FemaleMort,
+                        MaleMort,
+                        FemaleCulls,
+                        MaleCulls,
+                        rf_FemaleSelling,
+                        rf_MaleSelling,
+                        FemaleBalance,
+                        MaleBalance,
+                        WeekStartFemales,
+                        WeekStartMales,
+                        CummFemaleMort,
+                        CummMaleMort,
+                        CummFemaleCulls,
+                        CummMaleCulls,
+                        StadDeplation,
+                        NestedEggs,
+                        HatchingEggs,
+                        HatchingFloorG_A,
+                        FloorEggs,
+                        HatchingFloorG_B,
+                        SmallEggs,
+                        OverWeightEggs,
+                        DeformityEggs,
+                        DoubleYolkEggs,
+                        DirtyEggs,
+                        BrokenEggs,
+                        DestroyedEggs,
+                        SoftShellEggs,
+                        TotalProd,
+                        Livability,
+                        HenHoused,
+                        HenWeek,
+                        EggWeight,
+                        EggMass,
+                        EggsBirdsWk,
+                        EggsBirdsWkCum};
+                rowSR_BRD_DailyProductionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSR_BRD_DailyProductionRow);
+                return rowSR_BRD_DailyProductionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SR_BRD_DailyProductionDataTable cln = ((SR_BRD_DailyProductionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SR_BRD_DailyProductionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnHatchEggsBirdsWk = base.Columns["HatchEggsBirdsWk"];
+                this.columnHatchEggsBirdsWkCum = base.Columns["HatchEggsBirdsWkCum"];
+                this.columnCummHatchingEggs = base.Columns["CummHatchingEggs"];
+                this.columnFertility = base.Columns["Fertility"];
+                this.columnHatchability = base.Columns["Hatchability"];
+                this.columnCumHatchability = base.Columns["CumHatchability"];
+                this.columnHatchOfFertile = base.Columns["HatchOfFertile"];
+                this.columnChicksHenHoused = base.Columns["ChicksHenHoused"];
+                this.columnCumChicksHenHoused = base.Columns["CumChicksHenHoused"];
+                this.columnPOL = base.Columns["POL"];
+                this.columnCummChicks = base.Columns["CummChicks"];
+                this.columnCummCulls = base.Columns["CummCulls"];
+                this.columnCummDeads = base.Columns["CummDeads"];
+                this.columnCummSettedEggs = base.Columns["CummSettedEggs"];
+                this.columnWeeklyChicks = base.Columns["WeeklyChicks"];
+                this.columnWeeklyCulls = base.Columns["WeeklyCulls"];
+                this.columnWeeklyDeads = base.Columns["WeeklyDeads"];
+                this.columnWeeklySettedEggs = base.Columns["WeeklySettedEggs"];
+                this.columnCummSettedEggs1 = base.Columns["CummSettedEggs1"];
+                this.columnCummChicks1 = base.Columns["CummChicks1"];
+                this.columnCummCulls1 = base.Columns["CummCulls1"];
+                this.columnCummDeads1 = base.Columns["CummDeads1"];
+                this.columnEstHatchEggs = base.Columns["EstHatchEggs"];
+                this.columnFlockCode = base.Columns["FlockCode"];
+                this.columnAgeWeek = base.Columns["AgeWeek"];
+                this.columnFarmCode = base.Columns["FarmCode"];
+                this.columnSite_en = base.Columns["Site_en"];
+                this.columnBreedName_en = base.Columns["BreedName_en"];
+                this.columnFemalePlaced = base.Columns["FemalePlaced"];
+                this.columnMalePlaced = base.Columns["MalePlaced"];
+                this.columnRearingFarmCode = base.Columns["RearingFarmCode"];
+                this.columnCropNo = base.Columns["CropNo"];
+                this.columntFrFarmID = base.Columns["tFrFarmID"];
+                this.columnFemaleMort = base.Columns["FemaleMort"];
+                this.columnMaleMort = base.Columns["MaleMort"];
+                this.columnFemaleCulls = base.Columns["FemaleCulls"];
+                this.columnMaleCulls = base.Columns["MaleCulls"];
+                this.columnrf_FemaleSelling = base.Columns["rf_FemaleSelling"];
+                this.columnrf_MaleSelling = base.Columns["rf_MaleSelling"];
+                this.columnFemaleBalance = base.Columns["FemaleBalance"];
+                this.columnMaleBalance = base.Columns["MaleBalance"];
+                this.columnWeekStartFemales = base.Columns["WeekStartFemales"];
+                this.columnWeekStartMales = base.Columns["WeekStartMales"];
+                this.columnCummFemaleMort = base.Columns["CummFemaleMort"];
+                this.columnCummMaleMort = base.Columns["CummMaleMort"];
+                this.columnCummFemaleCulls = base.Columns["CummFemaleCulls"];
+                this.columnCummMaleCulls = base.Columns["CummMaleCulls"];
+                this.columnStadDeplation = base.Columns["StadDeplation"];
+                this.columnNestedEggs = base.Columns["NestedEggs"];
+                this.columnHatchingEggs = base.Columns["HatchingEggs"];
+                this.columnHatchingFloorG_A = base.Columns["HatchingFloorG_A"];
+                this.columnFloorEggs = base.Columns["FloorEggs"];
+                this.columnHatchingFloorG_B = base.Columns["HatchingFloorG_B"];
+                this.columnSmallEggs = base.Columns["SmallEggs"];
+                this.columnOverWeightEggs = base.Columns["OverWeightEggs"];
+                this.columnDeformityEggs = base.Columns["DeformityEggs"];
+                this.columnDoubleYolkEggs = base.Columns["DoubleYolkEggs"];
+                this.columnDirtyEggs = base.Columns["DirtyEggs"];
+                this.columnBrokenEggs = base.Columns["BrokenEggs"];
+                this.columnDestroyedEggs = base.Columns["DestroyedEggs"];
+                this.columnSoftShellEggs = base.Columns["SoftShellEggs"];
+                this.columnTotalProd = base.Columns["TotalProd"];
+                this.columnLivability = base.Columns["Livability"];
+                this.columnHenHoused = base.Columns["HenHoused"];
+                this.columnHenWeek = base.Columns["HenWeek"];
+                this.columnEggWeight = base.Columns["EggWeight"];
+                this.columnEggMass = base.Columns["EggMass"];
+                this.columnEggsBirdsWk = base.Columns["EggsBirdsWk"];
+                this.columnEggsBirdsWkCum = base.Columns["EggsBirdsWkCum"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnHatchEggsBirdsWk = new global::System.Data.DataColumn("HatchEggsBirdsWk", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchEggsBirdsWk);
+                this.columnHatchEggsBirdsWkCum = new global::System.Data.DataColumn("HatchEggsBirdsWkCum", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchEggsBirdsWkCum);
+                this.columnCummHatchingEggs = new global::System.Data.DataColumn("CummHatchingEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummHatchingEggs);
+                this.columnFertility = new global::System.Data.DataColumn("Fertility", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFertility);
+                this.columnHatchability = new global::System.Data.DataColumn("Hatchability", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchability);
+                this.columnCumHatchability = new global::System.Data.DataColumn("CumHatchability", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCumHatchability);
+                this.columnHatchOfFertile = new global::System.Data.DataColumn("HatchOfFertile", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchOfFertile);
+                this.columnChicksHenHoused = new global::System.Data.DataColumn("ChicksHenHoused", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnChicksHenHoused);
+                this.columnCumChicksHenHoused = new global::System.Data.DataColumn("CumChicksHenHoused", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCumChicksHenHoused);
+                this.columnPOL = new global::System.Data.DataColumn("POL", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOL);
+                this.columnCummChicks = new global::System.Data.DataColumn("CummChicks", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummChicks);
+                this.columnCummCulls = new global::System.Data.DataColumn("CummCulls", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummCulls);
+                this.columnCummDeads = new global::System.Data.DataColumn("CummDeads", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummDeads);
+                this.columnCummSettedEggs = new global::System.Data.DataColumn("CummSettedEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummSettedEggs);
+                this.columnWeeklyChicks = new global::System.Data.DataColumn("WeeklyChicks", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeeklyChicks);
+                this.columnWeeklyCulls = new global::System.Data.DataColumn("WeeklyCulls", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeeklyCulls);
+                this.columnWeeklyDeads = new global::System.Data.DataColumn("WeeklyDeads", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeeklyDeads);
+                this.columnWeeklySettedEggs = new global::System.Data.DataColumn("WeeklySettedEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeeklySettedEggs);
+                this.columnCummSettedEggs1 = new global::System.Data.DataColumn("CummSettedEggs1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummSettedEggs1);
+                this.columnCummChicks1 = new global::System.Data.DataColumn("CummChicks1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummChicks1);
+                this.columnCummCulls1 = new global::System.Data.DataColumn("CummCulls1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummCulls1);
+                this.columnCummDeads1 = new global::System.Data.DataColumn("CummDeads1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummDeads1);
+                this.columnEstHatchEggs = new global::System.Data.DataColumn("EstHatchEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstHatchEggs);
+                this.columnFlockCode = new global::System.Data.DataColumn("FlockCode", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFlockCode);
+                this.columnAgeWeek = new global::System.Data.DataColumn("AgeWeek", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAgeWeek);
+                this.columnFarmCode = new global::System.Data.DataColumn("FarmCode", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFarmCode);
+                this.columnSite_en = new global::System.Data.DataColumn("Site_en", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSite_en);
+                this.columnBreedName_en = new global::System.Data.DataColumn("BreedName_en", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBreedName_en);
+                this.columnFemalePlaced = new global::System.Data.DataColumn("FemalePlaced", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemalePlaced);
+                this.columnMalePlaced = new global::System.Data.DataColumn("MalePlaced", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMalePlaced);
+                this.columnRearingFarmCode = new global::System.Data.DataColumn("RearingFarmCode", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRearingFarmCode);
+                this.columnCropNo = new global::System.Data.DataColumn("CropNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCropNo);
+                this.columntFrFarmID = new global::System.Data.DataColumn("tFrFarmID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntFrFarmID);
+                this.columnFemaleMort = new global::System.Data.DataColumn("FemaleMort", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleMort);
+                this.columnMaleMort = new global::System.Data.DataColumn("MaleMort", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleMort);
+                this.columnFemaleCulls = new global::System.Data.DataColumn("FemaleCulls", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleCulls);
+                this.columnMaleCulls = new global::System.Data.DataColumn("MaleCulls", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleCulls);
+                this.columnrf_FemaleSelling = new global::System.Data.DataColumn("rf_FemaleSelling", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrf_FemaleSelling);
+                this.columnrf_MaleSelling = new global::System.Data.DataColumn("rf_MaleSelling", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnrf_MaleSelling);
+                this.columnFemaleBalance = new global::System.Data.DataColumn("FemaleBalance", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFemaleBalance);
+                this.columnMaleBalance = new global::System.Data.DataColumn("MaleBalance", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaleBalance);
+                this.columnWeekStartFemales = new global::System.Data.DataColumn("WeekStartFemales", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeekStartFemales);
+                this.columnWeekStartMales = new global::System.Data.DataColumn("WeekStartMales", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWeekStartMales);
+                this.columnCummFemaleMort = new global::System.Data.DataColumn("CummFemaleMort", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummFemaleMort);
+                this.columnCummMaleMort = new global::System.Data.DataColumn("CummMaleMort", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummMaleMort);
+                this.columnCummFemaleCulls = new global::System.Data.DataColumn("CummFemaleCulls", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummFemaleCulls);
+                this.columnCummMaleCulls = new global::System.Data.DataColumn("CummMaleCulls", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCummMaleCulls);
+                this.columnStadDeplation = new global::System.Data.DataColumn("StadDeplation", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStadDeplation);
+                this.columnNestedEggs = new global::System.Data.DataColumn("NestedEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNestedEggs);
+                this.columnHatchingEggs = new global::System.Data.DataColumn("HatchingEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchingEggs);
+                this.columnHatchingFloorG_A = new global::System.Data.DataColumn("HatchingFloorG_A", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchingFloorG_A);
+                this.columnFloorEggs = new global::System.Data.DataColumn("FloorEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFloorEggs);
+                this.columnHatchingFloorG_B = new global::System.Data.DataColumn("HatchingFloorG_B", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHatchingFloorG_B);
+                this.columnSmallEggs = new global::System.Data.DataColumn("SmallEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSmallEggs);
+                this.columnOverWeightEggs = new global::System.Data.DataColumn("OverWeightEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOverWeightEggs);
+                this.columnDeformityEggs = new global::System.Data.DataColumn("DeformityEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDeformityEggs);
+                this.columnDoubleYolkEggs = new global::System.Data.DataColumn("DoubleYolkEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDoubleYolkEggs);
+                this.columnDirtyEggs = new global::System.Data.DataColumn("DirtyEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDirtyEggs);
+                this.columnBrokenEggs = new global::System.Data.DataColumn("BrokenEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBrokenEggs);
+                this.columnDestroyedEggs = new global::System.Data.DataColumn("DestroyedEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDestroyedEggs);
+                this.columnSoftShellEggs = new global::System.Data.DataColumn("SoftShellEggs", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSoftShellEggs);
+                this.columnTotalProd = new global::System.Data.DataColumn("TotalProd", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalProd);
+                this.columnLivability = new global::System.Data.DataColumn("Livability", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLivability);
+                this.columnHenHoused = new global::System.Data.DataColumn("HenHoused", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHenHoused);
+                this.columnHenWeek = new global::System.Data.DataColumn("HenWeek", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHenWeek);
+                this.columnEggWeight = new global::System.Data.DataColumn("EggWeight", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEggWeight);
+                this.columnEggMass = new global::System.Data.DataColumn("EggMass", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEggMass);
+                this.columnEggsBirdsWk = new global::System.Data.DataColumn("EggsBirdsWk", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEggsBirdsWk);
+                this.columnEggsBirdsWkCum = new global::System.Data.DataColumn("EggsBirdsWkCum", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEggsBirdsWkCum);
+                this.columnHatchEggsBirdsWk.ReadOnly = true;
+                this.columnHatchEggsBirdsWkCum.ReadOnly = true;
+                this.columnCummHatchingEggs.ReadOnly = true;
+                this.columnFertility.ReadOnly = true;
+                this.columnHatchability.ReadOnly = true;
+                this.columnCumHatchability.ReadOnly = true;
+                this.columnHatchOfFertile.ReadOnly = true;
+                this.columnChicksHenHoused.ReadOnly = true;
+                this.columnCumChicksHenHoused.ReadOnly = true;
+                this.columnPOL.ReadOnly = true;
+                this.columnCummChicks.ReadOnly = true;
+                this.columnCummCulls.ReadOnly = true;
+                this.columnCummDeads.ReadOnly = true;
+                this.columnCummSettedEggs.ReadOnly = true;
+                this.columnWeeklyChicks.ReadOnly = true;
+                this.columnWeeklyCulls.ReadOnly = true;
+                this.columnWeeklyDeads.ReadOnly = true;
+                this.columnWeeklySettedEggs.ReadOnly = true;
+                this.columnCummSettedEggs1.ReadOnly = true;
+                this.columnCummChicks1.ReadOnly = true;
+                this.columnCummCulls1.ReadOnly = true;
+                this.columnCummDeads1.ReadOnly = true;
+                this.columnEstHatchEggs.ReadOnly = true;
+                this.columnFlockCode.ReadOnly = true;
+                this.columnAgeWeek.ReadOnly = true;
+                this.columnFarmCode.ReadOnly = true;
+                this.columnSite_en.ReadOnly = true;
+                this.columnBreedName_en.ReadOnly = true;
+                this.columnFemalePlaced.ReadOnly = true;
+                this.columnMalePlaced.ReadOnly = true;
+                this.columnRearingFarmCode.ReadOnly = true;
+                this.columnCropNo.ReadOnly = true;
+                this.columntFrFarmID.ReadOnly = true;
+                this.columnFemaleMort.ReadOnly = true;
+                this.columnMaleMort.ReadOnly = true;
+                this.columnFemaleCulls.ReadOnly = true;
+                this.columnMaleCulls.ReadOnly = true;
+                this.columnrf_FemaleSelling.ReadOnly = true;
+                this.columnrf_MaleSelling.ReadOnly = true;
+                this.columnFemaleBalance.ReadOnly = true;
+                this.columnMaleBalance.ReadOnly = true;
+                this.columnWeekStartFemales.ReadOnly = true;
+                this.columnWeekStartMales.ReadOnly = true;
+                this.columnCummFemaleMort.ReadOnly = true;
+                this.columnCummMaleMort.ReadOnly = true;
+                this.columnCummFemaleCulls.ReadOnly = true;
+                this.columnCummMaleCulls.ReadOnly = true;
+                this.columnStadDeplation.ReadOnly = true;
+                this.columnNestedEggs.ReadOnly = true;
+                this.columnHatchingEggs.ReadOnly = true;
+                this.columnHatchingFloorG_A.ReadOnly = true;
+                this.columnFloorEggs.ReadOnly = true;
+                this.columnHatchingFloorG_B.ReadOnly = true;
+                this.columnSmallEggs.ReadOnly = true;
+                this.columnOverWeightEggs.ReadOnly = true;
+                this.columnDeformityEggs.ReadOnly = true;
+                this.columnDoubleYolkEggs.ReadOnly = true;
+                this.columnDirtyEggs.ReadOnly = true;
+                this.columnBrokenEggs.ReadOnly = true;
+                this.columnDestroyedEggs.ReadOnly = true;
+                this.columnSoftShellEggs.ReadOnly = true;
+                this.columnTotalProd.ReadOnly = true;
+                this.columnLivability.ReadOnly = true;
+                this.columnHenHoused.ReadOnly = true;
+                this.columnHenWeek.ReadOnly = true;
+                this.columnEggWeight.ReadOnly = true;
+                this.columnEggMass.ReadOnly = true;
+                this.columnEggsBirdsWk.ReadOnly = true;
+                this.columnEggsBirdsWkCum.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_DailyProductionRow NewSR_BRD_DailyProductionRow() {
+                return ((SR_BRD_DailyProductionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SR_BRD_DailyProductionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SR_BRD_DailyProductionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SR_BRD_DailyProductionRowChanged != null)) {
+                    this.SR_BRD_DailyProductionRowChanged(this, new SR_BRD_DailyProductionRowChangeEvent(((SR_BRD_DailyProductionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SR_BRD_DailyProductionRowChanging != null)) {
+                    this.SR_BRD_DailyProductionRowChanging(this, new SR_BRD_DailyProductionRowChangeEvent(((SR_BRD_DailyProductionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SR_BRD_DailyProductionRowDeleted != null)) {
+                    this.SR_BRD_DailyProductionRowDeleted(this, new SR_BRD_DailyProductionRowChangeEvent(((SR_BRD_DailyProductionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SR_BRD_DailyProductionRowDeleting != null)) {
+                    this.SR_BRD_DailyProductionRowDeleting(this, new SR_BRD_DailyProductionRowChangeEvent(((SR_BRD_DailyProductionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveSR_BRD_DailyProductionRow(SR_BRD_DailyProductionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsGeneralLedger ds = new dsGeneralLedger();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SR_BRD_DailyProductionDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class SR_FC_FR_SummaryRow : global::System.Data.DataRow {
@@ -34353,6 +35727,1981 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SR_BRD_DailyProductionRow : global::System.Data.DataRow {
+            
+            private SR_BRD_DailyProductionDataTable tableSR_BRD_DailyProduction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_BRD_DailyProductionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSR_BRD_DailyProduction = ((SR_BRD_DailyProductionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatchEggsBirdsWk {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatchEggsBirdsWk\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatchEggsBirdsWkCum {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkCumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatchEggsBirdsWkCum\' in table \'SR_BRD_DailyProduction\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkCumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummHatchingEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummHatchingEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummHatchingEggs\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummHatchingEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Fertility {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FertilityColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Fertility\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FertilityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Hatchability {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchabilityColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Hatchability\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchabilityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CumHatchability {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CumHatchabilityColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CumHatchability\' in table \'SR_BRD_DailyProduction\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CumHatchabilityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatchOfFertile {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchOfFertileColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatchOfFertile\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchOfFertileColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int ChicksHenHoused {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.ChicksHenHousedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ChicksHenHoused\' in table \'SR_BRD_DailyProduction\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.ChicksHenHousedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CumChicksHenHoused {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CumChicksHenHousedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CumChicksHenHoused\' in table \'SR_BRD_DailyProduction\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CumChicksHenHousedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int POL {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.POLColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'POL\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.POLColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummChicks {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummChicksColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummChicks\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummChicksColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummCulls {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummCullsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummCulls\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummCullsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummDeads {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummDeadsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummDeads\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummDeadsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummSettedEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummSettedEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummSettedEggs\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummSettedEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeeklyChicks {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.WeeklyChicksColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeeklyChicks\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.WeeklyChicksColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeeklyCulls {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.WeeklyCullsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeeklyCulls\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.WeeklyCullsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeeklyDeads {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.WeeklyDeadsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeeklyDeads\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.WeeklyDeadsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeeklySettedEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.WeeklySettedEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeeklySettedEggs\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.WeeklySettedEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummSettedEggs1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummSettedEggs1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummSettedEggs1\' in table \'SR_BRD_DailyProduction\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummSettedEggs1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummChicks1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummChicks1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummChicks1\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummChicks1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummCulls1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummCulls1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummCulls1\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummCulls1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummDeads1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummDeads1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummDeads1\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummDeads1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int EstHatchEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.EstHatchEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EstHatchEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.EstHatchEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FlockCode {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FlockCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FlockCode\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FlockCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int AgeWeek {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.AgeWeekColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AgeWeek\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.AgeWeekColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FarmCode {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FarmCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FarmCode\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FarmCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Site_en {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.Site_enColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Site_en\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.Site_enColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int BreedName_en {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.BreedName_enColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BreedName_en\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.BreedName_enColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemalePlaced {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FemalePlacedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemalePlaced\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FemalePlacedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MalePlaced {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.MalePlacedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MalePlaced\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.MalePlacedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int RearingFarmCode {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.RearingFarmCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RearingFarmCode\' in table \'SR_BRD_DailyProduction\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.RearingFarmCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CropNo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CropNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CropNo\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CropNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int tFrFarmID {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.tFrFarmIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'tFrFarmID\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.tFrFarmIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleMort {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FemaleMortColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleMort\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FemaleMortColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleMort {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.MaleMortColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleMort\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.MaleMortColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleCulls {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FemaleCullsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleCulls\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FemaleCullsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleCulls {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.MaleCullsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleCulls\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.MaleCullsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int rf_FemaleSelling {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.rf_FemaleSellingColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'rf_FemaleSelling\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.rf_FemaleSellingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int rf_MaleSelling {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.rf_MaleSellingColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'rf_MaleSelling\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.rf_MaleSellingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FemaleBalance {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FemaleBalanceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FemaleBalance\' in table \'SR_BRD_DailyProduction\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FemaleBalanceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MaleBalance {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.MaleBalanceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaleBalance\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.MaleBalanceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeekStartFemales {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.WeekStartFemalesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeekStartFemales\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.WeekStartFemalesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WeekStartMales {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.WeekStartMalesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WeekStartMales\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.WeekStartMalesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummFemaleMort {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummFemaleMortColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummFemaleMort\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummFemaleMortColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummMaleMort {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummMaleMortColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummMaleMort\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummMaleMortColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummFemaleCulls {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummFemaleCullsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummFemaleCulls\' in table \'SR_BRD_DailyProduction\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummFemaleCullsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CummMaleCulls {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.CummMaleCullsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CummMaleCulls\' in table \'SR_BRD_DailyProduction\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.CummMaleCullsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int StadDeplation {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.StadDeplationColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StadDeplation\' in table \'SR_BRD_DailyProduction\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.StadDeplationColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int NestedEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.NestedEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NestedEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.NestedEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatchingEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchingEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatchingEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchingEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatchingFloorG_A {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchingFloorG_AColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatchingFloorG_A\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchingFloorG_AColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FloorEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.FloorEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FloorEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.FloorEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HatchingFloorG_B {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HatchingFloorG_BColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HatchingFloorG_B\' in table \'SR_BRD_DailyProduction\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HatchingFloorG_BColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int SmallEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.SmallEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SmallEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.SmallEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int OverWeightEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.OverWeightEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OverWeightEggs\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.OverWeightEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DeformityEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.DeformityEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DeformityEggs\' in table \'SR_BRD_DailyProduction\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.DeformityEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DoubleYolkEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.DoubleYolkEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DoubleYolkEggs\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.DoubleYolkEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DirtyEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.DirtyEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DirtyEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.DirtyEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int BrokenEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.BrokenEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BrokenEggs\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.BrokenEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DestroyedEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.DestroyedEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DestroyedEggs\' in table \'SR_BRD_DailyProduction\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.DestroyedEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int SoftShellEggs {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.SoftShellEggsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SoftShellEggs\' in table \'SR_BRD_DailyProduction\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.SoftShellEggsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TotalProd {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.TotalProdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalProd\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.TotalProdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Livability {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.LivabilityColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Livability\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.LivabilityColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HenHoused {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HenHousedColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HenHoused\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HenHousedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int HenWeek {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.HenWeekColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HenWeek\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.HenWeekColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int EggWeight {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.EggWeightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EggWeight\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.EggWeightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int EggMass {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.EggMassColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EggMass\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.EggMassColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int EggsBirdsWk {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.EggsBirdsWkColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EggsBirdsWk\' in table \'SR_BRD_DailyProduction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.EggsBirdsWkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int EggsBirdsWkCum {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_BRD_DailyProduction.EggsBirdsWkCumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EggsBirdsWkCum\' in table \'SR_BRD_DailyProduction\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_BRD_DailyProduction.EggsBirdsWkCumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchEggsBirdsWkNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchEggsBirdsWkNull() {
+                this[this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchEggsBirdsWkCumNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkCumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchEggsBirdsWkCumNull() {
+                this[this.tableSR_BRD_DailyProduction.HatchEggsBirdsWkCumColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummHatchingEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummHatchingEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummHatchingEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.CummHatchingEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFertilityNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FertilityColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFertilityNull() {
+                this[this.tableSR_BRD_DailyProduction.FertilityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchabilityNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchabilityColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchabilityNull() {
+                this[this.tableSR_BRD_DailyProduction.HatchabilityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCumHatchabilityNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CumHatchabilityColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCumHatchabilityNull() {
+                this[this.tableSR_BRD_DailyProduction.CumHatchabilityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchOfFertileNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchOfFertileColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchOfFertileNull() {
+                this[this.tableSR_BRD_DailyProduction.HatchOfFertileColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsChicksHenHousedNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.ChicksHenHousedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetChicksHenHousedNull() {
+                this[this.tableSR_BRD_DailyProduction.ChicksHenHousedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCumChicksHenHousedNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CumChicksHenHousedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCumChicksHenHousedNull() {
+                this[this.tableSR_BRD_DailyProduction.CumChicksHenHousedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPOLNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.POLColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPOLNull() {
+                this[this.tableSR_BRD_DailyProduction.POLColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummChicksNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummChicksColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummChicksNull() {
+                this[this.tableSR_BRD_DailyProduction.CummChicksColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummCullsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummCullsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummCullsNull() {
+                this[this.tableSR_BRD_DailyProduction.CummCullsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummDeadsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummDeadsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummDeadsNull() {
+                this[this.tableSR_BRD_DailyProduction.CummDeadsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummSettedEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummSettedEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummSettedEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.CummSettedEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeeklyChicksNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.WeeklyChicksColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeeklyChicksNull() {
+                this[this.tableSR_BRD_DailyProduction.WeeklyChicksColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeeklyCullsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.WeeklyCullsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeeklyCullsNull() {
+                this[this.tableSR_BRD_DailyProduction.WeeklyCullsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeeklyDeadsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.WeeklyDeadsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeeklyDeadsNull() {
+                this[this.tableSR_BRD_DailyProduction.WeeklyDeadsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeeklySettedEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.WeeklySettedEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeeklySettedEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.WeeklySettedEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummSettedEggs1Null() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummSettedEggs1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummSettedEggs1Null() {
+                this[this.tableSR_BRD_DailyProduction.CummSettedEggs1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummChicks1Null() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummChicks1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummChicks1Null() {
+                this[this.tableSR_BRD_DailyProduction.CummChicks1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummCulls1Null() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummCulls1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummCulls1Null() {
+                this[this.tableSR_BRD_DailyProduction.CummCulls1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummDeads1Null() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummDeads1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummDeads1Null() {
+                this[this.tableSR_BRD_DailyProduction.CummDeads1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEstHatchEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.EstHatchEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEstHatchEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.EstHatchEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFlockCodeNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FlockCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFlockCodeNull() {
+                this[this.tableSR_BRD_DailyProduction.FlockCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAgeWeekNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.AgeWeekColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAgeWeekNull() {
+                this[this.tableSR_BRD_DailyProduction.AgeWeekColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFarmCodeNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FarmCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFarmCodeNull() {
+                this[this.tableSR_BRD_DailyProduction.FarmCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSite_enNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.Site_enColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSite_enNull() {
+                this[this.tableSR_BRD_DailyProduction.Site_enColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBreedName_enNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.BreedName_enColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBreedName_enNull() {
+                this[this.tableSR_BRD_DailyProduction.BreedName_enColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemalePlacedNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FemalePlacedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemalePlacedNull() {
+                this[this.tableSR_BRD_DailyProduction.FemalePlacedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMalePlacedNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.MalePlacedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMalePlacedNull() {
+                this[this.tableSR_BRD_DailyProduction.MalePlacedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRearingFarmCodeNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.RearingFarmCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRearingFarmCodeNull() {
+                this[this.tableSR_BRD_DailyProduction.RearingFarmCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCropNoNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CropNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCropNoNull() {
+                this[this.tableSR_BRD_DailyProduction.CropNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IstFrFarmIDNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.tFrFarmIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SettFrFarmIDNull() {
+                this[this.tableSR_BRD_DailyProduction.tFrFarmIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleMortNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FemaleMortColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleMortNull() {
+                this[this.tableSR_BRD_DailyProduction.FemaleMortColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleMortNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.MaleMortColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleMortNull() {
+                this[this.tableSR_BRD_DailyProduction.MaleMortColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleCullsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FemaleCullsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleCullsNull() {
+                this[this.tableSR_BRD_DailyProduction.FemaleCullsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleCullsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.MaleCullsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleCullsNull() {
+                this[this.tableSR_BRD_DailyProduction.MaleCullsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isrf_FemaleSellingNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.rf_FemaleSellingColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setrf_FemaleSellingNull() {
+                this[this.tableSR_BRD_DailyProduction.rf_FemaleSellingColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isrf_MaleSellingNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.rf_MaleSellingColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setrf_MaleSellingNull() {
+                this[this.tableSR_BRD_DailyProduction.rf_MaleSellingColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFemaleBalanceNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FemaleBalanceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFemaleBalanceNull() {
+                this[this.tableSR_BRD_DailyProduction.FemaleBalanceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaleBalanceNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.MaleBalanceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaleBalanceNull() {
+                this[this.tableSR_BRD_DailyProduction.MaleBalanceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeekStartFemalesNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.WeekStartFemalesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeekStartFemalesNull() {
+                this[this.tableSR_BRD_DailyProduction.WeekStartFemalesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWeekStartMalesNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.WeekStartMalesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWeekStartMalesNull() {
+                this[this.tableSR_BRD_DailyProduction.WeekStartMalesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummFemaleMortNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummFemaleMortColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummFemaleMortNull() {
+                this[this.tableSR_BRD_DailyProduction.CummFemaleMortColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummMaleMortNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummMaleMortColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummMaleMortNull() {
+                this[this.tableSR_BRD_DailyProduction.CummMaleMortColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummFemaleCullsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummFemaleCullsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummFemaleCullsNull() {
+                this[this.tableSR_BRD_DailyProduction.CummFemaleCullsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCummMaleCullsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.CummMaleCullsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCummMaleCullsNull() {
+                this[this.tableSR_BRD_DailyProduction.CummMaleCullsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsStadDeplationNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.StadDeplationColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetStadDeplationNull() {
+                this[this.tableSR_BRD_DailyProduction.StadDeplationColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsNestedEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.NestedEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetNestedEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.NestedEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchingEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchingEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchingEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.HatchingEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchingFloorG_ANull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchingFloorG_AColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchingFloorG_ANull() {
+                this[this.tableSR_BRD_DailyProduction.HatchingFloorG_AColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFloorEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.FloorEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFloorEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.FloorEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHatchingFloorG_BNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HatchingFloorG_BColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHatchingFloorG_BNull() {
+                this[this.tableSR_BRD_DailyProduction.HatchingFloorG_BColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSmallEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.SmallEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSmallEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.SmallEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOverWeightEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.OverWeightEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOverWeightEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.OverWeightEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDeformityEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.DeformityEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDeformityEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.DeformityEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDoubleYolkEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.DoubleYolkEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDoubleYolkEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.DoubleYolkEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDirtyEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.DirtyEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDirtyEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.DirtyEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsBrokenEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.BrokenEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetBrokenEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.BrokenEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDestroyedEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.DestroyedEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDestroyedEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.DestroyedEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSoftShellEggsNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.SoftShellEggsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSoftShellEggsNull() {
+                this[this.tableSR_BRD_DailyProduction.SoftShellEggsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTotalProdNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.TotalProdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTotalProdNull() {
+                this[this.tableSR_BRD_DailyProduction.TotalProdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsLivabilityNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.LivabilityColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetLivabilityNull() {
+                this[this.tableSR_BRD_DailyProduction.LivabilityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHenHousedNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HenHousedColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHenHousedNull() {
+                this[this.tableSR_BRD_DailyProduction.HenHousedColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHenWeekNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.HenWeekColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHenWeekNull() {
+                this[this.tableSR_BRD_DailyProduction.HenWeekColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEggWeightNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.EggWeightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEggWeightNull() {
+                this[this.tableSR_BRD_DailyProduction.EggWeightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEggMassNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.EggMassColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEggMassNull() {
+                this[this.tableSR_BRD_DailyProduction.EggMassColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEggsBirdsWkNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.EggsBirdsWkColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEggsBirdsWkNull() {
+                this[this.tableSR_BRD_DailyProduction.EggsBirdsWkColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsEggsBirdsWkCumNull() {
+                return this.IsNull(this.tableSR_BRD_DailyProduction.EggsBirdsWkCumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetEggsBirdsWkCumNull() {
+                this[this.tableSR_BRD_DailyProduction.EggsBirdsWkCumColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -35494,6 +38843,40 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_BRO_DailyDeplRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class SR_BRD_DailyProductionRowChangeEvent : global::System.EventArgs {
+            
+            private SR_BRD_DailyProductionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_DailyProductionRowChangeEvent(SR_BRD_DailyProductionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_BRD_DailyProductionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -43332,6 +46715,300 @@ namespace DevExpressReports.Reports.GrandParent.DataSets.dsGeneralLedgerTableAda
                 this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             dsGeneralLedger.SR_BRO_DailyDeplDataTable dataTable = new dsGeneralLedger.SR_BRO_DailyDeplDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SR_BRD_DailyProductionTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public SR_BRD_DailyProductionTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SR_BRD_DailyProduction";
+            tableMapping.ColumnMappings.Add("HatchEggsBirdsWk", "HatchEggsBirdsWk");
+            tableMapping.ColumnMappings.Add("HatchEggsBirdsWkCum", "HatchEggsBirdsWkCum");
+            tableMapping.ColumnMappings.Add("CummHatchingEggs", "CummHatchingEggs");
+            tableMapping.ColumnMappings.Add("Fertility", "Fertility");
+            tableMapping.ColumnMappings.Add("Hatchability", "Hatchability");
+            tableMapping.ColumnMappings.Add("CumHatchability", "CumHatchability");
+            tableMapping.ColumnMappings.Add("HatchOfFertile", "HatchOfFertile");
+            tableMapping.ColumnMappings.Add("ChicksHenHoused", "ChicksHenHoused");
+            tableMapping.ColumnMappings.Add("CumChicksHenHoused", "CumChicksHenHoused");
+            tableMapping.ColumnMappings.Add("POL", "POL");
+            tableMapping.ColumnMappings.Add("CummChicks", "CummChicks");
+            tableMapping.ColumnMappings.Add("CummCulls", "CummCulls");
+            tableMapping.ColumnMappings.Add("CummDeads", "CummDeads");
+            tableMapping.ColumnMappings.Add("CummSettedEggs", "CummSettedEggs");
+            tableMapping.ColumnMappings.Add("WeeklyChicks", "WeeklyChicks");
+            tableMapping.ColumnMappings.Add("WeeklyCulls", "WeeklyCulls");
+            tableMapping.ColumnMappings.Add("WeeklyDeads", "WeeklyDeads");
+            tableMapping.ColumnMappings.Add("WeeklySettedEggs", "WeeklySettedEggs");
+            tableMapping.ColumnMappings.Add("CummSettedEggs1", "CummSettedEggs1");
+            tableMapping.ColumnMappings.Add("CummChicks1", "CummChicks1");
+            tableMapping.ColumnMappings.Add("CummCulls1", "CummCulls1");
+            tableMapping.ColumnMappings.Add("CummDeads1", "CummDeads1");
+            tableMapping.ColumnMappings.Add("EstHatchEggs", "EstHatchEggs");
+            tableMapping.ColumnMappings.Add("FlockCode", "FlockCode");
+            tableMapping.ColumnMappings.Add("AgeWeek", "AgeWeek");
+            tableMapping.ColumnMappings.Add("FarmCode", "FarmCode");
+            tableMapping.ColumnMappings.Add("Site_en", "Site_en");
+            tableMapping.ColumnMappings.Add("BreedName_en", "BreedName_en");
+            tableMapping.ColumnMappings.Add("FemalePlaced", "FemalePlaced");
+            tableMapping.ColumnMappings.Add("MalePlaced", "MalePlaced");
+            tableMapping.ColumnMappings.Add("RearingFarmCode", "RearingFarmCode");
+            tableMapping.ColumnMappings.Add("CropNo", "CropNo");
+            tableMapping.ColumnMappings.Add("tFrFarmID", "tFrFarmID");
+            tableMapping.ColumnMappings.Add("FemaleMort", "FemaleMort");
+            tableMapping.ColumnMappings.Add("MaleMort", "MaleMort");
+            tableMapping.ColumnMappings.Add("FemaleCulls", "FemaleCulls");
+            tableMapping.ColumnMappings.Add("MaleCulls", "MaleCulls");
+            tableMapping.ColumnMappings.Add("rf_FemaleSelling", "rf_FemaleSelling");
+            tableMapping.ColumnMappings.Add("rf_MaleSelling", "rf_MaleSelling");
+            tableMapping.ColumnMappings.Add("FemaleBalance", "FemaleBalance");
+            tableMapping.ColumnMappings.Add("MaleBalance", "MaleBalance");
+            tableMapping.ColumnMappings.Add("WeekStartFemales", "WeekStartFemales");
+            tableMapping.ColumnMappings.Add("WeekStartMales", "WeekStartMales");
+            tableMapping.ColumnMappings.Add("CummFemaleMort", "CummFemaleMort");
+            tableMapping.ColumnMappings.Add("CummMaleMort", "CummMaleMort");
+            tableMapping.ColumnMappings.Add("CummFemaleCulls", "CummFemaleCulls");
+            tableMapping.ColumnMappings.Add("CummMaleCulls", "CummMaleCulls");
+            tableMapping.ColumnMappings.Add("StadDeplation", "StadDeplation");
+            tableMapping.ColumnMappings.Add("NestedEggs", "NestedEggs");
+            tableMapping.ColumnMappings.Add("HatchingEggs", "HatchingEggs");
+            tableMapping.ColumnMappings.Add("HatchingFloorG_A", "HatchingFloorG_A");
+            tableMapping.ColumnMappings.Add("FloorEggs", "FloorEggs");
+            tableMapping.ColumnMappings.Add("HatchingFloorG_B", "HatchingFloorG_B");
+            tableMapping.ColumnMappings.Add("SmallEggs", "SmallEggs");
+            tableMapping.ColumnMappings.Add("OverWeightEggs", "OverWeightEggs");
+            tableMapping.ColumnMappings.Add("DeformityEggs", "DeformityEggs");
+            tableMapping.ColumnMappings.Add("DoubleYolkEggs", "DoubleYolkEggs");
+            tableMapping.ColumnMappings.Add("DirtyEggs", "DirtyEggs");
+            tableMapping.ColumnMappings.Add("BrokenEggs", "BrokenEggs");
+            tableMapping.ColumnMappings.Add("DestroyedEggs", "DestroyedEggs");
+            tableMapping.ColumnMappings.Add("SoftShellEggs", "SoftShellEggs");
+            tableMapping.ColumnMappings.Add("TotalProd", "TotalProd");
+            tableMapping.ColumnMappings.Add("Livability", "Livability");
+            tableMapping.ColumnMappings.Add("HenHoused", "HenHoused");
+            tableMapping.ColumnMappings.Add("HenWeek", "HenWeek");
+            tableMapping.ColumnMappings.Add("EggWeight", "EggWeight");
+            tableMapping.ColumnMappings.Add("EggMass", "EggMass");
+            tableMapping.ColumnMappings.Add("EggsBirdsWk", "EggsBirdsWk");
+            tableMapping.ColumnMappings.Add("EggsBirdsWkCum", "EggsBirdsWkCum");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
+                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.SR_BRD_DailyProduction";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnModuleTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDate_From", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pDate_To", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrGroupBreedID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnRegionID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnSiteID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFarmID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnGroupCompanyID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptHrEmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID_Perf", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFlockID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrLineTypeID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsGeneralLedger.SR_BRD_DailyProductionDataTable GetData(global::System.Nullable<byte> ptGnModuleTypeID, global::System.Nullable<global::System.DateTime> pDate_From, global::System.Nullable<global::System.DateTime> pDate_To, global::System.Nullable<int> ptFrGroupBreedID, global::System.Nullable<int> ptGnRegionID, global::System.Nullable<int> ptGnSiteID, global::System.Nullable<int> ptFrFarmID, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptGnGroupCompanyID, global::System.Nullable<int> ptHrEmployeeID, global::System.Nullable<int> ptGnBookID, global::System.Nullable<int> ptGnBookID_Perf, global::System.Nullable<int> ptFrFlockID, global::System.Nullable<byte> ptFrLineTypeID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ptGnModuleTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((byte)(ptGnModuleTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((pDate_From.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(pDate_From.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((pDate_To.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(pDate_To.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrGroupBreedID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((int)(ptFrGroupBreedID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnRegionID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(ptGnRegionID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnSiteID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[6].Value = ((int)(ptGnSiteID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrFarmID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[7].Value = ((int)(ptFrFarmID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((pLang.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[8].Value = ((byte)(pLang.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnGroupCompanyID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((int)(ptGnGroupCompanyID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ptHrEmployeeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[10].Value = ((int)(ptHrEmployeeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnBookID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[11].Value = ((int)(ptGnBookID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnBookID_Perf.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[12].Value = ((int)(ptGnBookID_Perf.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrFlockID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(ptFrFlockID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((ptFrLineTypeID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[14].Value = ((byte)(ptFrLineTypeID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            dsGeneralLedger.SR_BRD_DailyProductionDataTable dataTable = new dsGeneralLedger.SR_BRD_DailyProductionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

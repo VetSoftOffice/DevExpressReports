@@ -3891,137 +3891,908 @@ cell.Text = result.ToString("N2");
 }
 
 private void xrTableCell261_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // Helper function for safe parsing
-decimal GetFieldValue(string fieldName)
+    XRTableCell cell = sender as XRTableCell;
+
+// ==================== EQUATION 1: @RejBroken ====================
+decimal stRejBroken = Convert.ToDecimal(GetCurrentColumnValue("ST_RejBroken") ?? 0);
+decimal htRejBroken = Convert.ToDecimal(GetCurrentColumnValue("HT_RejBroken") ?? 0);
+decimal RejBroken = stRejBroken + htRejBroken;
+
+// ==================== EQUATION 2: @RejCrack ====================
+decimal stRejCracks = Convert.ToDecimal(GetCurrentColumnValue("ST_RejCracks") ?? 0);
+decimal htRejCracks = Convert.ToDecimal(GetCurrentColumnValue("HT_RejCracks") ?? 0);
+decimal RejCrack = stRejCracks + htRejCracks;
+
+// ==================== EQUATION 3: @RejDef ====================
+decimal htRejDeformed = Convert.ToDecimal(GetCurrentColumnValue("HT_RejDeformed") ?? 0);
+decimal stRejDeformed = Convert.ToDecimal(GetCurrentColumnValue("ST_RejDeformed") ?? 0);
+decimal RejDef = htRejDeformed + stRejDeformed;
+
+// ==================== EQUATION 4: @RejOther ====================
+decimal stRejOther = Convert.ToDecimal(GetCurrentColumnValue("ST_RejOther") ?? 0);
+decimal htRejOther = Convert.ToDecimal(GetCurrentColumnValue("HT_RejOther") ?? 0);
+decimal RejOther = stRejOther + htRejOther;
+
+// ==================== EQUATION 5: @Total_RejEggs ====================
+decimal Total_RejEggs = RejBroken + RejCrack + RejDef + RejOther;
+
+// ==================== EQUATION 6: @BalOfHatEggs ====================
+decimal FarmInTake = Convert.ToDecimal(GetCurrentColumnValue("FarmInTake") ?? 0);
+decimal BalOfHatEggs = FarmInTake - Total_RejEggs;
+
+// ==================== EQUATION 7: @CumFinalHatEgg_HH ====================
+decimal POL = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal CumFinalHatEgg_HH = 0;
+if (POL != 0)
 {
-    object value = GetCurrentColumnValue(fieldName);
-    if (value != null &amp;&amp; !string.IsNullOrEmpty(value.ToString()))
-    {
-        if (decimal.TryParse(value.ToString(), out decimal result))
-            return result;
-    }
-    return 0;
+    CumFinalHatEgg_HH = BalOfHatEggs / POL;
 }
 
-// --- STEP 1: Calculate Part 1 components ---
+// ==================== EQUATION 8: @CumHatEgg_HH_1 ====================
+decimal FarmInTake_1 = Convert.ToDecimal(GetCurrentColumnValue("FarmInTake_1") ?? 0);
+decimal ST_RejBroken_1 = Convert.ToDecimal(GetCurrentColumnValue("ST_RejBroken_1") ?? 0);
+decimal HT_RejBroken_1 = Convert.ToDecimal(GetCurrentColumnValue("HT_RejBroken_1") ?? 0);
+decimal ST_RejCracks_1 = Convert.ToDecimal(GetCurrentColumnValue("ST_RejCracks_1") ?? 0);
+decimal HT_RejCracks_1 = Convert.ToDecimal(GetCurrentColumnValue("HT_RejCracks_1") ?? 0);
+decimal HT_RejDeformed_1 = Convert.ToDecimal(GetCurrentColumnValue("HT_RejDeformed_1") ?? 0);
+decimal ST_RejDeformed_1 = Convert.ToDecimal(GetCurrentColumnValue("ST_RejDeformed_1") ?? 0);
+decimal ST_RejOther_1 = Convert.ToDecimal(GetCurrentColumnValue("ST_RejOther_1") ?? 0);
+decimal HT_RejOther_1 = Convert.ToDecimal(GetCurrentColumnValue("HT_RejOther_1") ?? 0);
 
-// Calculate rejection components for Part 1
-decimal rejBroken = GetFieldValue("ST_RejBroken") + GetFieldValue("HT_RejBroken");
-decimal rejCrack = GetFieldValue("ST_RejCracks") + GetFieldValue("HT_RejCracks");
-decimal rejDef = GetFieldValue("HT_RejDeformed") + GetFieldValue("ST_RejDeformed");
-decimal rejOther = GetFieldValue("ST_RejOther") + GetFieldValue("HT_RejOther");
-decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+decimal RejBroken_1 = ST_RejBroken_1 + HT_RejBroken_1;
+decimal RejCrack_1 = ST_RejCracks_1 + HT_RejCracks_1;
+decimal RejDef_1 = HT_RejDeformed_1 + ST_RejDeformed_1;
+decimal RejOther_1 = ST_RejOther_1 + HT_RejOther_1;
+decimal Total_RejEggs_1 = RejBroken_1 + RejCrack_1 + RejDef_1 + RejOther_1;
+decimal BalOfHatEggs_1 = FarmInTake_1 - Total_RejEggs_1;
 
-// Calculate BalOfHatEggs for Part 1
-decimal farmInTake = GetFieldValue("FarmInTake");
-decimal balOfHatEggs = farmInTake - totalRejEggs;
+decimal CumHatEgg_HH_1 = 0;
+if (POL != 0)
+{
+    CumHatEgg_HH_1 = BalOfHatEggs_1 / POL;
+}
 
-// Calculate TotalEggSold for Part 1
-decimal soldHatEggs = GetFieldValue("ER_SoldAsHatEggs") + GetFieldValue("ES_SoldAsHatEggs");
-decimal soldTableEggs = GetFieldValue("ER_SoldAsTableEggs") + GetFieldValue("ES_SoldAsTableEggs");
-decimal eggsToOffal = GetFieldValue("ER_SendToOffal") + GetFieldValue("ES_SendToOffal");
-decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+// ==================== EQUATION 9: @AB_CumHatchEggsHH ====================
+decimal AB_CumHatchEggsHH = CumFinalHatEgg_HH + CumHatEgg_HH_1;
 
-// Calculate SettedEggs for Part 1
-decimal settedEggs = GetFieldValue("SettedEggs");
+// ==================== EQUATION 10: @SoldHatEggs ====================
+decimal ER_SoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs") ?? 0);
+decimal ES_SoldAsHatEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs") ?? 0);
+decimal SoldHatEggs = ER_SoldAsHatEggs + ES_SoldAsHatEggs;
 
-// Calculate StockHatEggBal for Part 1
-decimal stockHatEggBal = balOfHatEggs - (settedEggs + totalEggSold);
+// ==================== EQUATION 11: @SoldTableEggs ====================
+decimal ER_SoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs") ?? 0);
+decimal ES_SoldAsTableEggs = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs") ?? 0);
+decimal SoldTableEggs = ER_SoldAsTableEggs + ES_SoldAsTableEggs;
 
-// Calculate CumChicks for Part 1
-decimal selChicks = GetFieldValue("SelChicks");
-decimal cullsChicks = GetFieldValue("CullsChicks");
-decimal deadChicks = GetFieldValue("DeadChicks");
+// ==================== EQUATION 12: @EggsToOffal ====================
+decimal ER_SendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal") ?? 0);
+decimal ES_SendToOffal = Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal") ?? 0);
+decimal EggsToOffal = ER_SendToOffal + ES_SendToOffal;
+
+// ==================== EQUATION 13: @TotalEggSold ====================
+decimal TotalEggSold = SoldHatEggs + SoldTableEggs + EggsToOffal;
+
+// ==================== EQUATION 14: @StockHatEggBal ====================
+decimal SettedEggs = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs") ?? 0);
+decimal StockHatEggBal = BalOfHatEggs - (SettedEggs + TotalEggSold);
+
+// ==================== EQUATION 15: @ActHatchBalanceEggs ====================
+decimal SetEggBalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("SetEggBalHatEgg") ?? 0);
+decimal SelChickBalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("SelChickBalHatEgg") ?? 0);
+decimal CullsBalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("CullsBalHatEgg") ?? 0);
+decimal DeadsBalHatEgg = Convert.ToDecimal(GetCurrentColumnValue("DeadsBalHatEgg") ?? 0);
+decimal ActHatchBalanceEggs = 0;
+if (SetEggBalHatEgg != 0)
+{
+    ActHatchBalanceEggs = ((SelChickBalHatEgg + CullsBalHatEgg + DeadsBalHatEgg) / SetEggBalHatEgg) * 100.0m;
+}
+
+// ==================== EQUATION 16: @ESTChicks_PerStock_HE ====================
+decimal ESTChicks_PerStock_HE = (StockHatEggBal * ActHatchBalanceEggs) / 100.0m;
+
+// ==================== EQUATION 17: @CumHatchability ====================
+decimal SelChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks") ?? 0);
+decimal CullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks") ?? 0);
+decimal DeadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks") ?? 0);
+decimal CumHatchability = 0;
+if (SettedEggs != 0)
+{
+    CumHatchability = ((SelChicks + CullsChicks + DeadChicks) / SettedEggs) * 100.0m;
+}
+
+// ==================== EQUATION 18: @EstChicks_PerEgg ====================
+decimal EstChicks_PerEgg = 0;
+if (TotalEggSold != 0)
+{
+    EstChicks_PerEgg = TotalEggSold * CumHatchability / 100.0m;
+}
+
+// ==================== EQUATION 19: @CumChicks ====================
+decimal CumChicks = SelChicks + CullsChicks + DeadChicks;
+
+// ==================== EQUATION 20: @CumChicks_ActEst_HH ====================
+decimal CumChicks_ActEst_HH = EstChicks_PerEgg + ESTChicks_PerStock_HE + CumChicks;
+
+// ==================== EQUATION 21: @CumChicks_ActEst_HH_1 ====================
+decimal ER_SoldAsHatEggs_1 = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsHatEggs_1") ?? 0);
+decimal ES_SoldAsHatEggs_1 = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsHatEggs_1") ?? 0);
+decimal ER_SoldAsTableEggs_1 = Convert.ToDecimal(GetCurrentColumnValue("ER_SoldAsTableEggs_1") ?? 0);
+decimal ES_SoldAsTableEggs_1 = Convert.ToDecimal(GetCurrentColumnValue("ES_SoldAsTableEggs_1") ?? 0);
+decimal ER_SendToOffal_1 = Convert.ToDecimal(GetCurrentColumnValue("ER_SendToOffal_1") ?? 0);
+decimal ES_SendToOffal_1 = Convert.ToDecimal(GetCurrentColumnValue("ES_SendToOffal_1") ?? 0);
+
+decimal SoldHatEggs_1 = ER_SoldAsHatEggs_1 + ES_SoldAsHatEggs_1;
+decimal SoldTableEggs_1 = ER_SoldAsTableEggs_1 + ES_SoldAsTableEggs_1;
+decimal EggsToOffal_1 = ER_SendToOffal_1 + ES_SendToOffal_1;
+decimal TotalEggSold_1 = SoldHatEggs_1 + SoldTableEggs_1 + EggsToOffal_1;
+
+decimal SettedEggs_1 = Convert.ToDecimal(GetCurrentColumnValue("SettedEggs_1") ?? 0);
+decimal StockHatEggBal_1 = BalOfHatEggs_1 - (SettedEggs_1 + TotalEggSold_1);
+
+decimal SetEggBalHatEgg_1 = Convert.ToDecimal(GetCurrentColumnValue("SetEggBalHatEgg_1") ?? 0);
+decimal SelChickBalHatEgg_1 = Convert.ToDecimal(GetCurrentColumnValue("SelChickBalHatEgg_1") ?? 0);
+decimal CullsBalHatEgg_1 = Convert.ToDecimal(GetCurrentColumnValue("CullsBalHatEgg_1") ?? 0);
+decimal DeadsBalHatEgg_1 = Convert.ToDecimal(GetCurrentColumnValue("DeadsBalHatEgg_1") ?? 0);
+decimal ActHatchBalanceEggs_1 = 0;
+if (SetEggBalHatEgg_1 != 0)
+{
+    ActHatchBalanceEggs_1 = ((SelChickBalHatEgg_1 + CullsBalHatEgg_1 + DeadsBalHatEgg_1) / SetEggBalHatEgg_1) * 100.0m;
+}
+
+decimal SelChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SelChicks_1") ?? 0);
+decimal CullsChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1") ?? 0);
+decimal DeadChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1") ?? 0);
+decimal CumHatchability_1 = 0;
+if (SettedEggs_1 != 0)
+{
+    CumHatchability_1 = ((SelChicks_1 + CullsChicks_1 + DeadChicks_1) * 100) / SettedEggs_1;
+}
+else
+{
+    CumHatchability_1 = ActHatchBalanceEggs;
+}
+
+decimal SettedEggs_2 = 0;
+if (SettedEggs_1 - StockHatEggBal &lt; 0)
+{
+    SettedEggs_2 = 0;
+}
+else
+{
+    SettedEggs_2 = SettedEggs_1 - StockHatEggBal;
+}
+
+decimal GradeA_1 = 0;
+if (SettedEggs_1 != 0)
+{
+    GradeA_1 = SelChicks_1 * (SettedEggs_2 / SettedEggs_1);
+}
+
+decimal RejChicks_1 = 0;
+if (SettedEggs_1 != 0)
+{
+    RejChicks_1 = (CullsChicks_1 + DeadChicks_1) * (SettedEggs_2 / SettedEggs_1);
+}
+
+decimal CumChicks_1 = GradeA_1 + RejChicks_1;
+
+decimal EstChicks_PerEgg_1 = 0;
+if (BalOfHatEggs_1 - SettedEggs_1 &gt; 0)
+{
+    EstChicks_PerEgg_1 = (BalOfHatEggs_1 - SettedEggs_1) * CumHatchability_1 / 100.0m;
+}
+
+decimal CumChicks_Act_Est_1 = EstChicks_PerEgg_1 + CumChicks_1;
+
+decimal CumChicks_ActEst_HH_1 = 0;
+if (POL != 0)
+{
+    CumChicks_ActEst_HH_1 = CumChicks_Act_Est_1 / POL;
+}
+
+// ==================== EQUATION 22: @AB_CumTotalChicksHH ====================
+decimal AB_CumTotalChicksHH = CumChicks_ActEst_HH + CumChicks_ActEst_HH_1;
+
+// ==================== FINAL RESULT ====================
+if (AB_CumHatchEggsHH != 0)
+{
+    decimal result = (AB_CumTotalChicksHH / AB_CumHatchEggsHH) * 100.0m;
+    cell.Text = result.ToString("N2") + "%";
+}
+else
+{
+    cell.Text = "0.00%";
+}
+}
+
+private void xrTableCell263_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks") ?? 0);
+decimal cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks") ?? 0);
+decimal deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks") ?? 0);
+decimal selChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SelChicks_1") ?? 0);
+decimal cullsChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1") ?? 0);
+decimal deadChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1") ?? 0);
+
+// Calculate {@CumChicks}
 decimal cumChicks = selChicks + cullsChicks + deadChicks;
 
-// Calculate CumHatchability for Part 1
-decimal cumHatchability = 0;
-if (settedEggs != 0)
+// Calculate total chicks from both sets
+decimal totalChicks = cumChicks + selChicks_1 + cullsChicks_1 + deadChicks_1;
+
+if (pol != 0)
 {
-    cumHatchability = cumChicks / settedEggs * 100;
+    decimal result = totalChicks / pol;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
 }
 
-// Calculate EstChicks_PerEgg for Part 1
-decimal estChicks_PerEgg = totalEggSold * cumHatchability / 100;
+private void xrTableCell265_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
 
-// Calculate ActHatchBalanceEggs for Part 1
+// Get values from the data source
+decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal cullsChicks = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks") ?? 0);
+decimal deadChicks = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks") ?? 0);
+decimal cullsChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("CullsChicks_1") ?? 0);
+decimal deadChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("DeadChicks_1") ?? 0);
+
+// Calculate {@RejChicks}
+decimal rejChicks = cullsChicks + deadChicks;
+
+// Calculate total rejected chicks from both sets
+decimal totalRejChicks = rejChicks + cullsChicks_1 + deadChicks_1;
+
+if (pol != 0)
+{
+    decimal result = totalRejChicks / pol;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell267_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal selChicks = Convert.ToDecimal(GetCurrentColumnValue("SelChicks") ?? 0);
+decimal selChicks_1 = Convert.ToDecimal(GetCurrentColumnValue("SelChicks_1") ?? 0);
+
+// Calculate total selected chicks from both sets
+decimal totalSelChicks = selChicks + selChicks_1;
+
+if (pol != 0)
+{
+    decimal result = totalSelChicks / pol;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+}
+
+private void xrTableCell264_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// ==================== Helper for safe conversion ====================
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// ==================== Get All Values ====================
+// Set 1 - Basic fields
+decimal stRejBroken = SafeConvert(GetCurrentColumnValue("ST_RejBroken"));
+decimal htRejBroken = SafeConvert(GetCurrentColumnValue("HT_RejBroken"));
+decimal stRejCracks = SafeConvert(GetCurrentColumnValue("ST_RejCracks"));
+decimal htRejCracks = SafeConvert(GetCurrentColumnValue("HT_RejCracks"));
+decimal htRejDeformed = SafeConvert(GetCurrentColumnValue("HT_RejDeformed"));
+decimal stRejDeformed = SafeConvert(GetCurrentColumnValue("ST_RejDeformed"));
+decimal stRejOther = SafeConvert(GetCurrentColumnValue("ST_RejOther"));
+decimal htRejOther = SafeConvert(GetCurrentColumnValue("HT_RejOther"));
+decimal erSoldAsHatEggs = SafeConvert(GetCurrentColumnValue("ER_SoldAsHatEggs"));
+decimal esSoldAsHatEggs = SafeConvert(GetCurrentColumnValue("ES_SoldAsHatEggs"));
+decimal erSoldAsTableEggs = SafeConvert(GetCurrentColumnValue("ER_SoldAsTableEggs"));
+decimal esSoldAsTableEggs = SafeConvert(GetCurrentColumnValue("ES_SoldAsTableEggs"));
+decimal erSendToOffal = SafeConvert(GetCurrentColumnValue("ER_SendToOffal"));
+decimal esSendToOffal = SafeConvert(GetCurrentColumnValue("ES_SendToOffal"));
+decimal farmInTake = SafeConvert(GetCurrentColumnValue("FarmInTake"));
+decimal settledEggs = SafeConvert(GetCurrentColumnValue("SettedEggs"));
+decimal selChicks = SafeConvert(GetCurrentColumnValue("SelChicks"));
+decimal cullsChicks = SafeConvert(GetCurrentColumnValue("CullsChicks"));
+decimal deadChicks = SafeConvert(GetCurrentColumnValue("DeadChicks"));
+decimal setEggBalHatEgg = SafeConvert(GetCurrentColumnValue("SetEggBalHatEgg"));
+decimal selChickBalHatEgg = SafeConvert(GetCurrentColumnValue("SelChickBalHatEgg"));
+decimal cullsBalHatEgg = SafeConvert(GetCurrentColumnValue("CullsBalHatEgg"));
+decimal deadsBalHatEgg = SafeConvert(GetCurrentColumnValue("DeadsBalHatEgg"));
+decimal pol = SafeConvert(GetCurrentColumnValue("POL"));
+
+// Set 2 - Fields with _1 suffix
+decimal farmInTake_1 = SafeConvert(GetCurrentColumnValue("FarmInTake_1"));
+decimal stRejBroken_1 = SafeConvert(GetCurrentColumnValue("ST_RejBroken_1"));
+decimal htRejBroken_1 = SafeConvert(GetCurrentColumnValue("HT_RejBroken_1"));
+decimal stRejCracks_1 = SafeConvert(GetCurrentColumnValue("ST_RejCracks_1"));
+decimal htRejCracks_1 = SafeConvert(GetCurrentColumnValue("HT_RejCracks_1"));
+decimal htRejDeformed_1 = SafeConvert(GetCurrentColumnValue("HT_RejDeformed_1"));
+decimal stRejDeformed_1 = SafeConvert(GetCurrentColumnValue("ST_RejDeformed_1"));
+decimal stRejOther_1 = SafeConvert(GetCurrentColumnValue("ST_RejOther_1"));
+decimal htRejOther_1 = SafeConvert(GetCurrentColumnValue("HT_RejOther_1"));
+decimal erSoldAsHatEggs_1 = SafeConvert(GetCurrentColumnValue("ER_SoldAsHatEggs_1"));
+decimal esSoldAsHatEggs_1 = SafeConvert(GetCurrentColumnValue("ES_SoldAsHatEggs_1"));
+decimal erSoldAsTableEggs_1 = SafeConvert(GetCurrentColumnValue("ER_SoldAsTableEggs_1"));
+decimal esSoldAsTableEggs_1 = SafeConvert(GetCurrentColumnValue("ES_SoldAsTableEggs_1"));
+decimal erSendToOffal_1 = SafeConvert(GetCurrentColumnValue("ER_SendToOffal_1"));
+decimal esSendToOffal_1 = SafeConvert(GetCurrentColumnValue("ES_SendToOffal_1"));
+decimal settledEggs_1 = SafeConvert(GetCurrentColumnValue("SettedEggs_1"));
+decimal selChicks_1 = SafeConvert(GetCurrentColumnValue("SelChicks_1"));
+decimal cullsChicks_1 = SafeConvert(GetCurrentColumnValue("CullsChicks_1"));
+decimal deadChicks_1 = SafeConvert(GetCurrentColumnValue("DeadChicks_1"));
+decimal setEggBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("SetEggBalHatEgg_1"));
+decimal selChickBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("SelChickBalHatEgg_1"));
+decimal cullsBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("CullsBalHatEgg_1"));
+decimal deadsBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("DeadsBalHatEgg_1"));
+
+// ==================== Set 1 Calculations ====================
+
+// @RejBroken, @RejCrack, @RejDef, @RejOther
+decimal rejBroken = stRejBroken + htRejBroken;
+decimal rejCrack = stRejCracks + htRejCracks;
+decimal rejDef = htRejDeformed + stRejDeformed;
+decimal rejOther = stRejOther + htRejOther;
+
+// @Total_RejEggs
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// @BalOfHatEggs
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// @SoldHatEggs, @SoldTableEggs, @EggsToOffal
+decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+decimal eggsToOffal = erSendToOffal + esSendToOffal;
+
+// @TotalEggSold
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// @StockHatEggBal
+decimal stockHatEggBal = balOfHatEggs - (settledEggs + totalEggSold);
+
+// @ActHatchBalanceEggs
 decimal actHatchBalanceEggs = 0;
-decimal setEggBalHatEgg = GetFieldValue("SetEggBalHatEgg");
 if (setEggBalHatEgg != 0)
 {
-    decimal selChickBal = GetFieldValue("SelChickBalHatEgg");
-    decimal cullsBal = GetFieldValue("CullsBalHatEgg");
-    decimal deadsBal = GetFieldValue("DeadsBalHatEgg");
-    decimal totalBal = selChickBal + cullsBal + deadsBal;
-    actHatchBalanceEggs = totalBal / setEggBalHatEgg * 100;
+    actHatchBalanceEggs = ((selChickBalHatEgg + cullsBalHatEgg + deadsBalHatEgg) / setEggBalHatEgg) * 100.0m;
 }
 
-// Calculate ESTChicks_PerStock_HE for Part 1
-decimal estChicks_PerStock_HE = stockHatEggBal * actHatchBalanceEggs / 100;
+// @ESTChicks_PerStock_HE
+decimal estChicksPerStock_HE = (stockHatEggBal * actHatchBalanceEggs) / 100.0m;
 
-// Calculate CumChicks_Act_Est for Part 1
-decimal cumChicks_Act_Est = estChicks_PerEgg + estChicks_PerStock_HE + cumChicks;
-
-// --- STEP 2: Calculate Part 2 components ---
-
-// Calculate rejection components for Part 2
-decimal rejBroken_1 = GetFieldValue("ST_RejBroken_1") + GetFieldValue("HT_RejBroken_1");
-decimal rejCrack_1 = GetFieldValue("ST_RejCracks_1") + GetFieldValue("HT_RejCracks_1");
-decimal rejDef_1 = GetFieldValue("HT_RejDeformed_1") + GetFieldValue("ST_RejDeformed_1");
-decimal rejOther_1 = GetFieldValue("ST_RejOther_1") + GetFieldValue("HT_RejOther_1");
-decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
-
-// Calculate BalOfHatEggs_1 for Part 2
-decimal farmInTake_1 = GetFieldValue("FarmInTake_1");
-decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
-
-// --- STEP 3: Get POL and calculate ratios ---
-decimal pol = GetFieldValue("POL");
-
-// Calculate CumFinalHatEgg_HH (Part 1 ratio)
-decimal cumFinalHatEgg_HH = 0;
-if (pol != 0)
+// @CumHatchability
+decimal cumHatchability = 0;
+if (settledEggs != 0)
 {
-    cumFinalHatEgg_HH = balOfHatEggs / pol;
+    cumHatchability = ((selChicks + cullsChicks + deadChicks) / settledEggs) * 100.0m;
 }
 
-// Calculate CumHatEgg_HH_1 (Part 2 ratio)
-decimal cumHatEgg_HH_1 = 0;
-if (pol != 0)
+// @EstChicks_PerEgg
+decimal estChicksPerEgg = 0;
+if (totalEggSold != 0)
 {
-    cumHatEgg_HH_1 = balOfHatEggs_1 / pol;
+    estChicksPerEgg = totalEggSold * cumHatchability / 100.0m;
 }
 
-// Calculate AB_CumHatchEggsHH
-decimal ab_CumHatchEggsHH = cumFinalHatEgg_HH + cumHatEgg_HH_1;
+// @CumChicks
+decimal cumChicks = selChicks + cullsChicks + deadChicks;
 
-// Calculate CumChicks_ActEst_HH (Part 1 chicks ratio)
+// @CumChicks_Act_Est
+decimal cumChicks_Act_Est = estChicksPerEgg + estChicksPerStock_HE + cumChicks;
+
+// @CumChicks_ActEst_HH
 decimal cumChicks_ActEst_HH = 0;
 if (pol != 0)
 {
     cumChicks_ActEst_HH = cumChicks_Act_Est / pol;
 }
 
-// --- Note: Need CumChicks_ActEst_HH_1 calculation for Part 2 ---
-// The formula doesn't provide definition for {@CumChicks_ActEst_HH_1}
-// Assuming it's similar to Part 1 but with "_1" suffix fields
-// For now, I'll set it to 0 or you need to provide the formula
+// ==================== Set 2 Calculations ====================
 
-decimal cumChicks_ActEst_HH_1 = 0; // Need proper formula for this
+// @RejBroken_1, @RejCrack_1, @RejDef_1, @RejOther_1
+decimal rejBroken_1 = stRejBroken_1 + htRejBroken_1;
+decimal rejCrack_1 = stRejCracks_1 + htRejCracks_1;
+decimal rejDef_1 = htRejDeformed_1 + stRejDeformed_1;
+decimal rejOther_1 = stRejOther_1 + htRejOther_1;
 
-// Calculate AB_CumTotalChicksHH
-decimal ab_CumTotalChicksHH = cumChicks_ActEst_HH + cumChicks_ActEst_HH_1;
+// @Total_RejEggs_1
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
 
-// --- STEP 4: Calculate final hatchability percentage ---
-decimal result = 0;
+// @BalOfHatEggs_1
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
 
-if (ab_CumHatchEggsHH != 0)
+// @SoldHatEggs_1, @SoldTableEggs_1, @EggsToOffal_1
+decimal soldHatEggs_1 = erSoldAsHatEggs_1 + esSoldAsHatEggs_1;
+decimal soldTableEggs_1 = erSoldAsTableEggs_1 + esSoldAsTableEggs_1;
+decimal eggsToOffal_1 = erSendToOffal_1 + esSendToOffal_1;
+
+// @TotalEggSold_1
+decimal totalEggSold_1 = soldHatEggs_1 + soldTableEggs_1 + eggsToOffal_1;
+
+// @StockHatEggBal_1
+decimal stockHatEggBal_1 = balOfHatEggs_1 - (settledEggs_1 + totalEggSold_1);
+
+// @ActHatchBalanceEggs_1
+decimal actHatchBalanceEggs_1 = 0;
+if (setEggBalHatEgg_1 != 0)
 {
-    result = ab_CumTotalChicksHH / ab_CumHatchEggsHH * 100;
+    actHatchBalanceEggs_1 = ((selChickBalHatEgg_1 + cullsBalHatEgg_1 + deadsBalHatEgg_1) / setEggBalHatEgg_1) * 100.0m;
 }
 
-// --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
+// @CumHatchability_1
+decimal cumHatchability_1 = 0;
+if (settledEggs_1 != 0)
+{
+    cumHatchability_1 = ((selChicks_1 + cullsChicks_1 + deadChicks_1) * 100) / settledEggs_1;
+}
+else
+{
+    cumHatchability_1 = actHatchBalanceEggs;
+}
+
+// @SettedEggs_1
+decimal settedEggs_1 = 0;
+if (settledEggs_1 - stockHatEggBal &lt; 0)
+{
+    settedEggs_1 = 0;
+}
+else
+{
+    settedEggs_1 = settledEggs_1 - stockHatEggBal;
+}
+
+// @GradeA_1
+decimal gradeA_1 = 0;
+if (settledEggs_1 != 0)
+{
+    gradeA_1 = selChicks_1 * (settedEggs_1 / settledEggs_1);
+}
+
+// @RejChicks_1
+decimal rejChicks_1 = 0;
+if (settledEggs_1 != 0)
+{
+    rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settledEggs_1);
+}
+
+// @CumChicks_1
+decimal cumChicks_1 = gradeA_1 + rejChicks_1;
+
+// @EstChicks_PerEgg_1
+decimal estChicks_PerEgg_1 = 0;
+if (balOfHatEggs_1 - settledEggs_1 &gt; 0)
+{
+    estChicks_PerEgg_1 = (balOfHatEggs_1 - settledEggs_1) * cumHatchability_1 / 100.0m;
+}
+
+// @CumChicks_Act_Est_1
+decimal cumChicks_Act_Est_1 = estChicks_PerEgg_1 + cumChicks_1;
+
+// @CumChicks_ActEst_HH_1
+decimal cumChicks_ActEst_HH_1 = 0;
+if (pol != 0)
+{
+    cumChicks_ActEst_HH_1 = cumChicks_Act_Est_1 / pol;
+}
+
+// ==================== Final Result ====================
+decimal totalCumChicks = cumChicks_ActEst_HH + cumChicks_ActEst_HH_1;
+cell.Text = totalCumChicks.ToString("N2");
+}
+
+private void xrTableCell266_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// ==================== Helper for safe conversion ====================
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// ==================== Get All Values ====================
+// Set 1 - Basic fields
+decimal stRejBroken = SafeConvert(GetCurrentColumnValue("ST_RejBroken"));
+decimal htRejBroken = SafeConvert(GetCurrentColumnValue("HT_RejBroken"));
+decimal stRejCracks = SafeConvert(GetCurrentColumnValue("ST_RejCracks"));
+decimal htRejCracks = SafeConvert(GetCurrentColumnValue("HT_RejCracks"));
+decimal htRejDeformed = SafeConvert(GetCurrentColumnValue("HT_RejDeformed"));
+decimal stRejDeformed = SafeConvert(GetCurrentColumnValue("ST_RejDeformed"));
+decimal stRejOther = SafeConvert(GetCurrentColumnValue("ST_RejOther"));
+decimal htRejOther = SafeConvert(GetCurrentColumnValue("HT_RejOther"));
+decimal erSoldAsHatEggs = SafeConvert(GetCurrentColumnValue("ER_SoldAsHatEggs"));
+decimal esSoldAsHatEggs = SafeConvert(GetCurrentColumnValue("ES_SoldAsHatEggs"));
+decimal erSoldAsTableEggs = SafeConvert(GetCurrentColumnValue("ER_SoldAsTableEggs"));
+decimal esSoldAsTableEggs = SafeConvert(GetCurrentColumnValue("ES_SoldAsTableEggs"));
+decimal erSendToOffal = SafeConvert(GetCurrentColumnValue("ER_SendToOffal"));
+decimal esSendToOffal = SafeConvert(GetCurrentColumnValue("ES_SendToOffal"));
+decimal farmInTake = SafeConvert(GetCurrentColumnValue("FarmInTake"));
+decimal settledEggs = SafeConvert(GetCurrentColumnValue("SettedEggs"));
+decimal cullsChicks = SafeConvert(GetCurrentColumnValue("CullsChicks"));
+decimal deadChicks = SafeConvert(GetCurrentColumnValue("DeadChicks"));
+decimal pol = SafeConvert(GetCurrentColumnValue("POL"));
+
+// Set 2 - Fields with _1 suffix
+decimal farmInTake_1 = SafeConvert(GetCurrentColumnValue("FarmInTake_1"));
+decimal stRejBroken_1 = SafeConvert(GetCurrentColumnValue("ST_RejBroken_1"));
+decimal htRejBroken_1 = SafeConvert(GetCurrentColumnValue("HT_RejBroken_1"));
+decimal stRejCracks_1 = SafeConvert(GetCurrentColumnValue("ST_RejCracks_1"));
+decimal htRejCracks_1 = SafeConvert(GetCurrentColumnValue("HT_RejCracks_1"));
+decimal htRejDeformed_1 = SafeConvert(GetCurrentColumnValue("HT_RejDeformed_1"));
+decimal stRejDeformed_1 = SafeConvert(GetCurrentColumnValue("ST_RejDeformed_1"));
+decimal stRejOther_1 = SafeConvert(GetCurrentColumnValue("ST_RejOther_1"));
+decimal htRejOther_1 = SafeConvert(GetCurrentColumnValue("HT_RejOther_1"));
+decimal erSoldAsHatEggs_1 = SafeConvert(GetCurrentColumnValue("ER_SoldAsHatEggs_1"));
+decimal esSoldAsHatEggs_1 = SafeConvert(GetCurrentColumnValue("ES_SoldAsHatEggs_1"));
+decimal erSoldAsTableEggs_1 = SafeConvert(GetCurrentColumnValue("ER_SoldAsTableEggs_1"));
+decimal esSoldAsTableEggs_1 = SafeConvert(GetCurrentColumnValue("ES_SoldAsTableEggs_1"));
+decimal erSendToOffal_1 = SafeConvert(GetCurrentColumnValue("ER_SendToOffal_1"));
+decimal esSendToOffal_1 = SafeConvert(GetCurrentColumnValue("ES_SendToOffal_1"));
+decimal settledEggs_1 = SafeConvert(GetCurrentColumnValue("SettedEggs_1"));
+decimal cullsChicks_1 = SafeConvert(GetCurrentColumnValue("CullsChicks_1"));
+decimal deadChicks_1 = SafeConvert(GetCurrentColumnValue("DeadChicks_1"));
+
+// ==================== Set 1 Calculations ====================
+
+// @RejBroken, @RejCrack, @RejDef, @RejOther
+decimal rejBroken = stRejBroken + htRejBroken;
+decimal rejCrack = stRejCracks + htRejCracks;
+decimal rejDef = htRejDeformed + stRejDeformed;
+decimal rejOther = stRejOther + htRejOther;
+
+// @Total_RejEggs
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// @BalOfHatEggs
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// @SoldHatEggs, @SoldTableEggs, @EggsToOffal
+decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+decimal eggsToOffal = erSendToOffal + esSendToOffal;
+
+// @TotalEggSold
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// @StockHatEggBal
+decimal stockHatEggBal = balOfHatEggs - (settledEggs + totalEggSold);
+
+// @RejChicks
+decimal rejChicks = cullsChicks + deadChicks;
+
+// @CumChicksRej_HH
+decimal cumChicksRej_HH = 0;
+if (pol != 0)
+{
+    cumChicksRej_HH = rejChicks / pol;
+}
+
+// ==================== Set 2 Calculations ====================
+
+// @RejBroken_1, @RejCrack_1, @RejDef_1, @RejOther_1
+decimal rejBroken_1 = stRejBroken_1 + htRejBroken_1;
+decimal rejCrack_1 = stRejCracks_1 + htRejCracks_1;
+decimal rejDef_1 = htRejDeformed_1 + stRejDeformed_1;
+decimal rejOther_1 = stRejOther_1 + htRejOther_1;
+
+// @Total_RejEggs_1
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// @BalOfHatEggs_1
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// @SoldHatEggs_1, @SoldTableEggs_1, @EggsToOffal_1
+decimal soldHatEggs_1 = erSoldAsHatEggs_1 + esSoldAsHatEggs_1;
+decimal soldTableEggs_1 = erSoldAsTableEggs_1 + esSoldAsTableEggs_1;
+decimal eggsToOffal_1 = erSendToOffal_1 + esSendToOffal_1;
+
+// @TotalEggSold_1
+decimal totalEggSold_1 = soldHatEggs_1 + soldTableEggs_1 + eggsToOffal_1;
+
+// @StockHatEggBal_1
+decimal stockHatEggBal_1 = balOfHatEggs_1 - (settledEggs_1 + totalEggSold_1);
+
+// @SettedEggs_1
+decimal settedEggs_1 = 0;
+if (settledEggs_1 - stockHatEggBal &lt; 0)
+{
+    settedEggs_1 = 0;
+}
+else
+{
+    settedEggs_1 = settledEggs_1 - stockHatEggBal;
+}
+
+// @RejChicks_1
+decimal rejChicks_1 = 0;
+if (settledEggs_1 != 0)
+{
+    rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settledEggs_1);
+}
+
+// @CumChicksRej_HH_1
+decimal cumChicksRej_HH_1 = 0;
+if (pol != 0)
+{
+    cumChicksRej_HH_1 = rejChicks_1 / pol;
+}
+
+// ==================== Final Result ====================
+decimal totalCumChicksRej = cumChicksRej_HH + cumChicksRej_HH_1;
+cell.Text = totalCumChicksRej.ToString("N2");
+}
+
+private void xrTableCell268_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// ==================== Helper for safe conversion ====================
+decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
+
+// ==================== Get All Values ====================
+// Set 1 - Basic fields
+decimal stRejBroken = SafeConvert(GetCurrentColumnValue("ST_RejBroken"));
+decimal htRejBroken = SafeConvert(GetCurrentColumnValue("HT_RejBroken"));
+decimal stRejCracks = SafeConvert(GetCurrentColumnValue("ST_RejCracks"));
+decimal htRejCracks = SafeConvert(GetCurrentColumnValue("HT_RejCracks"));
+decimal htRejDeformed = SafeConvert(GetCurrentColumnValue("HT_RejDeformed"));
+decimal stRejDeformed = SafeConvert(GetCurrentColumnValue("ST_RejDeformed"));
+decimal stRejOther = SafeConvert(GetCurrentColumnValue("ST_RejOther"));
+decimal htRejOther = SafeConvert(GetCurrentColumnValue("HT_RejOther"));
+decimal erSoldAsHatEggs = SafeConvert(GetCurrentColumnValue("ER_SoldAsHatEggs"));
+decimal esSoldAsHatEggs = SafeConvert(GetCurrentColumnValue("ES_SoldAsHatEggs"));
+decimal erSoldAsTableEggs = SafeConvert(GetCurrentColumnValue("ER_SoldAsTableEggs"));
+decimal esSoldAsTableEggs = SafeConvert(GetCurrentColumnValue("ES_SoldAsTableEggs"));
+decimal erSendToOffal = SafeConvert(GetCurrentColumnValue("ER_SendToOffal"));
+decimal esSendToOffal = SafeConvert(GetCurrentColumnValue("ES_SendToOffal"));
+decimal farmInTake = SafeConvert(GetCurrentColumnValue("FarmInTake"));
+decimal settledEggs = SafeConvert(GetCurrentColumnValue("SettedEggs"));
+decimal selChicks = SafeConvert(GetCurrentColumnValue("SelChicks"));
+decimal cullsChicks = SafeConvert(GetCurrentColumnValue("CullsChicks"));
+decimal deadChicks = SafeConvert(GetCurrentColumnValue("DeadChicks"));
+decimal setEggBalHatEgg = SafeConvert(GetCurrentColumnValue("SetEggBalHatEgg"));
+decimal selChickBalHatEgg = SafeConvert(GetCurrentColumnValue("SelChickBalHatEgg"));
+decimal cullsBalHatEgg = SafeConvert(GetCurrentColumnValue("CullsBalHatEgg"));
+decimal deadsBalHatEgg = SafeConvert(GetCurrentColumnValue("DeadsBalHatEgg"));
+decimal pol = SafeConvert(GetCurrentColumnValue("POL"));
+
+// Set 2 - Fields with _1 suffix
+decimal farmInTake_1 = SafeConvert(GetCurrentColumnValue("FarmInTake_1"));
+decimal stRejBroken_1 = SafeConvert(GetCurrentColumnValue("ST_RejBroken_1"));
+decimal htRejBroken_1 = SafeConvert(GetCurrentColumnValue("HT_RejBroken_1"));
+decimal stRejCracks_1 = SafeConvert(GetCurrentColumnValue("ST_RejCracks_1"));
+decimal htRejCracks_1 = SafeConvert(GetCurrentColumnValue("HT_RejCracks_1"));
+decimal htRejDeformed_1 = SafeConvert(GetCurrentColumnValue("HT_RejDeformed_1"));
+decimal stRejDeformed_1 = SafeConvert(GetCurrentColumnValue("ST_RejDeformed_1"));
+decimal stRejOther_1 = SafeConvert(GetCurrentColumnValue("ST_RejOther_1"));
+decimal htRejOther_1 = SafeConvert(GetCurrentColumnValue("HT_RejOther_1"));
+decimal erSoldAsHatEggs_1 = SafeConvert(GetCurrentColumnValue("ER_SoldAsHatEggs_1"));
+decimal esSoldAsHatEggs_1 = SafeConvert(GetCurrentColumnValue("ES_SoldAsHatEggs_1"));
+decimal erSoldAsTableEggs_1 = SafeConvert(GetCurrentColumnValue("ER_SoldAsTableEggs_1"));
+decimal esSoldAsTableEggs_1 = SafeConvert(GetCurrentColumnValue("ES_SoldAsTableEggs_1"));
+decimal erSendToOffal_1 = SafeConvert(GetCurrentColumnValue("ER_SendToOffal_1"));
+decimal esSendToOffal_1 = SafeConvert(GetCurrentColumnValue("ES_SendToOffal_1"));
+decimal settledEggs_1 = SafeConvert(GetCurrentColumnValue("SettedEggs_1"));
+decimal selChicks_1 = SafeConvert(GetCurrentColumnValue("SelChicks_1"));
+decimal cullsChicks_1 = SafeConvert(GetCurrentColumnValue("CullsChicks_1"));
+decimal deadChicks_1 = SafeConvert(GetCurrentColumnValue("DeadChicks_1"));
+decimal setEggBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("SetEggBalHatEgg_1"));
+decimal selChickBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("SelChickBalHatEgg_1"));
+decimal cullsBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("CullsBalHatEgg_1"));
+decimal deadsBalHatEgg_1 = SafeConvert(GetCurrentColumnValue("DeadsBalHatEgg_1"));
+
+// ==================== Set 1 Calculations for @AB_CumTotalChicksHH ====================
+
+// @RejBroken, @RejCrack, @RejDef, @RejOther
+decimal rejBroken = stRejBroken + htRejBroken;
+decimal rejCrack = stRejCracks + htRejCracks;
+decimal rejDef = htRejDeformed + stRejDeformed;
+decimal rejOther = stRejOther + htRejOther;
+
+// @Total_RejEggs
+decimal totalRejEggs = rejBroken + rejCrack + rejDef + rejOther;
+
+// @BalOfHatEggs
+decimal balOfHatEggs = farmInTake - totalRejEggs;
+
+// @SoldHatEggs, @SoldTableEggs, @EggsToOffal
+decimal soldHatEggs = erSoldAsHatEggs + esSoldAsHatEggs;
+decimal soldTableEggs = erSoldAsTableEggs + esSoldAsTableEggs;
+decimal eggsToOffal = erSendToOffal + esSendToOffal;
+
+// @TotalEggSold
+decimal totalEggSold = soldHatEggs + soldTableEggs + eggsToOffal;
+
+// @StockHatEggBal
+decimal stockHatEggBal = balOfHatEggs - (settledEggs + totalEggSold);
+
+// @ActHatchBalanceEggs
+decimal actHatchBalanceEggs = 0;
+if (setEggBalHatEgg != 0)
+{
+    actHatchBalanceEggs = ((selChickBalHatEgg + cullsBalHatEgg + deadsBalHatEgg) / setEggBalHatEgg) * 100.0m;
+}
+
+// @ESTChicks_PerStock_HE
+decimal estChicksPerStock_HE = (stockHatEggBal * actHatchBalanceEggs) / 100.0m;
+
+// @CumHatchability
+decimal cumHatchability = 0;
+if (settledEggs != 0)
+{
+    cumHatchability = ((selChicks + cullsChicks + deadChicks) / settledEggs) * 100.0m;
+}
+
+// @EstChicks_PerEgg
+decimal estChicksPerEgg = 0;
+if (totalEggSold != 0)
+{
+    estChicksPerEgg = totalEggSold * cumHatchability / 100.0m;
+}
+
+// @CumChicks
+decimal cumChicks = selChicks + cullsChicks + deadChicks;
+
+// @CumChicks_Act_Est
+decimal cumChicks_Act_Est = estChicksPerEgg + estChicksPerStock_HE + cumChicks;
+
+// @CumChicks_ActEst_HH
+decimal cumChicks_ActEst_HH = 0;
+if (pol != 0)
+{
+    cumChicks_ActEst_HH = cumChicks_Act_Est / pol;
+}
+
+// ==================== Set 2 Calculations for @AB_CumTotalChicksHH ====================
+
+// @RejBroken_1, @RejCrack_1, @RejDef_1, @RejOther_1
+decimal rejBroken_1 = stRejBroken_1 + htRejBroken_1;
+decimal rejCrack_1 = stRejCracks_1 + htRejCracks_1;
+decimal rejDef_1 = htRejDeformed_1 + stRejDeformed_1;
+decimal rejOther_1 = stRejOther_1 + htRejOther_1;
+
+// @Total_RejEggs_1
+decimal totalRejEggs_1 = rejBroken_1 + rejCrack_1 + rejDef_1 + rejOther_1;
+
+// @BalOfHatEggs_1
+decimal balOfHatEggs_1 = farmInTake_1 - totalRejEggs_1;
+
+// @SoldHatEggs_1, @SoldTableEggs_1, @EggsToOffal_1
+decimal soldHatEggs_1 = erSoldAsHatEggs_1 + esSoldAsHatEggs_1;
+decimal soldTableEggs_1 = erSoldAsTableEggs_1 + esSoldAsTableEggs_1;
+decimal eggsToOffal_1 = erSendToOffal_1 + esSendToOffal_1;
+
+// @TotalEggSold_1
+decimal totalEggSold_1 = soldHatEggs_1 + soldTableEggs_1 + eggsToOffal_1;
+
+// @StockHatEggBal_1
+decimal stockHatEggBal_1 = balOfHatEggs_1 - (settledEggs_1 + totalEggSold_1);
+
+// @ActHatchBalanceEggs_1
+decimal actHatchBalanceEggs_1 = 0;
+if (setEggBalHatEgg_1 != 0)
+{
+    actHatchBalanceEggs_1 = ((selChickBalHatEgg_1 + cullsBalHatEgg_1 + deadsBalHatEgg_1) / setEggBalHatEgg_1) * 100.0m;
+}
+
+// @CumHatchability_1
+decimal cumHatchability_1 = 0;
+if (settledEggs_1 != 0)
+{
+    cumHatchability_1 = ((selChicks_1 + cullsChicks_1 + deadChicks_1) * 100) / settledEggs_1;
+}
+else
+{
+    cumHatchability_1 = actHatchBalanceEggs;
+}
+
+// @SettedEggs_1
+decimal settedEggs_1 = 0;
+if (settledEggs_1 - stockHatEggBal &lt; 0)
+{
+    settedEggs_1 = 0;
+}
+else
+{
+    settedEggs_1 = settledEggs_1 - stockHatEggBal;
+}
+
+// @GradeA_1
+decimal gradeA_1 = 0;
+if (settledEggs_1 != 0)
+{
+    gradeA_1 = selChicks_1 * (settedEggs_1 / settledEggs_1);
+}
+
+// @RejChicks_1
+decimal rejChicks_1_temp = 0;
+if (settledEggs_1 != 0)
+{
+    rejChicks_1_temp = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settledEggs_1);
+}
+
+// @CumChicks_1
+decimal cumChicks_1 = gradeA_1 + rejChicks_1_temp;
+
+// @EstChicks_PerEgg_1
+decimal estChicks_PerEgg_1 = 0;
+if (balOfHatEggs_1 - settledEggs_1 &gt; 0)
+{
+    estChicks_PerEgg_1 = (balOfHatEggs_1 - settledEggs_1) * cumHatchability_1 / 100.0m;
+}
+
+// @CumChicks_Act_Est_1
+decimal cumChicks_Act_Est_1 = estChicks_PerEgg_1 + cumChicks_1;
+
+// @CumChicks_ActEst_HH_1
+decimal cumChicks_ActEst_HH_1 = 0;
+if (pol != 0)
+{
+    cumChicks_ActEst_HH_1 = cumChicks_Act_Est_1 / pol;
+}
+
+// @AB_CumTotalChicksHH
+decimal abCumTotalChicksHH = cumChicks_ActEst_HH + cumChicks_ActEst_HH_1;
+
+// ==================== Calculations for @AB_RejChicksHH ====================
+
+// @RejChicks
+decimal rejChicks = cullsChicks + deadChicks;
+
+// @CumChicksRej_HH
+decimal cumChicksRej_HH = 0;
+if (pol != 0)
+{
+    cumChicksRej_HH = rejChicks / pol;
+}
+
+// @RejChicks_1
+decimal rejChicks_1 = 0;
+if (settledEggs_1 != 0)
+{
+    rejChicks_1 = (cullsChicks_1 + deadChicks_1) * (settedEggs_1 / settledEggs_1);
+}
+
+// @CumChicksRej_HH_1
+decimal cumChicksRej_HH_1 = 0;
+if (pol != 0)
+{
+    cumChicksRej_HH_1 = rejChicks_1 / pol;
+}
+
+// @AB_RejChicksHH
+decimal abRejChicksHH = cumChicksRej_HH + cumChicksRej_HH_1;
+
+// ==================== Final Result ====================
+decimal result = abCumTotalChicksHH - abRejChicksHH;
 cell.Text = result.ToString("N2");
 }
 </value>

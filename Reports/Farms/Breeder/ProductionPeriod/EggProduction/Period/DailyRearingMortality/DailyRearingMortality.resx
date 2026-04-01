@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrLabel9.ExpressionBindings" xml:space="preserve">
+    <value>IIF(IsNullOrEmpty(?FarmCode), '', ?FarmStr + ' ' + ?FarmCode + '      ') + IIF(IsNullOrEmpty(?Breed), '', ?BreedStr + ' ' + ?Breed + '      ') + IIF(IsNullOrEmpty(?Region), '', ?RegionStr + ' ' + ?Region + '      ') + IIF(IsNullOrEmpty(?Site), '', ?SiteStr + ' ' + ?Site + '      ')
+</value>
+  </data>
   <data name="TotalUnHatch.Expression" xml:space="preserve">
     <value>[SR_HT_RecHall.SoftShellEggs] + [SR_HT_RecHall.MinorCrackedEggs] + [SR_HT_RecHall.MajorCrackedEggs] + [SR_HT_RecHall.ThinShellEggs] + [SR_HT_RecHall.OtherEggs] + [SR_HT_RecHall.WholeEggs] + 
 [SR_HT_RecHall.BrokenEggs] + [SR_HT_RecHall.SmallEggs] + [SR_HT_RecHall.OverWeightEggs] + [SR_HT_RecHall.DirtyEggs] + [SR_HT_RecHall.DeformityEggs] + [SR_HT_RecHall.CrackedEggs] + 
@@ -130,281 +134,632 @@
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVNpdGVXaXNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEZyRmFybUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2l0ZV9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVBsYWNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3RhZERlcGxhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1TdGFkRGVwbGF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1GZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbU1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUZlbWFsQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tTWFsZUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUZlbWFsZU1pc3NleCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlU2VsbGluZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVTZWxsaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ29uZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVDb25kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ2F0Y2hMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtTWFsZUNhdGNoTG9zcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal openSetterEggsReport  = 0;
-decimal openHatcherEggsReport  = 0;
-decimal OpenMachineReport  = 0;
-decimal groupSumOpenEggs  =0;
-decimal CloseMachineReport  = 0;
-decimal groupSumCloseEggs  = 0 ;
-decimal OpenEggsReport  = 0 ;
-decimal openEggStoreEggsReport  = 0;
-decimal recEggsReport  = 0;
-decimal groupSumOpenBalance = 0 ;
-decimal TotalEggsAndChicksReport  = 0 ;
-decimal groupSumEggsAndChicks  = 0 ;
-decimal openSetterEggsGroup  = 0;
-decimal openHatcherEggsGroup  = 0;
-decimal closeSetterEggsReport  = 0;
-decimal closeHatcherEggsReport = 0;
-decimal deadsGroup = 0;
-decimal cullsGroup = 0;
-decimal destroyedEggsGroup = 0;
-decimal unHatEggsGroup = 0;
-decimal chicksGroup = 0;
-private void xrTableCell31_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal openSetterEggs = 0;
-decimal openHatcherEggs = 0;
+    <value>decimal sumOfFemales = 0;
+decimal sumOfMales = 0;
+decimal sumOfFemalesReport = 0;
+decimal sumOfMalesReport = 0;
+decimal sumOfPercentages = 0;
+int recordCount = 0;
+decimal sumOfPercentagesReport = 0;
+int recordCountReport = 0;
+decimal sumOfCullPercentages = 0;
+int cullRecordCount = 0;
+decimal sumOfCullPercentagesReport = 0;
+int cullRecordCountReport = 0;
+decimal sumOfMaleMortPercentages = 0;
+int maleMortRecordCount = 0;
+decimal sumOfMaleMortPercentagesReport = 0;
+int maleMortRecordCountReport = 0;
+decimal sumOfMaleCullPercentages = 0;
+int maleCullRecordCount = 0;
+decimal sumOfMaleCullPercentagesReport = 0;
+int maleCullRecordCountReport = 0;
+decimal sumOfFemaleDeplPercentages = 0;
+int femaleDeplRecordCount = 0;
+decimal sumOfFemaleDeplPercentagesReport = 0;
+int femaleDeplRecordCountReport = 0;
+decimal sumOfCumFemaleDeplPercentages = 0;
+int cumFemaleDeplRecordCount = 0;
+decimal sumOfCumFemaleDeplPercentagesReport = 0;
+int cumFemaleDeplRecordCountReport = 0;
+decimal sumOfCumMaleDeplPercentages = 0;
+int cumMaleDeplRecordCount = 0;
+decimal sumOfCumMaleDeplPercentagesReport = 0;
+int cumMaleDeplRecordCountReport = 0;
 
-// --- OpenSetterEggs ---
-if (GetCurrentColumnValue("OpenSetterEggs") != null)
-    openSetterEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenSetterEggs"));
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
 
-// --- OpenHatcherEggs ---
-if (GetCurrentColumnValue("OpenHatcherEggs") != null)
-    openHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenHatcherEggs"));
+// Get values from the data source
+decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
 
-// --- Result (sum) ---
-decimal result = openSetterEggs + openHatcherEggs;
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
-openSetterEggsReport += openSetterEggs ;
-openHatcherEggsReport += openHatcherEggs ;
-OpenMachineReport = openSetterEggsReport + openHatcherEggsReport ;
-
+if (femaleBalance &gt; 0)
+{
+    // Calculate: (MaleBalance / FemaleBalance) * 100
+    decimal result = (maleBalance / femaleBalance) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
 }
 
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal openSetterEggs = 0;
-decimal openHatcherEggs = 0;
-
-// --- OpenSetterEggs ---
-if (GetCurrentColumnValue("OpenSetterEggs") != null)
-    openSetterEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenSetterEggs"));
-
-// --- OpenHatcherEggs ---
-if (GetCurrentColumnValue("OpenHatcherEggs") != null)
-    openHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenHatcherEggs"));
-
-// --- Add to group sum ---
-openSetterEggsGroup +=  openSetterEggs ;  
-openHatcherEggsGroup += openHatcherEggs ;
-groupSumOpenEggs = (openSetterEggsGroup + openHatcherEggsGroup );
-    // --- Declare values ---
-decimal closeSetterEggs = 0;
-decimal closeHatcherEggs = 0;
-
-// --- OpenSetterEggs ---
-if (GetCurrentColumnValue("CloseSetterEggs") != null)
-    closeSetterEggs = Convert.ToDecimal(GetCurrentColumnValue("CloseSetterEggs"));
-
-// --- OpenHatcherEggs ---
-if (GetCurrentColumnValue("CloseHatcherEggs") != null)
-    closeHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("CloseHatcherEggs"));
-
-// --- Add to group sum ---
-closeSetterEggsReport += closeSetterEggs ;
-closeHatcherEggsReport += closeHatcherEggs;
-groupSumCloseEggs += (closeSetterEggs + closeHatcherEggs);
-// --- Declare values ---
-decimal openEggStoreEggs = 0;
-decimal recEggs = 0;
-
-// --- OpenEggStoreEggs ---
-if (GetCurrentColumnValue("OpenEggStoreEggs") != null)
-    openEggStoreEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenEggStoreEggs"));
-
-// --- RecEggs ---
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Add to group sum ---
-openEggStoreEggsReport += openEggStoreEggs ;
-recEggsReport += recEggs  ;
-groupSumOpenBalance = (openEggStoreEggsReport + recEggsReport );
-
-// --- Declare values ---
-decimal deads = 0;
-decimal culls = 0;
-decimal destroyedEggs = 0;
-decimal unHatEggs = 0;
-decimal chicks = 0;
-
-// --- Deads ---
-if (GetCurrentColumnValue("Deads") != null)
-    deads = Convert.ToDecimal(GetCurrentColumnValue("Deads"));
-
-// --- Culls ---
-if (GetCurrentColumnValue("Culls") != null)
-    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
-
-// --- DestroyedEggs ---
-if (GetCurrentColumnValue("DestroyedEggs") != null)
-    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
-
-// --- UnHatEggs ---
-if (GetCurrentColumnValue("UnHatEggs") != null)
-    unHatEggs = Convert.ToDecimal(GetCurrentColumnValue("UnHatEggs"));
-
-// --- Chicks ---
-if (GetCurrentColumnValue("Chicks") != null)
-    chicks = Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
-
-// --- Add to group sum ---
-deadsGroup += deads;
-cullsGroup += culls;
-destroyedEggsGroup += destroyedEggs;
-unHatEggsGroup += unHatEggs;
-chicksGroup += chicks;
-
-groupSumEggsAndChicks += (deadsGroup + cullsGroup + destroyedEggsGroup + unHatEggsGroup + chicksGroup );
-
-
-}
-
-private void xrTableCell77_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell77.Text = groupSumOpenEggs.ToString("N0");
-
-}
-
-private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         xrTableCell20.Text = OpenMachineReport.ToString("N0");
-
-}
-
-private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       // --- Declare values ---
-decimal closeSetterEggs = 0;
-decimal closeHatcherEggs = 0;
-
-// --- OpenSetterEggs ---
-if (GetCurrentColumnValue("CloseSetterEggs") != null)
-    closeSetterEggs = Convert.ToDecimal(GetCurrentColumnValue("CloseSetterEggs"));
-
-// --- OpenHatcherEggs ---
-if (GetCurrentColumnValue("CloseHatcherEggs") != null)
-    closeHatcherEggs = Convert.ToDecimal(GetCurrentColumnValue("CloseHatcherEggs"));
-
-// --- Result (sum) ---
-decimal result = closeSetterEggs + closeHatcherEggs ;
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
-closeSetterEggsReport += closeSetterEggs ;
-closeHatcherEggsReport += closeHatcherEggs ;
-CloseMachineReport = closeSetterEggsReport  + closeHatcherEggsReport ;
-
-
-}
-
-private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal openEggStoreEggs = 0;
-decimal recEggs = 0;
-
-// --- OpenEggStoreEggs ---
-if (GetCurrentColumnValue("OpenEggStoreEggs") != null)
-    openEggStoreEggs = Convert.ToDecimal(GetCurrentColumnValue("OpenEggStoreEggs"));
-
-// --- RecEggs ---
-if (GetCurrentColumnValue("RecEggs") != null)
-    recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
-
-// --- Result (sum) ---
-decimal result = openEggStoreEggs + recEggs;
-
-// --- Assign result to the cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("N0"); // no decimals, adjust format if needed
-openEggStoreEggsReport += openEggStoreEggs ;
-recEggsReport += recEggs ;
-OpenEggsReport = openEggStoreEggsReport + recEggsReport ;
-
-
-}
-
-private void xrTableCell79_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-         xrTableCell79.Text = groupSumOpenBalance.ToString("N0");
-
-}
-
-private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell22.Text = OpenEggsReport.ToString("N0");
+sumOfFemalesReport += femaleBalance ;
+sumOfMalesReport  += sumOfMalesReport ;
 }
 
 private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    // --- Declare values ---
-decimal deads = 0;
-decimal culls = 0;
-decimal destroyedEggs = 0;
-decimal unHatEggs = 0;
-decimal chicks = 0;
-decimal deadsTotalReport = 0;
-decimal cullsTotalReport = 0;
-decimal destroyedEggsTotalReport = 0;
-decimal unHatEggsTotalReport = 0;
-decimal chicksTotalReport = 0;
+    XRTableCell cell = sender as XRTableCell;
 
-// --- Deads ---
-if (GetCurrentColumnValue("Deads") != null)
-    deads = Convert.ToDecimal(GetCurrentColumnValue("Deads"));
+// Get values from the data source
+decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
 
-// --- Culls ---
-if (GetCurrentColumnValue("Culls") != null)
-    culls = Convert.ToDecimal(GetCurrentColumnValue("Culls"));
+if (femalePlaced &gt; 0)
+{
+    // Calculate: (FemaleMort / FemalePlaced) * 100
+    decimal result = (femaleMort / femalePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
 
-// --- DestroyedEggs ---
-if (GetCurrentColumnValue("DestroyedEggs") != null)
-    destroyedEggs = Convert.ToDecimal(GetCurrentColumnValue("DestroyedEggs"));
+    
+    `if (femalePlaced &gt; 0)
+    {
+        // Calculate percentage for this record
+        decimal percentage = (femaleMort / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfPercentagesReport += percentage;
+        recordCountReport++;
+    }
 
-// --- UnHatEggs ---
-if (GetCurrentColumnValue("UnHatEggs") != null)
-    unHatEggs = Convert.ToDecimal(GetCurrentColumnValue("UnHatEggs"));
+}
 
-// --- Chicks ---
-if (GetCurrentColumnValue("Chicks") != null)
-    chicks = Convert.ToDecimal(GetCurrentColumnValue("Chicks"));
+private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
 
-// --- Result (sum) ---
-decimal result = deads + culls + destroyedEggs + unHatEggs + chicks;
+// Get values from the data source
+decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
 
-// --- Assign result to the cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0"); // no decimals, adjust format if needed
-deadsTotalReport += deads;
-cullsTotalReport += culls;
-destroyedEggsTotalReport += destroyedEggs;
-unHatEggsTotalReport += unHatEggs;
-chicksTotalReport += chicks;
-TotalEggsAndChicksReport = deadsTotalReport  + cullsTotalReport  + destroyedEggsTotalReport  + unHatEggsTotalReport  + chicksTotalReport ;
+if (femalePlaced &gt; 0)
+{
+    // Calculate: (FemalCulls / FemalePlaced) * 100
+    decimal result = (femaleCulls / femalePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+ if (femalePlaced &gt; 0)
+    {
+        // Calculate cull percentage for this record
+        decimal cullPercentage = (femaleCulls / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCullPercentagesReport += cullPercentage;
+        cullRecordCountReport++;
+    }
+}
+
+private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal malePlaced = Convert.ToDecimal(GetCurrentColumnValue("MalePlaced") ?? 0);
+decimal maleMort = Convert.ToDecimal(GetCurrentColumnValue("MaleMort") ?? 0);
+
+if (malePlaced &gt; 0)
+{
+    // Calculate: (MaleMort / MalePlaced) * 100
+    decimal result = (maleMort / malePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+if (malePlaced &gt; 0)
+    {
+        // Calculate mortality percentage for this record
+        decimal maleMortPercentage = (maleMort / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfMaleMortPercentagesReport  += maleMortPercentage;
+        maleMortRecordCountReport++;
+    }
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal malePlaced = Convert.ToDecimal(GetCurrentColumnValue("MalePlaced") ?? 0);
+decimal maleCulls = Convert.ToDecimal(GetCurrentColumnValue("MaleCulls") ?? 0);
+
+if (malePlaced &gt; 0)
+{
+    // Calculate: (MaleCulls / MalePlaced) * 100
+    decimal result = (maleCulls / malePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+if (malePlaced &gt; 0)
+    {
+        // Calculate cull percentage for this record
+        decimal maleCullPercentage = (maleCulls / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfMaleCullPercentagesReport += maleCullPercentage;
+        maleCullRecordCountReport++;
+    }
+}
+
+private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
+decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+
+// Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
+decimal femaleDepl = femaleMort + femaleCulls;
+
+if (femalePlaced &gt; 0)
+{
+    // Calculate: ({@FemaleDepl} / FemalePlaced) * 100
+    decimal result = (femaleDepl / femalePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+ if (femalePlaced &gt; 0)
+    {
+        // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
+        decimal femaleDepl = femaleMort + femaleCulls;
+        
+        // Calculate depletion percentage for this record
+        decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfFemaleDeplPercentagesReport += femaleDeplPercentage;
+        femaleDeplRecordCountReport++;
+    }
+
+}
 
 
+
+
+private void xrTableCell73_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal malePlaced = Convert.ToDecimal(GetCurrentColumnValue("MalePlaced") ?? 0);
+decimal cummMaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummMaleMort") ?? 0);
+decimal cummMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("CummMaleCulls") ?? 0);
+decimal cumMaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumMaleCond") ?? 0);
+
+// Calculate total cumulative male depletion
+decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
+
+if (malePlaced &gt; 0)
+{
+    // Calculate: (Total Cumulative Depletion / MalePlaced) * 100
+    decimal result = (totalCumMaleDepl / malePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+if (malePlaced &gt; 0)
+    {
+        // Calculate total cumulative male depletion
+        decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumMaleDeplPercentagesReport += cumMaleDeplPercentage;
+        cumMaleDeplRecordCountReport++;
+    }
+}
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
+    
+    sumOfFemales += femaleBalance;
+    sumOfMales += maleBalance;
+    
+     decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+    decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
+    
+    `if (femalePlaced &gt; 0)
+    {
+        // Calculate percentage for this record
+        decimal percentage = (femaleMort / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfPercentages += percentage;
+        recordCount++;
+    }
+
+    decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+    
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate cull percentage for this record
+        decimal cullPercentage = (femaleCulls / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCullPercentages += cullPercentage;
+        cullRecordCount++;
+    }
+    
+    decimal malePlaced = Convert.ToDecimal(GetCurrentColumnValue("MalePlaced") ?? 0);
+    decimal maleMort = Convert.ToDecimal(GetCurrentColumnValue("MaleMort") ?? 0);
+    
+    if (malePlaced &gt; 0)
+    {
+        // Calculate mortality percentage for this record
+        decimal maleMortPercentage = (maleMort / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfMaleMortPercentages += maleMortPercentage;
+        maleMortRecordCount++;
+    }
+    
+    
+     decimal maleCulls = Convert.ToDecimal(GetCurrentColumnValue("MaleCulls") ?? 0);
+    
+    if (malePlaced &gt; 0)
+    {
+        // Calculate cull percentage for this record
+        decimal maleCullPercentage = (maleCulls / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfMaleCullPercentages += maleCullPercentage;
+        maleCullRecordCount++;
+    }
+    
+    
+    
+      
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
+        decimal femaleDepl = femaleMort + femaleCulls;
+        
+        // Calculate depletion percentage for this record
+        decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfFemaleDeplPercentages += femaleDeplPercentage;
+        femaleDeplRecordCount++;
+    }
+    
+    
+    decimal cummFemaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummFemaleMort") ?? 0);
+    decimal cummFemalCulls = Convert.ToDecimal(GetCurrentColumnValue("CummFemalCulls") ?? 0);
+    decimal cumFemaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumFemaleCond") ?? 0);
+    
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate total cumulative female depletion
+        decimal totalCumFemaleDepl = cummFemaleMort + cummFemalCulls + cumFemaleCond;
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumFemaleDeplPercentage = (totalCumFemaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumFemaleDeplPercentages += cumFemaleDeplPercentage;
+        cumFemaleDeplRecordCount++;
+    }
+    
+    decimal cummMaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummMaleMort") ?? 0);
+    decimal cummMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("CummMaleCulls") ?? 0);
+    decimal cumMaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumMaleCond") ?? 0);
+    
+    if (malePlaced &gt; 0)
+    {
+        // Calculate total cumulative male depletion
+        decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumMaleDeplPercentages += cumMaleDeplPercentage;
+        cumMaleDeplRecordCount++;
+    }
 }
 
 private void xrTableCell82_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell82.Text = groupSumEggsAndChicks.ToString("N0");
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (sumOfFemales &gt; 0)
+    {
+        decimal result = (sumOfMales / sumOfFemales) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (sumOfFemalesReport &gt; 0)
+    {
+        decimal result = (sumOfMalesReport / sumOfFemalesReport ) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 
 }
 
-private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-      xrTableCell62.Text = TotalEggsAndChicksReport.ToString("N0");
+private void xrTableCell84_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (recordCount &gt; 0)
+    {
+        decimal average = sumOfPercentages / recordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (recordCountReport &gt; 0)
+    {
+        decimal average = sumOfPercentagesReport / recordCountReport;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 
 }
 
-private void xrTableCell91_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell91.Text = groupSumCloseEggs.ToString("N0");
+private void xrTableCell86_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (cullRecordCount &gt; 0)
+    {
+        decimal average = sumOfCullPercentages / cullRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 }
 
-private void xrTableCell71_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-          xrTableCell71.Text = CloseMachineReport.ToString("N0");
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          XRTableCell cell = sender as XRTableCell;
+    
+    if (cullRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfCullPercentagesReport / cullRecordCountReport ;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 
 }
 
+private void xrTableCell88_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (maleMortRecordCount &gt; 0)
+    {
+        decimal average = sumOfMaleMortPercentages / maleMortRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
 
+private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (maleMortRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfMaleMortPercentagesReport / maleMortRecordCountReport ;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 
+}
 
+private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (maleCullRecordCount &gt; 0)
+    {
+        decimal average = sumOfMaleCullPercentages / maleCullRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
 
+private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (maleCullRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfMaleCullPercentagesReport / maleCullRecordCountReport;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
 
+}
+
+private void xrTableCell92_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (femaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfFemaleDeplPercentages / femaleDeplRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (femaleDeplRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfFemaleDeplPercentagesReport / femaleDeplRecordCountReport ;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell93_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (cumFemaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfCumFemaleDeplPercentages / cumFemaleDeplRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+decimal cummFemaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummFemaleMort") ?? 0);
+decimal cummFemalCulls = Convert.ToDecimal(GetCurrentColumnValue("CummFemalCulls") ?? 0);
+decimal cumFemaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumFemaleCond") ?? 0);
+
+// Calculate total cumulative female depletion
+decimal totalCumFemaleDepl = cummFemaleMort + cummFemalCulls + cumFemaleCond;
+
+if (femalePlaced &gt; 0)
+{
+    // Calculate: (Total Cumulative Depletion / FemalePlaced) * 100
+    decimal result = (totalCumFemaleDepl / femalePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+    
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate total cumulative female depletion
+        decimal totalCumFemaleDepl = cummFemaleMort + cummFemalCulls + cumFemaleCond;
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumFemaleDeplPercentage = (totalCumFemaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumFemaleDeplPercentagesReport += cumFemaleDeplPercentage;
+        cumFemaleDeplRecordCountReport++;
+    }
+}
+
+private void xrTableCell70_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (cumFemaleDeplRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfCumFemaleDeplPercentagesReport / cumFemaleDeplRecordCountReport;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell96_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (cumMaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfCumMaleDeplPercentages / cumMaleDeplRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell75_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (cumMaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfCumMaleDeplPercentages / cumMaleDeplRecordCount;
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
 </value>
   </data>
 </root>
