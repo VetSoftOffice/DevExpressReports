@@ -253,15 +253,15 @@
                 <Item2 Ref="145" FieldName="TotalPrice" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="146" Width="159.615631" />
-                <Item2 Ref="147" Width="104.292809" />
-                <Item3 Ref="148" Width="95.95948" />
+                <Item1 Ref="146" Width="159.6156" />
+                <Item2 Ref="147" Width="104.2928" />
+                <Item3 Ref="148" Width="95.95949" />
                 <Item4 Ref="149" Width="85.54279" />
                 <Item5 Ref="150" Width="85.54279" />
-                <Item6 Ref="151" Width="3.89828515" Visible="false" />
-                <Item7 Ref="152" Width="3.89828515" Visible="false" />
-                <Item8 Ref="153" Width="2.00003076" Visible="false" />
-                <Item9 Ref="154" Width="2.00003076" Visible="false" />
+                <Item6 Ref="151" Width="3.898285" Visible="false" />
+                <Item7 Ref="152" Width="3.898285" Visible="false" />
+                <Item8 Ref="153" Width="2.000031" Visible="false" />
+                <Item9 Ref="154" Width="2.000031" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="155" />
@@ -516,7 +516,7 @@
     <Item9 Ref="306" Component="#Ref-190" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item10 Ref="307" Component="#Ref-178" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item11 Ref="308" Component="#Ref-185" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item12 Ref="309" Component="#Ref-185" Culture="Default" Path="Text" Data="Total Price" />
+    <Item12 Ref="309" Component="#Ref-185" Culture="Default" Path="Text" Data="Price" />
     <Item13 Ref="310" Component="#Ref-185" Culture="ar" Path="Text" Data="اجمالي السعر" />
     <Item14 Ref="311" Component="#Ref-166" Culture="Default" Path="Text" Data="Grand Total" />
     <Item15 Ref="312" Component="#Ref-166" Culture="Default" Path="TextFormatString" Data="" />
@@ -536,16 +536,16 @@
     <Item29 Ref="326" Component="#Ref-173" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item30 Ref="327" Component="#Ref-179" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item31 Ref="328" Component="#Ref-182" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item32 Ref="329" Component="#Ref-182" Culture="Default" Path="Text" Data="Total Qty" />
+    <Item32 Ref="329" Component="#Ref-182" Culture="Default" Path="Text" Data=" Qty" />
     <Item33 Ref="330" Component="#Ref-182" Culture="ar" Path="Text" Data="اجمالي الكمية" />
     <Item34 Ref="331" Component="#Ref-183" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item35 Ref="332" Component="#Ref-183" Culture="Default" Path="Text" Data="Total Price" />
+    <Item35 Ref="332" Component="#Ref-183" Culture="Default" Path="Text" Data="Price" />
     <Item36 Ref="333" Component="#Ref-183" Culture="ar" Path="Text" Data="اجمالي السعر" />
     <Item37 Ref="334" Component="#Ref-184" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item38 Ref="335" Component="#Ref-184" Culture="Default" Path="Text" Data="Total Qty" />
+    <Item38 Ref="335" Component="#Ref-184" Culture="Default" Path="Text" Data="Qty" />
     <Item39 Ref="336" Component="#Ref-184" Culture="ar" Path="Text" Data="اجمالي الكمية" />
     <Item40 Ref="337" Component="#Ref-165" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item41 Ref="338" Component="#Ref-165" Culture="Default" Path="Text" Data="Farm" />
+    <Item41 Ref="338" Component="#Ref-165" Culture="Default" Path="Text" Data="" />
     <Item42 Ref="339" Component="#Ref-165" Culture="ar" Path="Text" Data="مزرعة" />
     <Item43 Ref="340" Component="#Ref-192" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item44 Ref="341" Component="#Ref-192" Culture="Default" Path="TextFormatString" Data="{0:N0}" />

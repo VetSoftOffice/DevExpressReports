@@ -403,7 +403,7 @@
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(159.6156F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(104.2928F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(95.95948F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(95.95949F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.54279F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.54279F),
             crossTabColumnDefinition1,
@@ -1148,7 +1148,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Text", "Qty"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "ar", "Text", "اجمالي الكمية"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Text", "Farm"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "ar", "Text", "مزرعة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell5, "Default", "TextFormatString", "{0:N0}"),
