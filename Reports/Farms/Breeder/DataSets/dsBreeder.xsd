@@ -3277,6 +3277,14 @@
               <Mapping SourceColumn="SellingMaleDepl" DataSetColumn="SellingMaleDepl" />
               <Mapping SourceColumn="FVar" DataSetColumn="FVar" />
               <Mapping SourceColumn="MVar" DataSetColumn="MVar" />
+              <Mapping SourceColumn="TotalEggTill60Wk" DataSetColumn="TotalEggTill60Wk" />
+              <Mapping SourceColumn="TotalEggFrom60ToEnd" DataSetColumn="TotalEggFrom60ToEnd" />
+              <Mapping SourceColumn="TotalEggsProd" DataSetColumn="TotalEggsProd" />
+              <Mapping SourceColumn="TotalEggsPerBird60WeekStd" DataSetColumn="TotalEggsPerBird60WeekStd" />
+              <Mapping SourceColumn="TotalHatEggTill60Wk" DataSetColumn="TotalHatEggTill60Wk" />
+              <Mapping SourceColumn="TotalHatEggsPerBird60WeekStd" DataSetColumn="TotalHatEggsPerBird60WeekStd" />
+              <Mapping SourceColumn="TotalHatEggFrom60ToEnd" DataSetColumn="TotalHatEggFrom60ToEnd" />
+              <Mapping SourceColumn="HatEggsToHatchery" DataSetColumn="HatEggsToHatchery" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -6264,6 +6272,14 @@
               <xs:element name="SellingMaleDepl" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="SellingMaleDepl" msprop:Generator_ColumnPropNameInTable="SellingMaleDeplColumn" msprop:Generator_ColumnVarNameInTable="columnSellingMaleDepl" msprop:Generator_UserColumnName="SellingMaleDepl" type="xs:int" minOccurs="0" />
               <xs:element name="FVar" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="FVar" msprop:Generator_ColumnPropNameInTable="FVarColumn" msprop:Generator_ColumnVarNameInTable="columnFVar" msprop:Generator_UserColumnName="FVar" type="xs:int" minOccurs="0" />
               <xs:element name="MVar" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="MVar" msprop:Generator_ColumnPropNameInTable="MVarColumn" msprop:Generator_ColumnVarNameInTable="columnMVar" msprop:Generator_UserColumnName="MVar" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEggTill60Wk" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalEggTill60Wk" msprop:Generator_ColumnPropNameInTable="TotalEggTill60WkColumn" msprop:Generator_ColumnVarNameInTable="columnTotalEggTill60Wk" msprop:Generator_UserColumnName="TotalEggTill60Wk" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEggFrom60ToEnd" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalEggFrom60ToEnd" msprop:Generator_ColumnPropNameInTable="TotalEggFrom60ToEndColumn" msprop:Generator_ColumnVarNameInTable="columnTotalEggFrom60ToEnd" msprop:Generator_UserColumnName="TotalEggFrom60ToEnd" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEggsProd" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalEggsProd" msprop:Generator_ColumnPropNameInTable="TotalEggsProdColumn" msprop:Generator_ColumnVarNameInTable="columnTotalEggsProd" msprop:Generator_UserColumnName="TotalEggsProd" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalEggsPerBird60WeekStd" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalEggsPerBird60WeekStd" msprop:Generator_ColumnPropNameInTable="TotalEggsPerBird60WeekStdColumn" msprop:Generator_ColumnVarNameInTable="columnTotalEggsPerBird60WeekStd" msprop:Generator_UserColumnName="TotalEggsPerBird60WeekStd" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalHatEggTill60Wk" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalHatEggTill60Wk" msprop:Generator_ColumnPropNameInTable="TotalHatEggTill60WkColumn" msprop:Generator_ColumnVarNameInTable="columnTotalHatEggTill60Wk" msprop:Generator_UserColumnName="TotalHatEggTill60Wk" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalHatEggsPerBird60WeekStd" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalHatEggsPerBird60WeekStd" msprop:Generator_ColumnPropNameInTable="TotalHatEggsPerBird60WeekStdColumn" msprop:Generator_ColumnVarNameInTable="columnTotalHatEggsPerBird60WeekStd" msprop:Generator_UserColumnName="TotalHatEggsPerBird60WeekStd" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalHatEggFrom60ToEnd" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="TotalHatEggFrom60ToEnd" msprop:Generator_ColumnPropNameInTable="TotalHatEggFrom60ToEndColumn" msprop:Generator_ColumnVarNameInTable="columnTotalHatEggFrom60ToEnd" msprop:Generator_UserColumnName="TotalHatEggFrom60ToEnd" type="xs:int" minOccurs="0" />
+              <xs:element name="HatEggsToHatchery" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="HatEggsToHatchery" msprop:Generator_ColumnPropNameInTable="HatEggsToHatcheryColumn" msprop:Generator_ColumnVarNameInTable="columnHatEggsToHatchery" msprop:Generator_UserColumnName="HatEggsToHatchery" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
