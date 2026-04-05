@@ -129,8 +129,8 @@
     <Folder Include="Reports\Planning\ChicksInTake\" />
     <Folder Include="Reports\Planning\FeedMill\Feed\Summary\" />
     <Folder Include="Reports\Planning\FeedMill\Ingredient\Summary\" />
-    <Folder Include="Reports\Planning\FeedMill\OrdersNew\" />
-    <Folder Include="Reports\Planning\FeedMill\Products\" />
+    <Folder Include="Reports\Planning\FeedMill\OrdersNew\SR_PL_FM_FeedDeliveryConsolid_Truck\" />
+    <Folder Include="Reports\Planning\FeedMill\OrdersNew\SR_PL_FM_FeedDeliveryConsolid_NormalEmerg\" />
     <Folder Include="Reports\Planning\Housing\" />
     <Folder Include="Reports\Planning\ProcessingPlant\Catching\" />
     <Folder Include="Reports\Planning\ProcessingPlant\NewFolder\" />

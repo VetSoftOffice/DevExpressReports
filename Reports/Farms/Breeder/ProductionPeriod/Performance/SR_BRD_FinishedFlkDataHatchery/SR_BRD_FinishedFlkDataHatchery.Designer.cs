@@ -79,6 +79,7 @@
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrCrossTab1 = new DevExpress.XtraReports.UI.XRCrossTab();
             this.crossTabHeaderCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabDataCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -138,13 +139,12 @@
             this.RejectedEggs = new DevExpress.XtraReports.Parameters.Parameter();
             this.SoldEggs = new DevExpress.XtraReports.Parameters.Parameter();
             this.EggDepositor = new DevExpress.XtraReports.Parameters.Parameter();
-            this.TheTotalNumberOfChicksProduct = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ThetotalnumberofchicksProduct = new DevExpress.XtraReports.Parameters.Parameter();
             this.NumberofchicksHH = new DevExpress.XtraReports.Parameters.Parameter();
             this.Hatchpality = new DevExpress.XtraReports.Parameters.Parameter();
             this.ConceptionRate = new DevExpress.XtraReports.Parameters.Parameter();
             this.TotalCulls = new DevExpress.XtraReports.Parameters.Parameter();
             this.CulssPercentage = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -203,6 +203,14 @@
             this.xrLabel1,
             this.xrCrossTab1});
             this.SubBand2.Name = "SubBand2";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrCrossTab1
             // 
@@ -706,12 +714,12 @@
             this.EggDepositor.Name = "EggDepositor";
             this.EggDepositor.Visible = false;
             // 
-            // TheTotalNumberOfChicksProduct
+            // ThetotalnumberofchicksProduct
             // 
-            this.TheTotalNumberOfChicksProduct.Name = "TheTotalNumberOfChicksProduct";
-            this.TheTotalNumberOfChicksProduct.Type = typeof(System.DateTime);
-            this.TheTotalNumberOfChicksProduct.ValueInfo = "2026-02-24";
-            this.TheTotalNumberOfChicksProduct.Visible = false;
+            this.ThetotalnumberofchicksProduct.Name = "ThetotalnumberofchicksProduct";
+            this.ThetotalnumberofchicksProduct.Type = typeof(System.DateTime);
+            this.ThetotalnumberofchicksProduct.ValueInfo = "2026-02-24";
+            this.ThetotalnumberofchicksProduct.Visible = false;
             // 
             // NumberofchicksHH
             // 
@@ -737,14 +745,6 @@
             // 
             this.CulssPercentage.Name = "CulssPercentage";
             this.CulssPercentage.Visible = false;
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // SR_BRD_FinishedFlkDataHatchery
             // 
@@ -840,7 +840,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 20F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 127F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.TheTotalNumberOfChicksProduct, "Default", "Description", "TheTotalNumberOfChicksProduct"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ThetotalnumberofchicksProduct, "Default", "Description", "ThetotalnumberofchicksProduct"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TotalCulls, "Default", "Description", "TotalCulls"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 21.16667F)),
@@ -881,7 +881,7 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.RejectedEggs, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.SoldEggs, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.EggDepositor, DevExpress.XtraReports.Parameters.Orientation.Vertical),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.TheTotalNumberOfChicksProduct, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ThetotalnumberofchicksProduct, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.NumberofchicksHH, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Hatchpality, DevExpress.XtraReports.Parameters.Orientation.Vertical),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ConceptionRate, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -909,7 +909,7 @@
             this.RejectedEggs,
             this.SoldEggs,
             this.EggDepositor,
-            this.TheTotalNumberOfChicksProduct,
+            this.ThetotalnumberofchicksProduct,
             this.NumberofchicksHH,
             this.Hatchpality,
             this.ConceptionRate,
@@ -1006,7 +1006,7 @@
         private DevExpress.XtraReports.Parameters.Parameter RejectedEggs;
         private DevExpress.XtraReports.Parameters.Parameter SoldEggs;
         private DevExpress.XtraReports.Parameters.Parameter EggDepositor;
-        private DevExpress.XtraReports.Parameters.Parameter TheTotalNumberOfChicksProduct;
+        private DevExpress.XtraReports.Parameters.Parameter ThetotalnumberofchicksProduct;
         private DevExpress.XtraReports.Parameters.Parameter NumberofchicksHH;
         private DevExpress.XtraReports.Parameters.Parameter Hatchpality;
         private DevExpress.XtraReports.Parameters.Parameter ConceptionRate;

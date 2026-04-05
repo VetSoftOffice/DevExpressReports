@@ -163,7 +163,7 @@ if (isRtl == 1) // Arabic
 }
 else // English
 {
-    label.Text = $"to: {dt:dd/MM/yyyy}";
+    label.Text = $"To: {dt:dd/MM/yyyy}";
 }
 
 }

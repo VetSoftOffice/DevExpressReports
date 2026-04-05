@@ -55,6 +55,10 @@
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -89,12 +93,8 @@
             this.sR_FC_AccountSheetTableAdapter = new DevExpressReports.Reports.GeneralLedger.DataSets.dsGeneralLedgerTableAdapters.SR_FC_AccountSheetTableAdapter();
             this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
             this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.Farm = new DevExpress.XtraReports.Parameters.Parameter();
             this.Flock = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsGeneralLedger1)).BeginInit();
@@ -377,6 +377,38 @@
             this.xrLabel1,
             this.xrLabel2});
             this.SubBand3.Name = "SubBand3";
+            // 
+            // xrLabel8
+            // 
+            this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?Flock)")});
+            this.xrLabel8.Multiline = true;
+            this.xrLabel8.Name = "xrLabel8";
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel8.StylePriority.UseTextAlignment = false;
+            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?Farm)")});
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.CanGrow = false;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Scripts.OnBeforePrint = "xrLabel1_BeforePrint";
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.CanGrow = false;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Scripts.OnBeforePrint = "xrLabel2_BeforePrint";
             // 
             // SubBand4
             // 
@@ -712,18 +744,6 @@
             this.ShowSignatureAllPages.ValueInfo = "False";
             this.ShowSignatureAllPages.Visible = false;
             // 
-            // xrLabel1
-            // 
-            this.xrLabel1.CanGrow = false;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Scripts.OnBeforePrint = "xrLabel1_BeforePrint";
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.CanGrow = false;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Scripts.OnBeforePrint = "xrLabel2_BeforePrint";
-            // 
             // Farm
             // 
             this.Farm.Name = "Farm";
@@ -733,22 +753,6 @@
             // 
             this.Flock.Name = "Flock";
             this.Flock.Visible = false;
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrLabel3.StylePriority.UseTextAlignment = false;
-            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrLabel8
-            // 
-            this.xrLabel8.Multiline = true;
-            this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrLabel8.StylePriority.UseTextAlignment = false;
-            this.xrLabel8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // SR_ST_DeliveryCost
             // 

@@ -40,6 +40,9 @@
             DevExpress.XtraReports.UI.XRSummary xrSummary8 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary9 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary10 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.ChartTitle chartTitle1 = new DevExpress.XtraCharts.ChartTitle();
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
@@ -109,6 +112,30 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column32 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression32 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column33 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression33 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column34 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression34 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column35 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression35 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column36 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression36 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column37 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression37 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column38 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression38 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column39 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression39 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column40 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression40 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column41 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression41 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell32 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell33 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -231,11 +258,14 @@
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource4 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TotalLose = new DevExpress.XtraReports.UI.CalculatedField();
+            this.sqlDataSource5 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             ((System.ComponentModel.ISupportInitialize)(xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // xrTable2
@@ -910,8 +940,25 @@
             // 
             this.xrChart1.BorderColor = System.Drawing.Color.Black;
             this.xrChart1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            xyDiagram1.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisXZooming = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisYScrolling = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisYZooming = DevExpress.Utils.DefaultBoolean.False;
+            this.xrChart1.Diagram = xyDiagram1;
+            this.xrChart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart1.Name = "xrChart1";
-            this.xrChart1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            series1.ArgumentDataMember = "SR_BRO_DailyDepl.Age";
+            series1.Name = "Series 1";
+            series1.SeriesID = 0;
+            series1.ValueDataMembersSerializable = "SR_BRO_DailyDepl.LossPer";
+            this.xrChart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1};
+            chartTitle1.DXFont = new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold);
+            chartTitle1.TitleID = 0;
+            this.xrChart1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
+            chartTitle1});
             // 
             // SubBand9
             // 
@@ -1329,6 +1376,61 @@
             this.TotalLose.Expression = "IIF(IsNullOrEmpty([Mort]), 0, [Mort]) + \nIIF(IsNullOrEmpty([Culls]), 0, [Culls])";
             this.TotalLose.Name = "TotalLose";
             // 
+            // sqlDataSource5
+            // 
+            this.sqlDataSource5.ConnectionName = "dsGrandParent";
+            this.sqlDataSource5.Name = "sqlDataSource5";
+            columnExpression31.ColumnName = "RegDate";
+            table5.Name = "SR_BRO_DailyDepl";
+            columnExpression31.Table = table5;
+            column31.Expression = columnExpression31;
+            columnExpression32.ColumnName = "Age";
+            columnExpression32.Table = table5;
+            column32.Expression = columnExpression32;
+            columnExpression33.ColumnName = "BW";
+            columnExpression33.Table = table5;
+            column33.Expression = columnExpression33;
+            columnExpression34.ColumnName = "TotalFeed";
+            columnExpression34.Table = table5;
+            column34.Expression = columnExpression34;
+            columnExpression35.ColumnName = "LiveChicks";
+            columnExpression35.Table = table5;
+            column35.Expression = columnExpression35;
+            columnExpression36.ColumnName = "Culls";
+            columnExpression36.Table = table5;
+            column36.Expression = columnExpression36;
+            columnExpression37.ColumnName = "IsWeekEnd";
+            columnExpression37.Table = table5;
+            column37.Expression = columnExpression37;
+            columnExpression38.ColumnName = "Mort";
+            columnExpression38.Table = table5;
+            column38.Expression = columnExpression38;
+            columnExpression39.ColumnName = "FeedPerDay";
+            columnExpression39.Table = table5;
+            column39.Expression = columnExpression39;
+            columnExpression40.ColumnName = "WaterConsumption";
+            columnExpression40.Table = table5;
+            column40.Expression = columnExpression40;
+            columnExpression41.ColumnName = "LossPer";
+            columnExpression41.Table = table5;
+            column41.Expression = columnExpression41;
+            selectQuery5.Columns.Add(column31);
+            selectQuery5.Columns.Add(column32);
+            selectQuery5.Columns.Add(column33);
+            selectQuery5.Columns.Add(column34);
+            selectQuery5.Columns.Add(column35);
+            selectQuery5.Columns.Add(column36);
+            selectQuery5.Columns.Add(column37);
+            selectQuery5.Columns.Add(column38);
+            selectQuery5.Columns.Add(column39);
+            selectQuery5.Columns.Add(column40);
+            selectQuery5.Columns.Add(column41);
+            selectQuery5.Name = "SR_BRO_DailyDepl";
+            selectQuery5.Tables.Add(table5);
+            this.sqlDataSource5.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery5});
+            this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
+            // 
             // SR_BRO_DailyDepl
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1352,9 +1454,10 @@
             this.sqlDataSource1,
             this.sqlDataSource2,
             this.sqlDataSource3,
-            this.sqlDataSource4});
+            this.sqlDataSource4,
+            this.sqlDataSource5});
             this.DataMember = "SR_BRO_DailyDepl";
-            this.DataSource = this.sqlDataSource4;
+            this.DataSource = this.sqlDataSource5;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.bottomMarginBand1, "Default", "HeightF", 20F),
@@ -1434,8 +1537,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Weight", 0.80795920218394857D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.topMarginBand1, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trHeader, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(436.8604F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "SizeF", new System.Drawing.SizeF(300F, 200F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(297.4528F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "SizeF", new System.Drawing.SizeF(493.1895F, 200F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrChart1, "Default", "Titles.0.Text", "Loss % / Age"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo4, "Default", "SizeF", new System.Drawing.SizeF(204.12F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(410.6026F, 0F)),
@@ -1578,6 +1682,8 @@
             ((System.ComponentModel.ISupportInitialize)(xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
@@ -1707,5 +1813,6 @@
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo4;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo5;
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo6;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource5;
     }
 }
