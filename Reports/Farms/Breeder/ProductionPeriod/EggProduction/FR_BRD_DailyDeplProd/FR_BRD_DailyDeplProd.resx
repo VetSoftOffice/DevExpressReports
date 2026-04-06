@@ -714,7 +714,7 @@ private void xrTableCell97_BeforePrint(object sender, System.ComponentModel.Canc
 
 // --- Calculate AVG across all valid rows ---
 if (validRowCount &gt; 0)
-    avgFeedPerBird = sumFeedPerBird / validRowCountFeedBird ;
+    avgFeedPerBird = sumFeedPerBird / validRowCount ;
 
 // --- Assign to footer cell ---
 XRTableCell cellAvg = sender as XRTableCell;
@@ -804,8 +804,6 @@ if (TotaLiveFemaleAndMale &gt; 0)
 XRTableCell cell = sender as XRTableCell;
 cell.Text = WaterConsPerBirds.ToString("0.##");
 
-}
-
-</value>
+}</value>
   </data>
 </root>

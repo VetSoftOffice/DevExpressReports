@@ -117,6 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="xrLabel3.ExpressionBindings" xml:space="preserve">
+    <value>iif([IsRTL],
+    'تاريخ الفقس / تاريخ الوصول : ' 
+    + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) 
+    + ' / ' 
+    + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),
+    
+    'Hatch Date / Arrival Date : ' 
+    + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) 
+    + ' / ' 
+    + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])
+)</value>
+  </data>
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9GbG9ja1N1bW1hcnlfTGF5aW5nXzMiPjxGaWVsZCBOYW1lPSJNYWxlc05vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRnJvbUZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>

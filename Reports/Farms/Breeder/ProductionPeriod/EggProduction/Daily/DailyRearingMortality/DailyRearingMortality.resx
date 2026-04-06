@@ -208,7 +208,7 @@ else
 }
 
     
-    `if (femalePlaced &gt; 0)
+   if (femalePlaced &gt; 0)
     {
         // Calculate percentage for this record
         decimal percentage = (femaleMort / femalePlaced) * 100.0m;
@@ -225,7 +225,7 @@ private void xrTableCell51_BeforePrint(object sender, System.ComponentModel.Canc
 
 // Get values from the data source
 decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
-decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
 
 if (femalePlaced &gt; 0)
 {
@@ -313,7 +313,7 @@ private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.Canc
 // Get values from the data source
 decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
 decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
-decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
 
 // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
 decimal femaleDepl = femaleMort + femaleCulls;
@@ -331,8 +331,6 @@ else
 
  if (femalePlaced &gt; 0)
     {
-        // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
-        decimal femaleDepl = femaleMort + femaleCulls;
         
         // Calculate depletion percentage for this record
         decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
@@ -372,9 +370,6 @@ else
 
 if (malePlaced &gt; 0)
     {
-        // Calculate total cumulative male depletion
-        decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
-        
         // Calculate cumulative depletion percentage for this record
         decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
         
@@ -394,7 +389,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
      decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
     decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
     
-    `if (femalePlaced &gt; 0)
+    if (femalePlaced &gt; 0)
     {
         // Calculate percentage for this record
         decimal percentage = (femaleMort / femalePlaced) * 100.0m;
@@ -404,7 +399,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
         recordCount++;
     }
 
-    decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+    decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
     
     if (femalePlaced &gt; 0)
     {
@@ -707,9 +702,6 @@ else
     
     if (femalePlaced &gt; 0)
     {
-        // Calculate total cumulative female depletion
-        decimal totalCumFemaleDepl = cummFemaleMort + cummFemalCulls + cumFemaleCond;
-        
         // Calculate cumulative depletion percentage for this record
         decimal cumFemaleDeplPercentage = (totalCumFemaleDepl / femalePlaced) * 100.0m;
         

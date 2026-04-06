@@ -201,11 +201,9 @@ decimal totalEggsProd = 0;
 decimal totalFloorEggs = 0;
 decimal totalEggsProdReport = 0;
 decimal totalFloorEggsReport = 0;
-decimal totalEggsProd = 0;
 decimal totalHatchingEggs = 0;
 decimal totalHatchingFloorG_B = 0;
 decimal totalHatchingFloorG_A = 0;
-decimal totalEggsProdReport = 0;
 decimal totalHatchingEggsReport = 0;
 decimal totalHatchingFloorG_BReport = 0;
 decimal totalHatchingFloorG_AReport = 0;
@@ -216,18 +214,12 @@ decimal totalPolSumReport = 0;
 int weightedCountReport = 0;
 decimal sumEstHatchPerPolReport = 0;
 int countEstHatchPerPolReport = 0;
-decimal sumEstHatchPerPolReport ;
-int countEstHatchPerPolReport = 0;
 decimal sumEstHatchPerPolGroup = 0;
 int countEstHatchPerPolGroup = 0;
 decimal sumCumChicksHenHoused = 0;
 int countCumChicksHenHoused = 0;
 decimal sumCumChicksHenHousedGroup = 0;
 int countCumChicksHenHousedGroup = 0;
-decimal sumEstHatchPerPolReport = 0;
-int countEstHatchPerPolReport = 0;
-decimal sumCumChicksHenHousedReport = 0;
-int countCumChicksHenHousedReport = 0;
 decimal sumEggsProdSite = 0;
 decimal sumDeformeEggsSite = 0;
 decimal sumEggsProdSiteReport = 0;
@@ -276,7 +268,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
         recordCount++;
     }
 
-    decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+    decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
     
     if (femalePlaced &gt; 0)
     {
@@ -371,9 +363,9 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
     // Get Days parameter
     decimal days = 0;
-    if (Report.Parameters["Days"] != null)
+    if (Parameters["Days"] != null)
     {
-        days = Convert.ToDecimal(Report.Parameters["Days"].Value);
+        days = Convert.ToDecimal(Parameters["Days"].Value);
     }
     
     // Calculate total eggs produced
@@ -448,6 +440,8 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     
      // Calculate {@ActCumHatchFarmWise}
     decimal actCumHatchFarmWise = 0;
+    decimal totalChicks  = 0;
+    totalChicks   = cummChicks1 + cummCulls1 + cummDeads1;
     if (cummSettedEggs1 != 0)
     {
         actCumHatchFarmWise = (totalChicks / cummSettedEggs1) * 100.0m;
@@ -675,9 +669,9 @@ decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
 
 // Get Days parameter
 decimal days = 0;
-if (Report.Parameters["Days"] != null)
+if (Parameters["Days"] != null)
 {
-    days = Convert.ToDecimal(Report.Parameters["Days"].Value);
+    days = Convert.ToDecimal(Parameters["Days"].Value);
 }
 
 // Calculate {@EggsProd}
@@ -741,7 +735,7 @@ private void xrTableCell54_BeforePrint(object sender, System.ComponentModel.Canc
 // Get values from the data source
 decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
 decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
-decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemalCulls") ?? 0);
+decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
 
 // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
 decimal femaleDepl = femaleMort + femaleCulls;
@@ -759,9 +753,7 @@ else
 
  if (femalePlaced &gt; 0)
     {
-        // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
-        decimal femaleDepl = femaleMort + femaleCulls;
-        
+               
         // Calculate depletion percentage for this record
         decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
         
@@ -828,8 +820,6 @@ else
 
 if (malePlaced &gt; 0)
     {
-        // Calculate total cumulative male depletion
-        decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
         
         // Calculate cumulative depletion percentage for this record
         decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
@@ -852,9 +842,9 @@ decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
 
 // Get Days parameter
 decimal days = 0;
-if (Report.Parameters["Days"] != null)
+if (Parameters["Days"] != null)
 {
-    days = Convert.ToDecimal(Report.Parameters["Days"].Value);
+    days = Convert.ToDecimal(Parameters["Days"].Value);
 }
 
 // Calculate {@EggsProd}
@@ -1004,7 +994,7 @@ if (femaleBalance == 0)
 else if (pol &gt; 0)
 {
     // Calculate: (CummChicks1 + CummCulls1 + CummDeads1) / POL
-    decimal result = (cummChicks1 + cummCulls1 + cummDeads1) / pol;
+    decimal result = total  / pol;
     cell.Text = result.ToString("N2");
 }
 else
@@ -1163,7 +1153,7 @@ else
 }
 
 private void xrTableCell119_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    te void xrTableCell119_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+   
         XRTableCell cell = sender as XRTableCell;
 
     if (countCumChicksHenHoused &gt; 0)
