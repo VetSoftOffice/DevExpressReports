@@ -922,7 +922,7 @@ private void xrTableCell71_BeforePrint(object sender, System.ComponentModel.Canc
 
 
 private void xrTableCell106_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
+    XRTableCell cell = sender as XRTableCell;
 
 
 
@@ -936,13 +936,13 @@ decimal eggsProd = nestedEggs + floorEggs;
 
 if (eggsProd &gt; 0)
 {
-    // Calculate: (FloorEggs / EggsProd) * 100
-    decimal result = (floorEggs / eggsProd) * 100.0m;
-    cell.Text = result.ToString("N2");
+    // Calculate: (FloorEggs / EggsProd) * 100
+    decimal result = (floorEggs / eggsProd) * 100.0m;
+    cell.Text = result.ToString("N2");
 }
 else
 {
-    cell.Text = "0.00";
+    cell.Text = "0.00";
 }
 
 totalEggsProdReport += eggsProd;
@@ -951,30 +951,30 @@ totalFloorEggsReport += floorEggs;
 
 private void xrTableCell116_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        XRTableCell cell = sender as XRTableCell;
-    
-    if (totalEggsProd &gt; 0 &amp;&amp; totalFloorEggs &gt; 0)
-    {
-        decimal result = (totalFloorEggs / totalEggsProd) * 100.0m;
-        cell.Text = result.ToString("N2") ;
-    }
-    else
-    {
-        cell. Text = "0.00";
-    }
+    
+    if (totalEggsProd &gt; 0 &amp;&amp; totalFloorEggs &gt; 0)
+    {
+        decimal result = (totalFloorEggs / totalEggsProd) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell. Text = "0.00";
+    }
  }
 
 private void xrTableCell79_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
         XRTableCell cell = sender as XRTableCell;
-    
-    if (totalEggsProdReport &gt; 0 &amp;&amp; totalFloorEggsReport &gt; 0)
-    {
-        decimal result = (totalFloorEggsReport / totalEggsProdReport ) * 100.0m;
-        cell.Text = result.ToString("N2") ;
-    }
-    else
-    {
-        cell. Text = "0.00";
-    }
+    
+    if (totalEggsProdReport &gt; 0 &amp;&amp; totalFloorEggsReport &gt; 0)
+    {
+        decimal result = (totalFloorEggsReport / totalEggsProdReport ) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell. Text = "0.00";
+    }
  }
 
 private void xrTableCell107_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -1294,6 +1294,7 @@ else
 
     
 }
+
 
 </value>
   </data>

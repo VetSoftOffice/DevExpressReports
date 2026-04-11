@@ -1237,7 +1237,9 @@
             // xrTableCell46
             // 
             this.xrTableCell46.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'Net Depl. After D.O.A Up To \' + FormatString(\'{0}\', [FinishWeekNo]) + \' Week\'\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "IIF(?IsRTL = true,\n    \'صافي الهالك حتى \' + FormatString(\'{0}\', [FinishWeekNo]) +" +
+                    " \' أسبوع بعد نافق الوصول\',\n    \'Net Depl. After D.O.A Up To \' + FormatString(\'{0" +
+                    "}\', [FinishWeekNo]) + \' Week\'\n)")});
             this.xrTableCell46.Multiline = true;
             this.xrTableCell46.Name = "xrTableCell46";
             // 

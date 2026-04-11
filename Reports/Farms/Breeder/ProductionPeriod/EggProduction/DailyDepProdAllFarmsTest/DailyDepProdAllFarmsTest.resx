@@ -1,0 +1,1308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xrLabel1.ExpressionBindings" xml:space="preserve">
+    <value>IIF(IsNullOrEmpty(?FarmCode), '', ?FarmStr + ': ' + ?FarmCode + '      ') + 
+IIF(IsNullOrEmpty(?Breed), '', ?BreedStr + ': ' + ?Breed + '      ') + 
+IIF(IsNullOrEmpty(?Region), '', ?RegionStr + ': ' + ?Region + '      ') + 
+IIF(IsNullOrEmpty(?Site), '', ?SiteStr + ': ' + ?Site + '      ')</value>
+  </data>
+  <data name="xrTableCell120.ExpressionBindings" xml:space="preserve">
+    <value>IIF(
+    IsNullOrEmpty([AgeWeek]) OR IsNullOrEmpty([FlockAge]),
+    '',
+    IIF([AgeWeek] &lt;= [FlockAge], 
+        IIF(IsNullOrEmpty(?Total), '', ?Total) + ToStr([FlockAge]) + IIF(IsNullOrEmpty(?WeeksOfAgeAndBelow), '', ?WeeksOfAgeAndBelow), 
+        IIF(IsNullOrEmpty(?TotalAbove), '', ?TotalAbove) + ToStr([FlockAge]) + IIF(IsNullOrEmpty(?AgeWeeks), '', ?AgeWeeks)
+    )
+)</value>
+  </data>
+  <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVByb2R1Y3Rpb24iPjxGaWVsZCBOYW1lPSJIYXRjaEVnZ3NCaXJkc1drIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hFZ2dzQmlyZHNXa0N1bSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1IYXRjaGluZ0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZXJ0aWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1IYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaE9mRmVydGlsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bUNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1DaGlja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tU2V0dGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUNoaWNrcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla2x5RGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrbHlTZXR0ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbVNldHRlZEVnZ3MxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUNoaWNrczEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbURlYWRzMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVzdEhhdGNoRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNpdGVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVQbGFjZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0Zhcm1Db2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idEZyRmFybUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVTZWxsaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTWFsZVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1N0YXJ0TWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1GZW1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFkRGVwbGF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTmVzdGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRmxvb3JHX0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9vckVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGluZ0Zsb29yR19CIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU21hbGxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3ZlcldlaWdodEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWZvcm1pdHlFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRG91YmxlWW9sa0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEaXJ0eUVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcm9rZW5FZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGVzdHJveWVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvZnRTaGVsbEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFByb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZhYmlsaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuSG91c2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ1dlaWdodCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ01hc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dzQmlyZHNXayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NCaXJkc1drQ3VtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="TotalUnHatch.Expression" xml:space="preserve">
+    <value>[SR_HT_RecHall.SoftShellEggs] + [SR_HT_RecHall.MinorCrackedEggs] + [SR_HT_RecHall.MajorCrackedEggs] + [SR_HT_RecHall.ThinShellEggs] + [SR_HT_RecHall.OtherEggs] + [SR_HT_RecHall.WholeEggs] + 
+[SR_HT_RecHall.BrokenEggs] + [SR_HT_RecHall.SmallEggs] + [SR_HT_RecHall.OverWeightEggs] + [SR_HT_RecHall.DirtyEggs] + [SR_HT_RecHall.DeformityEggs] + [SR_HT_RecHall.CrackedEggs] + 
+[SR_HT_RecHall.DoubleYolkEggs] + [SR_HT_RecHall.DestroyedEggs]
+</value>
+  </data>
+  <data name="Group1.Expression" xml:space="preserve">
+    <value>IIF(
+    IsNullOrEmpty([GroupByWeek]) OR IsNullOrEmpty([FlockAge]),
+    ' ',
+    IIF([GroupByWeek] = [FlockAge], 
+        ToStr([FlockAge]) + ' ' + IIF(IsNullOrEmpty(?WeeksOfAgeAndBelow), ' ', ?WeeksOfAgeAndBelow), 
+        ToStr([FlockAge]) + ' ' + IIF(IsNullOrEmpty(?AgeWeeks), '', ?AgeWeeks) + ' ' + IIF(IsNullOrEmpty(?TotalAbove), ' ', ?TotalAbove)
+    )
+)</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXQiPjxGaWVsZCBOYW1lPSJ0U3RBY3Rpb25JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5CYWxhbmNlRm9yZWlnbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByaWNlVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFN1cHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZUZvcmVpZ24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaWxsU3RhdGVtZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXRfT0xEIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0U3VwcE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQmlsbFN0YXRlbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRGViaXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRmxrRGlyZWN0Q29zdCI+PEZpZWxkIE5hbWU9IlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVG90YWxDb3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ2hpY2tzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUE9MIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2hpY2tlbkNvc3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQbGFjZWRObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ2hlY2tlbnNXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJc0Nvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48VmlldyBOYW1lPSJTUl9GQ19GTV9TdG9ja01vdmVtZW50Ij48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkluT3V0T3JkZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRNaWxsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvV2hvbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXRfUHJvZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGb3JtdWxhT3BlcmFuZF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik91dHB1dHNTdGRVbml0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3RoZXJPdXRwdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbmRMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uc3VtZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTb2xkVHJhbnNmZXJPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCYXRjaENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEduSXRlbVR5cGVJRF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSXRlbUNvZGVfQ29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VCYWxhbmNlVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbnB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdGhlck91dHB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzU3RkVW5pdFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uZExvc3NWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbnN1bWVkVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb25WYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGRUcmFuc2Zlck91dFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2xvc2VCYWxhbmNlIj48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VkRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZDdW1EZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkN1bVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGQ3VtT3RoZXJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUN1bU90aGVyT3V0cHV0cyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0l0ZW1CYWxhbmNlIj48RmllbGQgTmFtZT0iQ3VzdE5hbWVXaXRob3V0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX01vbnRobHlEaXJlY3RDb3N0Ij48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVNpdGVXaXNlIj48RmllbGQgTmFtZT0iRmFybUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEZyRmFybUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2l0ZV9lbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmVtYWxlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVBsYWNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU3RhZERlcGxhdGlvbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1TdGFkRGVwbGF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1GZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbU1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUZlbWFsQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tTWFsZUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUZlbWFsZU1pc3NleCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlU2VsbGluZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVTZWxsaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ29uZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVDb25kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ2F0Y2hMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtTWFsZUNhdGNoTG9zcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVByb2R1Y3Rpb24iPjxGaWVsZCBOYW1lPSJIYXRjaEVnZ3NCaXJkc1drIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hFZ2dzQmlyZHNXa0N1bSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1IYXRjaGluZ0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZXJ0aWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1IYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaE9mRmVydGlsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bUNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1DaGlja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tU2V0dGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUNoaWNrcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla2x5RGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrbHlTZXR0ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbVNldHRlZEVnZ3MxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUNoaWNrczEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbURlYWRzMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVzdEhhdGNoRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNpdGVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVQbGFjZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0Zhcm1Db2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idEZyRmFybUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVTZWxsaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTWFsZVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1N0YXJ0TWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1GZW1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFkRGVwbGF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTmVzdGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRmxvb3JHX0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9vckVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGluZ0Zsb29yR19CIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU21hbGxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3ZlcldlaWdodEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWZvcm1pdHlFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRG91YmxlWW9sa0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEaXJ0eUVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcm9rZW5FZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGVzdHJveWVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvZnRTaGVsbEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFByb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZhYmlsaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuSG91c2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ1dlaWdodCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ01hc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dzQmlyZHNXayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NCaXJkc1drQ3VtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+  </data>
+  <data name="$this.ScriptsSource" xml:space="preserve">
+    <value>decimal sumOfFemales = 0;
+decimal sumOfMales = 0;
+decimal sumOfFemalesReport = 0;
+decimal sumOfMalesReport = 0;
+decimal sumOfPercentages = 0;
+int recordCount = 0;
+decimal sumOfPercentagesReport = 0;
+int recordCountReport = 0;
+decimal sumOfCullPercentages = 0;
+int cullRecordCount = 0;
+decimal sumOfCullPercentagesReport = 0;
+int cullRecordCountReport = 0;
+decimal sumOfMaleMortPercentages = 0;
+int maleMortRecordCount = 0;
+decimal sumOfMaleMortPercentagesReport = 0;
+int maleMortRecordCountReport = 0;
+decimal sumOfMaleCullPercentages = 0;
+int maleCullRecordCount = 0;
+decimal sumOfMaleCullPercentagesReport = 0;
+int maleCullRecordCountReport = 0;
+decimal sumOfFemaleDeplPercentages = 0;
+int femaleDeplRecordCount = 0;
+decimal sumOfFemaleDeplPercentagesReport = 0;
+int femaleDeplRecordCountReport = 0;
+decimal sumOfCumFemaleDeplPercentages = 0;
+int cumFemaleDeplRecordCount = 0;
+decimal sumOfCumFemaleDeplPercentagesReport = 0;
+int cumFemaleDeplRecordCountReport = 0;
+decimal sumOfCumMaleDeplPercentages = 0;
+int cumMaleDeplRecordCount = 0;
+decimal sumOfCumMaleDeplPercentagesReport = 0;
+int cumMaleDeplRecordCountReport = 0;
+decimal sumHenDayPercent = 0;
+int henDayRecordCount = 0;
+decimal sumHenDayPercentReport = 0;
+int henDayRecordCountReport = 0;
+decimal sumHenDayProd = 0;
+int henDayCount = 0;
+decimal sumHenDayProdReport = 0;
+int henDayCountReport = 0;
+decimal totalEggsProd = 0;
+decimal totalFloorEggs = 0;
+decimal totalEggsProdReport = 0;
+decimal totalFloorEggsReport = 0;
+decimal totalHatchingEggs = 0;
+decimal totalHatchingFloorG_B = 0;
+decimal totalHatchingFloorG_A = 0;
+decimal totalHatchingEggsReport = 0;
+decimal totalHatchingFloorG_BReport = 0;
+decimal totalHatchingFloorG_AReport = 0;
+decimal sumOfChicksPerPol = 0;
+int chicksPerPolCount = 0;
+decimal totalChicksSumReport = 0;
+decimal totalPolSumReport = 0;
+int weightedCountReport = 0;
+decimal sumEstHatchPerPolReport = 0;
+int countEstHatchPerPolReport = 0;
+decimal sumEstHatchPerPolGroup = 0;
+int countEstHatchPerPolGroup = 0;
+decimal sumCumChicksHenHoused = 0;
+int countCumChicksHenHoused = 0;
+decimal sumCumChicksHenHousedGroup = 0;
+int countCumChicksHenHousedGroup = 0;
+decimal sumEggsProdSite = 0;
+decimal sumDeformeEggsSite = 0;
+decimal sumEggsProdSiteReport = 0;
+decimal sumDeformeEggsSiteReport = 0;
+
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
+
+if (femaleBalance &gt; 0)
+{
+    // Calculate: (MaleBalance / FemaleBalance) * 100
+    decimal result = (maleBalance / femaleBalance) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+sumOfFemalesReport += femaleBalance ;
+sumOfMalesReport  += maleBalance ;
+}
+
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+   decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+    decimal maleBalance = Convert.ToDecimal(GetCurrentColumnValue("MaleBalance") ?? 0);
+    
+    sumOfFemales += femaleBalance;
+    sumOfMales += maleBalance;
+    
+    decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+    decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
+    
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate percentage for this record
+        decimal percentage = (femaleMort / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfPercentages += percentage;
+        recordCount++;
+    }
+
+    decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
+    
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate cull percentage for this record
+        decimal cullPercentage = (femaleCulls / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCullPercentages += cullPercentage;
+        cullRecordCount++;
+    }
+    
+    decimal malePlaced = Convert.ToDecimal(GetCurrentColumnValue("MalePlaced") ?? 0);
+    decimal maleMort = Convert.ToDecimal(GetCurrentColumnValue("MaleMort") ?? 0);
+    
+    if (malePlaced &gt; 0)
+    {
+        // Calculate mortality percentage for this record
+        decimal maleMortPercentage = (maleMort / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfMaleMortPercentages += maleMortPercentage;
+        maleMortRecordCount++;
+    }
+    
+    
+     decimal maleCulls = Convert.ToDecimal(GetCurrentColumnValue("MaleCulls") ?? 0);
+    
+    if (malePlaced &gt; 0)
+    {
+        // Calculate cull percentage for this record
+        decimal maleCullPercentage = (maleCulls / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfMaleCullPercentages += maleCullPercentage;
+        maleCullRecordCount++;
+    }
+    
+    
+    
+      
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
+        decimal femaleDepl = femaleMort + femaleCulls;
+        
+        // Calculate depletion percentage for this record
+        decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfFemaleDeplPercentages += femaleDeplPercentage;
+        femaleDeplRecordCount++;
+    }
+    
+    
+    decimal cummFemaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummFemaleMort") ?? 0);
+    decimal cummFemalCulls = Convert.ToDecimal(GetCurrentColumnValue("CummFemalCulls") ?? 0);
+    decimal cumFemaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumFemaleCond") ?? 0);
+    
+    if (femalePlaced &gt; 0)
+    {
+        // Calculate total cumulative female depletion
+        decimal totalCumFemaleDepl = cummFemaleMort + cummFemalCulls + cumFemaleCond;
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumFemaleDeplPercentage = (totalCumFemaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumFemaleDeplPercentages += cumFemaleDeplPercentage;
+        cumFemaleDeplRecordCount++;
+    }
+    
+    decimal cummMaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummMaleMort") ?? 0);
+    decimal cummMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("CummMaleCulls") ?? 0);
+    decimal cumMaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumMaleCond") ?? 0);
+    
+    if (malePlaced &gt; 0)
+    {
+        // Calculate total cumulative male depletion
+        decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumMaleDeplPercentages += cumMaleDeplPercentage;
+        cumMaleDeplRecordCount++;
+    }
+        // Get values from the data source
+    decimal weekStartFemales = Convert.ToDecimal(GetCurrentColumnValue("WeekStartFemales") ?? 0);
+    decimal nestedEggs = Convert.ToDecimal(GetCurrentColumnValue("NestedEggs") ?? 0);
+    decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
+    decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+    // Get Days parameter
+    decimal days = 0;
+    if (Parameters["Days"] != null)
+    {
+        days = Convert.ToDecimal(Parameters["Days"].Value);
+    }
+    
+    // Calculate total eggs produced
+    decimal eggsProd = nestedEggs + floorEggs;
+    
+    // Calculate percentage for this record if conditions are met
+    if (weekStartFemales &gt; 0 &amp;&amp; days &gt; 0)
+    {
+        decimal percentage = ((eggsProd / days) / weekStartFemales) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumHenDayPercent += percentage;
+        henDayRecordCount++;
+    }
+    
+     // Apply conditions: POL &gt; 0, Days &gt; 0
+    if (pol &gt; 0 &amp;&amp; days &gt; 0)
+    {
+        decimal dailyEggsPerHen = (eggsProd / days) / pol;
+        
+        // Only include if dailyEggsPerHen &lt;= 100
+        if (dailyEggsPerHen &lt;= 100.0m)
+        {
+            decimal henDayPercent = dailyEggsPerHen * 100.0m;
+            
+            // Add to sum and increment counter
+            sumHenDayProd += henDayPercent;
+            henDayCount++;
+        }
+        
+        decimal deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs") ?? 0);
+
+        decimal deformeEggs = deformityEggs;
+
+        // Accumulate per Site
+        sumEggsProdSite += eggsProd;
+        sumDeformeEggsSite += deformeEggs;
+  }
+    
+     // Accumulate totals
+    totalEggsProd += eggsProd;
+    totalFloorEggs += floorEggs;
+    
+    decimal hatchingEggs = Convert.ToDecimal(GetCurrentColumnValue("HatchingEggs") ?? 0);
+    decimal hatchingFloorG_B = Convert.ToDecimal(GetCurrentColumnValue("HatchingFloorG_B") ?? 0);
+    decimal hatchingFloorG_A = Convert.ToDecimal(GetCurrentColumnValue("HatchingFloorG_A") ?? 0);
+    totalEggsProd += nestedEggs + floorEggs;
+
+    
+    // Accumulate {@HatchingFloorEggs} components
+    totalHatchingFloorG_B += hatchingFloorG_B;
+    totalHatchingFloorG_A += hatchingFloorG_A;
+    
+    // Accumulate {@HatchsEggs}
+    totalHatchingEggs += hatchingEggs;
+    
+    decimal cummChicks1 = Convert.ToDecimal(GetCurrentColumnValue("CummChicks1") ?? 0);
+    decimal cummCulls1 = Convert.ToDecimal(GetCurrentColumnValue("CummCulls1") ?? 0);
+    decimal cummDeads1 = Convert.ToDecimal(GetCurrentColumnValue("CummDeads1") ?? 0);
+    decimal estHatchEggs = Convert.ToDecimal(GetCurrentColumnValue("EstHatchEggs") ?? 0);
+    decimal cummSettedEggs1 = Convert.ToDecimal(GetCurrentColumnValue("CummSettedEggs1") ?? 0);
+    
+    // Calculate value for this record
+    if (femaleBalance != 0 &amp;&amp; pol &gt; 0)
+    {
+        decimal value = (cummChicks1 + cummCulls1 + cummDeads1) / pol;
+        
+        // Add to sum and increment counter
+        sumOfChicksPerPol += value;
+        chicksPerPolCount++;
+    }
+    
+     // Calculate {@ActCumHatchFarmWise}
+    decimal actCumHatchFarmWise = 0;
+    decimal totalChicks  = 0;
+    totalChicks   = cummChicks1 + cummCulls1 + cummDeads1;
+    if (cummSettedEggs1 != 0)
+    {
+        actCumHatchFarmWise = (totalChicks / cummSettedEggs1) * 100.0m;
+    }
+
+    // Calculate value for this record
+    if (femaleBalance != 0 &amp;&amp; pol &gt; 0)
+    {
+        decimal currentValue = ((estHatchEggs * actCumHatchFarmWise) / 100.0m) / pol;
+        
+        // Add to group totals
+        sumEstHatchPerPolGroup += currentValue;
+        countEstHatchPerPolGroup++;
+    }
+    
+    
+     decimal cumChicksHenHoused = Convert.ToDecimal(GetCurrentColumnValue("CumChicksHenHoused") ?? 0);
+
+    // Accumulate only when FemaleBalance is not zero
+    if (femaleBalance != 0)
+    {
+        sumCumChicksHenHoused += cumChicksHenHoused;
+        countCumChicksHenHoused++;
+    }
+    
+    
+   }
+
+private void xrTableCell85_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (sumOfFemales &gt; 0)
+    {
+        decimal result = (sumOfMales / sumOfFemales) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (sumOfFemalesReport &gt; 0)
+    {
+        decimal result = (sumOfMalesReport / sumOfFemalesReport ) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell84_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (recordCount &gt; 0)
+    {
+        decimal average = sumOfPercentages / recordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell61_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (recordCountReport &gt; 0)
+    {
+        decimal average = sumOfPercentagesReport / recordCountReport;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell86_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (cullRecordCount &gt; 0)
+    {
+        decimal average = sumOfCullPercentages / cullRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell63_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          XRTableCell cell = sender as XRTableCell;
+    
+    if (cullRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfCullPercentagesReport / cullRecordCountReport ;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell88_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (maleMortRecordCount &gt; 0)
+    {
+        decimal average = sumOfMaleMortPercentages / maleMortRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (maleMortRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfMaleMortPercentagesReport / maleMortRecordCountReport ;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell90_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (maleCullRecordCount &gt; 0)
+    {
+        decimal average = sumOfMaleCullPercentages / maleCullRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell67_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (maleCullRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfMaleCullPercentagesReport / maleCullRecordCountReport;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell92_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (femaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfFemaleDeplPercentages / femaleDeplRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+              XRTableCell cell = sender as XRTableCell;
+    
+    if (henDayRecordCountReport &gt; 0)
+    {
+        decimal average = sumHenDayPercentReport / henDayRecordCountReport ;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell93_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (cumFemaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfCumFemaleDeplPercentages / cumFemaleDeplRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal weekStartFemales = Convert.ToDecimal(GetCurrentColumnValue("WeekStartFemales") ?? 0);
+decimal nestedEggs = Convert.ToDecimal(GetCurrentColumnValue("NestedEggs") ?? 0);
+decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
+
+// Get Days parameter
+decimal days = 0;
+if (Parameters["Days"] != null)
+{
+    days = Convert.ToDecimal(Parameters["Days"].Value);
+}
+
+// Calculate {@EggsProd}
+decimal eggsProd = nestedEggs + floorEggs;
+
+if (weekStartFemales != 0 &amp;&amp; days != 0)
+{
+    // Calculate: (EggsProd / Days) / WeekStartFemales * 100
+    decimal result = ((eggsProd / days) / weekStartFemales) * 100.0m;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+   // Calculate percentage for this record if conditions are met
+    if (weekStartFemales &gt; 0 &amp;&amp; days &gt; 0)
+    {
+        decimal percentage = ((eggsProd / days) / weekStartFemales) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumHenDayPercent += percentage;
+        henDayRecordCount++;
+    }
+  }
+
+private void xrTableCell70_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (cumFemaleDeplRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfCumFemaleDeplPercentagesReport / cumFemaleDeplRecordCountReport;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell96_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+           XRTableCell cell = sender as XRTableCell;
+    
+    if (henDayRecordCount &gt; 0)
+    {
+        decimal average = sumHenDayPercent / henDayRecordCount;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+
+private void xrTableCell54_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal femalePlaced = Convert.ToDecimal(GetCurrentColumnValue("FemalePlaced") ?? 0);
+decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
+decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("FemaleCulls") ?? 0);
+
+// Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
+decimal femaleDepl = femaleMort + femaleCulls;
+
+if (femalePlaced &gt; 0)
+{
+    // Calculate: ({@FemaleDepl} / FemalePlaced) * 100
+    decimal result = (femaleDepl / femalePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+ if (femalePlaced &gt; 0)
+    {
+               
+        // Calculate depletion percentage for this record
+        decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfFemaleDeplPercentagesReport += femaleDeplPercentage;
+        femaleDeplRecordCountReport++;
+    }
+
+
+}
+
+private void xrTableCell92_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+    
+    if (femaleDeplRecordCount &gt; 0)
+    {
+        decimal average = sumOfFemaleDeplPercentages / femaleDeplRecordCount;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell65_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (femaleDeplRecordCountReport &gt; 0)
+    {
+        decimal average = sumOfFemaleDeplPercentagesReport / femaleDeplRecordCountReport ;
+        cell.Text = average.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+}
+
+private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal malePlaced = Convert.ToDecimal(GetCurrentColumnValue("MalePlaced") ?? 0);
+decimal cummMaleMort = Convert.ToDecimal(GetCurrentColumnValue("CummMaleMort") ?? 0);
+decimal cummMaleCulls = Convert.ToDecimal(GetCurrentColumnValue("CummMaleCulls") ?? 0);
+decimal cumMaleCond = Convert.ToDecimal(GetCurrentColumnValue("CumMaleCond") ?? 0);
+
+// Calculate total cumulative male depletion
+decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
+
+if (malePlaced &gt; 0)
+{
+    // Calculate: (Total Cumulative Depletion / MalePlaced) * 100
+    decimal result = (totalCumMaleDepl / malePlaced) * 100.0m;
+    cell.Text = result.ToString("N2"); // Formats to 2 decimal places
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+if (malePlaced &gt; 0)
+    {
+        
+        // Calculate cumulative depletion percentage for this record
+        decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
+        
+        // Add to sum and increment counter
+        sumOfCumMaleDeplPercentagesReport += cumMaleDeplPercentage;
+        cumMaleDeplRecordCountReport++;
+    }
+
+}
+
+
+private void xrTableCell72_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal nestedEggs = Convert.ToDecimal(GetCurrentColumnValue("NestedEggs") ?? 0);
+decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
+
+// Get Days parameter
+decimal days = 0;
+if (Parameters["Days"] != null)
+{
+    days = Convert.ToDecimal(Parameters["Days"].Value);
+}
+
+// Calculate {@EggsProd}
+decimal eggsProd = nestedEggs + floorEggs;
+
+// Calculate the value (EggsProd / Days / POL)
+decimal value = 0;
+if (days &gt; 0 &amp;&amp; pol &gt; 0)
+{
+    value = (eggsProd / days) / pol;
+}
+
+// Apply the condition
+if (pol &gt; 0 &amp;&amp; days &gt; 0 &amp;&amp; value &lt;= 100.0m)
+{
+    decimal result = value * 100.0m;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+ // Apply conditions: POL &gt; 0, Days &gt; 0
+    if (pol &gt; 0 &amp;&amp; days &gt; 0)
+    {
+        decimal dailyEggsPerHen = (eggsProd / days) / pol;
+        
+        // Only include if dailyEggsPerHen &lt;= 100
+        if (dailyEggsPerHen &lt;= 100.0m)
+        {
+            decimal henDayPercent = dailyEggsPerHen * 100.0m;
+            
+            // Add to sum and increment counter
+            sumHenDayProdReport += henDayPercent;
+            henDayCountReport++;
+        }
+    }
+}
+
+private void xrTableCell111_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (henDayCount &gt; 0)
+    {
+        decimal average = sumHenDayProd / henDayCount;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell71_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (henDayCountReport &gt; 0)
+    {
+        decimal average = sumHenDayProdReport / henDayCountReport ;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+
+    
+}
+
+
+
+
+
+
+private void xrTableCell106_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+
+
+// Get values from the data source
+decimal nestedEggs = Convert.ToDecimal(GetCurrentColumnValue("NestedEggs") ?? 0);
+decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);   
+// Calculate {@EggsProd}
+decimal eggsProd = nestedEggs + floorEggs;
+
+
+
+if (eggsProd &gt; 0)
+{
+    // Calculate: (FloorEggs / EggsProd) * 100
+    decimal result = (floorEggs / eggsProd) * 100.0m;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+totalEggsProdReport += eggsProd;
+totalFloorEggsReport += floorEggs; 
+}
+
+private void xrTableCell116_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+       XRTableCell cell = sender as XRTableCell;
+    
+    if (totalEggsProd &gt; 0 &amp;&amp; totalFloorEggs &gt; 0)
+    {
+        decimal result = (totalFloorEggs / totalEggsProd) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell. Text = "0.00";
+    }
+ }
+
+private void xrTableCell79_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+    
+    if (totalEggsProdReport &gt; 0 &amp;&amp; totalFloorEggsReport &gt; 0)
+    {
+        decimal result = (totalFloorEggsReport / totalEggsProdReport ) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell. Text = "0.00";
+    }
+ }
+
+private void xrTableCell107_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal total = Convert.ToDecimal(GetCurrentColumnValue("CummChicks1") ?? 0) + 
+                    Convert.ToDecimal(GetCurrentColumnValue("CummCulls1") ?? 0) + 
+                    Convert.ToDecimal(GetCurrentColumnValue("CummDeads1") ?? 0);
+
+if (femaleBalance == 0)
+{
+    cell.Text = "0.00";
+}
+else if (pol &gt; 0)
+{
+    // Calculate: (CummChicks1 + CummCulls1 + CummDeads1) / POL
+    decimal result = total  / pol;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+    // Add to cumulative totals for weighted average
+    if (femaleBalance != 0 &amp;&amp; pol &gt; 0)
+    {
+        totalChicksSumReport += total;
+        totalPolSumReport += pol;
+        weightedCountReport++;
+    }
+}
+
+private void xrTableCell117_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+    
+    if (chicksPerPolCount &gt; 0)
+    {
+        decimal average = sumOfChicksPerPol / chicksPerPolCount;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell80_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+
+    if (totalPolSumReport &gt; 0)
+    {
+        decimal weightedAverage = totalChicksSumReport / totalPolSumReport;
+        weightedAverage = Math.Round(weightedAverage, 2);
+        cell.Text = weightedAverage.ToString("N2");
+        
+     }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell108_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal femaleBalance = Convert.ToDecimal(GetCurrentColumnValue("FemaleBalance") ?? 0);
+decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
+decimal estHatchEggs = Convert.ToDecimal(GetCurrentColumnValue("EstHatchEggs") ?? 0);
+decimal cummSettedEggs1 = Convert.ToDecimal(GetCurrentColumnValue("CummSettedEggs1") ?? 0);
+decimal cummChicks1 = Convert.ToDecimal(GetCurrentColumnValue("CummChicks1") ?? 0);
+decimal cummCulls1 = Convert.ToDecimal(GetCurrentColumnValue("CummCulls1") ?? 0);
+decimal cummDeads1 = Convert.ToDecimal(GetCurrentColumnValue("CummDeads1") ?? 0);
+
+// Calculate {@ActCumHatchFarmWise}
+decimal actCumHatchFarmWise = 0;
+if (cummSettedEggs1 != 0)
+{
+    actCumHatchFarmWise = ((cummChicks1 + cummCulls1 + cummDeads1) / cummSettedEggs1) * 100.0m;
+}
+
+decimal currentValue = 0;
+if (femaleBalance == 0)
+{
+    currentValue = 0;
+
+    cell.Text = "0.00";
+}
+else if (pol &gt; 0)
+{
+    // Calculate: (EstHatchEggs * ActCumHatchFarmWise / 100) / POL
+     currentValue = ((estHatchEggs * actCumHatchFarmWise) / 100.0m) / pol;
+    cell.Text = currentValue.ToString("N2");
+}
+else
+{
+    currentValue = 0;
+    cell.Text = "0.00";
+}
+
+    sumEstHatchPerPolReport += currentValue;
+    countEstHatchPerPolReport++;
+}
+
+private void xrTableCell121_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+
+    if (countEstHatchPerPolReport &gt; 0)
+    {
+        decimal average = sumEstHatchPerPolReport / countEstHatchPerPolReport;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell118_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     XRTableCell cell = sender as XRTableCell;
+
+    if (countEstHatchPerPolGroup &gt; 0)
+    {
+        decimal average = sumEstHatchPerPolGroup / countEstHatchPerPolGroup;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrTableCell109_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from the data source
+decimal nestedEggs = Convert.ToDecimal(GetCurrentColumnValue("NestedEggs") ?? 0);
+decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
+decimal hatchingEggs = Convert.ToDecimal(GetCurrentColumnValue("HatchingEggs") ?? 0);
+decimal hatchingFloorG_B = Convert.ToDecimal(GetCurrentColumnValue("HatchingFloorG_B") ?? 0);
+decimal hatchingFloorG_A = Convert.ToDecimal(GetCurrentColumnValue("HatchingFloorG_A") ?? 0);
+
+// Calculate {@EggsProd}
+decimal eggsProd = nestedEggs + floorEggs;
+
+// Calculate {@HatchingFloorEggs}
+decimal hatchingFloorEggs = hatchingFloorG_B + hatchingFloorG_A;
+
+// Calculate {@HatchsEggs}
+decimal hatchsEggs = hatchingEggs + hatchingFloorEggs;
+
+if (eggsProd &gt; 0)
+{
+    // Calculate: (HatchsEggs / EggsProd) * 100
+    decimal result = (hatchsEggs / eggsProd) * 100.0m;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+ // Add to cumulative totals (report-level)
+    totalEggsProdReport += eggsProd;
+    totalHatchingEggsReport += hatchingEggs;
+    totalHatchingFloorG_BReport += hatchingFloorG_B;
+    totalHatchingFloorG_AReport += hatchingFloorG_A;
+
+}
+
+private void xrTableCell119_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+   
+        XRTableCell cell = sender as XRTableCell;
+
+    if (countCumChicksHenHoused &gt; 0)
+    {
+        decimal average = sumCumChicksHenHoused / countCumChicksHenHoused;
+        average = Math.Round(average, 2);
+        cell.Text = average.ToString("N2");
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+    
+}
+
+private void xrTableCell122_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+
+    decimal totalHatchingFloorEggs = totalHatchingFloorG_BReport + totalHatchingFloorG_AReport;
+    decimal totalHatchsEggs = totalHatchingEggsReport + totalHatchingFloorEggs;
+
+    if (totalEggsProdReport &gt; 0)
+    {
+        decimal result = (totalHatchsEggs / totalEggsProdReport) * 100.0m;
+        cell.Text = result.ToString("N2") ;
+    }
+    else
+    {
+        cell.Text = "0.00";
+    }
+}
+
+private void xrLabel11_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+  XRLabel label = sender as XRLabel;
+
+// Get values from the data source
+decimal weeklySettedEggs = Convert.ToDecimal(GetCurrentColumnValue("WeeklySettedEggs") ?? 0);
+decimal weeklyChicks = Convert.ToDecimal(GetCurrentColumnValue("WeeklyChicks") ?? 0);
+decimal weeklyCulls = Convert.ToDecimal(GetCurrentColumnValue("WeeklyCulls") ?? 0);
+decimal weeklyDeads = Convert.ToDecimal(GetCurrentColumnValue("WeeklyDeads") ?? 0);
+
+if (weeklySettedEggs &gt; 0)
+{
+    // Calculate: (WeeklyChicks + WeeklyCulls + WeeklyDeads) / WeeklySettedEggs * 100
+    decimal totalOutput = weeklyChicks + weeklyCulls + weeklyDeads;
+    decimal result = (totalOutput / weeklySettedEggs) * 100.0m;
+    label.Text = result.ToString("N2");
+}
+else
+{
+    label.Text = "0.00";
+}
+}
+
+private void xrLabel13_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRLabel label = sender as XRLabel;
+
+// Get values from the data source
+decimal cummSettedEggs = Convert.ToDecimal(GetCurrentColumnValue("CummSettedEggs") ?? 0);
+decimal cummChicks = Convert.ToDecimal(GetCurrentColumnValue("CummChicks") ?? 0);
+decimal cummCulls = Convert.ToDecimal(GetCurrentColumnValue("CummCulls") ?? 0);
+decimal cummDeads = Convert.ToDecimal(GetCurrentColumnValue("CummDeads") ?? 0);
+
+if (cummSettedEggs &gt; 0)
+{
+    // Calculate: (CummChicks + CummCulls + CummDeads) / CummSettedEggs * 100
+    decimal totalOutput = cummChicks + cummCulls + cummDeads;
+    decimal result = (totalOutput / cummSettedEggs) * 100.0m;
+    label.Text = result.ToString("N2");
+}
+else
+{
+    label.Text = "0.00";
+}
+}
+
+
+private void xrTableCell103_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+// Get values from datasource
+decimal nestedEggs   = Convert.ToDecimal(GetCurrentColumnValue("NestedEggs") ?? 0);
+decimal floorEggs    = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
+decimal deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs") ?? 0);
+
+// Calculations
+decimal eggsProd = nestedEggs + floorEggs;
+decimal deformeEggs = deformityEggs;
+
+decimal result = 0;
+
+if (eggsProd &gt; 0)
+{
+    result = (deformeEggs / eggsProd) * 100.0m;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+// Running totals (if needed)
+sumEggsProdSiteReport += eggsProd;
+sumDeformeEggsSiteReport += deformeEggs;
+}
+
+
+private void xrTableCell113_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+
+decimal result = 0;
+
+if (sumEggsProdSite &gt; 0)
+{
+    result = (sumDeformeEggsSite / sumEggsProdSite) * 100;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+}
+
+private void xrTableCell75_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+      XRTableCell cell = sender as XRTableCell;
+
+decimal result = 0;
+
+if (sumEggsProdSiteReport &gt; 0)
+{
+    result = (sumDeformeEggsSite / sumEggsProdSiteReport ) * 100;
+    cell.Text = result.ToString("N2");
+}
+else
+{
+    cell.Text = "0.00";
+}
+
+    
+}
+
+
+
+
+</value>
+  </data>
+</root>

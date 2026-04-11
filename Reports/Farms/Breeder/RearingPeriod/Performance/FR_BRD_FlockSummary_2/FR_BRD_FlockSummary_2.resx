@@ -118,16 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="xrLabel3.ExpressionBindings" xml:space="preserve">
-    <value>iif([IsRTL],
-    'تاريخ الفقس / تاريخ الوصول : ' 
-    + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) 
-    + ' / ' 
-    + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),
-    
-    'Hatch Date / Arrival Date : ' 
-    + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) 
-    + ' / ' 
-    + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])
+    <value>IIF([IsRTL] = true,
+    IIF(IsNullOrEmpty([rs_HatchDate]) AND IsNullOrEmpty([ActualArrivalDate]), '',
+        IIF(IsNullOrEmpty([rs_HatchDate]), 
+            'تاريخ الوصول : ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),
+            IIF(IsNullOrEmpty([ActualArrivalDate]),
+                'تاريخ الفقس : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]),
+                'تاريخ الفقس / تاريخ الوصول : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) + ' / ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])
+            )
+        )
+    ),
+    IIF(IsNullOrEmpty([rs_HatchDate]) AND IsNullOrEmpty([ActualArrivalDate]), '',
+        IIF(IsNullOrEmpty([rs_HatchDate]), 
+            'Arrival Date : ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),
+            IIF(IsNullOrEmpty([ActualArrivalDate]),
+                'Hatch Date : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]),
+                'Hatch Date / Arrival Date : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) + ' / ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])
+            )
+        )
+    )
 )</value>
   </data>
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
