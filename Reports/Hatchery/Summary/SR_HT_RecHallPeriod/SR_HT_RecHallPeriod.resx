@@ -784,6 +784,39 @@ private void GroupHeader1_BeforePrint(object sender, System.ComponentModel.Cance
     TotalhatchingEggsGroup   = 0;
     TotalRecEggsHatchGroup = 0;
 }
+
+private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        // --- Declare values --- 
+    decimal deformityEggs = 0;
+    decimal recEggs = 0;
+    decimal total = 0;
+    decimal totalPerc = 0;
+    decimal totalDeformityEggs = 0;
+    decimal TotalReport = 0;
+    decimal TotalPercReport = 0;
+
+    // --- Read values ---
+    if (GetCurrentColumnValue("DeformityEggs") != null)
+        deformityEggs = Convert.ToDecimal(GetCurrentColumnValue("DeformityEggs"));
+
+    if (GetCurrentColumnValue("RecEggs") != null)
+        recEggs = Convert.ToDecimal(GetCurrentColumnValue("RecEggs"));
+
+    // --- Base total (DeformityEggs) ---
+    total = deformityEggs;
+
+    // --- Calculate DeformityEggs % of RecEggs ---
+    if (recEggs != 0)
+        totalPerc = (deformityEggs * 100.0m / recEggs);
+
+    // --- Final sum ---
+    totalDeformityEggs = total + totalPerc;
+
+    // --- Assign result to cell ---
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = string.Format("{0:N0}\n{1:N2}%", deformityEggs, totalPerc);
+    
+}
 </value>
   </data>
 </root>
