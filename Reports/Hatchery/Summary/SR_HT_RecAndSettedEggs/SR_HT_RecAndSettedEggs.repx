@@ -936,8 +936,8 @@
                   <Item91 Ref="565" Component="#Ref-424" Culture="Default" Path="Text" Data="Male" />
                   <Item92 Ref="566" Component="#Ref-424" Culture="ar" Path="Text" Data="ذكور" />
                   <Item93 Ref="567" Component="#Ref-424" Culture="Default" Path="Weight" Data="0.771971977674306" />
-                  <Item94 Ref="568" Component="#Ref-426" Culture="Default" Path="Text" Data="Broiler" />
-                  <Item95 Ref="569" Component="#Ref-426" Culture="ar" Path="Text" Data="دجاج لاحم" />
+                  <Item94 Ref="568" Component="#Ref-426" Culture="Default" Path="Text" Data="Broiler Chicks" />
+                  <Item95 Ref="569" Component="#Ref-426" Culture="ar" Path="Text" Data="كتاكيت التسمين" />
                   <Item96 Ref="570" Component="#Ref-426" Culture="Default" Path="Weight" Data="0.97927047193217165" />
                   <Item97 Ref="571" Component="#Ref-428" Culture="Default" Path="Text" Data="Fert %" />
                   <Item98 Ref="572" Component="#Ref-428" Culture="ar" Path="Text" Data="نسبة الإخصاب" />
@@ -1580,7 +1580,7 @@
     <Item79 Ref="983" Component="#Ref-232" Culture="Default" Path="LocationFloat" Data="432.3604,0" />
     <Item80 Ref="984" Component="#Ref-232" Culture="Default" Path="SizeF" Data="183.9413,20" />
     <Item81 Ref="985" Component="#Ref-232" Culture="Default" Path="Text" Data="Hatchery: [?HatcheryNo]" />
-    <Item82 Ref="986" Component="#Ref-232" Culture="ar" Path="Text" Data="معمل رقم: [?HatcheryNo]" />
+    <Item82 Ref="986" Component="#Ref-232" Culture="ar" Path="Text" Data="المعمل: [?HatcheryNo]" />
     <Item83 Ref="987" Component="#Ref-712" Culture="Default" Path="LocationFloat" Data="10,0" />
     <Item84 Ref="988" Component="#Ref-712" Culture="Default" Path="SizeF" Data="1146.426,20" />
     <Item85 Ref="989" Component="#Ref-259" Culture="Default" Path="LocationFloat" Data="567.6883,20.00014" />

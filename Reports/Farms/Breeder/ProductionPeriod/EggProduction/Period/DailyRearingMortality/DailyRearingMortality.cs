@@ -4021,7 +4021,7 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "ar", "Description", "عدد المجموعات / صفحة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 40.08336F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeaderSub1, "Default", "HeightF", 37.08336F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Region, "Default", "Description", "Region"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RegionStr, "Default", "Description", "RegionStr"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 20F),

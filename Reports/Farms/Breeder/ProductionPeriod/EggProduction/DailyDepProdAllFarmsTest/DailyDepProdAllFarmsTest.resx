@@ -123,16 +123,6 @@ IIF(IsNullOrEmpty(?Breed), '', ?BreedStr + ': ' + ?Breed + '      ') +
 IIF(IsNullOrEmpty(?Region), '', ?RegionStr + ': ' + ?Region + '      ') + 
 IIF(IsNullOrEmpty(?Site), '', ?SiteStr + ': ' + ?Site + '      ')</value>
   </data>
-  <data name="xrTableCell120.ExpressionBindings" xml:space="preserve">
-    <value>IIF(
-    IsNullOrEmpty([AgeWeek]) OR IsNullOrEmpty([FlockAge]),
-    '',
-    IIF([AgeWeek] &lt;= [FlockAge], 
-        IIF(IsNullOrEmpty(?Total), '', ?Total) + ToStr([FlockAge]) + IIF(IsNullOrEmpty(?WeeksOfAgeAndBelow), '', ?WeeksOfAgeAndBelow), 
-        IIF(IsNullOrEmpty(?TotalAbove), '', ?TotalAbove) + ToStr([FlockAge]) + IIF(IsNullOrEmpty(?AgeWeeks), '', ?AgeWeeks)
-    )
-)</value>
-  </data>
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVByb2R1Y3Rpb24iPjxGaWVsZCBOYW1lPSJIYXRjaEVnZ3NCaXJkc1drIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hFZ2dzQmlyZHNXa0N1bSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1IYXRjaGluZ0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZXJ0aWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1IYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaE9mRmVydGlsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bUNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1DaGlja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tU2V0dGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUNoaWNrcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla2x5RGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrbHlTZXR0ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbVNldHRlZEVnZ3MxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUNoaWNrczEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbURlYWRzMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVzdEhhdGNoRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNpdGVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVQbGFjZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0Zhcm1Db2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idEZyRmFybUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVTZWxsaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTWFsZVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1N0YXJ0TWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1GZW1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFkRGVwbGF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTmVzdGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRmxvb3JHX0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9vckVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGluZ0Zsb29yR19CIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU21hbGxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3ZlcldlaWdodEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWZvcm1pdHlFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRG91YmxlWW9sa0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEaXJ0eUVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcm9rZW5FZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGVzdHJveWVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvZnRTaGVsbEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFByb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZhYmlsaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuSG91c2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ1dlaWdodCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ01hc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dzQmlyZHNXayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NCaXJkc1drQ3VtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
@@ -147,8 +137,8 @@ IIF(IsNullOrEmpty(?Site), '', ?SiteStr + ': ' + ?Site + '      ')</value>
     IsNullOrEmpty([GroupByWeek]) OR IsNullOrEmpty([FlockAge]),
     ' ',
     IIF([GroupByWeek] = [FlockAge], 
-        ToStr([FlockAge]) + ' ' + IIF(IsNullOrEmpty(?WeeksOfAgeAndBelow), ' ', ?WeeksOfAgeAndBelow), 
-        ToStr([FlockAge]) + ' ' + IIF(IsNullOrEmpty(?AgeWeeks), '', ?AgeWeeks) + ' ' + IIF(IsNullOrEmpty(?TotalAbove), ' ', ?TotalAbove)
+        ToStr([FlockAge]) + '  ' + IIF(IsNullOrEmpty(?WeeksOfAgeAndBelow), '  ', ?WeeksOfAgeAndBelow), 
+        ToStr([FlockAge]) + '  ' + IIF(IsNullOrEmpty(?AgeWeeks), '  ', ?AgeWeeks) + '  ' + IIF(IsNullOrEmpty(?TotalAbove), '  ', ?TotalAbove)
     )
 )</value>
   </data>

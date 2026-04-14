@@ -117,8 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="xrLabel9.ExpressionBindings" xml:space="preserve">
-    <value>IIF(IsNullOrEmpty(?FarmCode), '', ?FarmStr + ' ' + ?FarmCode + '      ') + IIF(IsNullOrEmpty(?Breed), '', ?BreedStr + ' ' + ?Breed + '      ') + IIF(IsNullOrEmpty(?Region), '', ?RegionStr + ' ' + ?Region + '      ') + IIF(IsNullOrEmpty(?Site), '', ?SiteStr + ' ' + ?Site + '      ')
+  <data name="xrLabel6.ExpressionBindings" xml:space="preserve">
+    <value>IIF(IsNullOrEmpty(?FarmCode), '', ?FarmStr + ': ' + ?FarmCode + '      ') + 
+IIF(IsNullOrEmpty(?Breed), '', ?BreedStr + ': ' + ?Breed + '      ') + 
+IIF(IsNullOrEmpty(?Region), '', ?RegionStr + ': ' + ?Region + '      ') + 
+IIF(IsNullOrEmpty(?Site), '', ?SiteStr + ': ' + ?Site + '      ')
 </value>
   </data>
   <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
@@ -132,16 +135,6 @@
   </data>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXQiPjxGaWVsZCBOYW1lPSJ0U3RBY3Rpb25JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJlZ0RhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik9wZW5CYWxhbmNlRm9yZWlnbiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByaWNlVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbFF0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFjdGlvblR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VzdFN1cHBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlByb2R1Y3QiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVW5pdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOb3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vdmVWYWx1ZUZvcmVpZ24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCaWxsU3RhdGVtZW50IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlYWxUeXBlX1RvMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0N1c3RTdXBwU2hlZXRfT0xEIj48RmllbGQgTmFtZT0idFN0QWN0aW9uSUQiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJEb2NOdW1iZXIiIFR5cGU9IkludDY0IiAvPjxGaWVsZCBOYW1lPSJSZWdEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0U3VwcE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQmlsbFN0YXRlbWVudCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRGViaXQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRmxrRGlyZWN0Q29zdCI+PEZpZWxkIE5hbWU9IlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikl0ZW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVG90YWxDb3N0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ2hpY2tzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUE9MIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hpbmdFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2hpY2tlbkNvc3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQbGFjZWRObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsQ2hlY2tlbnNXZWlnaHQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJc0Nvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48VmlldyBOYW1lPSJTUl9GQ19GTV9TdG9ja01vdmVtZW50Ij48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvY051bWJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkluT3V0T3JkZXIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWN0aW9uVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJVbml0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkZlZWRNaWxsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvV2hvbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQcm9kdWN0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlVuaXRfUHJvZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGb3JtdWxhT3BlcmFuZF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW5wdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik91dHB1dHNTdGRVbml0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3RoZXJPdXRwdXRzU3RkVW5pdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbmRMb3NzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uc3VtZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb24iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTb2xkVHJhbnNmZXJPdXQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCYXRjaENvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idEduSXRlbVR5cGVJRF9Qcm9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSXRlbUNvZGVfQ29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJPcGVuQmFsYW5jZVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VCYWxhbmNlVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJbnB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdGhlck91dHB1dHNTdGRVbml0VmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPdXRwdXRzU3RkVW5pdFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29uZExvc3NWYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbnN1bWVkVmFsdWUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXZpYXRpb25WYWx1ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvbGRUcmFuc2Zlck91dFZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iU1JfRkNfRlJfQ2xvc2VCYWxhbmNlIj48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZhcm1Db2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNyb3BObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZUNvZGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9MaXZlRmVtYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZU1hbGUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVBZ2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQWdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGxhY2VkRmVtYWxlcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZDdW1EZXBsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRkN1bVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGQ3VtT3RoZXJPdXRwdXRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTUN1bU90aGVyT3V0cHV0cyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX0l0ZW1CYWxhbmNlIj48RmllbGQgTmFtZT0iQ3VzdE5hbWVXaXRob3V0Q29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDdXN0b21lck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVhbFR5cGVfVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3VycmVuY3kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iT3BlbkJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWJpdCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNyZWRpdCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjxWaWV3IE5hbWU9IlNSX0ZDX01vbnRobHlEaXJlY3RDb3N0Ij48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSXRlbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbENvc3QiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
-  </data>
-  <data name="xrTableCell120.ExpressionBindings" xml:space="preserve">
-    <value>IIF(
-    IsNullOrEmpty([AgeWeek]) OR IsNullOrEmpty([FlockAge]),
-    '',
-    IIF([AgeWeek] &lt;= [FlockAge], 
-        IIF(IsNullOrEmpty(?Total), '', ?Total) + ToStr([FlockAge]) + IIF(IsNullOrEmpty(?WeeksOfAgeAndBelow), '', ?WeeksOfAgeAndBelow), 
-        IIF(IsNullOrEmpty(?TotalAbove), '', ?TotalAbove) + ToStr([FlockAge]) + IIF(IsNullOrEmpty(?AgeWeeks), '', ?AgeWeeks)
-    )
-)</value>
   </data>
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlNSX0JSRF9EYWlseVByb2R1Y3Rpb24iPjxGaWVsZCBOYW1lPSJIYXRjaEVnZ3NCaXJkc1drIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGF0Y2hFZ2dzQmlyZHNXa0N1bSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1IYXRjaGluZ0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZXJ0aWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1IYXRjaGFiaWxpdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaE9mRmVydGlsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bUNoaWNrc0hlbkhvdXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBPTCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1DaGlja3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tU2V0dGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUNoaWNrcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtseUN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla2x5RGVhZHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrbHlTZXR0ZWRFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbVNldHRlZEVnZ3MxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbUNoaWNrczEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tQ3VsbHMxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtbURlYWRzMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVzdEhhdGNoRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZsb2NrQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNpdGVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZE5hbWVfZW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVQbGFjZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVhcmluZ0Zhcm1Db2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idEZyRmFybUlEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9GZW1hbGVTZWxsaW5nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTWFsZVNlbGxpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVCYWxhbmNlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrU3RhcnRGZW1hbGVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iV2Vla1N0YXJ0TWFsZXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1tRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1GZW1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGFkRGVwbGF0aW9uIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTmVzdGVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkhhdGNoaW5nRmxvb3JHX0EiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9vckVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGluZ0Zsb29yR19CIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU21hbGxFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3ZlcldlaWdodEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZWZvcm1pdHlFZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRG91YmxlWW9sa0VnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEaXJ0eUVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcm9rZW5FZ2dzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGVzdHJveWVkRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNvZnRTaGVsbEVnZ3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbFByb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMaXZhYmlsaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuSG91c2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSGVuV2VlayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ1dlaWdodCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ01hc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFZ2dzQmlyZHNXayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkVnZ3NCaXJkc1drQ3VtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
@@ -201,11 +194,9 @@ decimal totalEggsProd = 0;
 decimal totalFloorEggs = 0;
 decimal totalEggsProdReport = 0;
 decimal totalFloorEggsReport = 0;
-decimal totalEggsProd = 0;
 decimal totalHatchingEggs = 0;
 decimal totalHatchingFloorG_B = 0;
 decimal totalHatchingFloorG_A = 0;
-decimal totalEggsProdReport = 0;
 decimal totalHatchingEggsReport = 0;
 decimal totalHatchingFloorG_BReport = 0;
 decimal totalHatchingFloorG_AReport = 0;
@@ -215,16 +206,10 @@ decimal totalChicksSumReport = 0;
 decimal totalPolSumReport = 0;
 int weightedCountReport = 0;
 decimal sumEstHatchPerPolReport = 0;
-int countEstHatchPerPolReport = 0;
-decimal sumEstHatchPerPolReport ;
-int countEstHatchPerPolReport = 0;
 decimal sumEstHatchPerPolGroup = 0;
 int countEstHatchPerPolGroup = 0;
 decimal sumCumChicksHenHoused = 0;
 int countCumChicksHenHoused = 0;
-decimal sumCumChicksHenHousedGroup = 0;
-int countCumChicksHenHousedGroup = 0;
-decimal sumEstHatchPerPolReport = 0;
 int countEstHatchPerPolReport = 0;
 decimal sumCumChicksHenHousedReport = 0;
 int countCumChicksHenHousedReport = 0;
@@ -366,9 +351,9 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     decimal pol = Convert.ToDecimal(GetCurrentColumnValue("POL") ?? 0);
     // Get Days parameter
     decimal days = 0;
-    if (Report.Parameters["Days"] != null)
+    if (Parameters["Days"] != null)
     {
-        days = Convert.ToDecimal(Report.Parameters["Days"].Value);
+        days = Convert.ToDecimal(Parameters["Days"].Value);
     }
     
     // Calculate total eggs produced
@@ -435,6 +420,8 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     
      // Calculate {@ActCumHatchFarmWise}
     decimal actCumHatchFarmWise = 0;
+    decimal totalChicks  = 0;
+    totalChicks   = (cummChicks1 + cummCulls1 + cummDeads1);
     if (cummSettedEggs1 != 0)
     {
         actCumHatchFarmWise = (totalChicks / cummSettedEggs1) * 100.0m;
@@ -662,9 +649,9 @@ decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
 
 // Get Days parameter
 decimal days = 0;
-if (Report.Parameters["Days"] != null)
+if (Parameters["Days"] != null)
 {
-    days = Convert.ToDecimal(Report.Parameters["Days"].Value);
+    days = Convert.ToDecimal(Parameters["Days"].Value);
 }
 
 // Calculate {@EggsProd}
@@ -759,8 +746,6 @@ else
 
  if (femalePlaced &gt; 0)
     {
-        // Calculate {@FemaleDepl} = FemaleMort + FemaleCulls
-        decimal femaleDepl = femaleMort + femaleCulls;
         
         // Calculate depletion percentage for this record
         decimal femaleDeplPercentage = (femaleDepl / femalePlaced) * 100.0m;
@@ -828,8 +813,6 @@ else
 
 if (malePlaced &gt; 0)
     {
-        // Calculate total cumulative male depletion
-        decimal totalCumMaleDepl = cummMaleMort + cummMaleCulls + cumMaleCond;
         
         // Calculate cumulative depletion percentage for this record
         decimal cumMaleDeplPercentage = (totalCumMaleDepl / malePlaced) * 100.0m;
@@ -852,9 +835,9 @@ decimal floorEggs = Convert.ToDecimal(GetCurrentColumnValue("FloorEggs") ?? 0);
 
 // Get Days parameter
 decimal days = 0;
-if (Report.Parameters["Days"] != null)
+if (Parameters["Days"] != null)
 {
-    days = Convert.ToDecimal(Report.Parameters["Days"].Value);
+    days = Convert.ToDecimal(Parameters["Days"].Value);
 }
 
 // Calculate {@EggsProd}
@@ -1058,7 +1041,7 @@ if (femaleBalance == 0)
 else if (pol &gt; 0)
 {
     // Calculate: (CummChicks1 + CummCulls1 + CummDeads1) / POL
-    decimal result = (cummChicks1 + cummCulls1 + cummDeads1) / pol;
+    decimal result = (total ) / pol;
     cell.Text = result.ToString("N2");
 }
 else
