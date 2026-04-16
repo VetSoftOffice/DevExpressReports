@@ -158,7 +158,6 @@ decimal sumMaleTransfer = 0;
 decimal totalLayFemaleTransfer = 0;
 decimal totalLayMaleMort = 0;
 decimal totalLayMaleTransfer = 0;
-decimal totalRearFemaleMort = 0;
 decimal totalLayFemaleMort = 0;
 decimal totalRearFemaleCulls = 0;
 decimal totalRearFemaleError = 0;
@@ -179,11 +178,12 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     
     // Accumulate sums from each detail row
     totalLayFemaleTransfer += Convert.ToDecimal(GetCurrentColumnValue("LayFemaleTransfer") ?? 0);
+    totalLayFemaleMort += Convert.ToDecimal(GetCurrentColumnValue("LayFemaleMort") ?? 0);
     totalLayMaleMort += Convert.ToDecimal(GetCurrentColumnValue("LayMaleMort") ?? 0);
     totalLayMaleTransfer += Convert.ToDecimal(GetCurrentColumnValue("LayMaleTransfer") ?? 0);
     
-        totalRearFemaleCulls += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleCulls") ?? 0);
-        totalRearFemaleError += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleError") ?? 0);
+    totalRearFemaleCulls += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleCulls") ?? 0);
+    totalRearFemaleError += Convert.ToDecimal(GetCurrentColumnValue("RearFemaleError") ?? 0);
 }
 
 private void xrTableCell56_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -235,7 +235,7 @@ private void xrTableCell62_BeforePrint(object sender, System.ComponentModel.Canc
      XRTableCell cell = sender as XRTableCell;
     
     // Calculate total: Σ(RearFemaleMort) + Σ(LayFemaleMort)
-    decimal totalFemaleMort = totalRearFemaleMort + totalLayFemaleMort;
+    decimal totalFemaleMort = sumFemaleMort + totalLayFemaleMort;
     
     cell.Text = totalFemaleMort.ToString("N0"); // Whole number format
 }
