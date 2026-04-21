@@ -6522,7 +6522,7 @@
             // RejDef
             // 
             this.RejDef.DataMember = "SR_HT_FlkSumProdReport";
-            this.RejDef.Expression = "iif(IsNullOrEmpty([HT_RejDeformed]),0,[HT_RejDeformed]) + iif(IsNullOrEmpty([HT_R" +
+            this.RejDef.Expression = "iif(IsNullOrEmpty([HT_RejDeformed]),0,[HT_RejDeformed]) + iif(IsNullOrEmpty([ST_R" +
     "ejDeformed]),0,[ST_RejDeformed])\n";
             this.RejDef.Name = "RejDef";
             // 

@@ -47,7 +47,7 @@
     <Item24 Ref="45" Name="Performance" Expression="Iif(?IsRTL,'اداء' , 'Performance')" DataMember="SR_HT_FlkSumProdReport" />
     <Item25 Ref="46" Name="Perf1" Expression="Iif(?IsRTL,[Performance] + ' (' + ToStr([AgePartA]) + ' ' + [Week] + ') ' + ToStr([DaysNO]) + ' ' + [Day]&#xA; , [Performance] + ' (' + ToStr([AgePartA]) + ' weeks) ' + ToStr([DaysNO]) + [Days])" DataMember="SR_HT_FlkSumProdReport" />
     <Item26 Ref="47" Name="Days" Expression="iif(?IsRTL,'أيام','days')" DataMember="SR_HT_FlkSumProdReport" />
-    <Item27 Ref="48" Name="RejDef" Expression="iif(IsNullOrEmpty([HT_RejDeformed]),0,[HT_RejDeformed]) + iif(IsNullOrEmpty([HT_RejDeformed]),0,[ST_RejDeformed])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
+    <Item27 Ref="48" Name="RejDef" Expression="iif(IsNullOrEmpty([HT_RejDeformed]),0,[HT_RejDeformed]) + iif(IsNullOrEmpty([ST_RejDeformed]),0,[ST_RejDeformed])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item28 Ref="49" Name="RejCrack" Expression="iif(IsNullOrEmpty([HT_RejCracks]),0,[HT_RejCracks]) + iif(IsNullOrEmpty([ST_RejCracks]),0,[ST_RejCracks])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item29 Ref="50" Name="RejBroken" Expression="iif(IsNullOrEmpty([HT_RejBroken]),0,[HT_RejBroken]) + iif(IsNullOrEmpty([ST_RejBroken]),0,[ST_RejBroken])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item30 Ref="51" Name="RejOther" Expression="iif(IsNullOrEmpty([HT_RejOther]),0,[HT_RejOther]) + iif(IsNullOrEmpty([ST_RejOther]),0,[ST_RejOther])&#xA;" DataMember="SR_HT_FlkSumProdReport" />

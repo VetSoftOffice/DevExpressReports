@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PL_ProductsDemandsPrice" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_PL_ProductsDemands" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PL_ProductsDemandsPrice" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_PL_ProductsDemands" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -252,11 +252,11 @@
                 <Item1 Ref="144" FieldName="TotalPrice" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="145" Width="149.615631" />
-                <Item2 Ref="146" Width="95.9594955" />
-                <Item3 Ref="147" Width="85.5428" />
-                <Item4 Ref="148" Width="3.89828539" Visible="false" />
-                <Item5 Ref="149" Width="2.00003123" Visible="false" />
+                <Item1 Ref="145" Width="149.615585" />
+                <Item2 Ref="146" Width="95.9595" />
+                <Item3 Ref="147" Width="85.54279" />
+                <Item4 Ref="148" Width="3.898285" Visible="false" />
+                <Item5 Ref="149" Width="2.00003076" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="150" />
@@ -521,12 +521,12 @@
     <Item49 Ref="320" Component="#Ref-91" Culture="Default" Path="HeightF" Data="0" />
     <Item50 Ref="321" Component="#Ref-133" Culture="Default" Path="HeightF" Data="23" />
     <Item51 Ref="322" Component="#Ref-51" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item52 Ref="323" Component="#Ref-51" Culture="Default" Path="SizeF" Data="321.0214,20" />
+    <Item52 Ref="323" Component="#Ref-51" Culture="Default" Path="SizeF" Data="320.898346,20" />
     <Item53 Ref="324" Component="#Ref-49" Culture="Default" Path="LocationFloat" Data="353.5,0" />
-    <Item54 Ref="325" Component="#Ref-49" Culture="Default" Path="SizeF" Data="445.5197,20" />
+    <Item54 Ref="325" Component="#Ref-49" Culture="Default" Path="SizeF" Data="929.771667,20" />
     <Item55 Ref="326" Component="#Ref-49" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item56 Ref="327" Component="#Ref-53" Culture="Default" Path="LocationFloat" Data="899.6663,0" />
-    <Item57 Ref="328" Component="#Ref-53" Culture="Default" Path="SizeF" Data="252.8502,20" />
+    <Item56 Ref="327" Component="#Ref-53" Culture="Default" Path="LocationFloat" Data="1334.04138,0" />
+    <Item57 Ref="328" Component="#Ref-53" Culture="Default" Path="SizeF" Data="302.727173,20" />
     <Item58 Ref="329" Component="#Ref-53" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item59 Ref="330" Component="#Ref-22" Culture="Default" Path="Description" Data="PlanCode" />
     <Item60 Ref="331" Component="#Ref-136" Culture="Default" Path="HeightF" Data="0" />
@@ -538,17 +538,17 @@
     <Item66 Ref="337" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
     <Item67 Ref="338" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item68 Ref="339" Component="#Ref-88" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item69 Ref="340" Component="#Ref-88" Culture="Default" Path="SizeF" Data="1152.294,20" />
-    <Item70 Ref="341" Component="#Ref-98" Culture="Default" Path="LocationFloat" Data="3.003359,0" />
-    <Item71 Ref="342" Component="#Ref-98" Culture="Default" Path="SizeF" Data="1149.288,20" />
+    <Item69 Ref="340" Component="#Ref-88" Culture="Default" Path="SizeF" Data="1636.54639,20" />
+    <Item70 Ref="341" Component="#Ref-98" Culture="Default" Path="LocationFloat" Data="3.00334287,0" />
+    <Item71 Ref="342" Component="#Ref-98" Culture="Default" Path="SizeF" Data="1633.54053,20" />
     <Item72 Ref="343" Component="#Ref-93" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item73 Ref="344" Component="#Ref-93" Culture="Default" Path="SizeF" Data="1152.516,20" />
+    <Item73 Ref="344" Component="#Ref-93" Culture="Default" Path="SizeF" Data="1636.76843,20" />
     <Item74 Ref="345" Component="#Ref-175" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item75 Ref="346" Component="#Ref-175" Culture="Default" Path="SizeF" Data="1152.291,20" />
+    <Item75 Ref="346" Component="#Ref-175" Culture="Default" Path="SizeF" Data="1636.54346,20" />
     <Item76 Ref="347" Component="#Ref-231" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item77 Ref="348" Component="#Ref-231" Culture="Default" Path="SizeF" Data="1152.291,20" />
-    <Item78 Ref="349" Component="#Ref-58" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
-    <Item79 Ref="350" Component="#Ref-58" Culture="Default" Path="SizeF" Data="1150.517,20" />
+    <Item77 Ref="348" Component="#Ref-231" Culture="Default" Path="SizeF" Data="1636.54346,20" />
+    <Item78 Ref="349" Component="#Ref-58" Culture="Default" Path="LocationFloat" Data="2.00004578,0" />
+    <Item79 Ref="350" Component="#Ref-58" Culture="Default" Path="SizeF" Data="1634.76941,20" />
     <Item80 Ref="351" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item81 Ref="352" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item82 Ref="353" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
@@ -561,7 +561,7 @@
     <Item89 Ref="360" Component="#Ref-87" Culture="Default" Path="HeightF" Data="20" />
     <Item90 Ref="361" Component="#Ref-47" Culture="Default" Path="HeightF" Data="20" />
     <Item91 Ref="362" Component="#Ref-138" Culture="Default" Path="LocationFloat" Data="9.999985,21.16667" />
-    <Item92 Ref="363" Component="#Ref-138" Culture="Default" Path="SizeF" Data="337.016235,125" />
+    <Item92 Ref="363" Component="#Ref-138" Culture="Default" Path="SizeF" Data="337.0162,125" />
     <Item93 Ref="364" Component="#Ref-134" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item94 Ref="365" Component="#Ref-134" Culture="Default" Path="SizeF" Data="200.4863,23" />
     <Item95 Ref="366" Component="#Ref-134" Culture="Default" Path="Text" Data="Plan: [?PlanCode]" />

@@ -541,12 +541,12 @@
     <Item28 Ref="313" Component="#Ref-119" Culture="Default" Path="HeightF" Data="0" />
     <Item29 Ref="314" Component="#Ref-161" Culture="Default" Path="HeightF" Data="51.87505" />
     <Item30 Ref="315" Component="#Ref-51" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item31 Ref="316" Component="#Ref-51" Culture="Default" Path="SizeF" Data="321.0214,20" />
+    <Item31 Ref="316" Component="#Ref-51" Culture="Default" Path="SizeF" Data="324.021362,20" />
     <Item32 Ref="317" Component="#Ref-49" Culture="Default" Path="LocationFloat" Data="353.5,0" />
-    <Item33 Ref="318" Component="#Ref-49" Culture="Default" Path="SizeF" Data="445.5197,20" />
+    <Item33 Ref="318" Component="#Ref-49" Culture="Default" Path="SizeF" Data="448.5197,20" />
     <Item34 Ref="319" Component="#Ref-49" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item35 Ref="320" Component="#Ref-53" Culture="Default" Path="LocationFloat" Data="899.6663,0" />
-    <Item36 Ref="321" Component="#Ref-53" Culture="Default" Path="SizeF" Data="252.8502,20" />
+    <Item36 Ref="321" Component="#Ref-53" Culture="Default" Path="SizeF" Data="255.8502,20" />
     <Item37 Ref="322" Component="#Ref-53" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item38 Ref="323" Component="#Ref-22" Culture="Default" Path="Description" Data="PlanCode" />
     <Item39 Ref="324" Component="#Ref-190" Culture="Default" Path="HeightF" Data="0" />
@@ -571,7 +571,7 @@
     <Item58 Ref="343" Component="#Ref-86" Culture="Default" Path="SizeF" Data="1150.517,20" />
     <Item59 Ref="344" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item60 Ref="345" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item61 Ref="346" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
+    <Item61 Ref="346" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 7, 20, 20" />
     <Item62 Ref="347" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
     <Item63 Ref="348" Component="#Ref-169" Culture="Default" Path="HeightF" Data="0" />
     <Item64 Ref="349" Component="#Ref-191" Culture="Default" Path="HeightF" Data="0" />
