@@ -821,12 +821,12 @@
     <Item75 Ref="447" Component="#Ref-19" Culture="Default" Path="HeightF" Data="20" />
     <Item76 Ref="448" Component="#Ref-30" Culture="Default" Path="Weight" Data="1" />
     <Item77 Ref="449" Component="#Ref-352" Culture="Default" Path="Weight" Data="1" />
-    <Item78 Ref="450" Component="#Ref-360" Culture="Default" Path="LocationFloat" Data="9.536743E-05,1.458295" />
-    <Item79 Ref="451" Component="#Ref-360" Culture="Default" Path="SizeF" Data="237.0663,20" />
+    <Item78 Ref="450" Component="#Ref-360" Culture="Default" Path="LocationFloat" Data="9.536743E-05,1.45829523" />
+    <Item79 Ref="451" Component="#Ref-360" Culture="Default" Path="SizeF" Data="270.399628,20" />
     <Item80 Ref="452" Component="#Ref-360" Culture="Default" Path="Text" Data="Std Book: [?BookPerf]" />
     <Item81 Ref="453" Component="#Ref-360" Culture="ar" Path="Text" Data="المرجع: [?BookPerf]" />
-    <Item82 Ref="454" Component="#Ref-362" Culture="Default" Path="LocationFloat" Data="4.768372E-05,22.70832" />
-    <Item83 Ref="455" Component="#Ref-362" Culture="Default" Path="SizeF" Data="237.0664,20" />
+    <Item82 Ref="454" Component="#Ref-362" Culture="Default" Path="LocationFloat" Data="4.76837158E-05,22.70832" />
+    <Item83 Ref="455" Component="#Ref-362" Culture="Default" Path="SizeF" Data="270.399719,20" />
     <Item84 Ref="456" Component="#Ref-362" Culture="Default" Path="Text" Data="Flock Code: [FlockCode]" />
     <Item85 Ref="457" Component="#Ref-362" Culture="ar" Path="Text" Data="القطيع: [FlockCode]" />
     <Item86 Ref="458" Component="#Ref-347" Culture="Default" Path="LocationFloat" Data="211.875,0" />

@@ -516,7 +516,7 @@
                   </Cells>
                 </Item1>
               </Rows>
-              <StylePriority Ref="306" UseBorders="false" />
+              <StylePriority Ref="306" UseFont="false" UseBorders="false" />
             </Item1>
           </Controls>
         </Item1>
@@ -1420,22 +1420,22 @@
                   <Item190 Ref="894" Component="#Ref-472" Culture="Default" Path="Text" Data="xrTableCell44" />
                   <Item191 Ref="895" Component="#Ref-472" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item192 Ref="896" Component="#Ref-472" Culture="Default" Path="Weight" Data="821.55748039547075" />
-                  <Item193 Ref="897" Component="#Ref-620" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item193 Ref="897" Component="#Ref-620" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item194 Ref="898" Component="#Ref-620" Culture="Default" Path="Text" Data="xrTableCell44" />
                   <Item195 Ref="899" Component="#Ref-620" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item196 Ref="900" Component="#Ref-620" Culture="Default" Path="Weight" Data="821.55748039547075" />
-                  <Item197 Ref="901" Component="#Ref-624" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item197 Ref="901" Component="#Ref-624" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item198 Ref="902" Component="#Ref-624" Culture="Default" Path="Text" Data="xrTableCell18" />
                   <Item199 Ref="903" Component="#Ref-624" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item200 Ref="904" Component="#Ref-624" Culture="Default" Path="Weight" Data="682.07356970254659" />
-                  <Item201 Ref="905" Component="#Ref-628" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item201 Ref="905" Component="#Ref-628" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item202 Ref="906" Component="#Ref-628" Culture="Default" Path="Text" Data="xrTableCell68" />
                   <Item203 Ref="907" Component="#Ref-628" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item204 Ref="908" Component="#Ref-628" Culture="Default" Path="Weight" Data="906.26786392935992" />
-                  <Item205 Ref="909" Component="#Ref-632" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item205 Ref="909" Component="#Ref-632" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item206 Ref="910" Component="#Ref-632" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item207 Ref="911" Component="#Ref-632" Culture="Default" Path="Weight" Data="837.31409214813311" />
-                  <Item208 Ref="912" Component="#Ref-637" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item208 Ref="912" Component="#Ref-637" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item209 Ref="913" Component="#Ref-637" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item210 Ref="914" Component="#Ref-637" Culture="Default" Path="Weight" Data="866.57030707396052" />
                   <Item211 Ref="915" Component="#Ref-519" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
@@ -1447,7 +1447,7 @@
                   <Item217 Ref="921" Component="#Ref-515" Culture="Default" Path="Text" Data="Carton" />
                   <Item218 Ref="922" Component="#Ref-515" Culture="ar" Path="Text" Data="كرتونة" />
                   <Item219 Ref="923" Component="#Ref-515" Culture="Default" Path="Weight" Data="0.72559387207031278" />
-                  <Item220 Ref="924" Component="#Ref-642" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item220 Ref="924" Component="#Ref-642" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item221 Ref="925" Component="#Ref-642" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item222 Ref="926" Component="#Ref-642" Culture="Default" Path="Weight" Data="843.133079994429" />
                   <Item223 Ref="927" Component="#Ref-580" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
@@ -1458,7 +1458,7 @@
                   <Item228 Ref="932" Component="#Ref-522" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
                   <Item229 Ref="933" Component="#Ref-522" Culture="Default" Path="Text" Data="Male" />
                   <Item230 Ref="934" Component="#Ref-522" Culture="Default" Path="Weight" Data="0.76057929385949408" />
-                  <Item231 Ref="935" Component="#Ref-582" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item231 Ref="935" Component="#Ref-582" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item232 Ref="936" Component="#Ref-582" Culture="Default" Path="Text" Data="xrTableCell44" />
                   <Item233 Ref="937" Component="#Ref-582" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item234 Ref="938" Component="#Ref-582" Culture="Default" Path="Weight" Data="821.55748039547075" />
@@ -1466,11 +1466,11 @@
                   <Item236 Ref="940" Component="#Ref-504" Culture="Default" Path="Text" Data="xrTableCell65" />
                   <Item237 Ref="941" Component="#Ref-504" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item238 Ref="942" Component="#Ref-504" Culture="Default" Path="Weight" Data="650.69964811236264" />
-                  <Item239 Ref="943" Component="#Ref-587" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item239 Ref="943" Component="#Ref-587" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item240 Ref="944" Component="#Ref-587" Culture="Default" Path="Text" Data="xrTableCell18" />
                   <Item241 Ref="945" Component="#Ref-587" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item242 Ref="946" Component="#Ref-587" Culture="Default" Path="Weight" Data="682.07356970254659" />
-                  <Item243 Ref="947" Component="#Ref-592" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item243 Ref="947" Component="#Ref-592" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item244 Ref="948" Component="#Ref-592" Culture="Default" Path="Text" Data="xrTableCell68" />
                   <Item245 Ref="949" Component="#Ref-592" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item246 Ref="950" Component="#Ref-592" Culture="Default" Path="Weight" Data="906.26786392935992" />
@@ -1478,16 +1478,16 @@
                   <Item248 Ref="952" Component="#Ref-480" Culture="Default" Path="Text" Data="xrTableCell68" />
                   <Item249 Ref="953" Component="#Ref-480" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item250 Ref="954" Component="#Ref-480" Culture="Default" Path="Weight" Data="906.26786392935992" />
-                  <Item251 Ref="955" Component="#Ref-597" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item251 Ref="955" Component="#Ref-597" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item252 Ref="956" Component="#Ref-597" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item253 Ref="957" Component="#Ref-597" Culture="Default" Path="Weight" Data="837.31409214813311" />
                   <Item254 Ref="958" Component="#Ref-560" Culture="Default" Path="Text" Data="Sold From House" />
                   <Item255 Ref="959" Component="#Ref-560" Culture="ar" Path="Text" Data="مباع من عنبر" />
                   <Item256 Ref="960" Component="#Ref-560" Culture="Default" Path="Weight" Data="2.4464268493652344" />
-                  <Item257 Ref="961" Component="#Ref-603" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item257 Ref="961" Component="#Ref-603" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item258 Ref="962" Component="#Ref-603" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item259 Ref="963" Component="#Ref-603" Culture="Default" Path="Weight" Data="866.57030707396052" />
-                  <Item260 Ref="964" Component="#Ref-609" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+                  <Item260 Ref="964" Component="#Ref-609" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
                   <Item261 Ref="965" Component="#Ref-609" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
                   <Item262 Ref="966" Component="#Ref-609" Culture="Default" Path="Weight" Data="843.133079994429" />
                   <Item263 Ref="967" Component="#Ref-540" Culture="Default" Path="Text" Data="Female" />
@@ -2001,306 +2001,307 @@
     <Item146 Ref="1322" Component="#Ref-343" Culture="Default" Path="SizeF" Data="331.2195,25" />
     <Item147 Ref="1323" Component="#Ref-338" Culture="Default" Path="LocationFloat" Data="0,188.1249" />
     <Item148 Ref="1324" Component="#Ref-338" Culture="Default" Path="SizeF" Data="331.2195,25" />
-    <Item149 Ref="1325" Component="#Ref-232" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
-    <Item150 Ref="1326" Component="#Ref-232" Culture="Default" Path="SizeF" Data="997.1575,20" />
-    <Item151 Ref="1327" Component="#Ref-308" Culture="Default" Path="LocationFloat" Data="0.0004371007,213.1249" />
-    <Item152 Ref="1328" Component="#Ref-308" Culture="Default" Path="SizeF" Data="331.2191,25" />
-    <Item153 Ref="1329" Component="#Ref-318" Culture="Default" Path="LocationFloat" Data="0.0004371007,238.1248" />
-    <Item154 Ref="1330" Component="#Ref-318" Culture="Default" Path="SizeF" Data="331.2191,25" />
-    <Item155 Ref="1331" Component="#Ref-1151" Culture="Default" Path="Text" Data="Total" />
-    <Item156 Ref="1332" Component="#Ref-1151" Culture="ar" Path="Text" Data="الإجمالي" />
-    <Item157 Ref="1333" Component="#Ref-1151" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item158 Ref="1334" Component="#Ref-1127" Culture="Default" Path="Text" Data="Total" />
-    <Item159 Ref="1335" Component="#Ref-1127" Culture="ar" Path="Text" Data="الإجمالي" />
-    <Item160 Ref="1336" Component="#Ref-1127" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item161 Ref="1337" Component="#Ref-1129" Culture="Default" Path="Text" Data="Weight" />
-    <Item162 Ref="1338" Component="#Ref-1129" Culture="ar" Path="Text" Data="الوزن" />
-    <Item163 Ref="1339" Component="#Ref-1129" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item164 Ref="1340" Component="#Ref-1131" Culture="Default" Path="Text" Data="Average" />
-    <Item165 Ref="1341" Component="#Ref-1131" Culture="ar" Path="Text" Data="المتوسط" />
-    <Item166 Ref="1342" Component="#Ref-1131" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item167 Ref="1343" Component="#Ref-1162" Culture="Default" Path="Weight" Data="59.415476755454179" />
-    <Item168 Ref="1344" Component="#Ref-1138" Culture="Default" Path="Text" Data="Value" />
-    <Item169 Ref="1345" Component="#Ref-1138" Culture="ar" Path="Text" Data="القيمة" />
-    <Item170 Ref="1346" Component="#Ref-1138" Culture="Default" Path="Weight" Data="3" />
-    <Item171 Ref="1347" Component="#Ref-88" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item172 Ref="1348" Component="#Ref-88" Culture="Default" Path="Text" Data="xrTableCell15" />
-    <Item173 Ref="1349" Component="#Ref-88" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item174 Ref="1350" Component="#Ref-88" Culture="Default" Path="Weight" Data="569.9031794716866" />
-    <Item175 Ref="1351" Component="#Ref-234" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item176 Ref="1352" Component="#Ref-234" Culture="Default" Path="Text" Data="Total" />
-    <Item177 Ref="1353" Component="#Ref-234" Culture="ar" Path="Text" Data="الاجمالي" />
-    <Item178 Ref="1354" Component="#Ref-234" Culture="Default" Path="Weight" Data="656.8314151215036" />
-    <Item179 Ref="1355" Component="#Ref-1140" Culture="Default" Path="Text" Data="Saled Egg" />
-    <Item180 Ref="1356" Component="#Ref-1140" Culture="ar" Path="Text" Data="بيض مباع" />
-    <Item181 Ref="1357" Component="#Ref-1140" Culture="Default" Path="Weight" Data="3" />
-    <Item182 Ref="1358" Component="#Ref-92" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item183 Ref="1359" Component="#Ref-92" Culture="Default" Path="Text" Data="xrTableCell18" />
-    <Item184 Ref="1360" Component="#Ref-92" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item185 Ref="1361" Component="#Ref-92" Culture="Default" Path="Weight" Data="569.90206746278932" />
-    <Item186 Ref="1362" Component="#Ref-100" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item187 Ref="1363" Component="#Ref-100" Culture="Default" Path="Text" Data="" />
-    <Item188 Ref="1364" Component="#Ref-100" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item189 Ref="1365" Component="#Ref-100" Culture="Default" Path="Weight" Data="569.90292519724107" />
-    <Item190 Ref="1366" Component="#Ref-1153" Culture="Default" Path="Text" Data="Weight" />
-    <Item191 Ref="1367" Component="#Ref-1153" Culture="ar" Path="Text" Data="الوزن" />
-    <Item192 Ref="1368" Component="#Ref-1153" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item193 Ref="1369" Component="#Ref-345" Culture="Default" Path="Text" Data="Number" />
-    <Item194 Ref="1370" Component="#Ref-345" Culture="ar" Path="Text" Data="عدد" />
-    <Item195 Ref="1371" Component="#Ref-345" Culture="Default" Path="Weight" Data="3" />
-    <Item196 Ref="1372" Component="#Ref-104" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item197 Ref="1373" Component="#Ref-104" Culture="Default" Path="Text" Data="xrTableCell21" />
-    <Item198 Ref="1374" Component="#Ref-104" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item199 Ref="1375" Component="#Ref-104" Culture="Default" Path="Weight" Data="603.776383336358" />
-    <Item200 Ref="1376" Component="#Ref-108" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item201 Ref="1377" Component="#Ref-108" Culture="Default" Path="Text" Data="" />
-    <Item202 Ref="1378" Component="#Ref-108" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item203 Ref="1379" Component="#Ref-108" Culture="Default" Path="Weight" Data="569.90290935000951" />
-    <Item204 Ref="1380" Component="#Ref-113" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item205 Ref="1381" Component="#Ref-113" Culture="Default" Path="Text" Data="" />
-    <Item206 Ref="1382" Component="#Ref-113" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item207 Ref="1383" Component="#Ref-113" Culture="Default" Path="Weight" Data="569.90209789150856" />
-    <Item208 Ref="1384" Component="#Ref-118" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item209 Ref="1385" Component="#Ref-118" Culture="Default" Path="Text" Data="xrTableCell24" />
-    <Item210 Ref="1386" Component="#Ref-118" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item211 Ref="1387" Component="#Ref-118" Culture="Default" Path="Weight" Data="569.90317720478106" />
-    <Item212 Ref="1388" Component="#Ref-122" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item213 Ref="1389" Component="#Ref-122" Culture="Default" Path="Text" Data="" />
-    <Item214 Ref="1390" Component="#Ref-122" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item215 Ref="1391" Component="#Ref-122" Culture="Default" Path="Weight" Data="569.90211555133851" />
-    <Item216 Ref="1392" Component="#Ref-1142" Culture="Default" Path="Text" Data="Value" />
-    <Item217 Ref="1393" Component="#Ref-1142" Culture="ar" Path="Text" Data="القيمة" />
-    <Item218 Ref="1394" Component="#Ref-1142" Culture="Default" Path="Weight" Data="3" />
-    <Item219 Ref="1395" Component="#Ref-340" Culture="Default" Path="Text" Data="Percent" />
-    <Item220 Ref="1396" Component="#Ref-340" Culture="ar" Path="Text" Data="نسبة" />
-    <Item221 Ref="1397" Component="#Ref-340" Culture="Default" Path="Weight" Data="3" />
-    <Item222 Ref="1398" Component="#Ref-310" Culture="Default" Path="Text" Data="Live" />
-    <Item223 Ref="1399" Component="#Ref-310" Culture="ar" Path="Text" Data="سليم" />
-    <Item224 Ref="1400" Component="#Ref-310" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item225 Ref="1401" Component="#Ref-312" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item226 Ref="1402" Component="#Ref-1166" Culture="Default" Path="Text" Data="Transform From Farm: [?FarmNo]" />
-    <Item227 Ref="1403" Component="#Ref-1166" Culture="ar" Path="Text" Data="منقول من مزرعة: [?FarmNo]" />
-    <Item228 Ref="1404" Component="#Ref-1166" Culture="Default" Path="Weight" Data="2.4464268493652344" />
-    <Item229 Ref="1405" Component="#Ref-315" Culture="Default" Path="Weight" Data="1.1148220825195314" />
-    <Item230 Ref="1406" Component="#Ref-320" Culture="Default" Path="Text" Data="Culls" />
-    <Item231 Ref="1407" Component="#Ref-320" Culture="ar" Path="Text" Data="فرزة" />
-    <Item232 Ref="1408" Component="#Ref-320" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item233 Ref="1409" Component="#Ref-322" Culture="Default" Path="Text" Data="" />
-    <Item234 Ref="1410" Component="#Ref-322" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item235 Ref="1411" Component="#Ref-322" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item236 Ref="1412" Component="#Ref-325" Culture="Default" Path="Text" Data="" />
-    <Item237 Ref="1413" Component="#Ref-325" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item238 Ref="1414" Component="#Ref-325" Culture="Default" Path="Weight" Data="1.1148220825195314" />
-    <Item239 Ref="1415" Component="#Ref-330" Culture="Default" Path="Text" Data="Deplation" />
-    <Item240 Ref="1416" Component="#Ref-330" Culture="ar" Path="Text" Data="هالك" />
-    <Item241 Ref="1417" Component="#Ref-330" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item242 Ref="1418" Component="#Ref-332" Culture="Default" Path="Text" Data="" />
-    <Item243 Ref="1419" Component="#Ref-332" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item244 Ref="1420" Component="#Ref-332" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item245 Ref="1421" Component="#Ref-335" Culture="Default" Path="Text" Data="" />
-    <Item246 Ref="1422" Component="#Ref-335" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item247 Ref="1423" Component="#Ref-335" Culture="Default" Path="Weight" Data="1.1148220825195314" />
-    <Item248 Ref="1424" Component="#Ref-1136" Culture="Default" Path="Text" Data="Price" />
-    <Item249 Ref="1425" Component="#Ref-1136" Culture="ar" Path="Text" Data="السعر" />
-    <Item250 Ref="1426" Component="#Ref-1136" Culture="Default" Path="Weight" Data="3" />
-    <Item251 Ref="1427" Component="#Ref-236" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item252 Ref="1428" Component="#Ref-236" Culture="Default" Path="Text" Data="xrTableCell44" />
-    <Item253 Ref="1429" Component="#Ref-236" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item254 Ref="1430" Component="#Ref-236" Culture="Default" Path="Weight" Data="603.77683522114819" />
-    <Item255 Ref="1431" Component="#Ref-241" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item256 Ref="1432" Component="#Ref-241" Culture="Default" Path="Text" Data="xrTableCell15" />
-    <Item257 Ref="1433" Component="#Ref-241" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item258 Ref="1434" Component="#Ref-241" Culture="Default" Path="Weight" Data="569.90236281897432" />
-    <Item259 Ref="1435" Component="#Ref-1147" Culture="Default" Path="Text" Data="Female" />
-    <Item260 Ref="1436" Component="#Ref-1147" Culture="ar" Path="Text" Data="اناث" />
-    <Item261 Ref="1437" Component="#Ref-1147" Culture="Default" Path="Weight" Data="0.67326928370107009" />
-    <Item262 Ref="1438" Component="#Ref-246" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item263 Ref="1439" Component="#Ref-246" Culture="Default" Path="Text" Data="xrTableCell18" />
-    <Item264 Ref="1440" Component="#Ref-246" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item265 Ref="1441" Component="#Ref-246" Culture="Default" Path="Weight" Data="568.90649969918991" />
-    <Item266 Ref="1442" Component="#Ref-251" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item267 Ref="1443" Component="#Ref-251" Culture="Default" Path="Text" Data="xrTableCell68" />
-    <Item268 Ref="1444" Component="#Ref-251" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item269 Ref="1445" Component="#Ref-251" Culture="Default" Path="Weight" Data="570.89848745126187" />
-    <Item270 Ref="1446" Component="#Ref-256" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item271 Ref="1447" Component="#Ref-256" Culture="Default" Path="Text" Data="" />
-    <Item272 Ref="1448" Component="#Ref-256" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item273 Ref="1449" Component="#Ref-256" Culture="Default" Path="Weight" Data="569.90258311772891" />
-    <Item274 Ref="1450" Component="#Ref-260" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item275 Ref="1451" Component="#Ref-260" Culture="Default" Path="Text" Data="xrTableCell21" />
-    <Item276 Ref="1452" Component="#Ref-260" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item277 Ref="1453" Component="#Ref-260" Culture="Default" Path="Weight" Data="603.77713416058168" />
-    <Item278 Ref="1454" Component="#Ref-84" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item279 Ref="1455" Component="#Ref-84" Culture="Default" Path="Text" Data="xrTableCell44" />
-    <Item280 Ref="1456" Component="#Ref-84" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item281 Ref="1457" Component="#Ref-84" Culture="Default" Path="Weight" Data="603.77635259115925" />
-    <Item282 Ref="1458" Component="#Ref-265" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item283 Ref="1459" Component="#Ref-265" Culture="Default" Path="Text" Data="" />
-    <Item284 Ref="1460" Component="#Ref-265" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item285 Ref="1461" Component="#Ref-265" Culture="Default" Path="Weight" Data="569.9022908164734" />
-    <Item286 Ref="1462" Component="#Ref-271" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item287 Ref="1463" Component="#Ref-271" Culture="Default" Path="Text" Data="" />
-    <Item288 Ref="1464" Component="#Ref-271" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item289 Ref="1465" Component="#Ref-271" Culture="Default" Path="Weight" Data="569.90267426291393" />
-    <Item290 Ref="1466" Component="#Ref-277" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item291 Ref="1467" Component="#Ref-277" Culture="Default" Path="Text" Data="xrTableCell24" />
-    <Item292 Ref="1468" Component="#Ref-277" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item293 Ref="1469" Component="#Ref-277" Culture="Default" Path="Weight" Data="569.90255867123483" />
-    <Item294 Ref="1470" Component="#Ref-282" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item295 Ref="1471" Component="#Ref-282" Culture="Default" Path="Text" Data="" />
-    <Item296 Ref="1472" Component="#Ref-282" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item297 Ref="1473" Component="#Ref-282" Culture="Default" Path="Weight" Data="569.90152879922869" />
-    <Item298 Ref="1474" Component="#Ref-286" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item299 Ref="1475" Component="#Ref-286" Culture="Default" Path="Text" Data="xrTableCell64" />
-    <Item300 Ref="1476" Component="#Ref-286" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item301 Ref="1477" Component="#Ref-286" Culture="Default" Path="Weight" Data="629.68167462081124" />
-    <Item302 Ref="1478" Component="#Ref-1149" Culture="Default" Path="Text" Data="Male" />
-    <Item303 Ref="1479" Component="#Ref-1149" Culture="ar" Path="Text" Data="ذكور" />
-    <Item304 Ref="1480" Component="#Ref-1149" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item305 Ref="1481" Component="#Ref-382" Culture="Default" Path="Text" Data="" />
-    <Item306 Ref="1482" Component="#Ref-382" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item307 Ref="1483" Component="#Ref-384" Culture="Default" Path="Text" Data="Female" />
-    <Item308 Ref="1484" Component="#Ref-384" Culture="ar" Path="Text" Data="إناث" />
-    <Item309 Ref="1485" Component="#Ref-384" Culture="Default" Path="TextFormatString" Data="" />
-    <Item310 Ref="1486" Component="#Ref-384" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item311 Ref="1487" Component="#Ref-386" Culture="Default" Path="Text" Data="Male" />
-    <Item312 Ref="1488" Component="#Ref-386" Culture="ar" Path="Text" Data="ذكور" />
-    <Item313 Ref="1489" Component="#Ref-386" Culture="Default" Path="TextFormatString" Data="" />
-    <Item314 Ref="1490" Component="#Ref-386" Culture="Default" Path="Weight" Data="1.11482177734375" />
-    <Item315 Ref="1491" Component="#Ref-372" Culture="Default" Path="Text" Data="Live" />
-    <Item316 Ref="1492" Component="#Ref-372" Culture="ar" Path="Text" Data="سليم" />
-    <Item317 Ref="1493" Component="#Ref-372" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item318 Ref="1494" Component="#Ref-374" Culture="Default" Path="Text" Data="xrTableCell55" />
-    <Item319 Ref="1495" Component="#Ref-374" Culture="Default" Path="TextFormatString" Data="" />
-    <Item320 Ref="1496" Component="#Ref-374" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item321 Ref="1497" Component="#Ref-377" Culture="Default" Path="Text" Data="xrTableCell56" />
-    <Item322 Ref="1498" Component="#Ref-377" Culture="Default" Path="TextFormatString" Data="" />
-    <Item323 Ref="1499" Component="#Ref-377" Culture="Default" Path="Weight" Data="1.1148220825195314" />
-    <Item324 Ref="1500" Component="#Ref-1155" Culture="Default" Path="Text" Data="Average" />
-    <Item325 Ref="1501" Component="#Ref-1155" Culture="ar" Path="Text" Data="المتوسط" />
-    <Item326 Ref="1502" Component="#Ref-1155" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item327 Ref="1503" Component="#Ref-362" Culture="Default" Path="Text" Data="Culls" />
-    <Item328 Ref="1504" Component="#Ref-362" Culture="ar" Path="Text" Data="فرزة" />
-    <Item329 Ref="1505" Component="#Ref-362" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item330 Ref="1506" Component="#Ref-364" Culture="Default" Path="Text" Data="xrTableCell55" />
-    <Item331 Ref="1507" Component="#Ref-364" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item332 Ref="1508" Component="#Ref-364" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item333 Ref="1509" Component="#Ref-367" Culture="Default" Path="Text" Data="xrTableCell56" />
-    <Item334 Ref="1510" Component="#Ref-367" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item335 Ref="1511" Component="#Ref-367" Culture="Default" Path="Weight" Data="1.1148220825195314" />
-    <Item336 Ref="1512" Component="#Ref-350" Culture="Default" Path="Text" Data="Deplation" />
-    <Item337 Ref="1513" Component="#Ref-350" Culture="ar" Path="Text" Data="هالك" />
-    <Item338 Ref="1514" Component="#Ref-350" Culture="Default" Path="Weight" Data="0.99999633789062514" />
-    <Item339 Ref="1515" Component="#Ref-126" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item340 Ref="1516" Component="#Ref-126" Culture="Default" Path="Text" Data="xrTableCell65" />
-    <Item341 Ref="1517" Component="#Ref-126" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item342 Ref="1518" Component="#Ref-126" Culture="Default" Path="Weight" Data="629.68118202456833" />
-    <Item343 Ref="1519" Component="#Ref-130" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item344 Ref="1520" Component="#Ref-130" Culture="Default" Path="Text" Data="xrTableCell66" />
-    <Item345 Ref="1521" Component="#Ref-130" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item346 Ref="1522" Component="#Ref-130" Culture="Default" Path="Weight" Data="629.68062927864673" />
-    <Item347 Ref="1523" Component="#Ref-134" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item348 Ref="1524" Component="#Ref-134" Culture="Default" Path="Text" Data="xrTableCell67" />
-    <Item349 Ref="1525" Component="#Ref-134" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item350 Ref="1526" Component="#Ref-134" Culture="Default" Path="Weight" Data="629.68106649619631" />
-    <Item351 Ref="1527" Component="#Ref-96" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item352 Ref="1528" Component="#Ref-96" Culture="Default" Path="Text" Data="xrTableCell68" />
-    <Item353 Ref="1529" Component="#Ref-96" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item354 Ref="1530" Component="#Ref-96" Culture="Default" Path="Weight" Data="569.902647543894" />
-    <Item355 Ref="1531" Component="#Ref-138" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item356 Ref="1532" Component="#Ref-138" Culture="Default" Path="Text" Data="xrTableCell69" />
-    <Item357 Ref="1533" Component="#Ref-138" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item358 Ref="1534" Component="#Ref-138" Culture="Default" Path="Weight" Data="629.67974755669809" />
-    <Item359 Ref="1535" Component="#Ref-1118" Culture="Default" Path="Text" Data="Sold From House" />
-    <Item360 Ref="1536" Component="#Ref-1118" Culture="ar" Path="Text" Data="مباع من عنبر" />
-    <Item361 Ref="1537" Component="#Ref-1118" Culture="Default" Path="Weight" Data="2.4464268493652344" />
-    <Item362 Ref="1538" Component="#Ref-291" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item363 Ref="1539" Component="#Ref-291" Culture="Default" Path="Text" Data="xrTableCell65" />
-    <Item364 Ref="1540" Component="#Ref-291" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item365 Ref="1541" Component="#Ref-291" Culture="Default" Path="Weight" Data="629.6806248363448" />
-    <Item366 Ref="1542" Component="#Ref-296" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item367 Ref="1543" Component="#Ref-296" Culture="Default" Path="Text" Data="xrTableCell66" />
-    <Item368 Ref="1544" Component="#Ref-296" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item369 Ref="1545" Component="#Ref-296" Culture="Default" Path="Weight" Data="629.68117001064525" />
-    <Item370 Ref="1546" Component="#Ref-301" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item371 Ref="1547" Component="#Ref-301" Culture="Default" Path="Text" Data="xrTableCell67" />
-    <Item372 Ref="1548" Component="#Ref-301" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item373 Ref="1549" Component="#Ref-301" Culture="Default" Path="Weight" Data="629.680064584218" />
-    <Item374 Ref="1550" Component="#Ref-352" Culture="Default" Path="Text" Data="xrTableCell55" />
-    <Item375 Ref="1551" Component="#Ref-352" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item376 Ref="1552" Component="#Ref-352" Culture="Default" Path="Weight" Data="1.1973721313476562" />
-    <Item377 Ref="1553" Component="#Ref-356" Culture="Default" Path="Text" Data="xrTableCell56" />
-    <Item378 Ref="1554" Component="#Ref-356" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item379 Ref="1555" Component="#Ref-356" Culture="Default" Path="Weight" Data="1.1148220825195314" />
-    <Item380 Ref="1556" Component="#Ref-1123" Culture="Default" Path="Text" Data="Female" />
-    <Item381 Ref="1557" Component="#Ref-1123" Culture="ar" Path="Text" Data="إناث" />
-    <Item382 Ref="1558" Component="#Ref-1123" Culture="Default" Path="Weight" Data="0.67326928370107009" />
-    <Item383 Ref="1559" Component="#Ref-1125" Culture="Default" Path="Text" Data="Male" />
-    <Item384 Ref="1560" Component="#Ref-1125" Culture="ar" Path="Text" Data="ذكور" />
-    <Item385 Ref="1561" Component="#Ref-1125" Culture="Default" Path="Weight" Data="0.63549739234872038" />
-    <Item386 Ref="1562" Component="#Ref-1161" Culture="Default" Path="Weight" Data="1" />
-    <Item387 Ref="1563" Component="#Ref-319" Culture="Default" Path="Weight" Data="1" />
-    <Item388 Ref="1564" Component="#Ref-329" Culture="Default" Path="Weight" Data="1" />
-    <Item389 Ref="1565" Component="#Ref-1135" Culture="Default" Path="Weight" Data="1" />
-    <Item390 Ref="1566" Component="#Ref-1117" Culture="Default" Path="Weight" Data="1" />
-    <Item391 Ref="1567" Component="#Ref-381" Culture="Default" Path="Weight" Data="1" />
-    <Item392 Ref="1568" Component="#Ref-371" Culture="Default" Path="Weight" Data="1" />
-    <Item393 Ref="1569" Component="#Ref-361" Culture="Default" Path="Weight" Data="1" />
-    <Item394 Ref="1570" Component="#Ref-349" Culture="Default" Path="Weight" Data="1" />
-    <Item395 Ref="1571" Component="#Ref-1165" Culture="Default" Path="Weight" Data="1" />
-    <Item396 Ref="1572" Component="#Ref-1146" Culture="Default" Path="Weight" Data="1" />
-    <Item397 Ref="1573" Component="#Ref-1122" Culture="Default" Path="Weight" Data="1" />
-    <Item398 Ref="1574" Component="#Ref-344" Culture="Default" Path="Weight" Data="1" />
-    <Item399 Ref="1575" Component="#Ref-339" Culture="Default" Path="Weight" Data="1" />
-    <Item400 Ref="1576" Component="#Ref-233" Culture="Default" Path="Weight" Data="1" />
-    <Item401 Ref="1577" Component="#Ref-309" Culture="Default" Path="Weight" Data="1" />
+    <Item149 Ref="1325" Component="#Ref-232" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item150 Ref="1326" Component="#Ref-232" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
+    <Item151 Ref="1327" Component="#Ref-232" Culture="Default" Path="SizeF" Data="997.1575,20" />
+    <Item152 Ref="1328" Component="#Ref-308" Culture="Default" Path="LocationFloat" Data="0.0004371007,213.1249" />
+    <Item153 Ref="1329" Component="#Ref-308" Culture="Default" Path="SizeF" Data="331.2191,25" />
+    <Item154 Ref="1330" Component="#Ref-318" Culture="Default" Path="LocationFloat" Data="0.0004371007,238.1248" />
+    <Item155 Ref="1331" Component="#Ref-318" Culture="Default" Path="SizeF" Data="331.2191,25" />
+    <Item156 Ref="1332" Component="#Ref-1151" Culture="Default" Path="Text" Data="Total" />
+    <Item157 Ref="1333" Component="#Ref-1151" Culture="ar" Path="Text" Data="الإجمالي" />
+    <Item158 Ref="1334" Component="#Ref-1151" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item159 Ref="1335" Component="#Ref-1127" Culture="Default" Path="Text" Data="Total" />
+    <Item160 Ref="1336" Component="#Ref-1127" Culture="ar" Path="Text" Data="الإجمالي" />
+    <Item161 Ref="1337" Component="#Ref-1127" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item162 Ref="1338" Component="#Ref-1129" Culture="Default" Path="Text" Data="Weight" />
+    <Item163 Ref="1339" Component="#Ref-1129" Culture="ar" Path="Text" Data="الوزن" />
+    <Item164 Ref="1340" Component="#Ref-1129" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item165 Ref="1341" Component="#Ref-1131" Culture="Default" Path="Text" Data="Average" />
+    <Item166 Ref="1342" Component="#Ref-1131" Culture="ar" Path="Text" Data="المتوسط" />
+    <Item167 Ref="1343" Component="#Ref-1131" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item168 Ref="1344" Component="#Ref-1162" Culture="Default" Path="Weight" Data="59.415476755454179" />
+    <Item169 Ref="1345" Component="#Ref-1138" Culture="Default" Path="Text" Data="Value" />
+    <Item170 Ref="1346" Component="#Ref-1138" Culture="ar" Path="Text" Data="القيمة" />
+    <Item171 Ref="1347" Component="#Ref-1138" Culture="Default" Path="Weight" Data="3" />
+    <Item172 Ref="1348" Component="#Ref-88" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item173 Ref="1349" Component="#Ref-88" Culture="Default" Path="Text" Data="xrTableCell15" />
+    <Item174 Ref="1350" Component="#Ref-88" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item175 Ref="1351" Component="#Ref-88" Culture="Default" Path="Weight" Data="569.9031794716866" />
+    <Item176 Ref="1352" Component="#Ref-234" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item177 Ref="1353" Component="#Ref-234" Culture="Default" Path="Text" Data="Total" />
+    <Item178 Ref="1354" Component="#Ref-234" Culture="ar" Path="Text" Data="الاجمالي" />
+    <Item179 Ref="1355" Component="#Ref-234" Culture="Default" Path="Weight" Data="656.8314151215036" />
+    <Item180 Ref="1356" Component="#Ref-1140" Culture="Default" Path="Text" Data="Saled Egg" />
+    <Item181 Ref="1357" Component="#Ref-1140" Culture="ar" Path="Text" Data="بيض مباع" />
+    <Item182 Ref="1358" Component="#Ref-1140" Culture="Default" Path="Weight" Data="3" />
+    <Item183 Ref="1359" Component="#Ref-92" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item184 Ref="1360" Component="#Ref-92" Culture="Default" Path="Text" Data="xrTableCell18" />
+    <Item185 Ref="1361" Component="#Ref-92" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item186 Ref="1362" Component="#Ref-92" Culture="Default" Path="Weight" Data="569.90206746278932" />
+    <Item187 Ref="1363" Component="#Ref-100" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item188 Ref="1364" Component="#Ref-100" Culture="Default" Path="Text" Data="" />
+    <Item189 Ref="1365" Component="#Ref-100" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item190 Ref="1366" Component="#Ref-100" Culture="Default" Path="Weight" Data="569.90292519724107" />
+    <Item191 Ref="1367" Component="#Ref-1153" Culture="Default" Path="Text" Data="Weight" />
+    <Item192 Ref="1368" Component="#Ref-1153" Culture="ar" Path="Text" Data="الوزن" />
+    <Item193 Ref="1369" Component="#Ref-1153" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item194 Ref="1370" Component="#Ref-345" Culture="Default" Path="Text" Data="Number" />
+    <Item195 Ref="1371" Component="#Ref-345" Culture="ar" Path="Text" Data="عدد" />
+    <Item196 Ref="1372" Component="#Ref-345" Culture="Default" Path="Weight" Data="3" />
+    <Item197 Ref="1373" Component="#Ref-104" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item198 Ref="1374" Component="#Ref-104" Culture="Default" Path="Text" Data="xrTableCell21" />
+    <Item199 Ref="1375" Component="#Ref-104" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item200 Ref="1376" Component="#Ref-104" Culture="Default" Path="Weight" Data="603.776383336358" />
+    <Item201 Ref="1377" Component="#Ref-108" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item202 Ref="1378" Component="#Ref-108" Culture="Default" Path="Text" Data="" />
+    <Item203 Ref="1379" Component="#Ref-108" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item204 Ref="1380" Component="#Ref-108" Culture="Default" Path="Weight" Data="569.90290935000951" />
+    <Item205 Ref="1381" Component="#Ref-113" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item206 Ref="1382" Component="#Ref-113" Culture="Default" Path="Text" Data="" />
+    <Item207 Ref="1383" Component="#Ref-113" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item208 Ref="1384" Component="#Ref-113" Culture="Default" Path="Weight" Data="569.90209789150856" />
+    <Item209 Ref="1385" Component="#Ref-118" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item210 Ref="1386" Component="#Ref-118" Culture="Default" Path="Text" Data="xrTableCell24" />
+    <Item211 Ref="1387" Component="#Ref-118" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item212 Ref="1388" Component="#Ref-118" Culture="Default" Path="Weight" Data="569.90317720478106" />
+    <Item213 Ref="1389" Component="#Ref-122" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item214 Ref="1390" Component="#Ref-122" Culture="Default" Path="Text" Data="" />
+    <Item215 Ref="1391" Component="#Ref-122" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item216 Ref="1392" Component="#Ref-122" Culture="Default" Path="Weight" Data="569.90211555133851" />
+    <Item217 Ref="1393" Component="#Ref-1142" Culture="Default" Path="Text" Data="Value" />
+    <Item218 Ref="1394" Component="#Ref-1142" Culture="ar" Path="Text" Data="القيمة" />
+    <Item219 Ref="1395" Component="#Ref-1142" Culture="Default" Path="Weight" Data="3" />
+    <Item220 Ref="1396" Component="#Ref-340" Culture="Default" Path="Text" Data="Percent" />
+    <Item221 Ref="1397" Component="#Ref-340" Culture="ar" Path="Text" Data="نسبة" />
+    <Item222 Ref="1398" Component="#Ref-340" Culture="Default" Path="Weight" Data="3" />
+    <Item223 Ref="1399" Component="#Ref-310" Culture="Default" Path="Text" Data="Live" />
+    <Item224 Ref="1400" Component="#Ref-310" Culture="ar" Path="Text" Data="سليم" />
+    <Item225 Ref="1401" Component="#Ref-310" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item226 Ref="1402" Component="#Ref-312" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item227 Ref="1403" Component="#Ref-1166" Culture="Default" Path="Text" Data="Transform From Farm: [?FarmNo]" />
+    <Item228 Ref="1404" Component="#Ref-1166" Culture="ar" Path="Text" Data="منقول من مزرعة: [?FarmNo]" />
+    <Item229 Ref="1405" Component="#Ref-1166" Culture="Default" Path="Weight" Data="2.4464268493652344" />
+    <Item230 Ref="1406" Component="#Ref-315" Culture="Default" Path="Weight" Data="1.1148220825195314" />
+    <Item231 Ref="1407" Component="#Ref-320" Culture="Default" Path="Text" Data="Culls" />
+    <Item232 Ref="1408" Component="#Ref-320" Culture="ar" Path="Text" Data="فرزة" />
+    <Item233 Ref="1409" Component="#Ref-320" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item234 Ref="1410" Component="#Ref-322" Culture="Default" Path="Text" Data="" />
+    <Item235 Ref="1411" Component="#Ref-322" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item236 Ref="1412" Component="#Ref-322" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item237 Ref="1413" Component="#Ref-325" Culture="Default" Path="Text" Data="" />
+    <Item238 Ref="1414" Component="#Ref-325" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item239 Ref="1415" Component="#Ref-325" Culture="Default" Path="Weight" Data="1.1148220825195314" />
+    <Item240 Ref="1416" Component="#Ref-330" Culture="Default" Path="Text" Data="Deplation" />
+    <Item241 Ref="1417" Component="#Ref-330" Culture="ar" Path="Text" Data="هالك" />
+    <Item242 Ref="1418" Component="#Ref-330" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item243 Ref="1419" Component="#Ref-332" Culture="Default" Path="Text" Data="" />
+    <Item244 Ref="1420" Component="#Ref-332" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item245 Ref="1421" Component="#Ref-332" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item246 Ref="1422" Component="#Ref-335" Culture="Default" Path="Text" Data="" />
+    <Item247 Ref="1423" Component="#Ref-335" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item248 Ref="1424" Component="#Ref-335" Culture="Default" Path="Weight" Data="1.1148220825195314" />
+    <Item249 Ref="1425" Component="#Ref-1136" Culture="Default" Path="Text" Data="Price" />
+    <Item250 Ref="1426" Component="#Ref-1136" Culture="ar" Path="Text" Data="السعر" />
+    <Item251 Ref="1427" Component="#Ref-1136" Culture="Default" Path="Weight" Data="3" />
+    <Item252 Ref="1428" Component="#Ref-236" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item253 Ref="1429" Component="#Ref-236" Culture="Default" Path="Text" Data="xrTableCell44" />
+    <Item254 Ref="1430" Component="#Ref-236" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item255 Ref="1431" Component="#Ref-236" Culture="Default" Path="Weight" Data="603.77683522114819" />
+    <Item256 Ref="1432" Component="#Ref-241" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item257 Ref="1433" Component="#Ref-241" Culture="Default" Path="Text" Data="xrTableCell15" />
+    <Item258 Ref="1434" Component="#Ref-241" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item259 Ref="1435" Component="#Ref-241" Culture="Default" Path="Weight" Data="569.90236281897432" />
+    <Item260 Ref="1436" Component="#Ref-1147" Culture="Default" Path="Text" Data="Female" />
+    <Item261 Ref="1437" Component="#Ref-1147" Culture="ar" Path="Text" Data="اناث" />
+    <Item262 Ref="1438" Component="#Ref-1147" Culture="Default" Path="Weight" Data="0.67326928370107009" />
+    <Item263 Ref="1439" Component="#Ref-246" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item264 Ref="1440" Component="#Ref-246" Culture="Default" Path="Text" Data="xrTableCell18" />
+    <Item265 Ref="1441" Component="#Ref-246" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item266 Ref="1442" Component="#Ref-246" Culture="Default" Path="Weight" Data="568.90649969918991" />
+    <Item267 Ref="1443" Component="#Ref-251" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item268 Ref="1444" Component="#Ref-251" Culture="Default" Path="Text" Data="xrTableCell68" />
+    <Item269 Ref="1445" Component="#Ref-251" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item270 Ref="1446" Component="#Ref-251" Culture="Default" Path="Weight" Data="570.89848745126187" />
+    <Item271 Ref="1447" Component="#Ref-256" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item272 Ref="1448" Component="#Ref-256" Culture="Default" Path="Text" Data="" />
+    <Item273 Ref="1449" Component="#Ref-256" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item274 Ref="1450" Component="#Ref-256" Culture="Default" Path="Weight" Data="569.90258311772891" />
+    <Item275 Ref="1451" Component="#Ref-260" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item276 Ref="1452" Component="#Ref-260" Culture="Default" Path="Text" Data="xrTableCell21" />
+    <Item277 Ref="1453" Component="#Ref-260" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item278 Ref="1454" Component="#Ref-260" Culture="Default" Path="Weight" Data="603.77713416058168" />
+    <Item279 Ref="1455" Component="#Ref-84" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item280 Ref="1456" Component="#Ref-84" Culture="Default" Path="Text" Data="xrTableCell44" />
+    <Item281 Ref="1457" Component="#Ref-84" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item282 Ref="1458" Component="#Ref-84" Culture="Default" Path="Weight" Data="603.77635259115925" />
+    <Item283 Ref="1459" Component="#Ref-265" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item284 Ref="1460" Component="#Ref-265" Culture="Default" Path="Text" Data="" />
+    <Item285 Ref="1461" Component="#Ref-265" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item286 Ref="1462" Component="#Ref-265" Culture="Default" Path="Weight" Data="569.9022908164734" />
+    <Item287 Ref="1463" Component="#Ref-271" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item288 Ref="1464" Component="#Ref-271" Culture="Default" Path="Text" Data="" />
+    <Item289 Ref="1465" Component="#Ref-271" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item290 Ref="1466" Component="#Ref-271" Culture="Default" Path="Weight" Data="569.90267426291393" />
+    <Item291 Ref="1467" Component="#Ref-277" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item292 Ref="1468" Component="#Ref-277" Culture="Default" Path="Text" Data="xrTableCell24" />
+    <Item293 Ref="1469" Component="#Ref-277" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item294 Ref="1470" Component="#Ref-277" Culture="Default" Path="Weight" Data="569.90255867123483" />
+    <Item295 Ref="1471" Component="#Ref-282" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item296 Ref="1472" Component="#Ref-282" Culture="Default" Path="Text" Data="" />
+    <Item297 Ref="1473" Component="#Ref-282" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item298 Ref="1474" Component="#Ref-282" Culture="Default" Path="Weight" Data="569.90152879922869" />
+    <Item299 Ref="1475" Component="#Ref-286" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item300 Ref="1476" Component="#Ref-286" Culture="Default" Path="Text" Data="xrTableCell64" />
+    <Item301 Ref="1477" Component="#Ref-286" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item302 Ref="1478" Component="#Ref-286" Culture="Default" Path="Weight" Data="629.68167462081124" />
+    <Item303 Ref="1479" Component="#Ref-1149" Culture="Default" Path="Text" Data="Male" />
+    <Item304 Ref="1480" Component="#Ref-1149" Culture="ar" Path="Text" Data="ذكور" />
+    <Item305 Ref="1481" Component="#Ref-1149" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item306 Ref="1482" Component="#Ref-382" Culture="Default" Path="Text" Data="" />
+    <Item307 Ref="1483" Component="#Ref-382" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item308 Ref="1484" Component="#Ref-384" Culture="Default" Path="Text" Data="Female" />
+    <Item309 Ref="1485" Component="#Ref-384" Culture="ar" Path="Text" Data="إناث" />
+    <Item310 Ref="1486" Component="#Ref-384" Culture="Default" Path="TextFormatString" Data="" />
+    <Item311 Ref="1487" Component="#Ref-384" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item312 Ref="1488" Component="#Ref-386" Culture="Default" Path="Text" Data="Male" />
+    <Item313 Ref="1489" Component="#Ref-386" Culture="ar" Path="Text" Data="ذكور" />
+    <Item314 Ref="1490" Component="#Ref-386" Culture="Default" Path="TextFormatString" Data="" />
+    <Item315 Ref="1491" Component="#Ref-386" Culture="Default" Path="Weight" Data="1.11482177734375" />
+    <Item316 Ref="1492" Component="#Ref-372" Culture="Default" Path="Text" Data="Live" />
+    <Item317 Ref="1493" Component="#Ref-372" Culture="ar" Path="Text" Data="سليم" />
+    <Item318 Ref="1494" Component="#Ref-372" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item319 Ref="1495" Component="#Ref-374" Culture="Default" Path="Text" Data="xrTableCell55" />
+    <Item320 Ref="1496" Component="#Ref-374" Culture="Default" Path="TextFormatString" Data="" />
+    <Item321 Ref="1497" Component="#Ref-374" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item322 Ref="1498" Component="#Ref-377" Culture="Default" Path="Text" Data="xrTableCell56" />
+    <Item323 Ref="1499" Component="#Ref-377" Culture="Default" Path="TextFormatString" Data="" />
+    <Item324 Ref="1500" Component="#Ref-377" Culture="Default" Path="Weight" Data="1.1148220825195314" />
+    <Item325 Ref="1501" Component="#Ref-1155" Culture="Default" Path="Text" Data="Average" />
+    <Item326 Ref="1502" Component="#Ref-1155" Culture="ar" Path="Text" Data="المتوسط" />
+    <Item327 Ref="1503" Component="#Ref-1155" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item328 Ref="1504" Component="#Ref-362" Culture="Default" Path="Text" Data="Culls" />
+    <Item329 Ref="1505" Component="#Ref-362" Culture="ar" Path="Text" Data="فرزة" />
+    <Item330 Ref="1506" Component="#Ref-362" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item331 Ref="1507" Component="#Ref-364" Culture="Default" Path="Text" Data="xrTableCell55" />
+    <Item332 Ref="1508" Component="#Ref-364" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item333 Ref="1509" Component="#Ref-364" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item334 Ref="1510" Component="#Ref-367" Culture="Default" Path="Text" Data="xrTableCell56" />
+    <Item335 Ref="1511" Component="#Ref-367" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item336 Ref="1512" Component="#Ref-367" Culture="Default" Path="Weight" Data="1.1148220825195314" />
+    <Item337 Ref="1513" Component="#Ref-350" Culture="Default" Path="Text" Data="Deplation" />
+    <Item338 Ref="1514" Component="#Ref-350" Culture="ar" Path="Text" Data="هالك" />
+    <Item339 Ref="1515" Component="#Ref-350" Culture="Default" Path="Weight" Data="0.99999633789062514" />
+    <Item340 Ref="1516" Component="#Ref-126" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item341 Ref="1517" Component="#Ref-126" Culture="Default" Path="Text" Data="xrTableCell65" />
+    <Item342 Ref="1518" Component="#Ref-126" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item343 Ref="1519" Component="#Ref-126" Culture="Default" Path="Weight" Data="629.68118202456833" />
+    <Item344 Ref="1520" Component="#Ref-130" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item345 Ref="1521" Component="#Ref-130" Culture="Default" Path="Text" Data="xrTableCell66" />
+    <Item346 Ref="1522" Component="#Ref-130" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item347 Ref="1523" Component="#Ref-130" Culture="Default" Path="Weight" Data="629.68062927864673" />
+    <Item348 Ref="1524" Component="#Ref-134" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item349 Ref="1525" Component="#Ref-134" Culture="Default" Path="Text" Data="xrTableCell67" />
+    <Item350 Ref="1526" Component="#Ref-134" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item351 Ref="1527" Component="#Ref-134" Culture="Default" Path="Weight" Data="629.68106649619631" />
+    <Item352 Ref="1528" Component="#Ref-96" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item353 Ref="1529" Component="#Ref-96" Culture="Default" Path="Text" Data="xrTableCell68" />
+    <Item354 Ref="1530" Component="#Ref-96" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item355 Ref="1531" Component="#Ref-96" Culture="Default" Path="Weight" Data="569.902647543894" />
+    <Item356 Ref="1532" Component="#Ref-138" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item357 Ref="1533" Component="#Ref-138" Culture="Default" Path="Text" Data="xrTableCell69" />
+    <Item358 Ref="1534" Component="#Ref-138" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item359 Ref="1535" Component="#Ref-138" Culture="Default" Path="Weight" Data="629.67974755669809" />
+    <Item360 Ref="1536" Component="#Ref-1118" Culture="Default" Path="Text" Data="Sold From House" />
+    <Item361 Ref="1537" Component="#Ref-1118" Culture="ar" Path="Text" Data="مباع من عنبر" />
+    <Item362 Ref="1538" Component="#Ref-1118" Culture="Default" Path="Weight" Data="2.4464268493652344" />
+    <Item363 Ref="1539" Component="#Ref-291" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item364 Ref="1540" Component="#Ref-291" Culture="Default" Path="Text" Data="xrTableCell65" />
+    <Item365 Ref="1541" Component="#Ref-291" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item366 Ref="1542" Component="#Ref-291" Culture="Default" Path="Weight" Data="629.6806248363448" />
+    <Item367 Ref="1543" Component="#Ref-296" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item368 Ref="1544" Component="#Ref-296" Culture="Default" Path="Text" Data="xrTableCell66" />
+    <Item369 Ref="1545" Component="#Ref-296" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item370 Ref="1546" Component="#Ref-296" Culture="Default" Path="Weight" Data="629.68117001064525" />
+    <Item371 Ref="1547" Component="#Ref-301" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item372 Ref="1548" Component="#Ref-301" Culture="Default" Path="Text" Data="xrTableCell67" />
+    <Item373 Ref="1549" Component="#Ref-301" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item374 Ref="1550" Component="#Ref-301" Culture="Default" Path="Weight" Data="629.680064584218" />
+    <Item375 Ref="1551" Component="#Ref-352" Culture="Default" Path="Text" Data="xrTableCell55" />
+    <Item376 Ref="1552" Component="#Ref-352" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item377 Ref="1553" Component="#Ref-352" Culture="Default" Path="Weight" Data="1.1973721313476562" />
+    <Item378 Ref="1554" Component="#Ref-356" Culture="Default" Path="Text" Data="xrTableCell56" />
+    <Item379 Ref="1555" Component="#Ref-356" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item380 Ref="1556" Component="#Ref-356" Culture="Default" Path="Weight" Data="1.1148220825195314" />
+    <Item381 Ref="1557" Component="#Ref-1123" Culture="Default" Path="Text" Data="Female" />
+    <Item382 Ref="1558" Component="#Ref-1123" Culture="ar" Path="Text" Data="إناث" />
+    <Item383 Ref="1559" Component="#Ref-1123" Culture="Default" Path="Weight" Data="0.67326928370107009" />
+    <Item384 Ref="1560" Component="#Ref-1125" Culture="Default" Path="Text" Data="Male" />
+    <Item385 Ref="1561" Component="#Ref-1125" Culture="ar" Path="Text" Data="ذكور" />
+    <Item386 Ref="1562" Component="#Ref-1125" Culture="Default" Path="Weight" Data="0.63549739234872038" />
+    <Item387 Ref="1563" Component="#Ref-1161" Culture="Default" Path="Weight" Data="1" />
+    <Item388 Ref="1564" Component="#Ref-319" Culture="Default" Path="Weight" Data="1" />
+    <Item389 Ref="1565" Component="#Ref-329" Culture="Default" Path="Weight" Data="1" />
+    <Item390 Ref="1566" Component="#Ref-1135" Culture="Default" Path="Weight" Data="1" />
+    <Item391 Ref="1567" Component="#Ref-1117" Culture="Default" Path="Weight" Data="1" />
+    <Item392 Ref="1568" Component="#Ref-381" Culture="Default" Path="Weight" Data="1" />
+    <Item393 Ref="1569" Component="#Ref-371" Culture="Default" Path="Weight" Data="1" />
+    <Item394 Ref="1570" Component="#Ref-361" Culture="Default" Path="Weight" Data="1" />
+    <Item395 Ref="1571" Component="#Ref-349" Culture="Default" Path="Weight" Data="1" />
+    <Item396 Ref="1572" Component="#Ref-1165" Culture="Default" Path="Weight" Data="1" />
+    <Item397 Ref="1573" Component="#Ref-1146" Culture="Default" Path="Weight" Data="1" />
+    <Item398 Ref="1574" Component="#Ref-1122" Culture="Default" Path="Weight" Data="1" />
+    <Item399 Ref="1575" Component="#Ref-344" Culture="Default" Path="Weight" Data="1" />
+    <Item400 Ref="1576" Component="#Ref-339" Culture="Default" Path="Weight" Data="1" />
+    <Item401 Ref="1577" Component="#Ref-233" Culture="Default" Path="Weight" Data="1" />
+    <Item402 Ref="1578" Component="#Ref-309" Culture="Default" Path="Weight" Data="1" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
-    <Item1 Ref="1578" LayoutItemType="Parameter" Parameter="#Ref-3" />
-    <Item2 Ref="1579" LayoutItemType="Parameter" Parameter="#Ref-4" />
-    <Item3 Ref="1580" LayoutItemType="Parameter" Parameter="#Ref-5" />
-    <Item4 Ref="1581" LayoutItemType="Parameter" Parameter="#Ref-6" />
-    <Item5 Ref="1582" LayoutItemType="Parameter" Parameter="#Ref-7" />
-    <Item6 Ref="1583" LayoutItemType="Parameter" Parameter="#Ref-8" />
-    <Item7 Ref="1584" LayoutItemType="Parameter" Parameter="#Ref-9" />
-    <Item8 Ref="1585" LayoutItemType="Parameter" Parameter="#Ref-11" />
-    <Item9 Ref="1586" LayoutItemType="Parameter" Parameter="#Ref-12" />
-    <Item10 Ref="1587" LayoutItemType="Parameter" Parameter="#Ref-13" />
-    <Item11 Ref="1588" LayoutItemType="Parameter" Parameter="#Ref-14" />
-    <Item12 Ref="1589" LayoutItemType="Parameter" Parameter="#Ref-15" />
-    <Item13 Ref="1590" LayoutItemType="Parameter" Parameter="#Ref-16" />
-    <Item14 Ref="1591" LayoutItemType="Parameter" Parameter="#Ref-17" />
-    <Item15 Ref="1592" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-18" />
-    <Item16 Ref="1593" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-19" />
-    <Item17 Ref="1594" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-20" />
-    <Item18 Ref="1595" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-21" />
-    <Item19 Ref="1596" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-22" />
-    <Item20 Ref="1597" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-23" />
-    <Item21 Ref="1598" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-24" />
-    <Item22 Ref="1599" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-25" />
-    <Item23 Ref="1600" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-26" />
-    <Item24 Ref="1601" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-27" />
-    <Item25 Ref="1602" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-28" />
-    <Item26 Ref="1603" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-30" />
-    <Item27 Ref="1604" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-31" />
-    <Item28 Ref="1605" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-32" />
-    <Item29 Ref="1606" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-33" />
-    <Item30 Ref="1607" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-34" />
-    <Item31 Ref="1608" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-35" />
-    <Item32 Ref="1609" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-36" />
-    <Item33 Ref="1610" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-37" />
-    <Item34 Ref="1611" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-38" />
-    <Item35 Ref="1612" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-39" />
-    <Item36 Ref="1613" LayoutItemType="Parameter" Parameter="#Ref-40" />
-    <Item37 Ref="1614" LayoutItemType="Parameter" Parameter="#Ref-41" />
+    <Item1 Ref="1579" LayoutItemType="Parameter" Parameter="#Ref-3" />
+    <Item2 Ref="1580" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item3 Ref="1581" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item4 Ref="1582" LayoutItemType="Parameter" Parameter="#Ref-6" />
+    <Item5 Ref="1583" LayoutItemType="Parameter" Parameter="#Ref-7" />
+    <Item6 Ref="1584" LayoutItemType="Parameter" Parameter="#Ref-8" />
+    <Item7 Ref="1585" LayoutItemType="Parameter" Parameter="#Ref-9" />
+    <Item8 Ref="1586" LayoutItemType="Parameter" Parameter="#Ref-11" />
+    <Item9 Ref="1587" LayoutItemType="Parameter" Parameter="#Ref-12" />
+    <Item10 Ref="1588" LayoutItemType="Parameter" Parameter="#Ref-13" />
+    <Item11 Ref="1589" LayoutItemType="Parameter" Parameter="#Ref-14" />
+    <Item12 Ref="1590" LayoutItemType="Parameter" Parameter="#Ref-15" />
+    <Item13 Ref="1591" LayoutItemType="Parameter" Parameter="#Ref-16" />
+    <Item14 Ref="1592" LayoutItemType="Parameter" Parameter="#Ref-17" />
+    <Item15 Ref="1593" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-18" />
+    <Item16 Ref="1594" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-19" />
+    <Item17 Ref="1595" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-20" />
+    <Item18 Ref="1596" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-21" />
+    <Item19 Ref="1597" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-22" />
+    <Item20 Ref="1598" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-23" />
+    <Item21 Ref="1599" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-24" />
+    <Item22 Ref="1600" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-25" />
+    <Item23 Ref="1601" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-26" />
+    <Item24 Ref="1602" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-27" />
+    <Item25 Ref="1603" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-28" />
+    <Item26 Ref="1604" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-30" />
+    <Item27 Ref="1605" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-31" />
+    <Item28 Ref="1606" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-32" />
+    <Item29 Ref="1607" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-33" />
+    <Item30 Ref="1608" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-34" />
+    <Item31 Ref="1609" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-35" />
+    <Item32 Ref="1610" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-36" />
+    <Item33 Ref="1611" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-37" />
+    <Item34 Ref="1612" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-38" />
+    <Item35 Ref="1613" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-39" />
+    <Item36 Ref="1614" LayoutItemType="Parameter" Parameter="#Ref-40" />
+    <Item37 Ref="1615" LayoutItemType="Parameter" Parameter="#Ref-41" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="1615" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="dsBreeder" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNCcmVlZGVyIj48Q29ubmVjdGlvbiBOYW1lPSJkc0JyZWVkZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjIzMCIgSGVpZ2h0PSI0NjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IlJlZ2lvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iUGxhY2VDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJDeWNsZUZsa0JhdGNoQ291bnQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkNyb3BObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJTdWJQbGFjZXNDb3VudCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iV29ya1R5cGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9Ik1heENhcGFjaXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJTdGFydERhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkVuZERhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IldvcmtQZXJpb2QiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkJyZWFrU3RhcnREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJCcmVha0VuZERhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkJyZWFrUGVyaW9kIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJCcmVha1JlYXNvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iV29ya1BlcmMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkJyZWFrUGVyYyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iUmVjQW5kQ2FwY2l0eURpZmYiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkNhcGNpdHlQZXJjIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PEZpZWxkIE5hbWU9IlJlZ2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQbGFjZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaENvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlc0NvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1heENhcGFjaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtQZXJpb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1N0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlYWtSZWFzb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNBbmRDYXBjaXR5RGlmZiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhcGNpdHlQZXJjIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
-    <Item2 Ref="1616" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0IiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmxvY2tDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iV2Vla1N0YXJ0RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9IldlZWtFbmREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iV2Vla05vIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iUHJvZFdlZWtObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9IlZhY2NpbmF0aW9ucyIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9Ik1lZGljYXRpb25zIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iUE1MZXNpb25zIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iU2FtcGxlRGlhZ25vc2lzIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmVtYWxlTW9ydFN0ZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9Ik1hbGVNb3J0U3RkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmVtYWxlRmVlZFN0ZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9Ik1hbGVGZWVkU3RkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iVG90YWxFZ2dzU3RkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iSGF0RWdnc1N0ZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9IkZlbWFsZU1vcnRQZXJjIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iTWFsZU1vcnRQZXJjIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmVtYWxlRmVlZFBlcmMiIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0IiBOYW1lPSJNYWxlRmVlZFBlcmMiIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0IiBOYW1lPSJUb3RhbEVnZ3NQZXJjIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iSGF0RWdnc1BlcmMiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0Ij48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IldlZWtTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJXZWVrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldlZWtObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJWYWNjaW5hdGlvbnMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWVkaWNhdGlvbnMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUE1MZXNpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlNhbXBsZURpYWdub3NpcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0U3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnRTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZlZWRTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEVnZ3NTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRFZ2dzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlTW9ydFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsRWdnc1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRFZ2dzUGVyYyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
-    <Item3 Ref="1617" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource2" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9TYW1wbGVTZW50Ij48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9CUkRfU2FtcGxlU2VudCIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iU2VudGRhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1NhbXBsZVNlbnQiIE5hbWU9IkZhcm0iIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1NhbXBsZVNlbnQiIE5hbWU9IkZsb2NrQ29kZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iQWdlRGF5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJBZ2VXZWVrIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJCcmVlZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iSG91c2VzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJUcGVzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJUZXN0cyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iTGFiIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJMYWJSZXN1bHQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1NhbXBsZVNlbnQiIE5hbWU9IkN5Y2xlTm8iIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMiI+PFZpZXcgTmFtZT0iU1JfQlJEX1NhbXBsZVNlbnQiPjxGaWVsZCBOYW1lPSJTZW50ZGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkZhcm0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFnZURheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVHBlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXN0cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMYWIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGFiUmVzdWx0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
-    <Item4 Ref="1618" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource3" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iVmFjY2luZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iIE5hbWU9IlZhY2NpbmVOYW1lIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iTWFudWZhY3R1cmVyIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iUm91dGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiBOYW1lPSJEYXlGcm9tIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRGF5VG8iIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiBOYW1lPSJXZWVrRnJvbSIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iIE5hbWU9IldlZWtUbyIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iIE5hbWU9IkJhdGNoTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiBOYW1lPSJFeHBpcnlEYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRG9zZXNVc2VkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRGF0ZUdpdmVuIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iQWN0dWFsQWdlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iU3RhcnREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRW5kRGF0ZSIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UzIj48VmlldyBOYW1lPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iPjxGaWVsZCBOYW1lPSJWYWNjaW5lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlZhY2NpbmVOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1hbnVmYWN0dXJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSb3V0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXlGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF5VG8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrRnJvbSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJhdGNoTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvc2VzVXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRhdGVHaXZlbiIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbEFnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkVuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
-    <Item5 Ref="1619" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource4" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkNyb3BObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iRmxvY2tDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJSZWdEYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJPcGVuSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iT3BlbkZIVEVnZ3NGIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJQcm9kSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iUHJvZEZIVEVnZ3NGIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJIYXRjaGVyeUhURWdnc0YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkhhdGNoZXJ5RkhURWdnc0YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkNFR1NIVEVnZ3NGIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJDRUdTRkhURWdnc0YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkNsb3NlSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iT3BlbkhURWdnc0MiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9Ik9wZW5GSFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iUmVjSFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iUmVjRkhURWdnc0MiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkhhdGNoZXJ5SFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iQ2xvc2VIVEVnZ3NDIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJDbG9zZUZIVEVnZ3NDIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJXZWVrTm8iIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlNCI+PFZpZXcgTmFtZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kRkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0hURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDRUdTRkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPcGVuRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtObyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
-    <Item6 Ref="1620" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource5" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJNYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdWxsc0ZlbWFsZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJNYWxlQ3VsbHMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0idEZySG91c2VJRCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJGZW1hbGVGZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVGZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJmX1dlZUtObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJyc19GQUJXIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJzX01BQlciIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icnNfRmVtYWxlQ1YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icnNfTWFsZUNWIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJzX1VuaWZvcm1pdHkiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icnNfTWFsZVVuaWZvcm1pdHkiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iSG91c2VDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJmX0xpdmVGZW1hbGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icmZfTGl2ZU1hbGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iQ3VtRmVtYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1NYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1GZW1hbGVDdWxscyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1NYWxlQ3VsbHMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iQ3VtTWFsZU1pc3NleCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1GZW1hbGVNaXNzZXgiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlUGxhY2VkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVQbGFjZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlTWlzc2V4IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVNaXNzZXgiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlUmVqIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVSZWoiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iQnJlZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmxvY2tDb2RlIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdWxsc0ZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InRGckhvdXNlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyc19GQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfTUFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX0ZlbWFsZUNWIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfTWFsZUNWIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfVW5pZm9ybWl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX01hbGVVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG91c2VDb2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZUZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0xpdmVNYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1NYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVBsYWNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZU1pc3NleCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNaXNzZXgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVSZWoiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUmVqIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item1 Ref="1616" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="dsBreeder" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNCcmVlZGVyIj48Q29ubmVjdGlvbiBOYW1lPSJkc0JyZWVkZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjIzMCIgSGVpZ2h0PSI0NjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IlJlZ2lvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iUGxhY2VDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJDeWNsZUZsa0JhdGNoQ291bnQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkNyb3BObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJTdWJQbGFjZXNDb3VudCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iV29ya1R5cGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9Ik1heENhcGFjaXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJTdGFydERhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkVuZERhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IldvcmtQZXJpb2QiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkJyZWFrU3RhcnREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJCcmVha0VuZERhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkJyZWFrUGVyaW9kIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9NYWluUHJvZFVuaXREYXRhIiBOYW1lPSJCcmVha1JlYXNvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iV29ya1BlcmMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkJyZWFrUGVyYyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSIgTmFtZT0iUmVjQW5kQ2FwY2l0eURpZmYiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX01haW5Qcm9kVW5pdERhdGEiIE5hbWU9IkNhcGNpdHlQZXJjIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9CUkRfTWFpblByb2RVbml0RGF0YSI+PEZpZWxkIE5hbWU9IlJlZ2lvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQbGFjZUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaENvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3JvcE5vIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVGbGtCYXRjaE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlN1YlBsYWNlc0NvdW50IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnRXb3JrRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1heENhcGFjaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU3RhcnREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldvcmtQZXJpb2QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1N0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJyZWFrUGVyaW9kIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlYWtSZWFzb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iV29ya1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVha1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNBbmRDYXBjaXR5RGlmZiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNhcGNpdHlQZXJjIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+    <Item2 Ref="1617" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0IiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmxvY2tDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iV2Vla1N0YXJ0RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9IldlZWtFbmREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iV2Vla05vIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iUHJvZFdlZWtObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9IlZhY2NpbmF0aW9ucyIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9Ik1lZGljYXRpb25zIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iUE1MZXNpb25zIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iU2FtcGxlRGlhZ25vc2lzIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmVtYWxlTW9ydFN0ZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9Ik1hbGVNb3J0U3RkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmVtYWxlRmVlZFN0ZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9Ik1hbGVGZWVkU3RkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iVG90YWxFZ2dzU3RkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iSGF0RWdnc1N0ZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9GUl9GbGtIZWFsdGhSZXBvcnQiIE5hbWU9IkZlbWFsZU1vcnRQZXJjIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iTWFsZU1vcnRQZXJjIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iRmVtYWxlRmVlZFBlcmMiIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0IiBOYW1lPSJNYWxlRmVlZFBlcmMiIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0IiBOYW1lPSJUb3RhbEVnZ3NQZXJjIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0ZSX0Zsa0hlYWx0aFJlcG9ydCIgTmFtZT0iSGF0RWdnc1BlcmMiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iU1JfUEhfRlJfRmxrSGVhbHRoUmVwb3J0Ij48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IldlZWtTdGFydERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJXZWVrRW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IldlZWtObyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlByb2RXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJWYWNjaW5hdGlvbnMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTWVkaWNhdGlvbnMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUE1MZXNpb25zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlNhbXBsZURpYWdub3NpcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0U3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnRTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZlZWRTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbEVnZ3NTdGQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRFZ2dzU3RkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlTW9ydFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlTW9ydFBlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVGZWVkUGVyYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsRWdnc1BlcmMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRFZ2dzUGVyYyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item3 Ref="1618" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource2" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9TYW1wbGVTZW50Ij48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9CUkRfU2FtcGxlU2VudCIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iU2VudGRhdGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1NhbXBsZVNlbnQiIE5hbWU9IkZhcm0iIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1NhbXBsZVNlbnQiIE5hbWU9IkZsb2NrQ29kZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iQWdlRGF5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJBZ2VXZWVrIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJCcmVlZCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iSG91c2VzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJUcGVzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJUZXN0cyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfU2FtcGxlU2VudCIgTmFtZT0iTGFiIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9TYW1wbGVTZW50IiBOYW1lPSJMYWJSZXN1bHQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1NhbXBsZVNlbnQiIE5hbWU9IkN5Y2xlTm8iIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMiI+PFZpZXcgTmFtZT0iU1JfQlJEX1NhbXBsZVNlbnQiPjxGaWVsZCBOYW1lPSJTZW50ZGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkZhcm0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFnZURheSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFnZVdlZWsiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCcmVlZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIb3VzZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVHBlcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUZXN0cyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJMYWIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTGFiUmVzdWx0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3ljbGVObyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item4 Ref="1619" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource3" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iVmFjY2luZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iIE5hbWU9IlZhY2NpbmVOYW1lIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iTWFudWZhY3R1cmVyIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iUm91dGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiBOYW1lPSJEYXlGcm9tIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRGF5VG8iIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiBOYW1lPSJXZWVrRnJvbSIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iIE5hbWU9IldlZWtUbyIgLz48Q29sdW1uIFRhYmxlPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iIE5hbWU9IkJhdGNoTm8iIC8+PENvbHVtbiBUYWJsZT0iU1JfUEhfQlJEX1ZhY2NpbmF0aW9uIiBOYW1lPSJFeHBpcnlEYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRG9zZXNVc2VkIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRGF0ZUdpdmVuIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iQWN0dWFsQWdlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iU3RhcnREYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX1BIX0JSRF9WYWNjaW5hdGlvbiIgTmFtZT0iRW5kRGF0ZSIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UzIj48VmlldyBOYW1lPSJTUl9QSF9CUkRfVmFjY2luYXRpb24iPjxGaWVsZCBOYW1lPSJWYWNjaW5lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlZhY2NpbmVOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik1hbnVmYWN0dXJlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJSb3V0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXlGcm9tIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGF5VG8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrRnJvbSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtUbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkJhdGNoTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkRvc2VzVXNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkRhdGVHaXZlbiIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFjdHVhbEFnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlN0YXJ0RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkVuZERhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+    <Item5 Ref="1620" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource4" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIj48VGFibGVzPjxUYWJsZSBOYW1lPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iRmFybUNvZGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkNyb3BObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iRmxvY2tDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJSZWdEYXRlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJPcGVuSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iT3BlbkZIVEVnZ3NGIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJQcm9kSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iUHJvZEZIVEVnZ3NGIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJIYXRjaGVyeUhURWdnc0YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkhhdGNoZXJ5RkhURWdnc0YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkNFR1NIVEVnZ3NGIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJDRUdTRkhURWdnc0YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkNsb3NlSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iQ2xvc2VGSFRFZ2dzRiIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iT3BlbkhURWdnc0MiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9Ik9wZW5GSFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iUmVjSFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iUmVjRkhURWdnc0MiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiIE5hbWU9IkhhdGNoZXJ5SFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iSGF0Y2hlcnlGSFRFZ2dzQyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfSFRFZ2dzQmFsYW5jZSIgTmFtZT0iQ2xvc2VIVEVnZ3NDIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJDbG9zZUZIVEVnZ3NDIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9IVEVnZ3NCYWxhbmNlIiBOYW1lPSJXZWVrTm8iIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlNCI+PFZpZXcgTmFtZT0iU1JfQlJEX0hURWdnc0JhbGFuY2UiPjxGaWVsZCBOYW1lPSJGYXJtQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDcm9wTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGbG9ja0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVnRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9Ik9wZW5IVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUHJvZEhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQcm9kRkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ0VHU0hURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDRUdTRkhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUhURWdnc0YiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDbG9zZUZIVEVnZ3NGIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iT3BlbkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJPcGVuRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWNIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUmVjRkhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUhURWdnc0MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIYXRjaGVyeUZIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VIVEVnZ3NDIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VGSFRFZ2dzQyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlZWtObyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item6 Ref="1621" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource5" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJNYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdWxsc0ZlbWFsZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJNYWxlQ3VsbHMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0idEZySG91c2VJRCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJGZW1hbGVGZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVGZWVkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJmX1dlZUtObyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJyc19GQUJXIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJzX01BQlciIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icnNfRmVtYWxlQ1YiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icnNfTWFsZUNWIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJzX1VuaWZvcm1pdHkiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icnNfTWFsZVVuaWZvcm1pdHkiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iSG91c2VDb2RlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9InJmX0xpdmVGZW1hbGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0icmZfTGl2ZU1hbGUiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iQ3VtRmVtYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1NYWxlTW9ydCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1GZW1hbGVDdWxscyIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1NYWxlQ3VsbHMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iQ3VtTWFsZU1pc3NleCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfV2Vla2x5UmVwb3J0IiBOYW1lPSJDdW1GZW1hbGVNaXNzZXgiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlUGxhY2VkIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVQbGFjZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlTWlzc2V4IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVNaXNzZXgiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmVtYWxlUmVqIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiIE5hbWU9Ik1hbGVSZWoiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iQnJlZWQiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX1dlZWtseVJlcG9ydCIgTmFtZT0iRmxvY2tDb2RlIiAvPjwvQ29sdW1ucz48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTUiPjxWaWV3IE5hbWU9IlNSX0JSRF9XZWVrbHlSZXBvcnQiPjxGaWVsZCBOYW1lPSJGZW1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZU1vcnQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdWxsc0ZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVDdWxscyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InRGckhvdXNlSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVGZWVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZUZlZWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZl9XZWVLTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyc19GQUJXIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfTUFCVyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX0ZlbWFsZUNWIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfTWFsZUNWIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icnNfVW5pZm9ybWl0eSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJzX01hbGVVbmlmb3JtaXR5IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG91c2VDb2RlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icmZfTGl2ZUZlbWFsZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJmX0xpdmVNYWxlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlTW9ydCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkN1bU1hbGVNb3J0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1NYWxlQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDdW1NYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ3VtRmVtYWxlTWlzc2V4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlUGxhY2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTWFsZVBsYWNlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkZlbWFsZU1pc3NleCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVNaXNzZXgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVSZWoiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlUmVqIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQnJlZWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmxvY2tDb2RlIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
     <Item7 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource6" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxDb25uZWN0aW9uIE5hbWU9ImRzQnJlZWRlciIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlNSX0JSRF9EYWlseVNlbGxpbmciPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlNSX0JSRF9EYWlseVNlbGxpbmciIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0RhaWx5U2VsbGluZyIgTmFtZT0iRGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfRGFpbHlTZWxsaW5nIiBOYW1lPSJMYXlGZW1hbGVCYWxhbmNlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9IkxheU1hbGVCYWxhbmNlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9IkxheVd0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9IlNlbGxGZW1hbGVCYWxhbmNlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9IlNlbGxNYWxlQmFsYW5jZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfRGFpbHlTZWxsaW5nIiBOYW1lPSJTZWxsV3QiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0RhaWx5U2VsbGluZyIgTmFtZT0iU2VsbGluZ1ByaWNlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9IlNlbGxpbmdFZ2dzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9IlNlbGxpbmdFZ2dzUHJpY2UiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0RhaWx5U2VsbGluZyIgTmFtZT0iRmVtYWxlU2VsbEN1bGxzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0JSRF9EYWlseVNlbGxpbmciIE5hbWU9Ik1hbGVTZWxsQ3VsbHMiIC8+PENvbHVtbiBUYWJsZT0iU1JfQlJEX0RhaWx5U2VsbGluZyIgTmFtZT0iRmVtYWxlU2VsbCIgLz48Q29sdW1uIFRhYmxlPSJTUl9CUkRfRGFpbHlTZWxsaW5nIiBOYW1lPSJNYWxlU2VsbCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2U2Ij48VmlldyBOYW1lPSJTUl9CUkRfRGFpbHlTZWxsaW5nIj48RmllbGQgTmFtZT0iRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkxheUZlbWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJMYXlNYWxlQmFsYW5jZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkxheVd0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iU2VsbEZlbWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsTWFsZUJhbGFuY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsV3QiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nUHJpY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTZWxsaW5nRWdncyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlbGxpbmdFZ2dzUHJpY2UiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJGZW1hbGVTZWxsQ3VsbHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNYWxlU2VsbEN1bGxzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRmVtYWxlU2VsbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1hbGVTZWxsIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
   </ComponentStorage>
   <ObjectStorage>

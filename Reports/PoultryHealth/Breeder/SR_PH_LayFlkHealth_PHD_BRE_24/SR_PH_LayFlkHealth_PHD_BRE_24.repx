@@ -1844,8 +1844,8 @@
     <Item15 Ref="1198" Component="#Ref-390" Culture="Default" Path="SizeF" Data="386.1668,23" />
     <Item16 Ref="1199" Component="#Ref-1183" Culture="Default" Path="HeightF" Data="0" />
     <Item17 Ref="1200" Component="#Ref-76" Culture="Default" Path="HeightF" Data="0" />
-    <Item18 Ref="1201" Component="#Ref-135" Culture="Default" Path="LocationFloat" Data="399.375,26.33664" />
-    <Item19 Ref="1202" Component="#Ref-135" Culture="Default" Path="SizeF" Data="407.3966,23.66497" />
+    <Item18 Ref="1201" Component="#Ref-135" Culture="Default" Path="LocationFloat" Data="429.583282,26.336607" />
+    <Item19 Ref="1202" Component="#Ref-135" Culture="Default" Path="SizeF" Data="377.188324,23.6649685" />
     <Item20 Ref="1203" Component="#Ref-393" Culture="Default" Path="HeightF" Data="0" />
     <Item21 Ref="1204" Component="#Ref-78" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
     <Item22 Ref="1205" Component="#Ref-78" Culture="Default" Path="SizeF" Data="807,23" />
@@ -1863,7 +1863,7 @@
     <Item34 Ref="1217" Component="#Ref-134" Culture="Default" Path="HeightF" Data="59.33662" />
     <Item35 Ref="1218" Component="#Ref-123" Culture="Default" Path="HeightF" Data="19.875" />
     <Item36 Ref="1219" Component="#Ref-131" Culture="Default" Path="HeightF" Data="21.45669" />
-    <Item37 Ref="1220" Component="#Ref-1065" Culture="Default" Path="HeightF" Data="34.91662" />
+    <Item37 Ref="1220" Component="#Ref-1065" Culture="Default" Path="HeightF" Data="24.58324" />
     <Item38 Ref="1221" Component="#Ref-1121" Culture="Default" Path="HeightF" Data="22.16655" />
     <Item39 Ref="1222" Component="#Ref-413" Culture="Default" Path="HeightF" Data="34.375" />
     <Item40 Ref="1223" Component="#Ref-665" Culture="Default" Path="HeightF" Data="36.45833" />

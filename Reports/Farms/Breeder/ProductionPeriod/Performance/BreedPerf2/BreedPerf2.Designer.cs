@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
@@ -418,19 +424,14 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression185 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column186 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression186 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrChart1 = new DevExpress.XtraReports.UI.XRChart();
             this.sqlDataSource6 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -487,7 +488,6 @@
             this.sqlDataSource4 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource5 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource7 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.xrChart1 = new DevExpress.XtraReports.UI.XRChart();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
@@ -502,6 +502,13 @@
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.lblVetSoftData});
             this.TopMargin.Name = "TopMargin";
+            // 
+            // lblVetSoftData
+            // 
+            this.lblVetSoftData.LockedInUserDesigner = true;
+            this.lblVetSoftData.Multiline = true;
+            this.lblVetSoftData.Name = "lblVetSoftData";
+            this.lblVetSoftData.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // BottomMargin
             // 
@@ -524,18 +531,56 @@
             this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.SubBand5});
             // 
-            // lblVetSoftData
-            // 
-            this.lblVetSoftData.LockedInUserDesigner = true;
-            this.lblVetSoftData.Multiline = true;
-            this.lblVetSoftData.Name = "lblVetSoftData";
-            this.lblVetSoftData.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            // 
             // SubBand5
             // 
             this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrChart1});
             this.SubBand5.Name = "SubBand5";
+            // 
+            // xrChart1
+            // 
+            this.xrChart1.BorderColor = System.Drawing.Color.Black;
+            this.xrChart1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            xyDiagram1.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisXZooming = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisYScrolling = DevExpress.Utils.DefaultBoolean.False;
+            xyDiagram1.DefaultPane.EnableAxisYZooming = DevExpress.Utils.DefaultBoolean.False;
+            this.xrChart1.Diagram = xyDiagram1;
+            this.xrChart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            this.xrChart1.Name = "xrChart1";
+            series1.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
+            series1.ColorDataMember = "SR_BRD_BreedPerf.EggsPerPOL";
+            series1.Name = "EGGS / H.H.";
+            series1.SeriesID = 3;
+            series1.ValueDataMembersSerializable = "SR_BRD_BreedPerf.EggsPerPOL";
+            series2.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
+            series2.ColorDataMember = "SR_BRD_BreedPerf.HatchingEggsPerPOL";
+            series2.Name = "H.E/H.H.";
+            series2.SeriesID = 4;
+            series2.ValueDataMembersSerializable = "SR_BRD_BreedPerf.HatchingEggsPerPOL";
+            series3.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
+            series3.ColorDataMember = "SR_BRD_BreedPerf.HatchPercent";
+            series3.Name = "AVG  % HATCH";
+            series3.SeriesID = 5;
+            series3.ValueDataMembersSerializable = "SR_BRD_BreedPerf.HatchPercent";
+            series4.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
+            series4.ColorDataMember = "SR_BRD_BreedPerf.ChicksPerPOL";
+            series4.Name = "CHICKS /H.H";
+            series4.SeriesID = 6;
+            series4.ValueDataMembersSerializable = "SR_BRD_BreedPerf.ChicksPerPOL";
+            series5.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
+            series5.ColorDataMember = "SR_BRD_BreedPerf.FemaleMortPercent";
+            series5.Name = "CUM MORT";
+            series5.SeriesID = 7;
+            series5.ValueDataMembersSerializable = "SR_BRD_BreedPerf.FemaleMortPercent";
+            this.xrChart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1,
+        series2,
+        series3,
+        series4,
+        series5};
             // 
             // sqlDataSource6
             // 
@@ -676,7 +721,7 @@
             this.Title.BorderWidth = 1F;
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.Title.Name = "Title";
-            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 1F);
+            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             // 
             // DetailCaption1
             // 
@@ -686,7 +731,7 @@
             this.DetailCaption1.BorderWidth = 2F;
             this.DetailCaption1.ForeColor = System.Drawing.Color.White;
             this.DetailCaption1.Name = "DetailCaption1";
-            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 1F);
+            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.DetailCaption1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData1
@@ -696,7 +741,7 @@
             this.DetailData1.BorderWidth = 2F;
             this.DetailData1.ForeColor = System.Drawing.Color.Black;
             this.DetailData1.Name = "DetailData1";
-            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 1F);
+            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.DetailData1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData3_Odd
@@ -707,14 +752,14 @@
             this.DetailData3_Odd.BorderWidth = 1F;
             this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
             this.DetailData3_Odd.Name = "DetailData3_Odd";
-            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 1F);
+            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             this.DetailData3_Odd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // PageInfo
             // 
             this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.PageInfo.Name = "PageInfo";
-            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 1F);
+            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(0F, 0F, 0F, 0F, 100F);
             // 
             // Result
             // 
@@ -1676,51 +1721,6 @@
             this.sqlDataSource7.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             selectQuery8});
             this.sqlDataSource7.ResultSchemaSerializable = resources.GetString("sqlDataSource7.ResultSchemaSerializable");
-            // 
-            // xrChart1
-            // 
-            this.xrChart1.BorderColor = System.Drawing.Color.Black;
-            this.xrChart1.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            xyDiagram1.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.DefaultPane.EnableAxisXZooming = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.DefaultPane.EnableAxisYScrolling = DevExpress.Utils.DefaultBoolean.False;
-            xyDiagram1.DefaultPane.EnableAxisYZooming = DevExpress.Utils.DefaultBoolean.False;
-            this.xrChart1.Diagram = xyDiagram1;
-            this.xrChart1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            this.xrChart1.Name = "xrChart1";
-            series1.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
-            series1.ColorDataMember = "SR_BRD_BreedPerf.EggsPerPOL";
-            series1.Name = "EGGS / H.H.";
-            series1.SeriesID = 3;
-            series1.ValueDataMembersSerializable = "SR_BRD_BreedPerf.EggsPerPOL";
-            series2.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
-            series2.ColorDataMember = "SR_BRD_BreedPerf.HatchingEggsPerPOL";
-            series2.Name = "H.E/H.H.";
-            series2.SeriesID = 4;
-            series2.ValueDataMembersSerializable = "SR_BRD_BreedPerf.HatchingEggsPerPOL";
-            series3.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
-            series3.ColorDataMember = "SR_BRD_BreedPerf.HatchPercent";
-            series3.Name = "AVG  % HATCH";
-            series3.SeriesID = 5;
-            series3.ValueDataMembersSerializable = "SR_BRD_BreedPerf.HatchPercent";
-            series4.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
-            series4.ColorDataMember = "SR_BRD_BreedPerf.ChicksPerPOL";
-            series4.Name = "CHICKS /H.H";
-            series4.SeriesID = 6;
-            series4.ValueDataMembersSerializable = "SR_BRD_BreedPerf.ChicksPerPOL";
-            series5.ArgumentDataMember = "SR_BRD_BreedPerf.PlaceYear";
-            series5.ColorDataMember = "SR_BRD_BreedPerf.FemaleMortPercent";
-            series5.Name = "CUM MORT";
-            series5.SeriesID = 7;
-            series5.ValueDataMembersSerializable = "SR_BRD_BreedPerf.FemaleMortPercent";
-            this.xrChart1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2,
-        series3,
-        series4,
-        series5};
             // 
             // BreedPerf2
             // 
