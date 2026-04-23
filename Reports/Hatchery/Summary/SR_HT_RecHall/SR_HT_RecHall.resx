@@ -133,6 +133,22 @@ Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs]) -
 Iif(IsNullOrEmpty([SettedEggs]), 0, [SettedEggs])
 </value>
   </data>
+  <data name="TotalRejectionEggs.Expression" xml:space="preserve">
+    <value>ISNULL([SoftShellEggs],0) + 
+ISNULL([MinorCrackedEggs],0) + 
+ISNULL([MajorCrackedEggs],0) + 
+ISNULL([ThinShellEggs],0) + 
+ISNULL([OtherEggs],0) + 
+ISNULL([WholeEggs],0) + 
+ISNULL([BrokenEggs],0) + 
+ISNULL([SmallEggs],0) + 
+ISNULL([OverWeightEggs],0) + 
+ISNULL([DirtyEggs],0) + 
+ISNULL([DeformityEggs],0) + 
+ISNULL([CrackedEggs],0) + 
+ISNULL([DoubleYolkEggs],0) + 
+ISNULL([DestroyedEggs],0)</value>
+  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal TotalhatchingEggsReportPerc  = 0 ;
 decimal TotalOverWeightEggsReport = 0;

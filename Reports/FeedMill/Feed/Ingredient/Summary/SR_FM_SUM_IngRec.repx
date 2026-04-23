@@ -246,7 +246,7 @@
                 <Item1 Ref="138" FieldName="INWARDS" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="139" Width="91.66666" />
+                <Item1 Ref="139" Width="115.746643" />
                 <Item2 Ref="140" Width="52.08337" />
                 <Item3 Ref="141" Width="54.24158" />
                 <Item4 Ref="142" Width="62.5" />
@@ -254,7 +254,7 @@
               <RowDefinitions>
                 <Item1 Ref="143" Height="25.0000076" />
                 <Item2 Ref="144" Height="50.0000153" />
-                <Item3 Ref="145" Height="38.54167" />
+                <Item3 Ref="145" Height="51.04167" />
                 <Item4 Ref="146" Height="25.0000076" />
               </RowDefinitions>
               <Cells>
@@ -487,7 +487,7 @@
     <Item5 Ref="274" Component="#Ref-147" Culture="Default" Path="Text" Data="Ingredient Name" />
     <Item6 Ref="275" Component="#Ref-147" Culture="ar" Path="Text" Data="المادة الخام" />
     <Item7 Ref="276" Component="#Ref-150" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item8 Ref="277" Component="#Ref-151" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item8 Ref="277" Component="#Ref-151" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item9 Ref="278" Component="#Ref-151" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item10 Ref="279" Component="#Ref-152" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item11 Ref="280" Component="#Ref-152" Culture="Default" Path="Text" Data=" Total" />
@@ -569,7 +569,7 @@
     <Item87 Ref="356" Component="#Ref-78" Culture="Default" Path="HeightF" Data="20" />
     <Item88 Ref="357" Component="#Ref-40" Culture="Default" Path="HeightF" Data="20" />
     <Item89 Ref="358" Component="#Ref-133" Culture="Default" Path="LocationFloat" Data="3.003359,0" />
-    <Item90 Ref="359" Component="#Ref-133" Culture="Default" Path="SizeF" Data="260.4916,138.5417" />
+    <Item90 Ref="359" Component="#Ref-133" Culture="Default" Path="SizeF" Data="284.5716,151.0417" />
     <Item91 Ref="360" Component="#Ref-127" Culture="Default" Path="LocationFloat" Data="134.6667,0" />
     <Item92 Ref="361" Component="#Ref-127" Culture="Default" Path="SizeF" Data="128.8283,23" />
     <Item93 Ref="362" Component="#Ref-127" Culture="Default" Path="Text" Data="" />

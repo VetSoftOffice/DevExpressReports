@@ -448,6 +448,9 @@
             this.HatchingEggsPerc = new DevExpress.XtraReports.UI.CalculatedField();
             this.TotalBalance = new DevExpress.XtraReports.UI.CalculatedField();
             this.DailyBalance = new DevExpress.XtraReports.UI.CalculatedField();
+            this.TotalRejectionEggs = new DevExpress.XtraReports.UI.CalculatedField();
+            this.NetHatchingEggs = new DevExpress.XtraReports.UI.CalculatedField();
+            this.calculatedField1 = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
@@ -795,7 +798,7 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell53.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[HatchingEggs]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[NetHatchingEggs]")});
             this.xrTableCell53.Multiline = true;
             this.xrTableCell53.Name = "xrTableCell53";
             this.xrTableCell53.StylePriority.UseBorders = false;
@@ -1802,7 +1805,7 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell65.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([HatchingEggs])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([NetHatchingEggs])")});
             this.xrTableCell65.Multiline = true;
             this.xrTableCell65.Name = "xrTableCell65";
             this.xrTableCell65.StylePriority.UseBorders = false;
@@ -2744,6 +2747,23 @@
             this.DailyBalance.Expression = resources.GetString("DailyBalance.Expression");
             this.DailyBalance.Name = "DailyBalance";
             // 
+            // TotalRejectionEggs
+            // 
+            this.TotalRejectionEggs.DataMember = "SR_HT_RecHall";
+            this.TotalRejectionEggs.Expression = resources.GetString("TotalRejectionEggs.Expression");
+            this.TotalRejectionEggs.Name = "TotalRejectionEggs";
+            // 
+            // NetHatchingEggs
+            // 
+            this.NetHatchingEggs.DataMember = "SR_HT_RecHall";
+            this.NetHatchingEggs.Expression = "[HatchingEggs] - [TotalRejectionEggs]";
+            this.NetHatchingEggs.Name = "NetHatchingEggs";
+            // 
+            // calculatedField1
+            // 
+            this.calculatedField1.DataMember = "SR_HT_RecHall";
+            this.calculatedField1.Name = "calculatedField1";
+            // 
             // SR_HT_RecHall
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2789,7 +2809,10 @@
             this.TotalPerc,
             this.HatchingEggsPerc,
             this.TotalBalance,
-            this.DailyBalance});
+            this.DailyBalance,
+            this.TotalRejectionEggs,
+            this.NetHatchingEggs,
+            this.calculatedField1});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
@@ -3435,5 +3458,8 @@
         private DevExpress.XtraReports.UI.CalculatedField TotalBalance;
         private DevExpress.XtraReports.UI.CalculatedField DailyBalance;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell40;
+        private DevExpress.XtraReports.UI.CalculatedField TotalRejectionEggs;
+        private DevExpress.XtraReports.UI.CalculatedField NetHatchingEggs;
+        private DevExpress.XtraReports.UI.CalculatedField calculatedField1;
     }
 }
