@@ -374,16 +374,16 @@
                 <Item2 Ref="184" Width="128.501678" />
                 <Item3 Ref="185" Width="128.501678" />
                 <Item4 Ref="186" Width="124.999992" />
-                <Item5 Ref="187" Width="124.999992" Visible="false" />
-                <Item6 Ref="188" Width="99.9999847" Visible="false" />
+                <Item5 Ref="187" Width="2" Visible="false" />
+                <Item6 Ref="188" Width="2" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="189" />
                 <Item2 Ref="190" />
                 <Item3 Ref="191" />
-                <Item4 Ref="192" Visible="false" />
-                <Item5 Ref="193" Visible="false" />
-                <Item6 Ref="194" Visible="false" />
+                <Item4 Ref="192" Height="2" Visible="false" />
+                <Item5 Ref="193" Height="2" Visible="false" />
+                <Item6 Ref="194" Height="2" Visible="false" />
               </RowDefinitions>
               <Cells>
                 <Item1 Ref="195" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="White" BorderColor="DarkGray" BorderWidth="1.4" />
@@ -691,7 +691,7 @@
     <Item90 Ref="410" Component="#Ref-56" Culture="Default" Path="HeightF" Data="20" />
     <Item91 Ref="411" Component="#Ref-43" Culture="Default" Path="HeightF" Data="20" />
     <Item92 Ref="412" Component="#Ref-175" Culture="Default" Path="LocationFloat" Data="0,21.16667" />
-    <Item93 Ref="413" Component="#Ref-175" Culture="Default" Path="SizeF" Data="735.505,150" />
+    <Item93 Ref="413" Component="#Ref-175" Culture="Default" Path="SizeF" Data="514.505,81" />
     <Item94 Ref="414" Component="#Ref-104" Culture="Default" Path="LocationFloat" Data="285.505,0" />
     <Item95 Ref="415" Component="#Ref-104" Culture="Default" Path="SizeF" Data="153.125,23" />
     <Item96 Ref="416" Component="#Ref-104" Culture="Default" Path="Text" Data="Line Type: [?LineType]" />

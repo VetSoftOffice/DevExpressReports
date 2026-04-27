@@ -122,7 +122,6 @@
             this.crossTabHeaderCell12 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell8 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
@@ -132,6 +131,7 @@
             this.SR_BRD_FlocksActProd_HatEggs = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
             this.SR_BRD_FlocksActProd_SecProds = new DevExpress.XtraReports.UI.XRSubreport();
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
             this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
             this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -354,10 +354,10 @@
             this.xrCrossTab2});
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.ReportFooterSub1,
-            this.ReportFooterSub2,
             this.SubBand2,
-            this.SubBand4});
+            this.SubBand4,
+            this.ReportFooterSub1,
+            this.ReportFooterSub2});
             // 
             // xrCrossTab2
             // 
@@ -525,37 +525,6 @@
             this.crossTabTotalCell8.Name = "crossTabTotalCell8";
             this.crossTabTotalCell8.RowIndex = 3;
             // 
-            // sqlDataSource2
-            // 
-            this.sqlDataSource2.ConnectionName = "dsBreeder";
-            this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression1.ColumnName = "FlockCode";
-            table1.Name = "SR_BRD_FlocksActProd";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "DataYear";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "DataMonth";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "DataMonthNo";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "DataValue";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Name = "SR_BRD_FlocksActProd";
-            selectQuery1.Tables.Add(table1);
-            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
-            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
-            // 
             // IsRTL
             // 
             this.IsRTL.Name = "IsRTL";
@@ -608,6 +577,37 @@
             // 
             this.SR_BRD_FlocksActProd_SecProds.Name = "SR_BRD_FlocksActProd_SecProds";
             this.SR_BRD_FlocksActProd_SecProds.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.SR_BRD_FlocksActProd_SecProds.SR_BRD_FlocksActProd_SecProds();
+            // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.ConnectionName = "dsBreeder";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            columnExpression1.ColumnName = "FlockCode";
+            table1.Name = "SR_BRD_FlocksActProd";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "DataYear";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "DataMonth";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "DataMonthNo";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "DataValue";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Name = "SR_BRD_FlocksActProd";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // topMarginBand1
             // 
@@ -1152,14 +1152,14 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 0F, 20.58331F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_HatEggs, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_HatEggs, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 17.08317F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_HatEggs, "Default", "SizeF", new System.Drawing.SizeF(1149.997F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_SecProds, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_SecProds, "Default", "SizeF", new System.Drawing.SizeF(1151.997F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_SecProds, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(2.000046F, 16.58331F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_FlocksActProd_SecProds, "Default", "SizeF", new System.Drawing.SizeF(1150.291F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 23F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 23F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 40.08319F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 23F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 39.58333F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),

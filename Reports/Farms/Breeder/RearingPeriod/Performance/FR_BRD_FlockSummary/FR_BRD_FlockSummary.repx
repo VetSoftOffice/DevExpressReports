@@ -271,7 +271,7 @@
                     <Controls>
                       <Item1 Ref="153" ControlType="XRLabel" Name="xrLabel3" Dpi="1" Multiline="true" TextAlignment="MiddleLeft" Padding="0.02083333,0.02083333,0,0,1">
                         <ExpressionBindings>
-                          <Item1 Ref="154" EventName="BeforePrint" PropertyName="Text" Expression="iif([IsRTL],&#xA;    'تاريخ الفقس / تاريخ الوصول : ' &#xA;    + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) &#xA;    + ' / ' &#xA;    + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),&#xA;    &#xA;    'Hatch Date / Arrival Date : ' &#xA;    + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) &#xA;    + ' / ' &#xA;    + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])&#xA;)" />
+                          <Item1 Ref="154" EventName="BeforePrint" PropertyName="Text" Expression="IIF([IsRTL] = true,&#xA;    IIF(IsNullOrEmpty([rs_HatchDate]) AND IsNullOrEmpty([ActualArrivalDate]), '',&#xA;        IIF(IsNullOrEmpty([rs_HatchDate]), &#xA;            'تاريخ الوصول : ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),&#xA;            IIF(IsNullOrEmpty([ActualArrivalDate]),&#xA;                'تاريخ الفقس : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]),&#xA;                'تاريخ الفقس / تاريخ الوصول : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) + ' / ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])&#xA;            )&#xA;        )&#xA;    ),&#xA;    IIF(IsNullOrEmpty([rs_HatchDate]) AND IsNullOrEmpty([ActualArrivalDate]), '',&#xA;        IIF(IsNullOrEmpty([rs_HatchDate]), &#xA;            'Arrival Date : ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate]),&#xA;            IIF(IsNullOrEmpty([ActualArrivalDate]),&#xA;                'Hatch Date : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]),&#xA;                'Hatch Date / Arrival Date : ' + FormatString('{0:dd/MM/yyyy}', [rs_HatchDate]) + ' / ' + FormatString('{0:dd/MM/yyyy}', [ActualArrivalDate])&#xA;            )&#xA;        )&#xA;    )&#xA;)" />
                         </ExpressionBindings>
                         <StylePriority Ref="155" UseFont="false" UseTextAlignment="false" />
                       </Item1>
@@ -1142,7 +1142,7 @@
                   <Cells>
                     <Item1 Ref="735" ControlType="XRTableCell" Name="xrTableCell46" Multiline="true">
                       <ExpressionBindings>
-                        <Item1 Ref="736" EventName="BeforePrint" PropertyName="Text" Expression="'Net Depl. After D.O.A Up To ' + FormatString('{0}', [FinishWeekNo]) + ' Week'&#xA;" />
+                        <Item1 Ref="736" EventName="BeforePrint" PropertyName="Text" Expression="IIF(?IsRTL = true,&#xA;    'صافي الهالك حتى ' + FormatString('{0}', [FinishWeekNo]) + ' أسبوع بعد نافق الوصول',&#xA;    'Net Depl. After D.O.A Up To ' + FormatString('{0}', [FinishWeekNo]) + ' Week'&#xA;)" />
                       </ExpressionBindings>
                     </Item1>
                     <Item2 Ref="737" ControlType="XRTableCell" Name="xrTableCell47" Multiline="true">
@@ -1940,8 +1940,8 @@
     <Item98 Ref="1235" Component="#Ref-132" Culture="Default" Path="LocationFloat" Data="4.768372E-05,21.12509" />
     <Item99 Ref="1236" Component="#Ref-132" Culture="Default" Path="SizeF" Data="249.8503,19.99999" />
     <Item100 Ref="1237" Component="#Ref-132" Culture="Default" Path="Text" Data="xrLabel2" />
-    <Item101 Ref="1238" Component="#Ref-130" Culture="Default" Path="LocationFloat" Data="544.4843,21.12509" />
-    <Item102 Ref="1239" Component="#Ref-130" Culture="Default" Path="SizeF" Data="246.875,23" />
+    <Item101 Ref="1238" Component="#Ref-130" Culture="Default" Path="LocationFloat" Data="544.4843,21.1250935" />
+    <Item102 Ref="1239" Component="#Ref-130" Culture="Default" Path="SizeF" Data="246.875,19.9999332" />
     <Item103 Ref="1240" Component="#Ref-130" Culture="Default" Path="Text" Data="Site: [?Sitee]" />
     <Item104 Ref="1241" Component="#Ref-130" Culture="ar" Path="Text" Data="الموقع: [?Sitee]" />
     <Item105 Ref="1242" Component="#Ref-141" Culture="Default" Path="LocationFloat" Data="273.0909,21.12503" />

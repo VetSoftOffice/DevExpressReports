@@ -759,9 +759,9 @@
     <Item69 Ref="423" Component="#Ref-233" Culture="Default" Path="LocationFloat" Data="144.358,0" />
     <Item70 Ref="424" Component="#Ref-233" Culture="Default" Path="SizeF" Data="144.358,20" />
     <Item71 Ref="425" Component="#Ref-233" Culture="Default" Path="Text" Data="" />
-    <Item72 Ref="426" Component="#Ref-229" Culture="Default" Path="LocationFloat" Data="653.642,1.458359" />
+    <Item72 Ref="426" Component="#Ref-229" Culture="Default" Path="LocationFloat" Data="650.517,0" />
     <Item73 Ref="427" Component="#Ref-229" Culture="Default" Path="SizeF" Data="144.358,20" />
-    <Item74 Ref="428" Component="#Ref-231" Culture="Default" Path="LocationFloat" Data="576.9924,1.458359" />
+    <Item74 Ref="428" Component="#Ref-231" Culture="Default" Path="LocationFloat" Data="573.8674,0" />
     <Item75 Ref="429" Component="#Ref-231" Culture="Default" Path="SizeF" Data="76.64969,20" />
     <Item76 Ref="430" Component="#Ref-231" Culture="Default" Path="Text" Data="Line Type :" />
     <Item77 Ref="431" Component="#Ref-231" Culture="ar" Path="Text" Data="نافق اسبوعى" />

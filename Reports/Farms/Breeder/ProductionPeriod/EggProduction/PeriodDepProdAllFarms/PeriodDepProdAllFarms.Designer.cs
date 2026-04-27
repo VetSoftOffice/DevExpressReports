@@ -3035,7 +3035,6 @@
             // LayingPeriodNotes
             // 
             this.LayingPeriodNotes.Name = "LayingPeriodNotes";
-            this.LayingPeriodNotes.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.LayingPeriodNotes.LayingPeriodNotes();
             // 
             // SubBand9
             // 

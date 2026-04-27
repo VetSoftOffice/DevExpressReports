@@ -981,8 +981,8 @@
     <Item31 Ref="506" Component="#Ref-185" Culture="Default" Path="HeightF" Data="20" />
     <Item32 Ref="507" Component="#Ref-45" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item33 Ref="508" Component="#Ref-45" Culture="Default" Path="SizeF" Data="204.12,20" />
-    <Item34 Ref="509" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="544.4844,0" />
-    <Item35 Ref="510" Component="#Ref-43" Culture="Default" Path="SizeF" Data="100,20" />
+    <Item34 Ref="509" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="434.0677,0" />
+    <Item35 Ref="510" Component="#Ref-43" Culture="Default" Path="SizeF" Data="244.791626,20" />
     <Item36 Ref="511" Component="#Ref-43" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item37 Ref="512" Component="#Ref-47" Culture="Default" Path="LocationFloat" Data="939.6699,0" />
     <Item38 Ref="513" Component="#Ref-47" Culture="Default" Path="SizeF" Data="209.33,20" />
