@@ -294,7 +294,7 @@
               </DataFields>
               <ColumnDefinitions>
                 <Item1 Ref="186" Width="133.6266" />
-                <Item2 Ref="187" Width="65.66343" />
+                <Item2 Ref="187" Width="83.94919" />
                 <Item3 Ref="188" Width="4.57142925" Visible="false" />
                 <Item4 Ref="189" Width="4.57142925" Visible="false" />
                 <Item5 Ref="190" Width="4.57142925" Visible="false" />
@@ -305,7 +305,7 @@
                 <Item2 Ref="193" Height="25.0000019" />
                 <Item3 Ref="194" Height="25.0000019" />
                 <Item4 Ref="195" Height="41.66668" />
-                <Item5 Ref="196" Height="50.0000153" />
+                <Item5 Ref="196" Height="50.00002" />
                 <Item6 Ref="197" Height="25.0000019" Visible="false" />
               </RowDefinitions>
               <Cells>
@@ -635,7 +635,7 @@
     <Item120 Ref="437" Component="#Ref-55" Culture="Default" Path="Description" Data="Transfer" />
     <Item121 Ref="438" Component="#Ref-49" Culture="Default" Path="Description" Data="UniformityPerc" />
     <Item122 Ref="439" Component="#Ref-178" Culture="Default" Path="LocationFloat" Data="9.999998,9.999974" />
-    <Item123 Ref="440" Component="#Ref-178" Culture="Default" Path="SizeF" Data="215.004318,191.6667" />
+    <Item123 Ref="440" Component="#Ref-178" Culture="Default" Path="SizeF" Data="233.290085,191.6667" />
     <Item124 Ref="441" Component="#Ref-174" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
     <Item125 Ref="442" Component="#Ref-174" Culture="Default" Path="SizeF" Data="189.0017,23" />
     <Item126 Ref="443" Component="#Ref-174" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />

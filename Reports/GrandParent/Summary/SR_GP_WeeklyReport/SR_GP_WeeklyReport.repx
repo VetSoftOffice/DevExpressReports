@@ -494,18 +494,18 @@
           <ColumnDefinitions>
             <Item1 Ref="315" Width="131.6266" />
             <Item2 Ref="316" Width="131.6266" />
-            <Item3 Ref="317" Width="86.5801" />
-            <Item4 Ref="318" Width="2" Visible="false" />
+            <Item3 Ref="317" Width="90.48979" />
+            <Item4 Ref="318" Width="2.090314" Visible="false" />
             <Item5 Ref="319" Width="2" />
             <Item6 Ref="320" Width="2" Visible="false" />
           </ColumnDefinitions>
           <RowDefinitions>
-            <Item1 Ref="321" />
-            <Item2 Ref="322" />
-            <Item3 Ref="323" />
-            <Item4 Ref="324" Height="50" />
-            <Item5 Ref="325" Height="1.99999988" Visible="false" />
-            <Item6 Ref="326" Height="1.99999988" Visible="false" />
+            <Item1 Ref="321" Height="25.0000019" />
+            <Item2 Ref="322" Height="25.0000019" />
+            <Item3 Ref="323" Height="25.0000019" />
+            <Item4 Ref="324" Height="50.0000038" />
+            <Item5 Ref="325" Height="2.00000024" Visible="false" />
+            <Item6 Ref="326" Height="2.00000024" Visible="false" />
           </RowDefinitions>
           <Cells>
             <Item1 Ref="327" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="3" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
@@ -720,8 +720,8 @@
     <Item155 Ref="520" Component="#Ref-90" Culture="Default" Path="Description" Data="UtilizationHETEPerc" />
     <Item156 Ref="521" Component="#Ref-91" Culture="Default" Path="Description" Data="UtilizationHETEPercStd" />
     <Item157 Ref="522" Component="#Ref-32" Culture="Default" Path="Description" Data="Water" />
-    <Item158 Ref="523" Component="#Ref-307" Culture="Default" Path="LocationFloat" Data="9.999998,9.999974" />
-    <Item159 Ref="524" Component="#Ref-307" Culture="Default" Path="SizeF" Data="355.8333,129" />
+    <Item158 Ref="523" Component="#Ref-307" Culture="Default" Path="LocationFloat" Data="0,10.0000067" />
+    <Item159 Ref="524" Component="#Ref-307" Culture="Default" Path="SizeF" Data="359.8333,129" />
     <Item160 Ref="525" Component="#Ref-213" Culture="Default" Path="LocationFloat" Data="764.5435,0" />
     <Item161 Ref="526" Component="#Ref-213" Culture="Default" Path="SizeF" Data="128.125,23" />
     <Item162 Ref="527" Component="#Ref-213" Culture="Default" Path="Text" Data="Week No: [WeekNo]" />
@@ -734,10 +734,10 @@
     <Item169 Ref="534" Component="#Ref-216" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
     <Item170 Ref="535" Component="#Ref-216" Culture="ar" Path="Text" Data="الي: [?DateTo!dd-MM-yyyy]" />
     <Item171 Ref="536" Component="#Ref-212" Culture="Default" Path="LocationFloat" Data="913.9753,0" />
-    <Item172 Ref="537" Component="#Ref-212" Culture="Default" Path="SizeF" Data="238.316345,23" />
+    <Item172 Ref="537" Component="#Ref-212" Culture="Default" Path="SizeF" Data="238.3163,23" />
     <Item173 Ref="538" Component="#Ref-212" Culture="Default" Path="Text" Data="Std Book: [?BookPerf]" />
     <Item174 Ref="539" Component="#Ref-215" Culture="Default" Path="LocationFloat" Data="442.6251,0" />
-    <Item175 Ref="540" Component="#Ref-215" Culture="Default" Path="SizeF" Data="135.876678,23" />
+    <Item175 Ref="540" Component="#Ref-215" Culture="Default" Path="SizeF" Data="135.8767,23" />
     <Item176 Ref="541" Component="#Ref-215" Culture="Default" Path="Text" Data="Farm: [?FarmCode]" />
     <Item177 Ref="542" Component="#Ref-215" Culture="ar" Path="Text" Data="مزرعة: [FarmCode]" />
     <Item178 Ref="543" Component="#Ref-214" Culture="Default" Path="LocationFloat" Data="596.2101,0" />

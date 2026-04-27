@@ -67,7 +67,7 @@
               <Cells>
                 <Item1 Ref="52" ControlType="XRTableCell" Name="xrTableCell96" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="53" EventName="BeforePrint" PropertyName="Text" Expression="[FarmCode]" />
+                    <Item1 Ref="53" EventName="BeforePrint" PropertyName="Text" Expression="[Farm]" />
                   </ExpressionBindings>
                   <StylePriority Ref="54" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item1>
