@@ -51,7 +51,7 @@
                   </ExpressionBindings>
                   <StylePriority Ref="40" UseFont="false" UseBorders="false" UseBorderWidth="false" />
                 </Item1>
-                <Item2 Ref="41" ControlType="XRTableCell" Name="tdAccount_From" Multiline="true" Borders="All" BorderWidth="1.4">
+                <Item2 Ref="41" ControlType="XRTableCell" Name="tdAccount_From" Multiline="true" NavigateUrl="FormatString('https://localhost:53021/api/GlFilterReport/Post?TGnModuleTypeID=37&amp;ReportNumber = 33511&amp;TStActionID={0}', [tStActionID])" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="42" EventName="BeforePrint" PropertyName="Text" Expression="[DocNumber]" />
                     <Item2 Ref="43" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
@@ -859,7 +859,7 @@
         <Item1 Ref="444" EventName="BeforePrint" PropertyName="Visible" Expression="?IsDealType" />
       </ExpressionBindings>
     </Item9>
-    <Item10 Ref="445" ControlType="GroupHeaderBand" Name="GroupHeader_Currency">
+    <Item10 Ref="445" ControlType="GroupHeaderBand" Name="GroupHeader_Currency" RepeatEveryPage="true">
       <SubBands>
         <Item1 Ref="446" ControlType="SubBand" Name="GroupHeaderSub1_Currency" Borders="Top">
           <Controls>

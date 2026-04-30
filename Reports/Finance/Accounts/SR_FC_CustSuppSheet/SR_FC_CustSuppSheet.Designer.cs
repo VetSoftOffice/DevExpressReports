@@ -1298,6 +1298,7 @@
             this.GroupHeader_Currency.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("Currency", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader_Currency.Name = "GroupHeader_Currency";
+            this.GroupHeader_Currency.RepeatEveryPage = true;
             this.GroupHeader_Currency.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
             this.GroupHeaderSub1_Currency,
             this.GroupHeaderSun2_Currency,
