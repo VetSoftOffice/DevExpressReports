@@ -1173,16 +1173,16 @@
     <Item48 Ref="780" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
     <Item49 Ref="781" Component="#Ref-118" Culture="Default" Path="LocationFloat" Data="0.2915432,0" />
     <Item50 Ref="782" Component="#Ref-118" Culture="Default" Path="SizeF" Data="1149,23" />
-    <Item51 Ref="783" Component="#Ref-355" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item52 Ref="784" Component="#Ref-355" Culture="Default" Path="SizeF" Data="1149.292,23" />
+    <Item51 Ref="783" Component="#Ref-355" Culture="Default" Path="LocationFloat" Data="0,23.958334" />
+    <Item52 Ref="784" Component="#Ref-355" Culture="Default" Path="SizeF" Data="1149.292,20.9166851" />
     <Item53 Ref="785" Component="#Ref-317" Culture="Default" Path="HeightF" Data="31.45833" />
     <Item54 Ref="786" Component="#Ref-76" Culture="Default" Path="HeightF" Data="20" />
     <Item55 Ref="787" Component="#Ref-80" Culture="Default" Path="HeightF" Data="20" />
     <Item56 Ref="788" Component="#Ref-38" Culture="Default" Path="HeightF" Data="20" />
     <Item57 Ref="789" Component="#Ref-71" Culture="Default" Path="HeightF" Data="20" />
     <Item58 Ref="790" Component="#Ref-117" Culture="Default" Path="HeightF" Data="23" />
-    <Item59 Ref="791" Component="#Ref-340" Culture="Default" Path="HeightF" Data="200" />
-    <Item60 Ref="792" Component="#Ref-354" Culture="Default" Path="HeightF" Data="23" />
+    <Item59 Ref="791" Component="#Ref-340" Culture="Default" Path="HeightF" Data="253.958328" />
+    <Item60 Ref="792" Component="#Ref-354" Culture="Default" Path="HeightF" Data="44.87502" />
     <Item61 Ref="793" Component="#Ref-321" Culture="Default" Path="Text" Data="Date" />
     <Item62 Ref="794" Component="#Ref-321" Culture="ar" Path="Text" Data="العمر" />
     <Item63 Ref="795" Component="#Ref-321" Culture="Default" Path="Weight" Data="0.67072942433949123" />
@@ -1200,8 +1200,8 @@
     <Item75 Ref="807" Component="#Ref-320" Culture="Default" Path="Weight" Data="0.80795920218394857" />
     <Item76 Ref="808" Component="#Ref-28" Culture="Default" Path="HeightF" Data="0" />
     <Item77 Ref="809" Component="#Ref-319" Culture="Default" Path="Weight" Data="1" />
-    <Item78 Ref="810" Component="#Ref-341" Culture="Default" Path="LocationFloat" Data="297.45282,0" />
-    <Item79 Ref="811" Component="#Ref-341" Culture="Default" Path="SizeF" Data="493.189453,200" />
+    <Item78 Ref="810" Component="#Ref-341" Culture="Default" Path="LocationFloat" Data="297.4528,43.9583473" />
+    <Item79 Ref="811" Component="#Ref-341" Culture="Default" Path="SizeF" Data="493.1895,200" />
     <Item80 Ref="812" Component="#Ref-341" Culture="Default" Path="Titles.0.Text" Data="Loss % / Age" />
     <Item81 Ref="813" Component="#Ref-31" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item82 Ref="814" Component="#Ref-31" Culture="Default" Path="SizeF" Data="204.12,20" />

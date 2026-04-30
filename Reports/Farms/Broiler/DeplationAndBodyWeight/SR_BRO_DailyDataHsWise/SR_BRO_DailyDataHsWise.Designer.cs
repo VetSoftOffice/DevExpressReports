@@ -229,6 +229,9 @@
             this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Farm = new DevExpress.XtraReports.Parameters.Parameter();
             this.Cycle = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SR_BRO_DailyDataHsWise_Sub2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_BRO_DailyDataHsWise_Sub1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SR_BRO_DailyDataHsWise_Sub3 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -592,10 +595,15 @@
             // 
             // SubBand5
             // 
+            this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRO_DailyDataHsWise_Sub1,
+            this.SR_BRO_DailyDataHsWise_Sub2});
             this.SubBand5.Name = "SubBand5";
             // 
             // SubBand6
             // 
+            this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.SR_BRO_DailyDataHsWise_Sub3});
             this.SubBand6.Name = "SubBand6";
             // 
             // ReportFooterSub1
@@ -1055,6 +1063,21 @@
             this.Cycle.Name = "Cycle";
             this.Cycle.Visible = false;
             // 
+            // SR_BRO_DailyDataHsWise_Sub2
+            // 
+            this.SR_BRO_DailyDataHsWise_Sub2.Name = "SR_BRO_DailyDataHsWise_Sub2";
+            this.SR_BRO_DailyDataHsWise_Sub2.ReportSource = new DevExpressReports.Reports.Farms.Broiler.DeplationAndBodyWeight.SR_BRO_DailyDataHsWise_Sub2.SR_BRO_DailyDataHsWise_Sub2();
+            // 
+            // SR_BRO_DailyDataHsWise_Sub1
+            // 
+            this.SR_BRO_DailyDataHsWise_Sub1.Name = "SR_BRO_DailyDataHsWise_Sub1";
+            this.SR_BRO_DailyDataHsWise_Sub1.ReportSource = new DevExpressReports.Reports.Farms.Broiler.DeplationAndBodyWeight.SR_BRO_DailyDataHsWise_Sub1.SR_BRO_DailyDataHsWise_Sub1();
+            // 
+            // SR_BRO_DailyDataHsWise_Sub3
+            // 
+            this.SR_BRO_DailyDataHsWise_Sub3.Name = "SR_BRO_DailyDataHsWise_Sub3";
+            this.SR_BRO_DailyDataHsWise_Sub3.ReportSource = new DevExpressReports.Reports.Farms.Broiler.DeplationAndBodyWeight.SR_BRO_DailyDataHsWise_Sub3.SR_BRO_DailyDataHsWise_Sub3();
+            // 
             // SR_BRO_DailyDataHsWise
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1141,10 +1164,18 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 9F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRO_DailyDataHsWise_Sub1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 17.70827F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRO_DailyDataHsWise_Sub1, "Default", "SizeF", new System.Drawing.SizeF(550F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRO_DailyDataHsWise_Sub2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(573.9999F, 17.70827F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRO_DailyDataHsWise_Sub2, "Default", "SizeF", new System.Drawing.SizeF(574.9999F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRO_DailyDataHsWise_Sub3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRO_DailyDataHsWise_Sub3, "Default", "SizeF", new System.Drawing.SizeF(805.4996F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 40.70829F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 48F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SupPlacesCount, "Default", "Description", "SupPlacesCount"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(7.947286E-06F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "SizeF", new System.Drawing.SizeF(1043.839F, 20F)),
@@ -1322,5 +1353,8 @@
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource3;
         private DevExpress.XtraReports.Parameters.Parameter Farm;
         private DevExpress.XtraReports.Parameters.Parameter Cycle;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRO_DailyDataHsWise_Sub1;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRO_DailyDataHsWise_Sub2;
+        private DevExpress.XtraReports.UI.XRSubreport SR_BRO_DailyDataHsWise_Sub3;
     }
 }

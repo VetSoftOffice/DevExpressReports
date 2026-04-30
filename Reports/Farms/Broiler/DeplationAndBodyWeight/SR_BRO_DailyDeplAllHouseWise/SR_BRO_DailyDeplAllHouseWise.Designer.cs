@@ -29,493 +29,493 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraReports.UI.XRSummary xrSummary41 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary42 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary43 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary44 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary45 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary46 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary47 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary48 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary49 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary50 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery21 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column447 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression447 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table21 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column448 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression448 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column449 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression449 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column450 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression450 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column451 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression451 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column452 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression452 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column453 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression453 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column454 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression454 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column455 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression455 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column456 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression456 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column457 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression457 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column458 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression458 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column459 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression459 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column460 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression460 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column461 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression461 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column462 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression462 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column463 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression463 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column464 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression464 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column465 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression465 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column466 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression466 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column467 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression467 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column468 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression468 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column469 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression469 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column470 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression470 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column471 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression471 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column472 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression472 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column473 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression473 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary7 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary8 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary9 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary10 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression14 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column15 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column16 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression16 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column17 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression17 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column18 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression18 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column19 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression19 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column20 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression20 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column21 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression21 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column22 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression22 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_BRO_DailyDeplAllHouseWise));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery22 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column474 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression474 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table22 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column475 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression475 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column476 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression476 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column477 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression477 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column478 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression478 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column479 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression479 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column480 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression480 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column481 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression481 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column482 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression482 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column483 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression483 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column484 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression484 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column485 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression485 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column486 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression486 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column487 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression487 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column488 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression488 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column489 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression489 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column490 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression490 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column491 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression491 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column492 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression492 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column493 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression493 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery23 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column494 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression494 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table23 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column495 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression495 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column496 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression496 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column497 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression497 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column498 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression498 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column499 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression499 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column500 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression500 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column501 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression501 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column502 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression502 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column503 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression503 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column504 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression504 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column505 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression505 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column506 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression506 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column507 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression507 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column508 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression508 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column509 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression509 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column510 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression510 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column511 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression511 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column512 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression512 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column513 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression513 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column514 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression514 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery24 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column515 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression515 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table24 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column516 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression516 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column517 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression517 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column518 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression518 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column519 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression519 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column520 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression520 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column521 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression521 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column522 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression522 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column523 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression523 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column524 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression524 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column525 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression525 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column526 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression526 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery25 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column527 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression527 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table25 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column528 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression528 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column529 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression529 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column530 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression530 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column531 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression531 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column532 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression532 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column533 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression533 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column534 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression534 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column535 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression535 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column536 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression536 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column537 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression537 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column538 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression538 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column539 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression539 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column540 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression540 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column541 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression541 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery26 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column542 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression542 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table26 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column543 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression543 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column544 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression544 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column545 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression545 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column546 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression546 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column547 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression547 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column548 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression548 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column549 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression549 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column550 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression550 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column551 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression551 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column552 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression552 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column553 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression553 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column554 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression554 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column555 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression555 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column556 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression556 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column557 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression557 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column558 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression558 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column559 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression559 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column560 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression560 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column561 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression561 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column562 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression562 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column563 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression563 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column564 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression564 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery27 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column565 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression565 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table27 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column566 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression566 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column567 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression567 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column568 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression568 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column569 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression569 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column570 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression570 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column571 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression571 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column572 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression572 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column573 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression573 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column574 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression574 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column575 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression575 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column576 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression576 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column577 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression577 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column578 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression578 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column579 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression579 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column580 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression580 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column581 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression581 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column582 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression582 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column583 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression583 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column584 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression584 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column585 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression585 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column586 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression586 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column587 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression587 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column588 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression588 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column589 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression589 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column590 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression590 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery28 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column591 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression591 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table28 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column592 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression592 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column593 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression593 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column594 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression594 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column595 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression595 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column596 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression596 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column597 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression597 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column598 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression598 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column599 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression599 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column600 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression600 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column601 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression601 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column602 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression602 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column603 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression603 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column604 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression604 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column605 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression605 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column606 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression606 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column607 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression607 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column608 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression608 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column609 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression609 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column610 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression610 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column611 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression611 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column612 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression612 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column613 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression613 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column614 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression614 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column615 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression615 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column616 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression616 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery29 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column617 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression617 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table29 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column618 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression618 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column619 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression619 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column620 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression620 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column621 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression621 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column622 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression622 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column623 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression623 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column624 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression624 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column625 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression625 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column626 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression626 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column627 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression627 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column628 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression628 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column629 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression629 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column630 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression630 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column631 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression631 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column632 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression632 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column633 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression633 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column634 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression634 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column635 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression635 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column636 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression636 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column637 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression637 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column638 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression638 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column639 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression639 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column640 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression640 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column641 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression641 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column642 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression642 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery30 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column643 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression643 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table30 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column644 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression644 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column645 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression645 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column646 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression646 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column647 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression647 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column648 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression648 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column649 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression649 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column650 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression650 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column651 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression651 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column652 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression652 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column653 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression653 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column654 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression654 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column655 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression655 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column656 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression656 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column657 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression657 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column658 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression658 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column659 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression659 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column660 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression660 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column661 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression661 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column662 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression662 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column663 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression663 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column664 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression664 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column665 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression665 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column666 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression666 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column667 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression667 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column668 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression668 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column669 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression669 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.XtraReports.UI.XRSummary xrSummary51 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary52 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary53 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary54 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary55 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary56 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary57 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary58 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary59 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary60 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column29 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column32 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression32 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column33 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression33 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column34 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression34 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column35 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression35 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column36 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression36 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column37 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression37 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column38 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression38 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column39 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression39 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column40 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression40 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column41 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression41 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column42 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression42 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column43 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression43 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column44 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression44 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column45 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression45 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column46 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression46 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column47 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression47 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column48 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression48 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column49 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression49 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column50 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression50 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column51 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression51 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column52 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression52 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column53 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression53 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column54 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression54 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column55 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression55 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column56 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression56 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column57 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression57 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column58 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression58 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column59 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression59 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column60 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression60 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column61 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression61 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column62 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression62 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column63 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression63 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column64 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression64 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column65 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression65 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column66 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression66 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column67 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression67 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column68 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression68 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column69 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression69 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column70 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression70 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column71 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression71 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column72 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression72 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column73 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression73 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column74 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression74 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column75 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression75 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column76 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression76 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column77 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression77 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column78 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression78 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column79 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression79 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column80 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression80 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column81 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression81 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column82 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression82 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column83 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression83 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column84 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression84 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column85 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression85 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column86 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression86 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column87 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression87 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column88 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression88 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column89 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression89 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column90 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression90 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column91 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression91 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column92 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression92 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column93 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression93 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column94 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression94 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column95 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression95 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery6 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column96 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression96 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column97 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression97 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column98 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression98 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column99 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression99 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column100 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression100 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column101 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression101 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column102 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression102 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column103 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression103 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column104 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression104 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column105 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression105 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column106 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression106 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column107 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression107 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column108 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression108 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column109 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression109 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column110 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression110 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column111 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression111 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column112 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression112 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column113 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression113 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column114 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression114 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column115 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression115 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column116 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression116 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column117 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression117 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column118 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression118 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery7 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column119 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression119 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table7 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column120 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression120 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column121 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression121 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column122 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression122 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column123 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression123 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column124 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression124 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column125 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression125 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column126 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression126 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column127 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression127 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column128 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression128 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column129 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression129 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column130 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression130 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column131 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression131 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column132 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression132 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column133 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression133 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column134 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression134 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column135 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression135 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column136 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression136 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column137 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression137 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column138 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression138 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column139 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression139 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column140 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression140 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column141 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression141 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column142 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression142 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column143 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression143 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column144 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression144 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery8 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column145 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression145 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table8 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column146 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression146 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column147 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression147 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column148 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression148 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column149 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression149 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column150 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression150 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column151 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression151 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column152 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression152 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column153 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression153 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column154 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression154 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column155 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression155 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column156 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression156 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column157 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression157 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column158 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression158 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column159 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression159 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column160 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression160 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column161 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression161 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column162 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression162 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column163 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression163 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column164 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression164 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column165 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression165 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column166 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression166 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column167 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression167 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column168 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression168 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column169 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression169 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column170 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression170 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery9 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column171 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression171 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table9 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column172 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression172 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column173 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression173 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column174 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression174 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column175 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression175 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column176 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression176 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column177 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression177 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column178 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression178 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column179 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression179 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column180 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression180 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column181 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression181 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column182 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression182 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column183 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression183 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column184 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression184 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column185 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression185 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column186 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression186 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column187 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression187 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column188 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression188 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column189 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression189 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column190 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression190 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column191 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression191 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column192 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression192 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column193 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression193 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column194 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression194 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column195 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression195 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column196 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression196 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery10 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column197 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression197 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table10 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column198 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression198 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column199 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression199 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column200 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression200 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column201 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression201 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column202 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression202 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column203 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression203 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column204 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression204 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column205 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression205 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column206 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression206 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column207 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression207 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column208 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression208 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column209 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression209 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column210 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression210 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column211 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression211 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column212 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression212 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column213 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression213 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column214 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression214 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column215 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression215 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column216 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression216 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column217 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression217 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column218 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression218 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column219 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression219 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column220 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression220 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column221 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression221 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column222 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression222 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column223 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression223 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.XtraReports.UI.XRSummary xrSummary11 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary12 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary13 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary14 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary15 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary16 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary17 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary18 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary19 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary20 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -576,15 +576,16 @@
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
+            this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
-            this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell28 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -667,6 +668,12 @@
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.TotalDiesel = new DevExpress.XtraReports.UI.CalculatedField();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell35 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell36 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell37 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell58 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -681,21 +688,14 @@
             this.xrTableCell55 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell56 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell57 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTable7 = new DevExpress.XtraReports.UI.XRTable();
-            this.xrTableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell35 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell36 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell37 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell58 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -1327,44 +1327,6 @@
             this.ReportFooterSub1,
             this.ReportFooterSub2});
             // 
-            // xrTable4
-            // 
-            this.xrTable4.Name = "xrTable4";
-            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow5});
-            this.xrTable4.StylePriority.UseFont = false;
-            // 
-            // xrTableRow5
-            // 
-            this.xrTableRow5.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell7,
-            this.xrTableCell9,
-            this.xrTableCell11,
-            this.xrTableCell8});
-            this.xrTableRow5.Name = "xrTableRow5";
-            // 
-            // xrTableCell7
-            // 
-            this.xrTableCell7.Multiline = true;
-            this.xrTableCell7.Name = "xrTableCell7";
-            // 
-            // xrTableCell9
-            // 
-            this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumMort]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.xrTableCell9.Multiline = true;
-            this.xrTableCell9.Name = "xrTableCell9";
-            // 
-            // xrTableCell11
-            // 
-            this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumCulls]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.xrTableCell11.Multiline = true;
-            this.xrTableCell11.Name = "xrTableCell11";
-            // 
             // ReportFooterSub1
             // 
             this.ReportFooterSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -1390,6 +1352,57 @@
             this.srReportSignature.Name = "srReportSignature";
             this.srReportSignature.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("IsRTL", this.IsRTL));
             this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            // 
+            // xrTable4
+            // 
+            this.xrTable4.Name = "xrTable4";
+            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow5});
+            this.xrTable4.StylePriority.UseFont = false;
+            // 
+            // xrTableRow5
+            // 
+            this.xrTableRow5.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell7,
+            this.xrTableCell9,
+            this.xrTableCell11,
+            this.xrTableCell8});
+            this.xrTableRow5.Name = "xrTableRow5";
+            // 
+            // xrTableCell7
+            // 
+            this.xrTableCell7.Multiline = true;
+            this.xrTableCell7.Name = "xrTableCell7";
+            this.xrTableCell7.StylePriority.UseFont = false;
+            // 
+            // xrTableCell9
+            // 
+            this.xrTableCell9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumMort]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            this.xrTableCell9.Multiline = true;
+            this.xrTableCell9.Name = "xrTableCell9";
+            this.xrTableCell9.StylePriority.UseFont = false;
+            // 
+            // xrTableCell11
+            // 
+            this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CumCulls]"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            this.xrTableCell11.Multiline = true;
+            this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.StylePriority.UseFont = false;
+            // 
+            // xrTableCell8
+            // 
+            this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([CumCulls]), 0, [CumCulls]) + Iif(IsNullOrEmpty([CumMort]), 0, " +
+                    "[CumMort])\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            this.xrTableCell8.Multiline = true;
+            this.xrTableCell8.Name = "xrTableCell8";
+            this.xrTableCell8.StylePriority.UseFont = false;
             // 
             // xrTable5
             // 
@@ -1445,8 +1458,8 @@
             this.xrTableCell39.StylePriority.UseFont = false;
             this.xrTableCell39.StylePriority.UsePadding = false;
             this.xrTableCell39.StylePriority.UseTextAlignment = false;
-            xrSummary41.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell39.Summary = xrSummary41;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell39.Summary = xrSummary1;
             this.xrTableCell39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell40
@@ -1464,8 +1477,8 @@
             this.xrTableCell40.StylePriority.UseFont = false;
             this.xrTableCell40.StylePriority.UsePadding = false;
             this.xrTableCell40.StylePriority.UseTextAlignment = false;
-            xrSummary42.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell40.Summary = xrSummary42;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell40.Summary = xrSummary2;
             this.xrTableCell40.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell41
@@ -1483,8 +1496,8 @@
             this.xrTableCell41.StylePriority.UseFont = false;
             this.xrTableCell41.StylePriority.UsePadding = false;
             this.xrTableCell41.StylePriority.UseTextAlignment = false;
-            xrSummary43.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell41.Summary = xrSummary43;
+            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell41.Summary = xrSummary3;
             this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell42
@@ -1519,8 +1532,8 @@
             this.xrTableCell43.StylePriority.UseFont = false;
             this.xrTableCell43.StylePriority.UsePadding = false;
             this.xrTableCell43.StylePriority.UseTextAlignment = false;
-            xrSummary44.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell43.Summary = xrSummary44;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell43.Summary = xrSummary4;
             this.xrTableCell43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell45
@@ -1538,8 +1551,8 @@
             this.xrTableCell45.StylePriority.UseFont = false;
             this.xrTableCell45.StylePriority.UsePadding = false;
             this.xrTableCell45.StylePriority.UseTextAlignment = false;
-            xrSummary45.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell45.Summary = xrSummary45;
+            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell45.Summary = xrSummary5;
             this.xrTableCell45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell46
@@ -1557,8 +1570,8 @@
             this.xrTableCell46.StylePriority.UseFont = false;
             this.xrTableCell46.StylePriority.UsePadding = false;
             this.xrTableCell46.StylePriority.UseTextAlignment = false;
-            xrSummary46.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell46.Summary = xrSummary46;
+            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell46.Summary = xrSummary6;
             this.xrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell60
@@ -1576,8 +1589,8 @@
             this.xrTableCell60.StylePriority.UseFont = false;
             this.xrTableCell60.StylePriority.UsePadding = false;
             this.xrTableCell60.StylePriority.UseTextAlignment = false;
-            xrSummary47.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell60.Summary = xrSummary47;
+            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell60.Summary = xrSummary7;
             this.xrTableCell60.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell61
@@ -1596,8 +1609,8 @@
             this.xrTableCell61.StylePriority.UseFont = false;
             this.xrTableCell61.StylePriority.UsePadding = false;
             this.xrTableCell61.StylePriority.UseTextAlignment = false;
-            xrSummary48.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell61.Summary = xrSummary48;
+            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell61.Summary = xrSummary8;
             this.xrTableCell61.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell62
@@ -1615,8 +1628,8 @@
             this.xrTableCell62.StylePriority.UseFont = false;
             this.xrTableCell62.StylePriority.UsePadding = false;
             this.xrTableCell62.StylePriority.UseTextAlignment = false;
-            xrSummary49.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell62.Summary = xrSummary49;
+            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell62.Summary = xrSummary9;
             this.xrTableCell62.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell63
@@ -1634,8 +1647,8 @@
             this.xrTableCell63.StylePriority.UseFont = false;
             this.xrTableCell63.StylePriority.UsePadding = false;
             this.xrTableCell63.StylePriority.UseTextAlignment = false;
-            xrSummary50.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell63.Summary = xrSummary50;
+            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell63.Summary = xrSummary10;
             this.xrTableCell63.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTable3
@@ -1683,119 +1696,119 @@
             // 
             this.sqlDataSource8.ConnectionName = "dsGrandParent";
             this.sqlDataSource8.Name = "sqlDataSource8";
-            columnExpression447.ColumnName = "FarmCode";
-            table21.Name = "SR_BRO_DailyReconilition";
-            columnExpression447.Table = table21;
-            column447.Expression = columnExpression447;
-            columnExpression448.ColumnName = "HouseCode";
-            columnExpression448.Table = table21;
-            column448.Expression = columnExpression448;
-            columnExpression449.ColumnName = "GroupBreed";
-            columnExpression449.Table = table21;
-            column449.Expression = columnExpression449;
-            columnExpression450.ColumnName = "DOA";
-            columnExpression450.Table = table21;
-            column450.Expression = columnExpression450;
-            columnExpression451.ColumnName = "Culls";
-            columnExpression451.Table = table21;
-            column451.Expression = columnExpression451;
-            columnExpression452.ColumnName = "ScaleWeight";
-            columnExpression452.Table = table21;
-            column452.Expression = columnExpression452;
-            columnExpression453.ColumnName = "PluckReject";
-            columnExpression453.Table = table21;
-            column453.Expression = columnExpression453;
-            columnExpression454.ColumnName = "CounterTotal";
-            columnExpression454.Table = table21;
-            column454.Expression = columnExpression454;
-            columnExpression455.ColumnName = "TotalDressedWeight";
-            columnExpression455.Table = table21;
-            column455.Expression = columnExpression455;
-            columnExpression456.ColumnName = "rf_Female_Started";
-            columnExpression456.Table = table21;
-            column456.Expression = columnExpression456;
-            columnExpression457.ColumnName = "rf_Day";
-            columnExpression457.Table = table21;
-            column457.Expression = columnExpression457;
-            columnExpression458.ColumnName = "rf_LiveFemale";
-            columnExpression458.Table = table21;
-            column458.Expression = columnExpression458;
-            columnExpression459.ColumnName = "rf_FemaleCatchLoss";
-            columnExpression459.Table = table21;
-            column459.Expression = columnExpression459;
-            columnExpression460.ColumnName = "DEPLATION";
-            columnExpression460.Table = table21;
-            column460.Expression = columnExpression460;
-            columnExpression461.ColumnName = "ParentFarm";
-            columnExpression461.Table = table21;
-            column461.Expression = columnExpression461;
-            columnExpression462.ColumnName = "ParentAge";
-            columnExpression462.Table = table21;
-            column462.Expression = columnExpression462;
-            columnExpression463.ColumnName = "FCR";
-            columnExpression463.Table = table21;
-            column463.Expression = columnExpression463;
-            columnExpression464.ColumnName = "ProdNo";
-            columnExpression464.Table = table21;
-            column464.Expression = columnExpression464;
-            columnExpression465.ColumnName = "TotalFeed";
-            columnExpression465.Table = table21;
-            column465.Expression = columnExpression465;
-            columnExpression466.ColumnName = "Region_en";
-            columnExpression466.Table = table21;
-            column466.Expression = columnExpression466;
-            columnExpression467.ColumnName = "MinDate";
-            columnExpression467.Table = table21;
-            column467.Expression = columnExpression467;
-            columnExpression468.ColumnName = "MaxDate";
-            columnExpression468.Table = table21;
-            column468.Expression = columnExpression468;
-            columnExpression469.ColumnName = "Dev";
-            columnExpression469.Table = table21;
-            column469.Expression = columnExpression469;
-            columnExpression470.ColumnName = "AvgFCR";
-            columnExpression470.Table = table21;
-            column470.Expression = columnExpression470;
-            columnExpression471.ColumnName = "AvgProdNo";
-            columnExpression471.Table = table21;
-            column471.Expression = columnExpression471;
-            columnExpression472.ColumnName = "AvgCatchAge";
-            columnExpression472.Table = table21;
-            column472.Expression = columnExpression472;
-            columnExpression473.ColumnName = "Site_en";
-            columnExpression473.Table = table21;
-            column473.Expression = columnExpression473;
-            selectQuery21.Columns.Add(column447);
-            selectQuery21.Columns.Add(column448);
-            selectQuery21.Columns.Add(column449);
-            selectQuery21.Columns.Add(column450);
-            selectQuery21.Columns.Add(column451);
-            selectQuery21.Columns.Add(column452);
-            selectQuery21.Columns.Add(column453);
-            selectQuery21.Columns.Add(column454);
-            selectQuery21.Columns.Add(column455);
-            selectQuery21.Columns.Add(column456);
-            selectQuery21.Columns.Add(column457);
-            selectQuery21.Columns.Add(column458);
-            selectQuery21.Columns.Add(column459);
-            selectQuery21.Columns.Add(column460);
-            selectQuery21.Columns.Add(column461);
-            selectQuery21.Columns.Add(column462);
-            selectQuery21.Columns.Add(column463);
-            selectQuery21.Columns.Add(column464);
-            selectQuery21.Columns.Add(column465);
-            selectQuery21.Columns.Add(column466);
-            selectQuery21.Columns.Add(column467);
-            selectQuery21.Columns.Add(column468);
-            selectQuery21.Columns.Add(column469);
-            selectQuery21.Columns.Add(column470);
-            selectQuery21.Columns.Add(column471);
-            selectQuery21.Columns.Add(column472);
-            selectQuery21.Columns.Add(column473);
-            selectQuery21.Name = "SR_BRO_DailyReconilition";
-            selectQuery21.Tables.Add(table21);
+            columnExpression1.ColumnName = "FarmCode";
+            table1.Name = "SR_BRO_DailyReconilition";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "HouseCode";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "GroupBreed";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "DOA";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Culls";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "ScaleWeight";
+            columnExpression6.Table = table1;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "PluckReject";
+            columnExpression7.Table = table1;
+            column7.Expression = columnExpression7;
+            columnExpression8.ColumnName = "CounterTotal";
+            columnExpression8.Table = table1;
+            column8.Expression = columnExpression8;
+            columnExpression9.ColumnName = "TotalDressedWeight";
+            columnExpression9.Table = table1;
+            column9.Expression = columnExpression9;
+            columnExpression10.ColumnName = "rf_Female_Started";
+            columnExpression10.Table = table1;
+            column10.Expression = columnExpression10;
+            columnExpression11.ColumnName = "rf_Day";
+            columnExpression11.Table = table1;
+            column11.Expression = columnExpression11;
+            columnExpression12.ColumnName = "rf_LiveFemale";
+            columnExpression12.Table = table1;
+            column12.Expression = columnExpression12;
+            columnExpression13.ColumnName = "rf_FemaleCatchLoss";
+            columnExpression13.Table = table1;
+            column13.Expression = columnExpression13;
+            columnExpression14.ColumnName = "DEPLATION";
+            columnExpression14.Table = table1;
+            column14.Expression = columnExpression14;
+            columnExpression15.ColumnName = "ParentFarm";
+            columnExpression15.Table = table1;
+            column15.Expression = columnExpression15;
+            columnExpression16.ColumnName = "ParentAge";
+            columnExpression16.Table = table1;
+            column16.Expression = columnExpression16;
+            columnExpression17.ColumnName = "FCR";
+            columnExpression17.Table = table1;
+            column17.Expression = columnExpression17;
+            columnExpression18.ColumnName = "ProdNo";
+            columnExpression18.Table = table1;
+            column18.Expression = columnExpression18;
+            columnExpression19.ColumnName = "TotalFeed";
+            columnExpression19.Table = table1;
+            column19.Expression = columnExpression19;
+            columnExpression20.ColumnName = "Region_en";
+            columnExpression20.Table = table1;
+            column20.Expression = columnExpression20;
+            columnExpression21.ColumnName = "MinDate";
+            columnExpression21.Table = table1;
+            column21.Expression = columnExpression21;
+            columnExpression22.ColumnName = "MaxDate";
+            columnExpression22.Table = table1;
+            column22.Expression = columnExpression22;
+            columnExpression23.ColumnName = "Dev";
+            columnExpression23.Table = table1;
+            column23.Expression = columnExpression23;
+            columnExpression24.ColumnName = "AvgFCR";
+            columnExpression24.Table = table1;
+            column24.Expression = columnExpression24;
+            columnExpression25.ColumnName = "AvgProdNo";
+            columnExpression25.Table = table1;
+            column25.Expression = columnExpression25;
+            columnExpression26.ColumnName = "AvgCatchAge";
+            columnExpression26.Table = table1;
+            column26.Expression = columnExpression26;
+            columnExpression27.ColumnName = "Site_en";
+            columnExpression27.Table = table1;
+            column27.Expression = columnExpression27;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Columns.Add(column6);
+            selectQuery1.Columns.Add(column7);
+            selectQuery1.Columns.Add(column8);
+            selectQuery1.Columns.Add(column9);
+            selectQuery1.Columns.Add(column10);
+            selectQuery1.Columns.Add(column11);
+            selectQuery1.Columns.Add(column12);
+            selectQuery1.Columns.Add(column13);
+            selectQuery1.Columns.Add(column14);
+            selectQuery1.Columns.Add(column15);
+            selectQuery1.Columns.Add(column16);
+            selectQuery1.Columns.Add(column17);
+            selectQuery1.Columns.Add(column18);
+            selectQuery1.Columns.Add(column19);
+            selectQuery1.Columns.Add(column20);
+            selectQuery1.Columns.Add(column21);
+            selectQuery1.Columns.Add(column22);
+            selectQuery1.Columns.Add(column23);
+            selectQuery1.Columns.Add(column24);
+            selectQuery1.Columns.Add(column25);
+            selectQuery1.Columns.Add(column26);
+            selectQuery1.Columns.Add(column27);
+            selectQuery1.Name = "SR_BRO_DailyReconilition";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource8.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery21});
+            selectQuery1});
             this.sqlDataSource8.ResultSchemaSerializable = resources.GetString("sqlDataSource8.ResultSchemaSerializable");
             // 
             // Title
@@ -2071,884 +2084,884 @@
             // 
             this.dsBreeder.ConnectionName = "dsBreeder";
             this.dsBreeder.Name = "dsBreeder";
-            columnExpression474.ColumnName = "Region";
-            table22.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"230\" Height=\"463\" />";
-            table22.Name = "SR_BRD_MainProdUnitData";
-            columnExpression474.Table = table22;
-            column474.Expression = columnExpression474;
-            columnExpression475.ColumnName = "PlaceCode";
-            columnExpression475.Table = table22;
-            column475.Expression = columnExpression475;
-            columnExpression476.ColumnName = "CycleFlkBatchCount";
-            columnExpression476.Table = table22;
-            column476.Expression = columnExpression476;
-            columnExpression477.ColumnName = "CropNo";
-            columnExpression477.Table = table22;
-            column477.Expression = columnExpression477;
-            columnExpression478.ColumnName = "CycleFlkBatchNo";
-            columnExpression478.Table = table22;
-            column478.Expression = columnExpression478;
-            columnExpression479.ColumnName = "SubPlacesCount";
-            columnExpression479.Table = table22;
-            column479.Expression = columnExpression479;
-            columnExpression480.ColumnName = "StartWorkDate";
-            columnExpression480.Table = table22;
-            column480.Expression = columnExpression480;
-            columnExpression481.ColumnName = "WorkType";
-            columnExpression481.Table = table22;
-            column481.Expression = columnExpression481;
-            columnExpression482.ColumnName = "MaxCapacity";
-            columnExpression482.Table = table22;
-            column482.Expression = columnExpression482;
-            columnExpression483.ColumnName = "StartDate";
-            columnExpression483.Table = table22;
-            column483.Expression = columnExpression483;
-            columnExpression484.ColumnName = "EndDate";
-            columnExpression484.Table = table22;
-            column484.Expression = columnExpression484;
-            columnExpression485.ColumnName = "WorkPeriod";
-            columnExpression485.Table = table22;
-            column485.Expression = columnExpression485;
-            columnExpression486.ColumnName = "BreakStartDate";
-            columnExpression486.Table = table22;
-            column486.Expression = columnExpression486;
-            columnExpression487.ColumnName = "BreakEndDate";
-            columnExpression487.Table = table22;
-            column487.Expression = columnExpression487;
-            columnExpression488.ColumnName = "BreakPeriod";
-            columnExpression488.Table = table22;
-            column488.Expression = columnExpression488;
-            columnExpression489.ColumnName = "BreakReason";
-            columnExpression489.Table = table22;
-            column489.Expression = columnExpression489;
-            columnExpression490.ColumnName = "WorkPerc";
-            columnExpression490.Table = table22;
-            column490.Expression = columnExpression490;
-            columnExpression491.ColumnName = "BreakPerc";
-            columnExpression491.Table = table22;
-            column491.Expression = columnExpression491;
-            columnExpression492.ColumnName = "RecAndCapcityDiff";
-            columnExpression492.Table = table22;
-            column492.Expression = columnExpression492;
-            columnExpression493.ColumnName = "CapcityPerc";
-            columnExpression493.Table = table22;
-            column493.Expression = columnExpression493;
-            selectQuery22.Columns.Add(column474);
-            selectQuery22.Columns.Add(column475);
-            selectQuery22.Columns.Add(column476);
-            selectQuery22.Columns.Add(column477);
-            selectQuery22.Columns.Add(column478);
-            selectQuery22.Columns.Add(column479);
-            selectQuery22.Columns.Add(column480);
-            selectQuery22.Columns.Add(column481);
-            selectQuery22.Columns.Add(column482);
-            selectQuery22.Columns.Add(column483);
-            selectQuery22.Columns.Add(column484);
-            selectQuery22.Columns.Add(column485);
-            selectQuery22.Columns.Add(column486);
-            selectQuery22.Columns.Add(column487);
-            selectQuery22.Columns.Add(column488);
-            selectQuery22.Columns.Add(column489);
-            selectQuery22.Columns.Add(column490);
-            selectQuery22.Columns.Add(column491);
-            selectQuery22.Columns.Add(column492);
-            selectQuery22.Columns.Add(column493);
-            selectQuery22.Name = "SR_BRD_MainProdUnitData";
-            selectQuery22.Tables.Add(table22);
+            columnExpression28.ColumnName = "Region";
+            table2.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"230\" Height=\"463\" />";
+            table2.Name = "SR_BRD_MainProdUnitData";
+            columnExpression28.Table = table2;
+            column28.Expression = columnExpression28;
+            columnExpression29.ColumnName = "PlaceCode";
+            columnExpression29.Table = table2;
+            column29.Expression = columnExpression29;
+            columnExpression30.ColumnName = "CycleFlkBatchCount";
+            columnExpression30.Table = table2;
+            column30.Expression = columnExpression30;
+            columnExpression31.ColumnName = "CropNo";
+            columnExpression31.Table = table2;
+            column31.Expression = columnExpression31;
+            columnExpression32.ColumnName = "CycleFlkBatchNo";
+            columnExpression32.Table = table2;
+            column32.Expression = columnExpression32;
+            columnExpression33.ColumnName = "SubPlacesCount";
+            columnExpression33.Table = table2;
+            column33.Expression = columnExpression33;
+            columnExpression34.ColumnName = "StartWorkDate";
+            columnExpression34.Table = table2;
+            column34.Expression = columnExpression34;
+            columnExpression35.ColumnName = "WorkType";
+            columnExpression35.Table = table2;
+            column35.Expression = columnExpression35;
+            columnExpression36.ColumnName = "MaxCapacity";
+            columnExpression36.Table = table2;
+            column36.Expression = columnExpression36;
+            columnExpression37.ColumnName = "StartDate";
+            columnExpression37.Table = table2;
+            column37.Expression = columnExpression37;
+            columnExpression38.ColumnName = "EndDate";
+            columnExpression38.Table = table2;
+            column38.Expression = columnExpression38;
+            columnExpression39.ColumnName = "WorkPeriod";
+            columnExpression39.Table = table2;
+            column39.Expression = columnExpression39;
+            columnExpression40.ColumnName = "BreakStartDate";
+            columnExpression40.Table = table2;
+            column40.Expression = columnExpression40;
+            columnExpression41.ColumnName = "BreakEndDate";
+            columnExpression41.Table = table2;
+            column41.Expression = columnExpression41;
+            columnExpression42.ColumnName = "BreakPeriod";
+            columnExpression42.Table = table2;
+            column42.Expression = columnExpression42;
+            columnExpression43.ColumnName = "BreakReason";
+            columnExpression43.Table = table2;
+            column43.Expression = columnExpression43;
+            columnExpression44.ColumnName = "WorkPerc";
+            columnExpression44.Table = table2;
+            column44.Expression = columnExpression44;
+            columnExpression45.ColumnName = "BreakPerc";
+            columnExpression45.Table = table2;
+            column45.Expression = columnExpression45;
+            columnExpression46.ColumnName = "RecAndCapcityDiff";
+            columnExpression46.Table = table2;
+            column46.Expression = columnExpression46;
+            columnExpression47.ColumnName = "CapcityPerc";
+            columnExpression47.Table = table2;
+            column47.Expression = columnExpression47;
+            selectQuery2.Columns.Add(column28);
+            selectQuery2.Columns.Add(column29);
+            selectQuery2.Columns.Add(column30);
+            selectQuery2.Columns.Add(column31);
+            selectQuery2.Columns.Add(column32);
+            selectQuery2.Columns.Add(column33);
+            selectQuery2.Columns.Add(column34);
+            selectQuery2.Columns.Add(column35);
+            selectQuery2.Columns.Add(column36);
+            selectQuery2.Columns.Add(column37);
+            selectQuery2.Columns.Add(column38);
+            selectQuery2.Columns.Add(column39);
+            selectQuery2.Columns.Add(column40);
+            selectQuery2.Columns.Add(column41);
+            selectQuery2.Columns.Add(column42);
+            selectQuery2.Columns.Add(column43);
+            selectQuery2.Columns.Add(column44);
+            selectQuery2.Columns.Add(column45);
+            selectQuery2.Columns.Add(column46);
+            selectQuery2.Columns.Add(column47);
+            selectQuery2.Name = "SR_BRD_MainProdUnitData";
+            selectQuery2.Tables.Add(table2);
             this.dsBreeder.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery22});
+            selectQuery2});
             this.dsBreeder.ResultSchemaSerializable = resources.GetString("dsBreeder.ResultSchemaSerializable");
             // 
             // sqlDataSource1
             // 
             this.sqlDataSource1.ConnectionName = "dsBreeder";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression494.ColumnName = "FlockCode";
-            table23.Name = "SR_PH_FR_FlkHealthReport";
-            columnExpression494.Table = table23;
-            column494.Expression = columnExpression494;
-            columnExpression495.ColumnName = "WeekStartDate";
-            columnExpression495.Table = table23;
-            column495.Expression = columnExpression495;
-            columnExpression496.ColumnName = "WeekEndDate";
-            columnExpression496.Table = table23;
-            column496.Expression = columnExpression496;
-            columnExpression497.ColumnName = "WeekNo";
-            columnExpression497.Table = table23;
-            column497.Expression = columnExpression497;
-            columnExpression498.ColumnName = "ProdWeekNo";
-            columnExpression498.Table = table23;
-            column498.Expression = columnExpression498;
-            columnExpression499.ColumnName = "Vaccinations";
-            columnExpression499.Table = table23;
-            column499.Expression = columnExpression499;
-            columnExpression500.ColumnName = "Medications";
-            columnExpression500.Table = table23;
-            column500.Expression = columnExpression500;
-            columnExpression501.ColumnName = "PMLesions";
-            columnExpression501.Table = table23;
-            column501.Expression = columnExpression501;
-            columnExpression502.ColumnName = "SampleDiagnosis";
-            columnExpression502.Table = table23;
-            column502.Expression = columnExpression502;
-            columnExpression503.ColumnName = "FemaleMortStd";
-            columnExpression503.Table = table23;
-            column503.Expression = columnExpression503;
-            columnExpression504.ColumnName = "MaleMortStd";
-            columnExpression504.Table = table23;
-            column504.Expression = columnExpression504;
-            columnExpression505.ColumnName = "FemaleFeedStd";
-            columnExpression505.Table = table23;
-            column505.Expression = columnExpression505;
-            columnExpression506.ColumnName = "MaleFeedStd";
-            columnExpression506.Table = table23;
-            column506.Expression = columnExpression506;
-            columnExpression507.ColumnName = "TotalEggsStd";
-            columnExpression507.Table = table23;
-            column507.Expression = columnExpression507;
-            columnExpression508.ColumnName = "HatEggsStd";
-            columnExpression508.Table = table23;
-            column508.Expression = columnExpression508;
-            columnExpression509.ColumnName = "FemaleMortPerc";
-            columnExpression509.Table = table23;
-            column509.Expression = columnExpression509;
-            columnExpression510.ColumnName = "MaleMortPerc";
-            columnExpression510.Table = table23;
-            column510.Expression = columnExpression510;
-            columnExpression511.ColumnName = "FemaleFeedPerc";
-            columnExpression511.Table = table23;
-            column511.Expression = columnExpression511;
-            columnExpression512.ColumnName = "MaleFeedPerc";
-            columnExpression512.Table = table23;
-            column512.Expression = columnExpression512;
-            columnExpression513.ColumnName = "TotalEggsPerc";
-            columnExpression513.Table = table23;
-            column513.Expression = columnExpression513;
-            columnExpression514.ColumnName = "HatEggsPerc";
-            columnExpression514.Table = table23;
-            column514.Expression = columnExpression514;
-            selectQuery23.Columns.Add(column494);
-            selectQuery23.Columns.Add(column495);
-            selectQuery23.Columns.Add(column496);
-            selectQuery23.Columns.Add(column497);
-            selectQuery23.Columns.Add(column498);
-            selectQuery23.Columns.Add(column499);
-            selectQuery23.Columns.Add(column500);
-            selectQuery23.Columns.Add(column501);
-            selectQuery23.Columns.Add(column502);
-            selectQuery23.Columns.Add(column503);
-            selectQuery23.Columns.Add(column504);
-            selectQuery23.Columns.Add(column505);
-            selectQuery23.Columns.Add(column506);
-            selectQuery23.Columns.Add(column507);
-            selectQuery23.Columns.Add(column508);
-            selectQuery23.Columns.Add(column509);
-            selectQuery23.Columns.Add(column510);
-            selectQuery23.Columns.Add(column511);
-            selectQuery23.Columns.Add(column512);
-            selectQuery23.Columns.Add(column513);
-            selectQuery23.Columns.Add(column514);
-            selectQuery23.Name = "SR_PH_FR_FlkHealthReport";
-            selectQuery23.Tables.Add(table23);
+            columnExpression48.ColumnName = "FlockCode";
+            table3.Name = "SR_PH_FR_FlkHealthReport";
+            columnExpression48.Table = table3;
+            column48.Expression = columnExpression48;
+            columnExpression49.ColumnName = "WeekStartDate";
+            columnExpression49.Table = table3;
+            column49.Expression = columnExpression49;
+            columnExpression50.ColumnName = "WeekEndDate";
+            columnExpression50.Table = table3;
+            column50.Expression = columnExpression50;
+            columnExpression51.ColumnName = "WeekNo";
+            columnExpression51.Table = table3;
+            column51.Expression = columnExpression51;
+            columnExpression52.ColumnName = "ProdWeekNo";
+            columnExpression52.Table = table3;
+            column52.Expression = columnExpression52;
+            columnExpression53.ColumnName = "Vaccinations";
+            columnExpression53.Table = table3;
+            column53.Expression = columnExpression53;
+            columnExpression54.ColumnName = "Medications";
+            columnExpression54.Table = table3;
+            column54.Expression = columnExpression54;
+            columnExpression55.ColumnName = "PMLesions";
+            columnExpression55.Table = table3;
+            column55.Expression = columnExpression55;
+            columnExpression56.ColumnName = "SampleDiagnosis";
+            columnExpression56.Table = table3;
+            column56.Expression = columnExpression56;
+            columnExpression57.ColumnName = "FemaleMortStd";
+            columnExpression57.Table = table3;
+            column57.Expression = columnExpression57;
+            columnExpression58.ColumnName = "MaleMortStd";
+            columnExpression58.Table = table3;
+            column58.Expression = columnExpression58;
+            columnExpression59.ColumnName = "FemaleFeedStd";
+            columnExpression59.Table = table3;
+            column59.Expression = columnExpression59;
+            columnExpression60.ColumnName = "MaleFeedStd";
+            columnExpression60.Table = table3;
+            column60.Expression = columnExpression60;
+            columnExpression61.ColumnName = "TotalEggsStd";
+            columnExpression61.Table = table3;
+            column61.Expression = columnExpression61;
+            columnExpression62.ColumnName = "HatEggsStd";
+            columnExpression62.Table = table3;
+            column62.Expression = columnExpression62;
+            columnExpression63.ColumnName = "FemaleMortPerc";
+            columnExpression63.Table = table3;
+            column63.Expression = columnExpression63;
+            columnExpression64.ColumnName = "MaleMortPerc";
+            columnExpression64.Table = table3;
+            column64.Expression = columnExpression64;
+            columnExpression65.ColumnName = "FemaleFeedPerc";
+            columnExpression65.Table = table3;
+            column65.Expression = columnExpression65;
+            columnExpression66.ColumnName = "MaleFeedPerc";
+            columnExpression66.Table = table3;
+            column66.Expression = columnExpression66;
+            columnExpression67.ColumnName = "TotalEggsPerc";
+            columnExpression67.Table = table3;
+            column67.Expression = columnExpression67;
+            columnExpression68.ColumnName = "HatEggsPerc";
+            columnExpression68.Table = table3;
+            column68.Expression = columnExpression68;
+            selectQuery3.Columns.Add(column48);
+            selectQuery3.Columns.Add(column49);
+            selectQuery3.Columns.Add(column50);
+            selectQuery3.Columns.Add(column51);
+            selectQuery3.Columns.Add(column52);
+            selectQuery3.Columns.Add(column53);
+            selectQuery3.Columns.Add(column54);
+            selectQuery3.Columns.Add(column55);
+            selectQuery3.Columns.Add(column56);
+            selectQuery3.Columns.Add(column57);
+            selectQuery3.Columns.Add(column58);
+            selectQuery3.Columns.Add(column59);
+            selectQuery3.Columns.Add(column60);
+            selectQuery3.Columns.Add(column61);
+            selectQuery3.Columns.Add(column62);
+            selectQuery3.Columns.Add(column63);
+            selectQuery3.Columns.Add(column64);
+            selectQuery3.Columns.Add(column65);
+            selectQuery3.Columns.Add(column66);
+            selectQuery3.Columns.Add(column67);
+            selectQuery3.Columns.Add(column68);
+            selectQuery3.Name = "SR_PH_FR_FlkHealthReport";
+            selectQuery3.Tables.Add(table3);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery23});
+            selectQuery3});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // sqlDataSource2
             // 
             this.sqlDataSource2.ConnectionName = "dsBreeder";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression515.ColumnName = "Sentdate";
-            table24.Name = "SR_BRD_SampleSent";
-            columnExpression515.Table = table24;
-            column515.Expression = columnExpression515;
-            columnExpression516.ColumnName = "Farm";
-            columnExpression516.Table = table24;
-            column516.Expression = columnExpression516;
-            columnExpression517.ColumnName = "FlockCode";
-            columnExpression517.Table = table24;
-            column517.Expression = columnExpression517;
-            columnExpression518.ColumnName = "AgeDay";
-            columnExpression518.Table = table24;
-            column518.Expression = columnExpression518;
-            columnExpression519.ColumnName = "AgeWeek";
-            columnExpression519.Table = table24;
-            column519.Expression = columnExpression519;
-            columnExpression520.ColumnName = "Breed";
-            columnExpression520.Table = table24;
-            column520.Expression = columnExpression520;
-            columnExpression521.ColumnName = "Houses";
-            columnExpression521.Table = table24;
-            column521.Expression = columnExpression521;
-            columnExpression522.ColumnName = "Tpes";
-            columnExpression522.Table = table24;
-            column522.Expression = columnExpression522;
-            columnExpression523.ColumnName = "Tests";
-            columnExpression523.Table = table24;
-            column523.Expression = columnExpression523;
-            columnExpression524.ColumnName = "Lab";
-            columnExpression524.Table = table24;
-            column524.Expression = columnExpression524;
-            columnExpression525.ColumnName = "LabResult";
-            columnExpression525.Table = table24;
-            column525.Expression = columnExpression525;
-            columnExpression526.ColumnName = "CycleNo";
-            columnExpression526.Table = table24;
-            column526.Expression = columnExpression526;
-            selectQuery24.Columns.Add(column515);
-            selectQuery24.Columns.Add(column516);
-            selectQuery24.Columns.Add(column517);
-            selectQuery24.Columns.Add(column518);
-            selectQuery24.Columns.Add(column519);
-            selectQuery24.Columns.Add(column520);
-            selectQuery24.Columns.Add(column521);
-            selectQuery24.Columns.Add(column522);
-            selectQuery24.Columns.Add(column523);
-            selectQuery24.Columns.Add(column524);
-            selectQuery24.Columns.Add(column525);
-            selectQuery24.Columns.Add(column526);
-            selectQuery24.Name = "SR_BRD_SampleSent";
-            selectQuery24.Tables.Add(table24);
+            columnExpression69.ColumnName = "Sentdate";
+            table4.Name = "SR_BRD_SampleSent";
+            columnExpression69.Table = table4;
+            column69.Expression = columnExpression69;
+            columnExpression70.ColumnName = "Farm";
+            columnExpression70.Table = table4;
+            column70.Expression = columnExpression70;
+            columnExpression71.ColumnName = "FlockCode";
+            columnExpression71.Table = table4;
+            column71.Expression = columnExpression71;
+            columnExpression72.ColumnName = "AgeDay";
+            columnExpression72.Table = table4;
+            column72.Expression = columnExpression72;
+            columnExpression73.ColumnName = "AgeWeek";
+            columnExpression73.Table = table4;
+            column73.Expression = columnExpression73;
+            columnExpression74.ColumnName = "Breed";
+            columnExpression74.Table = table4;
+            column74.Expression = columnExpression74;
+            columnExpression75.ColumnName = "Houses";
+            columnExpression75.Table = table4;
+            column75.Expression = columnExpression75;
+            columnExpression76.ColumnName = "Tpes";
+            columnExpression76.Table = table4;
+            column76.Expression = columnExpression76;
+            columnExpression77.ColumnName = "Tests";
+            columnExpression77.Table = table4;
+            column77.Expression = columnExpression77;
+            columnExpression78.ColumnName = "Lab";
+            columnExpression78.Table = table4;
+            column78.Expression = columnExpression78;
+            columnExpression79.ColumnName = "LabResult";
+            columnExpression79.Table = table4;
+            column79.Expression = columnExpression79;
+            columnExpression80.ColumnName = "CycleNo";
+            columnExpression80.Table = table4;
+            column80.Expression = columnExpression80;
+            selectQuery4.Columns.Add(column69);
+            selectQuery4.Columns.Add(column70);
+            selectQuery4.Columns.Add(column71);
+            selectQuery4.Columns.Add(column72);
+            selectQuery4.Columns.Add(column73);
+            selectQuery4.Columns.Add(column74);
+            selectQuery4.Columns.Add(column75);
+            selectQuery4.Columns.Add(column76);
+            selectQuery4.Columns.Add(column77);
+            selectQuery4.Columns.Add(column78);
+            selectQuery4.Columns.Add(column79);
+            selectQuery4.Columns.Add(column80);
+            selectQuery4.Name = "SR_BRD_SampleSent";
+            selectQuery4.Tables.Add(table4);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery24});
+            selectQuery4});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // sqlDataSource3
             // 
             this.sqlDataSource3.ConnectionName = "dsBreeder";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            columnExpression527.ColumnName = "Vaccine";
-            table25.Name = "SR_PH_BRD_Vaccination";
-            columnExpression527.Table = table25;
-            column527.Expression = columnExpression527;
-            columnExpression528.ColumnName = "VaccineName";
-            columnExpression528.Table = table25;
-            column528.Expression = columnExpression528;
-            columnExpression529.ColumnName = "Manufacturer";
-            columnExpression529.Table = table25;
-            column529.Expression = columnExpression529;
-            columnExpression530.ColumnName = "Route";
-            columnExpression530.Table = table25;
-            column530.Expression = columnExpression530;
-            columnExpression531.ColumnName = "DayFrom";
-            columnExpression531.Table = table25;
-            column531.Expression = columnExpression531;
-            columnExpression532.ColumnName = "DayTo";
-            columnExpression532.Table = table25;
-            column532.Expression = columnExpression532;
-            columnExpression533.ColumnName = "WeekFrom";
-            columnExpression533.Table = table25;
-            column533.Expression = columnExpression533;
-            columnExpression534.ColumnName = "WeekTo";
-            columnExpression534.Table = table25;
-            column534.Expression = columnExpression534;
-            columnExpression535.ColumnName = "BatchNo";
-            columnExpression535.Table = table25;
-            column535.Expression = columnExpression535;
-            columnExpression536.ColumnName = "ExpiryDate";
-            columnExpression536.Table = table25;
-            column536.Expression = columnExpression536;
-            columnExpression537.ColumnName = "DosesUsed";
-            columnExpression537.Table = table25;
-            column537.Expression = columnExpression537;
-            columnExpression538.ColumnName = "DateGiven";
-            columnExpression538.Table = table25;
-            column538.Expression = columnExpression538;
-            columnExpression539.ColumnName = "ActualAge";
-            columnExpression539.Table = table25;
-            column539.Expression = columnExpression539;
-            columnExpression540.ColumnName = "StartDate";
-            columnExpression540.Table = table25;
-            column540.Expression = columnExpression540;
-            columnExpression541.ColumnName = "EndDate";
-            columnExpression541.Table = table25;
-            column541.Expression = columnExpression541;
-            selectQuery25.Columns.Add(column527);
-            selectQuery25.Columns.Add(column528);
-            selectQuery25.Columns.Add(column529);
-            selectQuery25.Columns.Add(column530);
-            selectQuery25.Columns.Add(column531);
-            selectQuery25.Columns.Add(column532);
-            selectQuery25.Columns.Add(column533);
-            selectQuery25.Columns.Add(column534);
-            selectQuery25.Columns.Add(column535);
-            selectQuery25.Columns.Add(column536);
-            selectQuery25.Columns.Add(column537);
-            selectQuery25.Columns.Add(column538);
-            selectQuery25.Columns.Add(column539);
-            selectQuery25.Columns.Add(column540);
-            selectQuery25.Columns.Add(column541);
-            selectQuery25.Name = "SR_PH_BRD_Vaccination";
-            selectQuery25.Tables.Add(table25);
+            columnExpression81.ColumnName = "Vaccine";
+            table5.Name = "SR_PH_BRD_Vaccination";
+            columnExpression81.Table = table5;
+            column81.Expression = columnExpression81;
+            columnExpression82.ColumnName = "VaccineName";
+            columnExpression82.Table = table5;
+            column82.Expression = columnExpression82;
+            columnExpression83.ColumnName = "Manufacturer";
+            columnExpression83.Table = table5;
+            column83.Expression = columnExpression83;
+            columnExpression84.ColumnName = "Route";
+            columnExpression84.Table = table5;
+            column84.Expression = columnExpression84;
+            columnExpression85.ColumnName = "DayFrom";
+            columnExpression85.Table = table5;
+            column85.Expression = columnExpression85;
+            columnExpression86.ColumnName = "DayTo";
+            columnExpression86.Table = table5;
+            column86.Expression = columnExpression86;
+            columnExpression87.ColumnName = "WeekFrom";
+            columnExpression87.Table = table5;
+            column87.Expression = columnExpression87;
+            columnExpression88.ColumnName = "WeekTo";
+            columnExpression88.Table = table5;
+            column88.Expression = columnExpression88;
+            columnExpression89.ColumnName = "BatchNo";
+            columnExpression89.Table = table5;
+            column89.Expression = columnExpression89;
+            columnExpression90.ColumnName = "ExpiryDate";
+            columnExpression90.Table = table5;
+            column90.Expression = columnExpression90;
+            columnExpression91.ColumnName = "DosesUsed";
+            columnExpression91.Table = table5;
+            column91.Expression = columnExpression91;
+            columnExpression92.ColumnName = "DateGiven";
+            columnExpression92.Table = table5;
+            column92.Expression = columnExpression92;
+            columnExpression93.ColumnName = "ActualAge";
+            columnExpression93.Table = table5;
+            column93.Expression = columnExpression93;
+            columnExpression94.ColumnName = "StartDate";
+            columnExpression94.Table = table5;
+            column94.Expression = columnExpression94;
+            columnExpression95.ColumnName = "EndDate";
+            columnExpression95.Table = table5;
+            column95.Expression = columnExpression95;
+            selectQuery5.Columns.Add(column81);
+            selectQuery5.Columns.Add(column82);
+            selectQuery5.Columns.Add(column83);
+            selectQuery5.Columns.Add(column84);
+            selectQuery5.Columns.Add(column85);
+            selectQuery5.Columns.Add(column86);
+            selectQuery5.Columns.Add(column87);
+            selectQuery5.Columns.Add(column88);
+            selectQuery5.Columns.Add(column89);
+            selectQuery5.Columns.Add(column90);
+            selectQuery5.Columns.Add(column91);
+            selectQuery5.Columns.Add(column92);
+            selectQuery5.Columns.Add(column93);
+            selectQuery5.Columns.Add(column94);
+            selectQuery5.Columns.Add(column95);
+            selectQuery5.Name = "SR_PH_BRD_Vaccination";
+            selectQuery5.Tables.Add(table5);
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery25});
+            selectQuery5});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // sqlDataSource4
             // 
             this.sqlDataSource4.ConnectionName = "dsBreeder";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            columnExpression542.ColumnName = "FarmCode";
-            table26.Name = "SR_BRD_HTEggsBalance";
-            columnExpression542.Table = table26;
-            column542.Expression = columnExpression542;
-            columnExpression543.ColumnName = "CropNo";
-            columnExpression543.Table = table26;
-            column543.Expression = columnExpression543;
-            columnExpression544.ColumnName = "FlockCode";
-            columnExpression544.Table = table26;
-            column544.Expression = columnExpression544;
-            columnExpression545.ColumnName = "RegDate";
-            columnExpression545.Table = table26;
-            column545.Expression = columnExpression545;
-            columnExpression546.ColumnName = "OpenHTEggsF";
-            columnExpression546.Table = table26;
-            column546.Expression = columnExpression546;
-            columnExpression547.ColumnName = "OpenFHTEggsF";
-            columnExpression547.Table = table26;
-            column547.Expression = columnExpression547;
-            columnExpression548.ColumnName = "ProdHTEggsF";
-            columnExpression548.Table = table26;
-            column548.Expression = columnExpression548;
-            columnExpression549.ColumnName = "ProdFHTEggsF";
-            columnExpression549.Table = table26;
-            column549.Expression = columnExpression549;
-            columnExpression550.ColumnName = "HatcheryHTEggsF";
-            columnExpression550.Table = table26;
-            column550.Expression = columnExpression550;
-            columnExpression551.ColumnName = "HatcheryFHTEggsF";
-            columnExpression551.Table = table26;
-            column551.Expression = columnExpression551;
-            columnExpression552.ColumnName = "CEGSHTEggsF";
-            columnExpression552.Table = table26;
-            column552.Expression = columnExpression552;
-            columnExpression553.ColumnName = "CEGSFHTEggsF";
-            columnExpression553.Table = table26;
-            column553.Expression = columnExpression553;
-            columnExpression554.ColumnName = "CloseHTEggsF";
-            columnExpression554.Table = table26;
-            column554.Expression = columnExpression554;
-            columnExpression555.ColumnName = "CloseFHTEggsF";
-            columnExpression555.Table = table26;
-            column555.Expression = columnExpression555;
-            columnExpression556.ColumnName = "OpenHTEggsC";
-            columnExpression556.Table = table26;
-            column556.Expression = columnExpression556;
-            columnExpression557.ColumnName = "OpenFHTEggsC";
-            columnExpression557.Table = table26;
-            column557.Expression = columnExpression557;
-            columnExpression558.ColumnName = "RecHTEggsC";
-            columnExpression558.Table = table26;
-            column558.Expression = columnExpression558;
-            columnExpression559.ColumnName = "RecFHTEggsC";
-            columnExpression559.Table = table26;
-            column559.Expression = columnExpression559;
-            columnExpression560.ColumnName = "HatcheryHTEggsC";
-            columnExpression560.Table = table26;
-            column560.Expression = columnExpression560;
-            columnExpression561.ColumnName = "HatcheryFHTEggsC";
-            columnExpression561.Table = table26;
-            column561.Expression = columnExpression561;
-            columnExpression562.ColumnName = "CloseHTEggsC";
-            columnExpression562.Table = table26;
-            column562.Expression = columnExpression562;
-            columnExpression563.ColumnName = "CloseFHTEggsC";
-            columnExpression563.Table = table26;
-            column563.Expression = columnExpression563;
-            columnExpression564.ColumnName = "WeekNo";
-            columnExpression564.Table = table26;
-            column564.Expression = columnExpression564;
-            selectQuery26.Columns.Add(column542);
-            selectQuery26.Columns.Add(column543);
-            selectQuery26.Columns.Add(column544);
-            selectQuery26.Columns.Add(column545);
-            selectQuery26.Columns.Add(column546);
-            selectQuery26.Columns.Add(column547);
-            selectQuery26.Columns.Add(column548);
-            selectQuery26.Columns.Add(column549);
-            selectQuery26.Columns.Add(column550);
-            selectQuery26.Columns.Add(column551);
-            selectQuery26.Columns.Add(column552);
-            selectQuery26.Columns.Add(column553);
-            selectQuery26.Columns.Add(column554);
-            selectQuery26.Columns.Add(column555);
-            selectQuery26.Columns.Add(column556);
-            selectQuery26.Columns.Add(column557);
-            selectQuery26.Columns.Add(column558);
-            selectQuery26.Columns.Add(column559);
-            selectQuery26.Columns.Add(column560);
-            selectQuery26.Columns.Add(column561);
-            selectQuery26.Columns.Add(column562);
-            selectQuery26.Columns.Add(column563);
-            selectQuery26.Columns.Add(column564);
-            selectQuery26.Name = "SR_BRD_HTEggsBalance";
-            selectQuery26.Tables.Add(table26);
+            columnExpression96.ColumnName = "FarmCode";
+            table6.Name = "SR_BRD_HTEggsBalance";
+            columnExpression96.Table = table6;
+            column96.Expression = columnExpression96;
+            columnExpression97.ColumnName = "CropNo";
+            columnExpression97.Table = table6;
+            column97.Expression = columnExpression97;
+            columnExpression98.ColumnName = "FlockCode";
+            columnExpression98.Table = table6;
+            column98.Expression = columnExpression98;
+            columnExpression99.ColumnName = "RegDate";
+            columnExpression99.Table = table6;
+            column99.Expression = columnExpression99;
+            columnExpression100.ColumnName = "OpenHTEggsF";
+            columnExpression100.Table = table6;
+            column100.Expression = columnExpression100;
+            columnExpression101.ColumnName = "OpenFHTEggsF";
+            columnExpression101.Table = table6;
+            column101.Expression = columnExpression101;
+            columnExpression102.ColumnName = "ProdHTEggsF";
+            columnExpression102.Table = table6;
+            column102.Expression = columnExpression102;
+            columnExpression103.ColumnName = "ProdFHTEggsF";
+            columnExpression103.Table = table6;
+            column103.Expression = columnExpression103;
+            columnExpression104.ColumnName = "HatcheryHTEggsF";
+            columnExpression104.Table = table6;
+            column104.Expression = columnExpression104;
+            columnExpression105.ColumnName = "HatcheryFHTEggsF";
+            columnExpression105.Table = table6;
+            column105.Expression = columnExpression105;
+            columnExpression106.ColumnName = "CEGSHTEggsF";
+            columnExpression106.Table = table6;
+            column106.Expression = columnExpression106;
+            columnExpression107.ColumnName = "CEGSFHTEggsF";
+            columnExpression107.Table = table6;
+            column107.Expression = columnExpression107;
+            columnExpression108.ColumnName = "CloseHTEggsF";
+            columnExpression108.Table = table6;
+            column108.Expression = columnExpression108;
+            columnExpression109.ColumnName = "CloseFHTEggsF";
+            columnExpression109.Table = table6;
+            column109.Expression = columnExpression109;
+            columnExpression110.ColumnName = "OpenHTEggsC";
+            columnExpression110.Table = table6;
+            column110.Expression = columnExpression110;
+            columnExpression111.ColumnName = "OpenFHTEggsC";
+            columnExpression111.Table = table6;
+            column111.Expression = columnExpression111;
+            columnExpression112.ColumnName = "RecHTEggsC";
+            columnExpression112.Table = table6;
+            column112.Expression = columnExpression112;
+            columnExpression113.ColumnName = "RecFHTEggsC";
+            columnExpression113.Table = table6;
+            column113.Expression = columnExpression113;
+            columnExpression114.ColumnName = "HatcheryHTEggsC";
+            columnExpression114.Table = table6;
+            column114.Expression = columnExpression114;
+            columnExpression115.ColumnName = "HatcheryFHTEggsC";
+            columnExpression115.Table = table6;
+            column115.Expression = columnExpression115;
+            columnExpression116.ColumnName = "CloseHTEggsC";
+            columnExpression116.Table = table6;
+            column116.Expression = columnExpression116;
+            columnExpression117.ColumnName = "CloseFHTEggsC";
+            columnExpression117.Table = table6;
+            column117.Expression = columnExpression117;
+            columnExpression118.ColumnName = "WeekNo";
+            columnExpression118.Table = table6;
+            column118.Expression = columnExpression118;
+            selectQuery6.Columns.Add(column96);
+            selectQuery6.Columns.Add(column97);
+            selectQuery6.Columns.Add(column98);
+            selectQuery6.Columns.Add(column99);
+            selectQuery6.Columns.Add(column100);
+            selectQuery6.Columns.Add(column101);
+            selectQuery6.Columns.Add(column102);
+            selectQuery6.Columns.Add(column103);
+            selectQuery6.Columns.Add(column104);
+            selectQuery6.Columns.Add(column105);
+            selectQuery6.Columns.Add(column106);
+            selectQuery6.Columns.Add(column107);
+            selectQuery6.Columns.Add(column108);
+            selectQuery6.Columns.Add(column109);
+            selectQuery6.Columns.Add(column110);
+            selectQuery6.Columns.Add(column111);
+            selectQuery6.Columns.Add(column112);
+            selectQuery6.Columns.Add(column113);
+            selectQuery6.Columns.Add(column114);
+            selectQuery6.Columns.Add(column115);
+            selectQuery6.Columns.Add(column116);
+            selectQuery6.Columns.Add(column117);
+            selectQuery6.Columns.Add(column118);
+            selectQuery6.Name = "SR_BRD_HTEggsBalance";
+            selectQuery6.Tables.Add(table6);
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery26});
+            selectQuery6});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // sqlDataSource5
             // 
             this.sqlDataSource5.ConnectionName = "dslayer";
             this.sqlDataSource5.Name = "sqlDataSource5";
-            columnExpression565.ColumnName = "tFrHouseID";
-            table27.Name = "SR_LAY_WeeklyBodyWeight";
-            columnExpression565.Table = table27;
-            column565.Expression = columnExpression565;
-            columnExpression566.ColumnName = "tFrBreedDataID";
-            columnExpression566.Table = table27;
-            column566.Expression = columnExpression566;
-            columnExpression567.ColumnName = "HouseCode";
-            columnExpression567.Table = table27;
-            column567.Expression = columnExpression567;
-            columnExpression568.ColumnName = "rf_Female_Started";
-            columnExpression568.Table = table27;
-            column568.Expression = columnExpression568;
-            columnExpression569.ColumnName = "ChicksBW";
-            columnExpression569.Table = table27;
-            column569.Expression = columnExpression569;
-            columnExpression570.ColumnName = "StanBodyWeight";
-            columnExpression570.Table = table27;
-            column570.Expression = columnExpression570;
-            columnExpression571.ColumnName = "TotalMort";
-            columnExpression571.Table = table27;
-            column571.Expression = columnExpression571;
-            columnExpression572.ColumnName = "TotalCulls";
-            columnExpression572.Table = table27;
-            column572.Expression = columnExpression572;
-            columnExpression573.ColumnName = "MortStd";
-            columnExpression573.Table = table27;
-            column573.Expression = columnExpression573;
-            columnExpression574.ColumnName = "cullsStd";
-            columnExpression574.Table = table27;
-            column574.Expression = columnExpression574;
-            columnExpression575.ColumnName = "Cocks";
-            columnExpression575.Table = table27;
-            column575.Expression = columnExpression575;
-            columnExpression576.ColumnName = "rf_WeeKNo";
-            columnExpression576.Table = table27;
-            column576.Expression = columnExpression576;
-            columnExpression577.ColumnName = "LightHours";
-            columnExpression577.Table = table27;
-            column577.Expression = columnExpression577;
-            columnExpression578.ColumnName = "FeedType_en";
-            columnExpression578.Table = table27;
-            column578.Expression = columnExpression578;
-            columnExpression579.ColumnName = "FeedType_en1";
-            columnExpression579.Table = table27;
-            column579.Expression = columnExpression579;
-            columnExpression580.ColumnName = "FeedType_ar";
-            columnExpression580.Table = table27;
-            column580.Expression = columnExpression580;
-            columnExpression581.ColumnName = "FeedType_ar1";
-            columnExpression581.Table = table27;
-            column581.Expression = columnExpression581;
-            columnExpression582.ColumnName = "FABW";
-            columnExpression582.Table = table27;
-            column582.Expression = columnExpression582;
-            columnExpression583.ColumnName = "FemaleCV";
-            columnExpression583.Table = table27;
-            column583.Expression = columnExpression583;
-            columnExpression584.ColumnName = "Uniformity";
-            columnExpression584.Table = table27;
-            column584.Expression = columnExpression584;
-            columnExpression585.ColumnName = "WeekEnd";
-            columnExpression585.Table = table27;
-            column585.Expression = columnExpression585;
-            columnExpression586.ColumnName = "FlockCode";
-            columnExpression586.Table = table27;
-            column586.Expression = columnExpression586;
-            columnExpression587.ColumnName = "DOA";
-            columnExpression587.Table = table27;
-            column587.Expression = columnExpression587;
-            columnExpression588.ColumnName = "BirdTransferred";
-            columnExpression588.Table = table27;
-            column588.Expression = columnExpression588;
-            columnExpression589.ColumnName = "FarmLayer";
-            columnExpression589.Table = table27;
-            column589.Expression = columnExpression589;
-            columnExpression590.ColumnName = "HouseNo";
-            columnExpression590.Table = table27;
-            column590.Expression = columnExpression590;
-            selectQuery27.Columns.Add(column565);
-            selectQuery27.Columns.Add(column566);
-            selectQuery27.Columns.Add(column567);
-            selectQuery27.Columns.Add(column568);
-            selectQuery27.Columns.Add(column569);
-            selectQuery27.Columns.Add(column570);
-            selectQuery27.Columns.Add(column571);
-            selectQuery27.Columns.Add(column572);
-            selectQuery27.Columns.Add(column573);
-            selectQuery27.Columns.Add(column574);
-            selectQuery27.Columns.Add(column575);
-            selectQuery27.Columns.Add(column576);
-            selectQuery27.Columns.Add(column577);
-            selectQuery27.Columns.Add(column578);
-            selectQuery27.Columns.Add(column579);
-            selectQuery27.Columns.Add(column580);
-            selectQuery27.Columns.Add(column581);
-            selectQuery27.Columns.Add(column582);
-            selectQuery27.Columns.Add(column583);
-            selectQuery27.Columns.Add(column584);
-            selectQuery27.Columns.Add(column585);
-            selectQuery27.Columns.Add(column586);
-            selectQuery27.Columns.Add(column587);
-            selectQuery27.Columns.Add(column588);
-            selectQuery27.Columns.Add(column589);
-            selectQuery27.Columns.Add(column590);
-            selectQuery27.Name = "SR_LAY_WeeklyBodyWeight";
-            selectQuery27.Tables.Add(table27);
+            columnExpression119.ColumnName = "tFrHouseID";
+            table7.Name = "SR_LAY_WeeklyBodyWeight";
+            columnExpression119.Table = table7;
+            column119.Expression = columnExpression119;
+            columnExpression120.ColumnName = "tFrBreedDataID";
+            columnExpression120.Table = table7;
+            column120.Expression = columnExpression120;
+            columnExpression121.ColumnName = "HouseCode";
+            columnExpression121.Table = table7;
+            column121.Expression = columnExpression121;
+            columnExpression122.ColumnName = "rf_Female_Started";
+            columnExpression122.Table = table7;
+            column122.Expression = columnExpression122;
+            columnExpression123.ColumnName = "ChicksBW";
+            columnExpression123.Table = table7;
+            column123.Expression = columnExpression123;
+            columnExpression124.ColumnName = "StanBodyWeight";
+            columnExpression124.Table = table7;
+            column124.Expression = columnExpression124;
+            columnExpression125.ColumnName = "TotalMort";
+            columnExpression125.Table = table7;
+            column125.Expression = columnExpression125;
+            columnExpression126.ColumnName = "TotalCulls";
+            columnExpression126.Table = table7;
+            column126.Expression = columnExpression126;
+            columnExpression127.ColumnName = "MortStd";
+            columnExpression127.Table = table7;
+            column127.Expression = columnExpression127;
+            columnExpression128.ColumnName = "cullsStd";
+            columnExpression128.Table = table7;
+            column128.Expression = columnExpression128;
+            columnExpression129.ColumnName = "Cocks";
+            columnExpression129.Table = table7;
+            column129.Expression = columnExpression129;
+            columnExpression130.ColumnName = "rf_WeeKNo";
+            columnExpression130.Table = table7;
+            column130.Expression = columnExpression130;
+            columnExpression131.ColumnName = "LightHours";
+            columnExpression131.Table = table7;
+            column131.Expression = columnExpression131;
+            columnExpression132.ColumnName = "FeedType_en";
+            columnExpression132.Table = table7;
+            column132.Expression = columnExpression132;
+            columnExpression133.ColumnName = "FeedType_en1";
+            columnExpression133.Table = table7;
+            column133.Expression = columnExpression133;
+            columnExpression134.ColumnName = "FeedType_ar";
+            columnExpression134.Table = table7;
+            column134.Expression = columnExpression134;
+            columnExpression135.ColumnName = "FeedType_ar1";
+            columnExpression135.Table = table7;
+            column135.Expression = columnExpression135;
+            columnExpression136.ColumnName = "FABW";
+            columnExpression136.Table = table7;
+            column136.Expression = columnExpression136;
+            columnExpression137.ColumnName = "FemaleCV";
+            columnExpression137.Table = table7;
+            column137.Expression = columnExpression137;
+            columnExpression138.ColumnName = "Uniformity";
+            columnExpression138.Table = table7;
+            column138.Expression = columnExpression138;
+            columnExpression139.ColumnName = "WeekEnd";
+            columnExpression139.Table = table7;
+            column139.Expression = columnExpression139;
+            columnExpression140.ColumnName = "FlockCode";
+            columnExpression140.Table = table7;
+            column140.Expression = columnExpression140;
+            columnExpression141.ColumnName = "DOA";
+            columnExpression141.Table = table7;
+            column141.Expression = columnExpression141;
+            columnExpression142.ColumnName = "BirdTransferred";
+            columnExpression142.Table = table7;
+            column142.Expression = columnExpression142;
+            columnExpression143.ColumnName = "FarmLayer";
+            columnExpression143.Table = table7;
+            column143.Expression = columnExpression143;
+            columnExpression144.ColumnName = "HouseNo";
+            columnExpression144.Table = table7;
+            column144.Expression = columnExpression144;
+            selectQuery7.Columns.Add(column119);
+            selectQuery7.Columns.Add(column120);
+            selectQuery7.Columns.Add(column121);
+            selectQuery7.Columns.Add(column122);
+            selectQuery7.Columns.Add(column123);
+            selectQuery7.Columns.Add(column124);
+            selectQuery7.Columns.Add(column125);
+            selectQuery7.Columns.Add(column126);
+            selectQuery7.Columns.Add(column127);
+            selectQuery7.Columns.Add(column128);
+            selectQuery7.Columns.Add(column129);
+            selectQuery7.Columns.Add(column130);
+            selectQuery7.Columns.Add(column131);
+            selectQuery7.Columns.Add(column132);
+            selectQuery7.Columns.Add(column133);
+            selectQuery7.Columns.Add(column134);
+            selectQuery7.Columns.Add(column135);
+            selectQuery7.Columns.Add(column136);
+            selectQuery7.Columns.Add(column137);
+            selectQuery7.Columns.Add(column138);
+            selectQuery7.Columns.Add(column139);
+            selectQuery7.Columns.Add(column140);
+            selectQuery7.Columns.Add(column141);
+            selectQuery7.Columns.Add(column142);
+            selectQuery7.Columns.Add(column143);
+            selectQuery7.Columns.Add(column144);
+            selectQuery7.Name = "SR_LAY_WeeklyBodyWeight";
+            selectQuery7.Tables.Add(table7);
             this.sqlDataSource5.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery27});
+            selectQuery7});
             this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
             // 
             // sqlDataSource6
             // 
             this.sqlDataSource6.ConnectionName = "dsGrandParent";
             this.sqlDataSource6.Name = "sqlDataSource6";
-            columnExpression591.ColumnName = "FarmCode";
-            table28.Name = "SR_BRO_DailyReconilition";
-            columnExpression591.Table = table28;
-            column591.Expression = columnExpression591;
-            columnExpression592.ColumnName = "HouseCode";
-            columnExpression592.Table = table28;
-            column592.Expression = columnExpression592;
-            columnExpression593.ColumnName = "GroupBreed";
-            columnExpression593.Table = table28;
-            column593.Expression = columnExpression593;
-            columnExpression594.ColumnName = "DOA";
-            columnExpression594.Table = table28;
-            column594.Expression = columnExpression594;
-            columnExpression595.ColumnName = "Culls";
-            columnExpression595.Table = table28;
-            column595.Expression = columnExpression595;
-            columnExpression596.ColumnName = "ScaleWeight";
-            columnExpression596.Table = table28;
-            column596.Expression = columnExpression596;
-            columnExpression597.ColumnName = "PluckReject";
-            columnExpression597.Table = table28;
-            column597.Expression = columnExpression597;
-            columnExpression598.ColumnName = "CounterTotal";
-            columnExpression598.Table = table28;
-            column598.Expression = columnExpression598;
-            columnExpression599.ColumnName = "TotalDressedWeight";
-            columnExpression599.Table = table28;
-            column599.Expression = columnExpression599;
-            columnExpression600.ColumnName = "rf_Female_Started";
-            columnExpression600.Table = table28;
-            column600.Expression = columnExpression600;
-            columnExpression601.ColumnName = "rf_Day";
-            columnExpression601.Table = table28;
-            column601.Expression = columnExpression601;
-            columnExpression602.ColumnName = "rf_LiveFemale";
-            columnExpression602.Table = table28;
-            column602.Expression = columnExpression602;
-            columnExpression603.ColumnName = "rf_FemaleCatchLoss";
-            columnExpression603.Table = table28;
-            column603.Expression = columnExpression603;
-            columnExpression604.ColumnName = "DEPLATION";
-            columnExpression604.Table = table28;
-            column604.Expression = columnExpression604;
-            columnExpression605.ColumnName = "ParentFarm";
-            columnExpression605.Table = table28;
-            column605.Expression = columnExpression605;
-            columnExpression606.ColumnName = "ParentAge";
-            columnExpression606.Table = table28;
-            column606.Expression = columnExpression606;
-            columnExpression607.ColumnName = "FCR";
-            columnExpression607.Table = table28;
-            column607.Expression = columnExpression607;
-            columnExpression608.ColumnName = "ProdNo";
-            columnExpression608.Table = table28;
-            column608.Expression = columnExpression608;
-            columnExpression609.ColumnName = "TotalFeed";
-            columnExpression609.Table = table28;
-            column609.Expression = columnExpression609;
-            columnExpression610.ColumnName = "Region_en";
-            columnExpression610.Table = table28;
-            column610.Expression = columnExpression610;
-            columnExpression611.ColumnName = "MinDate";
-            columnExpression611.Table = table28;
-            column611.Expression = columnExpression611;
-            columnExpression612.ColumnName = "MaxDate";
-            columnExpression612.Table = table28;
-            column612.Expression = columnExpression612;
-            columnExpression613.ColumnName = "Dev";
-            columnExpression613.Table = table28;
-            column613.Expression = columnExpression613;
-            columnExpression614.ColumnName = "AvgFCR";
-            columnExpression614.Table = table28;
-            column614.Expression = columnExpression614;
-            columnExpression615.ColumnName = "AvgProdNo";
-            columnExpression615.Table = table28;
-            column615.Expression = columnExpression615;
-            columnExpression616.ColumnName = "AvgCatchAge";
-            columnExpression616.Table = table28;
-            column616.Expression = columnExpression616;
-            selectQuery28.Columns.Add(column591);
-            selectQuery28.Columns.Add(column592);
-            selectQuery28.Columns.Add(column593);
-            selectQuery28.Columns.Add(column594);
-            selectQuery28.Columns.Add(column595);
-            selectQuery28.Columns.Add(column596);
-            selectQuery28.Columns.Add(column597);
-            selectQuery28.Columns.Add(column598);
-            selectQuery28.Columns.Add(column599);
-            selectQuery28.Columns.Add(column600);
-            selectQuery28.Columns.Add(column601);
-            selectQuery28.Columns.Add(column602);
-            selectQuery28.Columns.Add(column603);
-            selectQuery28.Columns.Add(column604);
-            selectQuery28.Columns.Add(column605);
-            selectQuery28.Columns.Add(column606);
-            selectQuery28.Columns.Add(column607);
-            selectQuery28.Columns.Add(column608);
-            selectQuery28.Columns.Add(column609);
-            selectQuery28.Columns.Add(column610);
-            selectQuery28.Columns.Add(column611);
-            selectQuery28.Columns.Add(column612);
-            selectQuery28.Columns.Add(column613);
-            selectQuery28.Columns.Add(column614);
-            selectQuery28.Columns.Add(column615);
-            selectQuery28.Columns.Add(column616);
-            selectQuery28.Name = "SR_BRO_DailyReconilition";
-            selectQuery28.Tables.Add(table28);
+            columnExpression145.ColumnName = "FarmCode";
+            table8.Name = "SR_BRO_DailyReconilition";
+            columnExpression145.Table = table8;
+            column145.Expression = columnExpression145;
+            columnExpression146.ColumnName = "HouseCode";
+            columnExpression146.Table = table8;
+            column146.Expression = columnExpression146;
+            columnExpression147.ColumnName = "GroupBreed";
+            columnExpression147.Table = table8;
+            column147.Expression = columnExpression147;
+            columnExpression148.ColumnName = "DOA";
+            columnExpression148.Table = table8;
+            column148.Expression = columnExpression148;
+            columnExpression149.ColumnName = "Culls";
+            columnExpression149.Table = table8;
+            column149.Expression = columnExpression149;
+            columnExpression150.ColumnName = "ScaleWeight";
+            columnExpression150.Table = table8;
+            column150.Expression = columnExpression150;
+            columnExpression151.ColumnName = "PluckReject";
+            columnExpression151.Table = table8;
+            column151.Expression = columnExpression151;
+            columnExpression152.ColumnName = "CounterTotal";
+            columnExpression152.Table = table8;
+            column152.Expression = columnExpression152;
+            columnExpression153.ColumnName = "TotalDressedWeight";
+            columnExpression153.Table = table8;
+            column153.Expression = columnExpression153;
+            columnExpression154.ColumnName = "rf_Female_Started";
+            columnExpression154.Table = table8;
+            column154.Expression = columnExpression154;
+            columnExpression155.ColumnName = "rf_Day";
+            columnExpression155.Table = table8;
+            column155.Expression = columnExpression155;
+            columnExpression156.ColumnName = "rf_LiveFemale";
+            columnExpression156.Table = table8;
+            column156.Expression = columnExpression156;
+            columnExpression157.ColumnName = "rf_FemaleCatchLoss";
+            columnExpression157.Table = table8;
+            column157.Expression = columnExpression157;
+            columnExpression158.ColumnName = "DEPLATION";
+            columnExpression158.Table = table8;
+            column158.Expression = columnExpression158;
+            columnExpression159.ColumnName = "ParentFarm";
+            columnExpression159.Table = table8;
+            column159.Expression = columnExpression159;
+            columnExpression160.ColumnName = "ParentAge";
+            columnExpression160.Table = table8;
+            column160.Expression = columnExpression160;
+            columnExpression161.ColumnName = "FCR";
+            columnExpression161.Table = table8;
+            column161.Expression = columnExpression161;
+            columnExpression162.ColumnName = "ProdNo";
+            columnExpression162.Table = table8;
+            column162.Expression = columnExpression162;
+            columnExpression163.ColumnName = "TotalFeed";
+            columnExpression163.Table = table8;
+            column163.Expression = columnExpression163;
+            columnExpression164.ColumnName = "Region_en";
+            columnExpression164.Table = table8;
+            column164.Expression = columnExpression164;
+            columnExpression165.ColumnName = "MinDate";
+            columnExpression165.Table = table8;
+            column165.Expression = columnExpression165;
+            columnExpression166.ColumnName = "MaxDate";
+            columnExpression166.Table = table8;
+            column166.Expression = columnExpression166;
+            columnExpression167.ColumnName = "Dev";
+            columnExpression167.Table = table8;
+            column167.Expression = columnExpression167;
+            columnExpression168.ColumnName = "AvgFCR";
+            columnExpression168.Table = table8;
+            column168.Expression = columnExpression168;
+            columnExpression169.ColumnName = "AvgProdNo";
+            columnExpression169.Table = table8;
+            column169.Expression = columnExpression169;
+            columnExpression170.ColumnName = "AvgCatchAge";
+            columnExpression170.Table = table8;
+            column170.Expression = columnExpression170;
+            selectQuery8.Columns.Add(column145);
+            selectQuery8.Columns.Add(column146);
+            selectQuery8.Columns.Add(column147);
+            selectQuery8.Columns.Add(column148);
+            selectQuery8.Columns.Add(column149);
+            selectQuery8.Columns.Add(column150);
+            selectQuery8.Columns.Add(column151);
+            selectQuery8.Columns.Add(column152);
+            selectQuery8.Columns.Add(column153);
+            selectQuery8.Columns.Add(column154);
+            selectQuery8.Columns.Add(column155);
+            selectQuery8.Columns.Add(column156);
+            selectQuery8.Columns.Add(column157);
+            selectQuery8.Columns.Add(column158);
+            selectQuery8.Columns.Add(column159);
+            selectQuery8.Columns.Add(column160);
+            selectQuery8.Columns.Add(column161);
+            selectQuery8.Columns.Add(column162);
+            selectQuery8.Columns.Add(column163);
+            selectQuery8.Columns.Add(column164);
+            selectQuery8.Columns.Add(column165);
+            selectQuery8.Columns.Add(column166);
+            selectQuery8.Columns.Add(column167);
+            selectQuery8.Columns.Add(column168);
+            selectQuery8.Columns.Add(column169);
+            selectQuery8.Columns.Add(column170);
+            selectQuery8.Name = "SR_BRO_DailyReconilition";
+            selectQuery8.Tables.Add(table8);
             this.sqlDataSource6.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery28});
+            selectQuery8});
             this.sqlDataSource6.ResultSchemaSerializable = resources.GetString("sqlDataSource6.ResultSchemaSerializable");
             // 
             // sqlDataSource7
             // 
             this.sqlDataSource7.ConnectionName = "dsGrandParent";
             this.sqlDataSource7.Name = "sqlDataSource7";
-            columnExpression617.ColumnName = "FarmCode";
-            table29.Name = "SR_BRO_DailyReconilition";
-            columnExpression617.Table = table29;
-            column617.Expression = columnExpression617;
-            columnExpression618.ColumnName = "HouseCode";
-            columnExpression618.Table = table29;
-            column618.Expression = columnExpression618;
-            columnExpression619.ColumnName = "GroupBreed";
-            columnExpression619.Table = table29;
-            column619.Expression = columnExpression619;
-            columnExpression620.ColumnName = "DOA";
-            columnExpression620.Table = table29;
-            column620.Expression = columnExpression620;
-            columnExpression621.ColumnName = "Culls";
-            columnExpression621.Table = table29;
-            column621.Expression = columnExpression621;
-            columnExpression622.ColumnName = "ScaleWeight";
-            columnExpression622.Table = table29;
-            column622.Expression = columnExpression622;
-            columnExpression623.ColumnName = "PluckReject";
-            columnExpression623.Table = table29;
-            column623.Expression = columnExpression623;
-            columnExpression624.ColumnName = "CounterTotal";
-            columnExpression624.Table = table29;
-            column624.Expression = columnExpression624;
-            columnExpression625.ColumnName = "TotalDressedWeight";
-            columnExpression625.Table = table29;
-            column625.Expression = columnExpression625;
-            columnExpression626.ColumnName = "rf_Female_Started";
-            columnExpression626.Table = table29;
-            column626.Expression = columnExpression626;
-            columnExpression627.ColumnName = "rf_Day";
-            columnExpression627.Table = table29;
-            column627.Expression = columnExpression627;
-            columnExpression628.ColumnName = "rf_LiveFemale";
-            columnExpression628.Table = table29;
-            column628.Expression = columnExpression628;
-            columnExpression629.ColumnName = "rf_FemaleCatchLoss";
-            columnExpression629.Table = table29;
-            column629.Expression = columnExpression629;
-            columnExpression630.ColumnName = "DEPLATION";
-            columnExpression630.Table = table29;
-            column630.Expression = columnExpression630;
-            columnExpression631.ColumnName = "ParentFarm";
-            columnExpression631.Table = table29;
-            column631.Expression = columnExpression631;
-            columnExpression632.ColumnName = "ParentAge";
-            columnExpression632.Table = table29;
-            column632.Expression = columnExpression632;
-            columnExpression633.ColumnName = "FCR";
-            columnExpression633.Table = table29;
-            column633.Expression = columnExpression633;
-            columnExpression634.ColumnName = "ProdNo";
-            columnExpression634.Table = table29;
-            column634.Expression = columnExpression634;
-            columnExpression635.ColumnName = "TotalFeed";
-            columnExpression635.Table = table29;
-            column635.Expression = columnExpression635;
-            columnExpression636.ColumnName = "Region_en";
-            columnExpression636.Table = table29;
-            column636.Expression = columnExpression636;
-            columnExpression637.ColumnName = "MinDate";
-            columnExpression637.Table = table29;
-            column637.Expression = columnExpression637;
-            columnExpression638.ColumnName = "MaxDate";
-            columnExpression638.Table = table29;
-            column638.Expression = columnExpression638;
-            columnExpression639.ColumnName = "Dev";
-            columnExpression639.Table = table29;
-            column639.Expression = columnExpression639;
-            columnExpression640.ColumnName = "AvgFCR";
-            columnExpression640.Table = table29;
-            column640.Expression = columnExpression640;
-            columnExpression641.ColumnName = "AvgProdNo";
-            columnExpression641.Table = table29;
-            column641.Expression = columnExpression641;
-            columnExpression642.ColumnName = "AvgCatchAge";
-            columnExpression642.Table = table29;
-            column642.Expression = columnExpression642;
-            selectQuery29.Columns.Add(column617);
-            selectQuery29.Columns.Add(column618);
-            selectQuery29.Columns.Add(column619);
-            selectQuery29.Columns.Add(column620);
-            selectQuery29.Columns.Add(column621);
-            selectQuery29.Columns.Add(column622);
-            selectQuery29.Columns.Add(column623);
-            selectQuery29.Columns.Add(column624);
-            selectQuery29.Columns.Add(column625);
-            selectQuery29.Columns.Add(column626);
-            selectQuery29.Columns.Add(column627);
-            selectQuery29.Columns.Add(column628);
-            selectQuery29.Columns.Add(column629);
-            selectQuery29.Columns.Add(column630);
-            selectQuery29.Columns.Add(column631);
-            selectQuery29.Columns.Add(column632);
-            selectQuery29.Columns.Add(column633);
-            selectQuery29.Columns.Add(column634);
-            selectQuery29.Columns.Add(column635);
-            selectQuery29.Columns.Add(column636);
-            selectQuery29.Columns.Add(column637);
-            selectQuery29.Columns.Add(column638);
-            selectQuery29.Columns.Add(column639);
-            selectQuery29.Columns.Add(column640);
-            selectQuery29.Columns.Add(column641);
-            selectQuery29.Columns.Add(column642);
-            selectQuery29.Name = "SR_BRO_DailyReconilition";
-            selectQuery29.Tables.Add(table29);
+            columnExpression171.ColumnName = "FarmCode";
+            table9.Name = "SR_BRO_DailyReconilition";
+            columnExpression171.Table = table9;
+            column171.Expression = columnExpression171;
+            columnExpression172.ColumnName = "HouseCode";
+            columnExpression172.Table = table9;
+            column172.Expression = columnExpression172;
+            columnExpression173.ColumnName = "GroupBreed";
+            columnExpression173.Table = table9;
+            column173.Expression = columnExpression173;
+            columnExpression174.ColumnName = "DOA";
+            columnExpression174.Table = table9;
+            column174.Expression = columnExpression174;
+            columnExpression175.ColumnName = "Culls";
+            columnExpression175.Table = table9;
+            column175.Expression = columnExpression175;
+            columnExpression176.ColumnName = "ScaleWeight";
+            columnExpression176.Table = table9;
+            column176.Expression = columnExpression176;
+            columnExpression177.ColumnName = "PluckReject";
+            columnExpression177.Table = table9;
+            column177.Expression = columnExpression177;
+            columnExpression178.ColumnName = "CounterTotal";
+            columnExpression178.Table = table9;
+            column178.Expression = columnExpression178;
+            columnExpression179.ColumnName = "TotalDressedWeight";
+            columnExpression179.Table = table9;
+            column179.Expression = columnExpression179;
+            columnExpression180.ColumnName = "rf_Female_Started";
+            columnExpression180.Table = table9;
+            column180.Expression = columnExpression180;
+            columnExpression181.ColumnName = "rf_Day";
+            columnExpression181.Table = table9;
+            column181.Expression = columnExpression181;
+            columnExpression182.ColumnName = "rf_LiveFemale";
+            columnExpression182.Table = table9;
+            column182.Expression = columnExpression182;
+            columnExpression183.ColumnName = "rf_FemaleCatchLoss";
+            columnExpression183.Table = table9;
+            column183.Expression = columnExpression183;
+            columnExpression184.ColumnName = "DEPLATION";
+            columnExpression184.Table = table9;
+            column184.Expression = columnExpression184;
+            columnExpression185.ColumnName = "ParentFarm";
+            columnExpression185.Table = table9;
+            column185.Expression = columnExpression185;
+            columnExpression186.ColumnName = "ParentAge";
+            columnExpression186.Table = table9;
+            column186.Expression = columnExpression186;
+            columnExpression187.ColumnName = "FCR";
+            columnExpression187.Table = table9;
+            column187.Expression = columnExpression187;
+            columnExpression188.ColumnName = "ProdNo";
+            columnExpression188.Table = table9;
+            column188.Expression = columnExpression188;
+            columnExpression189.ColumnName = "TotalFeed";
+            columnExpression189.Table = table9;
+            column189.Expression = columnExpression189;
+            columnExpression190.ColumnName = "Region_en";
+            columnExpression190.Table = table9;
+            column190.Expression = columnExpression190;
+            columnExpression191.ColumnName = "MinDate";
+            columnExpression191.Table = table9;
+            column191.Expression = columnExpression191;
+            columnExpression192.ColumnName = "MaxDate";
+            columnExpression192.Table = table9;
+            column192.Expression = columnExpression192;
+            columnExpression193.ColumnName = "Dev";
+            columnExpression193.Table = table9;
+            column193.Expression = columnExpression193;
+            columnExpression194.ColumnName = "AvgFCR";
+            columnExpression194.Table = table9;
+            column194.Expression = columnExpression194;
+            columnExpression195.ColumnName = "AvgProdNo";
+            columnExpression195.Table = table9;
+            column195.Expression = columnExpression195;
+            columnExpression196.ColumnName = "AvgCatchAge";
+            columnExpression196.Table = table9;
+            column196.Expression = columnExpression196;
+            selectQuery9.Columns.Add(column171);
+            selectQuery9.Columns.Add(column172);
+            selectQuery9.Columns.Add(column173);
+            selectQuery9.Columns.Add(column174);
+            selectQuery9.Columns.Add(column175);
+            selectQuery9.Columns.Add(column176);
+            selectQuery9.Columns.Add(column177);
+            selectQuery9.Columns.Add(column178);
+            selectQuery9.Columns.Add(column179);
+            selectQuery9.Columns.Add(column180);
+            selectQuery9.Columns.Add(column181);
+            selectQuery9.Columns.Add(column182);
+            selectQuery9.Columns.Add(column183);
+            selectQuery9.Columns.Add(column184);
+            selectQuery9.Columns.Add(column185);
+            selectQuery9.Columns.Add(column186);
+            selectQuery9.Columns.Add(column187);
+            selectQuery9.Columns.Add(column188);
+            selectQuery9.Columns.Add(column189);
+            selectQuery9.Columns.Add(column190);
+            selectQuery9.Columns.Add(column191);
+            selectQuery9.Columns.Add(column192);
+            selectQuery9.Columns.Add(column193);
+            selectQuery9.Columns.Add(column194);
+            selectQuery9.Columns.Add(column195);
+            selectQuery9.Columns.Add(column196);
+            selectQuery9.Name = "SR_BRO_DailyReconilition";
+            selectQuery9.Tables.Add(table9);
             this.sqlDataSource7.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery29});
+            selectQuery9});
             this.sqlDataSource7.ResultSchemaSerializable = resources.GetString("sqlDataSource7.ResultSchemaSerializable");
             // 
             // sqlDataSource9
             // 
             this.sqlDataSource9.ConnectionName = "dsGrandParent";
             this.sqlDataSource9.Name = "sqlDataSource9";
-            columnExpression643.ColumnName = "FarmCode";
-            table30.Name = "SR_BRO_DailyDeplAllHouseWise";
-            columnExpression643.Table = table30;
-            column643.Expression = columnExpression643;
-            columnExpression644.ColumnName = "CycleNo";
-            columnExpression644.Table = table30;
-            column644.Expression = columnExpression644;
-            columnExpression645.ColumnName = "CropNo";
-            columnExpression645.Table = table30;
-            column645.Expression = columnExpression645;
-            columnExpression646.ColumnName = "HouseCode";
-            columnExpression646.Table = table30;
-            column646.Expression = columnExpression646;
-            columnExpression647.ColumnName = "FlockCode";
-            columnExpression647.Table = table30;
-            column647.Expression = columnExpression647;
-            columnExpression648.ColumnName = "Age";
-            columnExpression648.Table = table30;
-            column648.Expression = columnExpression648;
-            columnExpression649.ColumnName = "LiveChicks";
-            columnExpression649.Table = table30;
-            column649.Expression = columnExpression649;
-            columnExpression650.ColumnName = "ChicksPlaced";
-            columnExpression650.Table = table30;
-            column650.Expression = columnExpression650;
-            columnExpression651.ColumnName = "StartBirds";
-            columnExpression651.Table = table30;
-            column651.Expression = columnExpression651;
-            columnExpression652.ColumnName = "RecDate";
-            columnExpression652.Table = table30;
-            column652.Expression = columnExpression652;
-            columnExpression653.ColumnName = "CumCulls";
-            columnExpression653.Table = table30;
-            column653.Expression = columnExpression653;
-            columnExpression654.ColumnName = "CumMort";
-            columnExpression654.Table = table30;
-            column654.Expression = columnExpression654;
-            columnExpression655.ColumnName = "Culls";
-            columnExpression655.Table = table30;
-            column655.Expression = columnExpression655;
-            columnExpression656.ColumnName = "Mort";
-            columnExpression656.Table = table30;
-            column656.Expression = columnExpression656;
-            columnExpression657.ColumnName = "BW0";
-            columnExpression657.Table = table30;
-            column657.Expression = columnExpression657;
-            columnExpression658.ColumnName = "BW1";
-            columnExpression658.Table = table30;
-            column658.Expression = columnExpression658;
-            columnExpression659.ColumnName = "BW2";
-            columnExpression659.Table = table30;
-            column659.Expression = columnExpression659;
-            columnExpression660.ColumnName = "BW3";
-            columnExpression660.Table = table30;
-            column660.Expression = columnExpression660;
-            columnExpression661.ColumnName = "BW4";
-            columnExpression661.Table = table30;
-            column661.Expression = columnExpression661;
-            columnExpression662.ColumnName = "BW5";
-            columnExpression662.Table = table30;
-            column662.Expression = columnExpression662;
-            columnExpression663.ColumnName = "BW6";
-            columnExpression663.Table = table30;
-            column663.Expression = columnExpression663;
-            columnExpression664.ColumnName = "BW7";
-            columnExpression664.Table = table30;
-            column664.Expression = columnExpression664;
-            columnExpression665.ColumnName = "BW8";
-            columnExpression665.Table = table30;
-            column665.Expression = columnExpression665;
-            columnExpression666.ColumnName = "HeatersQty";
-            columnExpression666.Table = table30;
-            column666.Expression = columnExpression666;
-            columnExpression667.ColumnName = "GeneratorsQty";
-            columnExpression667.Table = table30;
-            column667.Expression = columnExpression667;
-            columnExpression668.ColumnName = "CumHsMort";
-            columnExpression668.Table = table30;
-            column668.Expression = columnExpression668;
-            columnExpression669.ColumnName = "CumHsCulls";
-            columnExpression669.Table = table30;
-            column669.Expression = columnExpression669;
-            selectQuery30.Columns.Add(column643);
-            selectQuery30.Columns.Add(column644);
-            selectQuery30.Columns.Add(column645);
-            selectQuery30.Columns.Add(column646);
-            selectQuery30.Columns.Add(column647);
-            selectQuery30.Columns.Add(column648);
-            selectQuery30.Columns.Add(column649);
-            selectQuery30.Columns.Add(column650);
-            selectQuery30.Columns.Add(column651);
-            selectQuery30.Columns.Add(column652);
-            selectQuery30.Columns.Add(column653);
-            selectQuery30.Columns.Add(column654);
-            selectQuery30.Columns.Add(column655);
-            selectQuery30.Columns.Add(column656);
-            selectQuery30.Columns.Add(column657);
-            selectQuery30.Columns.Add(column658);
-            selectQuery30.Columns.Add(column659);
-            selectQuery30.Columns.Add(column660);
-            selectQuery30.Columns.Add(column661);
-            selectQuery30.Columns.Add(column662);
-            selectQuery30.Columns.Add(column663);
-            selectQuery30.Columns.Add(column664);
-            selectQuery30.Columns.Add(column665);
-            selectQuery30.Columns.Add(column666);
-            selectQuery30.Columns.Add(column667);
-            selectQuery30.Columns.Add(column668);
-            selectQuery30.Columns.Add(column669);
-            selectQuery30.Name = "SR_BRO_DailyDeplAllHouseWise";
-            selectQuery30.Tables.Add(table30);
+            columnExpression197.ColumnName = "FarmCode";
+            table10.Name = "SR_BRO_DailyDeplAllHouseWise";
+            columnExpression197.Table = table10;
+            column197.Expression = columnExpression197;
+            columnExpression198.ColumnName = "CycleNo";
+            columnExpression198.Table = table10;
+            column198.Expression = columnExpression198;
+            columnExpression199.ColumnName = "CropNo";
+            columnExpression199.Table = table10;
+            column199.Expression = columnExpression199;
+            columnExpression200.ColumnName = "HouseCode";
+            columnExpression200.Table = table10;
+            column200.Expression = columnExpression200;
+            columnExpression201.ColumnName = "FlockCode";
+            columnExpression201.Table = table10;
+            column201.Expression = columnExpression201;
+            columnExpression202.ColumnName = "Age";
+            columnExpression202.Table = table10;
+            column202.Expression = columnExpression202;
+            columnExpression203.ColumnName = "LiveChicks";
+            columnExpression203.Table = table10;
+            column203.Expression = columnExpression203;
+            columnExpression204.ColumnName = "ChicksPlaced";
+            columnExpression204.Table = table10;
+            column204.Expression = columnExpression204;
+            columnExpression205.ColumnName = "StartBirds";
+            columnExpression205.Table = table10;
+            column205.Expression = columnExpression205;
+            columnExpression206.ColumnName = "RecDate";
+            columnExpression206.Table = table10;
+            column206.Expression = columnExpression206;
+            columnExpression207.ColumnName = "CumCulls";
+            columnExpression207.Table = table10;
+            column207.Expression = columnExpression207;
+            columnExpression208.ColumnName = "CumMort";
+            columnExpression208.Table = table10;
+            column208.Expression = columnExpression208;
+            columnExpression209.ColumnName = "Culls";
+            columnExpression209.Table = table10;
+            column209.Expression = columnExpression209;
+            columnExpression210.ColumnName = "Mort";
+            columnExpression210.Table = table10;
+            column210.Expression = columnExpression210;
+            columnExpression211.ColumnName = "BW0";
+            columnExpression211.Table = table10;
+            column211.Expression = columnExpression211;
+            columnExpression212.ColumnName = "BW1";
+            columnExpression212.Table = table10;
+            column212.Expression = columnExpression212;
+            columnExpression213.ColumnName = "BW2";
+            columnExpression213.Table = table10;
+            column213.Expression = columnExpression213;
+            columnExpression214.ColumnName = "BW3";
+            columnExpression214.Table = table10;
+            column214.Expression = columnExpression214;
+            columnExpression215.ColumnName = "BW4";
+            columnExpression215.Table = table10;
+            column215.Expression = columnExpression215;
+            columnExpression216.ColumnName = "BW5";
+            columnExpression216.Table = table10;
+            column216.Expression = columnExpression216;
+            columnExpression217.ColumnName = "BW6";
+            columnExpression217.Table = table10;
+            column217.Expression = columnExpression217;
+            columnExpression218.ColumnName = "BW7";
+            columnExpression218.Table = table10;
+            column218.Expression = columnExpression218;
+            columnExpression219.ColumnName = "BW8";
+            columnExpression219.Table = table10;
+            column219.Expression = columnExpression219;
+            columnExpression220.ColumnName = "HeatersQty";
+            columnExpression220.Table = table10;
+            column220.Expression = columnExpression220;
+            columnExpression221.ColumnName = "GeneratorsQty";
+            columnExpression221.Table = table10;
+            column221.Expression = columnExpression221;
+            columnExpression222.ColumnName = "CumHsMort";
+            columnExpression222.Table = table10;
+            column222.Expression = columnExpression222;
+            columnExpression223.ColumnName = "CumHsCulls";
+            columnExpression223.Table = table10;
+            column223.Expression = columnExpression223;
+            selectQuery10.Columns.Add(column197);
+            selectQuery10.Columns.Add(column198);
+            selectQuery10.Columns.Add(column199);
+            selectQuery10.Columns.Add(column200);
+            selectQuery10.Columns.Add(column201);
+            selectQuery10.Columns.Add(column202);
+            selectQuery10.Columns.Add(column203);
+            selectQuery10.Columns.Add(column204);
+            selectQuery10.Columns.Add(column205);
+            selectQuery10.Columns.Add(column206);
+            selectQuery10.Columns.Add(column207);
+            selectQuery10.Columns.Add(column208);
+            selectQuery10.Columns.Add(column209);
+            selectQuery10.Columns.Add(column210);
+            selectQuery10.Columns.Add(column211);
+            selectQuery10.Columns.Add(column212);
+            selectQuery10.Columns.Add(column213);
+            selectQuery10.Columns.Add(column214);
+            selectQuery10.Columns.Add(column215);
+            selectQuery10.Columns.Add(column216);
+            selectQuery10.Columns.Add(column217);
+            selectQuery10.Columns.Add(column218);
+            selectQuery10.Columns.Add(column219);
+            selectQuery10.Columns.Add(column220);
+            selectQuery10.Columns.Add(column221);
+            selectQuery10.Columns.Add(column222);
+            selectQuery10.Columns.Add(column223);
+            selectQuery10.Name = "SR_BRO_DailyDeplAllHouseWise";
+            selectQuery10.Tables.Add(table10);
             this.sqlDataSource9.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery30});
+            selectQuery10});
             this.sqlDataSource9.ResultSchemaSerializable = resources.GetString("sqlDataSource9.ResultSchemaSerializable");
             // 
             // GroupHeader1
@@ -2959,6 +2972,7 @@
             this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("FarmCode", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.Name = "GroupHeader1";
+            this.GroupHeader1.RepeatEveryPage = true;
             // 
             // GroupHeader2
             // 
@@ -2973,6 +2987,7 @@
             new DevExpress.XtraReports.UI.GroupField("FarmCode", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader2.Level = 1;
             this.GroupHeader2.Name = "GroupHeader2";
+            this.GroupHeader2.RepeatEveryPage = true;
             // 
             // xrLabel7
             // 
@@ -3031,6 +3046,56 @@
             this.xrTable2});
             this.GroupFooter1.Name = "GroupFooter1";
             // 
+            // xrTable7
+            // 
+            this.xrTable7.Name = "xrTable7";
+            this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow8});
+            this.xrTable7.StylePriority.UseFont = false;
+            // 
+            // xrTableRow8
+            // 
+            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell35,
+            this.xrTableCell36,
+            this.xrTableCell37,
+            this.xrTableCell58});
+            this.xrTableRow8.Name = "xrTableRow8";
+            // 
+            // xrTableCell35
+            // 
+            this.xrTableCell35.Multiline = true;
+            this.xrTableCell35.Name = "xrTableCell35";
+            this.xrTableCell35.StylePriority.UseFont = false;
+            // 
+            // xrTableCell36
+            // 
+            this.xrTableCell36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            this.xrTableCell36.Multiline = true;
+            this.xrTableCell36.Name = "xrTableCell36";
+            this.xrTableCell36.Scripts.OnBeforePrint = "xrTableCell36_BeforePrint";
+            this.xrTableCell36.StylePriority.UseFont = false;
+            // 
+            // xrTableCell37
+            // 
+            this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            this.xrTableCell37.Multiline = true;
+            this.xrTableCell37.Name = "xrTableCell37";
+            this.xrTableCell37.Scripts.OnBeforePrint = "xrTableCell37_BeforePrint";
+            this.xrTableCell37.StylePriority.UseFont = false;
+            // 
+            // xrTableCell58
+            // 
+            this.xrTableCell58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            this.xrTableCell58.Multiline = true;
+            this.xrTableCell58.Name = "xrTableCell58";
+            this.xrTableCell58.Scripts.OnBeforePrint = "xrTableCell58_BeforePrint";
+            this.xrTableCell58.StylePriority.UseFont = false;
+            // 
             // xrTable2
             // 
             this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -3085,8 +3150,8 @@
             this.xrTableCell38.StylePriority.UseFont = false;
             this.xrTableCell38.StylePriority.UsePadding = false;
             this.xrTableCell38.StylePriority.UseTextAlignment = false;
-            xrSummary51.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell38.Summary = xrSummary51;
+            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell38.Summary = xrSummary11;
             this.xrTableCell38.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell47
@@ -3104,8 +3169,8 @@
             this.xrTableCell47.StylePriority.UseFont = false;
             this.xrTableCell47.StylePriority.UsePadding = false;
             this.xrTableCell47.StylePriority.UseTextAlignment = false;
-            xrSummary52.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell47.Summary = xrSummary52;
+            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell47.Summary = xrSummary12;
             this.xrTableCell47.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell49
@@ -3123,8 +3188,8 @@
             this.xrTableCell49.StylePriority.UseFont = false;
             this.xrTableCell49.StylePriority.UsePadding = false;
             this.xrTableCell49.StylePriority.UseTextAlignment = false;
-            xrSummary53.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell49.Summary = xrSummary53;
+            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell49.Summary = xrSummary13;
             this.xrTableCell49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell50
@@ -3159,8 +3224,8 @@
             this.xrTableCell51.StylePriority.UseFont = false;
             this.xrTableCell51.StylePriority.UsePadding = false;
             this.xrTableCell51.StylePriority.UseTextAlignment = false;
-            xrSummary54.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell51.Summary = xrSummary54;
+            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell51.Summary = xrSummary14;
             this.xrTableCell51.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell52
@@ -3178,8 +3243,8 @@
             this.xrTableCell52.StylePriority.UseFont = false;
             this.xrTableCell52.StylePriority.UsePadding = false;
             this.xrTableCell52.StylePriority.UseTextAlignment = false;
-            xrSummary55.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell52.Summary = xrSummary55;
+            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell52.Summary = xrSummary15;
             this.xrTableCell52.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell53
@@ -3197,8 +3262,8 @@
             this.xrTableCell53.StylePriority.UseFont = false;
             this.xrTableCell53.StylePriority.UsePadding = false;
             this.xrTableCell53.StylePriority.UseTextAlignment = false;
-            xrSummary56.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell53.Summary = xrSummary56;
+            xrSummary16.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell53.Summary = xrSummary16;
             this.xrTableCell53.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell54
@@ -3216,8 +3281,8 @@
             this.xrTableCell54.StylePriority.UseFont = false;
             this.xrTableCell54.StylePriority.UsePadding = false;
             this.xrTableCell54.StylePriority.UseTextAlignment = false;
-            xrSummary57.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell54.Summary = xrSummary57;
+            xrSummary17.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell54.Summary = xrSummary17;
             this.xrTableCell54.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell55
@@ -3236,8 +3301,8 @@
             this.xrTableCell55.StylePriority.UseFont = false;
             this.xrTableCell55.StylePriority.UsePadding = false;
             this.xrTableCell55.StylePriority.UseTextAlignment = false;
-            xrSummary58.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell55.Summary = xrSummary58;
+            xrSummary18.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell55.Summary = xrSummary18;
             this.xrTableCell55.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell56
@@ -3255,8 +3320,8 @@
             this.xrTableCell56.StylePriority.UseFont = false;
             this.xrTableCell56.StylePriority.UsePadding = false;
             this.xrTableCell56.StylePriority.UseTextAlignment = false;
-            xrSummary59.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell56.Summary = xrSummary59;
+            xrSummary19.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell56.Summary = xrSummary19;
             this.xrTableCell56.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrTableCell57
@@ -3274,64 +3339,9 @@
             this.xrTableCell57.StylePriority.UseFont = false;
             this.xrTableCell57.StylePriority.UsePadding = false;
             this.xrTableCell57.StylePriority.UseTextAlignment = false;
-            xrSummary60.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell57.Summary = xrSummary60;
+            xrSummary20.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell57.Summary = xrSummary20;
             this.xrTableCell57.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // xrTableCell8
-            // 
-            this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([CumCulls]), 0, [CumCulls]) + Iif(IsNullOrEmpty([CumMort]), 0, " +
-                    "[CumMort])\n"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.xrTableCell8.Multiline = true;
-            this.xrTableCell8.Name = "xrTableCell8";
-            // 
-            // xrTable7
-            // 
-            this.xrTable7.Name = "xrTable7";
-            this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.xrTableRow8});
-            this.xrTable7.StylePriority.UseFont = false;
-            // 
-            // xrTableRow8
-            // 
-            this.xrTableRow8.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell35,
-            this.xrTableCell36,
-            this.xrTableCell37,
-            this.xrTableCell58});
-            this.xrTableRow8.Name = "xrTableRow8";
-            // 
-            // xrTableCell35
-            // 
-            this.xrTableCell35.Multiline = true;
-            this.xrTableCell35.Name = "xrTableCell35";
-            // 
-            // xrTableCell36
-            // 
-            this.xrTableCell36.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.xrTableCell36.Multiline = true;
-            this.xrTableCell36.Name = "xrTableCell36";
-            this.xrTableCell36.Scripts.OnBeforePrint = "xrTableCell36_BeforePrint";
-            // 
-            // xrTableCell37
-            // 
-            this.xrTableCell37.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.xrTableCell37.Multiline = true;
-            this.xrTableCell37.Name = "xrTableCell37";
-            this.xrTableCell37.Scripts.OnBeforePrint = "xrTableCell37_BeforePrint";
-            // 
-            // xrTableCell58
-            // 
-            this.xrTableCell58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
-            this.xrTableCell58.Multiline = true;
-            this.xrTableCell58.Name = "xrTableCell58";
-            this.xrTableCell58.Scripts.OnBeforePrint = "xrTableCell58_BeforePrint";
             // 
             // SR_BRO_DailyDeplAllHouseWise
             // 
@@ -3395,7 +3405,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmCode, "Default", "Description", "FarmCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmNo, "Default", "Description", "FarmNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Flock, "Default", "Description", "Flock"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter1, "Default", "HeightF", 61.25024F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter1, "Default", "HeightF", 60.00003F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader1, "Default", "HeightF", 63.12497F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "Default", "Description", "Hide report footer"),
@@ -3509,6 +3519,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Text", "Flock"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "ar", "Text", "قطيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Weight", 0.91791408702861932D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Weight", 0.60957676224508339D),
@@ -3567,62 +3578,66 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Text", "xrTableCell31"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "TextFormatString", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Weight", 450.203702870194D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Text", "Cum.%"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "ar", "Text", "تراكمي %"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Weight", 2.7543900259311642D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell36, "Default", "Weight", 0.59837131907135244D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell37, "Default", "Weight", 0.60957676224508339D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Text", "xrTableCell16"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Weight", 535.18578697579039D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Text", "xrTableCell44"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Weight", 476.41347323963919D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Text", "xrTableCell18"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell47, "Default", "Weight", 550.18567717649034D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "Default", "Text", "Chicks In House"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "ar", "Text", "كتاكيت حية"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell48, "Default", "Weight", 0.60681022770025628D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Text", "xrTableCell19"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Weight", 560.49001622914375D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Text", "Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "اجمالي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Weight", 1997.4024241630634D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Weight", 494.13172393743525D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Text", "xrTableCell21"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell51, "Default", "Weight", 586.64226724906644D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Text", "xrTableCell22"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell52, "Default", "Weight", 456.72014264773128D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Text", "xrTableCell23"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Weight", 405.74896306053233D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Text", "xrTableCell24"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Weight", 433.06076519681073D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Weight", 377.50279598377892D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Weight", 460.62984184286734D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Weight", 395.22906393005633D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Weight", 0.53740825536829073D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Text", "Age"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "ar", "Text", "العمر"),
@@ -3639,6 +3654,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "Default", "Text", "Mort"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "ar", "Text", "نافق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "Default", "Weight", 0.84472308782137051D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Text", "Cum."),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "ar", "Text", "تراكمي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 2.7543900259311642D),
@@ -3657,8 +3673,10 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell74, "Default", "Text", "14 Day Wt"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell74, "ar", "Text", "وزن يوم 14"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell74, "Default", "Weight", 0.62296292830797717D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Weight", 0.53740825536829073D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Text", "Avg. Catching Date :"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "ar", "Text", ":متوسط تاريخ الإمساك"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "TextFormatString", "{0:N0}"),
@@ -3741,8 +3759,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }

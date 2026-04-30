@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRO_DailyDeplHouseCross" ScriptsSource="&#xD;&#xA;private void crossTabHeaderCell34_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;    &#xD;&#xA;    // Get StartBirds&#xD;&#xA;    decimal startBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartBirds&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Get CumCulls and CumMort&#xD;&#xA;    decimal cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;) ?? 0);&#xD;&#xA;    decimal cumMort = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumMort&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Calculate CumDepl&#xD;&#xA;    decimal cumDepl = cumCulls + cumMort;&#xD;&#xA;    &#xD;&#xA;    if (startBirds != 0)&#xD;&#xA;    {&#xD;&#xA;        // Calculate cumulative depletion percentage&#xD;&#xA;        decimal result = (cumDepl * 100.0m) / startBirds;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRO_DailyDeplHouseCross" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRO_DailyDeplHouseCross" ScriptsSource="&#xD;&#xA;private void crossTabHeaderCell34_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;    &#xD;&#xA;    // Get StartBirds&#xD;&#xA;    decimal startBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartBirds&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Get CumCulls and CumMort&#xD;&#xA;    decimal cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;) ?? 0);&#xD;&#xA;    decimal cumMort = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumMort&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Calculate CumDepl&#xD;&#xA;    decimal cumDepl = cumCulls + cumMort;&#xD;&#xA;    &#xD;&#xA;    if (startBirds != 0)&#xD;&#xA;    {&#xD;&#xA;        // Calculate cumulative depletion percentage&#xD;&#xA;        decimal result = (cumDepl * 100.0m) / startBirds;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRO_DailyDeplHouseCross" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -305,33 +305,33 @@
               <ColumnDefinitions>
                 <Item1 Ref="196" Width="64.876564" />
                 <Item2 Ref="197" Width="46.1265831" />
-                <Item3 Ref="198" Width="69.99858" />
-                <Item4 Ref="199" Width="69.99858" />
-                <Item5 Ref="200" Width="69.99858" />
-                <Item6 Ref="201" Width="69.99858" />
-                <Item7 Ref="202" Width="69.99858" />
-                <Item8 Ref="203" Width="69.99858" />
-                <Item9 Ref="204" Width="69.99858" />
-                <Item10 Ref="205" Width="69.99858" />
-                <Item11 Ref="206" Width="65.66341" />
-                <Item12 Ref="207" Width="65.66341" />
-                <Item13 Ref="208" Width="4.571428" Visible="false" />
-                <Item14 Ref="209" Width="4.571428" Visible="false" />
+                <Item3 Ref="198" Width="69.99859" />
+                <Item4 Ref="199" Width="69.99859" />
+                <Item5 Ref="200" Width="69.99859" />
+                <Item6 Ref="201" Width="69.99859" />
+                <Item7 Ref="202" Width="69.99859" />
+                <Item8 Ref="203" Width="69.99859" />
+                <Item9 Ref="204" Width="69.99859" />
+                <Item10 Ref="205" Width="69.99859" />
+                <Item11 Ref="206" Width="65.663414" />
+                <Item12 Ref="207" Width="65.663414" />
+                <Item13 Ref="208" Width="4.5714283" Visible="false" />
+                <Item14 Ref="209" Width="4.5714283" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="210" Height="41.6666756" />
                 <Item2 Ref="211" Height="41.6666756" />
                 <Item3 Ref="212" Height="50.0000153" />
-                <Item4 Ref="213" Height="50.0000153" Visible="false" />
-                <Item5 Ref="214" Height="50.0000153" Visible="false" />
-                <Item6 Ref="215" Height="50.0000153" Visible="false" />
-                <Item7 Ref="216" Height="50.0000153" Visible="false" />
-                <Item8 Ref="217" Height="50.0000153" Visible="false" />
-                <Item9 Ref="218" Height="50.0000153" Visible="false" />
-                <Item10 Ref="219" Height="50.0000153" Visible="false" />
-                <Item11 Ref="220" Height="50.0000153" Visible="false" />
-                <Item12 Ref="221" Height="50.0000153" Visible="false" />
-                <Item13 Ref="222" Height="24.9999981" Visible="false" />
+                <Item4 Ref="213" Height="2" Visible="false" />
+                <Item5 Ref="214" Height="2" Visible="false" />
+                <Item6 Ref="215" Height="2" Visible="false" />
+                <Item7 Ref="216" Height="2" Visible="false" />
+                <Item8 Ref="217" Height="2" Visible="false" />
+                <Item9 Ref="218" Height="2" Visible="false" />
+                <Item10 Ref="219" Height="2" Visible="false" />
+                <Item11 Ref="220" Height="2" Visible="false" />
+                <Item12 Ref="221" Height="2" Visible="false" />
+                <Item13 Ref="222" Height="2" Visible="false" />
               </RowDefinitions>
               <Cells>
                 <Item1 Ref="223" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
@@ -749,12 +749,12 @@
     <Item113 Ref="524" Component="#Ref-134" Culture="Default" Path="HeightF" Data="0" />
     <Item114 Ref="525" Component="#Ref-176" Culture="Default" Path="HeightF" Data="23" />
     <Item115 Ref="526" Component="#Ref-94" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item116 Ref="527" Component="#Ref-94" Culture="Default" Path="SizeF" Data="290.8131,20" />
+    <Item116 Ref="527" Component="#Ref-94" Culture="Default" Path="SizeF" Data="275.065,20" />
     <Item117 Ref="528" Component="#Ref-92" Culture="Default" Path="LocationFloat" Data="353.5,0" />
-    <Item118 Ref="529" Component="#Ref-92" Culture="Default" Path="SizeF" Data="445.5197,20" />
+    <Item118 Ref="529" Component="#Ref-92" Culture="Default" Path="SizeF" Data="929.771667,20" />
     <Item119 Ref="530" Component="#Ref-92" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item120 Ref="531" Component="#Ref-96" Culture="Default" Path="LocationFloat" Data="834.0413,0" />
-    <Item121 Ref="532" Component="#Ref-96" Culture="Default" Path="SizeF" Data="318.4752,20" />
+    <Item120 Ref="531" Component="#Ref-96" Culture="Default" Path="LocationFloat" Data="1309.04138,0" />
+    <Item121 Ref="532" Component="#Ref-96" Culture="Default" Path="SizeF" Data="327.727173,20" />
     <Item122 Ref="533" Component="#Ref-96" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item123 Ref="534" Component="#Ref-36" Culture="Default" Path="Description" Data="PercCumMort" />
     <Item124 Ref="535" Component="#Ref-37" Culture="Default" Path="Description" Data="PercCumMortStd" />
@@ -773,24 +773,24 @@
     <Item137 Ref="548" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item138 Ref="549" Component="#Ref-60" Culture="Default" Path="Description" Data="Sold" />
     <Item139 Ref="550" Component="#Ref-131" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item140 Ref="551" Component="#Ref-131" Culture="Default" Path="SizeF" Data="1152.517,20" />
-    <Item141 Ref="552" Component="#Ref-141" Culture="Default" Path="LocationFloat" Data="3.003359,0" />
-    <Item142 Ref="553" Component="#Ref-141" Culture="Default" Path="SizeF" Data="1149.513,20" />
+    <Item140 Ref="551" Component="#Ref-131" Culture="Default" Path="SizeF" Data="1636.76855,20" />
+    <Item141 Ref="552" Component="#Ref-141" Culture="Default" Path="LocationFloat" Data="3.00334287,0" />
+    <Item142 Ref="553" Component="#Ref-141" Culture="Default" Path="SizeF" Data="1633.76526,20" />
     <Item143 Ref="554" Component="#Ref-136" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item144 Ref="555" Component="#Ref-136" Culture="Default" Path="SizeF" Data="1152.292,20" />
+    <Item144 Ref="555" Component="#Ref-136" Culture="Default" Path="SizeF" Data="1636.54431,20" />
     <Item145 Ref="556" Component="#Ref-315" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item146 Ref="557" Component="#Ref-315" Culture="Default" Path="SizeF" Data="1152.517,20" />
+    <Item146 Ref="557" Component="#Ref-315" Culture="Default" Path="SizeF" Data="1636.76855,20" />
     <Item147 Ref="558" Component="#Ref-371" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item148 Ref="559" Component="#Ref-371" Culture="Default" Path="SizeF" Data="1152.517,20" />
-    <Item149 Ref="560" Component="#Ref-101" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
-    <Item150 Ref="561" Component="#Ref-101" Culture="Default" Path="SizeF" Data="1150.517,20" />
+    <Item148 Ref="559" Component="#Ref-371" Culture="Default" Path="SizeF" Data="1636.76855,20" />
+    <Item149 Ref="560" Component="#Ref-101" Culture="Default" Path="LocationFloat" Data="2.00004578,0" />
+    <Item150 Ref="561" Component="#Ref-101" Culture="Default" Path="SizeF" Data="1634.76855,20" />
     <Item151 Ref="562" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item152 Ref="563" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item153 Ref="564" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
     <Item154 Ref="565" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
     <Item155 Ref="566" Component="#Ref-25" Culture="Default" Path="Description" Data="StoreBalance" />
     <Item156 Ref="567" Component="#Ref-178" Culture="Default" Path="HeightF" Data="0" />
-    <Item157 Ref="568" Component="#Ref-180" Culture="Default" Path="HeightF" Data="651.6668" />
+    <Item157 Ref="568" Component="#Ref-180" Culture="Default" Path="HeightF" Data="199.5835" />
     <Item158 Ref="569" Component="#Ref-135" Culture="Default" Path="HeightF" Data="20" />
     <Item159 Ref="570" Component="#Ref-140" Culture="Default" Path="HeightF" Data="20" />
     <Item160 Ref="571" Component="#Ref-100" Culture="Default" Path="HeightF" Data="20" />
@@ -803,7 +803,7 @@
     <Item167 Ref="578" Component="#Ref-55" Culture="Default" Path="Description" Data="Transfer" />
     <Item168 Ref="579" Component="#Ref-49" Culture="Default" Path="Description" Data="UniformityPerc" />
     <Item169 Ref="580" Component="#Ref-181" Culture="Default" Path="LocationFloat" Data="9.999998,9.999974" />
-    <Item170 Ref="581" Component="#Ref-181" Culture="Default" Path="SizeF" Data="811.4615,608.3335" />
+    <Item170 Ref="581" Component="#Ref-181" Culture="Default" Path="SizeF" Data="811.4615,153.333374" />
     <Item171 Ref="582" Component="#Ref-177" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
     <Item172 Ref="583" Component="#Ref-177" Culture="Default" Path="SizeF" Data="189.0017,23" />
     <Item173 Ref="584" Component="#Ref-177" Culture="Default" Path="Text" Data="Dste: [?DateFrom!dd-MM-yyyy]" />

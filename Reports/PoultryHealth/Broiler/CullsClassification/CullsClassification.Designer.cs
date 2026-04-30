@@ -221,7 +221,7 @@
             this.crossTabTotalCell3});
             crossTabColumnDefinition1.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(106.6267F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(127.46F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(125F),
             crossTabColumnDefinition1});
             crossTabColumnField1.FieldName = "SR_PH_BRO_CullsClassific.CullsType_en";
@@ -776,7 +776,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 127F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 21.16667F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(233.6267F, 86.45834F))});
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(254.46F, 86.45834F))});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.PageHeightF = 1169.291F;
             this.PageWidthF = 826.7717F;

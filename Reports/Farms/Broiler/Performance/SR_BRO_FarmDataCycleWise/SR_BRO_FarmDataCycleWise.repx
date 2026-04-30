@@ -623,7 +623,7 @@
         </Item2>
       </SubBands>
     </Item6>
-    <Item7 Ref="341" ControlType="GroupHeaderBand" Name="GroupHeader1">
+    <Item7 Ref="341" ControlType="GroupHeaderBand" Name="GroupHeader1" RepeatEveryPage="true">
       <GroupFields>
         <Item1 Ref="342" FieldName="FarmCode" />
       </GroupFields>
@@ -792,7 +792,7 @@
         </Item7>
       </Controls>
     </Item7>
-    <Item8 Ref="427" ControlType="GroupHeaderBand" Name="GroupHeader2" Level="1">
+    <Item8 Ref="427" ControlType="GroupHeaderBand" Name="GroupHeader2" RepeatEveryPage="true" Level="1">
       <GroupFields>
         <Item1 Ref="428" FieldName="FarmCode" />
       </GroupFields>
@@ -1309,14 +1309,14 @@
     <Item8 Ref="724" Component="#Ref-12" Culture="Default" Path="Description" Data="From" />
     <Item9 Ref="725" Component="#Ref-12" Culture="ar" Path="Description" Data="من" />
     <Item10 Ref="726" Component="#Ref-13" Culture="Default" Path="Description" Data="DateTo" />
-    <Item11 Ref="727" Component="#Ref-53" Culture="Default" Path="HeightF" Data="20.0000134" />
+    <Item11 Ref="727" Component="#Ref-53" Culture="Default" Path="HeightF" Data="20.00001" />
     <Item12 Ref="728" Component="#Ref-20" Culture="Default" Path="Description" Data="FarmCode" />
     <Item13 Ref="729" Component="#Ref-24" Culture="Default" Path="Description" Data="FarmNo" />
     <Item14 Ref="730" Component="#Ref-25" Culture="Default" Path="Description" Data="Flock" />
-    <Item15 Ref="731" Component="#Ref-444" Culture="Default" Path="HeightF" Data="20.0000134" />
+    <Item15 Ref="731" Component="#Ref-444" Culture="Default" Path="HeightF" Data="20.00001" />
     <Item16 Ref="732" Component="#Ref-577" Culture="Default" Path="HeightF" Data="0" />
-    <Item17 Ref="733" Component="#Ref-578" Culture="Default" Path="HeightF" Data="20.0000134" />
-    <Item18 Ref="734" Component="#Ref-341" Culture="Default" Path="HeightF" Data="100.000008" />
+    <Item17 Ref="733" Component="#Ref-578" Culture="Default" Path="HeightF" Data="20.00001" />
+    <Item18 Ref="734" Component="#Ref-341" Culture="Default" Path="HeightF" Data="100" />
     <Item19 Ref="735" Component="#Ref-427" Culture="Default" Path="HeightF" Data="20" />
     <Item20 Ref="736" Component="#Ref-442" Culture="Default" Path="HeightF" Data="0" />
     <Item21 Ref="737" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
@@ -1399,46 +1399,46 @@
     <Item98 Ref="814" Component="#Ref-438" Culture="Default" Path="SizeF" Data="166.233,20" />
     <Item99 Ref="815" Component="#Ref-438" Culture="Default" Path="Text" Data="Date Crop Start: [CropStartDate!dd-MM-yyyy]" />
     <Item100 Ref="816" Component="#Ref-438" Culture="ar" Path="Text" Data="تاريخ البداية: [CropStartDate!dd-MM-yyyy]" />
-    <Item101 Ref="817" Component="#Ref-440" Culture="Default" Path="LocationFloat" Data="884.92865,0" />
+    <Item101 Ref="817" Component="#Ref-440" Culture="Default" Path="LocationFloat" Data="884.9286,0" />
     <Item102 Ref="818" Component="#Ref-440" Culture="Default" Path="SizeF" Data="199.678,20" />
     <Item103 Ref="819" Component="#Ref-440" Culture="Default" Path="Text" Data="Crop End Date: [CropEndDate!dd-MM-yyyy]" />
     <Item104 Ref="820" Component="#Ref-440" Culture="ar" Path="Text" Data="تاريخ النهاية: [CropEndDate!dd-MM-yyyy]" />
-    <Item105 Ref="821" Component="#Ref-429" Culture="Default" Path="LocationFloat" Data="503.493439,0" />
-    <Item106 Ref="822" Component="#Ref-429" Culture="Default" Path="SizeF" Data="185.42691,20" />
+    <Item105 Ref="821" Component="#Ref-429" Culture="Default" Path="LocationFloat" Data="503.4934,0" />
+    <Item106 Ref="822" Component="#Ref-429" Culture="Default" Path="SizeF" Data="185.4269,20" />
     <Item107 Ref="823" Component="#Ref-429" Culture="Default" Path="Text" Data="Chicks Placed: sumSum([ChickPlace])" />
     <Item108 Ref="824" Component="#Ref-429" Culture="ar" Path="Text" Data="رصيد بداية الإنتاج: sumSum([ChickPlace])" />
-    <Item109 Ref="825" Component="#Ref-373" Culture="Default" Path="LocationFloat" Data="0.000150998429,36.8750267" />
-    <Item110 Ref="826" Component="#Ref-373" Culture="Default" Path="SizeF" Data="75.6526,63.1249733" />
-    <Item111 Ref="827" Component="#Ref-365" Culture="Default" Path="LocationFloat" Data="154.3581,36.8750267" />
-    <Item112 Ref="828" Component="#Ref-365" Culture="Default" Path="SizeF" Data="39.3452759,63.12498" />
-    <Item113 Ref="829" Component="#Ref-361" Culture="Default" Path="LocationFloat" Data="75.65275,36.8750267" />
-    <Item114 Ref="830" Component="#Ref-361" Culture="Default" Path="SizeF" Data="78.7053452,63.12498" />
-    <Item115 Ref="831" Component="#Ref-355" Culture="Default" Path="LocationFloat" Data="193.703369,55.2083321" />
-    <Item116 Ref="832" Component="#Ref-355" Culture="Default" Path="SizeF" Data="90.1636353,44.7916641" />
-    <Item117 Ref="833" Component="#Ref-379" Culture="Default" Path="LocationFloat" Data="283.867035,36.8750267" />
+    <Item109 Ref="825" Component="#Ref-373" Culture="Default" Path="LocationFloat" Data="0.0001509984,36.87503" />
+    <Item110 Ref="826" Component="#Ref-373" Culture="Default" Path="SizeF" Data="75.6526,63.12497" />
+    <Item111 Ref="827" Component="#Ref-365" Culture="Default" Path="LocationFloat" Data="154.3581,36.87503" />
+    <Item112 Ref="828" Component="#Ref-365" Culture="Default" Path="SizeF" Data="39.34528,63.12498" />
+    <Item113 Ref="829" Component="#Ref-361" Culture="Default" Path="LocationFloat" Data="75.65275,36.87503" />
+    <Item114 Ref="830" Component="#Ref-361" Culture="Default" Path="SizeF" Data="78.70535,63.12498" />
+    <Item115 Ref="831" Component="#Ref-355" Culture="Default" Path="LocationFloat" Data="193.7034,55.20833" />
+    <Item116 Ref="832" Component="#Ref-355" Culture="Default" Path="SizeF" Data="90.16364,44.79166" />
+    <Item117 Ref="833" Component="#Ref-379" Culture="Default" Path="LocationFloat" Data="283.867,36.87503" />
     <Item118 Ref="834" Component="#Ref-379" Culture="Default" Path="SizeF" Data="1188.001,63.12498" />
-    <Item119 Ref="835" Component="#Ref-65" Culture="Default" Path="LocationFloat" Data="1276.94519,0" />
-    <Item120 Ref="836" Component="#Ref-65" Culture="Default" Path="SizeF" Data="76.08545,20.0000134" />
-    <Item121 Ref="837" Component="#Ref-55" Culture="Default" Path="LocationFloat" Data="1353.03064,0" />
-    <Item122 Ref="838" Component="#Ref-55" Culture="Default" Path="SizeF" Data="118.8374,20.0000134" />
+    <Item119 Ref="835" Component="#Ref-65" Culture="Default" Path="LocationFloat" Data="1276.945,0" />
+    <Item120 Ref="836" Component="#Ref-65" Culture="Default" Path="SizeF" Data="76.08545,20.00001" />
+    <Item121 Ref="837" Component="#Ref-55" Culture="Default" Path="LocationFloat" Data="1353.031,0" />
+    <Item122 Ref="838" Component="#Ref-55" Culture="Default" Path="SizeF" Data="118.8374,20.00001" />
     <Item123 Ref="839" Component="#Ref-445" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item124 Ref="840" Component="#Ref-445" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
     <Item125 Ref="841" Component="#Ref-445" Culture="Default" Path="SizeF" Data="1276.945,20" />
     <Item126 Ref="842" Component="#Ref-558" Culture="Default" Path="LocationFloat" Data="1276.945,0" />
-    <Item127 Ref="843" Component="#Ref-558" Culture="Default" Path="SizeF" Data="76.08569,20.0000134" />
-    <Item128 Ref="844" Component="#Ref-565" Culture="Default" Path="LocationFloat" Data="1353.03064,0" />
-    <Item129 Ref="845" Component="#Ref-565" Culture="Default" Path="SizeF" Data="118.8374,20.0000134" />
+    <Item127 Ref="843" Component="#Ref-558" Culture="Default" Path="SizeF" Data="76.08569,20.00001" />
+    <Item128 Ref="844" Component="#Ref-565" Culture="Default" Path="LocationFloat" Data="1353.031,0" />
+    <Item129 Ref="845" Component="#Ref-565" Culture="Default" Path="SizeF" Data="118.8374,20.00001" />
     <Item130 Ref="846" Component="#Ref-579" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item131 Ref="847" Component="#Ref-579" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item132 Ref="848" Component="#Ref-579" Culture="Default" Path="SizeF" Data="1276.945,20" />
-    <Item133 Ref="849" Component="#Ref-343" Culture="Default" Path="LocationFloat" Data="2.38418579E-05,6.25" />
-    <Item134 Ref="850" Component="#Ref-343" Culture="Default" Path="SizeF" Data="1471.8678,30.62499" />
-    <Item135 Ref="851" Component="#Ref-689" Culture="Default" Path="LocationFloat" Data="1276.94519,0" />
-    <Item136 Ref="852" Component="#Ref-689" Culture="Default" Path="SizeF" Data="76.08545,20.0000134" />
-    <Item137 Ref="853" Component="#Ref-696" Culture="Default" Path="LocationFloat" Data="1353.03064,0" />
-    <Item138 Ref="854" Component="#Ref-696" Culture="Default" Path="SizeF" Data="118.8374,20.0000134" />
-    <Item139 Ref="855" Component="#Ref-369" Culture="Default" Path="LocationFloat" Data="193.703369,36.8750267" />
-    <Item140 Ref="856" Component="#Ref-369" Culture="Default" Path="SizeF" Data="90.1636658,18.3333168" />
+    <Item133 Ref="849" Component="#Ref-343" Culture="Default" Path="LocationFloat" Data="2.384186E-05,6.25" />
+    <Item134 Ref="850" Component="#Ref-343" Culture="Default" Path="SizeF" Data="1471.868,30.62499" />
+    <Item135 Ref="851" Component="#Ref-689" Culture="Default" Path="LocationFloat" Data="1276.945,0" />
+    <Item136 Ref="852" Component="#Ref-689" Culture="Default" Path="SizeF" Data="76.08545,20.00001" />
+    <Item137 Ref="853" Component="#Ref-696" Culture="Default" Path="LocationFloat" Data="1353.031,0" />
+    <Item138 Ref="854" Component="#Ref-696" Culture="Default" Path="SizeF" Data="118.8374,20.00001" />
+    <Item139 Ref="855" Component="#Ref-369" Culture="Default" Path="LocationFloat" Data="193.7034,36.87503" />
+    <Item140 Ref="856" Component="#Ref-369" Culture="Default" Path="SizeF" Data="90.16367,18.33332" />
     <Item141 Ref="857" Component="#Ref-375" Culture="Default" Path="Text" Data="From" />
     <Item142 Ref="858" Component="#Ref-375" Culture="ar" Path="Text" Data="من" />
     <Item143 Ref="859" Component="#Ref-375" Culture="Default" Path="Weight" Data="66.977148118463589" />

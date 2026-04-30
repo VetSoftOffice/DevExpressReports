@@ -440,7 +440,7 @@
         </Item2>
       </SubBands>
     </Item6>
-    <Item7 Ref="229" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WholePage">
+    <Item7 Ref="229" ControlType="GroupHeaderBand" Name="GroupHeader1" RepeatEveryPage="true" GroupUnion="WholePage">
       <SubBands>
         <Item1 Ref="230" ControlType="SubBand" Name="GroupHeaderSub4">
           <Controls>
@@ -507,7 +507,7 @@
     <Item10 Ref="266" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item11 Ref="267" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 9, 20, 20" />
     <Item12 Ref="268" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item13 Ref="269" Component="#Ref-229" Culture="Default" Path="HeightF" Data="2.29167938" />
+    <Item13 Ref="269" Component="#Ref-229" Culture="Default" Path="HeightF" Data="2.291679" />
     <Item14 Ref="270" Component="#Ref-230" Culture="Default" Path="HeightF" Data="65.41666" />
     <Item15 Ref="271" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
     <Item16 Ref="272" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />

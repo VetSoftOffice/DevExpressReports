@@ -904,14 +904,14 @@
     <Item57 Ref="502" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item58 Ref="503" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 9, 20, 20" />
     <Item59 Ref="504" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
-    <Item60 Ref="505" Component="#Ref-261" Culture="Default" Path="LocationFloat" Data="2.409752,0" />
-    <Item61 Ref="506" Component="#Ref-261" Culture="Default" Path="SizeF" Data="1147.882,23" />
+    <Item60 Ref="505" Component="#Ref-261" Culture="Default" Path="LocationFloat" Data="2.40975213,20.4166412" />
+    <Item61 Ref="506" Component="#Ref-261" Culture="Default" Path="SizeF" Data="1147.882,19.250042" />
     <Item62 Ref="507" Component="#Ref-124" Culture="Default" Path="HeightF" Data="20" />
     <Item63 Ref="508" Component="#Ref-128" Culture="Default" Path="HeightF" Data="20" />
     <Item64 Ref="509" Component="#Ref-87" Culture="Default" Path="HeightF" Data="20" />
     <Item65 Ref="510" Component="#Ref-119" Culture="Default" Path="HeightF" Data="20" />
-    <Item66 Ref="511" Component="#Ref-181" Culture="Default" Path="HeightF" Data="264.7916" />
-    <Item67 Ref="512" Component="#Ref-260" Culture="Default" Path="HeightF" Data="23" />
+    <Item66 Ref="511" Component="#Ref-181" Culture="Default" Path="HeightF" Data="231.874908" />
+    <Item67 Ref="512" Component="#Ref-260" Culture="Default" Path="HeightF" Data="39.6666832" />
     <Item68 Ref="513" Component="#Ref-17" Culture="Default" Path="Description" Data="SupPlacesCount" />
     <Item69 Ref="514" Component="#Ref-31" Culture="Default" Path="LocationFloat" Data="7.947286E-06,0" />
     <Item70 Ref="515" Component="#Ref-31" Culture="Default" Path="SizeF" Data="1077.841,20" />

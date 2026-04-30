@@ -94,6 +94,8 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         private SR_BRD_DailyProductionDataTable tableSR_BRD_DailyProduction;
         
+        private SR_PH_BRO_VaccProgramDataTable tableSR_PH_BRO_VaccProgram;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -228,6 +230,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 }
                 if ((ds.Tables["SR_BRD_DailyProduction"] != null)) {
                     base.Tables.Add(new SR_BRD_DailyProductionDataTable(ds.Tables["SR_BRD_DailyProduction"]));
+                }
+                if ((ds.Tables["SR_PH_BRO_VaccProgram"] != null)) {
+                    base.Tables.Add(new SR_PH_BRO_VaccProgramDataTable(ds.Tables["SR_PH_BRO_VaccProgram"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -599,6 +604,16 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public SR_PH_BRO_VaccProgramDataTable SR_PH_BRO_VaccProgram {
+            get {
+                return this.tableSR_PH_BRO_VaccProgram;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -768,6 +783,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 }
                 if ((ds.Tables["SR_BRD_DailyProduction"] != null)) {
                     base.Tables.Add(new SR_BRD_DailyProductionDataTable(ds.Tables["SR_BRD_DailyProduction"]));
+                }
+                if ((ds.Tables["SR_PH_BRO_VaccProgram"] != null)) {
+                    base.Tables.Add(new SR_PH_BRO_VaccProgramDataTable(ds.Tables["SR_PH_BRO_VaccProgram"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1012,6 +1030,12 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                     this.tableSR_BRD_DailyProduction.InitVars();
                 }
             }
+            this.tableSR_PH_BRO_VaccProgram = ((SR_PH_BRO_VaccProgramDataTable)(base.Tables["SR_PH_BRO_VaccProgram"]));
+            if ((initTable == true)) {
+                if ((this.tableSR_PH_BRO_VaccProgram != null)) {
+                    this.tableSR_PH_BRO_VaccProgram.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1092,6 +1116,8 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
             base.Tables.Add(this.tableSR_BRO_DailyDepl);
             this.tableSR_BRD_DailyProduction = new SR_BRD_DailyProductionDataTable();
             base.Tables.Add(this.tableSR_BRD_DailyProduction);
+            this.tableSR_PH_BRO_VaccProgram = new SR_PH_BRO_VaccProgramDataTable();
+            base.Tables.Add(this.tableSR_PH_BRO_VaccProgram);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1306,6 +1332,12 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeSR_PH_BRO_VaccProgram() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1463,6 +1495,9 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void SR_BRD_DailyProductionRowChangeEventHandler(object sender, SR_BRD_DailyProductionRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void SR_PH_BRO_VaccProgramRowChangeEventHandler(object sender, SR_PH_BRO_VaccProgramRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -19506,6 +19541,473 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "SR_BRD_DailyProductionDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class SR_PH_BRO_VaccProgramDataTable : global::System.Data.TypedTableBase<SR_PH_BRO_VaccProgramRow> {
+            
+            private global::System.Data.DataColumn columnCropNo;
+            
+            private global::System.Data.DataColumn columnFarmCode;
+            
+            private global::System.Data.DataColumn columnCycleNo;
+            
+            private global::System.Data.DataColumn columnCropNo1;
+            
+            private global::System.Data.DataColumn columnVaccStartDate;
+            
+            private global::System.Data.DataColumn columnVaccStartTime;
+            
+            private global::System.Data.DataColumn columnAgeFrom;
+            
+            private global::System.Data.DataColumn columnAgeTo;
+            
+            private global::System.Data.DataColumn columnVaccine;
+            
+            private global::System.Data.DataColumn columnHouseNo;
+            
+            private global::System.Data.DataColumn columnWaterVtDTime;
+            
+            private global::System.Data.DataColumn columnComment;
+            
+            private global::System.Data.DataColumn columnPeriodName_en;
+            
+            private global::System.Data.DataColumn columnVaccStartDateName;
+            
+            private global::System.Data.DataColumn columnVaccineProgName_en;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_PH_BRO_VaccProgramDataTable() {
+                this.TableName = "SR_PH_BRO_VaccProgram";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_PH_BRO_VaccProgramDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
+            protected SR_PH_BRO_VaccProgramDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CropNoColumn {
+                get {
+                    return this.columnCropNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FarmCodeColumn {
+                get {
+                    return this.columnFarmCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CycleNoColumn {
+                get {
+                    return this.columnCycleNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CropNo1Column {
+                get {
+                    return this.columnCropNo1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VaccStartDateColumn {
+                get {
+                    return this.columnVaccStartDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VaccStartTimeColumn {
+                get {
+                    return this.columnVaccStartTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AgeFromColumn {
+                get {
+                    return this.columnAgeFrom;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AgeToColumn {
+                get {
+                    return this.columnAgeTo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VaccineColumn {
+                get {
+                    return this.columnVaccine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn HouseNoColumn {
+                get {
+                    return this.columnHouseNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WaterVtDTimeColumn {
+                get {
+                    return this.columnWaterVtDTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CommentColumn {
+                get {
+                    return this.columnComment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PeriodName_enColumn {
+                get {
+                    return this.columnPeriodName_en;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VaccStartDateNameColumn {
+                get {
+                    return this.columnVaccStartDateName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn VaccineProgName_enColumn {
+                get {
+                    return this.columnVaccineProgName_en;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_PH_BRO_VaccProgramRow this[int index] {
+                get {
+                    return ((SR_PH_BRO_VaccProgramRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_PH_BRO_VaccProgramRowChangeEventHandler SR_PH_BRO_VaccProgramRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_PH_BRO_VaccProgramRowChangeEventHandler SR_PH_BRO_VaccProgramRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_PH_BRO_VaccProgramRowChangeEventHandler SR_PH_BRO_VaccProgramRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event SR_PH_BRO_VaccProgramRowChangeEventHandler SR_PH_BRO_VaccProgramRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddSR_PH_BRO_VaccProgramRow(SR_PH_BRO_VaccProgramRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_PH_BRO_VaccProgramRow AddSR_PH_BRO_VaccProgramRow(int CropNo, int FarmCode, string CycleNo, int CropNo1, System.DateTime VaccStartDate, System.TimeSpan VaccStartTime, int AgeFrom, int AgeTo, string Vaccine, string HouseNo, string WaterVtDTime, string Comment, string PeriodName_en, System.DateTime VaccStartDateName, string VaccineProgName_en) {
+                SR_PH_BRO_VaccProgramRow rowSR_PH_BRO_VaccProgramRow = ((SR_PH_BRO_VaccProgramRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        CropNo,
+                        FarmCode,
+                        CycleNo,
+                        CropNo1,
+                        VaccStartDate,
+                        VaccStartTime,
+                        AgeFrom,
+                        AgeTo,
+                        Vaccine,
+                        HouseNo,
+                        WaterVtDTime,
+                        Comment,
+                        PeriodName_en,
+                        VaccStartDateName,
+                        VaccineProgName_en};
+                rowSR_PH_BRO_VaccProgramRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSR_PH_BRO_VaccProgramRow);
+                return rowSR_PH_BRO_VaccProgramRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                SR_PH_BRO_VaccProgramDataTable cln = ((SR_PH_BRO_VaccProgramDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new SR_PH_BRO_VaccProgramDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnCropNo = base.Columns["CropNo"];
+                this.columnFarmCode = base.Columns["FarmCode"];
+                this.columnCycleNo = base.Columns["CycleNo"];
+                this.columnCropNo1 = base.Columns["CropNo1"];
+                this.columnVaccStartDate = base.Columns["VaccStartDate"];
+                this.columnVaccStartTime = base.Columns["VaccStartTime"];
+                this.columnAgeFrom = base.Columns["AgeFrom"];
+                this.columnAgeTo = base.Columns["AgeTo"];
+                this.columnVaccine = base.Columns["Vaccine"];
+                this.columnHouseNo = base.Columns["HouseNo"];
+                this.columnWaterVtDTime = base.Columns["WaterVtDTime"];
+                this.columnComment = base.Columns["Comment"];
+                this.columnPeriodName_en = base.Columns["PeriodName_en"];
+                this.columnVaccStartDateName = base.Columns["VaccStartDateName"];
+                this.columnVaccineProgName_en = base.Columns["VaccineProgName_en"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnCropNo = new global::System.Data.DataColumn("CropNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCropNo);
+                this.columnFarmCode = new global::System.Data.DataColumn("FarmCode", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFarmCode);
+                this.columnCycleNo = new global::System.Data.DataColumn("CycleNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCycleNo);
+                this.columnCropNo1 = new global::System.Data.DataColumn("CropNo1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCropNo1);
+                this.columnVaccStartDate = new global::System.Data.DataColumn("VaccStartDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVaccStartDate);
+                this.columnVaccStartTime = new global::System.Data.DataColumn("VaccStartTime", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVaccStartTime);
+                this.columnAgeFrom = new global::System.Data.DataColumn("AgeFrom", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAgeFrom);
+                this.columnAgeTo = new global::System.Data.DataColumn("AgeTo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAgeTo);
+                this.columnVaccine = new global::System.Data.DataColumn("Vaccine", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVaccine);
+                this.columnHouseNo = new global::System.Data.DataColumn("HouseNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHouseNo);
+                this.columnWaterVtDTime = new global::System.Data.DataColumn("WaterVtDTime", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWaterVtDTime);
+                this.columnComment = new global::System.Data.DataColumn("Comment", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnComment);
+                this.columnPeriodName_en = new global::System.Data.DataColumn("PeriodName_en", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeriodName_en);
+                this.columnVaccStartDateName = new global::System.Data.DataColumn("VaccStartDateName", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVaccStartDateName);
+                this.columnVaccineProgName_en = new global::System.Data.DataColumn("VaccineProgName_en", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVaccineProgName_en);
+                this.columnCropNo.ReadOnly = true;
+                this.columnFarmCode.ReadOnly = true;
+                this.columnCycleNo.ReadOnly = true;
+                this.columnCycleNo.MaxLength = 1;
+                this.columnCropNo1.ReadOnly = true;
+                this.columnVaccStartDate.ReadOnly = true;
+                this.columnVaccStartTime.ReadOnly = true;
+                this.columnAgeFrom.ReadOnly = true;
+                this.columnAgeTo.ReadOnly = true;
+                this.columnVaccine.ReadOnly = true;
+                this.columnVaccine.MaxLength = 1;
+                this.columnHouseNo.ReadOnly = true;
+                this.columnHouseNo.MaxLength = 1;
+                this.columnWaterVtDTime.ReadOnly = true;
+                this.columnWaterVtDTime.MaxLength = 1;
+                this.columnComment.ReadOnly = true;
+                this.columnComment.MaxLength = 1;
+                this.columnPeriodName_en.ReadOnly = true;
+                this.columnPeriodName_en.MaxLength = 1;
+                this.columnVaccStartDateName.ReadOnly = true;
+                this.columnVaccineProgName_en.ReadOnly = true;
+                this.columnVaccineProgName_en.MaxLength = 1;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_PH_BRO_VaccProgramRow NewSR_PH_BRO_VaccProgramRow() {
+                return ((SR_PH_BRO_VaccProgramRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new SR_PH_BRO_VaccProgramRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(SR_PH_BRO_VaccProgramRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.SR_PH_BRO_VaccProgramRowChanged != null)) {
+                    this.SR_PH_BRO_VaccProgramRowChanged(this, new SR_PH_BRO_VaccProgramRowChangeEvent(((SR_PH_BRO_VaccProgramRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.SR_PH_BRO_VaccProgramRowChanging != null)) {
+                    this.SR_PH_BRO_VaccProgramRowChanging(this, new SR_PH_BRO_VaccProgramRowChangeEvent(((SR_PH_BRO_VaccProgramRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.SR_PH_BRO_VaccProgramRowDeleted != null)) {
+                    this.SR_PH_BRO_VaccProgramRowDeleted(this, new SR_PH_BRO_VaccProgramRowChangeEvent(((SR_PH_BRO_VaccProgramRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.SR_PH_BRO_VaccProgramRowDeleting != null)) {
+                    this.SR_PH_BRO_VaccProgramRowDeleting(this, new SR_PH_BRO_VaccProgramRowChangeEvent(((SR_PH_BRO_VaccProgramRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveSR_PH_BRO_VaccProgramRow(SR_PH_BRO_VaccProgramRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsGeneralLedger ds = new dsGeneralLedger();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "SR_PH_BRO_VaccProgramDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -37702,6 +38204,443 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class SR_PH_BRO_VaccProgramRow : global::System.Data.DataRow {
+            
+            private SR_PH_BRO_VaccProgramDataTable tableSR_PH_BRO_VaccProgram;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal SR_PH_BRO_VaccProgramRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableSR_PH_BRO_VaccProgram = ((SR_PH_BRO_VaccProgramDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CropNo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_PH_BRO_VaccProgram.CropNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CropNo\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.CropNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FarmCode {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_PH_BRO_VaccProgram.FarmCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FarmCode\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.FarmCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CycleNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.CycleNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CycleNo\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.CycleNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int CropNo1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_PH_BRO_VaccProgram.CropNo1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CropNo1\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.CropNo1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime VaccStartDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableSR_PH_BRO_VaccProgram.VaccStartDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VaccStartDate\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.VaccStartDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.TimeSpan VaccStartTime {
+                get {
+                    try {
+                        return ((global::System.TimeSpan)(this[this.tableSR_PH_BRO_VaccProgram.VaccStartTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VaccStartTime\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.VaccStartTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int AgeFrom {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_PH_BRO_VaccProgram.AgeFromColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AgeFrom\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.AgeFromColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int AgeTo {
+                get {
+                    try {
+                        return ((int)(this[this.tableSR_PH_BRO_VaccProgram.AgeToColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AgeTo\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.AgeToColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Vaccine {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.VaccineColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Vaccine\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.VaccineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string HouseNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.HouseNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HouseNo\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.HouseNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string WaterVtDTime {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.WaterVtDTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WaterVtDTime\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.WaterVtDTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Comment {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.CommentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Comment\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.CommentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PeriodName_en {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.PeriodName_enColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PeriodName_en\' in table \'SR_PH_BRO_VaccProgram\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.PeriodName_enColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime VaccStartDateName {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableSR_PH_BRO_VaccProgram.VaccStartDateNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VaccStartDateName\' in table \'SR_PH_BRO_VaccProgram\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.VaccStartDateNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string VaccineProgName_en {
+                get {
+                    try {
+                        return ((string)(this[this.tableSR_PH_BRO_VaccProgram.VaccineProgName_enColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'VaccineProgName_en\' in table \'SR_PH_BRO_VaccProgram\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSR_PH_BRO_VaccProgram.VaccineProgName_enColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCropNoNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.CropNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCropNoNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.CropNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFarmCodeNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.FarmCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFarmCodeNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.FarmCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCycleNoNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.CycleNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCycleNoNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.CycleNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCropNo1Null() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.CropNo1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCropNo1Null() {
+                this[this.tableSR_PH_BRO_VaccProgram.CropNo1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVaccStartDateNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.VaccStartDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVaccStartDateNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.VaccStartDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVaccStartTimeNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.VaccStartTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVaccStartTimeNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.VaccStartTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAgeFromNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.AgeFromColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAgeFromNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.AgeFromColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAgeToNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.AgeToColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAgeToNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.AgeToColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVaccineNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.VaccineColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVaccineNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.VaccineColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsHouseNoNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.HouseNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetHouseNoNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.HouseNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWaterVtDTimeNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.WaterVtDTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWaterVtDTimeNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.WaterVtDTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCommentNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.CommentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCommentNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.CommentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPeriodName_enNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.PeriodName_enColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPeriodName_enNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.PeriodName_enColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVaccStartDateNameNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.VaccStartDateNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVaccStartDateNameNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.VaccStartDateNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsVaccineProgName_enNull() {
+                return this.IsNull(this.tableSR_PH_BRO_VaccProgram.VaccineProgName_enColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetVaccineProgName_enNull() {
+                this[this.tableSR_PH_BRO_VaccProgram.VaccineProgName_enColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -38877,6 +39816,40 @@ namespace DevExpressReports.Reports.GrandParent.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SR_BRD_DailyProductionRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class SR_PH_BRO_VaccProgramRowChangeEvent : global::System.EventArgs {
+            
+            private SR_PH_BRO_VaccProgramRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_PH_BRO_VaccProgramRowChangeEvent(SR_PH_BRO_VaccProgramRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public SR_PH_BRO_VaccProgramRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -47009,6 +47982,183 @@ namespace DevExpressReports.Reports.GrandParent.DataSets.dsGeneralLedgerTableAda
                 this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             dsGeneralLedger.SR_BRD_DailyProductionDataTable dataTable = new dsGeneralLedger.SR_BRD_DailyProductionDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class SR_PH_BRO_VaccProgramTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public SR_PH_BRO_VaccProgramTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "SR_PH_BRO_VaccProgram";
+            tableMapping.ColumnMappings.Add("CropNo", "CropNo");
+            tableMapping.ColumnMappings.Add("FarmCode", "FarmCode");
+            tableMapping.ColumnMappings.Add("CycleNo", "CycleNo");
+            tableMapping.ColumnMappings.Add("CropNo1", "CropNo1");
+            tableMapping.ColumnMappings.Add("VaccStartDate", "VaccStartDate");
+            tableMapping.ColumnMappings.Add("VaccStartTime", "VaccStartTime");
+            tableMapping.ColumnMappings.Add("AgeFrom", "AgeFrom");
+            tableMapping.ColumnMappings.Add("AgeTo", "AgeTo");
+            tableMapping.ColumnMappings.Add("Vaccine", "Vaccine");
+            tableMapping.ColumnMappings.Add("HouseNo", "HouseNo");
+            tableMapping.ColumnMappings.Add("WaterVtDTime", "WaterVtDTime");
+            tableMapping.ColumnMappings.Add("Comment", "Comment");
+            tableMapping.ColumnMappings.Add("PeriodName_en", "PeriodName_en");
+            tableMapping.ColumnMappings.Add("VaccStartDateName", "VaccStartDateName");
+            tableMapping.ColumnMappings.Add("VaccineProgName_en", "VaccineProgName_en");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=VetSoftServer;Initial Catalog=PMS;Persist Security Info=True;User ID=" +
+                "sa;Password=VetSoft2003!;Encrypt=True;TrustServerCertificate=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.SR_PH_BRO_VaccProgram";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptFrFarmID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pCycleNo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pCropNo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pLang", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 3, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ptGnBookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsGeneralLedger.SR_PH_BRO_VaccProgramDataTable GetData(global::System.Nullable<int> ptFrFarmID, global::System.Nullable<int> pCycleNo, global::System.Nullable<int> pCropNo, global::System.Nullable<byte> pLang, global::System.Nullable<int> ptGnBookID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ptFrFarmID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ptFrFarmID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((pCycleNo.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(pCycleNo.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((pCropNo.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((int)(pCropNo.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((pLang.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((byte)(pLang.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((ptGnBookID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((int)(ptGnBookID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            dsGeneralLedger.SR_PH_BRO_VaccProgramDataTable dataTable = new dsGeneralLedger.SR_PH_BRO_VaccProgramDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

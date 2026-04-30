@@ -775,7 +775,7 @@
     <Item4 Ref="443" Component="#Ref-27" Culture="Default" Path="SizeF" Data="569.7914,23" />
     <Item5 Ref="444" Component="#Ref-5" Culture="Default" Path="Description" Data="DateFrom" />
     <Item6 Ref="445" Component="#Ref-6" Culture="Default" Path="Description" Data="DateTo" />
-    <Item7 Ref="446" Component="#Ref-26" Culture="Default" Path="HeightF" Data="327.3767" />
+    <Item7 Ref="446" Component="#Ref-26" Culture="Default" Path="HeightF" Data="304.838318" />
     <Item8 Ref="447" Component="#Ref-7" Culture="Default" Path="Description" Data="FarmCode" />
     <Item9 Ref="448" Component="#Ref-3" Culture="Default" Path="Description" Data="IsRTL" />
     <Item10 Ref="449" Component="#Ref-439" Culture="Default" Path="HeightF" Data="0" />
@@ -792,7 +792,7 @@
     <Item21 Ref="460" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item22 Ref="461" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 23" />
     <Item23 Ref="462" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
-    <Item24 Ref="463" Component="#Ref-302" Culture="Default" Path="HeightF" Data="26.12495" />
+    <Item24 Ref="463" Component="#Ref-302" Culture="Default" Path="HeightF" Data="20" />
     <Item25 Ref="464" Component="#Ref-273" Culture="Default" Path="HeightF" Data="19.875" />
     <Item26 Ref="465" Component="#Ref-285" Culture="Default" Path="HeightF" Data="19.875" />
     <Item27 Ref="466" Component="#Ref-293" Culture="Default" Path="HeightF" Data="21.45669" />
@@ -848,8 +848,8 @@
     <Item77 Ref="516" Component="#Ref-303" Culture="Default" Path="SizeF" Data="212.6425,20" />
     <Item78 Ref="517" Component="#Ref-303" Culture="Default" Path="Text" Data="No. of birds to be treated: [TotalBirds!N0]" />
     <Item79 Ref="518" Component="#Ref-303" Culture="ar" Path="Text" Data="عدد الطيور التي ستعال: [TotalBirds!N0]" />
-    <Item80 Ref="519" Component="#Ref-297" Culture="Default" Path="LocationFloat" Data="349.5833,0" />
-    <Item81 Ref="520" Component="#Ref-297" Culture="Default" Path="SizeF" Data="313.108,21.45669" />
+    <Item80 Ref="519" Component="#Ref-297" Culture="Default" Path="LocationFloat" Data="429.583282,0" />
+    <Item81 Ref="520" Component="#Ref-297" Culture="Default" Path="SizeF" Data="377.417084,21.45669" />
     <Item82 Ref="521" Component="#Ref-297" Culture="Default" Path="Text" Data="Visit Time: [VisitTime!h:mm:ss tt]" />
     <Item83 Ref="522" Component="#Ref-297" Culture="ar" Path="Text" Data="وثت الزيارة: [VisitTime!h:mm:ss tt]" />
     <Item84 Ref="523" Component="#Ref-281" Culture="Default" Path="LocationFloat" Data="151.2329,0" />
@@ -869,7 +869,7 @@
     <Item98 Ref="537" Component="#Ref-294" Culture="Default" Path="Text" Data="Veterinarian: [EmployeeName_en]" />
     <Item99 Ref="538" Component="#Ref-294" Culture="ar" Path="Text" Data="البيطري: [EmployeeName_en]" />
     <Item100 Ref="539" Component="#Ref-291" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item101 Ref="540" Component="#Ref-291" Culture="Default" Path="SizeF" Data="151.2329,19.875" />
+    <Item101 Ref="540" Component="#Ref-291" Culture="Default" Path="SizeF" Data="313.108,19.875" />
     <Item102 Ref="541" Component="#Ref-291" Culture="Default" Path="Text" Data="Farm: [?FarmCode]" />
     <Item103 Ref="542" Component="#Ref-291" Culture="ar" Path="Text" Data="مزرعة: [?FarmCode]" />
     <Item104 Ref="543" Component="#Ref-289" Culture="Default" Path="LocationFloat" Data="429.5833,0" />
