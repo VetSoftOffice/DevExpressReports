@@ -413,6 +413,7 @@
             this.tDetail});
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
+            this.Detail.Scripts.OnBeforePrint = "Detail_BeforePrint";
             // 
             // tDetail
             // 
@@ -703,6 +704,7 @@
             this.SubBand3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable4});
             this.SubBand3.Name = "SubBand3";
+            this.SubBand3.Scripts.OnBeforePrint = "SubBand3_BeforePrint";
             // 
             // xrTable4
             // 
@@ -836,12 +838,11 @@
             // 
             this.GroupFooter_DealType.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
-            this.GroupFooter_DealType.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsDealType\n")});
             this.GroupFooter_DealType.GroupUnion = DevExpress.XtraReports.UI.GroupFooterUnion.WithLastDetail;
             this.GroupFooter_DealType.KeepTogether = true;
             this.GroupFooter_DealType.Level = 1;
             this.GroupFooter_DealType.Name = "GroupFooter_DealType";
+            this.GroupFooter_DealType.Scripts.OnBeforePrint = "GroupFooter_DealType_BeforePrint";
             // 
             // xrTable2
             // 
@@ -1389,6 +1390,7 @@
             this.xrTable6});
             this.GroupFooter2.Level = 2;
             this.GroupFooter2.Name = "GroupFooter2";
+            this.GroupFooter2.Scripts.OnBeforePrint = "GroupFooter2_BeforePrint";
             // 
             // xrTable6
             // 
