@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column21 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression21 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column22 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression22 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column29 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_HT_YearlyProdReport));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
@@ -561,7 +561,7 @@
             this.lblVetSoftData.LockedInUserDesigner = true;
             this.lblVetSoftData.Multiline = true;
             this.lblVetSoftData.Name = "lblVetSoftData";
-            this.lblVetSoftData.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lblVetSoftData.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // BottomMargin
             // 
@@ -576,7 +576,7 @@
             this.pageInfoCurrentTime.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.pageInfoCurrentTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pageInfoCurrentTime.Name = "pageInfoCurrentTime";
-            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.pageInfoCurrentTime.StyleName = "PageInfo";
             this.pageInfoCurrentTime.StylePriority.UseBorders = false;
@@ -626,7 +626,7 @@
             // xrTable1
             // 
             this.xrTable1.Name = "xrTable1";
-            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1,
             this.xrTableRow2,
@@ -683,7 +683,7 @@
             // xrTable2
             // 
             this.xrTable2.Name = "xrTable2";
-            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow11});
             // 
@@ -731,7 +731,7 @@
             // xrTable3
             // 
             this.xrTable3.Name = "xrTable3";
-            this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow12});
             // 
@@ -756,7 +756,7 @@
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
@@ -780,7 +780,7 @@
             // xrTable5
             // 
             this.xrTable5.Name = "xrTable5";
-            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow14});
             // 
@@ -803,7 +803,7 @@
             // xrTable4
             // 
             this.xrTable4.Name = "xrTable4";
-            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow13});
             // 
@@ -840,7 +840,7 @@
             // xrTable6
             // 
             this.xrTable6.Name = "xrTable6";
-            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow15});
             // 
@@ -881,7 +881,7 @@
             // xrTable8
             // 
             this.xrTable8.Name = "xrTable8";
-            this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow17});
             // 
@@ -904,7 +904,7 @@
             // xrTable7
             // 
             this.xrTable7.Name = "xrTable7";
-            this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow16});
             // 
@@ -942,7 +942,7 @@
             // xrTable10
             // 
             this.xrTable10.Name = "xrTable10";
-            this.xrTable10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable10.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow19});
             // 
@@ -965,7 +965,7 @@
             // xrTable9
             // 
             this.xrTable9.Name = "xrTable9";
-            this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow18});
             // 
@@ -1002,7 +1002,7 @@
             // xrTable11
             // 
             this.xrTable11.Name = "xrTable11";
-            this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow20});
             // 
@@ -1046,7 +1046,7 @@
             // xrTable14
             // 
             this.xrTable14.Name = "xrTable14";
-            this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow23});
             // 
@@ -1068,7 +1068,7 @@
             // xrTable13
             // 
             this.xrTable13.Name = "xrTable13";
-            this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow22});
             // 
@@ -1091,7 +1091,7 @@
             // xrTable12
             // 
             this.xrTable12.Name = "xrTable12";
-            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow21});
             // 
@@ -1129,7 +1129,7 @@
             // xrTable16
             // 
             this.xrTable16.Name = "xrTable16";
-            this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow25});
             // 
@@ -1152,7 +1152,7 @@
             // xrTable15
             // 
             this.xrTable15.Name = "xrTable15";
-            this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow24});
             // 
@@ -1191,7 +1191,7 @@
             // xrTable45
             // 
             this.xrTable45.Name = "xrTable45";
-            this.xrTable45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable45.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable45.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow80});
             // 
@@ -1208,7 +1208,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "                         [RejWhole_Per]")});
             this.xrTableCell63.Multiline = true;
             this.xrTableCell63.Name = "xrTableCell63";
-            this.xrTableCell63.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 100F);
+            this.xrTableCell63.Padding = new DevExpress.XtraPrinting.PaddingInfo(5F, 5F, 0F, 0F, 100F);
             this.xrTableCell63.StylePriority.UseBorders = false;
             this.xrTableCell63.StylePriority.UsePadding = false;
             this.xrTableCell63.StylePriority.UseTextAlignment = false;
@@ -1217,7 +1217,7 @@
             // xrTable44
             // 
             this.xrTable44.Name = "xrTable44";
-            this.xrTable44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable44.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable44.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow79});
             // 
@@ -1240,7 +1240,7 @@
             // xrTable17
             // 
             this.xrTable17.Name = "xrTable17";
-            this.xrTable17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable17.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow52});
             // 
@@ -1279,7 +1279,7 @@
             // xrTable47
             // 
             this.xrTable47.Name = "xrTable47";
-            this.xrTable47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable47.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable47.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow82});
             // 
@@ -1303,7 +1303,7 @@
             // xrTable46
             // 
             this.xrTable46.Name = "xrTable46";
-            this.xrTable46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable46.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable46.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow81});
             // 
@@ -1326,7 +1326,7 @@
             // xrTable18
             // 
             this.xrTable18.Name = "xrTable18";
-            this.xrTable18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable18.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow53});
             // 
@@ -1365,7 +1365,7 @@
             // xrTable49
             // 
             this.xrTable49.Name = "xrTable49";
-            this.xrTable49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable49.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow84});
             // 
@@ -1389,7 +1389,7 @@
             // xrTable48
             // 
             this.xrTable48.Name = "xrTable48";
-            this.xrTable48.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable48.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable48.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow83});
             // 
@@ -1412,7 +1412,7 @@
             // xrTable19
             // 
             this.xrTable19.Name = "xrTable19";
-            this.xrTable19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable19.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow54});
             // 
@@ -1451,7 +1451,7 @@
             // xrTable51
             // 
             this.xrTable51.Name = "xrTable51";
-            this.xrTable51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable51.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow86});
             // 
@@ -1475,7 +1475,7 @@
             // xrTable50
             // 
             this.xrTable50.Name = "xrTable50";
-            this.xrTable50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable50.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow85});
             // 
@@ -1498,7 +1498,7 @@
             // xrTable20
             // 
             this.xrTable20.Name = "xrTable20";
-            this.xrTable20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable20.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow55});
             // 
@@ -1537,7 +1537,7 @@
             // xrTable53
             // 
             this.xrTable53.Name = "xrTable53";
-            this.xrTable53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable53.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable53.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow88});
             // 
@@ -1561,7 +1561,7 @@
             // xrTable52
             // 
             this.xrTable52.Name = "xrTable52";
-            this.xrTable52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable52.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable52.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow87});
             // 
@@ -1584,7 +1584,7 @@
             // xrTable21
             // 
             this.xrTable21.Name = "xrTable21";
-            this.xrTable21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable21.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow56});
             // 
@@ -1623,7 +1623,7 @@
             // xrTable55
             // 
             this.xrTable55.Name = "xrTable55";
-            this.xrTable55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable55.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable55.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow90});
             // 
@@ -1647,7 +1647,7 @@
             // xrTable54
             // 
             this.xrTable54.Name = "xrTable54";
-            this.xrTable54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable54.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable54.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow89});
             // 
@@ -1670,7 +1670,7 @@
             // xrTable22
             // 
             this.xrTable22.Name = "xrTable22";
-            this.xrTable22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable22.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow57});
             // 
@@ -1709,7 +1709,7 @@
             // xrTable57
             // 
             this.xrTable57.Name = "xrTable57";
-            this.xrTable57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable57.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable57.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow92});
             // 
@@ -1733,7 +1733,7 @@
             // xrTable56
             // 
             this.xrTable56.Name = "xrTable56";
-            this.xrTable56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable56.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable56.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow91});
             // 
@@ -1756,7 +1756,7 @@
             // xrTable23
             // 
             this.xrTable23.Name = "xrTable23";
-            this.xrTable23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable23.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow58});
             // 
@@ -1795,7 +1795,7 @@
             // xrTable59
             // 
             this.xrTable59.Name = "xrTable59";
-            this.xrTable59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable59.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable59.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow94});
             // 
@@ -1819,7 +1819,7 @@
             // xrTable58
             // 
             this.xrTable58.Name = "xrTable58";
-            this.xrTable58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable58.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable58.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow93});
             // 
@@ -1842,7 +1842,7 @@
             // xrTable24
             // 
             this.xrTable24.Name = "xrTable24";
-            this.xrTable24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable24.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow59});
             // 
@@ -1881,7 +1881,7 @@
             // xrTable61
             // 
             this.xrTable61.Name = "xrTable61";
-            this.xrTable61.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable61.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable61.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow96});
             // 
@@ -1905,7 +1905,7 @@
             // xrTable60
             // 
             this.xrTable60.Name = "xrTable60";
-            this.xrTable60.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable60.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable60.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow95});
             // 
@@ -1928,7 +1928,7 @@
             // xrTable25
             // 
             this.xrTable25.Name = "xrTable25";
-            this.xrTable25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable25.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow60});
             // 
@@ -1966,7 +1966,7 @@
             // xrTable62
             // 
             this.xrTable62.Name = "xrTable62";
-            this.xrTable62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable62.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable62.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow97});
             // 
@@ -1991,7 +1991,7 @@
             // xrTable26
             // 
             this.xrTable26.Name = "xrTable26";
-            this.xrTable26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable26.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow61});
             // 
@@ -2029,7 +2029,7 @@
             // xrTable64
             // 
             this.xrTable64.Name = "xrTable64";
-            this.xrTable64.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable64.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable64.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow99});
             // 
@@ -2052,7 +2052,7 @@
             // xrTable27
             // 
             this.xrTable27.Name = "xrTable27";
-            this.xrTable27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable27.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow62});
             // 
@@ -2091,7 +2091,7 @@
             // xrTable67
             // 
             this.xrTable67.Name = "xrTable67";
-            this.xrTable67.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable67.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable67.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow102});
             // 
@@ -2115,7 +2115,7 @@
             // xrTable66
             // 
             this.xrTable66.Name = "xrTable66";
-            this.xrTable66.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable66.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable66.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow101});
             // 
@@ -2140,7 +2140,7 @@
             // xrTable28
             // 
             this.xrTable28.Name = "xrTable28";
-            this.xrTable28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable28.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow63});
             // 
@@ -2179,7 +2179,7 @@
             // xrTable69
             // 
             this.xrTable69.Name = "xrTable69";
-            this.xrTable69.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable69.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable69.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow104});
             // 
@@ -2203,7 +2203,7 @@
             // xrTable68
             // 
             this.xrTable68.Name = "xrTable68";
-            this.xrTable68.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable68.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable68.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow103});
             // 
@@ -2226,7 +2226,7 @@
             // xrTable29
             // 
             this.xrTable29.Name = "xrTable29";
-            this.xrTable29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable29.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow64});
             // 
@@ -2265,7 +2265,7 @@
             // xrTable71
             // 
             this.xrTable71.Name = "xrTable71";
-            this.xrTable71.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable71.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable71.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow106});
             // 
@@ -2289,7 +2289,7 @@
             // xrTable70
             // 
             this.xrTable70.Name = "xrTable70";
-            this.xrTable70.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable70.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable70.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow105});
             // 
@@ -2312,7 +2312,7 @@
             // xrTable30
             // 
             this.xrTable30.Name = "xrTable30";
-            this.xrTable30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable30.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable30.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow65});
             // 
@@ -2351,7 +2351,7 @@
             // xrTable73
             // 
             this.xrTable73.Name = "xrTable73";
-            this.xrTable73.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable73.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable73.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow108});
             // 
@@ -2375,7 +2375,7 @@
             // xrTable72
             // 
             this.xrTable72.Name = "xrTable72";
-            this.xrTable72.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable72.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable72.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow107});
             // 
@@ -2398,7 +2398,7 @@
             // xrTable31
             // 
             this.xrTable31.Name = "xrTable31";
-            this.xrTable31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable31.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable31.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow66});
             // 
@@ -2437,7 +2437,7 @@
             // xrTable75
             // 
             this.xrTable75.Name = "xrTable75";
-            this.xrTable75.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable75.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable75.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow110});
             // 
@@ -2461,7 +2461,7 @@
             // xrTable74
             // 
             this.xrTable74.Name = "xrTable74";
-            this.xrTable74.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable74.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable74.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow109});
             // 
@@ -2484,7 +2484,7 @@
             // xrTable32
             // 
             this.xrTable32.Name = "xrTable32";
-            this.xrTable32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable32.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable32.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow67});
             // 
@@ -2523,7 +2523,7 @@
             // xrTable77
             // 
             this.xrTable77.Name = "xrTable77";
-            this.xrTable77.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable77.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable77.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow112});
             // 
@@ -2547,7 +2547,7 @@
             // xrTable76
             // 
             this.xrTable76.Name = "xrTable76";
-            this.xrTable76.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable76.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable76.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow111});
             // 
@@ -2570,7 +2570,7 @@
             // xrTable33
             // 
             this.xrTable33.Name = "xrTable33";
-            this.xrTable33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable33.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable33.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow68});
             // 
@@ -2609,7 +2609,7 @@
             // xrTable79
             // 
             this.xrTable79.Name = "xrTable79";
-            this.xrTable79.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable79.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable79.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow114});
             // 
@@ -2633,7 +2633,7 @@
             // xrTable78
             // 
             this.xrTable78.Name = "xrTable78";
-            this.xrTable78.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable78.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable78.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow113});
             // 
@@ -2656,7 +2656,7 @@
             // xrTable34
             // 
             this.xrTable34.Name = "xrTable34";
-            this.xrTable34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable34.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable34.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow69});
             // 
@@ -2695,7 +2695,7 @@
             // xrTable81
             // 
             this.xrTable81.Name = "xrTable81";
-            this.xrTable81.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable81.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable81.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow116});
             // 
@@ -2719,7 +2719,7 @@
             // xrTable80
             // 
             this.xrTable80.Name = "xrTable80";
-            this.xrTable80.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable80.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable80.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow115});
             // 
@@ -2742,7 +2742,7 @@
             // xrTable35
             // 
             this.xrTable35.Name = "xrTable35";
-            this.xrTable35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable35.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable35.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow70});
             // 
@@ -2780,7 +2780,7 @@
             // xrTable82
             // 
             this.xrTable82.Name = "xrTable82";
-            this.xrTable82.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable82.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable82.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow117});
             // 
@@ -2803,7 +2803,7 @@
             // xrTable36
             // 
             this.xrTable36.Name = "xrTable36";
-            this.xrTable36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable36.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow71});
             // 
@@ -2841,7 +2841,7 @@
             // xrTable84
             // 
             this.xrTable84.Name = "xrTable84";
-            this.xrTable84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable84.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable84.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow119});
             // 
@@ -2863,7 +2863,7 @@
             // xrTable37
             // 
             this.xrTable37.Name = "xrTable37";
-            this.xrTable37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable37.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable37.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow72});
             // 
@@ -2901,7 +2901,7 @@
             // xrTable86
             // 
             this.xrTable86.Name = "xrTable86";
-            this.xrTable86.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable86.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable86.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow121});
             // 
@@ -2924,7 +2924,7 @@
             // xrTable38
             // 
             this.xrTable38.Name = "xrTable38";
-            this.xrTable38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable38.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable38.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow73});
             // 
@@ -2962,7 +2962,7 @@
             // xrTable88
             // 
             this.xrTable88.Name = "xrTable88";
-            this.xrTable88.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable88.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable88.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow123});
             // 
@@ -2985,7 +2985,7 @@
             // xrTable39
             // 
             this.xrTable39.Name = "xrTable39";
-            this.xrTable39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable39.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable39.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow74});
             // 
@@ -3022,7 +3022,7 @@
             // xrTable90
             // 
             this.xrTable90.Name = "xrTable90";
-            this.xrTable90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable90.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable90.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow125});
             // 
@@ -3063,7 +3063,7 @@
             // xrTable93
             // 
             this.xrTable93.Name = "xrTable93";
-            this.xrTable93.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable93.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable93.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow128});
             // 
@@ -3087,7 +3087,7 @@
             // xrTable41
             // 
             this.xrTable41.Name = "xrTable41";
-            this.xrTable41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable41.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 96F);
             this.xrTable41.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow76});
             // 
@@ -3312,7 +3312,7 @@
             this.Title.BorderWidth = 1F;
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.Title.Name = "Title";
-            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             // 
             // DetailCaption1
             // 
@@ -3322,7 +3322,7 @@
             this.DetailCaption1.BorderWidth = 2F;
             this.DetailCaption1.ForeColor = System.Drawing.Color.White;
             this.DetailCaption1.Name = "DetailCaption1";
-            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailCaption1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData1
@@ -3332,7 +3332,7 @@
             this.DetailData1.BorderWidth = 2F;
             this.DetailData1.ForeColor = System.Drawing.Color.Black;
             this.DetailData1.Name = "DetailData1";
-            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailData1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData3_Odd
@@ -3343,14 +3343,14 @@
             this.DetailData3_Odd.BorderWidth = 1F;
             this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
             this.DetailData3_Odd.Name = "DetailData3_Odd";
-            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailData3_Odd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // PageInfo
             // 
             this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.PageInfo.Name = "PageInfo";
-            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             // 
             // TotalCostPerc_CF
             // 
@@ -3491,52 +3491,52 @@
             // 
             this.dsFinance.ConnectionName = "dsFinance";
             this.dsFinance.Name = "dsFinance";
-            columnExpression1.ColumnName = "ItemType";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"263\" />";
-            table1.Name = "SR_FM_Stocktaking";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "Container";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "Products";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "Description";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "ExpiryDate";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "Unit";
-            columnExpression6.Table = table1;
-            column6.Expression = columnExpression6;
-            columnExpression7.ColumnName = "SentOrClacQty";
-            columnExpression7.Table = table1;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "ActualQty";
-            columnExpression8.Table = table1;
-            column8.Expression = columnExpression8;
-            columnExpression9.ColumnName = "CalcPriceUnit";
-            columnExpression9.Table = table1;
-            column9.Expression = columnExpression9;
-            columnExpression10.ColumnName = "AdjustedPriceUnit";
-            columnExpression10.Table = table1;
-            column10.Expression = columnExpression10;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Columns.Add(column6);
-            selectQuery1.Columns.Add(column7);
-            selectQuery1.Columns.Add(column8);
-            selectQuery1.Columns.Add(column9);
-            selectQuery1.Columns.Add(column10);
-            selectQuery1.Name = "SR_FM_Stocktaking";
-            selectQuery1.Tables.Add(table1);
+            columnExpression21.ColumnName = "ItemType";
+            table3.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"263\" />";
+            table3.Name = "SR_FM_Stocktaking";
+            columnExpression21.Table = table3;
+            column21.Expression = columnExpression21;
+            columnExpression22.ColumnName = "Container";
+            columnExpression22.Table = table3;
+            column22.Expression = columnExpression22;
+            columnExpression23.ColumnName = "Products";
+            columnExpression23.Table = table3;
+            column23.Expression = columnExpression23;
+            columnExpression24.ColumnName = "Description";
+            columnExpression24.Table = table3;
+            column24.Expression = columnExpression24;
+            columnExpression25.ColumnName = "ExpiryDate";
+            columnExpression25.Table = table3;
+            column25.Expression = columnExpression25;
+            columnExpression26.ColumnName = "Unit";
+            columnExpression26.Table = table3;
+            column26.Expression = columnExpression26;
+            columnExpression27.ColumnName = "SentOrClacQty";
+            columnExpression27.Table = table3;
+            column27.Expression = columnExpression27;
+            columnExpression28.ColumnName = "ActualQty";
+            columnExpression28.Table = table3;
+            column28.Expression = columnExpression28;
+            columnExpression29.ColumnName = "CalcPriceUnit";
+            columnExpression29.Table = table3;
+            column29.Expression = columnExpression29;
+            columnExpression30.ColumnName = "AdjustedPriceUnit";
+            columnExpression30.Table = table3;
+            column30.Expression = columnExpression30;
+            selectQuery3.Columns.Add(column21);
+            selectQuery3.Columns.Add(column22);
+            selectQuery3.Columns.Add(column23);
+            selectQuery3.Columns.Add(column24);
+            selectQuery3.Columns.Add(column25);
+            selectQuery3.Columns.Add(column26);
+            selectQuery3.Columns.Add(column27);
+            selectQuery3.Columns.Add(column28);
+            selectQuery3.Columns.Add(column29);
+            selectQuery3.Columns.Add(column30);
+            selectQuery3.Name = "SR_FM_Stocktaking";
+            selectQuery3.Tables.Add(table3);
             this.dsFinance.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery3});
             // 
             // dsFinance1
             // 
@@ -3864,7 +3864,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1079F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 7F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.Custom),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
@@ -3912,7 +3912,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable13, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(675.4161F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable13, "Default", "SizeF", new System.Drawing.SizeF(112.5F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable14, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable14, "Default", "SizeF", new System.Drawing.SizeF(232.2173F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable14, "Default", "SizeF", new System.Drawing.SizeF(221.2181F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable15, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable15, "Default", "SizeF", new System.Drawing.SizeF(156.25F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable16, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
@@ -3973,44 +3973,44 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable41, "Default", "SizeF", new System.Drawing.SizeF(156.25F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable44, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 1.525879E-05F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable44, "Default", "SizeF", new System.Drawing.SizeF(130.2081F, 25F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable45, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 1.525879E-05F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable45, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable45, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable45, "Default", "SizeF", new System.Drawing.SizeF(221.2181F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable46, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 1.525879E-05F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable46, "Default", "SizeF", new System.Drawing.SizeF(130.2081F, 24.99998F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable47, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 1.525879E-05F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable47, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 24.99998F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable47, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable47, "Default", "SizeF", new System.Drawing.SizeF(221.2172F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable48, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable48, "Default", "SizeF", new System.Drawing.SizeF(130.208F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable49, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable49, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable49, "Default", "SizeF", new System.Drawing.SizeF(221.2172F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable50, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable50, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable51, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable51, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable51, "Default", "SizeF", new System.Drawing.SizeF(221.2173F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable52, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable52, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable53, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable53, "Default", "SizeF", new System.Drawing.SizeF(232.2178F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable53, "Default", "SizeF", new System.Drawing.SizeF(221.2173F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable54, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable54, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable55, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7819F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable55, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable55, "Default", "SizeF", new System.Drawing.SizeF(221.2173F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable56, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable56, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable57, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7819F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable57, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable57, "Default", "SizeF", new System.Drawing.SizeF(222.218F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable58, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable58, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable59, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7819F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable59, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable59, "Default", "SizeF", new System.Drawing.SizeF(222.2178F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(675.4161F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "SizeF", new System.Drawing.SizeF(112.5F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable60, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable60, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable61, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable61, "Default", "SizeF", new System.Drawing.SizeF(232.2178F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable61, "Default", "SizeF", new System.Drawing.SizeF(221.2172F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable62, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable62, "Default", "SizeF", new System.Drawing.SizeF(130.2079F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable64, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(651.532F, 0F)),
@@ -4018,39 +4018,39 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable66, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable66, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable67, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7819F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable67, "Default", "SizeF", new System.Drawing.SizeF(232.2175F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable67, "Default", "SizeF", new System.Drawing.SizeF(221.2173F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable68, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable68, "Default", "SizeF", new System.Drawing.SizeF(130.2079F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable69, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7819F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable69, "Default", "SizeF", new System.Drawing.SizeF(232.218F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable69, "Default", "SizeF", new System.Drawing.SizeF(221.2173F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable7, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable7, "Default", "SizeF", new System.Drawing.SizeF(156.25F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable70, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable70, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable71, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7819F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable71, "Default", "SizeF", new System.Drawing.SizeF(232.2179F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable71, "Default", "SizeF", new System.Drawing.SizeF(221.2174F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable72, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable72, "Default", "SizeF", new System.Drawing.SizeF(130.2078F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable73, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable73, "Default", "SizeF", new System.Drawing.SizeF(232.2178F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable73, "Default", "SizeF", new System.Drawing.SizeF(221.2172F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable74, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable74, "Default", "SizeF", new System.Drawing.SizeF(130.2078F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable75, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7818F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable75, "Default", "SizeF", new System.Drawing.SizeF(232.2181F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable75, "Default", "SizeF", new System.Drawing.SizeF(221.2175F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable76, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable76, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable77, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable77, "Default", "SizeF", new System.Drawing.SizeF(232.218F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable77, "Default", "SizeF", new System.Drawing.SizeF(221.2173F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable78, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable78, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable79, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7817F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable79, "Default", "SizeF", new System.Drawing.SizeF(232.2183F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable79, "Default", "SizeF", new System.Drawing.SizeF(221.2175F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable8, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable8, "Default", "SizeF", new System.Drawing.SizeF(130.2083F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable80, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.8237F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable80, "Default", "SizeF", new System.Drawing.SizeF(130.2084F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable81, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.782F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable81, "Default", "SizeF", new System.Drawing.SizeF(232.2178F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable81, "Default", "SizeF", new System.Drawing.SizeF(221.2172F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable82, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(651.532F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable82, "Default", "SizeF", new System.Drawing.SizeF(114.1666F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable84, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(156.25F, 0F)),
@@ -4064,7 +4064,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable90, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(651.532F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable90, "Default", "SizeF", new System.Drawing.SizeF(114.1666F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable93, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(857.7816F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable93, "Default", "SizeF", new System.Drawing.SizeF(232.2178F, 25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable93, "Default", "SizeF", new System.Drawing.SizeF(221.2177F, 25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Weight", 3D),
@@ -4521,8 +4521,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow96, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow97, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow99, "Default", "Weight", 1D)});
-            this.PageHeight = 1169;
-            this.PageWidth = 1099;
+            this.PageHeightF = 1169F;
+            this.PageWidthF = 1099F;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsRTL, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsCustomReportHeader, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -4565,7 +4565,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.2";
+            this.Version = "25.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();

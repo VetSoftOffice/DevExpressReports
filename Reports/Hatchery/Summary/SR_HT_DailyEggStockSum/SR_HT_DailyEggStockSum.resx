@@ -211,7 +211,7 @@ private void xrTableCell65_BeforePrint(object sender, System.ComponentModel.Canc
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     decimal FarmIntake= 0;
-    decimal HatcheryIntake= 0;
+    decimal HatcheryIndswetake= 0;
 
     if (GetCurrentColumnValue("FarmIntake") != null)
         FarmIntake= Convert.ToDecimal(GetCurrentColumnValue("FarmIntake"));
