@@ -1396,8 +1396,6 @@
             // 
             this.GroupFooter2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable6});
-            this.GroupFooter2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "[DistinctCustSuppNameCount] > 1")});
             this.GroupFooter2.Level = 2;
             this.GroupFooter2.Name = "GroupFooter2";
             this.GroupFooter2.Scripts.OnBeforePrint = "GroupFooter2_BeforePrint";
