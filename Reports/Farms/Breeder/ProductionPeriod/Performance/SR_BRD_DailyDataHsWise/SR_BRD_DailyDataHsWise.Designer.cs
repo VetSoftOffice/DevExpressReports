@@ -492,10 +492,12 @@
             this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.crossTabDataCell1.Name = "crossTabDataCell1";
+            this.crossTabDataCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.crossTabDataCell1.RowIndex = 3;
             // 
             // crossTabHeaderCell2
             // 
+            this.crossTabHeaderCell2.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell2.ColumnIndex = 1;
             this.crossTabHeaderCell2.ColumnSpan = 2;
             this.crossTabHeaderCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
@@ -506,6 +508,7 @@
             // 
             // crossTabHeaderCell3
             // 
+            this.crossTabHeaderCell3.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell3.ColumnIndex = 0;
             this.crossTabHeaderCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RowData]")});
@@ -529,6 +532,7 @@
             // 
             // crossTabHeaderCell6
             // 
+            this.crossTabHeaderCell6.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell6.ColumnIndex = 1;
             this.crossTabHeaderCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ColData2]")});
@@ -557,6 +561,7 @@
             // 
             // crossTabHeaderCell8
             // 
+            this.crossTabHeaderCell8.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell8.ColumnIndex = 0;
             this.crossTabHeaderCell8.Name = "crossTabHeaderCell8";
             this.crossTabHeaderCell8.RowIndex = 0;
@@ -587,6 +592,7 @@
             // 
             // crossTabHeaderCell1
             // 
+            this.crossTabHeaderCell1.BackColor = System.Drawing.Color.White;
             this.crossTabHeaderCell1.ColumnIndex = 1;
             this.crossTabHeaderCell1.Name = "crossTabHeaderCell1";
             this.crossTabHeaderCell1.RowIndex = 2;
@@ -1103,18 +1109,19 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Breed, "Default", "Description", "Breed"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CropNo, "Default", "Description", "CropNo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", null),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell14, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell14, "Default", "Text", "Grand Total"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Text", "Grand Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "Default", "TextFormatString", "Total {0}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "Default", "TextFormatString", null),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -1188,23 +1195,23 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(122.9167F, 20.00003F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Farm Code: [?Farm]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "مزرعة: [?Farm]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(218.8366F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "SizeF", new System.Drawing.SizeF(87.06636F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(254.8783F, 3.178914E-05F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "SizeF", new System.Drawing.SizeF(119.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "Default", "Text", "Crop No: [?CropNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel10, "ar", "Text", "محصول: [?CropNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel12, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(125.92F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel12, "Default", "SizeF", new System.Drawing.SizeF(92.91653F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel12, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(139.4617F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel12, "Default", "SizeF", new System.Drawing.SizeF(103.5417F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel12, "Default", "Text", "Flock Code: [?Flock]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel12, "ar", "Text", "قطيع: [?Flock]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(305.9029F, 3.178914E-05F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(405.5833F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(155.8163F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Breed: [?Breed]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "سلالة: [?Breed]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(461.7192F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(584.6359F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Date: [?DateFrom!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "التاريخ:[?DateFrom!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(606.0773F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(767.5356F, 3.178914E-05F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(200.9196F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "Std: [?BookPerf]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "قياسي: [?BookPerf]")});
