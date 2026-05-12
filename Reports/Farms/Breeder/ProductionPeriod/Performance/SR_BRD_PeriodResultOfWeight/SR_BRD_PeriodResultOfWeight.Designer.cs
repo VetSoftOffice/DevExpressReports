@@ -250,6 +250,7 @@
             this.Breed = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsBreeder = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.LineType = new DevExpress.XtraReports.Parameters.Parameter();
+            this.WeekNo = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
@@ -832,7 +833,7 @@
             crossTabRowDefinition3});
             crossTabRowField1.FieldName = "DateWeekEnd";
             crossTabRowField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
-            crossTabRowField2.FieldName = "rf_WeekNo";
+            crossTabRowField2.FieldName = "WeekNo";
             crossTabRowField3.FieldName = "rf_ProdWeekNo";
             this.xrCrossTab1.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
             crossTabRowField1,
@@ -1480,6 +1481,12 @@
             this.LineType.Name = "LineType";
             this.LineType.Visible = false;
             // 
+            // WeekNo
+            // 
+            this.WeekNo.DataMember = "SR_BRD_PeriodResultOfWeight";
+            this.WeekNo.Expression = "[rf_WeekNo]";
+            this.WeekNo.Name = "WeekNo";
+            // 
             // SR_BRD_PeriodResultOfWeight
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1511,7 +1518,8 @@
             this.ProdType_Prod,
             this.Produced,
             this.Rejected,
-            this.CopyRight});
+            this.CopyRight,
+            this.WeekNo});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.dsBreeder,
             this.sqlDataSource1});
@@ -1938,5 +1946,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.Parameters.Parameter LineType;
+        private DevExpress.XtraReports.UI.CalculatedField WeekNo;
     }
 }

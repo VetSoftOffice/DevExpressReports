@@ -162,10 +162,10 @@ decimal totalMaleMortReport = 0;
 decimal totalMalePlacedReport = 0;
 decimal totalMaleMortGroup = 0;
 decimal totalMalePlacedGroup = 0;
+decimal totalMalePlacedGroupCulls = 0;
 decimal totalMaleCullsReport = 0;
 decimal totalMalePlacedReportCulls = 0;
 decimal totalMaleCullsGroup = 0;
-decimal totalMalePlacedGroup = 0;
 decimal sumFemaleDeplPercent = 0;
 int countFemaleDeplPercent = 0;
 decimal sumFemaleDeplPercentGroup = 0;
@@ -264,7 +264,8 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 }
 
 private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-       
+             XRTableCell cell = sender as XRTableCell;
+
     // Calculate: (MaleBalance / FemaleBalance) * 100
     if (TotalfemaleBalanceGroup &gt; 0) {
         decimal result = (TotalmaleBalanceGroup / TotalfemaleBalanceGroup ) * 100;
@@ -277,6 +278,7 @@ private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+          XRTableCell cell = sender as XRTableCell;
      // Calculate: (MaleBalance / FemaleBalance) * 100
     if (TotalfemaleBalanceReport &gt; 0) {
         decimal result = (TotalmaleBalanceReport / TotalfemaleBalanceReport ) * 100;
