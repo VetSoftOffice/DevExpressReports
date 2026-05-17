@@ -371,25 +371,25 @@
           </DataFields>
           <ColumnDefinitions>
             <Item1 Ref="208" Width="87.5487061" />
-            <Item2 Ref="209" Width="53.1737175" />
-            <Item3 Ref="210" Width="53.1737175" />
-            <Item4 Ref="211" Width="53.1737175" />
-            <Item5 Ref="212" Width="53.1737175" />
-            <Item6 Ref="213" Width="63.4260025" />
-            <Item7 Ref="214" Width="89.4644" />
+            <Item2 Ref="209" Width="53.17372" />
+            <Item3 Ref="210" Width="53.17372" />
+            <Item4 Ref="211" Width="53.17372" />
+            <Item5 Ref="212" Width="53.17372" />
+            <Item6 Ref="213" Width="63.42599" />
+            <Item7 Ref="214" Width="89.46439" />
             <Item8 Ref="215" Width="75.8339157" />
-            <Item9 Ref="216" Width="68.79869" />
+            <Item9 Ref="216" Width="68.79868" />
           </ColumnDefinitions>
           <RowDefinitions>
-            <Item1 Ref="217" Height="49.9999771" />
-            <Item2 Ref="218" Height="25.0000019" />
-            <Item3 Ref="219" Height="1.99999988" Visible="false" />
-            <Item4 Ref="220" Height="1.99999988" Visible="false" />
-            <Item5 Ref="221" Height="1.99999988" Visible="false" />
-            <Item6 Ref="222" Height="1.99999988" Visible="false" />
-            <Item7 Ref="223" Height="1.99999988" Visible="false" />
-            <Item8 Ref="224" Height="1.99999988" Visible="false" />
-            <Item9 Ref="225" Height="25.0000019" />
+            <Item1 Ref="217" Height="49.99999" />
+            <Item2 Ref="218" Height="25.0000038" />
+            <Item3 Ref="219" Height="2.00000024" Visible="false" />
+            <Item4 Ref="220" Height="2.00000024" Visible="false" />
+            <Item5 Ref="221" Height="2.00000024" Visible="false" />
+            <Item6 Ref="222" Height="2.00000024" Visible="false" />
+            <Item7 Ref="223" Height="2.00000024" Visible="false" />
+            <Item8 Ref="224" Height="2.00000024" Visible="false" />
+            <Item9 Ref="225" Height="25.0000038" />
           </RowDefinitions>
           <Cells>
             <Item1 Ref="226" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" TextAlignment="MiddleCenter" BackColor="White" BorderColor="255,160,160,160" BorderWidth="1.4" />
@@ -507,42 +507,42 @@
     <Item1 Ref="300" Component="#Ref-40" Culture="Default" Path="HeightF" Data="20.00001" />
     <Item2 Ref="301" Component="#Ref-278" Culture="Default" Path="Font" Data="Arial, 8pt" />
     <Item3 Ref="302" Component="#Ref-278" Culture="Default" Path="TextFormatString" Data="" />
-    <Item4 Ref="303" Component="#Ref-227" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item4 Ref="303" Component="#Ref-227" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item5 Ref="304" Component="#Ref-227" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item6 Ref="305" Component="#Ref-226" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item7 Ref="306" Component="#Ref-226" Culture="Default" Path="Text" Data="Prod Date" />
     <Item8 Ref="307" Component="#Ref-226" Culture="ar" Path="Text" Data="تاريخ الانتاج" />
-    <Item9 Ref="308" Component="#Ref-243" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item9 Ref="308" Component="#Ref-243" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item10 Ref="309" Component="#Ref-244" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item11 Ref="310" Component="#Ref-247" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item12 Ref="311" Component="#Ref-247" Culture="Default" Path="Text" Data="Breed" />
     <Item13 Ref="312" Component="#Ref-247" Culture="ar" Path="Text" Data="سلالة" />
-    <Item14 Ref="313" Component="#Ref-248" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item14 Ref="313" Component="#Ref-248" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item15 Ref="314" Component="#Ref-249" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item16 Ref="315" Component="#Ref-252" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item17 Ref="316" Component="#Ref-252" Culture="Default" Path="Text" Data="Age" />
     <Item18 Ref="317" Component="#Ref-252" Culture="ar" Path="Text" Data="عمر الأم" />
-    <Item19 Ref="318" Component="#Ref-253" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item19 Ref="318" Component="#Ref-253" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item20 Ref="319" Component="#Ref-254" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item21 Ref="320" Component="#Ref-257" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item22 Ref="321" Component="#Ref-257" Culture="Default" Path="Text" Data="Status" />
     <Item23 Ref="322" Component="#Ref-257" Culture="ar" Path="Text" Data="درجة* الحالة" />
-    <Item24 Ref="323" Component="#Ref-258" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item24 Ref="323" Component="#Ref-258" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item25 Ref="324" Component="#Ref-280" Culture="Default" Path="Font" Data="Arial, 8pt, style=Bold" />
     <Item26 Ref="325" Component="#Ref-259" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item27 Ref="326" Component="#Ref-262" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item28 Ref="327" Component="#Ref-262" Culture="Default" Path="Text" Data="Location" />
     <Item29 Ref="328" Component="#Ref-262" Culture="ar" Path="Text" Data="المكان" />
-    <Item30 Ref="329" Component="#Ref-263" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item30 Ref="329" Component="#Ref-263" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item31 Ref="330" Component="#Ref-264" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item32 Ref="331" Component="#Ref-267" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item33 Ref="332" Component="#Ref-267" Culture="Default" Path="Text" Data="Received Eggs" />
     <Item34 Ref="333" Component="#Ref-267" Culture="ar" Path="Text" Data="بيض مستلم" />
-    <Item35 Ref="334" Component="#Ref-268" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item35 Ref="334" Component="#Ref-268" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item36 Ref="335" Component="#Ref-268" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item37 Ref="336" Component="#Ref-270" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item38 Ref="337" Component="#Ref-231" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item39 Ref="338" Component="#Ref-234" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item39 Ref="338" Component="#Ref-234" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item40 Ref="339" Component="#Ref-234" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
     <Item41 Ref="340" Component="#Ref-283" Culture="Default" Path="Font" Data="Arial, 8pt" />
     <Item42 Ref="341" Component="#Ref-235" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
@@ -632,7 +632,7 @@
     <Item126 Ref="425" Component="#Ref-273" Culture="Default" Path="SizeF" Data="607.7454,3" />
     <Item127 Ref="426" Component="#Ref-273" Culture="Default" Path="Visible" Data="false" />
     <Item128 Ref="427" Component="#Ref-197" Culture="Default" Path="LocationFloat" Data="3.003359,23.04173" />
-    <Item129 Ref="428" Component="#Ref-197" Culture="Default" Path="SizeF" Data="597.7666,111.999977" />
+    <Item129 Ref="428" Component="#Ref-197" Culture="Default" Path="SizeF" Data="597.7666,112" />
     <Item130 Ref="429" Component="#Ref-99" Culture="Default" Path="LocationFloat" Data="2.000054,0" />
     <Item131 Ref="430" Component="#Ref-99" Culture="Default" Path="SizeF" Data="238.2083,20" />
     <Item132 Ref="431" Component="#Ref-99" Culture="Default" Path="Text" Data="Hatchery No: [?HatchryNo]" />

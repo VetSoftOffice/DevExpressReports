@@ -121,12 +121,16 @@
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
   <data name="Type.Expression" xml:space="preserve">
-    <value>Iif([SR_HT_WeeklyFertHat.Type1] == 1,'Age',
-Iif([SR_HT_WeeklyFertHat.Type1] == 2,'Fertility %',
-Iif([SR_HT_WeeklyFertHat.Type1] == 3,'Hatchability %',
-Iif([SR_HT_WeeklyFertHat.Type1] == 4,'Hatchability Std. %','')
-)))
-</value>
+    <value>Iif([Type1] == 1,
+    Iif(?IsRTL == 1, 'العمر', 'Age'),
+Iif([Type1] == 2,
+    Iif(?IsRTL == 1, 'نسبة الخصوبة %', 'Fertility %'),
+Iif([Type1] == 3,
+    Iif(?IsRTL == 1, 'نسبة التفقيس %', 'Hatchability %'),
+Iif([Type1] == 4,
+    Iif(?IsRTL == 1, 'نسبة التفقيس القياسية %', 'Hatchability Std. %'),
+''
+))))</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
