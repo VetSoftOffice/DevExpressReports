@@ -57,7 +57,7 @@
                   </ExpressionBindings>
                   <StylePriority Ref="46" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
                 </Item1>
-                <Item2 Ref="47" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" Borders="All" BorderWidth="1.4">
+                <Item2 Ref="47" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleLeft" Borders="All" BorderWidth="1.4">
                   <ExpressionBindings>
                     <Item1 Ref="48" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
                     <Item2 Ref="49" EventName="BeforePrint" PropertyName="Text" Expression="[DriverName]" />

@@ -1221,8 +1221,8 @@
     <Item89 Ref="833" Component="#Ref-154" Culture="Default" Path="SizeF" Data="197.483,20" />
     <Item90 Ref="834" Component="#Ref-154" Culture="Default" Path="Text" Data=" From: [?DateFrom!dd-MM-yyyy]" />
     <Item91 Ref="835" Component="#Ref-154" Culture="ar" Path="Text" Data="من: [?DateFrom!dd-MM-yyyy]" />
-    <Item92 Ref="836" Component="#Ref-152" Culture="Default" Path="LocationFloat" Data="237.9167,0" />
-    <Item93 Ref="837" Component="#Ref-152" Culture="Default" Path="SizeF" Data="157.8997,20" />
+    <Item92 Ref="836" Component="#Ref-152" Culture="Default" Path="LocationFloat" Data="237.916718,0" />
+    <Item93 Ref="837" Component="#Ref-152" Culture="Default" Path="SizeF" Data="171.441376,20" />
     <Item94 Ref="838" Component="#Ref-152" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
     <Item95 Ref="839" Component="#Ref-152" Culture="ar" Path="Text" Data="الي: [?DateTo!dd-MM-yyyy]" />
     <Item96 Ref="840" Component="#Ref-60" Culture="Default" Path="LocationFloat" Data="949.6699,0" />
