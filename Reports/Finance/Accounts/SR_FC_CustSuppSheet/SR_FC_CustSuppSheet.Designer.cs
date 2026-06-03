@@ -262,6 +262,7 @@
             this.UniqueCurrencyCount = new DevExpress.XtraReports.Parameters.Parameter();
             this.UniqueDealType_ToCount = new DevExpress.XtraReports.Parameters.Parameter();
             this.UniqueCustSuppNameCount = new DevExpress.XtraReports.Parameters.Parameter();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).BeginInit();
@@ -1124,7 +1125,7 @@
             this.GroupHeader_CustSupp.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("CustSuppName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader_CustSupp.KeepTogether = true;
-            this.GroupHeader_CustSupp.Level = 2;
+            this.GroupHeader_CustSupp.Level = 3;
             this.GroupHeader_CustSupp.LockedInUserDesigner = true;
             this.GroupHeader_CustSupp.Name = "GroupHeader_CustSupp";
             // 
@@ -1305,6 +1306,7 @@
             // 
             this.GroupHeader_Currency.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("Currency", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader_Currency.Level = 1;
             this.GroupHeader_Currency.Name = "GroupHeader_Currency";
             this.GroupHeader_Currency.RepeatEveryPage = true;
             this.GroupHeader_Currency.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
@@ -1663,8 +1665,6 @@
             // 
             // GroupHeaderSub3_Currency
             // 
-            this.GroupHeaderSub3_Currency.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrTable5});
             this.GroupHeaderSub3_Currency.Name = "GroupHeaderSub3_Currency";
             // 
             // xrTable5
@@ -1767,7 +1767,7 @@
             this.GroupHeader_DealType.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("DealType_To", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader_DealType.KeepTogether = true;
-            this.GroupHeader_DealType.Level = 1;
+            this.GroupHeader_DealType.Level = 2;
             this.GroupHeader_DealType.Name = "GroupHeader_DealType";
             // 
             // IsShowEquivalentData
@@ -2122,6 +2122,14 @@
             this.UniqueCustSuppNameCount.ValueInfo = "0";
             this.UniqueCustSuppNameCount.Visible = false;
             // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrTable5});
+            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("Currency", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader1.Name = "GroupHeader1";
+            // 
             // SR_FC_CustSuppSheet
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2136,7 +2144,8 @@
             this.GroupFooter_DealType,
             this.GroupHeader_Currency,
             this.GroupFooter_Currency,
-            this.GroupFooter_CustSupp});
+            this.GroupFooter_CustSupp,
+            this.GroupHeader1});
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.BorderWidth = 0.5F;
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
@@ -2172,8 +2181,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_Currency, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_CustSupp, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_DealType, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeaderSub1_Currency, "Default", "HeightF", 22F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeaderSub3_Currency, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeaderSub3_Currency, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeaderSun2_Currency, "Default", "HeightF", 40F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader_Currency, "Default", "HeightF", 0.02137209F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader_CustSupp, "Default", "HeightF", 0F),
@@ -2353,7 +2363,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "SizeF", new System.Drawing.SizeF(817F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable3, "Default", "SizeF", new System.Drawing.SizeF(817F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.525879E-05F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.000317F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable5, "Default", "SizeF", new System.Drawing.SizeF(816.9999F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable6, "Default", "SizeF", new System.Drawing.SizeF(817F, 20F)),
@@ -2794,5 +2804,6 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell66;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell64;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell62;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
     }
 }
