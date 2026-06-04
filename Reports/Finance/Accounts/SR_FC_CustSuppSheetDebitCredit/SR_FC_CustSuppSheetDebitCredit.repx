@@ -1193,11 +1193,11 @@
     <Item174 Ref="696" Component="#Ref-504" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item175 Ref="697" Component="#Ref-504" Culture="Default" Path="Text" Data="OpeningBalance:" />
     <Item176 Ref="698" Component="#Ref-504" Culture="ar" Path="Text" Data="الرصيد الافتتاحي" />
-    <Item177 Ref="699" Component="#Ref-504" Culture="Default" Path="Weight" Data="7.9411893629871377" />
+    <Item177 Ref="699" Component="#Ref-504" Culture="Default" Path="Weight" Data="7.9411435988212347" />
     <Item178 Ref="700" Component="#Ref-510" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item179 Ref="701" Component="#Ref-510" Culture="Default" Path="Text" Data="tdOpenCredit" />
     <Item180 Ref="702" Component="#Ref-510" Culture="Default" Path="TextFormatString" Data="{0:#,##0.00;(#,##0.00);-}" />
-    <Item181 Ref="703" Component="#Ref-510" Culture="Default" Path="Weight" Data="1.0931094549969744" />
+    <Item181 Ref="703" Component="#Ref-510" Culture="Default" Path="Weight" Data="1.0931527402705576" />
     <Item182 Ref="704" Component="#Ref-370" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item183 Ref="705" Component="#Ref-370" Culture="Default" Path="Text" Data="Total Of Dealing Type [DealType_To]" />
     <Item184 Ref="706" Component="#Ref-370" Culture="ar" Path="Text" Data="الاجمالي لنوع التعامل [DealType_To]" />
@@ -1312,7 +1312,7 @@
     <Item293 Ref="815" Component="#Ref-506" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item294 Ref="816" Component="#Ref-506" Culture="Default" Path="Text" Data="tdOpenDebit" />
     <Item295 Ref="817" Component="#Ref-506" Culture="Default" Path="TextFormatString" Data="{0:#,##0.00;(#,##0.00);-}" />
-    <Item296 Ref="818" Component="#Ref-506" Culture="Default" Path="Weight" Data="1.075464597097664" />
+    <Item296 Ref="818" Component="#Ref-506" Culture="Default" Path="Weight" Data="1.0754670759899836" />
     <Item297 Ref="819" Component="#Ref-503" Culture="Default" Path="Weight" Data="1" />
     <Item298 Ref="820" Component="#Ref-413" Culture="Default" Path="Weight" Data="0.5" />
     <Item299 Ref="821" Component="#Ref-369" Culture="Default" Path="Weight" Data="1" />
