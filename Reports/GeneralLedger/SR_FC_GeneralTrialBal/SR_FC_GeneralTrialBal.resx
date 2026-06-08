@@ -123,6 +123,8 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
 using System.Text.RegularExpressions;
+using DevExpress.XtraPrinting;
+
 private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
        string rawValue = Parameters["AccountDim"].Value as string;
 
@@ -147,6 +149,8 @@ private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEve
     }
 
 }
+
+
 </value>
   </data>
 </root>
