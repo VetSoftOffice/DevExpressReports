@@ -163,27 +163,27 @@
                     <SubBands>
                       <Item1 Ref="102" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="103" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="103" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="104" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="105" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="105" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="106" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="107" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="107" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="108" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="109" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="109" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="110" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="111" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="111" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="112" UseFont="false" UseTextAlignment="false" />
                           </Item5>
-                          <Item6 Ref="113" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                          <Item6 Ref="113" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="114" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="115" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="115" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="116" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -193,7 +193,7 @@
                       </Item1>
                       <Item2 Ref="118" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="119" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="119" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="120" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -221,13 +221,13 @@
         </Item2>
         <Item3 Ref="128" ControlType="SubBand" Name="PageHeaderSub1">
           <Controls>
-            <Item1 Ref="129" ControlType="XRLabel" Name="xrLabel5" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+            <Item1 Ref="129" ControlType="XRLabel" Name="xrLabel5" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="130" UseTextAlignment="false" />
             </Item1>
-            <Item2 Ref="131" ControlType="XRLabel" Name="xrLabel4" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+            <Item2 Ref="131" ControlType="XRLabel" Name="xrLabel4" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="132" UseTextAlignment="false" />
             </Item2>
-            <Item3 Ref="133" ControlType="XRLabel" Name="xrLabel2" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+            <Item3 Ref="133" ControlType="XRLabel" Name="xrLabel2" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="134" UseTextAlignment="false" />
             </Item3>
           </Controls>
@@ -258,23 +258,23 @@
                 <Item1 Ref="147" SummaryType="Average" FieldName="ProdPerc" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="148" Width="78.91402" />
-                <Item2 Ref="149" Width="71.62237" />
-                <Item3 Ref="150" Width="63.289" />
-                <Item4 Ref="151" Width="61.20572" />
-                <Item5 Ref="152" Width="96.51232" />
-                <Item6 Ref="153" Width="89.33072" />
-                <Item7 Ref="154" Width="66.68102" />
-                <Item8 Ref="155" Width="56.88651" />
+                <Item1 Ref="148" Width="78.9140244" />
+                <Item2 Ref="149" Width="71.6223755" />
+                <Item3 Ref="150" Width="63.2890053" />
+                <Item4 Ref="151" Width="61.2057228" />
+                <Item5 Ref="152" Width="96.51233" />
+                <Item6 Ref="153" Width="89.33073" />
+                <Item7 Ref="154" Width="66.68103" />
+                <Item8 Ref="155" Width="56.8865128" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="156" Height="75" />
                 <Item2 Ref="157" />
-                <Item3 Ref="158" Visible="false" />
-                <Item4 Ref="159" Visible="false" />
-                <Item5 Ref="160" Visible="false" />
-                <Item6 Ref="161" Visible="false" />
-                <Item7 Ref="162" Visible="false" />
+                <Item3 Ref="158" Height="2" Visible="false" />
+                <Item4 Ref="159" Height="2" Visible="false" />
+                <Item5 Ref="160" Height="2" Visible="false" />
+                <Item6 Ref="161" Height="2" Visible="false" />
+                <Item7 Ref="162" Height="2" Visible="false" />
                 <Item8 Ref="163" />
               </RowDefinitions>
               <Cells>
@@ -647,8 +647,8 @@
     <Item117 Ref="424" Component="#Ref-82" Culture="Default" Path="HeightF" Data="20" />
     <Item118 Ref="425" Component="#Ref-42" Culture="Default" Path="HeightF" Data="20" />
     <Item119 Ref="426" Component="#Ref-138" Culture="Default" Path="LocationFloat" Data="0,21.16667" />
-    <Item120 Ref="427" Component="#Ref-138" Culture="Default" Path="SizeF" Data="584.44165,250" />
-    <Item121 Ref="428" Component="#Ref-294" Culture="Default" Path="LocationFloat" Data="344.2075,0" />
+    <Item120 Ref="427" Component="#Ref-138" Culture="Default" Path="SizeF" Data="584.4417,135" />
+    <Item121 Ref="428" Component="#Ref-294" Culture="Default" Path="LocationFloat" Data="599.415833,0" />
     <Item122 Ref="429" Component="#Ref-294" Culture="Default" Path="SizeF" Data="258.3333,23" />
     <Item123 Ref="430" Component="#Ref-294" Culture="Default" Path="Text" Data="Production Percent" />
     <Item124 Ref="431" Component="#Ref-294" Culture="ar" Path="Text" Data="نسبة الانتاج" />

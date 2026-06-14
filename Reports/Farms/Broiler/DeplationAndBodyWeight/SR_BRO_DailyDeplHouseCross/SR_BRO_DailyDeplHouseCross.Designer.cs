@@ -519,6 +519,8 @@
             // 
             // xrLabel2
             // 
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -627,7 +629,7 @@
             crossTabColumnDefinition1.Visible = false;
             crossTabColumnDefinition2.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(64.87656F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(64.87655F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.12658F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.99859F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.99859F),
@@ -637,8 +639,8 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.99859F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.99859F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.99859F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(65.66341F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(65.66341F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(65.6634F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(65.6634F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2});
             crossTabColumnField1.FieldName = "HouseCode";
@@ -669,9 +671,9 @@
             crossTabRowDefinition9.Visible = false;
             crossTabRowDefinition10.Visible = false;
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(41.66668F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(41.66668F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50.00002F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(41.66669F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(41.66669F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50.00003F),
             crossTabRowDefinition1,
             crossTabRowDefinition2,
             crossTabRowDefinition3,
@@ -2105,6 +2107,10 @@
             this.DataMember = "SR_BRO_DailyDeplHouseCross";
             this.DataSource = this.sqlDataSource4;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.AgeDay, "Default", "Description", "AgeDay"),

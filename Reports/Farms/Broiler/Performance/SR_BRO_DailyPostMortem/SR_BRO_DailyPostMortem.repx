@@ -340,27 +340,27 @@
                     <SubBands>
                       <Item1 Ref="179" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="180" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="180" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="181" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="182" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="182" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="183" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="184" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="184" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="185" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="186" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="186" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="187" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="188" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="188" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="189" UseFont="false" UseTextAlignment="false" />
                           </Item5>
-                          <Item6 Ref="190" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                          <Item6 Ref="190" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="191" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="192" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="192" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="193" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -370,7 +370,7 @@
                       </Item1>
                       <Item2 Ref="195" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="196" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="196" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="197" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -431,11 +431,11 @@
                 <Item1 Ref="221" Width="99.99999" />
                 <Item2 Ref="222" Width="99.99999" />
                 <Item3 Ref="223" Width="99.99999" />
-                <Item4 Ref="224" Width="14.5833387" Visible="false" />
-                <Item5 Ref="225" Width="21.8749981" Visible="false" />
-                <Item6 Ref="226" Width="27.0833683" Visible="false" />
-                <Item7 Ref="227" Width="16.66663" Visible="false" />
-                <Item8 Ref="228" Width="22.91669" Visible="false" />
+                <Item4 Ref="224" Width="1.99999988" Visible="false" />
+                <Item5 Ref="225" Width="2.00003052" Visible="false" />
+                <Item6 Ref="226" Width="1.99999988" Visible="false" />
+                <Item7 Ref="227" Width="2.00003052" Visible="false" />
+                <Item8 Ref="228" Width="2" Visible="false" />
                 <Item9 Ref="229" Width="71.875" />
               </ColumnDefinitions>
               <RowDefinitions>
@@ -446,25 +446,25 @@
                 <Item5 Ref="234" Height="39.5833435" />
                 <Item6 Ref="235" Height="25.0000019" />
                 <Item7 Ref="236" Height="50.0000038" />
-                <Item8 Ref="237" Height="25.0000019" Visible="false" />
-                <Item9 Ref="238" Height="25.0000019" Visible="false" />
+                <Item8 Ref="237" Height="1.99999988" Visible="false" />
+                <Item9 Ref="238" Height="2.00003052" Visible="false" />
               </RowDefinitions>
               <Cells>
-                <Item1 Ref="239" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="6" TextAlignment="MiddleCenter" />
+                <Item1 Ref="239" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="6" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item2 Ref="240" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="2" RowIndex="6">
                   <ExpressionBindings>
                     <Item1 Ref="241" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
                 </Item2>
-                <Item3 Ref="242" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="2" RowIndex="5" TextAlignment="MiddleCenter" />
+                <Item3 Ref="242" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="2" RowIndex="5" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item4 Ref="243" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="6" BackColor="White" />
                 <Item5 Ref="244" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="0" RowIndex="8" ColumnSpan="2" />
                 <Item6 Ref="245" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="2" RowIndex="8" />
-                <Item7 Ref="246" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="1" RowIndex="0" RowSpan="6" TextAlignment="MiddleCenter" />
+                <Item7 Ref="246" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="1" RowIndex="0" RowSpan="6" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item8 Ref="247" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" ColumnIndex="1" RowIndex="6" BackColor="White" />
                 <Item9 Ref="248" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="0" RowIndex="7" ColumnSpan="2" />
                 <Item10 Ref="249" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="2" RowIndex="7" />
-                <Item11 Ref="250" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="8" RowIndex="0" RowSpan="6" TextAlignment="MiddleCenter" />
+                <Item11 Ref="250" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="8" RowIndex="0" RowSpan="6" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item12 Ref="251" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="8" RowIndex="6">
                   <ExpressionBindings>
                     <Item1 Ref="252" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
@@ -473,27 +473,27 @@
                 </Item12>
                 <Item13 Ref="254" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="8" RowIndex="7" />
                 <Item14 Ref="255" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="8" RowIndex="8" />
-                <Item15 Ref="256" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" ColumnIndex="2" RowIndex="4" TextAlignment="MiddleCenter" />
+                <Item15 Ref="256" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" ColumnIndex="2" RowIndex="4" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item16 Ref="257" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="3" RowIndex="4" RowSpan="2" />
                 <Item17 Ref="258" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="3" RowIndex="6" />
                 <Item18 Ref="259" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="3" RowIndex="7" />
                 <Item19 Ref="260" ControlType="XRCrossTabCell" Name="crossTabTotalCell8" ColumnIndex="3" RowIndex="8" />
-                <Item20 Ref="261" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="2" RowIndex="3" ColumnSpan="2" TextAlignment="MiddleCenter" />
+                <Item20 Ref="261" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="2" RowIndex="3" ColumnSpan="2" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item21 Ref="262" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" ColumnIndex="4" RowIndex="3" RowSpan="3" />
                 <Item22 Ref="263" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="4" RowIndex="6" />
                 <Item23 Ref="264" ControlType="XRCrossTabCell" Name="crossTabTotalCell10" ColumnIndex="4" RowIndex="7" />
                 <Item24 Ref="265" ControlType="XRCrossTabCell" Name="crossTabTotalCell11" ColumnIndex="4" RowIndex="8" />
-                <Item25 Ref="266" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="2" RowIndex="2" ColumnSpan="3" TextAlignment="MiddleCenter" />
+                <Item25 Ref="266" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="2" RowIndex="2" ColumnSpan="3" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item26 Ref="267" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="5" RowIndex="2" RowSpan="4" />
                 <Item27 Ref="268" ControlType="XRCrossTabCell" Name="crossTabTotalCell12" ColumnIndex="5" RowIndex="6" />
                 <Item28 Ref="269" ControlType="XRCrossTabCell" Name="crossTabTotalCell13" ColumnIndex="5" RowIndex="7" />
                 <Item29 Ref="270" ControlType="XRCrossTabCell" Name="crossTabTotalCell14" ColumnIndex="5" RowIndex="8" />
-                <Item30 Ref="271" ControlType="XRCrossTabCell" Name="crossTabHeaderCell15" ColumnIndex="2" RowIndex="1" ColumnSpan="4" TextAlignment="MiddleCenter" />
+                <Item30 Ref="271" ControlType="XRCrossTabCell" Name="crossTabHeaderCell15" ColumnIndex="2" RowIndex="1" ColumnSpan="4" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item31 Ref="272" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="6" RowIndex="1" RowSpan="5" />
                 <Item32 Ref="273" ControlType="XRCrossTabCell" Name="crossTabTotalCell15" ColumnIndex="6" RowIndex="6" />
                 <Item33 Ref="274" ControlType="XRCrossTabCell" Name="crossTabTotalCell16" ColumnIndex="6" RowIndex="7" />
                 <Item34 Ref="275" ControlType="XRCrossTabCell" Name="crossTabTotalCell17" ColumnIndex="6" RowIndex="8" />
-                <Item35 Ref="276" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="2" RowIndex="0" ColumnSpan="5" TextAlignment="MiddleCenter" />
+                <Item35 Ref="276" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="2" RowIndex="0" ColumnSpan="5" TextAlignment="MiddleCenter" BackColor="White" />
                 <Item36 Ref="277" ControlType="XRCrossTabCell" Name="crossTabHeaderCell18" ColumnIndex="7" RowIndex="0" RowSpan="6" />
                 <Item37 Ref="278" ControlType="XRCrossTabCell" Name="crossTabTotalCell18" ColumnIndex="7" RowIndex="6" />
                 <Item38 Ref="279" ControlType="XRCrossTabCell" Name="crossTabTotalCell19" ColumnIndex="7" RowIndex="7" />
@@ -791,7 +791,7 @@
     <Item94 Ref="484" Component="#Ref-42" Culture="Default" Path="HeightF" Data="20" />
     <Item95 Ref="485" Component="#Ref-21" Culture="Default" Path="Description" Data="WeekNo" />
     <Item96 Ref="486" Component="#Ref-210" Culture="Default" Path="LocationFloat" Data="161.3547,75.83332" />
-    <Item97 Ref="487" Component="#Ref-210" Culture="Default" Path="SizeF" Data="475,279.5834" />
+    <Item97 Ref="487" Component="#Ref-210" Culture="Default" Path="SizeF" Data="381.875031,233.5834" />
     <Item98 Ref="488" Component="#Ref-207" Culture="Default" Path="LocationFloat" Data="0,10.00002" />
     <Item99 Ref="489" Component="#Ref-207" Culture="Default" Path="SizeF" Data="190.1913,20" />
     <Item100 Ref="490" Component="#Ref-207" Culture="Default" Path="Text" Data="From: [?DateFrom!dd-MM-yyyy]" />

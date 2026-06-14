@@ -498,6 +498,8 @@
             this.tfTotal.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.tfTotal.StylePriority.UseFont = false;
             this.tfTotal.StylePriority.UsePadding = false;
+            this.tfTotal.StylePriority.UseTextAlignment = false;
+            this.tfTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // tfDebit_GPT
             // 

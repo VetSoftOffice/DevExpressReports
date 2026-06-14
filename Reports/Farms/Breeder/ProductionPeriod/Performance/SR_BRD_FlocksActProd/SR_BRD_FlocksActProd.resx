@@ -129,17 +129,17 @@
   <data name="MonthName.Expression" xml:space="preserve">
     <value>IIf(
     ?IsRTL, 
-    IIf([DateMonthNo] == 1, 'يناير',
-        IIf([DateMonthNo] == 2, 'فبراير',
-            IIf([DateMonthNo] == 3, 'مارس',
-                IIf([DateMonthNo] == 4, 'أبريل',
-                    IIf([DateMonthNo] == 5, 'مايو',
-                        IIf([DateMonthNo] == 6, 'يونيو',
-                            IIf([DateMonthNo] == 7, 'يوليو',
-                                IIf([DateMonthNo] == 8, 'أغسطس',
-                                    IIf([DateMonthNo] == 9, 'سبتمبر',
-                                        IIf([DateMonthNo] == 10, 'أكتوبر',
-                                            IIf([DateMonthNo] == 11, 'نوفمبر',
+    IIf([DataMonthNo] == 1, 'يناير',
+        IIf([DataMonthNo] == 2, 'فبراير',
+            IIf([DataMonthNo] == 3, 'مارس',
+                IIf([DataMonthNo] == 4, 'أبريل',
+                    IIf([DataMonthNo] == 5, 'مايو',
+                        IIf([DataMonthNo] == 6, 'يونيو',
+                            IIf([DataMonthNo] == 7, 'يوليو',
+                                IIf([DataMonthNo] == 8, 'أغسطس',
+                                    IIf([DataMonthNo] == 9, 'سبتمبر',
+                                        IIf([DataMonthNo] == 10, 'أكتوبر',
+                                            IIf([DataMonthNo] == 11, 'نوفمبر',
                                                 'ديسمبر'
                                             )
                                         )
@@ -152,17 +152,17 @@
             )
         )
     ),
-    IIf([DateMonthNo] == 1, 'Jan',
-        IIf([DateMonthNo] == 2, 'Feb',
-            IIf([DateMonthNo] == 3, 'Mar',
-                IIf([DateMonthNo] == 4, 'Apr',
-                    IIf([DateMonthNo] == 5, 'May',
-                        IIf([DateMonthNo] == 6, 'Jun',
-                            IIf([DateMonthNo] == 7, 'Jul',
-                                IIf([DateMonthNo] == 8, 'Aug',
-                                    IIf([DateMonthNo] == 9, 'Sep',
-                                        IIf([DateMonthNo] == 10, 'Oct',
-                                            IIf([DateMonthNo] == 11, 'Nov',
+    IIf([DataMonthNo] == 1, 'Jan',
+        IIf([DataMonthNo] == 2, 'Feb',
+            IIf([DataMonthNo] == 3, 'Mar',
+                IIf([DataMonthNo] == 4, 'Apr',
+                    IIf([DataMonthNo] == 5, 'May',
+                        IIf([DataMonthNo] == 6, 'Jun',
+                            IIf([DataMonthNo] == 7, 'Jul',
+                                IIf([DataMonthNo] == 8, 'Aug',
+                                    IIf([DataMonthNo] == 9, 'Sep',
+                                        IIf([DataMonthNo] == 10, 'Oct',
+                                            IIf([DataMonthNo] == 11, 'Nov',
                                                 'Dec'
                                             )
                                         )
@@ -175,7 +175,8 @@
             )
         )
     )
-)</value>
+)
+</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
