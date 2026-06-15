@@ -93,6 +93,15 @@
             this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
+            this.tHeader = new DevExpress.XtraReports.UI.XRTable();
+            this.trHeader = new DevExpress.XtraReports.UI.XRTableRow();
+            this.thFarmCode = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thCrop = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thFlock = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thHouse = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thClosing = new DevExpress.XtraReports.UI.XRTableCell();
+            this.thAge = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.ReportFooterSub = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
@@ -103,14 +112,6 @@
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.tHeader = new DevExpress.XtraReports.UI.XRTable();
-            this.trHeader = new DevExpress.XtraReports.UI.XRTableRow();
-            this.thFarmCode = new DevExpress.XtraReports.UI.XRTableCell();
-            this.thCrop = new DevExpress.XtraReports.UI.XRTableCell();
-            this.thFlock = new DevExpress.XtraReports.UI.XRTableCell();
-            this.thHouse = new DevExpress.XtraReports.UI.XRTableCell();
-            this.thClosing = new DevExpress.XtraReports.UI.XRTableCell();
-            this.thAge = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.tFooter = new DevExpress.XtraReports.UI.XRTable();
             this.trFooter = new DevExpress.XtraReports.UI.XRTableRow();
@@ -135,7 +136,6 @@
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.UniqueFarmCodeCount = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tFooter)).BeginInit();
@@ -400,12 +400,85 @@
             // xrLabel5
             // 
             this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel5.CanPublishOptions.Xls = false;
+            this.xrLabel5.CanPublishOptions.Xlsx = false;
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel5.Scripts.OnBeforePrint = "xrLabel5_BeforePrint";
             this.xrLabel5.StylePriority.UseBorders = false;
             this.xrLabel5.StylePriority.UseFont = false;
+            // 
+            // SubBand5
+            // 
+            this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.tHeader});
+            this.SubBand5.Name = "SubBand5";
+            // 
+            // tHeader
+            // 
+            this.tHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.tHeader.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tHeader.Name = "tHeader";
+            this.tHeader.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.trHeader});
+            this.tHeader.StylePriority.UseBackColor = false;
+            this.tHeader.StylePriority.UseBorders = false;
+            // 
+            // trHeader
+            // 
+            this.trHeader.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.thFarmCode,
+            this.thCrop,
+            this.thFlock,
+            this.thHouse,
+            this.thClosing,
+            this.thAge});
+            this.trHeader.Name = "trHeader";
+            // 
+            // thFarmCode
+            // 
+            this.thFarmCode.Multiline = true;
+            this.thFarmCode.Name = "thFarmCode";
+            this.thFarmCode.StylePriority.UseFont = false;
+            this.thFarmCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // thCrop
+            // 
+            this.thCrop.Multiline = true;
+            this.thCrop.Name = "thCrop";
+            this.thCrop.StylePriority.UseFont = false;
+            this.thCrop.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // thFlock
+            // 
+            this.thFlock.Multiline = true;
+            this.thFlock.Name = "thFlock";
+            this.thFlock.StylePriority.UseFont = false;
+            this.thFlock.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // thHouse
+            // 
+            this.thHouse.Multiline = true;
+            this.thHouse.Name = "thHouse";
+            this.thHouse.StylePriority.UseFont = false;
+            this.thHouse.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // thClosing
+            // 
+            this.thClosing.Multiline = true;
+            this.thClosing.Name = "thClosing";
+            this.thClosing.StylePriority.UseFont = false;
+            this.thClosing.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // thAge
+            // 
+            this.thAge.Multiline = true;
+            this.thAge.Name = "thAge";
+            this.thAge.StylePriority.UseFont = false;
+            this.thAge.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // ReportFooter
             // 
@@ -499,75 +572,12 @@
             this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WholePage;
             this.GroupHeader1.Name = "GroupHeader1";
             // 
-            // tHeader
-            // 
-            this.tHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.tHeader.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.tHeader.Name = "tHeader";
-            this.tHeader.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.trHeader});
-            this.tHeader.StylePriority.UseBackColor = false;
-            this.tHeader.StylePriority.UseBorders = false;
-            // 
-            // trHeader
-            // 
-            this.trHeader.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.thFarmCode,
-            this.thCrop,
-            this.thFlock,
-            this.thHouse,
-            this.thClosing,
-            this.thAge});
-            this.trHeader.Name = "trHeader";
-            // 
-            // thFarmCode
-            // 
-            this.thFarmCode.Multiline = true;
-            this.thFarmCode.Name = "thFarmCode";
-            this.thFarmCode.StylePriority.UseFont = false;
-            this.thFarmCode.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // thCrop
-            // 
-            this.thCrop.Multiline = true;
-            this.thCrop.Name = "thCrop";
-            this.thCrop.StylePriority.UseFont = false;
-            this.thCrop.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // thFlock
-            // 
-            this.thFlock.Multiline = true;
-            this.thFlock.Name = "thFlock";
-            this.thFlock.StylePriority.UseFont = false;
-            this.thFlock.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // thHouse
-            // 
-            this.thHouse.Multiline = true;
-            this.thHouse.Name = "thHouse";
-            this.thHouse.StylePriority.UseFont = false;
-            this.thHouse.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // thClosing
-            // 
-            this.thClosing.Multiline = true;
-            this.thClosing.Name = "thClosing";
-            this.thClosing.StylePriority.UseFont = false;
-            this.thClosing.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // thAge
-            // 
-            this.thAge.Multiline = true;
-            this.thAge.Name = "thAge";
-            this.thAge.StylePriority.UseFont = false;
-            this.thAge.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
             // GroupFooter1
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.tFooter});
+            this.GroupFooter1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueFarmCodeCount > 1")});
             this.GroupFooter1.GroupUnion = DevExpress.XtraReports.UI.GroupFooterUnion.WithLastDetail;
             this.GroupFooter1.Name = "GroupFooter1";
             this.GroupFooter1.Scripts.OnBeforePrint = "GroupFooter1_BeforePrint";
@@ -825,12 +835,6 @@
             this.UniqueFarmCodeCount.ValueInfo = "0";
             this.UniqueFarmCodeCount.Visible = false;
             // 
-            // SubBand5
-            // 
-            this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.tHeader});
-            this.SubBand5.Name = "SubBand5";
-            // 
             // SR_FC_FR_LAY_CloseBalance
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -854,6 +858,10 @@
             this.DataMember = "SR_FC_FR_CloseBalance";
             this.DataSource = this.dsFinance;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "Default", "Description", "From"),
@@ -984,7 +992,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(100F, 20.00003F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(148.9583F, 20.00003F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "[?DateFrom!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "[?DateFrom!dd/MM/yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "TextFormatString", "{0:N2}"),

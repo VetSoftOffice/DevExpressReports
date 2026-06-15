@@ -707,6 +707,8 @@
             // 
             // xrLabel2
             // 
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "[CustomerName]")});
             this.xrLabel2.Multiline = true;
@@ -716,6 +718,8 @@
             // 
             // xrLabel1
             // 
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "[CustomerCode]")});
             this.xrLabel1.Multiline = true;
@@ -737,6 +741,8 @@
             // 
             // xrLabel20
             // 
+            this.xrLabel20.CanPublishOptions.Xls = false;
+            this.xrLabel20.CanPublishOptions.Xlsx = false;
             this.xrLabel20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerStatus]")});
             this.xrLabel20.Multiline = true;
@@ -746,6 +752,8 @@
             // 
             // xrLabel19
             // 
+            this.xrLabel19.CanPublishOptions.Xls = false;
+            this.xrLabel19.CanPublishOptions.Xlsx = false;
             this.xrLabel19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([CustomerStatus])")});
             this.xrLabel19.Multiline = true;
@@ -755,6 +763,8 @@
             // 
             // xrLabel4
             // 
+            this.xrLabel4.CanPublishOptions.Xls = false;
+            this.xrLabel4.CanPublishOptions.Xlsx = false;
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerType]")});
             this.xrLabel4.Multiline = true;
@@ -764,6 +774,8 @@
             // 
             // xrLabel3
             // 
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([CustomerType])")});
             this.xrLabel3.Multiline = true;
@@ -787,6 +799,8 @@
             // 
             // xrLabel23
             // 
+            this.xrLabel23.CanPublishOptions.Xls = false;
+            this.xrLabel23.CanPublishOptions.Xlsx = false;
             this.xrLabel23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PriceLevel]")});
             this.xrLabel23.Multiline = true;
@@ -796,6 +810,8 @@
             // 
             // xrLabel22
             // 
+            this.xrLabel22.CanPublishOptions.Xls = false;
+            this.xrLabel22.CanPublishOptions.Xlsx = false;
             this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[AccountCode]")});
             this.xrLabel22.Multiline = true;
@@ -805,6 +821,8 @@
             // 
             // xrLabel21
             // 
+            this.xrLabel21.CanPublishOptions.Xls = false;
+            this.xrLabel21.CanPublishOptions.Xlsx = false;
             this.xrLabel21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DealingStartDate]")});
             this.xrLabel21.Multiline = true;
@@ -814,6 +832,8 @@
             // 
             // xrLabel7
             // 
+            this.xrLabel7.CanPublishOptions.Xls = false;
+            this.xrLabel7.CanPublishOptions.Xlsx = false;
             this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([PriceLevel])")});
             this.xrLabel7.Multiline = true;
@@ -823,6 +843,8 @@
             // 
             // xrLabel6
             // 
+            this.xrLabel6.CanPublishOptions.Xls = false;
+            this.xrLabel6.CanPublishOptions.Xlsx = false;
             this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([AccountCode])")});
             this.xrLabel6.Multiline = true;
@@ -832,6 +854,8 @@
             // 
             // xrLabel5
             // 
+            this.xrLabel5.CanPublishOptions.Xls = false;
+            this.xrLabel5.CanPublishOptions.Xlsx = false;
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -853,6 +877,8 @@
             // 
             // xrLabel26
             // 
+            this.xrLabel26.CanPublishOptions.Xls = false;
+            this.xrLabel26.CanPublishOptions.Xlsx = false;
             this.xrLabel26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CreditLimit]")});
             this.xrLabel26.Multiline = true;
@@ -862,6 +888,8 @@
             // 
             // xrLabel25
             // 
+            this.xrLabel25.CanPublishOptions.Xls = false;
+            this.xrLabel25.CanPublishOptions.Xlsx = false;
             this.xrLabel25.Multiline = true;
             this.xrLabel25.Name = "xrLabel25";
             this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -869,6 +897,8 @@
             // 
             // xrLabel24
             // 
+            this.xrLabel24.CanPublishOptions.Xls = false;
+            this.xrLabel24.CanPublishOptions.Xlsx = false;
             this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PayWay]")});
             this.xrLabel24.Multiline = true;
@@ -878,6 +908,8 @@
             // 
             // xrLabel10
             // 
+            this.xrLabel10.CanPublishOptions.Xls = false;
+            this.xrLabel10.CanPublishOptions.Xlsx = false;
             this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([CreditLimit])")});
             this.xrLabel10.Multiline = true;
@@ -887,6 +919,8 @@
             // 
             // xrLabel9
             // 
+            this.xrLabel9.CanPublishOptions.Xls = false;
+            this.xrLabel9.CanPublishOptions.Xlsx = false;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([PayPeriod])")});
             this.xrLabel9.Multiline = true;
@@ -896,6 +930,8 @@
             // 
             // xrLabel8
             // 
+            this.xrLabel8.CanPublishOptions.Xls = false;
+            this.xrLabel8.CanPublishOptions.Xlsx = false;
             this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([PayWay])")});
             this.xrLabel8.Multiline = true;
@@ -919,6 +955,8 @@
             // 
             // xrLabel29
             // 
+            this.xrLabel29.CanPublishOptions.Xls = false;
+            this.xrLabel29.CanPublishOptions.Xlsx = false;
             this.xrLabel29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Fax]")});
             this.xrLabel29.Multiline = true;
@@ -928,6 +966,8 @@
             // 
             // xrLabel28
             // 
+            this.xrLabel28.CanPublishOptions.Xls = false;
+            this.xrLabel28.CanPublishOptions.Xlsx = false;
             this.xrLabel28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Mobile]")});
             this.xrLabel28.Multiline = true;
@@ -937,6 +977,8 @@
             // 
             // xrLabel27
             // 
+            this.xrLabel27.CanPublishOptions.Xls = false;
+            this.xrLabel27.CanPublishOptions.Xlsx = false;
             this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Tel]")});
             this.xrLabel27.Multiline = true;
@@ -946,6 +988,8 @@
             // 
             // xrLabel13
             // 
+            this.xrLabel13.CanPublishOptions.Xls = false;
+            this.xrLabel13.CanPublishOptions.Xlsx = false;
             this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Fax])")});
             this.xrLabel13.Multiline = true;
@@ -955,6 +999,8 @@
             // 
             // xrLabel12
             // 
+            this.xrLabel12.CanPublishOptions.Xls = false;
+            this.xrLabel12.CanPublishOptions.Xlsx = false;
             this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Mobile])")});
             this.xrLabel12.Multiline = true;
@@ -964,6 +1010,8 @@
             // 
             // xrLabel11
             // 
+            this.xrLabel11.CanPublishOptions.Xls = false;
+            this.xrLabel11.CanPublishOptions.Xlsx = false;
             this.xrLabel11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Tel])")});
             this.xrLabel11.Multiline = true;
@@ -985,6 +1033,8 @@
             // 
             // xrLabel31
             // 
+            this.xrLabel31.CanPublishOptions.Xls = false;
+            this.xrLabel31.CanPublishOptions.Xlsx = false;
             this.xrLabel31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Address]")});
             this.xrLabel31.Multiline = true;
@@ -994,6 +1044,8 @@
             // 
             // xrLabel30
             // 
+            this.xrLabel30.CanPublishOptions.Xls = false;
+            this.xrLabel30.CanPublishOptions.Xlsx = false;
             this.xrLabel30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[POBox]")});
             this.xrLabel30.Multiline = true;
@@ -1003,6 +1055,8 @@
             // 
             // xrLabel15
             // 
+            this.xrLabel15.CanPublishOptions.Xls = false;
+            this.xrLabel15.CanPublishOptions.Xlsx = false;
             this.xrLabel15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Address])")});
             this.xrLabel15.Multiline = true;
@@ -1012,6 +1066,8 @@
             // 
             // xrLabel14
             // 
+            this.xrLabel14.CanPublishOptions.Xls = false;
+            this.xrLabel14.CanPublishOptions.Xlsx = false;
             this.xrLabel14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([POBox])")});
             this.xrLabel14.Multiline = true;
@@ -1035,6 +1091,8 @@
             // 
             // xrLabel34
             // 
+            this.xrLabel34.CanPublishOptions.Xls = false;
+            this.xrLabel34.CanPublishOptions.Xlsx = false;
             this.xrLabel34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CityName]")});
             this.xrLabel34.Multiline = true;
@@ -1044,6 +1102,8 @@
             // 
             // xrLabel33
             // 
+            this.xrLabel33.CanPublishOptions.Xls = false;
+            this.xrLabel33.CanPublishOptions.Xlsx = false;
             this.xrLabel33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Region]")});
             this.xrLabel33.Multiline = true;
@@ -1053,6 +1113,8 @@
             // 
             // xrLabel32
             // 
+            this.xrLabel32.CanPublishOptions.Xls = false;
+            this.xrLabel32.CanPublishOptions.Xlsx = false;
             this.xrLabel32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Country]")});
             this.xrLabel32.Multiline = true;
@@ -1062,6 +1124,8 @@
             // 
             // xrLabel18
             // 
+            this.xrLabel18.CanPublishOptions.Xls = false;
+            this.xrLabel18.CanPublishOptions.Xlsx = false;
             this.xrLabel18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([CityName])")});
             this.xrLabel18.Multiline = true;
@@ -1071,6 +1135,8 @@
             // 
             // xrLabel17
             // 
+            this.xrLabel17.CanPublishOptions.Xls = false;
+            this.xrLabel17.CanPublishOptions.Xlsx = false;
             this.xrLabel17.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Region])")});
             this.xrLabel17.Multiline = true;
@@ -1080,6 +1146,8 @@
             // 
             // xrLabel16
             // 
+            this.xrLabel16.CanPublishOptions.Xls = false;
+            this.xrLabel16.CanPublishOptions.Xlsx = false;
             this.xrLabel16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Country])")});
             this.xrLabel16.Multiline = true;

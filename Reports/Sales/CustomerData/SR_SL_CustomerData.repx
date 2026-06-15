@@ -159,27 +159,27 @@
                     <SubBands>
                       <Item1 Ref="96" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="97" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="97" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="98" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="99" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="99" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="100" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="101" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="101" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="102" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="103" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="103" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="104" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="105" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="105" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="106" UseFont="false" UseTextAlignment="false" />
                           </Item5>
-                          <Item6 Ref="107" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                          <Item6 Ref="107" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="108" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="109" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="109" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="110" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -189,7 +189,7 @@
                       </Item1>
                       <Item2 Ref="112" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="113" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="113" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="114" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -390,12 +390,12 @@
         <Item1 Ref="215" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="216" ControlType="XRLabel" Name="xrLabel2" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="216" ControlType="XRLabel" Name="xrLabel2" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="217" EventName="BeforePrint" PropertyName="Visible" Expression="[CustomerName]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="218" ControlType="XRLabel" Name="xrLabel1" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="218" ControlType="XRLabel" Name="xrLabel1" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="219" EventName="BeforePrint" PropertyName="Visible" Expression="[CustomerCode]" />
           </ExpressionBindings>
@@ -407,22 +407,22 @@
         <Item1 Ref="221" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="222" ControlType="XRLabel" Name="xrLabel20" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="222" ControlType="XRLabel" Name="xrLabel20" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="223" EventName="BeforePrint" PropertyName="Text" Expression="[CustomerStatus]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="224" ControlType="XRLabel" Name="xrLabel19" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="224" ControlType="XRLabel" Name="xrLabel19" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="225" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([CustomerStatus])" />
           </ExpressionBindings>
         </Item2>
-        <Item3 Ref="226" ControlType="XRLabel" Name="xrLabel4" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item3 Ref="226" ControlType="XRLabel" Name="xrLabel4" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="227" EventName="BeforePrint" PropertyName="Text" Expression="[CustomerType]" />
           </ExpressionBindings>
         </Item3>
-        <Item4 Ref="228" ControlType="XRLabel" Name="xrLabel3" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item4 Ref="228" ControlType="XRLabel" Name="xrLabel3" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="229" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([CustomerType])" />
           </ExpressionBindings>
@@ -434,32 +434,32 @@
         <Item1 Ref="231" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="232" ControlType="XRLabel" Name="xrLabel23" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="232" ControlType="XRLabel" Name="xrLabel23" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="233" EventName="BeforePrint" PropertyName="Text" Expression="[PriceLevel]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="234" ControlType="XRLabel" Name="xrLabel22" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="234" ControlType="XRLabel" Name="xrLabel22" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="235" EventName="BeforePrint" PropertyName="Text" Expression="[AccountCode]" />
           </ExpressionBindings>
         </Item2>
-        <Item3 Ref="236" ControlType="XRLabel" Name="xrLabel21" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item3 Ref="236" ControlType="XRLabel" Name="xrLabel21" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="237" EventName="BeforePrint" PropertyName="Text" Expression="[DealingStartDate]" />
           </ExpressionBindings>
         </Item3>
-        <Item4 Ref="238" ControlType="XRLabel" Name="xrLabel7" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item4 Ref="238" ControlType="XRLabel" Name="xrLabel7" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="239" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([PriceLevel])" />
           </ExpressionBindings>
         </Item4>
-        <Item5 Ref="240" ControlType="XRLabel" Name="xrLabel6" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item5 Ref="240" ControlType="XRLabel" Name="xrLabel6" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="241" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([AccountCode])" />
           </ExpressionBindings>
         </Item5>
-        <Item6 Ref="242" ControlType="XRLabel" Name="xrLabel5" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" />
+        <Item6 Ref="242" ControlType="XRLabel" Name="xrLabel5" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt" />
       </Controls>
     </Item10>
     <Item11 Ref="243" ControlType="GroupHeaderBand" Name="groupHeaderBand4" Level="4">
@@ -467,28 +467,28 @@
         <Item1 Ref="244" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="245" ControlType="XRLabel" Name="xrLabel26" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="245" ControlType="XRLabel" Name="xrLabel26" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="246" EventName="BeforePrint" PropertyName="Text" Expression="[CreditLimit]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="247" ControlType="XRLabel" Name="xrLabel25" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" />
-        <Item3 Ref="248" ControlType="XRLabel" Name="xrLabel24" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="247" ControlType="XRLabel" Name="xrLabel25" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt" />
+        <Item3 Ref="248" ControlType="XRLabel" Name="xrLabel24" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="249" EventName="BeforePrint" PropertyName="Text" Expression="[PayWay]" />
           </ExpressionBindings>
         </Item3>
-        <Item4 Ref="250" ControlType="XRLabel" Name="xrLabel10" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item4 Ref="250" ControlType="XRLabel" Name="xrLabel10" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="251" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([CreditLimit])" />
           </ExpressionBindings>
         </Item4>
-        <Item5 Ref="252" ControlType="XRLabel" Name="xrLabel9" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item5 Ref="252" ControlType="XRLabel" Name="xrLabel9" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="253" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([PayPeriod])" />
           </ExpressionBindings>
         </Item5>
-        <Item6 Ref="254" ControlType="XRLabel" Name="xrLabel8" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item6 Ref="254" ControlType="XRLabel" Name="xrLabel8" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="255" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([PayWay])" />
           </ExpressionBindings>
@@ -500,32 +500,32 @@
         <Item1 Ref="257" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="258" ControlType="XRLabel" Name="xrLabel29" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="258" ControlType="XRLabel" Name="xrLabel29" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="259" EventName="BeforePrint" PropertyName="Text" Expression="[Fax]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="260" ControlType="XRLabel" Name="xrLabel28" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="260" ControlType="XRLabel" Name="xrLabel28" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="261" EventName="BeforePrint" PropertyName="Text" Expression="[Mobile]" />
           </ExpressionBindings>
         </Item2>
-        <Item3 Ref="262" ControlType="XRLabel" Name="xrLabel27" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item3 Ref="262" ControlType="XRLabel" Name="xrLabel27" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="263" EventName="BeforePrint" PropertyName="Text" Expression="[Tel]" />
           </ExpressionBindings>
         </Item3>
-        <Item4 Ref="264" ControlType="XRLabel" Name="xrLabel13" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item4 Ref="264" ControlType="XRLabel" Name="xrLabel13" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="265" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Fax])" />
           </ExpressionBindings>
         </Item4>
-        <Item5 Ref="266" ControlType="XRLabel" Name="xrLabel12" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item5 Ref="266" ControlType="XRLabel" Name="xrLabel12" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="267" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Mobile])" />
           </ExpressionBindings>
         </Item5>
-        <Item6 Ref="268" ControlType="XRLabel" Name="xrLabel11" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item6 Ref="268" ControlType="XRLabel" Name="xrLabel11" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="269" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Tel])" />
           </ExpressionBindings>
@@ -537,22 +537,22 @@
         <Item1 Ref="271" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="272" ControlType="XRLabel" Name="xrLabel31" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="272" ControlType="XRLabel" Name="xrLabel31" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="273" EventName="BeforePrint" PropertyName="Text" Expression="[Address]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="274" ControlType="XRLabel" Name="xrLabel30" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="274" ControlType="XRLabel" Name="xrLabel30" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="275" EventName="BeforePrint" PropertyName="Text" Expression="[POBox]" />
           </ExpressionBindings>
         </Item2>
-        <Item3 Ref="276" ControlType="XRLabel" Name="xrLabel15" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item3 Ref="276" ControlType="XRLabel" Name="xrLabel15" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="277" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Address])" />
           </ExpressionBindings>
         </Item3>
-        <Item4 Ref="278" ControlType="XRLabel" Name="xrLabel14" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item4 Ref="278" ControlType="XRLabel" Name="xrLabel14" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="279" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([POBox])" />
           </ExpressionBindings>
@@ -564,32 +564,32 @@
         <Item1 Ref="281" FieldName="CustomerCode" />
       </GroupFields>
       <Controls>
-        <Item1 Ref="282" ControlType="XRLabel" Name="xrLabel34" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item1 Ref="282" ControlType="XRLabel" Name="xrLabel34" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="283" EventName="BeforePrint" PropertyName="Text" Expression="[CityName]" />
           </ExpressionBindings>
         </Item1>
-        <Item2 Ref="284" ControlType="XRLabel" Name="xrLabel33" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item2 Ref="284" ControlType="XRLabel" Name="xrLabel33" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="285" EventName="BeforePrint" PropertyName="Text" Expression="[Region]" />
           </ExpressionBindings>
         </Item2>
-        <Item3 Ref="286" ControlType="XRLabel" Name="xrLabel32" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item3 Ref="286" ControlType="XRLabel" Name="xrLabel32" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="287" EventName="BeforePrint" PropertyName="Text" Expression="[Country]" />
           </ExpressionBindings>
         </Item3>
-        <Item4 Ref="288" ControlType="XRLabel" Name="xrLabel18" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item4 Ref="288" ControlType="XRLabel" Name="xrLabel18" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="289" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([CityName])" />
           </ExpressionBindings>
         </Item4>
-        <Item5 Ref="290" ControlType="XRLabel" Name="xrLabel17" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item5 Ref="290" ControlType="XRLabel" Name="xrLabel17" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="291" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Region])" />
           </ExpressionBindings>
         </Item5>
-        <Item6 Ref="292" ControlType="XRLabel" Name="xrLabel16" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100">
+        <Item6 Ref="292" ControlType="XRLabel" Name="xrLabel16" Multiline="true" ProcessNullValues="SuppressAndShrink" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
           <ExpressionBindings>
             <Item1 Ref="293" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Country])" />
           </ExpressionBindings>
