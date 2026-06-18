@@ -36,10 +36,10 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -62,23 +62,6 @@
             this.Detail.Dpi = 1F;
             this.Detail.HeightF = 0.25F;
             this.Detail.Name = "Detail";
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "dsBreeder";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "Notes";
-            table1.Name = "SR_PH_FR_Med_Vacc_Notes";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Name = "SR_PH_FR_Med_Vacc_Notes";
-            selectQuery1.Tables.Add(table1);
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX1BIX0ZSX01lZF9WYWNjX" +
-    "05vdGVzIj48RmllbGQgTmFtZT0iTm90ZXMiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0P" +
-    "g==";
             // 
             // xrTable1
             // 
@@ -104,6 +87,8 @@
             // 
             // xrTableCell1
             // 
+            this.xrTableCell1.CanPublishOptions.Xls = false;
+            this.xrTableCell1.CanPublishOptions.Xlsx = false;
             this.xrTableCell1.Dpi = 1F;
             this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Notes]")});
@@ -111,6 +96,23 @@
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.Text = "xrTableCell1";
             this.xrTableCell1.Weight = 3D;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "dsBreeder";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression1.ColumnName = "Notes";
+            table1.Name = "SR_PH_FR_Med_Vacc_Notes";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Name = "SR_PH_FR_Med_Vacc_Notes";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlNSX1BIX0ZSX01lZF9WYWNjX" +
+    "05vdGVzIj48RmllbGQgTmFtZT0iTm90ZXMiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0P" +
+    "g==";
             // 
             // SR_PH_FR_Vacc_Notes
             // 

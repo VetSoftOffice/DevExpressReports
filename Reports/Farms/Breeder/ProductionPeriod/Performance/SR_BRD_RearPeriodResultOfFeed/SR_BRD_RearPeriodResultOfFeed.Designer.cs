@@ -920,6 +920,8 @@
             // 
             this.xrLabel7.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel7.CanGrow = false;
+            this.xrLabel7.CanPublishOptions.Xls = false;
+            this.xrLabel7.CanPublishOptions.Xlsx = false;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.StylePriority.UseBorders = false;
             // 
@@ -941,6 +943,8 @@
             // 
             // xrTable19
             // 
+            this.xrTable19.CanPublishOptions.Xls = false;
+            this.xrTable19.CanPublishOptions.Xlsx = false;
             this.xrTable19.Name = "xrTable19";
             this.xrTable19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable19.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -971,6 +975,8 @@
             // 
             // xrTable20
             // 
+            this.xrTable20.CanPublishOptions.Xls = false;
+            this.xrTable20.CanPublishOptions.Xlsx = false;
             this.xrTable20.Name = "xrTable20";
             this.xrTable20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable20.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1001,6 +1007,8 @@
             // 
             // xrTable21
             // 
+            this.xrTable21.CanPublishOptions.Xls = false;
+            this.xrTable21.CanPublishOptions.Xlsx = false;
             this.xrTable21.Name = "xrTable21";
             this.xrTable21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable21.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1031,6 +1039,8 @@
             // 
             // xrTable15
             // 
+            this.xrTable15.CanPublishOptions.Xls = false;
+            this.xrTable15.CanPublishOptions.Xlsx = false;
             this.xrTable15.Name = "xrTable15";
             this.xrTable15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable15.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1061,6 +1071,8 @@
             // 
             // xrTable16
             // 
+            this.xrTable16.CanPublishOptions.Xls = false;
+            this.xrTable16.CanPublishOptions.Xlsx = false;
             this.xrTable16.Name = "xrTable16";
             this.xrTable16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable16.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1091,6 +1103,8 @@
             // 
             // xrTable17
             // 
+            this.xrTable17.CanPublishOptions.Xls = false;
+            this.xrTable17.CanPublishOptions.Xlsx = false;
             this.xrTable17.Name = "xrTable17";
             this.xrTable17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable17.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1120,6 +1134,8 @@
             // 
             // xrTable18
             // 
+            this.xrTable18.CanPublishOptions.Xls = false;
+            this.xrTable18.CanPublishOptions.Xlsx = false;
             this.xrTable18.Name = "xrTable18";
             this.xrTable18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable18.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1152,6 +1168,8 @@
             // 
             // xrTable14
             // 
+            this.xrTable14.CanPublishOptions.Xls = false;
+            this.xrTable14.CanPublishOptions.Xlsx = false;
             this.xrTable14.Name = "xrTable14";
             this.xrTable14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable14.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1182,6 +1200,8 @@
             // 
             // xrTable13
             // 
+            this.xrTable13.CanPublishOptions.Xls = false;
+            this.xrTable13.CanPublishOptions.Xlsx = false;
             this.xrTable13.Name = "xrTable13";
             this.xrTable13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable13.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1212,6 +1232,8 @@
             // 
             // xrTable11
             // 
+            this.xrTable11.CanPublishOptions.Xls = false;
+            this.xrTable11.CanPublishOptions.Xlsx = false;
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1242,6 +1264,8 @@
             // 
             // xrTable10
             // 
+            this.xrTable10.CanPublishOptions.Xls = false;
+            this.xrTable10.CanPublishOptions.Xlsx = false;
             this.xrTable10.Name = "xrTable10";
             this.xrTable10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable10.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -2716,6 +2740,10 @@
             this.DataMember = "SR_BRD_PeriodResultOfFeed";
             this.DataSource = this.sqlDataSource5;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),

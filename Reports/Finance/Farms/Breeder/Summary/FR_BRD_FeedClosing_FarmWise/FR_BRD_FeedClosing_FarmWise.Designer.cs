@@ -157,6 +157,8 @@
             this.Rearing = new DevExpress.XtraReports.Parameters.Parameter();
             this.Laying = new DevExpress.XtraReports.Parameters.Parameter();
             this.RearingAndLaying = new DevExpress.XtraReports.Parameters.Parameter();
+            this.UniqueFarmTypeCount = new DevExpress.XtraReports.Parameters.Parameter();
+            this.UniqueRegionCount = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tFooter)).BeginInit();
@@ -687,6 +689,8 @@
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
+            this.GroupFooter1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueRegionCount > 1")});
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrTable2
@@ -1016,6 +1020,8 @@
             // 
             this.GroupFooter2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
+            this.GroupFooter2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueFarmTypeCount > 1")});
             this.GroupFooter2.Level = 1;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
@@ -1140,6 +1146,20 @@
             this.RearingAndLaying.Name = "RearingAndLaying";
             this.RearingAndLaying.Visible = false;
             // 
+            // UniqueFarmTypeCount
+            // 
+            this.UniqueFarmTypeCount.Name = "UniqueFarmTypeCount";
+            this.UniqueFarmTypeCount.Type = typeof(int);
+            this.UniqueFarmTypeCount.ValueInfo = "0";
+            this.UniqueFarmTypeCount.Visible = false;
+            // 
+            // UniqueRegionCount
+            // 
+            this.UniqueRegionCount.Name = "UniqueRegionCount";
+            this.UniqueRegionCount.Type = typeof(int);
+            this.UniqueRegionCount.ValueInfo = "0";
+            this.UniqueRegionCount.Visible = false;
+            // 
             // FR_BRD_FeedClosing_FarmWise
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1236,7 +1256,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 40.00001F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
@@ -1276,7 +1296,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Text", "Close Stock"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "ar", "Text", "رصيد ختامي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Weight", 1.3748594026802765D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(4.768371E-05F, 20.00001F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.0005245209F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(807.0005F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Text", "Farm Type"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "نوع المزرعة"),
@@ -1285,6 +1305,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trDetail, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trFooter, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trHeader, "Default", "Weight", 1D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.UniqueFarmTypeCount, "Default", "Description", "UniqueFarmTypeCount"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.UniqueRegionCount, "Default", "Description", "UniqueRegionCount"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(806.7716F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
@@ -1406,7 +1428,9 @@
             this.CycleNo,
             this.Rearing,
             this.Laying,
-            this.RearingAndLaying});
+            this.RearingAndLaying,
+            this.UniqueFarmTypeCount,
+            this.UniqueRegionCount});
             this.Scripts.OnAfterPrint = "SR_FC_JournalEntryAll_AfterPrint";
             this.Scripts.OnParametersRequestValueChanged = "SR_FC_JournalEntryAll_ParametersRequestValueChanged";
             this.Scripts.OnPrintProgress = "SR_FC_JournalEntryAll_PrintProgress";
@@ -1536,5 +1560,7 @@
         private DevExpress.XtraReports.Parameters.Parameter Rearing;
         private DevExpress.XtraReports.Parameters.Parameter Laying;
         private DevExpress.XtraReports.Parameters.Parameter RearingAndLaying;
+        private DevExpress.XtraReports.Parameters.Parameter UniqueFarmTypeCount;
+        private DevExpress.XtraReports.Parameters.Parameter UniqueRegionCount;
     }
 }

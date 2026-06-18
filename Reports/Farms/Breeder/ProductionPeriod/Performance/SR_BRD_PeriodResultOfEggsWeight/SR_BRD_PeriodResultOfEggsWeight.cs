@@ -99,11 +99,12 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(93.35404F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(2.000031F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
+            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(2F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(2F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(2F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
@@ -476,6 +477,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrLabel3
             // 
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?LineType)")});
             this.xrLabel3.Multiline = true;
@@ -486,6 +489,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrLabel2
             // 
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -510,6 +515,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable7
             // 
+            this.xrTable7.CanPublishOptions.Xls = false;
+            this.xrTable7.CanPublishOptions.Xlsx = false;
             this.xrTable7.Name = "xrTable7";
             this.xrTable7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable7.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -538,6 +545,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable8
             // 
+            this.xrTable8.CanPublishOptions.Xls = false;
+            this.xrTable8.CanPublishOptions.Xlsx = false;
             this.xrTable8.Name = "xrTable8";
             this.xrTable8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -566,6 +575,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable9
             // 
+            this.xrTable9.CanPublishOptions.Xls = false;
+            this.xrTable9.CanPublishOptions.Xlsx = false;
             this.xrTable9.Name = "xrTable9";
             this.xrTable9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -593,6 +604,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable10
             // 
+            this.xrTable10.CanPublishOptions.Xls = false;
+            this.xrTable10.CanPublishOptions.Xlsx = false;
             this.xrTable10.Name = "xrTable10";
             this.xrTable10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable10.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -621,6 +634,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable11
             // 
+            this.xrTable11.CanPublishOptions.Xls = false;
+            this.xrTable11.CanPublishOptions.Xlsx = false;
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -649,6 +664,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable6
             // 
+            this.xrTable6.CanPublishOptions.Xls = false;
+            this.xrTable6.CanPublishOptions.Xlsx = false;
             this.xrTable6.Name = "xrTable6";
             this.xrTable6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable6.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -677,6 +694,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable5
             // 
+            this.xrTable5.CanPublishOptions.Xls = false;
+            this.xrTable5.CanPublishOptions.Xlsx = false;
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -705,6 +724,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable4
             // 
+            this.xrTable4.CanPublishOptions.Xls = false;
+            this.xrTable4.CanPublishOptions.Xlsx = false;
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -733,6 +754,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable3
             // 
+            this.xrTable3.CanPublishOptions.Xls = false;
+            this.xrTable3.CanPublishOptions.Xlsx = false;
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -761,6 +784,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable2
             // 
+            this.xrTable2.CanPublishOptions.Xls = false;
+            this.xrTable2.CanPublishOptions.Xlsx = false;
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -789,6 +814,8 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             // 
             // xrTable1
             // 
+            this.xrTable1.CanPublishOptions.Xls = false;
+            this.xrTable1.CanPublishOptions.Xlsx = false;
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -854,14 +881,17 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             crossTabColumnDefinition1.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(112.5F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(87.49999F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(87.49999F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(87.49998F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(87.49998F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(116.6926F),
             crossTabColumnDefinition1});
             crossTabColumnField1.FieldName = "ColSeq";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
+            crossTabDataField1.FieldName = "ColValue";
+            this.xrCrossTab1.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
+            crossTabDataField1});
             this.xrCrossTab1.DataMember = "SR_BRD_PeriodResultOfEggsWeight";
             this.xrCrossTab1.DataSource = this.sqlDataSource1;
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
@@ -1607,7 +1637,7 @@ namespace DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.S
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 21.16667F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(497.5466F, 125F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(406.1926F, 56F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(250F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "Std Book: [?BookPerf]"),

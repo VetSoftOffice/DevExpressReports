@@ -580,6 +580,7 @@
             this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.SR_GPBRD_WeeklyLayingReport_Sub1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
@@ -599,7 +600,6 @@
             this.xrTableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrChart1 = new DevExpress.XtraReports.UI.XRChart();
-            this.SR_GPBRD_WeeklyLayingReport_Sub1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
@@ -1042,6 +1042,8 @@
             // xrLabel16
             // 
             this.xrLabel16.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel16.CanPublishOptions.Xls = false;
+            this.xrLabel16.CanPublishOptions.Xlsx = false;
             this.xrLabel16.Multiline = true;
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1050,6 +1052,8 @@
             // xrLabel23
             // 
             this.xrLabel23.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel23.CanPublishOptions.Xls = false;
+            this.xrLabel23.CanPublishOptions.Xlsx = false;
             this.xrLabel23.Multiline = true;
             this.xrLabel23.Name = "xrLabel23";
             this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1058,6 +1062,8 @@
             // xrLabel15
             // 
             this.xrLabel15.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel15.CanPublishOptions.Xls = false;
+            this.xrLabel15.CanPublishOptions.Xlsx = false;
             this.xrLabel15.Multiline = true;
             this.xrLabel15.Name = "xrLabel15";
             this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1066,6 +1072,8 @@
             // xrLabel14
             // 
             this.xrLabel14.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel14.CanPublishOptions.Xls = false;
+            this.xrLabel14.CanPublishOptions.Xlsx = false;
             this.xrLabel14.Multiline = true;
             this.xrLabel14.Name = "xrLabel14";
             this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1074,6 +1082,8 @@
             // xrLabel13
             // 
             this.xrLabel13.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel13.CanPublishOptions.Xls = false;
+            this.xrLabel13.CanPublishOptions.Xlsx = false;
             this.xrLabel13.Multiline = true;
             this.xrLabel13.Name = "xrLabel13";
             this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1082,6 +1092,8 @@
             // xrLabel24
             // 
             this.xrLabel24.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel24.CanPublishOptions.Xls = false;
+            this.xrLabel24.CanPublishOptions.Xlsx = false;
             this.xrLabel24.Multiline = true;
             this.xrLabel24.Name = "xrLabel24";
             this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1092,6 +1104,11 @@
             this.PageHeaderSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.SR_GPBRD_WeeklyLayingReport_Sub1});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
+            // 
+            // SR_GPBRD_WeeklyLayingReport_Sub1
+            // 
+            this.SR_GPBRD_WeeklyLayingReport_Sub1.Name = "SR_GPBRD_WeeklyLayingReport_Sub1";
+            this.SR_GPBRD_WeeklyLayingReport_Sub1.ReportSource = new DevExpressReports.Reports.GrandParent.Summary.SR_GPBRD_WeeklyLayingReport_Sub1.SR_GPBRD_WeeklyLayingReport_Sub1();
             // 
             // SubBand7
             // 
@@ -1250,6 +1267,8 @@
             // 
             this.xrChart1.BorderColor = System.Drawing.Color.Black;
             this.xrChart1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrChart1.CanPublishOptions.Xls = false;
+            this.xrChart1.CanPublishOptions.Xlsx = false;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             xyDiagram1.DefaultPane.EnableAxisXScrolling = DevExpress.Utils.DefaultBoolean.False;
@@ -1283,11 +1302,6 @@
         series2,
         series3,
         series4};
-            // 
-            // SR_GPBRD_WeeklyLayingReport_Sub1
-            // 
-            this.SR_GPBRD_WeeklyLayingReport_Sub1.Name = "SR_GPBRD_WeeklyLayingReport_Sub1";
-            this.SR_GPBRD_WeeklyLayingReport_Sub1.ReportSource = new DevExpressReports.Reports.GrandParent.Summary.SR_GPBRD_WeeklyLayingReport_Sub1.SR_GPBRD_WeeklyLayingReport_Sub1();
             // 
             // ReportFooterSub1
             // 

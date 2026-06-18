@@ -83,6 +83,8 @@
             // 
             // xrTableCell1
             // 
+            this.xrTableCell1.CanPublishOptions.Xls = false;
+            this.xrTableCell1.CanPublishOptions.Xlsx = false;
             this.xrTableCell1.Dpi = 1F;
             this.xrTableCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Notes]")});

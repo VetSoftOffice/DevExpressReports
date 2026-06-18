@@ -222,23 +222,23 @@
         </Item2>
         <Item3 Ref="128" ControlType="SubBand" Name="PageHeaderSub1">
           <Controls>
-            <Item1 Ref="129" ControlType="XRLabel" Name="xrLabel8" Multiline="true" Padding="2,2,0,0,100" Borders="None">
+            <Item1 Ref="129" ControlType="XRLabel" Name="xrLabel8" Multiline="true" Padding="2,2,0,0,100" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="130" UseBorders="false" />
             </Item1>
-            <Item2 Ref="131" ControlType="XRLabel" Name="xrLabel7" Multiline="true" Padding="2,2,0,0,100" Borders="None">
+            <Item2 Ref="131" ControlType="XRLabel" Name="xrLabel7" Multiline="true" Padding="2,2,0,0,100" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <Scripts Ref="132" OnBeforePrint="xrLabel7_BeforePrint" />
               <StylePriority Ref="133" UseBorders="false" />
             </Item2>
-            <Item3 Ref="134" ControlType="XRLabel" Name="xrLabel5" Borders="None">
+            <Item3 Ref="134" ControlType="XRLabel" Name="xrLabel5" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="135" UseFont="false" UseBorders="false" />
             </Item3>
-            <Item4 Ref="136" ControlType="XRLabel" Name="xrLabel3" CanGrow="false" Borders="None">
+            <Item4 Ref="136" ControlType="XRLabel" Name="xrLabel3" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="137" UseBorders="false" />
             </Item4>
-            <Item5 Ref="138" ControlType="XRLabel" Name="xrLabel2" CanGrow="false" Borders="None">
+            <Item5 Ref="138" ControlType="XRLabel" Name="xrLabel2" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="139" UseBorders="false" />
             </Item5>
-            <Item6 Ref="140" ControlType="XRLabel" Name="xrLabel6" Borders="None">
+            <Item6 Ref="140" ControlType="XRLabel" Name="xrLabel6" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="141" UseFont="false" UseBorders="false" />
             </Item6>
           </Controls>
@@ -781,7 +781,7 @@
                         <Rows>
                           <Item1 Ref="499" ControlType="XRTableRow" Name="xrTableRow1" Dpi="1">
                             <Cells>
-                              <Item1 Ref="500" ControlType="XRTableCell" Name="xrTableCell1" Dpi="1" Multiline="true">
+                              <Item1 Ref="500" ControlType="XRTableCell" Name="xrTableCell1" Dpi="1" Multiline="true" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                                 <ExpressionBindings>
                                   <Item1 Ref="501" EventName="BeforePrint" PropertyName="Text" Expression="[Notes]" />
                                 </ExpressionBindings>
@@ -795,7 +795,7 @@
                   </Item3>
                   <Item4 Ref="503" ControlType="ReportHeaderBand" Name="ReportHeader" Dpi="1">
                     <Controls>
-                      <Item1 Ref="504" ControlType="XRLabel" Name="xrLabel1" Dpi="1" Multiline="true" TextAlignment="MiddleLeft" Padding="0.02083333,0.02083333,0,0,1">
+                      <Item1 Ref="504" ControlType="XRLabel" Name="xrLabel1" Dpi="1" Multiline="true" TextAlignment="MiddleLeft" Padding="0.02083333,0.02083333,0,0,1" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <ExpressionBindings>
                           <Item1 Ref="505" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty([Notes])" />
                         </ExpressionBindings>
@@ -811,7 +811,7 @@
                   <Item4 Ref="510" Component="#Ref-494" Culture="Default" Path="Margins" Data="1, 1, 0, 0" />
                   <Item5 Ref="511" Component="#Ref-503" Culture="Default" Path="HeightF" Data="0.23" />
                   <Item6 Ref="512" Component="#Ref-495" Culture="Default" Path="HeightF" Data="0" />
-                  <Item7 Ref="513" Component="#Ref-504" Culture="Default" Path="Font" Data="Tahoma, 10pt" />
+                  <Item7 Ref="513" Component="#Ref-504" Culture="Default" Path="Font" Data="Tahoma, 10pt, style=Bold" />
                   <Item8 Ref="514" Component="#Ref-504" Culture="Default" Path="LocationFloat" Data="0,0" />
                   <Item9 Ref="515" Component="#Ref-504" Culture="Default" Path="SizeF" Data="1,0.23" />
                   <Item10 Ref="516" Component="#Ref-504" Culture="Default" Path="Text" Data="Remarks:" />

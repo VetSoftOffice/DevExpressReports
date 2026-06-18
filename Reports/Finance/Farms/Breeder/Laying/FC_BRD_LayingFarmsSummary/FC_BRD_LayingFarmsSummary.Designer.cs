@@ -557,6 +557,8 @@
             // xrLabel2
             // 
             this.xrLabel2.AutoWidth = true;
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?_Site)\n")});
             this.xrLabel2.Name = "xrLabel2";
@@ -565,6 +567,8 @@
             // xrLabel3
             // 
             this.xrLabel3.AutoWidth = true;
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?Region)\n")});
             this.xrLabel3.Name = "xrLabel3";
@@ -573,6 +577,8 @@
             // xrLabel1
             // 
             this.xrLabel1.AutoWidth = true;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?Breed)\n")});
             this.xrLabel1.Name = "xrLabel1";
@@ -581,6 +587,8 @@
             // CustSuppCodeLabel
             // 
             this.CustSuppCodeLabel.AutoWidth = true;
+            this.CustSuppCodeLabel.CanPublishOptions.Xls = false;
+            this.CustSuppCodeLabel.CanPublishOptions.Xlsx = false;
             this.CustSuppCodeLabel.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty(?FarmCode)\n")});
             this.CustSuppCodeLabel.Name = "CustSuppCodeLabel";
@@ -589,6 +597,8 @@
             // CustSuppNameLabel
             // 
             this.CustSuppNameLabel.AutoWidth = true;
+            this.CustSuppNameLabel.CanPublishOptions.Xls = false;
+            this.CustSuppNameLabel.CanPublishOptions.Xlsx = false;
             this.CustSuppNameLabel.Multiline = true;
             this.CustSuppNameLabel.Name = "CustSuppNameLabel";
             this.CustSuppNameLabel.StylePriority.UseFont = false;
@@ -596,6 +606,8 @@
             // DateLabel
             // 
             this.DateLabel.AutoWidth = true;
+            this.DateLabel.CanPublishOptions.Xls = false;
+            this.DateLabel.CanPublishOptions.Xlsx = false;
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.StylePriority.UseFont = false;
             // 
@@ -2128,6 +2140,10 @@
             this.DataMember = "SR_FC_FR_Summary";
             this.DataSource = this.dsGrandParent;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Breed, "Default", "Description", "Breed"),
@@ -2308,13 +2324,13 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "منطقة: [?Region]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(103.4839F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(176.25F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(254.2245F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "* (-) means Short."),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "* (-) تعني عجز"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "TextFormatString", "{0:dd-MM-yyyy}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(103.4839F, 19.99995F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(176.25F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(254.2245F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "* (+) means Excess."),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "*(+) تعني فائض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "TextFormatString", "{0:dd-MM-yyyy}"),

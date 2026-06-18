@@ -12,5 +12,10 @@ namespace DevExpressReports.Reports.Farms.Layer.RearingPeriod.DeplationAndBodyWe
         {
             InitializeComponent();
         }
+
+        private void MedVacc_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
