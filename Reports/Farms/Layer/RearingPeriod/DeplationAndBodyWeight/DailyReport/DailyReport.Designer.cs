@@ -462,6 +462,7 @@
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
             this.DailyReport_Ext = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
+            this.DailyNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
@@ -547,7 +548,6 @@
             this.xrTableCell66 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell67 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell68 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.DailyNotes = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
@@ -1212,6 +1212,8 @@
             // 
             this.xrLabel7.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel7.CanGrow = false;
+            this.xrLabel7.CanPublishOptions.Xls = false;
+            this.xrLabel7.CanPublishOptions.Xlsx = false;
             this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?LineType)")});
             this.xrLabel7.Name = "xrLabel7";
@@ -1220,6 +1222,8 @@
             // xrLabel6
             // 
             this.xrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel6.CanPublishOptions.Xls = false;
+            this.xrLabel6.CanPublishOptions.Xlsx = false;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.StylePriority.UseBorders = false;
             this.xrLabel6.StylePriority.UseFont = false;
@@ -1520,6 +1524,11 @@
             this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.DailyNotes});
             this.SubBand8.Name = "SubBand8";
+            // 
+            // DailyNotes
+            // 
+            this.DailyNotes.Name = "DailyNotes";
+            this.DailyNotes.ReportSource = new DevExpressReports.Reports.Farms.Breeder.RearingPeriod.DeplationAndBodyWeight.DailyNotes.DailyNotes();
             // 
             // ReportFooterSub1
             // 
@@ -2527,6 +2536,8 @@
             // xrLabel1
             // 
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[FarmCode]")});
             this.xrLabel1.Multiline = true;
@@ -2538,6 +2549,8 @@
             // xrLabel2
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -3050,11 +3063,6 @@
             this.xrTableCell68.StylePriority.UsePadding = false;
             this.xrTableCell68.StylePriority.UseTextAlignment = false;
             this.xrTableCell68.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            // 
-            // DailyNotes
-            // 
-            this.DailyNotes.Name = "DailyNotes";
-            this.DailyNotes.ReportSource = new DevExpressReports.Reports.Farms.Breeder.RearingPeriod.DeplationAndBodyWeight.DailyNotes.DailyNotes();
             // 
             // DailyReport
             // 
