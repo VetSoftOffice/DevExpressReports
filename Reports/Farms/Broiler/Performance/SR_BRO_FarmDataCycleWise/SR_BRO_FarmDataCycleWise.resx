@@ -159,6 +159,17 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
 decimal totalBlowStan = 0;
 int recordCount = 0;
 decimal sumOfPercentages = 0;
+decimal totalChicksPlaced = 0;
+
+
+
+// Helper function for safe conversion
+private decimal SafeConvert(object value)
+{
+    if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value?.ToString()))
+        return 0;
+    return Convert.ToDecimal(value);
+}
 private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
 
@@ -205,7 +216,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
 
     totalChickPlace += chickPlace;
     totalBlowStan += blowStan;
-    
+    totalChicksPlaced += SafeConvert(GetCurrentColumnValue("ChickPlace"));
     
     if (chickPlace != 0)
     {
@@ -281,6 +292,28 @@ private void xrTableCell148_BeforePrint(object sender, System.ComponentModel.Can
     else
     {
         cell.Text = "0.00";
+    }
+}
+
+private void xrLabel9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRLabel label = sender as XRLabel;
+    
+    // Check if IsRTL parameter exists and is true
+    bool isRTL = false;
+    if (this.Parameters["IsRTL"] != null)
+    {
+        bool.TryParse(this.Parameters["IsRTL"].Value?.ToString(), out isRTL);
+    }
+    
+    if (isRTL)
+    {
+        // Display Arabic text with RTL formatting
+        label.Text = string.Format("رصيد بداية الانتاج: {0:N0}", totalChicksPlaced);
+    }
+    else
+    {
+        // Display English text with LTR formatting
+        label.Text = string.Format("Chicks Placed: {0:N0}", totalChicksPlaced);
     }
 }
 </value>

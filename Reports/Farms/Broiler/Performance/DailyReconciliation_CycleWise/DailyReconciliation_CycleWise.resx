@@ -157,14 +157,11 @@ decimal sumCounterTotal = 0;
 decimal sumDOA = 0;
 decimal sumRFemaleCatchLoss = 0;
 decimal sumScaleWeight = 0;
-decimal sumRFemaleStarted = 0;
 decimal sumDeplation = 0;
 decimal sumTotalWeightWithLoss = 0;
 decimal sumBroScaleWeight = 0;
 decimal sumDeviation = 0;
-decimal sumCounterTotal = 0;
 decimal sumCulls = 0;
-decimal sumDOA = 0;
 private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
     
@@ -304,14 +301,14 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
         sumDOA += Convert.ToDecimal(GetCurrentColumnValue("DOA") ?? 0);
         // Calculate {@Pt_AvgLive} for this row
         decimal ptAvgLive = 0;
-        decimal totalBirds = counterTotal + doa;
+        decimal totalBirds = sumCounterTotal + sumDOA ;
         if (totalBirds != 0)
         {
-            ptAvgLive = scaleWeight / totalBirds;
+            ptAvgLive = sumScaleWeight / totalBirds;
         }
         
         // Calculate total weight with loss for this row
-        decimal rowTotalWeightWithLoss = (rfFemaleCatchLoss * ptAvgLive) + scaleWeight;
+        decimal rowTotalWeightWithLoss = (sumRFemaleCatchLoss * ptAvgLive) + sumScaleWeight ;
         
         // Add to running total
         sumTotalWeightWithLoss += rowTotalWeightWithLoss;

@@ -296,11 +296,11 @@ if (startBirds != 0)
 {
     // Calculate: @TotalCum * 100 / StartBirds
     decimal result = (totalCum * 100.0m) / startBirds;
-    cell.Text = result.ToString("N2") + "%";
+    cell.Text = result.ToString("N2") ;
 }
 else
 {
-    cell.Text = "0.00%";
+    cell.Text = "0.00";
 }
 }
 </value>

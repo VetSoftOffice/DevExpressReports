@@ -244,7 +244,7 @@ private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.Canc
     runningSumTotalFeed1 += totalFeed;
     
     // Compute the running sum from TotalFeed (like in xrTableCell56)
-     if (calculatedValue55 &gt;= 0)
+     if (calculatedValue55 &gt; 0)
     {
              result = runningSumTotalFeed1  / calculatedValue55 ;
     }

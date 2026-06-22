@@ -613,6 +613,8 @@
             this.xrLabel5.CanGrow = false;
             this.xrLabel5.CanPublishOptions.Xls = false;
             this.xrLabel5.CanPublishOptions.Xlsx = false;
+            this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?Flock)")});
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.StylePriority.UseBorders = false;
             // 
@@ -622,6 +624,8 @@
             this.xrLabel4.CanGrow = false;
             this.xrLabel4.CanPublishOptions.Xls = false;
             this.xrLabel4.CanPublishOptions.Xlsx = false;
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?FarmNo)")});
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.StylePriority.UseBorders = false;
             // 

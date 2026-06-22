@@ -89,7 +89,7 @@
                   </ExpressionBindings>
                   <StylePriority Ref="57" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                 </Item6>
-                <Item7 Ref="58" ControlType="XRTableCell" Name="xrTableCell46" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" Borders="All">
+                <Item7 Ref="58" ControlType="XRTableCell" Name="xrTableCell46" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="59" EventName="BeforePrint" PropertyName="Text" Expression="[StartDate]" />
                   </ExpressionBindings>
@@ -829,9 +829,9 @@
     <Item101 Ref="472" Component="#Ref-201" Culture="Default" Path="SizeF" Data="826.4289,25" />
     <Item102 Ref="473" Component="#Ref-352" Culture="Default" Path="LocationFloat" Data="187.3183,0" />
     <Item103 Ref="474" Component="#Ref-352" Culture="Default" Path="SizeF" Data="85.96844,65.41666" />
-    <Item104 Ref="475" Component="#Ref-181" Culture="Default" Path="LocationFloat" Data="1.58945713E-05,78.95832" />
+    <Item104 Ref="475" Component="#Ref-181" Culture="Default" Path="LocationFloat" Data="1.589457E-05,78.95832" />
     <Item105 Ref="476" Component="#Ref-181" Culture="Default" Path="SizeF" Data="826.4289,25" />
-    <Item106 Ref="477" Component="#Ref-166" Culture="Default" Path="LocationFloat" Data="1.58945713E-05,103.958321" />
+    <Item106 Ref="477" Component="#Ref-166" Culture="Default" Path="LocationFloat" Data="1.589457E-05,103.9583" />
     <Item107 Ref="478" Component="#Ref-166" Culture="Default" Path="SizeF" Data="288.0519,50" />
     <Item108 Ref="479" Component="#Ref-330" Culture="Default" Path="Text" Data="Name of Employee" />
     <Item109 Ref="480" Component="#Ref-330" Culture="ar" Path="Text" Data="اسم الموظف" />
