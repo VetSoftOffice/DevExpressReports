@@ -82,13 +82,13 @@
                   </ExpressionBindings>
                   <StylePriority Ref="62" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item2>
-                <Item3 Ref="63" ControlType="XRTableCell" Name="xrTableCell31" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" Borders="All">
+                <Item3 Ref="63" ControlType="XRTableCell" Name="xrTableCell31" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="64" EventName="BeforePrint" PropertyName="Text" Expression="[HouseCode]" />
                   </ExpressionBindings>
                   <StylePriority Ref="65" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                 </Item3>
-                <Item4 Ref="66" ControlType="XRTableCell" Name="xrTableCell44" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" Borders="All">
+                <Item4 Ref="66" ControlType="XRTableCell" Name="xrTableCell44" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="67" EventName="BeforePrint" PropertyName="Text" Expression="[Age]" />
                   </ExpressionBindings>
@@ -870,7 +870,7 @@
     <Item63 Ref="506" Component="#Ref-117" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item64 Ref="507" Component="#Ref-117" Culture="Default" Path="SizeF" Data="808.7717,20" />
     <Item65 Ref="508" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item66 Ref="509" Component="#Ref-1" Culture="Default" Path="Margins" Data="8, 10, 20, 20" />
+    <Item66 Ref="509" Component="#Ref-1" Culture="Default" Path="Margins" Data="8, 5, 20, 20" />
     <Item67 Ref="510" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
     <Item68 Ref="511" Component="#Ref-153" Culture="Default" Path="HeightF" Data="20" />
     <Item69 Ref="512" Component="#Ref-157" Culture="Default" Path="HeightF" Data="20" />

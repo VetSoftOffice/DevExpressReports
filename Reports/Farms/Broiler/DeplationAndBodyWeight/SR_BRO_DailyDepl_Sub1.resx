@@ -175,9 +175,9 @@ private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.Canc
     
     // Get StartBirds parameter value
     decimal startBirds = 0;
-    if (Report.Parameters["StartBirds"] != null)
+    if (this.Parameters["StartBirds"] != null)
     {
-        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+        startBirds = Convert.ToDecimal(this.Parameters["StartBirds"].Value);
     }
     
     // Check if StartBirds is not zero
@@ -202,9 +202,9 @@ private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.Canc
     
     // Get StartBirds parameter value
     decimal startBirds = 0;
-    if (Report.Parameters["StartBirds"] != null)
+    if (this.Parameters["StartBirds"] != null)
     {
-        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+        startBirds = Convert.ToDecimal(this.Parameters["StartBirds"].Value);
     }
     
     // Check if StartBirds is not zero
@@ -214,11 +214,11 @@ private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.Canc
         decimal result = (totalCumCulls * 100.0m) / startBirds;
         string formattedResult = result.ToString("N2");
         
-        cell.Text = formattedResult + "%";
+        cell.Text = formattedResult;
    }
     else
     {
-        cell.Text = "0.00%";
+        cell.Text = "0.00";
     }
 }
 
@@ -227,9 +227,9 @@ private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.Canc
     
     // Get StartBirds parameter
     decimal startBirds = 0;
-    if (Report.Parameters["StartBirds"] != null)
+    if (this.Parameters["StartBirds"] != null)
     {
-        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+        startBirds = Convert.ToDecimal(this.Parameters["StartBirds"].Value);
     }
     
     if (startBirds != 0)
@@ -239,12 +239,12 @@ private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.Canc
         decimal mortPct = (totalCumMort * 100.0m) / startBirds;
         decimal cullsPct = (totalCumCulls * 100.0m) / startBirds;
         
-        cell.Text = lossPct.ToString("N2") + "%";
+        cell.Text = lossPct.ToString("N2") ;
         
             }
     else
     {
-        cell.Text = "0.00%";
+        cell.Text = "0.00";
     }
 }
 

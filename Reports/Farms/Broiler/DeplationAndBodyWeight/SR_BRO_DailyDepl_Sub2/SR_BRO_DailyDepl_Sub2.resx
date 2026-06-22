@@ -144,17 +144,17 @@ IIF(IsNullOrEmpty([Mort5]), 0, [Mort5])</value>
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal totalMort = 0;    // {@TotalMort} - sum of Mort1-Mort5
-
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Helper function to safely convert values
-    decimal SafeConvert(object value)
+decimal SafeConvert(object value)
     {
         if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
             return 0;
         return Convert.ToDecimal(value);
     }
     
-    // Accumulate all mortality fields for {@TotalMort}
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+     // Helper function to safely convert values
+        // Accumulate all mortality fields for {@TotalMort}
     totalMort += SafeConvert(GetCurrentColumnValue("Mort1"));
     totalMort += SafeConvert(GetCurrentColumnValue("Mort2"));
     totalMort += SafeConvert(GetCurrentColumnValue("Mort3"));
@@ -167,9 +167,9 @@ private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.Canc
     
     // Get StartBirds parameter value
     decimal startBirds = 0;
-    if (Report.Parameters["StartBirds"] != null)
+    if (this.Parameters["StartBirds"] != null)
     {
-        startBirds = Convert.ToDecimal(Report.Parameters["StartBirds"].Value);
+        startBirds = Convert.ToDecimal(this.Parameters["StartBirds"].Value);
     }
     
     // Check if StartBirds is not zero
@@ -179,31 +179,12 @@ private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.Canc
         decimal result = (totalMort * 100.0m) / startBirds;
         string formattedResult = result.ToString("N2");
         
-        cell.Text = formattedResult + "%";
+        cell.Text = formattedResult ;
         
-        // Optional tooltip with details
-        cell.ToolTip = string.Format(
-            "TOTAL MORTALITY (Periods 1-5)\n\n" +
-            "Total Mortality ({@TotalMort}): {0} birds\n" +
-            "  Mort1: {1}\n" +
-            "  Mort2: {2}\n" +
-            "  Mort3: {3}\n" +
-            "  Mort4: {4}\n" +
-            "  Mort5: {5}\n\n" +
-            "Start Birds Parameter ({@StartBirds}): {6}\n" +
-            "Mortality Percentage: {7}%",
-            totalMort.ToString("N0"),
-            SafeConvert(GetCurrentColumnValue("Mort1")).ToString("N0"),
-            SafeConvert(GetCurrentColumnValue("Mort2")).ToString("N0"),
-            SafeConvert(GetCurrentColumnValue("Mort3")).ToString("N0"),
-            SafeConvert(GetCurrentColumnValue("Mort4")).ToString("N0"),
-            SafeConvert(GetCurrentColumnValue("Mort5")).ToString("N0"),
-            startBirds.ToString("N0"),
-            formattedResult);
-    }
+            }
     else
     {
-        cell.Text = "0.00%";
+        cell.Text = "0.00";
     }
 }
 </value>
