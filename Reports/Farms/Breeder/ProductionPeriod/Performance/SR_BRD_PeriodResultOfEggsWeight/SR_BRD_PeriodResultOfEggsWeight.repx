@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_PeriodResultOfEggsWeight" ScriptsSource="&#xD;&#xA;&#xD;&#xA;private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;           XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    &#xD;&#xA;    // Get values from fields&#xD;&#xA;    decimal startFemaleBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartFemaleBirds&quot;) ?? 0);&#xD;&#xA;    decimal startMaleBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartMaleBirds&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Calculate: (StartMaleBirds × 100) / StartFemaleBirds&#xD;&#xA;    if (startFemaleBirds &gt; 0) {&#xD;&#xA;        decimal result = (startMaleBirds * 100) / startFemaleBirds;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;); // 1 decimal place with %&#xD;&#xA;        // Or without %: result.ToString(&quot;F1&quot;)&#xD;&#xA;    } else {&#xD;&#xA;        cell.Text = &quot;0.00&quot;; // or &quot;0&quot;&#xD;&#xA;    } &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_PeriodResultOfEggsWeight" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_PeriodResultOfEggsWeight" ScriptsSource="&#xD;&#xA;&#xD;&#xA;private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;           XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    &#xD;&#xA;    // Get values from fields&#xD;&#xA;    decimal startFemaleBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartFemaleBirds&quot;) ?? 0);&#xD;&#xA;    decimal startMaleBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartMaleBirds&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Calculate: (StartMaleBirds × 100) / StartFemaleBirds&#xD;&#xA;    if (startFemaleBirds &gt; 0) {&#xD;&#xA;        decimal result = (startMaleBirds * 100) / startFemaleBirds;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;); // 1 decimal place with %&#xD;&#xA;        // Or without %: result.ToString(&quot;F1&quot;)&#xD;&#xA;    } else {&#xD;&#xA;        cell.Text = &quot;0.00&quot;; // or &quot;0&quot;&#xD;&#xA;    } &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_PeriodResultOfEggsWeight" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -406,7 +406,7 @@
       <SubBands>
         <Item1 Ref="203" ControlType="SubBand" Name="SubBand2">
           <Controls>
-            <Item1 Ref="204" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="SR_BRD_PeriodResultOfEggsWeight">
+            <Item1 Ref="204" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1">
               <Parameters>
                 <Item1 Ref="205" Name="IsRTL" Parameter="#Ref-3" />
               </Parameters>
@@ -422,11 +422,11 @@
                 <Item1 Ref="210" FieldName="ColValue" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="211" Width="112.5" />
-                <Item2 Ref="212" Width="87.4999847" />
-                <Item3 Ref="213" Width="87.4999847" />
-                <Item4 Ref="214" Width="116.692589" />
-                <Item5 Ref="215" Width="2.00003052" Visible="false" />
+                <Item1 Ref="211" Width="102.083344" />
+                <Item2 Ref="212" Width="61.4583054" />
+                <Item3 Ref="213" Width="69.791626" />
+                <Item4 Ref="214" Width="92.73424" />
+                <Item5 Ref="215" Width="2.00003123" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="216" />
@@ -694,12 +694,12 @@
     <Item49 Ref="389" Component="#Ref-87" Culture="Default" Path="HeightF" Data="0" />
     <Item50 Ref="390" Component="#Ref-129" Culture="Default" Path="HeightF" Data="23" />
     <Item51 Ref="391" Component="#Ref-47" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item52 Ref="392" Component="#Ref-47" Culture="Default" Path="SizeF" Data="214.7714,20" />
+    <Item52 Ref="392" Component="#Ref-47" Culture="Default" Path="SizeF" Data="326.067535,20" />
     <Item53 Ref="393" Component="#Ref-45" Culture="Default" Path="LocationFloat" Data="353.5,0" />
-    <Item54 Ref="394" Component="#Ref-45" Culture="Default" Path="SizeF" Data="445.5197,20" />
+    <Item54 Ref="394" Component="#Ref-45" Culture="Default" Path="SizeF" Data="929.771667,20" />
     <Item55 Ref="395" Component="#Ref-45" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item56 Ref="396" Component="#Ref-49" Culture="Default" Path="LocationFloat" Data="902.7913,0" />
-    <Item57 Ref="397" Component="#Ref-49" Culture="Default" Path="SizeF" Data="249.7252,20" />
+    <Item56 Ref="396" Component="#Ref-49" Culture="Default" Path="LocationFloat" Data="1316.333,0" />
+    <Item57 Ref="397" Component="#Ref-49" Culture="Default" Path="SizeF" Data="320.435547,20" />
     <Item58 Ref="398" Component="#Ref-49" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item59 Ref="399" Component="#Ref-202" Culture="Default" Path="HeightF" Data="0" />
     <Item60 Ref="400" Component="#Ref-243" Culture="Default" Path="HeightF" Data="20" />
@@ -710,17 +710,17 @@
     <Item65 Ref="405" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
     <Item66 Ref="406" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item67 Ref="407" Component="#Ref-84" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item68 Ref="408" Component="#Ref-84" Culture="Default" Path="SizeF" Data="1152.291,20" />
-    <Item69 Ref="409" Component="#Ref-94" Culture="Default" Path="LocationFloat" Data="3.003359,0" />
-    <Item70 Ref="410" Component="#Ref-94" Culture="Default" Path="SizeF" Data="1149.513,20" />
+    <Item68 Ref="408" Component="#Ref-84" Culture="Default" Path="SizeF" Data="1636.54346,20" />
+    <Item69 Ref="409" Component="#Ref-94" Culture="Default" Path="LocationFloat" Data="3.00334287,0" />
+    <Item70 Ref="410" Component="#Ref-94" Culture="Default" Path="SizeF" Data="1633.76538,20" />
     <Item71 Ref="411" Component="#Ref-89" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item72 Ref="412" Component="#Ref-89" Culture="Default" Path="SizeF" Data="1152.292,20" />
+    <Item72 Ref="412" Component="#Ref-89" Culture="Default" Path="SizeF" Data="1636.54443,20" />
     <Item73 Ref="413" Component="#Ref-244" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item74 Ref="414" Component="#Ref-244" Culture="Default" Path="SizeF" Data="1152.517,20" />
+    <Item74 Ref="414" Component="#Ref-244" Culture="Default" Path="SizeF" Data="1636.76941,20" />
     <Item75 Ref="415" Component="#Ref-300" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item76 Ref="416" Component="#Ref-300" Culture="Default" Path="SizeF" Data="1152.517,20" />
-    <Item77 Ref="417" Component="#Ref-54" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
-    <Item78 Ref="418" Component="#Ref-54" Culture="Default" Path="SizeF" Data="1150.291,20" />
+    <Item76 Ref="416" Component="#Ref-300" Culture="Default" Path="SizeF" Data="1636.76941,20" />
+    <Item77 Ref="417" Component="#Ref-54" Culture="Default" Path="LocationFloat" Data="2.00004578,0" />
+    <Item78 Ref="418" Component="#Ref-54" Culture="Default" Path="SizeF" Data="1634.54346,20" />
     <Item79 Ref="419" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item80 Ref="420" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item81 Ref="421" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
@@ -733,7 +733,7 @@
     <Item88 Ref="428" Component="#Ref-83" Culture="Default" Path="HeightF" Data="20" />
     <Item89 Ref="429" Component="#Ref-43" Culture="Default" Path="HeightF" Data="20" />
     <Item90 Ref="430" Component="#Ref-204" Culture="Default" Path="LocationFloat" Data="0,21.16667" />
-    <Item91 Ref="431" Component="#Ref-204" Culture="Default" Path="SizeF" Data="406.1926,56" />
+    <Item91 Ref="431" Component="#Ref-204" Culture="Default" Path="SizeF" Data="328.067535,56" />
     <Item92 Ref="432" Component="#Ref-133" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item93 Ref="433" Component="#Ref-133" Culture="Default" Path="SizeF" Data="250,23" />
     <Item94 Ref="434" Component="#Ref-133" Culture="Default" Path="Text" Data="Std Book: [?BookPerf]" />

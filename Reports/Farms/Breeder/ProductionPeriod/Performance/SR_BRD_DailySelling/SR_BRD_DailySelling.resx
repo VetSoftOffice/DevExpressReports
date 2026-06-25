@@ -150,60 +150,60 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
 int avgCount = 0;
 double totalRatioSum = 0;
 int totalRatioCount = 0;
-decimal TotalLayFemaleBalance  = 0;
-decimal TotalLayMaleBalance  = 0;
+decimal TotalLayFemaleBalance = 0;
+decimal TotalLayMaleBalance = 0;
+
+// Add these missing variables
+double femaleLayRTotal = 0;
+double maleLayRTotal = 0;
+
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     XRTableCell cell = sender as XRTableCell;
+    XRTableCell cell = sender as XRTableCell;
     if (cell == null)
         return;
 
-    double femaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayFemaleBalance"));
-    double maleBalance   = Convert.ToDouble(GetCurrentColumnValue("LayMaleBalance"));
-    double layWt         = Convert.ToDouble(GetCurrentColumnValue("LayWt"));
+    // Use different variable names to avoid conflicts
+    double layFemaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayFemaleBalance"));
+    double layMaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayMaleBalance"));
+    double layWt = Convert.ToDouble(GetCurrentColumnValue("LayWt"));
 
-    double totalBalance = femaleBalance + maleBalance;
+    double totalBalance = layFemaleBalance + layMaleBalance;
 
-    if (totalBalance &gt; 0)
-    {
+    if (totalBalance &gt; 0) {
         double result = layWt / totalBalance;
         cell.Text = result.ToString("N2");
-    }
-    else
-    {
+    } else {
         cell.Text = "0.00";
     }
     
-    // Get current row values
-    double femaleBalance = Convert.ToDouble(GetCurrentColumnValue("SellFemaleBalance"));
-    double maleBalance   = Convert.ToDouble(GetCurrentColumnValue("SellMaleBalance"));
-    double sellWt        = Convert.ToDouble(GetCurrentColumnValue("SellWt"));
+    // Calculate total ratio for xrTableCell48
+    double sellFemaleBalance = Convert.ToDouble(GetCurrentColumnValue("SellFemaleBalance"));
+    double sellMaleBalance = Convert.ToDouble(GetCurrentColumnValue("SellMaleBalance"));
+    double sellWt = Convert.ToDouble(GetCurrentColumnValue("SellWt"));
     
-    // Calculate total balance
-    double totalBalance = femaleBalance + maleBalance;
+    double totalSellBalance = sellFemaleBalance + sellMaleBalance;
     
-    // Only include rows where totalBalance &gt; 0
-    if (totalBalance &gt; 0)
-    {
-        totalRatioSum += sellWt / totalBalance;
+    if (totalSellBalance &gt; 0) {
+        totalRatioSum += sellWt / totalSellBalance;
         totalRatioCount++;
     }
 }
 
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    double femaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayFemaleBalance"));
-    double maleBalance   = Convert.ToDouble(GetCurrentColumnValue("LayMaleBalance"));
-    double layWt         = Convert.ToDouble(GetCurrentColumnValue("LayWt"));
+    double layFemaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayFemaleBalance"));
+    double layMaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayMaleBalance"));
+    double layWt = Convert.ToDouble(GetCurrentColumnValue("LayWt"));
 
-    double totalBalance = femaleBalance + maleBalance;
+    double totalBalance = layFemaleBalance + layMaleBalance;
 
-    if (totalBalance &gt; 0)
-    {
-         avgSum += layWt / totalBalance;
+    if (totalBalance &gt; 0) {
+        avgSum += layWt / totalBalance;
         avgCount++;
     }
     
-    TotalLayFemaleBalance += femaleBalance ;
-    TotalLayMaleBalance += maleBalance   ;
+    // Accumulate totals as decimal
+    TotalLayFemaleBalance += (decimal)layFemaleBalance;
+    TotalLayMaleBalance += (decimal)layMaleBalance;
 }
 
 private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -223,28 +223,23 @@ private void xrTableCell25_BeforePrint(object sender, System.ComponentModel.Canc
         return;
 
     double sellFemaleBalance = Convert.ToDouble(GetCurrentColumnValue("SellFemaleBalance"));
-    double sellMaleBalance   = Convert.ToDouble(GetCurrentColumnValue("SellMaleBalance"));
-    double sellWt            = Convert.ToDouble(GetCurrentColumnValue("SellWt"));
+    double sellMaleBalance = Convert.ToDouble(GetCurrentColumnValue("SellMaleBalance"));
+    double sellWt = Convert.ToDouble(GetCurrentColumnValue("SellWt"));
 
     double totalSaledBalance = sellFemaleBalance + sellMaleBalance;
 
-    if (totalSaledBalance &gt; 0)
-    {
+    if (totalSaledBalance &gt; 0) {
         double result = sellWt / totalSaledBalance;
         cell.Text = result.ToString("N2");
-    }
-    else
-    {
+    } else {
         cell.Text = "0.00";
     }
 }
 
 private void xrTableCell48_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
-
-// Optionally, check if this is the last row in the group/report
+    if (cell == null)
+        return;
 
     if (totalRatioCount &gt; 0)
         cell.Text = (totalRatioSum / totalRatioCount).ToString("N2");
@@ -254,110 +249,90 @@ if (cell == null)
 
 private void xrTableCell29_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
+    if (cell == null)
+        return;
 
-// Get current row value
-double femaleSell = Convert.ToDouble(GetCurrentColumnValue("FemaleSell"));
+    double femaleSell = Convert.ToDouble(GetCurrentColumnValue("FemaleSell"));
 
-
-// Apply condition
-if (TotalLayFemaleBalance != 0)
-    cell.Text = (femaleSell * 100.0 / TotalLayFemaleBalance).ToString("N2");
-else
-    cell.Text = "0.00";
-
+    if ((double)TotalLayFemaleBalance != 0)
+        cell.Text = (femaleSell * 100.0 / (double)TotalLayFemaleBalance).ToString("N2");
+    else
+        cell.Text = "0.00";
 }
 
 private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
+    if (cell == null)
+        return;
 
-// Get values
-double maleSell = Convert.ToDouble(GetCurrentColumnValue("MaleSell"));
+    double maleSell = Convert.ToDouble(GetCurrentColumnValue("MaleSell"));
 
-// Apply condition
-if (TotalLayMaleBalance  != 0)
-    cell.Text = (maleSell * 100.0 / TotalLayMaleBalance).ToString("N2");
-else
-    cell.Text = "0.00";
-
+    if ((double)TotalLayMaleBalance != 0)
+        cell.Text = (maleSell * 100.0 / (double)TotalLayMaleBalance).ToString("N2");
+    else
+        cell.Text = "0.00";
 }
 
 private void xrTableCell32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
+    if (cell == null)
+        return;
 
-// Get values
-double femaleSellCulls = Convert.ToDouble(GetCurrentColumnValue("FemaleSellCulls"));
+    double femaleSellCulls = Convert.ToDouble(GetCurrentColumnValue("FemaleSellCulls"));
 
-// Apply condition
-if (TotalLayFemaleBalance != 0)
-    cell.Text = (femaleSellCulls * 100.0 / TotalLayFemaleBalance ).ToString("N2");
-else
-    cell.Text = "0.00";
-
+    if ((double)TotalLayFemaleBalance != 0)
+        cell.Text = (femaleSellCulls * 100.0 / (double)TotalLayFemaleBalance).ToString("N2");
+    else
+        cell.Text = "0.00";
 }
 
 private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
+    if (cell == null)
+        return;
 
+    double maleSellCulls = Convert.ToDouble(GetCurrentColumnValue("MaleSellCulls"));
 
-double maleSellCulls = Convert.ToDouble(GetCurrentColumnValue("MaleSellCulls"));
-
-// Apply condition
-if (TotalLayMaleBalance  != 0)
-    cell.Text = (maleSellCulls * 100.0 / TotalLayMaleBalance  ).ToString("N2");
-else
-    cell.Text = "0.00";
-
+    if ((double)TotalLayMaleBalance != 0)
+        cell.Text = (maleSellCulls * 100.0 / (double)TotalLayMaleBalance).ToString("N2");
+    else
+        cell.Text = "0.00";
 }
 
 private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
+    if (cell == null)
+        return;
 
-// Get required values
+    double femaleSell = Convert.ToDouble(GetCurrentColumnValue("FemaleSell"));
+    double femaleSellCulls = Convert.ToDouble(GetCurrentColumnValue("FemaleSellCulls"));
 
-double femaleSell = Convert.ToDouble(GetCurrentColumnValue("FemaleSell"));
-double femaleSellCulls = Convert.ToDouble(GetCurrentColumnValue("FemaleSellCulls"));
+    // Calculate DepletionF - this is the female balance at row level
+    double currentFemaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayFemaleBalance"));
+    double deplationF = currentFemaleBalance - (femaleSell + femaleSellCulls);
 
-// Calculate DeplationF
-double deplationF = TotalLayFemaleBalance - (femaleSell + femaleSellCulls);
-
-// Apply percentage logic
-if (femaleLayRTotal != 0)
-    cell.Text = (deplationF * 100.0 / TotalLayFemaleBalance ).ToString("N2");
-else
-    cell.Text = "0.00";
+    if ((double)TotalLayFemaleBalance != 0)
+        cell.Text = (deplationF * 100.0 / (double)TotalLayFemaleBalance).ToString("N2");
+    else
+        cell.Text = "0.00";
 }
 
 private void xrTableCell36_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
-if (cell == null)
-    return;
+    if (cell == null)
+        return;
 
-// Get required values
+    double maleSell = Convert.ToDouble(GetCurrentColumnValue("MaleSell"));
+    double maleSellCulls = Convert.ToDouble(GetCurrentColumnValue("MaleSellCulls"));
 
-double maleSell = Convert.ToDouble(GetCurrentColumnValue("MaleSell"));
-double maleSellCulls = Convert.ToDouble(GetCurrentColumnValue("MaleSellCulls"));
+    // Calculate DepletionM - this is the male balance at row level
+    double currentMaleBalance = Convert.ToDouble(GetCurrentColumnValue("LayMaleBalance"));
+    double deplationM = currentMaleBalance - (maleSell + maleSellCulls);
 
-// Calculate DeplationM
-double deplationM = TotalLayMaleBalance  - (maleSell + maleSellCulls);
-
-// Apply percentage logic
-if (maleLayRTotal != 0)
-    cell.Text = (deplationM * 100.0 / TotalLayMaleBalance  ).ToString("N2");
-else
-    cell.Text = "0.00";
-
-}
-
-</value>
+    if ((double)TotalLayMaleBalance != 0)
+        cell.Text = (deplationM * 100.0 / (double)TotalLayMaleBalance).ToString("N2");
+    else
+        cell.Text = "0.00";
+}</value>
   </data>
 </root>

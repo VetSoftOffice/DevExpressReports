@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_MainProdUnitData" ScriptsSource="&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;             XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;من: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;From: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;              XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1169.29138" PageHeightF="826.771667" Version="25.2" DataMember="SR_BRD_MainProdUnitData" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_MainProdUnitData" ScriptsSource="&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;    object dateValue = Parameters[&quot;DateFrom&quot;].Value;&#xD;&#xA;&#xD;&#xA;    // Handle null or empty&#xD;&#xA;    if (dateValue == null || string.IsNullOrWhiteSpace(dateValue.ToString()))&#xD;&#xA;    {&#xD;&#xA;        label.Text = &quot;&quot;;&#xD;&#xA;        return;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    // Safe DateTime conversion&#xD;&#xA;    if (!DateTime.TryParse(dateValue.ToString(), out DateTime dt))&#xD;&#xA;    {&#xD;&#xA;        label.Text = &quot;&quot;;&#xD;&#xA;        return;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;    // Safe RTL conversion&#xD;&#xA;    int isRtl = 0;&#xD;&#xA;    int.TryParse(Parameters[&quot;IsRTL&quot;]?.Value?.ToString(), out isRtl);&#xD;&#xA;&#xD;&#xA;    label.Text = isRtl == 1&#xD;&#xA;        ? $&quot;من: {dt:d/M/yyyy}&quot;&#xD;&#xA;        : $&quot;From: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;              XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1169.29138" PageHeightF="826.771667" Version="25.2" DataMember="SR_BRD_MainProdUnitData" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -463,27 +463,27 @@
                     <SubBands>
                       <Item1 Ref="227" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="228" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="228" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="229" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="230" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="230" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="231" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="232" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="232" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="233" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="234" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="234" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="235" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="236" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="236" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="237" UseFont="false" UseTextAlignment="false" />
                           </Item5>
-                          <Item6 Ref="238" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                          <Item6 Ref="238" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="239" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="240" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="240" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="241" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -493,7 +493,7 @@
                       </Item1>
                       <Item2 Ref="243" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="244" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="244" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="245" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -847,7 +847,7 @@
     <Item23 Ref="448" Component="#Ref-11" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
     <Item24 Ref="449" Component="#Ref-96" Culture="Default" Path="HeightF" Data="0" />
     <Item25 Ref="450" Component="#Ref-162" Culture="Default" Path="HeightF" Data="0" />
-    <Item26 Ref="451" Component="#Ref-253" Culture="Default" Path="HeightF" Data="21.4583721" />
+    <Item26 Ref="451" Component="#Ref-253" Culture="Default" Path="HeightF" Data="21.45837" />
     <Item27 Ref="452" Component="#Ref-23" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item28 Ref="453" Component="#Ref-23" Culture="Default" Path="SizeF" Data="204.12,20" />
     <Item29 Ref="454" Component="#Ref-21" Culture="Default" Path="LocationFloat" Data="544.4844,0" />
@@ -1013,7 +1013,7 @@
     <Item189 Ref="614" Component="#Ref-91" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item190 Ref="615" Component="#Ref-91" Culture="Default" Path="Text" Data="xrTableCell36" />
     <Item191 Ref="616" Component="#Ref-91" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item192 Ref="617" Component="#Ref-91" Culture="Default" Path="Weight" Data="25.209605926164691" />
+    <Item192 Ref="617" Component="#Ref-91" Culture="Default" Path="Weight" Data="36.185210025804693" />
     <Item193 Ref="618" Component="#Ref-66" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item194 Ref="619" Component="#Ref-66" Culture="Default" Path="Text" Data="xrTableCell37" />
     <Item195 Ref="620" Component="#Ref-66" Culture="Default" Path="TextFormatString" Data="{0:dd-MM-yyyy}" />
@@ -1033,7 +1033,7 @@
     <Item209 Ref="634" Component="#Ref-87" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item210 Ref="635" Component="#Ref-87" Culture="Default" Path="Text" Data="xrTableCell40" />
     <Item211 Ref="636" Component="#Ref-87" Culture="Default" Path="TextFormatString" Data="{0:#,#}" />
-    <Item212 Ref="637" Component="#Ref-87" Culture="Default" Path="Weight" Data="45.29554252772472" />
+    <Item212 Ref="637" Component="#Ref-87" Culture="Default" Path="Weight" Data="34.319938428084718" />
     <Item213 Ref="638" Component="#Ref-69" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item214 Ref="639" Component="#Ref-69" Culture="Default" Path="Text" Data="xrTableCell41" />
     <Item215 Ref="640" Component="#Ref-69" Culture="Default" Path="TextFormatString" Data="{0:dd-MM-yyyy}" />
@@ -1069,15 +1069,15 @@
     <Item245 Ref="670" Component="#Ref-386" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item246 Ref="671" Component="#Ref-386" Culture="Default" Path="Text" Data="Capcity Rec.Diff" />
     <Item247 Ref="672" Component="#Ref-386" Culture="ar" Path="Text" Data="فرق مستلم وطاقة" />
-    <Item248 Ref="673" Component="#Ref-386" Culture="Default" Path="Weight" Data="4.0094321717689265" />
+    <Item248 Ref="673" Component="#Ref-386" Culture="Default" Path="Weight" Data="3.0379064305441577" />
     <Item249 Ref="674" Component="#Ref-413" Culture="Default" Path="Text" Data="" />
-    <Item250 Ref="675" Component="#Ref-413" Culture="Default" Path="Weight" Data="3.556769874134706" />
+    <Item250 Ref="675" Component="#Ref-413" Culture="Default" Path="Weight" Data="2.6949349955999078" />
     <Item251 Ref="676" Component="#Ref-388" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item252 Ref="677" Component="#Ref-388" Culture="Default" Path="Text" Data="Cap %" />
     <Item253 Ref="678" Component="#Ref-388" Culture="ar" Path="Text" Data="طاقة الإنتاج %" />
-    <Item254 Ref="679" Component="#Ref-388" Culture="Default" Path="Weight" Data="2.2314730177911284" />
+    <Item254 Ref="679" Component="#Ref-388" Culture="Default" Path="Weight" Data="3.2029987590158973" />
     <Item255 Ref="680" Component="#Ref-414" Culture="Default" Path="Text" Data="" />
-    <Item256 Ref="681" Component="#Ref-414" Culture="Default" Path="Weight" Data="1.9795441731003818" />
+    <Item256 Ref="681" Component="#Ref-414" Culture="Default" Path="Weight" Data="2.84137905163518" />
     <Item257 Ref="682" Component="#Ref-366" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item258 Ref="683" Component="#Ref-366" Culture="Default" Path="Text" Data="Start Work Date" />
     <Item259 Ref="684" Component="#Ref-366" Culture="ar" Path="Text" Data="تاريخ بداية العمل" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_DailyDataFlkWise" ScriptsSource="&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_DailyDataFlkWise" ScriptsSource="&#xD;&#xA;private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateTo&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateTo&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;الي: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;To: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1847" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="2" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-1" />
     <Item2 Ref="3" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-1" />
@@ -337,27 +337,27 @@
                     <SubBands>
                       <Item1 Ref="176" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="177" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="177" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="178" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="179" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="179" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="180" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="181" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="181" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="182" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="183" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="183" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="184" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="185" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="185" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="186" UseFont="false" UseTextAlignment="false" />
                           </Item5>
-                          <Item6 Ref="187" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                          <Item6 Ref="187" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="188" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="189" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="189" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="190" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -367,7 +367,7 @@
                       </Item1>
                       <Item2 Ref="192" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="193" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="193" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="194" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -741,12 +741,12 @@
     <Item46 Ref="409" Component="#Ref-110" Culture="Default" Path="HeightF" Data="0" />
     <Item47 Ref="410" Component="#Ref-202" Culture="Default" Path="HeightF" Data="23" />
     <Item48 Ref="411" Component="#Ref-43" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item49 Ref="412" Component="#Ref-43" Culture="Default" Path="SizeF" Data="218.8366,20" />
+    <Item49 Ref="412" Component="#Ref-43" Culture="Default" Path="SizeF" Data="331.689972,20" />
     <Item50 Ref="413" Component="#Ref-42" Culture="Default" Path="LocationFloat" Data="353.5,0" />
-    <Item51 Ref="414" Component="#Ref-42" Culture="Default" Path="SizeF" Data="103,20" />
+    <Item51 Ref="414" Component="#Ref-42" Culture="Default" Path="SizeF" Data="1125.22827,20" />
     <Item52 Ref="415" Component="#Ref-42" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item53 Ref="416" Component="#Ref-44" Culture="Default" Path="LocationFloat" Data="606.9581,0" />
-    <Item54 Ref="417" Component="#Ref-44" Culture="Default" Path="SizeF" Data="203.0388,20" />
+    <Item53 Ref="416" Component="#Ref-44" Culture="Default" Path="LocationFloat" Data="1502.7915,0" />
+    <Item54 Ref="417" Component="#Ref-44" Culture="Default" Path="SizeF" Data="329.433716,20" />
     <Item55 Ref="418" Component="#Ref-44" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item56 Ref="419" Component="#Ref-217" Culture="Default" Path="HeightF" Data="0" />
     <Item57 Ref="420" Component="#Ref-266" Culture="Default" Path="HeightF" Data="20" />
@@ -757,21 +757,21 @@
     <Item62 Ref="425" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature in all page" />
     <Item63 Ref="426" Component="#Ref-6" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item64 Ref="427" Component="#Ref-78" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item65 Ref="428" Component="#Ref-78" Culture="Default" Path="SizeF" Data="807,20" />
-    <Item66 Ref="429" Component="#Ref-167" Culture="Default" Path="LocationFloat" Data="3.003362,0" />
-    <Item67 Ref="430" Component="#Ref-167" Culture="Default" Path="SizeF" Data="806.9969,20" />
+    <Item65 Ref="428" Component="#Ref-78" Culture="Default" Path="SizeF" Data="1832,20" />
+    <Item66 Ref="429" Component="#Ref-167" Culture="Default" Path="LocationFloat" Data="3.00334287,0" />
+    <Item67 Ref="430" Component="#Ref-167" Culture="Default" Path="SizeF" Data="1828.99353,20" />
     <Item68 Ref="431" Component="#Ref-112" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item69 Ref="432" Component="#Ref-112" Culture="Default" Path="SizeF" Data="807,20" />
+    <Item69 Ref="432" Component="#Ref-112" Culture="Default" Path="SizeF" Data="1832,20" />
     <Item70 Ref="433" Component="#Ref-267" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item71 Ref="434" Component="#Ref-267" Culture="Default" Path="SizeF" Data="806.9969,20" />
+    <Item71 Ref="434" Component="#Ref-267" Culture="Default" Path="SizeF" Data="1831.997,20" />
     <Item72 Ref="435" Component="#Ref-323" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item73 Ref="436" Component="#Ref-323" Culture="Default" Path="SizeF" Data="806.9969,20" />
-    <Item74 Ref="437" Component="#Ref-48" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
-    <Item75 Ref="438" Component="#Ref-48" Culture="Default" Path="SizeF" Data="806.9969,20" />
+    <Item73 Ref="436" Component="#Ref-323" Culture="Default" Path="SizeF" Data="1831.997,20" />
+    <Item74 Ref="437" Component="#Ref-48" Culture="Default" Path="LocationFloat" Data="2.00004578,0" />
+    <Item75 Ref="438" Component="#Ref-48" Culture="Default" Path="SizeF" Data="1829.997,20" />
     <Item76 Ref="439" Component="#Ref-0" Culture="Default" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item77 Ref="440" Component="#Ref-0" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item78 Ref="441" Component="#Ref-0" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
-    <Item79 Ref="442" Component="#Ref-0" Culture="Default" Path="PaperKind" Data="A4" />
+    <Item78 Ref="441" Component="#Ref-0" Culture="Default" Path="Margins" Data="10, 5, 20, 20" />
+    <Item79 Ref="442" Component="#Ref-0" Culture="Default" Path="PaperKind" Data="Custom" />
     <Item80 Ref="443" Component="#Ref-207" Culture="Default" Path="HeightF" Data="23" />
     <Item81 Ref="444" Component="#Ref-218" Culture="Default" Path="HeightF" Data="127" />
     <Item82 Ref="445" Component="#Ref-111" Culture="Default" Path="HeightF" Data="20" />

@@ -187,6 +187,8 @@ decimal totalMaleMort = 0;
 decimal totalMaleKills = 0;
 decimal totalMaleCulls = 0;
 decimal totalMaleSample = 0;
+decimal totalFemaleCulls  = 0;
+decimal totalMaleCullsKill = 0;
 private void xrTableCell91_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
 
@@ -216,7 +218,7 @@ private void detailBand1_BeforePrint(object sender, System.ComponentModel.Cancel
     totalFemaleCulls += femaleCulls;
      decimal femaleSample = Convert.ToDecimal(GetCurrentColumnValue("Female_Sample") ?? 0);
     totalFemaleSample += femaleSample;
-    totalFemaleMort += SafeConvert(GetCurrentColumnValue("FemaleMort"));
+    totalFemaleMort +=  Convert.ToDecimal(GetCurrentColumnValue("FemaleMort"));
         decimal maleMort = Convert.ToDecimal(GetCurrentColumnValue("MaleMort") ?? 0);
     totalMaleMort += maleMort;
         decimal maleCullsKill = Convert.ToDecimal(GetCurrentColumnValue("Male_CullsKill") ?? 0);

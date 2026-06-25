@@ -123,28 +123,31 @@
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
 private void xrLabel2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-             XRLabel label = sender as XRLabel;
+    XRLabel label = sender as XRLabel;
 
-if (Parameters["DateFrom"].Value == null)
-{
-    label.Text = "";
-    return;
-}
+    object dateValue = Parameters["DateFrom"].Value;
 
-DateTime dt = Convert.ToDateTime(Parameters["DateFrom"].Value);
+    // Handle null or empty
+    if (dateValue == null || string.IsNullOrWhiteSpace(dateValue.ToString()))
+    {
+        label.Text = "";
+        return;
+    }
 
-// Convert IsRTL safely
-int isRtl = Convert.ToInt32(Parameters["IsRTL"].Value);
+    // Safe DateTime conversion
+    if (!DateTime.TryParse(dateValue.ToString(), out DateTime dt))
+    {
+        label.Text = "";
+        return;
+    }
 
-if (isRtl == 1) // Arabic
-{
-    label.Text = $"من: {dt:d/M/yyyy}";
-}
-else // English
-{
-    label.Text = $"From: {dt:dd/MM/yyyy}";
-}
+    // Safe RTL conversion
+    int isRtl = 0;
+    int.TryParse(Parameters["IsRTL"]?.Value?.ToString(), out isRtl);
 
+    label.Text = isRtl == 1
+        ? $"من: {dt:d/M/yyyy}"
+        : $"From: {dt:dd/MM/yyyy}";
 
 }
 

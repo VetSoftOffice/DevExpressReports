@@ -126,58 +126,6 @@
   <data name="dsBreeder.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0iZHNCcmVlZGVyIj48VmlldyBOYW1lPSJTUl9MQVlfUHJvZEFuZElzc3VlUmVwb3J0Ij48RmllbGQgTmFtZT0iUm93RGF0YSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGF0YVZhbHVlIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iUXVlcnkiPjxGaWVsZCBOYW1lPSJSb3dTZXEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xTZXEyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29sRGF0YTIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sU2VxMyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbERhdGEzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbFNlcTQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhNCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
-  <data name="MonthName.Expression" xml:space="preserve">
-    <value>IIf(
-    ?IsRTL, 
-    IIf([DataMonthNo] == 1, 'يناير',
-        IIf([DataMonthNo] == 2, 'فبراير',
-            IIf([DataMonthNo] == 3, 'مارس',
-                IIf([DataMonthNo] == 4, 'أبريل',
-                    IIf([DataMonthNo] == 5, 'مايو',
-                        IIf([DataMonthNo] == 6, 'يونيو',
-                            IIf([DataMonthNo] == 7, 'يوليو',
-                                IIf([DataMonthNo] == 8, 'أغسطس',
-                                    IIf([DataMonthNo] == 9, 'سبتمبر',
-                                        IIf([DataMonthNo] == 10, 'أكتوبر',
-                                            IIf([DataMonthNo] == 11, 'نوفمبر',
-                                                'ديسمبر'
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            )
-        )
-    ),
-    IIf([DataMonthNo] == 1, 'Jan',
-        IIf([DataMonthNo] == 2, 'Feb',
-            IIf([DataMonthNo] == 3, 'Mar',
-                IIf([DataMonthNo] == 4, 'Apr',
-                    IIf([DataMonthNo] == 5, 'May',
-                        IIf([DataMonthNo] == 6, 'Jun',
-                            IIf([DataMonthNo] == 7, 'Jul',
-                                IIf([DataMonthNo] == 8, 'Aug',
-                                    IIf([DataMonthNo] == 9, 'Sep',
-                                        IIf([DataMonthNo] == 10, 'Oct',
-                                            IIf([DataMonthNo] == 11, 'Nov',
-                                                'Dec'
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            )
-        )
-    )
-)
-</value>
-  </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
 private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {

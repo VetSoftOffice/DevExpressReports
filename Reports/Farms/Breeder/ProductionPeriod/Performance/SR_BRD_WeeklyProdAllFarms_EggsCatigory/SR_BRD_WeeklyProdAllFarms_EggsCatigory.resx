@@ -154,31 +154,22 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
 private void crossTabDataCell2_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {
-    // Get the current cell's value (CatValue) and the TotalEggs value
-object catValueObj = GetCellValue("CatValue"); // The measure/field name
-object totalEggsObj = GetCellValue("TotalEggs"); // The total eggs field
+// Use GetCurrentColumnValue to get values from the data source
+    XRCrossTabCell cell = (XRCrossTabCell)sender;
 
-if (catValueObj != null &amp;&amp; totalEggsObj != null)
-{
-    decimal catValue = Convert.ToDecimal(catValueObj);
-    decimal totalEggs = Convert.ToDecimal(totalEggsObj);
+    decimal catValue = Convert.ToDecimal(GetCurrentColumnValue("CatValue"));
+    decimal totalEggs = Convert.ToDecimal(GetCurrentColumnValue("TotalEggs"));
     
     if (totalEggs != 0)
     {
-        // Calculate percentage: (CatValue * 100) / TotalEggs
         decimal result = (catValue * 100.0m) / totalEggs;
-        e.Value = result; // Set the cell value
+        cell.Text = result.ToString("N2");
     }
     else
     {
-        e.Value = 0; // Or DBNull.Value if you prefer null
+        cell.Text = "0.00";
     }
-}
-else
-{
-    e.Value = 0;
-}
-}
+    }
 </value>
   </data>
 </root>
