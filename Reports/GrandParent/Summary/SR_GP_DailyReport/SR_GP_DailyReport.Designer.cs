@@ -521,7 +521,7 @@
             crossTabColumnDefinition7,
             crossTabColumnDefinition8});
             crossTabColumnField1.FieldName = "HouseCode_CF";
-            crossTabColumnField2.FieldName = "SR_GP_DailyReport.PinCode";
+            crossTabColumnField2.FieldName = "PinCode";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1,
             crossTabColumnField2});
@@ -539,8 +539,6 @@
             crossTabDataField2,
             crossTabDataField3,
             crossTabDataField4});
-            this.xrCrossTab1.DataMember = "SR_GP_DailyReport";
-            this.xrCrossTab1.DataSource = this.sqlDataSource2;
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.Name = "xrCrossTab1";
@@ -553,7 +551,7 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50F),
             crossTabRowDefinition1});
-            crossTabRowField1.FieldName = "SR_GP_DailyReport.Type1_CF";
+            crossTabRowField1.FieldName = "Type1_CF";
             crossTabRowField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             this.xrCrossTab1.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
             crossTabRowField1});

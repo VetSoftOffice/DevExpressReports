@@ -343,6 +343,8 @@
             // 
             this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel4.CanGrow = false;
+            this.xrLabel4.CanPublishOptions.Xls = false;
+            this.xrLabel4.CanPublishOptions.Xlsx = false;
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([CEGSCodes])")});
             this.xrLabel4.Name = "xrLabel4";
@@ -352,12 +354,16 @@
             // 
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel1.CanGrow = false;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.StylePriority.UseBorders = false;
             // 
             // xrLabel3
             // 
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.StylePriority.UseBorders = false;
             this.xrLabel3.StylePriority.UseFont = false;
@@ -366,6 +372,8 @@
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.CanGrow = false;
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
@@ -470,10 +478,10 @@
             this.crossTabTotalCell15});
             this.xrCrossTab2.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(87.54871F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17372F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17372F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17372F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17372F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17373F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17373F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17373F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(53.17373F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(63.42599F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(89.46439F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(75.83392F),
@@ -499,15 +507,15 @@
             crossTabRowDefinition5.Visible = false;
             crossTabRowDefinition6.Visible = false;
             this.xrCrossTab2.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(49.99999F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25.00001F),
             crossTabRowDefinition1,
             crossTabRowDefinition2,
             crossTabRowDefinition3,
             crossTabRowDefinition4,
             crossTabRowDefinition5,
             crossTabRowDefinition6,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25.00001F)});
             crossTabRowField1.FieldName = "ProdDate";
             crossTabRowField2.FieldName = "FlockCode";
             crossTabRowField3.FieldName = "Breed";
@@ -1281,6 +1289,10 @@
             this.DataMember = "SR_HT_EggsRejDetails";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20.00001F),

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_HT_FlockSummary" ScriptsSource="decimal rejectChicksSum = 0;&#xD;&#xA;decimal selChicksSum  = 0;&#xD;&#xA;decimal eggsSettedSum  = 0 ;&#xD;&#xA;decimal totalCumChicksPercentReport = 0;&#xD;&#xA;decimal totalCumChicksMinusHatchabilityReport = 0;&#xD;&#xA;decimal totalChicksSum  =0;&#xD;&#xA;decimal totalCumBroilerPercentReport  = 0;&#xD;&#xA;decimal totalCumBroilerMinusHatchabilityAGradeReport  = 0;&#xD;&#xA;decimal TotalCullsReport = 0;&#xD;&#xA;decimal TotalDeadChicksReport  = 0;&#xD;&#xA;decimal RejEggsSum = 0;&#xD;&#xA;decimal eggsSettedSumStdbrds = 0;&#xD;&#xA;decimal brdStdAsNumberTotal = 0;&#xD;&#xA;decimal BrdSTDTotal  =0;&#xD;&#xA;decimal totalHatchPrec = 0;&#xD;&#xA;decimal stadHatchabilityDev = 0;&#xD;&#xA;decimal brdStdAsNumberTotalDev = 0;&#xD;&#xA;decimal gtTotalChicksPer = 0;&#xD;&#xA;decimal gtBrdStdAsNumberPercent = 0;&#xD;&#xA;decimal TotalHatch  = 0;&#xD;&#xA;decimal cumSettingEggsTotal = 0;&#xD;&#xA;decimal cumDeadChicksTotal = 0;&#xD;&#xA;decimal cumCullsTotal = 0;&#xD;&#xA;decimal cumBroilerTotal = 0;&#xD;&#xA;decimal cumSettedSumSTDBrd  = 0;&#xD;&#xA;decimal brdStdAsNumberCumTotalSTDBrd  = 0;&#xD;&#xA;decimal ResultSTDBrd = 0;&#xD;&#xA;decimal eggsSettedSumStdbrdsCum = 0;&#xD;&#xA;decimal brdStdAsNumberTotalCum  = 0;&#xD;&#xA;decimal totalChicksSumCum  = 0;&#xD;&#xA;decimal TotalHatchCum = 0;&#xD;&#xA;decimal BrdSTDTotalCum = 0;&#xD;&#xA;decimal cumSettingEggsReport = 0;&#xD;&#xA;decimal cumBroilerReport = 0;&#xD;&#xA;decimal brdStdAsNumberCumTotalSTDBrdGrade  = 0;&#xD;&#xA;decimal ResultSTDBrdGrade  = 0;&#xD;&#xA;decimal AGradebrdStdAsNumberTotalCum   = 0;&#xD;&#xA;decimal totalChicksSumCumAGrade  = 0;&#xD;&#xA;decimal TotalHatchCumGrade   = 0;&#xD;&#xA;decimal BrdSTDTotalCumAGrade  = 0;&#xD;&#xA;void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;       //-- new logic for BrdStd Percentage using total EggsSetted&#xD;&#xA;// --- Get Values ---&#xD;&#xA;decimal eggsSettedSTD = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadHatchability = GetCurrentColumnValue(&quot;StadHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate @BrdStdAsNumber ---&#xD;&#xA;eggsSettedSumStdbrds += eggsSettedSTD ;&#xD;&#xA;brdStdAsNumberTotal += (stadHatchability * eggsSettedSTD / 100);&#xD;&#xA;&#xD;&#xA;//new logic for Dev &#xD;&#xA;   // --- Calculate @TotalChicks ---&#xD;&#xA;decimal selChicks = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal culls = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal deadChicks = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal totalChicks = selChicks + culls + deadChicks;&#xD;&#xA;&#xD;&#xA;// --- Calculate @TotalHatchPrec ---&#xD;&#xA;decimal eggsSettedDev = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;if (eggsSettedDev &gt; 0)&#xD;&#xA;{&#xD;&#xA;    totalHatchPrec = (totalChicks / eggsSettedDev ) * 100;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Get StadHatchability ---&#xD;&#xA;stadHatchabilityDev = GetCurrentColumnValue(&quot;StadHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;//Logic To get Dev for all records &#xD;&#xA;    // --- Cumulative variables (declare at class level) ---&#xD;&#xA;decimal eggsSettedSumDev = 0;&#xD;&#xA;decimal totalChicksSumDev = 0;&#xD;&#xA;&#xD;&#xA;// --- In your script ---&#xD;&#xA;// --- Get current row values ---&#xD;&#xA;decimal eggsSettedHatDev = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal selChicksDev = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal cullsDev = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal deadChicksDev = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadHatchabilityHatDev = GetCurrentColumnValue(&quot;StadHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate current row values ---&#xD;&#xA;decimal currentTotalChicks = selChicksDev + cullsDev + deadChicksDev ;&#xD;&#xA;decimal currentBrdStdAsNumber = stadHatchabilityHatDev * eggsSettedHatDev / 100;&#xD;&#xA;&#xD;&#xA;// --- Accumulate sums ---&#xD;&#xA;eggsSettedSumDev += eggsSettedHatDev ;&#xD;&#xA;totalChicksSumDev += currentTotalChicks;&#xD;&#xA;brdStdAsNumberTotalDev += currentBrdStdAsNumber;&#xD;&#xA;&#xD;&#xA;// --- Calculate @GT_TotalChicksPer ---&#xD;&#xA;// --- Calculate @GT_TotalChicksPer ---&#xD;&#xA;if (eggsSettedSumDev &gt; 0)&#xD;&#xA;{&#xD;&#xA;    gtTotalChicksPer = (totalChicksSumDev / eggsSettedSumDev) * 100;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Calculate @GT_BrdStdAsNumber as percentage ---&#xD;&#xA;if (eggsSettedSumDev &gt; 0)&#xD;&#xA;{&#xD;&#xA;    gtBrdStdAsNumberPercent = (brdStdAsNumberTotalDev / eggsSettedSumDev) * 100;&#xD;&#xA;    &#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Cum STDBrd Logic &#xD;&#xA;   // --- Declare cumulative variables at class level ---&#xD;&#xA;&#xD;&#xA;// --- In Before Print script ---&#xD;&#xA;// --- Get current row values ---&#xD;&#xA;decimal cumSettingEggsSTDbrd = GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadCumHatchabilitySTDbrd = GetCurrentColumnValue(&quot;StadCumHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;    &#xD;&#xA;decimal stadCumHatchabilitySTDbrdGrade = GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate current row @BrdStdAsNumber_Cum ---&#xD;&#xA;// --- Calculate current row @BrdStdAsNumber_Cum ---&#xD;&#xA;&#xD;&#xA;// --- Accumulate sums ---&#xD;&#xA;cumSettedSumSTDBrd  += cumSettingEggsSTDbrd ;&#xD;&#xA;brdStdAsNumberCumTotalSTDBrd += (stadCumHatchabilitySTDbrd * cumSettingEggsSTDbrd / 100);&#xD;&#xA;brdStdAsNumberCumTotalSTDBrdGrade += (stadCumHatchabilitySTDbrdGrade * cumSettingEggsSTDbrd / 100);&#xD;&#xA;&#xD;&#xA;// --- Assign to Cell ---&#xD;&#xA;    if (cumSettedSumSTDBrd &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        ResultSTDBrd =  (brdStdAsNumberCumTotalSTDBrd * 100) / cumSettedSumSTDBrd;&#xD;&#xA;    }&#xD;&#xA;// Assign to another cell for Grade &#xD;&#xA;if (cumSettedSumSTDBrd &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        ResultSTDBrdGrade =  (brdStdAsNumberCumTotalSTDBrdGrade * 100) / cumSettedSumSTDBrd;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;//Logic for Cum Dev&#xD;&#xA;// --- Get Values ---&#xD;&#xA;decimal eggsSettedSTDCum = GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadHatchabilityCum = GetCurrentColumnValue(&quot;StadCumHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;decimal AGradestadHatchabilityCum = GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate @BrdStdAsNumber ---&#xD;&#xA;eggsSettedSumStdbrdsCum += eggsSettedSTDCum ;&#xD;&#xA;brdStdAsNumberTotalCum += (stadHatchabilityCum * eggsSettedSTDCum / 100);&#xD;&#xA;AGradebrdStdAsNumberTotalCum  += (AGradestadHatchabilityCum * eggsSettedSTDCum / 100);&#xD;&#xA;    // --- Get values from the current row ---&#xD;&#xA;    decimal eggsSettedCum = GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal BroilerChicksCum = GetCurrentColumnValue(&quot;CumBroiler&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;        &#xD;&#xA;    decimal BroilerChicksCumAGrade = GetCurrentColumnValue(&quot;CumBroiler&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;    decimal cullsCum = GetCurrentColumnValue(&quot;CumCulls&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal deadChicksCum = GetCurrentColumnValue(&quot;CumDeadChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumDeadChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- TotalChicks = BroilerChicks + Culls + DeadChicks ---&#xD;&#xA;    decimal totalChicksCum = BroilerChicksCum + cullsCum + deadChicksCum ;&#xD;&#xA;    totalChicksSumCum += totalChicksCum ;&#xD;&#xA;    decimal totalChicksCumAGrade = BroilerChicksCumAGrade  ;&#xD;&#xA;    totalChicksSumCumAGrade += totalChicksCumAGrade ;&#xD;&#xA;    // --- Calculate percentages ---&#xD;&#xA;    TotalHatchCum  = (eggsSettedSumStdbrdsCum &gt; 0)&#xD;&#xA;        ? (totalChicksSumCum * 100 / eggsSettedSumStdbrdsCum )&#xD;&#xA;        : 0;&#xD;&#xA;    // --- Calculate Result ---&#xD;&#xA;    if(eggsSettedSumStdbrdsCum &gt; 0){&#xD;&#xA;            &#xD;&#xA;              BrdSTDTotalCum =  (brdStdAsNumberTotalCum * 100 / eggsSettedSumStdbrdsCum);&#xD;&#xA;          &#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;   //Calculate Percetnages for Grade&#xD;&#xA;   TotalHatchCumGrade  = (eggsSettedSumStdbrdsCum &gt; 0)&#xD;&#xA;        ? (totalChicksSumCumAGrade * 100 / eggsSettedSumStdbrdsCum )&#xD;&#xA;        : 0;&#xD;&#xA;    // --- Calculate Result ---&#xD;&#xA;    if(eggsSettedSumStdbrdsCum &gt; 0){&#xD;&#xA;            &#xD;&#xA;              BrdSTDTotalCumAGrade =  (AGradebrdStdAsNumberTotalCum  * 100 / eggsSettedSumStdbrdsCum);&#xD;&#xA;          &#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     // --- Get Values ---&#xD;&#xA;    decimal eggsSetted = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    decimal selChicks = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    // --- Calculate Result ---&#xD;&#xA;    decimal result = (eggsSetted &gt; 0)&#xD;&#xA;        ? (selChicks * 100 / eggsSetted)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;     eggsSettedSum += eggsSetted;&#xD;&#xA;     selChicksSum += selChicks ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        // --- Use global variables directly ---&#xD;&#xA;    decimal result = (eggsSettedSum &gt; 0)&#xD;&#xA;        ? (selChicksSum * 100 / eggsSettedSum)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        // --- Get values from the current row ---&#xD;&#xA;    decimal eggsSetted = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal selChicks = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal culls = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal deadChicks = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- TotalChicks = SelChicks + Culls + DeadChicks ---&#xD;&#xA;    decimal totalChicks = selChicks + culls + deadChicks;&#xD;&#xA;    totalChicksSum += totalChicks ;&#xD;&#xA;    // --- Calculate percentage ---&#xD;&#xA;    decimal result = (eggsSetted &gt; 0)&#xD;&#xA;        ? (totalChicks * 100 / eggsSetted)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to cell ---&#xD;&#xA;   &#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Use global variables directly ---&#xD;&#xA;    TotalHatch  = (eggsSettedSum &gt; 0)&#xD;&#xA;        ? (totalChicksSum* 100 / eggsSettedSum)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = TotalHatch.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    &#xD;&#xA;// --- Calculate Result ---&#xD;&#xA;if(eggsSettedSumStdbrds &gt; 0){&#xD;&#xA;        &#xD;&#xA;          BrdSTDTotal =  (brdStdAsNumberTotal * 100 / eggsSettedSumStdbrds );&#xD;&#xA;          &#xD;&#xA;                          }&#xD;&#xA;&#xD;&#xA;((XRTableCell)sender).Text = BrdSTDTotal.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Chicks Percentage ((CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs)&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumDeadChicks = 0;&#xD;&#xA;decimal cumCulls = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal cumChicksPercent = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumDeadChicks&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumDeadChicks&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumDeadChicks = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumDeadChicks&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumCulls&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumCulls&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Equation (same as Iif(CumSettingEggs &gt; 0, (CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs, 0)) ---&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumChicksPercent = (cumDeadChicks + cumCulls + cumBroiler) * 100 / cumSettingEggs;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    cumChicksPercent = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = cumChicksPercent.ToString(&quot;N2&quot;);&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;cumSettingEggsTotal += cumSettingEggs ;&#xD;&#xA;cumDeadChicksTotal += cumDeadChicks ;&#xD;&#xA;cumCullsTotal  += cumCulls ;&#xD;&#xA;cumBroilerTotal  += cumBroiler ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     if(cumSettingEggsTotal  &gt; 0) {&#xD;&#xA;             decimal totalChicks = cumDeadChicksTotal + cumCullsTotal + cumBroilerTotal;&#xD;&#xA;             totalCumChicksPercentReport = (totalChicks / cumSettingEggsTotal) * 100;&#xD;&#xA;         }&#xD;&#xA;     xrTableCell41.Text = totalCumChicksPercentReport.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Chicks Percentage minus StadCumHatchability&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumDeadChicks = 0;&#xD;&#xA;decimal cumCulls = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal stadCumHatchability = 0;&#xD;&#xA;decimal resultValue = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumDeadChicks&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumDeadChicks&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumDeadChicks = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumDeadChicks&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumCulls&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumCulls&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;StadCumHatchability&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;StadCumHatchability&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    stadCumHatchability = Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchability&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Calculate (CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs ---&#xD;&#xA;decimal cumChicksPercent = 0;&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumChicksPercent = (cumDeadChicks + cumCulls + cumBroiler) * 100 / cumSettingEggs;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Final result: subtract StadCumHatchability ---&#xD;&#xA;resultValue = cumChicksPercent - stadCumHatchability;&#xD;&#xA;&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;totalCumChicksMinusHatchabilityReport += resultValue;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = resultValue.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Broiler Percentage (CumBroiler * 100 / CumSettingEggs)&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal cumBroilerPercent = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Equation (same as Iif(CumSettingEggs &gt; 0, CumBroiler * 100 / CumSettingEggs, 0)) ---&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumBroilerPercent = cumBroiler * 100 / cumSettingEggs;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    cumBroilerPercent = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = cumBroilerPercent.ToString(&quot;N2&quot;);&#xD;&#xA;cumSettingEggsReport += cumSettingEggs ;&#xD;&#xA;cumBroilerReport += cumBroiler ;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Broiler Percentage minus StadCumHatchabilityAGrade&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal stadCumHatchabilityAGrade = 0;&#xD;&#xA;decimal resultValue = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    stadCumHatchabilityAGrade = Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Equation (same as (Iif(CumSettingEggs &gt; 0, CumBroiler / CumSettingEggs * 100, 0)) - StadCumHatchabilityAGrade) ---&#xD;&#xA;decimal cumBroilerPercent = 0;&#xD;&#xA;&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumBroilerPercent = (cumBroiler / cumSettingEggs) * 100;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;resultValue = cumBroilerPercent - stadCumHatchabilityAGrade;&#xD;&#xA;&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;totalCumBroilerMinusHatchabilityAGradeReport += resultValue;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = resultValue.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     decimal eggsSetted;&#xD;&#xA;    decimal culls;&#xD;&#xA;    decimal deadChicks;&#xD;&#xA;    decimal rejectChicks = 0;&#xD;&#xA;    decimal result = 0;&#xD;&#xA;    &#xD;&#xA;    // Assignments&#xD;&#xA;    eggsSetted = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    &#xD;&#xA;    culls = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    &#xD;&#xA;    deadChicks = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    &#xD;&#xA;    // --- Calculate percentage ---&#xD;&#xA;    rejectChicks = culls + deadChicks;&#xD;&#xA;    &#xD;&#xA;    if (eggsSetted &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        result = (rejectChicks * 100m) / eggsSetted;&#xD;&#xA;    }&#xD;&#xA;         // --- Assign to cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;    RejEggsSum += eggsSetted ;&#xD;&#xA;    TotalCullsReport += culls ;&#xD;&#xA;    TotalDeadChicksReport += deadChicks ;&#xD;&#xA;    rejectChicksSum = TotalCullsReport  + TotalDeadChicksReport ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     // --- Use global variables directly ---&#xD;&#xA;    decimal result = 0 ;&#xD;&#xA;     if(RejEggsSum &gt; 0){&#xD;&#xA;         &#xD;&#xA;           result = (rejectChicksSum  * 100m) / RejEggsSum ;&#xD;&#xA;         }&#xD;&#xA;        &#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA; &#xD;&#xA;// --- Calculate Final Result: {@TotalHatchPrec} - {SR_HT_FlockSummary.StadHatchability} ---&#xD;&#xA;    decimal finalResult = totalHatchPrec - stadHatchabilityDev;&#xD;&#xA;    ((XRTableCell)sender).Text = finalResult.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell59_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;decimal DevTotal =  Math.Round(TotalHatch  , 2)  -  Math.Round(BrdSTDTotal , 2);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign to cell ---&#xD;&#xA;((XRTableCell)sender).Text = DevTotal.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;&#xD;&#xA;    // --- Assign to cell in Report Footer ---&#xD;&#xA;    xrTableCell42.Text = ResultSTDBrd.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;  &#xD;&#xA;    decimal DevTotalCum =  Math.Round(TotalHatchCum  , 2)  -  Math.Round(BrdSTDTotalCum , 2);&#xD;&#xA;        xrTableCell43.Text = DevTotalCum.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    if(cumSettingEggsReport &gt; 0){&#xD;&#xA;             totalCumBroilerPercentReport = (cumBroilerReport * 100m) / cumSettingEggsReport ;&#xD;&#xA;        }&#xD;&#xA;      xrTableCell47.Text = totalCumBroilerPercentReport.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        xrTableCell49.Text = ResultSTDBrdGrade.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    decimal DevTotalCumAGrade =  Math.Round(TotalHatchCumGrade, 2)  -  Math.Round(BrdSTDTotalCumAGrade, 2);&#xD;&#xA;        xrTableCell52.Text = DevTotalCumAGrade.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidth="1654" PageHeight="1169" Version="24.2" DataMember="SR_HT_FlockSummary" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_HT_FlockSummary" ScriptsSource="decimal rejectChicksSum = 0;&#xD;&#xA;decimal selChicksSum  = 0;&#xD;&#xA;decimal eggsSettedSum  = 0 ;&#xD;&#xA;decimal totalCumChicksPercentReport = 0;&#xD;&#xA;decimal totalCumChicksMinusHatchabilityReport = 0;&#xD;&#xA;decimal totalChicksSum  =0;&#xD;&#xA;decimal totalCumBroilerPercentReport  = 0;&#xD;&#xA;decimal totalCumBroilerMinusHatchabilityAGradeReport  = 0;&#xD;&#xA;decimal TotalCullsReport = 0;&#xD;&#xA;decimal TotalDeadChicksReport  = 0;&#xD;&#xA;decimal RejEggsSum = 0;&#xD;&#xA;decimal eggsSettedSumStdbrds = 0;&#xD;&#xA;decimal brdStdAsNumberTotal = 0;&#xD;&#xA;decimal BrdSTDTotal  =0;&#xD;&#xA;decimal totalHatchPrec = 0;&#xD;&#xA;decimal stadHatchabilityDev = 0;&#xD;&#xA;decimal brdStdAsNumberTotalDev = 0;&#xD;&#xA;decimal gtTotalChicksPer = 0;&#xD;&#xA;decimal gtBrdStdAsNumberPercent = 0;&#xD;&#xA;decimal TotalHatch  = 0;&#xD;&#xA;decimal cumSettingEggsTotal = 0;&#xD;&#xA;decimal cumDeadChicksTotal = 0;&#xD;&#xA;decimal cumCullsTotal = 0;&#xD;&#xA;decimal cumBroilerTotal = 0;&#xD;&#xA;decimal cumSettedSumSTDBrd  = 0;&#xD;&#xA;decimal brdStdAsNumberCumTotalSTDBrd  = 0;&#xD;&#xA;decimal ResultSTDBrd = 0;&#xD;&#xA;decimal eggsSettedSumStdbrdsCum = 0;&#xD;&#xA;decimal brdStdAsNumberTotalCum  = 0;&#xD;&#xA;decimal totalChicksSumCum  = 0;&#xD;&#xA;decimal TotalHatchCum = 0;&#xD;&#xA;decimal BrdSTDTotalCum = 0;&#xD;&#xA;decimal cumSettingEggsReport = 0;&#xD;&#xA;decimal cumBroilerReport = 0;&#xD;&#xA;decimal brdStdAsNumberCumTotalSTDBrdGrade  = 0;&#xD;&#xA;decimal ResultSTDBrdGrade  = 0;&#xD;&#xA;decimal AGradebrdStdAsNumberTotalCum   = 0;&#xD;&#xA;decimal totalChicksSumCumAGrade  = 0;&#xD;&#xA;decimal TotalHatchCumGrade   = 0;&#xD;&#xA;decimal BrdSTDTotalCumAGrade  = 0;&#xD;&#xA;void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;       //-- new logic for BrdStd Percentage using total EggsSetted&#xD;&#xA;// --- Get Values ---&#xD;&#xA;decimal eggsSettedSTD = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadHatchability = GetCurrentColumnValue(&quot;StadHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate @BrdStdAsNumber ---&#xD;&#xA;eggsSettedSumStdbrds += eggsSettedSTD ;&#xD;&#xA;brdStdAsNumberTotal += (stadHatchability * eggsSettedSTD / 100);&#xD;&#xA;&#xD;&#xA;//new logic for Dev &#xD;&#xA;   // --- Calculate @TotalChicks ---&#xD;&#xA;decimal selChicks = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal culls = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal deadChicks = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal totalChicks = selChicks + culls + deadChicks;&#xD;&#xA;&#xD;&#xA;// --- Calculate @TotalHatchPrec ---&#xD;&#xA;decimal eggsSettedDev = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;if (eggsSettedDev &gt; 0)&#xD;&#xA;{&#xD;&#xA;    totalHatchPrec = (totalChicks / eggsSettedDev ) * 100;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Get StadHatchability ---&#xD;&#xA;stadHatchabilityDev = GetCurrentColumnValue(&quot;StadHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;//Logic To get Dev for all records &#xD;&#xA;    // --- Cumulative variables (declare at class level) ---&#xD;&#xA;decimal eggsSettedSumDev = 0;&#xD;&#xA;decimal totalChicksSumDev = 0;&#xD;&#xA;&#xD;&#xA;// --- In your script ---&#xD;&#xA;// --- Get current row values ---&#xD;&#xA;decimal eggsSettedHatDev = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal selChicksDev = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal cullsDev = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal deadChicksDev = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadHatchabilityHatDev = GetCurrentColumnValue(&quot;StadHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate current row values ---&#xD;&#xA;decimal currentTotalChicks = selChicksDev + cullsDev + deadChicksDev ;&#xD;&#xA;decimal currentBrdStdAsNumber = stadHatchabilityHatDev * eggsSettedHatDev / 100;&#xD;&#xA;&#xD;&#xA;// --- Accumulate sums ---&#xD;&#xA;eggsSettedSumDev += eggsSettedHatDev ;&#xD;&#xA;totalChicksSumDev += currentTotalChicks;&#xD;&#xA;brdStdAsNumberTotalDev += currentBrdStdAsNumber;&#xD;&#xA;&#xD;&#xA;// --- Calculate @GT_TotalChicksPer ---&#xD;&#xA;// --- Calculate @GT_TotalChicksPer ---&#xD;&#xA;if (eggsSettedSumDev &gt; 0)&#xD;&#xA;{&#xD;&#xA;    gtTotalChicksPer = (totalChicksSumDev / eggsSettedSumDev) * 100;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Calculate @GT_BrdStdAsNumber as percentage ---&#xD;&#xA;if (eggsSettedSumDev &gt; 0)&#xD;&#xA;{&#xD;&#xA;    gtBrdStdAsNumberPercent = (brdStdAsNumberTotalDev / eggsSettedSumDev) * 100;&#xD;&#xA;    &#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Cum STDBrd Logic &#xD;&#xA;   // --- Declare cumulative variables at class level ---&#xD;&#xA;&#xD;&#xA;// --- In Before Print script ---&#xD;&#xA;// --- Get current row values ---&#xD;&#xA;decimal cumSettingEggsSTDbrd = GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadCumHatchabilitySTDbrd = GetCurrentColumnValue(&quot;StadCumHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;    &#xD;&#xA;decimal stadCumHatchabilitySTDbrdGrade = GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate current row @BrdStdAsNumber_Cum ---&#xD;&#xA;// --- Calculate current row @BrdStdAsNumber_Cum ---&#xD;&#xA;&#xD;&#xA;// --- Accumulate sums ---&#xD;&#xA;cumSettedSumSTDBrd  += cumSettingEggsSTDbrd ;&#xD;&#xA;brdStdAsNumberCumTotalSTDBrd += (stadCumHatchabilitySTDbrd * cumSettingEggsSTDbrd / 100);&#xD;&#xA;brdStdAsNumberCumTotalSTDBrdGrade += (stadCumHatchabilitySTDbrdGrade * cumSettingEggsSTDbrd / 100);&#xD;&#xA;&#xD;&#xA;// --- Assign to Cell ---&#xD;&#xA;    if (cumSettedSumSTDBrd &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        ResultSTDBrd =  (brdStdAsNumberCumTotalSTDBrd * 100) / cumSettedSumSTDBrd;&#xD;&#xA;    }&#xD;&#xA;// Assign to another cell for Grade &#xD;&#xA;if (cumSettedSumSTDBrd &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        ResultSTDBrdGrade =  (brdStdAsNumberCumTotalSTDBrdGrade * 100) / cumSettedSumSTDBrd;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;//Logic for Cum Dev&#xD;&#xA;// --- Get Values ---&#xD;&#xA;decimal eggsSettedSTDCum = GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;decimal stadHatchabilityCum = GetCurrentColumnValue(&quot;StadCumHatchability&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchability&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;decimal AGradestadHatchabilityCum = GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;) != null&#xD;&#xA;    ? Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;))&#xD;&#xA;    : 0;&#xD;&#xA;&#xD;&#xA;// --- Calculate @BrdStdAsNumber ---&#xD;&#xA;eggsSettedSumStdbrdsCum += eggsSettedSTDCum ;&#xD;&#xA;brdStdAsNumberTotalCum += (stadHatchabilityCum * eggsSettedSTDCum / 100);&#xD;&#xA;AGradebrdStdAsNumberTotalCum  += (AGradestadHatchabilityCum * eggsSettedSTDCum / 100);&#xD;&#xA;    // --- Get values from the current row ---&#xD;&#xA;    decimal eggsSettedCum = GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal BroilerChicksCum = GetCurrentColumnValue(&quot;CumBroiler&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;        &#xD;&#xA;    decimal BroilerChicksCumAGrade = GetCurrentColumnValue(&quot;CumBroiler&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;    decimal cullsCum = GetCurrentColumnValue(&quot;CumCulls&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal deadChicksCum = GetCurrentColumnValue(&quot;CumDeadChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;CumDeadChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- TotalChicks = BroilerChicks + Culls + DeadChicks ---&#xD;&#xA;    decimal totalChicksCum = BroilerChicksCum + cullsCum + deadChicksCum ;&#xD;&#xA;    totalChicksSumCum += totalChicksCum ;&#xD;&#xA;    decimal totalChicksCumAGrade = BroilerChicksCumAGrade  ;&#xD;&#xA;    totalChicksSumCumAGrade += totalChicksCumAGrade ;&#xD;&#xA;    // --- Calculate percentages ---&#xD;&#xA;    TotalHatchCum  = (eggsSettedSumStdbrdsCum &gt; 0)&#xD;&#xA;        ? (totalChicksSumCum * 100 / eggsSettedSumStdbrdsCum )&#xD;&#xA;        : 0;&#xD;&#xA;    // --- Calculate Result ---&#xD;&#xA;    if(eggsSettedSumStdbrdsCum &gt; 0){&#xD;&#xA;            &#xD;&#xA;              BrdSTDTotalCum =  (brdStdAsNumberTotalCum * 100 / eggsSettedSumStdbrdsCum);&#xD;&#xA;          &#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;   //Calculate Percetnages for Grade&#xD;&#xA;   TotalHatchCumGrade  = (eggsSettedSumStdbrdsCum &gt; 0)&#xD;&#xA;        ? (totalChicksSumCumAGrade * 100 / eggsSettedSumStdbrdsCum )&#xD;&#xA;        : 0;&#xD;&#xA;    // --- Calculate Result ---&#xD;&#xA;    if(eggsSettedSumStdbrdsCum &gt; 0){&#xD;&#xA;            &#xD;&#xA;              BrdSTDTotalCumAGrade =  (AGradebrdStdAsNumberTotalCum  * 100 / eggsSettedSumStdbrdsCum);&#xD;&#xA;          &#xD;&#xA;      }&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     // --- Get Values ---&#xD;&#xA;    decimal eggsSetted = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    decimal selChicks = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    // --- Calculate Result ---&#xD;&#xA;    decimal result = (eggsSetted &gt; 0)&#xD;&#xA;        ? (selChicks * 100 / eggsSetted)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;     eggsSettedSum += eggsSetted;&#xD;&#xA;     selChicksSum += selChicks ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell53_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        // --- Use global variables directly ---&#xD;&#xA;    decimal result = (eggsSettedSum &gt; 0)&#xD;&#xA;        ? (selChicksSum * 100 / eggsSettedSum)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void tdCredit_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        // --- Get values from the current row ---&#xD;&#xA;    decimal eggsSetted = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal selChicks = GetCurrentColumnValue(&quot;SelChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;SelChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal culls = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    decimal deadChicks = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- TotalChicks = SelChicks + Culls + DeadChicks ---&#xD;&#xA;    decimal totalChicks = selChicks + culls + deadChicks;&#xD;&#xA;    totalChicksSum += totalChicks ;&#xD;&#xA;    // --- Calculate percentage ---&#xD;&#xA;    decimal result = (eggsSetted &gt; 0)&#xD;&#xA;        ? (totalChicks * 100 / eggsSetted)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to cell ---&#xD;&#xA;   &#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell57_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Use global variables directly ---&#xD;&#xA;    TotalHatch  = (eggsSettedSum &gt; 0)&#xD;&#xA;        ? (totalChicksSum* 100 / eggsSettedSum)&#xD;&#xA;        : 0;&#xD;&#xA;&#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = TotalHatch.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell58_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    &#xD;&#xA;// --- Calculate Result ---&#xD;&#xA;if(eggsSettedSumStdbrds &gt; 0){&#xD;&#xA;        &#xD;&#xA;          BrdSTDTotal =  (brdStdAsNumberTotal * 100 / eggsSettedSumStdbrds );&#xD;&#xA;          &#xD;&#xA;                          }&#xD;&#xA;&#xD;&#xA;((XRTableCell)sender).Text = BrdSTDTotal.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Chicks Percentage ((CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs)&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumDeadChicks = 0;&#xD;&#xA;decimal cumCulls = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal cumChicksPercent = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumDeadChicks&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumDeadChicks&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumDeadChicks = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumDeadChicks&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumCulls&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumCulls&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Equation (same as Iif(CumSettingEggs &gt; 0, (CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs, 0)) ---&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumChicksPercent = (cumDeadChicks + cumCulls + cumBroiler) * 100 / cumSettingEggs;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    cumChicksPercent = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = cumChicksPercent.ToString(&quot;N2&quot;);&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;cumSettingEggsTotal += cumSettingEggs ;&#xD;&#xA;cumDeadChicksTotal += cumDeadChicks ;&#xD;&#xA;cumCullsTotal  += cumCulls ;&#xD;&#xA;cumBroilerTotal  += cumBroiler ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell41_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     if(cumSettingEggsTotal  &gt; 0) {&#xD;&#xA;             decimal totalChicks = cumDeadChicksTotal + cumCullsTotal + cumBroilerTotal;&#xD;&#xA;             totalCumChicksPercentReport = (totalChicks / cumSettingEggsTotal) * 100;&#xD;&#xA;         }&#xD;&#xA;     xrTableCell41.Text = totalCumChicksPercentReport.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Chicks Percentage minus StadCumHatchability&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumDeadChicks = 0;&#xD;&#xA;decimal cumCulls = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal stadCumHatchability = 0;&#xD;&#xA;decimal resultValue = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumDeadChicks&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumDeadChicks&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumDeadChicks = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumDeadChicks&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumCulls&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumCulls&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;StadCumHatchability&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;StadCumHatchability&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    stadCumHatchability = Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchability&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Calculate (CumDeadChicks + CumCulls + CumBroiler) * 100 / CumSettingEggs ---&#xD;&#xA;decimal cumChicksPercent = 0;&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumChicksPercent = (cumDeadChicks + cumCulls + cumBroiler) * 100 / cumSettingEggs;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Final result: subtract StadCumHatchability ---&#xD;&#xA;resultValue = cumChicksPercent - stadCumHatchability;&#xD;&#xA;&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;totalCumChicksMinusHatchabilityReport += resultValue;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = resultValue.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell20_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Broiler Percentage (CumBroiler * 100 / CumSettingEggs)&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal cumBroilerPercent = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Equation (same as Iif(CumSettingEggs &gt; 0, CumBroiler * 100 / CumSettingEggs, 0)) ---&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumBroilerPercent = cumBroiler * 100 / cumSettingEggs;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    cumBroilerPercent = 0;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = cumBroilerPercent.ToString(&quot;N2&quot;);&#xD;&#xA;cumSettingEggsReport += cumSettingEggs ;&#xD;&#xA;cumBroilerReport += cumBroiler ;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell22_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    //-- new logic for Cum Broiler Percentage minus StadCumHatchabilityAGrade&#xD;&#xA;// --- Declare variables ---&#xD;&#xA;decimal cumSettingEggs = 0;&#xD;&#xA;decimal cumBroiler = 0;&#xD;&#xA;decimal stadCumHatchabilityAGrade = 0;&#xD;&#xA;decimal resultValue = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values safely ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumSettingEggs&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumSettingEggs&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumSettingEggs = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumSettingEggs&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CumBroiler&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;CumBroiler&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    cumBroiler = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumBroiler&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;) != null &amp;&amp;&#xD;&#xA;    !string.IsNullOrEmpty(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;).ToString()))&#xD;&#xA;{&#xD;&#xA;    stadCumHatchabilityAGrade = Convert.ToDecimal(GetCurrentColumnValue(&quot;StadCumHatchabilityAGrade&quot;));&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// --- Equation (same as (Iif(CumSettingEggs &gt; 0, CumBroiler / CumSettingEggs * 100, 0)) - StadCumHatchabilityAGrade) ---&#xD;&#xA;decimal cumBroilerPercent = 0;&#xD;&#xA;&#xD;&#xA;if (cumSettingEggs &gt; 0)&#xD;&#xA;{&#xD;&#xA;    cumBroilerPercent = (cumBroiler / cumSettingEggs) * 100;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;resultValue = cumBroilerPercent - stadCumHatchabilityAGrade;&#xD;&#xA;&#xD;&#xA;// --- Optional: accumulate total ---&#xD;&#xA;totalCumBroilerMinusHatchabilityAGradeReport += resultValue;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = resultValue.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell6_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     decimal eggsSetted;&#xD;&#xA;    decimal culls;&#xD;&#xA;    decimal deadChicks;&#xD;&#xA;    decimal rejectChicks = 0;&#xD;&#xA;    decimal result = 0;&#xD;&#xA;    &#xD;&#xA;    // Assignments&#xD;&#xA;    eggsSetted = GetCurrentColumnValue(&quot;EggsSetted&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsSetted&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    &#xD;&#xA;    culls = GetCurrentColumnValue(&quot;Culls&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    &#xD;&#xA;    deadChicks = GetCurrentColumnValue(&quot;DeadChicks&quot;) != null&#xD;&#xA;        ? Convert.ToDecimal(GetCurrentColumnValue(&quot;DeadChicks&quot;))&#xD;&#xA;        : 0;&#xD;&#xA;    &#xD;&#xA;    // --- Calculate percentage ---&#xD;&#xA;    rejectChicks = culls + deadChicks;&#xD;&#xA;    &#xD;&#xA;    if (eggsSetted &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        result = (rejectChicks * 100m) / eggsSetted;&#xD;&#xA;    }&#xD;&#xA;         // --- Assign to cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;    RejEggsSum += eggsSetted ;&#xD;&#xA;    TotalCullsReport += culls ;&#xD;&#xA;    TotalDeadChicksReport += deadChicks ;&#xD;&#xA;    rejectChicksSum = TotalCullsReport  + TotalDeadChicksReport ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell55_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     // --- Use global variables directly ---&#xD;&#xA;    decimal result = 0 ;&#xD;&#xA;     if(RejEggsSum &gt; 0){&#xD;&#xA;         &#xD;&#xA;           result = (rejectChicksSum  * 100m) / RejEggsSum ;&#xD;&#xA;         }&#xD;&#xA;        &#xD;&#xA;    // --- Assign to Cell ---&#xD;&#xA;    ((XRTableCell)sender).Text = result.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell15_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA; &#xD;&#xA;// --- Calculate Final Result: {@TotalHatchPrec} - {SR_HT_FlockSummary.StadHatchability} ---&#xD;&#xA;    decimal finalResult = totalHatchPrec - stadHatchabilityDev;&#xD;&#xA;    ((XRTableCell)sender).Text = finalResult.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell59_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;decimal DevTotal =  Math.Round(TotalHatch  , 2)  -  Math.Round(BrdSTDTotal , 2);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign to cell ---&#xD;&#xA;((XRTableCell)sender).Text = DevTotal.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;&#xD;&#xA;    // --- Assign to cell in Report Footer ---&#xD;&#xA;    xrTableCell42.Text = ResultSTDBrd.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;  &#xD;&#xA;    decimal DevTotalCum =  Math.Round(TotalHatchCum  , 2)  -  Math.Round(BrdSTDTotalCum , 2);&#xD;&#xA;        xrTableCell43.Text = DevTotalCum.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell47_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    if(cumSettingEggsReport &gt; 0){&#xD;&#xA;             totalCumBroilerPercentReport = (cumBroilerReport * 100m) / cumSettingEggsReport ;&#xD;&#xA;        }&#xD;&#xA;      xrTableCell47.Text = totalCumBroilerPercentReport.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell49_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        xrTableCell49.Text = ResultSTDBrdGrade.ToString(&quot;0.00&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    decimal DevTotalCumAGrade =  Math.Round(TotalHatchCumGrade, 2)  -  Math.Round(BrdSTDTotalCumAGrade, 2);&#xD;&#xA;        xrTableCell52.Text = DevTotalCumAGrade.ToString(&quot;0.00&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" Version="25.2" DataMember="SR_HT_FlockSummary" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -331,7 +331,7 @@
                 <Item1 Ref="212" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="213" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="214" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="214" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="215" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="216" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -344,27 +344,27 @@
                     <SubBands>
                       <Item1 Ref="221" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="222" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="222" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="223" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="224" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="224" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="225" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="226" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="226" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="227" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="228" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="228" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="229" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="230" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="230" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="231" UseFont="false" UseTextAlignment="false" />
                           </Item5>
-                          <Item6 Ref="232" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                          <Item6 Ref="232" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="233" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="234" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="234" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="235" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -374,7 +374,7 @@
                       </Item1>
                       <Item2 Ref="237" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="238" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="238" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="239" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -391,7 +391,7 @@
                   <Item4 Ref="245" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-218" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -402,28 +402,28 @@
         </Item2>
         <Item3 Ref="247" ControlType="SubBand" Name="SubBand6">
           <Controls>
-            <Item1 Ref="248" ControlType="XRLabel" Name="xrLabel9" CanGrow="false" Borders="None">
+            <Item1 Ref="248" ControlType="XRLabel" Name="xrLabel9" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="249" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?BreederFlock)&#xA;" />
               </ExpressionBindings>
               <StylePriority Ref="250" UseBorders="false" />
             </Item1>
-            <Item2 Ref="251" ControlType="XRLabel" Name="xrLabel8" CanGrow="false" Borders="None">
+            <Item2 Ref="251" ControlType="XRLabel" Name="xrLabel8" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="252" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?BreederCrop)&#xA;" />
               </ExpressionBindings>
               <StylePriority Ref="253" UseBorders="false" />
             </Item2>
-            <Item3 Ref="254" ControlType="XRLabel" Name="xrLabel7" CanGrow="false" Borders="None">
+            <Item3 Ref="254" ControlType="XRLabel" Name="xrLabel7" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="255" UseBorders="false" />
             </Item3>
-            <Item4 Ref="256" ControlType="XRLabel" Name="xrLabel6" CanGrow="false" Borders="None">
+            <Item4 Ref="256" ControlType="XRLabel" Name="xrLabel6" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="257" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?AgeTo)&#xA;" />
               </ExpressionBindings>
               <StylePriority Ref="258" UseBorders="false" />
             </Item4>
-            <Item5 Ref="259" ControlType="XRLabel" Name="xrLabel5" CanGrow="false" Borders="None">
+            <Item5 Ref="259" ControlType="XRLabel" Name="xrLabel5" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="260" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?AgeFrom)&#xA;" />
               </ExpressionBindings>
@@ -432,16 +432,16 @@
             <Item6 Ref="262" ControlType="XRLabel" Name="xrLabel2" CanGrow="false" Borders="None">
               <StylePriority Ref="263" UseBorders="false" />
             </Item6>
-            <Item7 Ref="264" ControlType="XRLabel" Name="xrLabel1" Borders="None">
+            <Item7 Ref="264" ControlType="XRLabel" Name="xrLabel1" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="265" UseFont="false" UseBorders="false" />
             </Item7>
-            <Item8 Ref="266" ControlType="XRLabel" Name="xrLabel4" Multiline="true" AutoWidth="true" Borders="None">
+            <Item8 Ref="266" ControlType="XRLabel" Name="xrLabel4" Multiline="true" AutoWidth="true" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="267" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?BreederFarm)" />
               </ExpressionBindings>
               <StylePriority Ref="268" UseBorders="false" />
             </Item8>
-            <Item9 Ref="269" ControlType="XRLabel" Name="xrLabel3" CanGrow="false" Borders="None">
+            <Item9 Ref="269" ControlType="XRLabel" Name="xrLabel3" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="270" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?GroupBreed)&#xA;" />
               </ExpressionBindings>
@@ -563,7 +563,7 @@
                 <Item1 Ref="332" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="333" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="334" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="334" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="335" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="336" Visible="false" Name="Notes" />
@@ -651,7 +651,7 @@
                   <Item5 Ref="387" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-339" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -664,7 +664,7 @@
                 <Item1 Ref="390" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="391" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="392" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="392" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="393" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="394" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -710,7 +710,7 @@
                   <Item2 Ref="418" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-394" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -892,417 +892,419 @@
     <Pdf Ref="521">
       <DocumentOptions Ref="522" Author="VetSoft" />
     </Pdf>
+    <Xls Ref="523" TextExportMode="Text" IgnoreErrors="NumberStoredAsText" />
+    <Xlsx Ref="524" TextExportMode="Text" IgnoreErrors="NumberStoredAsText" />
   </ExportOptions>
   <StyleSheet>
-    <Item1 Ref="523" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />
-    <Item2 Ref="524" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
-    <Item3 Ref="525" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
-    <Item4 Ref="526" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
-    <Item5 Ref="527" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;GenericDefault" />
+    <Item1 Ref="525" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />
+    <Item2 Ref="526" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="527" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="528" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="529" Name="PageInfo" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;GenericDefault" />
   </StyleSheet>
   <LocalizationItems>
-    <Item1 Ref="528" Component="#Ref-21" Culture="Default" Path="Description" Data="ActualQty" />
-    <Item2 Ref="529" Component="#Ref-18" Culture="Default" Path="Description" Data="AdjustedPrice Str" />
-    <Item3 Ref="530" Component="#Ref-28" Culture="Default" Path="Description" Data="AgeFrom" />
-    <Item4 Ref="531" Component="#Ref-29" Culture="Default" Path="Description" Data="AgeTo" />
-    <Item5 Ref="532" Component="#Ref-20" Culture="Default" Path="Description" Data="Available" />
-    <Item6 Ref="533" Component="#Ref-24" Culture="Default" Path="Description" Data="BookPerf" />
-    <Item7 Ref="534" Component="#Ref-86" Culture="Default" Path="HeightF" Data="31.23552" />
-    <Item8 Ref="535" Component="#Ref-30" Culture="Default" Path="Description" Data="BreederCrop" />
-    <Item9 Ref="536" Component="#Ref-26" Culture="Default" Path="Description" Data="BreederFarm" />
-    <Item10 Ref="537" Component="#Ref-31" Culture="Default" Path="Description" Data="BreederFlock" />
-    <Item11 Ref="538" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
-    <Item12 Ref="539" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
-    <Item13 Ref="540" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
-    <Item14 Ref="541" Component="#Ref-14" Culture="ar" Path="Description" Data="إلى" />
-    <Item15 Ref="542" Component="#Ref-95" Culture="Default" Path="HeightF" Data="20" />
-    <Item16 Ref="543" Component="#Ref-19" Culture="Default" Path="Description" Data="DiffPrice" />
-    <Item17 Ref="544" Component="#Ref-22" Culture="Default" Path="Description" Data="DiffQty" />
-    <Item18 Ref="545" Component="#Ref-23" Culture="Default" Path="Description" Data="FarmNo" />
-    <Item19 Ref="546" Component="#Ref-12" Culture="Default" Path="Description" Data="Font Size" />
-    <Item20 Ref="547" Component="#Ref-12" Culture="ar" Path="Description" Data="حجم الخط" />
-    <Item21 Ref="548" Component="#Ref-27" Culture="Default" Path="Description" Data="GroupBreed" />
-    <Item22 Ref="549" Component="#Ref-25" Culture="Default" Path="Description" Data="Hatchery" />
-    <Item23 Ref="550" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
-    <Item24 Ref="551" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />
-    <Item25 Ref="552" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
-    <Item26 Ref="553" Component="#Ref-8" Culture="ar" Path="Description" Data="إخفاء رأس التقرير" />
-    <Item27 Ref="554" Component="#Ref-5" Culture="Default" Path="Description" Data="IsCustomReportFooter" />
-    <Item28 Ref="555" Component="#Ref-4" Culture="Default" Path="Description" Data="IsCustomReportHeader" />
-    <Item29 Ref="556" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
-    <Item30 Ref="557" Component="#Ref-3" Culture="ar" Path="Description" Data="عرض من اليمبن لليسار" />
-    <Item31 Ref="558" Component="#Ref-85" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
-    <Item32 Ref="559" Component="#Ref-85" Culture="Default" Path="SizeF" Data="100,20" />
-    <Item33 Ref="560" Component="#Ref-85" Culture="Default" Path="Text" Data="lblVetSoftData" />
-    <Item34 Ref="561" Component="#Ref-85" Culture="Default" Path="Visible" Data="false" />
-    <Item35 Ref="562" Component="#Ref-33" Culture="Default" Path="Description" Data="ModuleType" />
-    <Item36 Ref="563" Component="#Ref-11" Culture="Default" Path="Description" Data="No of groups / page" />
-    <Item37 Ref="564" Component="#Ref-11" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
-    <Item38 Ref="565" Component="#Ref-194" Culture="Default" Path="HeightF" Data="0" />
-    <Item39 Ref="566" Component="#Ref-205" Culture="Default" Path="HeightF" Data="0" />
-    <Item40 Ref="567" Component="#Ref-91" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item41 Ref="568" Component="#Ref-91" Culture="Default" Path="SizeF" Data="204.12,20" />
-    <Item42 Ref="569" Component="#Ref-89" Culture="Default" Path="LocationFloat" Data="719.5659,0" />
-    <Item43 Ref="570" Component="#Ref-89" Culture="Default" Path="SizeF" Data="272.9167,20" />
-    <Item44 Ref="571" Component="#Ref-89" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
-    <Item45 Ref="572" Component="#Ref-93" Culture="Default" Path="LocationFloat" Data="1733.67,0" />
-    <Item46 Ref="573" Component="#Ref-93" Culture="Default" Path="SizeF" Data="209.33,20" />
-    <Item47 Ref="574" Component="#Ref-93" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
-    <Item48 Ref="575" Component="#Ref-17" Culture="Default" Path="Description" Data="Price Str" />
-    <Item49 Ref="576" Component="#Ref-329" Culture="Default" Path="HeightF" Data="20" />
-    <Item50 Ref="577" Component="#Ref-330" Culture="Default" Path="HeightF" Data="20" />
-    <Item51 Ref="578" Component="#Ref-388" Culture="Default" Path="HeightF" Data="20" />
-    <Item52 Ref="579" Component="#Ref-16" Culture="Default" Path="Description" Data="ReportType" />
-    <Item53 Ref="580" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
-    <Item54 Ref="581" Component="#Ref-6" Culture="ar" Path="Description" Data="عرض التوقيع" />
-    <Item55 Ref="582" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
-    <Item56 Ref="583" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل صفحة" />
-    <Item57 Ref="584" Component="#Ref-202" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item58 Ref="585" Component="#Ref-202" Culture="Default" Path="SizeF" Data="1654,20" />
-    <Item59 Ref="586" Component="#Ref-211" Culture="Default" Path="LocationFloat" Data="0,0.6250433" />
-    <Item60 Ref="587" Component="#Ref-211" Culture="Default" Path="SizeF" Data="1654,20" />
-    <Item61 Ref="588" Component="#Ref-207" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item62 Ref="589" Component="#Ref-207" Culture="Default" Path="SizeF" Data="1654,20" />
-    <Item63 Ref="590" Component="#Ref-331" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item64 Ref="591" Component="#Ref-331" Culture="Default" Path="SizeF" Data="1654,20" />
-    <Item65 Ref="592" Component="#Ref-389" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item66 Ref="593" Component="#Ref-389" Culture="Default" Path="SizeF" Data="1654,20" />
-    <Item67 Ref="594" Component="#Ref-196" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item68 Ref="595" Component="#Ref-196" Culture="Default" Path="SizeF" Data="1654,20" />
-    <Item69 Ref="596" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
-    <Item70 Ref="597" Component="#Ref-1" Culture="Default" Path="Margins" Data="0, 0, 20, 31.23552" />
-    <Item71 Ref="598" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
-    <Item72 Ref="599" Component="#Ref-272" Culture="Default" Path="HeightF" Data="42.08336" />
-    <Item73 Ref="600" Component="#Ref-206" Culture="Default" Path="HeightF" Data="20" />
-    <Item74 Ref="601" Component="#Ref-210" Culture="Default" Path="HeightF" Data="20.62504" />
-    <Item75 Ref="602" Component="#Ref-195" Culture="Default" Path="HeightF" Data="20" />
-    <Item76 Ref="603" Component="#Ref-201" Culture="Default" Path="HeightF" Data="20" />
-    <Item77 Ref="604" Component="#Ref-247" Culture="Default" Path="HeightF" Data="49.37502" />
-    <Item78 Ref="605" Component="#Ref-114" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item79 Ref="606" Component="#Ref-114" Culture="Default" Path="Text" Data="tdContainer" />
-    <Item80 Ref="607" Component="#Ref-114" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item81 Ref="608" Component="#Ref-114" Culture="Default" Path="Weight" Data="1.8119277210068303" />
-    <Item82 Ref="609" Component="#Ref-118" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item83 Ref="610" Component="#Ref-118" Culture="Default" Path="Text" Data="tdProduct" />
-    <Item84 Ref="611" Component="#Ref-118" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item85 Ref="612" Component="#Ref-118" Culture="Default" Path="Weight" Data="1.7547967181226121" />
-    <Item86 Ref="613" Component="#Ref-140" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item87 Ref="614" Component="#Ref-140" Culture="Default" Path="Text" Data="tdUnit" />
-    <Item88 Ref="615" Component="#Ref-140" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item89 Ref="616" Component="#Ref-140" Culture="Default" Path="Weight" Data="2.43236957334084" />
-    <Item90 Ref="617" Component="#Ref-127" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item91 Ref="618" Component="#Ref-127" Culture="Default" Path="Text" Data="tdDebit" />
-    <Item92 Ref="619" Component="#Ref-127" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item93 Ref="620" Component="#Ref-127" Culture="Default" Path="Weight" Data="2.5787930330291662" />
-    <Item94 Ref="621" Component="#Ref-97" Culture="Default" Path="LocationFloat" Data="10,0" />
-    <Item95 Ref="622" Component="#Ref-97" Culture="Default" Path="SizeF" Data="1634,20" />
-    <Item96 Ref="623" Component="#Ref-111" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item97 Ref="624" Component="#Ref-111" Culture="Default" Path="Text" Data="ItemType" />
-    <Item98 Ref="625" Component="#Ref-111" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item99 Ref="626" Component="#Ref-111" Culture="Default" Path="Weight" Data="2.0016261054347582" />
-    <Item100 Ref="627" Component="#Ref-277" Culture="Default" Path="Text" Data="Crop" />
-    <Item101 Ref="628" Component="#Ref-277" Culture="ar" Path="Text" Data="محصول" />
-    <Item102 Ref="629" Component="#Ref-277" Culture="Default" Path="Weight" Data="2.2660380161963554" />
-    <Item103 Ref="630" Component="#Ref-279" Culture="Default" Path="Text" Data="Flock" />
-    <Item104 Ref="631" Component="#Ref-279" Culture="ar" Path="Text" Data="قطيع" />
-    <Item105 Ref="632" Component="#Ref-279" Culture="Default" Path="Weight" Data="2.2953942289614782" />
-    <Item106 Ref="633" Component="#Ref-289" Culture="Default" Path="Text" Data="Hatch %" />
-    <Item107 Ref="634" Component="#Ref-289" Culture="ar" Path="Text" Data="% الفقس" />
-    <Item108 Ref="635" Component="#Ref-289" Culture="Default" Path="Weight" Data="2.1900414020584935" />
-    <Item109 Ref="636" Component="#Ref-283" Culture="Default" Path="Text" Data="Flk Age " />
-    <Item110 Ref="637" Component="#Ref-283" Culture="ar" Path="Text" Data="عمر القطيع" />
-    <Item111 Ref="638" Component="#Ref-283" Culture="Default" Path="Weight" Data="2.4735790593918883" />
-    <Item112 Ref="639" Component="#Ref-273" Culture="Default" Path="LocationFloat" Data="10,0" />
-    <Item113 Ref="640" Component="#Ref-273" Culture="Default" Path="SizeF" Data="1634,42.08335" />
-    <Item114 Ref="641" Component="#Ref-275" Culture="Default" Path="Text" Data="Farm" />
-    <Item115 Ref="642" Component="#Ref-275" Culture="ar" Path="Text" Data="مزرعة" />
-    <Item116 Ref="643" Component="#Ref-275" Culture="Default" Path="Weight" Data="2.3466096359152009" />
-    <Item117 Ref="644" Component="#Ref-84" Culture="Default" Path="HeightF" Data="20" />
-    <Item118 Ref="645" Component="#Ref-98" Culture="Default" Path="Weight" Data="1" />
-    <Item119 Ref="646" Component="#Ref-274" Culture="Default" Path="Weight" Data="1" />
-    <Item120 Ref="647" Component="#Ref-32" Culture="Default" Path="Description" Data="WeekNo" />
-    <Item121 Ref="648" Component="#Ref-264" Culture="Default" Path="LocationFloat" Data="141.1089,0" />
-    <Item122 Ref="649" Component="#Ref-264" Culture="Default" Path="SizeF" Data="141.233,20" />
-    <Item123 Ref="650" Component="#Ref-264" Culture="Default" Path="Text" Data="Hatchery:[?Hatchery]" />
-    <Item124 Ref="651" Component="#Ref-264" Culture="ar" Path="Text" Data="حضانة: [?DateTo!dd-MM-yyyy]" />
-    <Item125 Ref="652" Component="#Ref-262" Culture="Default" Path="LocationFloat" Data="10.0000172,0" />
-    <Item126 Ref="653" Component="#Ref-262" Culture="Default" Path="SizeF" Data="119.1667,20" />
-    <Item127 Ref="654" Component="#Ref-262" Culture="Default" Path="Text" Data="Sr.#:[?WeekNo]" />
-    <Item128 Ref="655" Component="#Ref-262" Culture="ar" Path="Text" Data="م.: [?DateFrom!dd-MM-yyyy]" />
-    <Item129 Ref="656" Component="#Ref-269" Culture="Default" Path="LocationFloat" Data="503.2212,0" />
-    <Item130 Ref="657" Component="#Ref-269" Culture="Default" Path="SizeF" Data="173.5247,20" />
-    <Item131 Ref="658" Component="#Ref-269" Culture="Default" Path="Text" Data="Breed:[?GroupBreed]" />
-    <Item132 Ref="659" Component="#Ref-269" Culture="ar" Path="Text" Data="السلالة:[?BookPerf]" />
-    <Item133 Ref="660" Component="#Ref-266" Culture="Default" Path="LocationFloat" Data="299.0087,0" />
-    <Item134 Ref="661" Component="#Ref-266" Culture="Default" Path="SizeF" Data="164.1655,20" />
-    <Item135 Ref="662" Component="#Ref-266" Culture="Default" Path="Text" Data="Farm:[?BreederFarm]" />
-    <Item136 Ref="663" Component="#Ref-266" Culture="ar" Path="Text" Data="مزرعة:[?HatcheryNo]" />
-    <Item137 Ref="664" Component="#Ref-259" Culture="Default" Path="LocationFloat" Data="723.3038,0" />
-    <Item138 Ref="665" Component="#Ref-259" Culture="Default" Path="SizeF" Data="173.5247,20" />
-    <Item139 Ref="666" Component="#Ref-259" Culture="Default" Path="Text" Data="From Age:[?AgeFrom]" />
-    <Item140 Ref="667" Component="#Ref-259" Culture="ar" Path="Text" Data="من سن:[?AgeFrom]" />
-    <Item141 Ref="668" Component="#Ref-256" Culture="Default" Path="LocationFloat" Data="933.3333,0" />
-    <Item142 Ref="669" Component="#Ref-256" Culture="Default" Path="SizeF" Data="173.5247,20" />
-    <Item143 Ref="670" Component="#Ref-256" Culture="Default" Path="Text" Data="To Age:[?AgeTo]" />
-    <Item144 Ref="671" Component="#Ref-256" Culture="ar" Path="Text" Data="الي سن:[?AgeTo]" />
-    <Item145 Ref="672" Component="#Ref-254" Culture="Default" Path="LocationFloat" Data="1170.833,0" />
-    <Item146 Ref="673" Component="#Ref-254" Culture="Default" Path="SizeF" Data="173.5247,20" />
-    <Item147 Ref="674" Component="#Ref-254" Culture="Default" Path="Text" Data="Std:[?BookPerf]" />
-    <Item148 Ref="675" Component="#Ref-254" Culture="ar" Path="Text" Data="المرجع:[?BookPerf]" />
-    <Item149 Ref="676" Component="#Ref-251" Culture="Default" Path="LocationFloat" Data="10.0000172,29.37498" />
-    <Item150 Ref="677" Component="#Ref-251" Culture="Default" Path="SizeF" Data="163.52475,20" />
-    <Item151 Ref="678" Component="#Ref-251" Culture="Default" Path="Text" Data="Breeder Crop:[?BreederCrop]" />
-    <Item152 Ref="679" Component="#Ref-251" Culture="ar" Path="Text" Data="محصول السلالة:[?BreederCrop]" />
-    <Item153 Ref="680" Component="#Ref-248" Culture="Default" Path="LocationFloat" Data="214.5833,29.37502" />
-    <Item154 Ref="681" Component="#Ref-248" Culture="Default" Path="SizeF" Data="248.590866,19.9999962" />
-    <Item155 Ref="682" Component="#Ref-248" Culture="Default" Path="Text" Data="Breeder Flock:[?BreederFlock]" />
-    <Item156 Ref="683" Component="#Ref-248" Culture="ar" Path="Text" Data="قطيع السلالة:[?BreederFlock]" />
-    <Item157 Ref="684" Component="#Ref-87" Culture="Default" Path="LocationFloat" Data="1444.67,0" />
-    <Item158 Ref="685" Component="#Ref-87" Culture="Default" Path="SizeF" Data="209.33,23.82428" />
-    <Item159 Ref="686" Component="#Ref-87" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
-    <Item160 Ref="687" Component="#Ref-420" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item161 Ref="688" Component="#Ref-420" Culture="Default" Path="LocationFloat" Data="10.0000172,0" />
-    <Item162 Ref="689" Component="#Ref-420" Culture="Default" Path="SizeF" Data="1634,20" />
-    <Item163 Ref="690" Component="#Ref-145" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item164 Ref="691" Component="#Ref-145" Culture="Default" Path="Text" Data="xrTableCell1" />
-    <Item165 Ref="692" Component="#Ref-145" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item166 Ref="693" Component="#Ref-145" Culture="Default" Path="Weight" Data="2.2724261729724247" />
-    <Item167 Ref="694" Component="#Ref-299" Culture="Default" Path="Text" Data="Breed STD %" />
-    <Item168 Ref="695" Component="#Ref-299" Culture="ar" Path="Text" Data="قياسي السلالة" />
-    <Item169 Ref="696" Component="#Ref-299" Culture="Default" Path="Weight" Data="2.8082276021394734" />
-    <Item170 Ref="697" Component="#Ref-315" Culture="Default" Path="Text" Data="Cum. A Grade Chicks" />
-    <Item171 Ref="698" Component="#Ref-315" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
-    <Item172 Ref="699" Component="#Ref-315" Culture="Default" Path="Weight" Data="3.1037788214928375" />
-    <Item173 Ref="700" Component="#Ref-318" Culture="Default" Path="Text" Data="A Grade ACT Cum Hatch %" />
-    <Item174 Ref="701" Component="#Ref-318" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
-    <Item175 Ref="702" Component="#Ref-318" Culture="Default" Path="Weight" Data="2.5206098661429581" />
-    <Item176 Ref="703" Component="#Ref-321" Culture="Default" Path="Text" Data="A Grade STD Cum Hatch % " />
-    <Item177 Ref="704" Component="#Ref-321" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
-    <Item178 Ref="705" Component="#Ref-321" Culture="Default" Path="Weight" Data="2.7723552398545239" />
-    <Item179 Ref="706" Component="#Ref-324" Culture="Default" Path="Text" Data="Dev." />
-    <Item180 Ref="707" Component="#Ref-324" Culture="ar" Path="Text" Data="الانحراف" />
-    <Item181 Ref="708" Component="#Ref-324" Culture="Default" Path="Weight" Data="3.2016671553037668" />
-    <Item182 Ref="709" Component="#Ref-149" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item183 Ref="710" Component="#Ref-149" Culture="Default" Path="Text" Data="xrTableCell15" />
-    <Item184 Ref="711" Component="#Ref-149" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item185 Ref="712" Component="#Ref-149" Culture="Default" Path="Weight" Data="2.226499923808833" />
-    <Item186 Ref="713" Component="#Ref-154" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item187 Ref="714" Component="#Ref-154" Culture="Default" Path="Text" Data="xrTableCell16" />
-    <Item188 Ref="715" Component="#Ref-154" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item189 Ref="716" Component="#Ref-154" Culture="Default" Path="Weight" Data="2.0005589840320361" />
-    <Item190 Ref="717" Component="#Ref-158" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item191 Ref="718" Component="#Ref-158" Culture="Default" Path="Text" Data="xrTableCell17" />
-    <Item192 Ref="719" Component="#Ref-158" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item193 Ref="720" Component="#Ref-158" Culture="Default" Path="Weight" Data="2.0891496674385643" />
-    <Item194 Ref="721" Component="#Ref-163" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item195 Ref="722" Component="#Ref-163" Culture="Default" Path="Text" Data="xrTableCell18" />
-    <Item196 Ref="723" Component="#Ref-163" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item197 Ref="724" Component="#Ref-163" Culture="Default" Path="Weight" Data="1.9734540230593547" />
-    <Item198 Ref="725" Component="#Ref-176" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item199 Ref="726" Component="#Ref-176" Culture="Default" Path="Text" Data="xrTableCell19" />
-    <Item200 Ref="727" Component="#Ref-176" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item201 Ref="728" Component="#Ref-176" Culture="Default" Path="Weight" Data="2.5115871097280436" />
-    <Item202 Ref="729" Component="#Ref-287" Culture="Default" Path="Text" Data="A Grade Chicks" />
-    <Item203 Ref="730" Component="#Ref-287" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
-    <Item204 Ref="731" Component="#Ref-287" Culture="Default" Path="Weight" Data="2.1685484111465123" />
-    <Item205 Ref="732" Component="#Ref-180" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item206 Ref="733" Component="#Ref-180" Culture="Default" Path="Text" Data="xrTableCell20" />
-    <Item207 Ref="734" Component="#Ref-180" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item208 Ref="735" Component="#Ref-180" Culture="Default" Path="Weight" Data="2.039684897942132" />
-    <Item209 Ref="736" Component="#Ref-185" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item210 Ref="737" Component="#Ref-185" Culture="Default" Path="Text" Data="xrTableCell21" />
-    <Item211 Ref="738" Component="#Ref-185" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item212 Ref="739" Component="#Ref-185" Culture="Default" Path="Weight" Data="2.2433941373234809" />
-    <Item213 Ref="740" Component="#Ref-189" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item214 Ref="741" Component="#Ref-189" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item215 Ref="742" Component="#Ref-189" Culture="Default" Path="Weight" Data="2.5908032493145345" />
-    <Item216 Ref="743" Component="#Ref-424" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item217 Ref="744" Component="#Ref-424" Culture="Default" Path="Text" Data="xrTableCell23" />
-    <Item218 Ref="745" Component="#Ref-424" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item219 Ref="746" Component="#Ref-424" Culture="Default" Path="Weight" Data="0.69777806995718561" />
-    <Item220 Ref="747" Component="#Ref-281" Culture="Default" Path="Text" Data="Breed" />
-    <Item221 Ref="748" Component="#Ref-281" Culture="ar" Path="Text" Data="سلالة" />
-    <Item222 Ref="749" Component="#Ref-281" Culture="Default" Path="Weight" Data="4.2787638322274351" />
-    <Item223 Ref="750" Component="#Ref-428" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item224 Ref="751" Component="#Ref-428" Culture="Default" Path="Text" Data="xrTableCell25" />
-    <Item225 Ref="752" Component="#Ref-428" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item226 Ref="753" Component="#Ref-428" Culture="Default" Path="Weight" Data="0.63164791306903756" />
-    <Item227 Ref="754" Component="#Ref-122" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item228 Ref="755" Component="#Ref-122" Culture="Default" Path="Text" Data="xrTableCell26" />
-    <Item229 Ref="756" Component="#Ref-122" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item230 Ref="757" Component="#Ref-122" Culture="Default" Path="Weight" Data="1.772186059763933" />
-    <Item231 Ref="758" Component="#Ref-301" Culture="Default" Path="Text" Data="Dev." />
-    <Item232 Ref="759" Component="#Ref-301" Culture="ar" Path="Text" Data="الانحراف" />
-    <Item233 Ref="760" Component="#Ref-301" Culture="Default" Path="Weight" Data="2.7514822618341293" />
-    <Item234 Ref="761" Component="#Ref-167" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item235 Ref="762" Component="#Ref-167" Culture="Default" Path="Text" Data="xrTableCell28" />
-    <Item236 Ref="763" Component="#Ref-167" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item237 Ref="764" Component="#Ref-167" Culture="Default" Path="Weight" Data="1.8864499666024539" />
-    <Item238 Ref="765" Component="#Ref-303" Culture="Default" Path="Text" Data="DOA" />
-    <Item239 Ref="766" Component="#Ref-303" Culture="ar" Path="Text" Data="نافق الوصول" />
-    <Item240 Ref="767" Component="#Ref-303" Culture="Default" Path="Weight" Data="2.4722585719889496" />
-    <Item241 Ref="768" Component="#Ref-136" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item242 Ref="769" Component="#Ref-136" Culture="Default" Path="Text" Data="xrTableCell3" />
-    <Item243 Ref="770" Component="#Ref-136" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item244 Ref="771" Component="#Ref-136" Culture="Default" Path="Weight" Data="2.9582787017367194" />
-    <Item245 Ref="772" Component="#Ref-172" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item246 Ref="773" Component="#Ref-172" Culture="Default" Path="Text" Data="xrTableCell30" />
-    <Item247 Ref="774" Component="#Ref-172" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item248 Ref="775" Component="#Ref-172" Culture="Default" Path="Weight" Data="3.0719120185906394" />
-    <Item249 Ref="776" Component="#Ref-305" Culture="Default" Path="Text" Data="ACT Cum Hatch %" />
-    <Item250 Ref="777" Component="#Ref-305" Culture="ar" Path="Text" Data="% نسبة الفقس تراكمي .م" />
-    <Item251 Ref="778" Component="#Ref-305" Culture="Default" Path="Weight" Data="2.5817282155434338" />
-    <Item252 Ref="779" Component="#Ref-307" Culture="Default" Path="Text" Data="Breed STD %" />
-    <Item253 Ref="780" Component="#Ref-307" Culture="ar" Path="Text" Data="% قياسي نسبة الفقس" />
-    <Item254 Ref="781" Component="#Ref-307" Culture="Default" Path="Weight" Data="2.438762710444943" />
-    <Item255 Ref="782" Component="#Ref-310" Culture="Default" Path="Text" Data="Dev." />
-    <Item256 Ref="783" Component="#Ref-310" Culture="ar" Path="Text" Data="الانجراف" />
-    <Item257 Ref="784" Component="#Ref-310" Culture="Default" Path="Weight" Data="2.3312444251922591" />
-    <Item258 Ref="785" Component="#Ref-312" Culture="Default" Path="Text" Data="Cum Setted Eggs" />
-    <Item259 Ref="786" Component="#Ref-312" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
-    <Item260 Ref="787" Component="#Ref-312" Culture="Default" Path="Weight" Data="3.7962193341577857" />
-    <Item261 Ref="788" Component="#Ref-108" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item262 Ref="789" Component="#Ref-108" Culture="Default" Path="Text" Data="xrTableCell35" />
-    <Item263 Ref="790" Component="#Ref-108" Culture="Default" Path="Weight" Data="3.4623892851403339" />
-    <Item264 Ref="791" Component="#Ref-105" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item265 Ref="792" Component="#Ref-105" Culture="Default" Path="Text" Data="xrTableCell36" />
-    <Item266 Ref="793" Component="#Ref-105" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
-    <Item267 Ref="794" Component="#Ref-105" Culture="Default" Path="Weight" Data="1.8574398619845005" />
-    <Item268 Ref="795" Component="#Ref-102" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item269 Ref="796" Component="#Ref-102" Culture="Default" Path="Text" Data="xrTableCell37" />
-    <Item270 Ref="797" Component="#Ref-102" Culture="Default" Path="Weight" Data="1.8336850811241643" />
-    <Item271 Ref="798" Component="#Ref-99" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item272 Ref="799" Component="#Ref-99" Culture="Default" Path="Text" Data="xrTableCell38" />
-    <Item273 Ref="800" Component="#Ref-99" Culture="Default" Path="Weight" Data="1.8988834752602584" />
-    <Item274 Ref="801" Component="#Ref-422" Culture="Default" Path="Text" Data="Total" />
-    <Item275 Ref="802" Component="#Ref-422" Culture="ar" Path="Text" Data="الاجمالي" />
-    <Item276 Ref="803" Component="#Ref-422" Culture="Default" Path="Weight" Data="3.1557169840535497" />
-    <Item277 Ref="804" Component="#Ref-285" Culture="Default" Path="Text" Data="Setted Eggs " />
-    <Item278 Ref="805" Component="#Ref-285" Culture="ar" Path="Text" Data="بيض تم ايداعة" />
-    <Item279 Ref="806" Component="#Ref-285" Culture="Default" Path="Weight" Data="2.239149918707648" />
-    <Item280 Ref="807" Component="#Ref-473" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item281 Ref="808" Component="#Ref-473" Culture="Default" Path="Text" Data="xrTableCell40" />
-    <Item282 Ref="809" Component="#Ref-473" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item283 Ref="810" Component="#Ref-473" Culture="Default" Path="Weight" Data="0.69766275042688153" />
-    <Item284 Ref="811" Component="#Ref-478" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item285 Ref="812" Component="#Ref-478" Culture="Default" Path="Text" Data="xrTableCell41" />
-    <Item286 Ref="813" Component="#Ref-478" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item287 Ref="814" Component="#Ref-478" Culture="Default" Path="Weight" Data="0.72829079304569078" />
-    <Item288 Ref="815" Component="#Ref-483" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item289 Ref="816" Component="#Ref-483" Culture="Default" Path="Text" Data="xrTableCell42" />
-    <Item290 Ref="817" Component="#Ref-483" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item291 Ref="818" Component="#Ref-483" Culture="Default" Path="Weight" Data="0.68795730909600072" />
-    <Item292 Ref="819" Component="#Ref-488" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item293 Ref="820" Component="#Ref-488" Culture="Default" Path="Text" Data="xrTableCell43" />
-    <Item294 Ref="821" Component="#Ref-488" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item295 Ref="822" Component="#Ref-488" Culture="Default" Path="Weight" Data="0.65762711392769524" />
-    <Item296 Ref="823" Component="#Ref-493" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item297 Ref="824" Component="#Ref-493" Culture="Default" Path="Text" Data="xrTableCell44" />
-    <Item298 Ref="825" Component="#Ref-493" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item299 Ref="826" Component="#Ref-493" Culture="Default" Path="Weight" Data="1.0708859012262149" />
-    <Item300 Ref="827" Component="#Ref-498" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item301 Ref="828" Component="#Ref-498" Culture="Default" Path="Text" Data="xrTableCell45" />
-    <Item302 Ref="829" Component="#Ref-498" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item303 Ref="830" Component="#Ref-498" Culture="Default" Path="Weight" Data="0.87555356290512831" />
-    <Item304 Ref="831" Component="#Ref-503" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item305 Ref="832" Component="#Ref-503" Culture="Default" Path="Text" Data="xrTableCell47" />
-    <Item306 Ref="833" Component="#Ref-503" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item307 Ref="834" Component="#Ref-503" Culture="Default" Path="Weight" Data="0.711045779485306" />
-    <Item308 Ref="835" Component="#Ref-508" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item309 Ref="836" Component="#Ref-508" Culture="Default" Path="Text" Data="xrTableCell49" />
-    <Item310 Ref="837" Component="#Ref-508" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item311 Ref="838" Component="#Ref-508" Culture="Default" Path="Weight" Data="0.78206000586560753" />
-    <Item312 Ref="839" Component="#Ref-291" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
-    <Item313 Ref="840" Component="#Ref-291" Culture="Default" Path="Text" Data="Reject Chicks " />
-    <Item314 Ref="841" Component="#Ref-291" Culture="ar" Path="Text" Data="كتاكيت فرزة" />
-    <Item315 Ref="842" Component="#Ref-291" Culture="Default" Path="Weight" Data="3.1868307940252336" />
-    <Item316 Ref="843" Component="#Ref-433" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item317 Ref="844" Component="#Ref-433" Culture="Default" Path="Text" Data="xrTableCell51" />
-    <Item318 Ref="845" Component="#Ref-433" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item319 Ref="846" Component="#Ref-433" Culture="Default" Path="Weight" Data="0.61173240493348846" />
-    <Item320 Ref="847" Component="#Ref-513" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item321 Ref="848" Component="#Ref-513" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item322 Ref="849" Component="#Ref-513" Culture="Default" Path="Weight" Data="0.90316744504513125" />
-    <Item323 Ref="850" Component="#Ref-438" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item324 Ref="851" Component="#Ref-438" Culture="Default" Path="Text" Data="xrTableCell53" />
-    <Item325 Ref="852" Component="#Ref-438" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item326 Ref="853" Component="#Ref-438" Culture="Default" Path="Weight" Data="0.61779448269082493" />
-    <Item327 Ref="854" Component="#Ref-443" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item328 Ref="855" Component="#Ref-443" Culture="Default" Path="Text" Data="xrTableCell54" />
-    <Item329 Ref="856" Component="#Ref-443" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item330 Ref="857" Component="#Ref-443" Culture="Default" Path="Weight" Data="0.898981907111521" />
-    <Item331 Ref="858" Component="#Ref-448" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item332 Ref="859" Component="#Ref-448" Culture="Default" Path="Text" Data="xrTableCell55" />
-    <Item333 Ref="860" Component="#Ref-448" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item334 Ref="861" Component="#Ref-448" Culture="Default" Path="Weight" Data="0.66661891802446971" />
-    <Item335 Ref="862" Component="#Ref-453" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item336 Ref="863" Component="#Ref-453" Culture="Default" Path="Text" Data="xrTableCell56" />
-    <Item337 Ref="864" Component="#Ref-453" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
-    <Item338 Ref="865" Component="#Ref-453" Culture="Default" Path="Weight" Data="1.0312754912841446" />
-    <Item339 Ref="866" Component="#Ref-458" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item340 Ref="867" Component="#Ref-458" Culture="Default" Path="Text" Data="xrTableCell57" />
-    <Item341 Ref="868" Component="#Ref-458" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item342 Ref="869" Component="#Ref-458" Culture="Default" Path="Weight" Data="0.84793520017161972" />
-    <Item343 Ref="870" Component="#Ref-463" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item344 Ref="871" Component="#Ref-463" Culture="Default" Path="Text" Data="xrTableCell58" />
-    <Item345 Ref="872" Component="#Ref-463" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item346 Ref="873" Component="#Ref-463" Culture="Default" Path="Weight" Data="0.792182692058641" />
-    <Item347 Ref="874" Component="#Ref-468" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
-    <Item348 Ref="875" Component="#Ref-468" Culture="Default" Path="Text" Data="xrTableCell59" />
-    <Item349 Ref="876" Component="#Ref-468" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item350 Ref="877" Component="#Ref-468" Culture="Default" Path="Weight" Data="0.77591198255034888" />
-    <Item351 Ref="878" Component="#Ref-131" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
-    <Item352 Ref="879" Component="#Ref-131" Culture="Default" Path="Text" Data="xrTableCell6" />
-    <Item353 Ref="880" Component="#Ref-131" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
-    <Item354 Ref="881" Component="#Ref-131" Culture="Default" Path="Weight" Data="1.9122433723199705" />
-    <Item355 Ref="882" Component="#Ref-293" Culture="Default" Path="Text" Data="Rej. %" />
-    <Item356 Ref="883" Component="#Ref-293" Culture="ar" Path="Text" Data="% مرفوض" />
-    <Item357 Ref="884" Component="#Ref-293" Culture="Default" Path="Weight" Data="2.3631243285181549" />
-    <Item358 Ref="885" Component="#Ref-295" Culture="Default" Path="Text" Data="Total Chicks " />
-    <Item359 Ref="886" Component="#Ref-295" Culture="ar" Path="Text" Data="اجمالي فقس كتاكيت" />
-    <Item360 Ref="887" Component="#Ref-295" Culture="Default" Path="Weight" Data="3.6557933688169868" />
-    <Item361 Ref="888" Component="#Ref-297" Culture="Default" Path="Text" Data="Total Hatch %" />
-    <Item362 Ref="889" Component="#Ref-297" Culture="ar" Path="Text" Data="% اجمالي فقس" />
-    <Item363 Ref="890" Component="#Ref-297" Culture="Default" Path="Weight" Data="3.0058784049931853" />
-    <Item364 Ref="891" Component="#Ref-421" Culture="Default" Path="Weight" Data="1" />
+    <Item1 Ref="530" Component="#Ref-21" Culture="Default" Path="Description" Data="ActualQty" />
+    <Item2 Ref="531" Component="#Ref-18" Culture="Default" Path="Description" Data="AdjustedPrice Str" />
+    <Item3 Ref="532" Component="#Ref-28" Culture="Default" Path="Description" Data="AgeFrom" />
+    <Item4 Ref="533" Component="#Ref-29" Culture="Default" Path="Description" Data="AgeTo" />
+    <Item5 Ref="534" Component="#Ref-20" Culture="Default" Path="Description" Data="Available" />
+    <Item6 Ref="535" Component="#Ref-24" Culture="Default" Path="Description" Data="BookPerf" />
+    <Item7 Ref="536" Component="#Ref-86" Culture="Default" Path="HeightF" Data="31.23552" />
+    <Item8 Ref="537" Component="#Ref-30" Culture="Default" Path="Description" Data="BreederCrop" />
+    <Item9 Ref="538" Component="#Ref-26" Culture="Default" Path="Description" Data="BreederFarm" />
+    <Item10 Ref="539" Component="#Ref-31" Culture="Default" Path="Description" Data="BreederFlock" />
+    <Item11 Ref="540" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
+    <Item12 Ref="541" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
+    <Item13 Ref="542" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
+    <Item14 Ref="543" Component="#Ref-14" Culture="ar" Path="Description" Data="إلى" />
+    <Item15 Ref="544" Component="#Ref-95" Culture="Default" Path="HeightF" Data="20" />
+    <Item16 Ref="545" Component="#Ref-19" Culture="Default" Path="Description" Data="DiffPrice" />
+    <Item17 Ref="546" Component="#Ref-22" Culture="Default" Path="Description" Data="DiffQty" />
+    <Item18 Ref="547" Component="#Ref-23" Culture="Default" Path="Description" Data="FarmNo" />
+    <Item19 Ref="548" Component="#Ref-12" Culture="Default" Path="Description" Data="Font Size" />
+    <Item20 Ref="549" Component="#Ref-12" Culture="ar" Path="Description" Data="حجم الخط" />
+    <Item21 Ref="550" Component="#Ref-27" Culture="Default" Path="Description" Data="GroupBreed" />
+    <Item22 Ref="551" Component="#Ref-25" Culture="Default" Path="Description" Data="Hatchery" />
+    <Item23 Ref="552" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
+    <Item24 Ref="553" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />
+    <Item25 Ref="554" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
+    <Item26 Ref="555" Component="#Ref-8" Culture="ar" Path="Description" Data="إخفاء رأس التقرير" />
+    <Item27 Ref="556" Component="#Ref-5" Culture="Default" Path="Description" Data="IsCustomReportFooter" />
+    <Item28 Ref="557" Component="#Ref-4" Culture="Default" Path="Description" Data="IsCustomReportHeader" />
+    <Item29 Ref="558" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
+    <Item30 Ref="559" Component="#Ref-3" Culture="ar" Path="Description" Data="عرض من اليمبن لليسار" />
+    <Item31 Ref="560" Component="#Ref-85" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
+    <Item32 Ref="561" Component="#Ref-85" Culture="Default" Path="SizeF" Data="100,20" />
+    <Item33 Ref="562" Component="#Ref-85" Culture="Default" Path="Text" Data="lblVetSoftData" />
+    <Item34 Ref="563" Component="#Ref-85" Culture="Default" Path="Visible" Data="false" />
+    <Item35 Ref="564" Component="#Ref-33" Culture="Default" Path="Description" Data="ModuleType" />
+    <Item36 Ref="565" Component="#Ref-11" Culture="Default" Path="Description" Data="No of groups / page" />
+    <Item37 Ref="566" Component="#Ref-11" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
+    <Item38 Ref="567" Component="#Ref-194" Culture="Default" Path="HeightF" Data="0" />
+    <Item39 Ref="568" Component="#Ref-205" Culture="Default" Path="HeightF" Data="0" />
+    <Item40 Ref="569" Component="#Ref-91" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item41 Ref="570" Component="#Ref-91" Culture="Default" Path="SizeF" Data="204.12,20" />
+    <Item42 Ref="571" Component="#Ref-89" Culture="Default" Path="LocationFloat" Data="719.5659,0" />
+    <Item43 Ref="572" Component="#Ref-89" Culture="Default" Path="SizeF" Data="272.9167,20" />
+    <Item44 Ref="573" Component="#Ref-89" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
+    <Item45 Ref="574" Component="#Ref-93" Culture="Default" Path="LocationFloat" Data="1733.67,0" />
+    <Item46 Ref="575" Component="#Ref-93" Culture="Default" Path="SizeF" Data="209.33,20" />
+    <Item47 Ref="576" Component="#Ref-93" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
+    <Item48 Ref="577" Component="#Ref-17" Culture="Default" Path="Description" Data="Price Str" />
+    <Item49 Ref="578" Component="#Ref-329" Culture="Default" Path="HeightF" Data="20" />
+    <Item50 Ref="579" Component="#Ref-330" Culture="Default" Path="HeightF" Data="20" />
+    <Item51 Ref="580" Component="#Ref-388" Culture="Default" Path="HeightF" Data="20" />
+    <Item52 Ref="581" Component="#Ref-16" Culture="Default" Path="Description" Data="ReportType" />
+    <Item53 Ref="582" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
+    <Item54 Ref="583" Component="#Ref-6" Culture="ar" Path="Description" Data="عرض التوقيع" />
+    <Item55 Ref="584" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
+    <Item56 Ref="585" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل صفحة" />
+    <Item57 Ref="586" Component="#Ref-202" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item58 Ref="587" Component="#Ref-202" Culture="Default" Path="SizeF" Data="1654,20" />
+    <Item59 Ref="588" Component="#Ref-211" Culture="Default" Path="LocationFloat" Data="0,0.6250433" />
+    <Item60 Ref="589" Component="#Ref-211" Culture="Default" Path="SizeF" Data="1654,20" />
+    <Item61 Ref="590" Component="#Ref-207" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item62 Ref="591" Component="#Ref-207" Culture="Default" Path="SizeF" Data="1654,20" />
+    <Item63 Ref="592" Component="#Ref-331" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item64 Ref="593" Component="#Ref-331" Culture="Default" Path="SizeF" Data="1654,20" />
+    <Item65 Ref="594" Component="#Ref-389" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item66 Ref="595" Component="#Ref-389" Culture="Default" Path="SizeF" Data="1654,20" />
+    <Item67 Ref="596" Component="#Ref-196" Culture="Default" Path="LocationFloat" Data="0,0" />
+    <Item68 Ref="597" Component="#Ref-196" Culture="Default" Path="SizeF" Data="1654,20" />
+    <Item69 Ref="598" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
+    <Item70 Ref="599" Component="#Ref-1" Culture="Default" Path="Margins" Data="0, 0, 20, 31.23552" />
+    <Item71 Ref="600" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
+    <Item72 Ref="601" Component="#Ref-272" Culture="Default" Path="HeightF" Data="42.08336" />
+    <Item73 Ref="602" Component="#Ref-206" Culture="Default" Path="HeightF" Data="20" />
+    <Item74 Ref="603" Component="#Ref-210" Culture="Default" Path="HeightF" Data="20.62504" />
+    <Item75 Ref="604" Component="#Ref-195" Culture="Default" Path="HeightF" Data="20" />
+    <Item76 Ref="605" Component="#Ref-201" Culture="Default" Path="HeightF" Data="20" />
+    <Item77 Ref="606" Component="#Ref-247" Culture="Default" Path="HeightF" Data="49.37502" />
+    <Item78 Ref="607" Component="#Ref-114" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item79 Ref="608" Component="#Ref-114" Culture="Default" Path="Text" Data="tdContainer" />
+    <Item80 Ref="609" Component="#Ref-114" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item81 Ref="610" Component="#Ref-114" Culture="Default" Path="Weight" Data="1.8119277210068303" />
+    <Item82 Ref="611" Component="#Ref-118" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item83 Ref="612" Component="#Ref-118" Culture="Default" Path="Text" Data="tdProduct" />
+    <Item84 Ref="613" Component="#Ref-118" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item85 Ref="614" Component="#Ref-118" Culture="Default" Path="Weight" Data="1.7547967181226121" />
+    <Item86 Ref="615" Component="#Ref-140" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item87 Ref="616" Component="#Ref-140" Culture="Default" Path="Text" Data="tdUnit" />
+    <Item88 Ref="617" Component="#Ref-140" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item89 Ref="618" Component="#Ref-140" Culture="Default" Path="Weight" Data="2.43236957334084" />
+    <Item90 Ref="619" Component="#Ref-127" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item91 Ref="620" Component="#Ref-127" Culture="Default" Path="Text" Data="tdDebit" />
+    <Item92 Ref="621" Component="#Ref-127" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item93 Ref="622" Component="#Ref-127" Culture="Default" Path="Weight" Data="2.5787930330291662" />
+    <Item94 Ref="623" Component="#Ref-97" Culture="Default" Path="LocationFloat" Data="10,0" />
+    <Item95 Ref="624" Component="#Ref-97" Culture="Default" Path="SizeF" Data="1634,20" />
+    <Item96 Ref="625" Component="#Ref-111" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item97 Ref="626" Component="#Ref-111" Culture="Default" Path="Text" Data="ItemType" />
+    <Item98 Ref="627" Component="#Ref-111" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item99 Ref="628" Component="#Ref-111" Culture="Default" Path="Weight" Data="2.0016261054347582" />
+    <Item100 Ref="629" Component="#Ref-277" Culture="Default" Path="Text" Data="Crop" />
+    <Item101 Ref="630" Component="#Ref-277" Culture="ar" Path="Text" Data="محصول" />
+    <Item102 Ref="631" Component="#Ref-277" Culture="Default" Path="Weight" Data="2.2660380161963554" />
+    <Item103 Ref="632" Component="#Ref-279" Culture="Default" Path="Text" Data="Flock" />
+    <Item104 Ref="633" Component="#Ref-279" Culture="ar" Path="Text" Data="قطيع" />
+    <Item105 Ref="634" Component="#Ref-279" Culture="Default" Path="Weight" Data="2.2953942289614782" />
+    <Item106 Ref="635" Component="#Ref-289" Culture="Default" Path="Text" Data="Hatch %" />
+    <Item107 Ref="636" Component="#Ref-289" Culture="ar" Path="Text" Data="% الفقس" />
+    <Item108 Ref="637" Component="#Ref-289" Culture="Default" Path="Weight" Data="2.1900414020584935" />
+    <Item109 Ref="638" Component="#Ref-283" Culture="Default" Path="Text" Data="Flk Age " />
+    <Item110 Ref="639" Component="#Ref-283" Culture="ar" Path="Text" Data="عمر القطيع" />
+    <Item111 Ref="640" Component="#Ref-283" Culture="Default" Path="Weight" Data="2.4735790593918883" />
+    <Item112 Ref="641" Component="#Ref-273" Culture="Default" Path="LocationFloat" Data="10,0" />
+    <Item113 Ref="642" Component="#Ref-273" Culture="Default" Path="SizeF" Data="1634,42.08335" />
+    <Item114 Ref="643" Component="#Ref-275" Culture="Default" Path="Text" Data="Farm" />
+    <Item115 Ref="644" Component="#Ref-275" Culture="ar" Path="Text" Data="مزرعة" />
+    <Item116 Ref="645" Component="#Ref-275" Culture="Default" Path="Weight" Data="2.3466096359152009" />
+    <Item117 Ref="646" Component="#Ref-84" Culture="Default" Path="HeightF" Data="20" />
+    <Item118 Ref="647" Component="#Ref-98" Culture="Default" Path="Weight" Data="1" />
+    <Item119 Ref="648" Component="#Ref-274" Culture="Default" Path="Weight" Data="1" />
+    <Item120 Ref="649" Component="#Ref-32" Culture="Default" Path="Description" Data="WeekNo" />
+    <Item121 Ref="650" Component="#Ref-264" Culture="Default" Path="LocationFloat" Data="141.1089,0" />
+    <Item122 Ref="651" Component="#Ref-264" Culture="Default" Path="SizeF" Data="141.233,20" />
+    <Item123 Ref="652" Component="#Ref-264" Culture="Default" Path="Text" Data="Hatchery:[?Hatchery]" />
+    <Item124 Ref="653" Component="#Ref-264" Culture="ar" Path="Text" Data="حضانة: [?DateTo!dd-MM-yyyy]" />
+    <Item125 Ref="654" Component="#Ref-262" Culture="Default" Path="LocationFloat" Data="10.00002,0" />
+    <Item126 Ref="655" Component="#Ref-262" Culture="Default" Path="SizeF" Data="119.1667,20" />
+    <Item127 Ref="656" Component="#Ref-262" Culture="Default" Path="Text" Data="Sr.#:[?WeekNo]" />
+    <Item128 Ref="657" Component="#Ref-262" Culture="ar" Path="Text" Data="م.: [?DateFrom!dd-MM-yyyy]" />
+    <Item129 Ref="658" Component="#Ref-269" Culture="Default" Path="LocationFloat" Data="503.2212,0" />
+    <Item130 Ref="659" Component="#Ref-269" Culture="Default" Path="SizeF" Data="173.5247,20" />
+    <Item131 Ref="660" Component="#Ref-269" Culture="Default" Path="Text" Data="Breed:[?GroupBreed]" />
+    <Item132 Ref="661" Component="#Ref-269" Culture="ar" Path="Text" Data="السلالة:[?BookPerf]" />
+    <Item133 Ref="662" Component="#Ref-266" Culture="Default" Path="LocationFloat" Data="299.0087,0" />
+    <Item134 Ref="663" Component="#Ref-266" Culture="Default" Path="SizeF" Data="164.1655,20" />
+    <Item135 Ref="664" Component="#Ref-266" Culture="Default" Path="Text" Data="Farm:[?BreederFarm]" />
+    <Item136 Ref="665" Component="#Ref-266" Culture="ar" Path="Text" Data="مزرعة:[?HatcheryNo]" />
+    <Item137 Ref="666" Component="#Ref-259" Culture="Default" Path="LocationFloat" Data="723.3038,0" />
+    <Item138 Ref="667" Component="#Ref-259" Culture="Default" Path="SizeF" Data="173.5247,20" />
+    <Item139 Ref="668" Component="#Ref-259" Culture="Default" Path="Text" Data="From Age:[?AgeFrom]" />
+    <Item140 Ref="669" Component="#Ref-259" Culture="ar" Path="Text" Data="من سن:[?AgeFrom]" />
+    <Item141 Ref="670" Component="#Ref-256" Culture="Default" Path="LocationFloat" Data="933.3333,0" />
+    <Item142 Ref="671" Component="#Ref-256" Culture="Default" Path="SizeF" Data="173.5247,20" />
+    <Item143 Ref="672" Component="#Ref-256" Culture="Default" Path="Text" Data="To Age:[?AgeTo]" />
+    <Item144 Ref="673" Component="#Ref-256" Culture="ar" Path="Text" Data="الي سن:[?AgeTo]" />
+    <Item145 Ref="674" Component="#Ref-254" Culture="Default" Path="LocationFloat" Data="1170.833,0" />
+    <Item146 Ref="675" Component="#Ref-254" Culture="Default" Path="SizeF" Data="173.5247,20" />
+    <Item147 Ref="676" Component="#Ref-254" Culture="Default" Path="Text" Data="Std:[?BookPerf]" />
+    <Item148 Ref="677" Component="#Ref-254" Culture="ar" Path="Text" Data="المرجع:[?BookPerf]" />
+    <Item149 Ref="678" Component="#Ref-251" Culture="Default" Path="LocationFloat" Data="10.00002,29.37498" />
+    <Item150 Ref="679" Component="#Ref-251" Culture="Default" Path="SizeF" Data="163.5247,20" />
+    <Item151 Ref="680" Component="#Ref-251" Culture="Default" Path="Text" Data="Breeder Crop:[?BreederCrop]" />
+    <Item152 Ref="681" Component="#Ref-251" Culture="ar" Path="Text" Data="محصول السلالة:[?BreederCrop]" />
+    <Item153 Ref="682" Component="#Ref-248" Culture="Default" Path="LocationFloat" Data="214.5833,29.37502" />
+    <Item154 Ref="683" Component="#Ref-248" Culture="Default" Path="SizeF" Data="248.5909,20" />
+    <Item155 Ref="684" Component="#Ref-248" Culture="Default" Path="Text" Data="Breeder Flock:[?BreederFlock]" />
+    <Item156 Ref="685" Component="#Ref-248" Culture="ar" Path="Text" Data="قطيع السلالة:[?BreederFlock]" />
+    <Item157 Ref="686" Component="#Ref-87" Culture="Default" Path="LocationFloat" Data="1444.67,0" />
+    <Item158 Ref="687" Component="#Ref-87" Culture="Default" Path="SizeF" Data="209.33,23.82428" />
+    <Item159 Ref="688" Component="#Ref-87" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
+    <Item160 Ref="689" Component="#Ref-420" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item161 Ref="690" Component="#Ref-420" Culture="Default" Path="LocationFloat" Data="10.00002,0" />
+    <Item162 Ref="691" Component="#Ref-420" Culture="Default" Path="SizeF" Data="1634,20" />
+    <Item163 Ref="692" Component="#Ref-145" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item164 Ref="693" Component="#Ref-145" Culture="Default" Path="Text" Data="xrTableCell1" />
+    <Item165 Ref="694" Component="#Ref-145" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item166 Ref="695" Component="#Ref-145" Culture="Default" Path="Weight" Data="2.2724261729724247" />
+    <Item167 Ref="696" Component="#Ref-299" Culture="Default" Path="Text" Data="Breed STD %" />
+    <Item168 Ref="697" Component="#Ref-299" Culture="ar" Path="Text" Data="قياسي السلالة" />
+    <Item169 Ref="698" Component="#Ref-299" Culture="Default" Path="Weight" Data="2.8082276021394734" />
+    <Item170 Ref="699" Component="#Ref-315" Culture="Default" Path="Text" Data="Cum. A Grade Chicks" />
+    <Item171 Ref="700" Component="#Ref-315" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
+    <Item172 Ref="701" Component="#Ref-315" Culture="Default" Path="Weight" Data="3.1037788214928375" />
+    <Item173 Ref="702" Component="#Ref-318" Culture="Default" Path="Text" Data="A Grade ACT Cum Hatch %" />
+    <Item174 Ref="703" Component="#Ref-318" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
+    <Item175 Ref="704" Component="#Ref-318" Culture="Default" Path="Weight" Data="2.5206098661429581" />
+    <Item176 Ref="705" Component="#Ref-321" Culture="Default" Path="Text" Data="A Grade STD Cum Hatch % " />
+    <Item177 Ref="706" Component="#Ref-321" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
+    <Item178 Ref="707" Component="#Ref-321" Culture="Default" Path="Weight" Data="2.7723552398545239" />
+    <Item179 Ref="708" Component="#Ref-324" Culture="Default" Path="Text" Data="Dev." />
+    <Item180 Ref="709" Component="#Ref-324" Culture="ar" Path="Text" Data="الانحراف" />
+    <Item181 Ref="710" Component="#Ref-324" Culture="Default" Path="Weight" Data="3.2016671553037668" />
+    <Item182 Ref="711" Component="#Ref-149" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item183 Ref="712" Component="#Ref-149" Culture="Default" Path="Text" Data="xrTableCell15" />
+    <Item184 Ref="713" Component="#Ref-149" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item185 Ref="714" Component="#Ref-149" Culture="Default" Path="Weight" Data="2.226499923808833" />
+    <Item186 Ref="715" Component="#Ref-154" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item187 Ref="716" Component="#Ref-154" Culture="Default" Path="Text" Data="xrTableCell16" />
+    <Item188 Ref="717" Component="#Ref-154" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item189 Ref="718" Component="#Ref-154" Culture="Default" Path="Weight" Data="2.0005589840320361" />
+    <Item190 Ref="719" Component="#Ref-158" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item191 Ref="720" Component="#Ref-158" Culture="Default" Path="Text" Data="xrTableCell17" />
+    <Item192 Ref="721" Component="#Ref-158" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item193 Ref="722" Component="#Ref-158" Culture="Default" Path="Weight" Data="2.0891496674385643" />
+    <Item194 Ref="723" Component="#Ref-163" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item195 Ref="724" Component="#Ref-163" Culture="Default" Path="Text" Data="xrTableCell18" />
+    <Item196 Ref="725" Component="#Ref-163" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item197 Ref="726" Component="#Ref-163" Culture="Default" Path="Weight" Data="1.9734540230593547" />
+    <Item198 Ref="727" Component="#Ref-176" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item199 Ref="728" Component="#Ref-176" Culture="Default" Path="Text" Data="xrTableCell19" />
+    <Item200 Ref="729" Component="#Ref-176" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item201 Ref="730" Component="#Ref-176" Culture="Default" Path="Weight" Data="2.5115871097280436" />
+    <Item202 Ref="731" Component="#Ref-287" Culture="Default" Path="Text" Data="A Grade Chicks" />
+    <Item203 Ref="732" Component="#Ref-287" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
+    <Item204 Ref="733" Component="#Ref-287" Culture="Default" Path="Weight" Data="2.1685484111465123" />
+    <Item205 Ref="734" Component="#Ref-180" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item206 Ref="735" Component="#Ref-180" Culture="Default" Path="Text" Data="xrTableCell20" />
+    <Item207 Ref="736" Component="#Ref-180" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item208 Ref="737" Component="#Ref-180" Culture="Default" Path="Weight" Data="2.039684897942132" />
+    <Item209 Ref="738" Component="#Ref-185" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item210 Ref="739" Component="#Ref-185" Culture="Default" Path="Text" Data="xrTableCell21" />
+    <Item211 Ref="740" Component="#Ref-185" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item212 Ref="741" Component="#Ref-185" Culture="Default" Path="Weight" Data="2.2433941373234809" />
+    <Item213 Ref="742" Component="#Ref-189" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item214 Ref="743" Component="#Ref-189" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item215 Ref="744" Component="#Ref-189" Culture="Default" Path="Weight" Data="2.5908032493145345" />
+    <Item216 Ref="745" Component="#Ref-424" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item217 Ref="746" Component="#Ref-424" Culture="Default" Path="Text" Data="xrTableCell23" />
+    <Item218 Ref="747" Component="#Ref-424" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item219 Ref="748" Component="#Ref-424" Culture="Default" Path="Weight" Data="0.69777806995718561" />
+    <Item220 Ref="749" Component="#Ref-281" Culture="Default" Path="Text" Data="Breed" />
+    <Item221 Ref="750" Component="#Ref-281" Culture="ar" Path="Text" Data="سلالة" />
+    <Item222 Ref="751" Component="#Ref-281" Culture="Default" Path="Weight" Data="4.2787638322274351" />
+    <Item223 Ref="752" Component="#Ref-428" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item224 Ref="753" Component="#Ref-428" Culture="Default" Path="Text" Data="xrTableCell25" />
+    <Item225 Ref="754" Component="#Ref-428" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item226 Ref="755" Component="#Ref-428" Culture="Default" Path="Weight" Data="0.63164791306903756" />
+    <Item227 Ref="756" Component="#Ref-122" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item228 Ref="757" Component="#Ref-122" Culture="Default" Path="Text" Data="xrTableCell26" />
+    <Item229 Ref="758" Component="#Ref-122" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item230 Ref="759" Component="#Ref-122" Culture="Default" Path="Weight" Data="1.772186059763933" />
+    <Item231 Ref="760" Component="#Ref-301" Culture="Default" Path="Text" Data="Dev." />
+    <Item232 Ref="761" Component="#Ref-301" Culture="ar" Path="Text" Data="الانحراف" />
+    <Item233 Ref="762" Component="#Ref-301" Culture="Default" Path="Weight" Data="2.7514822618341293" />
+    <Item234 Ref="763" Component="#Ref-167" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item235 Ref="764" Component="#Ref-167" Culture="Default" Path="Text" Data="xrTableCell28" />
+    <Item236 Ref="765" Component="#Ref-167" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item237 Ref="766" Component="#Ref-167" Culture="Default" Path="Weight" Data="1.8864499666024539" />
+    <Item238 Ref="767" Component="#Ref-303" Culture="Default" Path="Text" Data="DOA" />
+    <Item239 Ref="768" Component="#Ref-303" Culture="ar" Path="Text" Data="نافق الوصول" />
+    <Item240 Ref="769" Component="#Ref-303" Culture="Default" Path="Weight" Data="2.4722585719889496" />
+    <Item241 Ref="770" Component="#Ref-136" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item242 Ref="771" Component="#Ref-136" Culture="Default" Path="Text" Data="xrTableCell3" />
+    <Item243 Ref="772" Component="#Ref-136" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item244 Ref="773" Component="#Ref-136" Culture="Default" Path="Weight" Data="2.9582787017367194" />
+    <Item245 Ref="774" Component="#Ref-172" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item246 Ref="775" Component="#Ref-172" Culture="Default" Path="Text" Data="xrTableCell30" />
+    <Item247 Ref="776" Component="#Ref-172" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item248 Ref="777" Component="#Ref-172" Culture="Default" Path="Weight" Data="3.0719120185906394" />
+    <Item249 Ref="778" Component="#Ref-305" Culture="Default" Path="Text" Data="ACT Cum Hatch %" />
+    <Item250 Ref="779" Component="#Ref-305" Culture="ar" Path="Text" Data="% نسبة الفقس تراكمي .م" />
+    <Item251 Ref="780" Component="#Ref-305" Culture="Default" Path="Weight" Data="2.5817282155434338" />
+    <Item252 Ref="781" Component="#Ref-307" Culture="Default" Path="Text" Data="Breed STD %" />
+    <Item253 Ref="782" Component="#Ref-307" Culture="ar" Path="Text" Data="% قياسي نسبة الفقس" />
+    <Item254 Ref="783" Component="#Ref-307" Culture="Default" Path="Weight" Data="2.438762710444943" />
+    <Item255 Ref="784" Component="#Ref-310" Culture="Default" Path="Text" Data="Dev." />
+    <Item256 Ref="785" Component="#Ref-310" Culture="ar" Path="Text" Data="الانجراف" />
+    <Item257 Ref="786" Component="#Ref-310" Culture="Default" Path="Weight" Data="2.3312444251922591" />
+    <Item258 Ref="787" Component="#Ref-312" Culture="Default" Path="Text" Data="Cum Setted Eggs" />
+    <Item259 Ref="788" Component="#Ref-312" Culture="ar" Path="Text" Data="كتاكيت درجة (أ)" />
+    <Item260 Ref="789" Component="#Ref-312" Culture="Default" Path="Weight" Data="3.7962193341577857" />
+    <Item261 Ref="790" Component="#Ref-108" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item262 Ref="791" Component="#Ref-108" Culture="Default" Path="Text" Data="xrTableCell35" />
+    <Item263 Ref="792" Component="#Ref-108" Culture="Default" Path="Weight" Data="3.4623892851403339" />
+    <Item264 Ref="793" Component="#Ref-105" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item265 Ref="794" Component="#Ref-105" Culture="Default" Path="Text" Data="xrTableCell36" />
+    <Item266 Ref="795" Component="#Ref-105" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
+    <Item267 Ref="796" Component="#Ref-105" Culture="Default" Path="Weight" Data="1.8574398619845005" />
+    <Item268 Ref="797" Component="#Ref-102" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item269 Ref="798" Component="#Ref-102" Culture="Default" Path="Text" Data="xrTableCell37" />
+    <Item270 Ref="799" Component="#Ref-102" Culture="Default" Path="Weight" Data="1.8336850811241643" />
+    <Item271 Ref="800" Component="#Ref-99" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item272 Ref="801" Component="#Ref-99" Culture="Default" Path="Text" Data="xrTableCell38" />
+    <Item273 Ref="802" Component="#Ref-99" Culture="Default" Path="Weight" Data="1.8988834752602584" />
+    <Item274 Ref="803" Component="#Ref-422" Culture="Default" Path="Text" Data="Total" />
+    <Item275 Ref="804" Component="#Ref-422" Culture="ar" Path="Text" Data="الاجمالي" />
+    <Item276 Ref="805" Component="#Ref-422" Culture="Default" Path="Weight" Data="3.1557169840535497" />
+    <Item277 Ref="806" Component="#Ref-285" Culture="Default" Path="Text" Data="Setted Eggs " />
+    <Item278 Ref="807" Component="#Ref-285" Culture="ar" Path="Text" Data="بيض تم ايداعة" />
+    <Item279 Ref="808" Component="#Ref-285" Culture="Default" Path="Weight" Data="2.239149918707648" />
+    <Item280 Ref="809" Component="#Ref-473" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item281 Ref="810" Component="#Ref-473" Culture="Default" Path="Text" Data="xrTableCell40" />
+    <Item282 Ref="811" Component="#Ref-473" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item283 Ref="812" Component="#Ref-473" Culture="Default" Path="Weight" Data="0.69766275042688153" />
+    <Item284 Ref="813" Component="#Ref-478" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item285 Ref="814" Component="#Ref-478" Culture="Default" Path="Text" Data="xrTableCell41" />
+    <Item286 Ref="815" Component="#Ref-478" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item287 Ref="816" Component="#Ref-478" Culture="Default" Path="Weight" Data="0.72829079304569078" />
+    <Item288 Ref="817" Component="#Ref-483" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item289 Ref="818" Component="#Ref-483" Culture="Default" Path="Text" Data="xrTableCell42" />
+    <Item290 Ref="819" Component="#Ref-483" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item291 Ref="820" Component="#Ref-483" Culture="Default" Path="Weight" Data="0.68795730909600072" />
+    <Item292 Ref="821" Component="#Ref-488" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item293 Ref="822" Component="#Ref-488" Culture="Default" Path="Text" Data="xrTableCell43" />
+    <Item294 Ref="823" Component="#Ref-488" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item295 Ref="824" Component="#Ref-488" Culture="Default" Path="Weight" Data="0.65762711392769524" />
+    <Item296 Ref="825" Component="#Ref-493" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item297 Ref="826" Component="#Ref-493" Culture="Default" Path="Text" Data="xrTableCell44" />
+    <Item298 Ref="827" Component="#Ref-493" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item299 Ref="828" Component="#Ref-493" Culture="Default" Path="Weight" Data="1.0708859012262149" />
+    <Item300 Ref="829" Component="#Ref-498" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item301 Ref="830" Component="#Ref-498" Culture="Default" Path="Text" Data="xrTableCell45" />
+    <Item302 Ref="831" Component="#Ref-498" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item303 Ref="832" Component="#Ref-498" Culture="Default" Path="Weight" Data="0.87555356290512831" />
+    <Item304 Ref="833" Component="#Ref-503" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item305 Ref="834" Component="#Ref-503" Culture="Default" Path="Text" Data="xrTableCell47" />
+    <Item306 Ref="835" Component="#Ref-503" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item307 Ref="836" Component="#Ref-503" Culture="Default" Path="Weight" Data="0.711045779485306" />
+    <Item308 Ref="837" Component="#Ref-508" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item309 Ref="838" Component="#Ref-508" Culture="Default" Path="Text" Data="xrTableCell49" />
+    <Item310 Ref="839" Component="#Ref-508" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item311 Ref="840" Component="#Ref-508" Culture="Default" Path="Weight" Data="0.78206000586560753" />
+    <Item312 Ref="841" Component="#Ref-291" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
+    <Item313 Ref="842" Component="#Ref-291" Culture="Default" Path="Text" Data="Reject Chicks " />
+    <Item314 Ref="843" Component="#Ref-291" Culture="ar" Path="Text" Data="كتاكيت فرزة" />
+    <Item315 Ref="844" Component="#Ref-291" Culture="Default" Path="Weight" Data="3.1868307940252336" />
+    <Item316 Ref="845" Component="#Ref-433" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item317 Ref="846" Component="#Ref-433" Culture="Default" Path="Text" Data="xrTableCell51" />
+    <Item318 Ref="847" Component="#Ref-433" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item319 Ref="848" Component="#Ref-433" Culture="Default" Path="Weight" Data="0.61173240493348846" />
+    <Item320 Ref="849" Component="#Ref-513" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item321 Ref="850" Component="#Ref-513" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item322 Ref="851" Component="#Ref-513" Culture="Default" Path="Weight" Data="0.90316744504513125" />
+    <Item323 Ref="852" Component="#Ref-438" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item324 Ref="853" Component="#Ref-438" Culture="Default" Path="Text" Data="xrTableCell53" />
+    <Item325 Ref="854" Component="#Ref-438" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item326 Ref="855" Component="#Ref-438" Culture="Default" Path="Weight" Data="0.61779448269082493" />
+    <Item327 Ref="856" Component="#Ref-443" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item328 Ref="857" Component="#Ref-443" Culture="Default" Path="Text" Data="xrTableCell54" />
+    <Item329 Ref="858" Component="#Ref-443" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item330 Ref="859" Component="#Ref-443" Culture="Default" Path="Weight" Data="0.898981907111521" />
+    <Item331 Ref="860" Component="#Ref-448" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item332 Ref="861" Component="#Ref-448" Culture="Default" Path="Text" Data="xrTableCell55" />
+    <Item333 Ref="862" Component="#Ref-448" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item334 Ref="863" Component="#Ref-448" Culture="Default" Path="Weight" Data="0.66661891802446971" />
+    <Item335 Ref="864" Component="#Ref-453" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item336 Ref="865" Component="#Ref-453" Culture="Default" Path="Text" Data="xrTableCell56" />
+    <Item337 Ref="866" Component="#Ref-453" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
+    <Item338 Ref="867" Component="#Ref-453" Culture="Default" Path="Weight" Data="1.0312754912841446" />
+    <Item339 Ref="868" Component="#Ref-458" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item340 Ref="869" Component="#Ref-458" Culture="Default" Path="Text" Data="xrTableCell57" />
+    <Item341 Ref="870" Component="#Ref-458" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item342 Ref="871" Component="#Ref-458" Culture="Default" Path="Weight" Data="0.84793520017161972" />
+    <Item343 Ref="872" Component="#Ref-463" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item344 Ref="873" Component="#Ref-463" Culture="Default" Path="Text" Data="xrTableCell58" />
+    <Item345 Ref="874" Component="#Ref-463" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item346 Ref="875" Component="#Ref-463" Culture="Default" Path="Weight" Data="0.792182692058641" />
+    <Item347 Ref="876" Component="#Ref-468" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
+    <Item348 Ref="877" Component="#Ref-468" Culture="Default" Path="Text" Data="xrTableCell59" />
+    <Item349 Ref="878" Component="#Ref-468" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item350 Ref="879" Component="#Ref-468" Culture="Default" Path="Weight" Data="0.77591198255034888" />
+    <Item351 Ref="880" Component="#Ref-131" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
+    <Item352 Ref="881" Component="#Ref-131" Culture="Default" Path="Text" Data="xrTableCell6" />
+    <Item353 Ref="882" Component="#Ref-131" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
+    <Item354 Ref="883" Component="#Ref-131" Culture="Default" Path="Weight" Data="1.9122433723199705" />
+    <Item355 Ref="884" Component="#Ref-293" Culture="Default" Path="Text" Data="Rej. %" />
+    <Item356 Ref="885" Component="#Ref-293" Culture="ar" Path="Text" Data="% مرفوض" />
+    <Item357 Ref="886" Component="#Ref-293" Culture="Default" Path="Weight" Data="2.3631243285181549" />
+    <Item358 Ref="887" Component="#Ref-295" Culture="Default" Path="Text" Data="Total Chicks " />
+    <Item359 Ref="888" Component="#Ref-295" Culture="ar" Path="Text" Data="اجمالي فقس كتاكيت" />
+    <Item360 Ref="889" Component="#Ref-295" Culture="Default" Path="Weight" Data="3.6557933688169868" />
+    <Item361 Ref="890" Component="#Ref-297" Culture="Default" Path="Text" Data="Total Hatch %" />
+    <Item362 Ref="891" Component="#Ref-297" Culture="ar" Path="Text" Data="% اجمالي فقس" />
+    <Item363 Ref="892" Component="#Ref-297" Culture="Default" Path="Weight" Data="3.0058784049931853" />
+    <Item364 Ref="893" Component="#Ref-421" Culture="Default" Path="Weight" Data="1" />
   </LocalizationItems>
   <ParameterPanelLayoutItems>
-    <Item1 Ref="892" LayoutItemType="Parameter" Parameter="#Ref-3" />
-    <Item2 Ref="893" LayoutItemType="Parameter" Parameter="#Ref-4" />
-    <Item3 Ref="894" LayoutItemType="Parameter" Parameter="#Ref-5" />
-    <Item4 Ref="895" LayoutItemType="Parameter" Parameter="#Ref-6" />
-    <Item5 Ref="896" LayoutItemType="Parameter" Parameter="#Ref-7" />
-    <Item6 Ref="897" LayoutItemType="Parameter" Parameter="#Ref-8" />
-    <Item7 Ref="898" LayoutItemType="Parameter" Parameter="#Ref-9" />
-    <Item8 Ref="899" LayoutItemType="Parameter" Parameter="#Ref-11" />
-    <Item9 Ref="900" LayoutItemType="Parameter" Parameter="#Ref-12" />
-    <Item10 Ref="901" LayoutItemType="Parameter" Parameter="#Ref-13" />
-    <Item11 Ref="902" LayoutItemType="Parameter" Parameter="#Ref-14" />
-    <Item12 Ref="903" LayoutItemType="Parameter" Parameter="#Ref-16" />
-    <Item13 Ref="904" LayoutItemType="Parameter" Parameter="#Ref-17" />
-    <Item14 Ref="905" LayoutItemType="Parameter" Parameter="#Ref-18" />
-    <Item15 Ref="906" LayoutItemType="Parameter" Parameter="#Ref-19" />
-    <Item16 Ref="907" LayoutItemType="Parameter" Parameter="#Ref-20" />
-    <Item17 Ref="908" LayoutItemType="Parameter" Parameter="#Ref-21" />
-    <Item18 Ref="909" LayoutItemType="Parameter" Parameter="#Ref-22" />
-    <Item19 Ref="910" LayoutItemType="Parameter" Parameter="#Ref-23" />
-    <Item20 Ref="911" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-24" />
-    <Item21 Ref="912" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-25" />
-    <Item22 Ref="913" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-26" />
-    <Item23 Ref="914" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-27" />
-    <Item24 Ref="915" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-28" />
-    <Item25 Ref="916" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-29" />
-    <Item26 Ref="917" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-30" />
-    <Item27 Ref="918" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-31" />
-    <Item28 Ref="919" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-32" />
-    <Item29 Ref="920" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-33" />
+    <Item1 Ref="894" LayoutItemType="Parameter" Parameter="#Ref-3" />
+    <Item2 Ref="895" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item3 Ref="896" LayoutItemType="Parameter" Parameter="#Ref-5" />
+    <Item4 Ref="897" LayoutItemType="Parameter" Parameter="#Ref-6" />
+    <Item5 Ref="898" LayoutItemType="Parameter" Parameter="#Ref-7" />
+    <Item6 Ref="899" LayoutItemType="Parameter" Parameter="#Ref-8" />
+    <Item7 Ref="900" LayoutItemType="Parameter" Parameter="#Ref-9" />
+    <Item8 Ref="901" LayoutItemType="Parameter" Parameter="#Ref-11" />
+    <Item9 Ref="902" LayoutItemType="Parameter" Parameter="#Ref-12" />
+    <Item10 Ref="903" LayoutItemType="Parameter" Parameter="#Ref-13" />
+    <Item11 Ref="904" LayoutItemType="Parameter" Parameter="#Ref-14" />
+    <Item12 Ref="905" LayoutItemType="Parameter" Parameter="#Ref-16" />
+    <Item13 Ref="906" LayoutItemType="Parameter" Parameter="#Ref-17" />
+    <Item14 Ref="907" LayoutItemType="Parameter" Parameter="#Ref-18" />
+    <Item15 Ref="908" LayoutItemType="Parameter" Parameter="#Ref-19" />
+    <Item16 Ref="909" LayoutItemType="Parameter" Parameter="#Ref-20" />
+    <Item17 Ref="910" LayoutItemType="Parameter" Parameter="#Ref-21" />
+    <Item18 Ref="911" LayoutItemType="Parameter" Parameter="#Ref-22" />
+    <Item19 Ref="912" LayoutItemType="Parameter" Parameter="#Ref-23" />
+    <Item20 Ref="913" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-24" />
+    <Item21 Ref="914" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-25" />
+    <Item22 Ref="915" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-26" />
+    <Item23 Ref="916" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-27" />
+    <Item24 Ref="917" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-28" />
+    <Item25 Ref="918" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-29" />
+    <Item26 Ref="919" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-30" />
+    <Item27 Ref="920" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-31" />
+    <Item28 Ref="921" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-32" />
+    <Item29 Ref="922" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-33" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="921" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="dsFinance" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNGaW5hbmNlIj48Q29ubmVjdGlvbiBOYW1lPSJkc0ZpbmFuY2UiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjEyNSIgSGVpZ2h0PSIyNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9Ikl0ZW1UeXBlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDb250YWluZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9IlByb2R1Y3RzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJEZXNjcmlwdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iRXhwaXJ5RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iU2VudE9yQ2xhY1F0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDYWxjUHJpY2VVbml0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzRmluYW5jZSI+PFZpZXcgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciPjxGaWVsZCBOYW1lPSJJdGVtVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb250YWluZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VudE9yQ2xhY1F0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBY3R1YWxRdHkiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ2FsY1ByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+    <Item1 Ref="923" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="dsFinance" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNGaW5hbmNlIj48Q29ubmVjdGlvbiBOYW1lPSJkc0ZpbmFuY2UiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GTV9TdG9ja3Rha2luZyI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjEyNSIgSGVpZ2h0PSIyNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9Ikl0ZW1UeXBlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDb250YWluZXIiIC8+PENvbHVtbiBUYWJsZT0iU1JfRk1fU3RvY2t0YWtpbmciIE5hbWU9IlByb2R1Y3RzIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJEZXNjcmlwdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iRXhwaXJ5RGF0ZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iVW5pdCIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iU2VudE9yQ2xhY1F0eSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GTV9TdG9ja3Rha2luZyIgTmFtZT0iQWN0dWFsUXR5IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJDYWxjUHJpY2VVbml0IiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZNX1N0b2NrdGFraW5nIiBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9ImRzRmluYW5jZSI+PFZpZXcgTmFtZT0iU1JfRk1fU3RvY2t0YWtpbmciPjxGaWVsZCBOYW1lPSJJdGVtVHlwZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb250YWluZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJvZHVjdHMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXhwaXJ5RGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IlVuaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU2VudE9yQ2xhY1F0eSIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBY3R1YWxRdHkiIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iQ2FsY1ByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJBZGp1c3RlZFByaWNlVW5pdCIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
     <Item2 Ref="0" />
   </ComponentStorage>
   <ObjectStorage>
-    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
-    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="15" Content="System.Int32" Type="System.Type" />
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="15" Content="System.Int32" Type="System.Type" />
   </ObjectStorage>
 </XtraReportsLayoutSerializer>

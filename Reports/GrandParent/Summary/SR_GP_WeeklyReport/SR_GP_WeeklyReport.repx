@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GP_WeeklyReport" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_GP_WeeklyReport" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GP_WeeklyReport" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_GP_WeeklyReport" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -115,14 +115,14 @@
     <Item18 Ref="114" Name="Produced" Expression="IsNull([TotalSelleable],0 )+IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item19 Ref="115" Name="Rejected" Expression="IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item20 Ref="116" Name="CopyRight" Expression="Iif(?IsRTL, 'حقوق النسخ 2003-2025 فيت سوفت - جميع الحقوق محفوظة', 'Copyright @ 2003-2025 VetSoft Office, All rights reserved')&#xA;" DataMember="SR_FM_RationResult" />
-    <Item21 Ref="117" Name="TypeValue" Expression="IIF(&#xA;    !IsNullOrEmpty([ItemText]), [ItemText],&#xA;    IIF([Type] = 1000000001, ?Total,&#xA;    IIF([Type] = 1000000002, ?ProdPrec,&#xA;    IIF([Type] = 1000000003, ?HatPerc,&#xA;    IIF([Type] = 1000000004, ?StoreBalance, ''))))&#xA;)" DataMember="SR_GP_DailyEggsProd" />
+    <Item21 Ref="117" Name="TypeValue" Expression="IIF(&#xD;&#xA;    !IsNullOrEmpty([ItemText]), [ItemText],&#xD;&#xA;    IIF([Type] = 1000000001, ?Total,&#xD;&#xA;    IIF([Type] = 1000000002, ?ProdPrec,&#xD;&#xA;    IIF([Type] = 1000000003, ?HatPerc,&#xD;&#xA;    IIF([Type] = 1000000004, ?StoreBalance, ''))))&#xD;&#xA;)" DataMember="SR_GP_DailyEggsProd" />
     <Item22 Ref="118" Name="Housecode" Expression="IIF([HouseCode] = 'Total', ?Total1, [HouseCode])" DataMember="SR_GP_DailyEggsProd" />
     <Item23 Ref="119" Name="PinCode_CF" Expression="IIF([PinCode] = 'Total', ?Total, [PinCode])" DataMember="SR_GP_ProductDailyReport" />
-    <Item24 Ref="120" Name="Type1_CF" Expression="IIF([Type1] = 1, ?BirdType,&#xA;IIF([Type1] = 2, ?Female,&#xA;IIF([Type1] = 3, ?Male,&#xA;IIF([Type1] = 4, ?Feed,&#xA;IIF([Type1] = 5, ?Water,&#xA;IIF([Type1] = 6, ?Heat,&#xA;IIF([Type1] = 9, ?HummidityHouse,&#xA;IIF([Type1] = 7, ?EggsStore,&#xA;IIF([Type1] = 8, ?LightTime,&#xA;[Type1]&#xA;)))))))))" DataMember="SR_GP_ProductDailyReport" />
-    <Item25 Ref="121" Name="Type2_CF" Expression="IIF([Type2] = 0, '',&#xA;IIF([Type2] = 1, ?AgeBayDay,&#xA;IIF([Type2] = 2, ?Transfer,&#xA;IIF([Type2] = 3, ?Mort,&#xA;IIF([Type2] = 4, ?Culls,&#xA;IIF([Type2] = 5, ?Balance,&#xA;IIF([Type2] = 6, ?Transfer,&#xA;IIF([Type2] = 7, ?Mort,&#xA;IIF([Type2] = 8, ?Balance,&#xA;IIF([Type2] = 9, ?Type,&#xA;IIF([Type2] = 10, ?Transfer,&#xA;IIF([Type2] = 11, ?Inside,&#xA;IIF([Type2] = 12, ?Used,&#xA;IIF([Type2] = 13, ?Balance,&#xA;IIF([Type2] = 14, ?GBayBird,&#xA;IIF([Type2] = 15, ?LiterForHouse,&#xA;IIF([Type2] = 16, ?MlByBird,&#xA;IIF([Type2] = 17, ?High,&#xA;IIF([Type2] = 18, ?Low,&#xA;IIF([Type2] = 19, ?Low,&#xA;IIF([Type2] = 20, ?High,&#xA;IIF([Type2] = 23, ?LightTime,&#xA;[Type2]&#xA;))))))))))))))))))))))" DataMember="SR_GP_ProductDailyReport" />
+    <Item24 Ref="120" Name="Type1_CF" Expression="IIF([Type1] = 1, ?BirdType,&#xD;&#xA;IIF([Type1] = 2, ?Female,&#xD;&#xA;IIF([Type1] = 3, ?Male,&#xD;&#xA;IIF([Type1] = 4, ?Feed,&#xD;&#xA;IIF([Type1] = 5, ?Water,&#xD;&#xA;IIF([Type1] = 6, ?Heat,&#xD;&#xA;IIF([Type1] = 9, ?HummidityHouse,&#xD;&#xA;IIF([Type1] = 7, ?EggsStore,&#xD;&#xA;IIF([Type1] = 8, ?LightTime,&#xD;&#xA;[Type1]&#xD;&#xA;)))))))))" DataMember="SR_GP_ProductDailyReport" />
+    <Item25 Ref="121" Name="Type2_CF" Expression="IIF([Type2] = 0, '',&#xD;&#xA;IIF([Type2] = 1, ?AgeBayDay,&#xD;&#xA;IIF([Type2] = 2, ?Transfer,&#xD;&#xA;IIF([Type2] = 3, ?Mort,&#xD;&#xA;IIF([Type2] = 4, ?Culls,&#xD;&#xA;IIF([Type2] = 5, ?Balance,&#xD;&#xA;IIF([Type2] = 6, ?Transfer,&#xD;&#xA;IIF([Type2] = 7, ?Mort,&#xD;&#xA;IIF([Type2] = 8, ?Balance,&#xD;&#xA;IIF([Type2] = 9, ?Type,&#xD;&#xA;IIF([Type2] = 10, ?Transfer,&#xD;&#xA;IIF([Type2] = 11, ?Inside,&#xD;&#xA;IIF([Type2] = 12, ?Used,&#xD;&#xA;IIF([Type2] = 13, ?Balance,&#xD;&#xA;IIF([Type2] = 14, ?GBayBird,&#xD;&#xA;IIF([Type2] = 15, ?LiterForHouse,&#xD;&#xA;IIF([Type2] = 16, ?MlByBird,&#xD;&#xA;IIF([Type2] = 17, ?High,&#xD;&#xA;IIF([Type2] = 18, ?Low,&#xD;&#xA;IIF([Type2] = 19, ?Low,&#xD;&#xA;IIF([Type2] = 20, ?High,&#xD;&#xA;IIF([Type2] = 23, ?LightTime,&#xD;&#xA;[Type2]&#xD;&#xA;))))))))))))))))))))))" DataMember="SR_GP_ProductDailyReport" />
     <Item26 Ref="122" Name="House" Expression="IIF([HouseCode] = 'Total', ?Total, [HouseCode])&#xA;" DataMember="SR_GP_WeeklyReport" />
     <Item27 Ref="123" Name="CF_Type1" Expression="IIF([Type1] = 1, ?Mort,&#xA;IIF([Type1] = 2, ?Feed,&#xA;IIF([Type1] = 3, ?TotalEggs,&#xA;IIF([Type1] = 4, ?Hatching,&#xA;IIF([Type1] = 5, ?Body,&#xA;[Type1])))))" DataMember="SR_GP_WeeklyReport" />
-    <Item28 Ref="124" Name="CF_Type2" Expression="IIF([Type2] = 1, ?BirdStart,&#xA;IIF([Type2] = 2, ?Age,&#xA;IIF([Type2] = 3, ?BirdStartWeek,&#xA;IIF([Type2] = 4, ?Mort1,&#xA;IIF([Type2] = 5, ?Culls,&#xA;IIF([Type2] = 6, ?Selection,&#xA;IIF([Type2] = 7, ?BirdsEndWeek,&#xA;IIF([Type2] = 8, ?PercMortBirds,&#xA;IIF([Type2] = 9, ?PercMortStdWeek,&#xA;IIF([Type2] = 10, ?PercCumMort,&#xA;IIF([Type2] = 11, ?CumMortStd,&#xA;IIF([Type2] = 12, ?FeedBirdG,&#xA;IIF([Type2] = 13, ?FeedBirdGStd,&#xA;IIF([Type2] = 14, ?FeedBirdKgDay,&#xA;IIF([Type2] = 15, ?FeedBirdForComWeG,&#xA;IIF([Type2] = 16, ?CumFeedWeekKg,&#xA;IIF([Type2] = 17, ?CumFeedKg,&#xA;IIF([Type2] = 18, ?TotalFeedPerHen,&#xA;IIF([Type2] = 19, ?ProtinPerBirdG,&#xA;IIF([Type2] = 20, ?KiloCalariesPerBird,&#xA;IIF([Type2] = 21, ?TotalEggsNo,&#xA;IIF([Type2] = 22, ?TotEggsStd,&#xA;IIF([Type2] = 23, ?TotEggsPerc,&#xA;IIF([Type2] = 24, ?TotEggsPercStd,&#xA;IIF([Type2] = 25, ?CumTotEggsHH,&#xA;IIF([Type2] = 26, ?CumTotEggsHHStd,&#xA;IIF([Type2] = 27, ?TotEggsNoPerHen,&#xA;IIF([Type2] = 28, ?TotEggsNoPerHenStd,&#xA;IIF([Type2] = 29, ?TotHatEggs,&#xA;IIF([Type2] = 30, ?TotHatEggsStd,&#xA;IIF([Type2] = 31, ?TotHatEggsPerc,&#xA;IIF([Type2] = 32, ?TotHatEggsPercStd,&#xA;IIF([Type2] = 33, ?CumTotHatEggs,&#xA;IIF([Type2] = 34, ?CumTotHatEggsStd,&#xA;IIF([Type2] = 35, ?TotHatEggsNoPerHen,&#xA;IIF([Type2] = 36, ?TotHatEggsNoPerHenStd,&#xA;IIF([Type2] = 37, ?AverageWeeight,&#xA;IIF([Type2] = 38, ?UtilizationHETEPerc,&#xA;IIF([Type2] = 39, ?UtilizationHETEPercStd,&#xA;IIF([Type2] = 40, ?BodyWeightGAge,&#xA;IIF([Type2] = 41, ?BodyWeightTarget,&#xA;IIF([Type2] = 42, ?UniformityPerc,&#xA;IIF([Type2] = 43, ?TempMaxMin,&#xA;IIF([Type2] = 44, ?HoursLight,&#xA;[Type2]&#xA;))))))))))))))))))))))))))))))))))))))))))))" DataMember="SR_GP_WeeklyReport" />
+    <Item28 Ref="124" Name="CF_Type2" Expression="IIF([Type2] = 1, ?BirdStart,&#xD;&#xA;IIF([Type2] = 2, ?Age,&#xD;&#xA;IIF([Type2] = 3, ?BirdStartWeek,&#xD;&#xA;IIF([Type2] = 4, ?Mort1,&#xD;&#xA;IIF([Type2] = 5, ?Culls,&#xD;&#xA;IIF([Type2] = 6, ?Selection,&#xD;&#xA;IIF([Type2] = 7, ?BirdsEndWeek,&#xD;&#xA;IIF([Type2] = 8, ?PercMortBirds,&#xD;&#xA;IIF([Type2] = 9, ?PercMortStdWeek,&#xD;&#xA;IIF([Type2] = 10, ?PercCumMort,&#xD;&#xA;IIF([Type2] = 11, ?CumMortStd,&#xD;&#xA;IIF([Type2] = 12, ?FeedBirdG,&#xD;&#xA;IIF([Type2] = 13, ?FeedBirdGStd,&#xD;&#xA;IIF([Type2] = 14, ?FeedBirdKgDay,&#xD;&#xA;IIF([Type2] = 15, ?FeedBirdForComWeG,&#xD;&#xA;IIF([Type2] = 16, ?CumFeedWeekKg,&#xD;&#xA;IIF([Type2] = 17, ?CumFeedKg,&#xD;&#xA;IIF([Type2] = 18, ?TotalFeedPerHen,&#xD;&#xA;IIF([Type2] = 19, ?ProtinPerBirdG,&#xD;&#xA;IIF([Type2] = 20, ?KiloCalariesPerBird,&#xD;&#xA;IIF([Type2] = 21, ?TotalEggsNo,&#xD;&#xA;IIF([Type2] = 22, ?TotEggsStd,&#xD;&#xA;IIF([Type2] = 23, ?TotEggsPerc,&#xD;&#xA;IIF([Type2] = 24, ?TotEggsPercStd,&#xD;&#xA;IIF([Type2] = 25, ?CumTotEggsHH,&#xD;&#xA;IIF([Type2] = 26, ?CumTotEggsHHStd,&#xD;&#xA;IIF([Type2] = 27, ?TotEggsNoPerHen,&#xD;&#xA;IIF([Type2] = 28, ?TotEggsNoPerHenStd,&#xD;&#xA;IIF([Type2] = 29, ?TotHatEggs,&#xD;&#xA;IIF([Type2] = 30, ?TotHatEggsStd,&#xD;&#xA;IIF([Type2] = 31, ?TotHatEggsPerc,&#xD;&#xA;IIF([Type2] = 32, ?TotHatEggsPercStd,&#xD;&#xA;IIF([Type2] = 33, ?CumTotHatEggs,&#xD;&#xA;IIF([Type2] = 34, ?CumTotHatEggsStd,&#xD;&#xA;IIF([Type2] = 35, ?TotHatEggsNoPerHen,&#xD;&#xA;IIF([Type2] = 36, ?TotHatEggsNoPerHenStd,&#xD;&#xA;IIF([Type2] = 37, ?AverageWeeight,&#xD;&#xA;IIF([Type2] = 38, ?UtilizationHETEPerc,&#xD;&#xA;IIF([Type2] = 39, ?UtilizationHETEPercStd,&#xD;&#xA;IIF([Type2] = 40, ?BodyWeightGAge,&#xD;&#xA;IIF([Type2] = 41, ?BodyWeightTarget,&#xD;&#xA;IIF([Type2] = 42, ?UniformityPerc,&#xD;&#xA;IIF([Type2] = 43, ?TempMaxMin,&#xD;&#xA;IIF([Type2] = 44, ?HoursLight,&#xD;&#xA;[Type2]&#xD;&#xA;))))))))))))))))))))))))))))))))))))))))))))" DataMember="SR_GP_WeeklyReport" />
   </CalculatedFields>
   <Bands>
     <Item1 Ref="125" ControlType="TopMarginBand" Name="TopMargin" />
@@ -475,7 +475,7 @@
         </Item3>
       </SubBands>
       <Controls>
-        <Item1 Ref="307" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="SR_GP_WeeklyReport">
+        <Item1 Ref="307" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1">
           <Parameters>
             <Item1 Ref="308" Name="IsRTL" Parameter="#Ref-3" />
           </Parameters>
@@ -485,8 +485,8 @@
           </RowFields>
           <ColumnFields>
             <Item1 Ref="311" FieldName="House" />
-            <Item2 Ref="312" FieldName="SR_GP_WeeklyReport.PinCode" />
-            <Item3 Ref="313" FieldName="SR_GP_WeeklyReport.Line" />
+            <Item2 Ref="312" FieldName="PinCode" />
+            <Item3 Ref="313" FieldName="Line" />
           </ColumnFields>
           <DataFields>
             <Item1 Ref="314" SummaryType="Max" FieldName="Value" />
@@ -494,10 +494,10 @@
           <ColumnDefinitions>
             <Item1 Ref="315" Width="131.6266" />
             <Item2 Ref="316" Width="131.6266" />
-            <Item3 Ref="317" Width="90.4898" />
-            <Item4 Ref="318" Width="2.090314" Visible="false" />
-            <Item5 Ref="319" Width="2" />
-            <Item6 Ref="320" Width="2" Visible="false" />
+            <Item3 Ref="317" Width="90.48981" />
+            <Item4 Ref="318" Width="2.09031415" Visible="false" />
+            <Item5 Ref="319" Width="2.00000024" />
+            <Item6 Ref="320" Width="2.00000024" Visible="false" />
           </ColumnDefinitions>
           <RowDefinitions>
             <Item1 Ref="321" Height="25.0000019" />
@@ -653,12 +653,12 @@
     <Item86 Ref="453" Component="#Ref-169" Culture="Default" Path="HeightF" Data="0" />
     <Item87 Ref="454" Component="#Ref-211" Culture="Default" Path="HeightF" Data="23" />
     <Item88 Ref="455" Component="#Ref-129" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item89 Ref="456" Component="#Ref-129" Culture="Default" Path="SizeF" Data="290.8131,20" />
+    <Item89 Ref="456" Component="#Ref-129" Culture="Default" Path="SizeF" Data="775.065063,20" />
     <Item90 Ref="457" Component="#Ref-127" Culture="Default" Path="LocationFloat" Data="353.5,0" />
-    <Item91 Ref="458" Component="#Ref-127" Culture="Default" Path="SizeF" Data="445.5197,20" />
+    <Item91 Ref="458" Component="#Ref-127" Culture="Default" Path="SizeF" Data="929.771667,20" />
     <Item92 Ref="459" Component="#Ref-127" Culture="Default" Path="TextFormatString" Data="{0:HH:mm:ss}" />
     <Item93 Ref="460" Component="#Ref-131" Culture="Default" Path="LocationFloat" Data="834.0413,0" />
-    <Item94 Ref="461" Component="#Ref-131" Culture="Default" Path="SizeF" Data="318.4752,20" />
+    <Item94 Ref="461" Component="#Ref-131" Culture="Default" Path="SizeF" Data="802.7272,20" />
     <Item95 Ref="462" Component="#Ref-131" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
     <Item96 Ref="463" Component="#Ref-62" Culture="Default" Path="Description" Data="PercCumMort" />
     <Item97 Ref="464" Component="#Ref-60" Culture="Default" Path="Description" Data="PercMortBirds" />
@@ -723,7 +723,7 @@
     <Item156 Ref="523" Component="#Ref-91" Culture="Default" Path="Description" Data="UtilizationHETEPercStd" />
     <Item157 Ref="524" Component="#Ref-32" Culture="Default" Path="Description" Data="Water" />
     <Item158 Ref="525" Component="#Ref-307" Culture="Default" Path="LocationFloat" Data="0,10.00001" />
-    <Item159 Ref="526" Component="#Ref-307" Culture="Default" Path="SizeF" Data="359.8333,129" />
+    <Item159 Ref="526" Component="#Ref-307" Culture="Default" Path="SizeF" Data="359.8333,129.000015" />
     <Item160 Ref="527" Component="#Ref-213" Culture="Default" Path="LocationFloat" Data="764.5435,0" />
     <Item161 Ref="528" Component="#Ref-213" Culture="Default" Path="SizeF" Data="128.125,23" />
     <Item162 Ref="529" Component="#Ref-213" Culture="Default" Path="Text" Data="Week No: [WeekNo]" />

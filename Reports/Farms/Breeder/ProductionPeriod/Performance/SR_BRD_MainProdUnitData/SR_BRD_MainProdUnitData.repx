@@ -701,7 +701,7 @@
         </Item2>
       </SubBands>
     </Item6>
-    <Item7 Ref="350" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WholePage">
+    <Item7 Ref="350" ControlType="GroupHeaderBand" Name="GroupHeader1" RepeatEveryPage="true" GroupUnion="WholePage">
       <SubBands>
         <Item1 Ref="351" ControlType="SubBand" Name="GroupHeaderSub4">
           <Controls>

@@ -67,7 +67,7 @@
                   </ExpressionBindings>
                   <StylePriority Ref="56" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item2>
-                <Item3 Ref="57" ControlType="XRTableCell" Name="xrTableCell38" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" Borders="All">
+                <Item3 Ref="57" ControlType="XRTableCell" Name="xrTableCell38" Multiline="true" TextAlignment="MiddleCenter" Padding="2,2,0,0,100" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="58" EventName="BeforePrint" PropertyName="Text" Expression="[rf_ProdWeekNo]" />
                   </ExpressionBindings>
@@ -1261,7 +1261,7 @@
     <Item51 Ref="699" Component="#Ref-290" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item52 Ref="700" Component="#Ref-290" Culture="Default" Path="SizeF" Data="1899,20" />
     <Item53 Ref="701" Component="#Ref-286" Culture="Default" Path="LocationFloat" Data="0,0" />
-    <Item54 Ref="702" Component="#Ref-286" Culture="Default" Path="SizeF" Data="1898.99976,20" />
+    <Item54 Ref="702" Component="#Ref-286" Culture="Default" Path="SizeF" Data="1899,20" />
     <Item55 Ref="703" Component="#Ref-551" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item56 Ref="704" Component="#Ref-551" Culture="Default" Path="SizeF" Data="1899,20" />
     <Item57 Ref="705" Component="#Ref-608" Culture="Default" Path="LocationFloat" Data="0,0" />

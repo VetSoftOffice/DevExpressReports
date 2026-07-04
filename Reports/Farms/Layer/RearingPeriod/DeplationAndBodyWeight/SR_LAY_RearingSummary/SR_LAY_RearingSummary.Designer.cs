@@ -31,8 +31,8 @@ namespace DevExpressReports.Reports.Farms.Layer.RearingPeriod.DeplationAndBodyWe
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(86.45835F);
-            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(3.541679F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(86.45834F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(3.541678F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(2F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition crossTabColumnDefinition4 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(2F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
@@ -619,7 +619,7 @@ namespace DevExpressReports.Reports.Farms.Layer.RearingPeriod.DeplationAndBodyWe
             this.crossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             crossTabColumnDefinition1,
             crossTabColumnDefinition2,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.9438F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(88.94379F),
             crossTabColumnDefinition3,
             crossTabColumnDefinition4});
             crossTabColumnField1.FieldName = "ColSeq";
@@ -717,7 +717,7 @@ namespace DevExpressReports.Reports.Farms.Layer.RearingPeriod.DeplationAndBodyWe
             // 
             // xrCrossTabCell6
             // 
-            this.xrCrossTabCell6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.xrCrossTabCell6.BackColor = System.Drawing.Color.White;
             this.xrCrossTabCell6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.xrCrossTabCell6.BorderWidth = 0.5F;
             this.xrCrossTabCell6.ColumnIndex = 0;
@@ -2305,7 +2305,7 @@ namespace DevExpressReports.Reports.Farms.Layer.RearingPeriod.DeplationAndBodyWe
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WeeklyGain, "Default", "Description", "WeeklyGain"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WeeklyPerc, "Default", "Description", "WeeklyPerc"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WeekNo, "Default", "Description", "WeekNo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTabCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 9F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTabCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTabCell2, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTabCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTabCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),

@@ -12,5 +12,10 @@ namespace DevExpressReports.Reports.GrandParent.Summary.SR_GP_DailyEggsProd
         {
             InitializeComponent();
         }
+
+        private void xrCrossTab1_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

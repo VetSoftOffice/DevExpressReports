@@ -493,11 +493,11 @@
                 <Item1 Ref="265" SummaryType="Max" FieldName="DataValue" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="266" Width="86.45835" AutoWidthMode="ShrinkAndGrow" />
-                <Item2 Ref="267" Width="3.54167914" Visible="false" />
-                <Item3 Ref="268" Width="88.9438" />
-                <Item4 Ref="269" Width="2" Visible="false" />
-                <Item5 Ref="270" Width="1.99999988" Visible="false" />
+                <Item1 Ref="266" Width="86.4583359" AutoWidthMode="ShrinkAndGrow" />
+                <Item2 Ref="267" Width="3.54167843" Visible="false" />
+                <Item3 Ref="268" Width="88.9437943" />
+                <Item4 Ref="269" Width="1.99999976" Visible="false" />
+                <Item5 Ref="270" Width="1.99999976" Visible="false" />
               </ColumnDefinitions>
               <RowDefinitions>
                 <Item1 Ref="271" Height="20" />
@@ -524,7 +524,7 @@
                     <Item1 Ref="283" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleRight', 'MiddleLeft')&#xA;&#xA;" />
                   </ExpressionBindings>
                 </Item4>
-                <Item5 Ref="284" ControlType="XRCrossTabCell" Name="xrCrossTabCell6" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" BackColor="255,235,235,235" BorderColor="255,75,75,75" BorderWidth="0.5">
+                <Item5 Ref="284" ControlType="XRCrossTabCell" Name="xrCrossTabCell6" ColumnIndex="0" RowIndex="2" TextAlignment="MiddleCenter" BackColor="White" BorderColor="255,75,75,75" BorderWidth="0.5">
                   <ExpressionBindings>
                     <Item1 Ref="285" EventName="BeforePrint" PropertyName="Text" Expression="[RowHeader]" />
                   </ExpressionBindings>
@@ -748,7 +748,7 @@
     <Item7 Ref="411" Component="#Ref-22" Culture="Default" Path="Description" Data="Company" />
     <Item8 Ref="412" Component="#Ref-15" Culture="Default" Path="Description" Data="CropNo" />
     <Item9 Ref="413" Component="#Ref-238" Culture="Default" Path="LocationFloat" Data="10,0" />
-    <Item10 Ref="414" Component="#Ref-238" Culture="Default" Path="SizeF" Data="182.943832,46" />
+    <Item10 Ref="414" Component="#Ref-238" Culture="Default" Path="SizeF" Data="182.9438,46" />
     <Item11 Ref="415" Component="#Ref-291" Culture="Default" Path="Text" Data="" />
     <Item12 Ref="416" Component="#Ref-293" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item13 Ref="417" Component="#Ref-296" Culture="Default" Path="Text" Data="Row Header" />
@@ -841,7 +841,7 @@
     <Item100 Ref="504" Component="#Ref-36" Culture="Default" Path="Description" Data="WeeklyGain" />
     <Item101 Ref="505" Component="#Ref-47" Culture="Default" Path="Description" Data="WeeklyPerc" />
     <Item102 Ref="506" Component="#Ref-30" Culture="Default" Path="Description" Data="WeekNo" />
-    <Item103 Ref="507" Component="#Ref-276" Culture="Default" Path="Font" Data="Arial, 9pt" />
+    <Item103 Ref="507" Component="#Ref-276" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item104 Ref="508" Component="#Ref-276" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item105 Ref="509" Component="#Ref-279" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item106 Ref="510" Component="#Ref-281" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />

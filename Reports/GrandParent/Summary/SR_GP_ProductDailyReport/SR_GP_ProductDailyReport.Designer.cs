@@ -462,18 +462,16 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(86.5801F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2});
-            crossTabColumnField1.FieldName = "SR_GP_ProductDailyReport.PinCode_CF";
-            crossTabColumnField2.FieldName = "SR_GP_ProductDailyReport.Line";
+            crossTabColumnField1.FieldName = "PinCode_CF";
+            crossTabColumnField2.FieldName = "Line";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1,
             crossTabColumnField2});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
-            crossTabDataField1.FieldName = "SR_GP_ProductDailyReport.Value";
+            crossTabDataField1.FieldName = "Value";
             crossTabDataField1.SummaryType = DevExpress.XtraReports.UI.CrossTab.SummaryType.Max;
             this.xrCrossTab1.DataFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField[] {
             crossTabDataField1});
-            this.xrCrossTab1.DataMember = "SR_GP_ProductDailyReport";
-            this.xrCrossTab1.DataSource = this.sqlDataSource2;
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
             this.xrCrossTab1.Name = "xrCrossTab1";
@@ -487,7 +485,7 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(50F),
             crossTabRowDefinition1,
             crossTabRowDefinition2});
-            crossTabRowField1.FieldName = "SR_GP_ProductDailyReport.Type1_CF";
+            crossTabRowField1.FieldName = "Type1_CF";
             crossTabRowField1.SortOrder = DevExpress.XtraReports.UI.XRColumnSortOrder.None;
             crossTabRowField2.FieldName = "Type2_CF";
             this.xrCrossTab1.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {

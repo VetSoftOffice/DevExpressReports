@@ -71,9 +71,9 @@
     <Item18 Ref="70" Name="Produced" Expression="IsNull([TotalSelleable],0 )+IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item19 Ref="71" Name="Rejected" Expression="IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item20 Ref="72" Name="CopyRight" Expression="Iif(?IsRTL, 'حقوق النسخ 2003-2025 فيت سوفت - جميع الحقوق محفوظة', 'Copyright @ 2003-2025 VetSoft Office, All rights reserved')&#xA;" DataMember="SR_FM_RationResult" />
-    <Item21 Ref="73" Name="TypeValue" Expression="IIF(&#xA;    !IsNullOrEmpty([ItemText]), [ItemText],&#xA;    IIF([Type] = 1000000001, ?Total,&#xA;    IIF([Type] = 1000000002, ?ProdPrec,&#xA;    IIF([Type] = 1000000003, ?HatPerc,&#xA;    IIF([Type] = 1000000004, ?StoreBalance, ''))))&#xA;)" DataMember="SR_GP_DailyEggsProd" />
+    <Item21 Ref="73" Name="TypeValue" Expression="IIF(&#xD;&#xA;    !IsNullOrEmpty([ItemText]), [ItemText],&#xD;&#xA;    IIF([Type] = 1000000001, ?Total,&#xD;&#xA;    IIF([Type] = 1000000002, ?ProdPrec,&#xD;&#xA;    IIF([Type] = 1000000003, ?HatPerc,&#xD;&#xA;    IIF([Type] = 1000000004, ?StoreBalance, ''))))&#xD;&#xA;)" DataMember="SR_GP_DailyEggsProd" />
     <Item22 Ref="74" Name="Housecode" Expression="IIF([HouseCode] = 'Total', ?Total1, [HouseCode])" DataMember="SR_GP_DailyEggsProd" />
-    <Item23 Ref="75" Name="Type1_CF" Expression="IIF([Type1] = 1, ?NoOfBirdsStartedWith,&#xA;IIF([Type1] = 2, ?AgeDay,&#xA;IIF([Type1] = 3, ?NumberStartedWeek,&#xA;IIF([Type1] = 4, ?Mort,&#xA;IIF([Type1] = 5, ?Culls,&#xA;IIF([Type1] = 6, ?SelectionSexError,&#xA;IIF([Type1] = 7, ?NumberOfBirdsEndWeek,&#xA;IIF([Type1] = 8, ?PercMortOfWeek,&#xA;IIF([Type1] = 9, ?PercMortOfWeekStd,&#xA;IIF([Type1] = 10, ?PercCumMort,&#xA;IIF([Type1] = 11, ?PercCumMortStd,&#xA;IIF([Type1] = 12, ?FeedType,&#xA;IIF([Type1] = 13, ?FeedBirdPerDayg,&#xA;IIF([Type1] = 14, ?FeedBirdPerDayStd,&#xA;IIF([Type1] = 15, ?FeedBirdPerPenKgDay,&#xA;IIF([Type1] = 16, ?FeedBirdPerPenKgDayStd,&#xA;IIF([Type1] = 17, ?FeedBirdForComingWeeklygm,&#xA;IIF([Type1] = 18, ?CumFeedWeekKg,&#xA;IIF([Type1] = 19, ?CumFeedKg,&#xA;IIF([Type1] = 20, ?CumFeedWeekKgStd,&#xA;IIF([Type1] = 21, ?BodyWeightgmAge,&#xA;IIF([Type1] = 22, ?BodyWeightgmStd,&#xA;IIF([Type1] = 23, ?UniformityPerc,&#xA;IIF([Type1] = 24, ?TempratureMaxMin,&#xA;IIF([Type1] = 25, ?HouseLight,&#xA;IIF([Type1] = 26, ?KCal,&#xA;[Type1]))))))))))))))))))))))))))&#xA;" DataMember="SR_GP_DailyReport" />
+    <Item23 Ref="75" Name="Type1_CF" Expression="IIF([Type1] = 1, ?NoOfBirdsStartedWith,&#xD;&#xA;IIF([Type1] = 2, ?AgeDay,&#xD;&#xA;IIF([Type1] = 3, ?NumberStartedWeek,&#xD;&#xA;IIF([Type1] = 4, ?Mort,&#xD;&#xA;IIF([Type1] = 5, ?Culls,&#xD;&#xA;IIF([Type1] = 6, ?SelectionSexError,&#xD;&#xA;IIF([Type1] = 7, ?NumberOfBirdsEndWeek,&#xD;&#xA;IIF([Type1] = 8, ?PercMortOfWeek,&#xD;&#xA;IIF([Type1] = 9, ?PercMortOfWeekStd,&#xD;&#xA;IIF([Type1] = 10, ?PercCumMort,&#xD;&#xA;IIF([Type1] = 11, ?PercCumMortStd,&#xD;&#xA;IIF([Type1] = 12, ?FeedType,&#xD;&#xA;IIF([Type1] = 13, ?FeedBirdPerDayg,&#xD;&#xA;IIF([Type1] = 14, ?FeedBirdPerDayStd,&#xD;&#xA;IIF([Type1] = 15, ?FeedBirdPerPenKgDay,&#xD;&#xA;IIF([Type1] = 16, ?FeedBirdPerPenKgDayStd,&#xD;&#xA;IIF([Type1] = 17, ?FeedBirdForComingWeeklygm,&#xD;&#xA;IIF([Type1] = 18, ?CumFeedWeekKg,&#xD;&#xA;IIF([Type1] = 19, ?CumFeedKg,&#xD;&#xA;IIF([Type1] = 20, ?CumFeedWeekKgStd,&#xD;&#xA;IIF([Type1] = 21, ?BodyWeightgmAge,&#xD;&#xA;IIF([Type1] = 22, ?BodyWeightgmStd,&#xD;&#xA;IIF([Type1] = 23, ?UniformityPerc,&#xD;&#xA;IIF([Type1] = 24, ?TempratureMaxMin,&#xD;&#xA;IIF([Type1] = 25, ?HouseLight,&#xD;&#xA;IIF([Type1] = 26, ?KCal,&#xD;&#xA;[Type1]))))))))))))))))))))))))))&#xD;&#xA;" DataMember="SR_GP_DailyReport" />
     <Item24 Ref="76" Name="HouseCode_CF" Expression="IIF([HouseCode] = 'Total', ?Total, [HouseCode])&#xA;" DataMember="SR_GP_DailyReport" />
   </CalculatedFields>
   <Bands>
@@ -267,16 +267,16 @@
       <SubBands>
         <Item1 Ref="168" ControlType="SubBand" Name="SubBand2">
           <Controls>
-            <Item1 Ref="169" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="SR_GP_DailyReport">
+            <Item1 Ref="169" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1">
               <Parameters>
                 <Item1 Ref="170" Name="IsRTL" Parameter="#Ref-3" />
               </Parameters>
               <RowFields>
-                <Item1 Ref="171" SortOrder="None" FieldName="SR_GP_DailyReport.Type1_CF" />
+                <Item1 Ref="171" SortOrder="None" FieldName="Type1_CF" />
               </RowFields>
               <ColumnFields>
                 <Item1 Ref="172" FieldName="HouseCode_CF" />
-                <Item2 Ref="173" FieldName="SR_GP_DailyReport.PinCode" />
+                <Item2 Ref="173" FieldName="PinCode" />
               </ColumnFields>
               <DataFields>
                 <Item1 Ref="174" SummaryType="Max" FieldName="O" />

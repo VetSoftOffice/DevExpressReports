@@ -565,6 +565,7 @@ if (GetCurrentColumnValue("CumCulls") != null &amp;&amp;
     cumCulls = Convert.ToDecimal(GetCurrentColumnValue("CumCulls"));
 }
 
+
 if (GetCurrentColumnValue("CumBroiler") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("CumBroiler").ToString()))
 {
@@ -785,6 +786,7 @@ private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.Canc
         xrTableCell52.Text = DevTotalCumAGrade.ToString("0.00");
 
 }
+
 </value>
   </data>
 </root>
