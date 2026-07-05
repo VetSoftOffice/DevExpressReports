@@ -288,6 +288,7 @@ private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.Canc
     } else {
         cell.Text = "0.00";
     }
+    
 }
 
 private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {  
