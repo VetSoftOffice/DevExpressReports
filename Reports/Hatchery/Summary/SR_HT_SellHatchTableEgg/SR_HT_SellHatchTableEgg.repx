@@ -232,13 +232,13 @@
         </Item2>
         <Item3 Ref="123" ControlType="SubBand" Name="SubBand6">
           <Controls>
-            <Item1 Ref="124" ControlType="XRLabel" Name="xrLabel4" Multiline="true" AutoWidth="true" Borders="None">
+            <Item1 Ref="124" ControlType="XRLabel" Name="xrLabel4" Multiline="true" AutoWidth="true" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="125" UseBorders="false" />
             </Item1>
-            <Item2 Ref="126" ControlType="XRLabel" Name="xrLabel1" Borders="None">
+            <Item2 Ref="126" ControlType="XRLabel" Name="xrLabel1" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="127" UseFont="false" UseBorders="false" />
             </Item2>
-            <Item3 Ref="128" ControlType="XRLabel" Name="xrLabel2" CanGrow="false" Borders="None">
+            <Item3 Ref="128" ControlType="XRLabel" Name="xrLabel2" CanGrow="false" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="129" UseBorders="false" />
             </Item3>
           </Controls>
@@ -479,6 +479,8 @@
     <Pdf Ref="253">
       <DocumentOptions Ref="254" Author="VetSoft" />
     </Pdf>
+    <Xls Ref="441" TextExportMode="Text" IgnoreErrors="NumberStoredAsText" />
+    <Xlsx Ref="442" TextExportMode="Text" IgnoreErrors="NumberStoredAsText" />
   </ExportOptions>
   <StyleSheet>
     <Item1 Ref="255" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GHT_HumidityLoss" ScriptsSource="&#xD;&#xA;private void xrTableCell18_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;decimal AvgChickWt  = 0;&#xD;&#xA;decimal AvgOneSetEggWt = 0;&#xD;&#xA;decimal result = 0;&#xD;&#xA;&#xD;&#xA;// --- AvgChickWt---&#xD;&#xA;if (GetCurrentColumnValue(&quot;AvgChickWt&quot;) != null)&#xD;&#xA;    AvgChickWt = Convert.ToDecimal(GetCurrentColumnValue(&quot;AvgChickWt&quot;));&#xD;&#xA;&#xD;&#xA;// --- AvgOneSetEggWt---&#xD;&#xA;if (GetCurrentColumnValue(&quot;AvgOneSetEggWt&quot;) != null)&#xD;&#xA;    AvgOneSetEggWt= Convert.ToDecimal(GetCurrentColumnValue(&quot;AvgOneSetEggWt&quot;));&#xD;&#xA;&#xD;&#xA;// --- Calculate Percentage ---&#xD;&#xA;if (AvgOneSetEggWt!= 0)&#xD;&#xA;    result = (AvgChickWt * 100m) / AvgOneSetEggWt;&#xD;&#xA;&#xD;&#xA;// --- Write to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="25.2" DataMember="SR_GHT_HumidityLoss" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
@@ -300,19 +300,19 @@
                     <SubBands>
                       <Item1 Ref="176" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                         <Controls>
-                          <Item1 Ref="177" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="177" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="178" UseFont="false" UseTextAlignment="false" />
                           </Item1>
-                          <Item2 Ref="179" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item2 Ref="179" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="180" UseFont="false" UseTextAlignment="false" />
                           </Item2>
-                          <Item3 Ref="181" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item3 Ref="181" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="182" UseFont="false" UseTextAlignment="false" />
                           </Item3>
-                          <Item4 Ref="183" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item4 Ref="183" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="184" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                           </Item4>
-                          <Item5 Ref="185" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item5 Ref="185" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="186" UseFont="false" UseTextAlignment="false" />
                           </Item5>
                           <Item6 Ref="187" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
@@ -320,7 +320,7 @@
                               <Item1 Ref="188" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                             </ExpressionBindings>
                           </Item6>
-                          <Item7 Ref="189" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item7 Ref="189" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="190" UseFont="false" UseTextAlignment="false" />
                           </Item7>
                         </Controls>
@@ -330,7 +330,7 @@
                       </Item1>
                       <Item2 Ref="192" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="193" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                          <Item1 Ref="193" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="194" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>
@@ -358,16 +358,16 @@
         </Item2>
         <Item3 Ref="202" ControlType="SubBand" Name="SubBand6">
           <Controls>
-            <Item1 Ref="203" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Padding="2,2,0,0,100" Borders="None">
+            <Item1 Ref="203" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Padding="2,2,0,0,100" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <StylePriority Ref="204" UseBorders="false" />
             </Item1>
-            <Item2 Ref="205" ControlType="XRLabel" Name="xrLabel3" Multiline="true" Padding="2,2,0,0,100" Borders="None">
+            <Item2 Ref="205" ControlType="XRLabel" Name="xrLabel3" Multiline="true" Padding="2,2,0,0,100" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="206" EventName="BeforePrint" PropertyName="Visible" Expression="!IsNullOrEmpty(?HatcheryNo)" />
               </ExpressionBindings>
               <StylePriority Ref="207" UseBorders="false" />
             </Item2>
-            <Item3 Ref="208" ControlType="XRLabel" Name="xrLabel2" AutoWidth="true" CanShrink="true" Borders="None">
+            <Item3 Ref="208" ControlType="XRLabel" Name="xrLabel2" AutoWidth="true" CanShrink="true" Borders="None" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="209" EventName="BeforePrint" PropertyName="Visible" Expression="Not IsNullOrEmpty(?DateTo)&#xA;" />
               </ExpressionBindings>
@@ -434,7 +434,7 @@
                     <SubBands>
                       <Item1 Ref="247" ControlType="SubBand" Name="SubBand1">
                         <Controls>
-                          <Item1 Ref="248" ControlType="XRLabel" Name="xrLabel1" Multiline="true" AnchorHorizontal="Both" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                          <Item1 Ref="248" ControlType="XRLabel" Name="xrLabel1" Multiline="true" AnchorHorizontal="Both" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <ExpressionBindings>
                               <Item1 Ref="249" EventName="BeforePrint" PropertyName="Text" Expression="?Notes" />
                             </ExpressionBindings>
@@ -460,7 +460,7 @@
                       </Item2>
                       <Item3 Ref="257" ControlType="SubBand" Name="SubBand3">
                         <Controls>
-                          <Item1 Ref="258" ControlType="XRLabel" Name="xrLabel3" Multiline="true" CanGrow="false" Padding="2,2,0,0,100">
+                          <Item1 Ref="258" ControlType="XRLabel" Name="xrLabel3" Multiline="true" CanGrow="false" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="259" UseFont="false" />
                           </Item1>
                         </Controls>
@@ -494,7 +494,7 @@
                   <Item20 Ref="280" Component="#Ref-258" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item21 Ref="281" Component="#Ref-258" Culture="Default" Path="SizeF" Data="806,20" />
                   <Item22 Ref="282" Component="#Ref-258" Culture="Default" Path="Text" Data="Filter Data:  [?FilterData]" />
-                  <Item23 Ref="283" Component="#Ref-258" Culture="ar" Path="Text" Data="بيانات التصفية: [?FilterData]" />
+                  <Item23 Ref="283" Component="#Ref-258" Culture="ar" Path="Text" Data="?????? ???????: [?FilterData]" />
                   <Item24 Ref="284" Component="#Ref-253" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item25 Ref="285" Component="#Ref-253" Culture="Default" Path="SizeF" Data="806,20" />
                 </LocalizationItems>
@@ -607,6 +607,8 @@
     <Pdf Ref="333">
       <DocumentOptions Ref="334" Author="VetSoft" />
     </Pdf>
+    <Xls Ref="569" TextExportMode="Text" IgnoreErrors="NumberStoredAsText" />
+    <Xlsx Ref="570" TextExportMode="Text" IgnoreErrors="NumberStoredAsText" />
   </ExportOptions>
   <StyleSheet>
     <Item1 Ref="335" Name="Title" BorderStyle="Inset" Padding="6,6,0,0,100" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />
@@ -625,31 +627,31 @@
     <Item4 Ref="344" Component="#Ref-24" Culture="Default" Path="Description" Data="BookPerf" />
     <Item5 Ref="345" Component="#Ref-53" Culture="Default" Path="HeightF" Data="20.0000076" />
     <Item6 Ref="346" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
-    <Item7 Ref="347" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
+    <Item7 Ref="347" Component="#Ref-13" Culture="ar" Path="Description" Data="??" />
     <Item8 Ref="348" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
-    <Item9 Ref="349" Component="#Ref-14" Culture="ar" Path="Description" Data="إلى" />
+    <Item9 Ref="349" Component="#Ref-14" Culture="ar" Path="Description" Data="???" />
     <Item10 Ref="350" Component="#Ref-62" Culture="Default" Path="HeightF" Data="20" />
     <Item11 Ref="351" Component="#Ref-19" Culture="Default" Path="Description" Data="DiffPrice" />
     <Item12 Ref="352" Component="#Ref-22" Culture="Default" Path="Description" Data="DiffQty" />
     <Item13 Ref="353" Component="#Ref-23" Culture="Default" Path="Description" Data="FarmNo" />
     <Item14 Ref="354" Component="#Ref-12" Culture="Default" Path="Description" Data="Font Size" />
-    <Item15 Ref="355" Component="#Ref-12" Culture="ar" Path="Description" Data="حجم الخط" />
+    <Item15 Ref="355" Component="#Ref-12" Culture="ar" Path="Description" Data="??? ????" />
     <Item16 Ref="356" Component="#Ref-323" Culture="Default" Path="HeightF" Data="0" />
     <Item17 Ref="357" Component="#Ref-25" Culture="Default" Path="Description" Data="HatcheryNo" />
     <Item18 Ref="358" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
-    <Item19 Ref="359" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />
+    <Item19 Ref="359" Component="#Ref-9" Culture="ar" Path="Description" Data="????? ??? ???????" />
     <Item20 Ref="360" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
-    <Item21 Ref="361" Component="#Ref-8" Culture="ar" Path="Description" Data="إخفاء رأس التقرير" />
+    <Item21 Ref="361" Component="#Ref-8" Culture="ar" Path="Description" Data="????? ??? ???????" />
     <Item22 Ref="362" Component="#Ref-5" Culture="Default" Path="Description" Data="IsCustomReportFooter" />
     <Item23 Ref="363" Component="#Ref-4" Culture="Default" Path="Description" Data="IsCustomReportHeader" />
     <Item24 Ref="364" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
-    <Item25 Ref="365" Component="#Ref-3" Culture="ar" Path="Description" Data="عرض من اليمبن لليسار" />
+    <Item25 Ref="365" Component="#Ref-3" Culture="ar" Path="Description" Data="??? ?? ?????? ??????" />
     <Item26 Ref="366" Component="#Ref-52" Culture="Default" Path="LocationFloat" Data="4.768372E-05,0" />
     <Item27 Ref="367" Component="#Ref-52" Culture="Default" Path="SizeF" Data="100,20" />
     <Item28 Ref="368" Component="#Ref-52" Culture="Default" Path="Text" Data="lblVetSoftData" />
     <Item29 Ref="369" Component="#Ref-52" Culture="Default" Path="Visible" Data="false" />
     <Item30 Ref="370" Component="#Ref-11" Culture="Default" Path="Description" Data="No of groups / page" />
-    <Item31 Ref="371" Component="#Ref-11" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
+    <Item31 Ref="371" Component="#Ref-11" Culture="ar" Path="Description" Data="??? ????????? / ????" />
     <Item32 Ref="372" Component="#Ref-122" Culture="Default" Path="HeightF" Data="0" />
     <Item33 Ref="373" Component="#Ref-160" Culture="Default" Path="HeightF" Data="0" />
     <Item34 Ref="374" Component="#Ref-58" Culture="Default" Path="LocationFloat" Data="0,0" />
@@ -666,9 +668,9 @@
     <Item45 Ref="385" Component="#Ref-291" Culture="Default" Path="HeightF" Data="20" />
     <Item46 Ref="386" Component="#Ref-16" Culture="Default" Path="Description" Data="ReportType" />
     <Item47 Ref="387" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
-    <Item48 Ref="388" Component="#Ref-6" Culture="ar" Path="Description" Data="عرض التوقيع" />
+    <Item48 Ref="388" Component="#Ref-6" Culture="ar" Path="Description" Data="??? ???????" />
     <Item49 Ref="389" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
-    <Item50 Ref="390" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل صفحة" />
+    <Item50 Ref="390" Component="#Ref-7" Culture="ar" Path="Description" Data="??? ??????? ?? ?? ????" />
     <Item51 Ref="391" Component="#Ref-157" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item52 Ref="392" Component="#Ref-157" Culture="Default" Path="SizeF" Data="1149.29138,20" />
     <Item53 Ref="393" Component="#Ref-166" Culture="Default" Path="LocationFloat" Data="0,0.625038147" />
@@ -708,18 +710,18 @@
     <Item87 Ref="427" Component="#Ref-63" Culture="Default" Path="LocationFloat" Data="0.2913793,0" />
     <Item88 Ref="428" Component="#Ref-63" Culture="Default" Path="SizeF" Data="1149,20" />
     <Item89 Ref="429" Component="#Ref-215" Culture="Default" Path="Text" Data="Transfer Date" />
-    <Item90 Ref="430" Component="#Ref-215" Culture="ar" Path="Text" Data="تاريخ النقل" />
+    <Item90 Ref="430" Component="#Ref-215" Culture="ar" Path="Text" Data="????? ?????" />
     <Item91 Ref="431" Component="#Ref-215" Culture="Default" Path="Weight" Data="3.1018003247143522" />
     <Item92 Ref="432" Component="#Ref-219" Culture="Default" Path="Text" Data="Hatcher" />
-    <Item93 Ref="433" Component="#Ref-219" Culture="ar" Path="Text" Data="الفقاسة" />
+    <Item93 Ref="433" Component="#Ref-219" Culture="ar" Path="Text" Data="???????" />
     <Item94 Ref="434" Component="#Ref-219" Culture="Default" Path="Weight" Data="2.3699472960979637" />
     <Item95 Ref="435" Component="#Ref-216" Culture="Default" Path="Text" Data="Hatch Date" />
-    <Item96 Ref="436" Component="#Ref-216" Culture="ar" Path="Text" Data="تاريخ الفقس" />
+    <Item96 Ref="436" Component="#Ref-216" Culture="ar" Path="Text" Data="????? ?????" />
     <Item97 Ref="437" Component="#Ref-216" Culture="Default" Path="Weight" Data="3.2847953451136434" />
     <Item98 Ref="438" Component="#Ref-212" Culture="Default" Path="LocationFloat" Data="0.291339546,0" />
     <Item99 Ref="439" Component="#Ref-212" Culture="Default" Path="SizeF" Data="1149,60.64771" />
     <Item100 Ref="440" Component="#Ref-214" Culture="Default" Path="Text" Data="Set Date" />
-    <Item101 Ref="441" Component="#Ref-214" Culture="ar" Path="Text" Data="تاريخ الرص" />
+    <Item101 Ref="441" Component="#Ref-214" Culture="ar" Path="Text" Data="????? ????" />
     <Item102 Ref="442" Component="#Ref-214" Culture="Default" Path="Weight" Data="2.8704339609111029" />
     <Item103 Ref="443" Component="#Ref-51" Culture="Default" Path="HeightF" Data="20" />
     <Item104 Ref="444" Component="#Ref-64" Culture="Default" Path="Weight" Data="1" />
@@ -730,11 +732,11 @@
     <Item109 Ref="449" Component="#Ref-208" Culture="Default" Path="LocationFloat" Data="198.455658,0" />
     <Item110 Ref="450" Component="#Ref-208" Culture="Default" Path="SizeF" Data="161.024658,20" />
     <Item111 Ref="451" Component="#Ref-208" Culture="Default" Path="Text" Data="To: [?DateTo!dd-MM-yyyy]" />
-    <Item112 Ref="452" Component="#Ref-208" Culture="ar" Path="Text" Data="الي: [?DateTo!dd-MM-yyyy]" />
+    <Item112 Ref="452" Component="#Ref-208" Culture="ar" Path="Text" Data="???: [?DateTo!dd-MM-yyyy]" />
     <Item113 Ref="453" Component="#Ref-205" Culture="Default" Path="LocationFloat" Data="412.2086,0" />
     <Item114 Ref="454" Component="#Ref-205" Culture="Default" Path="SizeF" Data="195.535614,20" />
     <Item115 Ref="455" Component="#Ref-205" Culture="Default" Path="Text" Data="Hatchery: [?HatcheryNo]" />
-    <Item116 Ref="456" Component="#Ref-205" Culture="ar" Path="Text" Data="معمل تفريغ: [?HatcheryNo]" />
+    <Item116 Ref="456" Component="#Ref-205" Culture="ar" Path="Text" Data="???? ?????: [?HatcheryNo]" />
     <Item117 Ref="457" Component="#Ref-54" Culture="Default" Path="LocationFloat" Data="1000.98407,0" />
     <Item118 Ref="458" Component="#Ref-54" Culture="Default" Path="SizeF" Data="148.015686,20.0000076" />
     <Item119 Ref="459" Component="#Ref-54" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
@@ -745,10 +747,10 @@
     <Item124 Ref="464" Component="#Ref-100" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item125 Ref="465" Component="#Ref-100" Culture="Default" Path="Weight" Data="2.4273327980020736" />
     <Item126 Ref="466" Component="#Ref-225" Culture="Default" Path="Text" Data="Avg One Set Egg Wt" />
-    <Item127 Ref="467" Component="#Ref-225" Culture="ar" Path="Text" Data="متوسط وزن بيضة عند الرص" />
+    <Item127 Ref="467" Component="#Ref-225" Culture="ar" Path="Text" Data="????? ??? ???? ??? ????" />
     <Item128 Ref="468" Component="#Ref-225" Culture="Default" Path="Weight" Data="2.9979565085122224" />
     <Item129 Ref="469" Component="#Ref-223" Culture="Default" Path="Text" Data="Flock Age" />
-    <Item130 Ref="470" Component="#Ref-223" Culture="ar" Path="Text" Data="عمر القطيع" />
+    <Item130 Ref="470" Component="#Ref-223" Culture="ar" Path="Text" Data="??? ??????" />
     <Item131 Ref="471" Component="#Ref-223" Culture="Default" Path="Weight" Data="2.8582218512455997" />
     <Item132 Ref="472" Component="#Ref-93" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item133 Ref="473" Component="#Ref-93" Culture="Default" Path="Text" Data="xrTableCell12" />
@@ -772,26 +774,26 @@
     <Item151 Ref="491" Component="#Ref-116" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item152 Ref="492" Component="#Ref-116" Culture="Default" Path="Weight" Data="2.9990350484151187" />
     <Item153 Ref="493" Component="#Ref-218" Culture="Default" Path="Text" Data="Setter" />
-    <Item154 Ref="494" Component="#Ref-218" Culture="ar" Path="Text" Data="حضانة" />
+    <Item154 Ref="494" Component="#Ref-218" Culture="ar" Path="Text" Data="?????" />
     <Item155 Ref="495" Component="#Ref-218" Culture="Default" Path="Weight" Data="2.3152641038685386" />
     <Item156 Ref="496" Component="#Ref-81" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item157 Ref="497" Component="#Ref-81" Culture="Default" Path="Text" Data="xrTableCell26" />
     <Item158 Ref="498" Component="#Ref-81" Culture="Default" Path="Weight" Data="1.9188574777528096" />
     <Item159 Ref="499" Component="#Ref-226" Culture="Default" Path="Text" Data="Egg Weight At Transfer" />
-    <Item160 Ref="500" Component="#Ref-226" Culture="ar" Path="Text" Data="وزن بيض عند النقل" />
+    <Item160 Ref="500" Component="#Ref-226" Culture="ar" Path="Text" Data="??? ??? ??? ?????" />
     <Item161 Ref="501" Component="#Ref-226" Culture="Default" Path="Weight" Data="4.2057600530533445" />
     <Item162 Ref="502" Component="#Ref-227" Culture="Default" Path="Text" Data="Water Avg Loss" />
-    <Item163 Ref="503" Component="#Ref-227" Culture="ar" Path="Text" Data="متوسط فقد رطوبة" />
+    <Item163 Ref="503" Component="#Ref-227" Culture="ar" Path="Text" Data="????? ??? ?????" />
     <Item164 Ref="504" Component="#Ref-227" Culture="Default" Path="Weight" Data="2.7784610489288748" />
     <Item165 Ref="505" Component="#Ref-90" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item166 Ref="506" Component="#Ref-90" Culture="Default" Path="Text" Data="xrTableCell3" />
     <Item167 Ref="507" Component="#Ref-90" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item168 Ref="508" Component="#Ref-90" Culture="Default" Path="Weight" Data="2.1951616044930136" />
     <Item169 Ref="509" Component="#Ref-228" Culture="Default" Path="Text" Data="Avg Chick Wt&#xA;&#xA;" />
-    <Item170 Ref="510" Component="#Ref-228" Culture="ar" Path="Text" Data="متوسط وزن كتكوت" />
+    <Item170 Ref="510" Component="#Ref-228" Culture="ar" Path="Text" Data="????? ??? ?????" />
     <Item171 Ref="511" Component="#Ref-228" Culture="Default" Path="Weight" Data="2.5868522236220519" />
     <Item172 Ref="512" Component="#Ref-229" Culture="Default" Path="Text" Data="Avg Chicks Wt / Egg Wt %" />
-    <Item173 Ref="513" Component="#Ref-229" Culture="ar" Path="Text" Data="متوسط وزن / الكتكوت بيضة" />
+    <Item173 Ref="513" Component="#Ref-229" Culture="ar" Path="Text" Data="????? ??? / ??????? ????" />
     <Item174 Ref="514" Component="#Ref-229" Culture="Default" Path="Weight" Data="3.70405516045218" />
     <Item175 Ref="515" Component="#Ref-71" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item176 Ref="516" Component="#Ref-71" Culture="Default" Path="Text" Data="xrTableCell35" />
@@ -806,23 +808,23 @@
     <Item185 Ref="525" Component="#Ref-65" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
     <Item186 Ref="526" Component="#Ref-65" Culture="Default" Path="Weight" Data="2.3240832567238883" />
     <Item187 Ref="527" Component="#Ref-217" Culture="Default" Path="Text" Data="Batch" />
-    <Item188 Ref="528" Component="#Ref-217" Culture="ar" Path="Text" Data="كود الدفعة" />
+    <Item188 Ref="528" Component="#Ref-217" Culture="ar" Path="Text" Data="??? ??????" />
     <Item189 Ref="529" Component="#Ref-217" Culture="Default" Path="Weight" Data="1.9749628532864665" />
     <Item190 Ref="530" Component="#Ref-220" Culture="Default" Path="Text" Data="Farm" />
-    <Item191 Ref="531" Component="#Ref-220" Culture="ar" Path="Text" Data="كود المزرعة" />
+    <Item191 Ref="531" Component="#Ref-220" Culture="ar" Path="Text" Data="??? ???????" />
     <Item192 Ref="532" Component="#Ref-220" Culture="Default" Path="Weight" Data="2.1567892186216842" />
     <Item193 Ref="533" Component="#Ref-87" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item194 Ref="534" Component="#Ref-87" Culture="Default" Path="Text" Data="xrTableCell6" />
     <Item195 Ref="535" Component="#Ref-87" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item196 Ref="536" Component="#Ref-87" Culture="Default" Path="Weight" Data="1.5623700338801203" />
     <Item197 Ref="537" Component="#Ref-221" Culture="Default" Path="Text" Data="Crop" />
-    <Item198 Ref="538" Component="#Ref-221" Culture="ar" Path="Text" Data="رقم المحصول" />
+    <Item198 Ref="538" Component="#Ref-221" Culture="ar" Path="Text" Data="??? ???????" />
     <Item199 Ref="539" Component="#Ref-221" Culture="Default" Path="Weight" Data="1.9415532161294085" />
     <Item200 Ref="540" Component="#Ref-222" Culture="Default" Path="Text" Data="Flock" />
-    <Item201 Ref="541" Component="#Ref-222" Culture="ar" Path="Text" Data="كود القطيع" />
+    <Item201 Ref="541" Component="#Ref-222" Culture="ar" Path="Text" Data="??? ??????" />
     <Item202 Ref="542" Component="#Ref-222" Culture="Default" Path="Weight" Data="2.6993049348441911" />
     <Item203 Ref="543" Component="#Ref-224" Culture="Default" Path="Text" Data="Egg Weight At Setting" />
-    <Item204 Ref="544" Component="#Ref-224" Culture="ar" Path="Text" Data="وزن البيض عند الرص" />
+    <Item204 Ref="544" Component="#Ref-224" Culture="ar" Path="Text" Data="??? ????? ??? ????" />
     <Item205 Ref="545" Component="#Ref-224" Culture="Default" Path="Weight" Data="3.5984676746900934" />
     <Item206 Ref="546" Component="#Ref-326" Culture="Default" Path="Weight" Data="1" />
   </LocalizationItems>
