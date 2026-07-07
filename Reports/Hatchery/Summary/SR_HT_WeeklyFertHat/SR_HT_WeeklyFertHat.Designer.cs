@@ -112,9 +112,9 @@
             this.crossTabHeaderCell11 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell6 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.FarmFlockCode = new DevExpress.XtraReports.Parameters.Parameter();
+            this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
@@ -333,6 +333,8 @@
             // 
             // xrLabel2
             // 
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -340,11 +342,15 @@
             // xrLabel4
             // 
             this.xrLabel4.CanGrow = false;
+            this.xrLabel4.CanPublishOptions.Xls = false;
+            this.xrLabel4.CanPublishOptions.Xlsx = false;
             this.xrLabel4.Name = "xrLabel4";
             // 
             // xrLabel3
             // 
             this.xrLabel3.CanGrow = false;
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?HatcheryNo)")});
             this.xrLabel3.Name = "xrLabel3";
@@ -352,6 +358,8 @@
             // xrLabel1
             // 
             this.xrLabel1.CanGrow = false;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.Name = "xrLabel1";
             // 
             // SubBand4
@@ -386,7 +394,7 @@
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(39.50072F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(47.83405F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(75.14822F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(75.14821F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(46.16949F),
             crossTabColumnDefinition1});
             crossTabColumnField1.FieldName = "WeekNo";
@@ -584,11 +592,6 @@
             this.crossTabTotalCell7.Name = "crossTabTotalCell7";
             this.crossTabTotalCell7.RowIndex = 2;
             // 
-            // dsFinance1
-            // 
-            this.dsFinance1.DataSetName = "dsFinance";
-            this.dsFinance1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // IsRTL
             // 
             this.IsRTL.Name = "IsRTL";
@@ -600,6 +603,11 @@
             // 
             this.FarmFlockCode.Name = "FarmFlockCode";
             this.FarmFlockCode.Visible = false;
+            // 
+            // dsFinance1
+            // 
+            this.dsFinance1.DataSetName = "dsFinance";
+            this.dsFinance1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ReportFooter
             // 
@@ -1020,6 +1028,10 @@
             this.DataMember = "SR_HT_WeeklyFertHat";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),

@@ -798,6 +798,8 @@
             // 
             // xrLabel4
             // 
+            this.xrLabel4.CanPublishOptions.Xls = false;
+            this.xrLabel4.CanPublishOptions.Xlsx = false;
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -805,11 +807,15 @@
             // xrLabel2
             // 
             this.xrLabel2.CanGrow = false;
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Name = "xrLabel2";
             // 
             // xrLabel1
             // 
             this.xrLabel1.CanGrow = false;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.Name = "xrLabel1";
             // 
             // xrTable3
@@ -984,6 +990,8 @@
             // 
             // xrLabel8
             // 
+            this.xrLabel8.CanPublishOptions.Xls = false;
+            this.xrLabel8.CanPublishOptions.Xlsx = false;
             this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Unit]")});
             this.xrLabel8.Multiline = true;
@@ -992,24 +1000,32 @@
             // 
             // xrLabel6
             // 
+            this.xrLabel6.CanPublishOptions.Xls = false;
+            this.xrLabel6.CanPublishOptions.Xlsx = false;
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel7
             // 
+            this.xrLabel7.CanPublishOptions.Xls = false;
+            this.xrLabel7.CanPublishOptions.Xlsx = false;
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel16
             // 
+            this.xrLabel16.CanPublishOptions.Xls = false;
+            this.xrLabel16.CanPublishOptions.Xlsx = false;
             this.xrLabel16.Multiline = true;
             this.xrLabel16.Name = "xrLabel16";
             this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel15
             // 
+            this.xrLabel15.CanPublishOptions.Xls = false;
+            this.xrLabel15.CanPublishOptions.Xlsx = false;
             this.xrLabel15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([Product])")});
             this.xrLabel15.Multiline = true;
@@ -1736,6 +1752,10 @@
             this.DataMember = "SR_FP_FormulaReport";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.bottomMarginBand1, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Code_Str, "Default", "Description", "Code_Str"),

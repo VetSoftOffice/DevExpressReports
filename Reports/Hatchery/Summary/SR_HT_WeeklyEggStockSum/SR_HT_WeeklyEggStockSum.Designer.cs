@@ -849,6 +849,8 @@
             // xrLabel1
             // 
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -858,6 +860,8 @@
             // 
             this.xrLabel9.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel9.CanGrow = false;
+            this.xrLabel9.CanPublishOptions.Xls = false;
+            this.xrLabel9.CanPublishOptions.Xlsx = false;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?BreederFlock)")});
             this.xrLabel9.Name = "xrLabel9";
@@ -867,6 +871,8 @@
             // 
             this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel5.CanGrow = false;
+            this.xrLabel5.CanPublishOptions.Xls = false;
+            this.xrLabel5.CanPublishOptions.Xlsx = false;
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?AgeFrom)")});
             this.xrLabel5.Name = "xrLabel5";
@@ -876,6 +882,8 @@
             // 
             this.xrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel6.CanGrow = false;
+            this.xrLabel6.CanPublishOptions.Xls = false;
+            this.xrLabel6.CanPublishOptions.Xlsx = false;
             this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?AgeTo)")});
             this.xrLabel6.Name = "xrLabel6";
@@ -885,6 +893,8 @@
             // 
             this.xrLabel4.AutoWidth = true;
             this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel4.CanPublishOptions.Xls = false;
+            this.xrLabel4.CanPublishOptions.Xlsx = false;
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?BreederFarm)")});
             this.xrLabel4.Multiline = true;
@@ -895,6 +905,8 @@
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.CanGrow = false;
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
@@ -902,6 +914,8 @@
             // 
             this.xrLabel8.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel8.CanGrow = false;
+            this.xrLabel8.CanPublishOptions.Xls = false;
+            this.xrLabel8.CanPublishOptions.Xlsx = false;
             this.xrLabel8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?BreederCrop)")});
             this.xrLabel8.Name = "xrLabel8";
@@ -911,6 +925,8 @@
             // 
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel3.CanGrow = false;
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?GroupBreed)")});
             this.xrLabel3.Name = "xrLabel3";
@@ -2370,6 +2386,10 @@
             this.DataMember = "SR_HT_WeeklyEggStockSum";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ActualQty, "Default", "Description", "ActualQty"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.AdjustedPrice, "Default", "Description", "AdjustedPrice Str"),

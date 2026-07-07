@@ -54,8 +54,8 @@
     <Item32 Ref="52" Name="HatchingEggsPerc" Expression="IIf([SR_HT_RecHall.RecEggs] &lt;&gt; 0, [SR_HT_RecHall.HatchingEggs] * 100 / [SR_HT_RecHall.RecEggs], 0)&#xA;" DataMember="SR_HT_RecHall" />
     <Item33 Ref="53" Name="TotalBalance" Expression="Iif(IsNullOrEmpty([HatchingEggs]),0 , [HatchingEggs]) + Iif(IsNullOrEmpty([OpenStock]), 0, [OpenStock])" DataMember="SR_HT_RecHall" />
     <Item34 Ref="54" Name="DailyBalance" Expression="Iif(IsNullOrEmpty([HatchingEggs]), 0, [HatchingEggs]) +&#xD;&#xA;Iif(IsNullOrEmpty([OpenStock]), 0, [OpenStock]) -&#xD;&#xA;Iif(IsNullOrEmpty([SoldEggs]), 0, [SoldEggs]) -&#xD;&#xA;Iif(IsNullOrEmpty([SettedEggs]), 0, [SettedEggs])&#xD;&#xA;" DataMember="SR_HT_RecHall" />
-    <Item35 Ref="55" Name="TotalRejectionEggs" Expression="ISNULL([SoftShellEggs],0) + &#xA;ISNULL([MinorCrackedEggs],0) + &#xA;ISNULL([MajorCrackedEggs],0) + &#xA;ISNULL([ThinShellEggs],0) + &#xA;ISNULL([OtherEggs],0) + &#xA;ISNULL([WholeEggs],0) + &#xA;ISNULL([BrokenEggs],0) + &#xA;ISNULL([SmallEggs],0) + &#xA;ISNULL([OverWeightEggs],0) + &#xA;ISNULL([DirtyEggs],0) + &#xA;ISNULL([DeformityEggs],0) + &#xA;ISNULL([CrackedEggs],0) + &#xA;ISNULL([DoubleYolkEggs],0) + &#xA;ISNULL([DestroyedEggs],0)" DataMember="SR_HT_RecHall" />
-    <Item36 Ref="56" Name="NetHatchingEggs" Expression="[HatchingEggs] - [TotalRejectionEggs]" DataMember="SR_HT_RecHall" />
+    <Item35 Ref="55" Name="TotalRejectionEggs" Expression="ISNULL([SoftShellEggs],0) + &#xD;&#xA;ISNULL([MinorCrackedEggs],0) + &#xD;&#xA;ISNULL([MajorCrackedEggs],0) + &#xD;&#xA;ISNULL([ThinShellEggs],0) + &#xD;&#xA;ISNULL([OtherEggs],0) + &#xD;&#xA;ISNULL([WholeEggs],0) + &#xD;&#xA;ISNULL([BrokenEggs],0) + &#xD;&#xA;ISNULL([SmallEggs],0) + &#xD;&#xA;ISNULL([OverWeightEggs],0) + &#xD;&#xA;ISNULL([DirtyEggs],0) + &#xD;&#xA;ISNULL([DeformityEggs],0) + &#xD;&#xA;ISNULL([CrackedEggs],0) + &#xD;&#xA;ISNULL([DoubleYolkEggs],0) + &#xD;&#xA;ISNULL([DestroyedEggs],0)" DataMember="SR_HT_RecHall" />
+    <Item36 Ref="56" Name="NetHatchingEggs" Expression="[HatchingEggs] " DataMember="SR_HT_RecHall" />
     <Item37 Ref="57" Name="calculatedField1" DataMember="SR_HT_RecHall" />
   </CalculatedFields>
   <Bands>
@@ -81,8 +81,8 @@
                 </Item1>
                 <Item2 Ref="69" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="70" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
-                    <Item2 Ref="71" EventName="BeforePrint" PropertyName="Text" Expression="[FlockCode]" />
+                    <Item1 Ref="70" EventName="BeforePrint" PropertyName="Text" Expression="[FlockCode]" />
+                    <Item2 Ref="71" EventName="BeforePrint" PropertyName="TextAlignment" Expression="&#xA;" />
                   </ExpressionBindings>
                   <StylePriority Ref="72" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item2>
@@ -167,7 +167,7 @@
                 </Item15>
                 <Item16 Ref="121" ControlType="XRTableCell" Name="xrTableCell53" Multiline="true" TextAlignment="MiddleRight" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="122" EventName="BeforePrint" PropertyName="Text" Expression="[NetHatchingEggs]" />
+                    <Item1 Ref="122" EventName="BeforePrint" PropertyName="Text" Expression="[HatchingEggs]" />
                   </ExpressionBindings>
                   <StylePriority Ref="123" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item16>
@@ -207,7 +207,7 @@
                 </Item22>
                 <Item23 Ref="142" ControlType="XRTableCell" Name="xrTableCell60" Multiline="true" TextAlignment="MiddleRight" Borders="All">
                   <ExpressionBindings>
-                    <Item1 Ref="143" EventName="BeforePrint" PropertyName="Text" Expression="[DailyBalance] - [TransferOut]" />
+                    <Item1 Ref="143" EventName="BeforePrint" PropertyName="Text" Expression="[DailyBalance] - Iif(IsNullOrEmpty([TransferOut]), 0 , [TransferOut])" />
                   </ExpressionBindings>
                   <StylePriority Ref="144" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item23>
@@ -777,7 +777,7 @@
                 <Item15 Ref="436" ControlType="XRTableCell" Name="xrTableCell65" Multiline="true" TextAlignment="MiddleRight" Borders="All">
                   <Summary Ref="437" Running="Report" />
                   <ExpressionBindings>
-                    <Item1 Ref="438" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([NetHatchingEggs])" />
+                    <Item1 Ref="438" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([HatchingEggs])" />
                   </ExpressionBindings>
                   <StylePriority Ref="439" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item15>
@@ -823,7 +823,7 @@
                 <Item22 Ref="463" ControlType="XRTableCell" Name="xrTableCell72" Multiline="true" TextAlignment="MiddleRight" Borders="All">
                   <Summary Ref="464" Running="Report" />
                   <ExpressionBindings>
-                    <Item1 Ref="465" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([DailyBalance]) - sumSum([TransferOut])" />
+                    <Item1 Ref="465" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([DailyBalance]) - Iif(IsNullOrEmpty([TransferOut]), 0 , sumSum([TransferOut]))" />
                   </ExpressionBindings>
                   <StylePriority Ref="466" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item22>

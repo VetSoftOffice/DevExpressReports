@@ -43,6 +43,10 @@
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.TotalCost = new DevExpress.XtraReports.UI.CalculatedField();
@@ -63,10 +67,6 @@
             this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsShowDM = new DevExpress.XtraReports.Parameters.Parameter();
             this.CopyRight = new DevExpress.XtraReports.UI.CalculatedField();
-            this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
-            this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
-            this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -112,7 +112,7 @@
             // 
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(354.1667F, 0F);
             this.xrPageInfo1.Name = "xrPageInfo1";
-            this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrPageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(100F, 23F);
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
@@ -190,6 +190,36 @@
             this.SubBand7,
             this.SubBand4});
             // 
+            // SubBand6
+            // 
+            this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportSignature_PageFooter});
+            this.SubBand6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
+            this.SubBand6.HeightF = 20.8333F;
+            this.SubBand6.Name = "SubBand6";
+            // 
+            // srReportSignature_PageFooter
+            // 
+            this.srReportSignature_PageFooter.LocationFloat = new DevExpress.Utils.PointFloat(0.003218651F, 0F);
+            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
+            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            this.srReportSignature_PageFooter.SizeF = new System.Drawing.SizeF(806.9969F, 20F);
+            // 
+            // SubBand7
+            // 
+            this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportFooterCustom});
+            this.SubBand7.HeightF = 20F;
+            this.SubBand7.Name = "SubBand7";
+            // 
+            // srReportFooterCustom
+            // 
+            this.srReportFooterCustom.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.srReportFooterCustom.Name = "srReportFooterCustom";
+            this.srReportFooterCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportFooterCustom();
+            this.srReportFooterCustom.SizeF = new System.Drawing.SizeF(807F, 20F);
+            // 
             // SubBand4
             // 
             this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -199,12 +229,14 @@
             // 
             // xrLabel1
             // 
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CopyRight]")});
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(7.947286E-06F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(807.0001F, 23F);
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = "xrLabel1";
@@ -334,36 +366,6 @@
     "03-2025 VetSoft Office, All rights reserved\')\n";
             this.CopyRight.Name = "CopyRight";
             // 
-            // SubBand6
-            // 
-            this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportSignature_PageFooter});
-            this.SubBand6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
-            this.SubBand6.HeightF = 20.8333F;
-            this.SubBand6.Name = "SubBand6";
-            // 
-            // SubBand7
-            // 
-            this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportFooterCustom});
-            this.SubBand7.HeightF = 20F;
-            this.SubBand7.Name = "SubBand7";
-            // 
-            // srReportSignature_PageFooter
-            // 
-            this.srReportSignature_PageFooter.LocationFloat = new DevExpress.Utils.PointFloat(0.003218651F, 0F);
-            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
-            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
-            this.srReportSignature_PageFooter.SizeF = new System.Drawing.SizeF(806.9969F, 20F);
-            // 
-            // srReportFooterCustom
-            // 
-            this.srReportFooterCustom.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.srReportFooterCustom.Name = "srReportFooterCustom";
-            this.srReportFooterCustom.ReportSource = new DevExpressReports.PredefinedReports.SubReportFooterCustom();
-            this.srReportFooterCustom.SizeF = new System.Drawing.SizeF(807F, 20F);
-            // 
             // RationResIngNut_AllRations
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -384,8 +386,8 @@
             this.DataSource = this.dsFinance1;
             this.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.Margins = new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 23F);
-            this.PageHeight = 1169;
-            this.PageWidth = 827;
+            this.PageHeightF = 1169.291F;
+            this.PageWidthF = 826.7717F;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsRTL, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -404,7 +406,7 @@
             this.DateTo,
             this.FeedMillCode});
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
-            this.Version = "24.2";
+            this.Version = "25.2";
             this.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.RationResIngNut_AllRations_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

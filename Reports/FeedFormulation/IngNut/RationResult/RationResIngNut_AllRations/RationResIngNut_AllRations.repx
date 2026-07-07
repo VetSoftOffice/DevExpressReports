@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="RationResIngNut_AllRations" ScriptsSource="&#xD;&#xA;private void xrPageInfo2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRPageInfo pageInfo = sender as XRPageInfo;&#xD;&#xA;    if ((bool)Parameters[&quot;IsRTL&quot;].Value)&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;الصفحة {0} من {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.Yes;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;Page {0} of {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.No;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Margins="10, 10, 20, 23" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" DataMember="SR_FM_RationResult" DataSource="#Ref-0" Font="Tahoma, 8pt, style=Bold">
+<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="RationResIngNut_AllRations" ScriptsSource="&#xD;&#xA;private void xrPageInfo2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRPageInfo pageInfo = sender as XRPageInfo;&#xD;&#xA;    if ((bool)Parameters[&quot;IsRTL&quot;].Value)&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;الصفحة {0} من {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.Yes;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;Page {0} of {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.No;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Margins="10, 10, 20, 23" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_FM_RationResult" DataSource="#Ref-0" Font="Tahoma, 8pt, style=Bold">
   <Parameters>
     <Item1 Ref="3" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" Description="ShowSignature" ValueInfo="False" Name="ShowSignature" Type="#Ref-2" />
@@ -36,7 +36,7 @@
         <Item1 Ref="26" ControlType="SubBand" Name="SubBand1" HeightF="20">
           <Controls>
             <Item1 Ref="27" ControlType="XRSubreport" Name="srReportNotes" SizeF="807.0001,20" LocationFloat="0,0">
-              <ReportSource Ref="28" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="28" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="29" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="30" Visible="false" Name="Notes" />
@@ -124,7 +124,7 @@
                   <Item5 Ref="81" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-33" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -133,7 +133,7 @@
         <Item2 Ref="82" ControlType="SubBand" Name="SubBand5" HeightF="20.87501" TextAlignment="MiddleCenter">
           <Controls>
             <Item1 Ref="83" ControlType="XRSubreport" Name="srReportSignature" SizeF="807.0001,20" LocationFloat="0,0">
-              <ReportSource Ref="84" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="84" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="85" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="86" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -179,7 +179,7 @@
                   <Item2 Ref="110" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-86" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -193,10 +193,10 @@
     </Item4>
     <Item5 Ref="113" ControlType="PageFooterBand" Name="PageFooter" HeightF="0">
       <SubBands>
-        <Item1 Ref="114" ControlType="SubBand" Name="SubBand6" HeightF="20.8333015">
+        <Item1 Ref="114" ControlType="SubBand" Name="SubBand6" HeightF="20.8333">
           <Controls>
-            <Item1 Ref="115" ControlType="XRSubreport" Name="srReportSignature_PageFooter" SizeF="806.9969,20" LocationFloat="0.00321865082,0">
-              <ReportSource Ref="116" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+            <Item1 Ref="115" ControlType="XRSubreport" Name="srReportSignature_PageFooter" SizeF="806.9969,20" LocationFloat="0.003218651,0">
+              <ReportSource Ref="116" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="117" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="118" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -242,7 +242,7 @@
                   <Item2 Ref="142" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-118" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -254,7 +254,7 @@
         <Item2 Ref="144" ControlType="SubBand" Name="SubBand7" HeightF="20">
           <Controls>
             <Item1 Ref="145" ControlType="XRSubreport" Name="srReportFooterCustom" SizeF="807,20" LocationFloat="0,0">
-              <ReportSource Ref="146" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="146" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="147" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="148" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -323,7 +323,7 @@
                   <Item2 Ref="174" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-148" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -331,7 +331,7 @@
         </Item2>
         <Item3 Ref="175" ControlType="SubBand" Name="SubBand4" HeightF="23">
           <Controls>
-            <Item1 Ref="176" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="807.0001,23" LocationFloat="7.947286E-06,0" Padding="2,2,0,0,100">
+            <Item1 Ref="176" ControlType="XRLabel" Name="xrLabel1" Multiline="true" Text="xrLabel1" TextAlignment="MiddleCenter" SizeF="807.0001,23" LocationFloat="7.947286E-06,0" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
               <ExpressionBindings>
                 <Item1 Ref="177" EventName="BeforePrint" PropertyName="Text" Expression="[CopyRight]" />
               </ExpressionBindings>
@@ -346,7 +346,7 @@
         <Item1 Ref="180" ControlType="SubBand" Name="SubBand2" HeightF="33.00002">
           <Controls>
             <Item1 Ref="181" ControlType="XRSubreport" Name="RationResIngNut_Ing" SizeF="807.0001,23" LocationFloat="0,10.00001">
-              <ReportSource Ref="183" ControlType="DevExpressReports.Reports.FeedFormulation.Ingrdient.RationResIngNut_Ing.RationResIngNut_Ing, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using DevExpress.XtraReports.UI.CrossTab;&#xD;&#xA;&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;        }&#xD;&#xA;" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_FM_RationResult" DataSource="#Ref-182" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="183" ControlType="DevExpressReports.Reports.FeedFormulation.Ingrdient.RationResIngNut_Ing.RationResIngNut_Ing, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using DevExpress.XtraReports.UI.CrossTab;&#xD;&#xA;&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;        }&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_FM_RationResult" DataSource="#Ref-182" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="184" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="185" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -560,12 +560,12 @@
                   <Item20 Ref="350" LayoutItemType="Parameter" Parameter="#Ref-206" />
                 </ParameterPanelLayoutItems>
                 <ComponentStorage>
-                  <Item1 Ref="351" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzbGF5ZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiIE5hbWU9IlJvd1NlcTEiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIiBOYW1lPSJSb3dEYXRhMSIgLz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiIE5hbWU9IlJvd1NlcTIiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIiBOYW1lPSJSb3dEYXRhMiIgLz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiIE5hbWU9IkNvbERhdGExIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSIgTmFtZT0iQ29sRGF0YTIiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIiBOYW1lPSJEYXRhVmFsdWUiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIj48RmllbGQgTmFtZT0iUm93U2VxMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJvd0RhdGExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvd1NlcTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+                  <Item1 Ref="351" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImRzbGF5ZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSIgLz48L1RhYmxlcz48Q29sdW1ucz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiIE5hbWU9IlJvd1NlcTEiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIiBOYW1lPSJSb3dEYXRhMSIgLz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiIE5hbWU9IlJvd1NlcTIiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIiBOYW1lPSJSb3dEYXRhMiIgLz48Q29sdW1uIFRhYmxlPSJTUl9MQVlfU29ydEhvdXNlSXNzdWUiIE5hbWU9IkNvbERhdGExIiAvPjxDb2x1bW4gVGFibGU9IlNSX0xBWV9Tb3J0SG91c2VJc3N1ZSIgTmFtZT0iQ29sRGF0YTIiIC8+PENvbHVtbiBUYWJsZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIiBOYW1lPSJEYXRhVmFsdWUiIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iU1JfTEFZX1NvcnRIb3VzZUlzc3VlIj48RmllbGQgTmFtZT0iUm93U2VxMSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlJvd0RhdGExIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJvd1NlcTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSb3dEYXRhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDb2xEYXRhMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEYXRhVmFsdWUiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
                   <Item2 Ref="182" />
                 </ComponentStorage>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="3" Content="System.Boolean" Type="System.Type" />
-                  <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="23" Content="System.Int32" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="3" Content="System.Boolean" Type="System.Type" />
+                  <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="23" Content="System.Int32" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -574,7 +574,7 @@
         <Item2 Ref="352" ControlType="SubBand" Name="SubBand3" HeightF="33.00001">
           <Controls>
             <Item1 Ref="353" ControlType="XRSubreport" Name="RationResIngNut_Nut" SizeF="807.0001,23" LocationFloat="0,10.00001">
-              <ReportSource Ref="355" ControlType="DevExpressReports.Reports.FeedFormulation.Nutrient.RationResIngNut_Nut.RationResIngNut_Nut, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_FM_RationResult_Nut" DataSource="#Ref-354" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="355" ControlType="DevExpressReports.Reports.FeedFormulation.Nutrient.RationResIngNut_Nut.RationResIngNut_Nut, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_FM_RationResult_Nut" DataSource="#Ref-354" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="356" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="357" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -763,12 +763,12 @@
                   <Item12 Ref="496" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-369" />
                 </ParameterPanelLayoutItems>
                 <ComponentStorage>
-                  <Item1 Ref="497" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v24.2" Name="dsBreeder" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNCcmVlZGVyIj48Q29ubmVjdGlvbiBOYW1lPSJkc0JyZWVkZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GUl9QSF9QZXN0Q29udHJvbCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRlJfUEhfUGVzdENvbnRyb2wiIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjIwMCIgSGVpZ2h0PSIxNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRlJfUEhfUGVzdENvbnRyb2wiIE5hbWU9IlBsYWNlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZSX1BIX1Blc3RDb250cm9sIiBOYW1lPSJQZXN0VHlwZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GUl9QSF9QZXN0Q29udHJvbCIgTmFtZT0iUGVzdEFjdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GUl9QSF9QZXN0Q29udHJvbCIgTmFtZT0iVHlwZURvbmUiIC8+PENvbHVtbiBUYWJsZT0iU1JfRlJfUEhfUGVzdENvbnRyb2wiIE5hbWU9IkRvbmVBY3Rpb24iIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJkc0JyZWVkZXIiPjxWaWV3IE5hbWU9IlNSX0ZSX1BIX1Blc3RDb250cm9sIj48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGVzdFR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGVzdEFjdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUeXBlRG9uZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEb25lQWN0aW9uIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+                  <Item1 Ref="497" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v25.2" Name="dsBreeder" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0iZHNCcmVlZGVyIj48Q29ubmVjdGlvbiBOYW1lPSJkc0JyZWVkZXIiIEZyb21BcHBDb25maWc9InRydWUiIC8+PFF1ZXJ5IFR5cGU9IlNlbGVjdFF1ZXJ5IiBOYW1lPSJTUl9GUl9QSF9QZXN0Q29udHJvbCI+PFRhYmxlcz48VGFibGUgTmFtZT0iU1JfRlJfUEhfUGVzdENvbnRyb2wiIFg9IjMwIiBZPSIzMCIgV2lkdGg9IjIwMCIgSGVpZ2h0PSIxNjMiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iU1JfRlJfUEhfUGVzdENvbnRyb2wiIE5hbWU9IlBsYWNlIiAvPjxDb2x1bW4gVGFibGU9IlNSX0ZSX1BIX1Blc3RDb250cm9sIiBOYW1lPSJQZXN0VHlwZSIgLz48Q29sdW1uIFRhYmxlPSJTUl9GUl9QSF9QZXN0Q29udHJvbCIgTmFtZT0iUGVzdEFjdGlvbiIgLz48Q29sdW1uIFRhYmxlPSJTUl9GUl9QSF9QZXN0Q29udHJvbCIgTmFtZT0iVHlwZURvbmUiIC8+PENvbHVtbiBUYWJsZT0iU1JfRlJfUEhfUGVzdENvbnRyb2wiIE5hbWU9IkRvbmVBY3Rpb24iIC8+PC9Db2x1bW5zPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJkc0JyZWVkZXIiPjxWaWV3IE5hbWU9IlNSX0ZSX1BIX1Blc3RDb250cm9sIj48RmllbGQgTmFtZT0iUGxhY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGVzdFR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUGVzdEFjdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUeXBlRG9uZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEb25lQWN0aW9uIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
                   <Item2 Ref="354" />
                 </ComponentStorage>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="3" Content="System.Boolean" Type="System.Type" />
-                  <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="17" Content="System.Int32" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="3" Content="System.Boolean" Type="System.Type" />
+                  <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="17" Content="System.Int32" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -777,7 +777,7 @@
       </SubBands>
       <Controls>
         <Item1 Ref="498" ControlType="XRSubreport" Name="srReportHeader" SizeF="807.0001,33.54166" LocationFloat="0,0">
-          <ReportSource Ref="499" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+          <ReportSource Ref="499" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
             <Parameters>
               <Item1 Ref="500" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
               <Item2 Ref="501" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -790,27 +790,27 @@
                 <SubBands>
                   <Item1 Ref="506" ControlType="SubBand" Name="ReportHeaderSub1" HeightF="74.08333">
                     <Controls>
-                      <Item1 Ref="507" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item1 Ref="507" ControlType="XRLabel" Name="ReportPQP_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="508" UseFont="false" UseTextAlignment="false" />
                       </Item1>
-                      <Item2 Ref="509" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item2 Ref="509" ControlType="XRLabel" Name="ModuleName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="510" UseFont="false" UseTextAlignment="false" />
                       </Item2>
-                      <Item3 Ref="511" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item3 Ref="511" ControlType="XRLabel" Name="ReportPQP_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportPQP_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,41.93052" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="512" UseFont="false" UseTextAlignment="false" />
                       </Item3>
-                      <Item4 Ref="513" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item4 Ref="513" ControlType="XRLabel" Name="CompanyName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="514" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
                       </Item4>
-                      <Item5 Ref="515" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item5 Ref="515" ControlType="XRLabel" Name="CompanyName_ar" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="CompanyName_ar" AnchorHorizontal="Right" TextAlignment="MiddleRight" SizeF="320,20" LocationFloat="487,0.9583156" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="516" UseFont="false" UseTextAlignment="false" />
                       </Item5>
-                      <Item6 Ref="517" ControlType="XRPictureBox" Name="imgLogo" Font="Times New Roman, 9.75pt" ForeColor="Black" Padding="0,0,0,0,100" Sizing="ZoomImage" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156">
+                      <Item6 Ref="517" ControlType="XRPictureBox" Name="imgLogo" Padding="0,0,0,0,100" Sizing="ZoomImage" ProcessNullValues="SuppressAndShrink" AnchorHorizontal="Both" SizeF="98.68056,71.80556" LocationFloat="354.1598,0.9583156" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <ExpressionBindings>
                           <Item1 Ref="518" EventName="BeforePrint" PropertyName="ImageUrl" Expression="?LogoPath" />
                         </ExpressionBindings>
                       </Item6>
-                      <Item7 Ref="519" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item7 Ref="519" ControlType="XRLabel" Name="ModuleName_en" RightToLeft="No" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ModuleName_en" TextAlignment="MiddleLeft" SizeF="320,20" LocationFloat="0,21.79165" Font="Tahoma, 11pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="520" UseFont="false" UseTextAlignment="false" />
                       </Item7>
                     </Controls>
@@ -820,7 +820,7 @@
                   </Item1>
                   <Item2 Ref="522" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                     <Controls>
-                      <Item1 Ref="523" ControlType="XRLabel" Name="ReportName" CanGrow="false" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100">
+                      <Item1 Ref="523" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                         <StylePriority Ref="524" UseFont="false" UseTextAlignment="false" />
                       </Item1>
                     </Controls>
@@ -837,7 +837,7 @@
               <Item4 Ref="530" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-503" />
             </ParameterPanelLayoutItems>
             <ObjectStorage>
-              <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+              <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
             </ObjectStorage>
           </ReportSource>
         </Item1>
@@ -857,7 +857,7 @@
     <Item1 Ref="0" />
   </ComponentStorage>
   <ObjectStorage>
-    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="2" Content="System.Boolean" Type="System.Type" />
-    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v24.2" Ref="202" Content="System.Int32" Type="System.Type" />
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="202" Content="System.Int32" Type="System.Type" />
   </ObjectStorage>
 </XtraReportsLayoutSerializer>

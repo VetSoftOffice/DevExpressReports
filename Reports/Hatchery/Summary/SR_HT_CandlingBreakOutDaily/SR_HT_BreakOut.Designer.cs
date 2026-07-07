@@ -399,6 +399,8 @@
             // 
             this.xrLabel5.AutoWidth = true;
             this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel5.CanPublishOptions.Xls = false;
+            this.xrLabel5.CanPublishOptions.Xlsx = false;
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty([ExitDate])\n")});
             this.xrLabel5.ForeColor = System.Drawing.Color.Black;
@@ -411,6 +413,8 @@
             // 
             this.xrLabel1.AutoWidth = true;
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel1.CanPublishOptions.Xls = false;
+            this.xrLabel1.CanPublishOptions.Xlsx = false;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?DateeFrom != ?DateeTo")});
             this.xrLabel1.ForeColor = System.Drawing.Color.Black;
@@ -423,6 +427,8 @@
             // 
             this.xrLabel2.AutoWidth = true;
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel2.CanPublishOptions.Xls = false;
+            this.xrLabel2.CanPublishOptions.Xlsx = false;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty([SettingDate])")});
             this.xrLabel2.ForeColor = System.Drawing.Color.Black;
@@ -435,6 +441,8 @@
             // 
             this.xrLabel3.AutoWidth = true;
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel3.CanPublishOptions.Xls = false;
+            this.xrLabel3.CanPublishOptions.Xlsx = false;
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not IsNullOrEmpty([CandlingDate])\n")});
             this.xrLabel3.ForeColor = System.Drawing.Color.Black;
@@ -447,6 +455,8 @@
             // 
             this.xrLabel4.AutoWidth = true;
             this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel4.CanPublishOptions.Xls = false;
+            this.xrLabel4.CanPublishOptions.Xlsx = false;
             this.xrLabel4.ForeColor = System.Drawing.Color.Black;
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
@@ -589,8 +599,8 @@
             crossTabRowDefinition12.Visible = false;
             crossTabRowDefinition13.Visible = false;
             this.xrCrossTab1.RowDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(63.54167F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(63.54168F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25.00001F),
             crossTabRowDefinition1,
             crossTabRowDefinition2,
             crossTabRowDefinition3,
@@ -604,7 +614,7 @@
             crossTabRowDefinition11,
             crossTabRowDefinition12,
             crossTabRowDefinition13,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25.00001F)});
             crossTabRowField1.FieldName = "LineType";
             crossTabRowField2.FieldName = "FarmCode";
             crossTabRowField3.FieldName = "CropNo";
@@ -1631,6 +1641,10 @@
             this.DataMember = "SR_HT_BreakOut";
             this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
+            this.ExportOptions.Xls.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
+            this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.ForeColor = System.Drawing.Color.Empty;
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {

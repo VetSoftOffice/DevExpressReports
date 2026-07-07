@@ -227,7 +227,7 @@
             this.pageInfoCurrentTime.AnchorVertical = ((DevExpress.XtraReports.UI.VerticalAnchorStyles)((DevExpress.XtraReports.UI.VerticalAnchorStyles.Top | DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom)));
             this.pageInfoCurrentTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.pageInfoCurrentTime.Name = "pageInfoCurrentTime";
-            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pageInfoCurrentTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.pageInfoCurrentTime.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.pageInfoCurrentTime.StyleName = "PageInfo";
             this.pageInfoCurrentTime.StylePriority.UseFont = false;
@@ -500,7 +500,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[From]")});
             this.From.Multiline = true;
             this.From.Name = "From";
-            this.From.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.From.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.From.StylePriority.UseFont = false;
             // 
             // PlaceLabel
             // 
@@ -516,7 +517,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[RegDate]")});
             this.RegDate.Multiline = true;
             this.RegDate.Name = "RegDate";
-            this.RegDate.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.RegDate.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.RegDate.StylePriority.UseFont = false;
             // 
             // DateLabel
             // 
@@ -531,7 +533,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.CustSuppName.Multiline = true;
             this.CustSuppName.Name = "CustSuppName";
-            this.CustSuppName.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.CustSuppName.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // CustSuppNameLabel
             // 
@@ -549,7 +551,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", " Not IsNullOrEmpty(?ActionType)")});
             this.CodeTo.Multiline = true;
             this.CodeTo.Name = "CodeTo";
-            this.CodeTo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.CodeTo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.CodeTo.StylePriority.UseFont = false;
             this.CodeTo.StylePriority.UseTextAlignment = false;
             this.CodeTo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
@@ -568,7 +571,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DocNumber]")});
             this.DocumentNo.Multiline = true;
             this.DocumentNo.Name = "DocumentNo";
-            this.DocumentNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.DocumentNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.DocumentNo.StylePriority.UseFont = false;
             // 
             // DocumentNoLabel
             // 
@@ -589,8 +593,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BillStatement]")});
             this.BillStatement.Multiline = true;
             this.BillStatement.Name = "BillStatement";
-            this.BillStatement.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.BillStatement.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.BillStatement.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.BillStatement.StylePriority.UseFont = false;
             // 
             // StatementLabel
             // 
@@ -616,8 +621,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DriverName]")});
             this.DriverName.Multiline = true;
             this.DriverName.Name = "DriverName";
-            this.DriverName.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.DriverName.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.DriverName.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.DriverName.StylePriority.UseFont = false;
             // 
             // DriverLabel
             // 
@@ -634,8 +640,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TruckNo]")});
             this.TruckNo.Multiline = true;
             this.TruckNo.Name = "TruckNo";
-            this.TruckNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.TruckNo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.TruckNo.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.TruckNo.StylePriority.UseFont = false;
             this.TruckNo.StylePriority.UseTextAlignment = false;
             this.TruckNo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
@@ -662,8 +669,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ActionTime]")});
             this.ActionTime.Multiline = true;
             this.ActionTime.Name = "ActionTime";
-            this.ActionTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.ActionTime.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.ActionTime.ProcessNullValues = DevExpress.XtraReports.UI.ValueSuppressType.SuppressAndShrink;
+            this.ActionTime.StylePriority.UseFont = false;
             this.ActionTime.StylePriority.UseTextAlignment = false;
             this.ActionTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
@@ -901,7 +909,7 @@
             this.Title.BorderWidth = 1F;
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.Title.Name = "Title";
-            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.Title.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             // 
             // DetailCaption1
             // 
@@ -911,7 +919,7 @@
             this.DetailCaption1.BorderWidth = 2F;
             this.DetailCaption1.ForeColor = System.Drawing.Color.White;
             this.DetailCaption1.Name = "DetailCaption1";
-            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailCaption1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailCaption1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData1
@@ -921,7 +929,7 @@
             this.DetailData1.BorderWidth = 2F;
             this.DetailData1.ForeColor = System.Drawing.Color.Black;
             this.DetailData1.Name = "DetailData1";
-            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailData1.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailData1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // DetailData3_Odd
@@ -932,14 +940,14 @@
             this.DetailData3_Odd.BorderWidth = 1F;
             this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
             this.DetailData3_Odd.Name = "DetailData3_Odd";
-            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             this.DetailData3_Odd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // PageInfo
             // 
             this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.PageInfo.Name = "PageInfo";
-            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
+            this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
             // 
             // IsRTL
             // 
@@ -1025,50 +1033,55 @@
             this.DataSource = this.dsInvtories;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ActionTime, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ActionTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(95.80859F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ActionTime, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ActionTime, "Default", "Text", "CodeTo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ActionTime, "Default", "TextFormatString", "{0:hh:mm:ss tt}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ActionType, "Default", "Description", "ActionType"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.BillStatement, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BillStatement, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(94.80884F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BillStatement, "Default", "SizeF", new System.Drawing.SizeF(702.1912F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BillStatement, "Default", "Text", "Statement"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.CodeTo, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CodeTo, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(353.5F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CodeTo, "Default", "SizeF", new System.Drawing.SizeF(182.2916F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CodeTo, "Default", "Text", "CodeTo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Customer, "Default", "Description", "Customer"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustomerCode, "Default", "Description", "CustomerCode"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(243.0662F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "SizeF", new System.Drawing.SizeF(110.4338F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppCodeLabel, "Default", "Text", "CustSuppCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppName, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(646.5415F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppName, "Default", "SizeF", new System.Drawing.SizeF(150.4585F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppName, "Default", "Text", "CustSuppName"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(567.3578F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "SizeF", new System.Drawing.SizeF(130.2254F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.CustSuppNameLabel, "Default", "Text", "CustSuppCode"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.9997559F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "SizeF", new System.Drawing.SizeF(94.80883F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "Default", "Text", "Date"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateLabel, "ar", "Text", "تاريخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNo, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNo, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(95.80859F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNo, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNo, "Default", "Text", "DocumentNo"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNoLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNoLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNoLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.9997527F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNoLabel, "Default", "SizeF", new System.Drawing.SizeF(94.80883F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNoLabel, "Default", "Text", "Document No."),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DocumentNoLabel, "ar", "Text", "رقم المستند"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(243.0662F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverLabel, "Default", "SizeF", new System.Drawing.SizeF(53.14214F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverLabel, "Default", "Text", " Driver"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverLabel, "ar", "Text", " السائق"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverName, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverName, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(296.2083F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverName, "Default", "SizeF", new System.Drawing.SizeF(500.7917F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DriverName, "Default", "Text", "From"),
@@ -1089,13 +1102,14 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.dtUnit, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.dtUnit, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.dtUnit, "Default", "Weight", 1.9985073380184606D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ExitTimeLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ExitTimeLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ExitTimeLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.9997606F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ExitTimeLabel, "Default", "SizeF", new System.Drawing.SizeF(94.80883F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ExitTimeLabel, "Default", "Text", "Exit Time"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ExitTimeLabel, "ar", "Text", "وقت الخروج"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.From, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.From, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(353.5F, 20.00001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.From, "Default", "SizeF", new System.Drawing.SizeF(443.5F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.From, "Default", "Text", "From"),
@@ -1123,11 +1137,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(646.5415F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(160.4554F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.PlaceLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.PlaceLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PlaceLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(243.0662F, 20.00001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PlaceLabel, "Default", "SizeF", new System.Drawing.SizeF(70.85048F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PlaceLabel, "Default", "Text", "Place"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PlaceLabel, "ar", "Text", "المكان"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.RegDate, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RegDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(95.80859F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RegDate, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.RegDate, "Default", "Text", "RegDate"),
@@ -1157,7 +1172,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.StatementLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.StatementLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.StatementLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.StatementLabel, "Default", "SizeF", new System.Drawing.SizeF(94.80883F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.StatementLabel, "Default", "Text", "Statement"),
@@ -1173,11 +1188,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Supplier, "Default", "Description", "Supplier"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SupplierCode, "Default", "Description", "SupplierCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckLabel, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckLabel, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0.9997606F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckLabel, "Default", "SizeF", new System.Drawing.SizeF(94.80883F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckLabel, "Default", "Text", "Truck"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckLabel, "ar", "Text", "رقم الشاحنة"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckNo, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckNo, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(95.80859F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckNo, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TruckNo, "Default", "Text", "CodeTo"),
@@ -1214,9 +1230,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "Weight", 103.92762796204487D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow1, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableRow4, "Default", "Weight", 1D)});
-            this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.PageHeight = 1169;
-            this.PageWidth = 827;
+            this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.PageHeightF = 1169.291F;
+            this.PageWidthF = 826.7717F;
             groupLayoutItem1.BorderVisible = false;
             groupLayoutItem1.Items.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignature, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -1264,7 +1280,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "24.2";
+            this.Version = "25.2";
             this.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.SR_ST_RecDeliveryOrder_BeforePrint);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();

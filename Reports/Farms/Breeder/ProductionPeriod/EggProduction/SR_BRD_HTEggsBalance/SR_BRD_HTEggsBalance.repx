@@ -38,7 +38,7 @@
     <Item11 Ref="36" Name="SendToHatC" Expression="Iif(IsNullOrEmpty([HatcheryFHTEggsC]), 0, [HatcheryFHTEggsC]) +&#xA;Iif(IsNullOrEmpty([HatcheryHTEggsC]), 0, [HatcheryHTEggsC])&#xA;" DataMember="SR_BRD_HTEggsBalance" />
     <Item12 Ref="37" Name="Close" Expression="Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +&#xA;Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC])&#xA;" DataMember="SR_BRD_HTEggsBalance" />
     <Item13 Ref="38" Name="TotalHE" Expression="Iif(IsNullOrEmpty([CloseFHTEggsC]), 0, [CloseFHTEggsC]) +&#xD;&#xA;Iif(IsNullOrEmpty([CloseFHTEggsF]), 0, [CloseFHTEggsF]) +&#xD;&#xA;Iif(IsNullOrEmpty([CloseHTEggsC]), 0, [CloseHTEggsC]) +&#xD;&#xA;Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])&#xD;&#xA;" DataMember="SR_BRD_HTEggsBalance" />
-    <Item14 Ref="39" Name="TotalFHE" Expression="Iif(IsNullOrEmpty([CloseFHTEggsC]),0 ,[CloseFHTEggsC]) + Iif(IsNullOrEmpty([CloseFHTEggsF]),0 ,[CloseHTEggsF])" DataMember="SR_BRD_HTEggsBalance" />
+    <Item14 Ref="39" Name="TotalFHE" Expression="Iif(IsNullOrEmpty([CloseFHTEggsC]),0 ,[CloseFHTEggsC]) + Iif(IsNullOrEmpty([CloseFHTEggsF]),0 ,[CloseFHTEggsF])" DataMember="SR_BRD_HTEggsBalance" />
     <Item15 Ref="40" Name="TotalEggs" Expression="[TotalHE] + [TotalFHE]" DataMember="SR_BRD_HTEggsBalance" />
     <Item16 Ref="41" Name="SameDate" Expression="Iif(?DateFrom == ?DateTo, 1, 0)" DataMember="SR_BRD_HTEggsBalance" />
     <Item17 Ref="42" Name="calculatedField1" DataMember="SR_BRD_HTEggsBalance" />
@@ -668,8 +668,8 @@
                     <Item2 Ref="361" ControlType="XRTableCell" Name="xrTableCell40" Multiline="true" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" Borders="All">
                       <Summary Ref="362" Running="Report" />
                       <ExpressionBindings>
-                        <Item1 Ref="363" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1,sumSum([OpenHTEggsC]),'' )&#xA;" />
-                        <Item2 Ref="364" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
+                        <Item1 Ref="363" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
+                        <Item2 Ref="364" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([OpenHTEggsF])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="365" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item2>
@@ -677,7 +677,7 @@
                       <Summary Ref="367" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="368" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="369" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, [OpenFHTEggsF],'' )" />
+                        <Item2 Ref="369" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([OpenFHTEggsF])" />
                       </ExpressionBindings>
                       <StylePriority Ref="370" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item3>
@@ -733,7 +733,7 @@
                       <Summary Ref="402" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="403" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="404" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, [CloseHTEggsC],'' )&#xA;" />
+                        <Item2 Ref="404" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseHTEggsF])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="405" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item10>
@@ -741,7 +741,7 @@
                       <Summary Ref="407" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="408" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="409" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, [CloseFHTEggsF],'' )&#xA;" />
+                        <Item2 Ref="409" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseFHTEggsF])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="410" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item11>
@@ -749,7 +749,7 @@
                       <Summary Ref="412" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="413" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="414" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, [OpenHTEggsC],'' )&#xA;" />
+                        <Item2 Ref="414" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([OpenHTEggsC])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="415" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item12>
@@ -757,7 +757,7 @@
                       <Summary Ref="417" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="418" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="419" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, [OpenFHTEggsC],'' )&#xA;" />
+                        <Item2 Ref="419" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([OpenFHTEggsC])" />
                       </ExpressionBindings>
                       <StylePriority Ref="420" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item13>
@@ -797,7 +797,7 @@
                       <Summary Ref="442" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="443" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="444" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, sumSum([CloseHTEggsC]),'' )&#xA;" />
+                        <Item2 Ref="444" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseHTEggsC])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="445" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item18>
@@ -805,7 +805,7 @@
                       <Summary Ref="447" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="448" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="449" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, sumSum([CloseFHTEggsC]),'' )&#xA;" />
+                        <Item2 Ref="449" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([CloseFHTEggsC])" />
                       </ExpressionBindings>
                       <StylePriority Ref="450" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item19>
@@ -813,7 +813,7 @@
                       <Summary Ref="452" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="453" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="454" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, sumSum([TotalHE]),'' )" />
+                        <Item2 Ref="454" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalHE])" />
                       </ExpressionBindings>
                       <StylePriority Ref="455" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item20>
@@ -821,7 +821,7 @@
                       <Summary Ref="457" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="458" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="459" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, sumSum([TotalFHE]),'' )&#xA;" />
+                        <Item2 Ref="459" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalFHE])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="460" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item21>
@@ -829,7 +829,7 @@
                       <Summary Ref="462" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="463" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
-                        <Item2 Ref="464" EventName="BeforePrint" PropertyName="Text" Expression="Iif([SameDate] == 1, sumSum([TotalEggs]),'' )&#xA;" />
+                        <Item2 Ref="464" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalEggs])&#xA;" />
                       </ExpressionBindings>
                       <StylePriority Ref="465" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
                     </Item22>
