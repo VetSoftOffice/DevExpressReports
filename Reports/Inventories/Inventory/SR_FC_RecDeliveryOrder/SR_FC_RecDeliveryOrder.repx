@@ -414,7 +414,7 @@
                       </Item1>
                       <Item2 Ref="207" ControlType="SubBand" Name="ReportHeaderSub2" HeightF="20">
                         <Controls>
-                          <Item1 Ref="208" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
+                          <Item1 Ref="208" ControlType="XRLabel" Name="ReportName" CanGrow="false" ProcessNullValues="SuppressAndShrink" Text="ReportName" AnchorHorizontal="Both" TextAlignment="MiddleCenter" SizeF="807,20" LocationFloat="0,0" Font="Tahoma, 10pt, style=Bold" Padding="2,2,0,0,100" CanPublishOptions="Csv, Docx, Htm, Image, Mht, Pdf, Printing, Rtf, Txt">
                             <StylePriority Ref="209" UseFont="false" UseTextAlignment="false" />
                           </Item1>
                         </Controls>

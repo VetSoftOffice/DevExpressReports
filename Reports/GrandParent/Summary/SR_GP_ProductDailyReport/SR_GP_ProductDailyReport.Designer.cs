@@ -120,7 +120,6 @@
             this.PageHeaderSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
@@ -144,13 +143,13 @@
             this.crossTabTotalCell6 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell7 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell8 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -382,7 +381,6 @@
             this.PageHeaderSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLabel6,
             this.xrLabel5,
-            this.xrLabel3,
             this.xrLabel2});
             this.PageHeaderSub1.Name = "PageHeaderSub1";
             // 
@@ -401,14 +399,6 @@
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            // 
-            // xrLabel3
-            // 
-            this.xrLabel3.CanPublishOptions.Xls = false;
-            this.xrLabel3.CanPublishOptions.Xlsx = false;
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel2
             // 
@@ -645,41 +635,6 @@
             this.crossTabTotalCell8.Name = "crossTabTotalCell8";
             this.crossTabTotalCell8.RowIndex = 3;
             // 
-            // sqlDataSource2
-            // 
-            this.sqlDataSource2.ConnectionName = "dsGrandParent";
-            this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression1.ColumnName = "Type1";
-            table1.Name = "SR_GP_ProductDailyReport";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "Type2";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "PinCode";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "Line";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "Value";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "FlockCode";
-            columnExpression6.Table = table1;
-            column6.Expression = columnExpression6;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Columns.Add(column6);
-            selectQuery1.Name = "SR_GP_ProductDailyReport";
-            selectQuery1.Tables.Add(table1);
-            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
-            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
-            // 
             // IsRTL
             // 
             this.IsRTL.Name = "IsRTL";
@@ -714,6 +669,41 @@
             // 
             this.srReportSignature.Name = "srReportSignature";
             this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.ConnectionName = "dsGrandParent";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            columnExpression1.ColumnName = "Type1";
+            table1.Name = "SR_GP_ProductDailyReport";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Type2";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "PinCode";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Line";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Value";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "FlockCode";
+            columnExpression6.Table = table1;
+            column6.Expression = columnExpression6;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Columns.Add(column6);
+            selectQuery1.Name = "SR_GP_ProductDailyReport";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // sqlDataSource1
             // 
@@ -1421,15 +1411,11 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(189.0017F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "From: [?DateFrom!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "من: [?DateFrom!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(221.21F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(181.25F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "الي: [?DateTo!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(442.6251F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(312.4168F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(189.0017F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "Farm: [?FarmCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "مزرعة: [FarmCode]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(661.8351F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(568.0851F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "SizeF", new System.Drawing.SizeF(181.25F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "Default", "Text", "Flock: [FlockCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel6, "ar", "Text", "قطيع: [FlockCode]")});
@@ -1577,7 +1563,6 @@
         private DevExpress.XtraReports.UI.SubBand SubBand5;
         private DevExpress.XtraReports.UI.XRSubreport srReportHeader;
         private DevExpress.XtraReports.UI.SubBand PageHeaderSub1;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;

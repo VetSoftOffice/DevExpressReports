@@ -189,6 +189,7 @@ IIF([Type2] = 15, ?Temperature, NULL)))))))))))))))</value>
 decimal totalFemaleKill = 0;
 decimal totalFemaleCullsKill = 0;
 decimal totalFemaleSample = 0;
+decimal totalFemaleCulls  = 0;
 decimal totalMaleMort = 0;
 decimal totalMaleKills = 0;
 decimal totalMaleCulls = 0;
@@ -222,7 +223,7 @@ private void detailBand1_BeforePrint(object sender, System.ComponentModel.Cancel
     totalFemaleCulls += femaleCulls;
      decimal femaleSample = Convert.ToDecimal(GetCurrentColumnValue("Female_Sample") ?? 0);
     totalFemaleSample += femaleSample;
-    totalFemaleMort += SafeConvert(GetCurrentColumnValue("FemaleMort"));
+    totalFemaleMort += Convert.ToDecimal(GetCurrentColumnValue("FemaleMort"));
         decimal maleMort = Convert.ToDecimal(GetCurrentColumnValue("MaleMort") ?? 0);
     totalMaleMort += maleMort;
         decimal maleCullsKill = Convert.ToDecimal(GetCurrentColumnValue("Male_CullsKill") ?? 0);
@@ -630,7 +631,7 @@ private void xrTableCell46_BeforePrint(object sender, System.ComponentModel.Canc
     if (startMaleBirds != 0)
     {
         // #RT_MaleDepl is the sum of all male depletion fields
-        decimal rtMaleDepl = totalMaleCulls + totalMaleCullsKill + totalMaleSample + totalMaleMort;
+        decimal rtMaleDepl = totalMaleCulls + totalMaleKills + totalMaleSample + totalMaleMort;
         
         // Calculate: (Sum of all male depletion * 100) / StartMaleBirds
         decimal result = (rtMaleDepl * 100.0m) / startMaleBirds;

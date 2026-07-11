@@ -128,7 +128,7 @@
             xyDiagram1.DefaultPane.EnableAxisYScrolling = DevExpress.Utils.DefaultBoolean.False;
             xyDiagram1.DefaultPane.EnableAxisYZooming = DevExpress.Utils.DefaultBoolean.False;
             this.xrChart1.Diagram = xyDiagram1;
-            this.xrChart1.LocationFloat = new DevExpress.Utils.PointFloat(90.625F, 0F);
+            this.xrChart1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrChart1.Name = "xrChart1";
             series1.ArgumentDataMember = "SR_BRD_WeeklyRearingReport_Sub2.WeekNo";
             series1.Name = "Series 1";
@@ -179,7 +179,7 @@
         series6,
         series7,
         series8};
-            this.xrChart1.SizeF = new System.Drawing.SizeF(300F, 200F);
+            this.xrChart1.SizeF = new System.Drawing.SizeF(650F, 200F);
             // 
             // sqlDataSource1
             // 
