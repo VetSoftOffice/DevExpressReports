@@ -905,7 +905,7 @@
     <Item182 Ref="589" Component="#Ref-121" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item183 Ref="590" Component="#Ref-121" Culture="Default" Path="Weight" Data="1.5672689887598246" />
     <Item184 Ref="591" Component="#Ref-229" Culture="Default" Path="Text" Data="HOF % Std" />
-    <Item185 Ref="592" Component="#Ref-229" Culture="ar" Path="Text" Data="HOF % قياسي" />
+    <Item185 Ref="592" Component="#Ref-229" Culture="ar" Path="Text" Data="قياسي الخصاب للفقس %" />
     <Item186 Ref="593" Component="#Ref-229" Culture="Default" Path="Weight" Data="1.2622710436609896" />
     <Item187 Ref="594" Component="#Ref-201" Culture="Default" Path="Text" Data="Rec. Eggs" />
     <Item188 Ref="595" Component="#Ref-201" Culture="ar" Path="Text" Data="البيض المستلم" />

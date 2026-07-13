@@ -575,9 +575,9 @@
     <Item4 Ref="310" Component="#Ref-33" Culture="Default" Path="HeightF" Data="20" />
     <Item5 Ref="311" Component="#Ref-24" Culture="Default" Path="Description" Data="BroilerFarm" />
     <Item6 Ref="312" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
-    <Item7 Ref="313" Component="#Ref-13" Culture="ar" Path="Description" Data="??" />
+    <Item7 Ref="313" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
     <Item8 Ref="314" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
-    <Item9 Ref="315" Component="#Ref-14" Culture="ar" Path="Description" Data="???" />
+    <Item9 Ref="315" Component="#Ref-14" Culture="ar" Path="Description" Data="إلى" />
     <Item10 Ref="316" Component="#Ref-40" Culture="Default" Path="HeightF" Data="20" />
     <Item11 Ref="317" Component="#Ref-19" Culture="Default" Path="Description" Data="DiffPrice" />
     <Item12 Ref="318" Component="#Ref-22" Culture="Default" Path="Description" Data="DiffQty" />
@@ -665,15 +665,15 @@
     <Item94 Ref="400" Component="#Ref-168" Culture="ar" Path="Text" Data="# ????? ?????" />
     <Item95 Ref="401" Component="#Ref-168" Culture="Default" Path="Weight" Data="2.174831723042713" />
     <Item96 Ref="402" Component="#Ref-174" Culture="Default" Path="Text" Data="Breed" />
-    <Item97 Ref="403" Component="#Ref-174" Culture="ar" Path="Text" Data="?????" />
+    <Item97 Ref="403" Component="#Ref-174" Culture="ar" Path="Text" Data="سلالة" />
     <Item98 Ref="404" Component="#Ref-174" Culture="Default" Path="Weight" Data="2.8902513341857952" />
     <Item99 Ref="405" Component="#Ref-170" Culture="Default" Path="Text" Data="Crop #" />
-    <Item100 Ref="406" Component="#Ref-170" Culture="ar" Path="Text" Data="?????" />
+    <Item100 Ref="406" Component="#Ref-170" Culture="ar" Path="Text" Data="محصول" />
     <Item101 Ref="407" Component="#Ref-170" Culture="Default" Path="Weight" Data="2.5355722307612023" />
     <Item102 Ref="408" Component="#Ref-162" Culture="Default" Path="LocationFloat" Data="4.768371E-05,0" />
     <Item103 Ref="409" Component="#Ref-162" Culture="Default" Path="SizeF" Data="922.9999,20" />
     <Item104 Ref="410" Component="#Ref-164" Culture="Default" Path="Text" Data="Date" />
-    <Item105 Ref="411" Component="#Ref-164" Culture="ar" Path="Text" Data="?????" />
+    <Item105 Ref="411" Component="#Ref-164" Culture="ar" Path="Text" Data="تاريخ" />
     <Item106 Ref="412" Component="#Ref-164" Culture="Default" Path="Weight" Data="1.8967686467206253" />
     <Item107 Ref="413" Component="#Ref-31" Culture="Default" Path="HeightF" Data="20" />
     <Item108 Ref="414" Component="#Ref-42" Culture="Default" Path="Weight" Data="1" />
@@ -709,13 +709,13 @@
     <Item138 Ref="444" Component="#Ref-289" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item139 Ref="445" Component="#Ref-289" Culture="Default" Path="Weight" Data="3.4800022768290777" />
     <Item140 Ref="446" Component="#Ref-172" Culture="Default" Path="Text" Data="Flock" />
-    <Item141 Ref="447" Component="#Ref-172" Culture="ar" Path="Text" Data="????" />
+    <Item141 Ref="447" Component="#Ref-172" Culture="ar" Path="Text" Data="قطيع" />
     <Item142 Ref="448" Component="#Ref-172" Culture="Default" Path="Weight" Data="1.8967683823540451" />
     <Item143 Ref="449" Component="#Ref-56" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item144 Ref="450" Component="#Ref-56" Culture="Default" Path="Text" Data="xrTableCell3" />
     <Item145 Ref="451" Component="#Ref-56" Culture="Default" Path="Weight" Data="2.1431507838357597" />
     <Item146 Ref="452" Component="#Ref-178" Culture="Default" Path="Text" Data="Chicks" />
-    <Item147 Ref="453" Component="#Ref-178" Culture="ar" Path="Text" Data="????????" />
+    <Item147 Ref="453" Component="#Ref-178" Culture="ar" Path="Text" Data="الكتاكيت" />
     <Item148 Ref="454" Component="#Ref-178" Culture="Default" Path="Weight" Data="2.2002429629285913" />
     <Item149 Ref="455" Component="#Ref-176" Culture="Default" Path="Text" Data="Broiler House #" />
     <Item150 Ref="456" Component="#Ref-176" Culture="ar" Path="Text" Data="# ???? ?????" />

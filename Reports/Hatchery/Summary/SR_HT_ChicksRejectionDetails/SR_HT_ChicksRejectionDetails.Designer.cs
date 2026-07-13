@@ -70,9 +70,9 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.tDetail = new DevExpress.XtraReports.UI.XRTable();
@@ -287,6 +287,15 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             this.pageInfoPageNoOfTotal});
             this.BottomMargin.Name = "BottomMargin";
             // 
+            // pageInfoCurrentDate
+            // 
+            this.pageInfoCurrentDate.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.pageInfoCurrentDate.Name = "pageInfoCurrentDate";
+            this.pageInfoCurrentDate.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.pageInfoCurrentDate.StyleName = "PageInfo";
+            this.pageInfoCurrentDate.StylePriority.UseBorders = false;
+            this.pageInfoCurrentDate.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // xrPageInfo1
             // 
             this.xrPageInfo1.Borders = DevExpress.XtraPrinting.BorderSide.None;
@@ -305,15 +314,6 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             this.pageInfoCurrentTime.StyleName = "PageInfo";
             this.pageInfoCurrentTime.StylePriority.UseBorders = false;
             this.pageInfoCurrentTime.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // pageInfoCurrentDate
-            // 
-            this.pageInfoCurrentDate.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.pageInfoCurrentDate.Name = "pageInfoCurrentDate";
-            this.pageInfoCurrentDate.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
-            this.pageInfoCurrentDate.StyleName = "PageInfo";
-            this.pageInfoCurrentDate.StylePriority.UseBorders = false;
-            this.pageInfoCurrentDate.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // pageInfoPageNoOfTotal
             // 
@@ -2367,30 +2367,30 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 23.8243F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "Default", "Description", "From"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "ar", "Description", "??"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateFrom, "ar", "Description", "من"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DateTo, "Default", "Description", "To"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateTo, "ar", "Description", "???"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.DateTo, "ar", "Description", "إلى"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Detail, "Default", "HeightF", 18F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DiffPrice, "Default", "Description", "DiffPrice"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.DiffQty, "Default", "Description", "DiffQty"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FarmNo, "Default", "Description", "FarmNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "??? ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HatcheryNo, "Default", "Description", "HatcheryNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "Default", "Description", "Hide report footer"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "ar", "Description", "????? ??? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "ar", "Description", "إخفاء تذييل التقرير"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportHeader, "Default", "Description", "Hide report header"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportHeader, "ar", "Description", "????? ??? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportHeader, "ar", "Description", "إخفاء رأس التقرير"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsCustomReportFooter, "Default", "Description", "IsCustomReportFooter"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsCustomReportHeader, "Default", "Description", "IsCustomReportHeader"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "Default", "Description", "Right to left"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "ar", "Description", "??? ?? ?????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.IsRTL, "ar", "Description", "من اليمين إلى اليسار"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.lblVetSoftData, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(4.768372E-05F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.lblVetSoftData, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.lblVetSoftData, "Default", "Text", "lblVetSoftData"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.lblVetSoftData, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "Default", "Description", "No of groups / page"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "ar", "Description", "??? ????????? / ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.NoOfGroupsPerPage, "ar", "Description", "عدد المجموعات / الصفحة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(4.768372E-05F, 0F)),
@@ -2407,9 +2407,9 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportType, "Default", "Description", "ReportType"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "Default", "Description", "Show signature"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "ar", "Description", "??? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "ar", "Description", "إظهار التوقيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "Show signature in all page"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "ar", "Description", "??? ??????? ?? ?? ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "ar", "Description", "إظهار التوقيع في كل الصفحات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(1634F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0.6250381F)),
@@ -2442,18 +2442,18 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "SizeF", new System.Drawing.SizeF(1554.681F, 18F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "Default", "Text", "Farm #"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "ar", "Text", "??? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "ar", "Text", "رقم المزرعة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "Default", "Weight", 3.1530846313606253D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "Default", "Text", "Breed"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "ar", "Text", "???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "ar", "Text", "السلالة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "Default", "Weight", 3.1421220871281506D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Text", "Setter #"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "ar", "Text", "??? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "ar", "Text", "رقم البياض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Weight", 3.4412659202144695D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(575.1965F, 74.70831F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Text", "Hatch-Out  Date"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "تاريخ الخروج"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Weight", 3.3384898033751145D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trDetail, "Default", "Weight", 1D),
@@ -2461,7 +2461,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(164.1655F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Hatchery:[?HatcheryNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "???? ?????:[?HatcheryNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "معمل تفريغ:[?HatcheryNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1424.67F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "SizeF", new System.Drawing.SizeF(209.33F, 23.82428F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo1, "Default", "TextFormatString", "Page {0} of {1}"),
@@ -2478,7 +2478,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Weight", 1.7395925467964763D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Text", "Sprad. Legs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "ar", "Text", "???? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "ar", "Text", "انتشار الأرجل"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Weight", 0.57652167055273151D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell100, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell100, "Default", "Text", "xrTableCell100"),
@@ -2513,7 +2513,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Weight", 2.0383930947501483D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Text", "Total Culls"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "ar", "Text", "?????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "ar", "Text", "إجمالي الفرزة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Text", ""),
@@ -2536,7 +2536,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "Weight", 2.0383987676984661D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Text", "Culling %"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "ar", "Text", "???? ?????????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "ar", "Text", "نسبة الفرزة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 2.8818990203332135D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Text", "xrTableCell20"),
@@ -2550,10 +2550,10 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 2.0383965685876433D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Text", "Stubby Down"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "ar", "Text", "??? ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "ar", "Text", "ريش قصير"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Weight", 0.590692420936133D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Text", "Age"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "ar", "Text", "?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "ar", "Text", "العمر"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Weight", 1.5773019812727818D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Text", "xrTableCell25"),
@@ -2563,14 +2563,14 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Text", "xrTableCell26"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Weight", 2.5514861373375304D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Text", "Brain Hemia"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "ar", "Text", "???? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "ar", "Text", "دماغ منتفخ"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Text", "xrTableCell28"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Weight", 1.8303018063132033D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Text", "Post Dupl."),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "ar", "Text", "?????? ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "ar", "Text", "تطور خلفي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell29, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Text", "xrTableCell3"),
@@ -2581,16 +2581,16 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Weight", 1.8752281152590626D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Text", "Stiky Down"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "ar", "Text", "??? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "ar", "Text", "ريش لزج"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Text", "Small"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "ar", "Text", "???? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "ar", "Text", "صغير"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Text", "M. Eye"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "ar", "Text", "??? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "ar", "Text", "العين"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Text", "Dead"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "ar", "Text", "????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "ar", "Text", "نافق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Text", "xrTableCell35"),
@@ -2609,26 +2609,26 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Weight", 0.45887759641748233D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Text", "Total & Average"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "ar", "Text", "???????? ????????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "ar", "Text", "الإجمالي والمتوسط"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Weight", 1.7451289716267424D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Text", "Hatch %"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "ar", "Text", "???? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "ar", "Text", "نسبة الفقس"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Weight", 2.1497627400867811D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Text", "Sample Qty"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "ar", "Text", "???? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "ar", "Text", "كمية العينة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Weight", 2.5805018014500605D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Text", "xrTableCell41"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell41, "Default", "Weight", 2.088151824017038D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "Text", "Vacc. Injury"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "ar", "Text", "????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "ar", "Text", "إصابة التطعيم"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell42, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "Default", "Text", "E.V."),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "ar", "Text", "?????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "ar", "Text", "التهاب الأذن"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell43, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Text", "Black But."),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "ar", "Text", "????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "ar", "Text", "البطانة السوداء"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell44, "Default", "Weight", 0.6420799143289283D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell45, "Default", "Text", ""),
@@ -2650,7 +2650,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Weight", 0.29438564816055945D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Text", "Abnormal Chicks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "???????? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "كتاكيت غير طبيعية"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "TextFormatString", "{0:N0}"),
@@ -2667,13 +2667,13 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_ChicksRejectionDetail
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "Weight", 2.5426174996833328D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Text", "Open Navel"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "ar", "Text", "????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "ar", "Text", "السرة المفتوحة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 0.6505695504297222D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Text", "String Navel"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "ar", "Text", "????? ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "ar", "Text", "خيط السرة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Weight", 0.63001597532110254D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Text", "Red Houcks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "ar", "Text", "????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "ar", "Text", "الخط الأحمر"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Weight", 0.45529916226705808D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell97, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell97, "Default", "Text", ""),

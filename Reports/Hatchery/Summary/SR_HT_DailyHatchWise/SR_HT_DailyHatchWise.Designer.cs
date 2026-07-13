@@ -1,4 +1,4 @@
-namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
+﻿namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
 {
     partial class SR_HT_DailyHatchWise
     {
@@ -29,51 +29,51 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary7 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary8 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary9 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary10 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary11 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary111 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary112 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary113 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary114 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary115 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary116 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary117 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary118 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary119 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary120 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary121 = new DevExpress.XtraReports.UI.XRSummary();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SR_HT_DailyHatchWise));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.XtraReports.UI.XRSummary xrSummary12 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary13 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary14 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary15 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary16 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary17 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary18 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary19 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary20 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary21 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary22 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery6 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column51 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression51 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column52 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression52 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column53 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression53 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column54 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression54 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column55 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression55 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column56 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression56 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column57 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression57 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column58 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression58 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column59 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression59 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column60 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression60 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.XtraReports.UI.XRSummary xrSummary122 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary123 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary124 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary125 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary126 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary127 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary128 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary129 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary130 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary131 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary132 = new DevExpress.XtraReports.UI.XRSummary();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.lblVetSoftData = new DevExpress.XtraReports.UI.XRLabel();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
@@ -1094,9 +1094,9 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             // xrLabel2
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel2.CanGrow = false;
             this.xrLabel2.CanPublishOptions.Xls = false;
             this.xrLabel2.CanPublishOptions.Xlsx = false;
-            this.xrLabel2.CanGrow = false;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
@@ -1981,8 +1981,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell45.StylePriority.UseBorderWidth = false;
             this.xrTableCell45.StylePriority.UseFont = false;
             this.xrTableCell45.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell45.Summary = xrSummary1;
+            xrSummary111.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell45.Summary = xrSummary111;
             this.xrTableCell45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell46
@@ -2000,8 +2000,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell46.StylePriority.UseBorderWidth = false;
             this.xrTableCell46.StylePriority.UseFont = false;
             this.xrTableCell46.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell46.Summary = xrSummary2;
+            xrSummary112.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell46.Summary = xrSummary112;
             this.xrTableCell46.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell47
@@ -2037,8 +2037,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell48.StylePriority.UseBorderWidth = false;
             this.xrTableCell48.StylePriority.UseFont = false;
             this.xrTableCell48.StylePriority.UseTextAlignment = false;
-            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell48.Summary = xrSummary3;
+            xrSummary113.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell48.Summary = xrSummary113;
             this.xrTableCell48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell49
@@ -2074,8 +2074,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell50.StylePriority.UseBorderWidth = false;
             this.xrTableCell50.StylePriority.UseFont = false;
             this.xrTableCell50.StylePriority.UseTextAlignment = false;
-            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell50.Summary = xrSummary4;
+            xrSummary114.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell50.Summary = xrSummary114;
             this.xrTableCell50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell51
@@ -2093,8 +2093,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell51.StylePriority.UseBorderWidth = false;
             this.xrTableCell51.StylePriority.UseFont = false;
             this.xrTableCell51.StylePriority.UseTextAlignment = false;
-            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell51.Summary = xrSummary5;
+            xrSummary115.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell51.Summary = xrSummary115;
             this.xrTableCell51.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell52
@@ -2144,8 +2144,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell98.StylePriority.UseBorderWidth = false;
             this.xrTableCell98.StylePriority.UseFont = false;
             this.xrTableCell98.StylePriority.UseTextAlignment = false;
-            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell98.Summary = xrSummary6;
+            xrSummary116.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell98.Summary = xrSummary116;
             this.xrTableCell98.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell99
@@ -2163,8 +2163,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell99.StylePriority.UseBorderWidth = false;
             this.xrTableCell99.StylePriority.UseFont = false;
             this.xrTableCell99.StylePriority.UseTextAlignment = false;
-            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell99.Summary = xrSummary7;
+            xrSummary117.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell99.Summary = xrSummary117;
             this.xrTableCell99.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell100
@@ -2201,8 +2201,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell101.StylePriority.UseBorderWidth = false;
             this.xrTableCell101.StylePriority.UseFont = false;
             this.xrTableCell101.StylePriority.UseTextAlignment = false;
-            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell101.Summary = xrSummary8;
+            xrSummary118.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell101.Summary = xrSummary118;
             this.xrTableCell101.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell102
@@ -2220,8 +2220,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell102.StylePriority.UseBorderWidth = false;
             this.xrTableCell102.StylePriority.UseFont = false;
             this.xrTableCell102.StylePriority.UseTextAlignment = false;
-            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell102.Summary = xrSummary9;
+            xrSummary119.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell102.Summary = xrSummary119;
             this.xrTableCell102.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell103
@@ -2257,8 +2257,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell104.StylePriority.UseBorderWidth = false;
             this.xrTableCell104.StylePriority.UseFont = false;
             this.xrTableCell104.StylePriority.UseTextAlignment = false;
-            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell104.Summary = xrSummary10;
+            xrSummary120.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell104.Summary = xrSummary120;
             this.xrTableCell104.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell105
@@ -2294,8 +2294,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell106.StylePriority.UseBorderWidth = false;
             this.xrTableCell106.StylePriority.UseFont = false;
             this.xrTableCell106.StylePriority.UseTextAlignment = false;
-            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
-            this.xrTableCell106.Summary = xrSummary11;
+            xrSummary121.Running = DevExpress.XtraReports.UI.SummaryRunning.Report;
+            this.xrTableCell106.Summary = xrSummary121;
             this.xrTableCell106.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell107
@@ -2743,52 +2743,52 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             // 
             this.dsFinance.ConnectionName = "dsFinance";
             this.dsFinance.Name = "dsFinance";
-            columnExpression1.ColumnName = "ItemType";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"263\" />";
-            table1.Name = "SR_FM_Stocktaking";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "Container";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "Products";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "Description";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "ExpiryDate";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "Unit";
-            columnExpression6.Table = table1;
-            column6.Expression = columnExpression6;
-            columnExpression7.ColumnName = "SentOrClacQty";
-            columnExpression7.Table = table1;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "ActualQty";
-            columnExpression8.Table = table1;
-            column8.Expression = columnExpression8;
-            columnExpression9.ColumnName = "CalcPriceUnit";
-            columnExpression9.Table = table1;
-            column9.Expression = columnExpression9;
-            columnExpression10.ColumnName = "AdjustedPriceUnit";
-            columnExpression10.Table = table1;
-            column10.Expression = columnExpression10;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Columns.Add(column6);
-            selectQuery1.Columns.Add(column7);
-            selectQuery1.Columns.Add(column8);
-            selectQuery1.Columns.Add(column9);
-            selectQuery1.Columns.Add(column10);
-            selectQuery1.Name = "SR_FM_Stocktaking";
-            selectQuery1.Tables.Add(table1);
+            columnExpression51.ColumnName = "ItemType";
+            table6.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"263\" />";
+            table6.Name = "SR_FM_Stocktaking";
+            columnExpression51.Table = table6;
+            column51.Expression = columnExpression51;
+            columnExpression52.ColumnName = "Container";
+            columnExpression52.Table = table6;
+            column52.Expression = columnExpression52;
+            columnExpression53.ColumnName = "Products";
+            columnExpression53.Table = table6;
+            column53.Expression = columnExpression53;
+            columnExpression54.ColumnName = "Description";
+            columnExpression54.Table = table6;
+            column54.Expression = columnExpression54;
+            columnExpression55.ColumnName = "ExpiryDate";
+            columnExpression55.Table = table6;
+            column55.Expression = columnExpression55;
+            columnExpression56.ColumnName = "Unit";
+            columnExpression56.Table = table6;
+            column56.Expression = columnExpression56;
+            columnExpression57.ColumnName = "SentOrClacQty";
+            columnExpression57.Table = table6;
+            column57.Expression = columnExpression57;
+            columnExpression58.ColumnName = "ActualQty";
+            columnExpression58.Table = table6;
+            column58.Expression = columnExpression58;
+            columnExpression59.ColumnName = "CalcPriceUnit";
+            columnExpression59.Table = table6;
+            column59.Expression = columnExpression59;
+            columnExpression60.ColumnName = "AdjustedPriceUnit";
+            columnExpression60.Table = table6;
+            column60.Expression = columnExpression60;
+            selectQuery6.Columns.Add(column51);
+            selectQuery6.Columns.Add(column52);
+            selectQuery6.Columns.Add(column53);
+            selectQuery6.Columns.Add(column54);
+            selectQuery6.Columns.Add(column55);
+            selectQuery6.Columns.Add(column56);
+            selectQuery6.Columns.Add(column57);
+            selectQuery6.Columns.Add(column58);
+            selectQuery6.Columns.Add(column59);
+            selectQuery6.Columns.Add(column60);
+            selectQuery6.Name = "SR_FM_Stocktaking";
+            selectQuery6.Tables.Add(table6);
             this.dsFinance.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery6});
             this.dsFinance.ResultSchemaSerializable = resources.GetString("dsFinance.ResultSchemaSerializable");
             // 
             // dsFinance1
@@ -2865,8 +2865,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell76.StylePriority.UseBorders = false;
             this.xrTableCell76.StylePriority.UseBorderWidth = false;
             this.xrTableCell76.StylePriority.UseFont = false;
-            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell76.Summary = xrSummary12;
+            xrSummary122.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell76.Summary = xrSummary122;
             // 
             // xrTableCell77
             // 
@@ -2882,8 +2882,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell77.StylePriority.UseBorders = false;
             this.xrTableCell77.StylePriority.UseBorderWidth = false;
             this.xrTableCell77.StylePriority.UseFont = false;
-            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell77.Summary = xrSummary13;
+            xrSummary123.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell77.Summary = xrSummary123;
             // 
             // xrTableCell78
             // 
@@ -2915,8 +2915,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell79.StylePriority.UseBorders = false;
             this.xrTableCell79.StylePriority.UseBorderWidth = false;
             this.xrTableCell79.StylePriority.UseFont = false;
-            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell79.Summary = xrSummary14;
+            xrSummary124.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell79.Summary = xrSummary124;
             // 
             // xrTableCell80
             // 
@@ -2948,8 +2948,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell81.StylePriority.UseBorders = false;
             this.xrTableCell81.StylePriority.UseBorderWidth = false;
             this.xrTableCell81.StylePriority.UseFont = false;
-            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell81.Summary = xrSummary15;
+            xrSummary125.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell81.Summary = xrSummary125;
             // 
             // xrTableCell82
             // 
@@ -2966,8 +2966,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell82.StylePriority.UseBorderWidth = false;
             this.xrTableCell82.StylePriority.UseFont = false;
             this.xrTableCell82.StylePriority.UseTextAlignment = false;
-            xrSummary16.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell82.Summary = xrSummary16;
+            xrSummary126.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell82.Summary = xrSummary126;
             this.xrTableCell82.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell83
@@ -3012,8 +3012,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell85.StylePriority.UseBorders = false;
             this.xrTableCell85.StylePriority.UseBorderWidth = false;
             this.xrTableCell85.StylePriority.UseFont = false;
-            xrSummary17.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell85.Summary = xrSummary17;
+            xrSummary127.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell85.Summary = xrSummary127;
             // 
             // xrTableCell86
             // 
@@ -3029,8 +3029,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell86.StylePriority.UseBorders = false;
             this.xrTableCell86.StylePriority.UseBorderWidth = false;
             this.xrTableCell86.StylePriority.UseFont = false;
-            xrSummary18.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell86.Summary = xrSummary18;
+            xrSummary128.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell86.Summary = xrSummary128;
             // 
             // xrTableCell87
             // 
@@ -3063,8 +3063,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell88.StylePriority.UseBorders = false;
             this.xrTableCell88.StylePriority.UseBorderWidth = false;
             this.xrTableCell88.StylePriority.UseFont = false;
-            xrSummary19.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell88.Summary = xrSummary19;
+            xrSummary129.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell88.Summary = xrSummary129;
             // 
             // xrTableCell89
             // 
@@ -3080,8 +3080,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell89.StylePriority.UseBorders = false;
             this.xrTableCell89.StylePriority.UseBorderWidth = false;
             this.xrTableCell89.StylePriority.UseFont = false;
-            xrSummary20.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell89.Summary = xrSummary20;
+            xrSummary130.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell89.Summary = xrSummary130;
             // 
             // xrTableCell90
             // 
@@ -3113,8 +3113,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell91.StylePriority.UseBorders = false;
             this.xrTableCell91.StylePriority.UseBorderWidth = false;
             this.xrTableCell91.StylePriority.UseFont = false;
-            xrSummary21.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell91.Summary = xrSummary21;
+            xrSummary131.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell91.Summary = xrSummary131;
             // 
             // xrTableCell92
             // 
@@ -3146,8 +3146,8 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             this.xrTableCell93.StylePriority.UseBorders = false;
             this.xrTableCell93.StylePriority.UseBorderWidth = false;
             this.xrTableCell93.StylePriority.UseFont = false;
-            xrSummary22.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.xrTableCell93.Summary = xrSummary22;
+            xrSummary132.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.xrTableCell93.Summary = xrSummary132;
             // 
             // xrTableCell94
             // 
@@ -3569,22 +3569,22 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "SizeF", new System.Drawing.SizeF(1557.318F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "Default", "Text", "Setted Date"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "ar", "Text", " ????? ??????? ?? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "ar", "Text", "تاريخ الايداع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thAccount_From, "Default", "Weight", 2.5943154099628671D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "Default", "Text", "Hatch Date"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "ar", "Text", "????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "ar", "Text", "تاريخ الفقس"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thCostCenter, "Default", "Weight", 2.3851519539929167D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Text", "Age (Wk)"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "ar", "Text", "????? (?????????)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "ar", "Text", "العمر (س)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDebit, "Default", "Weight", 1.8558067461624932D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(433.7686F, 94.16662F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Text", "Max Receive Date"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "????? ???????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "أكبر تاريخ استلام"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Weight", 2.5344369934273931D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trDetail, "Default", "Weight", 1D),
@@ -3592,19 +3592,19 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(202.3087F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(157.8997F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "???: [?DateTo!dd-MM-yyyy]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "الي: [?DateTo!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(168.3163F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "From: [?DateFrom!dd-MM-yyyy]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "??: [?DateFrom!dd-MM-yyyy]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "من: [?DateFrom!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(588.253F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(249.8281F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Std Book: [?BookPerf]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "??????: [?BookPerf]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "المرجع: [?BookPerf]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(383.0031F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(164.1655F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Hatchery:[?Place]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "???? ?????:[?HatcheryNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "معمل تفريغ:[?Place]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1418.684F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "SizeF", new System.Drawing.SizeF(215.316F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrPageInfo2, "Default", "TextFormatString", "Page {0} of {1}"),
@@ -3727,7 +3727,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Weight", 1.4030046869518527D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Text", "Setted Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "ar", "Text", "????? ?????? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "ar", "Text", "بيض مرصوص"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell14, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell15, "Default", "Text", "xrTableCell15"),
@@ -3751,7 +3751,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "Weight", 1.5661140726571956D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Text", "Setted + Rejected Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "ar", "Text", "????? ?????? + ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "ar", "Text", "عدد البيض ( المستبعد + المرصوص)"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 2.8141725274952663D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Text", "xrTableCell20"),
@@ -3766,11 +3766,11 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 1.8983794785928991D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Text", "Infertile"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "ar", "Text", " ????? ??? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "ar", "Text", "غير مخصب"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Text", "Supplier"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "ar", "Text", " ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "ar", "Text", "المورد"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Weight", 1.8882992977151833D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Text", "xrTableCell25"),
@@ -3782,7 +3782,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell26, "Default", "Weight", 2.0993276095361D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Text", "Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "ar", "Text", "???"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "ar", "Text", "عدد البيض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell27, "Default", "Weight", 0.42877304783189624D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell28, "Default", "Text", "xrTableCell28"),
@@ -3801,19 +3801,19 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell30, "Default", "Weight", 2.3800218909036621D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Text", "Transfer Date"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "ar", "Text", "????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "ar", "Text", "تاريخ النقل"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell31, "Default", "Weight", 1.93153365197277D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Text", "Fertile Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "ar", "Text", " ????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "ar", "Text", "البيض المخصب"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell32, "Default", "Weight", 1.7979685103265144D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Text", "Non Hatch Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "ar", "Text", "????? ??? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "ar", "Text", "بيض لائح"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell33, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Text", "Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "ar", "Text", "???"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "ar", "Text", "عدد البيض"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell34, "Default", "Weight", 0.36407925173830052D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell35, "Default", "Text", "xrTableCell35"),
@@ -3832,11 +3832,11 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "TextFormatString", "{0:N0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell38, "Default", "Weight", 2.0229312632799243D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Text", "Grand Total"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "ar", "Text", "?????? ???"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "ar", "Text", "اجمالي كلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell39, "Default", "Weight", 1.6645763763408798D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Text", "Country"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "ar", "Text", "??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "ar", "Text", "البلد"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell4, "Default", "Weight", 2.7179238622579653D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Text", "xrTableCell40"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell40, "Default", "Weight", 3D),
@@ -3861,7 +3861,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell49, "Default", "Weight", 0.22876437188397278D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Text", "Rejected Eggs"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "????? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "ar", "Text", "البيض المستبعد"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell5, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell50, "Default", "TextFormatString", "{0:N0}"),
@@ -3878,26 +3878,26 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell53, "Default", "Weight", 0.35001393204593556D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Text", "Total Chicks Hatch"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "ar", "Text", "?????? ???????? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "ar", "Text", "اجمالي فقس كتاكيت"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell54, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Text", "Dead Chicks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "ar", "Text", "???????? ???????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "ar", "Text", "نافق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell55, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Text", "NOS"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "ar", "Text", "???"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "ar", "Text", "عدد الكتاكيت"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell56, "Default", "Weight", 0.24543323089015096D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Text", "%"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell57, "Default", "Weight", 0.287221360031637D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Text", "Culls Chicks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "ar", "Text", "???????? ????????? (?????)"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "ar", "Text", "كتاكيت فرزة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell58, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "Default", "Text", "NOS"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "ar", "Text", "???"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "ar", "Text", "عدد الكتاكيت"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell59, "Default", "Weight", 0.43555184563079929D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell6, "Default", "Text", "xrTableCell6"),
@@ -3908,26 +3908,26 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell60, "Default", "Weight", 0.39418517997374719D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Text", "Saleable Chicks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "ar", "Text", "???????? ??????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "ar", "Text", "كتاكيت مباعة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell61, "Default", "Weight", 3D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Text", "Chicks"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "ar", "Text", "??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "ar", "Text", "الكتاكيت"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell62, "Default", "Weight", 1.465216405385326D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Text", "%"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell63, "Default", "Weight", 0.94979570222132681D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Text", "Hatchability %"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "ar", "Text", "???? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "ar", "Text", "الفقس %"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell64, "Default", "Weight", 1D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Text", "All / Setted"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "ar", "Text", "?? ???? ????? / ????? ??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "ar", "Text", "الكل / المودع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell65, "Default", "Weight", 2.9728414943398564D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Text", "Sale / Fertile"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "ar", "Text", "?? ????? ?????? ?????? ?????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "ar", "Text", "المباع / المخصب"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell66, "Default", "Weight", 3.0252215471493229D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell67, "Default", "Text", "xrTableCell67"),
@@ -3943,10 +3943,10 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell69, "Default", "Weight", 2.0779973830563994D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Text", "Sell-able"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "ar", "Text", "????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "ar", "Text", "قابل للبيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 0.48675964359424118D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "Default", "Text", "Total"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "ar", "Text", "??????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "ar", "Text", "اجمالي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell70, "Default", "Weight", 3.61064998678312D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell76, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell76, "Default", "Text", "xrTableCell76"),
@@ -4008,7 +4008,7 @@ namespace DevExpressReports.Reports.Hatchery.Summary.SR_HT_DailyHatchWise
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell89, "Default", "Weight", 0.44792596593492529D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Text", "Un Sellable"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "ar", "Text", "??? ????"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "ar", "Text", "غير قابل للبيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Weight", 0.51605985463832948D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell90, "Default", "Text", "xrTableCell90"),

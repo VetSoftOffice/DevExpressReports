@@ -1815,9 +1815,9 @@
     <Item3 Ref="755" Component="#Ref-20" Culture="Default" Path="Description" Data="Available" />
     <Item4 Ref="756" Component="#Ref-62" Culture="Default" Path="HeightF" Data="20" />
     <Item5 Ref="757" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
-    <Item6 Ref="758" Component="#Ref-13" Culture="ar" Path="Description" Data="??" />
+    <Item6 Ref="758" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
     <Item7 Ref="759" Component="#Ref-14" Culture="Default" Path="Description" Data="To" />
-    <Item8 Ref="760" Component="#Ref-14" Culture="ar" Path="Description" Data="???" />
+    <Item8 Ref="760" Component="#Ref-14" Culture="ar" Path="Description" Data="إلى" />
     <Item9 Ref="761" Component="#Ref-69" Culture="Default" Path="HeightF" Data="850" />
     <Item10 Ref="762" Component="#Ref-19" Culture="Default" Path="Description" Data="DiffPrice" />
     <Item11 Ref="763" Component="#Ref-22" Culture="Default" Path="Description" Data="DiffQty" />
@@ -1882,7 +1882,7 @@
     <Item70 Ref="822" Component="#Ref-648" Culture="ar" Path="Text" Data="???????? ??????" />
     <Item71 Ref="823" Component="#Ref-648" Culture="Default" Path="Weight" Data="6.9298304091075869" />
     <Item72 Ref="824" Component="#Ref-649" Culture="Default" Path="Text" Data="Total" />
-    <Item73 Ref="825" Component="#Ref-649" Culture="ar" Path="Text" Data="????????" />
+    <Item73 Ref="825" Component="#Ref-649" Culture="ar" Path="Text" Data="الاجمالي" />
     <Item74 Ref="826" Component="#Ref-649" Culture="Default" Path="Weight" Data="7.2553964026023472" />
     <Item75 Ref="827" Component="#Ref-645" Culture="Default" Path="LocationFloat" Data="0.0005187988,0" />
     <Item76 Ref="828" Component="#Ref-645" Culture="Default" Path="SizeF" Data="1079,20" />
@@ -2124,7 +2124,7 @@
     <Item312 Ref="1064" Component="#Ref-379" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item313 Ref="1065" Component="#Ref-379" Culture="Default" Path="Weight" Data="3" />
     <Item314 Ref="1066" Component="#Ref-647" Culture="Default" Path="Text" Data="Description" />
-    <Item315 Ref="1067" Component="#Ref-647" Culture="ar" Path="Text" Data="?????" />
+    <Item315 Ref="1067" Component="#Ref-647" Culture="ar" Path="Text" Data="الوصف" />
     <Item316 Ref="1068" Component="#Ref-647" Culture="Default" Path="Weight" Data="9.63124883938753" />
     <Item317 Ref="1069" Component="#Ref-374" Culture="Default" Path="Text" Data="xrTableCell131" />
     <Item318 Ref="1070" Component="#Ref-374" Culture="Default" Path="TextFormatString" Data="{0:N2}" />

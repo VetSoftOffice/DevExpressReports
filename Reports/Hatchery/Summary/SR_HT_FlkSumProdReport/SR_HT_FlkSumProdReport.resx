@@ -768,10 +768,14 @@ decimal cumHatchability = 0;
 if (settedEggs != 0)
     cumHatchability = (selChicks + cullsChicks + deadChicks) / settedEggs * 100m;
 
-decimal result = ( total * cumHatchability ) / settedEggs  * 100m;
+if(settedEggs != 0){
+    decimal result = ( total * cumHatchability ) / settedEggs  * 100m;
+    XRTableCell cell = sender as XRTableCell;
+    cell.Text = result.ToString("0.##"); // format with 2 decimals
+
+
+ }
 // --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with 2 decimals
 
 }
 
