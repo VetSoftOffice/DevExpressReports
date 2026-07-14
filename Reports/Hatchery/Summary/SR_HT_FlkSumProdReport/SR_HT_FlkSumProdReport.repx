@@ -23,8 +23,8 @@
   <CalculatedFields>
     <Item1 Ref="22" Name="Abs_OpenBal" Expression="Abs([OpenBalance])" DataMember="SR_FC_CustSuppSheet" />
     <Item2 Ref="23" Name="DebitCreditOpenBalRes" Expression="Iif([OpenBalance] &gt; 0,[Debit_Str] , Iif([OpenBalance] &lt; 0, [Credit_Str], ''))" DataMember="SR_FC_CustSuppSheet" />
-    <Item3 Ref="24" Name="Debit_Str" Expression="Iif(?IsRTL == true,'(????)' , '(Debit)')" DataMember="SR_FC_CustSuppSheet" />
-    <Item4 Ref="25" Name="Credit_Str" Expression="Iif(?IsRTL == true,'(????)' , '(Credit)')" DataMember="SR_FC_CustSuppSheet" />
+    <Item3 Ref="24" Name="Debit_Str" Expression="Iif(?IsRTL == true,'(مدين)' , '(Debit)')" DataMember="SR_FC_CustSuppSheet" />
+    <Item4 Ref="25" Name="Credit_Str" Expression="Iif(?IsRTL == true,'(دائن)' , '(Credit)')" DataMember="SR_FC_CustSuppSheet" />
     <Item5 Ref="26" Name="OpenDebit" Expression="Iif([OpenBalance] &gt; 0, [OpenBalance], NULL)" DataMember="SR_FC_CustSuppSheet" />
     <Item6 Ref="27" Name="OpenCredit" Expression="Iif([OpenBalance] &lt; 0, Abs([OpenBalance]), NULL)&#xA;" DataMember="SR_FC_CustSuppSheet" />
     <Item7 Ref="28" Name="Result" Expression="[Debit] - [Credit]" DataMember="SR_FC_CustSuppSheet" />
@@ -41,12 +41,12 @@
     <Item18 Ref="39" Name="Data_1" Expression="[Data] + ' (' + ToStr([AgePartA]) + [Week] + ') ' + [DaysNO] + ' ' + [Day]&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item19 Ref="40" Name="AgePartA" Expression="Iif([LastDays] &gt; 0, [DeplAge] - 1, [DeplAge])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item20 Ref="41" Name="DaysNO" Expression="[AgePartA] * 7" DataMember="SR_HT_FlkSumProdReport" />
-    <Item21 Ref="42" Name="Data" Expression="Iif(?IsRTL, '??????' , 'Date' )" DataMember="SR_HT_FlkSumProdReport" />
-    <Item22 Ref="43" Name="Week" Expression="Iif(?IsRTL, '?????' , 'Week' )" DataMember="SR_HT_FlkSumProdReport" />
-    <Item23 Ref="44" Name="Day" Expression="Iif(?IsRTL,'???', 'Day')" DataMember="SR_HT_FlkSumProdReport" />
-    <Item24 Ref="45" Name="Performance" Expression="Iif(?IsRTL,'????' , 'Performance')" DataMember="SR_HT_FlkSumProdReport" />
+    <Item21 Ref="42" Name="Data" Expression="Iif(?IsRTL, 'تاريخ' , 'Date' )" DataMember="SR_HT_FlkSumProdReport" />
+    <Item22 Ref="43" Name="Week" Expression="Iif(?IsRTL, 'أسبوع' , 'Week' )" DataMember="SR_HT_FlkSumProdReport" />
+    <Item23 Ref="44" Name="Day" Expression="Iif(?IsRTL,'يوم', 'Day')" DataMember="SR_HT_FlkSumProdReport" />
+    <Item24 Ref="45" Name="Performance" Expression="Iif(?IsRTL,'أداء' , 'Performance')" DataMember="SR_HT_FlkSumProdReport" />
     <Item25 Ref="46" Name="Perf1" Expression="Iif(?IsRTL,[Performance] + ' (' + ToStr([AgePartA]) + ' ' + [Week] + ') ' + ToStr([DaysNO]) + ' ' + [Day]&#xA; , [Performance] + ' (' + ToStr([AgePartA]) + ' weeks) ' + ToStr([DaysNO]) + [Days])" DataMember="SR_HT_FlkSumProdReport" />
-    <Item26 Ref="47" Name="Days" Expression="iif(?IsRTL,'????','days')" DataMember="SR_HT_FlkSumProdReport" />
+    <Item26 Ref="47" Name="Days" Expression="iif(?IsRTL,'أيام','days')" DataMember="SR_HT_FlkSumProdReport" />
     <Item27 Ref="48" Name="RejDef" Expression="iif(IsNullOrEmpty([HT_RejDeformed]),0,[HT_RejDeformed]) + iif(IsNullOrEmpty([ST_RejDeformed]),0,[ST_RejDeformed])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item28 Ref="49" Name="RejCrack" Expression="iif(IsNullOrEmpty([HT_RejCracks]),0,[HT_RejCracks]) + iif(IsNullOrEmpty([ST_RejCracks]),0,[ST_RejCracks])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item29 Ref="50" Name="RejBroken" Expression="iif(IsNullOrEmpty([HT_RejBroken]),0,[HT_RejBroken]) + iif(IsNullOrEmpty([ST_RejBroken]),0,[ST_RejBroken])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
@@ -102,7 +102,7 @@
     <Item79 Ref="100" Name="AB_RejChicksHH" Expression="Iif(IsNullOrEmpty([CumChicksRej_HH]) OR [CumChicksRej_HH] == 0, 0, [CumChicksRej_HH])&#xA;+&#xA;Iif(IsNullOrEmpty([CumChicksRej_HH_1]) OR [CumChicksRej_HH_1] == 0, 0, [CumChicksRej_HH_1])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item80 Ref="101" Name="AB_CumAGradeChicksHH" Expression="Iif(IsNullOrEmpty([AB_CumTotalChicksHH]) OR [AB_CumTotalChicksHH] == 0, 0, [AB_CumTotalChicksHH])&#xA;-&#xA;Iif(IsNullOrEmpty([AB_RejChicksHH]) OR [AB_RejChicksHH] == 0, 0, [AB_RejChicksHH])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item81 Ref="102" Name="Data_2" Expression="Iif(?IsRTL,[Data] + ' (' + [After] + ' ' + ToStr([DaysNO]) + ' ' + [Day] + ') ' + [Data] + ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' ' + [Day] + ' ' + [Only]&#xD;&#xA; , [Data] + ' (' + [After] + ' ' + ToStr([DaysNO]) + ' ' + [Days] + ') ' + [Data] + + [Only]+ ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' ' + [Days] &#xD;&#xA;)" DataMember="SR_HT_FlkSumProdReport" />
-    <Item82 Ref="103" Name="After" Expression="iif(?IsRTL,'???','After')" DataMember="SR_HT_FlkSumProdReport" />
+    <Item82 Ref="103" Name="After" Expression="iif(?IsRTL,'بعد','After')" DataMember="SR_HT_FlkSumProdReport" />
     <Item83 Ref="104" Name="Perf2" Expression="Iif(?IsRTL,&#xD;&#xA;    [Performance] + ' (' + [After] + ' ' + ToStr([DaysNO]) + ' ' + [Day] + ') ' + [Data] + ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' ' + [Day] + ' ' + [Only],&#xD;&#xA;    'Performance (After ' + ToStr([DaysNO]) + ' days) Data only ' + ToStr([SR_HT_FlkSumProdReport.LastDays]) + ' days'&#xD;&#xA;)&#xD;&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item84 Ref="105" Name="RejChicks_1" Expression="Iif(&#xA;    IsNullOrEmpty([CullsChicks_1]) Or [CullsChicks_1] = 0, 0, [CullsChicks_1]&#xA;) &#xA;+ &#xA;Iif(&#xA;    IsNullOrEmpty([DeadChicks_1]) Or [DeadChicks_1] = 0, 0, [DeadChicks_1]&#xA;)&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item85 Ref="106" Name="EstChicks_PerEgg_1" Expression="(&#xA;    Iif(IsNullOrEmpty([TotalEggSold_1]) OR [TotalEggSold_1] == 0, 0, [TotalEggSold_1])&#xA;)&#xA;*&#xA;(&#xA;    Iif(IsNullOrEmpty([CumHatchability_1]) OR [CumHatchability_1] == 0, 0, [CumHatchability_1])&#xA;)&#xA;/&#xA;100&#xA;" DataMember="SR_HT_FlkSumProdReport" />
@@ -126,7 +126,7 @@
     <Item103 Ref="124" Name="EggsToOffal_1_FromPartA" Expression="Iif(IsNullOrEmpty([ER_SendToOffal_1]) OR [ER_SendToOffal_1] == 0, 0, [ER_SendToOffal_1])&#xA;+&#xA;Iif(IsNullOrEmpty([ES_SendToOffal_1]) OR [ES_SendToOffal_1] == 0, 0, [ES_SendToOffal_1])&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item104 Ref="125" Name="TotalEggSold_1_FromPartA" Expression="[SoldHatEggs_1_FromPartA] + [SoldTableEggs_1_FromPartA] + [EggsToOffal_1_FromPartA]&#xA;" DataMember="SR_HT_FlkSumProdReport" />
     <Item105 Ref="126" Name="Female_Per" Expression="Iif([SR_HT_FlkSumProdReport.FemalesTrans] &lt;&gt; 0, &#xA;    [SR_HT_FlkSumProdReport.FemalesDepleted] / [SR_HT_FlkSumProdReport.FemalesTrans] * 100, &#xA;    0)&#xA;" DataMember="SR_HT_FlkSumProdReport" />
-    <Item106 Ref="127" Name="Week_CF" Expression="Iif(?IsRTL, '??????' , 'Weeks')" DataMember="SR_HT_FlkSumProdReport" />
+    <Item106 Ref="127" Name="Week_CF" Expression="Iif(?IsRTL, 'أسابيع' , 'Weeks')" DataMember="SR_HT_FlkSumProdReport" />
     <Item107 Ref="128" Name="calculatedField2" DataMember="SR_HT_FlkSumProdReport" />
   </CalculatedFields>
   <Bands>
@@ -2667,18 +2667,18 @@
     <Item11 Ref="1404" Component="#Ref-137" Culture="Default" Path="Visible" Data="false" />
     <Item12 Ref="1405" Component="#Ref-19" Culture="Default" Path="Description" Data="FarmCode" />
     <Item13 Ref="1406" Component="#Ref-13" Culture="Default" Path="Description" Data="Font Size" />
-    <Item14 Ref="1407" Component="#Ref-13" Culture="ar" Path="Description" Data="??? ????" />
+    <Item14 Ref="1407" Component="#Ref-13" Culture="ar" Path="Description" Data="حجم الخط" />
     <Item15 Ref="1408" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
-    <Item16 Ref="1409" Component="#Ref-9" Culture="ar" Path="Description" Data="????? ??? ???????" />
+    <Item16 Ref="1409" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء تذييل التقرير" />
     <Item17 Ref="1410" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
-    <Item18 Ref="1411" Component="#Ref-8" Culture="ar" Path="Description" Data="????? ??? ???????" />
+    <Item18 Ref="1411" Component="#Ref-8" Culture="ar" Path="Description" Data="إخفاء رأس التقرير" />
     <Item19 Ref="1412" Component="#Ref-4" Culture="Default" Path="Description" Data="IsCustomReportFooter" />
     <Item20 Ref="1413" Component="#Ref-5" Culture="Default" Path="Description" Data="IsCustomReportHeader" />
     <Item21 Ref="1414" Component="#Ref-10" Culture="Default" Path="Description" Data="IsDealType" />
     <Item22 Ref="1415" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
-    <Item23 Ref="1416" Component="#Ref-3" Culture="ar" Path="Description" Data="??? ?? ?????? ??????" />
+    <Item23 Ref="1416" Component="#Ref-3" Culture="ar" Path="Description" Data="من اليمين الى اليسار" />
     <Item24 Ref="1417" Component="#Ref-12" Culture="Default" Path="Description" Data="No of groups / page" />
-    <Item25 Ref="1418" Component="#Ref-12" Culture="ar" Path="Description" Data="??? ????????? / ????" />
+    <Item25 Ref="1418" Component="#Ref-12" Culture="ar" Path="Description" Data="عدد المجموعات / الصفحة" />
     <Item26 Ref="1419" Component="#Ref-180" Culture="Default" Path="HeightF" Data="0" />
     <Item27 Ref="1420" Component="#Ref-215" Culture="Default" Path="HeightF" Data="0" />
     <Item28 Ref="1421" Component="#Ref-257" Culture="Default" Path="HeightF" Data="20.41669" />
@@ -2696,9 +2696,9 @@
     <Item40 Ref="1433" Component="#Ref-1354" Culture="Default" Path="HeightF" Data="20" />
     <Item41 Ref="1434" Component="#Ref-262" Culture="Default" Path="HeightF" Data="124.5834" />
     <Item42 Ref="1435" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
-    <Item43 Ref="1436" Component="#Ref-6" Culture="ar" Path="Description" Data="??? ???????" />
+    <Item43 Ref="1436" Component="#Ref-6" Culture="ar" Path="Description" Data="إظهار التوقيع" />
     <Item44 Ref="1437" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
-    <Item45 Ref="1438" Component="#Ref-7" Culture="ar" Path="Description" Data="??? ??????? ?? ?? ???????" />
+    <Item45 Ref="1438" Component="#Ref-7" Culture="ar" Path="Description" Data="إظهار التوقيع في كل الصفحات" />
     <Item46 Ref="1439" Component="#Ref-212" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item47 Ref="1440" Component="#Ref-212" Culture="Default" Path="SizeF" Data="1149,20" />
     <Item48 Ref="1441" Component="#Ref-222" Culture="Default" Path="LocationFloat" Data="1.000015,0" />
@@ -2712,7 +2712,7 @@
     <Item56 Ref="1449" Component="#Ref-182" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item57 Ref="1450" Component="#Ref-182" Culture="Default" Path="SizeF" Data="1149,20" />
     <Item58 Ref="1451" Component="#Ref-1" Culture="Default" Path="DisplayName" Data="SR_FC_FM_StockMovement" />
-    <Item59 Ref="1452" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="???? ????? ??????" />
+    <Item59 Ref="1452" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="ملخص إنتاج القطيع" />
     <Item60 Ref="1453" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item61 Ref="1454" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 7, 20, 20.00001" />
     <Item62 Ref="1455" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />
@@ -2746,7 +2746,7 @@
     <Item90 Ref="1483" Component="#Ref-1214" Culture="Default" Path="LocationFloat" Data="248.0701,0.07616679" />
     <Item91 Ref="1484" Component="#Ref-1214" Culture="Default" Path="SizeF" Data="159.9318,23" />
     <Item92 Ref="1485" Component="#Ref-1214" Culture="Default" Path="Text" Data="Performance Summary" />
-    <Item93 Ref="1486" Component="#Ref-1214" Culture="ar" Path="Text" Data="???? ??????" />
+    <Item93 Ref="1486" Component="#Ref-1214" Culture="ar" Path="Text" Data="ملخص أداء" />
     <Item94 Ref="1487" Component="#Ref-1212" Culture="Default" Path="LocationFloat" Data="408.002,0.07616679" />
     <Item95 Ref="1488" Component="#Ref-1212" Culture="Default" Path="SizeF" Data="56.19998,23" />
     <Item96 Ref="1489" Component="#Ref-1212" Culture="Default" Path="Text" Data="(A + B)" />
@@ -2957,7 +2957,7 @@
     <Item301 Ref="1694" Component="#Ref-1191" Culture="Default" Path="LocationFloat" Data="616.698,386.588" />
     <Item302 Ref="1695" Component="#Ref-1191" Culture="Default" Path="SizeF" Data="522.5938,20" />
     <Item303 Ref="1696" Component="#Ref-332" Culture="Default" Path="Text" Data="Farm #" />
-    <Item304 Ref="1697" Component="#Ref-332" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item304 Ref="1697" Component="#Ref-332" Culture="ar" Path="Text" Data="مزرعة" />
     <Item305 Ref="1698" Component="#Ref-332" Culture="Default" Path="Weight" Data="1" />
     <Item306 Ref="1699" Component="#Ref-144" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item307 Ref="1700" Component="#Ref-144" Culture="Default" Path="Text" Data="tdAccountName_From" />
@@ -2968,7 +2968,7 @@
     <Item312 Ref="1705" Component="#Ref-484" Culture="Default" Path="Text" Data="" />
     <Item313 Ref="1706" Component="#Ref-484" Culture="Default" Path="Weight" Data="1.4988525390625" />
     <Item314 Ref="1707" Component="#Ref-470" Culture="Default" Path="Text" Data="1 - Cum.Chicks (Actual)   HH" />
-    <Item315 Ref="1708" Component="#Ref-470" Culture="ar" Path="Text" Data="\1- ?????? ???????? ??????? (????? ??????)" />
+    <Item315 Ref="1708" Component="#Ref-470" Culture="ar" Path="Text" Data="1- تراكمي كتاكيت / أم مسكنة" />
     <Item316 Ref="1709" Component="#Ref-470" Culture="Default" Path="Weight" Data="3.7708331298828126" />
     <Item317 Ref="1710" Component="#Ref-425" Culture="Default" Path="Text" Data="" />
     <Item318 Ref="1711" Component="#Ref-425" Culture="Default" Path="Weight" Data="1.4988537597656251" />
@@ -2976,7 +2976,7 @@
     <Item320 Ref="1713" Component="#Ref-472" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item321 Ref="1714" Component="#Ref-472" Culture="Default" Path="Weight" Data="1.4988537597656251" />
     <Item322 Ref="1715" Component="#Ref-456" Culture="Default" Path="Text" Data="Cum.Hatchability&#x9;&#x9;&#x9;&#x9;&#x9;%" />
-    <Item323 Ref="1716" Component="#Ref-456" Culture="ar" Path="Text" Data="???? ????? ????????" />
+    <Item323 Ref="1716" Component="#Ref-456" Culture="ar" Path="Text" Data="تراكمي فقس %" />
     <Item324 Ref="1717" Component="#Ref-456" Culture="Default" Path="Weight" Data="3.7708343505859379" />
     <Item325 Ref="1718" Component="#Ref-414" Culture="Default" Path="Text" Data="" />
     <Item326 Ref="1719" Component="#Ref-414" Culture="Default" Path="Weight" Data="3.7708325195312504" />
@@ -3016,7 +3016,7 @@
     <Item360 Ref="1753" Component="#Ref-377" Culture="Default" Path="Text" Data="" />
     <Item361 Ref="1754" Component="#Ref-377" Culture="Default" Path="Weight" Data="1.4988549804687497" />
     <Item362 Ref="1755" Component="#Ref-363" Culture="Default" Path="Text" Data="3 - Estimated Chicks (as per Stock of H.E) HH" />
-    <Item363 Ref="1756" Component="#Ref-363" Culture="ar" Path="Text" Data="2- ???????? ???????? ??? ????? ??????" />
+    <Item363 Ref="1756" Component="#Ref-363" Culture="ar" Path="Text" Data="2- متوقع كتاكيت (بيض مباع)" />
     <Item364 Ref="1757" Component="#Ref-363" Culture="Default" Path="Weight" Data="3.7708325195312495" />
     <Item365 Ref="1758" Component="#Ref-498" Culture="Default" Path="Text" Data="xrTableCell123" />
     <Item366 Ref="1759" Component="#Ref-498" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -3025,7 +3025,7 @@
     <Item369 Ref="1762" Component="#Ref-365" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item370 Ref="1763" Component="#Ref-365" Culture="Default" Path="Weight" Data="1.4988525390625" />
     <Item371 Ref="1764" Component="#Ref-349" Culture="Default" Path="Text" Data="Cum.Chicks    HH" />
-    <Item372 Ref="1765" Component="#Ref-349" Culture="ar" Path="Text" Data="?????? ???????? (????? ??????)" />
+    <Item372 Ref="1765" Component="#Ref-349" Culture="ar" Path="Text" Data="كتاكيت متوقعة (بيض مباع) / أم مسكنة" />
     <Item373 Ref="1766" Component="#Ref-349" Culture="Default" Path="Weight" Data="3.7708325195312504" />
     <Item374 Ref="1767" Component="#Ref-486" Culture="Default" Path="Weight" Data="1.0232238896947667" />
     <Item375 Ref="1768" Component="#Ref-351" Culture="Default" Path="Text" Data="xrTableCell127" />
@@ -3048,7 +3048,7 @@
     <Item392 Ref="1785" Component="#Ref-370" Culture="Default" Path="Weight" Data="1.0232214482885227" />
     <Item393 Ref="1786" Component="#Ref-344" Culture="Default" Path="Weight" Data="1.0232226689916415" />
     <Item394 Ref="1787" Component="#Ref-304" Culture="Default" Path="Text" Data="POL" />
-    <Item395 Ref="1788" Component="#Ref-304" Culture="ar" Path="Text" Data="????? ??? ????? (POL)" />
+    <Item395 Ref="1788" Component="#Ref-304" Culture="ar" Path="Text" Data="السلالة (POL)" />
     <Item396 Ref="1789" Component="#Ref-304" Culture="Default" Path="Weight" Data="1.6866298468472116" />
     <Item397 Ref="1790" Component="#Ref-356" Culture="Default" Path="Text" Data="xrTableCell140" />
     <Item398 Ref="1791" Component="#Ref-356" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -3056,16 +3056,16 @@
     <Item400 Ref="1793" Component="#Ref-797" Culture="Default" Path="Weight" Data="3.2715189985655013" />
     <Item401 Ref="1794" Component="#Ref-799" Culture="Default" Path="Weight" Data="2.9367722350380858" />
     <Item402 Ref="1795" Component="#Ref-1071" Culture="Default" Path="Text" Data="* Prv.Calc" />
-    <Item403 Ref="1796" Component="#Ref-1071" Culture="ar" Path="Text" Data="?????? ??????" />
+    <Item403 Ref="1796" Component="#Ref-1071" Culture="ar" Path="Text" Data="محسوب مسبقاً" />
     <Item404 Ref="1797" Component="#Ref-1071" Culture="Default" Path="Weight" Data="1.0676124953545236" />
     <Item405 Ref="1798" Component="#Ref-808" Culture="Default" Path="Text" Data="Cum Eggs received from parent farm" />
-    <Item406 Ref="1799" Component="#Ref-808" Culture="ar" Path="Text" Data="????? ??????? ?? ?????? ????" />
+    <Item406 Ref="1799" Component="#Ref-808" Culture="ar" Path="Text" Data="تراكمي بيض مستلم من مزرعة المهات" />
     <Item407 Ref="1800" Component="#Ref-808" Culture="Default" Path="Weight" Data="3.930016784667969" />
     <Item408 Ref="1801" Component="#Ref-810" Culture="Default" Path="Text" Data="xrTableCell36" />
     <Item409 Ref="1802" Component="#Ref-810" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item410 Ref="1803" Component="#Ref-810" Culture="Default" Path="Weight" Data="1.0282577540116009" />
     <Item411 Ref="1804" Component="#Ref-819" Culture="Default" Path="Text" Data="Rejected Eggs" />
-    <Item412 Ref="1805" Component="#Ref-819" Culture="ar" Path="Text" Data="????? ???????" />
+    <Item412 Ref="1805" Component="#Ref-819" Culture="ar" Path="Text" Data="مرفوض" />
     <Item413 Ref="1806" Component="#Ref-819" Culture="Default" Path="Weight" Data="3" />
     <Item414 Ref="1807" Component="#Ref-824" Culture="Default" Path="Text" Data="Deformed" />
     <Item415 Ref="1808" Component="#Ref-824" Culture="ar" Path="Text" Data="مشوه" />
@@ -3089,23 +3089,23 @@
     <Item433 Ref="1826" Component="#Ref-850" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item434 Ref="1827" Component="#Ref-850" Culture="Default" Path="Weight" Data="1.0199792639872616" />
     <Item435 Ref="1828" Component="#Ref-860" Culture="Default" Path="Text" Data="Other" />
-    <Item436 Ref="1829" Component="#Ref-860" Culture="ar" Path="Text" Data="????? ????" />
+    <Item436 Ref="1829" Component="#Ref-860" Culture="ar" Path="Text" Data="أخرى" />
     <Item437 Ref="1830" Component="#Ref-860" Culture="Default" Path="Weight" Data="1.7808280803072665" />
     <Item438 Ref="1831" Component="#Ref-862" Culture="Default" Path="Text" Data="xrTableCell45" />
     <Item439 Ref="1832" Component="#Ref-862" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item440 Ref="1833" Component="#Ref-862" Culture="Default" Path="Weight" Data="1.0199792639873126" />
     <Item441 Ref="1834" Component="#Ref-872" Culture="Default" Path="Text" Data="Total Rejected" />
-    <Item442 Ref="1835" Component="#Ref-872" Culture="ar" Path="Text" Data="?????? ????? ???????" />
+    <Item442 Ref="1835" Component="#Ref-872" Culture="ar" Path="Text" Data="إجمالي مرفوض" />
     <Item443 Ref="1836" Component="#Ref-872" Culture="Default" Path="Weight" Data="3.9300171291446584" />
     <Item444 Ref="1837" Component="#Ref-874" Culture="Default" Path="Text" Data="xrTableCell47" />
     <Item445 Ref="1838" Component="#Ref-874" Culture="Default" Path="Weight" Data="1.0199787460880403" />
     <Item446 Ref="1839" Component="#Ref-884" Culture="Default" Path="Text" Data="Balance Of Hatching Eggs" />
-    <Item447 Ref="1840" Component="#Ref-884" Culture="ar" Path="Text" Data="???? ??? ??????? ???????" />
+    <Item447 Ref="1840" Component="#Ref-884" Culture="ar" Path="Text" Data="رصيد بيض التفريخ" />
     <Item448 Ref="1841" Component="#Ref-884" Culture="Default" Path="Weight" Data="2.3580097149855819" />
     <Item449 Ref="1842" Component="#Ref-886" Culture="Default" Path="Text" Data="xrTableCell49" />
     <Item450 Ref="1843" Component="#Ref-886" Culture="Default" Path="Weight" Data="0.611987356052823" />
     <Item451 Ref="1844" Component="#Ref-896" Culture="Default" Path="Text" Data="Eggs Setted in Hatcheries" />
-    <Item452 Ref="1845" Component="#Ref-896" Culture="ar" Path="Text" Data="????? ??????? ?? ??????? ???????" />
+    <Item452 Ref="1845" Component="#Ref-896" Culture="ar" Path="Text" Data="بيض مودع" />
     <Item453 Ref="1846" Component="#Ref-896" Culture="Default" Path="Weight" Data="2.3580097149855819" />
     <Item454 Ref="1847" Component="#Ref-152" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item455 Ref="1848" Component="#Ref-152" Culture="Default" Path="Text" Data="xrTableCell43" />
@@ -3113,53 +3113,53 @@
     <Item457 Ref="1850" Component="#Ref-898" Culture="Default" Path="Text" Data="xrTableCell52" />
     <Item458 Ref="1851" Component="#Ref-898" Culture="Default" Path="Weight" Data="0.611987356052823" />
     <Item459 Ref="1852" Component="#Ref-910" Culture="Default" Path="Text" Data="Cum. Chicks(as per egg set)" />
-    <Item460 Ref="1853" Component="#Ref-910" Culture="ar" Path="Text" Data="?????? ???????? (??? ????? ???????)" />
+    <Item460 Ref="1853" Component="#Ref-910" Culture="ar" Path="Text" Data="تراكمي كتاكيت (بيض مودع)" />
     <Item461 Ref="1854" Component="#Ref-910" Culture="Default" Path="Weight" Data="3.7298886243409668" />
     <Item462 Ref="1855" Component="#Ref-912" Culture="Default" Path="Text" Data="xrTableCell55" />
     <Item463 Ref="1856" Component="#Ref-912" Culture="Default" Path="Weight" Data="0.96804258824665179" />
     <Item464 Ref="1857" Component="#Ref-925" Culture="Default" Path="Text" Data="Cum.Hatchability&#x9;     %" />
-    <Item465 Ref="1858" Component="#Ref-925" Culture="ar" Path="Text" Data="???? ????? ????????" />
+    <Item465 Ref="1858" Component="#Ref-925" Culture="ar" Path="Text" Data="تراكمي فقس %" />
     <Item466 Ref="1859" Component="#Ref-925" Culture="Default" Path="Weight" Data="2.3580105145213159" />
     <Item467 Ref="1860" Component="#Ref-927" Culture="Default" Path="Text" Data="xrTableCell58" />
     <Item468 Ref="1861" Component="#Ref-927" Culture="Default" Path="Weight" Data="0.61198765819320688" />
     <Item469 Ref="1862" Component="#Ref-940" Culture="Default" Path="Text" Data="Chicks Rejected " />
-    <Item470 Ref="1863" Component="#Ref-940" Culture="ar" Path="Text" Data="???????? ????????" />
+    <Item470 Ref="1863" Component="#Ref-940" Culture="ar" Path="Text" Data="كتاكيت فرزة" />
     <Item471 Ref="1864" Component="#Ref-940" Culture="Default" Path="Weight" Data="3.9300148403260931" />
     <Item472 Ref="1865" Component="#Ref-942" Culture="Default" Path="Text" Data="xrTableCell61" />
     <Item473 Ref="1866" Component="#Ref-942" Culture="Default" Path="Weight" Data="1.0199790512640092" />
     <Item474 Ref="1867" Component="#Ref-955" Culture="Default" Path="Text" Data="Cum A Grade Chicks" />
-    <Item475 Ref="1868" Component="#Ref-955" Culture="ar" Path="Text" Data="?????? ?????? ?????? ??????" />
+    <Item475 Ref="1868" Component="#Ref-955" Culture="ar" Path="Text" Data="تراكمي كتاكيت درجة (أ)" />
     <Item476 Ref="1869" Component="#Ref-955" Culture="Default" Path="Weight" Data="2.3580112512278339" />
     <Item477 Ref="1870" Component="#Ref-957" Culture="Default" Path="Text" Data="xrTableCell64" />
     <Item478 Ref="1871" Component="#Ref-957" Culture="Default" Path="Weight" Data="0.61198782863943679" />
     <Item479 Ref="1872" Component="#Ref-969" Culture="Default" Path="Text" Data="Sold Eggs" />
-    <Item480 Ref="1873" Component="#Ref-969" Culture="ar" Path="Text" Data="????? ??????" />
+    <Item480 Ref="1873" Component="#Ref-969" Culture="ar" Path="Text" Data="بيض مباع" />
     <Item481 Ref="1874" Component="#Ref-969" Culture="Default" Path="Weight" Data="1" />
     <Item482 Ref="1875" Component="#Ref-156" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item483 Ref="1876" Component="#Ref-156" Culture="Default" Path="Text" Data="xrTableCell44" />
     <Item484 Ref="1877" Component="#Ref-156" Culture="Default" Path="Weight" Data="2.4546151655719539" />
     <Item485 Ref="1878" Component="#Ref-974" Culture="Default" Path="Text" Data="Hatching Eggs" />
-    <Item486 Ref="1879" Component="#Ref-974" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item486 Ref="1879" Component="#Ref-974" Culture="ar" Path="Text" Data="بيض صالح للتفريخ" />
     <Item487 Ref="1880" Component="#Ref-974" Culture="Default" Path="Weight" Data="2.1741049194335935" />
     <Item488 Ref="1881" Component="#Ref-976" Culture="Default" Path="Text" Data="xrTableCell57" />
     <Item489 Ref="1882" Component="#Ref-976" Culture="Default" Path="Weight" Data="1.0199789428710935" />
     <Item490 Ref="1883" Component="#Ref-989" Culture="Default" Path="Text" Data="Table Eggs" />
-    <Item491 Ref="1884" Component="#Ref-989" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item491 Ref="1884" Component="#Ref-989" Culture="ar" Path="Text" Data="بيض مائدة" />
     <Item492 Ref="1885" Component="#Ref-989" Culture="Default" Path="Weight" Data="2.1741061401367188" />
     <Item493 Ref="1886" Component="#Ref-991" Culture="Default" Path="Text" Data="xrTableCell63" />
     <Item494 Ref="1887" Component="#Ref-991" Culture="Default" Path="Weight" Data="1.0199783325195309" />
     <Item495 Ref="1888" Component="#Ref-1004" Culture="Default" Path="Text" Data="Eggs Sent To Offal" />
-    <Item496 Ref="1889" Component="#Ref-1004" Culture="ar" Path="Text" Data="????? ?????? ????????" />
+    <Item496 Ref="1889" Component="#Ref-1004" Culture="ar" Path="Text" Data="بيض مرسل للمعدم" />
     <Item497 Ref="1890" Component="#Ref-1004" Culture="Default" Path="Weight" Data="2.1741055297851561" />
     <Item498 Ref="1891" Component="#Ref-1006" Culture="Default" Path="Text" Data="xrTableCell65" />
     <Item499 Ref="1892" Component="#Ref-1006" Culture="Default" Path="Weight" Data="1.0199789428710937" />
     <Item500 Ref="1893" Component="#Ref-1019" Culture="Default" Path="Text" Data="Total Egg Sold" />
-    <Item501 Ref="1894" Component="#Ref-1019" Culture="ar" Path="Text" Data="?????? ????? ??????" />
+    <Item501 Ref="1894" Component="#Ref-1019" Culture="ar" Path="Text" Data="إجمالي بيض مباع" />
     <Item502 Ref="1895" Component="#Ref-1019" Culture="Default" Path="Weight" Data="3.9300151455019088" />
     <Item503 Ref="1896" Component="#Ref-1021" Culture="Default" Path="Text" Data="xrTableCell68" />
     <Item504 Ref="1897" Component="#Ref-1021" Culture="Default" Path="Weight" Data="1.0199775253849486" />
     <Item505 Ref="1898" Component="#Ref-1034" Culture="Default" Path="Text" Data="Estimated Chicks (as per eggs sold)" />
-    <Item506 Ref="1899" Component="#Ref-1034" Culture="ar" Path="Text" Data="???????? ???????? (??? ????? ??????)" />
+    <Item506 Ref="1899" Component="#Ref-1034" Culture="ar" Path="Text" Data="كتاكيت متوقعة (بيض مباع)" />
     <Item507 Ref="1900" Component="#Ref-1034" Culture="Default" Path="Weight" Data="2.3580105416325194" />
     <Item508 Ref="1901" Component="#Ref-1036" Culture="Default" Path="Text" Data="xrTableCell71" />
     <Item509 Ref="1902" Component="#Ref-1036" Culture="Default" Path="Weight" Data="0.61198759812097858" />
@@ -3170,17 +3170,17 @@
     <Item514 Ref="1907" Component="#Ref-278" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item515 Ref="1908" Component="#Ref-278" Culture="Default" Path="Weight" Data="0.96875" />
     <Item516 Ref="1909" Component="#Ref-1046" Culture="Default" Path="Text" Data="Cum.Chicks(Actual + Estimated)" />
-    <Item517 Ref="1910" Component="#Ref-1046" Culture="ar" Path="Text" Data="?????? ???????? (?????? + ???????)" />
+    <Item517 Ref="1910" Component="#Ref-1046" Culture="ar" Path="Text" Data="تراكمي كتاكيت (فعلي + متوقع)" />
     <Item518 Ref="1911" Component="#Ref-1046" Culture="Default" Path="Weight" Data="2.3580099851348097" />
     <Item519 Ref="1912" Component="#Ref-1048" Culture="Default" Path="Text" Data="xrTableCell83" />
     <Item520 Ref="1913" Component="#Ref-1048" Culture="Default" Path="Weight" Data="0.61198597214876749" />
     <Item521 Ref="1914" Component="#Ref-1058" Culture="Default" Path="Text" Data="Cum.Received Eggs  HH" />
-    <Item522 Ref="1915" Component="#Ref-1058" Culture="ar" Path="Text" Data="?????? ????? ??????? (????? ??????)" />
+    <Item522 Ref="1915" Component="#Ref-1058" Culture="ar" Path="Text" Data="إجمالي بيض مستلم / أم مسكنة" />
     <Item523 Ref="1916" Component="#Ref-1058" Culture="Default" Path="Weight" Data="2.7538555908203124" />
     <Item524 Ref="1917" Component="#Ref-1060" Culture="Default" Path="Text" Data="xrTableCell73" />
     <Item525 Ref="1918" Component="#Ref-1060" Culture="Default" Path="Weight" Data="2.4720782470703124" />
     <Item526 Ref="1919" Component="#Ref-290" Culture="Default" Path="Text" Data="Depletion Date" />
-    <Item527 Ref="1920" Component="#Ref-290" Culture="ar" Path="Text" Data="????? ?????????" />
+    <Item527 Ref="1920" Component="#Ref-290" Culture="ar" Path="Text" Data="تاريخ انهاء القطيع" />
     <Item528 Ref="1921" Component="#Ref-290" Culture="Default" Path="Weight" Data="1.65625" />
     <Item529 Ref="1922" Component="#Ref-814" Culture="Default" Path="Text" Data="" />
     <Item530 Ref="1923" Component="#Ref-814" Culture="Default" Path="Weight" Data="1.0587030039503391" />
@@ -3207,13 +3207,13 @@
     <Item551 Ref="1944" Component="#Ref-867" Culture="Default" Path="Text" Data="" />
     <Item552 Ref="1945" Component="#Ref-867" Culture="Default" Path="Weight" Data="1.0669812154530405" />
     <Item553 Ref="1946" Component="#Ref-1100" Culture="Default" Path="Text" Data="Cum Rejected Eggs      HH" />
-    <Item554 Ref="1947" Component="#Ref-1100" Culture="ar" Path="Text" Data="?????? ????? ??????? (????? ??????)" />
+    <Item554 Ref="1947" Component="#Ref-1100" Culture="ar" Path="Text" Data="تراكمي بيض مرفوض / أم مسكنة" />
     <Item555 Ref="1948" Component="#Ref-1100" Culture="Default" Path="Weight" Data="3.2715181786461622" />
     <Item556 Ref="1949" Component="#Ref-1102" Culture="Default" Path="Weight" Data="2.9367742341058305" />
     <Item557 Ref="1950" Component="#Ref-879" Culture="Default" Path="Text" Data="" />
     <Item558 Ref="1951" Component="#Ref-879" Culture="Default" Path="Weight" Data="1.0669822527465413" />
     <Item559 Ref="1952" Component="#Ref-1110" Culture="Default" Path="Text" Data="Cum Hatching Eggs   HH" />
-    <Item560 Ref="1953" Component="#Ref-1110" Culture="ar" Path="Text" Data="?????? ??? ??????? ??????? (????? ??????)" />
+    <Item560 Ref="1953" Component="#Ref-1110" Culture="ar" Path="Text" Data="تراكمي نهائي بيض تفريخ / أم مسكنة" />
     <Item561 Ref="1954" Component="#Ref-1110" Culture="Default" Path="Weight" Data="2.7538555908203124" />
     <Item562 Ref="1955" Component="#Ref-1112" Culture="Default" Path="Text" Data="xrTableCell98" />
     <Item563 Ref="1956" Component="#Ref-1112" Culture="Default" Path="Weight" Data="2.4720782470703129" />
@@ -3227,7 +3227,7 @@
     <Item571 Ref="1964" Component="#Ref-903" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item572 Ref="1965" Component="#Ref-903" Culture="Default" Path="Weight" Data="0.64018936505255231" />
     <Item573 Ref="1966" Component="#Ref-1127" Culture="Default" Path="Text" Data="1 - Cum.Chicks (Actual)   HH" />
-    <Item574 Ref="1967" Component="#Ref-1127" Culture="ar" Path="Text" Data="1- ?????? ???????? ??????? (????? ??????)" />
+    <Item574 Ref="1967" Component="#Ref-1127" Culture="ar" Path="Text" Data="1- تراكمي كتاكيت / أم مسكنة" />
     <Item575 Ref="1968" Component="#Ref-1127" Culture="Default" Path="Weight" Data="2.7538555908203124" />
     <Item576 Ref="1969" Component="#Ref-1129" Culture="Default" Path="Text" Data="xrTableCell104" />
     <Item577 Ref="1970" Component="#Ref-1129" Culture="Default" Path="Weight" Data="2.4720782470703129" />
@@ -3238,17 +3238,17 @@
     <Item582 Ref="1975" Component="#Ref-932" Culture="Default" Path="Text" Data="" />
     <Item583 Ref="1976" Component="#Ref-932" Culture="Default" Path="Weight" Data="0.64018936200916465" />
     <Item584 Ref="1977" Component="#Ref-1145" Culture="Default" Path="Text" Data="Cum Chicks Rejected   HH" />
-    <Item585 Ref="1978" Component="#Ref-1145" Culture="ar" Path="Text" Data="?????? ???????? ???????? (????? ??????)" />
+    <Item585 Ref="1978" Component="#Ref-1145" Culture="ar" Path="Text" Data="تراكمي كتاكيت فرزة / أم مسكنة" />
     <Item586 Ref="1979" Component="#Ref-1145" Culture="Default" Path="Weight" Data="2.7538555908203124" />
     <Item587 Ref="1980" Component="#Ref-1147" Culture="Default" Path="Text" Data="xrTableCell85" />
     <Item588 Ref="1981" Component="#Ref-1147" Culture="Default" Path="Weight" Data="2.4720803567931893" />
     <Item589 Ref="1982" Component="#Ref-283" Culture="Default" Path="Text" Data="No. Of Females Transferred" />
-    <Item590 Ref="1983" Component="#Ref-283" Culture="ar" Path="Text" Data="??? ?????? ????????" />
+    <Item590 Ref="1983" Component="#Ref-283" Culture="ar" Path="Text" Data="عدد إناث نقلت" />
     <Item591 Ref="1984" Component="#Ref-283" Culture="Default" Path="Weight" Data="1.65625" />
     <Item592 Ref="1985" Component="#Ref-947" Culture="Default" Path="Text" Data="" />
     <Item593 Ref="1986" Component="#Ref-947" Culture="Default" Path="Weight" Data="1.0669817949829319" />
     <Item594 Ref="1987" Component="#Ref-1155" Culture="Default" Path="Text" Data="Cum A grade Chicks(Actual)  HH                                                          " />
-    <Item595 Ref="1988" Component="#Ref-1155" Culture="ar" Path="Text" Data="?????? ?????? ?????? ?????? (?????? - ????? ??????)" />
+    <Item595 Ref="1988" Component="#Ref-1155" Culture="ar" Path="Text" Data="تراكمي كتاكيت درجة (أ) / أم مسكنة" />
     <Item596 Ref="1989" Component="#Ref-1155" Culture="Default" Path="Weight" Data="2.7538555908203124" />
     <Item597 Ref="1990" Component="#Ref-1157" Culture="Default" Path="Text" Data="xrTableCell94" />
     <Item598 Ref="1991" Component="#Ref-1157" Culture="Default" Path="Weight" Data="2.4720803567931893" />
@@ -3275,7 +3275,7 @@
     <Item619 Ref="2012" Component="#Ref-1026" Culture="Default" Path="Text" Data="" />
     <Item620 Ref="2013" Component="#Ref-1026" Culture="Default" Path="Weight" Data="1.0669817949829945" />
     <Item621 Ref="2014" Component="#Ref-1193" Culture="Default" Path="Text" Data="2 - Estimated Chicks (as per egg sold)" />
-    <Item622 Ref="2015" Component="#Ref-1193" Culture="ar" Path="Text" Data="2- ???????? ???????? ??? ????? ??????&#x9;HH" />
+    <Item622 Ref="2015" Component="#Ref-1193" Culture="ar" Path="Text" Data="2- كتاكيت متوقعة (بيض مباع) / أم مسكنة&#x9;HH" />
     <Item623 Ref="2016" Component="#Ref-1193" Culture="Default" Path="Weight" Data="2.7538555908203124" />
     <Item624 Ref="2017" Component="#Ref-1195" Culture="Default" Path="Text" Data="xrTableCell118" />
     <Item625 Ref="2018" Component="#Ref-1195" Culture="Default" Path="Weight" Data="2.4720813138752233" />
@@ -3285,44 +3285,44 @@
     <Item629 Ref="2022" Component="#Ref-791" Culture="ar" Path="Text" Data="القياسي" />
     <Item630 Ref="2023" Component="#Ref-791" Culture="Default" Path="Weight" Data="1.0232226561122517" />
     <Item631 Ref="2024" Component="#Ref-1203" Culture="Default" Path="Text" Data="Cum.Chicks    HH" />
-    <Item632 Ref="2025" Component="#Ref-1203" Culture="ar" Path="Text" Data="?????? ???????? (????? ??????)" />
+    <Item632 Ref="2025" Component="#Ref-1203" Culture="ar" Path="Text" Data="كتاكيت متوقعة (بيض مباع) / أم مسكنة" />
     <Item633 Ref="2026" Component="#Ref-1203" Culture="Default" Path="Weight" Data="2.7538555908203128" />
     <Item634 Ref="2027" Component="#Ref-1205" Culture="Default" Path="Text" Data="xrTableCell127" />
     <Item635 Ref="2028" Component="#Ref-1205" Culture="Default" Path="Weight" Data="2.472078247070312" />
     <Item636 Ref="2029" Component="#Ref-273" Culture="Default" Path="Text" Data="No. Of Females Depleted" />
-    <Item637 Ref="2030" Component="#Ref-273" Culture="ar" Path="Text" Data="??? ?????? ?????????" />
+    <Item637 Ref="2030" Component="#Ref-273" Culture="ar" Path="Text" Data="إناث هالكة" />
     <Item638 Ref="2031" Component="#Ref-273" Culture="Default" Path="Weight" Data="1.65625" />
     <Item639 Ref="2032" Component="#Ref-1053" Culture="Default" Path="Text" Data="" />
     <Item640 Ref="2033" Component="#Ref-1053" Culture="Default" Path="Weight" Data="0.64019156592056592" />
     <Item641 Ref="2034" Component="#Ref-1278" Culture="Default" Path="Text" Data="Cum Total Eggs&#x9;HH" />
-    <Item642 Ref="2035" Component="#Ref-1278" Culture="ar" Path="Text" Data="?????? ????? (????? ??????)" />
+    <Item642 Ref="2035" Component="#Ref-1278" Culture="ar" Path="Text" Data="كتاكيت متوقعة (بيض مباع) / أم مسكنة" />
     <Item643 Ref="2036" Component="#Ref-1278" Culture="Default" Path="Weight" Data="2.4307009631042544" />
     <Item644 Ref="2037" Component="#Ref-1280" Culture="Default" Path="Text" Data="xrTableCell252" />
     <Item645 Ref="2038" Component="#Ref-1280" Culture="Default" Path="Weight" Data="1.0437477856519182" />
     <Item646 Ref="2039" Component="#Ref-1285" Culture="Default" Path="Text" Data="Cum Total Chicks HH" />
-    <Item647 Ref="2040" Component="#Ref-1285" Culture="ar" Path="Text" Data="?????? ???????? (????? ??????)" />
+    <Item647 Ref="2040" Component="#Ref-1285" Culture="ar" Path="Text" Data="تراكمي كتاكيت / أم مسكنة" />
     <Item648 Ref="2041" Component="#Ref-1285" Culture="Default" Path="Weight" Data="2.1754709018576475" />
     <Item649 Ref="2042" Component="#Ref-1256" Culture="Default" Path="Text" Data="Rejected Eggs        HH" />
-    <Item650 Ref="2043" Component="#Ref-1256" Culture="ar" Path="Text" Data="????? ??????? (????? ??????)" />
+    <Item650 Ref="2043" Component="#Ref-1256" Culture="ar" Path="Text" Data="المستبعد" />
     <Item651 Ref="2044" Component="#Ref-1256" Culture="Default" Path="Weight" Data="2.4154980179251297" />
     <Item652 Ref="2045" Component="#Ref-1258" Culture="Default" Path="Text" Data="xrTableCell255" />
     <Item653 Ref="2046" Component="#Ref-1258" Culture="Default" Path="Weight" Data="1.0372194657216911" />
     <Item654 Ref="2047" Component="#Ref-1263" Culture="Default" Path="Text" Data="Rejected Chicks HH" />
-    <Item655 Ref="2048" Component="#Ref-1263" Culture="ar" Path="Text" Data="???????? ???????? (????? ??????)" />
+    <Item655 Ref="2048" Component="#Ref-1263" Culture="ar" Path="Text" Data="كتاكيت فرزة / أم مسكنة" />
     <Item656 Ref="2049" Component="#Ref-1263" Culture="Default" Path="Weight" Data="2.1618653243667043" />
     <Item657 Ref="2050" Component="#Ref-1234" Culture="Default" Path="Text" Data="Cum Hatching Eggs&#x9;      HH" />
-    <Item658 Ref="2051" Component="#Ref-1234" Culture="ar" Path="Text" Data="?????? ??? ??????? (????? ??????)" />
+    <Item658 Ref="2051" Component="#Ref-1234" Culture="ar" Path="Text" Data="تراكمي كتاكيت / أم مسكنة" />
     <Item659 Ref="2052" Component="#Ref-1234" Culture="Default" Path="Weight" Data="2.4154984770255017" />
     <Item660 Ref="2053" Component="#Ref-1236" Culture="Default" Path="Text" Data="xrTableCell258" />
     <Item661 Ref="2054" Component="#Ref-1236" Culture="Default" Path="Weight" Data="1.0372189314132905" />
     <Item662 Ref="2055" Component="#Ref-1241" Culture="Default" Path="Text" Data="Cum A Grade Chicks HH" />
-    <Item663 Ref="2056" Component="#Ref-1241" Culture="ar" Path="Text" Data="?????? ?????? ?????? ?????? (????? ??????)" />
+    <Item663 Ref="2056" Component="#Ref-1241" Culture="ar" Path="Text" Data="تراكمي كتاكيت درجة (أ) / أم مسكنة" />
     <Item664 Ref="2057" Component="#Ref-1241" Culture="Default" Path="Weight" Data="2.1618659336323245" />
     <Item665 Ref="2058" Component="#Ref-275" Culture="Default" Path="Text" Data="xrTableCell26" />
     <Item666 Ref="2059" Component="#Ref-275" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item667 Ref="2060" Component="#Ref-275" Culture="Default" Path="Weight" Data="0.96875" />
     <Item668 Ref="2061" Component="#Ref-1224" Culture="Default" Path="Text" Data="Cum.Total Hatchability&#x9;&#x9;%" />
-    <Item669 Ref="2062" Component="#Ref-1224" Culture="ar" Path="Text" Data="???? ????? ????????" />
+    <Item669 Ref="2062" Component="#Ref-1224" Culture="ar" Path="Text" Data="تراكمي فقس %" />
     <Item670 Ref="2063" Component="#Ref-1224" Culture="Default" Path="Weight" Data="2.415497841009421" />
     <Item671 Ref="2064" Component="#Ref-1226" Culture="Default" Path="Text" Data="xrTableCell261" />
     <Item672 Ref="2065" Component="#Ref-1226" Culture="Default" Path="Weight" Data="1.0372188598539553" />
@@ -3348,19 +3348,19 @@
     <Item692 Ref="2085" Component="#Ref-1218" Culture="ar" Path="Text" Data="فعلي" />
     <Item693 Ref="2086" Component="#Ref-1218" Culture="Default" Path="Weight" Data="1.1934296590820221" />
     <Item694 Ref="2087" Component="#Ref-772" Culture="Default" Path="Text" Data="Cum Eggs received from parent farm" />
-    <Item695 Ref="2088" Component="#Ref-772" Culture="ar" Path="Text" Data="????? ??????? ?? ?????? ????" />
+    <Item695 Ref="2088" Component="#Ref-772" Culture="ar" Path="Text" Data="قياسي تراكمي بيض مستلم من مزرعة المهات" />
     <Item696 Ref="2089" Component="#Ref-772" Culture="Default" Path="Weight" Data="3.5244534549293998" />
     <Item697 Ref="2090" Component="#Ref-1220" Culture="Default" Path="Text" Data="Estimated" />
     <Item698 Ref="2091" Component="#Ref-1220" Culture="ar" Path="Text" Data="متوقع" />
     <Item699 Ref="2092" Component="#Ref-1220" Culture="Default" Path="Weight" Data="1.1358965965537358" />
     <Item700 Ref="2093" Component="#Ref-266" Culture="Default" Path="Text" Data="Depletion Flock Age" />
-    <Item701 Ref="2094" Component="#Ref-266" Culture="ar" Path="Text" Data="??? ?????? ??? ?????????" />
+    <Item701 Ref="2094" Component="#Ref-266" Culture="ar" Path="Text" Data="عمر القطيع عند الانتهاء" />
     <Item702 Ref="2095" Component="#Ref-266" Culture="Default" Path="Weight" Data="1.65625" />
     <Item703 Ref="2096" Component="#Ref-268" Culture="Default" Path="Text" Data="xrTableCell29" />
     <Item704 Ref="2097" Component="#Ref-268" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item705 Ref="2098" Component="#Ref-268" Culture="Default" Path="Weight" Data="0.96875" />
     <Item706 Ref="2099" Component="#Ref-325" Culture="Default" Path="Text" Data="Crop #" />
-    <Item707 Ref="2100" Component="#Ref-325" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item707 Ref="2100" Component="#Ref-325" Culture="ar" Path="Text" Data="السلالة" />
     <Item708 Ref="2101" Component="#Ref-325" Culture="Default" Path="Weight" Data="1.6866295414570942" />
     <Item709 Ref="2102" Component="#Ref-161" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item710 Ref="2103" Component="#Ref-161" Culture="Default" Path="Text" Data="xrTableCell45" />
@@ -3369,7 +3369,7 @@
     <Item713 Ref="2106" Component="#Ref-165" Culture="Default" Path="Text" Data="xrTableCell46" />
     <Item714 Ref="2107" Component="#Ref-165" Culture="Default" Path="Weight" Data="2.4546144772621314" />
     <Item715 Ref="2108" Component="#Ref-767" Culture="Default" Path="Text" Data="Rejected Eggs" />
-    <Item716 Ref="2109" Component="#Ref-767" Culture="ar" Path="Text" Data="????? ???????" />
+    <Item716 Ref="2109" Component="#Ref-767" Culture="ar" Path="Text" Data="مرفوض" />
     <Item717 Ref="2110" Component="#Ref-767" Culture="Default" Path="Weight" Data="3" />
     <Item718 Ref="2111" Component="#Ref-170" Culture="Default" Path="Font" Data="Tahoma, 7.5pt" />
     <Item719 Ref="2112" Component="#Ref-170" Culture="Default" Path="Text" Data="xrTableCell33" />
@@ -3404,16 +3404,16 @@
     <Item748 Ref="2141" Component="#Ref-739" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item749 Ref="2142" Component="#Ref-739" Culture="Default" Path="Weight" Data="1.4715197753906248" />
     <Item750 Ref="2143" Component="#Ref-718" Culture="Default" Path="Text" Data="Total Rejected" />
-    <Item751 Ref="2144" Component="#Ref-718" Culture="ar" Path="Text" Data="?????? ????? ???????" />
+    <Item751 Ref="2144" Component="#Ref-718" Culture="ar" Path="Text" Data="إجمالي مرفوض" />
     <Item752 Ref="2145" Component="#Ref-718" Culture="Default" Path="Weight" Data="3.5284786987304693" />
     <Item753 Ref="2146" Component="#Ref-727" Culture="Default" Path="Text" Data="Other" />
-    <Item754 Ref="2147" Component="#Ref-727" Culture="ar" Path="Text" Data="????? ????" />
+    <Item754 Ref="2147" Component="#Ref-727" Culture="ar" Path="Text" Data="أخرى" />
     <Item755 Ref="2148" Component="#Ref-727" Culture="Default" Path="Weight" Data="1.3792906188964844" />
     <Item756 Ref="2149" Component="#Ref-729" Culture="Default" Path="Text" Data="xrTableCell45" />
     <Item757 Ref="2150" Component="#Ref-729" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item758 Ref="2151" Component="#Ref-729" Culture="Default" Path="Weight" Data="1.4715216064453125" />
     <Item759 Ref="2152" Component="#Ref-708" Culture="Default" Path="Text" Data="Balance Of Hatching Eggs" />
-    <Item760 Ref="2153" Component="#Ref-708" Culture="ar" Path="Text" Data="???? ??? ??????? ???????" />
+    <Item760 Ref="2153" Component="#Ref-708" Culture="ar" Path="Text" Data="رصيد بيض التفريخ" />
     <Item761 Ref="2154" Component="#Ref-708" Culture="Default" Path="Weight" Data="2.1170869608048144" />
     <Item762 Ref="2155" Component="#Ref-720" Culture="Default" Path="Text" Data="xrTableCell47" />
     <Item763 Ref="2156" Component="#Ref-720" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
@@ -3424,10 +3424,10 @@
     <Item768 Ref="2161" Component="#Ref-710" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item769 Ref="2162" Component="#Ref-710" Culture="Default" Path="Weight" Data="0.8829130391951856" />
     <Item770 Ref="2163" Component="#Ref-297" Culture="Default" Path="Text" Data="Transfer Date" />
-    <Item771 Ref="2164" Component="#Ref-297" Culture="ar" Path="Text" Data="????? ?????" />
+    <Item771 Ref="2164" Component="#Ref-297" Culture="ar" Path="Text" Data="تاريخ النقل" />
     <Item772 Ref="2165" Component="#Ref-297" Culture="Default" Path="Weight" Data="1.65625" />
     <Item773 Ref="2166" Component="#Ref-699" Culture="Default" Path="Text" Data="Eggs Setted in Hatcheries" />
-    <Item774 Ref="2167" Component="#Ref-699" Culture="ar" Path="Text" Data="????? ??????? ?? ??????? ???????" />
+    <Item774 Ref="2167" Component="#Ref-699" Culture="ar" Path="Text" Data="بيض مودع" />
     <Item775 Ref="2168" Component="#Ref-699" Culture="Default" Path="Weight" Data="2.1170869608048144" />
     <Item776 Ref="2169" Component="#Ref-645" Culture="Default" Path="Text" Data="Hatching Eggs" />
     <Item777 Ref="2170" Component="#Ref-645" Culture="Default" Path="Weight" Data="1.7725704956054686" />
@@ -3435,16 +3435,16 @@
     <Item779 Ref="2172" Component="#Ref-701" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item780 Ref="2173" Component="#Ref-701" Culture="Default" Path="Weight" Data="0.8829130391951856" />
     <Item781 Ref="2174" Component="#Ref-689" Culture="Default" Path="Text" Data="Cum. Chicks(as per egg set)" />
-    <Item782 Ref="2175" Component="#Ref-689" Culture="ar" Path="Text" Data="?????? ???????? (??? ????? ???????)" />
+    <Item782 Ref="2175" Component="#Ref-689" Culture="ar" Path="Text" Data="تراكمي كتاكيت (بيض مودع)" />
     <Item783 Ref="2176" Component="#Ref-689" Culture="Default" Path="Weight" Data="3.3487969421471009" />
     <Item784 Ref="2177" Component="#Ref-635" Culture="Default" Path="Text" Data="Table Eggs" />
-    <Item785 Ref="2178" Component="#Ref-635" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item785 Ref="2178" Component="#Ref-635" Culture="ar" Path="Text" Data="المحصول" />
     <Item786 Ref="2179" Component="#Ref-635" Culture="Default" Path="Weight" Data="1.7725662231445314" />
     <Item787 Ref="2180" Component="#Ref-691" Culture="Default" Path="Text" Data="xrTableCell55" />
     <Item788 Ref="2181" Component="#Ref-691" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item789 Ref="2182" Component="#Ref-691" Culture="Default" Path="Weight" Data="1.3965872377449542" />
     <Item790 Ref="2183" Component="#Ref-679" Culture="Default" Path="Text" Data="Cum.Hatchability&#x9;%&#x9;                                                                                                                                             &#x9;&#x9;" />
-    <Item791 Ref="2184" Component="#Ref-679" Culture="ar" Path="Text" Data="???? ????? ????????" />
+    <Item791 Ref="2184" Component="#Ref-679" Culture="ar" Path="Text" Data="تراكمي فقس %" />
     <Item792 Ref="2185" Component="#Ref-679" Culture="Default" Path="Weight" Data="2.1170869608048144" />
     <Item793 Ref="2186" Component="#Ref-647" Culture="Default" Path="Text" Data="xrTableCell57" />
     <Item794 Ref="2187" Component="#Ref-647" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -3453,13 +3453,13 @@
     <Item797 Ref="2190" Component="#Ref-681" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item798 Ref="2191" Component="#Ref-681" Culture="Default" Path="Weight" Data="0.8829130391951856" />
     <Item799 Ref="2192" Component="#Ref-669" Culture="Default" Path="Text" Data="Chicks Rejected " />
-    <Item800 Ref="2193" Component="#Ref-669" Culture="ar" Path="Text" Data="???????? ????????" />
+    <Item800 Ref="2193" Component="#Ref-669" Culture="ar" Path="Text" Data="كتاكيت فرزة" />
     <Item801 Ref="2194" Component="#Ref-669" Culture="Default" Path="Weight" Data="3.5284786987304684" />
     <Item802 Ref="2195" Component="#Ref-318" Culture="Default" Path="Text" Data="Flock" />
     <Item803 Ref="2196" Component="#Ref-318" Culture="ar" Path="Text" Data="القطيع" />
     <Item804 Ref="2197" Component="#Ref-318" Culture="Default" Path="Weight" Data="1.6866297236038839" />
     <Item805 Ref="2198" Component="#Ref-625" Culture="Default" Path="Text" Data="Eggs Sent To Offal" />
-    <Item806 Ref="2199" Component="#Ref-625" Culture="ar" Path="Text" Data="????? ?????? ????????" />
+    <Item806 Ref="2199" Component="#Ref-625" Culture="ar" Path="Text" Data="بيض مرسل للمعدم" />
     <Item807 Ref="2200" Component="#Ref-625" Culture="Default" Path="Weight" Data="1.7725704956054689" />
     <Item808 Ref="2201" Component="#Ref-671" Culture="Default" Path="Text" Data="xrTableCell61" />
     <Item809 Ref="2202" Component="#Ref-671" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
@@ -3476,27 +3476,27 @@
     <Item820 Ref="2213" Component="#Ref-627" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item821 Ref="2214" Component="#Ref-627" Culture="Default" Path="Weight" Data="1.4715200805664062" />
     <Item822 Ref="2215" Component="#Ref-615" Culture="Default" Path="Text" Data="Total Egg Sold" />
-    <Item823 Ref="2216" Component="#Ref-615" Culture="ar" Path="Text" Data="?????? ????? ??????" />
+    <Item823 Ref="2216" Component="#Ref-615" Culture="ar" Path="Text" Data="إجمالي بيض مباع" />
     <Item824 Ref="2217" Component="#Ref-615" Culture="Default" Path="Weight" Data="3.5284786987304688" />
     <Item825 Ref="2218" Component="#Ref-553" Culture="Default" Path="Text" Data="Cum.Received Eggs&#x9;                   HH" />
-    <Item826 Ref="2219" Component="#Ref-553" Culture="ar" Path="Text" Data="?????? ????? ???????" />
+    <Item826 Ref="2219" Component="#Ref-553" Culture="ar" Path="Text" Data="إجمالي مرفوض" />
     <Item827 Ref="2220" Component="#Ref-553" Culture="Default" Path="Weight" Data="3.7708331298828126" />
     <Item828 Ref="2221" Component="#Ref-617" Culture="Default" Path="Text" Data="xrTableCell68" />
     <Item829 Ref="2222" Component="#Ref-617" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item830 Ref="2223" Component="#Ref-617" Culture="Default" Path="Weight" Data="1.4715200805664059" />
     <Item831 Ref="2224" Component="#Ref-605" Culture="Default" Path="Text" Data="Estimated Chicks (as per eggs sold)" />
-    <Item832 Ref="2225" Component="#Ref-605" Culture="ar" Path="Text" Data="???????? ???????? (??? ????? ??????)" />
+    <Item832 Ref="2225" Component="#Ref-605" Culture="ar" Path="Text" Data="كتاكيت متوقعة (بيض مباع)" />
     <Item833 Ref="2226" Component="#Ref-605" Culture="Default" Path="Weight" Data="2.1170892867082878" />
     <Item834 Ref="2227" Component="#Ref-320" Culture="Default" Path="Text" Data="xrTableCell7" />
     <Item835 Ref="2228" Component="#Ref-320" Culture="Default" Path="Weight" Data="2.4026529268809469" />
     <Item836 Ref="2229" Component="#Ref-444" Culture="Default" Path="Text" Data="Cum.Chicks Rejected   HH" />
-    <Item837 Ref="2230" Component="#Ref-444" Culture="ar" Path="Text" Data="?????? ???????? ???????? (????? ??????)" />
+    <Item837 Ref="2230" Component="#Ref-444" Culture="ar" Path="Text" Data="تراكمي كتاكيت فرزة / أم مسكنة" />
     <Item838 Ref="2231" Component="#Ref-444" Culture="Default" Path="Weight" Data="3.7708337402343748" />
     <Item839 Ref="2232" Component="#Ref-607" Culture="Default" Path="Text" Data="xrTableCell71" />
     <Item840 Ref="2233" Component="#Ref-607" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item841 Ref="2234" Component="#Ref-607" Culture="Default" Path="Weight" Data="0.88291071329171222" />
     <Item842 Ref="2235" Component="#Ref-595" Culture="Default" Path="Text" Data="Balance Stock of Hatching Eggs" />
-    <Item843 Ref="2236" Component="#Ref-595" Culture="ar" Path="Text" Data="???? ??? ??????? ?? ???????" />
+    <Item843 Ref="2236" Component="#Ref-595" Culture="ar" Path="Text" Data="رصيد بيض التفريخ" />
     <Item844 Ref="2237" Component="#Ref-595" Culture="Default" Path="Weight" Data="3.5284829711914059" />
     <Item845 Ref="2238" Component="#Ref-555" Culture="Default" Path="Text" Data="xrTableCell73" />
     <Item846 Ref="2239" Component="#Ref-555" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -3505,7 +3505,7 @@
     <Item849 Ref="2242" Component="#Ref-597" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item850 Ref="2243" Component="#Ref-597" Culture="Default" Path="Weight" Data="1.4715164184570313" />
     <Item851 Ref="2244" Component="#Ref-585" Culture="Default" Path="Text" Data="Estimated Chicks (as per Stock of H.E.)" />
-    <Item852 Ref="2245" Component="#Ref-585" Culture="ar" Path="Text" Data="???????? ???????? (??? ???? ??? ???????)" />
+    <Item852 Ref="2245" Component="#Ref-585" Culture="ar" Path="Text" Data="كتاكيت متوقعة (بيض مخزن)" />
     <Item853 Ref="2246" Component="#Ref-585" Culture="Default" Path="Weight" Data="3.5284744262695313" />
     <Item854 Ref="2247" Component="#Ref-544" Culture="Default" Path="Text" Data="" />
     <Item855 Ref="2248" Component="#Ref-544" Culture="Default" Path="Weight" Data="3.7708331298828126" />
@@ -3513,7 +3513,7 @@
     <Item857 Ref="2250" Component="#Ref-587" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item858 Ref="2251" Component="#Ref-587" Culture="Default" Path="Weight" Data="1.4715237426757812" />
     <Item859 Ref="2252" Component="#Ref-575" Culture="Default" Path="Text" Data="Actual Hatchability of balance eggs" />
-    <Item860 Ref="2253" Component="#Ref-575" Culture="ar" Path="Text" Data="???? ????? ?????? ????? ???????" />
+    <Item860 Ref="2253" Component="#Ref-575" Culture="ar" Path="Text" Data="لرصيد البيض % فقس" />
     <Item861 Ref="2254" Component="#Ref-575" Culture="Default" Path="Weight" Data="2.1170885515816944" />
     <Item862 Ref="2255" Component="#Ref-340" Culture="Default" Path="Text" Data="" />
     <Item863 Ref="2256" Component="#Ref-340" Culture="Default" Path="Weight" Data="3.7708331298828126" />
@@ -3523,7 +3523,7 @@
     <Item867 Ref="2260" Component="#Ref-577" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item868 Ref="2261" Component="#Ref-577" Culture="Default" Path="Weight" Data="0.88291144841830538" />
     <Item869 Ref="2262" Component="#Ref-565" Culture="Default" Path="Text" Data="Cum.Chicks(Actual + Estimated)" />
-    <Item870 Ref="2263" Component="#Ref-565" Culture="ar" Path="Text" Data="?????? ???????? (?????? + ???????)" />
+    <Item870 Ref="2263" Component="#Ref-565" Culture="ar" Path="Text" Data="تراكمي كتاكيت (فعلي + متوقع)" />
     <Item871 Ref="2264" Component="#Ref-565" Culture="Default" Path="Weight" Data="2.1170879335038819" />
     <Item872 Ref="2265" Component="#Ref-546" Culture="Default" Path="Text" Data="" />
     <Item873 Ref="2266" Component="#Ref-546" Culture="Default" Path="Weight" Data="1.4988537597656251" />
@@ -3540,7 +3540,7 @@
     <Item884 Ref="2277" Component="#Ref-526" Culture="Default" Path="Text" Data="" />
     <Item885 Ref="2278" Component="#Ref-526" Culture="Default" Path="Weight" Data="3.7708349609375" />
     <Item886 Ref="2279" Component="#Ref-432" Culture="Default" Path="Text" Data="Cum.A grade Chicks(Actual)  HH" />
-    <Item887 Ref="2280" Component="#Ref-432" Culture="ar" Path="Text" Data="?????? ?????? ?????? ?????? (?????? - ????? ??????)" />
+    <Item887 Ref="2280" Component="#Ref-432" Culture="ar" Path="Text" Data="تراكمي كتاكيت درجة (أ) / أم مسكنة" />
     <Item888 Ref="2281" Component="#Ref-432" Culture="Default" Path="Weight" Data="3.7708331298828126" />
     <Item889 Ref="2282" Component="#Ref-528" Culture="Default" Path="Text" Data="" />
     <Item890 Ref="2283" Component="#Ref-528" Culture="Default" Path="Weight" Data="1.4988537597656251" />
@@ -3554,7 +3554,7 @@
     <Item898 Ref="2291" Component="#Ref-519" Culture="Default" Path="Text" Data="" />
     <Item899 Ref="2292" Component="#Ref-519" Culture="Default" Path="Weight" Data="1.4988537597656248" />
     <Item900 Ref="2293" Component="#Ref-505" Culture="Default" Path="Text" Data="Cum.Egg Rejected   HH" />
-    <Item901 Ref="2294" Component="#Ref-505" Culture="ar" Path="Text" Data="?????? ????? ??????? (????? ??????)" />
+    <Item901 Ref="2294" Component="#Ref-505" Culture="ar" Path="Text" Data="تراكمي بيض مرفوض / أم مسكنة" />
     <Item902 Ref="2295" Component="#Ref-505" Culture="Default" Path="Weight" Data="3.7708331298828126" />
     <Item903 Ref="2296" Component="#Ref-434" Culture="Default" Path="Text" Data="xrTableCell94" />
     <Item904 Ref="2297" Component="#Ref-434" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
@@ -3563,7 +3563,7 @@
     <Item907 Ref="2300" Component="#Ref-507" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item908 Ref="2301" Component="#Ref-507" Culture="Default" Path="Weight" Data="1.4988525390624998" />
     <Item909 Ref="2302" Component="#Ref-491" Culture="Default" Path="Text" Data="Cum.Final Hatching Eggs  HH" />
-    <Item910 Ref="2303" Component="#Ref-491" Culture="ar" Path="Text" Data="?????? ??? ??????? ??????? (????? ??????)" />
+    <Item910 Ref="2303" Component="#Ref-491" Culture="ar" Path="Text" Data="تراكمي نهائي بيض تفريخ / أم مسكنة" />
     <Item911 Ref="2304" Component="#Ref-491" Culture="Default" Path="Weight" Data="3.7708349609375" />
     <Item912 Ref="2305" Component="#Ref-423" Culture="Default" Path="Text" Data="" />
     <Item913 Ref="2306" Component="#Ref-423" Culture="Default" Path="Weight" Data="3.7708331298828126" />

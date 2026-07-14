@@ -138,6 +138,11 @@ decimal fChicksGroup  = 0;
 decimal mChicksGroup = 0;
 decimal groupSettedEggs  = 0;
 decimal PercentageBreeder  = 0;
+decimal ChicksPercGroup  = 0;
+decimal fChicksReport  = 0;
+decimal mChicksReport = 0;
+decimal TotalChicksReport  = 0;
+decimal ReportSettedEggs  = 0;
 private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
 {
     // logic for breeder
@@ -154,8 +159,6 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     groupSumChicks = (fChicksGroup + mChicksGroup);
 
        // --- Declare variables ---
-decimal settedEggs = 0;decimal result = 0;
-
 
 if (GetCurrentColumnValue("SettedEggs") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("SettedEggs").ToString()))
@@ -168,12 +171,10 @@ groupSettedEggs += settedEggs;
 
 if (groupSettedEggs != 0)
         PercentageBreeder = (groupSumChicks * 100m) / groupSettedEggs;
-
-//new logic for Breeder Perc
-    // --- Declare variables ---
+        
 decimal chicks = 0;
-decimal settedEggs = 0;
 decimal result = 0;
+
 
 // --- Read values safely ---
 if (GetCurrentColumnValue("Chicks") != null &amp;&amp;
