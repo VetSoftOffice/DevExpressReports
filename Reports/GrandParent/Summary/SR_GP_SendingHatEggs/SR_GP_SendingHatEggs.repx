@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GP_SendingHatEggs" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_GP_SendingHatEggs" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GP_SendingHatEggs" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_GP_SendingHatEggs" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -70,7 +70,7 @@
               <ParameterBindings>
                 <Item1 Ref="55" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="56" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="56" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="57" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="58" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -158,7 +158,7 @@
               <ParameterBindings>
                 <Item1 Ref="95" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="96" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="96" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="97" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="98" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -537,7 +537,7 @@
               <ParameterBindings>
                 <Item1 Ref="279" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="280" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="280" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="281" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="282" Visible="false" Name="Notes" />
@@ -637,7 +637,7 @@
               <ParameterBindings>
                 <Item1 Ref="336" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="337" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="337" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="338" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="339" Visible="false" Description="Parameter1" Name="FontSize" />

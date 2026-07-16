@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FC_PriceQuotation" ScriptsSource="&#xD;&#xA;private void xrLabel32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRLabel lbl = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;    // Check your RTL parameter (assuming it's a bool parameter named IsRTL)&#xD;&#xA;    bool isRTL = Convert.ToBoolean(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;    if (isRTL)&#xD;&#xA;        lbl.TextFormatString = &quot;{0:yyyy-MM-dd}&quot;;&#xD;&#xA;    else&#xD;&#xA;        lbl.TextFormatString = &quot;{0:dd-MM-yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrLabel17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRLabel lbl = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;    // Check your RTL parameter (assuming it's a bool parameter named IsRTL)&#xD;&#xA;    bool isRTL = Convert.ToBoolean(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;    if (isRTL)&#xD;&#xA;        lbl.TextFormatString = &quot;{0:yyyy-MM-dd}&quot;;&#xD;&#xA;    else&#xD;&#xA;        lbl.TextFormatString = &quot;{0:dd-MM-yyyy}&quot;;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_FC_PriceQuotation" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FC_PriceQuotation" ScriptsSource="&#xD;&#xA;private void xrLabel32_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRLabel lbl = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;    // Check your RTL parameter (assuming it's a bool parameter named IsRTL)&#xD;&#xA;    bool isRTL = Convert.ToBoolean(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;    if (isRTL)&#xD;&#xA;        lbl.TextFormatString = &quot;{0:yyyy-MM-dd}&quot;;&#xD;&#xA;    else&#xD;&#xA;        lbl.TextFormatString = &quot;{0:dd-MM-yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrLabel17_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     XRLabel lbl = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;    // Check your RTL parameter (assuming it's a bool parameter named IsRTL)&#xD;&#xA;    bool isRTL = Convert.ToBoolean(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;    if (isRTL)&#xD;&#xA;        lbl.TextFormatString = &quot;{0:yyyy-MM-dd}&quot;;&#xD;&#xA;    else&#xD;&#xA;        lbl.TextFormatString = &quot;{0:dd-MM-yyyy}&quot;;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_FC_PriceQuotation" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="ShowSignature" Type="#Ref-2" />
@@ -135,7 +135,7 @@
         <Item1 Ref="80" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="81" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="82" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="82" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="83" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="84" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -193,7 +193,7 @@
         <Item2 Ref="110" ControlType="SubBand" Name="SubBand1">
           <Controls>
             <Item1 Ref="111" ControlType="XRSubreport" Name="srReportFooterCustom">
-              <ReportSource Ref="112" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="112" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="113" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="114" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -281,7 +281,7 @@
               <ParameterBindings>
                 <Item1 Ref="146" ParameterName="HideReportHeader" Parameter="#Ref-6" />
               </ParameterBindings>
-              <ReportSource Ref="147" ControlType="DevExpressReports.PredefinedReports.SubReportHeaderCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="147" ControlType="DevExpressReports.PredefinedReports.SubReportHeaderCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="148" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="149" Visible="false" Description="Hide report header" ValueInfo="False" Name="HideReportHeader" Type="#Ref-2" />
@@ -401,7 +401,7 @@
               <ParameterBindings>
                 <Item1 Ref="200" ParameterName="HideReportHeader" Parameter="#Ref-6" />
               </ParameterBindings>
-              <ReportSource Ref="201" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="201" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="202" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="203" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -919,7 +919,7 @@
         <Item8 Ref="455" ControlType="SubBand" Name="ReportFooterSub7">
           <Controls>
             <Item1 Ref="456" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="457" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="457" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="458" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="459" Visible="false" Name="Notes" />
@@ -1016,7 +1016,7 @@
         <Item9 Ref="511" ControlType="SubBand" Name="ReportFooterSub8">
           <Controls>
             <Item1 Ref="512" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="513" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="513" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="514" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="515" Visible="false" Description="Parameter1" Name="FontSize" />

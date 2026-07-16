@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_SortHouseIssue_Sub" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_LAY_SortHouseIssue_Sub" DataSource="#Ref-0" TextAlignment="MiddleLeft">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_LAY_SortHouseIssue_Sub" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_LAY_SortHouseIssue_Sub" DataSource="#Ref-0" TextAlignment="MiddleLeft">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="5" Visible="false" Name="Notes" />

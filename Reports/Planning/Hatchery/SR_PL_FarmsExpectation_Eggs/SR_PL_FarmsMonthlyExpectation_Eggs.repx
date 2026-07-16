@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PL_FarmsMonthlyExpectation_Eggs" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_PL_FarmsExpectation" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PL_FarmsMonthlyExpectation_Eggs" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_PL_FarmsExpectation" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -67,7 +67,7 @@
         <Item1 Ref="57" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="58" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="59" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="59" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="60" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="61" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -155,7 +155,7 @@
               <ParameterBindings>
                 <Item1 Ref="99" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="100" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="100" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="101" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="102" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -301,7 +301,7 @@
         <Item2 Ref="170" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="171" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="172" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="172" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="173" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="174" Visible="false" Name="Notes" />
@@ -398,7 +398,7 @@
         <Item3 Ref="226" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="227" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="228" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="228" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="229" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="230" Visible="false" Description="Parameter1" Name="FontSize" />

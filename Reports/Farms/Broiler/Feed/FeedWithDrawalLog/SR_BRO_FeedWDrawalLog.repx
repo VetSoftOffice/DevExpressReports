@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRO_FeedWDrawalLog" ScriptsSource="using DevExpress.XtraReports.UI;&#xD;&#xA;using System.Collections;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;&#xD;&#xA;public void HideSubbandIfFeedMillLessThanTwo(SubBand band)&#xD;&#xA;{&#xD;&#xA;    XtraReport report = band.Report as XtraReport;&#xD;&#xA;    if (report != null)&#xD;&#xA;    {&#xD;&#xA;        IEnumerable dataSource = report.DataSource as IEnumerable;&#xD;&#xA;        if (dataSource != null)&#xD;&#xA;        {&#xD;&#xA;            int feedMillCount = CountDistinctFeedMills(dataSource);&#xD;&#xA;            band.Visible = (feedMillCount &gt;= 2);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            band.Visible = false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        band.Visible = false;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private int CountDistinctFeedMills(IEnumerable dataSource)&#xD;&#xA;{&#xD;&#xA;    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();&#xD;&#xA;    foreach (object item in dataSource)&#xD;&#xA;    {&#xD;&#xA;        object feedMillValue = GetFieldValue(item, &quot;FeedMill&quot;);&#xD;&#xA;        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))&#xD;&#xA;        {&#xD;&#xA;            distinctFeedMills.Add(feedMillValue);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return distinctFeedMills.Count;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private object GetFieldValue(object item, string fieldName)&#xD;&#xA;{&#xD;&#xA;    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);&#xD;&#xA;    if (property != null)&#xD;&#xA;    {&#xD;&#xA;        return property.GetValue(item, null);&#xD;&#xA;    }&#xD;&#xA;    return null;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    SubBand subBand = ReportFooterSub3 as SubBand;&#xD;&#xA;    if (subBand != null)&#xD;&#xA;    {&#xD;&#xA;        HideSubbandIfFeedMillLessThanTwo(subBand);&#xD;&#xA;    }&#xD;&#xA;}" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRO_FeedWDrawalLog" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRO_FeedWDrawalLog" ScriptsSource="using DevExpress.XtraReports.UI;&#xD;&#xA;using System.Collections;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;&#xD;&#xA;public void HideSubbandIfFeedMillLessThanTwo(SubBand band)&#xD;&#xA;{&#xD;&#xA;    XtraReport report = band.Report as XtraReport;&#xD;&#xA;    if (report != null)&#xD;&#xA;    {&#xD;&#xA;        IEnumerable dataSource = report.DataSource as IEnumerable;&#xD;&#xA;        if (dataSource != null)&#xD;&#xA;        {&#xD;&#xA;            int feedMillCount = CountDistinctFeedMills(dataSource);&#xD;&#xA;            band.Visible = (feedMillCount &gt;= 2);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            band.Visible = false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        band.Visible = false;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private int CountDistinctFeedMills(IEnumerable dataSource)&#xD;&#xA;{&#xD;&#xA;    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();&#xD;&#xA;    foreach (object item in dataSource)&#xD;&#xA;    {&#xD;&#xA;        object feedMillValue = GetFieldValue(item, &quot;FeedMill&quot;);&#xD;&#xA;        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))&#xD;&#xA;        {&#xD;&#xA;            distinctFeedMills.Add(feedMillValue);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return distinctFeedMills.Count;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private object GetFieldValue(object item, string fieldName)&#xD;&#xA;{&#xD;&#xA;    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);&#xD;&#xA;    if (property != null)&#xD;&#xA;    {&#xD;&#xA;        return property.GetValue(item, null);&#xD;&#xA;    }&#xD;&#xA;    return null;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    SubBand subBand = ReportFooterSub3 as SubBand;&#xD;&#xA;    if (subBand != null)&#xD;&#xA;    {&#xD;&#xA;        HideSubbandIfFeedMillLessThanTwo(subBand);&#xD;&#xA;    }&#xD;&#xA;}" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_BRO_FeedWDrawalLog" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -60,18 +60,18 @@
                   </ExpressionBindings>
                   <StylePriority Ref="49" UseFont="false" UseBorders="false" />
                 </Item1>
-                <Item2 Ref="50" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" Borders="All">
+                <Item2 Ref="50" ControlType="XRTableCell" Name="xrTableCell10" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="51" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;&#xA;" />
                     <Item2 Ref="52" EventName="BeforePrint" PropertyName="Text" Expression="[LineUpTime]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="53" UseFont="false" UseBorders="false" />
+                  <StylePriority Ref="53" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item2>
-                <Item3 Ref="54" ControlType="XRTableCell" Name="xrTableCell15" Multiline="true" Borders="All">
+                <Item3 Ref="54" ControlType="XRTableCell" Name="xrTableCell15" Multiline="true" TextAlignment="MiddleCenter" Borders="All">
                   <ExpressionBindings>
                     <Item1 Ref="55" EventName="BeforePrint" PropertyName="Text" Expression="[CatchingStartTime]" />
                   </ExpressionBindings>
-                  <StylePriority Ref="56" UseFont="false" UseBorders="false" />
+                  <StylePriority Ref="56" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                 </Item3>
                 <Item4 Ref="57" ControlType="XRTableCell" Name="xrTableCell16" Multiline="true" Borders="All">
                   <ExpressionBindings>
@@ -136,7 +136,7 @@
               <ParameterBindings>
                 <Item1 Ref="81" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="82" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="82" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="83" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="84" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -248,7 +248,7 @@
         <Item2 Ref="136" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="137" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="138" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="138" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="139" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="140" Visible="false" Name="Notes" />
@@ -345,7 +345,7 @@
         <Item3 Ref="192" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="193" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="194" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="194" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="195" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="196" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -512,11 +512,11 @@
     <Item91 Ref="323" Component="#Ref-124" Culture="Default" Path="SizeF" Data="815.9969,40" />
     <Item92 Ref="324" Component="#Ref-50" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item93 Ref="325" Component="#Ref-50" Culture="Default" Path="Text" Data="tdAccountName_From" />
-    <Item94 Ref="326" Component="#Ref-50" Culture="Default" Path="TextFormatString" Data="" />
+    <Item94 Ref="326" Component="#Ref-50" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy hh:mm:ss tt}" />
     <Item95 Ref="327" Component="#Ref-50" Culture="Default" Path="Weight" Data="3.0273168832215469" />
     <Item96 Ref="328" Component="#Ref-54" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item97 Ref="329" Component="#Ref-54" Culture="Default" Path="Text" Data="tdItemCode_DebitCredit" />
-    <Item98 Ref="330" Component="#Ref-54" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
+    <Item98 Ref="330" Component="#Ref-54" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy hh:mm:ss tt}" />
     <Item99 Ref="331" Component="#Ref-54" Culture="Default" Path="Weight" Data="3.0079981819581105" />
     <Item100 Ref="332" Component="#Ref-57" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item101 Ref="333" Component="#Ref-57" Culture="Default" Path="Text" Data="xrTableCell43" />

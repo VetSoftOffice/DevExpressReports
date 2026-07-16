@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FC_FR_LAY_CloseBalance" ScriptsSource="using System.ComponentModel;&#xD;&#xA;using DevExpress.XtraReports.Parameters;&#xD;&#xA;&#xD;&#xA;int groupCounter = 1;&#xD;&#xA;&#xD;&#xA;private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    GroupFooterBand groupFooter = (GroupFooterBand)sender;&#xD;&#xA;    XtraReport report = (XtraReport)groupFooter.Report;&#xD;&#xA;    &#xD;&#xA;    Parameter noOfGroupsPerPageParam = report.Parameters[&quot;NoOfGroupsPerPage&quot;];&#xD;&#xA;    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != &quot;&quot;)&#xD;&#xA;    {&#xD;&#xA;        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);&#xD;&#xA;        if (noOfGroupsPerPage &gt; 0)&#xD;&#xA;        {&#xD;&#xA;            if (groupCounter == noOfGroupsPerPage)&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.AfterBand;&#xD;&#xA;                groupCounter = 1;&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.None;&#xD;&#xA;                groupCounter += 1;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;التاريخ: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;Date: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;    }&#xD;&#xA;    " PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_FC_FR_CloseBalance" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FC_FR_LAY_CloseBalance" ScriptsSource="using System.ComponentModel;&#xD;&#xA;using DevExpress.XtraReports.Parameters;&#xD;&#xA;&#xD;&#xA;int groupCounter = 1;&#xD;&#xA;&#xD;&#xA;private void GroupFooter1_BeforePrint(object sender, CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    GroupFooterBand groupFooter = (GroupFooterBand)sender;&#xD;&#xA;    XtraReport report = (XtraReport)groupFooter.Report;&#xD;&#xA;    &#xD;&#xA;    Parameter noOfGroupsPerPageParam = report.Parameters[&quot;NoOfGroupsPerPage&quot;];&#xD;&#xA;    if(noOfGroupsPerPageParam != null &amp;&amp; noOfGroupsPerPageParam.Value != &quot;&quot;)&#xD;&#xA;    {&#xD;&#xA;        int noOfGroupsPerPage = Convert.ToInt32(noOfGroupsPerPageParam.Value);&#xD;&#xA;        if (noOfGroupsPerPage &gt; 0)&#xD;&#xA;        {&#xD;&#xA;            if (groupCounter == noOfGroupsPerPage)&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.AfterBand;&#xD;&#xA;                groupCounter = 1;&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                groupFooter.PageBreak = PageBreak.None;&#xD;&#xA;                groupCounter += 1;&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;private void xrLabel5_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRLabel label = sender as XRLabel;&#xD;&#xA;&#xD;&#xA;if (Parameters[&quot;DateFrom&quot;].Value == null)&#xD;&#xA;{&#xD;&#xA;    label.Text = &quot;&quot;;&#xD;&#xA;    return;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DateTime dt = Convert.ToDateTime(Parameters[&quot;DateFrom&quot;].Value);&#xD;&#xA;&#xD;&#xA;// Convert IsRTL safely&#xD;&#xA;int isRtl = Convert.ToInt32(Parameters[&quot;IsRTL&quot;].Value);&#xD;&#xA;&#xD;&#xA;if (isRtl == 1) // Arabic&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;التاريخ: {dt:d/M/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;else // English&#xD;&#xA;{&#xD;&#xA;    label.Text = $&quot;Date: {dt:dd/MM/yyyy}&quot;;&#xD;&#xA;}&#xD;&#xA;    }&#xD;&#xA;    " PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_FC_FR_CloseBalance" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -92,7 +92,7 @@
               <ParameterBindings>
                 <Item1 Ref="52" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="53" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="53" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="54" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="55" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -150,7 +150,7 @@
         <Item2 Ref="81" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="82" ControlType="XRSubreport" Name="srReportFooterCustom">
-              <ReportSource Ref="83" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="83" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="84" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="85" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -241,7 +241,7 @@
               <ParameterBindings>
                 <Item1 Ref="117" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="118" ControlType="DevExpressReports.PredefinedReports.SubReportHeaderCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="118" ControlType="DevExpressReports.PredefinedReports.SubReportHeaderCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="119" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="120" Visible="false" Description="Hide report header" ValueInfo="False" Name="HideReportHeader" Type="#Ref-2" />
@@ -361,7 +361,7 @@
               <ParameterBindings>
                 <Item1 Ref="171" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="172" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="172" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="173" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="174" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -508,7 +508,7 @@
               <ParameterBindings>
                 <Item1 Ref="243" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="244" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="244" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="245" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="246" Visible="false" Name="Notes" />
@@ -608,7 +608,7 @@
               <ParameterBindings>
                 <Item1 Ref="300" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="301" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="301" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="302" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="303" Visible="false" Description="Parameter1" Name="FontSize" />

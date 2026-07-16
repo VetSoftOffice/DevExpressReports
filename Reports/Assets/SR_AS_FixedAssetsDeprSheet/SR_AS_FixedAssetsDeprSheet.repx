@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_AS_FixedAssetsDeprSheet" ScriptsSource="using DevExpress.XtraReports.UI;&#xD;&#xA;using System.Collections;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;&#xD;&#xA;public void HideSubbandIfFeedMillLessThanTwo(SubBand band)&#xD;&#xA;{&#xD;&#xA;    XtraReport report = band.Report as XtraReport;&#xD;&#xA;    if (report != null)&#xD;&#xA;    {&#xD;&#xA;        IEnumerable dataSource = report.DataSource as IEnumerable;&#xD;&#xA;        if (dataSource != null)&#xD;&#xA;        {&#xD;&#xA;            int feedMillCount = CountDistinctFeedMills(dataSource);&#xD;&#xA;            band.Visible = (feedMillCount &gt;= 2);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            band.Visible = false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        band.Visible = false;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private int CountDistinctFeedMills(IEnumerable dataSource)&#xD;&#xA;{&#xD;&#xA;    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();&#xD;&#xA;    foreach (object item in dataSource)&#xD;&#xA;    {&#xD;&#xA;        object feedMillValue = GetFieldValue(item, &quot;FeedMill&quot;);&#xD;&#xA;        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))&#xD;&#xA;        {&#xD;&#xA;            distinctFeedMills.Add(feedMillValue);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return distinctFeedMills.Count;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private object GetFieldValue(object item, string fieldName)&#xD;&#xA;{&#xD;&#xA;    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);&#xD;&#xA;    if (property != null)&#xD;&#xA;    {&#xD;&#xA;        return property.GetValue(item, null);&#xD;&#xA;    }&#xD;&#xA;    return null;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    SubBand subBand = ReportFooterSub3 as SubBand;&#xD;&#xA;    if (subBand != null)&#xD;&#xA;    {&#xD;&#xA;        HideSubbandIfFeedMillLessThanTwo(subBand);&#xD;&#xA;    }&#xD;&#xA;}" Landscape="true" PageWidth="1169" PageHeight="827" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_AS_FixedAssets" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_AS_FixedAssetsDeprSheet" ScriptsSource="using DevExpress.XtraReports.UI;&#xD;&#xA;using System.Collections;&#xD;&#xA;using System.Collections.Generic;&#xD;&#xA;&#xD;&#xA;public void HideSubbandIfFeedMillLessThanTwo(SubBand band)&#xD;&#xA;{&#xD;&#xA;    XtraReport report = band.Report as XtraReport;&#xD;&#xA;    if (report != null)&#xD;&#xA;    {&#xD;&#xA;        IEnumerable dataSource = report.DataSource as IEnumerable;&#xD;&#xA;        if (dataSource != null)&#xD;&#xA;        {&#xD;&#xA;            int feedMillCount = CountDistinctFeedMills(dataSource);&#xD;&#xA;            band.Visible = (feedMillCount &gt;= 2);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            band.Visible = false;&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        band.Visible = false;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private int CountDistinctFeedMills(IEnumerable dataSource)&#xD;&#xA;{&#xD;&#xA;    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();&#xD;&#xA;    foreach (object item in dataSource)&#xD;&#xA;    {&#xD;&#xA;        object feedMillValue = GetFieldValue(item, &quot;FeedMill&quot;);&#xD;&#xA;        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))&#xD;&#xA;        {&#xD;&#xA;            distinctFeedMills.Add(feedMillValue);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    return distinctFeedMills.Count;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private object GetFieldValue(object item, string fieldName)&#xD;&#xA;{&#xD;&#xA;    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);&#xD;&#xA;    if (property != null)&#xD;&#xA;    {&#xD;&#xA;        return property.GetValue(item, null);&#xD;&#xA;    }&#xD;&#xA;    return null;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)&#xD;&#xA;{&#xD;&#xA;    SubBand subBand = ReportFooterSub3 as SubBand;&#xD;&#xA;    if (subBand != null)&#xD;&#xA;    {&#xD;&#xA;        HideSubbandIfFeedMillLessThanTwo(subBand);&#xD;&#xA;    }&#xD;&#xA;}" Landscape="true" PageWidth="1169" PageHeight="827" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_AS_FixedAssets" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -139,7 +139,7 @@
         <Item1 Ref="88" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="89" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="90" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="90" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="91" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="92" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -197,7 +197,7 @@
         <Item2 Ref="118" ControlType="SubBand" Name="SubBand5">
           <Controls>
             <Item1 Ref="119" ControlType="XRSubreport" Name="srReportFooterCustom">
-              <ReportSource Ref="120" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="120" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="121" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="122" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -288,7 +288,7 @@
               <ParameterBindings>
                 <Item1 Ref="155" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="156" ControlType="DevExpressReports.PredefinedReports.SubReportHeaderCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="156" ControlType="DevExpressReports.PredefinedReports.SubReportHeaderCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="157" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="158" Visible="false" Description="Hide report header" ValueInfo="False" Name="HideReportHeader" Type="#Ref-2" />
@@ -408,7 +408,7 @@
               <ParameterBindings>
                 <Item1 Ref="209" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="210" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="210" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="211" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="212" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -677,7 +677,7 @@
         <Item3 Ref="352" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="353" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="354" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="354" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="355" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="356" Visible="false" Name="Notes" />
@@ -774,7 +774,7 @@
         <Item4 Ref="408" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="409" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="410" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="410" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="411" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="412" Visible="false" Description="Parameter1" Name="FontSize" />

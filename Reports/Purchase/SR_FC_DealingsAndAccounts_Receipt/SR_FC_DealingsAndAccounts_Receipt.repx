@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.1.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FC_DealingsAndAccounts_Receipt" RollPaper="true" PageWidth="322" PageHeight="1100" Version="24.1" DataMember="SR_FC_DealingsAndAccounts" DataSource="#Ref-0">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_FC_DealingsAndAccounts_Receipt" RollPaper="true" PageWidth="322" PageHeight="1100" Version="26.1" DataMember="SR_FC_DealingsAndAccounts" DataSource="#Ref-0">
   <Parameters>
     <Item1 Ref="3" Visible="false" Enabled="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="5" Visible="false" Enabled="false" Name="LogoPath" />

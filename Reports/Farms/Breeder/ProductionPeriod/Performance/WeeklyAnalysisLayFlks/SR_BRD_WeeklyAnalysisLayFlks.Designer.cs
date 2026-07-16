@@ -77,33 +77,33 @@
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression18 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem1 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", false);
             DevExpress.XtraReports.Parameters.GroupLayoutItem groupLayoutItem2 = new DevExpress.XtraReports.Parameters.GroupLayoutItem("", true);
-            this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
-            this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
-            this.HideReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
-            this.HideReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.pageInfoCurrentTime = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoCurrentDate = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfoPageNoOfTotal = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportSignature_PageFooter = new DevExpress.XtraReports.UI.XRSubreport();
             this.srReportFooterCustom = new DevExpress.XtraReports.UI.XRSubreport();
-            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportHeaderCustom = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
-            this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.srReportHeaderCustom = new DevExpress.XtraReports.UI.XRSubreport();
+            this.srReportHeader = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
-            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
+            this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
+            this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.xrCrossTab1 = new DevExpress.XtraReports.UI.XRCrossTab();
             this.crossTabHeaderCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabDataCell1 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
@@ -114,11 +114,8 @@
             this.crossTabHeaderCell5 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell2 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell3 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
-            this.ReportFooterSub1 = new DevExpress.XtraReports.UI.SubBand();
+            this.PeriodNotes = new DevExpress.XtraReports.UI.XRSubreport();
             this.srReportNotes = new DevExpress.XtraReports.UI.XRSubreport();
-            this.ReportFooterSub2 = new DevExpress.XtraReports.UI.SubBand();
             this.srReportSignature = new DevExpress.XtraReports.UI.XRSubreport();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -151,8 +148,13 @@
             this.Rejected = new DevExpress.XtraReports.UI.CalculatedField();
             this.CopyRight = new DevExpress.XtraReports.UI.CalculatedField();
             this.BreedAgeFarmFlockCode = new DevExpress.XtraReports.UI.CalculatedField();
+            this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
+            this.HideReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
+            this.HideReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.NoOfGroupsPerPage = new DevExpress.XtraReports.Parameters.Parameter();
             this.FontSize = new DevExpress.XtraReports.Parameters.Parameter();
             this.DateFrom = new DevExpress.XtraReports.Parameters.Parameter();
@@ -165,36 +167,10 @@
             this.Breed = new DevExpress.XtraReports.Parameters.Parameter();
             this.Region = new DevExpress.XtraReports.Parameters.Parameter();
             this.Sitee = new DevExpress.XtraReports.Parameters.Parameter();
+            this.WeekNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsBreeder = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.SR_BRD_WeeklyAnalysis_ext1 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // ShowSignature
-            // 
-            this.ShowSignature.Name = "ShowSignature";
-            this.ShowSignature.Type = typeof(bool);
-            this.ShowSignature.ValueInfo = "False";
-            this.ShowSignature.Visible = false;
-            // 
-            // ShowSignatureAllPages
-            // 
-            this.ShowSignatureAllPages.Name = "ShowSignatureAllPages";
-            this.ShowSignatureAllPages.Type = typeof(bool);
-            this.ShowSignatureAllPages.ValueInfo = "False";
-            this.ShowSignatureAllPages.Visible = false;
-            // 
-            // HideReportHeader
-            // 
-            this.HideReportHeader.Name = "HideReportHeader";
-            this.HideReportHeader.Type = typeof(bool);
-            this.HideReportHeader.ValueInfo = "False";
-            // 
-            // HideReportFooter
-            // 
-            this.HideReportFooter.Name = "HideReportFooter";
-            this.HideReportFooter.Type = typeof(bool);
-            this.HideReportFooter.ValueInfo = "False";
             // 
             // TopMargin
             // 
@@ -207,6 +183,37 @@
             this.pageInfoCurrentDate,
             this.pageInfoPageNoOfTotal});
             this.BottomMargin.Name = "BottomMargin";
+            // 
+            // Detail
+            // 
+            this.Detail.KeepTogether = true;
+            this.Detail.Name = "Detail";
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?HideReportFooter==false")});
+            this.PageFooter.Name = "PageFooter";
+            this.PageFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.SubBand6,
+            this.SubBand7});
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Name = "PageHeader";
+            this.PageHeader.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.SubBand3,
+            this.SubBand5,
+            this.SubBand1});
+            // 
+            // ReportFooter
+            // 
+            this.ReportFooter.Name = "ReportFooter";
+            this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
+            this.SubBand2,
+            this.SubBand8,
+            this.ReportFooterSub1,
+            this.ReportFooterSub2});
             // 
             // pageInfoCurrentTime
             // 
@@ -241,20 +248,6 @@
             this.pageInfoPageNoOfTotal.StylePriority.UseForeColor = false;
             this.pageInfoPageNoOfTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // Detail
-            // 
-            this.Detail.KeepTogether = true;
-            this.Detail.Name = "Detail";
-            // 
-            // PageFooter
-            // 
-            this.PageFooter.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?HideReportFooter==false")});
-            this.PageFooter.Name = "PageFooter";
-            this.PageFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand6,
-            this.SubBand7});
-            // 
             // SubBand6
             // 
             this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -262,10 +255,6 @@
             this.SubBand6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == True\n")});
             this.SubBand6.Name = "SubBand6";
-            // 
-            // srReportSignature_PageFooter
-            // 
-            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
             // 
             // SubBand7
             // 
@@ -275,17 +264,14 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportFooter")});
             this.SubBand7.Name = "SubBand7";
             // 
+            // srReportSignature_PageFooter
+            // 
+            this.srReportSignature_PageFooter.Name = "srReportSignature_PageFooter";
+            this.srReportSignature_PageFooter.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
+            // 
             // srReportFooterCustom
             // 
             this.srReportFooterCustom.Name = "srReportFooterCustom";
-            // 
-            // PageHeader
-            // 
-            this.PageHeader.Name = "PageHeader";
-            this.PageHeader.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand3,
-            this.SubBand5,
-            this.SubBand1});
             // 
             // SubBand3
             // 
@@ -295,11 +281,6 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?IsCustomReportHeader\nand ?HideReportHeader==false\n")});
             this.SubBand3.Name = "SubBand3";
             // 
-            // srReportHeaderCustom
-            // 
-            this.srReportHeaderCustom.Name = "srReportHeaderCustom";
-            this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
-            // 
             // SubBand5
             // 
             this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -308,20 +289,34 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "Not ?IsCustomReportHeader\nand ?HideReportHeader==false\n")});
             this.SubBand5.Name = "SubBand5";
             // 
+            // SubBand1
+            // 
+            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel5,
+            this.xrLabel4,
+            this.xrLabel3,
+            this.xrLabel2,
+            this.xrLabel1});
+            this.SubBand1.Name = "SubBand1";
+            // 
+            // srReportHeaderCustom
+            // 
+            this.srReportHeaderCustom.Name = "srReportHeaderCustom";
+            this.srReportHeaderCustom.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
+            // 
             // srReportHeader
             // 
             this.srReportHeader.Name = "srReportHeader";
             this.srReportHeader.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("HideReportHeader", this.HideReportHeader));
             this.srReportHeader.ReportSource = new DevExpressReports.PredefinedReports.SubReportHeader();
             // 
-            // SubBand1
+            // xrLabel5
             // 
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel4,
-            this.xrLabel3,
-            this.xrLabel2,
-            this.xrLabel1});
-            this.SubBand1.Name = "SubBand1";
+            this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?WeekNo > 0")});
+            this.xrLabel5.Multiline = true;
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel4
             // 
@@ -351,20 +346,31 @@
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel1.Scripts.OnBeforePrint = "xrLabel1_BeforePrint";
             // 
-            // ReportFooter
-            // 
-            this.ReportFooter.Name = "ReportFooter";
-            this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand2,
-            this.SubBand4,
-            this.ReportFooterSub1,
-            this.ReportFooterSub2});
-            // 
             // SubBand2
             // 
             this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrCrossTab1});
             this.SubBand2.Name = "SubBand2";
+            // 
+            // SubBand8
+            // 
+            this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.PeriodNotes});
+            this.SubBand8.Name = "SubBand8";
+            // 
+            // ReportFooterSub1
+            // 
+            this.ReportFooterSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportNotes});
+            this.ReportFooterSub1.Name = "ReportFooterSub1";
+            // 
+            // ReportFooterSub2
+            // 
+            this.ReportFooterSub2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.srReportSignature});
+            this.ReportFooterSub2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == False")});
+            this.ReportFooterSub2.Name = "ReportFooterSub2";
             // 
             // xrCrossTab1
             // 
@@ -383,7 +389,7 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(100F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(118.75F),
             crossTabColumnDefinition1});
-            crossTabColumnField1.FieldName = "BreedAgeFarmFlockCode";
+            crossTabColumnField1.FieldName = "FarmCode";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
@@ -401,7 +407,8 @@
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(42.70834F),
             crossTabRowDefinition1});
-            crossTabRowField1.FieldName = "RowNum";
+            crossTabRowField1.FieldName = "Item";
+            crossTabRowField1.SortBySummaryInfo.FieldName = "RowNum";
             this.xrCrossTab1.RowFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField[] {
             crossTabRowField1});
             this.xrCrossTab1.TotalAreaStyleName = "crossTabTotalStyle1";
@@ -415,20 +422,22 @@
             // crossTabDataCell1
             // 
             this.crossTabDataCell1.ColumnIndex = 1;
-            this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.crossTabDataCell1.Name = "crossTabDataCell1";
             this.crossTabDataCell1.RowIndex = 1;
+            this.crossTabDataCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell2
             // 
             this.crossTabHeaderCell2.ColumnIndex = 1;
             this.crossTabHeaderCell2.Name = "crossTabHeaderCell2";
             this.crossTabHeaderCell2.RowIndex = 0;
+            this.crossTabHeaderCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // crossTabHeaderCell3
             // 
             this.crossTabHeaderCell3.ColumnIndex = 0;
+            this.crossTabHeaderCell3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Item]")});
             this.crossTabHeaderCell3.Name = "crossTabHeaderCell3";
             this.crossTabHeaderCell3.RowIndex = 1;
             // 
@@ -462,41 +471,20 @@
             this.crossTabTotalCell3.Name = "crossTabTotalCell3";
             this.crossTabTotalCell3.RowIndex = 2;
             // 
-            // IsRTL
+            // PeriodNotes
             // 
-            this.IsRTL.Name = "IsRTL";
-            this.IsRTL.Type = typeof(bool);
-            this.IsRTL.ValueInfo = "False";
-            this.IsRTL.Visible = false;
-            // 
-            // SubBand4
-            // 
-            this.SubBand4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_BRD_WeeklyAnalysis_ext1});
-            this.SubBand4.Name = "SubBand4";
-            // 
-            // ReportFooterSub1
-            // 
-            this.ReportFooterSub1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportNotes});
-            this.ReportFooterSub1.Name = "ReportFooterSub1";
+            this.PeriodNotes.Name = "PeriodNotes";
+            this.PeriodNotes.ReportSource = new DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.Performance.PeriodNotes.PeriodNotes();
             // 
             // srReportNotes
             // 
             this.srReportNotes.Name = "srReportNotes";
             this.srReportNotes.ReportSource = new DevExpressReports.PredefinedReports.SubReportNotes();
             // 
-            // ReportFooterSub2
-            // 
-            this.ReportFooterSub2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.srReportSignature});
-            this.ReportFooterSub2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True && ?ShowSignatureAllPages == False")});
-            this.ReportFooterSub2.Name = "ReportFooterSub2";
-            // 
             // srReportSignature
             // 
             this.srReportSignature.Name = "srReportSignature";
+            this.srReportSignature.ReportSource = new DevExpressReports.PredefinedReports.SubReportSignature();
             // 
             // sqlDataSource1
             // 
@@ -746,6 +734,13 @@
     "lockCode]), \'\', [FlockCode])";
             this.BreedAgeFarmFlockCode.Name = "BreedAgeFarmFlockCode";
             // 
+            // IsRTL
+            // 
+            this.IsRTL.Name = "IsRTL";
+            this.IsRTL.Type = typeof(bool);
+            this.IsRTL.ValueInfo = "False";
+            this.IsRTL.Visible = false;
+            // 
             // IsCustomReportFooter
             // 
             this.IsCustomReportFooter.Name = "IsCustomReportFooter";
@@ -759,6 +754,32 @@
             this.IsCustomReportHeader.Type = typeof(bool);
             this.IsCustomReportHeader.ValueInfo = "False";
             this.IsCustomReportHeader.Visible = false;
+            // 
+            // ShowSignature
+            // 
+            this.ShowSignature.Name = "ShowSignature";
+            this.ShowSignature.Type = typeof(bool);
+            this.ShowSignature.ValueInfo = "False";
+            this.ShowSignature.Visible = false;
+            // 
+            // ShowSignatureAllPages
+            // 
+            this.ShowSignatureAllPages.Name = "ShowSignatureAllPages";
+            this.ShowSignatureAllPages.Type = typeof(bool);
+            this.ShowSignatureAllPages.ValueInfo = "False";
+            this.ShowSignatureAllPages.Visible = false;
+            // 
+            // HideReportHeader
+            // 
+            this.HideReportHeader.Name = "HideReportHeader";
+            this.HideReportHeader.Type = typeof(bool);
+            this.HideReportHeader.ValueInfo = "False";
+            // 
+            // HideReportFooter
+            // 
+            this.HideReportFooter.Name = "HideReportFooter";
+            this.HideReportFooter.Type = typeof(bool);
+            this.HideReportFooter.ValueInfo = "False";
             // 
             // NoOfGroupsPerPage
             // 
@@ -821,6 +842,13 @@
             this.Sitee.Name = "Sitee";
             this.Sitee.Visible = false;
             // 
+            // WeekNo
+            // 
+            this.WeekNo.Name = "WeekNo";
+            this.WeekNo.Type = typeof(int);
+            this.WeekNo.ValueInfo = "0";
+            this.WeekNo.Visible = false;
+            // 
             // dsBreeder
             // 
             this.dsBreeder.ConnectionName = "dsBreeder";
@@ -876,11 +904,6 @@
             this.dsBreeder.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             selectQuery2});
             this.dsBreeder.ResultSchemaSerializable = resources.GetString("dsBreeder.ResultSchemaSerializable");
-            // 
-            // SR_BRD_WeeklyAnalysis_ext1
-            // 
-            this.SR_BRD_WeeklyAnalysis_ext1.Name = "SR_BRD_WeeklyAnalysis_ext1";
-            this.SR_BRD_WeeklyAnalysis_ext1.ReportSource = new DevExpressReports.Reports.Farms.Breeder.RearingPeriod.Performance.SR_BRD_WeeklyAnalysis_ext1.SR_BRD_WeeklyAnalysis_ext1();
             // 
             // SR_BRD_WeeklyAnalysisLayFlks
             // 
@@ -955,15 +978,17 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(246.5851F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(251.5851F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(353.5F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(444F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(449F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(851.7497F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(299.2471F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(304.2471F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.PeriodNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.PeriodNotes, "Default", "SizeF", new System.Drawing.SizeF(1151.291F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Region, "Default", "Description", "Region"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 5.541674F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SheetNo, "Default", "Description", "SheetNo"),
@@ -986,30 +1011,32 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(1148.994F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "ar", "DisplayName", "قيود يومية تفصيلي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 11F, 20F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 6F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_WeeklyAnalysis_ext1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_BRD_WeeklyAnalysis_ext1, "Default", "SizeF", new System.Drawing.SizeF(1151.291F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 23F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 79.70834F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 79.70835F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand8, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.WeekNo, "Default", "Description", "WeekNo"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 10.00001F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(220.75F, 69.70834F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(134.6667F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(353.5F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(128.8283F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(218.8333F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(118.75F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(296.2083F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(530.5833F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(292.37F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(645.7085F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(880.0835F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(247.6249F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Std Book: [?BookPerf]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "المرجع: [?BookPerf]")});
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "المرجع: [?BookPerf]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(150F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "SN#:[?WeekNo]")});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.PageHeightF = 1653.543F;
             this.PageWidthF = 1169.291F;
@@ -1060,7 +1087,8 @@
             this.CropNo,
             this.Breed,
             this.Region,
-            this.Sitee});
+            this.Sitee,
+            this.WeekNo});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
@@ -1075,7 +1103,7 @@
             this.crossTabDataStyle1,
             this.crossTabTotalStyle1});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
@@ -1101,6 +1129,7 @@
         private DevExpress.XtraReports.UI.SubBand SubBand5;
         private DevExpress.XtraReports.UI.XRSubreport srReportHeader;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
@@ -1118,7 +1147,8 @@
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell2;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell3;
         private DevExpress.XtraReports.Parameters.Parameter IsRTL;
-        private DevExpress.XtraReports.UI.SubBand SubBand4;
+        private DevExpress.XtraReports.UI.SubBand SubBand8;
+        private DevExpress.XtraReports.UI.XRSubreport PeriodNotes;
         private DevExpress.XtraReports.UI.SubBand ReportFooterSub1;
         private DevExpress.XtraReports.UI.XRSubreport srReportNotes;
         private DevExpress.XtraReports.UI.SubBand ReportFooterSub2;
@@ -1171,7 +1201,7 @@
         private DevExpress.XtraReports.Parameters.Parameter Breed;
         private DevExpress.XtraReports.Parameters.Parameter Region;
         private DevExpress.XtraReports.Parameters.Parameter Sitee;
+        private DevExpress.XtraReports.Parameters.Parameter WeekNo;
         private DevExpress.DataAccess.Sql.SqlDataSource dsBreeder;
-        private DevExpress.XtraReports.UI.XRSubreport SR_BRD_WeeklyAnalysis_ext1;
     }
 }

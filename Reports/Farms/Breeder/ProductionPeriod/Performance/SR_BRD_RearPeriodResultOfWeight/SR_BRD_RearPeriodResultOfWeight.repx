@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_RearPeriodResultOfWeight" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    decimal startFemale = 0;&#xD;&#xA;decimal startMale = 0;&#xD;&#xA;&#xD;&#xA;// قراءة القيم بأمان&#xD;&#xA;object fVal = GetCurrentColumnValue(&quot;StartFemaleBirds&quot;);&#xD;&#xA;object mVal = GetCurrentColumnValue(&quot;StartMaleBirds&quot;);&#xD;&#xA;&#xD;&#xA;if (fVal != null &amp;&amp; fVal != DBNull.Value)&#xD;&#xA;    decimal.TryParse(fVal.ToString(), out startFemale);&#xD;&#xA;&#xD;&#xA;if (mVal != null &amp;&amp; mVal != DBNull.Value)&#xD;&#xA;    decimal.TryParse(mVal.ToString(), out startMale);&#xD;&#xA;&#xD;&#xA;decimal result = 0;&#xD;&#xA;&#xD;&#xA;// نفس شرط Crystal&#xD;&#xA;if (startFemale != 0)&#xD;&#xA;{&#xD;&#xA;    result = (startMale * 100) / startFemale;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// عرض النتيجة&#xD;&#xA;XRLabel lbl = sender as XRLabel;&#xD;&#xA;lbl.Text = result.ToString(&quot;N2&quot;); // أو N0 حسب اللي محتاجه&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_PeriodResultOfWeight" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_RearPeriodResultOfWeight" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    decimal startFemale = 0;&#xD;&#xA;decimal startMale = 0;&#xD;&#xA;&#xD;&#xA;// قراءة القيم بأمان&#xD;&#xA;object fVal = GetCurrentColumnValue(&quot;StartFemaleBirds&quot;);&#xD;&#xA;object mVal = GetCurrentColumnValue(&quot;StartMaleBirds&quot;);&#xD;&#xA;&#xD;&#xA;if (fVal != null &amp;&amp; fVal != DBNull.Value)&#xD;&#xA;    decimal.TryParse(fVal.ToString(), out startFemale);&#xD;&#xA;&#xD;&#xA;if (mVal != null &amp;&amp; mVal != DBNull.Value)&#xD;&#xA;    decimal.TryParse(mVal.ToString(), out startMale);&#xD;&#xA;&#xD;&#xA;decimal result = 0;&#xD;&#xA;&#xD;&#xA;// نفس شرط Crystal&#xD;&#xA;if (startFemale != 0)&#xD;&#xA;{&#xD;&#xA;    result = (startMale * 100) / startFemale;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// عرض النتيجة&#xD;&#xA;XRLabel lbl = sender as XRLabel;&#xD;&#xA;lbl.Text = result.ToString(&quot;N2&quot;); // أو N0 حسب اللي محتاجه&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_BRD_PeriodResultOfWeight" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -63,7 +63,7 @@
         <Item1 Ref="53" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="54" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="55" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="55" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="56" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="57" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -151,7 +151,7 @@
               <ParameterBindings>
                 <Item1 Ref="95" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="96" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="96" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="97" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="98" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -474,7 +474,7 @@
         <Item2 Ref="252" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="253" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="254" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="254" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="255" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="256" Visible="false" Name="Notes" />
@@ -571,7 +571,7 @@
         <Item3 Ref="308" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="309" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="310" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="310" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="311" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="312" Visible="false" Description="Parameter1" Name="FontSize" />

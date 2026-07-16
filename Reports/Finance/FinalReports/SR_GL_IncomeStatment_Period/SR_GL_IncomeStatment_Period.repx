@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GL_IncomeStatment_Period" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_GL_IncomeStatment" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GL_IncomeStatment_Period" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_GL_IncomeStatment" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsShowPreviousQuarter" Type="#Ref-2" />
@@ -116,7 +116,7 @@
                 <Item1 Ref="75" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="76" ParameterName="FontSize" Parameter="#Ref-13" />
               </ParameterBindings>
-              <ReportSource Ref="77" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="77" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="78" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="79" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -188,7 +188,7 @@
         <Item2 Ref="110" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="111" ControlType="XRSubreport" Name="PageHeaderSectionPeriod">
-              <ReportSource Ref="113" ControlType="DevExpressReports.Reports.Finance.FinalReports.PageHeaderSectionPeriod.PageHeaderSectionPeriod, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using System.Text.RegularExpressions;&#xD;&#xA;private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    string rawValue = Parameters[&quot;AccountDim&quot;].Value as string;&#xD;&#xA;&#xD;&#xA;    if (!string.IsNullOrWhiteSpace(rawValue))&#xD;&#xA;    {&#xD;&#xA;        rawValue = rawValue.Trim();&#xD;&#xA;&#xD;&#xA;        // Remove single quotes only if they're wrapping the value&#xD;&#xA;        if (rawValue.StartsWith(&quot;'&quot;) &amp;&amp; rawValue.EndsWith(&quot;'&quot;))&#xD;&#xA;        {&#xD;&#xA;            rawValue = rawValue.Substring(1, rawValue.Length - 2);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        // Optional: remove other special characters&#xD;&#xA;        rawValue = Regex.Replace(rawValue, @&quot;[^\w\s\-]&quot;, &quot;&quot;); // keeps letters, digits, space, dash&#xD;&#xA;&#xD;&#xA;        xrLabel4.Text = rawValue;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        xrLabel4.Text = string.Empty;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-112">
+              <ReportSource Ref="113" ControlType="DevExpressReports.Reports.Finance.FinalReports.PageHeaderSectionPeriod.PageHeaderSectionPeriod, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using System.Text.RegularExpressions;&#xD;&#xA;private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    string rawValue = Parameters[&quot;AccountDim&quot;].Value as string;&#xD;&#xA;&#xD;&#xA;    if (!string.IsNullOrWhiteSpace(rawValue))&#xD;&#xA;    {&#xD;&#xA;        rawValue = rawValue.Trim();&#xD;&#xA;&#xD;&#xA;        // Remove single quotes only if they're wrapping the value&#xD;&#xA;        if (rawValue.StartsWith(&quot;'&quot;) &amp;&amp; rawValue.EndsWith(&quot;'&quot;))&#xD;&#xA;        {&#xD;&#xA;            rawValue = rawValue.Substring(1, rawValue.Length - 2);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        // Optional: remove other special characters&#xD;&#xA;        rawValue = Regex.Replace(rawValue, @&quot;[^\w\s\-]&quot;, &quot;&quot;); // keeps letters, digits, space, dash&#xD;&#xA;&#xD;&#xA;        xrLabel4.Text = rawValue;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        xrLabel4.Text = string.Empty;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-112">
                 <Parameters>
                   <Item1 Ref="114" Visible="false" ValueInfo="False" Name="IsShowPreviousQuarter" Type="#Ref-2" />
                   <Item2 Ref="115" Visible="false" Name="DateTo" />
@@ -285,7 +285,7 @@
         <Item3 Ref="175" ControlType="SubBand" Name="SubBand1">
           <Controls>
             <Item1 Ref="176" ControlType="XRSubreport" Name="IncomeStatmentPeriod_Dates">
-              <ReportSource Ref="178" ControlType="DevExpressReports.Reports.Finance.FinalReports.ShowDatesPeriod.ShowDatesPeriod, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-177" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="178" ControlType="DevExpressReports.Reports.Finance.FinalReports.ShowDatesPeriod.ShowDatesPeriod, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-177" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="179" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="180" Visible="false" ValueInfo="False" Name="IsShowPreviousQuarter" Type="#Ref-2" />
@@ -610,7 +610,7 @@
         <Item2 Ref="389" ControlType="SubBand" Name="SubBand9">
           <Controls>
             <Item1 Ref="390" ControlType="XRSubreport" Name="NetProfitValuePeriod">
-              <ReportSource Ref="392" ControlType="DevExpressReports.Reports.Finance.FinalReports.NetProfitValuesPeriod.NetProfitValuesPeriod, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-391" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="392" ControlType="DevExpressReports.Reports.Finance.FinalReports.NetProfitValuesPeriod.NetProfitValuesPeriod, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-391" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="393" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="394" Visible="false" ValueInfo="False" Name="IsShowPreviousQuarter" Type="#Ref-2" />
@@ -820,7 +820,7 @@
                 <Item1 Ref="537" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="538" ParameterName="FontSize" Parameter="#Ref-13" />
               </ParameterBindings>
-              <ReportSource Ref="539" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="539" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="540" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="541" Visible="false" Name="Notes" />
@@ -921,7 +921,7 @@
                 <Item1 Ref="595" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="596" ParameterName="FontSize" Parameter="#Ref-13" />
               </ParameterBindings>
-              <ReportSource Ref="597" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="597" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="598" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="599" Visible="false" Description="Parameter1" Name="FontSize" />

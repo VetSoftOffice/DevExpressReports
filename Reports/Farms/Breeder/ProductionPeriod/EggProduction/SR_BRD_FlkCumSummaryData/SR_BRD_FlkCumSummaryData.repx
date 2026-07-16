@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_FlkCumSummaryData" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_FlkCumSummaryData" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="1169.29138" PageHeightF="1653.54333" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -70,7 +70,7 @@
         <Item1 Ref="60" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="61" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="62" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="62" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="63" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="64" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -158,7 +158,7 @@
               <ParameterBindings>
                 <Item1 Ref="102" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="103" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="103" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="104" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="105" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -284,7 +284,7 @@
         <Item2 Ref="163" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="164" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_Sub1">
-              <ReportSource Ref="166" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_Sub1.SR_BRD_FlkCumSummaryData_Sub1, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-165" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="166" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_Sub1.SR_BRD_FlkCumSummaryData_Sub1, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-165" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="167" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="168" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -544,7 +544,7 @@
         <Item3 Ref="366" ControlType="SubBand" Name="SubBand8">
           <Controls>
             <Item1 Ref="367" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_FeedConsumption">
-              <ReportSource Ref="369" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedConsumption.SR_BRD_FlkCumSummaryData_FeedConsumption, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-368">
+              <ReportSource Ref="369" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedConsumption.SR_BRD_FlkCumSummaryData_FeedConsumption, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-368">
                 <Bands>
                   <Item1 Ref="370" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="0" />
                   <Item2 Ref="371" ControlType="DetailBand" Name="detailBand1" HeightF="0" />
@@ -583,7 +583,7 @@
               </ReportSource>
             </Item1>
             <Item2 Ref="387" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_Mortality">
-              <ReportSource Ref="389" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_Mortality.SR_BRD_FlkCumSummaryData_Mortality, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-388">
+              <ReportSource Ref="389" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_Mortality.SR_BRD_FlkCumSummaryData_Mortality, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-388">
                 <Bands>
                   <Item1 Ref="390" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="0" />
                   <Item2 Ref="391" ControlType="DetailBand" Name="detailBand1" HeightF="0" />
@@ -626,7 +626,7 @@
         <Item4 Ref="407" ControlType="SubBand" Name="SubBand9">
           <Controls>
             <Item1 Ref="408" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_FeedperHEHH">
-              <ReportSource Ref="410" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedperHEHH.XtSR_BRD_FlkCumSummaryData_FeedperHEHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-409">
+              <ReportSource Ref="410" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedperHEHH.XtSR_BRD_FlkCumSummaryData_FeedperHEHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-409">
                 <Bands>
                   <Item1 Ref="411" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="0" />
                   <Item2 Ref="412" ControlType="DetailBand" Name="detailBand1" HeightF="0" />
@@ -665,7 +665,7 @@
               </ReportSource>
             </Item1>
             <Item2 Ref="428" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_HEHH">
-              <ReportSource Ref="430" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_HEHH.SR_BRD_FlkCumSummaryData_HEHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-429">
+              <ReportSource Ref="430" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_HEHH.SR_BRD_FlkCumSummaryData_HEHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-429">
                 <Bands>
                   <Item1 Ref="431" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="0" />
                   <Item2 Ref="432" ControlType="DetailBand" Name="detailBand1" HeightF="0" />
@@ -708,7 +708,7 @@
         <Item5 Ref="448" ControlType="SubBand" Name="SubBand10">
           <Controls>
             <Item1 Ref="449" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_ChiksHH">
-              <ReportSource Ref="451" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_ChiksHH.SR_BRD_FlkCumSummaryData_ChiksHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub2" DataSource="#Ref-450">
+              <ReportSource Ref="451" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_ChiksHH.SR_BRD_FlkCumSummaryData_ChiksHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub2" DataSource="#Ref-450">
                 <Bands>
                   <Item1 Ref="452" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="0" />
                   <Item2 Ref="453" ControlType="DetailBand" Name="detailBand1" HeightF="0" />
@@ -748,7 +748,7 @@
               </ReportSource>
             </Item1>
             <Item2 Ref="470" ControlType="XRSubreport" Name="SR_BRD_FlkCumSummaryData_FeedPerChicksHH">
-              <ReportSource Ref="472" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedPerChicksHH.SR_BRD_FlkCumSummaryData_FeedPerChicksHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-471">
+              <ReportSource Ref="472" ControlType="DevExpressReports.Reports.Farms.Breeder.ProductionPeriod.EggProduction.SR_BRD_FlkCumSummaryData_FeedPerChicksHH.SR_BRD_FlkCumSummaryData_FeedPerChicksHH, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 100, 0, 0" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_BRD_FlkCumSummaryData_Sub1" DataSource="#Ref-471">
                 <Bands>
                   <Item1 Ref="473" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="0" />
                   <Item2 Ref="474" ControlType="DetailBand" Name="detailBand1" HeightF="0" />
@@ -791,7 +791,7 @@
         <Item6 Ref="490" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="491" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="492" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="492" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="493" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="494" Visible="false" Name="Notes" />
@@ -888,7 +888,7 @@
         <Item7 Ref="546" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="547" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="548" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="548" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="549" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="550" Visible="false" Description="Parameter1" Name="FontSize" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_ProdHatch" ScriptsSource="&#xD;&#xA;private void xrTableCell35_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    &#xD;&#xA;    decimal fBalance = Convert.ToDecimal(GetCurrentColumnValue(&quot;FBalance&quot;) ?? 0);&#xD;&#xA;    decimal eggsProd = Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsProd&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    if (fBalance &gt; 0) {&#xD;&#xA;        decimal result = (eggsProd * 100) / fBalance;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;); // e.g., &quot;85.0&quot; eggs per 100 birds&#xD;&#xA;    } else {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1169.29138" PageHeightF="826.771667" Version="25.2" DataMember="SR_BRD_ProdHatch" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRD_ProdHatch" ScriptsSource="&#xD;&#xA;private void xrTableCell35_BeforePrint_1(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    &#xD;&#xA;    decimal fBalance = Convert.ToDecimal(GetCurrentColumnValue(&quot;FBalance&quot;) ?? 0);&#xD;&#xA;    decimal eggsProd = Convert.ToDecimal(GetCurrentColumnValue(&quot;EggsProd&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    if (fBalance &gt; 0) {&#xD;&#xA;        decimal result = (eggsProd * 100) / fBalance;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;); // e.g., &quot;85.0&quot; eggs per 100 birds&#xD;&#xA;    } else {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1169.29138" PageHeightF="826.771667" Version="26.1" DataMember="SR_BRD_ProdHatch" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -151,7 +151,7 @@
               <ParameterBindings>
                 <Item1 Ref="95" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="96" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="96" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="97" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="98" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -239,7 +239,7 @@
               <ParameterBindings>
                 <Item1 Ref="135" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="136" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="136" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="137" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="138" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -463,7 +463,7 @@
               <ParameterBindings>
                 <Item1 Ref="235" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="236" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="236" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="237" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="238" Visible="false" Name="Notes" />
@@ -563,7 +563,7 @@
               <ParameterBindings>
                 <Item1 Ref="292" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="293" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="293" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="294" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="295" Visible="false" Description="Parameter1" Name="FontSize" />

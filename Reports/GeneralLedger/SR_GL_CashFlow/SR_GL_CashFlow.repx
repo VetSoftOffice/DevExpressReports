@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GL_CashFlow" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_GL_CashFlow" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GL_CashFlow" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_GL_CashFlow" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -113,7 +113,7 @@
         <Item3 Ref="68" ControlType="SubBand" Name="SubBand2">
           <Controls>
             <Item1 Ref="69" ControlType="XRSubreport" Name="CashFlow_Params">
-              <ReportSource Ref="71" ControlType="DevExpressReports.Reports.GeneralLedger.CashFlowParams.CashFlowParams, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using System.Text.RegularExpressions;&#xD;&#xA;&#xD;&#xA;private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        string rawValue = Parameters[&quot;AccountDim&quot;].Value as string;&#xD;&#xA;&#xD;&#xA;    if (!string.IsNullOrWhiteSpace(rawValue))&#xD;&#xA;    {&#xD;&#xA;        rawValue = rawValue.Trim();&#xD;&#xA;&#xD;&#xA;        // Remove single quotes only if they're wrapping the value&#xD;&#xA;        if (rawValue.StartsWith(&quot;'&quot;) &amp;&amp; rawValue.EndsWith(&quot;'&quot;))&#xD;&#xA;        {&#xD;&#xA;            rawValue = rawValue.Substring(1, rawValue.Length - 2);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        // Optional: remove other special characters&#xD;&#xA;        rawValue = Regex.Replace(rawValue, @&quot;[^\w\s\-]&quot;, &quot;&quot;); // keeps letters, digits, space, dash&#xD;&#xA;&#xD;&#xA;        xrLabel4.Text = rawValue;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        xrLabel4.Text = string.Empty;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_GL_CashFlow_Params" DataSource="#Ref-70" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="71" ControlType="DevExpressReports.Reports.GeneralLedger.CashFlowParams.CashFlowParams, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using System.Text.RegularExpressions;&#xD;&#xA;&#xD;&#xA;private void xrLabel4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;        string rawValue = Parameters[&quot;AccountDim&quot;].Value as string;&#xD;&#xA;&#xD;&#xA;    if (!string.IsNullOrWhiteSpace(rawValue))&#xD;&#xA;    {&#xD;&#xA;        rawValue = rawValue.Trim();&#xD;&#xA;&#xD;&#xA;        // Remove single quotes only if they're wrapping the value&#xD;&#xA;        if (rawValue.StartsWith(&quot;'&quot;) &amp;&amp; rawValue.EndsWith(&quot;'&quot;))&#xD;&#xA;        {&#xD;&#xA;            rawValue = rawValue.Substring(1, rawValue.Length - 2);&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;        // Optional: remove other special characters&#xD;&#xA;        rawValue = Regex.Replace(rawValue, @&quot;[^\w\s\-]&quot;, &quot;&quot;); // keeps letters, digits, space, dash&#xD;&#xA;&#xD;&#xA;        xrLabel4.Text = rawValue;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        xrLabel4.Text = string.Empty;&#xD;&#xA;    }&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_GL_CashFlow_Params" DataSource="#Ref-70" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="72" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="73" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -294,7 +294,7 @@
         <Item4 Ref="203" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="204" ControlType="XRSubreport" Name="CashFlow_Dates">
-              <ReportSource Ref="206" ControlType="DevExpressReports.Reports.GeneralLedger.CashFlowDates.CashFlowDates, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_GL_CashFlow_Params" DataSource="#Ref-205" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="206" ControlType="DevExpressReports.Reports.GeneralLedger.CashFlowDates.CashFlowDates, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_GL_CashFlow_Params" DataSource="#Ref-205" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="207" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="208" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -517,7 +517,7 @@
                 <Item1 Ref="356" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="357" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="358" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="358" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="359" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="360" Visible="false" Name="Notes" />
@@ -618,7 +618,7 @@
                 <Item1 Ref="414" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="415" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="416" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="416" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="417" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="418" Visible="false" Description="Parameter1" Name="FontSize" />
