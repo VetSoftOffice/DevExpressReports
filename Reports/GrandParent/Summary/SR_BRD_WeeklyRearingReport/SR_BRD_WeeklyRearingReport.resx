@@ -117,6 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="crossTabHeaderCell3.ExpressionBindings" xml:space="preserve">
+    <value>Iif([Type1] == 1, ?Age, 
+Iif([Type1] == 2, ?FemaleBodyWt, 
+Iif([Type1] == 3, ?FemaleFeed, 
+Iif([Type1] == 4, ?FemaleMort, 
+Iif([Type1] == 5, ?MaleBodyWt, 
+Iif([Type1] == 6, ?MaleFeed, 
+Iif([Type1] == 7, ?MaleMort, 
+Iif([Type1] == 8, ?Env, null))))))))</value>
+  </data>
+  <data name="crossTabHeaderCell6.ExpressionBindings" xml:space="preserve">
+    <value>Iif([Type2] == 1, ?Days, 
+Iif([Type2] == 2, ?Targeet, 
+Iif([Type2] == 3, ?Actual, 
+Iif([Type2] == 4, ?WeeklyGain, 
+Iif([Type2] == 5, ?Uniformity, 
+Iif([Type2] == 6, ?Targeet, 
+Iif([Type2] == 7, ?Actual, 
+Iif([Type2] == 8, ?FeedEnergy, 
+Iif([Type2] == 9, ?FeedType, 
+Iif([Type2] == 10, ?Birds, 
+Iif([Type2] == 11, ?WeeklyPerc, 
+Iif([Type2] == 12, ?CumPerc, 
+Iif([Type2] == 13, ?Light, 
+Iif([Type2] == 14, ?WaterConsumption, 
+Iif([Type2] == 15, ?Temperature, null)))))))))))))))</value>
+  </data>
   <data name="sqlDataSource10.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEwIj48VmlldyBOYW1lPSJTUl9CUkRfV2Vla2x5UmVhcmluZ1JlcG9ydCI+PEZpZWxkIE5hbWU9IlR5cGUxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHlwZTIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJXZWVrTm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJWYWx1ZSIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
@@ -216,7 +243,7 @@ else
 
 private void detailBand1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
         decimal femaleMort = Convert.ToDecimal(GetCurrentColumnValue("FemaleMort") ?? 0);
-    totalFemaleMort += femaleMort;
+    totalFemaleMort += femaleMort;a
     decimal femaleCullsKill = Convert.ToDecimal(GetCurrentColumnValue("Female_CullsKill") ?? 0);
     totalFemaleKill += femaleCullsKill;
         decimal femaleCulls = Convert.ToDecimal(GetCurrentColumnValue("Female_Culls") ?? 0);
