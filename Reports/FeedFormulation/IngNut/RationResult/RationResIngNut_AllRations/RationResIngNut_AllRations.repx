@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="RationResIngNut_AllRations" ScriptsSource="&#xD;&#xA;private void xrPageInfo2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRPageInfo pageInfo = sender as XRPageInfo;&#xD;&#xA;    if ((bool)Parameters[&quot;IsRTL&quot;].Value)&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;الصفحة {0} من {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.Yes;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;Page {0} of {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.No;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Margins="10, 10, 20, 23" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_FM_RationResult" DataSource="#Ref-0" Font="Tahoma, 8pt, style=Bold">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="RationResIngNut_AllRations" ScriptsSource="&#xD;&#xA;private void xrPageInfo2_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRPageInfo pageInfo = sender as XRPageInfo;&#xD;&#xA;    if ((bool)Parameters[&quot;IsRTL&quot;].Value)&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;الصفحة {0} من {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.Yes;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        pageInfo.TextFormatString = &quot;Page {0} of {1}&quot;;&#xD;&#xA;        pageInfo.RightToLeft = RightToLeft.No;&#xD;&#xA;        pageInfo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Margins="10, 10, 20, 23" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_FM_RationResult" DataSource="#Ref-0" Font="Tahoma, 8pt, style=Bold">
   <Parameters>
     <Item1 Ref="3" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" Description="ShowSignature" ValueInfo="False" Name="ShowSignature" Type="#Ref-2" />
@@ -36,7 +36,7 @@
         <Item1 Ref="26" ControlType="SubBand" Name="SubBand1" HeightF="20">
           <Controls>
             <Item1 Ref="27" ControlType="XRSubreport" Name="srReportNotes" SizeF="807.0001,20" LocationFloat="0,0">
-              <ReportSource Ref="28" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="28" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="29" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="30" Visible="false" Name="Notes" />
@@ -133,7 +133,7 @@
         <Item2 Ref="82" ControlType="SubBand" Name="SubBand5" HeightF="20.87501" TextAlignment="MiddleCenter">
           <Controls>
             <Item1 Ref="83" ControlType="XRSubreport" Name="srReportSignature" SizeF="807.0001,20" LocationFloat="0,0">
-              <ReportSource Ref="84" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="84" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="85" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="86" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -196,7 +196,7 @@
         <Item1 Ref="114" ControlType="SubBand" Name="SubBand6" HeightF="20.8333">
           <Controls>
             <Item1 Ref="115" ControlType="XRSubreport" Name="srReportSignature_PageFooter" SizeF="806.9969,20" LocationFloat="0.003218651,0">
-              <ReportSource Ref="116" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="116" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="117" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="118" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -254,7 +254,7 @@
         <Item2 Ref="144" ControlType="SubBand" Name="SubBand7" HeightF="20">
           <Controls>
             <Item1 Ref="145" ControlType="XRSubreport" Name="srReportFooterCustom" SizeF="807,20" LocationFloat="0,0">
-              <ReportSource Ref="146" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="146" ControlType="DevExpressReports.PredefinedReports.SubReportFooterCustom, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="147" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="148" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -346,7 +346,7 @@
         <Item1 Ref="180" ControlType="SubBand" Name="SubBand2" HeightF="33.00002">
           <Controls>
             <Item1 Ref="181" ControlType="XRSubreport" Name="RationResIngNut_Ing" SizeF="807.0001,23" LocationFloat="0,10.00001">
-              <ReportSource Ref="183" ControlType="DevExpressReports.Reports.FeedFormulation.Ingrdient.RationResIngNut_Ing.RationResIngNut_Ing, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using DevExpress.XtraReports.UI.CrossTab;&#xD;&#xA;&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;        }&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_FM_RationResult" DataSource="#Ref-182" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="183" ControlType="DevExpressReports.Reports.FeedFormulation.Ingrdient.RationResIngNut_Ing.RationResIngNut_Ing, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ScriptsSource="using DevExpress.XtraReports.UI.CrossTab;&#xD;&#xA;&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;        }&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_FM_RationResult" DataSource="#Ref-182" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="184" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="185" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -574,7 +574,7 @@
         <Item2 Ref="352" ControlType="SubBand" Name="SubBand3" HeightF="33.00001">
           <Controls>
             <Item1 Ref="353" ControlType="XRSubreport" Name="RationResIngNut_Nut" SizeF="807.0001,23" LocationFloat="0,10.00001">
-              <ReportSource Ref="355" ControlType="DevExpressReports.Reports.FeedFormulation.Nutrient.RationResIngNut_Nut.RationResIngNut_Nut, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_FM_RationResult_Nut" DataSource="#Ref-354" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="355" ControlType="DevExpressReports.Reports.FeedFormulation.Nutrient.RationResIngNut_Nut.RationResIngNut_Nut, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_FM_RationResult_Nut" DataSource="#Ref-354" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="356" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="357" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -777,7 +777,7 @@
       </SubBands>
       <Controls>
         <Item1 Ref="498" ControlType="XRSubreport" Name="srReportHeader" SizeF="807.0001,33.54166" LocationFloat="0,0">
-          <ReportSource Ref="499" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+          <ReportSource Ref="499" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
             <Parameters>
               <Item1 Ref="500" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
               <Item2 Ref="501" Visible="false" Description="Logo path" Name="LogoPath" />

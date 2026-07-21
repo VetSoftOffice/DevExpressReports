@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GL_IncomeStatment" ScriptsSource="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" PageWidth="827" PageHeight="1169" Version="24.2" DataMember="SR_GL_IncomeStatment" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_GL_IncomeStatment" ScriptsSource="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" PageWidth="827" PageHeight="1169" Version="26.1" DataMember="SR_GL_IncomeStatment" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="Top, Bottom" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -96,7 +96,7 @@
                 <Item1 Ref="61" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="62" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="63" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="63" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="64" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="65" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -168,7 +168,7 @@
         <Item2 Ref="96" ControlType="SubBand" Name="SubBand1">
           <Controls>
             <Item1 Ref="97" ControlType="XRSubreport" Name="PageHeaderSection">
-              <ReportSource Ref="99" ControlType="DevExpressReports.Reports.Finance.FinalReports.PageHeaderSection.PageHeaderSection, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-98">
+              <ReportSource Ref="99" ControlType="DevExpressReports.Reports.Finance.FinalReports.PageHeaderSection.PageHeaderSection, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="26.1" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-98">
                 <Parameters>
                   <Item1 Ref="100" Visible="false" Name="DateTo" />
                   <Item2 Ref="101" Visible="false" Name="Companies" />
@@ -231,7 +231,7 @@
         <Item3 Ref="138" ControlType="SubBand" Name="SubBand2">
           <Controls>
             <Item1 Ref="139" ControlType="XRSubreport" Name="IncomeStatment_Dates">
-              <ReportSource Ref="141" ControlType="DevExpressReports.Reports.Finance.FinalReports.ShowDates.ShowDates, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-140" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="141" ControlType="DevExpressReports.Reports.Finance.FinalReports.ShowDates.ShowDates, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-140" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="142" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="143" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -485,7 +485,7 @@
         <Item2 Ref="303" ControlType="SubBand" Name="SubBand9">
           <Controls>
             <Item1 Ref="304" ControlType="XRSubreport" Name="NetProfitValues">
-              <ReportSource Ref="306" ControlType="DevExpressReports.Reports.Finance.FinalReports.NetProfitValues.NetProfitValues, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="24.2" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-305" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="306" ControlType="DevExpressReports.Reports.Finance.FinalReports.NetProfitValues.NetProfitValues, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_GL_IncomeStatment_Dates" DataSource="#Ref-305" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="307" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="308" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -669,7 +669,7 @@
                 <Item1 Ref="431" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="432" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="433" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="24.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="433" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidth="827" PageHeight="1169" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="434" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="435" Visible="false" Name="Notes" />
@@ -770,7 +770,7 @@
                 <Item1 Ref="489" ParameterName="IsRTL" Parameter="#Ref-3" />
                 <Item2 Ref="490" ParameterName="FontSize" Parameter="#Ref-12" />
               </ParameterBindings>
-              <ReportSource Ref="491" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="24.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="491" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="492" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="493" Visible="false" Description="Parameter1" Name="FontSize" />

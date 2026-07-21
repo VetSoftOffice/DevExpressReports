@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="IngredientReceiving" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_FM_IngReceiving" DataSource="#Ref-0">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="IngredientReceiving" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_FM_IngReceiving" DataSource="#Ref-0">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="5" Visible="false" Name="DateFrom" />
@@ -93,7 +93,7 @@
         <Item1 Ref="51" ControlType="SubBand" Name="SubBand2">
           <Controls>
             <Item1 Ref="52" ControlType="XRSubreport" Name="srReportHeader">
-              <ReportSource Ref="53" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="53" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="54" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="55" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -213,7 +213,7 @@
     <Item5 Ref="111" ControlType="GroupFooterBand" Name="GroupFooter1">
       <Controls>
         <Item1 Ref="112" ControlType="XRSubreport" Name="IngredientRec_Remarks">
-          <ReportSource Ref="114" ControlType="DevExpressReports.Reports.FeedMill.Ingredient.IngredientRec_Remarks.IngredientRec_Remarks, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 0, 10.41667, 9.375" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_FM_IngredientRec_Remarks" DataSource="#Ref-113" Font="Arial, 9.75pt">
+          <ReportSource Ref="114" ControlType="DevExpressReports.Reports.FeedMill.Ingredient.IngredientRec_Remarks.IngredientRec_Remarks, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="100, 0, 10.41667, 9.375" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_FM_IngredientRec_Remarks" DataSource="#Ref-113" Font="Arial, 9.75pt">
             <CalculatedFields>
               <Item1 Ref="115" Name="Message" Expression="Iif([R_FM_IngredientRec_Remarks.Qty] &lt;&gt; 0, &#xD;&#xA;   '(' + [SR_FM_IngredientRec_Remarks.IngredientName_en] + ' - ' + &#xD;&#xA;    FormatString([SR_FM_IngredientRec_Remarks.Qty] / 1000, 'F3') + ' Tons) ' + [SR_FM_IngredientRec_Remarks.Note], ''&#xD;&#xA;   &#xD;&#xA;)" DataMember="SR_FM_IngredientRec_Remarks" />
             </CalculatedFields>
@@ -257,7 +257,7 @@
         <Item1 Ref="129" ControlType="SubBand" Name="SubBand5">
           <Controls>
             <Item1 Ref="130" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="131" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="131" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="132" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="133" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -318,7 +318,7 @@
               <ParameterBindings>
                 <Item1 Ref="162" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="163" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="163" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="164" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="165" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -378,7 +378,7 @@
       </SubBands>
       <Controls>
         <Item1 Ref="192" ControlType="XRSubreport" Name="srReportNotes">
-          <ReportSource Ref="193" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+          <ReportSource Ref="193" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
             <Parameters>
               <Item1 Ref="194" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
               <Item2 Ref="195" Visible="false" Name="Notes" />

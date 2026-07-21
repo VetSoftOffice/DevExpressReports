@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PT_MonthlyParent" ScriptsSource="decimal TotalFemaleMale  = 0;&#xD;&#xA;decimal groupSumFemaleMale  = 0;&#xD;&#xA;decimal TotalCounterPluck  = 0;&#xD;&#xA;decimal groupSumCounterPluck = 0;&#xD;&#xA;decimal femaleNoGroup  = 0;&#xD;&#xA;decimal maleNoGroup  = 0;&#xD;&#xA;decimal counterTotalGroup  = 0;&#xD;&#xA;decimal pluckRejectGroup  = 0;&#xD;&#xA;decimal counterTotalReport  = 0;&#xD;&#xA;decimal pluckRejectReport = 0;&#xD;&#xA;private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal femaleNo = 0;&#xD;&#xA;decimal maleNo = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;FemaleNo&quot;) != null)&#xD;&#xA;    femaleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;FemaleNo&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;MaleNo&quot;) != null)&#xD;&#xA;    maleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;MaleNo&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal result = femaleNo + maleNo;&#xD;&#xA;&#xD;&#xA;// --- (Optional) Add to a running total ---&#xD;&#xA;TotalFemaleMale += result;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = result.ToString(&quot;N0&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal femaleNo = 0;&#xD;&#xA;decimal maleNo = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;FemaleNo&quot;) != null)&#xD;&#xA;    femaleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;FemaleNo&quot;));&#xD;&#xA;    femaleNoGroup += femaleNo ;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;MaleNo&quot;) != null)&#xD;&#xA;    maleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;MaleNo&quot;));&#xD;&#xA;    maleNoGroup += maleNo ;&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;&#xD;&#xA;// --- Add to group total ---&#xD;&#xA;femaleNoGroup += femaleNo ;&#xD;&#xA;maleNoGroup += maleNo ;&#xD;&#xA;groupSumFemaleMale = femaleNoGroup  + maleNoGroup ;&#xD;&#xA;&#xD;&#xA;// --- Declare values ---&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;decimal pluckReject = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;PluckReject&quot;) != null)&#xD;&#xA;    pluckReject = Convert.ToDecimal(GetCurrentColumnValue(&quot;PluckReject&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;&#xD;&#xA;// --- Add to group total ---&#xD;&#xA;counterTotalGroup += counterTotal; &#xD;&#xA;pluckRejectGroup += pluckReject ;&#xD;&#xA;&#xD;&#xA;groupSumCounterPluck = counterTotalGroup  + pluckRejectGroup  ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     xrTableCell35.Text = groupSumFemaleMale.ToString(&quot;N0&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     xrTableCell9.Text = TotalFemaleMale.ToString(&quot;N0&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;decimal pluckReject = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;PluckReject&quot;) != null)&#xD;&#xA;    pluckReject = Convert.ToDecimal(GetCurrentColumnValue(&quot;PluckReject&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal result = counterTotal + pluckReject;&#xD;&#xA;&#xD;&#xA;// --- (Optional) Add to a running total ---&#xD;&#xA;counterTotalReport += counterTotal ;&#xD;&#xA;pluckRejectReport += pluckReject ;&#xD;&#xA;TotalCounterPluck = counterTotalReport  + pluckRejectReport &#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = result.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;      xrTableCell42.Text = groupSumCounterPluck.ToString(&quot;0&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;      xrTableCell23.Text = TotalCounterPluck.ToString(&quot;0&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_PT_MonthlyParent" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PT_MonthlyParent" ScriptsSource="decimal TotalFemaleMale  = 0;&#xD;&#xA;decimal groupSumFemaleMale  = 0;&#xD;&#xA;decimal TotalCounterPluck  = 0;&#xD;&#xA;decimal groupSumCounterPluck = 0;&#xD;&#xA;decimal femaleNoGroup  = 0;&#xD;&#xA;decimal maleNoGroup  = 0;&#xD;&#xA;decimal counterTotalGroup  = 0;&#xD;&#xA;decimal pluckRejectGroup  = 0;&#xD;&#xA;decimal counterTotalReport  = 0;&#xD;&#xA;decimal pluckRejectReport = 0;&#xD;&#xA;private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal femaleNo = 0;&#xD;&#xA;decimal maleNo = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;FemaleNo&quot;) != null)&#xD;&#xA;    femaleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;FemaleNo&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;MaleNo&quot;) != null)&#xD;&#xA;    maleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;MaleNo&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal result = femaleNo + maleNo;&#xD;&#xA;&#xD;&#xA;// --- (Optional) Add to a running total ---&#xD;&#xA;TotalFemaleMale += result;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = result.ToString(&quot;N0&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal femaleNo = 0;&#xD;&#xA;decimal maleNo = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;FemaleNo&quot;) != null)&#xD;&#xA;    femaleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;FemaleNo&quot;));&#xD;&#xA;    femaleNoGroup += femaleNo ;&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;MaleNo&quot;) != null)&#xD;&#xA;    maleNo = Convert.ToDecimal(GetCurrentColumnValue(&quot;MaleNo&quot;));&#xD;&#xA;    maleNoGroup += maleNo ;&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;&#xD;&#xA;// --- Add to group total ---&#xD;&#xA;femaleNoGroup += femaleNo ;&#xD;&#xA;maleNoGroup += maleNo ;&#xD;&#xA;groupSumFemaleMale = femaleNoGroup  + maleNoGroup ;&#xD;&#xA;&#xD;&#xA;// --- Declare values ---&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;decimal pluckReject = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;PluckReject&quot;) != null)&#xD;&#xA;    pluckReject = Convert.ToDecimal(GetCurrentColumnValue(&quot;PluckReject&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;&#xD;&#xA;// --- Add to group total ---&#xD;&#xA;counterTotalGroup += counterTotal; &#xD;&#xA;pluckRejectGroup += pluckReject ;&#xD;&#xA;&#xD;&#xA;groupSumCounterPluck = counterTotalGroup  + pluckRejectGroup  ;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     xrTableCell35.Text = groupSumFemaleMale.ToString(&quot;N0&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell9_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;     xrTableCell9.Text = TotalFemaleMale.ToString(&quot;N0&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell33_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;decimal pluckReject = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;PluckReject&quot;) != null)&#xD;&#xA;    pluckReject = Convert.ToDecimal(GetCurrentColumnValue(&quot;PluckReject&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal result = counterTotal + pluckReject;&#xD;&#xA;&#xD;&#xA;// --- (Optional) Add to a running total ---&#xD;&#xA;counterTotalReport += counterTotal ;&#xD;&#xA;pluckRejectReport += pluckReject ;&#xD;&#xA;TotalCounterPluck = counterTotalReport  + pluckRejectReport &#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = result.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell42_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;      xrTableCell42.Text = groupSumCounterPluck.ToString(&quot;0&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;      xrTableCell23.Text = TotalCounterPluck.ToString(&quot;0&quot;);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_PT_MonthlyParent" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -25,8 +25,8 @@
   <CalculatedFields>
     <Item1 Ref="24" Name="Abs_OpenBal" Expression="Abs([OpenBalance])" DataMember="SR_FC_CustSuppSheet" />
     <Item2 Ref="25" Name="DebitCreditOpenBalRes" Expression="Iif([OpenBalance] &gt; 0,[Debit_Str] , Iif([OpenBalance] &lt; 0, [Credit_Str], ''))" DataMember="SR_FC_CustSuppSheet" />
-    <Item3 Ref="26" Name="Debit_Str" Expression="Iif(?IsRTL == true,'(????)' , '(Debit)')" DataMember="SR_FC_CustSuppSheet" />
-    <Item4 Ref="27" Name="Credit_Str" Expression="Iif(?IsRTL == true,'(????)' , '(Credit)')" DataMember="SR_FC_CustSuppSheet" />
+    <Item3 Ref="26" Name="Debit_Str" Expression="Iif(?IsRTL == true,'(ذكور)' , '(Debit)')" DataMember="SR_FC_CustSuppSheet" />
+    <Item4 Ref="27" Name="Credit_Str" Expression="Iif(?IsRTL == true,'(ذكور)' , '(Credit)')" DataMember="SR_FC_CustSuppSheet" />
     <Item5 Ref="28" Name="OpenDebit" Expression="Iif([OpenBalance] &gt; 0, [OpenBalance], NULL)" DataMember="SR_FC_CustSuppSheet" />
     <Item6 Ref="29" Name="OpenCredit" Expression="Iif([OpenBalance] &lt; 0, Abs([OpenBalance]), NULL)&#xA;" DataMember="SR_FC_CustSuppSheet" />
     <Item7 Ref="30" Name="Result" Expression="[Debit] - [Credit]" DataMember="SR_FC_CustSuppSheet" />
@@ -147,7 +147,7 @@
         <Item1 Ref="97" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="98" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="99" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="99" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="100" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="101" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -227,7 +227,7 @@
               <ParameterBindings>
                 <Item1 Ref="136" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="137" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="137" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="138" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="139" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -401,7 +401,7 @@
         <Item2 Ref="226" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="227" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="228" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="228" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="229" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="230" Visible="false" Name="Notes" />
@@ -477,7 +477,7 @@
                   <Item20 Ref="271" Component="#Ref-249" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item21 Ref="272" Component="#Ref-249" Culture="Default" Path="SizeF" Data="806,20" />
                   <Item22 Ref="273" Component="#Ref-249" Culture="Default" Path="Text" Data="Filter Data:  [?FilterData]" />
-                  <Item23 Ref="274" Component="#Ref-249" Culture="ar" Path="Text" Data="?????? ???????: [?FilterData]" />
+                  <Item23 Ref="274" Component="#Ref-249" Culture="ar" Path="Text" Data="اجمالي الوردية: [?FilterData]" />
                   <Item24 Ref="275" Component="#Ref-244" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item25 Ref="276" Component="#Ref-244" Culture="Default" Path="SizeF" Data="806,20" />
                 </LocalizationItems>
@@ -498,7 +498,7 @@
         <Item3 Ref="282" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="283" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="284" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="284" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="285" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="286" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -723,28 +723,28 @@
     <Item2 Ref="403" Component="#Ref-21" Culture="Default" Path="Description" Data="Code_Str" />
     <Item3 Ref="404" Component="#Ref-22" Culture="Default" Path="Description" Data="CustSupp" />
     <Item4 Ref="405" Component="#Ref-14" Culture="Default" Path="Description" Data="From" />
-    <Item5 Ref="406" Component="#Ref-14" Culture="ar" Path="Description" Data="??" />
+    <Item5 Ref="406" Component="#Ref-14" Culture="ar" Path="Description" Data="من" />
     <Item6 Ref="407" Component="#Ref-20" Culture="Default" Path="Description" Data="To" />
-    <Item7 Ref="408" Component="#Ref-20" Culture="ar" Path="Description" Data="???" />
+    <Item7 Ref="408" Component="#Ref-20" Culture="ar" Path="Description" Data="من?" />
     <Item8 Ref="409" Component="#Ref-52" Culture="Default" Path="HeightF" Data="20" />
     <Item9 Ref="410" Component="#Ref-19" Culture="Default" Path="Description" Data="DownTime" />
     <Item10 Ref="411" Component="#Ref-17" Culture="Default" Path="Description" Data="FinishingTime" />
     <Item11 Ref="412" Component="#Ref-13" Culture="Default" Path="Description" Data="Font Size" />
-    <Item12 Ref="413" Component="#Ref-13" Culture="ar" Path="Description" Data="??? ????" />
+    <Item12 Ref="413" Component="#Ref-13" Culture="ar" Path="Description" Data="من? ذكور" />
     <Item13 Ref="414" Component="#Ref-312" Culture="Default" Path="HeightF" Data="20" />
     <Item14 Ref="415" Component="#Ref-389" Culture="Default" Path="HeightF" Data="20" />
     <Item15 Ref="416" Component="#Ref-363" Culture="Default" Path="HeightF" Data="41.66667" />
     <Item16 Ref="417" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
-    <Item17 Ref="418" Component="#Ref-9" Culture="ar" Path="Description" Data="????? ??? ???????" />
+    <Item17 Ref="418" Component="#Ref-9" Culture="ar" Path="Description" Data="ذكور? من? ذكورمن?" />
     <Item18 Ref="419" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
-    <Item19 Ref="420" Component="#Ref-8" Culture="ar" Path="Description" Data="????? ??? ???????" />
+    <Item19 Ref="420" Component="#Ref-8" Culture="ar" Path="Description" Data="ذكور? من? ذكورمن?" />
     <Item20 Ref="421" Component="#Ref-4" Culture="Default" Path="Description" Data="IsCustomReportFooter" />
     <Item21 Ref="422" Component="#Ref-5" Culture="Default" Path="Description" Data="IsCustomReportHeader" />
     <Item22 Ref="423" Component="#Ref-10" Culture="Default" Path="Description" Data="IsDealType" />
     <Item23 Ref="424" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
-    <Item24 Ref="425" Component="#Ref-3" Culture="ar" Path="Description" Data="??? ?? ?????? ??????" />
+    <Item24 Ref="425" Component="#Ref-3" Culture="ar" Path="Description" Data="من? من ذكورمن ذكورمن" />
     <Item25 Ref="426" Component="#Ref-12" Culture="Default" Path="Description" Data="No of groups / page" />
-    <Item26 Ref="427" Component="#Ref-12" Culture="ar" Path="Description" Data="??? ????????? / ????" />
+    <Item26 Ref="427" Component="#Ref-12" Culture="ar" Path="Description" Data="من? التاريخ? / ذكور" />
     <Item27 Ref="428" Component="#Ref-96" Culture="Default" Path="HeightF" Data="0" />
     <Item28 Ref="429" Component="#Ref-128" Culture="Default" Path="HeightF" Data="0" />
     <Item29 Ref="430" Component="#Ref-170" Culture="Default" Path="HeightF" Data="20" />
@@ -763,9 +763,9 @@
     <Item42 Ref="443" Component="#Ref-282" Culture="Default" Path="HeightF" Data="20" />
     <Item43 Ref="444" Component="#Ref-174" Culture="Default" Path="HeightF" Data="20" />
     <Item44 Ref="445" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
-    <Item45 Ref="446" Component="#Ref-6" Culture="ar" Path="Description" Data="??? ???????" />
+    <Item45 Ref="446" Component="#Ref-6" Culture="ar" Path="Description" Data="من? ذكورمن?" />
     <Item46 Ref="447" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
-    <Item47 Ref="448" Component="#Ref-7" Culture="ar" Path="Description" Data="??? ??????? ?? ?? ???????" />
+    <Item47 Ref="448" Component="#Ref-7" Culture="ar" Path="Description" Data="من? ذكورمن? من من ذكورمن?" />
     <Item48 Ref="449" Component="#Ref-135" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
     <Item49 Ref="450" Component="#Ref-135" Culture="Default" Path="SizeF" Data="805.9971,20" />
     <Item50 Ref="451" Component="#Ref-130" Culture="Default" Path="LocationFloat" Data="0,0" />
@@ -777,7 +777,7 @@
     <Item56 Ref="457" Component="#Ref-98" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item57 Ref="458" Component="#Ref-98" Culture="Default" Path="SizeF" Data="807.0002,20" />
     <Item58 Ref="459" Component="#Ref-1" Culture="Default" Path="DisplayName" Data="SR_AS_FixedAssets" />
-    <Item59 Ref="460" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="???? ????? ??????" />
+    <Item59 Ref="460" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="اساسي الاصول الثابتة" />
     <Item60 Ref="461" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item61 Ref="462" Component="#Ref-1" Culture="Default" Path="Margins" Data="10, 10, 20, 20.00004" />
     <Item62 Ref="463" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A4" />
@@ -792,7 +792,7 @@
     <Item71 Ref="472" Component="#Ref-171" Culture="Default" Path="LocationFloat" Data="1.000007,0" />
     <Item72 Ref="473" Component="#Ref-171" Culture="Default" Path="SizeF" Data="267.7084,20" />
     <Item73 Ref="474" Component="#Ref-171" Culture="Default" Path="Text" Data="Processing Plant No. : [?Place]" />
-    <Item74 Ref="475" Component="#Ref-171" Culture="ar" Path="Text" Data="?????? : [?Place]" />
+    <Item74 Ref="475" Component="#Ref-171" Culture="ar" Path="Text" Data="ذكورمن : [?Place]" />
     <Item75 Ref="476" Component="#Ref-48" Culture="Default" Path="LocationFloat" Data="603.67,0" />
     <Item76 Ref="477" Component="#Ref-48" Culture="Default" Path="SizeF" Data="203.330017,20.00004" />
     <Item77 Ref="478" Component="#Ref-48" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
@@ -805,7 +805,7 @@
     <Item84 Ref="485" Component="#Ref-364" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item85 Ref="486" Component="#Ref-364" Culture="Default" Path="SizeF" Data="806.9971,41.66667" />
     <Item86 Ref="487" Component="#Ref-366" Culture="Default" Path="Text" Data="Date" />
-    <Item87 Ref="488" Component="#Ref-366" Culture="ar" Path="Text" Data="???????" />
+    <Item87 Ref="488" Component="#Ref-366" Culture="ar" Path="Text" Data="ذكورمن?" />
     <Item88 Ref="489" Component="#Ref-366" Culture="Default" Path="Weight" Data="0.84676015178023745" />
     <Item89 Ref="490" Component="#Ref-59" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item90 Ref="491" Component="#Ref-59" Culture="Default" Path="Text" Data="" />
@@ -848,7 +848,7 @@
     <Item127 Ref="528" Component="#Ref-188" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item128 Ref="529" Component="#Ref-188" Culture="Default" Path="Weight" Data="2.155285968976226" />
     <Item129 Ref="530" Component="#Ref-368" Culture="Default" Path="Text" Data="Total No" />
-    <Item130 Ref="531" Component="#Ref-368" Culture="ar" Path="Text" Data="???? ????????" />
+    <Item130 Ref="531" Component="#Ref-368" Culture="ar" Path="Text" Data="ذكور التاريخ" />
     <Item131 Ref="532" Component="#Ref-368" Culture="Default" Path="Weight" Data="0.58678980941951209" />
     <Item132 Ref="533" Component="#Ref-192" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item133 Ref="534" Component="#Ref-192" Culture="Default" Path="Text" Data="xrTableCell46" />
@@ -866,13 +866,13 @@
     <Item145 Ref="546" Component="#Ref-207" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item146 Ref="547" Component="#Ref-207" Culture="Default" Path="Weight" Data="2.5122435852638407" />
     <Item147 Ref="548" Component="#Ref-370" Culture="Default" Path="Text" Data="Male" />
-    <Item148 Ref="549" Component="#Ref-370" Culture="ar" Path="Text" Data="????" />
+    <Item148 Ref="549" Component="#Ref-370" Culture="ar" Path="Text" Data="ذكور" />
     <Item149 Ref="550" Component="#Ref-370" Culture="Default" Path="Weight" Data="0.6410033757208875" />
     <Item150 Ref="551" Component="#Ref-372" Culture="Default" Path="Text" Data="Female" />
-    <Item151 Ref="552" Component="#Ref-372" Culture="ar" Path="Text" Data="????" />
+    <Item151 Ref="552" Component="#Ref-372" Culture="ar" Path="Text" Data="ذكور" />
     <Item152 Ref="553" Component="#Ref-372" Culture="Default" Path="Weight" Data="0.69044927642349085" />
     <Item153 Ref="554" Component="#Ref-374" Culture="Default" Path="Text" Data="DOA" />
-    <Item154 Ref="555" Component="#Ref-374" Culture="ar" Path="Text" Data="???? ??? ??????" />
+    <Item154 Ref="555" Component="#Ref-374" Culture="ar" Path="Text" Data="ذكور من? ذكورمن" />
     <Item155 Ref="556" Component="#Ref-374" Culture="Default" Path="Weight" Data="0.52830072441223219" />
     <Item156 Ref="557" Component="#Ref-386" Culture="Default" Path="Text" Data="%" />
     <Item157 Ref="558" Component="#Ref-386" Culture="Default" Path="Weight" Data="0.48525526359519167" />
@@ -886,7 +886,7 @@
     <Item165 Ref="566" Component="#Ref-358" Culture="Default" Path="Weight" Data="1.5146499795310795" />
     <Item166 Ref="567" Component="#Ref-315" Culture="Default" Path="Font" Data="Tahoma, 9pt, style=Bold" />
     <Item167 Ref="568" Component="#Ref-315" Culture="Default" Path="Text" Data="Shift Total" />
-    <Item168 Ref="569" Component="#Ref-315" Culture="ar" Path="Text" Data="?????? ???????" />
+    <Item168 Ref="569" Component="#Ref-315" Culture="ar" Path="Text" Data="اجمالي الوردية" />
     <Item169 Ref="570" Component="#Ref-315" Culture="Default" Path="Weight" Data="2.592327833678854" />
     <Item170 Ref="571" Component="#Ref-70" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item171 Ref="572" Component="#Ref-70" Culture="Default" Path="Text" Data="xrTableCell45" />
@@ -930,10 +930,10 @@
     <Item209 Ref="610" Component="#Ref-334" Culture="Default" Path="Weight" Data="2.447561271485498" />
     <Item210 Ref="611" Component="#Ref-178" Culture="Default" Path="Font" Data="Tahoma, 9pt, style=Bold" />
     <Item211 Ref="612" Component="#Ref-178" Culture="Default" Path="Text" Data="Grand Total" />
-    <Item212 Ref="613" Component="#Ref-178" Culture="ar" Path="Text" Data="???????? ?????" />
+    <Item212 Ref="613" Component="#Ref-178" Culture="ar" Path="Text" Data="الاجمالي الكلي" />
     <Item213 Ref="614" Component="#Ref-178" Culture="Default" Path="Weight" Data="2.5923278903172995" />
     <Item214 Ref="615" Component="#Ref-376" Culture="Default" Path="Text" Data="Culls" />
-    <Item215 Ref="616" Component="#Ref-376" Culture="ar" Path="Text" Data="????????" />
+    <Item215 Ref="616" Component="#Ref-376" Culture="ar" Path="Text" Data="التاريخ" />
     <Item216 Ref="617" Component="#Ref-376" Culture="Default" Path="Weight" Data="0.78419977026632171" />
     <Item217 Ref="618" Component="#Ref-339" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item218 Ref="619" Component="#Ref-339" Culture="Default" Path="Text" Data="tdCredit" />
@@ -943,20 +943,20 @@
     <Item222 Ref="623" Component="#Ref-344" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item223 Ref="624" Component="#Ref-344" Culture="Default" Path="Weight" Data="2.5122418274236771" />
     <Item224 Ref="625" Component="#Ref-382" Culture="Default" Path="Text" Data="Breast+Legs Meat Kg" />
-    <Item225 Ref="626" Component="#Ref-382" Culture="ar" Path="Text" Data="??? ????? ??????? (???)" />
+    <Item225 Ref="626" Component="#Ref-382" Culture="ar" Path="Text" Data="من? ذكور? ذكورمن? (من?)" />
     <Item226 Ref="627" Component="#Ref-382" Culture="Default" Path="Weight" Data="1.124929555415743" />
     <Item227 Ref="628" Component="#Ref-378" Culture="Default" Path="Text" Data="Pluck Reject" />
-    <Item228 Ref="629" Component="#Ref-378" Culture="ar" Path="Text" Data="????? ??? ??? ?????" />
+    <Item228 Ref="629" Component="#Ref-378" Culture="ar" Path="Text" Data="ذكور? من? من? ذكور?" />
     <Item229 Ref="630" Component="#Ref-378" Culture="Default" Path="Weight" Data="0.77841791046014674" />
     <Item230 Ref="631" Component="#Ref-380" Culture="Default" Path="Text" Data="Net Total" />
-    <Item231 Ref="632" Component="#Ref-380" Culture="ar" Path="Text" Data="???????? ??????" />
+    <Item231 Ref="632" Component="#Ref-380" Culture="ar" Path="Text" Data="الاجمالي الكلي?" />
     <Item232 Ref="633" Component="#Ref-380" Culture="Default" Path="Weight" Data="0.81491258666697575" />
     <Item233 Ref="634" Component="#Ref-86" Culture="Default" Path="Font" Data="Tahoma, 7pt" />
     <Item234 Ref="635" Component="#Ref-86" Culture="Default" Path="Text" Data="xrTableCell6" />
     <Item235 Ref="636" Component="#Ref-86" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item236 Ref="637" Component="#Ref-86" Culture="Default" Path="Weight" Data="3.62265447286888" />
     <Item237 Ref="638" Component="#Ref-384" Culture="Default" Path="Text" Data="Live Weight" />
-    <Item238 Ref="639" Component="#Ref-384" Culture="ar" Path="Text" Data="????? ????" />
+    <Item238 Ref="639" Component="#Ref-384" Culture="ar" Path="Text" Data="ذكور? ذكور" />
     <Item239 Ref="640" Component="#Ref-384" Culture="Default" Path="Weight" Data="0.90023731143856622" />
     <Item240 Ref="641" Component="#Ref-56" Culture="Default" Path="Font" Data="Tahoma, 7.25pt" />
     <Item241 Ref="642" Component="#Ref-56" Culture="Default" Path="Weight" Data="2.69421512979374" />

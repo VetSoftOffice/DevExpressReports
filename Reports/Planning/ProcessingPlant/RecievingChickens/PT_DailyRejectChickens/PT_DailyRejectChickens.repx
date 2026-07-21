@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="PT_DailyRejectChickens" ScriptsSource="decimal PluckRejectPercReport  = 0;&#xD;&#xA;decimal DOAPercReport  = 0;&#xD;&#xA;decimal CullsPercReport  =0 ;&#xD;&#xA;private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal pluckReject = 0;&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;PluckReject&quot;) != null)&#xD;&#xA;    pluckReject = Convert.ToDecimal(GetCurrentColumnValue(&quot;PluckReject&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal percentage = 0;&#xD;&#xA;if (counterTotal &gt; 0)&#xD;&#xA;    percentage = (pluckReject * 100m) / counterTotal;&#xD;&#xA;    PluckRejectPercReport += percentage;  // --- Add to report total (for averaging/summaries if needed) ---&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = percentage.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;           xrTableCell26.Text = PluckRejectPercReport.ToString(&quot;0&quot;);&#xD;&#xA;          PluckRejectPercReport= 0; // reset for next LineType group&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values --- &#xD;&#xA;decimal doa = 0;&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;DOA&quot;) != null)&#xD;&#xA;    doa = Convert.ToDecimal(GetCurrentColumnValue(&quot;DOA&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal percentage = 0;&#xD;&#xA;if (counterTotal &gt; 0)&#xD;&#xA;    percentage = (doa * 100m) / counterTotal;&#xD;&#xA;    DOAPercReport += percentage;   // --- Add to report total (for averaging/summaries if needed) ---&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = percentage.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;          xrTableCell28.Text = DOAPercReport.ToString(&quot;0&quot;);&#xD;&#xA;          DOAPercReport = 0; // reset for next LineType group&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values --- &#xD;&#xA;decimal culls = 0;&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;Culls&quot;) != null)&#xD;&#xA;    culls = Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal percentage = 0;&#xD;&#xA;if (counterTotal &gt; 0)&#xD;&#xA;    percentage = (culls * 100m) / counterTotal;&#xD;&#xA;    CullsPercReport += percentage;  // --- Add to report total (for averaging/summaries if needed) ---&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = percentage.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;      xrTableCell30.Text = CullsPercReport.ToString(&quot;0&quot;);&#xD;&#xA;      CullsPercReport = 0; // reset for next LineType group&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" DataMember="SR_PT_DailyRecePlucking" DataSource="#Ref-0">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="PT_DailyRejectChickens" ScriptsSource="decimal PluckRejectPercReport  = 0;&#xD;&#xA;decimal DOAPercReport  = 0;&#xD;&#xA;decimal CullsPercReport  =0 ;&#xD;&#xA;private void xrTableCell10_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values ---&#xD;&#xA;decimal pluckReject = 0;&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;PluckReject&quot;) != null)&#xD;&#xA;    pluckReject = Convert.ToDecimal(GetCurrentColumnValue(&quot;PluckReject&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal percentage = 0;&#xD;&#xA;if (counterTotal &gt; 0)&#xD;&#xA;    percentage = (pluckReject * 100m) / counterTotal;&#xD;&#xA;    PluckRejectPercReport += percentage;  // --- Add to report total (for averaging/summaries if needed) ---&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = percentage.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell26_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;           xrTableCell26.Text = PluckRejectPercReport.ToString(&quot;0&quot;);&#xD;&#xA;          PluckRejectPercReport= 0; // reset for next LineType group&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values --- &#xD;&#xA;decimal doa = 0;&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;DOA&quot;) != null)&#xD;&#xA;    doa = Convert.ToDecimal(GetCurrentColumnValue(&quot;DOA&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal percentage = 0;&#xD;&#xA;if (counterTotal &gt; 0)&#xD;&#xA;    percentage = (doa * 100m) / counterTotal;&#xD;&#xA;    DOAPercReport += percentage;   // --- Add to report total (for averaging/summaries if needed) ---&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = percentage.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell28_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;          xrTableCell28.Text = DOAPercReport.ToString(&quot;0&quot;);&#xD;&#xA;          DOAPercReport = 0; // reset for next LineType group&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell23_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    // --- Declare values --- &#xD;&#xA;decimal culls = 0;&#xD;&#xA;decimal counterTotal = 0;&#xD;&#xA;&#xD;&#xA;// --- Read values ---&#xD;&#xA;if (GetCurrentColumnValue(&quot;Culls&quot;) != null)&#xD;&#xA;    culls = Convert.ToDecimal(GetCurrentColumnValue(&quot;Culls&quot;));&#xD;&#xA;&#xD;&#xA;if (GetCurrentColumnValue(&quot;CounterTotal&quot;) != null)&#xD;&#xA;    counterTotal = Convert.ToDecimal(GetCurrentColumnValue(&quot;CounterTotal&quot;));&#xD;&#xA;&#xD;&#xA;// --- Equation ---&#xD;&#xA;decimal percentage = 0;&#xD;&#xA;if (counterTotal &gt; 0)&#xD;&#xA;    percentage = (culls * 100m) / counterTotal;&#xD;&#xA;    CullsPercReport += percentage;  // --- Add to report total (for averaging/summaries if needed) ---&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// --- Assign result to cell ---&#xD;&#xA;XRTableCell cell = sender as XRTableCell;&#xD;&#xA;cell.Text = percentage.ToString(&quot;0.##&quot;); // format with up to 2 decimals&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell30_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;      xrTableCell30.Text = CullsPercReport.ToString(&quot;0&quot;);&#xD;&#xA;      CullsPercReport = 0; // reset for next LineType group&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" DataMember="SR_PT_DailyRecePlucking" DataSource="#Ref-0">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="5" Visible="false" Name="DateFrom" />
@@ -114,7 +114,7 @@
         <Item1 Ref="66" ControlType="SubBand" Name="SubBand2">
           <Controls>
             <Item1 Ref="67" ControlType="XRSubreport" Name="srReportHeader">
-              <ReportSource Ref="68" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="68" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="69" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="70" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -319,7 +319,7 @@
         <Item2 Ref="174" ControlType="SubBand" Name="SubBand5">
           <Controls>
             <Item1 Ref="175" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="176" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="176" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="177" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="178" Visible="false" Name="Notes" />
@@ -395,7 +395,7 @@
                   <Item20 Ref="219" Component="#Ref-197" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item21 Ref="220" Component="#Ref-197" Culture="Default" Path="SizeF" Data="806,20" />
                   <Item22 Ref="221" Component="#Ref-197" Culture="Default" Path="Text" Data="Filter Data:  [?FilterData]" />
-                  <Item23 Ref="222" Component="#Ref-197" Culture="ar" Path="Text" Data="?????? ???????: [?FilterData]" />
+                  <Item23 Ref="222" Component="#Ref-197" Culture="ar" Path="Text" Data="بيانات التصفية: [?FilterData]" />
                   <Item24 Ref="223" Component="#Ref-192" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item25 Ref="224" Component="#Ref-192" Culture="Default" Path="SizeF" Data="806,20" />
                 </LocalizationItems>
@@ -416,7 +416,7 @@
         <Item3 Ref="230" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="231" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="232" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="232" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="233" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="234" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -475,7 +475,7 @@
         <Item1 Ref="260" ControlType="SubBand" Name="SubBand7">
           <Controls>
             <Item1 Ref="261" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="262" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="262" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="263" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="264" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -530,7 +530,7 @@
         <Item2 Ref="289" ControlType="SubBand" Name="SubBand8">
           <Controls>
             <Item1 Ref="290" ControlType="XRSubreport" Name="srReportFooterCustom">
-              <ReportSource Ref="291" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="291" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="292" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="293" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -623,11 +623,11 @@
     <Item35 Ref="352" Component="#Ref-103" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item36 Ref="353" Component="#Ref-103" Culture="Default" Path="SizeF" Data="144.358,18" />
     <Item37 Ref="354" Component="#Ref-103" Culture="Default" Path="Text" Data="Date: [?DateFrom!dd-MM-yyyy]" />
-    <Item38 Ref="355" Component="#Ref-103" Culture="ar" Path="Text" Data="???????: [?DateFrom!dd-MM-yyyy]" />
+    <Item38 Ref="355" Component="#Ref-103" Culture="ar" Path="Text" Data="التاريخ: [?DateFrom!dd-MM-yyyy]" />
     <Item39 Ref="356" Component="#Ref-101" Culture="Default" Path="LocationFloat" Data="299.3747,0" />
     <Item40 Ref="357" Component="#Ref-101" Culture="Default" Path="SizeF" Data="267.7084,18" />
     <Item41 Ref="358" Component="#Ref-101" Culture="Default" Path="Text" Data="Processing Plant No. : [?PlantCode]" />
-    <Item42 Ref="359" Component="#Ref-101" Culture="ar" Path="Text" Data="??? ?????? : [?PlantCode]" />
+    <Item42 Ref="359" Component="#Ref-101" Culture="ar" Path="Text" Data="رقم المجزر : [?PlantCode]" />
     <Item43 Ref="360" Component="#Ref-22" Culture="Default" Path="LocationFloat" Data="632.2115,0" />
     <Item44 Ref="361" Component="#Ref-22" Culture="Default" Path="SizeF" Data="174.56,23" />
     <Item45 Ref="362" Component="#Ref-22" Culture="Default" Path="TextFormatString" Data="Page {0} of {1}" />
@@ -641,7 +641,7 @@
     <Item53 Ref="370" Component="#Ref-131" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item54 Ref="371" Component="#Ref-131" Culture="Default" Path="SizeF" Data="739.9997,20" />
     <Item55 Ref="372" Component="#Ref-108" Culture="Default" Path="Text" Data="Farm" />
-    <Item56 Ref="373" Component="#Ref-108" Culture="ar" Path="Text" Data="???????" />
+    <Item56 Ref="373" Component="#Ref-108" Culture="ar" Path="Text" Data="المزرعة" />
     <Item57 Ref="374" Component="#Ref-108" Culture="Default" Path="Weight" Data="1.0770839179309812" />
     <Item58 Ref="375" Component="#Ref-44" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item59 Ref="376" Component="#Ref-44" Culture="Default" Path="Text" Data="" />
@@ -652,7 +652,7 @@
     <Item64 Ref="381" Component="#Ref-27" Culture="Default" Path="TextFormatString" Data="" />
     <Item65 Ref="382" Component="#Ref-27" Culture="Default" Path="Weight" Data="1.0770839691162108" />
     <Item66 Ref="383" Component="#Ref-133" Culture="Default" Path="Text" Data="Total" />
-    <Item67 Ref="384" Component="#Ref-133" Culture="ar" Path="Text" Data="????????" />
+    <Item67 Ref="384" Component="#Ref-133" Culture="ar" Path="Text" Data="الاجمالي" />
     <Item68 Ref="385" Component="#Ref-133" Culture="Default" Path="Weight" Data="0.53171082690700344" />
     <Item69 Ref="386" Component="#Ref-135" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item70 Ref="387" Component="#Ref-135" Culture="Default" Path="Text" Data="xrTableCell13" />
@@ -662,17 +662,17 @@
     <Item74 Ref="391" Component="#Ref-118" Culture="Default" Path="Text" Data="%" />
     <Item75 Ref="392" Component="#Ref-118" Culture="Default" Path="Weight" Data="0.46875214669400223" />
     <Item76 Ref="393" Component="#Ref-120" Culture="Default" Path="Text" Data="DOA" />
-    <Item77 Ref="394" Component="#Ref-120" Culture="ar" Path="Text" Data="???? ??? ??????" />
+    <Item77 Ref="394" Component="#Ref-120" Culture="ar" Path="Text" Data="نافق عند الوصول" />
     <Item78 Ref="395" Component="#Ref-120" Culture="Default" Path="Weight" Data="0.59374726181424886" />
     <Item79 Ref="396" Component="#Ref-122" Culture="Default" Path="Text" Data="%" />
     <Item80 Ref="397" Component="#Ref-122" Culture="Default" Path="Weight" Data="0.53124970439939434" />
     <Item81 Ref="398" Component="#Ref-124" Culture="Default" Path="Text" Data="Culls" />
-    <Item82 Ref="399" Component="#Ref-124" Culture="ar" Path="Text" Data="????????" />
+    <Item82 Ref="399" Component="#Ref-124" Culture="ar" Path="Text" Data="مستبعدات" />
     <Item83 Ref="400" Component="#Ref-124" Culture="Default" Path="Weight" Data="0.64583282781882834" />
     <Item84 Ref="401" Component="#Ref-126" Culture="Default" Path="Text" Data="%" />
     <Item85 Ref="402" Component="#Ref-126" Culture="Default" Path="Weight" Data="0.55208282879449155" />
     <Item86 Ref="403" Component="#Ref-110" Culture="Default" Path="Text" Data="House" />
-    <Item87 Ref="404" Component="#Ref-110" Culture="ar" Path="Text" Data="??????" />
+    <Item87 Ref="404" Component="#Ref-110" Culture="ar" Path="Text" Data="العنبر" />
     <Item88 Ref="405" Component="#Ref-110" Culture="Default" Path="Weight" Data="0.66666596295944114" />
     <Item89 Ref="406" Component="#Ref-48" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item90 Ref="407" Component="#Ref-48" Culture="Default" Path="Text" Data="xrTableCell20" />
@@ -715,17 +715,17 @@
     <Item127 Ref="444" Component="#Ref-164" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item128 Ref="445" Component="#Ref-164" Culture="Default" Path="Weight" Data="0.31882042571963171" />
     <Item129 Ref="446" Component="#Ref-112" Culture="Default" Path="Text" Data="Breed" />
-    <Item130 Ref="447" Component="#Ref-112" Culture="ar" Path="Text" Data="???????" />
+    <Item130 Ref="447" Component="#Ref-112" Culture="ar" Path="Text" Data="السلالة" />
     <Item131 Ref="448" Component="#Ref-112" Culture="Default" Path="Weight" Data="1.1041665623259154" />
     <Item132 Ref="449" Component="#Ref-169" Culture="Default" Path="Font" Data="Tahoma, 7pt, style=Bold" />
     <Item133 Ref="450" Component="#Ref-169" Culture="Default" Path="Text" Data="" />
     <Item134 Ref="451" Component="#Ref-169" Culture="Default" Path="TextFormatString" Data="{0:N2}" />
     <Item135 Ref="452" Component="#Ref-169" Culture="Default" Path="Weight" Data="0.27254031445706195" />
     <Item136 Ref="453" Component="#Ref-114" Culture="Default" Path="Text" Data="Bird Counter " />
-    <Item137 Ref="454" Component="#Ref-114" Culture="ar" Path="Text" Data="???? ??????" />
+    <Item137 Ref="454" Component="#Ref-114" Culture="ar" Path="Text" Data="عداد الطيور" />
     <Item138 Ref="455" Component="#Ref-114" Culture="Default" Path="Weight" Data="0.95833343993334974" />
     <Item139 Ref="456" Component="#Ref-116" Culture="Default" Path="Text" Data="Total Reject" />
-    <Item140 Ref="457" Component="#Ref-116" Culture="ar" Path="Text" Data="?????? ?????" />
+    <Item140 Ref="457" Component="#Ref-116" Culture="ar" Path="Text" Data="اجمالي الرفض" />
     <Item141 Ref="458" Component="#Ref-116" Culture="Default" Path="Weight" Data="0.8020822185592128" />
     <Item142 Ref="459" Component="#Ref-30" Culture="Default" Path="Font" Data="Tahoma, 8pt" />
     <Item143 Ref="460" Component="#Ref-30" Culture="Default" Path="Text" Data="xrTableCell6" />

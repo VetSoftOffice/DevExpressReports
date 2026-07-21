@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="24.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="IngredientRec_Remarks" Margins="100, 0, 10.41667, 9.375" PageWidth="850" PageHeight="1100" Version="24.2" DataMember="SR_FM_IngredientRec_Remarks" DataSource="#Ref-0" Font="Arial, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="IngredientRec_Remarks" Margins="100, 0, 10.41667, 9.375" PageWidth="850" PageHeight="1100" Version="26.1" DataMember="SR_FM_IngredientRec_Remarks" DataSource="#Ref-0" Font="Arial, 9.75pt">
   <CalculatedFields>
     <Item1 Ref="2" Name="Message" Expression="Iif([R_FM_IngredientRec_Remarks.Qty] &lt;&gt; 0, &#xA;   '(' + [SR_FM_IngredientRec_Remarks.IngredientName_en] + ' - ' + &#xA;    FormatString([SR_FM_IngredientRec_Remarks.Qty] / 1000, 'F3') + ' Tons) ' + [SR_FM_IngredientRec_Remarks.Note], ''&#xA;   &#xA;)" DataMember="SR_FM_IngredientRec_Remarks" />
   </CalculatedFields>

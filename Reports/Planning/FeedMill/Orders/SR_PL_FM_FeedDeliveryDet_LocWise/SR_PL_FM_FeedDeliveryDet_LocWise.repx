@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PL_FM_FeedDeliveryDet_LocWise" ScriptsSource="decimal totalQty = 0;&#xD;&#xA;decimal totalNoOfTrips = 0;&#xD;&#xA;private void xrTableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;&#xD;&#xA;// Get values from the data source&#xD;&#xA;decimal noOfTrips = Convert.ToDecimal(GetCurrentColumnValue(&quot;NoOfTrips&quot;) ?? 0);&#xD;&#xA;decimal qty = Convert.ToDecimal(GetCurrentColumnValue(&quot;Qty&quot;) ?? 0);&#xD;&#xA;&#xD;&#xA;if (noOfTrips &gt; 0)&#xD;&#xA;{&#xD;&#xA;    // Calculate: Qty / NoOfTrips&#xD;&#xA;    decimal result = qty / noOfTrips;&#xD;&#xA;    cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    cell.Text = &quot;0.00&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;  totalQty += qty;&#xD;&#xA;  totalNoOfTrips += noOfTrips;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    &#xD;&#xA;    if (totalNoOfTrips &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        decimal result = totalQty / totalNoOfTrips;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;) ;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_PL_FM_FeedDeliveryDet" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PL_FM_FeedDeliveryDet_LocWise" ScriptsSource="decimal totalQty = 0;&#xD;&#xA;decimal totalNoOfTrips = 0;&#xD;&#xA;private void xrTableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;&#xD;&#xA;// Get values from the data source&#xD;&#xA;decimal noOfTrips = Convert.ToDecimal(GetCurrentColumnValue(&quot;NoOfTrips&quot;) ?? 0);&#xD;&#xA;decimal qty = Convert.ToDecimal(GetCurrentColumnValue(&quot;Qty&quot;) ?? 0);&#xD;&#xA;&#xD;&#xA;if (noOfTrips &gt; 0)&#xD;&#xA;{&#xD;&#xA;    // Calculate: Qty / NoOfTrips&#xD;&#xA;    decimal result = qty / noOfTrips;&#xD;&#xA;    cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    cell.Text = &quot;0.00&quot;;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;  totalQty += qty;&#xD;&#xA;  totalNoOfTrips += noOfTrips;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void xrTableCell12_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {&#xD;&#xA;    XRTableCell cell = sender as XRTableCell;&#xD;&#xA;    &#xD;&#xA;    if (totalNoOfTrips &gt; 0)&#xD;&#xA;    {&#xD;&#xA;        decimal result = totalQty / totalNoOfTrips;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;) ;&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" PageWidthF="826.771667" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_PL_FM_FeedDeliveryDet" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -97,7 +97,7 @@
         <Item1 Ref="68" ControlType="SubBand" Name="SubBand4">
           <Controls>
             <Item1 Ref="69" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="70" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="70" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="71" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="72" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -185,7 +185,7 @@
               <ParameterBindings>
                 <Item1 Ref="110" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="111" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="111" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="112" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="113" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -271,7 +271,7 @@
         <Item1 Ref="150" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="151" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="152" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="152" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="153" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="154" Visible="false" Name="Notes" />
@@ -368,7 +368,7 @@
         <Item2 Ref="206" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="207" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="208" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="208" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="209" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="210" Visible="false" Description="Parameter1" Name="FontSize" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRO_DailyDeplHouseCross" ScriptsSource="&#xD;&#xA;private void crossTabHeaderCell34_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;    &#xD;&#xA;    // Get StartBirds&#xD;&#xA;    decimal startBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartBirds&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Get CumCulls and CumMort&#xD;&#xA;    decimal cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;) ?? 0);&#xD;&#xA;    decimal cumMort = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumMort&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Calculate CumDepl&#xD;&#xA;    decimal cumDepl = cumCulls + cumMort;&#xD;&#xA;    &#xD;&#xA;    if (startBirds != 0)&#xD;&#xA;    {&#xD;&#xA;        // Calculate cumulative depletion percentage&#xD;&#xA;        decimal result = (cumDepl * 100.0m) / startBirds;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_BRO_DailyDeplHouseCross" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_BRO_DailyDeplHouseCross" ScriptsSource="&#xD;&#xA;private void crossTabHeaderCell34_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;    XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;    &#xD;&#xA;    // Get StartBirds&#xD;&#xA;    decimal startBirds = Convert.ToDecimal(GetCurrentColumnValue(&quot;StartBirds&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Get CumCulls and CumMort&#xD;&#xA;    decimal cumCulls = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumCulls&quot;) ?? 0);&#xD;&#xA;    decimal cumMort = Convert.ToDecimal(GetCurrentColumnValue(&quot;CumMort&quot;) ?? 0);&#xD;&#xA;    &#xD;&#xA;    // Calculate CumDepl&#xD;&#xA;    decimal cumDepl = cumCulls + cumMort;&#xD;&#xA;    &#xD;&#xA;    if (startBirds != 0)&#xD;&#xA;    {&#xD;&#xA;        // Calculate cumulative depletion percentage&#xD;&#xA;        decimal result = (cumDepl * 100.0m) / startBirds;&#xD;&#xA;        cell.Text = result.ToString(&quot;N2&quot;);&#xD;&#xA;    }&#xD;&#xA;    else&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_BRO_DailyDeplHouseCross" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -110,7 +110,7 @@
         <Item1 Ref="100" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="101" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="102" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="102" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="103" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="104" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -198,7 +198,7 @@
               <ParameterBindings>
                 <Item1 Ref="142" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="143" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="143" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="144" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="145" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -279,7 +279,7 @@
       <SubBands>
         <Item1 Ref="180" ControlType="SubBand" Name="SubBand2">
           <Controls>
-            <Item1 Ref="181" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1" DataSource="#Ref-0" DataMember="SR_BRO_DailyDeplHouseCross">
+            <Item1 Ref="181" ControlType="XRCrossTab" Name="xrCrossTab1" GeneralStyleName="crossTabGeneralStyle1" DataAreaStyleName="crossTabDataStyle1" HeaderAreaStyleName="crossTabHeaderStyle1" TotalAreaStyleName="crossTabTotalStyle1">
               <Parameters>
                 <Item1 Ref="182" Name="IsRTL" Parameter="#Ref-3" />
               </Parameters>
@@ -303,7 +303,7 @@
                 <Item2 Ref="195" FieldName="Culls" />
               </DataFields>
               <ColumnDefinitions>
-                <Item1 Ref="196" Width="64.87655" />
+                <Item1 Ref="196" Width="64.87654" />
                 <Item2 Ref="197" Width="46.1265755" />
                 <Item3 Ref="198" Width="69.99859" />
                 <Item4 Ref="199" Width="69.99859" />
@@ -321,17 +321,17 @@
               <RowDefinitions>
                 <Item1 Ref="210" Height="41.666687" />
                 <Item2 Ref="211" Height="41.666687" />
-                <Item3 Ref="212" Height="50.00003" />
-                <Item4 Ref="213" Height="2.00000048" Visible="false" />
-                <Item5 Ref="214" Height="2.00000048" Visible="false" />
-                <Item6 Ref="215" Height="2.00000048" Visible="false" />
-                <Item7 Ref="216" Height="2.00000048" Visible="false" />
-                <Item8 Ref="217" Height="2.00000048" Visible="false" />
-                <Item9 Ref="218" Height="2.00000048" Visible="false" />
-                <Item10 Ref="219" Height="2.00000048" Visible="false" />
-                <Item11 Ref="220" Height="2.00000048" Visible="false" />
-                <Item12 Ref="221" Height="2.00000048" Visible="false" />
-                <Item13 Ref="222" Height="2.00000048" Visible="false" />
+                <Item3 Ref="212" Height="50.0000267" />
+                <Item4 Ref="213" Height="1.99999976" Visible="false" />
+                <Item5 Ref="214" Height="1.99999976" Visible="false" />
+                <Item6 Ref="215" Height="1.99999976" Visible="false" />
+                <Item7 Ref="216" Height="1.99999976" Visible="false" />
+                <Item8 Ref="217" Height="1.99999976" Visible="false" />
+                <Item9 Ref="218" Height="1.99999976" Visible="false" />
+                <Item10 Ref="219" Height="1.99999976" Visible="false" />
+                <Item11 Ref="220" Height="1.99999976" Visible="false" />
+                <Item12 Ref="221" Height="1.99999976" Visible="false" />
+                <Item13 Ref="222" Height="1.99999976" Visible="false" />
               </RowDefinitions>
               <Cells>
                 <Item1 Ref="223" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" BackColor="255,240,240,240" BorderColor="DarkGray" BorderWidth="1.4" />
@@ -339,7 +339,7 @@
                 <Item3 Ref="225" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" ColumnIndex="0" RowIndex="2" RowSpan="9" BackColor="White" Padding="5,5,0,0,100" BorderColor="DarkGray" BorderWidth="1.4" />
                 <Item4 Ref="226" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="0" RowIndex="12" ColumnSpan="10" />
                 <Item5 Ref="227" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="12" RowIndex="0" ColumnSpan="2" />
-                <Item6 Ref="228" ControlType="XRCrossTabCell" Name="crossTabDataCell4" ColumnIndex="10" RowIndex="2" BackColor="White">
+                <Item6 Ref="228" ControlType="XRCrossTabCell" Name="crossTabDataCell4" ColumnIndex="10" RowIndex="2" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="229" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -353,7 +353,7 @@
                 <Item13 Ref="236" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="10" RowIndex="11" />
                 <Item14 Ref="237" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="12" RowIndex="11" />
                 <Item15 Ref="238" ControlType="XRCrossTabCell" Name="crossTabHeaderCell15" ColumnIndex="2" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item16 Ref="239" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="2" RowIndex="2" RowSpan="7" BackColor="White">
+                <Item16 Ref="239" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="2" RowIndex="2" RowSpan="7" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="240" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -362,7 +362,7 @@
                 <Item18 Ref="242" ControlType="XRCrossTabCell" Name="crossTabTotalCell10" ColumnIndex="10" RowIndex="10" />
                 <Item19 Ref="243" ControlType="XRCrossTabCell" Name="crossTabTotalCell11" ColumnIndex="12" RowIndex="10" />
                 <Item20 Ref="244" ControlType="XRCrossTabCell" Name="crossTabHeaderCell18" ColumnIndex="3" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item21 Ref="245" ControlType="XRCrossTabCell" Name="crossTabHeaderCell19" ColumnIndex="3" RowIndex="2" RowSpan="6" BackColor="White">
+                <Item21 Ref="245" ControlType="XRCrossTabCell" Name="crossTabHeaderCell19" ColumnIndex="3" RowIndex="2" RowSpan="6" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="246" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -371,7 +371,7 @@
                 <Item23 Ref="248" ControlType="XRCrossTabCell" Name="crossTabTotalCell15" ColumnIndex="10" RowIndex="9" />
                 <Item24 Ref="249" ControlType="XRCrossTabCell" Name="crossTabTotalCell21" ColumnIndex="12" RowIndex="9" />
                 <Item25 Ref="250" ControlType="XRCrossTabCell" Name="crossTabHeaderCell21" ColumnIndex="4" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item26 Ref="251" ControlType="XRCrossTabCell" Name="crossTabHeaderCell22" ColumnIndex="4" RowIndex="2" RowSpan="5" BackColor="White">
+                <Item26 Ref="251" ControlType="XRCrossTabCell" Name="crossTabHeaderCell22" ColumnIndex="4" RowIndex="2" RowSpan="5" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="252" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -380,7 +380,7 @@
                 <Item28 Ref="254" ControlType="XRCrossTabCell" Name="crossTabTotalCell25" ColumnIndex="10" RowIndex="8" />
                 <Item29 Ref="255" ControlType="XRCrossTabCell" Name="crossTabTotalCell26" ColumnIndex="12" RowIndex="8" />
                 <Item30 Ref="256" ControlType="XRCrossTabCell" Name="crossTabHeaderCell24" ColumnIndex="5" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item31 Ref="257" ControlType="XRCrossTabCell" Name="crossTabHeaderCell25" ColumnIndex="5" RowIndex="2" RowSpan="4" BackColor="White">
+                <Item31 Ref="257" ControlType="XRCrossTabCell" Name="crossTabHeaderCell25" ColumnIndex="5" RowIndex="2" RowSpan="4" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="258" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -389,7 +389,7 @@
                 <Item33 Ref="260" ControlType="XRCrossTabCell" Name="crossTabTotalCell30" ColumnIndex="10" RowIndex="7" />
                 <Item34 Ref="261" ControlType="XRCrossTabCell" Name="crossTabTotalCell31" ColumnIndex="12" RowIndex="7" />
                 <Item35 Ref="262" ControlType="XRCrossTabCell" Name="crossTabHeaderCell27" ColumnIndex="6" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item36 Ref="263" ControlType="XRCrossTabCell" Name="crossTabHeaderCell28" ColumnIndex="6" RowIndex="2" RowSpan="3" BackColor="White">
+                <Item36 Ref="263" ControlType="XRCrossTabCell" Name="crossTabHeaderCell28" ColumnIndex="6" RowIndex="2" RowSpan="3" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="264" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -398,7 +398,7 @@
                 <Item38 Ref="266" ControlType="XRCrossTabCell" Name="crossTabTotalCell35" ColumnIndex="10" RowIndex="6" />
                 <Item39 Ref="267" ControlType="XRCrossTabCell" Name="crossTabTotalCell36" ColumnIndex="12" RowIndex="6" />
                 <Item40 Ref="268" ControlType="XRCrossTabCell" Name="crossTabHeaderCell30" ColumnIndex="7" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item41 Ref="269" ControlType="XRCrossTabCell" Name="crossTabHeaderCell31" ColumnIndex="7" RowIndex="2" RowSpan="2" BackColor="White">
+                <Item41 Ref="269" ControlType="XRCrossTabCell" Name="crossTabHeaderCell31" ColumnIndex="7" RowIndex="2" RowSpan="2" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="270" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -407,7 +407,7 @@
                 <Item43 Ref="272" ControlType="XRCrossTabCell" Name="crossTabTotalCell40" ColumnIndex="10" RowIndex="5" />
                 <Item44 Ref="273" ControlType="XRCrossTabCell" Name="crossTabTotalCell41" ColumnIndex="12" RowIndex="5" />
                 <Item45 Ref="274" ControlType="XRCrossTabCell" Name="crossTabHeaderCell33" ColumnIndex="8" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item46 Ref="275" ControlType="XRCrossTabCell" Name="crossTabHeaderCell34" ColumnIndex="8" RowIndex="2" BackColor="White">
+                <Item46 Ref="275" ControlType="XRCrossTabCell" Name="crossTabHeaderCell34" ColumnIndex="8" RowIndex="2" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="276" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -417,7 +417,7 @@
                 <Item48 Ref="279" ControlType="XRCrossTabCell" Name="crossTabTotalCell45" ColumnIndex="10" RowIndex="4" />
                 <Item49 Ref="280" ControlType="XRCrossTabCell" Name="crossTabTotalCell46" ColumnIndex="12" RowIndex="4" />
                 <Item50 Ref="281" ControlType="XRCrossTabCell" Name="crossTabHeaderCell36" ColumnIndex="9" RowIndex="0" RowSpan="2" TextAlignment="MiddleCenter" />
-                <Item51 Ref="282" ControlType="XRCrossTabCell" Name="crossTabHeaderCell37" ColumnIndex="9" RowIndex="2" BackColor="White">
+                <Item51 Ref="282" ControlType="XRCrossTabCell" Name="crossTabHeaderCell37" ColumnIndex="9" RowIndex="2" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="283" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -429,7 +429,7 @@
                 <Item56 Ref="288" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" ColumnIndex="11" RowIndex="1" TextAlignment="MiddleCenter" />
                 <Item57 Ref="289" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="12" RowIndex="1" />
                 <Item58 Ref="290" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" ColumnIndex="13" RowIndex="1" />
-                <Item59 Ref="291" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="11" RowIndex="2" BackColor="White">
+                <Item59 Ref="291" ControlType="XRCrossTabCell" Name="crossTabDataCell1" ColumnIndex="11" RowIndex="2" BackColor="White" Padding="2,2,0,0,100">
                   <ExpressionBindings>
                     <Item1 Ref="292" EventName="BeforePrint" PropertyName="TextAlignment" Expression="Iif(?IsRTL == True, 'MiddleLeft', 'MiddleRight')&#xA;" />
                   </ExpressionBindings>
@@ -462,7 +462,7 @@
         <Item2 Ref="314" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="315" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="316" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="316" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="317" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="318" Visible="false" Name="Notes" />
@@ -559,7 +559,7 @@
         <Item3 Ref="370" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="371" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="372" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="372" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="373" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="374" Visible="false" Description="Parameter1" Name="FontSize" />

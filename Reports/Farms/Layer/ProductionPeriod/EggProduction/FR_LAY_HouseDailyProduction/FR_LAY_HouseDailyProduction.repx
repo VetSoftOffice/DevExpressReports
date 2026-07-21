@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="FR_LAY_HouseDailyProduction" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="25.2" DataMember="SR_LAY_DailyProd" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="FR_LAY_HouseDailyProduction" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="26.1" DataMember="SR_LAY_DailyProd" DataSource="#Ref-0" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -196,7 +196,7 @@
               <ParameterBindings>
                 <Item1 Ref="125" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="126" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="126" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="127" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="128" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -284,7 +284,7 @@
               <ParameterBindings>
                 <Item1 Ref="165" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="166" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="166" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="167" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="168" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -600,7 +600,7 @@
         <Item2 Ref="313" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="314" ControlType="XRSubreport" Name="LAYHouseDailyProduction_Ext">
-              <ReportSource Ref="316" ControlType="DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.LAYHouseDailyProduction_Ext.LAYHouseDailyProduction_Ext, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="25.2" DataMember="SR_LAY_WeeklyProd" DataSource="#Ref-315" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
+              <ReportSource Ref="316" ControlType="DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.LAYHouseDailyProduction_Ext.LAYHouseDailyProduction_Ext, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="1169.29138" PageHeightF="1653.54333" Version="26.1" DataMember="SR_LAY_WeeklyProd" DataSource="#Ref-315" TextAlignment="MiddleLeft" BorderColor="255,75,75,75" Borders="All" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="317" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="318" Visible="false" ValueInfo="False" Name="IsCustomReportHeader" Type="#Ref-2" />
@@ -1004,7 +1004,7 @@
               <StylePriority Ref="596" UseBorders="false" />
             </Item1>
             <Item2 Ref="597" ControlType="XRSubreport" Name="SR_PH_FR_Med_Notes">
-              <ReportSource Ref="599" ControlType="DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Med_Notes.SR_PH_FR_Med_Notes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Dpi="1" SnapGridSize="0.125" ReportUnit="Inches" Margins="1, 1, 0, 0" PageWidthF="8.5" PageHeightF="11" Version="25.2" DataMember="SR_PH_FR_Med_Vacc_Notes" DataSource="#Ref-598" Font="Arial, 9.75pt">
+              <ReportSource Ref="599" ControlType="DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Med_Notes.SR_PH_FR_Med_Notes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Dpi="1" SnapGridSize="0.125" ReportUnit="Inches" Margins="1, 1, 0, 0" PageWidthF="8.5" PageHeightF="11" Version="26.1" DataMember="SR_PH_FR_Med_Vacc_Notes" DataSource="#Ref-598" Font="Arial, 9.75pt">
                 <Bands>
                   <Item1 Ref="600" ControlType="TopMarginBand" Name="TopMargin" Dpi="1" HeightF="0" />
                   <Item2 Ref="601" ControlType="BottomMarginBand" Name="BottomMargin" Dpi="1" HeightF="0" />
@@ -1040,7 +1040,7 @@
               <StylePriority Ref="610" UseBorders="false" />
             </Item1>
             <Item2 Ref="611" ControlType="XRSubreport" Name="SR_PH_FR_Vacc_Notes">
-              <ReportSource Ref="613" ControlType="DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Vacc_Notes.SR_PH_FR_Vacc_Notes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Dpi="1" SnapGridSize="0.125" ReportUnit="Inches" Margins="1, 1, 0, 0" PageWidthF="8.5" PageHeightF="11" Version="25.2" DataMember="SR_PH_FR_Med_Vacc_Notes" DataSource="#Ref-612" Font="Arial, 9.75pt">
+              <ReportSource Ref="613" ControlType="DevExpressReports.Reports.Farms.Layer.ProductionPeriod.EggProduction.SR_PH_FR_Vacc_Notes.SR_PH_FR_Vacc_Notes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Dpi="1" SnapGridSize="0.125" ReportUnit="Inches" Margins="1, 1, 0, 0" PageWidthF="8.5" PageHeightF="11" Version="26.1" DataMember="SR_PH_FR_Med_Vacc_Notes" DataSource="#Ref-612" Font="Arial, 9.75pt">
                 <Bands>
                   <Item1 Ref="614" ControlType="TopMarginBand" Name="TopMargin" Dpi="1" HeightF="0" />
                   <Item2 Ref="615" ControlType="BottomMarginBand" Name="BottomMargin" Dpi="1" HeightF="0" />
@@ -1073,7 +1073,7 @@
         <Item6 Ref="622" ControlType="SubBand" Name="SubBand11">
           <Controls>
             <Item1 Ref="623" ControlType="XRSubreport" Name="DailyNotes">
-              <ReportSource Ref="625" ControlType="DevExpressReports.Reports.Farms.Breeder.RearingPeriod.DeplationAndBodyWeight.DailyNotes.DailyNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Dpi="1" SnapGridSize="0.125" ReportUnit="Inches" Margins="1, 1, 0, 0" PaperKind="A3" PageWidthF="11.692914" PageHeightF="16.5354328" Version="25.2" DataMember="SR_FR_DailyNotes" DataSource="#Ref-624" Font="Arial, 9.75pt">
+              <ReportSource Ref="625" ControlType="DevExpressReports.Reports.Farms.Breeder.RearingPeriod.DeplationAndBodyWeight.DailyNotes.DailyNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Dpi="1" SnapGridSize="0.125" ReportUnit="Inches" Margins="1, 1, 0, 0" PaperKind="A3" PageWidthF="11.692914" PageHeightF="16.5354328" Version="26.1" DataMember="SR_FR_DailyNotes" DataSource="#Ref-624" Font="Arial, 9.75pt">
                 <Bands>
                   <Item1 Ref="626" ControlType="TopMarginBand" Name="TopMargin" Dpi="1" HeightF="0" />
                   <Item2 Ref="627" ControlType="BottomMarginBand" Name="BottomMargin" Dpi="1" HeightF="0" />
@@ -1119,7 +1119,7 @@
               <ParameterBindings>
                 <Item1 Ref="640" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="641" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="641" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="642" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="643" Visible="false" Name="Notes" />
@@ -1219,7 +1219,7 @@
               <ParameterBindings>
                 <Item1 Ref="697" ParameterName="IsRTL" Parameter="#Ref-3" />
               </ParameterBindings>
-              <ReportSource Ref="698" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="698" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="699" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="700" Visible="false" Description="Parameter1" Name="FontSize" />

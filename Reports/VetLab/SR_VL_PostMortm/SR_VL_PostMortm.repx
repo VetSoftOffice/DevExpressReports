@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_VL_PostMortm" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="25.2" DataMember="SR_VL_PostMortm" DataSource="#Ref-0" TextAlignment="MiddleLeft" BackColor="0,0,0,0" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_VL_PostMortm" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_VL_PostMortm" DataSource="#Ref-0" TextAlignment="MiddleLeft" BackColor="0,0,0,0" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -38,7 +38,7 @@
     <Item16 Ref="37" Name="ProdType_Prod" Expression="[ProdType]+'_'+[Product]" DataMember="SR_FC_FM_StockMovement" />
     <Item17 Ref="38" Name="Produced" Expression="IsNull([TotalSelleable],0 )+IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
     <Item18 Ref="39" Name="Rejected" Expression="IsNull([HouseEggsReject],0 )+IsNull([MOBA],0 )" DataMember="SR_LAY_ProdWeeklyDepl" />
-    <Item19 Ref="40" Name="CopyRight" Expression="Iif(?IsRTL, '???? ????? 2003-2025 ??? ???? - ???? ?????? ??????', 'Copyright @ 2003-2025 VetSoft Office, All rights reserved')&#xA;" DataMember="SR_FM_RationResult" />
+    <Item19 Ref="40" Name="CopyRight" Expression="Iif(?IsRTL, '???? ????? 2003-2025 ??? ???? - ???? نوع الكتاكيت?', 'Copyright @ 2003-2025 VetSoft Office, All rights reserved')&#xA;" DataMember="SR_FM_RationResult" />
     <Item20 Ref="41" Name="CycleThreshold_CF" Expression="'Cycle Threshold'" DataMember="SR_VL_PCR" />
   </CalculatedFields>
   <Bands>
@@ -62,7 +62,7 @@
         <Item1 Ref="52" ControlType="SubBand" Name="SubBand6">
           <Controls>
             <Item1 Ref="53" ControlType="XRSubreport" Name="srReportSignature_PageFooter">
-              <ReportSource Ref="54" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="54" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="55" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="56" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -150,7 +150,7 @@
               <ParameterBindings>
                 <Item1 Ref="94" ParameterName="HideReportHeader" Parameter="#Ref-8" />
               </ParameterBindings>
-              <ReportSource Ref="95" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
+              <ReportSource Ref="95" ControlType="DevExpressReports.PredefinedReports.SubReportHeader, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt" BorderColor="255,75,75,75" BorderWidth="0.5">
                 <Parameters>
                   <Item1 Ref="96" Visible="false" Description="Right to left" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="97" Visible="false" Description="Logo path" Name="LogoPath" />
@@ -392,7 +392,7 @@
         <Item2 Ref="279" ControlType="SubBand" Name="ReportFooterSub1">
           <Controls>
             <Item1 Ref="280" ControlType="XRSubreport" Name="srReportNotes">
-              <ReportSource Ref="281" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" TextAlignment="MiddleLeft">
+              <ReportSource Ref="281" ControlType="DevExpressReports.PredefinedReports.SubReportNotes, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" TextAlignment="MiddleLeft">
                 <Parameters>
                   <Item1 Ref="282" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="283" Visible="false" Name="Notes" />
@@ -468,7 +468,7 @@
                   <Item20 Ref="324" Component="#Ref-302" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item21 Ref="325" Component="#Ref-302" Culture="Default" Path="SizeF" Data="806,20" />
                   <Item22 Ref="326" Component="#Ref-302" Culture="Default" Path="Text" Data="Filter Data:  [?FilterData]" />
-                  <Item23 Ref="327" Component="#Ref-302" Culture="ar" Path="Text" Data="?????? ???????: [?FilterData]" />
+                  <Item23 Ref="327" Component="#Ref-302" Culture="ar" Path="Text" Data="نوع الكتاكيت??: [?FilterData]" />
                   <Item24 Ref="328" Component="#Ref-297" Culture="Default" Path="LocationFloat" Data="0.999999,0" />
                   <Item25 Ref="329" Component="#Ref-297" Culture="Default" Path="SizeF" Data="806,20" />
                 </LocalizationItems>
@@ -489,7 +489,7 @@
         <Item3 Ref="335" ControlType="SubBand" Name="ReportFooterSub2">
           <Controls>
             <Item1 Ref="336" ControlType="XRSubreport" Name="srReportSignature">
-              <ReportSource Ref="337" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="25.2" Font="Tahoma, 8.25pt">
+              <ReportSource Ref="337" ControlType="DevExpressReports.PredefinedReports.SubReportSignature, DevExpressReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Margins="10, 10, 0, 0" PaperKind="A4" PageWidthF="826.771667" PageHeightF="1169.29138" Version="26.1" Font="Tahoma, 8.25pt">
                 <Parameters>
                   <Item1 Ref="338" Visible="false" Description="Parameter1" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
                   <Item2 Ref="339" Visible="false" Description="Parameter1" Name="FontSize" />
@@ -572,84 +572,84 @@
     <Item4 Ref="380" Component="#Ref-20" Culture="Default" Path="Description" Data="CropNo" />
     <Item5 Ref="381" Component="#Ref-190" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item6 Ref="382" Component="#Ref-190" Culture="Default" Path="Text" Data="Chicks Type" />
-    <Item7 Ref="383" Component="#Ref-190" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item7 Ref="383" Component="#Ref-190" Culture="ar" Path="Text" Data="عدد العينات" />
     <Item8 Ref="384" Component="#Ref-198" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item9 Ref="385" Component="#Ref-200" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item10 Ref="386" Component="#Ref-200" Culture="Default" Path="Text" Data="Flock" />
-    <Item11 Ref="387" Component="#Ref-200" Culture="ar" Path="Text" Data="??????" />
+    <Item11 Ref="387" Component="#Ref-200" Culture="ar" Path="Text" Data="القطيع" />
     <Item12 Ref="388" Component="#Ref-201" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item13 Ref="389" Component="#Ref-202" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item14 Ref="390" Component="#Ref-204" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item15 Ref="391" Component="#Ref-204" Culture="Default" Path="Text" Data="House Or Pen" />
-    <Item16 Ref="392" Component="#Ref-204" Culture="ar" Path="Text" Data="??????" />
+    <Item16 Ref="392" Component="#Ref-204" Culture="ar" Path="Text" Data="العنبر" />
     <Item17 Ref="393" Component="#Ref-205" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item18 Ref="394" Component="#Ref-206" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item19 Ref="395" Component="#Ref-208" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item20 Ref="396" Component="#Ref-208" Culture="Default" Path="Text" Data="Cycle" />
-    <Item21 Ref="397" Component="#Ref-208" Culture="ar" Path="Text" Data="????" />
+    <Item21 Ref="397" Component="#Ref-208" Culture="ar" Path="Text" Data="دورة" />
     <Item22 Ref="398" Component="#Ref-209" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item23 Ref="399" Component="#Ref-210" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item24 Ref="400" Component="#Ref-192" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item25 Ref="401" Component="#Ref-212" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item26 Ref="402" Component="#Ref-212" Culture="Default" Path="Text" Data="Parent" />
-    <Item27 Ref="403" Component="#Ref-212" Culture="ar" Path="Text" Data="????" />
+    <Item27 Ref="403" Component="#Ref-212" Culture="ar" Path="Text" Data="الأم" />
     <Item28 Ref="404" Component="#Ref-213" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item29 Ref="405" Component="#Ref-214" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item30 Ref="406" Component="#Ref-216" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item31 Ref="407" Component="#Ref-216" Culture="Default" Path="Text" Data="Source" />
-    <Item32 Ref="408" Component="#Ref-216" Culture="ar" Path="Text" Data="??????" />
+    <Item32 Ref="408" Component="#Ref-216" Culture="ar" Path="Text" Data="المصدر" />
     <Item33 Ref="409" Component="#Ref-217" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item34 Ref="410" Component="#Ref-218" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item35 Ref="411" Component="#Ref-220" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item36 Ref="412" Component="#Ref-220" Culture="Default" Path="Text" Data="Age (w)" />
-    <Item37 Ref="413" Component="#Ref-220" Culture="ar" Path="Text" Data="????? (??????)" />
+    <Item37 Ref="413" Component="#Ref-220" Culture="ar" Path="Text" Data="العمر (أسابيع)" />
     <Item38 Ref="414" Component="#Ref-221" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item39 Ref="415" Component="#Ref-222" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item40 Ref="416" Component="#Ref-224" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item41 Ref="417" Component="#Ref-224" Culture="Default" Path="Text" Data="Receive Date" />
-    <Item42 Ref="418" Component="#Ref-224" Culture="ar" Path="Text" Data="????? ????????" />
+    <Item42 Ref="418" Component="#Ref-224" Culture="ar" Path="Text" Data="??عدد العينات?" />
     <Item43 Ref="419" Component="#Ref-225" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item44 Ref="420" Component="#Ref-225" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
     <Item45 Ref="421" Component="#Ref-226" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item46 Ref="422" Component="#Ref-228" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item47 Ref="423" Component="#Ref-228" Culture="Default" Path="Text" Data="Breed" />
-    <Item48 Ref="424" Component="#Ref-228" Culture="ar" Path="Text" Data="?????" />
+    <Item48 Ref="424" Component="#Ref-228" Culture="ar" Path="Text" Data="سلالة" />
     <Item49 Ref="425" Component="#Ref-229" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item50 Ref="426" Component="#Ref-230" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item51 Ref="427" Component="#Ref-232" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item52 Ref="428" Component="#Ref-232" Culture="Default" Path="Text" Data="Examination Date" />
-    <Item53 Ref="429" Component="#Ref-232" Culture="ar" Path="Text" Data="????? ?????" />
+    <Item53 Ref="429" Component="#Ref-232" Culture="ar" Path="Text" Data="المزرعة الام" />
     <Item54 Ref="430" Component="#Ref-233" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item55 Ref="431" Component="#Ref-233" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
     <Item56 Ref="432" Component="#Ref-234" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item57 Ref="433" Component="#Ref-236" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item58 Ref="434" Component="#Ref-236" Culture="Default" Path="Text" Data="No Of Samples" />
-    <Item59 Ref="435" Component="#Ref-236" Culture="ar" Path="Text" Data="??? ???????" />
+    <Item59 Ref="435" Component="#Ref-236" Culture="ar" Path="Text" Data="عدد العينات" />
     <Item60 Ref="436" Component="#Ref-237" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item61 Ref="437" Component="#Ref-237" Culture="Default" Path="TextFormatString" Data="{0:dd/MM/yyyy}" />
     <Item62 Ref="438" Component="#Ref-238" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item63 Ref="439" Component="#Ref-240" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item64 Ref="440" Component="#Ref-240" Culture="Default" Path="Text" Data="Parent Farm" />
-    <Item65 Ref="441" Component="#Ref-240" Culture="ar" Path="Text" Data="??????? ????" />
+    <Item65 Ref="441" Component="#Ref-240" Culture="ar" Path="Text" Data="انخفاض الانتاج" />
     <Item66 Ref="442" Component="#Ref-241" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item67 Ref="443" Component="#Ref-242" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item68 Ref="444" Component="#Ref-244" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item69 Ref="445" Component="#Ref-244" Culture="Default" Path="Text" Data="Parent Flock " />
-    <Item70 Ref="446" Component="#Ref-244" Culture="ar" Path="Text" Data="?????? ????" />
+    <Item70 Ref="446" Component="#Ref-244" Culture="ar" Path="Text" Data="القطيع الام" />
     <Item71 Ref="447" Component="#Ref-245" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item72 Ref="448" Component="#Ref-246" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item73 Ref="449" Component="#Ref-248" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item74 Ref="450" Component="#Ref-248" Culture="Default" Path="Text" Data="Decrease In Prod" />
-    <Item75 Ref="451" Component="#Ref-248" Culture="ar" Path="Text" Data="????? ?? ???????" />
+    <Item75 Ref="451" Component="#Ref-248" Culture="ar" Path="Text" Data="???عدد العينات" />
     <Item76 Ref="452" Component="#Ref-249" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item77 Ref="453" Component="#Ref-250" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item78 Ref="454" Component="#Ref-252" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item79 Ref="455" Component="#Ref-252" Culture="Default" Path="Text" Data="Mortality" />
-    <Item80 Ref="456" Component="#Ref-252" Culture="ar" Path="Text" Data="??????" />
+    <Item80 Ref="456" Component="#Ref-252" Culture="ar" Path="Text" Data="النافق" />
     <Item81 Ref="457" Component="#Ref-254" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item82 Ref="458" Component="#Ref-256" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item83 Ref="459" Component="#Ref-256" Culture="Default" Path="Text" Data="Result Date" />
-    <Item84 Ref="460" Component="#Ref-256" Culture="ar" Path="Text" Data="????? ???????" />
+    <Item84 Ref="460" Component="#Ref-256" Culture="ar" Path="Text" Data="تاريخ النتيجة" />
     <Item85 Ref="461" Component="#Ref-258" Culture="Default" Path="TextFormatString" Data="Total {0}" />
     <Item86 Ref="462" Component="#Ref-193" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item87 Ref="463" Component="#Ref-260" Culture="Default" Path="Text" Data="Grand Total" />
@@ -658,26 +658,26 @@
     <Item90 Ref="466" Component="#Ref-194" Culture="Default" Path="TextFormatString" Data="" />
     <Item91 Ref="467" Component="#Ref-196" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item92 Ref="468" Component="#Ref-196" Culture="Default" Path="Text" Data="Farm " />
-    <Item93 Ref="469" Component="#Ref-196" Culture="ar" Path="Text" Data="???????" />
+    <Item93 Ref="469" Component="#Ref-196" Culture="ar" Path="Text" Data="المزرعة" />
     <Item94 Ref="470" Component="#Ref-197" Culture="Default" Path="Font" Data="Tahoma, 8pt, style=Bold" />
     <Item95 Ref="471" Component="#Ref-13" Culture="Default" Path="Description" Data="From" />
-    <Item96 Ref="472" Component="#Ref-13" Culture="ar" Path="Description" Data="??" />
+    <Item96 Ref="472" Component="#Ref-13" Culture="ar" Path="Description" Data="من" />
     <Item97 Ref="473" Component="#Ref-17" Culture="Default" Path="Description" Data="DateTo" />
     <Item98 Ref="474" Component="#Ref-50" Culture="Default" Path="HeightF" Data="0" />
     <Item99 Ref="475" Component="#Ref-14" Culture="Default" Path="Description" Data="Farm" />
     <Item100 Ref="476" Component="#Ref-19" Culture="Default" Path="Description" Data="Flock" />
     <Item101 Ref="477" Component="#Ref-12" Culture="Default" Path="Description" Data="Font Size" />
-    <Item102 Ref="478" Component="#Ref-12" Culture="ar" Path="Description" Data="??? ????" />
+    <Item102 Ref="478" Component="#Ref-12" Culture="ar" Path="Description" Data="حجم الخط" />
     <Item103 Ref="479" Component="#Ref-9" Culture="Default" Path="Description" Data="Hide report footer" />
-    <Item104 Ref="480" Component="#Ref-9" Culture="ar" Path="Description" Data="????? ??? ???????" />
+    <Item104 Ref="480" Component="#Ref-9" Culture="ar" Path="Description" Data="إخفاء ذيل التقرير" />
     <Item105 Ref="481" Component="#Ref-8" Culture="Default" Path="Description" Data="Hide report header" />
-    <Item106 Ref="482" Component="#Ref-8" Culture="ar" Path="Description" Data="????? ??? ???????" />
+    <Item106 Ref="482" Component="#Ref-8" Culture="ar" Path="Description" Data="إخفاء رأس التقرير" />
     <Item107 Ref="483" Component="#Ref-4" Culture="Default" Path="Description" Data="IsCustomReportFooter" />
     <Item108 Ref="484" Component="#Ref-5" Culture="Default" Path="Description" Data="IsCustomReportHeader" />
     <Item109 Ref="485" Component="#Ref-3" Culture="Default" Path="Description" Data="Right to left" />
-    <Item110 Ref="486" Component="#Ref-3" Culture="ar" Path="Description" Data="??? ?? ?????? ??????" />
+    <Item110 Ref="486" Component="#Ref-3" Culture="ar" Path="Description" Data="عرض من اليمبن لليسار" />
     <Item111 Ref="487" Component="#Ref-11" Culture="Default" Path="Description" Data="No of groups / page" />
-    <Item112 Ref="488" Component="#Ref-11" Culture="ar" Path="Description" Data="??? ????????? / ????" />
+    <Item112 Ref="488" Component="#Ref-11" Culture="ar" Path="Description" Data="عدد المجموعات / صفحة" />
     <Item113 Ref="489" Component="#Ref-51" Culture="Default" Path="HeightF" Data="0" />
     <Item114 Ref="490" Component="#Ref-86" Culture="Default" Path="HeightF" Data="0" />
     <Item115 Ref="491" Component="#Ref-128" Culture="Default" Path="HeightF" Data="0" />
@@ -694,9 +694,9 @@
     <Item126 Ref="502" Component="#Ref-335" Culture="Default" Path="HeightF" Data="20" />
     <Item127 Ref="503" Component="#Ref-16" Culture="Default" Path="Description" Data="SheetNo" />
     <Item128 Ref="504" Component="#Ref-6" Culture="Default" Path="Description" Data="Show signature" />
-    <Item129 Ref="505" Component="#Ref-6" Culture="ar" Path="Description" Data="??? ???????" />
+    <Item129 Ref="505" Component="#Ref-6" Culture="ar" Path="Description" Data="عرض التوقيع" />
     <Item130 Ref="506" Component="#Ref-7" Culture="Default" Path="Description" Data="Show signature in all page" />
-    <Item131 Ref="507" Component="#Ref-7" Culture="ar" Path="Description" Data="??? ??????? ?? ?? ???????" />
+    <Item131 Ref="507" Component="#Ref-7" Culture="ar" Path="Description" Data="عرض التوقيع في كل الصفحات" />
     <Item132 Ref="508" Component="#Ref-83" Culture="Default" Path="LocationFloat" Data="0,0" />
     <Item133 Ref="509" Component="#Ref-83" Culture="Default" Path="SizeF" Data="1637,20" />
     <Item134 Ref="510" Component="#Ref-93" Culture="Default" Path="LocationFloat" Data="3.003375,0" />
@@ -709,7 +709,7 @@
     <Item141 Ref="517" Component="#Ref-336" Culture="Default" Path="SizeF" Data="1636.997,20" />
     <Item142 Ref="518" Component="#Ref-53" Culture="Default" Path="LocationFloat" Data="2.000046,0" />
     <Item143 Ref="519" Component="#Ref-53" Culture="Default" Path="SizeF" Data="1634.997,20" />
-    <Item144 Ref="520" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="???? ????? ??????" />
+    <Item144 Ref="520" Component="#Ref-1" Culture="ar" Path="DisplayName" Data="قيود يومية تفصيلي" />
     <Item145 Ref="521" Component="#Ref-1" Culture="Default" Path="Font" Data="Tahoma, 8.25pt, style=Bold" />
     <Item146 Ref="522" Component="#Ref-1" Culture="Default" Path="Margins" Data="7, 10, 20, 20" />
     <Item147 Ref="523" Component="#Ref-1" Culture="Default" Path="PaperKind" Data="A3" />

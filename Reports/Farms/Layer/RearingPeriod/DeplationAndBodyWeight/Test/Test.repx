@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="25.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Test" Landscape="true" Margins="16, 16, 16, 16" PaperKind="A4" PageWidthF="1169.29138" PageHeightF="826.771667" Version="25.2">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Test" Landscape="true" Margins="16, 16, 16, 16" PaperKind="A4" PageWidthF="1169.29138" PageHeightF="826.771667" Version="26.1">
   <Parameters>
     <Item1 Ref="2" Visible="false" Description="Enter Datee:" Name="Datee" />
   </Parameters>
@@ -343,7 +343,7 @@
           <Controls>
             <Item1 Ref="181" ControlType="XRLabel" Name="Vaccination" CanGrow="false" Text="Vaccination:" TextAlignment="TopLeft" SizeF="1127.08337,15.3472223" LocationFloat="0,0.9722222" Font="Arial, 9pt, style=Bold" ForeColor="Black" BackColor="Transparent" Padding="2,2,0,0,100" BorderColor="Black" Borders="None" BorderWidth="1" />
             <Item2 Ref="182" ControlType="XRSubreport" Name="Subreport3" SizeF="1127.08337,16.11111" LocationFloat="0,16.666666">
-              <ReportSource Ref="183" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PH_FR_Vacc_Notes.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2">
+              <ReportSource Ref="183" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PH_FR_Vacc_Notes.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1">
                 <Parameters>
                   <Item1 Ref="185" Visible="false" Description="Pm-SR_LAY_DailyReport.tFrFarmID" Name="parameter1" Type="#Ref-184" />
                 </Parameters>
@@ -377,7 +377,7 @@
         <Item3 Ref="195" ControlType="SubBand" Name="GroupFooterSection4" HeightF="39.6666641" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100">
           <Controls>
             <Item1 Ref="196" ControlType="XRSubreport" Name="Subreport4" SizeF="1127.08337,16.11111" LocationFloat="0,16.666666">
-              <ReportSource Ref="197" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PH_FR_Med_Notes.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2">
+              <ReportSource Ref="197" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PH_FR_Med_Notes.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1">
                 <Parameters>
                   <Item1 Ref="198" Visible="false" Description="Pm-SR_LAY_DailyReport.tFrFarmID" Name="parameter1" Type="#Ref-184" />
                 </Parameters>
@@ -417,7 +417,7 @@
         <Item1 Ref="211" ControlType="SubBand" Name="PageHeaderSection2" HeightF="27" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100">
           <Controls>
             <Item1 Ref="212" ControlType="XRSubreport" Name="Subreport7" SizeF="1133.33337,27.7777786" LocationFloat="0,0">
-              <ReportSource Ref="213" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="ReportHeaderLS.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2">
+              <ReportSource Ref="213" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="ReportHeaderLS.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1">
                 <CalculatedFields>
                   <Item1 Ref="214" Name="ModuleName_ar" FieldType="String" />
                   <Item2 Ref="215" Name="ReportPQP" FieldType="String" />
@@ -503,7 +503,7 @@
         <Item1 Ref="249" ControlType="SubBand" Name="Section4" HeightF="16" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100">
           <Controls>
             <Item1 Ref="250" ControlType="XRSubreport" Name="Subreport1" SizeF="1127.08337,16.11111" LocationFloat="0,0">
-              <ReportSource Ref="252" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="DailyReport_Ext.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_LAY_DailyReport_1" DataSource="#Ref-251">
+              <ReportSource Ref="252" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="DailyReport_Ext.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_LAY_DailyReport_1" DataSource="#Ref-251">
                 <Parameters>
                   <Item1 Ref="254" Visible="false" Description="Enter Datee:" Name="Datee" Type="#Ref-253" />
                 </Parameters>
@@ -749,7 +749,7 @@
         <Item2 Ref="378" ControlType="SubBand" Name="ReportFooterSection2" HeightF="16" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100">
           <Controls>
             <Item1 Ref="379" ControlType="XRSubreport" Name="Subreport2" SizeF="1127.08337,16.11111" LocationFloat="0,0">
-              <ReportSource Ref="381" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="DailyNotes.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2" DataMember="SR_FR_DailyNotes" DataSource="#Ref-380">
+              <ReportSource Ref="381" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="DailyNotes.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1" DataMember="SR_FR_DailyNotes" DataSource="#Ref-380">
                 <Bands>
                   <Item1 Ref="382" ControlType="DetailBand" Name="Area3" HeightF="15" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100">
                     <Controls>
@@ -798,7 +798,7 @@
         <Item5 Ref="397" ControlType="SubBand" Name="SignatureReportFooterSection" HeightF="22" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100">
           <Controls>
             <Item1 Ref="398" ControlType="XRSubreport" Name="Subreport5" SizeF="1131.25,22.2222214" LocationFloat="0,0">
-              <ReportSource Ref="399" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="ReportSignatureA4LS.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2">
+              <ReportSource Ref="399" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="ReportSignatureA4LS.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1">
                 <CalculatedFields>
                   <Item1 Ref="400" Name="IsRTL" FieldType="String" />
                   <Item2 Ref="401" Name="Employee1_Sign" FieldType="String" />
@@ -885,7 +885,7 @@
         <Item1 Ref="436" ControlType="SubBand" Name="SignaturePageFooterSection" HeightF="27.4305534" KeepTogether="true" TextAlignment="TopLeft" Padding="0,0,0,0,100" Visible="false">
           <Controls>
             <Item1 Ref="437" ControlType="XRSubreport" Name="Subreport6" SizeF="1131.25,27.4305534" LocationFloat="0,0">
-              <ReportSource Ref="438" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="ReportSignatureA4LS-PageFooter.rpt" PageWidthF="850" PageHeightF="1100" Version="25.2">
+              <ReportSource Ref="438" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="ReportSignatureA4LS-PageFooter.rpt" PageWidthF="850" PageHeightF="1100" Version="26.1">
                 <CalculatedFields>
                   <Item1 Ref="439" Name="IsRTL" FieldType="String" />
                   <Item2 Ref="440" Name="Employee1_Sign" FieldType="String" />
