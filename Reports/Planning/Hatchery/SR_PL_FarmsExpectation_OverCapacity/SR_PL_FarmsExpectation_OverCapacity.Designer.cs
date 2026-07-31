@@ -436,29 +436,39 @@
             // xrLabel5
             // 
             this.xrLabel5.CanGrow = false;
+            this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "IsNullOrEmpty(?DateFrom)\n")});
             this.xrLabel5.Name = "xrLabel5";
             // 
             // xrLabel6
             // 
             this.xrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "IsNullOrEmpty(?DateTo)\n")});
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.StylePriority.UseBorders = false;
             this.xrLabel6.StylePriority.UseFont = false;
             // 
             // xrLabel4
             // 
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "IsNullOrEmpty(?ChicksType)\n")});
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel3
             // 
+            this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "IsNullOrEmpty(?LineType)\n")});
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             // 
             // xrLabel2
             // 
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "IsNullOrEmpty(?FarmModule)")});
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1034,7 +1044,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(448.5197F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(899.6663F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(255.8502F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(255.6251F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PlanCode, "Default", "Description", "PlanCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
@@ -1082,7 +1092,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Line Type: [?LineType]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "خط الانتاج: [?LineType]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(222.5F, 28.87503F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(192.7083F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(204.3976F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Chicks Type: [?ChicksType]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "نوع الكتاكيت: [?ChicksType]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(471.0417F, 0F)),
@@ -1207,7 +1217,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();

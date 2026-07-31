@@ -142,51 +142,12 @@ IIF(IsNullOrEmpty([Mort5]), 0, [Mort5])</value>
   <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0JST19EYWlseURlcGxfU3ViMiI+PEZpZWxkIE5hbWU9Ik1vcnQxIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydDIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0MyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vcnQ0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydDUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJNb3J0NiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik1vcnQ3IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTW9ydDgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzIiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzYiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJCVzgiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDYXRjaEFnZSIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
-  <data name="$this.ScriptsSource" xml:space="preserve">
-    <value>decimal totalMort = 0;    // {@TotalMort} - sum of Mort1-Mort5
-decimal SafeConvert(object value)
-    {
-        if (value == null || value == DBNull.Value || string.IsNullOrEmpty(value.ToString()))
-            return 0;
-        return Convert.ToDecimal(value);
-    }
-    
-
-private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     // Helper function to safely convert values
-        // Accumulate all mortality fields for {@TotalMort}
-    totalMort += SafeConvert(GetCurrentColumnValue("Mort1"));
-    totalMort += SafeConvert(GetCurrentColumnValue("Mort2"));
-    totalMort += SafeConvert(GetCurrentColumnValue("Mort3"));
-    totalMort += SafeConvert(GetCurrentColumnValue("Mort4"));
-    totalMort += SafeConvert(GetCurrentColumnValue("Mort5"));
-}
-
-private void xrTableCell16_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    XRTableCell cell = sender as XRTableCell;
-    
-    // Get StartBirds parameter value
-    decimal startBirds = 0;
-    if (this.Parameters["StartBirds"] != null)
-    {
-        startBirds = Convert.ToDecimal(this.Parameters["StartBirds"].Value);
-    }
-    
-    // Check if StartBirds is not zero
-    if (startBirds != 0)
-    {
-        // Calculate: ({@TotalMort} * 100) / {@StartBirds}
-        decimal result = (totalMort * 100.0m) / startBirds;
-        string formattedResult = result.ToString("N2");
-        
-        cell.Text = formattedResult ;
-        
-            }
-    else
-    {
-        cell.Text = "0.00";
-    }
-}
+  <data name="TotalMort.Expression" xml:space="preserve">
+    <value>IIF(IsNullOrEmpty([Mort1]), 0, [Mort1]) + 
+IIF(IsNullOrEmpty([Mort2]), 0, [Mort2]) + 
+IIF(IsNullOrEmpty([Mort3]), 0, [Mort3]) + 
+IIF(IsNullOrEmpty([Mort4]), 0, [Mort4]) + 
+IIF(IsNullOrEmpty([Mort5]), 0, [Mort5])
 </value>
   </data>
 </root>

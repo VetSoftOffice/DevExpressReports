@@ -357,8 +357,6 @@
             this.ChicksType = new DevExpress.XtraReports.Parameters.Parameter();
             this.Hatchery = new DevExpress.XtraReports.Parameters.Parameter();
             this.LineType = new DevExpress.XtraReports.Parameters.Parameter();
-            this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
-            this.SR_PL_WeeklyExpectationSummary_GP = new DevExpress.XtraReports.UI.XRSubreport();
             this.ReportCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.Module = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
@@ -732,28 +730,28 @@
             // 
             this.xrLabel7.CanGrow = false;
             this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?Hatchery")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?Hatchery)\n")});
             this.xrLabel7.Name = "xrLabel7";
             // 
             // xrLabel6
             // 
             this.xrLabel6.CanGrow = false;
             this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ChicksType")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?ChicksType)\n")});
             this.xrLabel6.Name = "xrLabel6";
             // 
             // xrLabel5
             // 
             this.xrLabel5.CanGrow = false;
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?LineType")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?LineType)\n")});
             this.xrLabel5.Name = "xrLabel5";
             // 
             // xrLabel4
             // 
             this.xrLabel4.CanGrow = false;
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?FarmModule")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?FarmModule)")});
             this.xrLabel4.Name = "xrLabel4";
             // 
             // xrLabel3
@@ -764,18 +762,21 @@
             // xrLabel2
             // 
             this.xrLabel2.CanGrow = false;
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?DateTo)\n")});
             this.xrLabel2.Name = "xrLabel2";
             // 
             // xrLabel1
             // 
             this.xrLabel1.CanGrow = false;
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?DateFrom)\n")});
             this.xrLabel1.Name = "xrLabel1";
             // 
             // ReportFooter
             // 
             this.ReportFooter.Name = "ReportFooter";
             this.ReportFooter.SubBands.AddRange(new DevExpress.XtraReports.UI.SubBand[] {
-            this.SubBand1,
             this.ReportFooterSub3,
             this.ReportFooterSub1,
             this.ReportFooterSub2});
@@ -1717,19 +1718,6 @@
             this.LineType.Name = "LineType";
             this.LineType.Visible = false;
             // 
-            // SubBand1
-            // 
-            this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.SR_PL_WeeklyExpectationSummary_GP});
-            this.SubBand1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "((?ReportCode == \'20596\' Or ?ReportCode == \'20597\') And ?Module == 5)\n")});
-            this.SubBand1.Name = "SubBand1";
-            // 
-            // SR_PL_WeeklyExpectationSummary_GP
-            // 
-            this.SR_PL_WeeklyExpectationSummary_GP.Name = "SR_PL_WeeklyExpectationSummary_GP";
-            this.SR_PL_WeeklyExpectationSummary_GP.ReportSource = new DevExpressReports.Reports.Planning.Hatchery.SR_PL_WeeklyExpectationSummary_GP.SR_PL_WeeklyExpectationSummary_GP();
-            // 
             // ReportCode
             // 
             this.ReportCode.Name = "ReportCode";
@@ -1845,9 +1833,6 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 7F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.Custom),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PL_WeeklyExpectationSummary_GP, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(7.947286E-06F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_PL_WeeklyExpectationSummary_GP, "Default", "SizeF", new System.Drawing.SizeF(1267F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand4, "Default", "HeightF", 20F),
@@ -1858,7 +1843,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "From: [?DateFrom!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "من: [?DateFrom!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(193.0139F, 22.29169F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(208.9413F, 19.99999F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "إلى: [?DateTo!dd-MM-yyyy]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.002828F, 2.291679F)),
@@ -2035,7 +2020,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
@@ -2154,8 +2139,6 @@
         private DevExpress.XtraReports.UI.XRTable xrTable1;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell11;
-        private DevExpress.XtraReports.UI.SubBand SubBand1;
-        private DevExpress.XtraReports.UI.XRSubreport SR_PL_WeeklyExpectationSummary_GP;
         private DevExpress.XtraReports.Parameters.Parameter ReportCode;
         private DevExpress.XtraReports.Parameters.Parameter Module;
     }

@@ -35,7 +35,7 @@
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField crossTabColumnField3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
-            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(25F);
+            DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(2F);
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
@@ -159,7 +159,12 @@
             this.Hatchery = new DevExpress.XtraReports.Parameters.Parameter();
             this.LineType = new DevExpress.XtraReports.Parameters.Parameter();
             this.dsBreeder = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
+            this.sR_PL_ProductsDemandsTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_PL_ProductsDemandsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // ShowSignature
@@ -332,8 +337,6 @@
             // 
             // SubBand2
             // 
-            this.SubBand2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrCrossTab1});
             this.SubBand2.Name = "SubBand2";
             // 
             // xrCrossTab1
@@ -361,7 +364,7 @@
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(149.6156F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(95.9595F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.5428F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(85.54279F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2});
             crossTabColumnField1.FieldName = "ModuleType";
@@ -892,6 +895,27 @@
             selectQuery1});
             this.dsBreeder.ResultSchemaSerializable = resources.GetString("dsBreeder.ResultSchemaSerializable");
             // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("RegYear", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader1.Name = "GroupHeader1";
+            // 
+            // GroupFooter1
+            // 
+            this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrCrossTab1});
+            this.GroupFooter1.Name = "GroupFooter1";
+            // 
+            // dsFinance1
+            // 
+            this.dsFinance1.DataSetName = "dsFinance";
+            this.dsFinance1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sR_PL_ProductsDemandsTableAdapter
+            // 
+            this.sR_PL_ProductsDemandsTableAdapter.ClearBeforeFill = true;
+            // 
             // SR_PL_ProductsDemandsPriceSummary
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -900,7 +924,9 @@
             this.Detail,
             this.PageFooter,
             this.PageHeader,
-            this.ReportFooter});
+            this.ReportFooter,
+            this.GroupHeader1,
+            this.GroupFooter1});
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.BorderWidth = 0.5F;
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
@@ -925,8 +951,10 @@
             this.Rejected,
             this.CopyRight});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.dsBreeder});
+            this.dsBreeder,
+            this.dsFinance1});
             this.DataMember = "SR_PL_ProductsDemands";
+            this.DataSource = this.dsFinance1;
             this.ExportOptions.Pdf.DocumentOptions.Author = "VetSoft";
             this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
@@ -965,6 +993,8 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Flock, "Default", "Description", "Flock"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "Default", "Description", "Font Size"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter1, "Default", "HeightF", 102F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader1, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Hatchery, "Default", "Description", "Hatchery"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "Default", "Description", "Hide report footer"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.HideReportFooter, "ar", "Description", "إخفاء ذيل التقرير"),
@@ -986,7 +1016,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(929.7717F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1311.125F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(325.6439F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(325.4191F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PlanCode, "Default", "Description", "PlanCode"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
@@ -1014,14 +1044,14 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(7F, 10F, 20F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A3),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 0F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 171.1667F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand6, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999985F, 21.16667F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(337.0162F, 125F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999998F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(337.0162F, 102F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(200.4863F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "Plan: [?PlanCode]"),
@@ -1097,8 +1127,9 @@
             this.crossTabDataStyle1,
             this.crossTabTotalStyle1});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1200,5 +1231,9 @@
         private DevExpress.XtraReports.Parameters.Parameter Hatchery;
         private DevExpress.XtraReports.Parameters.Parameter LineType;
         private DevExpress.DataAccess.Sql.SqlDataSource dsBreeder;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
+        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
+        private Finance.DataSets.dsFinance dsFinance1;
+        private Finance.DataSets.dsFinanceTableAdapters.SR_PL_ProductsDemandsTableAdapter sR_PL_ProductsDemandsTableAdapter;
     }
 }

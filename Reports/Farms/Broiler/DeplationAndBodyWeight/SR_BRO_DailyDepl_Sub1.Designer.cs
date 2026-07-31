@@ -182,6 +182,7 @@
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource5 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -257,6 +258,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell7.Multiline = true;
             this.xrTableCell7.Name = "xrTableCell7";
+            this.xrTableCell7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrTableCell7.StylePriority.UsePadding = false;
             this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell11
@@ -266,6 +269,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrTableCell11.StylePriority.UsePadding = false;
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell12
@@ -275,6 +280,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell12.Multiline = true;
             this.xrTableCell12.Name = "xrTableCell12";
+            this.xrTableCell12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrTableCell12.StylePriority.UsePadding = false;
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrTableCell14
@@ -284,6 +291,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
             this.xrTableCell14.Multiline = true;
             this.xrTableCell14.Name = "xrTableCell14";
+            this.xrTableCell14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
+            this.xrTableCell14.StylePriority.UsePadding = false;
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // PageHeader
@@ -298,6 +307,7 @@
             // SubBand6
             // 
             this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel5,
             this.xrLabel1,
             this.xrLabel4,
             this.xrLabel3,
@@ -812,6 +822,15 @@
             selectQuery5});
             this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
             // 
+            // xrLabel5
+            // 
+            this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel5.CanGrow = false;
+            this.xrLabel5.CanPublishOptions.Xls = false;
+            this.xrLabel5.CanPublishOptions.Xlsx = false;
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.StylePriority.UseBorders = false;
+            // 
             // SR_BRO_DailyDepl_Sub1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -894,7 +913,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Weight", 1.2012324306271529D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trHeader, "Default", "Weight", 1D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(317.6358F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(492.6358F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "Text", "House: [HouseCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "ar", "Text", "عنبر: [HouseCode]"),
@@ -902,7 +921,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "Farm: [FarmCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "ar", "Text", "مزرعة: [?FarmNo]"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(604.2165F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(696.9248F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "Default", "Text", "Flock: [FlockCode]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel3, "ar", "Text", "قطيع: [?Flock]"),
@@ -910,6 +929,10 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Crop: [CropNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "محصول: [?CropNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(319.3024F, 0F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "Default", "Text", "Cycle: [CycleNo]"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel5, "ar", "Text", "دورة: [CycleNo]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(4.768372E-05F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(614.916F, 20F)),
@@ -986,7 +1009,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -1055,5 +1078,6 @@
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource3;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource5;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
     }
 }

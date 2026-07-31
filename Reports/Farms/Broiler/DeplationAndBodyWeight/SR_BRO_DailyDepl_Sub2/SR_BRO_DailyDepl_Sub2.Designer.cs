@@ -228,6 +228,7 @@
             this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource4 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource6 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.TotalMort = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -344,7 +345,8 @@
             // xrTableCell16
             // 
             this.xrTableCell16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(\n    ?StartBirds != 0,\n    ([TotalMort] * 100) / ?StartBirds,\n    0.00\n)")});
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.Scripts.OnBeforePrint = "xrTableCell16_BeforePrint";
@@ -1011,6 +1013,12 @@
             selectQuery6});
             this.sqlDataSource6.ResultSchemaSerializable = resources.GetString("sqlDataSource6.ResultSchemaSerializable");
             // 
+            // TotalMort
+            // 
+            this.TotalMort.DataMember = "SR_BRO_DailyDepl_Sub2";
+            this.TotalMort.Expression = resources.GetString("TotalMort.Expression");
+            this.TotalMort.Name = "TotalMort";
+            // 
             // SR_BRO_DailyDepl_Sub2
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1027,7 +1035,8 @@
             this.PerHH_CF,
             this.PerHE_CF,
             this.TotalFemaleAndMale,
-            this.TotalLose});
+            this.TotalLose,
+            this.TotalMort});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.sqlDataSource2,
@@ -1203,7 +1212,6 @@
             this.Scripts.OnAfterPrint = "SR_FC_JournalEntryAll_AfterPrint";
             this.Scripts.OnParametersRequestValueChanged = "SR_FC_JournalEntryAll_ParametersRequestValueChanged";
             this.Scripts.OnPrintProgress = "SR_FC_JournalEntryAll_PrintProgress";
-            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,
@@ -1211,7 +1219,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -1290,5 +1298,6 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell13;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell15;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource6;
+        private DevExpress.XtraReports.UI.CalculatedField TotalMort;
     }
 }

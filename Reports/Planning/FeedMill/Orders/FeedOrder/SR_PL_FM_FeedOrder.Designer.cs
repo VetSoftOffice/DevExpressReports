@@ -577,6 +577,8 @@
             this.xrLabel2.CanGrow = false;
             this.xrLabel2.CanPublishOptions.Xls = false;
             this.xrLabel2.CanPublishOptions.Xlsx = false;
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?DateTo)\n")});
             this.xrLabel2.Name = "xrLabel2";
             // 
             // xrLabel1
@@ -584,6 +586,8 @@
             this.xrLabel1.CanGrow = false;
             this.xrLabel1.CanPublishOptions.Xls = false;
             this.xrLabel1.CanPublishOptions.Xlsx = false;
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty(?DateFrom)\n")});
             this.xrLabel1.Name = "xrLabel1";
             // 
             // ReportFooter
@@ -1611,7 +1615,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
