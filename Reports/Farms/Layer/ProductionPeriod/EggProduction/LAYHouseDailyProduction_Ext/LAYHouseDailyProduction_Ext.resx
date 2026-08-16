@@ -118,23 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="tdSr.ExpressionBindings" xml:space="preserve">
-    <value>Iif([RowNo] = 1, [UnderPackingWeekEggs],
-Iif([RowNo] = 2, [GrandTotal],
-Iif([RowNo] = 3, [CartonsToStore],
-Iif([RowNo] = 4, [UnderPackingWeekEggs],
-Iif([RowNo] = 5, [SpecialPacking],
-Iif([RowNo] = 6, [CartonsToStoreSize],
-Iif([RowNo] = 7, [TraysToStoreSize],
+    <value>Iif([RowNo] = 1, ?UnderPackingWeekCommenceEggs,
+Iif([RowNo] = 2, ?GrandTotal,
+Iif([RowNo] = 3, ?CartonsToStore,
+Iif([RowNo] = 4, ?UnderPackingWeekEndEggs,
+Iif([RowNo] = 5, ?SpecialPacking,
+Iif([RowNo] = 6, ?CartonsToStoreSize,
+Iif([RowNo] = 7, ?TraysToStore,
 0)))))))
-</value>
-  </data>
-  <data name="xrTableCell22.ExpressionBindings" xml:space="preserve">
-    <value>Iif(IsNullOrEmpty([G_Jumbo]), 0, [G_Jumbo]) +
-Iif(IsNullOrEmpty([G_Large]), 0, [G_Large]) +
-Iif(IsNullOrEmpty([G_Medium]), 0, [G_Medium]) +
-Iif(IsNullOrEmpty([G_Small]), 0, [G_Small]) +
-Iif(IsNullOrEmpty([G_XLarge]), 0, [G_XLarge]) +
-Iif(IsNullOrEmpty([G_XSmall]), 0, [G_XSmall])
 </value>
   </data>
   <data name="xrTableCell24.ExpressionBindings" xml:space="preserve">
@@ -176,5 +167,15 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   </data>
   <data name="sqlDataSource6.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTYiPjxWaWV3IE5hbWU9IlNSX0xBWV9XZWVrbHlQcm9kIj48RmllbGQgTmFtZT0iR19KdW1ibyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkdfWExhcmdlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR19MYXJnZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkdfTWVkaXVtIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iR19TbWFsbCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkdfWFNtYWxsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUm93Tm8iIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="FRESHTOTAL_CF.Expression" xml:space="preserve">
+    <value>Iif(IsNullOrEmpty([G_Jumbo]), 0, [G_Jumbo]) +
+Iif(IsNullOrEmpty([G_Large]), 0, [G_Large]) +
+Iif(IsNullOrEmpty([G_Medium]), 0, [G_Medium]) +
+Iif(IsNullOrEmpty([G_Small]), 0, [G_Small]) +
+Iif(IsNullOrEmpty([G_XLarge]), 0, [G_XLarge]) +
+Iif(IsNullOrEmpty([G_XSmall]), 0, [G_XSmall])
+
+</value>
   </data>
 </root>

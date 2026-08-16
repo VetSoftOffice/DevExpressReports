@@ -153,6 +153,7 @@ decimal sumMaleCullsPercent = 0;
 int countMaleCullsPercent = 0;
 decimal sumEggsPerFemale = 0;
 int countEggsPerFemale = 0;
+decimal sumFemaleMortPercentWithoutIncome = 0;
 private void xrTableCell19_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
     
@@ -174,13 +175,15 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     // Get values for current row
     decimal openFemale = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
     decimal totalFemaleMort = Convert.ToDecimal(GetCurrentColumnValue("TotalFemalMort") ?? 0);
-    
+    decimal RecFemale = Convert.ToDecimal(GetCurrentColumnValue("RecFeamle") ?? 0);
     // Calculate mortality percentage for this row
     if (openFemale &gt; 0) {
-        decimal rowMortPercent = (totalFemaleMort * 100) / openFemale;
-        sumFemaleMortPercent += rowMortPercent;
+        decimal rowMortPercent = (totalFemaleMort * 100) / (openFemale + RecFemale );
+        decimal rowMortPercentWithoutIncome = (totalFemaleMort * 100) / openFemale;
+        sumFemaleMortPercent += rowMortPercent;    
+        sumFemaleMortPercentWithoutIncome += rowMortPercentWithoutIncome ;
         countFemaleMortPercent++;
-    }
+            }
     
      // Get values for current row
     decimal openMale = Convert.ToDecimal(GetCurrentColumnValue("OpenMale") ?? 0);
@@ -231,7 +234,7 @@ private void xrTableCell43_BeforePrint(object sender, System.ComponentModel.Canc
       XRTableCell cell = sender as XRTableCell;
     
     if (countFemaleMortPercent &gt; 0) {
-        decimal avgMortPercent = sumFemaleMortPercent / countFemaleMortPercent;
+        decimal avgMortPercent = sumFemaleMortPercentWithoutIncome ;
         cell.Text = avgMortPercent.ToString("N2");
     } else {
         cell.Text = "0.00";
@@ -260,7 +263,7 @@ private void xrTableCell45_BeforePrint(object sender, System.ComponentModel.Canc
      XRTableCell cell = sender as XRTableCell;
     
     if (countMaleDeplPercent &gt; 0) {
-        decimal avgDeplPercent = sumMaleDeplPercent / countMaleDeplPercent;
+        decimal avgDeplPercent = sumMaleDeplPercent;
         cell.Text = avgDeplPercent.ToString("N2") ;
     } else {
         cell.Text = "0.00";
@@ -331,10 +334,10 @@ private void xrTableCell60_BeforePrint(object sender, System.ComponentModel.Canc
     // Get values from fields
     decimal openFemale = Convert.ToDecimal(GetCurrentColumnValue("OpenFemale") ?? 0);
     decimal totalHatEggs = Convert.ToDecimal(GetCurrentColumnValue("TotalHatEggs") ?? 0);
-    
+    decimal RecFemale = Convert.ToDecimal(GetCurrentColumnValue("RecFeamle") ?? 0);
     // Calculate: TotalHatEggs / OpenFemale
     if (openFemale &gt; 0) {
-        decimal result = totalHatEggs / openFemale;
+        decimal result = totalHatEggs / (openFemale + RecFemale );
         cell.Text = result.ToString("N2"); // 2 decimal places
         // Or: result.ToString("N3") for 3 decimal places
         // Or: result.ToString("N1") for 1 decimal place
