@@ -352,6 +352,9 @@
             this.RejectToColdStoreInTrays = new DevExpress.XtraReports.Parameters.Parameter();
             this.TotalCartons = new DevExpress.XtraReports.Parameters.Parameter();
             this.FRESHTOTAL_CF = new DevExpress.XtraReports.UI.CalculatedField();
+            this.CanteenCartonsNo = new DevExpress.XtraReports.UI.CalculatedField();
+            this.SalebleCartonsNo = new DevExpress.XtraReports.UI.CalculatedField();
+            this.TotalCartonsNo = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -543,9 +546,7 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([RowNo] = 1, ToInt(?RejectToOffal),\nIif([RowNo] = 2, ToInt(?RejectToCanteen)," +
-                    "\nIif([RowNo] = 3, ?CanteenCartonsNo,\nIif([RowNo] = 4, ?TotalCartonsNo,\nIif([RowN" +
-                    "o] = 6, ?CanteenCartonsNo,\n0)))))\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", resources.GetString("xrTableCell23.ExpressionBindings"))});
             this.xrTableCell23.Multiline = true;
             this.xrTableCell23.Name = "xrTableCell23";
             this.xrTableCell23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -562,7 +563,9 @@
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", resources.GetString("xrTableCell24.ExpressionBindings"))});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([RowNo] = 1, ToInt(?RejectToOffal),\nIif([RowNo] = 2, ToInt(?RejectToCanteen)," +
+                    "\nIif([RowNo] = 3, [CanteenCartonsNo],\nIif([RowNo] = 4, ?TotalCartonsNo,\nIif([Row" +
+                    "No] = 6, [CanteenCartonsNo],\n0)))))")});
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
             this.xrTableCell24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
@@ -1459,6 +1462,24 @@
             this.FRESHTOTAL_CF.Expression = resources.GetString("FRESHTOTAL_CF.Expression");
             this.FRESHTOTAL_CF.Name = "FRESHTOTAL_CF";
             // 
+            // CanteenCartonsNo
+            // 
+            this.CanteenCartonsNo.DataMember = "SR_LAY_WeeklyProd";
+            this.CanteenCartonsNo.Expression = "ToInt(?RejectToCanteen) / 360";
+            this.CanteenCartonsNo.Name = "CanteenCartonsNo";
+            // 
+            // SalebleCartonsNo
+            // 
+            this.SalebleCartonsNo.DataMember = "SR_LAY_WeeklyProd";
+            this.SalebleCartonsNo.Expression = "Sum([FRESHTOTAL_CF])";
+            this.SalebleCartonsNo.Name = "SalebleCartonsNo";
+            // 
+            // TotalCartonsNo
+            // 
+            this.TotalCartonsNo.DataMember = "SR_LAY_WeeklyProd";
+            this.TotalCartonsNo.Expression = "[SalebleCartonsNo] + [CanteenCartonsNo]";
+            this.TotalCartonsNo.Name = "TotalCartonsNo";
+            // 
             // LAYHouseDailyProduction_Ext
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1487,7 +1508,10 @@
             this.Close,
             this.TotalEggss,
             this.SameDate,
-            this.FRESHTOTAL_CF});
+            this.FRESHTOTAL_CF,
+            this.CanteenCartonsNo,
+            this.SalebleCartonsNo,
+            this.TotalCartonsNo});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.dsBreeder,
             this.sqlDataSource1,
@@ -1776,5 +1800,8 @@
         private DevExpress.XtraReports.Parameters.Parameter RejectToColdStoreInTrays;
         private DevExpress.XtraReports.Parameters.Parameter TotalCartons;
         private DevExpress.XtraReports.UI.CalculatedField FRESHTOTAL_CF;
+        private DevExpress.XtraReports.UI.CalculatedField CanteenCartonsNo;
+        private DevExpress.XtraReports.UI.CalculatedField SalebleCartonsNo;
+        private DevExpress.XtraReports.UI.CalculatedField TotalCartonsNo;
     }
 }

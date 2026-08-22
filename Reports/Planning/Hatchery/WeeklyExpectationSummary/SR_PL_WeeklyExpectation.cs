@@ -12,5 +12,10 @@ namespace DevExpressReports.Reports.Planning.Hatchery.WeeklyExpectationSummary
         {
             InitializeComponent();
         }
+
+        private void xrTableCell17_BeforePrint(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

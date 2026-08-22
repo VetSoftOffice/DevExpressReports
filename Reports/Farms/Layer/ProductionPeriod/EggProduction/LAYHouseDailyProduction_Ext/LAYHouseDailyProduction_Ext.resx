@@ -128,7 +128,7 @@ Iif([RowNo] = 7, ?TraysToStore,
 0)))))))
 </value>
   </data>
-  <data name="xrTableCell24.ExpressionBindings" xml:space="preserve">
+  <data name="xrTableCell23.ExpressionBindings" xml:space="preserve">
     <value>Iif(
     [RowNo] = 1, ?RejectToOffalInPieces,
     [RowNo] = 2, ?RejectToColdStoreInPieces,
@@ -136,8 +136,9 @@ Iif([RowNo] = 7, ?TraysToStore,
     [RowNo] = 4, ?TotalCartons,
     [RowNo] = 6, ?RejectToColdStoreInCartons,
     [RowNo] = 7, ?RejectToColdStoreInTrays,
-    0
+    ' '
 )
+
 </value>
   </data>
   <data name="sqlDataSource5.ResultSchemaSerializable" xml:space="preserve">

@@ -1040,13 +1040,13 @@
     <Item127 Ref="698" Component="#Ref-199" Culture="ar" Path="Text" Data="صغير X" />
     <Item128 Ref="699" Component="#Ref-199" Culture="Default" Path="Weight" Data="0.79113675941124173" />
     <Item129 Ref="700" Component="#Ref-181" Culture="Default" Path="Text" Data="TOTAL" />
-    <Item130 Ref="701" Component="#Ref-181" Culture="ar" Path="Text" Data="إجمالي" />
+    <Item130 Ref="701" Component="#Ref-181" Culture="ar" Path="Text" Data="المجموع" />
     <Item131 Ref="702" Component="#Ref-181" Culture="Default" Path="Weight" Data="0.86458312988281227" />
     <Item132 Ref="703" Component="#Ref-183" Culture="Default" Path="Text" Data="TOTAL" />
-    <Item133 Ref="704" Component="#Ref-183" Culture="ar" Path="Text" Data="إجمالي" />
+    <Item133 Ref="704" Component="#Ref-183" Culture="ar" Path="Text" Data="المجموع" />
     <Item134 Ref="705" Component="#Ref-183" Culture="Default" Path="Weight" Data="0.86458286641117243" />
     <Item135 Ref="706" Component="#Ref-185" Culture="Default" Path="Text" Data="TOTAL" />
-    <Item136 Ref="707" Component="#Ref-185" Culture="ar" Path="Text" Data="إجمالي" />
+    <Item136 Ref="707" Component="#Ref-185" Culture="ar" Path="Text" Data="المجموع" />
     <Item137 Ref="708" Component="#Ref-185" Culture="Default" Path="Weight" Data="0.8645830743396522" />
     <Item138 Ref="709" Component="#Ref-68" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item139 Ref="710" Component="#Ref-68" Culture="Default" Path="Text" Data="xrTableCell15" />
@@ -1076,7 +1076,7 @@
     <Item163 Ref="734" Component="#Ref-88" Culture="Default" Path="TextFormatString" Data="{0:N0}" />
     <Item164 Ref="735" Component="#Ref-88" Culture="Default" Path="Weight" Data="808.62174155355092" />
     <Item165 Ref="736" Component="#Ref-175" Culture="Default" Path="Text" Data="CRACK" />
-    <Item166 Ref="737" Component="#Ref-175" Culture="ar" Path="Text" Data="مشروخ" />
+    <Item166 Ref="737" Component="#Ref-175" Culture="ar" Path="Text" Data="مرفوض" />
     <Item167 Ref="738" Component="#Ref-175" Culture="Default" Path="Weight" Data="2.4464268493652344" />
     <Item168 Ref="739" Component="#Ref-92" Culture="Default" Path="Font" Data="Tahoma, 8.25pt" />
     <Item169 Ref="740" Component="#Ref-92" Culture="Default" Path="Text" Data="xrTableCell23" />
