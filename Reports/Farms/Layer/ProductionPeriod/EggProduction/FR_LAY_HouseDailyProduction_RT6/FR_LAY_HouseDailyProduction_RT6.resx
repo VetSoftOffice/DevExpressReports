@@ -188,9 +188,9 @@ private void xrLabel7_BeforePrint(object sender, System.ComponentModel.CancelEve
         );
     }
 
-    bool isRTL = Parameters["IsRTL"].Value != null
-              &amp;&amp; Parameters["IsRTL"].Value.ToString() == "1";
+     bool isRTL = Convert.ToBoolean(Parameters["IsRTL"].Value);
 
+  
     string weekText = isRTL ? "أسبوع" : "Week";
 
     // Set the text directly
