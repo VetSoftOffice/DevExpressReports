@@ -149,23 +149,6 @@
 )
 </value>
   </data>
-  <data name="xrTableCell58.ExpressionBindings" xml:space="preserve">
-    <value>Iif(
-    sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced])) &gt; 0,
-    
-    (
-        sumSum(Iif(IsNullOrEmpty([CumMaleMort]), 0, [CumMaleMort]))
-        +
-        sumSum(Iif(IsNullOrEmpty([CumMaleCulls]), 0, [CumMaleCulls]))
-    )
-    /
-    sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced]))
-    * 100,
-    
-    0
-)
-</value>
-  </data>
   <data name="xrTableCell59.ExpressionBindings" xml:space="preserve">
     <value>Iif(
     sumSum(Iif(IsNullOrEmpty([MalePlaced]), 0, [MalePlaced])) &gt; 0,
