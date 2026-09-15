@@ -289,27 +289,7 @@
             this.DetailData1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.Abs_OpenBal = new DevExpress.XtraReports.UI.CalculatedField();
-            this.DebitCreditOpenBalRes = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Debit_Str = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Credit_Str = new DevExpress.XtraReports.UI.CalculatedField();
-            this.OpenDebit = new DevExpress.XtraReports.UI.CalculatedField();
-            this.OpenCredit = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Result = new DevExpress.XtraReports.UI.CalculatedField();
-            this.CloseDebit = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Open_Balance_Prod = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Inputs_Prod = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Consumed_Prod = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Outputs_Prod = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Other_Output_Prod = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Close_Balance_Prod = new DevExpress.XtraReports.UI.CalculatedField();
-            this.Test = new DevExpress.XtraReports.UI.CalculatedField();
-            this.SumOfHours = new DevExpress.XtraReports.UI.CalculatedField();
-            this.calculatedField1 = new DevExpress.XtraReports.UI.CalculatedField();
-            this.OpenDebitCF = new DevExpress.XtraReports.UI.CalculatedField();
-            this.CloseDebitCF = new DevExpress.XtraReports.UI.CalculatedField();
-            this.OpenCreditCF = new DevExpress.XtraReports.UI.CalculatedField();
-            this.ClodeCreditCF = new DevExpress.XtraReports.UI.CalculatedField();
+
             this.IsRTL = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportFooter = new DevExpress.XtraReports.Parameters.Parameter();
             this.IsCustomReportHeader = new DevExpress.XtraReports.Parameters.Parameter();
@@ -323,7 +303,6 @@
             this.PageType = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.dsFinance1 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
-            this.sR_SL_CustomerDataTableAdapter = new DevExpressReports.Reports.Finance.DataSets.dsFinanceTableAdapters.SR_SL_CustomerDataTableAdapter();
             this.PlantCode = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -602,134 +581,6 @@
             this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.PageInfo.Name = "PageInfo";
             this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(6F, 6F, 0F, 0F, 100F);
-            // 
-            // Abs_OpenBal
-            // 
-            this.Abs_OpenBal.DataMember = "SR_FC_CustSuppSheet";
-            this.Abs_OpenBal.Expression = "Abs([OpenBalance])";
-            this.Abs_OpenBal.Name = "Abs_OpenBal";
-            // 
-            // DebitCreditOpenBalRes
-            // 
-            this.DebitCreditOpenBalRes.DataMember = "SR_FC_CustSuppSheet";
-            this.DebitCreditOpenBalRes.Expression = "Iif([OpenBalance] > 0,[Debit_Str] , Iif([OpenBalance] < 0, [Credit_Str], \'\'))";
-            this.DebitCreditOpenBalRes.Name = "DebitCreditOpenBalRes";
-            // 
-            // Debit_Str
-            // 
-            this.Debit_Str.DataMember = "SR_FC_CustSuppSheet";
-            this.Debit_Str.Expression = "Iif(?IsRTL == true,\'(مدين)\' , \'(Debit)\')";
-            this.Debit_Str.Name = "Debit_Str";
-            // 
-            // Credit_Str
-            // 
-            this.Credit_Str.DataMember = "SR_FC_CustSuppSheet";
-            this.Credit_Str.Expression = "Iif(?IsRTL == true,\'(دائن)\' , \'(Credit)\')";
-            this.Credit_Str.Name = "Credit_Str";
-            // 
-            // OpenDebit
-            // 
-            this.OpenDebit.DataMember = "SR_FC_CustSuppSheet";
-            this.OpenDebit.Expression = "Iif([OpenBalance] > 0, [OpenBalance], NULL)";
-            this.OpenDebit.Name = "OpenDebit";
-            // 
-            // OpenCredit
-            // 
-            this.OpenCredit.DataMember = "SR_FC_CustSuppSheet";
-            this.OpenCredit.Expression = "Iif([OpenBalance] < 0, Abs([OpenBalance]), NULL)\n";
-            this.OpenCredit.Name = "OpenCredit";
-            // 
-            // Result
-            // 
-            this.Result.DataMember = "SR_FC_CustSuppSheet";
-            this.Result.Expression = "[Debit] - [Credit]";
-            this.Result.Name = "Result";
-            // 
-            // CloseDebit
-            // 
-            this.CloseDebit.DataMember = "SR_FC_CustSuppSheet";
-            this.CloseDebit.Expression = "Iif([CloseBalance] > 0, [CloseBalance], 0)";
-            this.CloseDebit.Name = "CloseDebit";
-            // 
-            // Open_Balance_Prod
-            // 
-            this.Open_Balance_Prod.DataMember = "SR_FC_FM_StockMovement";
-            this.Open_Balance_Prod.Expression = "Iif([FormulaOperand_Prod]<>0,ToDecimal([OpenBalance])/[FormulaOperand_Prod] ,0 )";
-            this.Open_Balance_Prod.Name = "Open_Balance_Prod";
-            // 
-            // Inputs_Prod
-            // 
-            this.Inputs_Prod.DataMember = "SR_FC_FM_StockMovement";
-            this.Inputs_Prod.Expression = "Iif([FormulaOperand_Prod]<>0,ToDecimal([InputsStdUnit])/[FormulaOperand_Prod] ,0 " +
-    ")\n";
-            this.Inputs_Prod.Name = "Inputs_Prod";
-            // 
-            // Consumed_Prod
-            // 
-            this.Consumed_Prod.DataMember = "SR_FC_FM_StockMovement";
-            this.Consumed_Prod.Expression = "Iif([FormulaOperand_Prod]<>0,ToDecimal([Consumed])/[FormulaOperand_Prod] ,0 )\n";
-            this.Consumed_Prod.Name = "Consumed_Prod";
-            // 
-            // Outputs_Prod
-            // 
-            this.Outputs_Prod.DataMember = "SR_FC_FM_StockMovement";
-            this.Outputs_Prod.Expression = "Iif([FormulaOperand_Prod]<>0,ToDecimal([SoldTransferOut])/[FormulaOperand_Prod] ," +
-    "0 )\n";
-            this.Outputs_Prod.Name = "Outputs_Prod";
-            // 
-            // Other_Output_Prod
-            // 
-            this.Other_Output_Prod.DataMember = "SR_FC_FM_StockMovement";
-            this.Other_Output_Prod.Expression = "Iif([FormulaOperand_Prod]<>0,ToDecimal([OtherOutputsStdUnit])/[FormulaOperand_Pro" +
-    "d] ,0 )\n";
-            this.Other_Output_Prod.Name = "Other_Output_Prod";
-            // 
-            // Close_Balance_Prod
-            // 
-            this.Close_Balance_Prod.DataMember = "SR_FC_FM_StockMovement";
-            this.Close_Balance_Prod.Expression = "Iif([FormulaOperand_Prod]<>0,ToDecimal([CloseBalance])/[FormulaOperand_Prod] ,0 )" +
-    "\n";
-            this.Close_Balance_Prod.Name = "Close_Balance_Prod";
-            // 
-            // Test
-            // 
-            this.Test.DataMember = "SR_FC_FM_StockMovement";
-            this.Test.Name = "Test";
-            // 
-            // SumOfHours
-            // 
-            this.SumOfHours.DataMember = "SR_MO_TrackUserActions";
-            this.SumOfHours.Expression = "sum([TotalSecond]) /3600";
-            this.SumOfHours.Name = "SumOfHours";
-            // 
-            // calculatedField1
-            // 
-            this.calculatedField1.DataMember = "SR_MO_TrackUserActions";
-            this.calculatedField1.Name = "calculatedField1";
-            // 
-            // OpenDebitCF
-            // 
-            this.OpenDebitCF.DataMember = "SR_SL_CustomerData";
-            this.OpenDebitCF.Expression = "Iif([OpenBalance] > 0 , [OpenBalance], \'\')\n";
-            this.OpenDebitCF.Name = "OpenDebitCF";
-            // 
-            // CloseDebitCF
-            // 
-            this.CloseDebitCF.DataMember = "SR_SL_CustomerData";
-            this.CloseDebitCF.Expression = "Iif([CurrentBalance] > 0 , [CurrentBalance], \'\')\n";
-            this.CloseDebitCF.Name = "CloseDebitCF";
-            // 
-            // OpenCreditCF
-            // 
-            this.OpenCreditCF.DataMember = "SR_SL_CustomerData";
-            this.OpenCreditCF.Expression = "Iif([OpenBalance] > 0 , [OpenBalance], \'\')\n";
-            this.OpenCreditCF.Name = "OpenCreditCF";
-            // 
-            // ClodeCreditCF
-            // 
-            this.ClodeCreditCF.DataMember = "SR_SL_CustomerData";
-            this.ClodeCreditCF.Expression = "Iif([CurrentBalance] < 0 , Abs([CurrentBalance]), \'\')\n";
-            this.ClodeCreditCF.Name = "ClodeCreditCF";
             // 
             // IsRTL
             // 
@@ -1245,10 +1096,6 @@
             this.dsFinance1.DataSetName = "dsFinance";
             this.dsFinance1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // sR_SL_CustomerDataTableAdapter
-            // 
-            this.sR_SL_CustomerDataTableAdapter.ClearBeforeFill = true;
-            // 
             // PlantCode
             // 
             this.PlantCode.Name = "PlantCode";
@@ -1265,28 +1112,7 @@
             this.ReportFooter});
             this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
             this.BorderWidth = 0.5F;
-            this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
-            this.Abs_OpenBal,
-            this.DebitCreditOpenBalRes,
-            this.Debit_Str,
-            this.Credit_Str,
-            this.OpenDebit,
-            this.OpenCredit,
-            this.Result,
-            this.CloseDebit,
-            this.Open_Balance_Prod,
-            this.Inputs_Prod,
-            this.Consumed_Prod,
-            this.Outputs_Prod,
-            this.Other_Output_Prod,
-            this.Close_Balance_Prod,
-            this.Test,
-            this.SumOfHours,
-            this.calculatedField1,
-            this.OpenDebitCF,
-            this.CloseDebitCF,
-            this.OpenCreditCF,
-            this.ClodeCreditCF});
+
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.dsFinance1});
@@ -1467,27 +1293,7 @@
         private DevExpress.XtraReports.UI.XRControlStyle DetailData1;
         private DevExpress.XtraReports.UI.XRControlStyle DetailData3_Odd;
         private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
-        private DevExpress.XtraReports.UI.CalculatedField Abs_OpenBal;
-        private DevExpress.XtraReports.UI.CalculatedField DebitCreditOpenBalRes;
-        private DevExpress.XtraReports.UI.CalculatedField Debit_Str;
-        private DevExpress.XtraReports.UI.CalculatedField Credit_Str;
-        private DevExpress.XtraReports.UI.CalculatedField OpenDebit;
-        private DevExpress.XtraReports.UI.CalculatedField OpenCredit;
-        private DevExpress.XtraReports.UI.CalculatedField Result;
-        private DevExpress.XtraReports.UI.CalculatedField CloseDebit;
-        private DevExpress.XtraReports.UI.CalculatedField Open_Balance_Prod;
-        private DevExpress.XtraReports.UI.CalculatedField Inputs_Prod;
-        private DevExpress.XtraReports.UI.CalculatedField Consumed_Prod;
-        private DevExpress.XtraReports.UI.CalculatedField Outputs_Prod;
-        private DevExpress.XtraReports.UI.CalculatedField Other_Output_Prod;
-        private DevExpress.XtraReports.UI.CalculatedField Close_Balance_Prod;
-        private DevExpress.XtraReports.UI.CalculatedField Test;
-        private DevExpress.XtraReports.UI.CalculatedField SumOfHours;
-        private DevExpress.XtraReports.UI.CalculatedField calculatedField1;
-        private DevExpress.XtraReports.UI.CalculatedField OpenDebitCF;
-        private DevExpress.XtraReports.UI.CalculatedField CloseDebitCF;
-        private DevExpress.XtraReports.UI.CalculatedField OpenCreditCF;
-        private DevExpress.XtraReports.UI.CalculatedField ClodeCreditCF;
+
         private DevExpress.XtraReports.Parameters.Parameter IsRTL;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportFooter;
         private DevExpress.XtraReports.Parameters.Parameter IsCustomReportHeader;
@@ -1505,7 +1311,6 @@
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
         private DataSets.dsFinance dsFinance1;
-        private DataSets.dsFinanceTableAdapters.SR_SL_CustomerDataTableAdapter sR_SL_CustomerDataTableAdapter;
         private DevExpress.XtraReports.Parameters.Parameter PlantCode;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;

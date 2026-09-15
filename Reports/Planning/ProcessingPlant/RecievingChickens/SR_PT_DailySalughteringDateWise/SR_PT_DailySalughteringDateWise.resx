@@ -196,12 +196,11 @@ TotalRecQtyCalc = recQtyReport  - (DOAReport +RejectedQtyReport) + MedicalCondem
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
-
+cell.Text = result.ToString("N1"); 
 }
 
 private void xrTableCell52_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-           xrTableCell52.Text = TotalRecQtyCalc.ToString("0");
+           xrTableCell52.Text = TotalRecQtyCalc.ToString("N1");
 
 }
 
@@ -243,7 +242,7 @@ TotalRecWeightCalc = recWeightReportMort -( DOAWeightReportMort  + RejectedQtyWe
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N2"); // format with up to 2 decimals
 
 }
 
@@ -280,7 +279,7 @@ TotalMedPluckAcceptCalc = medicalCondemnationReportTotalCounter  + pluckRejectRe
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N0"); // format with up to 2 decimals
 
 }
 
@@ -318,7 +317,7 @@ TotalMedPluckAcceptWtCalc = medicalCondWeightReportTotalCounterWt  + pluckReject
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N2"); // format with up to 2 decimals
 
 }
 
@@ -352,12 +351,12 @@ TotalPluckMedAccMinusCounterQty = pluckMedAccReportDiff  - counterQtyReportDiff 
 
 // --- Assign result to cell ---
 XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+cell.Text = result.ToString("N0"); // format with up to 2 decimals
 
 }
 
 private void xrTableCell69_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-     xrTableCell69.Text = TotalPluckMedAccMinusCounterQty.ToString("N2");
+     xrTableCell69.Text = TotalPluckMedAccMinusCounterQty.ToString("N0");
 
 }
 

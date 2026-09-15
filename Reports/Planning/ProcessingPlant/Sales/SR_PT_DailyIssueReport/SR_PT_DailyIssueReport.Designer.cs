@@ -360,18 +360,18 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             // xrLabel2
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel2.CanGrow = false;
             this.xrLabel2.CanPublishOptions.Xls = false;
             this.xrLabel2.CanPublishOptions.Xlsx = false;
-            this.xrLabel2.CanGrow = false;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.StylePriority.UseBorders = false;
             // 
             // xrLabel3
             // 
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel3.CanGrow = false;
             this.xrLabel3.CanPublishOptions.Xls = false;
             this.xrLabel3.CanPublishOptions.Xlsx = false;
-            this.xrLabel3.CanGrow = false;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.StylePriority.UseBorders = false;
             // 
@@ -441,16 +441,16 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             crossTabColumnDefinition3.Visible = false;
             crossTabColumnDefinition4.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(118.7337F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(70.81702F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(66.65038F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(58.31701F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(61.87341F),
             new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(61.87341F),
             crossTabColumnDefinition1,
             crossTabColumnDefinition2,
             crossTabColumnDefinition3,
             crossTabColumnDefinition4,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(78.4899F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(78.4899F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(60.78156F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(61.82324F)});
             crossTabColumnField1.FieldName = "ColDataYear";
             crossTabColumnField2.FieldName = "ColDataMonth";
             crossTabColumnField3.FieldName = "ColDataDay";
@@ -1240,6 +1240,7 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             this.ExportOptions.Xls.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
             this.ExportOptions.Xlsx.IgnoreErrors = DevExpress.XtraPrinting.XlIgnoreErrors.NumberStoredAsText;
             this.ExportOptions.Xlsx.TextExportMode = DevExpress.XtraPrinting.TextExportMode.Text;
+            this.Landscape = true;
             this.LocalizationItems.AddRange(new DevExpress.XtraReports.Localization.LocalizationItem[] {
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BookPerf, "Default", "Description", "BookPerf"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.BottomMargin, "Default", "HeightF", 20F),
@@ -1250,10 +1251,10 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell1, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabDataCell2, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "Default", "Text", "Description"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell1, "ar", "Text", "الوصف"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "Default", "Text", "Weight"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell10, "ar", "Text", "الوزن"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell11, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
@@ -1263,32 +1264,32 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell13, "ar", "Text", "قيمة البيانات الاولي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell14, "Default", "Text", "Data Value2"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell14, "ar", "Text", "قيمة البيانات الثانية"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell15, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell16, "Default", "TextFormatString", "Total {0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell17, "Default", "Text", "Data Value1"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell17, "ar", "Text", "قيمة البيانات الاولي"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell18, "Default", "Text", "Data Value2"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell18, "ar", "Text", "قيمة البيانات الثانية"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell19, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell19, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell20, "Default", "TextFormatString", "Total {0}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell3, "Default", "TextFormatString", "{0:dd/MM/yyyy}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell4, "Default", "Text", "Grand Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "Default", "Text", "Total"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell5, "ar", "Text", "الاجمالي"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "Default", "Text", "Fresh"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell6, "ar", "Text", "مجمد"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "Default", "Text", "Frozen"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell7, "ar", "Text", "طازة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "Default", "Text", "Fresh"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell8, "ar", "Text", "مجمد"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 9F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "Default", "Text", "Frozen"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabHeaderCell9, "ar", "Text", "طازة"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.crossTabTotalCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
@@ -1324,12 +1325,12 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageFooter, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.PageHeader, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(271.5434F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentDate, "Default", "SizeF", new System.Drawing.SizeF(755.7953F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(353.5F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(445F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(929.252F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(862.1663F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(289.8305F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(774.0825F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.Place, "Default", "Description", "Place"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
@@ -1364,7 +1365,7 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand7, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 21.16667F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(478.2773F, 177F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(379.319F, 177F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(144.358F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
@@ -1378,8 +1379,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Text", "Processing Plant No. : [?Place]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "ar", "Text", "رقم المجزر : [?Place]")});
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
-            this.PageHeightF = 1653.543F;
-            this.PageWidthF = 1169.291F;
+            this.PageHeightF = 1169.291F;
+            this.PageWidthF = 1653.543F;
             groupLayoutItem1.BorderVisible = false;
             groupLayoutItem1.Items.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignature, DevExpress.XtraReports.Parameters.Orientation.Vertical),
@@ -1442,7 +1443,7 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Sales.SR_PT_DailyIs
             this.crossTabDataStyle1,
             this.crossTabTotalStyle1});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsFinance1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

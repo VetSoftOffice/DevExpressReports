@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v25.2, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PT_Premium" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_PT_Premium" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
+<XtraReportsLayoutSerializer SerializerVersion="26.1.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v26.1, Version=25.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SR_PT_Premium" ScriptsSource="&#xD;&#xA;private void crossTabDataCell1_BeforePrint(object sender, DevExpress.XtraReports.UI.CrossTab.CrossTabCellPrintEventArgs e) {&#xD;&#xA;     XRCrossTabCell cell = sender as XRCrossTabCell;&#xD;&#xA;&#xD;&#xA;    if (string.IsNullOrWhiteSpace(cell.Text))&#xD;&#xA;    {&#xD;&#xA;        cell.Text = &quot;0.00&quot;;&#xD;&#xA;    }&#xD;&#xA;   &#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" Landscape="true" PageWidthF="1653.54333" PageHeightF="1169.29138" ScriptReferencesString="E:\VetSoft Projects .Net2024\VetSoft Projects\VetSoftDevExpress\bin\Release\net8.0\VetSoftDevExpress.dll" Version="26.1" DataMember="SR_PT_Premium" DataSource="#Ref-0" TextAlignment="MiddleLeft" Padding="2,2,0,0,100" BorderColor="255,75,75,75" BorderWidth="0.5">
   <Parameters>
     <Item1 Ref="3" Visible="false" ValueInfo="False" Name="IsRTL" Type="#Ref-2" />
     <Item2 Ref="4" Visible="false" ValueInfo="False" Name="IsCustomReportFooter" Type="#Ref-2" />
@@ -110,7 +110,7 @@
                   <Item2 Ref="82" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-58" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v26.1" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -212,7 +212,7 @@
                   <Item4 Ref="128" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-101" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v26.1" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -394,7 +394,7 @@
                   <Item5 Ref="231" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-183" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v26.1" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -449,7 +449,7 @@
                   <Item2 Ref="260" LayoutItemType="Parameter" LabelOrientation="Vertical" Parameter="#Ref-236" />
                 </ParameterPanelLayoutItems>
                 <ObjectStorage>
-                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
+                  <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v26.1" Ref="2" Content="System.Boolean" Type="System.Type" />
                 </ObjectStorage>
               </ReportSource>
             </Item1>
@@ -624,7 +624,7 @@
     <Item2 Ref="0" />
   </ComponentStorage>
   <ObjectStorage>
-    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="2" Content="System.Boolean" Type="System.Type" />
-    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v25.2" Ref="15" Content="System.Int32" Type="System.Type" />
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v26.1" Ref="2" Content="System.Boolean" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v26.1" Ref="15" Content="System.Int32" Type="System.Type" />
   </ObjectStorage>
 </XtraReportsLayoutSerializer>

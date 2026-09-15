@@ -269,7 +269,7 @@ if (GetCurrentColumnValue("PluckReject") != null)
 if (GetCurrentColumnValue("AcceptQty") != null)
     acceptQty = Convert.ToDecimal(GetCurrentColumnValue("AcceptQty"));
 
-/ --- Equation ---
+// --- Equation ---
 decimal result = medicalCondemnation + pluckReject + acceptQty;
 
 // --- Add to report total (if required for average/summaries) ---

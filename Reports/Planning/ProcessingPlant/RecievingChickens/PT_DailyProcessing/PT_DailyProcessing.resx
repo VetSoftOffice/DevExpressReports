@@ -260,8 +260,10 @@ if (GetCurrentColumnValue("ChickRehang") != null)
 result = chickRehangReport + netBirdTotalReport ;
 
 // --- Assign result to cell ---
-XRTableCell cell = sender as XRTableCell;
-cell.Text = result.ToString("0.##"); // format with up to 2 decimals
+XRTable table = sender as XRTable;
+XRTableCell cell = table?.Rows[0]?.Cells[0];
+if (cell != null)
+    cell.Text = result.ToString("0.##"); // format with up to 2 decimals
 
 }
 

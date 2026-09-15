@@ -159,6 +159,9 @@ decimal recQtyMedicalCondemnationSum  = 0;
 decimal medicalCondemnationSum  = 0;
 decimal recQtyAcceptWtSum = 0;
 decimal acceptWtSum = 0;
+decimal recQtyCounterSum = 0;
+decimal counterQtySum = 0;
+decimal totalProblemSum = 0;
 
 private void xrTableCell24_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare local variables for current record ---
@@ -385,8 +388,6 @@ if (GetCurrentColumnValue("TotalProblem") != null &amp;&amp;
 }
 
 // --- Accumulate total across all records ---
-// (Define this field once at the top of your report class)
-// decimal totalProblemSum = 0;
 
 totalProblemSum += totalProblem;
 

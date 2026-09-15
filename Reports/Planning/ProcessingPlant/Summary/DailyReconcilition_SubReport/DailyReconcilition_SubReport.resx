@@ -127,7 +127,10 @@ decimal counterTotal = 0;
 decimal doa = 0;
 decimal culls = 0;
 decimal scaleWeight = 0;
-
+decimal counterTotalSum  = 0;
+decimal doaSum = 0;
+decimal cullsSum = 0;
+decimal scaleWeightSum  = 0;
 // --- Read values safely from the current record ---
 if (GetCurrentColumnValue("CounterTotal") != null &amp;&amp;
     !string.IsNullOrEmpty(GetCurrentColumnValue("CounterTotal").ToString()))
@@ -449,7 +452,7 @@ private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEvent
     !string.IsNullOrEmpty(GetCurrentColumnValue("TotalDressedWeight").ToString()))
 {
     TotalDressedWeight= Convert.ToDecimal(GetCurrentColumnValue("TotalDressedWeight"));
-    CountRows++
+    CountRows++;
 }
   TotalDressedWeightGroup += TotalDressedWeight;
 

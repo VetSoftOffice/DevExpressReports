@@ -122,6 +122,8 @@
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>decimal PortionsPercReport = 0;
+decimal AvgLiveBirdWeightReport  = 0;
+decimal groupSumCullsPluckDOALive  = 0;
 private void xrTableCell44_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     // --- Declare values ---
 decimal liveBirds = 0;

@@ -110,6 +110,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             this.DOA_GT = new DevExpress.XtraReports.UI.CalculatedField();
             this.Culls_GT = new DevExpress.XtraReports.UI.CalculatedField();
             this.PlantCode = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ShowSignature = new DevExpress.XtraReports.Parameters.Parameter();
+            this.ShowSignatureAllPages = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -287,8 +289,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DOA]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([DOA]), 0, [DOA])")});
             this.xrTableCell20.Multiline = true;
             this.xrTableCell20.Name = "xrTableCell20";
             this.xrTableCell20.StylePriority.UseBorderColor = false;
@@ -321,8 +323,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Culls]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')\n"),
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNullOrEmpty([Culls]), 0, [Culls])")});
             this.xrTableCell22.Multiline = true;
             this.xrTableCell22.Name = "xrTableCell22";
             this.xrTableCell22.StylePriority.UseBorderColor = false;
@@ -376,10 +378,10 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             // 
             // xrLabel4
             // 
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.CanPublishOptions.Xls = false;
             this.xrLabel4.CanPublishOptions.Xlsx = false;
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2F, 2F, 0F, 0F, 100F);
             this.xrLabel4.StylePriority.UseTextAlignment = false;
             this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -387,9 +389,9 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             // xrLabel1
             // 
             this.xrLabel1.CanGrow = false;
-            this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.CanPublishOptions.Xls = false;
             this.xrLabel1.CanPublishOptions.Xlsx = false;
+            this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
@@ -777,6 +779,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             // 
             this.SubBand6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.srReportSignature});
+            this.SubBand6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True And ?ShowSignatureAllPages == False\n")});
             this.SubBand6.Name = "SubBand6";
             // 
             // srReportSignature
@@ -795,6 +799,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             // 
             this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.srReportSignature_PageFooter});
+            this.SubBand7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?ShowSignature == True And ?ShowSignatureAllPages == True")});
             this.SubBand7.Name = "SubBand7";
             // 
             // srReportSignature_PageFooter
@@ -911,6 +917,18 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             this.PlantCode.Name = "PlantCode";
             this.PlantCode.Visible = false;
             // 
+            // ShowSignature
+            // 
+            this.ShowSignature.Name = "ShowSignature";
+            this.ShowSignature.Type = typeof(bool);
+            this.ShowSignature.ValueInfo = "False";
+            // 
+            // ShowSignatureAllPages
+            // 
+            this.ShowSignatureAllPages.Name = "ShowSignatureAllPages";
+            this.ShowSignatureAllPages.Type = typeof(bool);
+            this.ShowSignatureAllPages.ValueInfo = "False";
+            // 
             // PT_DailyRejectChickens
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -950,6 +968,8 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(10F, 10F, 20F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.A4),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0.2500534F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "Default", "Description", "ShowSignature"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "ShowSignatureAllPages"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(806.7714F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0.6250064F)),
@@ -1097,18 +1117,22 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
             this.PageWidthF = 826.7717F;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.IsRTL, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignature, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ShowSignatureAllPages, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DateFrom, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DateTo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FeedMillCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.PlantCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsRTL,
+            this.ShowSignature,
+            this.ShowSignatureAllPages,
             this.DateFrom,
             this.DateTo,
             this.FeedMillCode,
             this.PlantCode});
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
@@ -1195,5 +1219,7 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.RecievingChickens.P
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
         private DevExpress.XtraReports.UI.SubBand SubBand6;
         private DevExpress.XtraReports.UI.XRSubreport srReportSignature;
+        private DevExpress.XtraReports.Parameters.Parameter ShowSignature;
+        private DevExpress.XtraReports.Parameters.Parameter ShowSignatureAllPages;
     }
 }
