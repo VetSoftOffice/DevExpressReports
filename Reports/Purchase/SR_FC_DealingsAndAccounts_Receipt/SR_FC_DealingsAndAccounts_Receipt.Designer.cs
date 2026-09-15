@@ -785,7 +785,6 @@
             // 
             this.xrLabel_VATLine.CanGrow = false;
             this.xrLabel_VATLine.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleRight\', \'MiddleLeft\')\n"),
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(?IsRTL, \'ضريبة \' + FormatString(\'{0:N2}\', [VatValue]) + \' = %15\', \'VAT \' + Fo" +
                     "rmatString(\'{0:N2}\', [VatValue]) + \' = %15\')")});
             this.xrLabel_VATLine.ForeColor = System.Drawing.Color.Gray;
@@ -795,7 +794,7 @@
             this.xrLabel_VATLine.StylePriority.UseFont = false;
             this.xrLabel_VATLine.StylePriority.UseForeColor = false;
             this.xrLabel_VATLine.StylePriority.UseTextAlignment = false;
-            this.xrLabel_VATLine.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel_VATLine.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLine_DiscountSep
             // 
@@ -1893,10 +1892,12 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Font", new DevExpress.Drawing.DXFont("Arial", 10F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "Margins", new DevExpress.Drawing.DXMargins(0F, 0F, 10F, 10F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "PaperKind", DevExpress.Drawing.Printing.DXPaperKind.Custom),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Discounts, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.00004F, 67.00001F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Discounts, "Default", "SizeF", new System.Drawing.SizeF(241.3981F, 23F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Expenses, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.19928F, 90.00002F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Expenses, "Default", "SizeF", new System.Drawing.SizeF(241.3981F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Discounts, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.19928F, 67.00001F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Discounts, "Default", "SizeF", new System.Drawing.SizeF(301.8005F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Expenses, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.39851F, 90.00002F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Expenses, "ar", "LocationFloat", new DevExpress.Utils.PointFloat(9.999967F, 90.00002F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Expenses, "Default", "SizeF", new System.Drawing.SizeF(301.8005F, 23F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.SR_FC_DealingsAndAccounts_Receipt_Expenses, "ar", "SizeF", new System.Drawing.SizeF(301.9998F, 23F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand1, "Default", "HeightF", 32.35187F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand2, "Default", "HeightF", 14.53705F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand3, "Default", "HeightF", 26.3106F),
@@ -2026,6 +2027,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel33, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(22.0739F, 122.3519F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel33, "Default", "SizeF", new System.Drawing.SizeF(142.926F, 24.99998F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel33, "Default", "Text", "Net Total"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel33, "ar", "Text", "الصافي المستحق"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 39.99999F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel4, "Default", "SizeF", new System.Drawing.SizeF(251.5974F, 20F)),
@@ -2071,8 +2073,10 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_FreeQtyHeader, "Default", "Text", "Free"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_FreeQtyHeader, "ar", "Text", "مجاني"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(115F, 9.999974F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "Default", "SizeF", new System.Drawing.SizeF(197.199F, 16F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(10.19928F, 9.999974F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "ar", "LocationFloat", new DevExpress.Utils.PointFloat(10.19928F, 9.999974F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "Default", "SizeF", new System.Drawing.SizeF(301.9998F, 16F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "ar", "SizeF", new System.Drawing.SizeF(301.8005F, 16F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel_VATLine, "Default", "Text", "VAT: 0.00 = %15"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLine1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(9.999967F, 100F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLine1, "Default", "SizeF", new System.Drawing.SizeF(302.199F, 12.35186F)),
