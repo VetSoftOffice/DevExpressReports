@@ -462,7 +462,6 @@
             this.thQty = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
             this.thUnit = new DevExpress.XtraReports.UI.XRTableCell();
-            this.thUnitPrice = new DevExpress.XtraReports.UI.XRTableCell();
             this.thSellingPrice = new DevExpress.XtraReports.UI.XRTableCell();
             this.thDiscount = new DevExpress.XtraReports.UI.XRTableCell();
             this.thExtras = new DevExpress.XtraReports.UI.XRTableCell();
@@ -488,7 +487,6 @@
             this.tfSellingPrice_GT = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell23 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -524,7 +522,6 @@
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tdJournalNote = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tdCredit = new DevExpress.XtraReports.UI.XRTableCell();
             this.tdDebit = new DevExpress.XtraReports.UI.XRTableCell();
             this.tdCostCenter = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -556,6 +553,9 @@
             this.GroupFooter6 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.GroupFooter7 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.GroupFooter8 = new DevExpress.XtraReports.UI.GroupFooterBand();
+            this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tFooter)).BeginInit();
@@ -1109,10 +1109,10 @@
             this.thQty,
             this.xrTableCell17,
             this.thUnit,
-            this.thUnitPrice,
             this.thSellingPrice,
             this.thDiscount,
             this.thExtras,
+            this.xrTableCell10,
             this.thTotalPrice});
             this.trHeader.Name = "trHeader";
             // 
@@ -1185,14 +1185,6 @@
             this.thUnit.Name = "thUnit";
             this.thUnit.StylePriority.UseBorderWidth = false;
             this.thUnit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // thUnitPrice
-            // 
-            this.thUnitPrice.BorderWidth = 1.4F;
-            this.thUnitPrice.Multiline = true;
-            this.thUnitPrice.Name = "thUnitPrice";
-            this.thUnitPrice.StylePriority.UseBorderWidth = false;
-            this.thUnitPrice.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // thSellingPrice
             // 
@@ -1340,10 +1332,10 @@
             this.tfSellingPrice_GT,
             this.xrTableCell22,
             this.xrTableCell23,
-            this.xrTableCell10,
             this.xrTableCell11,
             this.xrTableCell8,
             this.xrTableCell12,
+            this.xrTableCell25,
             this.xrTableCell4});
             this.trFooter.Name = "trFooter";
             // 
@@ -1409,14 +1401,6 @@
             this.xrTableCell23.StylePriority.UseBorderWidth = false;
             this.xrTableCell23.StylePriority.UseFont = false;
             this.xrTableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // xrTableCell10
-            // 
-            this.xrTableCell10.BorderWidth = 1.4F;
-            this.xrTableCell10.Multiline = true;
-            this.xrTableCell10.Name = "xrTableCell10";
-            this.xrTableCell10.StylePriority.UseBorderWidth = false;
-            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // xrTableCell11
             // 
@@ -1786,21 +1770,6 @@
             this.tdJournalNote.StylePriority.UseTextAlignment = false;
             this.tdJournalNote.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // tdCredit
-            // 
-            this.tdCredit.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
-            | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.tdCredit.BorderWidth = 1.4F;
-            this.tdCredit.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PriceUnit]"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "TextAlignment", "Iif(?IsRTL == True, \'MiddleLeft\', \'MiddleRight\')")});
-            this.tdCredit.Name = "tdCredit";
-            this.tdCredit.StylePriority.UseBorders = false;
-            this.tdCredit.StylePriority.UseBorderWidth = false;
-            this.tdCredit.StylePriority.UseFont = false;
-            this.tdCredit.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
             // tdDebit
             // 
             this.tdDebit.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
@@ -1905,10 +1874,10 @@
             this.tdCostCenter,
             this.xrTableCell21,
             this.tdDebit,
-            this.tdCredit,
             this.tdJournalNote,
             this.xrTableCell1,
             this.xrTableCell2,
+            this.xrTableCell24,
             this.xrTableCell3});
             this.trDetail.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "!IsNullOrEmpty([tStActionID])")});
@@ -2860,6 +2829,38 @@
             this.GroupFooter8.Name = "GroupFooter8";
             this.GroupFooter8.PageBreak = DevExpress.XtraReports.UI.PageBreak.AfterBand;
             // 
+            // xrTableCell10
+            // 
+            this.xrTableCell10.BorderWidth = 1.4F;
+            this.xrTableCell10.Multiline = true;
+            this.xrTableCell10.Name = "xrTableCell10";
+            this.xrTableCell10.StylePriority.UseBorderWidth = false;
+            this.xrTableCell10.StylePriority.UseFont = false;
+            this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrTableCell24
+            // 
+            this.xrTableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell24.BorderWidth = 1.4F;
+            this.xrTableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PriceUnit]")});
+            this.xrTableCell24.Multiline = true;
+            this.xrTableCell24.Name = "xrTableCell24";
+            this.xrTableCell24.StylePriority.UseBorders = false;
+            this.xrTableCell24.StylePriority.UseBorderWidth = false;
+            this.xrTableCell24.StylePriority.UseFont = false;
+            this.xrTableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrTableCell25
+            // 
+            this.xrTableCell25.BorderWidth = 1.4F;
+            this.xrTableCell25.Multiline = true;
+            this.xrTableCell25.Name = "xrTableCell25";
+            this.xrTableCell25.StylePriority.UseBorderWidth = false;
+            this.xrTableCell25.StylePriority.UseFont = false;
+            // 
             // SR_FC_DealingsAndAccounts
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2977,7 +2978,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "SizeF", new System.Drawing.SizeF(100F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoCurrentTime, "Default", "TextFormatString", "{0:HH:mm:ss}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(597.6668F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(209.33F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "SizeF", new System.Drawing.SizeF(208.3331F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.pageInfoPageNoOfTotal, "Default", "TextFormatString", "Page {0} of {1}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.QRUrl, "Default", "Description", "QRUrl"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooter, "Default", "HeightF", 0F),
@@ -2994,22 +2995,22 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub6, "Default", "HeightF", 0F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub6, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub7, "Default", "HeightF", 20.5555F),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub8, "Default", "HeightF", 21.35417F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.ReportFooterSub8, "Default", "HeightF", 21.35422F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowQR, "Default", "Description", "ShowQR"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "Default", "Description", "Show signature"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignature, "ar", "Description", "عرض التوقيع"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "Default", "Description", "Show signature in all page"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.ShowSignatureAllPages, "ar", "Description", "عرض التوقيع في كل الصفحات"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportFooterCustom, "Default", "SizeF", new System.Drawing.SizeF(803.9995F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeader, "Default", "SizeF", new System.Drawing.SizeF(804.9998F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportHeaderCustom, "Default", "SizeF", new System.Drawing.SizeF(804.9998F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 1.354167F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportNotes, "Default", "SizeF", new System.Drawing.SizeF(803.9995F, 20F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 1.354218F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature, "Default", "SizeF", new System.Drawing.SizeF(803.9995F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(1.000023F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.srReportSignature_PageFooter, "Default", "SizeF", new System.Drawing.SizeF(804.9999F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this, "Default", "DisplayName", "Bill"),
@@ -3026,16 +3027,13 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand5, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdCostCenter, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdCostCenter, "Default", "Weight", 2.20721121670909D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdCredit, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdCredit, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdCredit, "Default", "Weight", 2.0985179832306633D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdDebit, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.5F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdDebit, "Default", "Weight", 2.305159004597328D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdDebit, "Default", "Weight", 2.3417634978603754D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tDetail, "Default", "SizeF", new System.Drawing.SizeF(807F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdJournalNote, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdJournalNote, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdJournalNote, "Default", "Weight", 2.3892286334191715D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.tdJournalNote, "Default", "Weight", 3.3453819710492874D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdProduct, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdProduct, "Default", "Weight", 5.6781669524424165D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdSerialNo, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 8.25F)),
@@ -3053,13 +3051,13 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDiscount, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDiscount, "Default", "Text", "Vat %"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thDiscount, "ar", "Text", "نسبة الضريبة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thDiscount, "Default", "Weight", 0.72308536627226139D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thDiscount, "Default", "Weight", 1.1567860779546957D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tHeader, "Default", "SizeF", new System.Drawing.SizeF(807.0001F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thExtras, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thExtras, "Default", "Text", "Vat"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thExtras, "ar", "Text", "ضريبة القيمة المضافة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thExtras, "Default", "Weight", 1.148580916845531D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thExtras, "Default", "Weight", 1.4136198386847307D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thProduct, "Default", "Text", "Product / Item"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thProduct, "ar", "Text", "المنتج / الصنف"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thProduct, "Default", "Weight", 3.5880792971241782D),
@@ -3069,7 +3067,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSellingPrice, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSellingPrice, "Default", "Text", "Total Exclude Vat"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSellingPrice, "ar", "Text", "الاجمالي غير شامل الضريبة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thSellingPrice, "Default", "Weight", 1.5097735255203539D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thSellingPrice, "Default", "Weight", 2.11397240716052D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Text", "Sr."),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "ar", "Text", "م."),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thSr, "Default", "Weight", 0.42955619902999981D),
@@ -3078,10 +3076,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thTotalPrice, "Default", "Weight", 1.5069337684080411D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnit, "Default", "Text", "Unit"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnit, "ar", "Text", "الوحدة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnit, "Default", "Weight", 1.4566459009782755D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnitPrice, "Default", "Text", "Unit Price"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnitPrice, "ar", "Text", "سعر الوحدة"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnitPrice, "Default", "Weight", 1.3260719367183771D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.thUnit, "Default", "Weight", 1.4797793225348526D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TotalPriceAsText, "Default", "Description", "TotalPrice As Text"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TotalPriceAsText, "ar", "Description", "الإجمالي كتابة"),
@@ -3256,16 +3251,18 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTable1, "Default", "SizeF", new System.Drawing.SizeF(805F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Weight", 1.1442888889109513D),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Text", ""),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Weight", 0.74008902407302479D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell1, "Default", "Weight", 1.8306240381003966D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Text", "Unit Price"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "ar", "Text", "وحدة السعر"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell10, "Default", "Weight", 1.4136198386847307D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Text", ""),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Weight", 0.84261137676437958D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell11, "Default", "Weight", 1.1798187210913809D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "Weight", 0.6410287288797949D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell12, "Default", "Weight", 0.788948589842185D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7.25F, DevExpress.Drawing.DXFontStyle.Bold)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "Default", "Text", "Tax Card No: [TaxCardID]"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell13, "ar", "Text", "رقم البطاقة الضريبة: [TaxCardID]"),
@@ -3290,7 +3287,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell19, "Default", "Weight", 0.76394537377791549D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "TextFormatString", "{0:N2}"),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 1.8176390455192455D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell2, "Default", "Weight", 2.2370640486672997D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell20, "Default", "Weight", 0.8227117479206969D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell21, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell21, "Default", "Text", "xrTableCell21"),
@@ -3301,7 +3298,13 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell22, "Default", "Weight", 0.79330937285733583D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Weight", 0.81296100270636662D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell23, "Default", "Weight", 0.82587235480373344D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.25F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Text", "xrTableCell24"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "TextFormatString", "{0:N2}"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell24, "Default", "Weight", 2.2370640486672997D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 7F, DevExpress.Drawing.DXFontStyle.Bold)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell25, "Default", "Weight", 0.788948589842185D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "TextFormatString", "{0:N2}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell3, "Default", "Weight", 2.38473636572569D),
@@ -3321,7 +3324,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "TextFormatString", "{0:yyyy-MM-dd}"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell7, "Default", "Weight", 2.1661722293692995D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "TextFormatString", ""),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Weight", 0.40355768880843546D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell8, "Default", "Weight", 0.64560815549470207D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Font", new DevExpress.Drawing.DXFont("Tahoma", 6.5F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "Text", "xrTableCell9"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrTableCell9, "Default", "TextFormatString", "{0:N2}"),
@@ -3379,7 +3382,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tFooter)).EndInit();
@@ -3420,7 +3423,6 @@
         private DevExpress.XtraReports.UI.XRTableCell thProduct;
         private DevExpress.XtraReports.UI.XRTableCell thQty;
         private DevExpress.XtraReports.UI.XRTableCell thUnit;
-        private DevExpress.XtraReports.UI.XRTableCell thUnitPrice;
         private DevExpress.XtraReports.UI.XRTableCell thSellingPrice;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
@@ -3484,7 +3486,6 @@
         private DevExpress.XtraReports.UI.XRLabel DueData;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell6;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell5;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell11;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell12;
         private DevExpress.XtraReports.Parameters.Parameter QRUrl;
@@ -3505,7 +3506,6 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
         private DevExpress.XtraReports.UI.XRTableCell tdJournalNote;
-        private DevExpress.XtraReports.UI.XRTableCell tdCredit;
         private DevExpress.XtraReports.UI.XRTableCell tdDebit;
         private DevExpress.XtraReports.UI.XRTableCell tdCostCenter;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell7;
@@ -3559,5 +3559,8 @@
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter7;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter8;
         private DevExpress.XtraReports.UI.SubBand SubBand5;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell25;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell24;
     }
 }
