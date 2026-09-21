@@ -396,11 +396,11 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Packing.PT_Deboning
             this.crossTabTotalCell6});
             crossTabColumnDefinition1.Visible = false;
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(71.3047F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(50.23135F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(71.30471F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(62.73135F),
             crossTabColumnDefinition1,
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(47.5379F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(45.83331F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(47.53791F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(56.24998F)});
             crossTabColumnField1.FieldName = "ComputerNo";
             this.xrCrossTab1.ColumnFields.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnField[] {
             crossTabColumnField1});
@@ -1090,7 +1090,7 @@ namespace DevExpressReports.Reports.Planning.ProcessingPlant.Packing.PT_Deboning
             new DevExpress.XtraReports.Localization.LocalizationItem(this.SubBand8, "Default", "HeightF", 23F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(0F, 21.16667F)),
-            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(216.9073F, 115F)),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.xrCrossTab1, "Default", "SizeF", new System.Drawing.SizeF(239.824F, 115F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(162.0663F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel2, "Default", "Text", "To: [?DateTo!dd-MM-yyyy]"),
