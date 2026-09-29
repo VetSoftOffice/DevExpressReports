@@ -159,6 +159,10 @@ Iif(IsNullOrEmpty([CloseHTEggsF]), 0, [CloseHTEggsF])
   </data>
   <data name="$this.ScriptsSource" xml:space="preserve">
     <value>
+decimal totalProductionSum = 0;
+decimal totalRejectedSum = 0;
+decimal mobaSum = 0;
+
 private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
     XRTableCell cell = sender as XRTableCell;
 
@@ -167,12 +171,14 @@ private void xrTableCell21_BeforePrint(object sender, System.ComponentModel.Canc
 
     if (totalProduction != 0)
     {
-        cell.Text = ((totalRejected / totalProduction) * 100).ToString("0.##");
+        cell.Text = ((totalRejected / totalProduction) * 100).ToString("N2");
     }
     else
     {
-        cell.Text = "0";
+        cell.Text = "0.00";
     }
+    totalProductionSum += totalProduction ;
+    totalRejectedSum += totalRejected  ;
 }
 
 
@@ -188,12 +194,36 @@ private void xrTableCell14_BeforePrint(object sender, System.ComponentModel.Canc
 
     if (totalProduction != 0)
     {
-        cell.Text = ((totalRejWithMoba / totalProduction) * 100).ToString("0.##");
+        cell.Text = ((totalRejWithMoba / totalProduction) * 100).ToString("N2");
     }
     else
     {
-        cell.Text = "0";
+        cell.Text = "0.00";
     }
+    totalProductionSum += totalProduction ;
+    totalRejectedSum += totalRejected  ;
+    mobaSum += moba;
+
+}
+
+private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+        XRTableCell cell = sender as XRTableCell;
+        if (totalProductionSum != 0)
+        {
+            cell.Text = ((totalRejectedSum / totalProductionSum) * 100).ToString("N2");
+        }
+
+        
+}
+
+private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal result = totalRejectedSum + mobaSum 
+    
+    if (totalProductionSum != 0)
+    {
+        cell.Text = ((result / totalProductionSum ) * 100).ToString("N2");
+    }
+
 }
 </value>
   </data>

@@ -322,6 +322,9 @@
             this.HeaderName_CF = new DevExpress.XtraReports.UI.CalculatedField();
             this.dsFinance2 = new DevExpressReports.Reports.Finance.DataSets.dsFinance();
             this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.UniqueCurrencyCount = new DevExpress.XtraReports.Parameters.Parameter();
+            this.UniqueDealType_ToCount = new DevExpress.XtraReports.Parameters.Parameter();
+            this.UniqueCustSuppNameCount = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -716,7 +719,7 @@
             this.SubBand3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable4});
             this.SubBand3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "[DistinctDealTypeCount] > 1 OR [DistinctCustSuppNameCount] > 1")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueCustSuppNameCount > 1 And ?UniqueCurrencyCount == 1")});
             this.SubBand3.Name = "SubBand3";
             this.SubBand3.Scripts.OnBeforePrint = "SubBand3_BeforePrint";
             // 
@@ -1332,8 +1335,9 @@
             // 
             this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable5});
+            // Added by AI Agent opencode/mimo-v2.6-flash-free  DateTime: 2026-09-23T20:33:31+03:00  Group supplier+currency totals: show always
             this.GroupFooter1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "[DistinctCurrencyCount] > 1")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "True")});
             this.GroupFooter1.Name = "GroupFooter1";
             // 
             // xrTable5
@@ -1429,6 +1433,9 @@
             // 
             this.GroupFooter2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable6});
+            // Added by AI Agent opencode/mimo-v2.6-flash-free  DateTime: 2026-09-23T20:33:31+03:00  Group supplier X totals: hide always
+            this.GroupFooter2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "False")});
             this.GroupFooter2.Level = 2;
             this.GroupFooter2.Name = "GroupFooter2";
             this.GroupFooter2.Scripts.OnBeforePrint = "GroupFooter2_BeforePrint";
@@ -2026,6 +2033,24 @@
             new DevExpress.XtraReports.UI.GroupField("Currency", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.Name = "GroupHeader1";
             // 
+            // UniqueCurrencyCount
+            // 
+            this.UniqueCurrencyCount.Name = "UniqueCurrencyCount";
+            this.UniqueCurrencyCount.Type = typeof(int);
+            this.UniqueCurrencyCount.ValueInfo = "0";
+            // 
+            // UniqueDealType_ToCount
+            // 
+            this.UniqueDealType_ToCount.Name = "UniqueDealType_ToCount";
+            this.UniqueDealType_ToCount.Type = typeof(int);
+            this.UniqueDealType_ToCount.ValueInfo = "0";
+            // 
+            // UniqueCustSuppNameCount
+            // 
+            this.UniqueCustSuppNameCount.Name = "UniqueCustSuppNameCount";
+            this.UniqueCustSuppNameCount.Type = typeof(int);
+            this.UniqueCustSuppNameCount.ValueInfo = "0";
+            // 
             // SR_FC_CustSuppSheetDebitCredit
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2083,6 +2108,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter2, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter2, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_DealType, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.groupHeader_Currency, "Default", "HeightF", 22F),
@@ -2178,6 +2204,9 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.tdSr, "Default", "Weight", 0.78420571840073172D),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.TopMargin, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.trDetail, "Default", "Weight", 1D),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.UniqueCurrencyCount, "Default", "Description", "UniqueCurrencyCount"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.UniqueCustSuppNameCount, "Default", "Description", "UniqueCustSuppNameCount"),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.UniqueDealType_ToCount, "Default", "Description", "UniqueDealType_ToCount"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.WhichReport, "Default", "Description", "WhichReport"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "LocationFloat", new DevExpress.Utils.PointFloat(7.947286E-06F, 0F)),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.xrLabel1, "Default", "SizeF", new System.Drawing.SizeF(144.358F, 20F)),
@@ -2402,7 +2431,10 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.CodeSuppOrCust_Str, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Code_Str, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.OpeningBalanceRes, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AccountDim, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AccountDim, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.UniqueCurrencyCount, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.UniqueDealType_ToCount, DevExpress.XtraReports.Parameters.Orientation.Vertical),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.UniqueCustSuppNameCount, DevExpress.XtraReports.Parameters.Orientation.Vertical)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.IsRTL,
             this.IsCustomReportFooter,
@@ -2422,7 +2454,10 @@
             this.CodeSuppOrCust_Str,
             this.Code_Str,
             this.OpeningBalanceRes,
-            this.AccountDim});
+            this.AccountDim,
+            this.UniqueCurrencyCount,
+            this.UniqueDealType_ToCount,
+            this.UniqueCustSuppNameCount});
             this.ScriptReferencesString = "E:\\VetSoft Projects .Net2024\\VetSoft Projects\\VetSoftDevExpress\\bin\\Release\\net8." +
     "0\\VetSoftDevExpress.dll";
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
@@ -2433,7 +2468,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
@@ -2594,5 +2629,8 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell24;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell26;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
+        private DevExpress.XtraReports.Parameters.Parameter UniqueCurrencyCount;
+        private DevExpress.XtraReports.Parameters.Parameter UniqueDealType_ToCount;
+        private DevExpress.XtraReports.Parameters.Parameter UniqueCustSuppNameCount;
     }
 }

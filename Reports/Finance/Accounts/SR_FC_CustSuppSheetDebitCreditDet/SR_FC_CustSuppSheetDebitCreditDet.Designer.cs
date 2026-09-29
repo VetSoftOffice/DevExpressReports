@@ -909,8 +909,7 @@
             this.ReportFooterSub3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable7});
             this.ReportFooterSub3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueCurrencyCount > 1 Or ?UniqueCustSuppNameCount > 1 Or ?UniqueDealType_ToCou" +
-                    "nt")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueCustSuppNameCount > 1 And ?UniqueCurrencyCount == 1")});
             this.ReportFooterSub3.Name = "ReportFooterSub3";
             // 
             // xrTable7
@@ -1795,8 +1794,9 @@
             // 
             this.GroupFooter_Currency.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable3});
+            // Added by AI Agent opencode/mimo-v2.6-flash-free  DateTime: 2026-09-23T20:33:31+03:00  Group supplier+currency totals: show always
             this.GroupFooter_Currency.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?UniqueCurrencyCount > 1")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "True")});
             this.GroupFooter_Currency.Name = "GroupFooter_Currency";
             // 
             // xrTable3
@@ -1924,6 +1924,9 @@
             // 
             this.GroupFooter_CustSupp.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable4});
+            // Added by AI Agent opencode/mimo-v2.6-flash-free  DateTime: 2026-09-23T20:33:31+03:00  Group supplier X totals: hide always
+            this.GroupFooter_CustSupp.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "False")});
             this.GroupFooter_CustSupp.Level = 2;
             this.GroupFooter_CustSupp.Name = "GroupFooter_CustSupp";
             // 
@@ -2541,6 +2544,7 @@
             new DevExpress.XtraReports.Localization.LocalizationItem(this.FontSize, "ar", "Description", "حجم الخط"),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_Currency, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_CustSupp, "Default", "HeightF", 20F),
+            new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_CustSupp, "Default", "Visible", false),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupFooter_DealType, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader1, "Default", "HeightF", 20F),
             new DevExpress.XtraReports.Localization.LocalizationItem(this.GroupHeader_Currency, "Default", "HeightF", 0F),
@@ -2956,7 +2960,7 @@
             this.DetailData3_Odd,
             this.PageInfo});
             this.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.Version = "25.2";
+            this.Version = "26.1";
             ((System.ComponentModel.ISupportInitialize)(this.tDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
