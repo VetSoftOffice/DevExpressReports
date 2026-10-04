@@ -217,7 +217,8 @@ private void xrTableCell27_BeforePrint(object sender, System.ComponentModel.Canc
 }
 
 private void xrTableCell35_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
-    decimal result = totalRejectedSum + mobaSum 
+            XRTableCell cell = sender as XRTableCell;
+    decimal result = totalRejectedSum + mobaSum ;
     
     if (totalProductionSum != 0)
     {
