@@ -124,60 +124,54 @@
     <value>using DevExpress.XtraReports.UI;
 using System.Collections;
 using System.Collections.Generic;
+decimal mortalitySum = 0m;
+int mortalityCount = 0;
 
-public void HideSubbandIfFeedMillLessThanTwo(SubBand band)
-{
-    XtraReport report = band.Report as XtraReport;
-    if (report != null)
+private void xrTableCell40_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal chickPlace = Convert.ToDecimal(GetCurrentColumnValue("ChickPlace") ?? 0);
+    decimal totalMort = Convert.ToDecimal(GetCurrentColumnValue("TotalMort") ?? 0);
+
+    decimal mortality = chickPlace != 0
+        ? (totalMort / chickPlace) * 100
+        : 0;
+
+    ((DevExpress.XtraReports.UI.XRTableCell)sender).Text = mortality.ToString("0.00");
+}
+
+private void xrTableCell38_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    XRTableCell cell = sender as XRTableCell;
+    
+        if (mortalityCount != 0)
     {
-        IEnumerable dataSource = report.DataSource as IEnumerable;
-        if (dataSource != null)
-        {
-            int feedMillCount = CountDistinctFeedMills(dataSource);
-            band.Visible = (feedMillCount &gt;= 2);
-        }
-        else
-        {
-            band.Visible = false;
-        }
+        // Calculate average weight per bird
+        decimal result = (mortalitySum / mortalityCount) ;
+        cell.Text = result.ToString("N2");
     }
     else
     {
-        band.Visible = false;
+        cell.Text = "0.00";
+    }
+
+    
+    }
+
+private void Detail_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
+    decimal chickPlace = Convert.ToDecimal(
+        GetCurrentColumnValue("ChickPlace") ?? 0
+    );
+
+    decimal totalMort = Convert.ToDecimal(
+        GetCurrentColumnValue("TotalMort") ?? 0
+    );
+
+    if (chickPlace != 0)
+    {
+        decimal mortality = (totalMort / chickPlace) * 100m;
+
+        mortalitySum += mortality;
+        mortalityCount++;
     }
 }
-
-private int CountDistinctFeedMills(IEnumerable dataSource)
-{
-    List&lt;object&gt; distinctFeedMills = new List&lt;object&gt;();
-    foreach (object item in dataSource)
-    {
-        object feedMillValue = GetFieldValue(item, "FeedMill");
-        if (feedMillValue != null &amp;&amp; !distinctFeedMills.Contains(feedMillValue))
-        {
-            distinctFeedMills.Add(feedMillValue);
-        }
-    }
-    return distinctFeedMills.Count;
-}
-
-private object GetFieldValue(object item, string fieldName)
-{
-    System.Reflection.PropertyInfo property = item.GetType().GetProperty(fieldName);
-    if (property != null)
-    {
-        return property.GetValue(item, null);
-    }
-    return null;
-}
-
-private void ReportFooterSub3_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
-{
-    SubBand subBand = ReportFooterSub3 as SubBand;
-    if (subBand != null)
-    {
-        HideSubbandIfFeedMillLessThanTwo(subBand);
-    }
-}</value>
+</value>
   </data>
 </root>
